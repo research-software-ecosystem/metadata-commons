@@ -1,7 +1,23 @@
 # RSEc operational committee
+
+| Name | GitHub |
+|------|----------------|
+| **Mihail Anton** | @mihai-sysbio |
+| **Johan Gustafsson** | @supernord |
+| **Hervé Ménager** | @hmenager |
+| **Ana Mendes** | @anitamnd |
+| **Magnus Palmblad** | @magnuspalmblad |
+| **Veit Schwämmle** | @veitveit |
+| **Paul Zierep** | @paulzierep |
+
 __
 
 # RSEc strategic committee
+| **Hervé Ménager** | @hmenager |
+| **Veit Schwämmle** | @veitveit |
+| **Johan Gustafsson** | @supernord |
+| **Mihail Anton** | @mihai-sysbio |
+
 __
 
 # RSEc strategic committee chair
@@ -29,6 +45,7 @@ __
 | **Hervé Ménager** | @hmenager |
 | **Steffen Möller** | @smoe |
 | **Ana Mendes** | @anitamnd |
+| **Magnus Palmblad** | @magnuspalmblad |
 | **Dmitry Repchevsky** | @redmitry |
 | **Veit Schwämmle** | @veitveit |
 | **Stian Soiland‑Reyes** | @stain |
