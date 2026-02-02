@@ -4,19 +4,15 @@
 |------|----------------|
 | **Mihail Anton** | @mihai-sysbio |
 | **Johan Gustafsson** | @supernord |
-| **Matúš Kalaš** | @matuskalas |
 | **Hervé Ménager** | @hmenager |
 | **Ana Mendes** | @anitamnd |
 | **Magnus Palmblad** | @magnuspalmblad |
-| **Dmitry Repchevsky** | @redmitry |
 | **Veit Schwämmle** | @veitveit |
 | **Paul Zierep** | @paulzierep |
 
 __
 
 # RSEc strategic committee
-| **Matúš Kalaš** | @matuskalas |
-| **Maria Chavero Diez** | @mariachavero |
 | **Hervé Ménager** | @hmenager |
 | **Veit Schwämmle** | @veitveit |
 | **Johan Gustafsson** | @supernord |
