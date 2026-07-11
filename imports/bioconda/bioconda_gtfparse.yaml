@@ -1,0 +1,34 @@
+about:
+  dev_url: https://github.com/openvax/gtfparse
+  home: https://github.com/openvax/gtfparse
+  license: APACHE-2.0
+  license_family: Apache
+  license_file: LICENSE
+  summary: Parsing library for extracting data frames of genomic features from GTF
+    files.
+build:
+  noarch: python
+  number: 0
+  run_exports:
+  - null
+  script: -m pip install . --no-deps --no-build-isolation --no-cache-dir -vvv
+package:
+  name: gtfparse
+  version: 2.7.1
+requirements:
+  host:
+  - python >=3.7
+  - pip
+  - setuptools
+  run:
+  - python >=3.7
+  - polars >=0.20.2
+  - numpy >=1.7
+  - pandas >=2.1.0
+  - pyarrow >=18.0.0
+source:
+  sha256: 1816a40c66e486eed28499b8a4e2f1ebbfad7e540c8d540eb2f9040873a05ebe
+  url: https://pypi.org/packages/source/g/gtfparse/gtfparse-2.7.1.tar.gz
+test:
+  imports:
+  - gtfparse

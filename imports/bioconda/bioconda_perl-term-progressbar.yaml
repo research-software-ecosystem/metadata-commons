@@ -1,0 +1,36 @@
+about:
+  doc_url: https://metacpan.org/pod/Term::ProgressBar
+  home: https://metacpan.org/pod/Term::ProgressBar
+  license: Perl_5
+  summary: Provide a progress meter on a standard terminal.
+build:
+  noarch: generic
+  number: 0
+  run_exports:
+  - null
+package:
+  name: perl-term-progressbar
+  version: '2.23'
+requirements:
+  build:
+  - make
+  host:
+  - perl
+  - perl-test-exception
+  - perl-class-methodmaker
+  - perl-file-temp
+  - perl-test-warnings
+  - perl-extutils-makemaker
+  - perl-capture-tiny
+  - perl-carp
+  run:
+  - perl
+  - perl-class-methodmaker
+  - perl-carp
+source:
+  sha256: defc03fb9f4ac1c9df1359d312bff3c0865ddefbf3aba64cd42a69a86215d49d
+  url: https://cpan.metacpan.org/authors/id/M/MA/MANWAR/Term-ProgressBar-2.23.tar.gz
+test:
+  imports:
+  - Term::ProgressBar
+  - Term::ProgressBar::IO

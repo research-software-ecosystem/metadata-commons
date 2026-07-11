@@ -1,0 +1,50 @@
+about:
+  dev_url: https://github.com/openvax/varcode
+  home: https://github.com/openvax/varcode
+  license: Apache-2.0
+  license_family: APACHE
+  license_file: LICENSE
+  summary: Variant annotation in Python.
+build:
+  entry_points:
+  - varcode-genes = varcode.cli.genes_script:main
+  - varcode = varcode.cli.effects_script:main
+  noarch: python
+  number: 0
+  run_exports:
+  - null
+  script: -m pip install . --no-deps --no-build-isolation --no-cache-dir -vvv
+extra:
+  recipe-maintainers:
+  - jonasscheid
+package:
+  name: varcode
+  version: 4.0.5
+requirements:
+  host:
+  - pip
+  - python
+  - setuptools <82
+  run:
+  - biopython >=1.64
+  - memoized-property >=1.0.2
+  - numpy >=2.0.0
+  - pandas >=0.15
+  - pyensembl >=1.8.1
+  - python
+  - pyvcf3 >=1.0.0
+  - sercol >=0.1.4
+  - serializable >=0.2.1
+  - setuptools <82
+source:
+  sha256: f9229463b8734dbb331ed0dd06aa9219ccf237ad44492121f6b971854a6854b0
+  url: https://pypi.org/packages/source/v/varcode/varcode-4.0.5.tar.gz
+test:
+  commands:
+  - varcode-genes --help
+  - varcode --help
+  imports:
+  - test
+  - varcode
+  - varcode.cli
+  - varcode.effects

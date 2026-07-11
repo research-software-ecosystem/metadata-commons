@@ -1,0 +1,45 @@
+about:
+  dev_url: https://github.com/arq5x/lumpy-sv
+  doc_url: https://github.com/arq5x/lumpy-sv/blob/v0.3.1/README.md
+  home: https://github.com/arq5x/lumpy-sv
+  license: MIT
+  license_family: MIT
+  summary: A general probabilistic framework for structural variant discovery. This
+    package contains only the lumpy executable.
+build:
+  number: 7
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+  identifiers:
+  - doi:10.1186/gb-2014-15-6-r84
+package:
+  name: lumpy-sv-minimal
+  version: 0.3.1
+requirements:
+  build:
+  - null
+  - null
+  - make
+  - cmake <4
+  - pkg-config
+  - gnuconfig
+  host:
+  - htslib
+  - zlib
+  run:
+  - htslib
+source:
+  patches:
+  - patch
+  - const.patch
+  sha256: 6a75dffafd238417011416c62d4351f64ea71bd018b5a7660383566f2cbb7c5d
+  url: https://github.com/arq5x/lumpy-sv/archive/v0.3.1.tar.gz
+test:
+  commands:
+  - lumpy 2>&1 | grep -q structural
+  - lumpy_filter 2>&1 | grep -q lumpy_filter\:\ usage
+  - lumpyexpress 2>&1 | grep -q lumpyexpress

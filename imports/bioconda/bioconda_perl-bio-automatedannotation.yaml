@@ -1,0 +1,53 @@
+about:
+  doc_url: https://www.sanger.ac.uk
+  home: https://www.sanger.ac.uk
+  license: Open Source
+  summary: Automated annotation of assemblies.
+build:
+  noarch: generic
+  number: 0
+  run_exports:
+  - null
+package:
+  name: perl-bio-automatedannotation
+  version: 2023.03.14.16.40.01.685
+requirements:
+  host:
+  - perl
+  run:
+  - perl
+  - perl-bioperl
+  - perl-bioperl-run
+  - perl-xml-simple
+  - perl-time-piece
+  - perl-file-temp
+  - perl-file-slurper
+  - perl-exception-class
+  - perl-moose
+  - perl-getopt-long
+  - perl-text-csv
+  - perl-module-runtime
+  - perl-class-load
+  - perl-package-deprecationmanager
+  - perl-mro-compat
+  - perl-devel-overloadinfo
+  - perl-eval-closure
+  - perl-devel-globaldestruction
+  - perl-bio-procedural
+  - blast
+  - prodigal
+  - parallel
+  - hmmer
+source:
+  sha256: 44bbff0da3880272d8dd8d08af45e7c80cdaf26dd4002a13588b3cf8d2e2cebc
+  url: https://github.com/sanger-pathogens/Bio-AutomatedAnnotation/archive/refs/tags/v2023.03.14.16.40.01.685.tar.gz
+test:
+  imports:
+  - Bio::AutomatedAnnotation
+  - Bio::AutomatedAnnotation::CommandLine::AnnotateBacteria
+  - Bio::AutomatedAnnotation::CommandLine::GeneNameOccurances
+  - Bio::AutomatedAnnotation::Exceptions
+  - Bio::AutomatedAnnotation::External::Cmscan
+  - Bio::AutomatedAnnotation::GeneNameOccurances
+  - Bio::AutomatedAnnotation::GeneNamesFromGFF
+  - Bio::AutomatedAnnotation::SpreadsheetOfGeneOccurances

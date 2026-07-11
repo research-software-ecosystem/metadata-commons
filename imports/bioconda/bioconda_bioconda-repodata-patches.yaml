@@ -1,0 +1,38 @@
+about:
+  dev_url: https://github.com/bioconda/bioconda-recipes
+  home: https://github.com/bioconda/bioconda-recipes
+  license: CC-PDDC
+  summary: Generate tweaks to index metadata, hosted separately from anaconda.org
+    index.
+build:
+  noarch: python
+  number: 0
+  run_exports:
+  - null
+extra:
+  recipe-maintainers:
+  - bioconda/core
+  skip-lints:
+  - missing_hash
+  - repodata_patches_no_version_bump
+package:
+  name: bioconda-repodata-patches
+  version: '20260421'
+requirements:
+  host:
+  - python =3
+  - setuptools <82
+  - requests
+  - tqdm
+  run:
+  - python =3
+  - setuptools <82
+  - requests
+  - tqdm
+source:
+  path: .
+test:
+  commands:
+  - test -e $PREFIX/noarch/patch_instructions.json
+  - test -e $PREFIX/linux-64/patch_instructions.json
+  - test -e $PREFIX/osx-64/patch_instructions.json

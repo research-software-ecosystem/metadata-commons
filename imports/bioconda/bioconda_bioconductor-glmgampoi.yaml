@@ -1,0 +1,78 @@
+about:
+  description: Fit linear models to overdispersed count data. The package can estimate
+    the overdispersion and fit repeated models for matrix input. It is designed to
+    handle large input datasets as they typically occur in single cell RNA-seq experiments.
+  home: https://bioconductor.org/packages/3.22/bioc/html/glmGamPoi.html
+  license: GPL-3
+  license_file: /lib/R/share/licenses/GPL-3
+  summary: Fit a Gamma-Poisson Generalized Linear Model
+build:
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+package:
+  name: bioconductor-glmgampoi
+  version: 1.22.0
+requirements:
+  build:
+  - null
+  - null
+  - make
+  host:
+  - bioconductor-assorthead >=1.4.0,<1.5.0
+  - bioconductor-beachmat >=2.26.0,<2.27.0
+  - bioconductor-biocgenerics >=0.56.0,<0.57.0
+  - bioconductor-delayedarray >=0.36.0,<0.37.0
+  - bioconductor-delayedmatrixstats >=1.32.0,<1.33.0
+  - bioconductor-hdf5array >=1.38.0,<1.39.0
+  - bioconductor-matrixgenerics >=1.22.0,<1.23.0
+  - bioconductor-s4vectors >=0.48.0,<0.49.0
+  - bioconductor-singlecellexperiment >=1.32.0,<1.33.0
+  - bioconductor-sparsearray >=1.10.0,<1.11.0
+  - bioconductor-summarizedexperiment >=1.40.0,<1.41.0
+  - r-base
+  - r-matrix
+  - r-matrixstats
+  - r-rcpp
+  - r-rcpparmadillo
+  - r-rlang
+  - r-vctrs
+  - libblas
+  - liblapack
+  - zlib
+  - liblzma-devel
+  run:
+  - bioconductor-assorthead >=1.4.0,<1.5.0
+  - bioconductor-beachmat >=2.26.0,<2.27.0
+  - bioconductor-biocgenerics >=0.56.0,<0.57.0
+  - bioconductor-delayedarray >=0.36.0,<0.37.0
+  - bioconductor-delayedmatrixstats >=1.32.0,<1.33.0
+  - bioconductor-hdf5array >=1.38.0,<1.39.0
+  - bioconductor-matrixgenerics >=1.22.0,<1.23.0
+  - bioconductor-s4vectors >=0.48.0,<0.49.0
+  - bioconductor-singlecellexperiment >=1.32.0,<1.33.0
+  - bioconductor-sparsearray >=1.10.0,<1.11.0
+  - bioconductor-summarizedexperiment >=1.40.0,<1.41.0
+  - r-base
+  - r-matrix
+  - r-matrixstats
+  - r-rcpp
+  - r-rcpparmadillo
+  - r-rlang
+  - r-vctrs
+source:
+  md5: 18e48614cc222291ead18ac8c4679035
+  url:
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/glmGamPoi_1.22.0.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/glmGamPoi/glmGamPoi_1.22.0.tar.gz
+  - https://bioarchive.galaxyproject.org/glmGamPoi_1.22.0.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-glmgampoi/bioconductor-glmgampoi_1.22.0_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('glmGamPoi')"

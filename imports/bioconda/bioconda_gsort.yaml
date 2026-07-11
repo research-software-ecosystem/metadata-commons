@@ -1,0 +1,30 @@
+about:
+  dev_url: https://github.com/brentp/gsort
+  doc_url: https://github.com/brentp/gsort/blob/v0.1.5/README.md
+  home: https://github.com/brentp/gsort
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE
+  summary: Sort genomic files according to a genomefile.
+build:
+  number: 0
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+package:
+  name: gsort
+  version: 0.1.5
+requirements:
+  build:
+  - null
+  - go-licenses
+  - make
+source:
+  sha256: d2f47900b39e56ea69631f3d90f0b524c6d3a67f4418b1eb11d5e2b71ccba3a4
+  url: https://github.com/brentp/gsort/archive/refs/tags/v0.1.5.tar.gz
+test:
+  commands:
+  - gsort --help

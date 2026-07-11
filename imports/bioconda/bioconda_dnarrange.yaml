@@ -1,0 +1,30 @@
+about:
+  home: https://github.com/mcfrith/dnarrange
+  license: GPL-3.0-or-later
+  license_file: LICENSE
+  summary: Find rearrangements in "long" DNA reads relative to a genome sequence
+build:
+  noarch: python
+  number: 0
+  run_exports:
+  - null
+  script: -m pip install . --ignore-installed --no-deps -vv
+package:
+  name: dnarrange
+  version: 1.6.3
+requirements:
+  host:
+  - python
+  - pip
+  run:
+  - python
+  - lamassemble
+source:
+  sha256: 215bc6c623b95545a0f3fe5ea519cfb05f063955a7450e8a42eeabd4b114187c
+  url: https://github.com/mcfrith/dnarrange/archive/1.6.3.tar.gz
+test:
+  commands:
+  - dnarrange --help
+  - dnarrange-genes --help
+  - dnarrange-link --help
+  - dnarrange-merge --help

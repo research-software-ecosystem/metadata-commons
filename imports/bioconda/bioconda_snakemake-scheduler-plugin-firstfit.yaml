@@ -1,0 +1,33 @@
+about:
+  dev_url: https://github.com/snakemake/snakemake-scheduler-plugin-firstfit
+  home: https://github.com/snakemake/snakemake-scheduler-plugin-firstfit
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE
+  summary: A Snakemake scheduler plugin that selects the first jobs that fit available
+    resources.
+build:
+  noarch: python
+  number: 0
+  run_exports:
+  - null
+  script: -m pip install . -vvv --no-deps --no-build-isolation --no-cache-dir
+extra:
+  recipe-maintainers:
+  - fgvieira
+package:
+  name: snakemake-scheduler-plugin-firstfit
+  version: 0.1.4
+requirements:
+  host:
+  - python >=3.11.0,<4.0.0
+  - hatchling
+  - pip
+  run:
+  - snakemake-interface-scheduler-plugins >=2.0.2,<3.0.0
+source:
+  sha256: 1c17a24d54249e328fa6114b1a1ec135a463f3d1acf59615ae9e3d1954ee3076
+  url: https://pypi.io/packages/source/s/snakemake-scheduler-plugin-firstfit/snakemake_scheduler_plugin_firstfit-0.1.4.tar.gz
+test:
+  imports:
+  - snakemake_scheduler_plugin_firstfit

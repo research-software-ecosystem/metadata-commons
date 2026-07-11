@@ -1,0 +1,38 @@
+about:
+  home: https://github.com/maickrau/MBG
+  license: MIT
+  license_file: LICENSE.md
+  summary: Minimizer based sparse de Bruijn graph constructor
+build:
+  number: 0
+  run_exports:
+  - null
+  skip: true
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+  skip-lints:
+  - uses_vcs_url
+  - missing_hash
+package:
+  name: mbg
+  version: 1.0.17
+requirements:
+  build:
+  - make
+  - null
+  host:
+  - zlib
+  - pkg-config
+  - bamtools
+source:
+  git_rev: v1.0.17
+  git_url: https://github.com/maickrau/MBG
+  patches:
+  - version.patch
+  - osx_availability.patch
+  - mbg-aarch64.patch
+test:
+  commands:
+  - MBG -v 2>&1 | grep Version

@@ -1,0 +1,32 @@
+about:
+  dev_url: https://github.com/chaimleib/intervaltree
+  doc_url: https://github.com/chaimleib/intervaltree/blob/3.2.1/README.md
+  home: https://github.com/chaimleib/intervaltree
+  license: Apache-2.0
+  license_family: APACHE
+  license_file: LICENSE.txt
+  summary: Faster than intervaltree_bio; editable interval tree data structure
+build:
+  noarch: python
+  number: 0
+  run_exports:
+  - null
+  script: -m pip install . --no-deps --no-cache-dir --no-build-isolation -vvv
+package:
+  name: python-intervaltree
+  version: 3.2.1
+requirements:
+  host:
+  - python >=3.5
+  - hatchling
+  - uv-dynamic-versioning
+  - pip
+  run:
+  - python >=3.5
+  - python-sortedcontainers
+source:
+  sha256: f3f7e8baeb7dd75b9f7a6d33cf3ec10025984a8e66e3016d537e52130c73cfe2
+  url: https://pypi.org/packages/source/i/intervaltree/intervaltree-3.2.1.tar.gz
+test:
+  imports:
+  - intervaltree

@@ -1,0 +1,36 @@
+about:
+  dev_url: https://github.com/OpenGene/MutScan
+  doc_url: https://github.com/OpenGene/MutScan/blob/v1.14.1/README.md
+  home: https://github.com/OpenGene/MutScan
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE
+  summary: Detect and visualize target mutations by scanning FastQ files directly.
+build:
+  number: 0
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+  identifiers:
+  - doi:10.1186/s12859-018-2024-6
+package:
+  name: mutscan
+  version: 1.14.1
+requirements:
+  build:
+  - make
+  - null
+  - null
+  host:
+  - zlib
+source:
+  patches:
+  - patch
+  sha256: 29e6bb996fedd0e1bd26da9ce6517a0097abe684135753d0dc5861c02568268e
+  url: https://github.com/OpenGene/MutScan/archive/refs/tags/v1.14.1.tar.gz
+test:
+  commands:
+  - mutscan --help

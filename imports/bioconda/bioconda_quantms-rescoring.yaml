@@ -1,0 +1,47 @@
+about:
+  dev_url: https://www.github.com/bigbio/quantms-rescoring
+  home: https://www.github.com/bigbio/quantms-rescoring
+  license: Apache 2.0
+  license_file: LICENSE
+  summary: PSM rescoring python package with scripts and helpers for the quantms workflow
+build:
+  entry_points:
+  - rescoring=quantmsrescore.rescoring:main
+  noarch: python
+  number: 0
+  run_exports:
+  - null
+  script: ' -m pip install . --no-deps --no-build-isolation --no-cache-dir -vvv'
+extra:
+  recipe-maintainers:
+  - ypriverol
+package:
+  name: quantms-rescoring
+  version: 0.0.10
+requirements:
+  host:
+  - python >=3.9,<3.12
+  - pip
+  - poetry-core >=1.2.0
+  run:
+  - python >=3.9,<3.12
+  - click
+  - pyopenms >=3.0
+  - pandas
+  - numpy >=1.25
+  - ms2rescore ==3.1.4
+  - deepLC >=3.0
+  - psm-utils
+  - scipy
+  - pygam
+  - protobuf
+  - ms2pip >=4.0
+source:
+  sha256: 0e64b0fa9fe46868a51bb3de2b1b0d46581fed3396ce8b3f9300921afa0d9e56
+  url: https://pypi.io/packages/source/q/quantms-rescoring/quantms_rescoring-0.0.10.tar.gz
+test:
+  commands:
+  - rescoring --help
+  - rescoring msrescore2feature --help
+  imports:
+  - quantmsrescore

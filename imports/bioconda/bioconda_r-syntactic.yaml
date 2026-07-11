@@ -1,0 +1,36 @@
+about:
+  dev_url: https://github.com/acidgenomics/r-syntactic
+  home: https://r.acidgenomics.com/packages/syntactic/
+  license: Apache-2.0
+  license_family: APACHE
+  license_file: LICENSE.md
+  summary: Make syntactically valid names out of character vectors.
+build:
+  noarch: generic
+  number: 0
+  run_exports:
+  - null
+extra:
+  recipe-maintainers:
+  - acidgenomics
+  - mjsteinbaugh
+package:
+  name: r-syntactic
+  version: 0.8.1
+requirements:
+  host:
+  - r-base
+  - r-acidgenerics >=0.7.0
+  - r-goalie >=0.7.0
+  - r-stringi >=1.7.12
+  run:
+  - r-base
+  - r-acidgenerics >=0.7.0
+  - r-goalie >=0.7.0
+  - r-stringi >=1.7.12
+source:
+  sha256: c01908e50090d23972a2b8b65e6cbda1248bac55d56e8ea03c583bf79b987ee3
+  url: https://github.com/acidgenomics/r-syntactic/archive/v0.8.1.tar.gz
+test:
+  commands:
+  - $R -e "library('syntactic')"

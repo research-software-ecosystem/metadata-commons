@@ -1,0 +1,36 @@
+about:
+  home: http://metacpan.org/pod/Perl::Version
+  license: perl_5
+  summary: Parse and manipulate Perl version strings
+build:
+  noarch: generic
+  number: 0
+  run_exports:
+  - null
+package:
+  name: perl-perl-version
+  version: '1.019'
+requirements:
+  build:
+  - make
+  host:
+  - perl
+  - perl-pod-usage
+  - perl-file-slurp-tiny
+  - perl-extutils-makemaker
+  - perl-getopt-long
+  - perl-data-dumper
+  - perl-carp
+  run:
+  - perl
+  - perl-carp
+  - perl-file-slurp-tiny
+  - perl-getopt-long
+  - perl-data-dumper
+  - perl-pod-usage
+source:
+  sha256: a45a6e3f0d92fcb33214248a52d443e2b8ffd5fffdaf09b54cb7cb9dff588004
+  url: https://cpan.metacpan.org/authors/id/B/BR/BRIANDFOY/Perl-Version-1.019.tar.gz
+test:
+  imports:
+  - Perl::Version

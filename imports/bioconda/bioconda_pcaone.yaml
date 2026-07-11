@@ -1,0 +1,42 @@
+about:
+  dev_url: https://github.com/Zilong-Li/PCAone
+  doc_url: https://github.com/Zilong-Li/PCAone
+  home: https://github.com/Zilong-Li/PCAone
+  license: GPL-3.0-only
+  license_family: GPL3
+  license_file: LICENSE
+  summary: PCAone - Principal Component Analysis All in One.
+build:
+  number: 0
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - osx-arm64
+  recipe-maintainers:
+  - Zilong-Li
+package:
+  name: pcaone
+  version: 0.7.1
+requirements:
+  build:
+  - null
+  - null
+  - make
+  host:
+  - mkl >=2025.1.0
+  - mkl-include >=2025.1.0
+  - zlib
+  - llvm-openmp
+  - libgomp
+  run:
+  - mkl >=2025.1.0
+  - mkl-include >=2025.1.0
+  - llvm-openmp
+  - libgomp
+source:
+  sha256: 27c33a96ae778752fc6575b303e23127401ee73f9566f12dbe41c44c05a33f4d
+  url: https://github.com/Zilong-Li/PCAone/archive/refs/tags/v0.7.1.tar.gz
+test:
+  commands:
+  - PCAone --help

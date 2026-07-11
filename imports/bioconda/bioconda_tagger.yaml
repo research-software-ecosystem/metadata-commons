@@ -1,0 +1,41 @@
+about:
+  dev_url: https://github.com/larsjuhljensen/tagger
+  doc_url: https://github.com/larsjuhljensen/tagger/blob/1.1/README.md
+  home: https://github.com/larsjuhljensen/tagger
+  license: BSD-2-Clause
+  license_family: BSD
+  license_file: LICENSE
+  summary: tagger allows you to tag a corpus of documents with search terms that you
+    provide. It is often used to find mentions of proteins, species, diseases, tissues,
+    chemicals and drugs, GO terms, and so forth, in articles in the Medline corpus.
+build:
+  number: 2
+  run_exports:
+  - null
+  skip: true
+extra:
+  additional-platforms:
+  - linux-aarch64
+package:
+  name: tagger
+  version: '1.1'
+requirements:
+  build:
+  - make
+  - null
+  host:
+  - python
+  - boost-cpp
+  - swig
+  run:
+  - python
+  - boost-cpp
+source:
+  patches:
+  - 0001-makefile.patch
+  - 0002-tagger.patch
+  sha256: f0844d13afe586dcee1508f0abbc6d28bc46f81123821660939374cfc971e49b
+  url: https://github.com/larsjuhljensen/tagger/archive/refs/tags/1.1.tar.gz
+test:
+  commands:
+  - tagcorpus --help

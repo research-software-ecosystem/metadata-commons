@@ -1,0 +1,38 @@
+about:
+  home: https://github.com/murphycj/AGFusion
+  license: MIT
+  license_family: MIT
+  summary: Python package to annotate and visualize gene fusions.
+build:
+  noarch: python
+  number: 0
+  run_exports:
+  - null
+  script: python -m pip install --no-deps --ignore-installed .
+extra:
+  identifiers:
+  - doi:10.1101/080903
+package:
+  name: agfusion
+  version: 1.5.0
+requirements:
+  host:
+  - python
+  - pip
+  - setuptools
+  run:
+  - python
+  - matplotlib-base >=3.6.1
+  - pandas >=1.5.1
+  - biopython >=1.79
+  - future >=0.16.0
+  - pyensembl >=1.1.0
+  - nose2 >=0.6.5
+source:
+  sha256: 2f3f10ad8b1a6d97db9cbc91a08e3ed4bb9f271630c52ddded270fe1c459868e
+  url: https://pypi.io/packages/source/a/agfusion/agfusion-1.5.0.tar.gz
+test:
+  commands:
+  - agfusion -h
+  imports:
+  - agfusion

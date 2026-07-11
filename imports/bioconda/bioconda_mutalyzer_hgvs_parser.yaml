@@ -1,0 +1,34 @@
+about:
+  dev_url: https://github.com/mutalyzer/hgvs-parser
+  doc_url: https://mutalyzer-hgvs-parser.readthedocs.io
+  home: https://github.com/mutalyzer/hgvs-parser
+  license: MIT
+  license_family: MIT
+  summary: Mutalyzer HGVS variant description parser.
+build:
+  noarch: python
+  number: 0
+  run_exports:
+  - null
+  script: ' -m pip install . -vv --no-deps --no-build-isolation --no-cache-dir'
+extra:
+  recipe-maintainers:
+  - Redmar-van-den-Berg
+package:
+  name: mutalyzer_hgvs_parser
+  version: 0.4.0
+requirements:
+  host:
+  - pip
+  - python
+  - setuptools
+  run:
+  - python
+  - lark >=1.0.0
+source:
+  sha256: 6d7530a047a4f39f1e929bde3920887b6abea58d574b6794e725b5ca53aab71e
+  url: https://pypi.org/packages/source/m/mutalyzer_hgvs_parser/mutalyzer_hgvs_parser-0.4.0.tar.gz
+test:
+  commands:
+  - mutalyzer_hgvs_parser --help
+  - mutalyzer_hgvs_parser -c "NG_012337.1:c.20del"

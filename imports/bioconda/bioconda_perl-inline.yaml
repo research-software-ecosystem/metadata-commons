@@ -1,0 +1,31 @@
+about:
+  dev_url: https://github.com/ingydotnet/inline-pm
+  home: https://github.com/ingydotnet/inline-pm
+  license: Perl_5
+  summary: Write Perl Subroutines in Other Programming Languages.
+build:
+  noarch: generic
+  number: 0
+  run_exports:
+  - null
+package:
+  name: perl-inline
+  version: '0.87'
+requirements:
+  build:
+  - make
+  host:
+  - perl
+  - perl-extutils-makemaker
+  - perl-test-warn
+  - perl-digest-md5
+  - perl-json-pp
+  run:
+  - perl
+  - perl-digest-md5
+source:
+  sha256: 105e4271ace1c1b5a264d771ff111d8b928b256002888222862c7be9686f39c5
+  url: https://cpan.metacpan.org/authors/id/I/IN/INGY/Inline-0.87.tar.gz
+test:
+  imports:
+  - Inline

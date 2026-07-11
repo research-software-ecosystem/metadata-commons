@@ -1,0 +1,44 @@
+about:
+  dev_url: https://github.com/ICCB-Cologne/PyFish
+  home: https://github.com/ICCB-Cologne/PyFish
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE
+  summary: Plotting tool for evolutionary population dynamics. Creates a Fish (Muller)
+    plot.
+build:
+  entry_points:
+  - pyfish = pyfish.main:run
+  noarch: python
+  number: 0
+  run_exports:
+  - null
+  script: -m pip install . -vvv --no-deps --no-build-isolation --no-cache-dir
+extra:
+  identifiers:
+  - doi:10.1093/bioinformatics/btad102
+  recipe-maintainers:
+  - tlkaufmann
+  - xstreck1
+package:
+  name: pyfish
+  version: 1.2.0
+requirements:
+  host:
+  - setuptools
+  - pip
+  - python >=3.8
+  run:
+  - matplotlib-base >=3.0
+  - numpy >=1.14
+  - pandas >=1.0
+  - python >=3.8
+  - scipy >=1.0
+source:
+  sha256: 9652c8f9d4fd4b69c29df2a073b97b72639e6d839e80025c769e00ec0a0014ee
+  url: https://pypi.org/packages/source/p/pyfish/pyfish-1.2.0.tar.gz
+test:
+  commands:
+  - pyfish --help
+  imports:
+  - pyfish

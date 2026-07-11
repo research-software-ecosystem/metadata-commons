@@ -1,0 +1,23 @@
+about:
+  home: https://github.com/hartwigmedical/hmftools/tree/master/isofox
+  license: GPL-3.0-only
+  license_family: GPL
+  summary: Isofox is a tool for counting fragment support for identifying and counting
+    gene and transcript features using genome aligned RNASeq data in tumor samples.
+build:
+  noarch: generic
+  number: 0
+  run_exports:
+  - null
+package:
+  name: hmftools-isofox
+  version: 2.0.1
+requirements:
+  run:
+  - openjdk >=8,<=21
+source:
+  sha256: 8fdd4d7d0b9453eeb0e9d1baeaba3548905c60e9b0ac3fec33311e8f69ece11b
+  url: https://github.com/hartwigmedical/hmftools/releases/download/isofox-v2.0.1/isofox_v2.0.1.jar
+test:
+  commands:
+  - isofox -version | grep Isofox

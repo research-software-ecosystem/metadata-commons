@@ -1,0 +1,85 @@
+about:
+  description: tidySpatialExperiment provides a bridge between the SpatialExperiment
+    package and the tidyverse ecosystem. It creates an invisible layer that allows
+    you to interact with a SpatialExperiment object as if it were a tibble; enabling
+    the use of functions from dplyr, tidyr, ggplot2 and plotly. But, underneath, your
+    data remains a SpatialExperiment object.
+  home: https://bioconductor.org/packages/3.22/bioc/html/tidySpatialExperiment.html
+  license: GPL (>= 3)
+  license_file: /lib/R/share/licenses/GPL-3
+  summary: SpatialExperiment with tidy principles
+build:
+  noarch: generic
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+package:
+  name: bioconductor-tidyspatialexperiment
+  version: 1.6.2
+requirements:
+  host:
+  - bioconductor-biocgenerics >=0.56.0,<0.57.0
+  - bioconductor-s4vectors >=0.48.0,<0.49.0
+  - bioconductor-singlecellexperiment >=1.32.0,<1.33.0
+  - bioconductor-spatialexperiment >=1.20.0,<1.21.0
+  - bioconductor-summarizedexperiment >=1.40.0,<1.41.0
+  - bioconductor-tidysinglecellexperiment >=1.20.0,<1.21.0
+  - r-base
+  - r-cli
+  - r-dplyr
+  - r-fansi
+  - r-ggplot2 >=4.0.0
+  - r-lifecycle
+  - r-magick
+  - r-pillar
+  - r-pkgconfig
+  - r-plotly
+  - r-purrr
+  - r-rlang
+  - r-shiny
+  - r-stringr
+  - r-tibble
+  - r-tidygate >=1.0.13
+  - r-tidyr
+  - r-tidyselect
+  - r-ttservice
+  - r-vctrs
+  run:
+  - bioconductor-biocgenerics >=0.56.0,<0.57.0
+  - bioconductor-s4vectors >=0.48.0,<0.49.0
+  - bioconductor-singlecellexperiment >=1.32.0,<1.33.0
+  - bioconductor-spatialexperiment >=1.20.0,<1.21.0
+  - bioconductor-summarizedexperiment >=1.40.0,<1.41.0
+  - bioconductor-tidysinglecellexperiment >=1.20.0,<1.21.0
+  - r-base
+  - r-cli
+  - r-dplyr
+  - r-fansi
+  - r-ggplot2 >=4.0.0
+  - r-lifecycle
+  - r-magick
+  - r-pillar
+  - r-pkgconfig
+  - r-plotly
+  - r-purrr
+  - r-rlang
+  - r-shiny
+  - r-stringr
+  - r-tibble
+  - r-tidygate >=1.0.13
+  - r-tidyr
+  - r-tidyselect
+  - r-ttservice
+  - r-vctrs
+source:
+  md5: 90e251df5c61cdf59af5e0c9b567f3ce
+  url:
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/tidySpatialExperiment_1.6.2.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/tidySpatialExperiment/tidySpatialExperiment_1.6.2.tar.gz
+  - https://bioarchive.galaxyproject.org/tidySpatialExperiment_1.6.2.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-tidyspatialexperiment/bioconductor-tidyspatialexperiment_1.6.2_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('tidySpatialExperiment')"

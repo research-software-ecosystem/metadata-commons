@@ -1,0 +1,106 @@
+about:
+  description: NanoMethViz is a toolkit for visualising methylation data from Oxford
+    Nanopore sequencing. It can be used to explore methylation patterns from reads
+    derived from Oxford Nanopore direct DNA sequencing with methylation called by
+    callers including nanopolish, f5c and megalodon. The plots in this package allow
+    the visualisation of methylation profiles aggregated over experimental groups
+    and across classes of genomic features.
+  home: https://bioconductor.org/packages/3.22/bioc/html/NanoMethViz.html
+  license: Apache License (>= 2.0)
+  summary: Visualise methylation data from Oxford Nanopore sequencing
+build:
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+package:
+  name: bioconductor-nanomethviz
+  version: 3.6.0
+requirements:
+  build:
+  - null
+  - null
+  - make
+  host:
+  - bioconductor-annotationdbi >=1.72.0,<1.73.0
+  - bioconductor-biocsingular >=1.26.0,<1.27.0
+  - bioconductor-biostrings >=2.78.0,<2.79.0
+  - bioconductor-bsseq >=1.46.0,<1.47.0
+  - bioconductor-genomicranges >=1.62.0,<1.63.0
+  - bioconductor-iranges >=2.44.0,<2.45.0
+  - bioconductor-limma >=3.66.0,<3.67.0
+  - bioconductor-rsamtools >=2.26.0,<2.27.0
+  - bioconductor-s4vectors >=0.48.0,<0.49.0
+  - bioconductor-summarizedexperiment >=1.40.0,<1.41.0
+  - r-assertthat
+  - r-base
+  - r-cli
+  - r-cpp11 >=0.2.5
+  - r-dbscan
+  - r-dplyr
+  - r-e1071
+  - r-forcats
+  - r-fs
+  - r-ggplot2 >=3.4.0
+  - r-ggrastr
+  - r-glue
+  - r-patchwork
+  - r-purrr
+  - r-r.utils
+  - r-rcpp
+  - r-readr
+  - r-rlang
+  - r-scales >=1.2.0
+  - r-stringr
+  - r-tibble
+  - r-tidyr
+  - r-withr
+  - libblas
+  - liblapack
+  - zlib
+  - liblzma-devel
+  run:
+  - bioconductor-annotationdbi >=1.72.0,<1.73.0
+  - bioconductor-biocsingular >=1.26.0,<1.27.0
+  - bioconductor-biostrings >=2.78.0,<2.79.0
+  - bioconductor-bsseq >=1.46.0,<1.47.0
+  - bioconductor-genomicranges >=1.62.0,<1.63.0
+  - bioconductor-iranges >=2.44.0,<2.45.0
+  - bioconductor-limma >=3.66.0,<3.67.0
+  - bioconductor-rsamtools >=2.26.0,<2.27.0
+  - bioconductor-s4vectors >=0.48.0,<0.49.0
+  - bioconductor-summarizedexperiment >=1.40.0,<1.41.0
+  - r-assertthat
+  - r-base
+  - r-cli
+  - r-cpp11 >=0.2.5
+  - r-dbscan
+  - r-dplyr
+  - r-e1071
+  - r-forcats
+  - r-fs
+  - r-ggplot2 >=3.4.0
+  - r-ggrastr
+  - r-glue
+  - r-patchwork
+  - r-purrr
+  - r-r.utils
+  - r-rcpp
+  - r-readr
+  - r-rlang
+  - r-scales >=1.2.0
+  - r-stringr
+  - r-tibble
+  - r-tidyr
+  - r-withr
+source:
+  md5: 0d83e786a6361cac8ae039238b80c29c
+  url:
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/NanoMethViz_3.6.0.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/NanoMethViz/NanoMethViz_3.6.0.tar.gz
+  - https://bioarchive.galaxyproject.org/NanoMethViz_3.6.0.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-nanomethviz/bioconductor-nanomethviz_3.6.0_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('NanoMethViz')"

@@ -1,0 +1,45 @@
+about:
+  dev_url: https://github.com/endrebak/ncls
+  home: https://github.com/endrebak/ncls
+  license: BSD-3-Clause
+  license_family: BSD
+  license_file: LICENSE
+  summary: A fast interval tree-like implementation in C, wrapped for the Python ecosystem.
+    Basically a static interval-tree that is silly fast for both construction and
+    lookups.
+build:
+  number: 0
+  run_exports:
+  - null
+  script: -m pip install . --no-deps --no-build-isolation --no-cache-dir -vvv
+  script_env:
+  - SETUPTOOLS_SCM_PRETEND_VERSION=0.0.70
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+  recipe-maintainers:
+  - endrebak
+  skip-lints:
+  - uses_setuptools
+package:
+  name: ncls
+  version: 0.0.70
+requirements:
+  build:
+  - null
+  host:
+  - python
+  - cython
+  - pip
+  - setuptools-scm >=6.2
+  run:
+  - python
+  - setuptools
+  - numpy
+source:
+  sha256: 7d16634a8f57fa79659e9ae7e5cc6edd1e02d5acb0eb57128dbed03e9f4fdd9c
+  url: https://pypi.org/packages/source/n/ncls/ncls-0.0.70.tar.gz
+test:
+  imports:
+  - ncls

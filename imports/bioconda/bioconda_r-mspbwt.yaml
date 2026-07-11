@@ -1,0 +1,43 @@
+about:
+  dev_url: https://github.com/rwdavies/mspbwt
+  doc_url: https://github.com/rwdavies/mspbwt
+  home: https://github.com/rwdavies/mspbwt
+  license: GPL-3.0-only
+  license_family: GPL3
+  license_file: mspbwt/LICENSE.txt
+  summary: Multi Symbol Positional Burrows Wheeler Transform.
+build:
+  number: 1
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+  recipe-maintainers:
+  - Zilong-Li
+  - rwdavies
+package:
+  name: r-mspbwt
+  version: 0.1.1
+requirements:
+  build:
+  - null
+  - null
+  host:
+  - r-base
+  - r-rcpp <=1.0.14
+  - r-data.table >=1.11.8
+  - r-rrbgen >=0.0.6
+  - r-stitch >=1.7.0
+  run:
+  - r-base
+  - r-rcpp <=1.0.14
+  - r-data.table >=1.11.8
+  - r-rrbgen >=0.0.6
+  - r-stitch >=1.7.0
+source:
+- sha256: 75ace9057137a3e70d23622b89c2ab7ca9d94d8fcc851578e4357bab4cceb607
+  url: https://github.com/rwdavies/mspbwt/archive/refs/tags/0.1.1.tar.gz
+test:
+  commands:
+  - $R -e "library('mspbwt');"

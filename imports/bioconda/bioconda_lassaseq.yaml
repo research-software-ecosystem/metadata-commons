@@ -1,0 +1,48 @@
+about:
+  description: "LassaSeq is a command-line tool that simplifies the process of analyzing\
+    \ Lassa virus sequences. \nIt automates the complete workflow from downloading\
+    \ sequences to creating phylogenetic trees, \nwith special handling for Lassa's\
+    \ bi-segmented genome.\n"
+  dev_url: https://github.com/DaanJansen94/LassaSeq
+  doc_url: https://github.com/DaanJansen94/LassaSeq/blob/master/README.md
+  home: https://github.com/DaanJansen94/LassaSeq
+  license: GPL-3.0
+  license_family: GPL
+  license_file: LICENSE
+  summary: Tool for downloading Lassa virus sequences
+build:
+  entry_points:
+  - lassaseq=lassaseq.lassaseq:cli_main
+  noarch: python
+  number: 0
+  run_exports:
+  - null
+  script: ' -m pip install . --no-deps --no-build-isolation -vvv'
+extra:
+  recipe-maintainers:
+  - DaanJansen94
+package:
+  name: lassaseq
+  version: 0.1.2
+requirements:
+  host:
+  - python >=3.9
+  - pip
+  - setuptools
+  run:
+  - python >=3.9
+  - mafft
+  - trimal
+  - iqtree
+  - numpy >=1.20.0
+  - biopython >=1.80
+  - requests >=2.25.0
+  - tqdm >=4.50.0
+source:
+  sha256: f9f81ab56c217fcb15f4b63cf5fea68854337bdb1baf73b5ea5ea27838f55380
+  url: https://github.com/DaanJansen94/LassaSeq/archive/v.0.1.2.tar.gz
+test:
+  commands:
+  - lassaseq --help
+  imports:
+  - lassaseq

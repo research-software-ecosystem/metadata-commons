@@ -1,0 +1,62 @@
+about:
+  description: 'Jalview is a free program for multiple sequence alignment editing,
+    visualisation, analysis and figure generation.
+
+    Use it to view and edit sequence alignments, analyse them with phylogenetic trees
+    and principal
+
+    components analysis (PCA) plots and explore molecular structures and annotation.
+    It is also able
+
+    to import and annotate DNA and Protein products from VCF files and retrieve data
+    and annotation from
+
+    3D-Beacons, Uniprot, Ensembl, ENA, Rfam, Pfam and the PDBe.
+
+    '
+  home: https://www.jalview.org/
+  license: GPL-3.0-only
+  license_file: LICENSE
+  summary: Jalview is a free program for multiple sequence alignment editing, visualisation,
+    analysis and figure generation.
+build:
+  noarch: generic
+  number: 0
+  run_exports:
+  - null
+extra:
+  notes: 'This wrapper and installation is primarily for commandline use.
+
+    Set JALVIEW_JRE=j1.8 or JALVIEW_JRE=j11 to specify the java runtime if you need
+    jalview to start up as quickly as possible
+
+    Set JALVIEW_MAXMEM=2g to restrict jalviews maximal memory consumption (here to
+    2G RAM). Otherwise 90% of physical memory
+
+    (capped at 32G) is allocated.  Memory allocation can also be set in Tools->Preferences->Startup
+    or specified with command-
+
+    line arguments --jvmmempc=90 (percentage of total physical memory, default 90)
+    and --jvmmemmax=2g (set a different cap,
+
+    default 32G if total physical memory can be detected or 8G if total physical memory
+    cannot be detected).'
+package:
+  name: jalview
+  version: 2.11.5.1
+requirements:
+  build:
+  - make
+  - gradle >7.4,<=7.6
+  - openjdk 11
+  - xorg-libxtst
+  run:
+  - openjdk >=8.0.192,!=9.*,!=10.*,!=11.0.9.*,<12
+  - xorg-libxtst
+  - psutil
+source:
+  sha256: 0b8f36b1e4f28b85f1abaa155e893fc85bb838303598caa325111627d5b43cf5
+  url: https://www.jalview.org/source/jalview_2_11_5_1.tar.gz
+test:
+  commands:
+  - jalview --help

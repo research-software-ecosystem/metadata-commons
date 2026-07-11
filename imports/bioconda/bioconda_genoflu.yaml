@@ -1,0 +1,27 @@
+about:
+  dev_url: https://github.com/USDA-VS/GenoFLU
+  home: https://github.com/USDA-VS/GenoFLU
+  license: GPL-3.0-or-later
+  license_file: LICENSE
+  summary: Influenza data pipeline to automate genotyping assignment.
+build:
+  noarch: generic
+  number: 0
+  run_exports:
+  - null
+package:
+  name: genoflu
+  version: '1.07'
+requirements:
+  run:
+  - python >=3.7
+  - pandas
+  - biopython
+  - blast
+  - openpyxl
+source:
+  sha256: 32766b9f6cd4ed17c86d3bedc30bd610fe530908e301d13b51f0035b305d8e10
+  url: https://github.com/USDA-VS/GenoFLU/archive/refs/tags/v1.07.tar.gz
+test:
+  commands:
+  - genoflu.py -h

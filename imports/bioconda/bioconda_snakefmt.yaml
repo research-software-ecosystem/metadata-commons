@@ -1,0 +1,42 @@
+about:
+  dev_url: https://github.com/snakemake/snakefmt
+  doc_url: https://github.com/snakemake/snakefmt/blob/v2.0.3/README.md
+  home: https://github.com/snakemake/snakefmt
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE
+  summary: The uncompromising Snakemake code formatter.
+build:
+  entry_points:
+  - snakefmt = snakefmt.snakefmt:main
+  noarch: python
+  number: 0
+  run_exports:
+  - null
+  script: -m pip install . --no-deps --no-build-isolation --no-cache-dir -vvv
+extra:
+  recipe-maintainers:
+  - mbhall88
+  - bricoletc
+package:
+  name: snakefmt
+  version: 2.0.3
+requirements:
+  host:
+  - python >=3.11,<4.0
+  - pip
+  - hatchling
+  run:
+  - python >=3.11,<4.0
+  - black >=26.3.1,<27.0
+  - click >=8.2.0,<9.0
+  - pathspec
+  - go-shfmt >=3.13,<4.0
+source:
+  sha256: 1aecfed46d631eaae8179e4bedd09450c8c306d221cfd4b3594e35a8dccd0618
+  url: https://pypi.org/packages/source/s/snakefmt/snakefmt-2.0.3.tar.gz
+test:
+  commands:
+  - snakefmt --help
+  imports:
+  - snakefmt

@@ -1,0 +1,33 @@
+about:
+  dev_url: https://github.com/NLM-DIR/TPMCalculator
+  home: https://github.com/NLM-DIR/TPMCalculator
+  license: Public Domain
+  summary: TPMCalculator quantifies mRNA abundance directly from the alignments by
+    parsing BAM files.
+build:
+  number: 0
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+package:
+  name: tpmcalculator
+  version: 0.0.6
+requirements:
+  build:
+  - make
+  - null
+  - pkg-config
+  host:
+  - bamtools
+  - zlib
+  run:
+  - bamtools
+source:
+  sha256: 34a37e1aca15494d9b5fb7ee150f50d41dfe2dc0d777f9a58e573c92846a9bea
+  url: https://github.com/NLM-DIR/TPMCalculator/archive/0.0.6.tar.gz
+test:
+  commands:
+  - TPMCalculator -version

@@ -1,0 +1,28 @@
+about:
+  dev_url: https://github.com/makamaka/JSON
+  home: https://metacpan.org/pod/JSON
+  license: GPL-1.0-or-later OR Artistic-1.0-Perl
+  summary: JSON (JavaScript Object Notation) encoder/decoder
+build:
+  noarch: generic
+  number: 0
+  run_exports:
+  - null
+package:
+  name: perl-json
+  version: '4.11'
+requirements:
+  build:
+  - make
+  host:
+  - perl
+  - perl-json-xs
+  run:
+  - perl
+  - perl-json-xs
+source:
+  sha256: 713bdbe724dbb915ed50265ffe47e079a511980cb2427aa19076788bb64c3182
+  url: https://cpan.metacpan.org/authors/id/I/IS/ISHIGAKI/JSON-4.11.tar.gz
+test:
+  imports:
+  - JSON

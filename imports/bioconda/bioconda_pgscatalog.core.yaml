@@ -1,0 +1,46 @@
+about:
+  dev_url: https://github.com/PGScatalog/pygscatalog
+  home: https://github.com/PGScatalog/pygscatalog
+  license: Apache-2.0
+  license_family: APACHE
+  license_file: LICENSE
+  summary: Core tools for working with polygenic scores (PGS) and the PGS Catalog.
+build:
+  noarch: python
+  number: 0
+  run_exports:
+  - null
+  script: -m pip install . -vvv --no-deps --no-build-isolation --no-deps
+extra:
+  recipe-maintainers:
+  - nebfield
+package:
+  name: pgscatalog.core
+  version: 1.1.1
+requirements:
+  host:
+  - python >=3.10
+  - setuptools-scm
+  - pip
+  - hatchling
+  run:
+  - python >=3.10
+  - httpx >=0.28.1
+  - tenacity >=9.0.0
+  - pyliftover >=0.4.1
+  - xopen >=2.0.2
+  - tqdm >=4.67.1
+  - natsort >=8.4.0
+  - pydantic >=2.10.6
+  - python-zlib-ng
+source:
+  sha256: a8448ed29e7a418999e8fc6a1f1a96454bd9e65d7092ffddd3f4e2767935a1d6
+  url: https://pypi.io/packages/source/p/pgscatalog.core/pgscatalog_core-1.1.1.tar.gz
+test:
+  commands:
+  - pgscatalog-download --help
+  - pgscatalog-combine --help
+  - pgscatalog-format --help
+  - pgscatalog-relabel --help
+  imports:
+  - pgscatalog.core

@@ -1,0 +1,45 @@
+about:
+  dev_url: https://github.com/TurakhiaLab/panman
+  doc_url: https://turakhia.ucsd.edu/panman
+  home: https://github.com/TurakhiaLab/panman
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE
+  summary: PanMAN
+build:
+  number: 0
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+package:
+  name: panman
+  version: 0.1.4
+requirements:
+  build:
+  - null
+  - null
+  - cmake
+  - make
+  host:
+  - zlib
+  - boost-cpp
+  - protobuf <4
+  - tbb-devel <2021.1.1
+  - capnproto
+  - jsoncpp
+  - pkg-config
+  run:
+  - boost-cpp
+  - protobuf <4
+  - tbb-devel <2021.1.1
+  - capnproto
+  - jsoncpp
+source:
+  sha256: ec484ad498a79cd719c3121bf4d02152d33cb81244c69f3ffe4b4d829ae1e694
+  url: https://github.com/TurakhiaLab/panman/archive/refs/tags/v0.1.4.tar.gz
+test:
+  commands:
+  - panmanUtils --help

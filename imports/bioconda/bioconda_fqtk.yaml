@@ -1,0 +1,39 @@
+about:
+  dev_url: https://github.com/fulcrumgenomics/fqtk
+  doc_url: https://github.com/fulcrumgenomics/fqtk/blob/v0.4.0/README.md
+  home: https://github.com/fulcrumgenomics/fqtk
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE
+  summary: A toolkit for working with FASTQ files.
+build:
+  number: 0
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+  identifiers:
+  - DOI:10.5281/zenodo.13345414
+  recipe-maintainers:
+  - nh13
+  - tfenne
+package:
+  name: fqtk
+  version: 0.4.0
+requirements:
+  build:
+  - null
+  - null
+  - null
+  - pkg-config
+  - make
+  - cmake
+  - cargo-bundle-licenses
+source:
+  sha256: 9e4d1bc7edd2211db2c5831ecc21b8e92c6e5c93dc99f29be8a01bc83f608040
+  url: https://github.com/fulcrumgenomics/fqtk/archive/v0.4.0.tar.gz
+test:
+  commands:
+  - fqtk --help

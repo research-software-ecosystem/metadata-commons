@@ -1,0 +1,32 @@
+about:
+  dev_url: https://github.com/refresh-bio/kmer-db
+  home: https://github.com/refresh-bio/kmer-db
+  license: GPL-3.0-or-later
+  license_family: GPL3
+  license_file: LICENSE
+  summary: Kmer-db is a fast and memory-efficient tool for estimating evolutionary
+    distances.
+build:
+  number: 0
+  run_exports:
+  - null
+  script:
+  - mkdir -p "${PREFIX}/bin"
+  - install -v -m 0755 kmer-db "${PREFIX}/bin"
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+  skip-lints:
+  - should_be_noarch_generic
+  - should_not_be_noarch_source
+package:
+  name: kmer-db
+  version: 2.3.1
+source:
+  sha256: 5458b889f33c1dd2fd350d4e4d89c79dc351ecc4cfc0cb9bc87edaca2f1acfec
+  url: https://github.com/refresh-bio/kmer-db/releases/download/v2.3.1/kmer-db-v2.3.1-arm64_mac.tar.gz
+test:
+  commands:
+  - kmer-db > /dev/null
+  - kmer-db -help

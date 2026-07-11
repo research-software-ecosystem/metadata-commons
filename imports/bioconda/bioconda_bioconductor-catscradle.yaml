@@ -1,0 +1,81 @@
+about:
+  description: This package addresses two broad areas.  It allows for in-depth analysis
+    of spatial transcriptomic data by identifying tissue neighbourhoods.  These are
+    contiguous regions of tissue surrounding individual cells.  'CatsCradle' allows
+    for the categorisation of neighbourhoods by the cell types contained in them and
+    the genes expressed in them.  In particular, it produces Seurat objects whose
+    individual elements are neighbourhoods rather than cells.  In addition, it enables
+    the categorisation and annotation of genes by producing Seurat objects whose elements
+    are genes.
+  home: https://bioconductor.org/packages/3.22/bioc/html/CatsCradle.html
+  license: MIT + file LICENSE
+  license_file: LICENSE
+  summary: This package provides methods for analysing spatial transcriptomics data
+    and for discovering gene clusters
+build:
+  noarch: generic
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+package:
+  name: bioconductor-catscradle
+  version: 1.4.2
+requirements:
+  host:
+  - bioconductor-ebimage >=4.52.0,<4.53.0
+  - bioconductor-s4vectors >=0.48.0,<0.49.0
+  - bioconductor-singlecellexperiment >=1.32.0,<1.33.0
+  - bioconductor-spatialexperiment >=1.20.0,<1.21.0
+  - bioconductor-summarizedexperiment >=1.40.0,<1.41.0
+  - r-abind
+  - r-base
+  - r-data.table
+  - r-geometry
+  - r-ggplot2
+  - r-igraph
+  - r-matrix
+  - r-msigdbr
+  - r-networkd3
+  - r-pheatmap
+  - r-pracma
+  - r-rdist
+  - r-reshape2
+  - r-rfast
+  - r-seurat >=5.0.1
+  - r-seuratobject
+  - r-stringr
+  run:
+  - bioconductor-ebimage >=4.52.0,<4.53.0
+  - bioconductor-s4vectors >=0.48.0,<0.49.0
+  - bioconductor-singlecellexperiment >=1.32.0,<1.33.0
+  - bioconductor-spatialexperiment >=1.20.0,<1.21.0
+  - bioconductor-summarizedexperiment >=1.40.0,<1.41.0
+  - r-abind
+  - r-base
+  - r-data.table
+  - r-geometry
+  - r-ggplot2
+  - r-igraph
+  - r-matrix
+  - r-msigdbr
+  - r-networkd3
+  - r-pheatmap
+  - r-pracma
+  - r-rdist
+  - r-reshape2
+  - r-rfast
+  - r-seurat >=5.0.1
+  - r-seuratobject
+  - r-stringr
+source:
+  md5: 7421101488b1332d702c278cc8ac9f93
+  url:
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/CatsCradle_1.4.2.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/CatsCradle/CatsCradle_1.4.2.tar.gz
+  - https://bioarchive.galaxyproject.org/CatsCradle_1.4.2.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-catscradle/bioconductor-catscradle_1.4.2_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('CatsCradle')"

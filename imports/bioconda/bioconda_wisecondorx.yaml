@@ -1,0 +1,40 @@
+about:
+  home: https://github.com/CenterForMedicalGeneticsGhent/wisecondorX
+  license: Attribution-NonCommercial-ShareAlike CC BY-NC-SA
+  summary: WIthin-SamplE COpy Number aberration DetectOR, including sex chromosomes
+build:
+  noarch: python
+  number: 0
+  run_exports:
+  - null
+  script: ' -m pip install . --no-deps -vv'
+package:
+  name: wisecondorx
+  version: 1.3.2
+requirements:
+  host:
+  - python >=3.10
+  - setuptools
+  run:
+  - pandas >=3.0
+  - python >=3.6
+  - pysam >=0.23
+  - scipy >=1.17
+  - scikit-learn >=1.8
+  - numpy >=2.4
+  - matplotlib-base >=3.10
+  - r-jsonlite >=1.8
+  - bioconductor-dnacopy >=1
+  - typer
+source:
+  sha256: 0311d8920b281ef75aef410c424e97e07fff5ba6feb64781abc2675f6b658f34
+  url: https://github.com/CenterForMedicalGeneticsGhent/wisecondorX/archive/v1.3.2.tar.gz
+test:
+  commands:
+  - WisecondorX --help
+  - WisecondorX convert --help
+  - WisecondorX gender --help
+  - WisecondorX newref --help
+  - WisecondorX predict --help
+  imports:
+  - wisecondorx

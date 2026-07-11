@@ -1,0 +1,39 @@
+about:
+  home: https://github.com/RIVM-bioinformatics/biovalid
+  license: AGPL-3.0-or-later
+  license_file: LICENCE
+  summary: Quick validation of common bioinformatics files in pure Python
+build:
+  entry_points:
+  - biovalid = biovalid.__main__:run_cli
+  noarch: python
+  number: 0
+  run_exports:
+  - null
+  script: -m pip install . -vv --no-deps --no-build-isolation
+extra:
+  recipe-maintainers:
+  - raaijmag
+  - florianzwagemaker
+  - ids-bioinformatics
+package:
+  name: biovalid
+  version: 0.5.0
+requirements:
+  host:
+  - python >=3.10
+  - hatchling >=1.0
+  - pip
+  run:
+  - python >=3.10
+source:
+  sha256: af6627605e4ad3e7d456600ece858140d7c3c18f7f17b1884b26858151c5815a
+  url: https://pypi.org/packages/source/b/biovalid/biovalid-0.5.0.tar.gz
+test:
+  commands:
+  - pip check
+  - biovalid --help
+  imports:
+  - biovalid
+  requires:
+  - pip

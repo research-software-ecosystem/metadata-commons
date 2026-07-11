@@ -1,0 +1,33 @@
+about:
+  dev_url: https://github.com/hildebra/sdm
+  home: https://github.com/hildebra/sdm
+  license: GPL-3.0-or-later
+  license_family: GPL3
+  license_file: LICENSE
+  summary: sdm - simple demultiplex tool for FASTQ demultiplexing and dereplication.
+build:
+  number: 0
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+  skip-lints:
+  - compiler_needs_stdlib_c
+package:
+  name: sdm
+  version: '3.37'
+requirements:
+  build:
+  - null
+  - make
+  - pkg-config
+  host:
+  - zlib
+source:
+  sha256: 8d85aa0caafcc816929bae1aac1b433f79e610829e2c245307fc25c279f27421
+  url: https://github.com/hildebra/sdm/archive/v3.37.tar.gz
+test:
+  commands:
+  - sdm

@@ -1,0 +1,53 @@
+about:
+  dev_url: https://github.com/briney/nwalign3
+  home: https://github.com/briney/nwalign3
+  license: BSD-4-Clause-UC
+  license_family: BSD
+  summary: Updated version of nwalign (Needleman-Wunsch global sequence alignment)
+    with Python 3.x compatibility.
+build:
+  entry_points:
+  - nwalign3 = nwalign3:main
+  number: 1
+  run_exports:
+  - null
+  script:
+  - export CPPFLAGS="${CPPFLAGS} -I${PREFIX}/include"
+  - export LDFLAGS="${LDFLAGS} -L${PREFIX}/lib"
+  - export CFLAGS="${CFLAGS} -O3"
+  - sed -i.bak "s|0.1.5|${PKG_VERSION}|" setup.py
+  - sed -i.bak 's|find_packages|find_namespace_packages|' setup.py
+  - rm -f *.bak
+  - -m pip install . -vvv --no-deps --no-build-isolation --no-cache-dir --use-pep517
+  skip: true
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+  identifiers:
+  - biotools:nwalign3
+  recipe-maintainers:
+  - alienzj
+package:
+  name: nwalign3
+  version: 0.1.6
+requirements:
+  build:
+  - null
+  host:
+  - pip
+  - python
+  - setuptools
+  - cython
+  - numpy
+  run:
+  - python
+  - numpy
+source:
+  sha256: ca8bee7edc96149d28a88006dbb662abd4cf66824718fed0ab14a88f06276b6c
+  url: https://github.com/briney/nwalign3/archive/v0.1.6.tar.gz
+test:
+  commands:
+  - nwalign3 --help
+  imports:
+  - nwalign3

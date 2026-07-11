@@ -1,0 +1,42 @@
+about:
+  home: https://github.com/ljwharbers/flexiformatter
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE
+  summary: Moving flexiplex barcode and UMI to bam tags
+build:
+  entry_points:
+  - flexiformatter = flexiformatter.reformat_flexiplex_tags:app
+  noarch: python
+  number: 0
+  run_exports:
+  - null
+  script: -m pip install . -vv --no-deps --no-build-isolation
+extra:
+  recipe-maintainers:
+  - ljwharbers
+package:
+  name: flexiformatter
+  version: 1.0.6
+requirements:
+  host:
+  - python >=3.7
+  - pip
+  - setuptools <81
+  run:
+  - python >=3.7
+  - typer >=0.9.0
+  - simplesam
+  - samtools
+source:
+  sha256: 1db88dab5c67105ebdb110f4c6cd8f7dd40e87a21018be93eede8d037d1d8215
+  url: https://pypi.io/packages/source/f/flexiformatter/flexiformatter-1.0.6.tar.gz
+test:
+  commands:
+  - flexiformatter --help
+  - samtools --help
+  imports:
+  - flexiformatter
+  - simplesam
+  requires:
+  - pip

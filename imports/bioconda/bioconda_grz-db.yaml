@@ -1,0 +1,38 @@
+about:
+  home: https://github.com/BfArM-MVH/grz-tools
+  license: MIT
+  summary: SQL models for grz-cli and grz-watchdog
+build:
+  noarch: python
+  number: 1
+  run_exports:
+  - null
+  script: -m pip install . -vv --no-deps --no-build-isolation
+extra:
+  recipe-maintainers:
+  - tedil
+  - Hoeze
+package:
+  name: grz-db
+  version: 2.1.2
+requirements:
+  host:
+  - python >=3.12
+  - hatchling
+  - pip
+  run:
+  - alembic >=1.16.1
+  - cryptography >=45.0.3,<49
+  - sqlmodel >=0.0.27
+  - grz-pydantic-models >=2.7,<3
+  - psycopg >=3.2,<4
+source:
+  sha256: 4631ab7749c4f20c9b68140693979cd3e24c2a5f92f0c4d19ab7d52f1c23c368
+  url: https://pypi.org/packages/source/g/grz-db/grz_db-2.1.2.tar.gz
+test:
+  commands:
+  - pip check
+  imports:
+  - grz_db
+  requires:
+  - pip

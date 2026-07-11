@@ -1,0 +1,33 @@
+about:
+  dev_url: https://metacpan.org/pod/Algorithm::Cluster
+  home: https://metacpan.org/pod/Algorithm::Cluster
+  license: Unknown
+  summary: Perl interface to the C Clustering Library.
+build:
+  number: 6
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+package:
+  name: perl-algorithm-cluster
+  version: '1.59'
+requirements:
+  build:
+  - make
+  - null
+  - null
+  host:
+  - perl
+  - perl-extutils-makemaker
+  run:
+  - perl
+source:
+  sha256: cb53da17f502aa8d9285e151111d7c59f989078241f687b59ef3db0dd71dfcdf
+  url: https://cpan.metacpan.org/authors/id/M/MD/MDEHOON/Algorithm-Cluster-1.59.tar.gz
+test:
+  imports:
+  - Algorithm::Cluster
+  - Algorithm::Cluster::Record

@@ -1,0 +1,30 @@
+about:
+  doc_url: https://bioinformatics.mdanderson.org/public-software/famseq
+  home: https://bioinformatics.mdanderson.org/public-software/famseq
+  license: GPL-3.0-or-later
+  license_family: GPL3
+  summary: FamSeq is a computational tool for calculating probability of variants
+    in family-based sequencing data.
+build:
+  number: 8
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+  identifiers:
+  - doi:10.1073/pnas.1222158110
+package:
+  name: famseq
+  version: 1.0.3
+requirements:
+  build:
+  - make
+  - null
+source:
+  md5: 8c0467307967a24ead62d212c8878ef8
+  url: http://bioinformatics.mdanderson.org/Software/FamSeq/FamSeq1.0.3.tar.gz
+test:
+  commands:
+  - FamSeq -h

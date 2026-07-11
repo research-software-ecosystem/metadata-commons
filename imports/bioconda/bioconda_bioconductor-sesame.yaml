@@ -1,0 +1,69 @@
+about:
+  description: Tools For analyzing Illumina Infinium DNA methylation arrays. SeSAMe
+    provides utilities to support analyses of multiple generations of Infinium DNA
+    methylation BeadChips, including preprocessing, quality control, visualization
+    and inference. SeSAMe features accurate detection calling, intelligent inference
+    of ethnicity, sex and advanced quality control routines.
+  home: https://bioconductor.org/packages/3.22/bioc/html/sesame.html
+  license: MIT + file LICENSE
+  license_file: LICENSE
+  summary: SEnsible Step-wise Analysis of DNA MEthylation BeadChips
+build:
+  noarch: generic
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+package:
+  name: bioconductor-sesame
+  version: 1.28.1
+requirements:
+  host:
+  - bioconductor-biocfilecache >=3.0.0,<3.1.0
+  - bioconductor-biocparallel >=1.44.0,<1.45.0
+  - bioconductor-genomicranges >=1.62.0,<1.63.0
+  - bioconductor-iranges >=2.44.0,<2.45.0
+  - bioconductor-preprocesscore >=1.72.0,<1.73.0
+  - bioconductor-s4vectors >=0.48.0,<0.49.0
+  - bioconductor-seqinfo >=1.0.0,<1.1.0
+  - bioconductor-sesamedata >=1.28.0,<1.29.0
+  - bioconductor-summarizedexperiment >=1.40.0,<1.41.0
+  - r-base
+  - r-dplyr
+  - r-ggplot2
+  - r-mass
+  - r-readr
+  - r-reshape2
+  - r-stringr
+  - r-tibble
+  - r-wheatmap >=0.2.0
+  run:
+  - bioconductor-biocfilecache >=3.0.0,<3.1.0
+  - bioconductor-biocparallel >=1.44.0,<1.45.0
+  - bioconductor-genomicranges >=1.62.0,<1.63.0
+  - bioconductor-iranges >=2.44.0,<2.45.0
+  - bioconductor-preprocesscore >=1.72.0,<1.73.0
+  - bioconductor-s4vectors >=0.48.0,<0.49.0
+  - bioconductor-seqinfo >=1.0.0,<1.1.0
+  - bioconductor-sesamedata >=1.28.0,<1.29.0
+  - bioconductor-summarizedexperiment >=1.40.0,<1.41.0
+  - r-base
+  - r-dplyr
+  - r-ggplot2
+  - r-mass
+  - r-readr
+  - r-reshape2
+  - r-stringr
+  - r-tibble
+  - r-wheatmap >=0.2.0
+source:
+  md5: 45b5ce3561902f0869487000ac930a2a
+  url:
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/sesame_1.28.1.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/sesame/sesame_1.28.1.tar.gz
+  - https://bioarchive.galaxyproject.org/sesame_1.28.1.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-sesame/bioconductor-sesame_1.28.1_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('sesame')"

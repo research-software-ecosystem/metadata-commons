@@ -1,0 +1,49 @@
+about:
+  description: 'Processed RNA-seq data for 1,139 human primary colorectal tissue samples
+    across three phenotypes, including tumor, normal adjacent-to-tumor, and healthy,
+    available as Synapse ID syn22237139 on synapse.org. Data have been parsed into
+    SummarizedExperiment objects available via ExperimentHub to facilitate reproducibility
+    and extension of results from Dampier et al. (PMCID: PMC7386360, PMID: 32764205).'
+  home: https://bioconductor.org/packages/3.22/data/experiment/html/FieldEffectCrc.html
+  license: Artistic-2.0
+  summary: Tumor, tumor-adjacent normal, and healthy colorectal transcriptomes as
+    SummarizedExperiment objects
+build:
+  noarch: generic
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+package:
+  name: bioconductor-fieldeffectcrc
+  version: 1.20.0
+requirements:
+  host:
+  - bioconductor-annotationhub >=4.0.0,<4.1.0
+  - bioconductor-biocstyle >=2.38.0,<2.39.0
+  - bioconductor-deseq2 >=1.50.0,<1.51.0
+  - bioconductor-experimenthub >=3.0.0,<3.1.0
+  - bioconductor-summarizedexperiment >=1.40.0,<1.41.0
+  - r-base
+  - r-runit
+  run:
+  - bioconductor-annotationhub >=4.0.0,<4.1.0
+  - bioconductor-biocstyle >=2.38.0,<2.39.0
+  - bioconductor-deseq2 >=1.50.0,<1.51.0
+  - bioconductor-experimenthub >=3.0.0,<3.1.0
+  - bioconductor-summarizedexperiment >=1.40.0,<1.41.0
+  - r-base
+  - r-runit
+  - curl
+  - bioconductor-data-packages >=20260207
+source:
+  md5: 3e33992501bd0dd0aabb5f4d78102b69
+  url:
+  - https://bioconductor.org/packages/3.22/data/experiment/src/contrib/FieldEffectCrc_1.20.0.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/FieldEffectCrc/FieldEffectCrc_1.20.0.tar.gz
+  - https://bioarchive.galaxyproject.org/FieldEffectCrc_1.20.0.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-fieldeffectcrc/bioconductor-fieldeffectcrc_1.20.0_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('FieldEffectCrc')"

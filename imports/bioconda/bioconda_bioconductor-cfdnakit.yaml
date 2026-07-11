@@ -1,0 +1,60 @@
+about:
+  description: This package provides basic functions for analyzing shallow whole-genome
+    sequencing (~0.3X or more) of cell-free DNA (cfDNA). The package basically extracts
+    the length of cfDNA fragments and aids the vistualization of fragment-length information.
+    The package also extract fragment-length information per non-overlapping fixed-sized
+    bins and used it for calculating ctDNA estimation score (CES).
+  home: https://bioconductor.org/packages/3.22/bioc/html/cfdnakit.html
+  license: GPL-3
+  license_file: /lib/R/share/licenses/GPL-3
+  summary: Fragmen-length analysis package from high-throughput sequencing of cell-free
+    DNA (cfDNA)
+build:
+  noarch: generic
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+package:
+  name: bioconductor-cfdnakit
+  version: 1.8.0
+requirements:
+  host:
+  - bioconductor-biobase >=2.70.0,<2.71.0
+  - bioconductor-genomeinfodb >=1.46.0,<1.47.0
+  - bioconductor-genomicranges >=1.62.0,<1.63.0
+  - bioconductor-iranges >=2.44.0,<2.45.0
+  - bioconductor-qdnaseq >=1.46.0,<1.47.0
+  - bioconductor-rsamtools >=2.26.0,<2.27.0
+  - bioconductor-s4vectors >=0.48.0,<0.49.0
+  - r-base
+  - r-dplyr
+  - r-ggplot2
+  - r-magrittr
+  - r-pscbs
+  - r-rlang
+  run:
+  - bioconductor-biobase >=2.70.0,<2.71.0
+  - bioconductor-genomeinfodb >=1.46.0,<1.47.0
+  - bioconductor-genomicranges >=1.62.0,<1.63.0
+  - bioconductor-iranges >=2.44.0,<2.45.0
+  - bioconductor-qdnaseq >=1.46.0,<1.47.0
+  - bioconductor-rsamtools >=2.26.0,<2.27.0
+  - bioconductor-s4vectors >=0.48.0,<0.49.0
+  - r-base
+  - r-dplyr
+  - r-ggplot2
+  - r-magrittr
+  - r-pscbs
+  - r-rlang
+source:
+  md5: 091b6f181fdb6b7777a7bc71a0230e47
+  url:
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/cfdnakit_1.8.0.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/cfdnakit/cfdnakit_1.8.0.tar.gz
+  - https://bioarchive.galaxyproject.org/cfdnakit_1.8.0.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-cfdnakit/bioconductor-cfdnakit_1.8.0_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('cfdnakit')"

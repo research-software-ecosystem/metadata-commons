@@ -1,0 +1,33 @@
+about:
+  home: https://github.com/SorenHeidelbach/memopair
+  license: MIT
+  license_file:
+  - LICENSE
+  - THIRDPARTY.yml
+  summary: A package for identifying methylated motif pairs
+build:
+  number: 0
+  run_exports:
+  - null
+  script:
+  - cargo-bundle-licenses --format yaml --output THIRDPARTY.yml
+  - cargo install -v --locked --no-track --root $PREFIX --path .
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+  recipe-maintainers:
+  - SorenHeidelbach
+package:
+  name: memopair
+  version: 0.1.6
+requirements:
+  build:
+  - null
+  - cargo-bundle-licenses
+source:
+  sha256: 124f83d841ba140fd582f82dd1a52a6e303b013f7a0013aaa6b0d2dc43c6a189
+  url: https://github.com/SorenHeidelbach/memopair/archive/v0.1.6.tar.gz
+test:
+  commands:
+  - memopair --version

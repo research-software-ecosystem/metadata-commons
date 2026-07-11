@@ -1,0 +1,64 @@
+about:
+  description: 'UniFrac is a commonly phylogenetic diversity distance metric used
+    in
+
+    microbiome research. The metric relates two microbiome samples together
+
+    within the context of an evolutionary history, and produces a distance
+
+    that corresponds to how similar two samples by the amount of overlapping
+
+    branch length. This package contains command line utilities and
+
+    a shared library.
+
+    '
+  dev_url: https://github.com/biocore/unifrac-binaries
+  doc_url: https://github.com/biocore/unifrac-binaries
+  home: https://github.com/biocore/unifrac-binaries
+  license: BSD-3-Clause
+  license_family: BSD
+  license_file: LICENSE
+  summary: Fast phylogenetic diversity calculations
+build:
+  number: 0
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - osx-arm64
+  recipe-maintainers:
+  - sfiligoi
+  - wasade
+package:
+  name: unifrac-binaries
+  version: '1.6'
+requirements:
+  build:
+  - null
+  - null
+  - llvm-openmp >=20.1.8
+  - libgomp
+  - hdf5 =*=nompi*
+  - hdf5-static =*=nompi*
+  - make
+  - curl
+  host:
+  - lz4
+  - zlib
+  - scikit-bio-binaries
+  - libaec
+  run:
+  - lz4
+  - llvm-openmp >=20.1.8
+  - libgomp
+  - zlib
+  - scikit-bio-binaries
+  - libaec
+source:
+  sha256: f4100fd0d9b3423a6afa133dc3fcfd17f6800c6f99a74b9318d652b9966bde58
+  url: https://github.com/biocore/unifrac-binaries/archive/refs/tags/v1.6.tar.gz
+test:
+  commands:
+  - ssu --help
+  - faithpd --help

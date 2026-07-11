@@ -1,0 +1,70 @@
+about:
+  description: Methods and functionality to analyse flow data that is beyond the basic
+    infrastructure provided by the flowCore package.
+  home: https://bioconductor.org/packages/3.22/bioc/html/flowStats.html
+  license: Artistic-2.0
+  summary: Statistical methods for the analysis of flow cytometry data
+build:
+  noarch: generic
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+extra:
+  parent_recipe:
+    name: bioconductor-flowstats
+    path: recipes/bioconductor-flowstats
+    version: 3.40.0
+package:
+  name: bioconductor-flowstats
+  version: 4.22.0
+requirements:
+  host:
+  - bioconductor-biobase >=2.70.0,<2.71.0
+  - bioconductor-biocgenerics >=0.56.0,<0.57.0
+  - bioconductor-flowcore >=2.22.0,<2.23.0
+  - bioconductor-flowviz >=1.74.0,<1.75.0
+  - bioconductor-flowworkspace >=4.22.0,<4.23.0
+  - bioconductor-ncdfflow >=2.56.0,<2.57.0
+  - r-base
+  - r-clue
+  - r-cluster
+  - r-corpcor
+  - r-fda >=2.2.6
+  - r-kernsmooth
+  - r-ks
+  - r-lattice
+  - r-mass
+  - r-mnormt
+  - r-rcolorbrewer
+  - r-rrcov
+  run:
+  - bioconductor-biobase >=2.70.0,<2.71.0
+  - bioconductor-biocgenerics >=0.56.0,<0.57.0
+  - bioconductor-flowcore >=2.22.0,<2.23.0
+  - bioconductor-flowviz >=1.74.0,<1.75.0
+  - bioconductor-flowworkspace >=4.22.0,<4.23.0
+  - bioconductor-ncdfflow >=2.56.0,<2.57.0
+  - r-base
+  - r-clue
+  - r-cluster
+  - r-corpcor
+  - r-fda >=2.2.6
+  - r-kernsmooth
+  - r-ks
+  - r-lattice
+  - r-mass
+  - r-mnormt
+  - r-rcolorbrewer
+  - r-rrcov
+source:
+  md5: 7d3d0686722860f6758b65aeeef4a355
+  url:
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/flowStats_4.22.0.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/flowStats/flowStats_4.22.0.tar.gz
+  - https://bioarchive.galaxyproject.org/flowStats_4.22.0.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-flowstats/bioconductor-flowstats_4.22.0_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('flowStats')"

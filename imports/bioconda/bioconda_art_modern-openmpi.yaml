@@ -1,0 +1,52 @@
+about:
+  dev_url: https://github.com/YU-Zhejian/art_modern
+  doc_url: https://github.com/YU-Zhejian/art_modern/releases/download/1.5.0/art_modern.pdf
+  home: https://github.com/YU-Zhejian/art_modern
+  license: GPL-3.0-only
+  license_family: GPL3
+  license_file: License.md
+  summary: Modernized ART simulator of diverse Next-Generation Sequencing reads with
+    MPI support
+build:
+  number: 0
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+  container:
+    extended-base: true
+package:
+  name: art_modern-openmpi
+  version: 1.5.0
+requirements:
+  build:
+  - null
+  - cmake >=3.17
+  - make
+  - pkg-config
+  - coreutils >=8.28
+  - bash
+  - null
+  - python
+  host:
+  - libboost-devel >=1.90.0,<2
+  - zlib
+  - openmpi
+  - htslib
+  - fmt
+  run:
+  - openmpi
+  - libboost >=1.90.0,<2
+source:
+  sha256: b707de50683e4b430df906e9018dca3f0d95b2f60b463c5789dc38d02c75e460
+  url: https://github.com/YU-Zhejian/art_modern/archive/refs/tags/1.5.0.zip
+test:
+  commands:
+  - mpiexec --allow-run-as-root -x ART_NO_LOG_DIR=1 -n 2 art_modern-mpi --version
+    2>&1 | grep -q "1.5.0"
+  - mpiexec --allow-run-as-root -x ART_NO_LOG_DIR=1 -n 1 art_profile_builder-mpi --version
+    2>&1 | grep -q "1.5.0"
+  - mpiexec --allow-run-as-root -x ART_NO_LOG_DIR=1 -n 1 am_compress-mpi --version
+    2>&1 | grep -q "1.5.0"

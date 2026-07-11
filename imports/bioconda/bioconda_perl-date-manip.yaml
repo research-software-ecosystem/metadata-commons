@@ -1,0 +1,67 @@
+about:
+  doc_url: https://metacpan.org/pod/Date::Manip
+  home: https://metacpan.org/pod/Date::Manip
+  license: Perl_5
+  summary: Date manipulation routines.
+build:
+  noarch: generic
+  number: 0
+  run_exports:
+  - null
+package:
+  name: perl-date-manip
+  version: '6.99'
+requirements:
+  build:
+  - make
+  host:
+  - perl
+  - perl-data-dumper
+  - perl-encode
+  - perl-storable
+  - perl-carp
+  - perl-extutils-makemaker
+  - perl-test-inter
+  run:
+  - perl
+  - perl-data-dumper
+  - perl-carp
+  - perl-storable
+  - perl-encode
+source:
+  sha256: 3239e5f671e1af74d4a91b8278f3ae64f214184f7fc27ed4f80409ec2e6c4f54
+  url: https://cpan.metacpan.org/authors/id/S/SB/SBECK/Date-Manip-6.99.tar.gz
+test:
+  imports:
+  - Date::Manip
+  - Date::Manip::Base
+  - Date::Manip::DM5
+  - Date::Manip::DM5abbrevs
+  - Date::Manip::DM6
+  - Date::Manip::Date
+  - Date::Manip::Delta
+  - Date::Manip::Recur
+  - Date::Manip::TZ
+  - Date::Manip::TZ::a00
+  - Date::Manip::TZ::afabid00
+  - Date::Manip::TZ_Base
+  - Date::Manip::TZdata
+  - Date::Manip::Zones
+  - Date::Manip::Lang::catalan
+  - Date::Manip::Lang::danish
+  - Date::Manip::Lang::dutch
+  - Date::Manip::Lang::english
+  - Date::Manip::Lang::finnish
+  - Date::Manip::Lang::french
+  - Date::Manip::Lang::german
+  - Date::Manip::Lang::index
+  - Date::Manip::Lang::italian
+  - Date::Manip::Lang::norwegian
+  - Date::Manip::Lang::polish
+  - Date::Manip::Lang::portugue
+  - Date::Manip::Lang::romanian
+  - Date::Manip::Lang::russian
+  - Date::Manip::Lang::spanish
+  - Date::Manip::Lang::swedish
+  - Date::Manip::Lang::turkish
+  - Date::Manip::Obj

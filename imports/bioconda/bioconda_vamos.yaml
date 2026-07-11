@@ -1,0 +1,39 @@
+about:
+  dev_url: https://github.com/ChaissonLab/vamos
+  home: https://github.com/ChaissonLab/vamos
+  license: GPL-2.0-only
+  license_family: GPL
+  license_file: LICENSE.txt
+  summary: VNTR annotation using efficient motif selection.
+build:
+  number: 0
+  run_exports:
+  - null
+  skip: true
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+package:
+  name: vamos
+  version: 3.0.6
+requirements:
+  build:
+  - make
+  - cmake <3.29
+  - null
+  - null
+  host:
+  - zlib
+  - htslib
+  - boost-cpp
+  run:
+  - htslib
+source:
+  patches:
+  - vamos-aarch64.patch
+  sha256: 227889bd61a5004b0419daaf37d15c5706192fc8c00846a5a73c3e36500a2646
+  url: https://github.com/ChaissonLab/vamos/archive/refs/tags/vamos-v3.0.6.tar.gz
+test:
+  commands:
+  - vamos | grep 'Usage'

@@ -1,0 +1,34 @@
+about:
+  dev_url: https://github.com/codialab/gfaffix
+  home: https://github.com/codialab/GFAffix
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE.md
+  summary: GFAffix identifies and collapses walk-preserving shared affixes in variation
+    graphs
+build:
+  number: 0
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - osx-arm64
+  - linux-aarch64
+  recipe-maintainers:
+  - danydoerr
+package:
+  name: gfaffix
+  version: 0.2.2
+requirements:
+  build:
+  - null
+  - null
+  - null
+  - cmake
+  - make
+source:
+  sha256: c92769443999780cca9ed1b9a9b4f6444a97200aef2178c335c4d7623abd4708
+  url: https://github.com/codialab/GFAffix/archive/refs/tags/0.2.2.tar.gz
+test:
+  commands:
+  - gfaffix --help

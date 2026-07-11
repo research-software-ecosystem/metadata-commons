@@ -1,0 +1,53 @@
+about:
+  description: The NGS (Next-Generation Sequencing) reads from FFPE (Formalin-Fixed
+    Paraffin-Embedded) samples contain numerous artifact chimeric reads (ACRS), which
+    can lead to false positive structural variant calls. These ACRs are derived from
+    the combination of two single-stranded DNA (ss-DNA) fragments with short reverse
+    complementary regions (SRCRs). This package simulates these artifact chimeric
+    reads as well as normal reads for FFPE samples on the whole genome / several chromosomes
+    / large regions.
+  home: https://bioconductor.org/packages/3.22/bioc/html/SimFFPE.html
+  license: LGPL-3
+  license_file: /lib/R/share/licenses/LGPL-3
+  summary: NGS Read Simulator for FFPE Tissue
+build:
+  noarch: generic
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+package:
+  name: bioconductor-simffpe
+  version: 1.22.0
+requirements:
+  host:
+  - bioconductor-biostrings >=2.78.0,<2.79.0
+  - bioconductor-genomicranges >=1.62.0,<1.63.0
+  - bioconductor-iranges >=2.44.0,<2.45.0
+  - bioconductor-rsamtools >=2.26.0,<2.27.0
+  - r-base
+  - r-doparallel
+  - r-dplyr
+  - r-foreach
+  - r-truncnorm
+  run:
+  - bioconductor-biostrings >=2.78.0,<2.79.0
+  - bioconductor-genomicranges >=1.62.0,<1.63.0
+  - bioconductor-iranges >=2.44.0,<2.45.0
+  - bioconductor-rsamtools >=2.26.0,<2.27.0
+  - r-base
+  - r-doparallel
+  - r-dplyr
+  - r-foreach
+  - r-truncnorm
+source:
+  md5: 95f649560ed144f440d2e3ec146e6fda
+  url:
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/SimFFPE_1.22.0.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/SimFFPE/SimFFPE_1.22.0.tar.gz
+  - https://bioarchive.galaxyproject.org/SimFFPE_1.22.0.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-simffpe/bioconductor-simffpe_1.22.0_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('SimFFPE')"

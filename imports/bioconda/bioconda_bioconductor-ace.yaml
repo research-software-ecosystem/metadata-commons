@@ -1,0 +1,40 @@
+about:
+  description: Uses segmented copy number data to estimate tumor cell percentage and
+    produce copy number plots displaying absolute copy numbers.
+  home: https://bioconductor.org/packages/3.22/bioc/html/ACE.html
+  license: GPL-2
+  license_file: /lib/R/share/licenses/GPL-2
+  summary: Absolute Copy Number Estimation from Low-coverage Whole Genome Sequencing
+build:
+  noarch: generic
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+package:
+  name: bioconductor-ace
+  version: 1.28.0
+requirements:
+  host:
+  - bioconductor-biobase >=2.70.0,<2.71.0
+  - bioconductor-genomicranges >=1.62.0,<1.63.0
+  - bioconductor-qdnaseq >=1.46.0,<1.47.0
+  - r-base
+  - r-ggplot2
+  run:
+  - bioconductor-biobase >=2.70.0,<2.71.0
+  - bioconductor-genomicranges >=1.62.0,<1.63.0
+  - bioconductor-qdnaseq >=1.46.0,<1.47.0
+  - r-base
+  - r-ggplot2
+source:
+  md5: f0b843e4f3f2fad1aae5cd68307ad8a8
+  url:
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/ACE_1.28.0.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/ACE/ACE_1.28.0.tar.gz
+  - https://bioarchive.galaxyproject.org/ACE_1.28.0.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-ace/bioconductor-ace_1.28.0_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('ACE')"

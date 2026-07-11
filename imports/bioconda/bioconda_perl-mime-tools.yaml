@@ -1,0 +1,51 @@
+about:
+  home: https://metacpan.org/pod/MIME-tools
+  license: perl_5
+  summary: Tools to manipulate MIME messages.
+build:
+  noarch: generic
+  number: 0
+  run_exports:
+  - null
+package:
+  name: perl-mime-tools
+  version: '5.517'
+requirements:
+  build:
+  - make
+  host:
+  - perl
+  - perl-convert-binhex
+  - perl-mailtools
+  - perl-test-deep
+  run:
+  - perl
+  - perl-convert-binhex
+  - perl-mailtools
+source:
+  sha256: e05f8e45d0895164b1fe53a0a8e725dd81e92191a29409e1b48c55f823b03483
+  url: https://cpan.metacpan.org/authors/id/D/DS/DSKOLL/MIME-tools-5.517.tar.gz
+test:
+  imports:
+  - MIME::Body
+  - MIME::Decoder
+  - MIME::Decoder::Base64
+  - MIME::Decoder::BinHex
+  - MIME::Decoder::Binary
+  - MIME::Decoder::Gzip64
+  - MIME::Decoder::NBit
+  - MIME::Decoder::QuotedPrint
+  - MIME::Decoder::UU
+  - MIME::Entity
+  - MIME::Field::ConTraEnc
+  - MIME::Field::ContDisp
+  - MIME::Field::ContType
+  - MIME::Field::ParamVal
+  - MIME::Head
+  - MIME::Parser
+  - MIME::Parser::Filer
+  - MIME::Parser::Reader
+  - MIME::Parser::Results
+  - MIME::Tools
+  - MIME::WordDecoder
+  - MIME::Words

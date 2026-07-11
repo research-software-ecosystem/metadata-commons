@@ -1,0 +1,39 @@
+package: snp-sites
+distribution: debian
+release: sid
+component: main
+version: 2.5.1
+source: snp-sites
+homepage: https://github.com/sanger-pathogens/snp-sites
+license: unknown
+blend: debian-med
+description_md5: 3d6d30c82729352bdf61e8d907df5811
+topics:
+- Genetic variation
+edam_scopes:
+- name: summary
+  input:
+  - data: Sequence alignment (nucleic acid)
+    formats:
+    - FASTA
+  output:
+  - data: Alignment
+    formats:
+    - FASTA
+  - data: Sequence variations
+    formats:
+    - VCF
+    - PHYLIP format
+  function:
+  - SNP calling
+registries:
+- entry: OMICS_24972
+  name: OMICtools
+bib:
+- key: doi
+  value: 10.1099/mgen.0.000056
+popcon:
+- insts: 116
+  olde: 87
+  recent: 23
+  vote: 6

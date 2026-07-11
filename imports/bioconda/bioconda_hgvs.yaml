@@ -1,0 +1,48 @@
+about:
+  dev_url: https://github.com/biocommons/hgvs
+  doc_url: https://hgvs.readthedocs.io
+  home: https://github.com/biocommons/hgvs
+  license: Apache-2.0
+  license_file: LICENSE.txt
+  summary: HGVS Parser, Formatter, Mapper, and Validator.
+build:
+  entry_points:
+  - hgvs-shell = hgvs.shell:shell
+  noarch: python
+  number: 0
+  run_exports:
+  - null
+  script: -m pip install . --no-deps --no-build-isolation --no-cache-dir -vvv
+  script_env:
+  - SETUPTOOLS_SCM_PRETEND_VERSION=1.5.7
+extra:
+  recipe-maintainers:
+  - ok-gitr
+package:
+  name: hgvs
+  version: 1.5.7
+requirements:
+  host:
+  - python >=3.10
+  - pip
+  - setuptools-scm
+  - cython
+  - pytest-runner
+  run:
+  - python >=3.10
+  - attrs >=17.4.0
+  - biocommons.seqrepo >=0.6.11
+  - bioutils >=0.4.0,<1.0
+  - configparser >=3.3.0
+  - importlib-resources
+  - ipython
+  - parsley
+  - pre-commit >=3.4
+  - psycopg2-binary
+source:
+  sha256: 5d76d9cde7bd029d770f3e06ddac5b6bba22da2d8698e39a5a403053d9451251
+  url: https://pypi.org/packages/source/h/hgvs/hgvs-1.5.7.tar.gz
+test:
+  imports:
+  - hgvs
+  - hgvs.dataproviders

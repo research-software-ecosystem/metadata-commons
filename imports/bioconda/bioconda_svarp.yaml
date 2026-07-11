@@ -1,0 +1,39 @@
+about:
+  dev_url: https://github.com/asylvz/SVarp
+  doc_url: https://github.com/asylvz/SVarp
+  home: https://github.com/asylvz/SVarp
+  license: MIT
+  license_file: LICENSE
+  summary: Pangenome-based structural variant discovery (SVarp)
+build:
+  number: 0
+  run_exports:
+  - null
+  skip: true
+extra:
+  identifiers:
+  - doi:10.1101/2024.02.18.580171
+  recipe-maintainers:
+  - asylvz
+package:
+  name: svarp
+  version: 1.2.0
+requirements:
+  build:
+  - null
+  - make
+  - pkg-config
+  host:
+  - zlib
+  - htslib
+  - wget
+  run:
+  - samtools
+  - graphaligner
+  - minimap2
+source:
+  sha256: 17203cbd36a138dec8b4fae9b3afdc7fef45f3289661d0ad1336e81886163f50
+  url: https://github.com/asylvz/SVarp/archive/refs/tags/v1.2.0.tar.gz
+test:
+  commands:
+  - svarp --help

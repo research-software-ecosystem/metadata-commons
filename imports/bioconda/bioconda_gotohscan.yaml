@@ -1,0 +1,32 @@
+about:
+  doc_url: https://www.bioinf.uni-leipzig.de
+  home: https://www.bioinf.uni-leipzig.de
+  license: GPL-3.0-or-later
+  license_family: GPL3
+  summary: A search tool that finds shorter sequences (usually genes) in large database
+    sequences (chromosomes, genomes, ..) by computing all semi-global alignments.
+build:
+  number: 0
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+package:
+  name: gotohscan
+  version: '2.0'
+requirements:
+  build:
+  - make
+  - null
+  - autoconf
+  - automake
+  - libtool
+  - pkg-config
+source:
+  sha256: 4ac522208067fb758181262b9f0e8d2a896b7a0af964defad3b03813cc836247
+  url: http://www.bioinf.uni-leipzig.de/Software/GotohScan/GotohScan_2.0-alpha.tar.gz
+test:
+  commands:
+  - GotohScan2a -h

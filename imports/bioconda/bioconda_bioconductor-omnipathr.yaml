@@ -1,0 +1,109 @@
+about:
+  description: A client for the OmniPath web service (https://www.omnipathdb.org)
+    and many other resources. It also includes functions to transform and pretty print
+    some of the downloaded data, functions to access a number of other resources such
+    as BioPlex, ConsensusPathDB, EVEX, Gene Ontology, Guide to Pharmacology (IUPHAR/BPS),
+    Harmonizome, HTRIdb, Human Phenotype Ontology, InWeb InBioMap, KEGG Pathway, Pathway
+    Commons, Ramilowski et al. 2015, RegNetwork, ReMap, TF census, TRRUST and Vinayagam
+    et al. 2011. Furthermore, OmnipathR features a close integration with the NicheNet
+    method for ligand activity prediction from transcriptomics data, and its R implementation
+    `nichenetr` (available only on github).
+  home: https://bioconductor.org/packages/3.22/bioc/html/OmnipathR.html
+  license: MIT + file LICENSE
+  license_file: LICENSE
+  summary: OmniPath web service client and more
+build:
+  noarch: generic
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+package:
+  name: bioconductor-omnipathr
+  version: 3.18.4
+requirements:
+  host:
+  - r-base
+  - r-checkmate
+  - r-crayon
+  - r-curl
+  - r-digest
+  - r-dplyr >=1.1.0
+  - r-fs
+  - r-httr2
+  - r-igraph
+  - r-jsonlite
+  - r-later
+  - r-logger
+  - r-lubridate
+  - r-magrittr
+  - r-progress
+  - r-purrr
+  - r-r.utils
+  - r-rappdirs
+  - r-readr >=2.0.0
+  - r-readxl
+  - r-rlang
+  - r-rmarkdown
+  - r-rsqlite
+  - r-rvest
+  - r-sessioninfo
+  - r-stringi
+  - r-stringr
+  - r-tibble
+  - r-tidyr
+  - r-tidyselect
+  - r-vctrs
+  - r-withr
+  - r-xml
+  - r-xml2
+  - r-yaml
+  - r-zip
+  run:
+  - r-base
+  - r-checkmate
+  - r-crayon
+  - r-curl
+  - r-digest
+  - r-dplyr >=1.1.0
+  - r-fs
+  - r-httr2
+  - r-igraph
+  - r-jsonlite
+  - r-later
+  - r-logger
+  - r-lubridate
+  - r-magrittr
+  - r-progress
+  - r-purrr
+  - r-r.utils
+  - r-rappdirs
+  - r-readr >=2.0.0
+  - r-readxl
+  - r-rlang
+  - r-rmarkdown
+  - r-rsqlite
+  - r-rvest
+  - r-sessioninfo
+  - r-stringi
+  - r-stringr
+  - r-tibble
+  - r-tidyr
+  - r-tidyselect
+  - r-vctrs
+  - r-withr
+  - r-xml
+  - r-xml2
+  - r-yaml
+  - r-zip
+source:
+  md5: fe18e11221363a76b8b802c60d54d97a
+  url:
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/OmnipathR_3.18.4.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/OmnipathR/OmnipathR_3.18.4.tar.gz
+  - https://bioarchive.galaxyproject.org/OmnipathR_3.18.4.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-omnipathr/bioconductor-omnipathr_3.18.4_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('OmnipathR')"

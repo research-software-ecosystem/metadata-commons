@@ -1,0 +1,46 @@
+about:
+  dev_url: https://github.com/smithlabcode/abismal
+  doc_url: https://github.com/smithlabcode/abismal/blob/v3.3.0/docs/MANUAL.md
+  home: https://github.com/smithlabcode/abismal
+  license: GPL-3.0-only
+  license_family: GPL3
+  license_file: LICENSE
+  summary: abismal is a fast and memory-efficient mapper for short bisulfite sequencing
+    reads.
+build:
+  number: 0
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+  recipe-maintainers:
+  - andrewdavidsmith
+  - guilhermesena1
+package:
+  name: abismal
+  version: 3.3.0
+requirements:
+  build:
+  - make
+  - null
+  - autoconf
+  - automake
+  - libtool
+  - pkg-config
+  host:
+  - zlib
+  - htslib
+  - llvm-openmp
+  - libgomp
+  run:
+  - htslib
+  - llvm-openmp
+  - libgomp
+source:
+  sha256: 0ba33668836c1bff914a1b11c00056134edd7a151ffdd1552030684716f1d6db
+  url: https://github.com/smithlabcode/abismal/releases/download/v3.3.0/abismal-3.3.0.tar.gz
+test:
+  commands:
+  - abismal

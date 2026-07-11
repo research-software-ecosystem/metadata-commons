@@ -1,0 +1,46 @@
+about:
+  home: http://github.com/endrebak/epic2
+  license: MIT
+  license_file: LICENSE
+  summary: Ultraperformant Chip-Seq broad domain finder based on SICER.
+build:
+  number: 0
+  run_exports:
+  - null
+  skip: true
+extra:
+  additional-platforms:
+  - linux-aarch64
+  identifiers:
+  - doi:10.1093/bioinformatics/btz232
+  recipe-maintainers:
+  - endrebak
+package:
+  name: epic2
+  version: 0.0.54
+requirements:
+  build:
+  - null
+  - null
+  host:
+  - python
+  - cython
+  - setuptools
+  - pysam
+  - htslib
+  - zlib
+  run:
+  - python
+  - scipy
+  - numpy
+  - pysam
+  - natsort
+  - htslib
+source:
+  sha256: ce2f2051c0e34b7a17b7278e27e4720d2504e3f7f64aedddd32aefcde9a1e0cc
+  url: https://pypi.io/packages/source/e/epic2/epic2-0.0.54.tar.gz
+test:
+  commands:
+  - epic2 -h
+  imports:
+  - epic2

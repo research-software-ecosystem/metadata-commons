@@ -1,0 +1,56 @@
+about:
+  description: 'A Python library for parsing, validating, converting, and merging
+
+    sequencing sample sheets behind one interface. Auto-detects Illumina
+
+    IEM V1 and BCLConvert V2 sheets as well as non-Illumina Element AVITI
+
+    run manifests, and provides bidirectional V1/V2 conversion, structural
+
+    and index validation (including Hamming distance and per-cycle
+
+    color-balance checking against each instrument''s optical chemistry),
+
+    sheet diffing, and cross-project merging with collision detection.
+
+    '
+  dev_url: https://github.com/chaitanyakasaraneni/samplesheet-parser
+  doc_url: https://samplesheet-parser.readthedocs.io
+  home: https://github.com/chaitanyakasaraneni/samplesheet-parser
+  license: Apache-2.0
+  license_file: LICENSE
+  summary: "Multi-vendor, format-agnostic parser for sequencing sample sheets \u2014\
+    \ Illumina IEM V1 & BCLConvert V2 plus Element AVITI run manifests, with index\
+    \ validation and color-balance checking"
+build:
+  noarch: python
+  number: 0
+  run_exports:
+  - null
+  script: -m pip install . --no-deps --no-build-isolation -vv
+extra:
+  recipe-maintainers:
+  - chaitanyakasaraneni
+package:
+  name: samplesheet-parser
+  version: 2.4.0
+requirements:
+  host:
+  - python >=3.10
+  - pip
+  - hatchling
+  run:
+  - python >=3.10
+  - typer >=0.12
+source:
+  sha256: d14e3eeafae8b6b01e411e3480c6c471f5ef88aaec279b428d74e3fae4b91097
+  url: https://pypi.org/packages/source/s/samplesheet_parser/samplesheet_parser-2.4.0.tar.gz
+test:
+  commands:
+  - pip check
+  - python -c "from samplesheet_parser import __version__; print(__version__)"
+  - samplesheet --help
+  imports:
+  - samplesheet_parser
+  requires:
+  - pip

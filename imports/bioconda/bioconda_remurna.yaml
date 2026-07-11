@@ -1,0 +1,40 @@
+about:
+  doc_url: https://www.ncbi.nlm.nih.gov/CBBresearch/Przytycka/software/remurna.html
+  home: https://www.ncbi.nlm.nih.gov/CBBresearch/Przytycka/software/remurna.html
+  license: LicenseRef-HHS-Public-Domain
+  license_family: PUBLIC-DOMAIN
+  license_file: LICENSE
+  license_url: https://www.hhs.gov/disclaimer.html
+  summary: Measurement of Single-Nucleotide Polymorphism-induced Changes of RNA Conformation.
+build:
+  number: 1
+  run_exports:
+  - null
+  skip: true
+extra:
+  additional-platforms:
+  - linux-aarch64
+  identifiers:
+  - doi:10.1093/nar/gks1009
+package:
+  name: remurna
+  version: '1.0'
+requirements:
+  build:
+  - make
+  - null
+  - null
+  host:
+  - libgomp
+  - llvm-openmp
+  run:
+  - libgomp
+  - llvm-openmp
+source:
+  patches:
+  - 0001-Makefile.patch
+  sha256: 0a46cab65186d93415aa781463e3ae4b230cf6236b961d50472acf4cd0456105
+  url: https://www.ncbi.nlm.nih.gov/CBBresearch/Przytycka/software/remurna/remuRNA.zip
+test:
+  commands:
+  - cd $(dirname $(which remuRNA)) && ./remuRNA input.fa > /dev/null

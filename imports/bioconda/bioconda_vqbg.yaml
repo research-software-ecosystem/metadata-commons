@@ -1,0 +1,34 @@
+about:
+  dev_url: https://github.com/qdu-bioinfo/VQBG
+  home: https://github.com/qdu-bioinfo/VQBG
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE
+  summary: De Novo Reconstruction of Viral Quasispecies from Bubble Graph
+build:
+  number: 0
+  run_exports:
+  - null
+  skip: true
+extra:
+  additional-platforms:
+  - linux-aarch64
+package:
+  name: vqbg
+  version: 1.0.2
+requirements:
+  build:
+  - make
+  - glpk
+  - null
+  - null
+  host:
+  - glpk
+  - zlib
+  - boost-cpp
+source:
+  sha256: 6ca5e5dfdc23e6714af7f42d308b2e92c5d8963a77ee19743a6819e87f5a2027
+  url: https://github.com/qdu-bioinfo/VQBG/archive/refs/tags/v1.0.2.tar.gz
+test:
+  commands:
+  - VQBG --help

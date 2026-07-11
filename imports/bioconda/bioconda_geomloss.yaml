@@ -1,0 +1,37 @@
+about:
+  home: https://github.com/jeanfeydy/geomloss
+  license: MIT
+  license_file: LICENSE.txt
+  summary: Geometric loss functions between point clouds, images and volumes.
+build:
+  noarch: python
+  number: 0
+  run_exports:
+  - null
+  script: -m pip install . -vv --no-deps --no-build-isolation
+extra:
+  recipe-maintainers:
+  - nilchia
+package:
+  name: geomloss
+  version: 0.3.1
+requirements:
+  host:
+  - python
+  - pip
+  - setuptools
+  run:
+  - python
+  - numpy
+  - pytorch
+  - scipy
+source:
+  sha256: 8d8bee2a57c9393642866c329e0dd069f6270b06a721683b0f164cadc4902505
+  url: https://pypi.org/packages/source/g/geomloss/geomloss-0.3.1.tar.gz
+test:
+  commands:
+  - pip check
+  imports:
+  - geomloss
+  requires:
+  - pip

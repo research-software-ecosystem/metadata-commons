@@ -1,0 +1,38 @@
+about:
+  home: https://github.com/mbhall88/lrge
+  license: MIT
+  license_file:
+  - LICENSE
+  - THIRDPARTY.yml
+  summary: Genome size estimation from long read overlaps
+build:
+  number: 0
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+  identifiers:
+  - doi:10.1093/bioinformatics/btaf593
+  recipe-maintainers:
+  - mbhall88
+package:
+  name: lrge
+  version: 0.3.0
+requirements:
+  build:
+  - null
+  - cargo-bundle-licenses
+  - null
+  - null
+  - zlib
+  host:
+  - zlib
+  - liblzma
+source:
+  sha256: 4563e62c5ea5de9ca33d8c8cc95d1a3c1225b9c32af2a0123b624b3c30b4e2f1
+  url: https://github.com/mbhall88/lrge/archive/lrge-0.3.0.tar.gz
+test:
+  commands:
+  - lrge --version

@@ -1,0 +1,35 @@
+about:
+  dev_url: https://github.com/mattn/p5-Devel-CheckLib
+  doc_url: https://metacpan.org/pod/Devel::CheckLib
+  home: https://metacpan.org/pod/Devel::CheckLib
+  license: Perl_5
+  summary: Check that a library is available.
+build:
+  number: 1
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+  skip-lints:
+  - compilers_must_be_in_build
+package:
+  name: perl-devel-checklib
+  version: '1.16'
+requirements:
+  build:
+  - make
+  - null
+  host:
+  - perl
+  - perl-capture-tiny
+  run:
+  - perl
+  - null
+source:
+  sha256: 869d38c258e646dcef676609f0dd7ca90f085f56cf6fd7001b019a5d5b831fca
+  url: https://cpan.metacpan.org/authors/id/M/MA/MATTN/Devel-CheckLib-1.16.tar.gz
+test:
+  imports:
+  - Devel::CheckLib

@@ -1,0 +1,24 @@
+about:
+  home: https://github.com/alexherbig/MultiVCFAnalyzer
+  license: GPL >=3
+  license_family: GPL
+  summary: MultiVCFAnalyzer is a VCF file post-processing tool tailored for aDNA.
+    License on Github repository.
+build:
+  noarch: generic
+  number: 0
+  run_exports:
+  - null
+package:
+  name: multivcfanalyzer
+  version: 0.89.0
+requirements:
+  run:
+  - openjdk
+  - python
+source:
+  sha256: 60937d23f39f6f5ee9f78503984eecb5e11cc1506e2a1f753c8f91a509fd586a
+  url: https://github.com/alexherbig/MultiVCFAnalyzer/releases/download/v0.89.0/MultiVCFAnalyzer-0.89.0.jar
+test:
+  commands:
+  - multivcfanalyzer --help

@@ -1,0 +1,190 @@
+{
+  "@context": {
+    "biotools": "https://bio.tools/ontology/",
+    "brick": "https://brickschema.org/schema/Brick#",
+    "bsc": "http://bioschemas.org/",
+    "bsct": "http://bioschemas.org/types/",
+    "csvw": "http://www.w3.org/ns/csvw#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "dcam": "http://purl.org/dc/dcam/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dcmitype": "http://purl.org/dc/dcmitype/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "doap": "http://usefulinc.com/ns/doap#",
+    "edam": "http://edamontology.org/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "geo": "http://www.opengis.net/ont/geosparql#",
+    "odrl": "http://www.w3.org/ns/odrl/2/",
+    "org": "http://www.w3.org/ns/org#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "prof": "http://www.w3.org/ns/dx/prof/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "qb": "http://purl.org/linked-data/cube#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "sc": "http://schema.org/",
+    "schema": "https://schema.org/",
+    "sh": "http://www.w3.org/ns/shacl#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "sosa": "http://www.w3.org/ns/sosa/",
+    "ssn": "http://www.w3.org/ns/ssn/",
+    "time": "http://www.w3.org/2006/time#",
+    "vann": "http://purl.org/vocab/vann/",
+    "void": "http://rdfs.org/ns/void#",
+    "wgs": "https://www.w3.org/2003/01/geo/wgs84_pos#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "https://orcid.org/0000-0002-7359-0633",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.1093/bioinformatics/btv291",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1093/bioinformatics/btw192",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://bio.tools/inps-md",
+      "@type": "sc:SoftwareApplication",
+      "biotools:primaryContact": [
+        {
+          "@id": "https://orcid.org/0000-0002-7359-0633"
+        },
+        "Piero Fariselli"
+      ],
+      "bsc:input": [
+        {
+          "@id": "_:N95340655b124401c86bfd1517c42f706"
+        },
+        {
+          "@id": "_:N9833670de0e14542b4b163530ce6ad67"
+        },
+        {
+          "@id": "_:N1f4b6afa495b4e13a7af4917876104e7"
+        },
+        {
+          "@id": "_:Nb8ae6c167c1246dda3a0d6f2a9a1618a"
+        },
+        {
+          "@id": "_:Nc91205ea59c94f62a09f1bcc20a54c4f"
+        }
+      ],
+      "bsc:output": [
+        {
+          "@id": "_:N147ac2581a07451f9abeadfda6a4fb54"
+        },
+        {
+          "@id": "_:Nd5742f6de5df4166982dd2dc148fb5d4"
+        },
+        {
+          "@id": "_:N7f4533ff0f47486b9f545df73bbab2e4"
+        }
+      ],
+      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_0199"
+        },
+        {
+          "@id": "edam:topic_0130"
+        },
+        {
+          "@id": "edam:topic_3325"
+        }
+      ],
+      "sc:author": {
+        "@id": "https://orcid.org/0000-0002-7359-0633"
+      },
+      "sc:citation": [
+        {
+          "@id": "https://doi.org/10.1093/bioinformatics/btv291"
+        },
+        "pubmed:27153629",
+        {
+          "@id": "https://doi.org/10.1093/bioinformatics/btw192"
+        },
+        "pubmed:25957347"
+      ],
+      "sc:description": "Predicting the impact of mutations on protein stability from sequence and structure.",
+      "sc:featureList": {
+        "@id": "edam:operation_0250"
+      },
+      "sc:isAccessibleForFree": true,
+      "sc:name": "INPS-MD",
+      "sc:provider": "ELIXIR-ITA-BOLOGNA",
+      "sc:softwareHelp": {
+        "@id": "https://inpsmd.biocomp.unibo.it/help"
+      },
+      "sc:softwareVersion": "2.0",
+      "sc:url": "http://inpsmd.biocomp.unibo.it"
+    },
+    {
+      "@id": "_:N95340655b124401c86bfd1517c42f706",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3498"
+      },
+      "sc:name": "Sequence variations"
+    },
+    {
+      "@id": "_:N9833670de0e14542b4b163530ce6ad67",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2974"
+      },
+      "sc:name": "Protein sequence (raw)"
+    },
+    {
+      "@id": "_:N1f4b6afa495b4e13a7af4917876104e7",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1008"
+      },
+      "sc:name": "Polypeptide chain ID"
+    },
+    {
+      "@id": "_:Nb8ae6c167c1246dda3a0d6f2a9a1618a",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1460"
+      },
+      "sc:name": "Protein structure"
+    },
+    {
+      "@id": "_:Nc91205ea59c94f62a09f1bcc20a54c4f",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3498"
+      },
+      "sc:name": "Sequence variations"
+    },
+    {
+      "@id": "_:N147ac2581a07451f9abeadfda6a4fb54",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0896"
+      },
+      "sc:name": "Protein report"
+    },
+    {
+      "@id": "_:Nd5742f6de5df4166982dd2dc148fb5d4",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1460"
+      },
+      "sc:name": "Protein structure"
+    },
+    {
+      "@id": "_:N7f4533ff0f47486b9f545df73bbab2e4",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0896"
+      },
+      "sc:name": "Protein report"
+    }
+  ]
+}

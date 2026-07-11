@@ -1,0 +1,81 @@
+about:
+  description: Comprehensive R package for differential composition and variability
+    analysis in single-cell RNA sequencing, CyTOF, and microbiome data. Provides robust
+    Bayesian modeling with outlier detection, random effects, and advanced statistical
+    methods for cell type proportion analysis. Features include probabilistic outlier
+    identification, mixed-effect modeling, differential variability testing, and comprehensive
+    visualization tools. Perfect for cancer research, immunology, developmental biology,
+    and single-cell genomics applications.
+  home: https://bioconductor.org/packages/3.22/bioc/html/sccomp.html
+  license: GPL-3
+  license_file: /lib/R/share/licenses/GPL-3
+  summary: Differential Composition and Variability Analysis for Single-Cell Data
+build:
+  noarch: generic
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+package:
+  name: bioconductor-sccomp
+  version: 2.2.0
+requirements:
+  host:
+  - bioconductor-singlecellexperiment >=1.32.0,<1.33.0
+  - r-base
+  - r-boot
+  - r-cli
+  - r-crayon
+  - r-dplyr
+  - r-fansi
+  - r-forcats
+  - r-ggplot2
+  - r-ggrepel
+  - r-glue
+  - r-instantiate >=0.2.3
+  - r-lifecycle
+  - r-magrittr
+  - r-patchwork
+  - r-purrr
+  - r-readr
+  - r-rlang
+  - r-scales
+  - r-stringr
+  - r-tibble
+  - r-tidyr
+  - r-tidyselect
+  run:
+  - bioconductor-singlecellexperiment >=1.32.0,<1.33.0
+  - r-base
+  - r-boot
+  - r-cli
+  - r-crayon
+  - r-dplyr
+  - r-fansi
+  - r-forcats
+  - r-ggplot2
+  - r-ggrepel
+  - r-glue
+  - r-instantiate >=0.2.3
+  - r-lifecycle
+  - r-magrittr
+  - r-patchwork
+  - r-purrr
+  - r-readr
+  - r-rlang
+  - r-scales
+  - r-stringr
+  - r-tibble
+  - r-tidyr
+  - r-tidyselect
+source:
+  md5: b3b8edc015140554b004cead29d3a764
+  url:
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/sccomp_2.2.0.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/sccomp/sccomp_2.2.0.tar.gz
+  - https://bioarchive.galaxyproject.org/sccomp_2.2.0.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-sccomp/bioconductor-sccomp_2.2.0_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('sccomp')"

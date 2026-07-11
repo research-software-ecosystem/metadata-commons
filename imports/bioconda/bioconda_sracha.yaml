@@ -1,0 +1,33 @@
+about:
+  dev_url: https://github.com/rnabioco/sracha-rs
+  doc_url: https://github.com/rnabioco/sracha-rs#readme
+  home: https://github.com/rnabioco/sracha-rs
+  license: MIT
+  license_file: LICENSE
+  summary: Fast parallel SRA downloader and streaming FASTQ converter.
+build:
+  number: 0
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+  recipe-maintainers:
+  - jayhesselberth
+  skip-lints:
+  - compiler_needs_stdlib_c
+package:
+  name: sracha
+  version: 0.3.10
+requirements:
+  build:
+  - null
+  - null
+  - cargo-bundle-licenses
+source:
+  sha256: bf464e889f1677583b9042c8f6d4d5245f41e8b0024a4e1dbd8c78dcafd6ab7b
+  url: https://github.com/rnabioco/sracha-rs/archive/v0.3.10.tar.gz
+test:
+  commands:
+  - sracha --help

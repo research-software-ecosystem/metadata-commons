@@ -1,0 +1,30 @@
+about:
+  doc_url: https://degiorgiogroup.fau.edu/sf2.html
+  home: https://degiorgiogroup.fau.edu/sf2.html
+  license: Unknown
+  summary: A program written in C that can perform genomic scans for recent selective
+    sweeps selection while controlling for background selection and mutation rate
+    variation.
+build:
+  number: 6
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+package:
+  name: sweepfinder2
+  version: '1.0'
+requirements:
+  build:
+  - make
+  - null
+source:
+  patches:
+  - 0001-Use-CC-and-flags.patch
+  sha256: 2fccb0a2d65ca0173d97e3d55c474d769a88139b73b3738c29c1917166f401e4
+  url: https://degiorgiogroup.fau.edu/SF2.tar.gz
+test:
+  commands:
+  - SweepFinder2 --help | grep usage > /dev/null

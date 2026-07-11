@@ -1,0 +1,171 @@
+{
+  "@context": {
+    "biotools": "https://bio.tools/ontology/",
+    "brick": "https://brickschema.org/schema/Brick#",
+    "bsc": "http://bioschemas.org/",
+    "bsct": "http://bioschemas.org/types/",
+    "csvw": "http://www.w3.org/ns/csvw#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "dcam": "http://purl.org/dc/dcam/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dcmitype": "http://purl.org/dc/dcmitype/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "doap": "http://usefulinc.com/ns/doap#",
+    "edam": "http://edamontology.org/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "geo": "http://www.opengis.net/ont/geosparql#",
+    "odrl": "http://www.w3.org/ns/odrl/2/",
+    "org": "http://www.w3.org/ns/org#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "prof": "http://www.w3.org/ns/dx/prof/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "qb": "http://purl.org/linked-data/cube#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "sc": "http://schema.org/",
+    "schema": "https://schema.org/",
+    "sh": "http://www.w3.org/ns/shacl#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "sosa": "http://www.w3.org/ns/sosa/",
+    "ssn": "http://www.w3.org/ns/ssn/",
+    "time": "http://www.w3.org/2006/time#",
+    "vann": "http://purl.org/vocab/vann/",
+    "void": "http://rdfs.org/ns/void#",
+    "wgs": "https://www.w3.org/2003/01/geo/wgs84_pos#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "https://bio.tools/iclc",
+      "@type": "sc:SoftwareApplication",
+      "biotools:primaryContact": [
+        "Paolo Romano",
+        "Maria Assunta Manniello"
+      ],
+      "bsc:input": [
+        {
+          "@id": "_:Ndd6807857b9041cea4d859a39679b4b7"
+        },
+        {
+          "@id": "_:N81c2c98ecfa64cd1be1b8913fc528b49"
+        },
+        {
+          "@id": "_:N388e5b12c1a842ec873ac88b5a27a099"
+        },
+        {
+          "@id": "_:Na35f03fa39cf44d8b58d87d306930690"
+        },
+        {
+          "@id": "_:N8490e400de7b4918a4d103e077b931c1"
+        },
+        {
+          "@id": "_:Nb83da1643e9c4cfdbe24da13ecd28f4a"
+        },
+        {
+          "@id": "_:N3a90d8148a6a4bd6a34b3f9225a429ed"
+        },
+        {
+          "@id": "_:N1d48ad85bd544039956287390e103942"
+        }
+      ],
+      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "sc:additionalType": "Database portal",
+      "sc:applicationSubCategory": {
+        "@id": "edam:topic_3340"
+      },
+      "sc:author": "Paolo Romano",
+      "sc:contributor": "Paola Visconti",
+      "sc:description": "The on-line catalogue of the Interlab Cell Line Collection of human and animal cell lines.",
+      "sc:featureList": {
+        "@id": "edam:operation_2421"
+      },
+      "sc:isAccessibleForFree": true,
+      "sc:name": "Interlab Cell Line Collection Catalogue (ICLC)",
+      "sc:operatingSystem": "Linux",
+      "sc:provider": "USMI",
+      "sc:softwareHelp": {
+        "@id": "http://wwwsql.iclc.it/"
+      },
+      "sc:url": "http://wwwsql.iclc.it/"
+    },
+    {
+      "@id": "_:Ndd6807857b9041cea4d859a39679b4b7",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2193"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Database entry metadata"
+    },
+    {
+      "@id": "_:N81c2c98ecfa64cd1be1b8913fc528b49",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2193"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Database entry metadata"
+    },
+    {
+      "@id": "_:N388e5b12c1a842ec873ac88b5a27a099",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0860"
+      },
+      "sc:name": "Sequence signature data"
+    },
+    {
+      "@id": "_:Na35f03fa39cf44d8b58d87d306930690",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0006"
+      },
+      "sc:name": "Data"
+    },
+    {
+      "@id": "_:N8490e400de7b4918a4d103e077b931c1",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2193"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Database entry metadata"
+    },
+    {
+      "@id": "_:Nb83da1643e9c4cfdbe24da13ecd28f4a",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2316"
+      },
+      "sc:name": "Cell line name"
+    },
+    {
+      "@id": "_:N3a90d8148a6a4bd6a34b3f9225a429ed",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3671"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Text"
+    },
+    {
+      "@id": "_:N1d48ad85bd544039956287390e103942",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2193"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Database entry metadata"
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+about:
+  description: Sequenoscope is an integrated modular pipeline for evaluating Oxford
+    Nanopore adaptive sampling performance and automating microbial genomic analysis
+    through interactive visualizations.
+  dev_url: https://github.com/phac-nml/sequenoscope
+  doc_url: https://github.com/phac-nml/sequenoscope/blob/master/README.md
+  home: https://github.com/phac-nml/sequenoscope
+  license: Apache-2.0
+  license_family: Apache
+  license_file: LICENSE
+  summary: Sequenoscope - A Modular Pipeline for ONT Adaptive Sampling and Comparative
+    Microbial Genomics Visualization
+build:
+  entry_points:
+  - sequenoscope=sequenoscope.main:main
+  noarch: python
+  number: 1
+  run_exports:
+  - null
+  script: -m pip install . --no-deps --ignore-installed -vv
+package:
+  name: sequenoscope
+  version: 1.0.0
+requirements:
+  host:
+  - python
+  - pip
+  - setuptools
+  - wheel
+  run:
+  - python >=3.7.12,<4
+  - null
+  - samtools >=1.6
+  - pysam >=0.16.0
+  - minimap2 >=2.26
+  - mash >=2.3
+  - fastp >=0.22.0,<=0.23.2
+  - seqtk >=1.4
+  - plotly >=5.16.1
+  - biopython >=1.7
+  - null
+  - six >=1.14.0
+  - null
+source:
+  sha256: 29072c63e073aa2e77b2ba773888dc5fc3740a20cc5cab59e74feb07dddd1fa7
+  url: https://github.com/phac-nml/sequenoscope/archive/v1.0.0.tar.gz
+test:
+  commands:
+  - sequenoscope --help
+  - sequenoscope --check_dependencies
+  - sequenoscope filter_ONT --help
+  - sequenoscope analyze --help
+  - sequenoscope plot --help
+  imports:
+  - sequenoscope

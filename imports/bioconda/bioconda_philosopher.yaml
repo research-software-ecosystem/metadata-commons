@@ -1,0 +1,29 @@
+about:
+  home: https://github.com/Nesvilab/philosopher
+  license: GPL-3.0-only
+  license_file: License
+  summary: Philosopher is a versatile toolkit for deep proteomics data analysis (PSI-MS
+    pipelines)
+build:
+  number: 0
+  run_exports:
+  - null
+  skip: true
+extra:
+  recipe-maintainers:
+  - bernt-matthias
+package:
+  name: philosopher
+  version: 5.1.2
+requirements:
+  build:
+  - null
+  - make
+  - unzip
+source:
+  sha256: 7eb2b49d85f71071a70d89e571baab74ec9aa1718d88c20a967724bfd6ebbd86
+  url: https://github.com/Nesvilab/philosopher/archive/refs/tags/5.1.2.tar.gz
+test:
+  commands:
+  - philosopher --help
+  - philosopher version

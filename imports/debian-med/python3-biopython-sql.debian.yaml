@@ -1,0 +1,26 @@
+package: python3-biopython-sql
+distribution: debian
+release: sid
+component: main
+version: '1.87'
+source: python-biopython
+homepage: https://biopython.org
+license: unknown
+blend: debian-med
+description_md5: 3f85dd1e1e5cbc938e08ce849e824727
+registries:
+- entry: OMICS_04850
+  name: OMICtools
+- entry: SCR_007173
+  name: SciCrunch
+- entry: Biopython
+  name: bio.tools
+- entry: biopython
+  name: conda:conda-forge
+bib:
+- key: doi
+  value: 10.1093/bioinformatics/btp163
+popcon:
+- insts: 15
+  olde: 12
+  vote: 3

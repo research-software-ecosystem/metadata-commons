@@ -1,0 +1,41 @@
+about:
+  dev_url: https://github.com/fulcrumgenomics/fgumi
+  doc_url: https://github.com/fulcrumgenomics/fgumi/blob/v0.4.0/README.md
+  home: https://github.com/fulcrumgenomics/fgumi
+  license: MIT
+  license_family: MIT
+  license_file:
+  - LICENSE
+  - THIRDPARTY.yml
+  summary: High-performance tools for UMI-tagged sequencing data.
+build:
+  number: 0
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+  recipe-maintainers:
+  - nh13
+  - tfenne
+  skip-lints:
+  - compiler_needs_stdlib_c
+package:
+  name: fgumi
+  version: 0.4.0
+requirements:
+  build:
+  - null
+  - null
+  - cargo-bundle-licenses
+  run:
+  - r-base
+  - r-ggplot2
+  - r-scales
+source:
+  sha256: 6492bae4c577fdd5fc1c07bb04433381962ae99271614f8455f79c46a6762b22
+  url: https://github.com/fulcrumgenomics/fgumi/archive/v0.4.0.tar.gz
+test:
+  commands:
+  - fgumi --help

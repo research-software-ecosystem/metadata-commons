@@ -1,0 +1,26 @@
+about:
+  home: http://metacpan.org/pod/OLE-Storage_Lite
+  license: unknown
+  summary: Read and write OLE storage files.
+build:
+  noarch: generic
+  number: 0
+  run_exports:
+    weak:
+    - perl-ole-storage_lite =0.24
+package:
+  name: perl-ole-storage_lite
+  version: '0.24'
+requirements:
+  build:
+  - make
+  host:
+  - perl
+  run:
+  - perl
+source:
+  sha256: 71c3b6ef082176c9585e620dd48f0f4782c282be73f2a653ea4b618f757bb3fd
+  url: https://cpan.metacpan.org/authors/id/J/JM/JMCNAMARA/OLE-Storage_Lite-0.24.tar.gz
+test:
+  imports:
+  - OLE::Storage_Lite

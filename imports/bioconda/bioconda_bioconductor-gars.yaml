@@ -1,0 +1,53 @@
+about:
+  description: 'Feature selection aims to identify and remove redundant, irrelevant
+    and noisy variables from high-dimensional datasets. Selecting informative features
+    affects the subsequent classification and regression analyses by improving their
+    overall performances. Several methods have been proposed to perform feature selection:
+    most of them relies on univariate statistics, correlation, entropy measurements
+    or the usage of backward/forward regressions. Herein, we propose an efficient,
+    robust and fast method that adopts stochastic optimization approaches for high-dimensional.
+    GARS is an innovative implementation of a genetic algorithm that selects robust
+    features in high-dimensional and challenging datasets.'
+  home: https://bioconductor.org/packages/3.22/bioc/html/GARS.html
+  license: GPL (>= 2)
+  license_file: /lib/R/share/licenses/GPL-3
+  summary: 'GARS: Genetic Algorithm for the identification of Robust Subsets of variables
+    in high-dimensional and challenging datasets'
+build:
+  noarch: generic
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+extra:
+  container:
+    extended-base: true
+package:
+  name: bioconductor-gars
+  version: 1.30.0
+requirements:
+  host:
+  - bioconductor-damirseq >=2.22.0,<2.23.0
+  - bioconductor-mlseq >=2.28.0,<2.29.0
+  - bioconductor-summarizedexperiment >=1.40.0,<1.41.0
+  - r-base
+  - r-cluster
+  - r-ggplot2
+  run:
+  - bioconductor-damirseq >=2.22.0,<2.23.0
+  - bioconductor-mlseq >=2.28.0,<2.29.0
+  - bioconductor-summarizedexperiment >=1.40.0,<1.41.0
+  - r-base
+  - r-cluster
+  - r-ggplot2
+source:
+  md5: 47d4b726dc22c82c6eb6830ed0dc4c8c
+  url:
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/GARS_1.30.0.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/GARS/GARS_1.30.0.tar.gz
+  - https://bioarchive.galaxyproject.org/GARS_1.30.0.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-gars/bioconductor-gars_1.30.0_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('GARS')"

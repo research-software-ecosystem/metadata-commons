@@ -1,0 +1,40 @@
+about:
+  home: https://CRAN.R-project.org/package=IsoGene
+  license: GPL-3
+  license_family: GPL3
+  license_file: /lib/R/share/licenses/GPL-3
+  summary: Offers framework for testing for monotonic relationship between gene expression.
+build:
+  noarch: generic
+  number: 9
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports:
+  - null
+package:
+  name: r-isogene
+  version: '1.024'
+requirements:
+  host:
+  - r-base >=3.6.3
+  - bioconductor-biobase
+  - r-iso
+  - bioconductor-affy
+  - r-ff >=2.0.0
+  - r-xtable
+  run:
+  - r-base >=3.6.3
+  - bioconductor-biobase
+  - r-iso
+  - bioconductor-affy
+  - r-ff >=2.0.0
+  - r-xtable
+source:
+  sha256: 19049382c45c870cd8e51e47ec1ec9b38bbfa1ff4af31fd5a07b5af57505953a
+  url:
+  - /src/contrib/IsoGene_1.0-24.tar.gz
+  - /src/contrib/Archive/IsoGene/IsoGene_1.0-24.tar.gz
+test:
+  commands:
+  - $R -e "library('IsoGene')"

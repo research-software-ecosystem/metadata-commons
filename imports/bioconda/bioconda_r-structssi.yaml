@@ -1,0 +1,44 @@
+about:
+  doc_url: https://CRAN.R-project.org/package=structSSI
+  home: https://CRAN.R-project.org/package=structSSI
+  license: GPL-2.0-or-later
+  license_family: GPL
+  summary: Performs multiple testing corrections that take specific structure of hypotheses
+    into account.
+build:
+  noarch: generic
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports:
+  - null
+package:
+  name: r-structssi
+  version: 1.2.1
+requirements:
+  host:
+  - r-base
+  - r-ggplot2
+  - r-igraph
+  - bioconductor-multtest
+  - bioconductor-phyloseq
+  - r-reshape2
+  - r-jsonlite
+  run:
+  - r-base
+  - r-ggplot2
+  - r-igraph
+  - bioconductor-multtest
+  - bioconductor-phyloseq
+  - r-reshape2
+  - r-jsonlite
+source:
+  sha256: 8515266264806d1e5408cd27f2034280326016c5590dab854f9b3d6042fe1769
+  url:
+  - /src/contrib/structSSI_1.2.1.tar.gz
+  - /src/contrib/Archive/structSSI/structSSI_1.2.1.tar.gz
+test:
+  commands:
+  - $R -e "library('structSSI')"
+  - '"%R%" -e "library(''structSSI'')"'

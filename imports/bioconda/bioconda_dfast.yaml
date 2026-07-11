@@ -1,0 +1,52 @@
+about:
+  dev_url: https://github.com/nigyta/dfast_core
+  doc_url: https://github.com/nigyta/dfast_core/blob/1.4.0/README.md
+  home: https://dfast.nig.ac.jp
+  license: GPL-3.0-only
+  license_family: GPL3
+  license_file: docs/LICENSE
+  summary: DDBJ Fast Annotation and Submission Tool - Prokaryotic genome annotation
+    pipeline
+build:
+  binary_relocation: false
+  number: 0
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+  identifiers:
+  - biotools:dfast
+  - doi:10.1093/bioinformatics/btx713
+  skip-lints:
+  - should_be_noarch_generic
+  - compiler_needs_stdlib_c
+package:
+  name: dfast
+  version: 1.4.0
+requirements:
+  build:
+  - null
+  - null
+  - python >=3.7
+  - biopython >=1.67
+  host:
+  - zlib
+  run:
+  - python >=3.7
+  - biopython
+  - openjdk
+  - aragorn
+  - barrnap
+  - blast >=2.6.0
+  - ghostx
+  - hmmer >=3.1b2
+  - metagene_annotator >=1.0
+  - plasmidfinder >=2.1.6
+source:
+  sha256: a4b092b36c8aabcc4ed4465a24fdf1f0454ec0478d9ac384bd622f4af7c103b6
+  url: https://github.com/nigyta/dfast_core/archive/1.4.0.tar.gz
+test:
+  commands:
+  - dfast --version

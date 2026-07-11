@@ -1,0 +1,51 @@
+about:
+  description: CNViz takes probe, gene, and segment-level log2 copy number ratios
+    and launches a Shiny app to visualize your sample's copy number profile. You can
+    also integrate loss of heterozygosity (LOH) and single nucleotide variant (SNV)
+    data.
+  home: https://bioconductor.org/packages/3.22/bioc/html/CNViz.html
+  license: Artistic-2.0
+  summary: Copy Number Visualization
+build:
+  noarch: generic
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+package:
+  name: bioconductor-cnviz
+  version: 1.18.0
+requirements:
+  host:
+  - bioconductor-copynumberplots >=1.26.0,<1.27.0
+  - bioconductor-genomicranges >=1.62.0,<1.63.0
+  - bioconductor-karyoploter >=1.36.0,<1.37.0
+  - r-base
+  - r-dplyr
+  - r-dt
+  - r-magrittr
+  - r-plotly
+  - r-scales
+  - r-shiny >=1.5.0
+  run:
+  - bioconductor-copynumberplots >=1.26.0,<1.27.0
+  - bioconductor-genomicranges >=1.62.0,<1.63.0
+  - bioconductor-karyoploter >=1.36.0,<1.37.0
+  - r-base
+  - r-dplyr
+  - r-dt
+  - r-magrittr
+  - r-plotly
+  - r-scales
+  - r-shiny >=1.5.0
+source:
+  md5: 6ca45315f997d6317f7a25d8d6920cc2
+  url:
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/CNViz_1.18.0.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/CNViz/CNViz_1.18.0.tar.gz
+  - https://bioarchive.galaxyproject.org/CNViz_1.18.0.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-cnviz/bioconductor-cnviz_1.18.0_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('CNViz')"

@@ -1,0 +1,44 @@
+about:
+  description: This package provides a tool to search and download a collection of
+    tumour microenvironment single-cell RNA sequencing datasets and their metadata.
+    TMExplorer aims to act as a single point of entry for users looking to study the
+    tumour microenvironment at the single cell level. Users can quickly search available
+    datasets using the metadata table and then download the ones they are interested
+    in for analysis.
+  home: https://bioconductor.org/packages/3.22/data/experiment/html/TMExplorer.html
+  license: Artistic-2.0
+  summary: A Collection of Tumour Microenvironment Single-cell RNA Sequencing Datasets
+    and Corresponding Metadata
+build:
+  noarch: generic
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+package:
+  name: bioconductor-tmexplorer
+  version: 1.20.0
+requirements:
+  host:
+  - bioconductor-biocfilecache >=3.0.0,<3.1.0
+  - bioconductor-singlecellexperiment >=1.32.0,<1.33.0
+  - r-base
+  - r-matrix
+  run:
+  - bioconductor-biocfilecache >=3.0.0,<3.1.0
+  - bioconductor-singlecellexperiment >=1.32.0,<1.33.0
+  - r-base
+  - r-matrix
+  - curl
+  - bioconductor-data-packages >=20260207
+source:
+  md5: 571424591e3f1afba18dbe9c53f2b32a
+  url:
+  - https://bioconductor.org/packages/3.22/data/experiment/src/contrib/TMExplorer_1.20.0.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/TMExplorer/TMExplorer_1.20.0.tar.gz
+  - https://bioarchive.galaxyproject.org/TMExplorer_1.20.0.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-tmexplorer/bioconductor-tmexplorer_1.20.0_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('TMExplorer')"

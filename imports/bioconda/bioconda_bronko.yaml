@@ -1,0 +1,32 @@
+about:
+  dev_url: https://github.com/treangenlab/bronko
+  doc_url: https://github.com/treangenlab/bronko/blob/main/README.md
+  home: https://github.com/treangenlab/bronko
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE
+  summary: bronko is an ultra-rapid mapping free variant caller for viral amplicon
+    sequencing data
+build:
+  number: 0
+  run_exports:
+  - null
+extra:
+  additional-platforms: -linux-aarch64 -osx-arm64
+  recipe-maintainers:
+  - rdoughty10
+package:
+  name: bronko
+  version: 0.1.3
+requirements:
+  build:
+  - null
+  - make
+  run:
+  - kmc >=3.2
+source:
+  sha256: 1e8feef394b034efbaa6c64fa31447bf36e98646a3ec1f3eac90b35f3ee0a080
+  url: https://github.com/treangenlab/bronko/archive/refs/tags/v0.1.3.tar.gz
+test:
+  commands:
+  - bronko --help

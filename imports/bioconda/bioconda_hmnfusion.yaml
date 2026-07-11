@@ -1,0 +1,51 @@
+about:
+  home: https://github.com/guillaume-gricourt/HmnFusion
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE
+  summary: Fusion analysis from DNA genomics.
+build:
+  entry_points:
+  - hmnfusion=hmnfusion.__main__:main
+  noarch: python
+  number: 0
+  run_exports:
+  - null
+  script: -m pip install -vvv . --no-deps --no-build-isolation --no-cache-dir
+extra:
+  recipe-maintainers:
+  - guillaume-gricourt
+package:
+  name: hmnfusion
+  version: 1.5.1
+requirements:
+  host:
+  - pip
+  - pytest
+  - python
+  - pyyaml
+  - setuptools
+  run:
+  - beautifulsoup4
+  - et-xmlfile
+  - matplotlib-base
+  - lxml
+  - natsort
+  - networkx
+  - numpy
+  - openpyxl
+  - pandas
+  - pysam
+  - pytest
+  - python
+  - pyyaml
+  - requests
+  - snakemake
+source:
+  sha256: 47d30d9a1e95fd877f23807a36ce293c49ab58e6074e679d78aa919f54c8d094
+  url: https://github.com/guillaume-gricourt/HmnFusion/archive/1.5.1.tar.gz
+test:
+  imports:
+  - hmnfusion
+  source_files:
+  - tests

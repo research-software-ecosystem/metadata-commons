@@ -1,0 +1,44 @@
+about:
+  doc_url: https://github.com/moose/MooseX-NonMoose
+  home: https://github.com/moose/MooseX-NonMoose
+  license: Perl_5
+  summary: MooseX::NonMoose - easy subclassing of non-Moose classes.
+build:
+  noarch: generic
+  number: 0
+  run_exports:
+  - null
+package:
+  name: perl-moosex-nonmoose
+  version: '0.27'
+requirements:
+  build:
+  - make
+  host:
+  - perl
+  - perl-module-runtime
+  - perl-moose
+  - perl-extutils-makemaker
+  - perl-test-fatal
+  - perl-try-tiny
+  - perl-base
+  - perl-list-moreutils
+  - perl-test-simple
+  - perl-test2-suite
+  run:
+  - perl
+  - perl-module-runtime
+  - perl-moose
+  - perl-try-tiny
+  - perl-list-moreutils
+  - perl-scalar-list-utils
+  - perl-scalar-util-numeric
+source:
+  sha256: 6fc7893b47a7db812a3c1fe8bb90d9c235143c6937251e570e27bdbd0d844ece
+  url: https://cpan.metacpan.org/authors/id/P/PL/PLICEASE/MooseX-NonMoose-0.27.tar.gz
+test:
+  imports:
+  - MooseX::NonMoose
+  - MooseX::NonMoose::InsideOut
+  - MooseX::NonMoose::Meta::Role::Class
+  - MooseX::NonMoose::Meta::Role::Constructor

@@ -1,0 +1,37 @@
+about:
+  home: https://github.com/Lattice-Automation/seqfold
+  license: MIT
+  license_file: LICENSE
+  summary: Predict the minimum free energy and structure of nucleic acids.
+build:
+  noarch: python
+  number: 0
+  run_exports:
+  - null
+  script: -m pip install . -vv --no-deps --no-build-isolation
+extra:
+  recipe-maintainers:
+  - jonas-fuchs
+package:
+  name: seqfold
+  version: 0.9.0
+requirements:
+  host:
+  - python >=3.5
+  - pip
+  - setuptools >=61.0
+  run:
+  - python >=3.5
+source:
+  patches:
+  - requirements.patch
+  sha256: 81d44a673c2dd18754276aaabaae8cfcad0c5eb3f33879cd134343369ffdcdb5
+  url: https://pypi.io/packages/source/s/seqfold/seqfold-0.9.0.tar.gz
+test:
+  commands:
+  - pip check
+  - seqfold --help
+  imports:
+  - seqfold
+  requires:
+  - pip

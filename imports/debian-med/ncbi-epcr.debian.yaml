@@ -1,0 +1,37 @@
+package: ncbi-epcr
+distribution: debian
+release: sid
+component: main
+version: 2.3.12-1
+source: epcr
+homepage: https://www.ncbi.nlm.nih.gov/tools/epcr/
+license: unknown
+blend: debian-med
+description_md5: 6eb4b20b4e9fc4026571516f9268e389
+registries:
+- entry: OMICS_02345
+  name: OMICtools
+- entry: e-pcr
+  name: conda:bioconda
+bib:
+- key: doi
+  value: 10.1101/gr.7.5.541
+- key: doi
+  rank: 1
+  value: 10.1093/nar/gkh450
+tags:
+- tag: field::biology
+- tag: field::biology:bioinformatics
+- tag: implemented-in::c++
+- tag: interface::commandline
+- tag: role::program
+- tag: scope::utility
+- tag: use::checking
+- tag: use::searching
+- tag: works-with-format::plaintext
+- tag: works-with::TODO
+popcon:
+- insts: 127
+  olde: 96
+  recent: 23
+  vote: 8

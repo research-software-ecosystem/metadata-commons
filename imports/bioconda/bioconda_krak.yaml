@@ -1,0 +1,40 @@
+about:
+  dev_url: https://github.com/clintval/krak
+  doc_url: https://github.com/clintval/krak/blob/0.4.0/README.md
+  home: https://github.com/clintval/krak
+  license: MIT
+  license_family: MIT
+  license_file:
+  - LICENSE
+  - THIRDPARTY.yml
+  summary: An addicting set of Kraken-enhancing tools.
+build:
+  number: 0
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+  recipe-maintainers:
+  - clintval
+package:
+  name: krak
+  version: 0.4.0
+requirements:
+  build:
+  - null
+  - null
+  - null
+  - null
+  - cargo-bundle-licenses
+  - clangdev
+  - pkg-config
+  - make
+  - cmake
+source:
+  sha256: 6c8586124de3ca15a1ba803b4ed56c682fcfbf8f7cca0aa7b2b5bb2bdfd19663
+  url: https://github.com/clintval/krak/archive/0.4.0.tar.gz
+test:
+  commands:
+  - krak --help

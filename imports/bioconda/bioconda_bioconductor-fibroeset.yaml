@@ -1,0 +1,36 @@
+about:
+  description: exprSet for Karaman et al. (2003) human, bonobo and gorilla fibroblasts
+    data
+  home: https://bioconductor.org/packages/3.22/data/experiment/html/fibroEset.html
+  license: LGPL
+  license_file: /lib/R/share/licenses/LGPL-3
+  summary: exprSet for Karaman et al. (2003) fibroblasts data
+build:
+  noarch: generic
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+package:
+  name: bioconductor-fibroeset
+  version: 1.52.0
+requirements:
+  host:
+  - bioconductor-biobase >=2.70.0,<2.71.0
+  - r-base
+  run:
+  - bioconductor-biobase >=2.70.0,<2.71.0
+  - r-base
+  - curl
+  - bioconductor-data-packages >=20260207
+source:
+  md5: 3aada58e5ef3ff02740e7fe2961f7786
+  url:
+  - https://bioconductor.org/packages/3.22/data/experiment/src/contrib/fibroEset_1.52.0.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/fibroEset/fibroEset_1.52.0.tar.gz
+  - https://bioarchive.galaxyproject.org/fibroEset_1.52.0.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-fibroeset/bioconductor-fibroeset_1.52.0_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('fibroEset')"

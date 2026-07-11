@@ -1,0 +1,31 @@
+about:
+  home: http://metacpan.org/pod/Devel::Size
+  license: perl_5
+  summary: Perl extension for finding the memory usage of Perl variables
+build:
+  number: 0
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+package:
+  name: perl-devel-size
+  version: '0.87'
+requirements:
+  build:
+  - make
+  - null
+  host:
+  - perl
+  - perl-extutils-makemaker
+  - perl-test-simple
+  run:
+  - perl
+  - perl-test-simple
+source:
+  sha256: c89fe04c9d0e5ced6c1d334311d576de609f3c8a41220919d4551e9eb0191f47
+  url: https://cpan.metacpan.org/authors/id/N/NW/NWCLARK/Devel-Size-0.87.tar.gz
+test:
+  imports:
+  - Devel::Size

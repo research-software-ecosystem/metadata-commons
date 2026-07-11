@@ -1,0 +1,62 @@
+about:
+  description: Provides HDF5 storage based methods and functions for manipulation
+    of flow cytometry data.
+  home: https://bioconductor.org/packages/3.22/bioc/html/ncdfFlow.html
+  license: AGPL-3.0-only
+  license_file: /lib/R/share/licenses/GPL-3
+  summary: 'ncdfFlow: A package that provides HDF5 based storage for flow cytometry
+    data.'
+build:
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+extra:
+  additional-platforms:
+  - linux-aarch64
+  identifiers:
+  - biotools:ncdfflow
+  - doi:10.1016/j.copbio.2012.09.003
+  parent_recipe:
+    name: bioconductor-ncdfflow
+    path: recipes/bioconductor-ncdfflow
+    version: 2.26.0
+package:
+  name: bioconductor-ncdfflow
+  version: 2.56.0
+requirements:
+  build:
+  - null
+  - null
+  - make
+  host:
+  - bioconductor-biobase >=2.70.0,<2.71.0
+  - bioconductor-biocgenerics >=0.56.0,<0.57.0
+  - bioconductor-flowcore >=2.22.0,<2.23.0
+  - bioconductor-rhdf5lib >=1.32.0,<1.33.0
+  - r-base
+  - r-bh
+  - r-cpp11
+  - libblas
+  - liblapack
+  - zlib
+  - liblzma-devel
+  run:
+  - bioconductor-biobase >=2.70.0,<2.71.0
+  - bioconductor-biocgenerics >=0.56.0,<0.57.0
+  - bioconductor-flowcore >=2.22.0,<2.23.0
+  - bioconductor-rhdf5lib >=1.32.0,<1.33.0
+  - r-base
+  - r-bh
+  - r-cpp11
+source:
+  md5: b7ea9a69a6d82273d02d25a3bea8b3b2
+  url:
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/ncdfFlow_2.56.0.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/ncdfFlow/ncdfFlow_2.56.0.tar.gz
+  - https://bioarchive.galaxyproject.org/ncdfFlow_2.56.0.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-ncdfflow/bioconductor-ncdfflow_2.56.0_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('ncdfFlow')"

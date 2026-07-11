@@ -1,0 +1,32 @@
+about:
+  doc_url: https://metacpan.org/pod/Data::UUID
+  home: https://metacpan.org/pod/Data::UUID
+  license: BSD
+  summary: Globally/Universally Unique Identifiers (GUIDs/UUIDs).
+build:
+  number: 1
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+package:
+  name: perl-data-uuid
+  version: '1.227'
+requirements:
+  build:
+  - make
+  - null
+  host:
+  - perl
+  - perl-digest-md5
+  - perl-extutils-makemaker
+  run:
+  - perl
+  - perl-digest-md5
+source:
+  sha256: 95bda7276265f57bc48ffdeddec5ef28cd6f765e3a183757fa5f09f0ce6b98ac
+  url: https://cpan.metacpan.org/authors/id/G/GT/GTERMARS/Data-UUID-1.227.tar.gz
+test:
+  imports:
+  - Data::UUID

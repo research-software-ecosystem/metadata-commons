@@ -1,0 +1,79 @@
+about:
+  description: '# biobb_vs
+
+
+    ### Introduction
+
+    Biobb_vs is the Biobb module collection to perform virtual screening studies.
+    Biobb (BioExcel building blocks) packages are Python building blocks that create
+    new layer of compatibility and interoperability over popular bioinformatics tools.
+
+    The latest documentation of this package can be found in our readthedocs site:
+
+    [latest API documentation](http://biobb-vs.readthedocs.io/en/latest/).
+
+
+
+    ### Copyright & Licensing
+
+    This software has been developed in the [MMB group](http://mmb.irbbarcelona.org)
+    at the [BSC](http://www.bsc.es/) & [IRB](https://www.irbbarcelona.org/) for the
+    [European BioExcel](http://bioexcel.eu/), funded by the European Commission (EU
+    Horizon Europe [101093290](https://cordis.europa.eu/project/id/101093290), EU
+    H2020 [823830](http://cordis.europa.eu/projects/823830), EU H2020 [675728](http://cordis.europa.eu/projects/675728)).
+
+
+    * (c) 2015-2026 [Barcelona Supercomputing Center](https://www.bsc.es/)
+
+    * (c) 2015-2026 [Institute for Research in Biomedicine](https://www.irbbarcelona.org/)
+
+    Licensed under the
+
+    [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0), see the file
+    LICENSE for details.
+
+
+    ![](https://bioexcel.eu/wp-content/uploads/2019/04/Bioexcell_logo_1080px_transp.png
+    "Bioexcel")
+
+
+
+    '
+  doc_url: http://biobb-vs.readthedocs.io/en/latest/
+  home: https://github.com/bioexcel/biobb_vs
+  license: Apache-2.0 license
+  summary: Biobb_vs is the Biobb module collection to perform virtual screening studies.
+build:
+  noarch: python
+  number: 1
+  run_exports:
+  - null
+  script: ' -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv'
+extra:
+  recipe-maintainers:
+  - gbayarri
+  - RubenChM
+package:
+  name: biobb_vs
+  version: 5.2.1
+requirements:
+  host:
+  - python >=3.10
+  - setuptools
+  - biobb_common ==5.2.2
+  - vina >1.2.5
+  - fpocket ==4.1
+  run:
+  - python >=3.10
+  - biobb_common ==5.2.2
+  - vina >1.2.5
+  - fpocket ==4.1
+source:
+  sha256: 4e1675974280f7ecc864b2489d75b7fa1d3392ad0f9de64f5346b03a27296d0b
+  url: https://pypi.io/packages/source/b/biobb_vs/biobb_vs-5.2.1.tar.gz
+test:
+  imports:
+  - biobb_vs
+  - biobb_vs.fpocket
+  - biobb_vs.utils
+  - biobb_vs.vina

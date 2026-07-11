@@ -1,0 +1,29 @@
+package: mira-assembler
+distribution: debian
+release: sid
+component: main
+version: 4.9.6
+source: mira
+homepage: https://sourceforge.net/p/mira-assembler/wiki/Home/
+license: unknown
+blend: debian-med
+description_md5: a8c6d1905e05378eb5c622bc2c3fc577
+registries:
+- entry: OMICS_00023
+  name: OMICtools
+- entry: SCR_010731
+  name: SciCrunch
+- entry: MIRA
+  name: bio.tools
+- entry: mira
+  name: conda:bioconda
+bib:
+- key: doi
+  value: 10.1101/gr.1917404
+tags:
+- tag: role::program
+popcon:
+- insts: 117
+  olde: 88
+  recent: 23
+  vote: 6

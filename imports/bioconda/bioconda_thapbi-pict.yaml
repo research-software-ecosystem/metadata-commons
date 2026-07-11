@@ -1,0 +1,62 @@
+about:
+  description: 'THAPBI Phytophthora ITS1 Classifier Tool (PICT) an ITS1-based
+
+    diagnostic/profiling tool from the UK BBSRC funded Tree Health
+
+    and Plant Biosecurity Initiative (THAPBI) Phyto-Threats project,
+
+    focused on identifying Phytophthora species present in Illumina
+
+    sequenced environmental samples.
+
+    '
+  dev_url: https://github.com/peterjc/thapbi-pict
+  doc_url: https://thapbi-pict.readthedocs.io/en/latest/
+  home: https://github.com/peterjc/thapbi-pict
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE.rst
+  summary: THAPBI Phytophthora ITS1 Classifier Tool (PICT).
+build:
+  entry_points:
+  - thapbi_pict = thapbi_pict.__main__:main
+  noarch: python
+  number: 0
+  run_exports:
+  - null
+  script: ' -m pip install . --no-deps --no-build-isolation --no-cache-dir -vvv'
+extra:
+  recipe-maintainers:
+  - peterjc
+package:
+  name: thapbi-pict
+  version: 1.0.24
+requirements:
+  host:
+  - pip
+  - python >=3.10
+  - setuptools
+  run:
+  - biom-format >=2.1.14
+  - biopython >=1.84
+  - cutadapt >=4.9
+  - matplotlib-base >=3.9.2
+  - networkx >=3.4.2
+  - pydot >=3.0.1
+  - python >=3.10
+  - rapidfuzz >=3.10.1
+  - sqlalchemy >=2.0.36
+  - xlsxwriter >=3.2
+  - blast
+  - flash >=1.2.11
+  - graphviz
+  - vsearch
+source:
+  sha256: 0f0917b6c96974d670d9615e7b3e91cc2c9d857b85a320826489164eb34c5f28
+  url: https://pypi.io/packages/source/t/thapbi_pict/thapbi_pict-1.0.24.tar.gz
+test:
+  commands:
+  - thapbi_pict --help
+  - thapbi_pict -v
+  imports:
+  - thapbi_pict

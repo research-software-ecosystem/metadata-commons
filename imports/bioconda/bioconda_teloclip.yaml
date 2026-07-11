@@ -1,0 +1,48 @@
+about:
+  dev_url: https://github.com/Adamtaranto/teloclip
+  doc_url: https://github.com/Adamtaranto/teloclip/blob/0.3.4/README.md
+  home: https://github.com/Adamtaranto/teloclip
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE
+  summary: A tool for the recovery of unassembled telomeres from soft-clipped read
+    alignments.
+build:
+  entry_points:
+  - teloclip=teloclip.cli:main
+  noarch: python
+  number: 0
+  run_exports:
+  - null
+  script: ' -m pip install . --no-deps --no-build-isolation --no-cache-dir -vvv'
+extra:
+  recipe-maintainers:
+  - Adamtaranto
+package:
+  name: teloclip
+  version: 0.3.4
+requirements:
+  host:
+  - python >=3.8
+  - pip
+  - hatchling
+  - hatch-vcs
+  run:
+  - python >=3.8
+  - biopython
+  - click
+  - pyfaidx
+  - pysam
+  - rich
+source:
+  sha256: 0986d1d7480e048c4f27184b2f121d4bb461512b90ada0eda8ec2590d25376f4
+  url: https://pypi.io/packages/source/t/teloclip/teloclip-0.3.4.tar.gz
+test:
+  commands:
+  - teloclip --version | grep 0.3.4
+  - teloclip --help
+  - teloclip filter --help
+  - teloclip extract --help
+  - teloclip extend --help
+  imports:
+  - teloclip

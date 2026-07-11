@@ -1,0 +1,30 @@
+about:
+  home: https://github.com/goodwright/nextflow.py/
+  license: MIT
+  license_file: LICENSE
+  summary: Python module to run Nextflow pipelines
+build:
+  noarch: python
+  number: 0
+  run_exports:
+  - null
+  script: -m pip install --no-deps --ignore-installed -vvv .
+extra:
+  recipe-maintainers:
+  - telatin
+package:
+  name: python-nextflow
+  version: 0.13.1
+requirements:
+  host:
+  - python >=3.6,<=3.10
+  - pip
+  run:
+  - python >=3.6,<=3.10
+  - nextflow
+source:
+  sha256: 368e48a41b04193cdcff999862fc4a0cf1420224a1e18e632b655a96f2e34254
+  url: https://github.com/goodwright/nextflow.py/archive/v0.13.1.tar.gz
+test:
+  imports:
+  - nextflow

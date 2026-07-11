@@ -1,0 +1,64 @@
+about:
+  home: https://github.com/ohmeta/quantpi
+  license: GPL-3.0-only
+  license_family: GPL
+  summary: A general profiling system focus on robust microbiome research
+build:
+  entry_points:
+  - quantpi = quantpi.corer:main
+  noarch: python
+  number: 0
+  run_exports:
+  - null
+  script: ' -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv'
+extra:
+  identifiers:
+  - biotools:quantpi
+  recipe-maintainers:
+  - alienzj
+package:
+  name: quantpi
+  version: 1.0.0
+requirements:
+  host:
+  - python
+  - pip
+  run:
+  - python
+  - numpy
+  - pandas
+  - matplotlib-base
+  - seaborn
+  - openpyxl
+  - biopython
+  - natsort
+  - ruamel.yaml
+  - snakemake
+  - bwa
+  - bowtie2
+  - samtools
+  - sambamba
+  - fastp
+  - fastqc
+  - multiqc
+  - seqkit
+  - metaphlan
+  - humann
+  - kraken2
+  - bracken >=2.7
+  - krakentools >=1.2
+  - krona
+  - kmcp >=0.8.2
+  - coverm >=0.6.1
+  - pigz
+  - bedtools
+source:
+  sha256: 05c2b66693cbe5d349d93fe02368b8fb4e26f688f59781d0f1a4ae9eef9ab11e
+  url: https://github.com/ohmeta/quantpi/archive/refs/tags/v1.0.0.tar.gz
+test:
+  commands:
+  - quantpi --version
+  - quantpi init --help
+  - quantpi profiling_wf --help
+  imports:
+  - quantpi

@@ -1,0 +1,27 @@
+about:
+  home: https://github.com/RobbinBouwmeester/DeepLCRetrainer
+  license: Apache-2.0
+  license_file: LICENSE
+  summary: Evaluating DeepLC performance and retraining prediction models.
+build:
+  noarch: python
+  number: 0
+  run_exports:
+  - null
+  script: -m pip install . -vvv
+package:
+  name: deeplcretrainer
+  version: 1.0.2
+requirements:
+  host:
+  - python
+  - pip
+  - flit-core >=3.2,<4
+  run:
+  - python
+source:
+  sha256: 3402c747025a00d0f16b772736226c816b67ecfb633863e326618999daaabedd
+  url: https://pypi.io/packages/source/D/DeepLCRetrainer/deeplcretrainer-1.0.2.tar.gz
+test:
+  imports:
+  - deeplcretrainer

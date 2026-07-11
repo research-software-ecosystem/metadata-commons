@@ -1,0 +1,25 @@
+about:
+  home: https://github.com/PacificBiosciences/pbbioconda
+  license: BSD-3-Clause-Clear
+  summary: Iso-Seq - Scalable De Novo Isoform Discovery
+build:
+  binary_relocation: false
+  number: 0
+  run_exports:
+  - null
+  skip: true
+extra:
+  recipe-maintainers:
+  - armintoepfer
+  - pb-dseifert
+  skip-lints:
+  - should_be_noarch_generic
+package:
+  name: isoseq
+  version: 26.2.0
+source:
+  sha256: 94d008291457c5efe723f282bf963a2c4a5c026421e887397ddb94cd878cce2f
+  url: https://github.com/PacificBiosciences/IsoSeq/releases/download/v26.2.0/isoseq
+test:
+  commands:
+  - isoseq -h

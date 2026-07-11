@@ -1,0 +1,38 @@
+about:
+  dev_url: https://github.com/OpenGene/fastplong
+  doc_url: https://github.com/OpenGene/fastplong/blob/v0.4.1/README.md
+  home: https://github.com/OpenGene/fastplong
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE
+  summary: Ultra-fast preprocessing and quality control for long-read sequencing data.
+build:
+  number: 0
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+  identifiers:
+  - doi:10.1093/bioinformatics/bty560
+  - doi:10.1002/imt2.107
+package:
+  name: fastplong
+  version: 0.4.1
+requirements:
+  build:
+  - make
+  - null
+  host:
+  - isa-l
+  - libdeflate
+  - libhwy
+  run:
+  - isa-l
+source:
+  sha256: 9d957babfaa216512a542a39dd1b0389384b3d444b55353032e7b707c2cfc969
+  url: https://github.com/OpenGene/fastplong/archive/v0.4.1.tar.gz
+test:
+  commands:
+  - fastplong --help

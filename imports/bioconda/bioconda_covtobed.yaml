@@ -1,0 +1,35 @@
+about:
+  dev_url: https://github.com/telatin/covtobed
+  doc_url: https://github.com/telatin/covtobed/wiki
+  home: https://github.com/telatin/covtobed
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE
+  summary: covtobed - generate a BED file of covered regions from a BAM file.
+build:
+  number: 0
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+package:
+  name: covtobed
+  version: 1.4.0
+requirements:
+  build:
+  - null
+  host:
+  - zlib
+  - bamtools ==2.5.3
+  run:
+  - bamtools  ==2.5.3
+source:
+  sha256: a3e579194721aae271d36143bc09d0e03db67146991d8fe8ab861c478252a670
+  url: https://github.com/telatin/covtobed/archive/v1.4.0.tar.gz
+test:
+  commands:
+  - covtobed -h
+  files:
+  - test.bam

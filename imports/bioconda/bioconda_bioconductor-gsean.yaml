@@ -1,0 +1,49 @@
+about:
+  description: Biological molecules in a living organism seldom work individually.
+    They usually interact each other in a cooperative way. Biological process is too
+    complicated to understand without considering such interactions. Thus, network-based
+    procedures can be seen as powerful methods for studying complex process. However,
+    many methods are devised for analyzing individual genes. It is said that techniques
+    based on biological networks such as gene co-expression are more precise ways
+    to represent information than those using lists of genes only. This package is
+    aimed to integrate the gene expression and biological network. A biological network
+    is constructed from gene expression data and it is used for Gene Set Enrichment
+    Analysis.
+  home: https://bioconductor.org/packages/3.22/bioc/html/gsean.html
+  license: Artistic-2.0
+  summary: Gene Set Enrichment Analysis with Networks
+build:
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+package:
+  name: bioconductor-gsean
+  version: 1.30.0
+requirements:
+  build:
+  - null
+  - make
+  host:
+  - bioconductor-fgsea >=1.36.0,<1.37.0
+  - bioconductor-ppinfer >=1.36.0,<1.37.0
+  - r-base
+  - libblas
+  - liblapack
+  - zlib
+  - liblzma-devel
+  run:
+  - bioconductor-fgsea >=1.36.0,<1.37.0
+  - bioconductor-ppinfer >=1.36.0,<1.37.0
+  - r-base
+source:
+  md5: c0827198e6d5ee7753a7d93e557ed72a
+  url:
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/gsean_1.30.0.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/gsean/gsean_1.30.0.tar.gz
+  - https://bioarchive.galaxyproject.org/gsean_1.30.0.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-gsean/bioconductor-gsean_1.30.0_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('gsean')"

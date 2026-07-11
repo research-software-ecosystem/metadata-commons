@@ -1,0 +1,44 @@
+about:
+  home: https://github.com/gwmHIT/cuteSV-OL
+  license: MIT
+  license_file: LICENSE
+  summary: 'cuteSV-OL: real-time structural variation detection for nanopore sequencing'
+build:
+  number: 0
+  run_exports:
+  - null
+extra:
+  recipe-maintainers:
+  - gwmHIT
+package:
+  name: cutesv-ol
+  version: 1.0.2
+requirements:
+  build:
+  - null
+  host:
+  - python >=3.8,<=3.12
+  - setuptools
+  - cython
+  - pip
+  - pysam >=0.22.1
+  run:
+  - python >=3.8
+  - scipy
+  - cigar
+  - numpy >=1.24.4,<2.0
+  - biopython
+  - scikit-learn
+  - minimap2
+  - samtools
+  - watchdog
+  - pyvcf3
+source:
+  sha256: e1a52804d2455b1416f3397d2391543a40048e36ef13bf9301f502f25148ecc7
+  url: https://github.com/gwmHIT/cuteSV-OL/archive/refs/tags/v1.0.2.tar.gz
+test:
+  commands:
+  - cuteSV_ONLINE --help
+  imports:
+  - cuteSV
+  - online

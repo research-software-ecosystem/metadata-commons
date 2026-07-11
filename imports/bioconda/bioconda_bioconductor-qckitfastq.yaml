@@ -1,0 +1,58 @@
+about:
+  description: Assessment of FASTQ file format with multiple metrics including quality
+    score, sequence content, overrepresented sequence and Kmers.
+  home: https://bioconductor.org/packages/3.20/bioc/html/qckitfastq.html
+  license: Artistic-2.0
+  summary: FASTQ Quality Control
+build:
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+package:
+  name: bioconductor-qckitfastq
+  version: 1.22.0
+requirements:
+  build:
+  - null
+  - null
+  - make
+  host:
+  - bioconductor-rseqan >=1.26.0,<1.27.0
+  - bioconductor-seqtools >=1.40.0,<1.41.0
+  - bioconductor-zlibbioc >=1.52.0,<1.53.0
+  - r-base
+  - r-data.table
+  - r-dplyr
+  - r-ggplot2
+  - r-magrittr
+  - r-rcpp
+  - r-reshape2
+  - r-rlang
+  - libblas
+  - liblapack
+  - zlib
+  - liblzma-devel
+  run:
+  - bioconductor-rseqan >=1.26.0,<1.27.0
+  - bioconductor-seqtools >=1.40.0,<1.41.0
+  - bioconductor-zlibbioc >=1.52.0,<1.53.0
+  - r-base
+  - r-data.table
+  - r-dplyr
+  - r-ggplot2
+  - r-magrittr
+  - r-rcpp
+  - r-reshape2
+  - r-rlang
+source:
+  md5: 77c0797c0e417c03aa5424bfb1d9ec15
+  url:
+  - https://bioconductor.org/packages/3.20/bioc/src/contrib/qckitfastq_1.22.0.tar.gz
+  - https://bioconductor.org/packages/3.20/bioc/src/contrib/Archive/qckitfastq/qckitfastq_1.22.0.tar.gz
+  - https://bioarchive.galaxyproject.org/qckitfastq_1.22.0.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-qckitfastq/bioconductor-qckitfastq_1.22.0_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('qckitfastq')"

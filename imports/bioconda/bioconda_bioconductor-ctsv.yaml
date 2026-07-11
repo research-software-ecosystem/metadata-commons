@@ -1,0 +1,51 @@
+about:
+  description: The R package CTSV implements the CTSV approach developed by Jinge
+    Yu and Xiangyu Luo that detects cell-type-specific spatially variable genes accounting
+    for excess zeros. CTSV directly models sparse raw count data through a zero-inflated
+    negative binomial regression model, incorporates cell-type proportions, and performs
+    hypothesis testing based on R package pscl. The package outputs p-values and q-values
+    for genes in each cell type, and CTSV is scalable to datasets with tens of thousands
+    of genes measured on hundreds of spots. CTSV can be installed in Windows, Linux,
+    and Mac OS.
+  home: https://bioconductor.org/packages/3.22/bioc/html/CTSV.html
+  license: GPL-3
+  license_file: /lib/R/share/licenses/GPL-3
+  summary: Identification of cell-type-specific spatially variable genes accounting
+    for excess zeros
+build:
+  noarch: generic
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+package:
+  name: bioconductor-ctsv
+  version: 1.12.0
+requirements:
+  host:
+  - bioconductor-biocparallel >=1.44.0,<1.45.0
+  - bioconductor-qvalue >=2.42.0,<2.43.0
+  - bioconductor-spatialexperiment >=1.20.0,<1.21.0
+  - bioconductor-summarizedexperiment >=1.40.0,<1.41.0
+  - r-base
+  - r-knitr
+  - r-pscl
+  run:
+  - bioconductor-biocparallel >=1.44.0,<1.45.0
+  - bioconductor-qvalue >=2.42.0,<2.43.0
+  - bioconductor-spatialexperiment >=1.20.0,<1.21.0
+  - bioconductor-summarizedexperiment >=1.40.0,<1.41.0
+  - r-base
+  - r-knitr
+  - r-pscl
+source:
+  md5: ad6678c041299598903c2d1803b3d300
+  url:
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/CTSV_1.12.0.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/CTSV/CTSV_1.12.0.tar.gz
+  - https://bioarchive.galaxyproject.org/CTSV_1.12.0.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-ctsv/bioconductor-ctsv_1.12.0_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('CTSV')"

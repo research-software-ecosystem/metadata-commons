@@ -1,0 +1,28 @@
+about:
+  home: https://github.com/brentp/toolshed
+  license: BSD-2-Clause
+  summary: flexible and easy file manipulation
+build:
+  noarch: python
+  number: 0
+  run_exports:
+  - null
+  script: -m pip install . --ignore-installed --no-deps -vv
+package:
+  name: toolshed
+  version: 0.4.8
+requirements:
+  host:
+  - python
+  - pip
+  - setuptools
+  run:
+  - python
+source:
+  sha256: a47c3ab8cec47c75a7a6d142c73663d928a9e57f6d7739108607508c8fe06e3b
+  url: https://files.pythonhosted.org/packages/de/a6/e4d602259136557b8873981e11f3445880f236e963e769f892ae314fb1d9/toolshed-0.4.8.tar.gz
+test:
+  imports:
+  - toolshed
+  requires:
+  - nose

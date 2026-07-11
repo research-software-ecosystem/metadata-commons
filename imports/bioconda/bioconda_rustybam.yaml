@@ -1,0 +1,46 @@
+about:
+  dev_url: https://github.com/vollgerlab/rustybam
+  doc_url: https://vollgerlab.com/rustybam
+  home: https://github.com/vollgerlab/rustybam
+  license: MIT
+  license_family: MIT
+  summary: Mitchell Vollger's bioinformatics rust utilities.
+build:
+  number: 0
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - osx-arm64
+  recipe-maintainers:
+  - mrvollger
+package:
+  name: rustybam
+  version: 0.2.0
+requirements:
+  build:
+  - null
+  - null
+  - null
+  - cargo-bundle-licenses
+  - pkg-config
+  - make
+  - cmake
+  - clangdev
+  host:
+  - gsl
+  - libcblas
+  - libcurl
+  - bzip2
+  - xz
+  - zlib
+  - libdeflate
+  - openssl
+  run:
+  - openssl
+source:
+  sha256: c7bd4db5bbf3b375c2773838fa79f1a9f328757301dcec4a0cdb1f0d80aa0228
+  url: https://github.com/vollgerlab/rustybam/archive/v0.2.0.tar.gz
+test:
+  commands:
+  - rb --help

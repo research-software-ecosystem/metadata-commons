@@ -1,0 +1,32 @@
+about:
+  home: https://github.com/rrwick/Core-SNP-filter
+  license: GPLv3
+  license_family: GPL
+  license_file: LICENSE
+  summary: Filtering sites (i.e. columns) in a FASTA-format whole-genome pseudo-alignment.
+build:
+  number: 2
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+package:
+  name: core-snp-filter
+  version: 0.2.0
+requirements:
+  build:
+  - null
+  - null
+  - null
+  - pkg-config
+  - clangdev
+  - make
+  - cmake
+source:
+  sha256: 5fa0357c4429e52644a9bdd5dfa4be3a3fc6889073f7678ed5a47f8a7f267c3d
+  url: https://github.com/rrwick/Core-SNP-filter/archive/refs/tags/v0.2.0.tar.gz
+test:
+  commands:
+  - coresnpfilter -h

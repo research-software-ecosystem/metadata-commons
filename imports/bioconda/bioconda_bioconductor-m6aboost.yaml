@@ -1,0 +1,51 @@
+about:
+  description: This package can help user to run the m6Aboost model on their own miCLIP2
+    data. The package includes functions to assign the read counts and get the features
+    to run the m6Aboost model. The miCLIP2 data should be stored in a GRanges object.
+    More details can be found in the vignette.
+  home: https://bioconductor.org/packages/3.22/bioc/html/m6Aboost.html
+  license: Artistic-2.0
+  summary: m6Aboost
+build:
+  noarch: generic
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+package:
+  name: bioconductor-m6aboost
+  version: 1.16.0
+requirements:
+  host:
+  - bioconductor-biostrings >=2.78.0,<2.79.0
+  - bioconductor-bsgenome >=1.78.0,<1.79.0
+  - bioconductor-experimenthub >=3.0.0,<3.1.0
+  - bioconductor-genomicranges >=1.62.0,<1.63.0
+  - bioconductor-iranges >=2.44.0,<2.45.0
+  - bioconductor-rtracklayer >=1.70.0,<1.71.0
+  - bioconductor-s4vectors >=0.48.0,<0.49.0
+  - r-adabag
+  - r-base
+  - r-dplyr
+  run:
+  - bioconductor-biostrings >=2.78.0,<2.79.0
+  - bioconductor-bsgenome >=1.78.0,<1.79.0
+  - bioconductor-experimenthub >=3.0.0,<3.1.0
+  - bioconductor-genomicranges >=1.62.0,<1.63.0
+  - bioconductor-iranges >=2.44.0,<2.45.0
+  - bioconductor-rtracklayer >=1.70.0,<1.71.0
+  - bioconductor-s4vectors >=0.48.0,<0.49.0
+  - r-adabag
+  - r-base
+  - r-dplyr
+source:
+  md5: 061521e02713a41176e8e868e64e8f81
+  url:
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/m6Aboost_1.16.0.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/m6Aboost/m6Aboost_1.16.0.tar.gz
+  - https://bioarchive.galaxyproject.org/m6Aboost_1.16.0.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-m6aboost/bioconductor-m6aboost_1.16.0_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('m6Aboost')"

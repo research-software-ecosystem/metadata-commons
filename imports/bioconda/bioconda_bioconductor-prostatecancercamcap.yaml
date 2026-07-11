@@ -1,0 +1,35 @@
+about:
+  description: A Bioconductor data package for the Ross-Adams (2015) Prostate Cancer
+    dataset.
+  home: https://bioconductor.org/packages/3.22/data/experiment/html/prostateCancerCamcap.html
+  license: Artistic-2.0
+  summary: Prostate Cancer Data
+build:
+  noarch: generic
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+package:
+  name: bioconductor-prostatecancercamcap
+  version: 1.38.0
+requirements:
+  host:
+  - bioconductor-biobase >=2.70.0,<2.71.0
+  - r-base
+  run:
+  - bioconductor-biobase >=2.70.0,<2.71.0
+  - r-base
+  - curl
+  - bioconductor-data-packages >=20260207
+source:
+  md5: 72175f7526f47293bfd4e54c0977a9cb
+  url:
+  - https://bioconductor.org/packages/3.22/data/experiment/src/contrib/prostateCancerCamcap_1.38.0.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/prostateCancerCamcap/prostateCancerCamcap_1.38.0.tar.gz
+  - https://bioarchive.galaxyproject.org/prostateCancerCamcap_1.38.0.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-prostatecancercamcap/bioconductor-prostatecancercamcap_1.38.0_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('prostateCancerCamcap')"

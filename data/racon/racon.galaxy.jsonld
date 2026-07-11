@@ -1,0 +1,108 @@
+{
+  "@context": {
+    "bioconda": "https://bioconda.github.io/recipes/",
+    "biotools": "https://bio.tools/",
+    "brick": "https://brickschema.org/schema/Brick#",
+    "csvw": "http://www.w3.org/ns/csvw#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "dcam": "http://purl.org/dc/dcam/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dcmitype": "http://purl.org/dc/dcmitype/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "doap": "http://usefulinc.com/ns/doap#",
+    "edam": "http://edamontology.org/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "galaxytool": "https://github.com/galaxyproject/tools-iuc/tree/master/tools/",
+    "galaxywf": "https://usegalaxy.eu/published/",
+    "geo": "http://www.opengis.net/ont/geosparql#",
+    "odrl": "http://www.w3.org/ns/odrl/2/",
+    "org": "http://www.w3.org/ns/org#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "prof": "http://www.w3.org/ns/dx/prof/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "qb": "http://purl.org/linked-data/cube#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "https://schema.org/",
+    "schema1": "http://schema.org/",
+    "sh": "http://www.w3.org/ns/shacl#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "sosa": "http://www.w3.org/ns/sosa/",
+    "ssn": "http://www.w3.org/ns/ssn/",
+    "time": "http://www.w3.org/2006/time#",
+    "vann": "http://purl.org/vocab/vann/",
+    "void": "http://rdfs.org/ns/void#",
+    "wgs": "https://www.w3.org/2003/01/geo/wgs84_pos#",
+    "workflowhub": "https://workflowhub.eu/workflows/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@id": "galaxytool:racon",
+  "@type": "schema1:SoftwareApplication",
+  "schema1:applicationSubCategory": [
+    {
+      "@id": "edam:topic_3673"
+    },
+    {
+      "@id": "edam:data_0925"
+    },
+    {
+      "@id": "edam:operation_0310"
+    },
+    {
+      "@id": "edam:topic_0196"
+    }
+  ],
+  "schema1:description": "Consensus module for raw de novo DNA assembly of long uncorrected reads.",
+  "schema1:featureList": [
+    {
+      "@id": "edam:operation_0525"
+    },
+    {
+      "@id": "edam:operation_3440"
+    },
+    {
+      "@id": "edam:operation_0523"
+    }
+  ],
+  "schema1:identifier": [
+    {
+      "@id": "biotools:Racon"
+    },
+    {
+      "@id": "bioconda:racon"
+    }
+  ],
+  "schema1:isPartOf": [
+    "workflowhub:1604?version=1",
+    "workflowhub:1599?version=1",
+    "workflowhub:1477?version=1",
+    "workflowhub:563?version=1",
+    "workflowhub:406?version=1",
+    "workflowhub:227?version=1",
+    "workflowhub:228?version=1",
+    "workflowhub:51?version=1",
+    "https://usegalaxy.eu/published/workflow?id=4eb9dfe91fc2dc67",
+    "https://usegalaxy.eu/published/workflow?id=a4f50449afde4a05",
+    "https://usegalaxy.eu/published/workflow?id=44e53ea319e07daa",
+    "https://usegalaxy.eu/published/workflow?id=8b2f53745e720d0f",
+    "https://usegalaxy.eu/published/workflow?id=c48807045e258dd8",
+    "https://usegalaxy.eu/published/workflow?id=39837ca09374598b",
+    "https://usegalaxy.eu/published/workflow?id=249c115413f17f28",
+    "https://usegalaxy.eu/published/workflow?id=dc7107896a3f2964",
+    "https://usegalaxy.eu/published/workflow?id=b4de76c0a4d0e23a",
+    "https://usegalaxy.eu/published/workflow?id=5826e573b6f93762",
+    "https://usegalaxy.eu/published/workflow?id=a337bfb2eb1e583f",
+    "https://usegalaxy.eu/published/workflow?id=a84bac86ec183d46",
+    "https://usegalaxy.eu/published/workflow?id=32d2f5340098bcbd",
+    "https://usegalaxy.eu/published/workflow?id=5500de2961f7470c",
+    "https://usegalaxy.org/published/workflow?id=bcdc5ce2ea8700fc",
+    "https://usegalaxy.org.au/published/workflow?id=0c421197e022f323",
+    "https://usegalaxy.org.au/published/workflow?id=d9571b3dfef34e5e",
+    "https://usegalaxy.org.au/published/workflow?id=1ff6aabb7e3954ac",
+    "https://usegalaxy.org.au/published/workflow?id=45e9910f46a210d8"
+  ],
+  "schema1:keywords": "Sequence Analysis",
+  "schema1:name": "racon",
+  "schema1:softwareVersion": "1.5.0",
+  "schema1:url": "https://github.com/isovic/racon"
+}

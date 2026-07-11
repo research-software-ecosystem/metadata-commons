@@ -1,0 +1,55 @@
+about:
+  description: Resources for cross-study analyses of public DNAm array data from NCBI
+    GEO repo, produced using Illumina's Infinium HumanMethylation450K (HM450K) and
+    MethylationEPIC (EPIC) platforms. Provided functions enable download, summary,
+    and filtering of large compilation files. Vignettes detail background about file
+    formats, example analyses, and more. Note the disclaimer on package load and consult
+    the main manuscripts for further info.
+  home: https://bioconductor.org/packages/3.22/bioc/html/recountmethylation.html
+  license: Artistic-2.0
+  summary: Access and analyze public DNA methylation array data compilations
+build:
+  noarch: generic
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+package:
+  name: bioconductor-recountmethylation
+  version: 1.20.0
+requirements:
+  host:
+  - bioconductor-basilisk >=1.22.0,<1.23.0
+  - bioconductor-biocfilecache >=3.0.0,<3.1.0
+  - bioconductor-delayedmatrixstats >=1.32.0,<1.33.0
+  - bioconductor-hdf5array >=1.38.0,<1.39.0
+  - bioconductor-minfi >=1.56.0,<1.57.0
+  - bioconductor-rhdf5 >=2.54.0,<2.55.0
+  - bioconductor-s4vectors >=0.48.0,<0.49.0
+  - r-base
+  - r-r.utils
+  - r-rcurl
+  - r-reticulate
+  run:
+  - bioconductor-basilisk >=1.22.0,<1.23.0
+  - bioconductor-biocfilecache >=3.0.0,<3.1.0
+  - bioconductor-delayedmatrixstats >=1.32.0,<1.33.0
+  - bioconductor-hdf5array >=1.38.0,<1.39.0
+  - bioconductor-minfi >=1.56.0,<1.57.0
+  - bioconductor-rhdf5 >=2.54.0,<2.55.0
+  - bioconductor-s4vectors >=0.48.0,<0.49.0
+  - r-base
+  - r-r.utils
+  - r-rcurl
+  - r-reticulate
+source:
+  md5: eac2ddcbb5fb35c93ac6e3befb430bd7
+  url:
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/recountmethylation_1.20.0.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/recountmethylation/recountmethylation_1.20.0.tar.gz
+  - https://bioarchive.galaxyproject.org/recountmethylation_1.20.0.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-recountmethylation/bioconductor-recountmethylation_1.20.0_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('recountmethylation')"

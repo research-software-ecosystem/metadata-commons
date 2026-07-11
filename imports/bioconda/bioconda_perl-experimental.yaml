@@ -1,0 +1,30 @@
+about:
+  home: http://metacpan.org/pod/experimental
+  license: perl_5
+  summary: Experimental features made easy
+build:
+  noarch: generic
+  number: 0
+  run_exports:
+  - null
+package:
+  name: perl-experimental
+  version: '0.036'
+requirements:
+  build:
+  - make
+  host:
+  - perl
+  - perl-carp
+  - perl-extutils-makemaker
+  - perl-version
+  run:
+  - perl
+  - perl-carp
+  - perl-version
+source:
+  sha256: 42612937c20f0c758547d0519bf535d7f378aa2a01fb20453b2a015a14d6720c
+  url: https://cpan.metacpan.org/authors/id/L/LE/LEONT/experimental-0.036.tar.gz
+test:
+  imports:
+  - experimental

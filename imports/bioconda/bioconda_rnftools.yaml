@@ -1,0 +1,56 @@
+about:
+  home: http://karel-brinda.github.io/rnftools
+  license: MIT
+  summary: 'RNF framework for NGS: simulation of reads, evaluation of mappers, conversion
+    of RNF-compliant data.'
+build:
+  entry_points:
+  - rnftools = rnftools.scripts:rnftools_script
+  noarch: python
+  number: 0
+  run_exports:
+  - null
+  script: ' -m pip install . --no-deps --no-build-isolation -vvv'
+extra:
+  recipe-maintainers:
+  - karel-brinda
+package:
+  name: rnftools
+  version: 0.4.0.0
+requirements:
+  host:
+  - beautifulsoup4
+  - pip
+  - pyfaidx
+  - pysam
+  - python >=3
+  - snakemake-minimal
+  - svg42pdf >=0.2.2
+  run:
+  - art
+  - beautifulsoup4
+  - bwa
+  - curesim
+  - dwgsim
+  - gnuplot >=5.0
+  - mason
+  - pyfaidx
+  - pysam
+  - python >=3
+  - reportlab >=3.3.0
+  - samtools
+  - snakemake-minimal
+  - svg42pdf >=0.2.2
+  - xopen
+source:
+  sha256: 3420115a35d2685b6cc62dd2d6963fa58d464e50271dec2d4735a437b3b53c01
+  url: https://pypi.io/packages/source/r/rnftools/rnftools-0.4.0.0.tar.gz
+test:
+  commands:
+  - rnftools -h
+  imports:
+  - rnftools
+  - rnftools.lavender
+  - rnftools.mishmash
+  - rnftools.rnfformat
+  - rnftools.utils

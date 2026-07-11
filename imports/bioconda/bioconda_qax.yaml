@@ -1,0 +1,27 @@
+about:
+  home: https://github.com/telatin/qax
+  license: GPL-3.0-only
+  license_file: LICENSE
+  summary: Extract data, metadata, bibliography and provenance from Qiime2 artifacts
+build:
+  number: 0
+  run_exports:
+  - null
+package:
+  name: qax
+  version: 0.9.8
+requirements:
+  build:
+  - null
+  - nim
+  host:
+  - zlib
+  - libzip
+  run:
+  - zip
+source:
+- sha256: cd26815fa59a12cdc4a6cb50c2ea946fd6f0043a7d453c8d9740b8d2ac185b9a
+  url: https://github.com/telatin/qax/archive/v0.9.8.tar.gz
+test:
+  commands:
+  - qax --help | grep 0.9.8

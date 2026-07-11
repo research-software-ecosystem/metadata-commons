@@ -1,0 +1,62 @@
+about:
+  dev_url: https://github.com/kfuku52/csubst
+  doc_url: https://github.com/kfuku52/csubst/blob/v1.11.12/README.md
+  home: https://github.com/kfuku52/csubst
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE
+  summary: Tool for analyzing combinatorial codon substitutions in DNA sequences.
+build:
+  number: 0
+  run_exports:
+  - null
+  script:
+  - export LDFLAGS="${LDFLAGS} -L${PREFIX}/lib"
+  - export CPPFLAGS="${CPPFLAGS} -I${PREFIX}/include -I$(python -c 'import numpy;
+    print(numpy.get_include())')"
+  - sed -i.bak 's|find_packages|find_namespace_packages|' setup.py
+  - rm -f *.bak
+  - setup.py build_ext --inplace
+  - -m pip install . --no-deps --no-build-isolation --no-cache-dir --use-pep517 -vvv
+  skip: true
+extra:
+  additional-platforms:
+  - osx-arm64
+  identifiers:
+  - doi:10.1038/s41559-022-01932-7
+  recipe-maintainers:
+  - kfuku52
+package:
+  name: csubst
+  version: 1.11.12
+requirements:
+  build:
+  - null
+  - null
+  - null
+  host:
+  - python
+  - pip
+  - cython
+  - setuptools
+  - numpy
+  run:
+  - python
+  - ete4 >=4.3.0
+  - numpy
+  - scipy
+  - pandas
+  - matplotlib-base
+  - iqtree >=2.0.0
+  - pyvolve
+  - biopython
+  - pymol-open-source
+  - mafft
+source:
+  sha256: f2162cb7261e7c09bae473149b9f5772b98503cdf524671a6c9b8f9dbb824fe3
+  url: https://github.com/kfuku52/csubst/archive/refs/tags/v1.11.12.tar.gz
+test:
+  commands:
+  - csubst --help
+  imports:
+  - csubst

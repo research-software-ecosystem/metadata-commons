@@ -1,0 +1,64 @@
+about:
+  description: Assessment and Comparison for Performance of Risk Prediction (Survival)
+    Models.
+  home: https://bioconductor.org/packages/3.22/bioc/html/survcomp.html
+  license: Artistic-2.0
+  summary: Performance Assessment and Comparison for Survival Analysis
+build:
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+  identifiers:
+  - biotools:survcomp
+  parent_recipe:
+    name: bioconductor-survcomp
+    path: recipes/bioconductor-survcomp
+    version: 1.30.0
+package:
+  name: bioconductor-survcomp
+  version: 1.60.0
+requirements:
+  build:
+  - null
+  - null
+  - make
+  host:
+  - r-base
+  - r-bootstrap
+  - r-ipred
+  - r-kernsmooth
+  - r-prodlim
+  - r-rmeta
+  - r-suppdists
+  - r-survival
+  - r-survivalroc
+  - libblas
+  - liblapack
+  - zlib
+  - liblzma-devel
+  run:
+  - r-base
+  - r-bootstrap
+  - r-ipred
+  - r-kernsmooth
+  - r-prodlim
+  - r-rmeta
+  - r-suppdists
+  - r-survival
+  - r-survivalroc
+source:
+  md5: 185ad641790d78106f07126e206bd4f0
+  url:
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/survcomp_1.60.0.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/survcomp/survcomp_1.60.0.tar.gz
+  - https://bioarchive.galaxyproject.org/survcomp_1.60.0.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-survcomp/bioconductor-survcomp_1.60.0_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('survcomp')"

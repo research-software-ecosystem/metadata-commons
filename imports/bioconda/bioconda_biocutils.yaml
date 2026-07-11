@@ -1,0 +1,37 @@
+about:
+  home: https://github.com/biocpy/biocutils
+  license: MIT
+  license_file: LICENSE.txt
+  summary: Miscellaneous utilities for BiocPy, mostly to mimic base functionality
+    in R.
+build:
+  noarch: python
+  number: 0
+  run_exports:
+  - null
+  script: -m pip install . -vv --no-deps --no-build-isolation
+extra:
+  recipe-maintainers:
+  - SilenWang
+package:
+  name: biocutils
+  version: 0.4.1
+requirements:
+  host:
+  - python
+  - setuptools >=46.1.0
+  - setuptools-scm >=5
+  - pip
+  run:
+  - python
+  - numpy
+source:
+  sha256: b9ebffc6352a92a4818e6af1a51f4bf6070288a2f062161fd70ec1e31323744b
+  url: https://pypi.org/packages/source/b/biocutils/biocutils-0.4.1.tar.gz
+test:
+  commands:
+  - pip check
+  imports:
+  - biocutils
+  requires:
+  - pip

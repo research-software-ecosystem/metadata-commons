@@ -1,0 +1,106 @@
+about:
+  description: This package provides a GUI interface for the DAPAR package. The package
+    Prostar (Proteomics statistical analysis with R) is a Bioconductor distributed
+    R package which provides all the necessary functions to analyze quantitative data
+    from label-free proteomics experiments. Contrarily to most other similar R packages,
+    it is endowed with rich and user-friendly graphical interfaces, so that no programming
+    skill is required.
+  home: https://bioconductor.org/packages/3.22/bioc/html/Prostar.html
+  license: Artistic-2.0
+  summary: Provides a GUI for DAPAR
+build:
+  noarch: generic
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+extra:
+  parent_recipe:
+    name: bioconductor-prostar
+    path: recipes/bioconductor-prostar
+    version: 1.14.7
+package:
+  name: bioconductor-prostar
+  version: 1.42.0
+requirements:
+  host:
+  - bioconductor-biobase >=2.70.0,<2.71.0
+  - bioconductor-dapar >=1.42.0,<1.43.0
+  - bioconductor-dapardata >=1.40.0,<1.41.0
+  - r-base
+  - r-colourpicker
+  - r-data.table
+  - r-dt
+  - r-future
+  - r-ggplot2
+  - r-gplots
+  - r-gtools
+  - r-highcharter
+  - r-htmlwidgets
+  - r-later
+  - r-markdown
+  - r-promises
+  - r-r.utils
+  - r-rclipboard
+  - r-rcolorbrewer
+  - r-rhandsontable
+  - r-sass
+  - r-shiny
+  - r-shinyace
+  - r-shinybs
+  - r-shinycssloaders
+  - r-shinyjqui
+  - r-shinyjs
+  - r-shinythemes
+  - r-shinytree
+  - r-shinywidgets
+  - r-tibble
+  - r-vioplot
+  - r-webshot
+  - r-xml
+  run:
+  - bioconductor-biobase >=2.70.0,<2.71.0
+  - bioconductor-dapar >=1.42.0,<1.43.0
+  - bioconductor-dapardata >=1.40.0,<1.41.0
+  - r-base
+  - r-colourpicker
+  - r-data.table
+  - r-dt
+  - r-future
+  - r-ggplot2
+  - r-gplots
+  - r-gtools
+  - r-highcharter
+  - r-htmlwidgets
+  - r-later
+  - r-markdown
+  - r-promises
+  - r-r.utils
+  - r-rclipboard
+  - r-rcolorbrewer
+  - r-rhandsontable
+  - r-sass
+  - r-shiny
+  - r-shinyace
+  - r-shinybs
+  - r-shinycssloaders
+  - r-shinyjqui
+  - r-shinyjs
+  - r-shinythemes
+  - r-shinytree
+  - r-shinywidgets
+  - r-tibble
+  - r-vioplot
+  - r-webshot
+  - r-xml
+source:
+  md5: ef70ab7bfbd302a3b4f9a6e4c231e2d0
+  url:
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Prostar_1.42.0.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/Prostar/Prostar_1.42.0.tar.gz
+  - https://bioarchive.galaxyproject.org/Prostar_1.42.0.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-prostar/bioconductor-prostar_1.42.0_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('Prostar')"

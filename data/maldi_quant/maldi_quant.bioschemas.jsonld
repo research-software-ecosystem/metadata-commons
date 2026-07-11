@@ -1,0 +1,254 @@
+{
+  "@context": {
+    "biotools": "https://bio.tools/ontology/",
+    "brick": "https://brickschema.org/schema/Brick#",
+    "bsc": "http://bioschemas.org/",
+    "bsct": "http://bioschemas.org/types/",
+    "csvw": "http://www.w3.org/ns/csvw#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "dcam": "http://purl.org/dc/dcam/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dcmitype": "http://purl.org/dc/dcmitype/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "doap": "http://usefulinc.com/ns/doap#",
+    "edam": "http://edamontology.org/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "geo": "http://www.opengis.net/ont/geosparql#",
+    "odrl": "http://www.w3.org/ns/odrl/2/",
+    "org": "http://www.w3.org/ns/org#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "prof": "http://www.w3.org/ns/dx/prof/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "qb": "http://purl.org/linked-data/cube#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "sc": "http://schema.org/",
+    "schema": "https://schema.org/",
+    "sh": "http://www.w3.org/ns/shacl#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "sosa": "http://www.w3.org/ns/sosa/",
+    "ssn": "http://www.w3.org/ns/ssn/",
+    "time": "http://www.w3.org/2006/time#",
+    "vann": "http://purl.org/vocab/vann/",
+    "void": "http://rdfs.org/ns/void#",
+    "wgs": "https://www.w3.org/2003/01/geo/wgs84_pos#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "https://bio.tools/maldi_quant",
+      "@type": "sc:SoftwareApplication",
+      "biotools:primaryContact": {
+        "@id": "https://orcid.org/0000-0001-7406-4443"
+      },
+      "bsc:input": [
+        {
+          "@id": "_:N3728c6c20ebf47dbbe8a4748694865ae"
+        },
+        {
+          "@id": "_:N9d894a1491f744cb9d05664f2809ed4c"
+        },
+        {
+          "@id": "_:N0c53556825a9425e89f48c4e2a431017"
+        },
+        {
+          "@id": "_:Nfb02a2bffd9e4acbac227c990c916881"
+        },
+        {
+          "@id": "_:Nf4d220ce984849a5847b48011aa38089"
+        },
+        {
+          "@id": "_:N56db058d927748849c32e48706f2ca79"
+        }
+      ],
+      "bsc:output": [
+        {
+          "@id": "_:Nd8a8e19d33394c1fa51dc9c724f0aa26"
+        },
+        {
+          "@id": "_:N3a3de412b2a24530be24bb5cc21c2fb7"
+        },
+        {
+          "@id": "_:N69917b4f130b4b9e8d5336d95cbde557"
+        },
+        {
+          "@id": "_:Na46c60a250414377a7a8f38dcc142820"
+        }
+      ],
+      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "sc:additionalType": [
+        "Library",
+        "Workflow"
+      ],
+      "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_0121"
+        },
+        {
+          "@id": "edam:topic_3520"
+        }
+      ],
+      "sc:author": [
+        {
+          "@id": "https://orcid.org/0000-0001-7917-2056"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-7406-4443"
+        }
+      ],
+      "sc:citation": [
+        {
+          "@id": "https://doi.org/10.1093/bioinformatics/bts447"
+        },
+        "pubmed:22796955"
+      ],
+      "sc:description": "MALDIquant is a complete analysis pipeline for matrix-assisted laser desorption/ionization-time-of-flight (MALDI-TOF) and other two-dimensional mass spectrometry data. In addition to commonly used plotting and processing methods it includes distinctive features, namely baseline subtraction methods such as morphological filters (TopHat) or the statistics-sensitive non-linear iterative peak-clipping algorithm (SNIP), peak alignment using warping functions, handling of replicated measurements as well as allowing spectra with different resolutions.",
+      "sc:featureList": [
+        {
+          "@id": "edam:operation_3627"
+        },
+        {
+          "@id": "edam:operation_3215"
+        },
+        {
+          "@id": "edam:operation_0337"
+        },
+        {
+          "@id": "edam:operation_3799"
+        },
+        {
+          "@id": "edam:operation_3860"
+        }
+      ],
+      "sc:isAccessibleForFree": true,
+      "sc:license": "GPL-3.0",
+      "sc:name": "MALDIquant",
+      "sc:softwareHelp": {
+        "@id": "https://cran.r-project.org/web/packages/MALDIquant/MALDIquant.pdf"
+      },
+      "sc:url": "https://cran.r-project.org/package=MALDIquant"
+    },
+    {
+      "@id": "_:N3728c6c20ebf47dbbe8a4748694865ae",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2536"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3839"
+      },
+      "sc:name": "Mass spectrometry data"
+    },
+    {
+      "@id": "_:N9d894a1491f744cb9d05664f2809ed4c",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2536"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3839"
+      },
+      "sc:name": "Mass spectrometry data"
+    },
+    {
+      "@id": "_:N0c53556825a9425e89f48c4e2a431017",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2536"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3682"
+      },
+      "sc:name": "Mass spectrometry data"
+    },
+    {
+      "@id": "_:Nfb02a2bffd9e4acbac227c990c916881",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2536"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3682"
+      },
+      "sc:name": "Mass spectrometry data"
+    },
+    {
+      "@id": "_:Nf4d220ce984849a5847b48011aa38089",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2536"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3839"
+      },
+      "sc:name": "Mass spectrometry data"
+    },
+    {
+      "@id": "_:N56db058d927748849c32e48706f2ca79",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2536"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3682"
+      },
+      "sc:name": "Mass spectrometry data"
+    },
+    {
+      "@id": "_:Nd8a8e19d33394c1fa51dc9c724f0aa26",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2536"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3682"
+      },
+      "sc:name": "Mass spectrometry data"
+    },
+    {
+      "@id": "_:N3a3de412b2a24530be24bb5cc21c2fb7",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2048"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3752"
+      },
+      "sc:name": "Report"
+    },
+    {
+      "@id": "_:N69917b4f130b4b9e8d5336d95cbde557",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2536"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3839"
+      },
+      "sc:name": "Mass spectrometry data"
+    },
+    {
+      "@id": "_:Na46c60a250414377a7a8f38dcc142820",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2884"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3603"
+      },
+      "sc:name": "Plot"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-7917-2056",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-7406-4443",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.1093/bioinformatics/bts447",
+      "@type": "sc:CreativeWork"
+    }
+  ]
+}

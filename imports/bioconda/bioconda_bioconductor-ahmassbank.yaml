@@ -1,0 +1,37 @@
+about:
+  description: Supplies AnnotationHub with MassBank metabolite/compound annotations
+    bundled in CompDb SQLite databases. CompDb SQLite databases contain general compound
+    annotation as well as fragment spectra representing fragmentation patterns of
+    compounds' ions. MassBank data is retrieved from https://massbank.eu/MassBank
+    and processed using helper functions from the CompoundDb Bioconductor package
+    into redistributable SQLite databases.
+  home: https://bioconductor.org/packages/3.22/bioc/html/AHMassBank.html
+  license: Artistic-2.0
+  summary: MassBank Annotation Resources for AnnotationHub
+build:
+  noarch: generic
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+package:
+  name: bioconductor-ahmassbank
+  version: 1.10.0
+requirements:
+  host:
+  - bioconductor-annotationhubdata >=1.40.0,<1.41.0
+  - r-base
+  run:
+  - bioconductor-annotationhubdata >=1.40.0,<1.41.0
+  - r-base
+source:
+  md5: 382e24d8529bd16f192d873eff40ff36
+  url:
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/AHMassBank_1.10.0.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/AHMassBank/AHMassBank_1.10.0.tar.gz
+  - https://bioarchive.galaxyproject.org/AHMassBank_1.10.0.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-ahmassbank/bioconductor-ahmassbank_1.10.0_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('AHMassBank')"

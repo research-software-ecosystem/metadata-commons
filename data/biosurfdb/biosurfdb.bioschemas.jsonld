@@ -1,0 +1,197 @@
+{
+  "@context": {
+    "biotools": "https://bio.tools/ontology/",
+    "brick": "https://brickschema.org/schema/Brick#",
+    "bsc": "http://bioschemas.org/",
+    "bsct": "http://bioschemas.org/types/",
+    "csvw": "http://www.w3.org/ns/csvw#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "dcam": "http://purl.org/dc/dcam/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dcmitype": "http://purl.org/dc/dcmitype/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "doap": "http://usefulinc.com/ns/doap#",
+    "edam": "http://edamontology.org/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "geo": "http://www.opengis.net/ont/geosparql#",
+    "odrl": "http://www.w3.org/ns/odrl/2/",
+    "org": "http://www.w3.org/ns/org#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "prof": "http://www.w3.org/ns/dx/prof/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "qb": "http://purl.org/linked-data/cube#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "sc": "http://schema.org/",
+    "schema": "https://schema.org/",
+    "sh": "http://www.w3.org/ns/shacl#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "sosa": "http://www.w3.org/ns/sosa/",
+    "ssn": "http://www.w3.org/ns/ssn/",
+    "time": "http://www.w3.org/2006/time#",
+    "vann": "http://purl.org/vocab/vann/",
+    "void": "http://rdfs.org/ns/void#",
+    "wgs": "https://www.w3.org/2003/01/geo/wgs84_pos#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "http://orcid.org/0000-0003-4638-2879",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-6425-2176",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://bio.tools/biosurfdb",
+      "@type": "sc:SoftwareApplication",
+      "biotools:primaryContact": [
+        {
+          "@id": "http://orcid.org/0000-0003-4638-2879"
+        },
+        {
+          "@id": "http://orcid.org/0000-0003-0642-3162"
+        },
+        {
+          "@id": "http://orcid.org/0000-0002-4632-2086"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-6425-2176"
+        }
+      ],
+      "bsc:input": [
+        {
+          "@id": "_:Nf827e0752e564025af886e3281827649"
+        },
+        {
+          "@id": "_:Nfa1dc55b5d6a45e0a073f7581c33d8cf"
+        }
+      ],
+      "bsc:output": [
+        {
+          "@id": "_:N0ea4def874c64133a0b8e40191e6a418"
+        },
+        {
+          "@id": "_:Na33da35109fb47aaa44b8f31e1800426"
+        },
+        {
+          "@id": "_:N36ba9e6d93714c0cbb464665f3652174"
+        },
+        {
+          "@id": "_:Naea77e0297aa43bb83c589e93644c3d4"
+        },
+        {
+          "@id": "_:Nc715609280bd4ad89db40cf04e697bb5"
+        },
+        {
+          "@id": "_:N23fca912079d40a9b9d0ecfcb8d96991"
+        }
+      ],
+      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "sc:additionalType": "Database portal",
+      "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_3297"
+        },
+        {
+          "@id": "edam:topic_0821"
+        },
+        {
+          "@id": "edam:topic_3301"
+        }
+      ],
+      "sc:citation": {
+        "@id": "https://doi.org/10.1093/database/bav033"
+      },
+      "sc:description": "BioSurfDB is a online database for biodegradation and biosurfactants.",
+      "sc:featureList": [
+        {
+          "@id": "edam:operation_0349"
+        },
+        {
+          "@id": "edam:operation_0495"
+        }
+      ],
+      "sc:isAccessibleForFree": true,
+      "sc:name": "BioSurfDB",
+      "sc:url": "https://www.biosurfdb.org"
+    },
+    {
+      "@id": "_:N0ea4def874c64133a0b8e40191e6a418",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3494"
+      },
+      "sc:name": "DNA sequence"
+    },
+    {
+      "@id": "_:Na33da35109fb47aaa44b8f31e1800426",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1026"
+      },
+      "sc:name": "Gene symbol"
+    },
+    {
+      "@id": "_:N36ba9e6d93714c0cbb464665f3652174",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1383"
+      },
+      "sc:name": "Nucleic acid sequence alignment"
+    },
+    {
+      "@id": "_:Naea77e0297aa43bb83c589e93644c3d4",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1027"
+      },
+      "sc:name": "Gene ID (NCBI)"
+    },
+    {
+      "@id": "_:Nc715609280bd4ad89db40cf04e697bb5",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2299"
+      },
+      "sc:name": "Gene name"
+    },
+    {
+      "@id": "_:N23fca912079d40a9b9d0ecfcb8d96991",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1385"
+      },
+      "sc:name": "Hybrid sequence alignment"
+    },
+    {
+      "@id": "_:Nf827e0752e564025af886e3281827649",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3494"
+      },
+      "sc:name": "DNA sequence"
+    },
+    {
+      "@id": "_:Nfa1dc55b5d6a45e0a073f7581c33d8cf",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2886"
+      },
+      "sc:name": "Protein sequence record"
+    },
+    {
+      "@id": "https://doi.org/10.1093/database/bav033",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "http://orcid.org/0000-0003-0642-3162",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "http://orcid.org/0000-0002-4632-2086",
+      "@type": "sc:Person"
+    }
+  ]
+}

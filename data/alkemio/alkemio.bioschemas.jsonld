@@ -1,0 +1,123 @@
+{
+  "@context": {
+    "biotools": "https://bio.tools/ontology/",
+    "brick": "https://brickschema.org/schema/Brick#",
+    "bsc": "http://bioschemas.org/",
+    "bsct": "http://bioschemas.org/types/",
+    "csvw": "http://www.w3.org/ns/csvw#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "dcam": "http://purl.org/dc/dcam/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dcmitype": "http://purl.org/dc/dcmitype/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "doap": "http://usefulinc.com/ns/doap#",
+    "edam": "http://edamontology.org/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "geo": "http://www.opengis.net/ont/geosparql#",
+    "odrl": "http://www.w3.org/ns/odrl/2/",
+    "org": "http://www.w3.org/ns/org#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "prof": "http://www.w3.org/ns/dx/prof/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "qb": "http://purl.org/linked-data/cube#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "sc": "http://schema.org/",
+    "schema": "https://schema.org/",
+    "sh": "http://www.w3.org/ns/shacl#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "sosa": "http://www.w3.org/ns/sosa/",
+    "ssn": "http://www.w3.org/ns/ssn/",
+    "time": "http://www.w3.org/2006/time#",
+    "vann": "http://purl.org/vocab/vann/",
+    "void": "http://rdfs.org/ns/void#",
+    "wgs": "https://www.w3.org/2003/01/geo/wgs84_pos#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "https://bio.tools/alkemio",
+      "@type": "sc:SoftwareApplication",
+      "biotools:primaryContact": "Jean Fred Fontaine",
+      "bsc:input": [
+        {
+          "@id": "_:Nd37b6d97f6634407a74cb9db5ea9a122"
+        },
+        {
+          "@id": "_:Ncaf698cff9824de0bfa55df1f8125548"
+        },
+        {
+          "@id": "_:N656e5cc538e84b6b845a95ffc4d670ee"
+        }
+      ],
+      "bsc:output": {
+        "@id": "_:N95802a5930a34835877d4a77e6757b8f"
+      },
+      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "sc:additionalType": [
+        "Web application",
+        "Web service"
+      ],
+      "sc:applicationSubCategory": {
+        "@id": "edam:topic_3473"
+      },
+      "sc:citation": [
+        {
+          "@id": "https://doi.org/10.1093/nar/gku432"
+        },
+        "pubmed:24838570",
+        "pmcid:PMC4086102"
+      ],
+      "sc:description": "Chemicals prioritization for topics of interest using gene-related PubMed abstracts.",
+      "sc:featureList": {
+        "@id": "edam:operation_0305"
+      },
+      "sc:name": "Alkemio",
+      "sc:operatingSystem": [
+        "Windows",
+        "Mac",
+        "Linux"
+      ],
+      "sc:softwareHelp": {
+        "@id": "http://cbdm-01.zdv.uni-mainz.de/~jfontain/cms/?page_id=333"
+      },
+      "sc:url": "http://cbdm.uni-mainz.de/medlineranker"
+    },
+    {
+      "@id": "_:Nd37b6d97f6634407a74cb9db5ea9a122",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0968"
+      },
+      "sc:name": "Keyword"
+    },
+    {
+      "@id": "_:Ncaf698cff9824de0bfa55df1f8125548",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1086"
+      },
+      "sc:name": "Compound identifier"
+    },
+    {
+      "@id": "_:N656e5cc538e84b6b845a95ffc4d670ee",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1088"
+      },
+      "sc:name": "Article ID"
+    },
+    {
+      "@id": "_:N95802a5930a34835877d4a77e6757b8f",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0962"
+      },
+      "sc:name": "Small molecule report"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/gku432",
+      "@type": "sc:CreativeWork"
+    }
+  ]
+}

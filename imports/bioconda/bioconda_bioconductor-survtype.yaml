@@ -1,0 +1,44 @@
+about:
+  description: Subtypes are defined as groups of samples that have distinct molecular
+    and clinical features. Genomic data can be analyzed for discovering patient subtypes,
+    associated with clinical data, especially for survival information. This package
+    is aimed to identify subtypes that are both clinically relevant and biologically
+    meaningful.
+  home: https://bioconductor.org/packages/3.22/bioc/html/survtype.html
+  license: Artistic-2.0
+  summary: Subtype Identification with Survival Data
+build:
+  noarch: generic
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+package:
+  name: bioconductor-survtype
+  version: 1.26.0
+requirements:
+  host:
+  - bioconductor-summarizedexperiment >=1.40.0,<1.41.0
+  - r-base
+  - r-clustvarsel
+  - r-pheatmap
+  - r-survival
+  - r-survminer
+  run:
+  - bioconductor-summarizedexperiment >=1.40.0,<1.41.0
+  - r-base
+  - r-clustvarsel
+  - r-pheatmap
+  - r-survival
+  - r-survminer
+source:
+  md5: 19509f6cd7dae409148815b946758376
+  url:
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/survtype_1.26.0.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/survtype/survtype_1.26.0.tar.gz
+  - https://bioarchive.galaxyproject.org/survtype_1.26.0.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-survtype/bioconductor-survtype_1.26.0_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('survtype')"

@@ -1,0 +1,38 @@
+about:
+  home: https://github.com/morispi/LRez
+  license: AGPL-3.0-or-later AND MIT
+  license_file:
+  - LICENSE
+  - bamtools/LICENSE
+  summary: Standalone tool and library allowing to work with barcoded linked-reads
+build:
+  number: 5
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+  recipe-maintainers:
+  - morispi
+package:
+  name: lrez
+  version: 2.2.4
+requirements:
+  build:
+  - null
+  - cmake
+  - make
+  host:
+  - zlib
+  - boost-cpp
+  run:
+  - boost-cpp
+source:
+  patches:
+  - lrez-aarch64.patch
+  sha256: 9e3b93dd7bd0404d75b9b8875e19335cd52455994771751b30de16c3d6de9023
+  url: https://github.com/morispi/LRez/releases/download/v2.2.4/LRez.tar.gz
+test:
+  commands:
+  - LRez -h | grep "LRez"

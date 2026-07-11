@@ -1,0 +1,52 @@
+about:
+  dev_url: https://github.com/NDAR/nda-tools
+  home: https://github.com/NDAR/nda-tools
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE.md
+  summary: Python package for interacting with NDA web services.
+build:
+  entry_points:
+  - vtcmd = NDATools.clientscripts.vtcmd:main
+  - downloadcmd = NDATools.clientscripts.downloadcmd:main
+  - unit_tests = tests.run_unit_tests:main
+  - integration_tests = tests.run_integration_tests:main
+  noarch: python
+  number: 0
+  run_exports:
+  - null
+  script: -m pip install . --no-build-isolation --no-deps --no-cache-dir -vvv
+extra:
+  recipe-maintainer:
+  - npavlovikj
+package:
+  name: nda-tools
+  version: 0.7.0
+requirements:
+  host:
+  - python
+  - pip
+  - setuptools
+  run:
+  - python
+  - keyring
+  - pyyaml
+  - packaging
+  - mock
+  - requests
+  - tqdm
+  - boto3
+  - pandas
+  - s3transfer
+  - setuptools
+  - tabulate
+  - pydantic >=2
+source:
+  sha256: c7163ecc0ac4f499bb4e4579c608da38c49425f83613feb0da525b403e431af8
+  url: https://pypi.io/packages/source/n/nda_tools/nda_tools-0.7.0.tar.gz
+test:
+  commands:
+  - vtcmd -h
+  - downloadcmd -h
+  imports:
+  - NDATools

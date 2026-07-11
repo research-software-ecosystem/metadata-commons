@@ -1,0 +1,36 @@
+about:
+  description: Selected Affymetrix and Illlumina SNP data for HapMap subjects.  Data
+    provided by the Center for Inherited Disease Research at Johns Hopkins University
+    and the Broad Institute of MIT and Harvard University.
+  home: https://bioconductor.org/packages/3.22/data/experiment/html/GWASdata.html
+  license: Artistic-2.0
+  summary: Data used in the examples and vignettes of the GWASTools package
+build:
+  noarch: generic
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+package:
+  name: bioconductor-gwasdata
+  version: 1.48.0
+requirements:
+  host:
+  - bioconductor-gwastools >=1.56.0,<1.57.0
+  - r-base
+  run:
+  - bioconductor-gwastools >=1.56.0,<1.57.0
+  - r-base
+  - curl
+  - bioconductor-data-packages >=20260207
+source:
+  md5: dd340a75af821e72b2b7c4c48a306b5f
+  url:
+  - https://bioconductor.org/packages/3.22/data/experiment/src/contrib/GWASdata_1.48.0.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/GWASdata/GWASdata_1.48.0.tar.gz
+  - https://bioarchive.galaxyproject.org/GWASdata_1.48.0.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-gwasdata/bioconductor-gwasdata_1.48.0_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('GWASdata')"

@@ -1,0 +1,78 @@
+about:
+  description: "MAPFX is an end-to-end toolbox that pre-processes the raw data from\
+    \ MPC experiments (e.g., BioLegend's LEGENDScreen and BD Lyoplates assays), and\
+    \ further imputes the \u2018missing\u2019 infinity markers in the wells without\
+    \ those measurements. The pipeline starts by performing background correction\
+    \ on raw intensities to remove the noise from electronic baseline restoration\
+    \ and fluorescence compensation by adapting a normal-exponential convolution model.\
+    \ Unwanted technical variation, from sources such as well effects, is then removed\
+    \ using a log-normal model with plate, column, and row factors, after which infinity\
+    \ markers are imputed using the informative backbone markers as predictors. The\
+    \ completed dataset can then be used for clustering and other statistical analyses.\
+    \ Additionally, MAPFX can be used to normalise data from FFC assays as well."
+  home: https://bioconductor.org/packages/3.22/bioc/html/MAPFX.html
+  license: GPL-2
+  license_file: /lib/R/share/licenses/GPL-2
+  summary: 'MAssively Parallel Flow cytometry Xplorer (MAPFX): A Toolbox for Analysing
+    Data from the Massively-Parallel Cytometry Experiments'
+build:
+  noarch: generic
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+package:
+  name: bioconductor-mapfx
+  version: 1.6.3
+requirements:
+  host:
+  - bioconductor-biobase >=2.70.0,<2.71.0
+  - bioconductor-complexheatmap >=2.26.0,<2.27.0
+  - bioconductor-flowcore >=2.22.0,<2.23.0
+  - r-base
+  - r-circlize
+  - r-cowplot
+  - r-e1071
+  - r-ggplot2
+  - r-glmnetutils
+  - r-gtools
+  - r-icellr
+  - r-igraph
+  - r-pbapply
+  - r-rcolorbrewer
+  - r-reshape2
+  - r-rfast
+  - r-stringr
+  - r-uwot
+  - r-xgboost >=3.0.0
+  run:
+  - bioconductor-biobase >=2.70.0,<2.71.0
+  - bioconductor-complexheatmap >=2.26.0,<2.27.0
+  - bioconductor-flowcore >=2.22.0,<2.23.0
+  - r-base
+  - r-circlize
+  - r-cowplot
+  - r-e1071
+  - r-ggplot2
+  - r-glmnetutils
+  - r-gtools
+  - r-icellr
+  - r-igraph
+  - r-pbapply
+  - r-rcolorbrewer
+  - r-reshape2
+  - r-rfast
+  - r-stringr
+  - r-uwot
+  - r-xgboost >=3.0.0
+source:
+  md5: 63d01efa3c01dcef50294c7e0808cc5c
+  url:
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/MAPFX_1.6.3.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/MAPFX/MAPFX_1.6.3.tar.gz
+  - https://bioarchive.galaxyproject.org/MAPFX_1.6.3.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-mapfx/bioconductor-mapfx_1.6.3_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('MAPFX')"

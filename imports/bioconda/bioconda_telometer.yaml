@@ -1,0 +1,42 @@
+about:
+  dev_url: https://github.com/santiago-es/Telometer
+  home: https://github.com/santiago-es/Telometer
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE.txt
+  summary: A simple regular expression based method for measuring individual, chromosome-specific
+    telomere lengths from long-read sequencing data.
+build:
+  entry_points:
+  - telometer=telometer:run_telometer
+  noarch: python
+  number: 0
+  run_exports:
+  - null
+  script: ' -m pip install . --no-deps --no-build-isolation --no-cache-dir -vvv'
+extra:
+  recipe-maintainers:
+  - santiago-es
+package:
+  name: telometer
+  version: '1.1'
+requirements:
+  host:
+  - pip
+  - python >=3.7
+  run:
+  - python >=3.7
+  - pysam
+  - pandas
+  - regex
+  - samtools
+  - minimap2
+  - scipy
+source:
+  sha256: 28f3256263be23e06f68cee0ddb9a3c942dc4cd7674389ce8e5f3c09ba4e17f3
+  url: https://pypi.io/packages/source/t/telometer/telometer-1.1.tar.gz
+test:
+  commands:
+  - telometer --help
+  imports:
+  - telometer

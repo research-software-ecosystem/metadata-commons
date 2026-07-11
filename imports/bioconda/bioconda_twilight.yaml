@@ -1,0 +1,50 @@
+about:
+  description: TWILIGHT (Tall and Wide Alignments at High Throughput) is a tool designed
+    for ultrafast and ultralarge multiple sequence alignment. It is able to scale
+    to millions of long nucleotide sequences (>10000 bases).
+  dev_url: https://github.com/TurakhiaLab/TWILIGHT
+  doc_url: https://turakhia.ucsd.edu/TWILIGHT
+  home: https://github.com/TurakhiaLab/TWILIGHT
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE
+  summary: 'TWILIGHT: A high throughput tool for tall and wide multiple sequence alignment.'
+build:
+  number: 1
+  run_exports:
+  - null
+  skip: true
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+  recipe-maintainers:
+  - y3tseng
+package:
+  name: twilight
+  version: 0.2.3
+requirements:
+  build:
+  - null
+  - null
+  - cmake
+  - make
+  - cuda-nvcc
+  - cuda-cudart-dev
+  - cuda-version >=12.2,<13
+  host:
+  - zlib
+  - boost-cpp
+  - tbb
+  - tbb-devel
+  run:
+  - boost-cpp
+  - tbb
+  - tbb-devel
+source:
+  sha256: 2fcc9e788e28f4f965c307b07690e42a727307cfe52ed6b1e450df3cc307ca72
+  url: https://github.com/TurakhiaLab/TWILIGHT/archive/refs/tags/v0.2.3.tar.gz
+test:
+  commands:
+  - twilight
+  - twilight --version

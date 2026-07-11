@@ -1,0 +1,23 @@
+about:
+  home: https://github.com/PacificBiosciences/pbfusion
+  license: BSD-3-Clause-Clear
+  summary: Fusion gene detection tool for PacBio Iso-Seq data
+build:
+  noarch: generic
+  number: 0
+  run_exports:
+  - null
+extra:
+  recipe-maintainers:
+  - zeeev
+  - velociroger-pb
+  - egor-dolzhenko
+package:
+  name: pbfusion
+  version: 0.5.1
+source:
+- sha256: 1109292d71c2debdd9927f4040d13374fa90cde74e3677ddd89b5e67e94f9105
+  url: https://github.com/PacificBiosciences/pbfusion/releases/download/0.5.1/pbfusion-v0.5.1-linux_x86_64.gz
+test:
+  commands:
+  - pbfusion --version

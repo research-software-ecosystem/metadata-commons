@@ -1,0 +1,38 @@
+about:
+  dev_url: https://github.com/ehuangc/fastpmr
+  home: https://github.com/ehuangc/fastpmr
+  license: MIT
+  license_family: MIT
+  license_file:
+  - LICENSE
+  - THIRDPARTY.yml
+  summary: Calculate pairwise mismatch rates (PMRs) between ancient DNA sequences.
+build:
+  number: 0
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+  recipe-maintainers:
+  - ehuangc
+  skip-lints:
+  - compiler_needs_stdlib_c
+package:
+  name: fastpmr
+  version: 0.2.4
+requirements:
+  build:
+  - null
+  - null
+  - null
+  - make
+  - cargo-bundle-licenses
+  - pkg-config
+source:
+  sha256: 7cccc6e0126a21c891c710a9d7c2911257ee3581fd9d8fd6447600d7d449dd79
+  url: https://github.com/ehuangc/fastpmr/archive/v0.2.4.tar.gz
+test:
+  commands:
+  - fastpmr --help

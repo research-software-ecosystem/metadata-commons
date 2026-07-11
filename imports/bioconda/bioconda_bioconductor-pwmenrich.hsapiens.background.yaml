@@ -1,0 +1,36 @@
+about:
+  description: PWMEnrich pre-compiled background objects for H. sapiens (human) and
+    MotifDb H. sapiens motifs.
+  home: https://bioconductor.org/packages/3.22/data/experiment/html/PWMEnrich.Hsapiens.background.html
+  license: GPL-3
+  license_file: /lib/R/share/licenses/GPL-3
+  summary: H. sapiens background for PWMEnrich
+build:
+  noarch: generic
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+package:
+  name: bioconductor-pwmenrich.hsapiens.background
+  version: 4.44.0
+requirements:
+  host:
+  - bioconductor-pwmenrich >=4.46.0,<4.47.0
+  - r-base
+  run:
+  - bioconductor-pwmenrich >=4.46.0,<4.47.0
+  - r-base
+  - curl
+  - bioconductor-data-packages >=20260207
+source:
+  md5: 3583c97af32f8f8cbfe9a9e413de72b7
+  url:
+  - https://bioconductor.org/packages/3.22/data/experiment/src/contrib/PWMEnrich.Hsapiens.background_4.44.0.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/PWMEnrich.Hsapiens.background/PWMEnrich.Hsapiens.background_4.44.0.tar.gz
+  - https://bioarchive.galaxyproject.org/PWMEnrich.Hsapiens.background_4.44.0.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-pwmenrich.hsapiens.background/bioconductor-pwmenrich.hsapiens.background_4.44.0_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('PWMEnrich.Hsapiens.background')"

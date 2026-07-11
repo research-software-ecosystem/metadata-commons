@@ -1,0 +1,59 @@
+about:
+  dev_url: https://github.com/LenisLin/TiRank
+  doc_url: https://tirank.readthedocs.io/
+  home: https://github.com/LenisLin/TiRank
+  license: MIT
+  license_file: LICENSE
+  summary: A comprehensive analysis tool for prioritizing phenotypic niches in tumor
+    microenvironment.
+build:
+  noarch: python
+  number: 1
+  run_exports:
+  - null
+  script: cd installation &&  -m pip install . --no-deps --no-build-isolation --no-cache-dir
+    -vvv
+extra:
+  recipe-maintainers:
+  - LingLuo
+  - LenisLin
+package:
+  name: tirank
+  version: 1.0.2
+requirements:
+  host:
+  - python >=3.9
+  - pip
+  - setuptools
+  - wheel
+  run:
+  - python >=3.9
+  - numpy >=1.22,<2.0
+  - pandas >=1.5
+  - scipy >=1.8
+  - scikit-learn >=1.0
+  - statsmodels >=0.14
+  - openpyxl
+  - scanpy >=1.9
+  - leidenalg
+  - gseapy >=1.0
+  - lifelines >=0.27
+  - imbalanced-learn >=0.11
+  - matplotlib-base >=3.7
+  - seaborn-base >=0.12
+  - pillow >=9.0
+  - pytorch >=2.0
+  - torchvision >=0.15
+  - timm ==0.5.4
+  - optuna >=3.0
+  - click
+  - dash >=2.0
+  - dash-bootstrap-components >=1.0
+  - python-igraph
+  - snakemake ==7.32.4
+source:
+  sha256: ed29cfcb61c9685aadb234cddf4235c2a6059b6cd0a8968fddca66626dc4a8ef
+  url: https://github.com/LenisLin/TiRank/archive/refs/tags/v1.0.2.tar.gz
+test:
+  imports:
+  - tirank

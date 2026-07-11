@@ -1,0 +1,56 @@
+about:
+  description: This package contains the Summix2 method for estimating and adjusting
+    for substructure in genetic summary allele frequency data. The function summix()
+    estimates reference group proportions using a mixture model. The adjAF() function
+    produces adjusted allele frequencies for an observed group with reference group
+    proportions matching a target individual or sample. The summix_local() function
+    estimates local ancestry mixture proportions and performs selection scans in genetic
+    summary data.
+  home: https://bioconductor.org/packages/3.22/bioc/html/Summix.html
+  license: MIT + file LICENSE
+  license_file: LICENSE
+  summary: 'Summix2: A suite of methods to estimate, adjust, and leverage substructure
+    in genetic summary data'
+build:
+  noarch: generic
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+package:
+  name: bioconductor-summix
+  version: 2.16.0
+requirements:
+  host:
+  - r-base
+  - r-bedassle
+  - r-dplyr
+  - r-magrittr
+  - r-nloptr
+  - r-randomcolor
+  - r-scales
+  - r-tibble
+  - r-tidyselect
+  - r-visnetwork
+  run:
+  - r-base
+  - r-bedassle
+  - r-dplyr
+  - r-magrittr
+  - r-nloptr
+  - r-randomcolor
+  - r-scales
+  - r-tibble
+  - r-tidyselect
+  - r-visnetwork
+source:
+  md5: 682491fe14c9c743b2d49c5daa28e968
+  url:
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Summix_2.16.0.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/Summix/Summix_2.16.0.tar.gz
+  - https://bioarchive.galaxyproject.org/Summix_2.16.0.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-summix/bioconductor-summix_2.16.0_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('Summix')"

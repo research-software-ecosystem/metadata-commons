@@ -1,0 +1,25 @@
+about:
+  home: http://www.bioinf.uni-leipzig.de/Software/mea/
+  license: GPLv3
+  summary: Mea was developed as part of the lab class parameters.
+build:
+  number: 10
+  run_exports:
+  - null
+  skip: true
+extra:
+  additional-platforms:
+  - linux-aarch64
+package:
+  name: mea
+  version: 0.6.4
+requirements:
+  build:
+  - make
+  - null
+source:
+  sha256: 916be7aeb05425d8b71d01ce206e7868624f66c5606611e21da094d20e7a1f8b
+  url: http://www.bioinf.uni-leipzig.de/Software/mea/mea-0.6.4.tar.gz
+test:
+  commands:
+  - mea --version

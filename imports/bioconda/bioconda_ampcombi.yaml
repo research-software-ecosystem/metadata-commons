@@ -1,0 +1,51 @@
+about:
+  dev_url: https://github.com/paleobiotechnology/AMPcombi/tree/dev
+  doc_url: https://ampcombi.readthedocs.io
+  home: https://github.com/paleobiotechnology/AMPcombi
+  license: MIT
+  license_family: MIT
+  summary: A parsing tool to convert and summarise the outputs from multiple AMP detection
+    tools.
+build:
+  entry_points:
+  - ampcombi = ampcombi:main
+  noarch: python
+  number: 0
+  run_exports:
+  - null
+  script: ' -m pip install . -vv'
+extra:
+  recipe-maintainers:
+  - darcy220606
+  - louperelo
+  - jasmezz
+package:
+  name: ampcombi
+  version: 3.0.0
+requirements:
+  host:
+  - pandas
+  - pip
+  - python ==3.11
+  run:
+  - pandas ==1.5.2
+  - requests
+  - parsedatetime
+  - subprocess32
+  - biopython ==1.80
+  - backports.tempfile
+  - contextlib2
+  - openpyxl
+  - numpy ==1.26.4
+  - jsonschema
+  - python ==3.11
+  - colorama ==0.4.6
+  - mmseqs2 ==15.6f452
+source:
+  sha256: 2607007a9dd9cc79eb53e094a2be396e567ab8afaaf1e67c98c2133408e25af8
+  url: https://pypi.io/packages/source/A/AMPcombi/ampcombi-3.0.0.tar.gz
+test:
+  commands:
+  - ampcombi --help
+  imports:
+  - ampcombi

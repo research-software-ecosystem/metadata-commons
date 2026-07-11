@@ -1,0 +1,31 @@
+about:
+  home: http://metacpan.org/pod/PerlIO-gzip
+  license: perl_5
+  summary: PerlIO interface to gzip/gunzip
+build:
+  number: 7
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+package:
+  name: perl-perlio-gzip
+  version: '0.2'
+requirements:
+  build:
+  - make
+  - null
+  host:
+  - perl
+  - zlib
+  run:
+  - perl
+  - zlib
+source:
+  sha256: 4848679a3f201e3f3b0c5f6f9526e602af52923ffa471a2a3657db786bd3bdc5
+  url: https://cpan.metacpan.org/authors/id/N/NW/NWCLARK/PerlIO-gzip-0.20.tar.gz
+test:
+  imports:
+  - PerlIO::gzip

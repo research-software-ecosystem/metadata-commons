@@ -1,0 +1,32 @@
+about:
+  home: https://peptides.readthedocs.io/
+  license: MIT
+  license_file: COPYING
+  summary: Physicochemical properties, indices and descriptors for amino-acid sequences.
+build:
+  noarch: python
+  number: 0
+  run_exports:
+  - null
+  script: ' -m pip install . --no-deps --ignore-installed -vvv '
+extra:
+  recipe-maintainers:
+  - althonos
+package:
+  name: peptides
+  version: 0.5.0
+requirements:
+  host:
+  - python
+  - pip
+  - setuptools >=46.4
+  - wheel >=0.30
+  - astor >=0.6
+  run:
+  - python
+source:
+  sha256: 33fb37398e883765e10ed179a1c0d618bf2815a35bfe6d6368175c10d73650a4
+  url: https://pypi.org/packages/source/p/peptides/peptides-0.5.0.tar.gz
+test:
+  imports:
+  - peptides

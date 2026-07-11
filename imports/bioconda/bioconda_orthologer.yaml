@@ -1,0 +1,68 @@
+about:
+  description: Ortholog detection for comparative genomics and fast functional annotation
+    behind OrthoDB and BUSCO.
+  dev_url: https://gitlab.com/ezlab/orthologer_container
+  doc_url: https://orthologer.ezlab.org/#on-orthodb-data
+  home: https://orthologer.ezlab.org
+  license: GPL-3.0-or-later
+  license_family: GPL3
+  license_file: LICENSE
+  summary: Ortholog detection for comparative genomics and fast functional annotation
+    behind OrthoDB and BUSCO.
+build:
+  number: 0
+  run_exports:
+  - null
+extra:
+  container:
+    extended-base: true
+  identifiers:
+  - biotools:orthologer
+  - doi:10.1093/nar/gkae987
+  - PMID:39535043
+  recipe-maintainers:
+  - ftegenfe
+package:
+  name: orthologer
+  version: 3.9.0
+requirements:
+  build:
+  - null
+  - null
+  - cmake
+  - make
+  - pkg-config
+  - bash >=4.1
+  host:
+  - python >=3.4,<3.13
+  - bash >=4.1
+  - llvm-openmp
+  - libgomp
+  - rsync
+  - wget
+  - bash >=4.1
+  - spdlog
+  - ete3
+  - boost-cpp
+  run:
+  - boost-cpp
+  - bash >=4.1
+  - python >=3.4,<3.13
+  - llvm-openmp
+  - libgomp
+  - rsync
+  - wget
+  - blast
+  - mmseqs2
+  - cd-hit
+  - diamond
+  - biopython
+  - numpy
+  - busco >=5.7.0
+  - ete3
+source:
+  sha256: 98387c36d73b1fd31efe9b087901a4df37b8b5efc82f4aaed1876cb9e75ebe2c
+  url: https://data.orthodb.org/current/download/software/orthologer_3.9.0.tgz
+test:
+  commands:
+  - ALLOW_RUNAS_ROOT=1 orthologer -h

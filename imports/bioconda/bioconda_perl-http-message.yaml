@@ -1,0 +1,75 @@
+about:
+  dev_url: https://github.com/libwww-perl/HTTP-Message
+  home: https://github.com/libwww-perl/HTTP-Message
+  license: perl_5
+  summary: HTTP style message (base class).
+build:
+  noarch: generic
+  number: 0
+  run_exports:
+  - null
+package:
+  name: perl-http-message
+  version: '7.02'
+requirements:
+  build:
+  - make
+  host:
+  - perl
+  - perl-clone
+  - perl-encode-locale
+  - perl-storable
+  - perl-exporter
+  - perl-carp
+  - perl-io-html
+  - perl-compress-raw-zlib
+  - perl-compress-raw-bzip2
+  - perl-uri
+  - perl-mime-base64
+  - perl-try-tiny
+  - perl-http-date
+  - perl-base
+  - perl-lwp-mediatypes
+  - perl-encode
+  - perl-extutils-makemaker
+  - perl-time-local
+  - perl-url-encode
+  - perl-file-temp
+  - perl-lib
+  - perl-uri
+  - perl-test-needs
+  - perl-parent
+  run:
+  - perl
+  - perl-clone
+  - perl-encode-locale
+  - perl-file-spec
+  - perl-exporter
+  - perl-carp
+  - perl-io-html
+  - perl-compress-raw-zlib
+  - perl-compress-raw-bzip2
+  - perl-uri
+  - perl-mime-base64
+  - perl-http-date
+  - perl-base
+  - perl-lwp-mediatypes
+  - perl-encode >=3.01
+  - perl-url-encode
+  - perl-test-needs
+  - perl-parent
+source:
+  sha256: 78abef1d833146b48d17db219b1b03d53cbbe37a28ccdad0efdcc5833ca5c60c
+  url: https://cpan.metacpan.org/authors/id/O/OA/OALDERS/HTTP-Message-7.02.tar.gz
+test:
+  imports:
+  - HTTP::Config
+  - HTTP::Headers
+  - HTTP::Headers::Auth
+  - HTTP::Headers::ETag
+  - HTTP::Headers::Util
+  - HTTP::Message
+  - HTTP::Request
+  - HTTP::Request::Common
+  - HTTP::Response
+  - HTTP::Status

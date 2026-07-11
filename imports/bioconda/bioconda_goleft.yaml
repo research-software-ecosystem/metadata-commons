@@ -1,0 +1,34 @@
+about:
+  dev_url: https://github.com/brentp/goleft
+  doc_url: https://github.com/brentp/goleft/blob/v0.2.6/README.md
+  home: https://github.com/brentp/goleft
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE
+  summary: goleft is a collection of bioinformatics tools distributed under MIT license
+    in a single static binary.
+build:
+  binary_relocation: false
+  number: 1
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+package:
+  name: goleft
+  version: 0.2.6
+requirements:
+  build:
+  - null
+  - go-licenses
+  run:
+  - samtools
+source:
+  sha256: 0c563edea898059a75adf6250149643bdc61e4660544fabafbaefc09b4c9d1b3
+  url: https://github.com/brentp/goleft/archive/refs/tags/v0.2.6.tar.gz
+test:
+  commands:
+  - goleft depth -h
+  - goleft indexcov -h

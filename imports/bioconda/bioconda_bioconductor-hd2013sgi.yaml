@@ -1,0 +1,53 @@
+about:
+  description: 'This package contains the experimental data and a complete executable
+    transcript (vignette) of the analysis of the HCT116 genetic interaction matrix
+    presented in the paper "Mapping genetic interactions in human cancer cells with
+    RNAi and multiparametric phenotyping" by C. Laufer, B. Fischer, M. Billmann, W.
+    Huber, M. Boutros; Nature Methods (2013) 10:427-31. doi: 10.1038/nmeth.2436.'
+  home: https://bioconductor.org/packages/3.22/data/experiment/html/HD2013SGI.html
+  license: Artistic-2.0
+  summary: Mapping genetic interactions in human cancer cells with RNAi and multiparametric
+    phenotyping
+build:
+  noarch: generic
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+package:
+  name: bioconductor-hd2013sgi
+  version: 1.50.0
+requirements:
+  host:
+  - bioconductor-ebimage >=4.52.0,<4.53.0
+  - bioconductor-geneplotter >=1.88.0,<1.89.0
+  - bioconductor-limma >=3.66.0,<3.67.0
+  - bioconductor-splots >=1.76.0,<1.77.0
+  - r-base
+  - r-gplots
+  - r-lsd
+  - r-rcolorbrewer
+  - r-vcd
+  run:
+  - bioconductor-ebimage >=4.52.0,<4.53.0
+  - bioconductor-geneplotter >=1.88.0,<1.89.0
+  - bioconductor-limma >=3.66.0,<3.67.0
+  - bioconductor-splots >=1.76.0,<1.77.0
+  - r-base
+  - r-gplots
+  - r-lsd
+  - r-rcolorbrewer
+  - r-vcd
+  - curl
+  - bioconductor-data-packages >=20260207
+source:
+  md5: 08b4b3b4638830efc0be8042d4b6093e
+  url:
+  - https://bioconductor.org/packages/3.22/data/experiment/src/contrib/HD2013SGI_1.50.0.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/HD2013SGI/HD2013SGI_1.50.0.tar.gz
+  - https://bioarchive.galaxyproject.org/HD2013SGI_1.50.0.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-hd2013sgi/bioconductor-hd2013sgi_1.50.0_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('HD2013SGI')"

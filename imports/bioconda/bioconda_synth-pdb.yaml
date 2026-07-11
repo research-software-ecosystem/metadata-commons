@@ -1,0 +1,39 @@
+about:
+  dev_url: https://github.com/elkins/synth-pdb
+  doc_url: https://github.com/elkins/synth-pdb
+  home: https://github.com/elkins/synth-pdb
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE
+  summary: Realistic Protein Structure Generator
+build:
+  noarch: python
+  number: 0
+  run_exports:
+  - null
+  script: -m pip install . -vv
+extra:
+  recipe-maintainers:
+  - elkins
+package:
+  name: synth-pdb
+  version: 1.38.1
+requirements:
+  host:
+  - python >=3.8
+  - pip
+  - setuptools
+  run:
+  - python >=3.8
+  - numpy >=1.20
+  - biotite >=0.35.0
+  - openmm
+  - synth-nmr
+source:
+  sha256: 03e8517a28ee12818cd32b23d2631a2acef08596f75cd236b4ab9baafac7a50f
+  url: https://pypi.io/packages/source/s/synth-pdb/synth_pdb-1.38.1.tar.gz
+test:
+  commands:
+  - synth-pdb --help
+  imports:
+  - synth_pdb

@@ -1,0 +1,26 @@
+about:
+  home: https://github.com/briandfoy/io-interactive
+  license: perl_5
+  summary: Utilities for interactive I/O
+build:
+  noarch: generic
+  number: 0
+  run_exports:
+  - null
+package:
+  name: perl-io-interactive
+  version: '1.027'
+requirements:
+  build:
+  - make
+  host:
+  - perl
+  - perl-extutils-makemaker
+  run:
+  - perl
+source:
+  sha256: 30aaa346a0f664f837750b1b9b3b511e78c7779296fb8f3be31aae5b73f7efb7
+  url: https://cpan.metacpan.org/authors/id/B/BR/BRIANDFOY/IO-Interactive-1.027.tar.gz
+test:
+  imports:
+  - IO::Interactive

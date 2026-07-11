@@ -1,0 +1,57 @@
+about:
+  description: 'A client for Synapse, a collaborative compute space  that allows
+
+    scientists to share and analyze data together.
+
+    '
+  dev_url: https://github.com/Sage-Bionetworks/synapsePythonClient
+  doc_url: https://python-docs.synapse.org
+  home: https://www.synapse.org
+  license: Apache-2.0
+  license_family: APACHE
+  license_file: LICENSE
+  summary: Python client for Synapse.
+build:
+  entry_points:
+  - synapse = synapseclient.__main__:main
+  noarch: python
+  number: 0
+  run_exports:
+  - null
+  script: -m pip install . --no-deps --no-build-isolation --no-cache-dir -vvv
+package:
+  name: synapseclient
+  version: 4.13.0
+requirements:
+  host:
+  - python >=3.9,<3.13
+  - pip
+  - setuptools
+  run:
+  - python >=3.9,<3.13
+  - requests >=2.22
+  - urllib3 <2
+  - deprecated >=1.2.4
+  - opentelemetry-api
+  - opentelemetry-sdk
+  - opentelemetry-exporter-otlp-proto-http
+  - opentelemetry-instrumentation
+  - opentelemetry-instrumentation-httpx
+  - opentelemetry-instrumentation-requests
+  - opentelemetry-instrumentation-threading
+  - opentelemetry-instrumentation-urllib
+  - nest-asyncio
+  - asyncio-atexit
+  - httpx
+  - tqdm
+  - loky
+  - async-lru
+  - psutil
+source:
+  sha256: f89abee3154d3b3cda54c71c92be07d4e18b8982392a78b4ab3a09b4e5b799c6
+  url: https://pypi.io/packages/source/s/synapseclient/synapseclient-4.13.0.tar.gz
+test:
+  commands:
+  - synapse --help
+  imports:
+  - synapseclient

@@ -1,0 +1,38 @@
+about:
+  doc_url: https://metacpan.org/pod/Sereal
+  home: https://metacpan.org/pod/Sereal
+  license: Perl_5
+  summary: Fast, compact, powerful binary (de-)serialization.
+build:
+  noarch: generic
+  number: 0
+  run_exports:
+  - null
+package:
+  name: perl-sereal
+  version: '5.004'
+requirements:
+  build:
+  - make
+  host:
+  - perl
+  - perl-extutils-makemaker
+  - perl-pathtools
+  - perl-scalar-list-utils
+  - perl-test-deep
+  - perl-test-differences
+  - perl-test-longstring
+  - perl-test-simple
+  - perl-test-warn
+  - perl-sereal-decoder >=5.004
+  - perl-sereal-encoder >=5.004
+  run:
+  - perl
+  - perl-sereal-decoder >=5.004
+  - perl-sereal-encoder >=5.004
+source:
+  sha256: 9c25bb7ae4bd736d24b1ad1d93d77395b0c65ca8741e266bfc0cbe542261d76f
+  url: https://cpan.metacpan.org/authors/id/Y/YV/YVES/Sereal-5.004.tar.gz
+test:
+  imports:
+  - Sereal

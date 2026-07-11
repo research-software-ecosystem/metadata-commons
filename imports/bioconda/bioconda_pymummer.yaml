@@ -1,0 +1,34 @@
+about:
+  dev_url: https://github.com/sanger-pathogens/pymummer
+  home: https://github.com/sanger-pathogens/pymummer
+  license: GPL-3.0-only
+  license_family: GPL3
+  license_file: LICENSE
+  summary: Wrapper for MUMmer.
+build:
+  noarch: python
+  number: 0
+  run_exports:
+  - null
+  script: -m pip install . -vvv --no-deps --no-build-isolation --no-cache-dir
+package:
+  name: pymummer
+  version: 0.12.0
+requirements:
+  host:
+  - python >=3.8
+  - hatchling
+  - hatch-vcs
+  - pip
+  run:
+  - python >=3.8
+  - pyfastaq >=3.10.0
+  - mummer
+source:
+  sha256: 98568b9e616d95241ceda580be4bdca569379d91990d9b4acca0a4b97f17a694
+  url: https://pypi.io/packages/source/p/pymummer/pymummer-0.12.0.tar.gz
+test:
+  imports:
+  - pymummer
+  requires:
+  - nose >=1.3

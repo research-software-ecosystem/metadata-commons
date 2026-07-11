@@ -1,0 +1,32 @@
+about:
+  dev_url: https://github.com/LuoGroup2023/HapFold
+  doc_url: https://github.com/LuoGroup2023/HapFold
+  home: https://github.com/LuoGroup2023/HapFold
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE
+  summary: Efficient and Accurate Chromosome-Scale Haplotype Reconstruction.
+build:
+  number: 1
+  run_exports:
+  - null
+  skip: true
+package:
+  name: hapfold
+  version: 0.2.0
+requirements:
+  build:
+  - make
+  - null
+  - null
+  - null
+  host:
+  - zlib
+  run:
+  - zlib
+source:
+  sha256: 898f81ca452fa2954bed369b1dfa763b522ba721ef998bc71cd695b760827004
+  url: https://github.com/LuoGroup2023/HapFold/archive/refs/tags/v0.2.0.tar.gz
+test:
+  commands:
+  - HapFold 2>&1 | grep 'Usage'

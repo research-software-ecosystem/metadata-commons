@@ -1,0 +1,35 @@
+about:
+  description: Raw amplification data from a large microRNA mixture / dilution study.
+    These data are used by the miRcomp package to assess the performance of methods
+    that estimate expression from the amplification curves.
+  home: https://bioconductor.org/packages/3.22/data/experiment/html/miRcompData.html
+  license: GPL-3 | file LICENSE
+  license_file: LICENSE
+  summary: Data used in the miRcomp package
+build:
+  noarch: generic
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+package:
+  name: bioconductor-mircompdata
+  version: 1.40.0
+requirements:
+  host:
+  - r-base
+  run:
+  - r-base
+  - curl
+  - bioconductor-data-packages >=20260207
+source:
+  md5: 4f6cfa622a54b3b796e26ab9db62fcbc
+  url:
+  - https://bioconductor.org/packages/3.22/data/experiment/src/contrib/miRcompData_1.40.0.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/miRcompData/miRcompData_1.40.0.tar.gz
+  - https://bioarchive.galaxyproject.org/miRcompData_1.40.0.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-mircompdata/bioconductor-mircompdata_1.40.0_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('miRcompData')"

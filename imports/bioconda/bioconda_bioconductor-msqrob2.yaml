@@ -1,0 +1,59 @@
+about:
+  description: msqrob2 provides a robust linear mixed model framework for assessing
+    differential abundance in MS-based Quantitative proteomics experiments. Our workflows
+    can start from raw peptide intensities or summarised protein expression values.
+    The model parameter estimates can be stabilized by ridge regression, empirical
+    Bayes variance estimation and robust M-estimation. msqrob2's hurde workflow can
+    handle missing data without having to rely on hard-to-verify imputation assumptions,
+    and, outcompetes state-of-the-art methods with and without imputation for both
+    high and low missingness. It builds on QFeature infrastructure for quantitative
+    mass spectrometry data to store the model results together with the raw data and
+    preprocessed data.
+  home: https://bioconductor.org/packages/3.22/bioc/html/msqrob2.html
+  license: Artistic-2.0
+  summary: Robust statistical inference for quantitative LC-MS proteomics
+build:
+  noarch: generic
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+package:
+  name: bioconductor-msqrob2
+  version: 1.18.0
+requirements:
+  host:
+  - bioconductor-biocparallel >=1.44.0,<1.45.0
+  - bioconductor-limma >=3.66.0,<3.67.0
+  - bioconductor-multiassayexperiment >=1.36.0,<1.37.0
+  - bioconductor-qfeatures >=1.20.0,<1.21.0
+  - bioconductor-summarizedexperiment >=1.40.0,<1.41.0
+  - r-base
+  - r-codetools
+  - r-lme4
+  - r-mass
+  - r-matrix
+  - r-purrr
+  run:
+  - bioconductor-biocparallel >=1.44.0,<1.45.0
+  - bioconductor-limma >=3.66.0,<3.67.0
+  - bioconductor-multiassayexperiment >=1.36.0,<1.37.0
+  - bioconductor-qfeatures >=1.20.0,<1.21.0
+  - bioconductor-summarizedexperiment >=1.40.0,<1.41.0
+  - r-base
+  - r-codetools
+  - r-lme4
+  - r-mass
+  - r-matrix
+  - r-purrr
+source:
+  md5: 62fcf4e9acec76c056326fdc1c156cf3
+  url:
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/msqrob2_1.18.0.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/msqrob2/msqrob2_1.18.0.tar.gz
+  - https://bioarchive.galaxyproject.org/msqrob2_1.18.0.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-msqrob2/bioconductor-msqrob2_1.18.0_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('msqrob2')"

@@ -1,0 +1,36 @@
+about:
+  dev_url: https://github.com/bluenote-1577/fairy
+  doc_url: https://github.com/bluenote-1577/fairy/blob/v0.5.8/README.md
+  home: https://github.com/bluenote-1577/fairy
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE
+  summary: fairy calculates all-to-all approximate coverage for multi-sample metagenomic
+    binning > 100x faster than alignment.
+build:
+  number: 0
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+  recipe-maintainers:
+  - bluenote-1577
+package:
+  name: fairy
+  version: 0.5.8
+requirements:
+  build:
+  - null
+  - null
+  - make
+  - cmake >=3.12
+  - cargo-bundle-licenses
+  - pkg-config
+source:
+  sha256: 8ed2da6ced82774f25fd5a2574c81cded241a58f68effff15a93b3194284ae28
+  url: https://github.com/bluenote-1577/fairy/archive/v0.5.8.tar.gz
+test:
+  commands:
+  - fairy --help

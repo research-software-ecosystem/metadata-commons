@@ -1,0 +1,39 @@
+about:
+  home: https://github.com/aineniamh/snipit
+  license: GPL-3.0-or-later
+  license_family: GPL3
+  license_file: LICENSE
+  summary: Visualize snps relative to a reference sequence
+build:
+  entry_points:
+  - snipit=snipit.command:main
+  noarch: python
+  number: 0
+  run_exports:
+  - null
+  script: ' -m pip install . -vvv --no-deps --no-build-isolation'
+extra:
+  recipe-maintainers:
+  - tomkinsc
+package:
+  name: snipit
+  version: '1.7'
+requirements:
+  host:
+  - biopython >=1.70
+  - matplotlib-base >=3.2.1
+  - pip
+  - python >3.5
+  - setuptools
+  run:
+  - biopython >=1.70
+  - matplotlib-base >=3.2.1
+  - python >3.5
+source:
+  sha256: 720b7c092730b8dbf17bd8e659a506b7341f2c1e0b5d8de4e586cebc28b38d9d
+  url: https://pypi.io/packages/source/s/snipit/snipit-1.7.tar.gz
+test:
+  commands:
+  - snipit --help
+  imports:
+  - snipit

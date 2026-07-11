@@ -1,0 +1,35 @@
+about:
+  home: https://github.com/lmdu/pytrf
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE
+  summary: a fast Python package for finding tandem repeat sequences
+build:
+  number: 0
+  run_exports:
+  - null
+  script: ' -m pip install . --ignore-installed --no-deps -vv'
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+package:
+  name: pytrf
+  version: 1.5.0
+requirements:
+  build:
+  - null
+  - null
+  host:
+  - python
+  - pip
+  - setuptools
+  run:
+  - null
+  - pyfastx >=2.1
+source:
+  sha256: 5b094aee65cddbba6ce6fb9885224b6bff885d40d8fc167007685c610db03570
+  url: https://github.com/lmdu/pytrf/archive/refs/tags/1.5.0.tar.gz
+test:
+  imports:
+  - pytrf

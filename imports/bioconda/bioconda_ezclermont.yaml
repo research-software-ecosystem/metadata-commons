@@ -1,0 +1,38 @@
+about:
+  description: Determines the Clermont 2013 phylotype of a given E coli strain by
+    performing in silico quadriplex PCR
+  dev_url: https://github.com/nickp60/barrnap-python
+  home: https://github.com/nickp60/ezclermont
+  license: MIT License
+  license_family: MIT
+  license_file: LICENSE
+  summary: easily determine the Clermont 2013 E coli phylotype
+build:
+  noarch: python
+  number: 0
+  run_exports:
+  - null
+  script: -m pip install . --no-deps --no-build-isolation -vvv
+extra:
+  recipe-maintainers:
+  - nickp60
+package:
+  name: ezclermont
+  version: 1.0.0
+requirements:
+  host:
+  - python >=3.5
+  - setuptools
+  - pip
+  - biopython
+  - coverage
+  run:
+  - python >=3.5
+  - biopython
+  - coverage
+source:
+  sha256: e7497ef728dd2395ec3bb3f81413a047b54bbfd1fbd1f3347b7cf3dad4d703d6
+  url: https://pypi.io/packages/source/e/ezclermont/ezclermont-1.0.0.tar.gz
+test:
+  commands:
+  - ezclermont -h

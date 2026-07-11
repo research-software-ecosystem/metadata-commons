@@ -1,0 +1,50 @@
+about:
+  description: The biodbHmdb library is an extension of the biodb framework package
+    that provides access to the HMDB Metabolites database. It allows to download the
+    whole HMDB Metabolites database locally, access entries and search for entries
+    by name or description. A future version of this package will also include a search
+    by mass and mass spectra annotation.
+  home: https://bioconductor.org/packages/3.20/bioc/html/biodbHmdb.html
+  license: AGPL-3
+  license_file: /lib/R/share/licenses/AGPL-3
+  summary: biodbHmdb, a library for connecting to the HMDB Database
+build:
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+package:
+  name: bioconductor-biodbhmdb
+  version: 1.12.0
+requirements:
+  build:
+  - null
+  - null
+  - make
+  host:
+  - bioconductor-biodb >=1.14.0,<1.15.0
+  - r-base
+  - r-r6
+  - r-rcpp
+  - r-testthat
+  - r-zip
+  - libblas
+  - liblapack
+  run:
+  - bioconductor-biodb >=1.14.0,<1.15.0
+  - r-base
+  - r-r6
+  - r-rcpp
+  - r-testthat
+  - r-zip
+source:
+  md5: 0333d0ac49b6de03426e7709fa2ca1ac
+  url:
+  - https://bioconductor.org/packages/3.20/bioc/src/contrib/biodbHmdb_1.12.0.tar.gz
+  - https://bioconductor.org/packages/3.20/bioc/src/contrib/Archive/biodbHmdb/biodbHmdb_1.12.0.tar.gz
+  - https://bioarchive.galaxyproject.org/biodbHmdb_1.12.0.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-biodbhmdb/bioconductor-biodbhmdb_1.12.0_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('biodbHmdb')"

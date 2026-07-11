@@ -1,0 +1,53 @@
+about:
+  description: A multitude of tools for comparative genomics, focused on large-scale
+    analyses of biological data. SynExtend includes tools for working with syntenic
+    data, clustering massive network structures, and estimating functional relationships
+    among genes.
+  home: https://bioconductor.org/packages/3.22/bioc/html/SynExtend.html
+  license: GPL-3
+  license_file: /lib/R/share/licenses/GPL-3
+  summary: Tools for Comparative Genomics
+build:
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+package:
+  name: bioconductor-synextend
+  version: 1.22.0
+requirements:
+  build:
+  - null
+  - null
+  - make
+  host:
+  - bioconductor-biostrings >=2.78.0,<2.79.0
+  - bioconductor-decipher >=3.6.0,<3.7.0
+  - bioconductor-iranges >=2.44.0,<2.45.0
+  - bioconductor-s4vectors >=0.48.0,<0.49.0
+  - r-base
+  - r-dbi
+  - r-rsqlite
+  - libblas
+  - liblapack
+  - zlib
+  - liblzma-devel
+  run:
+  - bioconductor-biostrings >=2.78.0,<2.79.0
+  - bioconductor-decipher >=3.6.0,<3.7.0
+  - bioconductor-iranges >=2.44.0,<2.45.0
+  - bioconductor-s4vectors >=0.48.0,<0.49.0
+  - r-base
+  - r-dbi
+  - r-rsqlite
+source:
+  md5: 48e649c20b0c5e11e8aeff40757245a3
+  url:
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/SynExtend_1.22.0.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/SynExtend/SynExtend_1.22.0.tar.gz
+  - https://bioarchive.galaxyproject.org/SynExtend_1.22.0.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-synextend/bioconductor-synextend_1.22.0_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('SynExtend')"

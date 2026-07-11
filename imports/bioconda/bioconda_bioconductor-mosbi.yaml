@@ -1,0 +1,70 @@
+about:
+  description: This package is a implementation of biclustering ensemble method MoSBi
+    (Molecular signature Identification from Biclustering). MoSBi provides standardized
+    interfaces for biclustering results and can combine their results with a multi-algorithm
+    ensemble approach to compute robust ensemble biclusters on molecular omics data.
+    This is done by computing similarity networks of biclusters and filtering for
+    overlaps using a custom error model. After that, the louvain modularity it used
+    to extract bicluster communities from the similarity network, which can then be
+    converted to ensemble biclusters. Additionally, MoSBi includes several network
+    visualization methods to give an intuitive and scalable overview of the results.
+    MoSBi comes with several biclustering algorithms, but can be easily extended to
+    new biclustering algorithms.
+  home: https://bioconductor.org/packages/3.22/bioc/html/mosbi.html
+  license: AGPL-3 + file LICENSE
+  license_file: LICENSE
+  summary: Molecular Signature identification using Biclustering
+build:
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+package:
+  name: bioconductor-mosbi
+  version: 1.16.0
+requirements:
+  build:
+  - null
+  - null
+  - make
+  host:
+  - bioconductor-fabia >=2.56.0,<2.57.0
+  - bioconductor-qubic >=1.38.0,<1.39.0
+  - r-akmbiclust
+  - r-base
+  - r-bh
+  - r-biclust
+  - r-igraph
+  - r-isa2
+  - r-rcolorbrewer
+  - r-rcpp
+  - r-rcppparallel
+  - r-xml2
+  - libblas
+  - liblapack
+  - zlib
+  - liblzma-devel
+  run:
+  - bioconductor-fabia >=2.56.0,<2.57.0
+  - bioconductor-qubic >=1.38.0,<1.39.0
+  - r-akmbiclust
+  - r-base
+  - r-bh
+  - r-biclust
+  - r-igraph
+  - r-isa2
+  - r-rcolorbrewer
+  - r-rcpp
+  - r-rcppparallel
+  - r-xml2
+source:
+  md5: 7c99ece109c8cda6512eda6249904ee7
+  url:
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/mosbi_1.16.0.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/mosbi/mosbi_1.16.0.tar.gz
+  - https://bioarchive.galaxyproject.org/mosbi_1.16.0.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-mosbi/bioconductor-mosbi_1.16.0_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('mosbi')"

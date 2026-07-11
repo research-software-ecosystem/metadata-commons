@@ -1,0 +1,88 @@
+about:
+  description: '# biobb_flexserv
+
+
+    ### Introduction
+
+    Biobb_flexserv is the Biobb module collection for biomolecular flexibility studies
+    on protein 3D structures. Biobb (BioExcel building blocks) packages are Python
+    building blocks that create new layer of compatibility and interoperability over
+    popular bioinformatics tools.
+
+    The latest documentation of this package can be found in our readthedocs site:
+
+    [latest API documentation](http://biobb-flexserv.readthedocs.io/en/latest/).
+
+
+
+    ### Copyright & Licensing
+
+    This software has been developed in the [MMB group](http://mmb.irbbarcelona.org)
+    at the [BSC](http://www.bsc.es/) & [IRB](https://www.irbbarcelona.org/) for the
+    [European BioExcel](http://bioexcel.eu/), funded by the European Commission (EU
+    Horizon Europe [101093290](https://cordis.europa.eu/project/id/101093290), EU
+    H2020 [823830](http://cordis.europa.eu/projects/823830), EU H2020 [675728](http://cordis.europa.eu/projects/675728)).
+
+
+    * (c) 2015-2026 [Barcelona Supercomputing Center](https://www.bsc.es/)
+
+    * (c) 2015-2026 [Institute for Research in Biomedicine](https://www.irbbarcelona.org/)
+
+    Licensed under the
+
+    [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0), see the file
+    LICENSE for details.
+
+
+    ![](https://bioexcel.eu/wp-content/uploads/2019/04/Bioexcell_logo_1080px_transp.png
+    "Bioexcel")
+
+
+
+    '
+  doc_url: http://biobb-flexserv.readthedocs.io/en/latest/
+  home: https://github.com/bioexcel/biobb_flexserv
+  license: Apache-2.0 license
+  summary: Biobb_flexserv is the Biobb module collection for biomolecular flexibility
+    studies on protein 3D structures.
+build:
+  number: 0
+  run_exports:
+  - null
+  script: ' -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv'
+  skip: true
+extra:
+  recipe-maintainers:
+  - gbayarri
+  - RubenChM
+  skip-lints:
+  - should_be_noarch_generic
+package:
+  name: biobb_flexserv
+  version: 5.2.1
+requirements:
+  host:
+  - python
+  - setuptools
+  - biobb_common ==5.2.2
+  - flexserv ==1.0.2
+  - pcasuite ==1.0.0=h7baada4_6
+  - pcasuite ==1.0.0=h71b3ecd_6
+  - pip
+  - perl
+  run:
+  - python >=3.10,<3.13
+  - setuptools
+  - biobb_common ==5.2.2
+  - flexserv ==1.0.2
+  - pcasuite ==1.0.0=h7baada4_6
+  - pcasuite ==1.0.0=h71b3ecd_6
+  - perl
+source:
+  sha256: 03d97b00bed502c976741e72cec302b1a9b7524813c8fe8910eb20ced2101974
+  url: https://pypi.io/packages/source/b/biobb_flexserv/biobb_flexserv-5.2.1.tar.gz
+test:
+  imports:
+  - biobb_flexserv
+  - biobb_flexserv.flexserv
+  - biobb_flexserv.pcasuite

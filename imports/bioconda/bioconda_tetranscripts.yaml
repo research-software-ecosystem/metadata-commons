@@ -1,0 +1,38 @@
+about:
+  home: http://hammelllab.labsites.cshl.edu/software#TEToolkit
+  license: GPL-3.0-only
+  license_family: GPL3
+  license_file: COPYING
+  summary: A package for including transposable elements in differential enrichment
+    analysis of sequencing datasets.
+build:
+  noarch: python
+  number: 0
+  run_exports:
+  - null
+  script: -m pip install . --ignore-installed --no-deps -vv
+package:
+  name: tetranscripts
+  version: 2.2.4
+requirements:
+  host:
+  - python
+  - pip
+  - setuptools
+  run:
+  - python
+  - pysam >=0.15.3
+  - r-base
+  - bioconductor-deseq >=1.38
+  - bioconductor-deseq2 >=1.26
+source:
+  sha256: aa7b9796cb283ae808c2a09650d8f8f48ef41c919c261b7f9772b0d6fc1f5eb0
+  url: https://github.com/mhammell-laboratory/TEtranscripts/archive/2.2.4.tar.gz
+test:
+  commmands:
+  - TEtranscripts --version
+  - TEcount --version
+  imports:
+  - TEToolkit
+  - TEToolkit.IO
+  - TEToolkit.ShortRead

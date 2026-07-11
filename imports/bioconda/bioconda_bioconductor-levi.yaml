@@ -1,0 +1,71 @@
+about:
+  description: The tool integrates data from biological networks with transcriptomes,
+    displaying a heatmap with surface curves to evidence the altered regions.
+  home: https://bioconductor.org/packages/3.22/bioc/html/levi.html
+  license: GPL (>= 2)
+  license_file: /lib/R/share/licenses/GPL-3
+  summary: Landscape Expression Visualization Interface
+build:
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+package:
+  name: bioconductor-levi
+  version: 1.28.0
+requirements:
+  build:
+  - null
+  - null
+  - make
+  host:
+  - r-base
+  - r-colorspace >=1.3-2
+  - r-dplyr >=0.7.4
+  - r-dt >=0.4
+  - r-ggplot2 >=2.2.1
+  - r-httr >=1.3.1
+  - r-igraph >=1.2.1
+  - r-knitr
+  - r-rcolorbrewer >=1.1-2
+  - r-rcpp >=0.12.18
+  - r-reshape2 >=1.4.3
+  - r-rmarkdown
+  - r-shiny >=1.0.5
+  - r-shinydashboard >=0.7.0
+  - r-shinyjs >=1.0
+  - r-testthat
+  - r-xml2 >=1.2.0
+  - libblas
+  - liblapack
+  - zlib
+  - liblzma-devel
+  run:
+  - r-base
+  - r-colorspace >=1.3-2
+  - r-dplyr >=0.7.4
+  - r-dt >=0.4
+  - r-ggplot2 >=2.2.1
+  - r-httr >=1.3.1
+  - r-igraph >=1.2.1
+  - r-knitr
+  - r-rcolorbrewer >=1.1-2
+  - r-rcpp >=0.12.18
+  - r-reshape2 >=1.4.3
+  - r-rmarkdown
+  - r-shiny >=1.0.5
+  - r-shinydashboard >=0.7.0
+  - r-shinyjs >=1.0
+  - r-testthat
+  - r-xml2 >=1.2.0
+source:
+  md5: 74d8db9331c8cdce37ab042625ba064d
+  url:
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/levi_1.28.0.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/levi/levi_1.28.0.tar.gz
+  - https://bioarchive.galaxyproject.org/levi_1.28.0.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-levi/bioconductor-levi_1.28.0_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('levi')"

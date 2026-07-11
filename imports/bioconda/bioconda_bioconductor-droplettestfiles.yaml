@@ -1,0 +1,44 @@
+about:
+  description: Assorted files generated from droplet-based single-cell protocols,
+    to be used for testing functions in DropletUtils. Primarily intended for storing
+    files that directly come out of processing pipelines like 10X Genomics' CellRanger
+    software, prior to the formation of a SingleCellExperiment object. Unlike other
+    packages, this is not designed to provide objects that are immediately ready for
+    analysis.
+  home: https://bioconductor.org/packages/3.22/data/experiment/html/DropletTestFiles.html
+  license: GPL-3
+  license_file: /lib/R/share/licenses/GPL-3
+  summary: Test Files for Single-Cell Droplet Utilities
+build:
+  noarch: generic
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+package:
+  name: bioconductor-droplettestfiles
+  version: 1.20.0
+requirements:
+  host:
+  - bioconductor-annotationhub >=4.0.0,<4.1.0
+  - bioconductor-experimenthub >=3.0.0,<3.1.0
+  - bioconductor-s4vectors >=0.48.0,<0.49.0
+  - r-base
+  run:
+  - bioconductor-annotationhub >=4.0.0,<4.1.0
+  - bioconductor-experimenthub >=3.0.0,<3.1.0
+  - bioconductor-s4vectors >=0.48.0,<0.49.0
+  - r-base
+  - curl
+  - bioconductor-data-packages >=20260207
+source:
+  md5: 3fdfd338c3b98f105df77809f3332103
+  url:
+  - https://bioconductor.org/packages/3.22/data/experiment/src/contrib/DropletTestFiles_1.20.0.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/DropletTestFiles/DropletTestFiles_1.20.0.tar.gz
+  - https://bioarchive.galaxyproject.org/DropletTestFiles_1.20.0.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-droplettestfiles/bioconductor-droplettestfiles_1.20.0_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('DropletTestFiles')"

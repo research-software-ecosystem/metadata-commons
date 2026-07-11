@@ -1,0 +1,44 @@
+about:
+  dev_url: https://github.com/veg/tn93
+  doc_url: https://github.com/veg/tn93/blob/v1.0.16/README.md
+  home: https://github.com/veg/tn93
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE
+  summary: This is a simple program meant to compute pairwise distances between aligned
+    nucleotide sequences in sequential FASTA format using the Tamura Nei 93 distance.
+build:
+  number: 0
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+  identifiers:
+  - biotools:tn93
+  - usegalaxy-eu:tn93
+  - usegalaxy-eu:tn93_filter
+  - usegalaxy-eu:tn93_cluster
+  - doi:10.1093/molbev/msy016
+package:
+  name: tn93
+  version: 1.0.16
+requirements:
+  build:
+  - make
+  - null
+  - null
+  - cmake
+  host:
+  - llvm-openmp
+  - libgomp
+  run:
+  - llvm-openmp
+  - libgomp
+source:
+  sha256: e5545ab112cfc2071f3ba3276d02503bd0773b8e08af69e1ad8ba1a250c75f43
+  url: https://github.com/veg/tn93/archive/v1.0.16.tar.gz
+test:
+  commands:
+  - tn93 -h 2>&1 | grep 'usage'

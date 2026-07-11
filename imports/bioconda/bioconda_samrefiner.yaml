@@ -1,0 +1,34 @@
+about:
+  dev_url: https://github.com/degregory/SAM_Refiner
+  home: https://github.com/degregory/SAM_Refiner
+  license: GPL-3.0-or-later
+  license_family: GPL3
+  license_file: LICENSE
+  summary: A program for gathering variant information from a SAM formated files.
+build:
+  entry_points:
+  - SAM_Refiner = SAM_Refiner:main
+  noarch: python
+  number: 0
+  run_exports:
+  - null
+  script: -m pip install . --no-deps --no-build-isolation --no-cache-dir -vvv
+extra:
+  recipe-maintainers:
+  - degregory
+package:
+  name: samrefiner
+  version: 1.4.2.1
+requirements:
+  host:
+  - python >=3.7
+  - pip
+  - setuptools
+  run:
+  - python >=3.7
+source:
+  sha256: 1d2f8154e30ddc7851c8a468f2c2f7f99f474da7fc92a8159df400187b46ac99
+  url: https://github.com/degregory/SAM_Refiner/archive/refs/tags/v1.4.2.1.tar.gz
+test:
+  commands:
+  - SAM_Refiner --help

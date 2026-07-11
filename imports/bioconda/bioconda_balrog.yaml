@@ -1,0 +1,38 @@
+about:
+  dev_url: https://github.com/salzberg-lab/BalrogCPP
+  home: https://github.com/salzberg-lab/BalrogCPP
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE
+  summary: 'Balrog: A universal protein model for prokaryotic gene prediction.'
+build:
+  number: 7
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+package:
+  name: balrog
+  version: 0.5.1
+requirements:
+  build:
+  - null
+  - cmake <4
+  - make
+  - pkg-config
+  host:
+  - llvm-openmp
+  - libgomp
+  - zlib
+  run:
+  - llvm-openmp
+  - libgomp
+  - scipy
+source:
+  sha256: 1c084d42b86d81424ffc2e490b20042bd9d0bd4528483498a16ede332cbd4b32
+  url: https://github.com/salzberg-lab/BalrogCPP/archive/v0.5.1.tar.gz
+test:
+  commands:
+  - balrog --help

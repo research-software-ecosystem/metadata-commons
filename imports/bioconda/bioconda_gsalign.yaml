@@ -1,0 +1,42 @@
+about:
+  description: An ultra-fast sequence alignment tool for genome sequence comparison.
+  dev_url: https://github.com/hsinnan75/GSAlign
+  home: https://github.com/hsinnan75/GSAlign
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE
+  summary: 'GSAlign: An ultra-fast sequence alignment tool'
+build:
+  number: 8
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+  identifiers:
+  - doi:10.1101/782193
+package:
+  name: gsalign
+  version: 1.0.22
+requirements:
+  build:
+  - make
+  - null
+  - null
+  - pkg-config
+  host:
+  - xz
+  - zlib
+  - boost-cpp
+  run:
+  - boost-cpp
+source:
+  patches:
+  - support-linux-aarch64.patch
+  sha256: 832eb3f570756cf6c0165036994a184e8882b152f3163d50367caa9d0815f619
+  url: https://github.com/hsinnan75/GSAlign/archive/1.0.22.tar.gz
+test:
+  commands:
+  - GSAlign -h
+  - bwt_index

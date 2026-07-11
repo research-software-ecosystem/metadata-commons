@@ -1,0 +1,48 @@
+about:
+  dev_url: https://github.com/smithlabcode/falco
+  doc_url: https://falco.readthedocs.io
+  home: https://github.com/smithlabcode/falco
+  license: GPL-3.0-only
+  license_family: GPL3
+  license_file: LICENSE
+  summary: falco is a drop-in C++ implementation of FastQC to assess the quality of
+    sequence reads.
+build:
+  number: 0
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+  identifiers:
+  - biotools:falco
+  - usegalaxy-eu:falco
+  - doi:10.12688/f1000research.21142.2
+  recipe-maintainers:
+  - andrewdavidsmith
+  - guilhermesena1
+package:
+  name: falco
+  version: 1.3.2
+requirements:
+  build:
+  - make
+  - null
+  - null
+  - pkg-config
+  - autoconf
+  - automake
+  - libtool
+  - gnuconfig
+  host:
+  - zlib
+  - htslib
+  run:
+  - htslib
+source:
+  sha256: d8dbc7d98d1aafdbf8199f8df3d7f76503a4f6a8924a151c953eb23dd47d44a0
+  url: https://github.com/smithlabcode/falco/releases/download/v1.3.2/falco-1.3.2.tar.gz
+test:
+  commands:
+  - falco

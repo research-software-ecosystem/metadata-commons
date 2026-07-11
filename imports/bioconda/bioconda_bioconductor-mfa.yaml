@@ -1,0 +1,58 @@
+about:
+  description: MFA models genomic bifurcations using a Bayesian hierarchical mixture
+    of factor analysers.
+  home: https://bioconductor.org/packages/3.20/bioc/html/mfa.html
+  license: GPL (>= 2)
+  license_file: /lib/R/share/licenses/GPL-3
+  summary: Bayesian hierarchical mixture of factor analyzers for modelling genomic
+    bifurcations
+build:
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+package:
+  name: bioconductor-mfa
+  version: 1.28.0
+requirements:
+  build:
+  - null
+  - null
+  - make
+  host:
+  - bioconductor-biobase >=2.66.0,<2.67.0
+  - r-base
+  - r-coda
+  - r-dplyr
+  - r-ggmcmc
+  - r-ggplot2
+  - r-magrittr
+  - r-mcmcglmm
+  - r-mcmcpack
+  - r-rcpp
+  - r-tibble
+  - libblas
+  - liblapack
+  run:
+  - bioconductor-biobase >=2.66.0,<2.67.0
+  - r-base
+  - r-coda
+  - r-dplyr
+  - r-ggmcmc
+  - r-ggplot2
+  - r-magrittr
+  - r-mcmcglmm
+  - r-mcmcpack
+  - r-rcpp
+  - r-tibble
+source:
+  md5: fdd4337cce5b79f16b1e621eebc3322b
+  url:
+  - https://bioconductor.org/packages/3.20/bioc/src/contrib/mfa_1.28.0.tar.gz
+  - https://bioconductor.org/packages/3.20/bioc/src/contrib/Archive/mfa/mfa_1.28.0.tar.gz
+  - https://bioarchive.galaxyproject.org/mfa_1.28.0.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-mfa/bioconductor-mfa_1.28.0_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('mfa')"

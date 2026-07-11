@@ -1,0 +1,53 @@
+about:
+  home: https://github.com/ZhantianXu/PISAD
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE
+  summary: pisad - Phsaed Intraspecies Sample Anomalies Detection tool
+build:
+  number: 0
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+package:
+  name: pisad
+  version: 1.2.0
+requirements:
+  build:
+  - null
+  - make
+  - autoconf
+  - automake
+  - libtool
+  host:
+  - zlib
+  - libgomp
+  - llvm-openmp
+  - hdf5
+  - boost-cpp
+  - gperftools
+  run:
+  - libgomp
+  - llvm-openmp
+  - python
+  - pyfaidx
+  - numpy
+  - scikit-learn
+  - pandas
+  - samtools
+  - hdf5
+  - boost-cpp
+  - gperftools
+  - dsk
+  - matplotlib-base
+  - perl
+source:
+  sha256: 222581b83b28c9227c8fc717d7352b9b223b68a4f10c18fe2eda4375a35cd6b4
+  url: https://github.com/ZhantianXu/PISAD/releases/download/v1.2.0/PISAD-1.2.0.tar.gz
+test:
+  commands:
+  - pisadCount -h
+  - pisadEval -h
+  - run.sh -h

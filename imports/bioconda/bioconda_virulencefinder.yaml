@@ -1,0 +1,40 @@
+about:
+  home: https://bitbucket.org/genomicepidemiology/virulencefinder
+  license: Apache-2.0
+  license_family: APACHE
+  summary: VirulenceFinder identifies virulence genes in total or partial sequenced
+    isolates of bacteria
+build:
+  noarch: python
+  number: 0
+  run_exports:
+  - null
+extra:
+  identifiers:
+  - doi:10.1128/JCM.03617-13
+package:
+  name: virulencefinder
+  version: 3.2.1
+requirements:
+  host:
+  - python >=3.10
+  - pip
+  - pdm-backend
+  run:
+  - python >=3.10
+  - kma
+  - biopython >=1.79
+  - tabulate >=0.8.9
+  - cgecore >=2.0.0
+  - blast
+  - pandas >=1.4.2
+  - wget
+  - git
+source:
+  sha256: 980f7355380597d9656ceb10a594c9b977bd57e660d291e7ec85a674a801dd72
+  url: https://pypi.io/packages/source/v/virulencefinder/virulencefinder-3.2.1.tar.gz
+test:
+  commands:
+  - python -m virulencefinder --version
+  imports:
+  - virulencefinder

@@ -1,0 +1,46 @@
+about:
+  doc_url: https://sequana.readthedocs.io/en/main/
+  home: https://github.com/sequana/sequana_pipetools
+  license: BSD-3-Clause
+  license_family: BSD
+  summary: A set of tools to help building or using Sequana pipelines
+build:
+  noarch: python
+  number: 0
+  run_exports:
+  - null
+  script: -m pip install . --no-deps --no-build-isolation -vvv
+extra:
+  recipe-maintainers:
+  - cokelaer
+package:
+  name: sequana_pipetools
+  version: 1.5.7
+requirements:
+  host:
+  - python >=3.8
+  - pip
+  - poetry-core >=1.0.0
+  run:
+  - python >=3.8
+  - deprecated >=1.2.13
+  - easydev >=0.12.1
+  - parse >=1.19.0
+  - ruamel.yaml >=0.17.32
+  - packaging >=23.1
+  - pykwalify >=1.8
+  - importlib_resources >=5.4.0
+  - pyyaml >=1.3
+  - aiohttp >=3.8.4
+  - tqdm >=4.65
+  - charset-normalizer >=2.0.0,<3.0.0
+  - versionix >=0.2.0
+  - requests
+source:
+  sha256: 1d5101d618edabff3edf4fe749c629bdd501ca6c37500561a88f8b6cedd93737
+  url: https://pypi.io/packages/source/s/sequana_pipetools/sequana_pipetools-1.5.7.tar.gz
+test:
+  commands:
+  - sequana_pipetools --help
+  imports:
+  - sequana_pipetools

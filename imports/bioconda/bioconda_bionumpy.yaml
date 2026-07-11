@@ -1,0 +1,38 @@
+about:
+  dev_url: https://github.com/bionumpy/bionumpy
+  doc_url: https://bionumpy.github.io/bionumpy
+  home: https://github.com/bionumpy/bionumpy
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE
+  summary: Library for working with biological sequence data as numpy arrays.
+build:
+  entry_points:
+  - bionumpy=bionumpy.cli:main
+  noarch: python
+  number: 0
+  run_exports:
+  - null
+  script: -m pip install . --no-deps --no-build-isolation --no-cache-dir -vvv
+extra:
+  recipe-maintainers:
+  - telatin
+package:
+  name: bionumpy
+  version: 1.0.14
+requirements:
+  host:
+  - python >=3.6
+  - zlib
+  - pip
+  - setuptools
+  run:
+  - python >=3.6
+  - numpy >=1.20
+  - npstructures >=0.2.15
+source:
+  sha256: 1fd98de7a06947d08f7bd81d1fce2dedf3c25ecba93620dfacb1fbdb9bdd17c2
+  url: https://github.com/bionumpy/bionumpy/archive/refs/tags/v1.0.14.tar.gz
+test:
+  imports:
+  - bionumpy

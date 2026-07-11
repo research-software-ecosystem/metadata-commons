@@ -1,0 +1,52 @@
+about:
+  home: https://CRAN.R-project.org/package=DiNAMIC.Duo
+  license: GPL-3.0-only
+  license_family: GPL3
+  license_file:
+  - /lib/R/share/licenses/GPL-3
+  summary: In tumor tissue, underlying genomic instability can lead to DNA copy number
+    alterations, e.g., copy number gains or losses. Sporadic copy number alterations
+    occur randomly throughout the genome, whereas recurrent alterations are observed
+    in the same genomic region across multiple independent samples, perhaps because
+    they provide a selective growth advantage. Here we use cyclic shift permutations
+    to identify recurrent copy number alterations in a single cohort or recurrent
+    copy number differences in two cohorts based on a common set of genomic markers.
+    Additional functionality is provided to perform downstream analyses, including
+    the creation of summary files and graphics. DiNAMIC.Duo builds upon the original
+    DiNAMIC package of Walter et al. (2011) <doi:10.1093/bioinformatics/btq717> and
+    leverages the theory developed in Walter et al. (2015) <doi:10.1093/biomet/asv046>.
+    A manuscript based on DiNAMIC.Duo is currently under development.
+build:
+  noarch: generic
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports:
+  - null
+package:
+  name: r-dinamic.duo
+  version: 1.0.4
+requirements:
+  host:
+  - r-base
+  - bioconductor-biomart
+  - r-curl
+  - r-dinamic
+  - r-plyr
+  - libxml2
+  run:
+  - r-base
+  - bioconductor-biomart
+  - r-curl
+  - r-dinamic
+  - r-plyr
+  - libxml2
+source:
+  sha256: c23fd26215389b81d3c12953f81d7fb26110fcae66ee11e30122ca507fdbc5a5
+  url:
+  - /src/contrib/DiNAMIC.Duo_1.0.4.tar.gz
+  - /src/contrib/Archive/DiNAMIC.Duo/DiNAMIC.Duo_1.0.4.tar.gz
+test:
+  commands:
+  - $R -e "library('DiNAMIC.Duo')"

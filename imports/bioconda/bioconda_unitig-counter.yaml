@@ -1,0 +1,47 @@
+about:
+  dev_url: https://github.com/johnlees/unitig-counter
+  home: https://github.com/johnlees/unitig-counter
+  license: GNU Affero General Public License
+  license_family: AGPL
+  license_file: LICENSE
+  summary: Uses a compressed de Bruijn graph (implemented in GATB) to count unitigs
+    in bacterial populations.
+build:
+  number: 2
+  run_exports:
+  - null
+  skip: true
+extra:
+  additional-platforms:
+  - linux-aarch64
+  identifiers:
+  - doi:10.1371/journal.pgen.1007758
+  skip-lints:
+  - uses_vcs_url
+package:
+  name: unitig-counter
+  version: 1.1.0
+requirements:
+  build:
+  - make
+  - null
+  - null
+  - cmake <4
+  - pkg-config
+  host:
+  - hdf5 >=1.10.6,<1.11.0
+  - zlib
+  - pthread-stubs
+  - boost-cpp
+  - cppunit
+  run:
+  - pthread-stubs
+  - boost-cpp
+source:
+  git_rev: v1.1.0
+  git_url: https://github.com/johnlees/unitig-counter.git
+  sha256: unused
+test:
+  commands:
+  - unitig-counter -help | grep 'unitig-counter options'
+  - cdbg-ops -h 2>&1 | grep 'cdbg-ops dist'

@@ -1,0 +1,51 @@
+about:
+  description: An R interface to the HISAT2 spliced short-read aligner by Kim et al.
+    (2015). The package contains wrapper functions to create a genome index and to
+    perform the read alignment to the generated index.
+  home: https://bioconductor.org/packages/3.22/bioc/html/Rhisat2.html
+  license: GPL-3
+  license_file: /lib/R/share/licenses/GPL-3
+  summary: R Wrapper for HISAT2 Aligner
+build:
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+package:
+  name: bioconductor-rhisat2
+  version: 1.26.0
+requirements:
+  build:
+  - null
+  - null
+  - null
+  - make
+  host:
+  - bioconductor-genomicranges >=1.62.0,<1.63.0
+  - bioconductor-sgseq >=1.44.0,<1.45.0
+  - bioconductor-txdbmaker >=1.6.0,<1.7.0
+  - r-base
+  - libblas
+  - liblapack
+  - zlib
+  - liblzma-devel
+  run:
+  - bioconductor-genomicranges >=1.62.0,<1.63.0
+  - bioconductor-sgseq >=1.44.0,<1.45.0
+  - bioconductor-txdbmaker >=1.6.0,<1.7.0
+  - r-base
+source:
+  md5: 9daabe6380495bc82dafabd1a8c6c695
+  url:
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Rhisat2_1.26.0.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/Rhisat2/Rhisat2_1.26.0.tar.gz
+  - https://bioarchive.galaxyproject.org/Rhisat2_1.26.0.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-rhisat2/bioconductor-rhisat2_1.26.0_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('Rhisat2')"

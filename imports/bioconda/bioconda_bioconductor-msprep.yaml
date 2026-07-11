@@ -1,0 +1,62 @@
+about:
+  description: Package performs summarization of replicates, filtering by frequency,
+    several different options for imputing missing data, and a variety of options
+    for transforming, batch correcting, and normalizing data.
+  home: https://bioconductor.org/packages/3.22/bioc/html/MSPrep.html
+  license: GPL-3
+  license_file: /lib/R/share/licenses/GPL-3
+  summary: Package for Summarizing, Filtering, Imputing, and Normalizing Metabolomics
+    Data
+build:
+  noarch: generic
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+package:
+  name: bioconductor-msprep
+  version: 1.20.1
+requirements:
+  host:
+  - bioconductor-pcamethods >=2.2.0,<2.3.0
+  - bioconductor-preprocesscore >=1.72.0,<1.73.0
+  - bioconductor-s4vectors >=0.48.0,<0.49.0
+  - bioconductor-summarizedexperiment >=1.40.0,<1.41.0
+  - bioconductor-sva >=3.58.0,<3.59.0
+  - r-base
+  - r-crmn
+  - r-dplyr >=0.7
+  - r-magrittr
+  - r-missforest
+  - r-rlang
+  - r-stringr
+  - r-tibble >=1.2
+  - r-tidyr
+  - r-vim
+  run:
+  - bioconductor-pcamethods >=2.2.0,<2.3.0
+  - bioconductor-preprocesscore >=1.72.0,<1.73.0
+  - bioconductor-s4vectors >=0.48.0,<0.49.0
+  - bioconductor-summarizedexperiment >=1.40.0,<1.41.0
+  - bioconductor-sva >=3.58.0,<3.59.0
+  - r-base
+  - r-crmn
+  - r-dplyr >=0.7
+  - r-magrittr
+  - r-missforest
+  - r-rlang
+  - r-stringr
+  - r-tibble >=1.2
+  - r-tidyr
+  - r-vim
+source:
+  md5: 7839d59c3baf06aced5cf3c847491c3d
+  url:
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/MSPrep_1.20.1.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/MSPrep/MSPrep_1.20.1.tar.gz
+  - https://bioarchive.galaxyproject.org/MSPrep_1.20.1.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-msprep/bioconductor-msprep_1.20.1_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('MSPrep')"

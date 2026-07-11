@@ -1,0 +1,37 @@
+about:
+  dev_url: https://github.com/lbcb-sci/graphmap2
+  doc_url: https://www.nature.com/articles/ncomms11307
+  home: https://github.com/lbcb-sci/graphmap2
+  license: MIT
+  license_file: LICENCE
+  summary: A highly sensitive and accurate mapper for long, error-prone reads.
+build:
+  number: 1
+  run_exports:
+  - null
+  skip: true
+extra:
+  additional-platforms:
+  - linux-aarch64
+  skip-lints:
+  - uses_vcs_url
+package:
+  name: graphmap
+  version: 0.6.4
+requirements:
+  build:
+  - make
+  - null
+  - null
+  host:
+  - wget
+  - zlib
+source:
+  git_rev: v0.6.4
+  git_url: https://github.com/lbcb-sci/graphmap2
+  patches:
+  - graphmap2-aarch64.patch
+  sha256: unused
+test:
+  commands:
+  - graphmap2 align

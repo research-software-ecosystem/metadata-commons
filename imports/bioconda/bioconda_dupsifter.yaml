@@ -1,0 +1,39 @@
+about:
+  dev_url: https://github.com/huishenlab/dupsifter
+  home: https://github.com/huishenlab/dupsifter
+  license: MIT
+  license_family: MIT
+  summary: A tool for PCR duplicate marking of WGBS (and WGS) data.
+build:
+  number: 1
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+package:
+  name: dupsifter
+  version: 1.3.0.20241113
+requirements:
+  build:
+  - make
+  - null
+  host:
+  - libcurl
+  - bzip2
+  - xz
+  - zlib
+  - libdeflate
+  - openssl
+  - pthread-stubs
+  run:
+  - openssl
+source:
+  patches:
+  - patch
+  sha256: 270f1c2dfc2152d8ed63b6660aea9eca0398ff34529c606fd0ae30b1858ebb08
+  url: https://github.com/huishenlab/dupsifter/releases/download/v1.3.0.20241113/release-source.zip
+test:
+  commands:
+  - dupsifter --help 2>&1 | grep dupsifter

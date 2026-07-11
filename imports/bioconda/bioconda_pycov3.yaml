@@ -1,0 +1,36 @@
+about:
+  dev_url: https://github.com/Ulthran/pycov3
+  doc_url: null
+  home: https://github.com/Ulthran/pycov3
+  license: MIT
+  license_family: MIT
+  license_file: null
+  summary: Generate cov3 files used in DEMIC
+build:
+  entry_points:
+  - pycov3 = pycov3.cli:main
+  noarch: python
+  number: 0
+  run_exports:
+  - null
+  script: ' -m pip install . -vv'
+extra:
+  recipe-maintainers:
+  - Ulthran
+package:
+  name: pycov3
+  version: 2.1.1
+requirements:
+  host:
+  - pip
+  - python
+  run:
+  - python
+source:
+  sha256: 5d77e98b191facd13284a3816abcb8f393afc13f462f504fbe52dae46a9f5771
+  url: https://pypi.io/packages/source/p/pycov3/pycov3-2.1.1.tar.gz
+test:
+  commands:
+  - pycov3 --help
+  imports:
+  - pycov3

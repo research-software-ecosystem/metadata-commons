@@ -1,0 +1,50 @@
+about:
+  description: RUVcorr allows to apply global removal of unwanted variation (ridged
+    version of RUV) to real and simulated gene expression data.
+  home: https://bioconductor.org/packages/3.22/bioc/html/RUVcorr.html
+  license: GPL-2
+  license_file: /lib/R/share/licenses/GPL-2
+  summary: Removal of unwanted variation for gene-gene correlations and related analysis
+build:
+  noarch: generic
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+package:
+  name: bioconductor-ruvcorr
+  version: 1.42.0
+requirements:
+  host:
+  - bioconductor-biocparallel >=1.44.0,<1.45.0
+  - bioconductor-bladderbatch >=1.48.0,<1.49.0
+  - r-base
+  - r-corrplot
+  - r-gridextra
+  - r-lattice
+  - r-mass
+  - r-psych
+  - r-reshape2
+  - r-snowfall
+  run:
+  - bioconductor-biocparallel >=1.44.0,<1.45.0
+  - bioconductor-bladderbatch >=1.48.0,<1.49.0
+  - r-base
+  - r-corrplot
+  - r-gridextra
+  - r-lattice
+  - r-mass
+  - r-psych
+  - r-reshape2
+  - r-snowfall
+source:
+  md5: 0216751b1151f524e08b372377b8c3ad
+  url:
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/RUVcorr_1.42.0.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/RUVcorr/RUVcorr_1.42.0.tar.gz
+  - https://bioarchive.galaxyproject.org/RUVcorr_1.42.0.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-ruvcorr/bioconductor-ruvcorr_1.42.0_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('RUVcorr')"

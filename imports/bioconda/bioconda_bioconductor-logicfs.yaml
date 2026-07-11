@@ -1,0 +1,39 @@
+about:
+  description: Identification of interactions between binary variables using Logic
+    Regression. Can, e.g., be used to find interesting SNP interactions. Contains
+    also a bagging version of logic regression for classification.
+  home: https://bioconductor.org/packages/3.22/bioc/html/logicFS.html
+  license: LGPL (>= 2)
+  license_file: /lib/R/share/licenses/LGPL-3
+  summary: Identification of SNP Interactions
+build:
+  noarch: generic
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+package:
+  name: bioconductor-logicfs
+  version: 2.30.0
+requirements:
+  host:
+  - r-base
+  - r-logicreg
+  - r-mcbiopi
+  - r-survival
+  run:
+  - r-base
+  - r-logicreg
+  - r-mcbiopi
+  - r-survival
+source:
+  md5: 19c936e15bf37930722b0b570f63b0ee
+  url:
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/logicFS_2.30.0.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/logicFS/logicFS_2.30.0.tar.gz
+  - https://bioarchive.galaxyproject.org/logicFS_2.30.0.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-logicfs/bioconductor-logicfs_2.30.0_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('logicFS')"

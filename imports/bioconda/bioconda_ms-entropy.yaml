@@ -1,0 +1,47 @@
+about:
+  dev_url: https://github.com/YuanyueLi/MSEntropy
+  doc_url: https://msentropy.readthedocs.io/en/latest
+  home: https://github.com/YuanyueLi/MSEntropy
+  license: Apache-2.0
+  license_family: APACHE
+  license_file: LICENSE
+  summary: This package provides a Python implementation of calculating spectral entropy,
+    entropy similarity, and Flash entropy search for mass spectrometry data.
+build:
+  number: 0
+  run_exports:
+  - null
+  script: -m pip install . --no-deps --no-build-isolation --no-cache-dir -vvv
+  skip: true
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+  identifiers:
+  - doi:10.1038/s41592-023-02012-9
+  - doi:10.1038/s41592-021-01331-z
+  recipe-maintainers:
+  - hechth
+package:
+  name: ms-entropy
+  version: 1.3.4
+requirements:
+  build:
+  - null
+  - clangdev
+  host:
+  - python
+  - cython
+  - numpy
+  - pip
+  run:
+  - python
+  - null
+source:
+  patches:
+  - 0001-setup.py.patch
+  sha256: 7351cd6259119e8280e1c1a6a195f265fd2de46be080e74683ecefe99e2ecb99
+  url: https://pypi.io/packages/source/m/ms-entropy/ms_entropy-1.3.4.tar.gz
+test:
+  imports:
+  - ms_entropy

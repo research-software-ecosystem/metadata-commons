@@ -1,0 +1,87 @@
+about:
+  description: This package provides a set of functions useful in the analysis of
+    3D genomic interactions. It includes the import of standard HiC data formats into
+    R and HiC normalisation procedures. The main objective of this package is to improve
+    the visualization and quantification of the analysis of HiC contacts through aggregation.
+    The package allows to import 1D genomics data, such as peaks from ATACSeq, ChIPSeq,
+    to create potential couples between features of interest under user-defined parameters
+    such as distance between pairs of features of interest. It allows then the extraction
+    of contact values from the HiC data for these couples and to perform Aggregated
+    Peak Analysis (APA) for visualization, but also to compare normalized contact
+    values between conditions. Overall the package allows to integrate 1D genomics
+    data with 3D genomics data, providing an easy access to HiC contact values.
+  home: https://bioconductor.org/packages/3.22/bioc/html/HicAggR.html
+  license: MIT + file LICENSE
+  license_file: LICENSE
+  summary: Set of 3D genomic interaction analysis tools
+build:
+  noarch: generic
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+package:
+  name: bioconductor-hicaggr
+  version: 1.6.0
+requirements:
+  host:
+  - bioconductor-biocgenerics >=0.56.0,<0.57.0
+  - bioconductor-biocparallel >=1.44.0,<1.45.0
+  - bioconductor-genomicranges >=1.62.0,<1.63.0
+  - bioconductor-interactionset >=1.38.0,<1.39.0
+  - bioconductor-iranges >=2.44.0,<2.45.0
+  - bioconductor-rhdf5 >=2.54.0,<2.55.0
+  - bioconductor-rtracklayer >=1.70.0,<1.71.0
+  - bioconductor-s4vectors >=0.48.0,<0.49.0
+  - bioconductor-seqinfo >=1.0.0,<1.1.0
+  - r-base
+  - r-checkmate
+  - r-data.table
+  - r-dplyr
+  - r-ggplot2
+  - r-gridextra
+  - r-matrix
+  - r-purrr
+  - r-reshape
+  - r-rlang
+  - r-strawr
+  - r-stringr
+  - r-tibble
+  - r-tidyr
+  - r-withr
+  run:
+  - bioconductor-biocgenerics >=0.56.0,<0.57.0
+  - bioconductor-biocparallel >=1.44.0,<1.45.0
+  - bioconductor-genomicranges >=1.62.0,<1.63.0
+  - bioconductor-interactionset >=1.38.0,<1.39.0
+  - bioconductor-iranges >=2.44.0,<2.45.0
+  - bioconductor-rhdf5 >=2.54.0,<2.55.0
+  - bioconductor-rtracklayer >=1.70.0,<1.71.0
+  - bioconductor-s4vectors >=0.48.0,<0.49.0
+  - bioconductor-seqinfo >=1.0.0,<1.1.0
+  - r-base
+  - r-checkmate
+  - r-data.table
+  - r-dplyr
+  - r-ggplot2
+  - r-gridextra
+  - r-matrix
+  - r-purrr
+  - r-reshape
+  - r-rlang
+  - r-strawr
+  - r-stringr
+  - r-tibble
+  - r-tidyr
+  - r-withr
+source:
+  md5: 375e6f14a0d16d464b7dcfba388da8d9
+  url:
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/HicAggR_1.6.0.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/HicAggR/HicAggR_1.6.0.tar.gz
+  - https://bioarchive.galaxyproject.org/HicAggR_1.6.0.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-hicaggr/bioconductor-hicaggr_1.6.0_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('HicAggR')"

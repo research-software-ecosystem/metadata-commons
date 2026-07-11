@@ -1,0 +1,76 @@
+about:
+  description: Package that allows to explore the exposome and to perform association
+    analyses between exposures and health outcomes.
+  home: https://bioconductor.org/packages/3.22/bioc/html/rexposome.html
+  license: MIT + file LICENSE
+  license_file: LICENSE
+  summary: Exposome exploration and outcome data analysis
+build:
+  noarch: generic
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+package:
+  name: bioconductor-rexposome
+  version: 1.32.0
+requirements:
+  host:
+  - bioconductor-biobase >=2.70.0,<2.71.0
+  - bioconductor-s4vectors >=0.48.0,<0.49.0
+  - r-base
+  - r-circlize
+  - r-corrplot
+  - r-factominer
+  - r-ggplot2
+  - r-ggrepel
+  - r-ggridges
+  - r-glmnet
+  - r-gplots
+  - r-gridextra
+  - r-gtools
+  - r-hmisc
+  - r-imputelcmd
+  - r-lme4
+  - r-lsr
+  - r-mice
+  - r-pryr
+  - r-reshape2
+  - r-scales
+  - r-scatterplot3d
+  - r-stringr
+  run:
+  - bioconductor-biobase >=2.70.0,<2.71.0
+  - bioconductor-s4vectors >=0.48.0,<0.49.0
+  - r-base
+  - r-circlize
+  - r-corrplot
+  - r-factominer
+  - r-ggplot2
+  - r-ggrepel
+  - r-ggridges
+  - r-glmnet
+  - r-gplots
+  - r-gridextra
+  - r-gtools
+  - r-hmisc
+  - r-imputelcmd
+  - r-lme4
+  - r-lsr
+  - r-mice
+  - r-pryr
+  - r-reshape2
+  - r-scales
+  - r-scatterplot3d
+  - r-stringr
+source:
+  md5: 6266519a688acd841d88a7a07102062f
+  url:
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/rexposome_1.32.0.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/rexposome/rexposome_1.32.0.tar.gz
+  - https://bioarchive.galaxyproject.org/rexposome_1.32.0.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-rexposome/bioconductor-rexposome_1.32.0_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('rexposome')"

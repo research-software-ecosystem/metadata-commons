@@ -1,0 +1,67 @@
+about:
+  description: 'The package implements two main algorithms to answer two key questions:
+    a SCORE (Stable Clustering at Optimal REsolution) to find subpopulations, followed
+    by scGPS to investigate the relationships between subpopulations.'
+  home: https://bioconductor.org/packages/3.22/bioc/html/scGPS.html
+  license: GPL-3
+  license_file: /lib/R/share/licenses/GPL-3
+  summary: A complete analysis of single cell subpopulations, from identifying subpopulations
+    to analysing their relationship (scGPS = single cell Global Predictions of Subpopulation)
+build:
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+package:
+  name: bioconductor-scgps
+  version: 1.24.0
+requirements:
+  build:
+  - null
+  - null
+  - make
+  host:
+  - bioconductor-deseq2 >=1.50.0,<1.51.0
+  - bioconductor-singlecellexperiment >=1.32.0,<1.33.0
+  - bioconductor-summarizedexperiment >=1.40.0,<1.41.0
+  - r-base
+  - r-caret >=6.0
+  - r-dplyr
+  - r-dynamictreecut
+  - r-fastcluster
+  - r-ggplot2 >=2.2.1
+  - r-glmnet >2.0
+  - r-locfit
+  - r-rcpp
+  - r-rcpparmadillo
+  - r-rcppparallel
+  - libblas
+  - liblapack
+  - zlib
+  - liblzma-devel
+  run:
+  - bioconductor-deseq2 >=1.50.0,<1.51.0
+  - bioconductor-singlecellexperiment >=1.32.0,<1.33.0
+  - bioconductor-summarizedexperiment >=1.40.0,<1.41.0
+  - r-base
+  - r-caret >=6.0
+  - r-dplyr
+  - r-dynamictreecut
+  - r-fastcluster
+  - r-ggplot2 >=2.2.1
+  - r-glmnet >2.0
+  - r-locfit
+  - r-rcpp
+  - r-rcpparmadillo
+  - r-rcppparallel
+source:
+  md5: 7e49331f9853509630f65dda153c6d4d
+  url:
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/scGPS_1.24.0.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/scGPS/scGPS_1.24.0.tar.gz
+  - https://bioarchive.galaxyproject.org/scGPS_1.24.0.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-scgps/bioconductor-scgps_1.24.0_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('scGPS')"

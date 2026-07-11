@@ -1,0 +1,61 @@
+about:
+  dev_url: https://github.com/FofanovLab/MTSv
+  home: https://github.com/FofanovLab/MTSv
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE
+  summary: MTSv is a suite of metagenomic binning and analysis tools.
+build:
+  entry_points:
+  - mtsv = mtsv.main:main
+  - mtsv_setup = mtsv.mtsv_prep.main:main
+  - mtsv_plugin = mtsv.mtsv_plugin.main:main
+  number: 5
+  run_exports:
+  - null
+  skip: true
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+  recipe-maintainer:
+  - tfursten
+package:
+  name: mtsv
+  version: 1.0.6
+requirements:
+  build:
+  - null
+  host:
+  - python
+  - pip
+  run:
+  - python
+  - snakemake-minimal >=4.1.0
+  - pandas >=0.20.3
+  - ete3
+  - biopython
+  - scipy
+  - six
+  - numpy
+  - pyyaml
+  - click
+  - zlib
+  - wgfast
+  - concoct
+  - megahit
+  - bwa
+  - samtools
+  - gsl
+  - kraken2 >=2.1.2
+  - bracken >=2.6.1
+source:
+  sha256: 7fe3d20c76de44faa03e5540433d83b9cd6403b3d934cdf13d99cebcefefda1b
+  url: https://github.com/FofanovLab/MTSv/archive/1.0.6.tar.gz
+test:
+  commands:
+  - mtsv --help > /dev/null
+  - kraken2 --version
+  - bracken --version
+  imports:
+  - mtsv

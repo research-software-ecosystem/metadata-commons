@@ -1,0 +1,30 @@
+about:
+  doc_url: https://metacpan.org/pod/Data::Munge
+  home: https://metacpan.org/pod/Data::Munge
+  license: Perl_5
+  summary: Various utility functions.
+build:
+  noarch: generic
+  number: 0
+  run_exports:
+  - null
+package:
+  name: perl-data-munge
+  version: '0.111'
+requirements:
+  build:
+  - make
+  host:
+  - perl
+  - perl-base
+  - perl-extutils-makemaker
+  - perl-exporter
+  - perl-test2-suite
+  run:
+  - perl
+source:
+  sha256: 086face7ee925d49782a0dc6c699d27e1ac3c5cc6dfc6e99d3e7d892d2038d9b
+  url: https://cpan.metacpan.org/authors/id/M/MA/MAUKE/Data-Munge-0.111.tar.gz
+test:
+  imports:
+  - Data::Munge

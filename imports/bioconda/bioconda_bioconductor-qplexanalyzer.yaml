@@ -1,0 +1,73 @@
+about:
+  description: Tools for TMT based quantitative proteomics data analysis.
+  home: https://bioconductor.org/packages/3.22/bioc/html/qPLEXanalyzer.html
+  license: GPL-2
+  license_file: /lib/R/share/licenses/GPL-2
+  summary: Tools for quantitative proteomics data analysis
+build:
+  noarch: generic
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+package:
+  name: bioconductor-qplexanalyzer
+  version: 1.28.2
+requirements:
+  host:
+  - bioconductor-biobase >=2.70.0,<2.71.0
+  - bioconductor-biocgenerics >=0.56.0,<0.57.0
+  - bioconductor-biostrings >=2.78.0,<2.79.0
+  - bioconductor-iranges >=2.44.0,<2.45.0
+  - bioconductor-limma >=3.66.0,<3.67.0
+  - bioconductor-msnbase >=2.36.0,<2.37.0
+  - bioconductor-preprocesscore >=1.72.0,<1.73.0
+  - r-assertthat
+  - r-base
+  - r-dplyr >=1.0.0
+  - r-ggdendro
+  - r-ggplot2
+  - r-magrittr
+  - r-purrr
+  - r-rcolorbrewer
+  - r-readr
+  - r-rlang
+  - r-scales
+  - r-stringr
+  - r-tibble
+  - r-tidyr
+  - r-tidyselect
+  run:
+  - bioconductor-biobase >=2.70.0,<2.71.0
+  - bioconductor-biocgenerics >=0.56.0,<0.57.0
+  - bioconductor-biostrings >=2.78.0,<2.79.0
+  - bioconductor-iranges >=2.44.0,<2.45.0
+  - bioconductor-limma >=3.66.0,<3.67.0
+  - bioconductor-msnbase >=2.36.0,<2.37.0
+  - bioconductor-preprocesscore >=1.72.0,<1.73.0
+  - r-assertthat
+  - r-base
+  - r-dplyr >=1.0.0
+  - r-ggdendro
+  - r-ggplot2
+  - r-magrittr
+  - r-purrr
+  - r-rcolorbrewer
+  - r-readr
+  - r-rlang
+  - r-scales
+  - r-stringr
+  - r-tibble
+  - r-tidyr
+  - r-tidyselect
+source:
+  md5: 5658bb2986a61f34a07cfe99d5397c7a
+  url:
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/qPLEXanalyzer_1.28.2.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/qPLEXanalyzer/qPLEXanalyzer_1.28.2.tar.gz
+  - https://bioarchive.galaxyproject.org/qPLEXanalyzer_1.28.2.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-qplexanalyzer/bioconductor-qplexanalyzer_1.28.2_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('qPLEXanalyzer')"

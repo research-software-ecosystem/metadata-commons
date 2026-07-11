@@ -1,0 +1,34 @@
+about:
+  dev_url: https://github.com/blahah/transrate-tools
+  home: https://github.com/blahah/transrate-tools
+  license: MIT
+  license_family: MIT
+  summary: Command-line tools used by transrate for processing bam files.
+build:
+  number: 10
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+package:
+  name: transrate-tools
+  version: 1.0.0
+requirements:
+  build:
+  - null
+  - cmake
+  - make
+  - pkg-config
+  host:
+  - bamtools
+  - zlib
+source:
+  patches:
+  - 0001-CMakeLists.patch
+  sha256: c4ba796243a21b0b85059aa4ddbc836026374129f2c9c1b9cab9f92f8396514a
+  url: https://github.com/blahah/transrate-tools/archive/v1.0.0.tar.gz
+test:
+  commands:
+  - bam-read 2>&1 | grep "bam-read version" > /dev/null

@@ -1,0 +1,30 @@
+about:
+  home: http://search.cpan.org/~mhx/Convert-Binary-C/
+  license: perl_5
+  summary: Binary Data Conversion using C Types
+build:
+  number: 0
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+package:
+  name: perl-convert-binary-c
+  version: '0.86'
+requirements:
+  build:
+  - make
+  - null
+  host:
+  - perl
+  run:
+  - perl
+source:
+  sha256: 6f1b1787df5492793a545746fe2963ad6e1b6203179f65e646cdca41e9fb3cc0
+  url: https://cpan.metacpan.org/authors/id/M/MH/MHX/Convert-Binary-C-0.86.tar.gz
+test:
+  imports:
+  - Convert::Binary::C
+  - Convert::Binary::C::Cached

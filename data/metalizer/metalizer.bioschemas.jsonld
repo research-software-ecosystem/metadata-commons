@@ -1,0 +1,214 @@
+{
+  "@context": {
+    "biotools": "https://bio.tools/ontology/",
+    "brick": "https://brickschema.org/schema/Brick#",
+    "bsc": "http://bioschemas.org/",
+    "bsct": "http://bioschemas.org/types/",
+    "csvw": "http://www.w3.org/ns/csvw#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "dcam": "http://purl.org/dc/dcam/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dcmitype": "http://purl.org/dc/dcmitype/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "doap": "http://usefulinc.com/ns/doap#",
+    "edam": "http://edamontology.org/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "geo": "http://www.opengis.net/ont/geosparql#",
+    "odrl": "http://www.w3.org/ns/odrl/2/",
+    "org": "http://www.w3.org/ns/org#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "prof": "http://www.w3.org/ns/dx/prof/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "qb": "http://purl.org/linked-data/cube#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "sc": "http://schema.org/",
+    "schema": "https://schema.org/",
+    "sh": "http://www.w3.org/ns/shacl#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "sosa": "http://www.w3.org/ns/sosa/",
+    "ssn": "http://www.w3.org/ns/ssn/",
+    "time": "http://www.w3.org/2006/time#",
+    "vann": "http://purl.org/vocab/vann/",
+    "void": "http://rdfs.org/ns/void#",
+    "wgs": "https://www.w3.org/2003/01/geo/wgs84_pos#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "https://bio.tools/metalizer",
+      "@type": "sc:SoftwareApplication",
+      "biotools:primaryContact": "ProteinsPlus Support",
+      "bsc:input": [
+        {
+          "@id": "_:Nec5d91e152064b6f924a52828efbc56a"
+        },
+        {
+          "@id": "_:N9a503de6434a4dd283f39c57470cf4f5"
+        },
+        {
+          "@id": "_:N1cdda8be6e2648ff9a75d50ed9b0ac18"
+        }
+      ],
+      "bsc:output": [
+        {
+          "@id": "_:Ne28d50e05f4741fcbf96c2514b4b5822"
+        },
+        {
+          "@id": "_:N0843de6cabda47bbbd2aa7e43865516f"
+        },
+        {
+          "@id": "_:N990d47db39e4452e8d1426542f69cd7a"
+        },
+        {
+          "@id": "_:Ne2767dd044ff48989f9545f0d87526d3"
+        }
+      ],
+      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "sc:additionalType": [
+        "Web API",
+        "Web service"
+      ],
+      "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_3336"
+        },
+        {
+          "@id": "edam:topic_0160"
+        },
+        {
+          "@id": "edam:topic_0602"
+        },
+        {
+          "@id": "edam:topic_0091"
+        },
+        {
+          "@id": "edam:topic_3534"
+        },
+        {
+          "@id": "edam:topic_3473"
+        },
+        {
+          "@id": "edam:topic_0128"
+        },
+        {
+          "@id": "edam:topic_0123"
+        },
+        {
+          "@id": "edam:topic_2814"
+        },
+        {
+          "@id": "edam:topic_0092"
+        }
+      ],
+      "sc:citation": {
+        "@id": "https://doi.org/10.1093/nar/gkaa235"
+      },
+      "sc:description": "METALizer predicts the coordination geometry of metal ions in metalloproteins. Users can compare potential coordination geometries to those found in the examined structure. The predicted coordination geometries and the observed metal interaction distances can be interactively compared to statistics calculated based on the PDB.",
+      "sc:featureList": [
+        {
+          "@id": "edam:operation_1834"
+        },
+        {
+          "@id": "edam:operation_0477"
+        },
+        {
+          "@id": "edam:operation_2406"
+        }
+      ],
+      "sc:isAccessibleForFree": true,
+      "sc:license": "Other",
+      "sc:name": "METALizer",
+      "sc:operatingSystem": [
+        "Mac",
+        "Linux",
+        "Windows"
+      ],
+      "sc:provider": "University of Hamburg, ZBH - Center for Bioinformatics",
+      "sc:softwareHelp": {
+        "@id": "https://proteins.plus/help/index"
+      },
+      "sc:url": "https://www.zbh.uni-hamburg.de/en/forschung/amd/software/metalizer.html"
+    },
+    {
+      "@id": "_:Nec5d91e152064b6f924a52828efbc56a",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1463"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3814"
+      },
+      "sc:name": "Small molecule structure"
+    },
+    {
+      "@id": "_:N9a503de6434a4dd283f39c57470cf4f5",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1460"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1476"
+      },
+      "sc:name": "Protein structure"
+    },
+    {
+      "@id": "_:N1cdda8be6e2648ff9a75d50ed9b0ac18",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1461"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3814"
+        },
+        {
+          "@id": "edam:format_1476"
+        }
+      ],
+      "sc:name": "Protein-ligand complex"
+    },
+    {
+      "@id": "_:Ne28d50e05f4741fcbf96c2514b4b5822",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0906"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Protein interaction data"
+    },
+    {
+      "@id": "_:N0843de6cabda47bbbd2aa7e43865516f",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1497"
+      },
+      "sc:name": "Root-mean-square deviation"
+    },
+    {
+      "@id": "_:N990d47db39e4452e8d1426542f69cd7a",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1537"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Protein structure report"
+    },
+    {
+      "@id": "_:Ne2767dd044ff48989f9545f0d87526d3",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1772"
+      },
+      "sc:name": "Score"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/gkaa235",
+      "@type": "sc:CreativeWork"
+    }
+  ]
+}

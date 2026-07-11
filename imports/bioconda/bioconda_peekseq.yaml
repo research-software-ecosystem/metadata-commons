@@ -1,0 +1,23 @@
+about:
+  doc_url: https://github.com/BirolLab/peekseq
+  home: https://github.com/BirolLab/peekseq
+  license: GPL-3.0-or-later
+  license_file: LICENSE
+  summary: De novo protein-coding potential calculator using a k-mer approach
+build:
+  noarch: generic
+  number: 1
+  run_exports:
+  - null
+package:
+  name: peekseq
+  version: 0.0.1
+requirements:
+  run:
+  - perl
+source:
+  sha256: 7e3b66f3844dd8fec86db08493cf5b2e8e4ed3e60910fe31c485aed9f81757ad
+  url: https://github.com/BirolLab/peekseq/releases/download/v0.0.1/peekseq-0.0.1.tar.gz
+test:
+  commands:
+  - peekseq.pl |grep -A4 "Usage"

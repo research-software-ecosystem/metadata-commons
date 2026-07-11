@@ -1,0 +1,58 @@
+about:
+  description: A package to generate high-resolution Venn and Upset plots for genomic
+    interaction data from HiC, ChIA-PET, HiChIP, PLAC-Seq, Hi-TrAC, HiCAR and etc.
+    The package generates plots specifically crafted to eliminate the deceptive visual
+    representation caused by the counts method.
+  home: https://bioconductor.org/packages/3.22/bioc/html/hicVennDiagram.html
+  license: GPL-3
+  license_file: /lib/R/share/licenses/GPL-3
+  summary: Venn Diagram for genomic interaction data
+build:
+  noarch: generic
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+package:
+  name: bioconductor-hicvenndiagram
+  version: 1.8.0
+requirements:
+  host:
+  - bioconductor-genomicranges >=1.62.0,<1.63.0
+  - bioconductor-interactionset >=1.38.0,<1.39.0
+  - bioconductor-iranges >=2.44.0,<2.45.0
+  - bioconductor-rtracklayer >=1.70.0,<1.71.0
+  - bioconductor-s4vectors >=0.48.0,<0.49.0
+  - bioconductor-seqinfo >=1.0.0,<1.1.0
+  - r-base
+  - r-complexupset
+  - r-eulerr
+  - r-ggplot2
+  - r-htmlwidgets
+  - r-reshape2
+  - r-svglite
+  run:
+  - bioconductor-genomicranges >=1.62.0,<1.63.0
+  - bioconductor-interactionset >=1.38.0,<1.39.0
+  - bioconductor-iranges >=2.44.0,<2.45.0
+  - bioconductor-rtracklayer >=1.70.0,<1.71.0
+  - bioconductor-s4vectors >=0.48.0,<0.49.0
+  - bioconductor-seqinfo >=1.0.0,<1.1.0
+  - r-base
+  - r-complexupset
+  - r-eulerr
+  - r-ggplot2
+  - r-htmlwidgets
+  - r-reshape2
+  - r-svglite
+source:
+  md5: d32b8e8dbbdcc7f68e03d2f811f559b8
+  url:
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/hicVennDiagram_1.8.0.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/hicVennDiagram/hicVennDiagram_1.8.0.tar.gz
+  - https://bioarchive.galaxyproject.org/hicVennDiagram_1.8.0.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-hicvenndiagram/bioconductor-hicvenndiagram_1.8.0_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('hicVennDiagram')"

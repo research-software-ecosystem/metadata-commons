@@ -1,0 +1,35 @@
+about:
+  description: 'Datasets and workflows for Cardinal: DESI and MALDI examples including
+    pig fetus, cardinal painting, and human RCC.'
+  home: https://bioconductor.org/packages/3.22/data/experiment/html/CardinalWorkflows.html
+  license: Artistic-2.0
+  summary: Datasets and workflows for the Cardinal MSI
+build:
+  noarch: generic
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+package:
+  name: bioconductor-cardinalworkflows
+  version: 1.42.0
+requirements:
+  host:
+  - bioconductor-cardinal >=3.12.0,<3.13.0
+  - r-base
+  run:
+  - bioconductor-cardinal >=3.12.0,<3.13.0
+  - r-base
+  - curl
+  - bioconductor-data-packages >=20260207
+source:
+  md5: e8808bc3cc9f03737d66e2a117ddc817
+  url:
+  - https://bioconductor.org/packages/3.22/data/experiment/src/contrib/CardinalWorkflows_1.42.0.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/CardinalWorkflows/CardinalWorkflows_1.42.0.tar.gz
+  - https://bioarchive.galaxyproject.org/CardinalWorkflows_1.42.0.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-cardinalworkflows/bioconductor-cardinalworkflows_1.42.0_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('CardinalWorkflows')"

@@ -1,0 +1,73 @@
+about:
+  description: A toolbox for sparse contrastive principal component analysis (scPCA)
+    of high-dimensional biological data. scPCA combines the stability and interpretability
+    of sparse PCA with contrastive PCA's ability to disentangle biological signal
+    from unwanted variation through the use of control data. Also implements and extends
+    cPCA.
+  home: https://bioconductor.org/packages/3.22/bioc/html/scPCA.html
+  license: MIT + file LICENSE
+  license_file: LICENSE
+  summary: Sparse Contrastive Principal Component Analysis
+build:
+  noarch: generic
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+package:
+  name: bioconductor-scpca
+  version: 1.24.0
+requirements:
+  host:
+  - bioconductor-biocparallel >=1.44.0,<1.45.0
+  - bioconductor-delayedarray >=0.36.0,<0.37.0
+  - bioconductor-matrixgenerics >=1.22.0,<1.23.0
+  - bioconductor-scaledmatrix >=1.18.0,<1.19.0
+  - r-assertthat
+  - r-base
+  - r-cluster
+  - r-coop
+  - r-dplyr
+  - r-elasticnet
+  - r-kernlab
+  - r-matrix
+  - r-matrixstats
+  - r-origami
+  - r-purrr
+  - r-rdpack
+  - r-rspectra
+  - r-sparsepca
+  - r-stringr
+  - r-tibble
+  run:
+  - bioconductor-biocparallel >=1.44.0,<1.45.0
+  - bioconductor-delayedarray >=0.36.0,<0.37.0
+  - bioconductor-matrixgenerics >=1.22.0,<1.23.0
+  - bioconductor-scaledmatrix >=1.18.0,<1.19.0
+  - r-assertthat
+  - r-base
+  - r-cluster
+  - r-coop
+  - r-dplyr
+  - r-elasticnet
+  - r-kernlab
+  - r-matrix
+  - r-matrixstats
+  - r-origami
+  - r-purrr
+  - r-rdpack
+  - r-rspectra
+  - r-sparsepca
+  - r-stringr
+  - r-tibble
+source:
+  md5: bfc681b809d17502ae51fe69d2dc7785
+  url:
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/scPCA_1.24.0.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/scPCA/scPCA_1.24.0.tar.gz
+  - https://bioarchive.galaxyproject.org/scPCA_1.24.0.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-scpca/bioconductor-scpca_1.24.0_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('scPCA')"

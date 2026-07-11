@@ -1,0 +1,38 @@
+about:
+  description: Package provides miRNASeq datasets from The Cancer Genome Atlas Project
+    for all available cohorts types from http://gdac.broadinstitute.org/. Data format
+    is explained here https://wiki.nci.nih.gov/display/TCGA/miRNASeq#miRNASeq-DataOverview
+    Data from 2015-11-01 snapshot.
+  home: https://bioconductor.org/packages/3.22/data/experiment/html/RTCGA.miRNASeq.html
+  license: GPL-2
+  license_file: /lib/R/share/licenses/GPL-2
+  summary: miRNASeq datasets from The Cancer Genome Atlas Project
+build:
+  noarch: generic
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+package:
+  name: bioconductor-rtcga.mirnaseq
+  version: 1.38.0
+requirements:
+  host:
+  - bioconductor-rtcga >=1.40.0,<1.41.0
+  - r-base
+  run:
+  - bioconductor-rtcga >=1.40.0,<1.41.0
+  - r-base
+  - curl
+  - bioconductor-data-packages >=20260207
+source:
+  md5: fc2c3c1061f121a85afad47f2d190d75
+  url:
+  - https://bioconductor.org/packages/3.22/data/experiment/src/contrib/RTCGA.miRNASeq_1.38.0.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/RTCGA.miRNASeq/RTCGA.miRNASeq_1.38.0.tar.gz
+  - https://bioarchive.galaxyproject.org/RTCGA.miRNASeq_1.38.0.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-rtcga.mirnaseq/bioconductor-rtcga.mirnaseq_1.38.0_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('RTCGA.miRNASeq')"

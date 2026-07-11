@@ -1,0 +1,41 @@
+about:
+  dev_url: https://github.com/brentp/somalier
+  doc_url: https://github.com/brentp/somalier/blob/v0.3.2/README.md
+  home: https://github.com/brentp/somalier
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE
+  summary: Fast sample-swap and relatedness checks on BAMs/CRAMs/VCFs/GVCFs.
+build:
+  number: 0
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+  identifiers:
+  - doi:10.1186/s13073-020-00761-2
+  - biotools:somalier
+  skip-lints:
+  - compiler_needs_stdlib_c
+package:
+  name: somalier
+  version: 0.3.2
+requirements:
+  build:
+  - null
+  - nim >=2.0.4
+  host:
+  - curl
+  - openblas
+  - htslib
+  run:
+  - openblas
+  - htslib
+source:
+  sha256: c9f6f543eb56c6804fc065392a380c2f231ad280ca44c6d1b12ce5198c66c451
+  url: https://github.com/brentp/somalier/archive/refs/tags/v0.3.2.tar.gz
+test:
+  commands:
+  - somalier -h

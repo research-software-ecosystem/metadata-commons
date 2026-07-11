@@ -1,0 +1,41 @@
+about:
+  description: Use hail via basilisk when appropriate, or via reticulate. This package
+    can be used in terra.bio to interact with UK Biobank resources processed by hail.is.
+  home: https://bioconductor.org/packages/3.22/bioc/html/BiocHail.html
+  license: Artistic-2.0
+  summary: basilisk and hail
+build:
+  noarch: generic
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+package:
+  name: bioconductor-biochail
+  version: 1.10.0
+requirements:
+  host:
+  - bioconductor-basilisk >=1.22.0,<1.23.0
+  - bioconductor-biocfilecache >=3.0.0,<3.1.0
+  - bioconductor-biocgenerics >=0.56.0,<0.57.0
+  - r-base
+  - r-dplyr
+  - r-reticulate
+  run:
+  - bioconductor-basilisk >=1.22.0,<1.23.0
+  - bioconductor-biocfilecache >=3.0.0,<3.1.0
+  - bioconductor-biocgenerics >=0.56.0,<0.57.0
+  - r-base
+  - r-dplyr
+  - r-reticulate
+source:
+  md5: d396d94ee8ebb289b958f32a16a5b8d7
+  url:
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/BiocHail_1.10.0.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/BiocHail/BiocHail_1.10.0.tar.gz
+  - https://bioarchive.galaxyproject.org/BiocHail_1.10.0.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-biochail/bioconductor-biochail_1.10.0_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('BiocHail')"

@@ -1,0 +1,33 @@
+about:
+  description: This packages contains data to be used with the 'tofsims' package.
+  home: https://bioconductor.org/packages/3.22/data/experiment/html/tofsimsData.html
+  license: GPL-3
+  license_file: /lib/R/share/licenses/GPL-3
+  summary: Import, process and analysis of ToF-SIMS imaging data
+build:
+  noarch: generic
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+package:
+  name: bioconductor-tofsimsdata
+  version: 1.38.0
+requirements:
+  host:
+  - r-base
+  run:
+  - r-base
+  - curl
+  - bioconductor-data-packages >=20260207
+source:
+  md5: 21a6263edabc22c453df0b1fd2ce7c6f
+  url:
+  - https://bioconductor.org/packages/3.22/data/experiment/src/contrib/tofsimsData_1.38.0.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/tofsimsData/tofsimsData_1.38.0.tar.gz
+  - https://bioarchive.galaxyproject.org/tofsimsData_1.38.0.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-tofsimsdata/bioconductor-tofsimsdata_1.38.0_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('tofsimsData')"

@@ -1,0 +1,59 @@
+about:
+  description: "Flexiplex is a fast and versatile sequence searching and demultiplexing\
+    \ tool \nfor omics data. For more information, see the accompanying paper\n\"\
+    Cheng et al. Flexiplex: A versatile demultiplexer and search tool for omics data.\"\
+    \n"
+  dev_url: https://github.com/DavidsonGroup/flexiplex
+  doc_url: https://davidsongroup.github.io/flexiplex
+  home: https://github.com/DavidsonGroup/flexiplex
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE
+  summary: 'flexiplex: the flexible demultiplexer'
+build:
+  entry_points:
+  - flexiplex-filter = flexiplex_filter.main:cli
+  number: 0
+  run_exports:
+  - null
+  script:
+  - export DIR="${PREFIX}/bin"
+  - export LDFLAGS="${LDFLAGS} -L${PREFIX}/lib"
+  - export CFLAGS="${CFLAGS} -O3 -I${PREFIX}/include -L${PREFIX}/lib"
+  - mkdir -p "${DIR}"
+  - make -j"${CPU_COUNT}"
+  - make install DIR="${DIR}"
+  skip: true
+extra:
+  additional-platforms:
+  - osx-arm64
+  - linux-aarch64
+  identifiers:
+  - doi:10.1093/bioinformatics/btae102
+package:
+  name: flexiplex
+  version: 1.02.6
+requirements:
+  build:
+  - make
+  - null
+  - null
+  - pkg-config
+  host:
+  - python
+  - pip
+  - setuptools
+  run:
+  - python
+  - cachetools
+  - requests
+  - matplotlib-base
+  - numpy
+  - pandas
+source:
+  sha256: 2de64c7cc1db9ad8bce254c2f56610364fac6c0dc905a498ab368ea6664b1a13
+  url: https://github.com/DavidsonGroup/flexiplex/archive/refs/tags/v1.02.6.tar.gz
+test:
+  commands:
+  - flexiplex -h
+  - flexiplex-filter -h

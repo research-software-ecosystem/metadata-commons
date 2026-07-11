@@ -1,0 +1,45 @@
+about:
+  description: 'FastaGuard validates assembly FASTA files, detects structural and
+
+    composition red flags, and emits pipeline-ready JSON, TSV, HTML, and
+
+    MultiQC outputs before downstream analysis.
+
+    '
+  dev_url: https://github.com/ehsanestaji/FastaGuard
+  doc_url: https://github.com/ehsanestaji/FastaGuard/blob/v0.3.0/README.md
+  home: https://github.com/ehsanestaji/FastaGuard
+  license: MIT
+  license_family: MIT
+  license_file:
+  - LICENSE
+  - THIRDPARTY.yml
+  summary: FASTA preflight QC for assembly pipelines
+build:
+  number: 0
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+  recipe-maintainers:
+  - ehsanestaji
+package:
+  name: fastaguard
+  version: 0.3.0
+requirements:
+  build:
+  - null
+  - null
+  - null
+  - cargo-bundle-licenses
+source:
+  sha256: 643d5d0107b6dc237f3be782a8463414880b95c45964397b773dac7e794e4fde
+  url: https://github.com/ehsanestaji/FastaGuard/archive/refs/tags/v0.3.0.tar.gz
+test:
+  commands:
+  - fastaguard --version | grep 0.3.0
+  - fastaguard --help
+  - fastaguard --schema
+  - fastaguard --finding-catalog

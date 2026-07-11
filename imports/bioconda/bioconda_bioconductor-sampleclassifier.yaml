@@ -1,0 +1,41 @@
+about:
+  description: The package is designed to classify microarray RNA-seq gene expression
+    profiles.
+  home: https://bioconductor.org/packages/3.20/bioc/html/sampleClassifier.html
+  license: Artistic-2.0
+  summary: Sample Classifier
+build:
+  noarch: generic
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+package:
+  name: bioconductor-sampleclassifier
+  version: 1.30.0
+requirements:
+  host:
+  - bioconductor-annotate >=1.84.0,<1.85.0
+  - bioconductor-mgfm >=1.40.0,<1.41.0
+  - bioconductor-mgfr >=1.32.0,<1.33.0
+  - r-base
+  - r-e1071
+  - r-ggplot2
+  run:
+  - bioconductor-annotate >=1.84.0,<1.85.0
+  - bioconductor-mgfm >=1.40.0,<1.41.0
+  - bioconductor-mgfr >=1.32.0,<1.33.0
+  - r-base
+  - r-e1071
+  - r-ggplot2
+source:
+  md5: 2472d8a26d6f263d2633882d5c409b7e
+  url:
+  - https://bioconductor.org/packages/3.20/bioc/src/contrib/sampleClassifier_1.30.0.tar.gz
+  - https://bioconductor.org/packages/3.20/bioc/src/contrib/Archive/sampleClassifier/sampleClassifier_1.30.0.tar.gz
+  - https://bioarchive.galaxyproject.org/sampleClassifier_1.30.0.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-sampleclassifier/bioconductor-sampleclassifier_1.30.0_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('sampleClassifier')"

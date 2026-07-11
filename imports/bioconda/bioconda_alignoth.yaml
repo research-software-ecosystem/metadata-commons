@@ -1,0 +1,42 @@
+about:
+  dev_url: https://github.com/alignoth/alignoth
+  doc_url: https://github.com/alignoth/alignoth/blob/v1.5.1/README.md
+  home: https://alignoth.github.io
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE
+  summary: A tool for creating alignment plots from bam files.
+build:
+  number: 0
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+  recipe-maintainers:
+  - fxwiegand
+  - johanneskoester
+package:
+  name: alignoth
+  version: 1.5.1
+requirements:
+  build:
+  - null
+  - null
+  - null
+  - cargo-bundle-licenses
+  - clangdev <22
+  - pkg-config
+  - make
+  - cmake
+  host:
+  - libcblas
+  - libcurl
+  - openssl
+source:
+  sha256: 2958aff3ca00bb0f98809dce64889e0ca0b297550f6e9ed14c879f11c9301804
+  url: https://github.com/alignoth/alignoth/archive/v1.5.1.tar.gz
+test:
+  commands:
+  - alignoth --help

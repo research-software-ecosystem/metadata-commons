@@ -1,0 +1,34 @@
+about:
+  dev_url: https://github.com/cademirch/snakemake-logger-plugin-snkmt
+  home: https://github.com/cademirch/snakemake-logger-plugin-snkmt
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE
+  summary: Snakemake logger plugin that writes logs to SQLite database.
+build:
+  noarch: python
+  number: 0
+  run_exports:
+  - null
+  script: -m pip install . -vvv --no-deps --no-build-isolation --no-cache-dir
+extra:
+  recipe-maintainers:
+  - fgvieira
+package:
+  name: snakemake-logger-plugin-snkmt
+  version: 0.1.7
+requirements:
+  host:
+  - python >=3.11,<4.0
+  - hatchling
+  - pip
+  run:
+  - snakemake-interface-logger-plugins >=2.0.0,<3.0.0
+  - sqlalchemy >=2.0.38,<3.0.0
+  - snkmt >=0.2.3,<1.0.0
+source:
+  sha256: 1687a734fae04bdfea1c89eca689f8103862284d9f871171743e700eb1137ad6
+  url: https://pypi.io/packages/source/s/snakemake-logger-plugin-snkmt/snakemake_logger_plugin_snkmt-0.1.7.tar.gz
+test:
+  imports:
+  - snakemake_logger_plugin_snkmt

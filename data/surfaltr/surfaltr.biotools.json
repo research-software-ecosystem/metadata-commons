@@ -1,0 +1,111 @@
+{
+    "accessibility": "Open access",
+    "additionDate": "2022-09-01T11:37:33.946587Z",
+    "biotoolsCURIE": "biotools:surfaltr",
+    "biotoolsID": "surfaltr",
+    "confidence_flag": "tool",
+    "cost": "Free of charge",
+    "credit": [
+        {
+            "name": "Aditi Merchant",
+            "typeEntity": "Person",
+            "typeRole": [
+                "Developer"
+            ]
+        },
+        {
+            "name": "Pooja Gangras",
+            "typeEntity": "Person",
+            "typeRole": [
+                "Developer",
+                "Maintainer"
+            ]
+        }
+    ],
+    "description": "Cell surface proteins form a major fraction of the druggable proteome and can be used for tissue-specific delivery of oligonucleotide/cell-based therapeutics. Alternatively spliced surface protein isoforms have been shown to differ in their subcellular localization and/or their transmembrane (TM) topology. Surface proteins are hydrophobic and remain difficult to study thereby necessitating the use of TM topology prediction methods such as TMHMM and Phobius. However, there exists a need for bioinformatic approaches to streamline batch processing of isoforms for comparing and visualizing topologies. To address this gap, we have developed an R package, surfaltr. It pairs inputted isoforms, either known alternatively spliced or novel, with their APPRIS annotated principal counterparts, predicts their TM topologies using TMHMM or Phobius, and generates a customizable graphical output. Further, surfaltr facilitates the prioritization of biologically diverse isoform pairs through the incorporation of three different ranking metrics and through protein alignment functions. Citations for programs mentioned here can be found in the vignette.",
+    "documentation": [
+        {
+            "type": [
+                "User manual"
+            ],
+            "url": "https://bioconductor.org/packages/surfaltr"
+        }
+    ],
+    "editPermission": {
+        "type": "private"
+    },
+    "function": [
+        {
+            "operation": [
+                {
+                    "term": "Alternative splicing prediction",
+                    "uri": "http://edamontology.org/operation_0264"
+                },
+                {
+                    "term": "Transmembrane protein prediction",
+                    "uri": "http://edamontology.org/operation_0269"
+                },
+                {
+                    "term": "Transmembrane protein visualisation",
+                    "uri": "http://edamontology.org/operation_2241"
+                }
+            ]
+        }
+    ],
+    "homepage": "https://bioconductor.org/packages/surfaltr",
+    "language": [
+        "R"
+    ],
+    "lastUpdate": "2024-11-24T15:44:54.944533Z",
+    "license": "MIT",
+    "name": "surfaltr",
+    "operatingSystem": [
+        "Linux",
+        "Mac",
+        "Windows"
+    ],
+    "owner": "Jennifer",
+    "publication": [
+        {
+            "doi": "10.18129/B9.bioc.surfaltr"
+        }
+    ],
+    "toolType": [
+        "Library"
+    ],
+    "topic": [
+        {
+            "term": "Cell biology",
+            "uri": "http://edamontology.org/topic_2229"
+        },
+        {
+            "term": "Membrane and lipoproteins",
+            "uri": "http://edamontology.org/topic_0820"
+        },
+        {
+            "term": "Protein structural motifs and surfaces",
+            "uri": "http://edamontology.org/topic_0166"
+        },
+        {
+            "term": "Proteomics",
+            "uri": "http://edamontology.org/topic_0121"
+        },
+        {
+            "term": "RNA splicing",
+            "uri": "http://edamontology.org/topic_3320"
+        }
+    ],
+    "validated": 1,
+    "download": [
+        {
+            "type": "Source code",
+            "url": ""
+        }
+    ],
+    "version": [
+        "1.18.0"
+    ],
+    "collectionID": [
+        "BioConductor"
+    ]
+}

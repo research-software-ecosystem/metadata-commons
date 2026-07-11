@@ -1,0 +1,44 @@
+about:
+  dev_url: https://gitlab.com/LPCDRP/hybran
+  home: https://lpcdrp.gitlab.io/hybran
+  license: GPL-3.0-or-later
+  license_file: LICENSE
+  summary: Comparative prokaryotic genome annotation
+build:
+  noarch: python
+  number: 0
+  run_exports:
+  - null
+  script: python -m pip install --no-deps --ignore-installed .
+package:
+  name: hybran
+  version: '1.10'
+requirements:
+  host:
+  - python >=3.12
+  - pip
+  - setuptools <81
+  run:
+  - biopython >=1.80
+  - blast
+  - cd-hit
+  - diamond
+  - dill
+  - eggnog-mapper
+  - emboss
+  - entrez-direct
+  - frozendict
+  - intervaltree
+  - mcl
+  - multiprocess
+  - networkx
+  - prokka >=1.14
+  - python >=3.12
+  - ratt
+  - tbl2asn-forever
+source:
+  sha256: 5ce08f60ac7c39ab4e3416ae0de20544c85bc52e4e2788cbb6d35caa0438cfd7
+  url: https://gitlab.com/LPCDRP/hybran/-/archive/1.10/hybran-1.10.tar.gz
+test:
+  commands:
+  - hybran --help

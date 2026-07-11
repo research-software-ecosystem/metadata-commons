@@ -1,0 +1,36 @@
+about:
+  home: http://eddylab.org/R-scape/
+  license: GPLv3
+  license_file: documentation/R-scape_userguide.pdf
+  summary: R-scape (RNA Structural Covariation Above Phylogenetic Expectation) looks
+    for evidence of a conserved RNA secondary structure by measuring pairwise covariations
+    observed in an input multiple sequence alignment.
+build:
+  number: 1
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+package:
+  name: rscape
+  version: 2.0.4.a
+requirements:
+  build:
+  - make
+  - null
+  - null
+  - gnuconfig
+  host:
+  - gnuplot
+  run:
+  - gnuplot
+  - perl
+source:
+  sha256: 71d9180614f421742e1274ee0d0fc976f327927d402abb880e578ef1c232048a
+  url: http://eddylab.org/software/rscape/rscape_v2.0.4.a.tar.gz
+test:
+  commands:
+  - printf "# STOCKHOLM 1.0\n#=GF SQ 3\nmyseq1        ACGCUUUUGCU\nmyseq2        ACUCUUUUGGU\nmyseq3        UCGCUUUUGCA\n#=GC
+    SS_cons ..((....)).\n//\n" > tmp.sto; R-scape --nofigures tmp.sto

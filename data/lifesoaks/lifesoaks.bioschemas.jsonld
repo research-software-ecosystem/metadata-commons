@@ -1,0 +1,188 @@
+{
+  "@context": {
+    "biotools": "https://bio.tools/ontology/",
+    "brick": "https://brickschema.org/schema/Brick#",
+    "bsc": "http://bioschemas.org/",
+    "bsct": "http://bioschemas.org/types/",
+    "csvw": "http://www.w3.org/ns/csvw#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "dcam": "http://purl.org/dc/dcam/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dcmitype": "http://purl.org/dc/dcmitype/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "doap": "http://usefulinc.com/ns/doap#",
+    "edam": "http://edamontology.org/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "geo": "http://www.opengis.net/ont/geosparql#",
+    "odrl": "http://www.w3.org/ns/odrl/2/",
+    "org": "http://www.w3.org/ns/org#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "prof": "http://www.w3.org/ns/dx/prof/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "qb": "http://purl.org/linked-data/cube#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "sc": "http://schema.org/",
+    "schema": "https://schema.org/",
+    "sh": "http://www.w3.org/ns/shacl#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "sosa": "http://www.w3.org/ns/sosa/",
+    "ssn": "http://www.w3.org/ns/ssn/",
+    "time": "http://www.w3.org/2006/time#",
+    "vann": "http://purl.org/vocab/vann/",
+    "void": "http://rdfs.org/ns/void#",
+    "wgs": "https://www.w3.org/2003/01/geo/wgs84_pos#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "https://bio.tools/lifesoaks",
+      "@type": "sc:SoftwareApplication",
+      "biotools:primaryContact": [
+        "ProteinsPlus Support",
+        "NAOMI ChemBio Suite Support"
+      ],
+      "bsc:input": [
+        {
+          "@id": "_:N2ab6e9b698604e66bbc1afc3416e18ae"
+        },
+        {
+          "@id": "_:N9c51b62c30cd46c2b6e249a6305d8c84"
+        },
+        {
+          "@id": "_:N6ea3065c54004ae586c4d26e965a21b2"
+        }
+      ],
+      "bsc:output": [
+        {
+          "@id": "_:N8e762ea76a17404298efcf540f8bb933"
+        },
+        {
+          "@id": "_:N4b190d130a404ab09f4b7c0b84bb233e"
+        },
+        {
+          "@id": "_:N2eca0ef2efda4a93a2f559e940692b23"
+        }
+      ],
+      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "sc:additionalType": [
+        "Web service",
+        "Command-line tool"
+      ],
+      "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_2828"
+        },
+        {
+          "@id": "edam:topic_0091"
+        },
+        {
+          "@id": "edam:topic_3534"
+        },
+        {
+          "@id": "edam:topic_3336"
+        },
+        {
+          "@id": "edam:topic_0081"
+        }
+      ],
+      "sc:citation": {
+        "@id": "https://doi.org/10.1107/S205979832300582X"
+      },
+      "sc:description": "LifeSoaks was designed to find solvent channels in macromolecular structures solved by X-ray crystallography. It predicts their accessibility by molecules through an automated annotation of so-called bottleneck radii. It simplifies the process of manually checking a crystal structure for solvent channels. Bottleneck radii can be calculated for solvent channels and small molecule binding sites. The tool is ideally suited for channel analyses before the actual soaking experiments to select the most promising experimental conditions and crystal forms. LifeSoaks runs fully automated and will finish within seconds to minutes for moderately sized crystals.",
+      "sc:featureList": [
+        {
+          "@id": "edam:operation_0384"
+        },
+        {
+          "@id": "edam:operation_0570"
+        },
+        {
+          "@id": "edam:operation_2480"
+        }
+      ],
+      "sc:isAccessibleForFree": true,
+      "sc:license": "Other",
+      "sc:name": "LifeSoaks",
+      "sc:operatingSystem": [
+        "Mac",
+        "Linux",
+        "Windows"
+      ],
+      "sc:provider": "University of Hamburg, ZBH - Center for Bioinformatics",
+      "sc:softwareHelp": {
+        "@id": "https://proteins.plus/help/index"
+      },
+      "sc:url": "https://www.zbh.uni-hamburg.de/en/forschung/amd/software/lifesoaks.html"
+    },
+    {
+      "@id": "_:N2ab6e9b698604e66bbc1afc3416e18ae",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1463"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3814"
+      },
+      "sc:name": "Small molecule structure"
+    },
+    {
+      "@id": "_:N9c51b62c30cd46c2b6e249a6305d8c84",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1461"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3814"
+        },
+        {
+          "@id": "edam:format_1476"
+        }
+      ],
+      "sc:name": "Protein-ligand complex"
+    },
+    {
+      "@id": "_:N6ea3065c54004ae586c4d26e965a21b2",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1460"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1476"
+      },
+      "sc:name": "Protein structure"
+    },
+    {
+      "@id": "_:N8e762ea76a17404298efcf540f8bb933",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2019"
+      },
+      "sc:name": "Map data"
+    },
+    {
+      "@id": "_:N4b190d130a404ab09f4b7c0b84bb233e",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1542"
+      },
+      "sc:name": "Protein solvent accessibility"
+    },
+    {
+      "@id": "_:N2eca0ef2efda4a93a2f559e940692b23",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1537"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Protein structure report"
+    },
+    {
+      "@id": "https://doi.org/10.1107/S205979832300582X",
+      "@type": "sc:CreativeWork"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+about:
+  dev_url: https://github.com/galaxyproteomics/metaquantome
+  doc_url: https://galaxyproteomics.github.io/metaquantome_mcp_analysis/cli_tutorial/cli_tutorial.html
+  home: https://github.com/galaxyproteomics/metaquantome
+  license: Apache-2.0
+  license_family: APACHE
+  license_file: LICENSE
+  summary: Quantitative metaproteomics analysis of taxonomy and function.
+build:
+  entry_points:
+  - metaquantome = metaquantome.cli:cli
+  noarch: python
+  number: 0
+  run_exports:
+  - null
+  script: -m pip install . -vvv --no-deps --no-build-isolation --no-deps
+extra:
+  container:
+    extended-base: true
+package:
+  name: metaquantome
+  version: 2.0.4
+requirements:
+  host:
+  - python >=3.5
+  - pip
+  - setuptools
+  run:
+  - python >=3.5
+  - setuptools <82
+  - legacy-cgi
+  - ete3
+  - goatools
+  - statsmodels
+  - biopython
+  - pandas
+  - numpy
+  - r-gplots
+  - r-ggplot2
+  - r-base
+  - r-jsonlite
+  - r-scico
+  - r-dplyr
+  - r-tidyr
+  - libiconv
+source:
+  sha256: 4d18db3fcdabfcf67cbc256a95674bcca3f315105c0d149c7f1f721ae5af98c9
+  url: https://github.com/galaxyproteomics/metaquantome/archive/v2.0.4.tar.gz
+test:
+  commands:
+  - metaquantome -h
+  - metaquantome expand -h
+  - metaquantome filter -h
+  - metaquantome stat -h
+  - metaquantome viz -h
+  import:
+  - metaquantome

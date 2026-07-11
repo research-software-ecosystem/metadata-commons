@@ -1,0 +1,55 @@
+about:
+  dev_url: https://github.com/immcantation/presto
+  doc_url: https://presto.readthedocs.io
+  home: https://github.com/immcantation/presto
+  license: AGPL-3.0-or-later
+  license_family: AGPL
+  license_file: LICENSE
+  summary: A bioinformatics toolkit for processing high-throughput lymphocyte receptor
+    sequencing data.
+build:
+  noarch: python
+  number: 0
+  run_exports:
+  - null
+  script: -m pip install . --no-deps --no-build-isolation --no-cache-dir --use-pep517
+    -vvv
+extra:
+  identifier:
+  - doi:10.1093/bioinformatics/btu138
+package:
+  name: presto
+  version: 0.7.9
+requirements:
+  host:
+  - python >=3
+  - pip
+  - setuptools
+  run:
+  - python >=3
+  - numpy >=1.8
+  - scipy >=0.14
+  - pandas >=0.24
+  - biopython >=1.81
+  - packaging
+  - blast
+  - muscle
+  - vsearch
+source:
+  sha256: 93b205903edef710e82351386e61af7d77dfc811ed0785b682c7be133c4ae8fc
+  url: https://pypi.org/packages/source/p/presto/presto-0.7.9.tar.gz
+test:
+  commands:
+  - AlignSets.py --version
+  - AssemblePairs.py --version
+  - BuildConsensus.py --version
+  - ClusterSets.py --version
+  - CollapseSeq.py --version
+  - ConvertHeaders.py --version
+  - EstimateError.py --version
+  - FilterSeq.py --version
+  - MaskPrimers.py --version
+  - PairSeq.py --version
+  - ParseHeaders.py --version
+  - ParseLog.py --version
+  - SplitSeq.py --version

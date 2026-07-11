@@ -1,0 +1,34 @@
+about:
+  home: https://github.com/bede/deacon
+  license: MIT
+  license_file: LICENSE
+  summary: Fast alignment-free sequence filter
+build:
+  number: 0
+  run_exports:
+  - null
+  script:
+  - mv .cargo/config-portable.toml .cargo/config.toml
+  - cargo install --no-track --locked --verbose --root "${PREFIX}" --path .
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+  recipe-maintainers:
+  - bede
+package:
+  name: deacon
+  version: 0.15.0
+requirements:
+  build:
+  - null
+  - cargo-bundle-licenses
+  host:
+  - openssl
+source:
+  sha256: e92691f7dcce9b439bbf1ca81bf61bf382b9f78caca6695cc57404ef8419e683
+  url: https://github.com/bede/deacon/archive/0.15.0.tar.gz
+test:
+  commands:
+  - deacon index build --help
+  - deacon filter --help

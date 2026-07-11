@@ -1,0 +1,43 @@
+about:
+  dev_url: https://github.com/rrwick/Autocycler
+  doc_url: https://github.com/rrwick/Autocycler/wiki
+  home: https://github.com/rrwick/Autocycler
+  license: GPL-3.0-or-later
+  license_family: GPL3
+  license_file: LICENSE
+  summary: A tool for generating consensus long-read assemblies for bacterial genomes.
+build:
+  number: 0
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+  identifiers:
+  - doi:10.5281/zenodo.14642607
+  - biotools:autocycler
+  recipe-maintainers:
+  - rrwick
+  - mbhall88
+  skip-lints:
+  - compiler_needs_stdlib_c
+package:
+  name: autocycler
+  version: 0.6.2
+requirements:
+  build:
+  - null
+  - null
+  - null
+  - cargo-bundle-licenses
+  - pkg-config
+  - clangdev
+  - make
+  - cmake
+source:
+  sha256: 5bb281c3216ac266fc17fcda74b99fea11fdf7b01b5e32656d515fe470109efa
+  url: https://github.com/rrwick/Autocycler/archive/refs/tags/v0.6.2.tar.gz
+test:
+  commands:
+  - autocycler --help

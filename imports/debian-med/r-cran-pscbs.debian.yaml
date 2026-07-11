@@ -1,0 +1,25 @@
+package: r-cran-pscbs
+distribution: debian
+release: sid
+component: main
+version: 0.68.0
+source: r-cran-pscbs
+homepage: https://cran.r-project.org/package=PSCBS
+license: unknown
+blend: debian-med
+description_md5: da21af0d6123ccd125f634f05ca111c8
+registries:
+- entry: OMICS_05545
+  name: OMICtools
+- entry: SCR_000417
+  name: SciCrunch
+- entry: r-pscbs
+  name: conda:bioconda
+bib:
+- key: doi
+  value: 10.1093/bioinformatics/btr329
+popcon:
+- insts: 125
+  olde: 100
+  recent: 22
+  vote: 3

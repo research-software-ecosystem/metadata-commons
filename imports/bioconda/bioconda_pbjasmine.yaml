@@ -1,0 +1,28 @@
+about:
+  home: https://github.com/PacificBiosciences/pbbioconda
+  license: BSD-3-Clause-Clear
+  summary: jasmine
+build:
+  binary_relocation: false
+  number: 0
+  run_exports:
+  - null
+  skip: true
+extra:
+  recipe-maintainers:
+  - armintoepfer
+  - pb-dseifert
+  skip-lints:
+  - should_be_noarch_generic
+package:
+  name: pbjasmine
+  version: 26.1.3
+requirements:
+  build:
+  - null
+source:
+  sha256: 9f054bf03d9e5637ca353018f865fa65dfb6a933c6513a515d5da797b811f04e
+  url: https://github.com/PacificBiosciences/jasmine/releases/download/v26.1.3/jasmine.tar.xz
+test:
+  commands:
+  - jasmine -h

@@ -1,0 +1,37 @@
+about:
+  dev_url: https://github.com/bluenote-1577/myloasm
+  doc_url: https://myloasm-docs.github.io
+  home: https://github.com/bluenote-1577/myloasm
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE
+  summary: myloasm - high-resolution metagenome assembly for (noisy) long reads.
+build:
+  number: 1
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+  recipe-maintainers:
+  - bluenote-1577
+  skip-lints:
+  - compiler_needs_stdlib_c
+package:
+  name: myloasm
+  version: 0.5.1
+requirements:
+  build:
+  - null
+  - null
+  - cargo-bundle-licenses
+  - make
+  - cmake >=3.5
+  - pkg-config
+source:
+  sha256: b77fe23cac452385be801ae64f8d96c01a733dfcaee2894bbbd9dacde98532c4
+  url: https://github.com/bluenote-1577/myloasm/archive/refs/tags/v0.5.1.tar.gz
+test:
+  commands:
+  - myloasm --help

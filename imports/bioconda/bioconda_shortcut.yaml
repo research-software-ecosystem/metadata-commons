@@ -1,0 +1,30 @@
+about:
+  home: https://github.com/Aez35/ShortCut
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE
+  summary: ShortCut Small RNA-seq data trimmer and quality control tool
+build:
+  noarch: generic
+  number: 0
+  run_exports:
+  - null
+package:
+  name: shortcut
+  version: '2.0'
+requirements:
+  host:
+  - python >=3.10,<3.13
+  - pip
+  run:
+  - python >=3.10,<3.13
+  - pandas
+  - plotly
+  - cutadapt
+source:
+  sha256: 358054768290f82893f9fff952baf09aaa66c3cac031807e4ce73818f61d4616
+  strip_prefix: ShortCut-2.0
+  url: https://github.com/Aez35/ShortCut/archive/v2.0.tar.gz
+test:
+  commands:
+  - ShortCut --help

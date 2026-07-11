@@ -1,0 +1,34 @@
+about:
+  dev_url: https://github.com/guilledufort/EMVC-2
+  home: https://github.com/guilledufort/EMVC-2
+  license: MIT
+  license_family: MIT
+  summary: An efficient SNV variant caller based on the expectation maximization algorithm.
+build:
+  number: 4
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+package:
+  name: emvc-2
+  version: '1.0'
+requirements:
+  build:
+  - null
+  - make
+  run:
+  - python
+  - samtools
+  - numpy
+  - scipy
+  - tqdm
+  - scikit-learn
+source:
+  sha256: edee7e027bb720f625cfc3073798ab39916f1852641cc7f05604ff62b905c7e3
+  url: https://github.com/guilledufort/EMVC-2/archive/refs/tags/v1.0.tar.gz
+test:
+  commands:
+  - emvc-2 -h

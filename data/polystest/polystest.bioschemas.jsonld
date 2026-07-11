@@ -1,0 +1,176 @@
+{
+  "@context": {
+    "biotools": "https://bio.tools/ontology/",
+    "brick": "https://brickschema.org/schema/Brick#",
+    "bsc": "http://bioschemas.org/",
+    "bsct": "http://bioschemas.org/types/",
+    "csvw": "http://www.w3.org/ns/csvw#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "dcam": "http://purl.org/dc/dcam/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dcmitype": "http://purl.org/dc/dcmitype/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "doap": "http://usefulinc.com/ns/doap#",
+    "edam": "http://edamontology.org/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "geo": "http://www.opengis.net/ont/geosparql#",
+    "odrl": "http://www.w3.org/ns/odrl/2/",
+    "org": "http://www.w3.org/ns/org#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "prof": "http://www.w3.org/ns/dx/prof/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "qb": "http://purl.org/linked-data/cube#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "sc": "http://schema.org/",
+    "schema": "https://schema.org/",
+    "sh": "http://www.w3.org/ns/shacl#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "sosa": "http://www.w3.org/ns/sosa/",
+    "ssn": "http://www.w3.org/ns/ssn/",
+    "time": "http://www.w3.org/2006/time#",
+    "vann": "http://purl.org/vocab/vann/",
+    "void": "http://rdfs.org/ns/void#",
+    "wgs": "https://www.w3.org/2003/01/geo/wgs84_pos#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "https://bio.tools/PolySTest",
+      "@type": "sc:SoftwareApplication",
+      "bsc:input": {
+        "@id": "_:N102ea5763f9d4f0c87cd1897843fab30"
+      },
+      "bsc:output": [
+        {
+          "@id": "_:Na90d6f2e87e04e3387aabe91c4127fd0"
+        },
+        {
+          "@id": "_:N2b494edd86564128a4579f9d91ff5834"
+        },
+        {
+          "@id": "_:Ncb37b013ba4d4d11bb3f1e23c2cc00d6"
+        },
+        {
+          "@id": "_:Ne13030d446a944a6aed8baa902615842"
+        },
+        {
+          "@id": "_:N1dd7324f2cf640cb9e5b95603c6aac70"
+        }
+      ],
+      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "sc:additionalType": "Web application",
+      "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_0121"
+        },
+        {
+          "@id": "edam:topic_2269"
+        },
+        {
+          "@id": "edam:topic_3520"
+        }
+      ],
+      "sc:author": "Veit Schwämmle",
+      "sc:citation": {
+        "@id": "https://doi.org/10.1074/mcp.RA119.001777"
+      },
+      "sc:description": "The complexity of high-throughput quantitative omics experiments often leads to low replicates numbers and many missing values. We implemented a new test to simultaneously consider missing values and quantitative changes, which we combined with well-performing statistical tests for high confidence detection of differentially regulated features. The package contains functions to run the test and to visualize the results.",
+      "sc:featureList": [
+        {
+          "@id": "edam:operation_3741"
+        },
+        {
+          "@id": "edam:operation_3664"
+        }
+      ],
+      "sc:isAccessibleForFree": true,
+      "sc:license": "GPL-2.0-only",
+      "sc:name": "PolySTest",
+      "sc:operatingSystem": [
+        "Mac",
+        "Linux"
+      ],
+      "sc:softwareHelp": {
+        "@id": "https://bioconductor.org/packages/PolySTest"
+      },
+      "sc:softwareVersion": "1.6.0",
+      "sc:url": "https://bioconductor.org/packages/PolySTest"
+    },
+    {
+      "@id": "_:Na90d6f2e87e04e3387aabe91c4127fd0",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1636"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3604"
+      },
+      "sc:name": "Heat map"
+    },
+    {
+      "@id": "_:N2b494edd86564128a4579f9d91ff5834",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0928"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3752"
+      },
+      "sc:name": "Gene expression profile"
+    },
+    {
+      "@id": "_:Ncb37b013ba4d4d11bb3f1e23c2cc00d6",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1669"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3752"
+      },
+      "sc:name": "P-value"
+    },
+    {
+      "@id": "_:Ne13030d446a944a6aed8baa902615842",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3905"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3604"
+      },
+      "sc:name": "Histogram"
+    },
+    {
+      "@id": "_:N1dd7324f2cf640cb9e5b95603c6aac70",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3932"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3752"
+      },
+      "sc:name": "Q-value"
+    },
+    {
+      "@id": "_:N102ea5763f9d4f0c87cd1897843fab30",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2603"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3751"
+        },
+        {
+          "@id": "edam:format_3752"
+        }
+      ],
+      "sc:name": "Expression data"
+    },
+    {
+      "@id": "https://doi.org/10.1074/mcp.RA119.001777",
+      "@type": "sc:CreativeWork"
+    }
+  ]
+}

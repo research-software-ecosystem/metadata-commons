@@ -1,0 +1,32 @@
+about:
+  home: http://seqan.github.io/lambda/
+  license: AGPLv3
+  license_file: LICENSE-AGPL3.rst
+  summary: Lambda is a local aligner optimized for many query sequences and searches
+    in protein space
+build:
+  number: 1
+  run_exports:
+  - null
+  skip: true
+package:
+  name: lambda
+  version: 3.1.0
+requirements:
+  build:
+  - null
+  - null
+  - cmake >=3.0.0
+  - libgomp
+  - llvm-openmp
+  - make
+  host:
+  - bzip2
+  - seqan-library
+  - zlib
+source:
+  sha256: fb3388e8b5a9f33f7423699803eaef4e6b9838c11017bd5b0d2b07f66491f191
+  url: https://github.com/seqan/lambda/releases/download/lambda-v3.1.0/lambda3-3.1.0-SourceWithSubmodules.tar.xz
+test:
+  commands:
+  - lambda3 --help

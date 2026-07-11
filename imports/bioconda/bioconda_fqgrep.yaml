@@ -1,0 +1,39 @@
+about:
+  home: https://github.com/fulcrumgenomics/fqgrep
+  license: MIT
+  license_file: LICENSE
+  summary: Search a pair of fastq files for reads that match a given ref or alt sequence
+build:
+  number: 0
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+  identifiers:
+  - DOI:10.5281/zenodo.14985002
+  recipe-maintainers:
+  - nh13
+  skip-lints:
+  - should_use_compilers
+package:
+  name: fqgrep
+  version: 1.1.2
+requirements:
+  build:
+  - null
+  - null
+  - rust >=1.60
+  - pkg-config
+  - make
+  - cmake
+  - cargo-bundle-licenses
+  host: null
+  run: null
+source:
+  sha256: a4b6ee27cff3867fef9630017162fe07072db57c27603f820ae9586b84beb198
+  url: https://github.com/fulcrumgenomics/fqgrep/archive/v1.1.2.tar.gz
+test:
+  commands:
+  - fqgrep --help

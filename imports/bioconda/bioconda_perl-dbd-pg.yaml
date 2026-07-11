@@ -1,0 +1,36 @@
+about:
+  doc_url: https://metacpan.org/pod/DBD::Pg
+  home: https://metacpan.org/pod/DBD::Pg
+  license: Perl_5
+  summary: DBI PostgreSQL interface.
+build:
+  number: 0
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+package:
+  name: perl-dbd-pg
+  version: 3.20.2
+requirements:
+  build:
+  - null
+  - null
+  - make
+  host:
+  - perl
+  - perl-dbi
+  - perl-file-temp
+  - postgresql
+  run:
+  - perl
+  - perl-dbi
+  - postgresql
+source:
+  sha256: 526d3372e6d69766cb683618d1f3b48aca57bfadb1de1db16c3b8136fe61176c
+  url: https://cpan.metacpan.org/authors/id/T/TU/TURNSTEP/DBD-Pg-3.20.2.tar.gz
+test:
+  imports:
+  - DBD::Pg

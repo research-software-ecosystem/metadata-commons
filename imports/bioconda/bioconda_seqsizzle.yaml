@@ -1,0 +1,36 @@
+about:
+  home: https://github.com/ChangqingW/SeqSizzle
+  licence_family: AGPL
+  license: AGPL-3.0-or-later
+  license_file:
+  - LICENSE.md
+  - THIRDPARTY.yml
+  summary: A pager for viewing FASTQ files with fuzzy adaptor matching and coloring.
+build:
+  number: 0
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+package:
+  name: seqsizzle
+  version: 0.5.0
+requirements:
+  build:
+  - null
+  - null
+  - null
+  - pkg-config
+  - cargo-bundle-licenses
+  host:
+  - xz
+  - zlib
+  - bzip2
+source:
+  sha256: ccff77e3b125b6b919701b7d2b93fde858fe51ef4df3346cdc23f02de8acb3e2
+  url: https://github.com/ChangqingW/SeqSizzle/archive/v0.5.0.tar.gz
+test:
+  commands:
+  - seqsizzle -h

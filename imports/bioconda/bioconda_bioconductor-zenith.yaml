@@ -1,0 +1,59 @@
+about:
+  description: Zenith performs gene set analysis on the result of differential expression
+    using linear (mixed) modeling with dream by considering the correlation between
+    gene expression traits.  This package implements the camera method from the limma
+    package proposed by Wu and Smyth (2012).  Zenith is a simple extension of camera
+    to be compatible with linear mixed models implemented in variancePartition::dream().
+  home: https://bioconductor.org/packages/3.22/bioc/html/zenith.html
+  license: Artistic-2.0
+  summary: Gene set analysis following differential expression using linear (mixed)
+    modeling with dream
+build:
+  noarch: generic
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+package:
+  name: bioconductor-zenith
+  version: 1.12.0
+requirements:
+  host:
+  - bioconductor-enrichmentbrowser >=2.40.0,<2.41.0
+  - bioconductor-gseabase >=1.72.0,<1.73.0
+  - bioconductor-limma >=3.66.0,<3.67.0
+  - bioconductor-variancepartition >=1.40.0,<1.41.0
+  - r-base
+  - r-dplyr
+  - r-ggplot2
+  - r-msigdbr
+  - r-progress
+  - r-rdpack
+  - r-reshape2
+  - r-rfast
+  - r-tidyr
+  run:
+  - bioconductor-enrichmentbrowser >=2.40.0,<2.41.0
+  - bioconductor-gseabase >=1.72.0,<1.73.0
+  - bioconductor-limma >=3.66.0,<3.67.0
+  - bioconductor-variancepartition >=1.40.0,<1.41.0
+  - r-base
+  - r-dplyr
+  - r-ggplot2
+  - r-msigdbr
+  - r-progress
+  - r-rdpack
+  - r-reshape2
+  - r-rfast
+  - r-tidyr
+source:
+  md5: 4a444c2b68c9b11082dea1ceaee09ee7
+  url:
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/zenith_1.12.0.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/zenith/zenith_1.12.0.tar.gz
+  - https://bioarchive.galaxyproject.org/zenith_1.12.0.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-zenith/bioconductor-zenith_1.12.0_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('zenith')"

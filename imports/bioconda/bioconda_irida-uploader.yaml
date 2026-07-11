@@ -1,0 +1,40 @@
+about:
+  author: Jeffrey Thiessen
+  dev_url: https://github.com/phac-nml/irida-uploader
+  doc_url: https://irida-uploader.readthedocs.io/en/latest
+  home: https://github.com/phac-nml/irida-uploader
+  license: Apache-2.0
+  license_family: APACHE
+  summary: Upload NGS data to IRIDA system.
+build:
+  entry_points:
+  - irida-uploader = iridauploader.core.cli:main
+  - irida-uploader-gui = iridauploader.gui.gui:main
+  - integration-test = iridauploader.tests_integration.start_integration_tests:main
+  noarch: python
+  number: 0
+  run_exports:
+  - null
+  script: ' -m pip install . --no-deps --no-build-isolation --no-cache-dir -vvv'
+package:
+  name: irida-uploader
+  version: 0.9.5
+requirements:
+  host:
+  - python >=3.7
+  - pip
+  - setuptools
+  run:
+  - python >=3.7
+  - appdirs
+  - cerberus
+  - chardet
+  - rauth
+  - requests
+  - requests-toolbelt
+source:
+  sha256: fa2781ae005f9f194e8fc9c668ff893dceb1ba9f7139b57b141983362e99b3c0
+  url: https://pypi.io/packages/source/i/iridauploader/iridauploader-0.9.5.tar.gz
+test:
+  commands:
+  - irida-uploader --help

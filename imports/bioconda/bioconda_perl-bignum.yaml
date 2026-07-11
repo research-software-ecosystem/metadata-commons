@@ -1,0 +1,33 @@
+about:
+  doc_url: https://metacpan.org/pod/bignum
+  home: https://metacpan.org/pod/bignum
+  license: Perl_5
+  summary: Transparent BigNumber support for Perl.
+build:
+  noarch: generic
+  number: 0
+  run_exports:
+  - null
+package:
+  name: perl-bignum
+  version: '0.67'
+requirements:
+  build:
+  - make
+  host:
+  - perl
+  - perl-extutils-makemaker
+  - perl-math-bigint >=1.99983
+  - perl-math-bigrat >=0.2621
+  - perl-test-simple >=0.94
+  run:
+  - perl
+  - perl-carp >=1.22
+  - perl-math-bigint >=1.99983
+  - perl-math-bigrat >=0.2621
+source:
+  sha256: 1c9a824ab323e3e58d9808011c10ad27589dba1202806278215012ca7f522875
+  url: https://cpan.metacpan.org/authors/id/P/PJ/PJACKLAM/bignum-0.67.tar.gz
+test:
+  imports:
+  - bignum

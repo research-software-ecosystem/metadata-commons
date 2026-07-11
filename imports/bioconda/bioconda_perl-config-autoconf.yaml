@@ -1,0 +1,44 @@
+about:
+  doc_url: https://metacpan.org/release/Config-AutoConf
+  home: https://metacpan.org/release/Config-AutoConf
+  license: Perl_5
+  summary: A module to implement some of AutoConf macros in pure perl.
+build:
+  number: 4
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+package:
+  name: perl-config-autoconf
+  version: '0.32'
+requirements:
+  build:
+  - make
+  - null
+  host:
+  - perl >=5.32.1
+  - perl-exporter
+  - perl-file-temp
+  - perl-text-parsewords
+  - perl-carp
+  - perl-extutils-cbuilder
+  - perl-capture-tiny
+  - perl-base
+  - perl-extutils-makemaker
+  run:
+  - perl >=5.32.1
+  - perl-exporter
+  - perl-file-temp
+  - perl-text-parsewords
+  - perl-carp
+  - perl-capture-tiny
+  - perl-base
+source:
+  sha256: bb57a958ef49d3f7162276dae14a7bd5af43fd1d8513231af35d665459454023
+  url: https://cpan.metacpan.org/authors/id/A/AM/AMBS/Config-AutoConf-0.320.tar.gz
+test:
+  imports:
+  - Config::AutoConf

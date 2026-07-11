@@ -1,0 +1,45 @@
+about:
+  description: This is a package for analysis of case-control data in genetic epidemiology.
+    It provides a set of statistical methods for evaluating gene-environment (or gene-genes)
+    interactions under multiplicative and additive risk models, with or without assuming
+    gene-environment (or gene-gene) independence in the underlying population.
+  home: https://bioconductor.org/packages/3.22/bioc/html/CGEN.html
+  license: GPL-2 + file LICENSE
+  license_file: LICENSE
+  summary: An R package for analysis of case-control studies in genetic epidemiology
+build:
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+package:
+  name: bioconductor-cgen
+  version: 3.46.0
+requirements:
+  build:
+  - null
+  - null
+  - make
+  host:
+  - r-base
+  - r-mvtnorm
+  - r-survival
+  - libblas
+  - liblapack
+  - zlib
+  - liblzma-devel
+  run:
+  - r-base
+  - r-mvtnorm
+  - r-survival
+source:
+  md5: 9369ca067ed766863f6d355e84e78002
+  url:
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/CGEN_3.46.0.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/CGEN/CGEN_3.46.0.tar.gz
+  - https://bioarchive.galaxyproject.org/CGEN_3.46.0.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-cgen/bioconductor-cgen_3.46.0_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('CGEN')"

@@ -1,0 +1,54 @@
+about:
+  home: http://github.com/moonso/genmod
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE.txt
+  summary: Annotate genetic inheritance models in variant files
+build:
+  entry_points:
+  - genmod = genmod.commands.base:cli
+  noarch: python
+  number: 0
+  run_exports:
+  - null
+  script: ' -m pip install . --no-deps --no-build-isolation -vvv'
+extra:
+  recipe-maintainers:
+  - ramprasadn
+package:
+  name: genmod
+  version: 3.10.2
+requirements:
+  host:
+  - pip
+  - hatchling
+  - python
+  run:
+  - ped_parser
+  - pytabix
+  - interval_tree >=0.3.4
+  - click
+  - configobj
+  - importlib_resources
+  - intervaltree >=3.1.0
+  - extract_vcf
+  - vcftoolbox
+  - six
+source:
+  sha256: 40dc3141e0aa90de79b1d2711fd287ab8d7a03023fadfd989efa54c4b5a32fdd
+  url: https://pypi.io/packages/source/g/genmod/genmod-3.10.2.tar.gz
+test:
+  commands:
+  - genmod --help
+  imports:
+  - genmod
+  - genmod.annotate_models
+  - genmod.annotate_models.models
+  - genmod.annotate_regions
+  - genmod.annotate_variants
+  - genmod.annotations
+  - genmod.commands
+  - genmod.errors
+  - genmod.score_variants
+  - genmod.utils
+  - genmod.vcf_tools

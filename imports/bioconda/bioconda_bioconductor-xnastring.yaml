@@ -1,0 +1,69 @@
+about:
+  description: The XNAString package allows for description of base sequences and
+    associated chemical modifications in a single object. XNAString is able to capture
+    single stranded, as well as double stranded molecules. Chemical modifications
+    are represented as independent strings associated with different features of the
+    molecules (base sequence, sugar sequence, backbone sequence, modifications) and
+    can be read or written to a HELM notation. It also enables secondary structure
+    prediction using RNAfold from ViennaRNA. XNAString is designed to be efficient
+    representation of nucleic-acid based therapeutics, therefore it stores information
+    about target sequences and provides interface for matching and alignment functions
+    from Biostrings and pwalign packages.
+  home: https://bioconductor.org/packages/3.20/bioc/html/XNAString.html
+  license: GPL-2
+  license_file: /lib/R/share/licenses/GPL-2
+  summary: Efficient Manipulation of Modified Oligonucleotide Sequences
+build:
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+package:
+  name: bioconductor-xnastring
+  version: 1.14.0
+requirements:
+  build:
+  - null
+  - null
+  - make
+  host:
+  - bioconductor-biostrings >=2.74.0,<2.75.0
+  - bioconductor-bsgenome >=1.74.0,<1.75.0
+  - bioconductor-genomicranges >=1.58.0,<1.59.0
+  - bioconductor-iranges >=2.40.0,<2.41.0
+  - bioconductor-pwalign >=1.2.0,<1.3.0
+  - bioconductor-s4vectors >=0.44.0,<0.45.0
+  - r-base
+  - r-data.table
+  - r-formattable
+  - r-future.apply
+  - r-rcpp
+  - r-stringi
+  - r-stringr
+  - libblas
+  - liblapack
+  run:
+  - bioconductor-biostrings >=2.74.0,<2.75.0
+  - bioconductor-bsgenome >=1.74.0,<1.75.0
+  - bioconductor-genomicranges >=1.58.0,<1.59.0
+  - bioconductor-iranges >=2.40.0,<2.41.0
+  - bioconductor-pwalign >=1.2.0,<1.3.0
+  - bioconductor-s4vectors >=0.44.0,<0.45.0
+  - r-base
+  - r-data.table
+  - r-formattable
+  - r-future.apply
+  - r-rcpp
+  - r-stringi
+  - r-stringr
+source:
+  md5: 9227299ff22cd0c02824cd16fcfca7b1
+  url:
+  - https://bioconductor.org/packages/3.20/bioc/src/contrib/XNAString_1.14.0.tar.gz
+  - https://bioconductor.org/packages/3.20/bioc/src/contrib/Archive/XNAString/XNAString_1.14.0.tar.gz
+  - https://bioarchive.galaxyproject.org/XNAString_1.14.0.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-xnastring/bioconductor-xnastring_1.14.0_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('XNAString')"

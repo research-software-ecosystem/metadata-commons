@@ -1,0 +1,46 @@
+about:
+  dev_url: https://github.com/fg-labs/snakesee
+  doc_url: https://snakesee.readthedocs.io
+  home: https://github.com/fg-labs/snakesee
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE
+  summary: A terminal UI for monitoring Snakemake workflows
+build:
+  entry_points:
+  - snakesee = snakesee.cli:main
+  noarch: python
+  number: 1
+  run_exports:
+  - null
+  script: -m pip install . -vvv --no-deps --no-build-isolation
+extra:
+  recipe-maintainers:
+  - nh13
+package:
+  name: snakesee
+  version: 0.8.1
+requirements:
+  host:
+  - python >=3.11
+  - pip
+  - hatchling
+  run:
+  - python >=3.11
+  - rich >=13.0.0
+  - defopt >=6.4.0
+  - orjson >=3.9.0
+  - snakemake >=8.0.0
+  - textual >=0.80.0
+  - rich-pixels >=3.0.1
+  - pillow >=10.0.0
+source:
+  sha256: 57040197887d50a60faa078128df22e1d03a10df1e90fb3a234d9050c3ebc92d
+  url: https://pypi.org/packages/source/s/snakesee/snakesee-0.8.1.tar.gz
+test:
+  commands:
+  - snakesee --help
+  - python -c "import rich_pixels, PIL"
+  imports:
+  - snakesee
+  - snakesee.tui.app

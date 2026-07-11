@@ -1,0 +1,65 @@
+about:
+  dev_url: https://github.com/KarchinLab/open-cravat
+  doc_url: https://github.com/KarchinLab/open-cravat/wiki
+  home: https://www.opencravat.org
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE
+  summary: OpenCRAVAT - variant analysis toolkit
+build:
+  entry_points:
+  - oc=cravat.oc:main
+  noarch: python
+  number: 0
+  run_exports:
+  - null
+  script: -m pip install . -vvv --no-build-isolation --no-deps --no-cache-dir
+extra:
+  recipe-maintainers:
+  - rkiminsilico
+package:
+  name: open-cravat
+  version: 3.1.1
+requirements:
+  host:
+  - pip
+  - python >=3.9
+  - setuptools
+  run:
+  - aiohttp <4.0.0
+  - aiosqlite
+  - biopython
+  - chardet >=3.0.4,<6.0.0
+  - intervaltree
+  - markdown
+  - mpmath
+  - nest-asyncio
+  - openpyxl
+  - oyaml
+  - psutil
+  - pyliftover
+  - python >=3.9
+  - setuptools
+  - pyyaml
+  - requests
+  - requests-toolbelt
+  - twobitreader
+  - websockets
+  - xlsxwriter
+  - pyvcf3
+  - looseversion
+  - packaging >=25.0.0
+  - flask
+  - paste
+  - waitress
+  - whitenoise
+  - flask-caching
+  - cachelib
+  - celery
+  - cryptography
+source:
+  sha256: eaafd8126150409d9ed799bfd884b5318d3837755536fcefdabe13b7c911ac97
+  url: https://files.pythonhosted.org/packages/81/7c/2d1f08e97eeece58b537620aede3be6d950da821e083ecc355ef6392a069/open_cravat-3.1.1.tar.gz
+test:
+  imports:
+  - cravat

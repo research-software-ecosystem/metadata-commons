@@ -1,0 +1,22 @@
+about:
+  home: https://github.com/hartwigmedical/hmftools/blob/master/bam-tools/README.md
+  license: GPL-3.0-only
+  license_family: GPL3
+  summary: Rapidly process BAMs for various tasks.
+build:
+  noarch: generic
+  number: 0
+  run_exports:
+  - null
+package:
+  name: hmftools-bam-tools
+  version: 1.6.1
+requirements:
+  run:
+  - openjdk >=8,<=21
+source:
+  sha256: b26bb292295fba2028a93540058f02431f63351506a615b363a3edfa85c54dd8
+  url: https://github.com/hartwigmedical/hmftools/releases/download/bam-tools-v1.6.1/bam-tools_v1.6.1.jar
+test:
+  commands:
+  - bamtools -version | grep BamTools

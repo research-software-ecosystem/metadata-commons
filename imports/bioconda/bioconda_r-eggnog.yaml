@@ -1,0 +1,42 @@
+about:
+  dev_url: https://github.com/acidgenomics/r-eggnog
+  home: https://r.acidgenomics.com/packages/eggnog/
+  license: AGPL-3.0
+  license_family: GPL
+  license_file: LICENSE
+  summary: EggNOG database annotations.
+build:
+  noarch: generic
+  number: 0
+  run_exports:
+  - null
+extra:
+  recipe-maintainers:
+  - acidgenomics
+  - mjsteinbaugh
+package:
+  name: r-eggnog
+  version: 0.3.1
+requirements:
+  host:
+  - r-base
+  - bioconductor-biocgenerics >=0.46.0
+  - bioconductor-iranges >=2.34.0
+  - bioconductor-s4vectors >=0.38.0
+  - r-acidbase >=0.7.1
+  - r-goalie >=0.7.3
+  - r-pipette >=0.14.1
+  run:
+  - r-base
+  - bioconductor-biocgenerics >=0.46.0
+  - bioconductor-iranges >=2.34.0
+  - bioconductor-s4vectors >=0.38.0
+  - r-acidbase >=0.7.1
+  - r-goalie >=0.7.3
+  - r-pipette >=0.14.1
+source:
+  sha256: e3804574ef575467f294f42197ddf31066b8d407387dcbb68e23f9228de017a4
+  url: https://github.com/acidgenomics/r-eggnog/archive/v0.3.1.tar.gz
+test:
+  commands:
+  - $R -e "library('EggNOG')"

@@ -1,0 +1,62 @@
+about:
+  description: The AnVIL is a cloud computing resource developed in part by the National
+    Human Genome Research Institute. The AnVIL package provides programatic access
+    to the Dockstore, Leonardo, Rawls, TDR, and Terra RESTful programming interfaces.
+    For platform-specific user-level functionality, see either the AnVILGCP or AnVILAz
+    package.
+  home: https://bioconductor.org/packages/3.22/bioc/html/AnVIL.html
+  license: Artistic-2.0
+  summary: Bioconductor on the AnVIL compute environment
+build:
+  noarch: generic
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+package:
+  name: bioconductor-anvil
+  version: 1.22.3
+requirements:
+  host:
+  - bioconductor-anvilbase >=1.4.0,<1.5.0
+  - bioconductor-biocbaseutils >=1.12.0,<1.13.0
+  - bioconductor-gcptools >=1.0.0,<1.1.0
+  - r-base
+  - r-dplyr
+  - r-dt
+  - r-futile.logger
+  - r-htmltools
+  - r-httr
+  - r-jsonlite
+  - r-miniui
+  - r-rapiclient
+  - r-shiny
+  - r-tibble
+  - r-yaml
+  run:
+  - bioconductor-anvilbase >=1.4.0,<1.5.0
+  - bioconductor-biocbaseutils >=1.12.0,<1.13.0
+  - bioconductor-gcptools >=1.0.0,<1.1.0
+  - r-base
+  - r-dplyr
+  - r-dt
+  - r-futile.logger
+  - r-htmltools
+  - r-httr
+  - r-jsonlite
+  - r-miniui
+  - r-rapiclient
+  - r-shiny
+  - r-tibble
+  - r-yaml
+source:
+  md5: 22a5be12dbf6aa910cb0104b46c6292f
+  url:
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/AnVIL_1.22.3.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/AnVIL/AnVIL_1.22.3.tar.gz
+  - https://bioarchive.galaxyproject.org/AnVIL_1.22.3.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-anvil/bioconductor-anvil_1.22.3_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('AnVIL')"

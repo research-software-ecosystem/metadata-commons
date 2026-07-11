@@ -1,0 +1,41 @@
+about:
+  dev_url: https://github.com/hasindu2008/slow5lib
+  home: https://github.com/hasindu2008/slow5lib
+  license: MIT
+  license_family: MIT
+  license_file:
+  - thirdparty/streamvbyte/LICENSE
+  license_url: https://github.com/hasindu2008/slow5lib/blob/master/LICENSE
+  summary: slow5lib Python binding
+build:
+  number: 0
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+  recipe-maintainers:
+  - hasindu2008
+package:
+  name: pyslow5
+  version: 1.4.0
+requirements:
+  build:
+  - null
+  host:
+  - python
+  - pip
+  - cython
+  - setuptools
+  - zlib
+  - numpy
+  run:
+  - python
+  - null
+source:
+  sha256: d49a3ed86eb0f4473accc7b2003a27e1adc496b5abb61332fa03e9c7aa72dd5b
+  url: https://pypi.io/packages/source/p/pyslow5/pyslow5-1.4.0.tar.gz
+test:
+  imports:
+  - pyslow5

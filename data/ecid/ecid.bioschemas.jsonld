@@ -1,0 +1,237 @@
+{
+  "@context": {
+    "biotools": "https://bio.tools/ontology/",
+    "brick": "https://brickschema.org/schema/Brick#",
+    "bsc": "http://bioschemas.org/",
+    "bsct": "http://bioschemas.org/types/",
+    "csvw": "http://www.w3.org/ns/csvw#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "dcam": "http://purl.org/dc/dcam/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dcmitype": "http://purl.org/dc/dcmitype/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "doap": "http://usefulinc.com/ns/doap#",
+    "edam": "http://edamontology.org/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "geo": "http://www.opengis.net/ont/geosparql#",
+    "odrl": "http://www.w3.org/ns/odrl/2/",
+    "org": "http://www.w3.org/ns/org#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "prof": "http://www.w3.org/ns/dx/prof/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "qb": "http://purl.org/linked-data/cube#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "sc": "http://schema.org/",
+    "schema": "https://schema.org/",
+    "sh": "http://www.w3.org/ns/shacl#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "sosa": "http://www.w3.org/ns/sosa/",
+    "ssn": "http://www.w3.org/ns/ssn/",
+    "time": "http://www.w3.org/2006/time#",
+    "vann": "http://purl.org/vocab/vann/",
+    "void": "http://rdfs.org/ns/void#",
+    "wgs": "https://www.w3.org/2003/01/geo/wgs84_pos#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "https://doi.org/10.1016/S0959-440X(02)00333-0",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://bio.tools/ecid",
+      "@type": "sc:SoftwareApplication",
+      "bsc:input": [
+        {
+          "@id": "_:N3e1ed183a7894366a1c59080707a39c9"
+        },
+        {
+          "@id": "_:Nd77b66809181497f91e6815fb8e00c82"
+        },
+        {
+          "@id": "_:N8db52010d6564ab2bedfdcb541c03de4"
+        },
+        {
+          "@id": "_:N0626080e3f984a7891d14824d60a3a11"
+        },
+        {
+          "@id": "_:Nb9d6fbd0a8f64ac2ac393e5624029a51"
+        },
+        {
+          "@id": "_:N7c0823955b96467db7d305b0b2d51449"
+        },
+        {
+          "@id": "_:N86f337d5826c47d4a85e2c9c15370cf6"
+        },
+        {
+          "@id": "_:N40533000ca2543cd86a285d54b0e0c2a"
+        },
+        {
+          "@id": "_:N7f32f7d8b3c14751b40045f88387144b"
+        },
+        {
+          "@id": "_:Nf6c1d498f5dc4f3c96a156c1a199ba58"
+        }
+      ],
+      "bsc:output": [
+        {
+          "@id": "_:Nb11b3762e9614ca6bc74ad1d34135a04"
+        },
+        {
+          "@id": "_:N742ec572b3c34ae9bc4d55b4bc2e484f"
+        },
+        {
+          "@id": "_:N8a95c5edc1b94707a4cc8ea5f7f298dd"
+        },
+        {
+          "@id": "_:Nf7558a250f174d01b996ce540dd67e39"
+        }
+      ],
+      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "sc:additionalType": "Database portal",
+      "sc:applicationSubCategory": {
+        "@id": "edam:topic_0128"
+      },
+      "sc:citation": [
+        "pubmed:12127457",
+        {
+          "@id": "https://doi.org/10.1016/S0959-440X(02)00333-0"
+        }
+      ],
+      "sc:description": "Results of running an \"in silico 2 hybrid system\" for all the possible pairs among E. coli proteins.",
+      "sc:featureList": {
+        "@id": "edam:operation_0224"
+      },
+      "sc:name": "EcID",
+      "sc:softwareHelp": {
+        "@id": "http://ecid.bioinfo.cnio.es/Php/Help.php"
+      },
+      "sc:url": "http://ecid.bioinfo.cnio.es/index.php"
+    },
+    {
+      "@id": "_:Nb11b3762e9614ca6bc74ad1d34135a04",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0906"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2331"
+      },
+      "sc:name": "Protein interaction data"
+    },
+    {
+      "@id": "_:N742ec572b3c34ae9bc4d55b4bc2e484f",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2093"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2331"
+      },
+      "sc:name": "Data reference"
+    },
+    {
+      "@id": "_:N8a95c5edc1b94707a4cc8ea5f7f298dd",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0896"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2331"
+      },
+      "sc:name": "Protein report"
+    },
+    {
+      "@id": "_:Nf7558a250f174d01b996ce540dd67e39",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0906"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2331"
+      },
+      "sc:name": "Protein interaction data"
+    },
+    {
+      "@id": "_:N3e1ed183a7894366a1c59080707a39c9",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1026"
+      },
+      "sc:name": "Gene symbol"
+    },
+    {
+      "@id": "_:Nd77b66809181497f91e6815fb8e00c82",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0989"
+      },
+      "sc:name": "Protein identifier"
+    },
+    {
+      "@id": "_:N8db52010d6564ab2bedfdcb541c03de4",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1026"
+      },
+      "sc:name": "Gene symbol"
+    },
+    {
+      "@id": "_:N0626080e3f984a7891d14824d60a3a11",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2802"
+      },
+      "sc:name": "Protein ID (EcID)"
+    },
+    {
+      "@id": "_:Nb9d6fbd0a8f64ac2ac393e5624029a51",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0989"
+      },
+      "sc:name": "Protein identifier"
+    },
+    {
+      "@id": "_:N7c0823955b96467db7d305b0b2d51449",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2802"
+      },
+      "sc:name": "Protein ID (EcID)"
+    },
+    {
+      "@id": "_:N86f337d5826c47d4a85e2c9c15370cf6",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1026"
+      },
+      "sc:name": "Gene symbol"
+    },
+    {
+      "@id": "_:N40533000ca2543cd86a285d54b0e0c2a",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2802"
+      },
+      "sc:name": "Protein ID (EcID)"
+    },
+    {
+      "@id": "_:N7f32f7d8b3c14751b40045f88387144b",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0989"
+      },
+      "sc:name": "Protein identifier"
+    },
+    {
+      "@id": "_:Nf6c1d498f5dc4f3c96a156c1a199ba58",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0989"
+      },
+      "sc:name": "Protein identifier"
+    }
+  ]
+}

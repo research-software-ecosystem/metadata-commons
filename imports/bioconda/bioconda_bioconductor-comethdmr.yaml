@@ -1,0 +1,53 @@
+about:
+  description: coMethDMR identifies genomic regions associated with continuous phenotypes
+    by optimally leverages covariations among CpGs within predefined genomic regions.
+    Instead of testing all CpGs within a genomic region, coMethDMR carries out an
+    additional step that selects co-methylated sub-regions first without using any
+    outcome information. Next, coMethDMR tests association between methylation within
+    the sub-region and continuous phenotype using a random coefficient mixed effects
+    model, which models both variations between CpG sites within the region and differential
+    methylation simultaneously.
+  home: https://bioconductor.org/packages/3.22/bioc/html/coMethDMR.html
+  license: GPL-3
+  license_file: /lib/R/share/licenses/GPL-3
+  summary: Accurate identification of co-methylated and differentially methylated
+    regions in epigenome-wide association studies
+build:
+  noarch: generic
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+package:
+  name: bioconductor-comethdmr
+  version: 1.14.0
+requirements:
+  host:
+  - bioconductor-annotationhub >=4.0.0,<4.1.0
+  - bioconductor-biocparallel >=1.44.0,<1.45.0
+  - bioconductor-bumphunter >=1.52.0,<1.53.0
+  - bioconductor-experimenthub >=3.0.0,<3.1.0
+  - bioconductor-genomicranges >=1.62.0,<1.63.0
+  - bioconductor-iranges >=2.44.0,<2.45.0
+  - r-base
+  - r-lmertest
+  run:
+  - bioconductor-annotationhub >=4.0.0,<4.1.0
+  - bioconductor-biocparallel >=1.44.0,<1.45.0
+  - bioconductor-bumphunter >=1.52.0,<1.53.0
+  - bioconductor-experimenthub >=3.0.0,<3.1.0
+  - bioconductor-genomicranges >=1.62.0,<1.63.0
+  - bioconductor-iranges >=2.44.0,<2.45.0
+  - r-base
+  - r-lmertest
+source:
+  md5: 2659bae5e14ae3cc0a33a6f30cbe1608
+  url:
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/coMethDMR_1.14.0.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/coMethDMR/coMethDMR_1.14.0.tar.gz
+  - https://bioarchive.galaxyproject.org/coMethDMR_1.14.0.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-comethdmr/bioconductor-comethdmr_1.14.0_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('coMethDMR')"

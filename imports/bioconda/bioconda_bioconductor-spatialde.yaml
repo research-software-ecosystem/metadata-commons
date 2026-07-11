@@ -1,0 +1,53 @@
+about:
+  description: SpatialDE is a method to find spatially variable genes (SVG) from spatial
+    transcriptomics data. This package provides wrappers to use the Python SpatialDE
+    library in R, using reticulate and basilisk.
+  home: https://bioconductor.org/packages/3.22/bioc/html/spatialDE.html
+  license: MIT + file LICENSE
+  license_file: LICENSE
+  summary: R wrapper for SpatialDE
+build:
+  noarch: generic
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+package:
+  name: bioconductor-spatialde
+  version: 1.16.0
+requirements:
+  host:
+  - bioconductor-basilisk >=1.22.0,<1.23.0
+  - bioconductor-spatialexperiment >=1.20.0,<1.21.0
+  - bioconductor-summarizedexperiment >=1.40.0,<1.41.0
+  - r-base
+  - r-checkmate
+  - r-ggplot2
+  - r-ggrepel
+  - r-gridextra
+  - r-matrix
+  - r-reticulate
+  - r-scales
+  run:
+  - bioconductor-basilisk >=1.22.0,<1.23.0
+  - bioconductor-spatialexperiment >=1.20.0,<1.21.0
+  - bioconductor-summarizedexperiment >=1.40.0,<1.41.0
+  - r-base
+  - r-checkmate
+  - r-ggplot2
+  - r-ggrepel
+  - r-gridextra
+  - r-matrix
+  - r-reticulate
+  - r-scales
+source:
+  md5: 242079d1326e3005997eda8e3d56bc23
+  url:
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/spatialDE_1.16.0.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/spatialDE/spatialDE_1.16.0.tar.gz
+  - https://bioarchive.galaxyproject.org/spatialDE_1.16.0.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-spatialde/bioconductor-spatialde_1.16.0_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('spatialDE')"

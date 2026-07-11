@@ -1,0 +1,49 @@
+about:
+  description: The package DAPAR is a Bioconductor distributed R package which provides
+    all the necessary functions to analyze quantitative data from label-free proteomics
+    experiments. Contrarily to most other similar R packages, it is endowed with rich
+    and user-friendly graphical interfaces, so that no programming skill is required
+    (see `Prostar` package).
+  home: https://bioconductor.org/packages/3.22/bioc/html/DAPAR.html
+  license: Artistic-2.0
+  summary: Tools for the Differential Analysis of Proteins Abundance with R
+build:
+  noarch: generic
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+extra:
+  parent_recipe:
+    name: bioconductor-dapar
+    path: recipes/bioconductor-dapar
+    version: 1.14.2
+package:
+  name: bioconductor-dapar
+  version: 1.42.0
+requirements:
+  host:
+  - bioconductor-biobase >=2.70.0,<2.71.0
+  - bioconductor-dapardata >=1.40.0,<1.41.0
+  - bioconductor-msnbase >=2.36.0,<2.37.0
+  - r-base
+  - r-foreach
+  - r-highcharter
+  run:
+  - bioconductor-biobase >=2.70.0,<2.71.0
+  - bioconductor-dapardata >=1.40.0,<1.41.0
+  - bioconductor-msnbase >=2.36.0,<2.37.0
+  - r-base
+  - r-foreach
+  - r-highcharter
+source:
+  md5: 4c09d09c280db2edce905df99247bc3f
+  url:
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/DAPAR_1.42.0.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/DAPAR/DAPAR_1.42.0.tar.gz
+  - https://bioarchive.galaxyproject.org/DAPAR_1.42.0.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-dapar/bioconductor-dapar_1.42.0_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('DAPAR')"

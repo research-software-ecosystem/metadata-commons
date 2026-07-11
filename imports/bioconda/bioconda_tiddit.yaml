@@ -1,0 +1,47 @@
+about:
+  dev_url: https://github.com/SciLifeLab/TIDDIT
+  doc_url: https://github.com/SciLifeLab/TIDDIT/blob/TIDDIT-3.9.5/README.md
+  home: https://github.com/SciLifeLab/TIDDIT
+  license: GPL-3.0-only
+  license_family: GPL3
+  license_file: LICENSE
+  summary: TIDDIT - structural variant calling.
+build:
+  entry_points:
+  - tiddit = tiddit.__main__:main
+  number: 0
+  run_exports:
+  - null
+  script: -m pip install --no-deps --no-build-isolation --no-cache-dir --use-pep517
+    . -vvv
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+package:
+  name: tiddit
+  version: 3.9.5
+requirements:
+  build:
+  - null
+  host:
+  - python
+  - cython
+  - setuptools
+  - numpy
+  - pip
+  - pysam
+  run:
+  - python
+  - numpy
+  - pysam
+  - fermi2
+  - bwa
+  - ropebwt2
+  - joblib
+source:
+  sha256: 8d7d20d36606da82115334c1d444c7c305cae965c75f471dbaf1b61c570c5a3a
+  url: https://github.com/SciLifeLab/TIDDIT/archive/TIDDIT-3.9.5.tar.gz
+test:
+  commands:
+  - tiddit --help

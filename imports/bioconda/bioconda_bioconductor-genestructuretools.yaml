@@ -1,0 +1,54 @@
+about:
+  description: GeneStructureTools can be used to create in silico alternative splicing
+    events, and analyse potential effects this has on functional gene products.
+  home: https://bioconductor.org/packages/3.22/bioc/html/GeneStructureTools.html
+  license: BSD_3_clause + file LICENSE
+  license_file: LICENSE
+  summary: Tools for spliced gene structure manipulation and analysis
+build:
+  noarch: generic
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+package:
+  name: bioconductor-genestructuretools
+  version: 1.30.0
+requirements:
+  host:
+  - bioconductor-biostrings >=2.78.0,<2.79.0
+  - bioconductor-bsgenome.mmusculus.ucsc.mm10 >=1.4.0,<1.5.0
+  - bioconductor-genomicranges >=1.62.0,<1.63.0
+  - bioconductor-gviz >=1.54.0,<1.55.0
+  - bioconductor-iranges >=2.44.0,<2.45.0
+  - bioconductor-rtracklayer >=1.70.0,<1.71.0
+  - bioconductor-s4vectors >=0.48.0,<0.49.0
+  - r-base
+  - r-data.table
+  - r-plyr
+  - r-stringdist
+  - r-stringr
+  run:
+  - bioconductor-biostrings >=2.78.0,<2.79.0
+  - bioconductor-bsgenome.mmusculus.ucsc.mm10 >=1.4.0,<1.5.0
+  - bioconductor-genomicranges >=1.62.0,<1.63.0
+  - bioconductor-gviz >=1.54.0,<1.55.0
+  - bioconductor-iranges >=2.44.0,<2.45.0
+  - bioconductor-rtracklayer >=1.70.0,<1.71.0
+  - bioconductor-s4vectors >=0.48.0,<0.49.0
+  - r-base
+  - r-data.table
+  - r-plyr
+  - r-stringdist
+  - r-stringr
+source:
+  md5: 59c627ac7e89bf1dcdd975dafc7be89f
+  url:
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/GeneStructureTools_1.30.0.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/GeneStructureTools/GeneStructureTools_1.30.0.tar.gz
+  - https://bioarchive.galaxyproject.org/GeneStructureTools_1.30.0.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-genestructuretools/bioconductor-genestructuretools_1.30.0_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('GeneStructureTools')"

@@ -1,0 +1,53 @@
+about:
+  description: The crisprVerse is a modular ecosystem of R packages developed for
+    the design and manipulation of CRISPR guide RNAs (gRNAs). All packages share a
+    common language and design principles. This package is designed to make it easy
+    to install and load the crisprVerse packages in a single step. To learn more about
+    the crisprVerse, visit <https://www.github.com/crisprVerse>.
+  home: https://bioconductor.org/packages/3.22/bioc/html/crisprVerse.html
+  license: MIT + file LICENSE
+  license_file: LICENSE
+  summary: Easily install and load the crisprVerse ecosystem for CRISPR gRNA design
+build:
+  noarch: generic
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+package:
+  name: bioconductor-crisprverse
+  version: 1.12.0
+requirements:
+  host:
+  - bioconductor-crisprbase >=1.14.0,<1.15.0
+  - bioconductor-crisprbowtie >=1.14.0,<1.15.0
+  - bioconductor-crisprdesign >=1.12.0,<1.13.0
+  - bioconductor-crisprscore >=1.14.0,<1.15.0
+  - bioconductor-crisprscoredata >=1.14.0,<1.15.0
+  - bioconductor-crisprviz >=1.12.0,<1.13.0
+  - r-base
+  - r-biocmanager
+  - r-cli
+  - r-rlang
+  run:
+  - bioconductor-crisprbase >=1.14.0,<1.15.0
+  - bioconductor-crisprbowtie >=1.14.0,<1.15.0
+  - bioconductor-crisprdesign >=1.12.0,<1.13.0
+  - bioconductor-crisprscore >=1.14.0,<1.15.0
+  - bioconductor-crisprscoredata >=1.14.0,<1.15.0
+  - bioconductor-crisprviz >=1.12.0,<1.13.0
+  - r-base
+  - r-biocmanager
+  - r-cli
+  - r-rlang
+source:
+  md5: 9da03607c340091c27c1b6511e2d3e57
+  url:
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/crisprVerse_1.12.0.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/crisprVerse/crisprVerse_1.12.0.tar.gz
+  - https://bioarchive.galaxyproject.org/crisprVerse_1.12.0.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-crisprverse/bioconductor-crisprverse_1.12.0_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('crisprVerse')"

@@ -1,0 +1,36 @@
+about:
+  dev_url: https://github.com/sequana/versionix
+  home: https://github.com/sequana/versionix
+  license: BSD-3-Clause
+  license_family: BSD
+  license_file: LICENSE
+  summary: Get version of any tools.
+build:
+  entry_points:
+  - versionix = versionix.scripts:main
+  noarch: python
+  number: 0
+  run_exports:
+  - null
+  script: -m pip install . -vvv --no-deps --no-build-isolation --no-cache-dir
+package:
+  name: versionix
+  version: 0.99.5
+requirements:
+  host:
+  - python >=3.8
+  - pip
+  - poetry-core >=1.0.0
+  run:
+  - python >=3.8
+  - click >=8.1.7
+  - rich-click
+  - colorlog
+source:
+  sha256: 14413939afd1ce19c903ab16ad581144d4a0ab75aaad16100b47cb4e709d9361
+  url: https://pypi.io/packages/source/v/versionix/versionix-0.99.5.tar.gz
+test:
+  commands:
+  - versionix --help
+  imports:
+  - versionix

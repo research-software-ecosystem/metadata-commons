@@ -1,0 +1,41 @@
+about:
+  home: https://www.cog-genomics.org/plink/
+  license: GPL
+  license_file: LICENSE
+  summary: Whole genome association analysis toolset, designed to perform a range
+    of basic, large-scale analyses in a computationally efficient manner.
+build:
+  number: 1
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+package:
+  name: plink
+  version: 1.90b7.7
+requirements:
+  build:
+  - null
+  - null
+  - make
+  host:
+  - openblas
+  - zlib
+  - git
+  - tar
+  - wget
+  run:
+  - libopenblas
+source:
+  patches:
+  - signed_int64_osx.patch
+  - makefile.patch [osx]
+  - socks.patch [osx]
+  - cxx_linking.patch [osx]
+  sha256: a8c9577cfeeec0a624288999d1eed4148880c781eb85a42b720b8f8868afc141
+  url: https://www.cog-genomics.org/static/bin/plink/plink_src.zip
+test:
+  commands:
+  - plink --help

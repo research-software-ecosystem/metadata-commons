@@ -1,0 +1,25 @@
+about:
+  home: https://github.com/PacificBiosciences/HiPhase
+  license: BSD-3-Clause-Clear
+  summary: Small and structural variant phasing tool for PacBio HiFi reads
+build:
+  number: 0
+  run_exports:
+  - null
+  skip: true
+extra:
+  recipe-maintainers:
+  - holtjma
+  - ctsa
+  skip-lints:
+  - should_use_compilers
+  - should_be_noarch_generic
+package:
+  name: hiphase
+  version: 1.7.0
+source:
+  sha256: 01bc4c0ef1fda876578a9cd01adddca55a9b1402b40a839690722011b5babfc5
+  url: https://github.com/PacificBiosciences/HiPhase/releases/download/v1.7.0/hiphase-v1.7.0-x86_64-unknown-linux-gnu.tar.gz
+test:
+  commands:
+  - hiphase --version

@@ -1,0 +1,29 @@
+about:
+  home: https://github.com/apcamargo/taxopy
+  license: GNU General Public License v3.0
+  license_family: GPL
+  license_file: LICENSE
+  summary: A Python package for obtaining complete lineages and the lowest common
+    ancestor (LCA) from a set of taxonomic identifiers.
+build:
+  noarch: python
+  number: 0
+  run_exports:
+  - null
+  script: -m pip install . -vv --no-deps --no-build-isolation
+package:
+  name: taxopy
+  version: 0.14.0
+requirements:
+  host:
+  - pip
+  - python >=3.5
+  - flit-core >=3.2,<4
+  run:
+  - python >=3.5
+source:
+  sha256: c39c4c4330b322f2e0505de45c2980a53eb945f8129fc679dd655a093042dbe6
+  url: https://pypi.io/packages/source/t/taxopy/taxopy-0.14.0.tar.gz
+test:
+  imports:
+  - taxopy

@@ -1,0 +1,64 @@
+about:
+  description: 'SBGNview is a tool set for pathway based data visalization, integration
+    and analysis. SBGNview is similar and complementary to the widely used Pathview,
+    with the following key features: 1. Pathway definition by the widely adopted Systems
+    Biology Graphical Notation (SBGN); 2. Supports multiple major pathway databases
+    beyond KEGG (Reactome, MetaCyc, SMPDB, PANTHER, METACROP) and user defined pathways;
+    3. Covers 5,200 reference pathways and over 3,000 species by default; 4. Extensive
+    graphics controls, including glyph and edge attributes, graph layout and sub-pathway
+    highlight; 5. SBGN pathway data manipulation, processing, extraction and analysis.'
+  home: https://bioconductor.org/packages/3.22/bioc/html/SBGNview.html
+  license: AGPL-3
+  license_file: /lib/R/share/licenses/AGPL-3
+  summary: '"SBGNview: Data Analysis, Integration and Visualization on SBGN Pathways"'
+build:
+  noarch: generic
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+package:
+  name: bioconductor-sbgnview
+  version: 1.24.0
+requirements:
+  host:
+  - bioconductor-annotationdbi >=1.72.0,<1.73.0
+  - bioconductor-keggrest >=1.50.0,<1.51.0
+  - bioconductor-pathview >=1.50.0,<1.51.0
+  - bioconductor-sbgnview.data >=1.24.0,<1.25.0
+  - bioconductor-summarizedexperiment >=1.40.0,<1.41.0
+  - r-base
+  - r-bookdown
+  - r-httr
+  - r-igraph
+  - r-knitr
+  - r-rdpack
+  - r-rmarkdown
+  - r-rsvg
+  - r-xml2
+  run:
+  - bioconductor-annotationdbi >=1.72.0,<1.73.0
+  - bioconductor-keggrest >=1.50.0,<1.51.0
+  - bioconductor-pathview >=1.50.0,<1.51.0
+  - bioconductor-sbgnview.data >=1.24.0,<1.25.0
+  - bioconductor-summarizedexperiment >=1.40.0,<1.41.0
+  - r-base
+  - r-bookdown
+  - r-httr
+  - r-igraph
+  - r-knitr
+  - r-rdpack
+  - r-rmarkdown
+  - r-rsvg
+  - r-xml2
+source:
+  md5: d89a0860d0e35464ecfe9160cfc00cc4
+  url:
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/SBGNview_1.24.0.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/SBGNview/SBGNview_1.24.0.tar.gz
+  - https://bioarchive.galaxyproject.org/SBGNview_1.24.0.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-sbgnview/bioconductor-sbgnview_1.24.0_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('SBGNview')"

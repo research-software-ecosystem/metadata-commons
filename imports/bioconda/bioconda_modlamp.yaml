@@ -1,0 +1,39 @@
+about:
+  doc_url: https://modlamp.org/index.html
+  home: http://modlamp.org
+  license: BSD
+  license_family: BSD
+  summary: python package for in silico peptide design and QSAR studies
+build:
+  noarch: python
+  number: 0
+  run_exports:
+  - null
+  script: ' -m pip install . --no-deps --ignore-installed -vv '
+extra:
+  recipe-maintainers:
+  - jaidevjoshi83
+package:
+  name: modlamp
+  version: 4.3.2
+requirements:
+  host:
+  - pip
+  - python
+  run:
+  - lxml >=3.6.4
+  - matplotlib-base >=1.5.1
+  - numpy >=1.10.4
+  - pandas >=0.18.1
+  - python
+  - requests >=2.11.1
+  - scikit-learn >=0.18.0
+  - scipy >=0.17.0
+  - joblib >=0.15.1
+  - mysql-connector-python >=2.2.9
+source:
+  sha256: cc36c29ef154a1d3b454dd452206d0261489118ec612cf4747bf0c9d0289bedd
+  url: https://pypi.io/packages/source/m/modlamp/modlamp-4.3.2.tar.gz
+test:
+  imports:
+  - modlamp

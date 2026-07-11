@@ -1,0 +1,38 @@
+about:
+  dev_url: https://github.com/moold/fastMD5
+  doc_url: https://github.com/moold/fastMD5/blob/main/README.md
+  home: https://github.com/moold/fastMD5
+  license: MIT
+  license_file: LICENSE
+  summary: Fast command-line tool to compute and verify MD5 checksums
+build:
+  number: 0
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+  recipe-maintainers:
+  - moold
+package:
+  name: fastmd5
+  version: 1.2.0
+requirements:
+  build:
+  - null
+  - null
+  - null
+  - null
+  - cargo-bundle-licenses
+  - pkg-config
+  - make
+  - cmake
+  - clangdev
+  - llvmlite
+source:
+  sha256: f500b087685365632650d3ddc9ff451355ac476603d1558129cbb0118be3cf74
+  url: https://github.com/moold/fastMD5/archive/refs/tags/v1.2.0.tar.gz
+test:
+  commands:
+  - fastmd5 --help

@@ -1,0 +1,38 @@
+about:
+  dev_url: https://github.com/algbio/ggcat
+  doc_url: https://github.com/algbio/ggcat/blob/v2.2.0/README.md
+  home: https://github.com/algbio/ggcat
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE
+  summary: Compacted and colored de Bruijn graph construction and querying.
+build:
+  number: 0
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+  identifiers:
+  - doi:10.1101/gr.277615.122
+  recipe-maintainers:
+  - guilucand
+package:
+  name: ggcat
+  version: 2.2.0
+requirements:
+  build:
+  - null
+  - null
+  - null
+  - cargo-bundle-licenses
+  - pkg-config
+  host:
+  - zlib
+source:
+  sha256: 4432dacfbab4817f410ebbc74ccea576c3291fdc4e764b2769d81b3fe1929b2e
+  url: https://github.com/algbio/ggcat/archive/refs/tags/v2.2.0.tar.gz
+test:
+  commands:
+  - ggcat --help

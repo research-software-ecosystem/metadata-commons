@@ -1,0 +1,63 @@
+about:
+  description: Identifies differentially abundant populations between samples and
+    groups in mass cytometry data. Provides methods for counting cells into hyperspheres,
+    controlling the spatial false discovery rate, and visualizing changes in abundance
+    in the high-dimensional marker space.
+  home: https://bioconductor.org/packages/3.22/bioc/html/cydar.html
+  license: GPL-3
+  license_file: /lib/R/share/licenses/GPL-3
+  summary: Using Mass Cytometry for Differential Abundance Analyses
+build:
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+package:
+  name: bioconductor-cydar
+  version: 1.34.0
+requirements:
+  build:
+  - null
+  - null
+  - make
+  host:
+  - bioconductor-biobase >=2.70.0,<2.71.0
+  - bioconductor-biocgenerics >=0.56.0,<0.57.0
+  - bioconductor-biocneighbors >=2.4.0,<2.5.0
+  - bioconductor-biocparallel >=1.44.0,<1.45.0
+  - bioconductor-flowcore >=2.22.0,<2.23.0
+  - bioconductor-s4vectors >=0.48.0,<0.49.0
+  - bioconductor-singlecellexperiment >=1.32.0,<1.33.0
+  - bioconductor-summarizedexperiment >=1.40.0,<1.41.0
+  - r-base
+  - r-rcpp
+  - r-shiny
+  - r-viridis
+  - libblas
+  - liblapack
+  - zlib
+  - liblzma-devel
+  run:
+  - bioconductor-biobase >=2.70.0,<2.71.0
+  - bioconductor-biocgenerics >=0.56.0,<0.57.0
+  - bioconductor-biocneighbors >=2.4.0,<2.5.0
+  - bioconductor-biocparallel >=1.44.0,<1.45.0
+  - bioconductor-flowcore >=2.22.0,<2.23.0
+  - bioconductor-s4vectors >=0.48.0,<0.49.0
+  - bioconductor-singlecellexperiment >=1.32.0,<1.33.0
+  - bioconductor-summarizedexperiment >=1.40.0,<1.41.0
+  - r-base
+  - r-rcpp
+  - r-shiny
+  - r-viridis
+source:
+  md5: 46926f487f43ce4e8a3136097d783ee6
+  url:
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/cydar_1.34.0.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/cydar/cydar_1.34.0.tar.gz
+  - https://bioarchive.galaxyproject.org/cydar_1.34.0.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-cydar/bioconductor-cydar_1.34.0_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('cydar')"

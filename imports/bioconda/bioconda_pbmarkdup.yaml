@@ -1,0 +1,25 @@
+about:
+  home: https://github.com/PacificBiosciences/pbbioconda
+  license: BSD-3-Clause-Clear
+  summary: pbmarkdup - Mark duplicate reads from PacBio sequencing of an amplified
+    library
+build:
+  number: 0
+  run_exports:
+  - null
+  skip: true
+extra:
+  recipe-maintainers:
+  - armintoepfer
+  - pb-dseifert
+  skip-lints:
+  - should_be_noarch_generic
+package:
+  name: pbmarkdup
+  version: 1.2.0
+source:
+  sha256: 01ae800781a4a4bf914b477a6415441b0d601edd204e3b41933cd29b4af8fe48
+  url: https://github.com/PacificBiosciences/pbmarkdup/releases/download/v1.2.0/pbmarkdup
+test:
+  commands:
+  - pbmarkdup -h

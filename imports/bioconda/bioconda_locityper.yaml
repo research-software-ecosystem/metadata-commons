@@ -1,0 +1,52 @@
+about:
+  dev_url: https://github.com/tprodanov/locityper
+  doc_url: https://locityper.vercel.app
+  home: https://github.com/tprodanov/locityper
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE
+  summary: Targeted genotyper for complex polymorphic loci from short and long read
+    WGS.
+build:
+  number: 0
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+  skip-lints:
+  - compiler_needs_stdlib_c
+package:
+  name: locityper
+  version: 1.6.1
+requirements:
+  build:
+  - null
+  - null
+  - cmake
+  - make
+  - pkg-config
+  - clang =21
+  - clangxx =21
+  host:
+  - clangdev =21
+  - clangdev
+  - pkg-config
+  - libgomp
+  - llvm-openmp
+  run:
+  - python
+  - libgomp
+  - llvm-openmp
+  - samtools >=1.19
+  - kmer-jellyfish >=1.0
+  - minimap2 >=2.26
+  - strobealign >=0.17
+  - pysam
+source:
+  sha256: 1fd68c839b227708f67db1f0ee980ef5ddcd5334884dcaffe13ad2aa496b23bb
+  url: https://github.com/tprodanov/locityper/archive/refs/tags/v1.6.1.tar.gz
+test:
+  commands:
+  - locityper version

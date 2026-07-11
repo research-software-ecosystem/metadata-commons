@@ -1,0 +1,51 @@
+about:
+  home: https://github.com/COMBINE-lab/piscem
+  license: BSD 3-Clause
+  license_file: LICENSE
+  summary: piscem is a next-generation compacted colored de Bruijn Graph-based indexer
+    and mapper
+build:
+  number: 0
+  run_exports:
+  - null
+  script_env:
+  - CFLAGS=-I$PREFIX/include
+  - CXXFLAGS=-I$PREFIX/include
+  - LDFLAGS=-L$PREFIX/lib
+  skip: true
+channels:
+- conda-forge
+- bioconda
+- defaults
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+  skip-lints:
+  - compiler_needs_stdlib_c
+package:
+  name: piscem
+  version: 0.20.0
+requirements:
+  build:
+  - cmake <4.0.0
+  - autoconf
+  - make
+  - bzip2
+  - jemalloc >=5.2.1
+  - null
+  - null
+  - pkg-config
+  - curl
+  host:
+  - bzip2
+  - jemalloc >=5.2.1
+  - tapi
+  run:
+  - __osx >=10.9
+source:
+  sha256: fa9d0edb6b1a75cb4b4bbf34e5bbbf48c5030018f3c4ea031afc09f30236f644
+  url: https://github.com/COMBINE-lab/piscem/releases/download/v0.20.0/source-full.tar.gz
+test:
+  commands:
+  - piscem --help

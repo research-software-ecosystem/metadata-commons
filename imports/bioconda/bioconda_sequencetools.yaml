@@ -1,0 +1,38 @@
+about:
+  home: https://github.com/stschiff/sequenceTools
+  license: MIT
+  summary: A tool (pileupCaller) for processing ancient DNA sequencing data
+build:
+  number: 0
+  run_exports:
+  - null
+  script:
+  - mkdir -p $PREFIX/bin
+  - mv pileupCaller* $PREFIX/bin/pileupCaller
+  - chmod u+x $PREFIX/bin/pileupCaller
+extra:
+  additional-platforms:
+  - osx-arm64
+package:
+  name: sequencetools
+  version: 1.6.0.0
+requirements:
+  build:
+  - null
+  host:
+  - zlib
+  - gmp
+  run:
+  - zlib
+  - gmp
+  - samtools
+source:
+- md5: eb69dd3172c0ca800a2043ed23adf251
+  url: https://github.com/stschiff/sequenceTools/releases/download/v1.6.0.0/pileupCaller-conda-linux
+- md5: 2eab8ff64a2ac624a2dc201ed139755f
+  url: https://github.com/stschiff/sequenceTools/releases/download/v1.6.0.0/pileupCaller-macOS-X64
+- md5: d4d9617e35eabb1c71fe5a01d5c9f4d7
+  url: https://github.com/stschiff/sequenceTools/releases/download/v1.6.0.0/pileupCaller-macOS-ARM64
+test:
+  commands:
+  - pileupCaller --version

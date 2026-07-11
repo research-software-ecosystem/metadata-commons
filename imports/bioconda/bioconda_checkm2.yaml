@@ -1,0 +1,46 @@
+about:
+  dev_url: https://github.com/chklovski/CheckM2
+  home: https://github.com/chklovski/CheckM2
+  license: GPL-3.0-only
+  license_family: GPL
+  license_file: LICENSE
+  summary: Assessing the quality of metagenome-derived genome bins using machine learning.
+build:
+  noarch: python
+  number: 1
+  run_exports:
+  - null
+  script: -m pip install . -vv
+extra:
+  notes: CheckM2 requries the DIAMOND database that can be downloaded with `checkm2
+    database --download`.
+  recipe-maintainers:
+  - chklovski
+package:
+  name: checkm2
+  version: 1.1.0
+requirements:
+  host:
+  - python
+  - pip
+  - setuptools
+  run:
+  - python >3.12
+  - scikit-learn =1.6.1
+  - numpy
+  - diamond =2.1.11
+  - tensorflow =2.17
+  - lightgbm
+  - pandas
+  - scipy
+  - prodigal >=2.6.3
+  - requests
+  - packaging
+  - tqdm
+  - keras
+source:
+  sha256: 7978e4ca08ae8ea3285931b955d1a4818684f9f955995837e98e6ab7ff90674f
+  url: https://github.com/chklovski/CheckM2/archive/1.1.0.tar.gz
+test:
+  commands:
+  - checkm2 --help

@@ -1,0 +1,38 @@
+about:
+  dev_url: https://github.com/dellytools/sansa
+  doc_url: https://github.com/dellytools/sansa/blob/v0.2.5/README.md
+  home: https://github.com/dellytools/sansa
+  license: BSD-3-Clause
+  license_family: BSD
+  license_file: LICENSE
+  summary: Structural variant annotation
+build:
+  number: 0
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+package:
+  name: sansa
+  version: 0.2.5
+requirements:
+  build:
+  - make
+  - null
+  host:
+  - zlib
+  - bzip2
+  - libdeflate
+  - boost-cpp
+  - htslib
+  run:
+  - boost-cpp
+  - htslib
+source:
+  sha256: 0d6ebdab765f432e02f86fe83452eb682f885065afec0f27ea71e54dbea7ddd8
+  url: https://github.com/dellytools/sansa/archive/v0.2.5.tar.gz
+test:
+  commands:
+  - sansa --help

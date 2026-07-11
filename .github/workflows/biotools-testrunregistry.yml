@@ -1,0 +1,103 @@
+name: launch a test bio.tools server and perform import tests
+
+on:
+  workflow_dispatch:
+
+jobs:
+
+  runbiotools:
+    runs-on: ubuntu-latest
+    steps:
+    - name: checkout contents registry
+      #if: github.actor == github.event.repository.owner.login
+      uses: actions/checkout@v4
+      with:
+        path: content
+    - uses: actions/checkout@v4
+      with:
+        repository: bio-tools/content-ecosystem-utils
+        path: content-ecosystem-utils
+    - name: checkout bio.tools registry
+      uses: actions/checkout@v4
+      with:
+        # Repository name with owner. For example, actions/checkout
+        # Default: ${{ github.repository }}
+        repository: 'bio-tools/biotoolsRegistry'
+        path: biotoolsRegistry
+    - name: Shutdown Ubuntu MySQL (SUDO)
+      run: sudo service mysql stop # Shutdown the Default MySQL, "sudo" is necessary, please not remove it
+    - name: Add dummy email backend to django settings
+      working-directory: biotoolsRegistry
+      run: |
+        echo "\nEMAIL_BACKEND = 'django.core.mail.backends.dummy.EmailBackend'" >> backend/elixirapp/settings.py
+    - name: build docker containers for bio.tools registry
+      working-directory: biotoolsRegistry
+      run: |
+        docker-compose build
+    - name: start docker containers for bio.tools registry
+      working-directory: biotoolsRegistry
+      run: |
+        docker-compose up -d
+    - name: copy wait for mysql script
+      working-directory: content-ecosystem-utils
+      run: |
+        docker cp scripts/runbiotools/wait_mysql.sh biotools-mysql:/root
+    - name: chmod to executable wait for mysql script
+      run: |
+        docker exec biotools-mysql chmod +x /root/wait_mysql.sh
+    - name: execute wait for mysql script
+      run: |
+        docker exec biotools-mysql /root/wait_mysql.sh
+    - name: test that bio.tools registry is up and running
+      run: |
+        wget --spider http://localhost:8000
+    - name: list running containers
+      run: |
+        docker ps -a
+    - name: test that bio.tools registry database is up and running through the HTTP API...
+      run: |
+        wget --spider http://localhost:8000/api/t || :
+#     - name: copy database init SQL
+#       working-directory: biotoolsRegistry
+#       run: |
+#         docker cp initial_db.sql biotools-mysql:/root
+    #- name: copy "modified" database init script
+    #  working-directory: content
+    #  run: |
+    #      docker cp scripts/runbiotools/load_initial_db.sh biotools-mysql:/root
+#     - name: load DB with initial data
+#       working-directory: biotoolsRegistry
+#       run: |
+#         docker exec biotools-mysql mysql -h mysql -P 3306 --protocol tcp --user=elixir --password=123 elixir < initial_db.sql
+    - name: create and run django migrations
+      run: |
+        docker exec biotools-backend python manage.py makemigrations
+        docker exec biotools-backend python manage.py migrate
+    - name: update EDAM
+      run: |
+        docker exec biotools-backend bash /elixir/application/backend/data/edam/update_edam.sh
+    - name: purge and reload elasticsearch
+      run: |
+        docker exec biotools-backend python manage.py es_purge
+        docker exec biotools-backend python manage.py es_regenerate
+    - name: test that bio.tools registry is up and running
+      run: |
+        wget --spider http://localhost:8000
+    - name: copy createsuperuser script
+      working-directory: content-ecosystem-utils
+      run: |
+        docker cp scripts/runbiotools/createsuperuser.sh biotools-backend:/root
+    - name: chmod to executable createsuperuser script
+      run: |
+        docker exec biotools-backend chmod +x /root/createsuperuser.sh
+    - name: run createsuperuser script
+      run: |
+        docker exec biotools-backend /root/createsuperuser.sh
+    - name: Install dependencies
+      working-directory: content-ecosystem-utils
+      run: |
+        pip3 install -r scripts/runbiotools/requirements.txt
+    - name: upload tools
+      working-directory: content-ecosystem-utils
+      run: |
+        python3 scripts/runbiotools/tools_upload.py uploadbot botbotbot

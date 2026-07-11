@@ -1,0 +1,1740 @@
+{
+  "@context": {
+    "biotools": "https://bio.tools/ontology/",
+    "brick": "https://brickschema.org/schema/Brick#",
+    "bsc": "http://bioschemas.org/",
+    "bsct": "http://bioschemas.org/types/",
+    "csvw": "http://www.w3.org/ns/csvw#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "dcam": "http://purl.org/dc/dcam/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dcmitype": "http://purl.org/dc/dcmitype/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "doap": "http://usefulinc.com/ns/doap#",
+    "edam": "http://edamontology.org/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "geo": "http://www.opengis.net/ont/geosparql#",
+    "odrl": "http://www.w3.org/ns/odrl/2/",
+    "org": "http://www.w3.org/ns/org#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "prof": "http://www.w3.org/ns/dx/prof/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "qb": "http://purl.org/linked-data/cube#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "sc": "http://schema.org/",
+    "schema": "https://schema.org/",
+    "sh": "http://www.w3.org/ns/shacl#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "sosa": "http://www.w3.org/ns/sosa/",
+    "ssn": "http://www.w3.org/ns/ssn/",
+    "time": "http://www.w3.org/2006/time#",
+    "vann": "http://purl.org/vocab/vann/",
+    "void": "http://rdfs.org/ns/void#",
+    "wgs": "https://www.w3.org/2003/01/geo/wgs84_pos#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "https://doi.org/10.1093/nar/gkaa235",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://bio.tools/proteinsplus",
+      "@type": "sc:SoftwareApplication",
+      "biotools:primaryContact": "ProteinsPlus Support",
+      "bsc:input": [
+        {
+          "@id": "_:N43efa35710f7442388c7f55d06068e05"
+        },
+        {
+          "@id": "_:N8dcd051c0be94f51810c60b9fc22658c"
+        },
+        {
+          "@id": "_:Ne8dc59ea949a4e6197e499ea5fe2e25e"
+        },
+        {
+          "@id": "_:Nbeacf14c628849e28b3f81ca249fe970"
+        },
+        {
+          "@id": "_:N5bbc01e179ad418aad6e56924d7a2f2a"
+        },
+        {
+          "@id": "_:Na3818b5d4f65443f9ef43d836f1d7212"
+        },
+        {
+          "@id": "_:Ne6e7e4a1d5344a2bb3ff26737df29624"
+        },
+        {
+          "@id": "_:N6e7ff57b7dac4a0f88b48f46dd4f2df4"
+        },
+        {
+          "@id": "_:Nedeb330d279d48179b0a2c3513f38819"
+        },
+        {
+          "@id": "_:Nfae9c0ad7c784c658801a3a16fbd9384"
+        },
+        {
+          "@id": "_:Nbfed8e99f30245989199ee0951194f6a"
+        },
+        {
+          "@id": "_:N5e646e79eaca47dfb44d3e6334ca708d"
+        },
+        {
+          "@id": "_:Nbfd3498774cf4b86b116bb2514e231e2"
+        },
+        {
+          "@id": "_:N4332a581e36c44f2be56919a8c360c8c"
+        },
+        {
+          "@id": "_:N62bc458269a4479e8c31304f51501730"
+        },
+        {
+          "@id": "_:N13503c0b5fcd4933be92722e8fbd56d9"
+        },
+        {
+          "@id": "_:N80e120002f5948569c7686c6510fbf20"
+        },
+        {
+          "@id": "_:N05732758412741b7bf31afa0f63a9218"
+        },
+        {
+          "@id": "_:N554e2bd2b8db44139ca2706ac5eb4733"
+        },
+        {
+          "@id": "_:Nd0d6096aca2d4a14a10fa1bb83ce303f"
+        },
+        {
+          "@id": "_:Ne011851e9f4f42f29d7331ef032cae23"
+        },
+        {
+          "@id": "_:N85af41cae5ef48d9af9f2f321dab002b"
+        },
+        {
+          "@id": "_:N27aecf59dafd4183878a4a528d54c356"
+        },
+        {
+          "@id": "_:N885688da46824c2ea1e441a0af46d25b"
+        },
+        {
+          "@id": "_:Nb5e421de8c3a446c9e26939b677994bc"
+        },
+        {
+          "@id": "_:N1d369ca4a4e14ffebe7d3ba391f1cf38"
+        },
+        {
+          "@id": "_:Ndc62ae0499134aba9bce2d3e7b2466a7"
+        },
+        {
+          "@id": "_:Nba1084faf93c48b3b514d1e02c843da6"
+        },
+        {
+          "@id": "_:Nc611fe88a6a74eabb732732767663209"
+        },
+        {
+          "@id": "_:N111f5e80ff354dd296ed6251b99c3271"
+        },
+        {
+          "@id": "_:Na5ddf53bc4f64099959209f59cfcce92"
+        },
+        {
+          "@id": "_:Nd33e1cb18bd3471e892ac6cbc64af5c7"
+        },
+        {
+          "@id": "_:N8c1ddc8c6121466587d36e2489cc4fdd"
+        },
+        {
+          "@id": "_:N59c229149a2841708df3973d6d5c8104"
+        },
+        {
+          "@id": "_:Nc0b502036be8455e87bbbc3b8c706e41"
+        },
+        {
+          "@id": "_:Nba3567541d944ba1a2be357900daf38d"
+        },
+        {
+          "@id": "_:N4f1dea22c52c443d93da9acf9bb2ffbf"
+        },
+        {
+          "@id": "_:Nfefc6c6700c947b1a99bf8e070d7034d"
+        },
+        {
+          "@id": "_:Nc7309a2e9d9e4a26a0e937048b1c1d3a"
+        },
+        {
+          "@id": "_:N15414edca39d4537ab897bca134a5a37"
+        },
+        {
+          "@id": "_:Nd23dc1c23fea47cba9cbda4e019b0008"
+        },
+        {
+          "@id": "_:N75bb8d4f9a814a73a533231aa4723452"
+        },
+        {
+          "@id": "_:N307d328d514a424c8656bec22b35bd40"
+        },
+        {
+          "@id": "_:N3a4490e51d83440fa5a222bf66169fa3"
+        },
+        {
+          "@id": "_:Nc18d81f32b244653b21bd573a5db3047"
+        },
+        {
+          "@id": "_:Nafcc193f5ced4ca6b1db49216cdefbaa"
+        },
+        {
+          "@id": "_:N16f29f44f0d04f3ead2690d6cede4e1a"
+        },
+        {
+          "@id": "_:N01079522d6864bb880e5f162c8ba4e31"
+        },
+        {
+          "@id": "_:N14c872fa823d4c7596e2b1d9ad07838f"
+        },
+        {
+          "@id": "_:N2e34c3f9035d46088a2abce48a0d7f4e"
+        }
+      ],
+      "bsc:output": [
+        {
+          "@id": "_:Nf757dcdc464347878b94c486bc7db3cf"
+        },
+        {
+          "@id": "_:N6e956ed70a6141b08bd67450d91c31b0"
+        },
+        {
+          "@id": "_:Nc237ac7d63aa4a518b375330f92ea6d2"
+        },
+        {
+          "@id": "_:Neb501304fe284f82bfabfcd741f8bb93"
+        },
+        {
+          "@id": "_:N271ad7b6db734dd089ba2a72489fc2e1"
+        },
+        {
+          "@id": "_:Nd0612b2dcfc040159a8ccc022bedf9ac"
+        },
+        {
+          "@id": "_:Nb97b9dc493614cadb83b6f3d6904235f"
+        },
+        {
+          "@id": "_:N12b2c65bd83b42b3917458fd55643f01"
+        },
+        {
+          "@id": "_:N369dbc273d664c40a89448c918797c48"
+        },
+        {
+          "@id": "_:Ncd25545a54214318ab83ec5357fe1fc0"
+        },
+        {
+          "@id": "_:N11b259d20b054af894c4920ad21f0eef"
+        },
+        {
+          "@id": "_:Nc6081d4f9131483aa7c6a4b46669fd74"
+        },
+        {
+          "@id": "_:N404b691143db4363b4cd36950319ee17"
+        },
+        {
+          "@id": "_:Nbfab90b78a514e808bda2bc52df89f28"
+        },
+        {
+          "@id": "_:Nd0b012c447db443db78166712a7739ad"
+        },
+        {
+          "@id": "_:N4fe02d35d824406492e3c4dbf7e86de3"
+        },
+        {
+          "@id": "_:Nccf9f06033f641dab891c18e2e66e777"
+        },
+        {
+          "@id": "_:Nfea5e05416644cfc9d9a8cc57e9f2f16"
+        },
+        {
+          "@id": "_:N8c603da15c0f45819a9a477df2c3a532"
+        },
+        {
+          "@id": "_:N6d2cbd08dc2e427ab35cf666d402407c"
+        },
+        {
+          "@id": "_:Neea654d0432e4a9f963a37b8711590fb"
+        },
+        {
+          "@id": "_:Na4af3e43383f4da794912715b4271fff"
+        },
+        {
+          "@id": "_:Nc5c7a4c0a1b34d328298c404ea05e84c"
+        },
+        {
+          "@id": "_:N8cd34f8e818d4563b0dd593a7ef22d93"
+        },
+        {
+          "@id": "_:N577d370cf1ec4dc1aa8cb8765136371b"
+        },
+        {
+          "@id": "_:Nd5d9faa3f68c49e09f1674c12aa0cce6"
+        },
+        {
+          "@id": "_:N74cd7292c28b4ce28707554ad0477b66"
+        },
+        {
+          "@id": "_:N0147641c17e548979a3ba99952e37cf9"
+        },
+        {
+          "@id": "_:Na429f1ac554847f5b61c078bbf6a79f3"
+        },
+        {
+          "@id": "_:N13dd096532aa4435b9196e2e1fa1c690"
+        },
+        {
+          "@id": "_:Nd97fb7bb0ef943179e66a89c517f8ca7"
+        },
+        {
+          "@id": "_:Nda8475b1d4834e38aaf0f4ad50b4a714"
+        },
+        {
+          "@id": "_:N80e827565c684f18841b4bfbd1a913be"
+        },
+        {
+          "@id": "_:N0b7970b854034608a55be6aa1137e6ad"
+        },
+        {
+          "@id": "_:Ne0cc0511185e468c8ffd9e9e1d0fba58"
+        },
+        {
+          "@id": "_:N6eac0913c8df4b78b0b54cd9a733e78d"
+        },
+        {
+          "@id": "_:N1fa13ba40f4d4bb9b0beed4f616fd48e"
+        },
+        {
+          "@id": "_:N34d102998ccd42759616dfef8a0c4e15"
+        },
+        {
+          "@id": "_:Ncab1a20b174d4c28989fe7dbd151550c"
+        },
+        {
+          "@id": "_:Na0e158328c7e40ea847bf1e88668083c"
+        },
+        {
+          "@id": "_:Nce63baef795549e7a8171ca14bc9b1f6"
+        },
+        {
+          "@id": "_:Ne95be2b3148a42d7881181f0e45085e1"
+        },
+        {
+          "@id": "_:Nf60960d6e30846d6bb692ada0b1ee299"
+        },
+        {
+          "@id": "_:Nf32edda93a904b79a55b334813ea3e93"
+        },
+        {
+          "@id": "_:N7ec2ea430e604fd186ca784cd40091e0"
+        },
+        {
+          "@id": "_:Nd008e1a12ef3449f97aee5ffb99c1f97"
+        },
+        {
+          "@id": "_:Nfc16bbd9577740fe99d6f2bde98078dd"
+        },
+        {
+          "@id": "_:N1ee5a2ccbee24ae1bc0232ad94055108"
+        },
+        {
+          "@id": "_:Nf775dd5f9e8e4692917249f2c803232d"
+        },
+        {
+          "@id": "_:Nff1f23a8fe2f4310b515c800c29719f3"
+        },
+        {
+          "@id": "_:Ncdca16e55abe4244bfbbbe8d303bf9b8"
+        },
+        {
+          "@id": "_:Nf55a8637c159470bb653212260745061"
+        },
+        {
+          "@id": "_:Nc684f4f7e4da40d48f07abf6f5eb72f0"
+        },
+        {
+          "@id": "_:Nae56016fecee4210a464eebeb48b9c13"
+        },
+        {
+          "@id": "_:N60f1b9a3bdcf44c6886b13ad8cd82ba7"
+        },
+        {
+          "@id": "_:Neb4e2bb0b518476f87dff7f6c27d85e4"
+        },
+        {
+          "@id": "_:N5ecaaafbedf34f73b554d12c4ed6271b"
+        }
+      ],
+      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "sc:additionalType": [
+        "Web API",
+        "Web service"
+      ],
+      "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_3534"
+        },
+        {
+          "@id": "edam:topic_0081"
+        }
+      ],
+      "sc:citation": [
+        "pubmed:40326518",
+        "pmcid:PMC9252762",
+        "pmcid:PMC12230695",
+        {
+          "@id": "https://doi.org/10.1093/nar/gkx333"
+        },
+        {
+          "@id": "https://doi.org/10.1093/nar/gkaf377"
+        },
+        {
+          "@id": "https://doi.org/10.1093/nar/gkac305"
+        },
+        "pubmed:32297936",
+        {
+          "@id": "https://doi.org/10.1093/nar/gkaa235"
+        },
+        "pubmed:35489057",
+        "pmcid:PMC7319454",
+        "pubmed:28472372",
+        "pmcid:PMC5570178"
+      ],
+      "sc:description": "The ProteinsPlus web server aims to support life scientists in working with protein structures. Protein structures are the key to understanding protein function. They are an important resource in many biotechnological application areas from pharmaceutical research to biocatalysis. ProteinsPlus focuses on protein-ligand interactions. The server provides support for the initial steps of dealing with protein structures, namely structure search, quality assessment, and preprocessing. JAMDA enables users to perform an on-the-fly molecular docking of up to five molecules. The poses can then be visualized in 2D (PoseView, PoseEdit). Furthermore, advanced options, such as protein pocket detection (DoGSite), prediction of water molecule positions (WarPP), protein structure ensemble generation (SIENA), prediction of metal coordination (METALizer), the analysis of solvent channels in protein crystals (LifeSoaks), or the categorization of protein-protein-interfaces (HyPPI) are supported.",
+      "sc:featureList": [
+        {
+          "@id": "edam:operation_0321"
+        },
+        {
+          "@id": "edam:operation_3695"
+        },
+        {
+          "@id": "edam:operation_0394"
+        },
+        {
+          "@id": "edam:operation_3925"
+        },
+        {
+          "@id": "edam:operation_0339"
+        },
+        {
+          "@id": "edam:operation_0384"
+        },
+        {
+          "@id": "edam:operation_0503"
+        },
+        {
+          "@id": "edam:operation_2844"
+        },
+        {
+          "@id": "edam:operation_0509"
+        },
+        {
+          "@id": "edam:operation_1834"
+        },
+        {
+          "@id": "edam:operation_2406"
+        },
+        {
+          "@id": "edam:operation_1844"
+        },
+        {
+          "@id": "edam:operation_2480"
+        },
+        {
+          "@id": "edam:operation_1839"
+        },
+        {
+          "@id": "edam:operation_0570"
+        },
+        {
+          "@id": "edam:operation_2949"
+        },
+        {
+          "@id": "edam:operation_0360"
+        },
+        {
+          "@id": "edam:operation_0248"
+        },
+        {
+          "@id": "edam:operation_0244"
+        },
+        {
+          "@id": "edam:operation_0482"
+        },
+        {
+          "@id": "edam:operation_0477"
+        },
+        {
+          "@id": "edam:operation_0306"
+        },
+        {
+          "@id": "edam:operation_3897"
+        }
+      ],
+      "sc:isAccessibleForFree": true,
+      "sc:license": "Other",
+      "sc:name": "ProteinsPlus",
+      "sc:operatingSystem": [
+        "Mac",
+        "Windows",
+        "Linux"
+      ],
+      "sc:provider": "University of Hamburg, ZBH - Center for Bioinformatics",
+      "sc:softwareHelp": {
+        "@id": "https://proteins.plus/help/index"
+      },
+      "sc:url": "https://proteins.plus"
+    },
+    {
+      "@id": "_:Nf757dcdc464347878b94c486bc7db3cf",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1537"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Protein structure report"
+    },
+    {
+      "@id": "_:N6e956ed70a6141b08bd67450d91c31b0",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1481"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1476"
+      },
+      "sc:name": "Protein structure alignment"
+    },
+    {
+      "@id": "_:Nc237ac7d63aa4a518b375330f92ea6d2",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1712"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3603"
+        },
+        {
+          "@id": "edam:format_3604"
+        },
+        {
+          "@id": "edam:format_3508"
+        }
+      ],
+      "sc:name": "Chemical structure image"
+    },
+    {
+      "@id": "_:Neb501304fe284f82bfabfcd741f8bb93",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1463"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3814"
+      },
+      "sc:name": "Small molecule structure"
+    },
+    {
+      "@id": "_:N271ad7b6db734dd089ba2a72489fc2e1",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2080"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Database search results"
+    },
+    {
+      "@id": "_:Nd0612b2dcfc040159a8ccc022bedf9ac",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1463"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3814"
+      },
+      "sc:name": "Small molecule structure"
+    },
+    {
+      "@id": "_:Nb97b9dc493614cadb83b6f3d6904235f",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1772"
+      },
+      "sc:name": "Score"
+    },
+    {
+      "@id": "_:N12b2c65bd83b42b3917458fd55643f01",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1772"
+      },
+      "sc:name": "Score"
+    },
+    {
+      "@id": "_:N369dbc273d664c40a89448c918797c48",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1277"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Protein features"
+    },
+    {
+      "@id": "_:Ncd25545a54214318ab83ec5357fe1fc0",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1461"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3814"
+        },
+        {
+          "@id": "edam:format_1476"
+        }
+      ],
+      "sc:name": "Protein-ligand complex"
+    },
+    {
+      "@id": "_:N11b259d20b054af894c4920ad21f0eef",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1497"
+      },
+      "sc:name": "Root-mean-square deviation"
+    },
+    {
+      "@id": "_:Nc6081d4f9131483aa7c6a4b46669fd74",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1537"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Protein structure report"
+    },
+    {
+      "@id": "_:N404b691143db4363b4cd36950319ee17",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1497"
+      },
+      "sc:name": "Root-mean-square deviation"
+    },
+    {
+      "@id": "_:Nbfab90b78a514e808bda2bc52df89f28",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1772"
+      },
+      "sc:name": "Score"
+    },
+    {
+      "@id": "_:Nd0b012c447db443db78166712a7739ad",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1537"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Protein structure report"
+    },
+    {
+      "@id": "_:N4fe02d35d824406492e3c4dbf7e86de3",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2080"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Database search results"
+    },
+    {
+      "@id": "_:Nccf9f06033f641dab891c18e2e66e777",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1460"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1476"
+      },
+      "sc:name": "Protein structure"
+    },
+    {
+      "@id": "_:Nfea5e05416644cfc9d9a8cc57e9f2f16",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2019"
+      },
+      "sc:name": "Map data"
+    },
+    {
+      "@id": "_:N8c603da15c0f45819a9a477df2c3a532",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1460"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1476"
+      },
+      "sc:name": "Protein structure"
+    },
+    {
+      "@id": "_:N6d2cbd08dc2e427ab35cf666d402407c",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1772"
+      },
+      "sc:name": "Score"
+    },
+    {
+      "@id": "_:Neea654d0432e4a9f963a37b8711590fb",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1539"
+      },
+      "sc:name": "Protein structural quality report"
+    },
+    {
+      "@id": "_:Na4af3e43383f4da794912715b4271fff",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1460"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1476"
+      },
+      "sc:name": "Protein structure"
+    },
+    {
+      "@id": "_:Nc5c7a4c0a1b34d328298c404ea05e84c",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2019"
+      },
+      "sc:name": "Map data"
+    },
+    {
+      "@id": "_:N8cd34f8e818d4563b0dd593a7ef22d93",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1461"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3814"
+        },
+        {
+          "@id": "edam:format_1476"
+        }
+      ],
+      "sc:name": "Protein-ligand complex"
+    },
+    {
+      "@id": "_:N577d370cf1ec4dc1aa8cb8765136371b",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0906"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Protein interaction data"
+    },
+    {
+      "@id": "_:Nd5d9faa3f68c49e09f1674c12aa0cce6",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1566"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3464"
+        },
+        {
+          "@id": "edam:format_3604"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Protein-ligand interaction report"
+    },
+    {
+      "@id": "_:N74cd7292c28b4ce28707554ad0477b66",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1481"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1476"
+      },
+      "sc:name": "Protein structure alignment"
+    },
+    {
+      "@id": "_:N0147641c17e548979a3ba99952e37cf9",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1772"
+      },
+      "sc:name": "Score"
+    },
+    {
+      "@id": "_:Na429f1ac554847f5b61c078bbf6a79f3",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1497"
+      },
+      "sc:name": "Root-mean-square deviation"
+    },
+    {
+      "@id": "_:N13dd096532aa4435b9196e2e1fa1c690",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1542"
+      },
+      "sc:name": "Protein solvent accessibility"
+    },
+    {
+      "@id": "_:Nd97fb7bb0ef943179e66a89c517f8ca7",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1712"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3464"
+        },
+        {
+          "@id": "edam:format_3604"
+        }
+      ],
+      "sc:name": "Chemical structure image"
+    },
+    {
+      "@id": "_:Nda8475b1d4834e38aaf0f4ad50b4a714",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1481"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1476"
+      },
+      "sc:name": "Protein structure alignment"
+    },
+    {
+      "@id": "_:N80e827565c684f18841b4bfbd1a913be",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1277"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Protein features"
+    },
+    {
+      "@id": "_:N0b7970b854034608a55be6aa1137e6ad",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0906"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Protein interaction data"
+    },
+    {
+      "@id": "_:Ne0cc0511185e468c8ffd9e9e1d0fba58",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1463"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3814"
+      },
+      "sc:name": "Small molecule structure"
+    },
+    {
+      "@id": "_:N6eac0913c8df4b78b0b54cd9a733e78d",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1460"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1476"
+      },
+      "sc:name": "Protein structure"
+    },
+    {
+      "@id": "_:N1fa13ba40f4d4bb9b0beed4f616fd48e",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1497"
+      },
+      "sc:name": "Root-mean-square deviation"
+    },
+    {
+      "@id": "_:N34d102998ccd42759616dfef8a0c4e15",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2080"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Database search results"
+    },
+    {
+      "@id": "_:Ncab1a20b174d4c28989fe7dbd151550c",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1460"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1476"
+      },
+      "sc:name": "Protein structure"
+    },
+    {
+      "@id": "_:Na0e158328c7e40ea847bf1e88668083c",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1460"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1476"
+      },
+      "sc:name": "Protein structure"
+    },
+    {
+      "@id": "_:Nce63baef795549e7a8171ca14bc9b1f6",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2992"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3604"
+        },
+        {
+          "@id": "edam:format_3603"
+        },
+        {
+          "@id": "edam:format_3508"
+        }
+      ],
+      "sc:name": "Protein structure image"
+    },
+    {
+      "@id": "_:Ne95be2b3148a42d7881181f0e45085e1",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2019"
+      },
+      "sc:name": "Map data"
+    },
+    {
+      "@id": "_:Nf60960d6e30846d6bb692ada0b1ee299",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1460"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1476"
+      },
+      "sc:name": "Protein structure"
+    },
+    {
+      "@id": "_:Nf32edda93a904b79a55b334813ea3e93",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1537"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3752"
+      },
+      "sc:name": "Protein structure report"
+    },
+    {
+      "@id": "_:N7ec2ea430e604fd186ca784cd40091e0",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1384"
+      },
+      "sc:name": "Sequence alignment (protein)"
+    },
+    {
+      "@id": "_:Nd008e1a12ef3449f97aee5ffb99c1f97",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1497"
+      },
+      "sc:name": "Root-mean-square deviation"
+    },
+    {
+      "@id": "_:Nfc16bbd9577740fe99d6f2bde98078dd",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1537"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Protein structure report"
+    },
+    {
+      "@id": "_:N1ee5a2ccbee24ae1bc0232ad94055108",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2991"
+      },
+      "sc:name": "Protein geometry data"
+    },
+    {
+      "@id": "_:Nf775dd5f9e8e4692917249f2c803232d",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1537"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Protein structure report"
+    },
+    {
+      "@id": "_:Nff1f23a8fe2f4310b515c800c29719f3",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1537"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Protein structure report"
+    },
+    {
+      "@id": "_:Ncdca16e55abe4244bfbbbe8d303bf9b8",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2019"
+      },
+      "sc:name": "Map data"
+    },
+    {
+      "@id": "_:Nf55a8637c159470bb653212260745061",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1460"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1476"
+      },
+      "sc:name": "Protein structure"
+    },
+    {
+      "@id": "_:Nc684f4f7e4da40d48f07abf6f5eb72f0",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1460"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1476"
+      },
+      "sc:name": "Protein structure"
+    },
+    {
+      "@id": "_:Nae56016fecee4210a464eebeb48b9c13",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2992"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3604"
+        },
+        {
+          "@id": "edam:format_3464"
+        }
+      ],
+      "sc:name": "Protein structure image"
+    },
+    {
+      "@id": "_:N60f1b9a3bdcf44c6886b13ad8cd82ba7",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1566"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3603"
+        },
+        {
+          "@id": "edam:format_3508"
+        },
+        {
+          "@id": "edam:format_3604"
+        }
+      ],
+      "sc:name": "Protein-ligand interaction report"
+    },
+    {
+      "@id": "_:Neb4e2bb0b518476f87dff7f6c27d85e4",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1460"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1476"
+      },
+      "sc:name": "Protein structure"
+    },
+    {
+      "@id": "_:N5ecaaafbedf34f73b554d12c4ed6271b",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1461"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1476"
+      },
+      "sc:name": "Protein-ligand complex"
+    },
+    {
+      "@id": "_:N43efa35710f7442388c7f55d06068e05",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1460"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1476"
+      },
+      "sc:name": "Protein structure"
+    },
+    {
+      "@id": "_:N8dcd051c0be94f51810c60b9fc22658c",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1460"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1476"
+      },
+      "sc:name": "Protein structure"
+    },
+    {
+      "@id": "_:Ne8dc59ea949a4e6197e499ea5fe2e25e",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3021"
+      },
+      "sc:name": "UniProt accession"
+    },
+    {
+      "@id": "_:Nbeacf14c628849e28b3f81ca249fe970",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1461"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_1476"
+        },
+        {
+          "@id": "edam:format_3814"
+        }
+      ],
+      "sc:name": "Protein-ligand complex"
+    },
+    {
+      "@id": "_:N5bbc01e179ad418aad6e56924d7a2f2a",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1460"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1476"
+      },
+      "sc:name": "Protein structure"
+    },
+    {
+      "@id": "_:Na3818b5d4f65443f9ef43d836f1d7212",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1463"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3814"
+      },
+      "sc:name": "Small molecule structure"
+    },
+    {
+      "@id": "_:Ne6e7e4a1d5344a2bb3ff26737df29624",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1460"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1476"
+      },
+      "sc:name": "Protein structure"
+    },
+    {
+      "@id": "_:N6e7ff57b7dac4a0f88b48f46dd4f2df4",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1460"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1476"
+      },
+      "sc:name": "Protein structure"
+    },
+    {
+      "@id": "_:Nedeb330d279d48179b0a2c3513f38819",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1460"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1476"
+      },
+      "sc:name": "Protein structure"
+    },
+    {
+      "@id": "_:Nfae9c0ad7c784c658801a3a16fbd9384",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1461"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3814"
+        },
+        {
+          "@id": "edam:format_1476"
+        }
+      ],
+      "sc:name": "Protein-ligand complex"
+    },
+    {
+      "@id": "_:Nbfed8e99f30245989199ee0951194f6a",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1463"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3814"
+      },
+      "sc:name": "Small molecule structure"
+    },
+    {
+      "@id": "_:N5e646e79eaca47dfb44d3e6334ca708d",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1463"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3814"
+      },
+      "sc:name": "Small molecule structure"
+    },
+    {
+      "@id": "_:Nbfd3498774cf4b86b116bb2514e231e2",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1463"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3814"
+      },
+      "sc:name": "Small molecule structure"
+    },
+    {
+      "@id": "_:N4332a581e36c44f2be56919a8c360c8c",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1461"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3814"
+        },
+        {
+          "@id": "edam:format_1476"
+        }
+      ],
+      "sc:name": "Protein-ligand complex"
+    },
+    {
+      "@id": "_:N62bc458269a4479e8c31304f51501730",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1460"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1476"
+      },
+      "sc:name": "Protein structure"
+    },
+    {
+      "@id": "_:N13503c0b5fcd4933be92722e8fbd56d9",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1460"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1476"
+      },
+      "sc:name": "Protein structure"
+    },
+    {
+      "@id": "_:N80e120002f5948569c7686c6510fbf20",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1463"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3814"
+      },
+      "sc:name": "Small molecule structure"
+    },
+    {
+      "@id": "_:N05732758412741b7bf31afa0f63a9218",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1461"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3814"
+        },
+        {
+          "@id": "edam:format_1476"
+        }
+      ],
+      "sc:name": "Protein-ligand complex"
+    },
+    {
+      "@id": "_:N554e2bd2b8db44139ca2706ac5eb4733",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1463"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3814"
+      },
+      "sc:name": "Small molecule structure"
+    },
+    {
+      "@id": "_:Nd0d6096aca2d4a14a10fa1bb83ce303f",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1460"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1476"
+      },
+      "sc:name": "Protein structure"
+    },
+    {
+      "@id": "_:Ne011851e9f4f42f29d7331ef032cae23",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1463"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3814"
+      },
+      "sc:name": "Small molecule structure"
+    },
+    {
+      "@id": "_:N85af41cae5ef48d9af9f2f321dab002b",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1461"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3814"
+        },
+        {
+          "@id": "edam:format_1476"
+        }
+      ],
+      "sc:name": "Protein-ligand complex"
+    },
+    {
+      "@id": "_:N27aecf59dafd4183878a4a528d54c356",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1461"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_1476"
+        },
+        {
+          "@id": "edam:format_3814"
+        }
+      ],
+      "sc:name": "Protein-ligand complex"
+    },
+    {
+      "@id": "_:N885688da46824c2ea1e441a0af46d25b",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1463"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3814"
+      },
+      "sc:name": "Small molecule structure"
+    },
+    {
+      "@id": "_:Nb5e421de8c3a446c9e26939b677994bc",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1461"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_1476"
+        },
+        {
+          "@id": "edam:format_3814"
+        }
+      ],
+      "sc:name": "Protein-ligand complex"
+    },
+    {
+      "@id": "_:N1d369ca4a4e14ffebe7d3ba391f1cf38",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1461"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_1476"
+        },
+        {
+          "@id": "edam:format_3814"
+        }
+      ],
+      "sc:name": "Protein-ligand complex"
+    },
+    {
+      "@id": "_:Ndc62ae0499134aba9bce2d3e7b2466a7",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1461"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3814"
+        },
+        {
+          "@id": "edam:format_1476"
+        }
+      ],
+      "sc:name": "Protein-ligand complex"
+    },
+    {
+      "@id": "_:Nba1084faf93c48b3b514d1e02c843da6",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1460"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1476"
+      },
+      "sc:name": "Protein structure"
+    },
+    {
+      "@id": "_:Nc611fe88a6a74eabb732732767663209",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3021"
+      },
+      "sc:name": "UniProt accession"
+    },
+    {
+      "@id": "_:N111f5e80ff354dd296ed6251b99c3271",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1463"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3814"
+      },
+      "sc:name": "Small molecule structure"
+    },
+    {
+      "@id": "_:Na5ddf53bc4f64099959209f59cfcce92",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1463"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3814"
+        },
+        {
+          "@id": "edam:format_1197"
+        },
+        {
+          "@id": "edam:format_3816"
+        },
+        {
+          "@id": "edam:format_1196"
+        }
+      ],
+      "sc:name": "Small molecule structure"
+    },
+    {
+      "@id": "_:Nd33e1cb18bd3471e892ac6cbc64af5c7",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1461"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3814"
+        },
+        {
+          "@id": "edam:format_1476"
+        }
+      ],
+      "sc:name": "Protein-ligand complex"
+    },
+    {
+      "@id": "_:N8c1ddc8c6121466587d36e2489cc4fdd",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3021"
+      },
+      "sc:name": "UniProt accession"
+    },
+    {
+      "@id": "_:N59c229149a2841708df3973d6d5c8104",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1461"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_1476"
+        },
+        {
+          "@id": "edam:format_3814"
+        }
+      ],
+      "sc:name": "Protein-ligand complex"
+    },
+    {
+      "@id": "_:Nc0b502036be8455e87bbbc3b8c706e41",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1461"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_1476"
+        },
+        {
+          "@id": "edam:format_3814"
+        }
+      ],
+      "sc:name": "Protein-ligand complex"
+    },
+    {
+      "@id": "_:Nba3567541d944ba1a2be357900daf38d",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1463"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3814"
+      },
+      "sc:name": "Small molecule structure"
+    },
+    {
+      "@id": "_:N4f1dea22c52c443d93da9acf9bb2ffbf",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1463"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3814"
+      },
+      "sc:name": "Small molecule structure"
+    },
+    {
+      "@id": "_:Nfefc6c6700c947b1a99bf8e070d7034d",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1460"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1476"
+      },
+      "sc:name": "Protein structure"
+    },
+    {
+      "@id": "_:Nc7309a2e9d9e4a26a0e937048b1c1d3a",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3021"
+      },
+      "sc:name": "UniProt accession"
+    },
+    {
+      "@id": "_:N15414edca39d4537ab897bca134a5a37",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1463"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3814"
+      },
+      "sc:name": "Small molecule structure"
+    },
+    {
+      "@id": "_:Nd23dc1c23fea47cba9cbda4e019b0008",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1460"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1476"
+      },
+      "sc:name": "Protein structure"
+    },
+    {
+      "@id": "_:N75bb8d4f9a814a73a533231aa4723452",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1463"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3814"
+      },
+      "sc:name": "Small molecule structure"
+    },
+    {
+      "@id": "_:N307d328d514a424c8656bec22b35bd40",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1460"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1476"
+      },
+      "sc:name": "Protein structure"
+    },
+    {
+      "@id": "_:N3a4490e51d83440fa5a222bf66169fa3",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1463"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3814"
+      },
+      "sc:name": "Small molecule structure"
+    },
+    {
+      "@id": "_:Nc18d81f32b244653b21bd573a5db3047",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1461"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_1476"
+        },
+        {
+          "@id": "edam:format_3814"
+        }
+      ],
+      "sc:name": "Protein-ligand complex"
+    },
+    {
+      "@id": "_:Nafcc193f5ced4ca6b1db49216cdefbaa",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3021"
+      },
+      "sc:name": "UniProt accession"
+    },
+    {
+      "@id": "_:N16f29f44f0d04f3ead2690d6cede4e1a",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3021"
+      },
+      "sc:name": "UniProt accession"
+    },
+    {
+      "@id": "_:N01079522d6864bb880e5f162c8ba4e31",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1461"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3814"
+        },
+        {
+          "@id": "edam:format_1476"
+        }
+      ],
+      "sc:name": "Protein-ligand complex"
+    },
+    {
+      "@id": "_:N14c872fa823d4c7596e2b1d9ad07838f",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3021"
+      },
+      "sc:name": "UniProt accession"
+    },
+    {
+      "@id": "_:N2e34c3f9035d46088a2abce48a0d7f4e",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1460"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1476"
+      },
+      "sc:name": "Protein structure"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/gkaf377",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/gkac305",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/gkx333",
+      "@type": "sc:CreativeWork"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+package: ncbi-tools-bin
+distribution: debian
+release: sid
+component: main
+version: 6.1.20170106
+source: ncbi-tools6
+homepage: https://www.ncbi.nlm.nih.gov/IEB/ToolBox/
+license: unknown
+blend: debian-med
+description_md5: 6919ed1d6f34363a4bd110f69899ff95
+registries:
+- entry: OMICS_05052
+  name: OMICtools
+- entry: SCR_004861
+  name: SciCrunch
+- entry: cn3d
+  name: bio.tools
+bib:
+- key: doi
+  package: ncbi-cn3d
+  value: 10.1016/S0968-0004(00)01561-9
+tags:
+- tag: biology::nuceleic-acids
+- tag: biology::peptidic
+- tag: field::biology
+- tag: field::biology:bioinformatics
+- tag: implemented-in::c
+- tag: interface::commandline
+- tag: network::client
+- tag: protocol::http
+- tag: role::program
+- tag: science::calculation
+- tag: scope::utility
+- tag: use::analysing
+- tag: use::calculating
+- tag: use::converting
+- tag: use::searching
+- tag: works-with-format::plaintext
+- tag: works-with-format::xml
+- tag: works-with::biological-sequence
+popcon:
+- insts: 150
+  olde: 114
+  recent: 23
+  vote: 13

@@ -1,0 +1,78 @@
+about:
+  description: This package contains a collection of functions (written as shiny modules)
+    for the visualisation and the statistical analysis of omics data. These plots
+    can be displayed individually or embedded in a global Shiny module. Additionaly,
+    it is possible to integrate third party modules to the main interface of the package
+    omXplore.
+  home: https://bioconductor.org/packages/3.22/bioc/html/omXplore.html
+  license: Artistic-2.0
+  summary: Vizualization tools for 'omics' datasets with R
+build:
+  noarch: generic
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+package:
+  name: bioconductor-omxplore
+  version: 1.4.2
+requirements:
+  host:
+  - bioconductor-msnbase >=2.36.0,<2.37.0
+  - bioconductor-multiassayexperiment >=1.36.0,<1.37.0
+  - bioconductor-psmatch >=1.14.0,<1.15.0
+  - bioconductor-summarizedexperiment >=1.40.0,<1.41.0
+  - r-base
+  - r-dendextend
+  - r-dplyr
+  - r-dt
+  - r-factoextra
+  - r-factominer
+  - r-gplots
+  - r-highcharter
+  - r-htmlwidgets
+  - r-nipals
+  - r-rcolorbrewer
+  - r-shiny
+  - r-shinybs
+  - r-shinyjqui
+  - r-shinyjs
+  - r-tibble
+  - r-tidyr
+  - r-vioplot
+  - r-visnetwork
+  run:
+  - bioconductor-msnbase >=2.36.0,<2.37.0
+  - bioconductor-multiassayexperiment >=1.36.0,<1.37.0
+  - bioconductor-psmatch >=1.14.0,<1.15.0
+  - bioconductor-summarizedexperiment >=1.40.0,<1.41.0
+  - r-base
+  - r-dendextend
+  - r-dplyr
+  - r-dt
+  - r-factoextra
+  - r-factominer
+  - r-gplots
+  - r-highcharter
+  - r-htmlwidgets
+  - r-nipals
+  - r-rcolorbrewer
+  - r-shiny
+  - r-shinybs
+  - r-shinyjqui
+  - r-shinyjs
+  - r-tibble
+  - r-tidyr
+  - r-vioplot
+  - r-visnetwork
+source:
+  md5: 8efcf4ff45bdc16615235c8dfee88e70
+  url:
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/omXplore_1.4.2.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/omXplore/omXplore_1.4.2.tar.gz
+  - https://bioarchive.galaxyproject.org/omXplore_1.4.2.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-omxplore/bioconductor-omxplore_1.4.2_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('omXplore')"

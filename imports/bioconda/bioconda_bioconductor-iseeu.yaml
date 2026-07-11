@@ -1,0 +1,55 @@
+about:
+  description: iSEEu (the iSEE universe) contains diverse functionality to extend
+    the usage of the iSEE package, including additional classes for the panels, or
+    modes allowing easy configuration of iSEE applications.
+  home: https://bioconductor.org/packages/3.22/bioc/html/iSEEu.html
+  license: MIT + file LICENSE
+  license_file: LICENSE
+  summary: iSEE Universe
+build:
+  noarch: generic
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+package:
+  name: bioconductor-iseeu
+  version: 1.22.0
+requirements:
+  host:
+  - bioconductor-iranges >=2.44.0,<2.45.0
+  - bioconductor-isee >=2.22.0,<2.23.0
+  - bioconductor-iseehex >=1.12.0,<1.13.0
+  - bioconductor-s4vectors >=0.48.0,<0.49.0
+  - bioconductor-singlecellexperiment >=1.32.0,<1.33.0
+  - bioconductor-summarizedexperiment >=1.40.0,<1.41.0
+  - r-base
+  - r-colourpicker
+  - r-dt
+  - r-ggplot2 >=3.4.0
+  - r-shiny
+  - r-shinyace
+  run:
+  - bioconductor-iranges >=2.44.0,<2.45.0
+  - bioconductor-isee >=2.22.0,<2.23.0
+  - bioconductor-iseehex >=1.12.0,<1.13.0
+  - bioconductor-s4vectors >=0.48.0,<0.49.0
+  - bioconductor-singlecellexperiment >=1.32.0,<1.33.0
+  - bioconductor-summarizedexperiment >=1.40.0,<1.41.0
+  - r-base
+  - r-colourpicker
+  - r-dt
+  - r-ggplot2 >=3.4.0
+  - r-shiny
+  - r-shinyace
+source:
+  md5: 9adb46c4aff10f6fc29f60de2aba915e
+  url:
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/iSEEu_1.22.0.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/iSEEu/iSEEu_1.22.0.tar.gz
+  - https://bioarchive.galaxyproject.org/iSEEu_1.22.0.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-iseeu/bioconductor-iseeu_1.22.0_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('iSEEu')"

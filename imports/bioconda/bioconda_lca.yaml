@@ -1,0 +1,33 @@
+about:
+  dev_url: https://github.com/hildebra/LCA
+  home: https://github.com/hildebra/LCA
+  license: GPL-3.0-only
+  license_family: GPL3
+  license_file: LICENSE
+  summary: LCA - Lowest Common Ancestor calculation tool.
+build:
+  number: 0
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+  skip-lints:
+  - compiler_needs_stdlib_c
+package:
+  name: lca
+  version: '0.27'
+requirements:
+  build:
+  - null
+  - make
+  - pkg-config
+  host:
+  - zlib
+source:
+  sha256: 643f7a8aa7d833ca6aca72b9141a594d542a23f303b877bc8c226dc3a752a9d4
+  url: https://github.com/hildebra/LCA/archive/refs/tags/v0.27.tar.gz
+test:
+  commands:
+  - LCA -h

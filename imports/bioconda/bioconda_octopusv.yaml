@@ -1,0 +1,45 @@
+about:
+  dev_url: https://github.com/ylab-hi/octopusV
+  home: https://github.com/ylab-hi/octopusV
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE
+  summary: 'OctopusV: Advanced Structural Variant Analysis Toolkit.'
+build:
+  noarch: python
+  number: 0
+  run_exports:
+  - null
+  script: -m pip install . --no-deps --no-build-isolation --no-cache-dir -vvv
+extra:
+  recipe-maintainers:
+  - qingxiangguo
+package:
+  name: octopusv
+  version: 0.4.0
+requirements:
+  host:
+  - python >=3.10
+  - poetry-core
+  - pip
+  run:
+  - python >=3.10
+  - typer >=0.12.3
+  - loguru >=0.7.2
+  - rich >=13.7.1
+  - natsort >=8.4.0
+  - pytest-cov >=4.1.0
+  - matplotlib-base >=3.9.2
+  - seaborn >=0.13.2
+  - jinja2 >=3.1.5
+  - bcftools
+  - pycirclize >=1.10.1
+  - htslib
+source:
+  sha256: 45cd7de284a9557fe4ce70952af40e8e545009494cc45cb43d23a424ec570449
+  url: https://pypi.org/packages/source/o/octopusv/octopusv-0.4.0.tar.gz
+test:
+  commands:
+  - octopusv --help
+  imports:
+  - octopusv

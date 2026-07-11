@@ -1,0 +1,43 @@
+about:
+  description: 'ECMSD detects and taxonomically classifies mitochondrial sequences
+
+    from high-throughput sequencing data using minimap2 alignment and RMUS scoring.
+
+    '
+  dev_url: https://github.com/capoony/ECMSD
+  home: https://github.com/capoony/ECMSD
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE
+  summary: Efficient Comprehensive Mitochondrial Sequence Detection Pipeline
+build:
+  noarch: generic
+  number: 0
+  run_exports:
+  - null
+extra:
+  recipe-maintainers:
+  - capoony
+  - SarahSaadain
+package:
+  name: ecmsd
+  version: 1.2.0
+requirements:
+  run:
+  - minimap2
+  - bbmap
+  - r-base
+  - r-tidyverse
+  - r-gridextra
+  - r-data.table
+  - pigz
+  - wget
+  - python >=3.6
+  - numpy
+source:
+  sha256: 4cc8c1d095ca53ca4d1a139079e9dfd482feed0121865731a772fe81c4f6d0e6
+  url: https://github.com/capoony/ECMSD/archive/refs/tags/v1.2.0.tar.gz
+test:
+  commands:
+  - ECMSD --version
+  - ECMSD --help

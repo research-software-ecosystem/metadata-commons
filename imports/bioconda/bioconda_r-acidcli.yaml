@@ -1,0 +1,38 @@
+about:
+  dev_url: https://github.com/acidgenomics/r-acidcli
+  home: https://r.acidgenomics.com/packages/acidcli/
+  license: Apache-2.0
+  license_family: APACHE
+  license_file: LICENSE.md
+  summary: Interactive R command line interface toolkit for Acid Genomics packages.
+build:
+  noarch: generic
+  number: 0
+  run_exports:
+  - null
+extra:
+  recipe-maintainers:
+  - acidgenomics
+  - mjsteinbaugh
+package:
+  name: r-acidcli
+  version: 0.3.3
+requirements:
+  host:
+  - r-base
+  - r-cli >=3.6.1
+  - r-crayon >=1.5.2
+  - r-goalie >=0.7.0
+  - r-rlang >=1.1.1
+  run:
+  - r-base
+  - r-cli >=3.6.1
+  - r-crayon >=1.5.2
+  - r-goalie >=0.7.0
+  - r-rlang >=1.1.1
+source:
+  sha256: 541fd6baab63ba534e2a352f821c21f9e1eebb2803eec3702e246e6d71185a49
+  url: https://github.com/acidgenomics/r-acidcli/archive/v0.3.3.tar.gz
+test:
+  commands:
+  - $R -e "library('AcidCLI')"

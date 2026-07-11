@@ -1,0 +1,37 @@
+package: arden
+distribution: debian
+release: sid
+component: main
+version: '1.0'
+source: arden
+homepage: http://sourceforge.net/projects/arden/
+license: unknown
+blend: debian-med
+description_md5: d4e3cbc891f56c41cb4a95fba3d615e8
+topics:
+- Sequencing
+edam_scopes:
+- name: summary
+  input:
+  - data: Sequence
+    formats:
+    - FASTA
+  output:
+  - data: Report
+    formats:
+    - Text
+  function:
+  - Sequence quality control
+registries:
+- entry: OMICS_09783
+  name: OMICtools
+- entry: SCR_015975
+  name: SciCrunch
+bib:
+- key: doi
+  value: 10.1093/bioinformatics/btt255
+popcon:
+- insts: 107
+  olde: 77
+  recent: 24
+  vote: 6

@@ -1,0 +1,24 @@
+about:
+  home: https://github.com/PacificBiosciences/pbmm2
+  license: BSD-3-Clause-Clear
+  summary: A minimap2 frontend for PacBio native data formats
+build:
+  number: 0
+  run_exports:
+  - null
+  skip: true
+extra:
+  recipe-maintainers:
+  - armintoepfer
+  - pb-dseifert
+  skip-lints:
+  - should_be_noarch_generic
+package:
+  name: pbmm2
+  version: 26.1.99
+source:
+  sha256: 4ffd905f1ffe28606498ef86c4ef4c061b35702f19f5a25598cae93988da61d9
+  url: https://github.com/PacificBiosciences/pbmm2/releases/download/v26.1.99/pbmm2
+test:
+  commands:
+  - pbmm2 -h

@@ -1,0 +1,45 @@
+about:
+  doc_url: https://metacpan.org/pod/Bio::DB::Sam
+  home: https://metacpan.org/pod/Bio::DB::Sam
+  license: Perl_5
+  summary: Read SAM/BAM files.
+build:
+  number: 6
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+package:
+  name: perl-bio-samtools
+  version: '1.43'
+requirements:
+  build:
+  - make
+  - null
+  - pkg-config
+  host:
+  - perl
+  - perl-bioperl-core
+  - perl-module-build
+  - samtools =0.1.19
+  - zlib
+  run:
+  - perl
+  - perl-bioperl-core
+source:
+  patches:
+  - build-pl.patch
+  sha256: 7085ee5e97ad75dbbebd8583072d67b2b06d29e7a9f9741c9ac58dabe300d3fd
+  url: https://cpan.metacpan.org/authors/id/L/LD/LDS/Bio-SamTools-1.43.tar.gz
+test:
+  imports:
+  - Bio::DB::Bam::AlignWrapper
+  - Bio::DB::Bam::Alignment
+  - Bio::DB::Bam::Pileup
+  - Bio::DB::Bam::PileupWrapper
+  - Bio::DB::Bam::Query
+  - Bio::DB::Bam::Target
+  - Bio::DB::Sam
+  - Bio::DB::Sam::Constants

@@ -1,0 +1,30 @@
+about:
+  dev_url: https://github.com/IBM/aspera-cli
+  doc_url: https://www.rubydoc.info/gems/aspera-cli
+  home: https://github.com/IBM/aspera-cli
+  license: Apache-2.0
+  license_family: APACHE
+  license_file: LICENSE
+  summary: Command Line Interface for IBM Aspera products.
+build:
+  noarch: generic
+  number: 0
+  run_exports:
+  - null
+extra:
+  recipe-maintainers:
+  - farchaab
+package:
+  name: aspera-cli
+  version: 4.20.0
+requirements:
+  host:
+  - ruby >=3
+  run:
+  - ruby >=3
+source:
+- sha256: d07d8ee94ab83159495b2c911fcb427975a26e7280085a80352c6390899b7a05
+  url: https://github.com/IBM/aspera-cli/archive/refs/tags/v4.20.0.tar.gz
+test:
+  commands:
+  - ascli -h

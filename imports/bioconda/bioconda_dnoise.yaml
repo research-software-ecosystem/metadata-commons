@@ -1,0 +1,39 @@
+about:
+  home: https://github.com/adriantich/DnoisE
+  license: GPL-3.0-only
+  license_family: GPL
+  license_file: LICENSE
+  summary: Denoise sequence data sets from Illumina using distance corrected according
+    to the entropy of each codon position
+build:
+  noarch: python
+  number: 0
+  run_exports:
+  - null
+  script: ' -m pip install . -vv --no-deps --ignore-installed'
+extra:
+  recipe-maintainers:
+  - adriantich
+  - kbseah
+package:
+  name: dnoise
+  version: 1.4.2
+requirements:
+  host:
+  - python >=3.8
+  - setuptools
+  - pip
+  run:
+  - python >=3.8
+  - pandas =2.0
+  - numpy >=1.21
+  - tqdm
+  - python-levenshtein =0.21
+source:
+  sha256: c88763169f7fce67d7aa1227f79e9487a9c852a8e162c1476485a3252ad39939
+  url: https://github.com/adriantich/DnoisE/archive/refs/tags/v1.4.2.tar.gz
+test:
+  commands:
+  - dnoise -h
+  imports:
+  - dnoise

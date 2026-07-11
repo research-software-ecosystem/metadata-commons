@@ -1,0 +1,50 @@
+about:
+  description: Access to igv.js, the Integrative Genomics Viewer running in a web
+    browser.
+  home: https://bioconductor.org/packages/3.22/bioc/html/igvR.html
+  license: MIT + file LICENSE
+  license_file: LICENSE
+  summary: 'igvR: integrative genomics viewer'
+build:
+  noarch: generic
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+package:
+  name: bioconductor-igvr
+  version: 1.30.0
+requirements:
+  host:
+  - bioconductor-biocgenerics >=0.56.0,<0.57.0
+  - bioconductor-browserviz >=2.32.0,<2.33.0
+  - bioconductor-genomicalignments >=1.46.0,<1.47.0
+  - bioconductor-genomicranges >=1.62.0,<1.63.0
+  - bioconductor-rtracklayer >=1.70.0,<1.71.0
+  - bioconductor-variantannotation >=1.56.0,<1.57.0
+  - r-base
+  - r-httpuv
+  - r-httr
+  - r-rcolorbrewer
+  run:
+  - bioconductor-biocgenerics >=0.56.0,<0.57.0
+  - bioconductor-browserviz >=2.32.0,<2.33.0
+  - bioconductor-genomicalignments >=1.46.0,<1.47.0
+  - bioconductor-genomicranges >=1.62.0,<1.63.0
+  - bioconductor-rtracklayer >=1.70.0,<1.71.0
+  - bioconductor-variantannotation >=1.56.0,<1.57.0
+  - r-base
+  - r-httpuv
+  - r-httr
+  - r-rcolorbrewer
+source:
+  md5: de90dd5b8ad6f34f98b650ab005a9f44
+  url:
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/igvR_1.30.0.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/igvR/igvR_1.30.0.tar.gz
+  - https://bioarchive.galaxyproject.org/igvR_1.30.0.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-igvr/bioconductor-igvr_1.30.0_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('igvR')"

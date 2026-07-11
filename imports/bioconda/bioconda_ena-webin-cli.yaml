@@ -1,0 +1,23 @@
+about:
+  home: https://github.com/enasequence/webin-cli
+  license: Apache-2.0
+  summary: Data submissions to ENA can be made using the Webin command line submission
+    interface (Webin-CLI).
+build:
+  noarch: generic
+  number: 0
+  run_exports:
+  - null
+package:
+  name: ena-webin-cli
+  version: 9.0.3
+requirements:
+  run:
+  - openjdk >=17
+  - python
+source:
+  sha256: b1a0df3685f1eed59e0080fe77683f8580afe3e403e3e344e34ffaa67f04e86c
+  url: https://github.com/enasequence/webin-cli/releases/download/9.0.3/webin-cli-9.0.3.jar
+test:
+  commands:
+  - ena-webin-cli -version

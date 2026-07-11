@@ -1,0 +1,42 @@
+about:
+  dev_url: https://github.com/steineggerlab/folddisco
+  doc_url: https://github.com/steineggerlab/folddisco/blob/2-9375a2d/README.md
+  home: https://github.com/steineggerlab/folddisco
+  license: GPL-3.0-or-later
+  license_family: GPL3
+  license_file: LICENSE.md
+  summary: 'Folddisco: fast indexing and search of discontinuous motifs in protein
+    structures.'
+build:
+  number: 0
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+  identifiers:
+  - doi:10.1038/s41587-026-03162-9
+  - doi:10.1101/2025.07.06.663357
+  recipe-maintainers:
+  - khb7840
+  - milot-mirdita
+  - martin-steinegger
+package:
+  name: folddisco
+  version: 2.9375a2d
+requirements:
+  build:
+  - null
+  - null
+  - null
+  - cargo-bundle-licenses
+  - cmake
+  - make
+  - pkg-config
+source:
+  sha256: 44ba525e9b563b73d92b7e04f10b6c1e989c5a8074714a372c85381d5816c06c
+  url: https://github.com/steineggerlab/folddisco/archive/2-9375a2d.tar.gz
+test:
+  commands:
+  - folddisco > /dev/null

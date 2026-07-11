@@ -1,0 +1,33 @@
+package: indelible
+distribution: debian
+release: sid
+component: main
+version: '1.03'
+source: indelible
+homepage: https://github.com/evolbioinfo/indelible
+license: unknown
+blend: debian-med
+description_md5: c481b79347a79fb03305db0619f5a7fa
+topics:
+- Sequencing
+edam_scopes:
+- name: summary
+  output:
+  - data: Sequence
+    formats:
+    - FASTA
+    - Nexus format
+    - PHYLIP format
+  function:
+  - Modelling and simulation
+registries:
+- entry: OMICS_15369
+  name: OMICtools
+bib:
+- key: doi
+  value: 10.1093/molbev/msp098
+popcon:
+- insts: 110
+  olde: 78
+  recent: 26
+  vote: 6

@@ -1,0 +1,55 @@
+about:
+  description: In high resolution mass spectrometry (HR-MS), the measured masses can
+    be decomposed into potential element combinations (chemical sum formulas). Where
+    additional mass/intensity information of respective isotopic peaks is available,
+    decomposition can take this information into account to better rank the potential
+    candidate sum formulas. To compare measured mass/intensity information with the
+    theoretical distribution of candidate sum formulas, the latter needs to be calculated.
+    This package implements fast algorithms to address both tasks, the calculation
+    of isotopic distributions for arbitrary sum formulas (assuming a HR-MS resolution
+    of roughly 30,000), and the ranked list of sum formulas fitting an observed peak
+    or isotopic peak set.
+  home: https://bioconductor.org/packages/3.22/bioc/html/Rdisop.html
+  license: GPL-2
+  license_file: /lib/R/share/licenses/GPL-2
+  summary: Decomposition of Isotopic Patterns
+build:
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+extra:
+  parent_recipe:
+    name: bioconductor-rdisop
+    path: recipes/bioconductor-rdisop
+    version: 1.42.0
+package:
+  name: bioconductor-rdisop
+  version: 1.70.0
+requirements:
+  build:
+  - null
+  - null
+  - automake
+  - make
+  host:
+  - r-base
+  - r-rcpp
+  - libblas
+  - liblapack
+  - zlib
+  - liblzma-devel
+  run:
+  - r-base
+  - r-rcpp
+source:
+  md5: a2e6a150d2c9e6882b059d6dc7639774
+  url:
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Rdisop_1.70.0.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/Rdisop/Rdisop_1.70.0.tar.gz
+  - https://bioarchive.galaxyproject.org/Rdisop_1.70.0.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-rdisop/bioconductor-rdisop_1.70.0_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('Rdisop')"

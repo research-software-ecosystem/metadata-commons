@@ -1,0 +1,167 @@
+{
+  "@context": {
+    "biotools": "https://bio.tools/ontology/",
+    "brick": "https://brickschema.org/schema/Brick#",
+    "bsc": "http://bioschemas.org/",
+    "bsct": "http://bioschemas.org/types/",
+    "csvw": "http://www.w3.org/ns/csvw#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "dcam": "http://purl.org/dc/dcam/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dcmitype": "http://purl.org/dc/dcmitype/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "doap": "http://usefulinc.com/ns/doap#",
+    "edam": "http://edamontology.org/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "geo": "http://www.opengis.net/ont/geosparql#",
+    "odrl": "http://www.w3.org/ns/odrl/2/",
+    "org": "http://www.w3.org/ns/org#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "prof": "http://www.w3.org/ns/dx/prof/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "qb": "http://purl.org/linked-data/cube#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "sc": "http://schema.org/",
+    "schema": "https://schema.org/",
+    "sh": "http://www.w3.org/ns/shacl#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "sosa": "http://www.w3.org/ns/sosa/",
+    "ssn": "http://www.w3.org/ns/ssn/",
+    "time": "http://www.w3.org/2006/time#",
+    "vann": "http://purl.org/vocab/vann/",
+    "void": "http://rdfs.org/ns/void#",
+    "wgs": "https://www.w3.org/2003/01/geo/wgs84_pos#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "https://orcid.org/0000-0003-4525-7793",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/gkab1082",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://bio.tools/disprot",
+      "@type": "sc:SoftwareApplication",
+      "biotools:primaryContact": {
+        "@id": "https://orcid.org/0000-0003-4525-7793"
+      },
+      "bsc:input": [
+        {
+          "@id": "_:N22a9378914cc4803b62b5d1c2100e765"
+        },
+        {
+          "@id": "_:N39a9bc7cab2148b9bdd1d5dd197edc73"
+        },
+        {
+          "@id": "_:Ne6485e499c5c44128183565ed3ca81ca"
+        }
+      ],
+      "bsc:output": [
+        {
+          "@id": "_:Nae45d37db6f5460d861e06d85d52cfe2"
+        },
+        {
+          "@id": "_:Nd6a519f1389a446ab0e611e11a034e84"
+        }
+      ],
+      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "sc:additionalType": [
+        "Web API",
+        "Database portal",
+        "Web application"
+      ],
+      "sc:applicationSubCategory": {
+        "@id": "edam:topic_3538"
+      },
+      "sc:citation": [
+        "pubmed:34850135",
+        "pmcid:PMC8728214",
+        {
+          "@id": "https://doi.org/10.1093/nar/gkab1082"
+        }
+      ],
+      "sc:description": "Database of protein disorder. It is a community resource annotating protein sequences for intrinsically disordered regions from the literature.",
+      "sc:featureList": [
+        {
+          "@id": "edam:operation_3092"
+        },
+        {
+          "@id": "edam:operation_0224"
+        }
+      ],
+      "sc:license": "CC-BY-NC-1.0",
+      "sc:name": "Database of protein disorder (DisProt)",
+      "sc:operatingSystem": [
+        "Windows",
+        "Mac",
+        "Linux"
+      ],
+      "sc:provider": "University of Padua, Department of Biomedical Sciences, BioComputing UP lab",
+      "sc:softwareHelp": {
+        "@id": "http://www.disprot.org/help"
+      },
+      "sc:softwareVersion": "9.0",
+      "sc:url": "https://disprot.org/"
+    },
+    {
+      "@id": "_:Nae45d37db6f5460d861e06d85d52cfe2",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1537"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2331"
+        },
+        {
+          "@id": "edam:format_3464"
+        }
+      ],
+      "sc:name": "Protein structure report"
+    },
+    {
+      "@id": "_:Nd6a519f1389a446ab0e611e11a034e84",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1277"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2331"
+        },
+        {
+          "@id": "edam:format_3464"
+        }
+      ],
+      "sc:name": "Protein features"
+    },
+    {
+      "@id": "_:N22a9378914cc4803b62b5d1c2100e765",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3021"
+      },
+      "sc:name": "UniProt accession"
+    },
+    {
+      "@id": "_:N39a9bc7cab2148b9bdd1d5dd197edc73",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2723"
+      },
+      "sc:name": "Protein ID (DisProt)"
+    },
+    {
+      "@id": "_:Ne6485e499c5c44128183565ed3ca81ca",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1009"
+      },
+      "sc:name": "Protein name"
+    }
+  ]
+}

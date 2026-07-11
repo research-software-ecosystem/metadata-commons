@@ -1,0 +1,31 @@
+about:
+  dev_url: https://github.com/pkerpedjiev/negspy
+  doc_url: https://github.com/pkerpedjiev/negspy?tab=readme-ov-file#readme
+  home: https://github.com/pkerpedjiev/negspy
+  license: MIT
+  summary: Python NGS tools
+build:
+  noarch: python
+  number: 0
+  run_exports:
+  - null
+  script: -m pip install . -vv --no-deps --no-build-isolation
+package:
+  name: negspy
+  version: 0.3.2
+requirements:
+  host:
+  - python
+  - setuptools
+  - pip
+  run:
+  - python
+  - smart-open
+source:
+  sha256: 53f97c30571ecf8c14a27d629ede030fd7f931a13d631287b02da41ecf165977
+  url: https://pypi.org/packages/source/n/negspy/negspy-0.3.2.tar.gz
+test:
+  commands:
+  - pip check
+  imports:
+  - negspy

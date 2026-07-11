@@ -1,0 +1,44 @@
+about:
+  home: https://github.com/nvictus/pybbi
+  license: MIT
+  license_family: MIT
+  summary: Python bindings to UCSC Big Binary (bigWig/bigBed) file library
+build:
+  number: 0
+  run_exports:
+  - null
+  skip: true
+extra:
+  additional-platforms:
+  - linux-aarch64
+  recipe-maintainers:
+  - Nanguage
+package:
+  name: pybbi
+  version: 0.4.2
+requirements:
+  build:
+  - null
+  - make
+  host:
+  - python
+  - pip
+  - numpy
+  - cython
+  - setuptools
+  - pkgconfig
+  - six
+  - openssl
+  - libpng
+  - zlib
+  run:
+  - numpy
+  - python
+  - six
+  - null
+source:
+  sha256: b9daa5f04cf5641c3addd729737d649c439f440082fe783c28be3353d2aa444b
+  url: https://pypi.io/packages/source/p/pybbi/pybbi-0.4.2.tar.gz
+test:
+  imports:
+  - bbi

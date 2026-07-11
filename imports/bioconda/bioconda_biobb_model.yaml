@@ -1,0 +1,85 @@
+about:
+  description: '# biobb_model
+
+
+    ### Introduction
+
+    Biobb_model is the Biobb module collection to check and model 3d structures, create
+    mutations or reconstruct missing atoms. Biobb (BioExcel building blocks) packages
+    are Python building blocks that create new layer of compatibility and interoperability
+    over popular bioinformatics tools.
+
+    The latest documentation of this package can be found in our readthedocs site:
+
+    [latest API documentation](http://biobb-model.readthedocs.io/en/latest/).
+
+
+
+    ### Copyright & Licensing
+
+    This software has been developed in the [MMB group](http://mmb.irbbarcelona.org)
+    at the [BSC](http://www.bsc.es/) & [IRB](https://www.irbbarcelona.org/) for the
+    [European BioExcel](http://bioexcel.eu/), funded by the European Commission (EU
+    Horizon Europe [101093290](https://cordis.europa.eu/project/id/101093290), EU
+    H2020 [823830](http://cordis.europa.eu/projects/823830), EU H2020 [675728](http://cordis.europa.eu/projects/675728)).
+
+
+    * (c) 2015-2026 [Barcelona Supercomputing Center](https://www.bsc.es/)
+
+    * (c) 2015-2026 [Institute for Research in Biomedicine](https://www.irbbarcelona.org/)
+
+    Licensed under the
+
+    [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0), see the file
+    LICENSE for details.
+
+
+    ![](https://bioexcel.eu/wp-content/uploads/2019/04/Bioexcell_logo_1080px_transp.png
+    "Bioexcel")
+
+
+
+    '
+  doc_url: http://biobb-model.readthedocs.io/en/latest/
+  home: https://github.com/bioexcel/biobb_model
+  license: Apache-2.0 license
+  summary: Biobb_model is the Biobb module collection to check and model 3d structures,
+    create mutations or reconstruct missing atoms.
+build:
+  noarch: python
+  number: 0
+  run_exports:
+  - null
+  script: ' -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv'
+extra:
+  recipe-maintainers:
+  - gbayarri
+  - RubenChM
+package:
+  name: biobb_model
+  version: 5.2.1
+requirements:
+  host:
+  - python >=3.10
+  - setuptools
+  - biobb_common ==5.2.2
+  - biobb_structure_checking >=3.15.6
+  - xmltodict
+  run:
+  - python >=3.10
+  - biobb_common ==5.2.2
+  - biobb_structure_checking >=3.15.6
+  - xmltodict
+source:
+  sha256: c40ac4f92e7c3a5b1107dc8e276f9fc783bf69bd9a4d340143c178a70e5d6033
+  url: https://pypi.io/packages/source/b/biobb_model/biobb_model-5.2.1.tar.gz
+test:
+  imports:
+  - biobb_model
+  - biobb_model.model.fix_side_chain
+  - biobb_model.model.fix_backbone
+  - biobb_model.model.fix_amides
+  - biobb_model.model.fix_chirality
+  - biobb_model.model.fix_pdb
+  - biobb_model.model.mutate
+  - biobb_model.model.checking_log

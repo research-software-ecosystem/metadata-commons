@@ -1,0 +1,30 @@
+package: sim4db
+distribution: debian
+release: sid
+component: main
+version: 0~20150903+r2013
+source: kmer
+homepage: http://kmer.sourceforge.net
+license: unknown
+blend: debian-med
+description_md5: 85f8fe3bbe88f71c2e69cb9b24788d42
+registries:
+- entry: OMICS_29044
+  name: OMICtools
+- entry: SCR_015980
+  name: SciCrunch
+- entry: atac
+  name: bio.tools
+- entry: atac, meryl
+  name: conda:bioconda
+bib:
+- key: doi
+  value: 10.1093/bioinformatics/btr285
+- key: doi
+  rank: 1
+  value: 10.1073/pnas.0307971100
+popcon:
+- insts: 114
+  olde: 82
+  recent: 23
+  vote: 9

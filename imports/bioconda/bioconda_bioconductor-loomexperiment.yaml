@@ -1,0 +1,51 @@
+about:
+  description: The LoomExperiment package provide a means to easily convert the Bioconductor
+    "Experiment" classes to loom files and vice versa.
+  home: https://bioconductor.org/packages/3.22/bioc/html/LoomExperiment.html
+  license: Artistic-2.0
+  summary: LoomExperiment container
+build:
+  noarch: generic
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+package:
+  name: bioconductor-loomexperiment
+  version: 1.28.0
+requirements:
+  host:
+  - bioconductor-biocio >=1.20.0,<1.21.0
+  - bioconductor-delayedarray >=0.36.0,<0.37.0
+  - bioconductor-genomicranges >=1.62.0,<1.63.0
+  - bioconductor-hdf5array >=1.38.0,<1.39.0
+  - bioconductor-rhdf5 >=2.54.0,<2.55.0
+  - bioconductor-s4vectors >=0.48.0,<0.49.0
+  - bioconductor-singlecellexperiment >=1.32.0,<1.33.0
+  - bioconductor-summarizedexperiment >=1.40.0,<1.41.0
+  - r-base
+  - r-matrix
+  - r-stringr
+  run:
+  - bioconductor-biocio >=1.20.0,<1.21.0
+  - bioconductor-delayedarray >=0.36.0,<0.37.0
+  - bioconductor-genomicranges >=1.62.0,<1.63.0
+  - bioconductor-hdf5array >=1.38.0,<1.39.0
+  - bioconductor-rhdf5 >=2.54.0,<2.55.0
+  - bioconductor-s4vectors >=0.48.0,<0.49.0
+  - bioconductor-singlecellexperiment >=1.32.0,<1.33.0
+  - bioconductor-summarizedexperiment >=1.40.0,<1.41.0
+  - r-base
+  - r-matrix
+  - r-stringr
+source:
+  md5: 62a5aa0972e911108f3982430b65bd91
+  url:
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/LoomExperiment_1.28.0.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/LoomExperiment/LoomExperiment_1.28.0.tar.gz
+  - https://bioarchive.galaxyproject.org/LoomExperiment_1.28.0.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-loomexperiment/bioconductor-loomexperiment_1.28.0_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('LoomExperiment')"

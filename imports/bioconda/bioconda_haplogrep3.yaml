@@ -1,0 +1,27 @@
+about:
+  dev_url: https://github.com/genepi/haplogrep3
+  doc_url: https://haplogrep.readthedocs.io/en/latest
+  home: https://haplogrep.i-med.ac.at
+  license: MIT
+  license_family: MIT
+  summary: A tool for mtDNA haplogroup classification.
+build:
+  noarch: generic
+  number: 1
+  run_exports:
+  - null
+extra:
+  identifiers:
+  - doi:10.1093/nar/gkad284
+package:
+  name: haplogrep3
+  version: 3.2.2
+requirements:
+  run:
+  - openjdk >=11
+source:
+  sha256: c64a0a3c8cc74a96bbb41b692f904ab2c204b00bc1955dcee879ee4207cdc511
+  url: https://github.com/genepi/haplogrep3/releases/download/v3.2.2/haplogrep3-3.2.2-linux.zip
+test:
+  commands:
+  - haplogrep3

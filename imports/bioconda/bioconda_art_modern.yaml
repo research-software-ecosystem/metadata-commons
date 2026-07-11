@@ -1,0 +1,44 @@
+about:
+  dev_url: https://github.com/YU-Zhejian/art_modern
+  doc_url: https://github.com/YU-Zhejian/art_modern/releases/download/1.5.0/art_modern.pdf
+  home: https://github.com/YU-Zhejian/art_modern
+  license: GPL-3.0-only
+  license_family: GPL3
+  license_file: License.md
+  summary: Modernized ART simulator of diverse Next-Generation Sequencing reads
+build:
+  number: 0
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+package:
+  name: art_modern
+  version: 1.5.0
+requirements:
+  build:
+  - null
+  - cmake >=3.17
+  - make
+  - pkg-config
+  - coreutils >=8.28
+  - bash
+  - null
+  - python
+  host:
+  - libboost-devel >=1.90.0,<2
+  - zlib
+  - htslib
+  - fmt
+  run:
+  - libboost >=1.90.0,<2
+source:
+  sha256: b707de50683e4b430df906e9018dca3f0d95b2f60b463c5789dc38d02c75e460
+  url: https://github.com/YU-Zhejian/art_modern/archive/refs/tags/1.5.0.zip
+test:
+  commands:
+  - ART_NO_LOG_DIR=1 art_modern --version 2>&1 | grep -q "1.5.0"
+  - ART_NO_LOG_DIR=1 art_profile_builder --version 2>&1 | grep -q "1.5.0"
+  - ART_NO_LOG_DIR=1 am_compress --version 2>&1 | grep -q "1.5.0"

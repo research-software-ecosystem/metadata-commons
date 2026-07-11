@@ -1,0 +1,58 @@
+about:
+  description: This is an advanced version of TDbasedUFE, which is a comprehensive
+    package to perform Tensor decomposition based unsupervised feature extraction.
+    In contrast to TDbasedUFE which can perform simple the feature selection and the
+    multiomics analyses, this package can perform more complicated and advanced features,
+    but they are not so popularly required. Only users who require more specific features
+    can make use of its functionality.
+  home: https://bioconductor.org/packages/3.22/bioc/html/TDbasedUFEadv.html
+  license: GPL-3
+  license_file: /lib/R/share/licenses/GPL-3
+  summary: Advanced package of tensor decomposition based unsupervised feature extraction
+build:
+  noarch: generic
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+package:
+  name: bioconductor-tdbasedufeadv
+  version: 1.10.0
+requirements:
+  host:
+  - bioconductor-biobase >=2.70.0,<2.71.0
+  - bioconductor-dose >=4.4.0,<4.5.0
+  - bioconductor-enrichplot >=1.30.0,<1.31.0
+  - bioconductor-genomicranges >=1.62.0,<1.63.0
+  - bioconductor-rtcga >=1.40.0,<1.41.0
+  - bioconductor-stringdb >=2.22.0,<2.23.0
+  - bioconductor-tdbasedufe >=1.10.0,<1.11.0
+  - r-base
+  - r-enrichr
+  - r-hash
+  - r-rtensor
+  - r-shiny
+  run:
+  - bioconductor-biobase >=2.70.0,<2.71.0
+  - bioconductor-dose >=4.4.0,<4.5.0
+  - bioconductor-enrichplot >=1.30.0,<1.31.0
+  - bioconductor-genomicranges >=1.62.0,<1.63.0
+  - bioconductor-rtcga >=1.40.0,<1.41.0
+  - bioconductor-stringdb >=2.22.0,<2.23.0
+  - bioconductor-tdbasedufe >=1.10.0,<1.11.0
+  - r-base
+  - r-enrichr
+  - r-hash
+  - r-rtensor
+  - r-shiny
+source:
+  md5: e3fe3512766690fcc6a6b15d1f12a5a0
+  url:
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/TDbasedUFEadv_1.10.0.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/TDbasedUFEadv/TDbasedUFEadv_1.10.0.tar.gz
+  - https://bioarchive.galaxyproject.org/TDbasedUFEadv_1.10.0.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-tdbasedufeadv/bioconductor-tdbasedufeadv_1.10.0_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('TDbasedUFEadv')"

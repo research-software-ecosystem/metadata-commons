@@ -1,0 +1,34 @@
+about:
+  home: http://opig.stats.ox.ac.uk/webapps/newsabdab/sabpred/anarci/
+  license: BSD-3-Clause
+  license_family: BSD
+  license_file: LICENCE
+  summary: 'ANARCI: Antibody Numbering and Antigen Receptor ClassIfication'
+build:
+  noarch: python
+  number: 0
+  run_exports:
+  - null
+  script:
+  - ' setup.py install'
+  - rm -f ${PREFIX}/bin/muscle ${PREFIX}/bin/muscle_macOS
+package:
+  name: anarci
+  version: 2024.05.21
+requirements:
+  build:
+  - hmmer >=3.3.2
+  host:
+  - python <=3.11
+  run:
+  - hmmer >=3.3.2
+  - biopython
+source:
+  sha256: 805f227cd165dd1930871ef98de48c30eaa24b4597be501a26d69e4d09a2d54e
+  url: https://github.com/oxpig/ANARCI/archive/79f6c575056dedef86cb8f405ebb039197923eec.zip
+test:
+  commands:
+  - ANARCI -h
+  - ANARCI --restrict heavy -i NLLESGGGLVKPGGSLRLSCEGSGFLFSHYYMSWIRQGPEKRLELVAYISSNSTAFYYADSVKGRFTVSKDDAKKSVFLQMTSVSSDDTATYYCATGDWSRTNNFDTWGQGTQVIVS
+  imports:
+  - anarci

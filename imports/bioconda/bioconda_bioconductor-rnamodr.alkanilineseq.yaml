@@ -1,0 +1,45 @@
+about:
+  description: RNAmodR.AlkAnilineSeq implements the detection of m7G, m3C and D modifications
+    on RNA from experimental data generated with the AlkAnilineSeq protocol. The package
+    builds on the core functionality of the RNAmodR package to detect specific patterns
+    of the modifications in high throughput sequencing data.
+  home: https://bioconductor.org/packages/3.22/bioc/html/RNAmodR.AlkAnilineSeq.html
+  license: Artistic-2.0
+  summary: Detection of m7G, m3C and D modification by AlkAnilineSeq
+build:
+  noarch: generic
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+package:
+  name: bioconductor-rnamodr.alkanilineseq
+  version: 1.24.0
+requirements:
+  host:
+  - bioconductor-biocgenerics >=0.56.0,<0.57.0
+  - bioconductor-genomicranges >=1.62.0,<1.63.0
+  - bioconductor-gviz >=1.54.0,<1.55.0
+  - bioconductor-iranges >=2.44.0,<2.45.0
+  - bioconductor-rnamodr >=1.24.0,<1.25.0
+  - bioconductor-s4vectors >=0.48.0,<0.49.0
+  - r-base
+  run:
+  - bioconductor-biocgenerics >=0.56.0,<0.57.0
+  - bioconductor-genomicranges >=1.62.0,<1.63.0
+  - bioconductor-gviz >=1.54.0,<1.55.0
+  - bioconductor-iranges >=2.44.0,<2.45.0
+  - bioconductor-rnamodr >=1.24.0,<1.25.0
+  - bioconductor-s4vectors >=0.48.0,<0.49.0
+  - r-base
+source:
+  md5: 0baf013000f8e1fea3adf49b112f04eb
+  url:
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/RNAmodR.AlkAnilineSeq_1.24.0.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/RNAmodR.AlkAnilineSeq/RNAmodR.AlkAnilineSeq_1.24.0.tar.gz
+  - https://bioarchive.galaxyproject.org/RNAmodR.AlkAnilineSeq_1.24.0.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-rnamodr.alkanilineseq/bioconductor-rnamodr.alkanilineseq_1.24.0_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('RNAmodR.AlkAnilineSeq')"

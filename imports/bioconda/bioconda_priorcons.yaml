@@ -1,0 +1,41 @@
+about:
+  author: "Germ\xE1n Vallejo Palma"
+  home: https://github.com/GERMAN00VP/priorcons
+  license: APL-1.0
+  license_file: LICENSE
+  maintainer: "Germ\xE1n Vallejo Palma"
+  summary: Prior-guided integration tool that improves viral consensus sequences by
+    filling masked regions using candidate sequences validated against evolutionary
+    priors.
+build:
+  noarch: python
+  number: 0
+  run_exports:
+  - null
+  script: python -m pip install . --no-deps -vv
+extra:
+  recipe-maintainers:
+  - GERMAN00VP
+package:
+  name: priorcons
+  version: 0.1.4
+requirements:
+  host:
+  - python >=3.8
+  - pip
+  - setuptools
+  - wheel
+  run:
+  - python >=3.8
+  - numpy
+  - pandas
+  - biopython
+  - pyarrow
+source:
+  sha256: c75580bb09ab44a35fd8bf634c24f59731624aca41b69f4eda5e49e54d56f27a
+  url: https://pypi.io/packages/source/p/priorcons/priorcons-0.1.4.tar.gz
+test:
+  commands:
+  - priorcons --help
+  imports:
+  - priorcons

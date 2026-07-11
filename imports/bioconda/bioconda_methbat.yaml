@@ -1,0 +1,25 @@
+about:
+  home: https://github.com/PacificBiosciences/MethBat
+  license: BSD-3-Clause-Clear
+  summary: A battery of methylation tools for PacBio HiFi reads
+build:
+  number: 0
+  run_exports:
+  - null
+  skip: true
+extra:
+  recipe-maintainers:
+  - holtjma
+  - ctsa
+  skip-lints:
+  - should_use_compilers
+  - should_be_noarch_generic
+package:
+  name: methbat
+  version: 1.1.0
+source:
+  sha256: 90968c782007c60b5172c502d289af92a6cf6477339fff5d3281b10fbbf5128c
+  url: https://github.com/PacificBiosciences/MethBat/releases/download/v1.1.0/methbat-v1.1.0-x86_64-unknown-linux-gnu.tar.gz
+test:
+  commands:
+  - methbat --version

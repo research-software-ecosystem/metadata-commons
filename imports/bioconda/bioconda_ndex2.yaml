@@ -1,0 +1,43 @@
+about:
+  dev_url: https://github.com/ndexbio/ndex2-client
+  doc_url: https://github.com/ndexbio/ndex2-client/blob/master/README.rst
+  home: https://github.com/ndexbio/ndex2-client
+  license: BSD-3-Clause
+  license_family: BSD
+  license_file: LICENSE.txt
+  summary: Nice CX Python includes a client and a data model.
+build:
+  noarch: python
+  number: 0
+  run_exports:
+  - null
+  script: ' -m pip install . --no-deps --no-build-isolation --no-cache-dir -vvv'
+extra:
+  recipe-creator:
+  - Morgane Terezol
+package:
+  name: ndex2
+  version: 3.11.0
+requirements:
+  host:
+  - pip
+  - python >=3
+  - setuptools
+  run:
+  - enum34
+  - ijson
+  - networkx
+  - numpy
+  - pandas
+  - python >=3
+  - requests
+  - requests-toolbelt
+  - six
+  - urllib3 >=1.16
+source:
+  sha256: 3fbf4d96254f0e85a2162c9f77d970687fe5a41622671a553111238e81350512
+  url: https://pypi.io/packages/source/n/ndex2/ndex2-3.11.0.tar.gz
+test:
+  imports:
+  - ndex2
+  - ndex2cx

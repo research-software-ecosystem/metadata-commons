@@ -1,0 +1,71 @@
+about:
+  description: A seamless interface to the MEME Suite family of tools for motif analysis.
+    'memes' provides data aware utilities for using GRanges objects as entrypoints
+    to motif analysis, data structures for examining & editing motif lists, and novel
+    data visualizations. 'memes' functions and data structures are amenable to both
+    base R and tidyverse workflows.
+  home: https://bioconductor.org/packages/3.22/bioc/html/memes.html
+  license: MIT + file LICENSE
+  license_file: LICENSE
+  summary: motif matching, comparison, and de novo discovery using the MEME Suite
+build:
+  noarch: generic
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+package:
+  name: bioconductor-memes
+  version: 1.18.0
+requirements:
+  host:
+  - bioconductor-biostrings >=2.78.0,<2.79.0
+  - bioconductor-genomicranges >=1.62.0,<1.63.0
+  - bioconductor-universalmotif >=1.28.0,<1.29.0
+  - r-base
+  - r-cmdfun >=1.0.2
+  - r-dplyr
+  - r-ggplot2
+  - r-ggseqlogo
+  - r-magrittr
+  - r-matrixstats
+  - r-patchwork
+  - r-processx
+  - r-purrr
+  - r-readr
+  - r-rlang
+  - r-tibble
+  - r-tidyr
+  - r-usethis
+  - r-xml2
+  run:
+  - bioconductor-biostrings >=2.78.0,<2.79.0
+  - bioconductor-genomicranges >=1.62.0,<1.63.0
+  - bioconductor-universalmotif >=1.28.0,<1.29.0
+  - r-base
+  - r-cmdfun >=1.0.2
+  - r-dplyr
+  - r-ggplot2
+  - r-ggseqlogo
+  - r-magrittr
+  - r-matrixstats
+  - r-patchwork
+  - r-processx
+  - r-purrr
+  - r-readr
+  - r-rlang
+  - r-tibble
+  - r-tidyr
+  - r-usethis
+  - r-xml2
+source:
+  md5: 5a500dd6a401a815ca066fb190e3f25a
+  url:
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/memes_1.18.0.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/memes/memes_1.18.0.tar.gz
+  - https://bioarchive.galaxyproject.org/memes_1.18.0.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-memes/bioconductor-memes_1.18.0_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('memes')"

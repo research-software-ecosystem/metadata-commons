@@ -1,0 +1,36 @@
+about:
+  dev_url: https://github.com/marschall-lab
+  doc_url: https://gaftools.readthedocs.io/en/latest/index.html
+  home: https://github.com/marschall-lab/gaftools
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE
+  summary: gaftools is a fast and comprehensive toolkit designed for processing pangenome
+    alignments in GAF format
+build:
+  noarch: python
+  number: 0
+  run_exports:
+  - null
+  script: -m pip install . --no-deps --no-build-isolation --ignore-installed -vv
+package:
+  name: gaftools
+  version: 1.4.0
+requirements:
+  host:
+  - python >=3.9
+  - pip
+  - setuptools >=77.0.3
+  - setuptools-scm
+  run:
+  - python >=3.9
+  - pysam
+  - pywfa ==0.5.1
+  - pyfastx
+  - setuptools
+source:
+  sha256: 07a47eb8fa496d5bc73fcfb68c475eff04c1724cef914f179ea6c337eb6758a7
+  url: https://pypi.io/packages/source/g/gaftools/gaftools-1.4.0.tar.gz
+test:
+  commands:
+  - gaftools -h

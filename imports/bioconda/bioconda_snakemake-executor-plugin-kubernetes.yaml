@@ -1,0 +1,35 @@
+about:
+  dev_url: https://github.com/snakemake/snakemake-executor-plugin-kubernetes
+  home: https://github.com/snakemake/snakemake-executor-plugin-kubernetes
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE
+  summary: A snakemake executor plugin for submission of jobs to Kubernetes.
+build:
+  noarch: python
+  number: 0
+  run_exports:
+  - null
+  script: -m pip install . -vvv --no-deps --no-build-isolation --no-cache-dir
+extra:
+  recipe-maintainers:
+  - koesterlab
+package:
+  name: snakemake-executor-plugin-kubernetes
+  version: 0.5.1
+requirements:
+  host:
+  - python >=3.11,<4.0
+  - poetry-core
+  - pip
+  run:
+  - python >=3.11.0,<4.0.0
+  - snakemake-interface-common >=1.17.3,<2.0.0
+  - snakemake-interface-executor-plugins >=9.0.0,<10.0.0
+  - python-kubernetes >=27.2.0,<31
+source:
+  sha256: bb4520264d9fd1dc80ee45ffcc0ce17fe387936c807ff2696c171d324e0bcc9d
+  url: https://pypi.io/packages/source/s/snakemake-executor-plugin-kubernetes/snakemake_executor_plugin_kubernetes-0.5.1.tar.gz
+test:
+  imports:
+  - snakemake_executor_plugin_kubernetes

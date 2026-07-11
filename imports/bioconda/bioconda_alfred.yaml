@@ -1,0 +1,41 @@
+about:
+  dev_url: https://github.com/tobiasrausch/alfred
+  doc_url: https://github.com/tobiasrausch/alfred/blob/v0.5.3/README.md
+  home: https://github.com/tobiasrausch/alfred
+  license: BSD-3-Clause
+  license_family: BSD
+  license_file: LICENSE
+  summary: BAM alignment statistics, feature counting and feature annotation
+build:
+  number: 0
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+  identifiers:
+  - doi:10.1093/bioinformatics/bty1007
+  - biotools:alfred
+package:
+  name: alfred
+  version: 0.5.3
+requirements:
+  build:
+  - make
+  - null
+  host:
+  - zlib
+  - bzip2
+  - xz
+  - boost-cpp
+  - htslib
+  run:
+  - boost-cpp
+  - htslib
+source:
+  sha256: b6c9a31cfe4fd322b7bf1b09cc930ab2cd9e42efc834b0cbd6ff1ecf4307cdd9
+  url: https://github.com/tobiasrausch/alfred/archive/v0.5.3.tar.gz
+test:
+  commands:
+  - alfred --help

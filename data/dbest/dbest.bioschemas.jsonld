@@ -1,0 +1,327 @@
+{
+  "@context": {
+    "biotools": "https://bio.tools/ontology/",
+    "brick": "https://brickschema.org/schema/Brick#",
+    "bsc": "http://bioschemas.org/",
+    "bsct": "http://bioschemas.org/types/",
+    "csvw": "http://www.w3.org/ns/csvw#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "dcam": "http://purl.org/dc/dcam/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dcmitype": "http://purl.org/dc/dcmitype/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "doap": "http://usefulinc.com/ns/doap#",
+    "edam": "http://edamontology.org/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "geo": "http://www.opengis.net/ont/geosparql#",
+    "odrl": "http://www.w3.org/ns/odrl/2/",
+    "org": "http://www.w3.org/ns/org#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "prof": "http://www.w3.org/ns/dx/prof/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "qb": "http://purl.org/linked-data/cube#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "sc": "http://schema.org/",
+    "schema": "https://schema.org/",
+    "sh": "http://www.w3.org/ns/shacl#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "sosa": "http://www.w3.org/ns/sosa/",
+    "ssn": "http://www.w3.org/ns/ssn/",
+    "time": "http://www.w3.org/2006/time#",
+    "vann": "http://purl.org/vocab/vann/",
+    "void": "http://rdfs.org/ns/void#",
+    "wgs": "https://www.w3.org/2003/01/geo/wgs84_pos#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "https://bio.tools/dbest",
+      "@type": "sc:SoftwareApplication",
+      "bsc:input": [
+        {
+          "@id": "_:N94a0f87f3b344e3b9c76794785256ff8"
+        },
+        {
+          "@id": "_:Nadacf2a829794391b8cdc0320cead5be"
+        },
+        {
+          "@id": "_:N004b95d13ecd4547a810cbb9fa43db86"
+        },
+        {
+          "@id": "_:Nffa792c5146a44a5b49c6891b4dc42e5"
+        },
+        {
+          "@id": "_:Na00f68ac8e434452a63c5a55a6a92a94"
+        },
+        {
+          "@id": "_:Nc91036ac003546438fbbe91ba99f6973"
+        },
+        {
+          "@id": "_:Nb199e42d695c479e81e6a78629e185a3"
+        },
+        {
+          "@id": "_:N2cb7f10675ec4454a785ea39a5f65cc7"
+        },
+        {
+          "@id": "_:Nc732a0a07d0245dd9026695040471bd9"
+        },
+        {
+          "@id": "_:Nf56872c68aae4ec3aa130bbe00b36725"
+        }
+      ],
+      "bsc:output": [
+        {
+          "@id": "_:N1448d0fa2b214bbb8fd6f38218c20fbd"
+        },
+        {
+          "@id": "_:N3630af9e6f4b44c1b9ccf1ee85d576d7"
+        },
+        {
+          "@id": "_:Nc316378976464053858e9c88436beb45"
+        },
+        {
+          "@id": "_:N0e0cb54742624a46bf57785105ba9f44"
+        },
+        {
+          "@id": "_:N03368d51563d41649f71880fb07ad0fb"
+        },
+        {
+          "@id": "_:Nbd8930310ec2489787b82a58d931e6fe"
+        },
+        {
+          "@id": "_:Nd19254fbe0d64f53a9e50b4570564c0f"
+        },
+        {
+          "@id": "_:N6397d723b1034a92bdb136f3f62cd44f"
+        },
+        {
+          "@id": "_:N4320825c44914110b48ca928bf7810ac"
+        },
+        {
+          "@id": "_:N9954a8b5e7c542d7b70e9cad97799c05"
+        }
+      ],
+      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "sc:additionalType": "Database portal",
+      "sc:applicationSubCategory": {
+        "@id": "edam:topic_3512"
+      },
+      "sc:citation": [
+        "pubmed:8401577",
+        {
+          "@id": "https://doi.org/10.1038/ng0893-332"
+        }
+      ],
+      "sc:description": "Division of GenBank that contains sequence data and other information on \"single-pass\" cDNA sequences, or \"Expressed Sequence Tags\", from a number of organisms.",
+      "sc:featureList": {
+        "@id": "edam:operation_0224"
+      },
+      "sc:name": "dbEST database of EST sequences",
+      "sc:operatingSystem": [
+        "Linux",
+        "Windows",
+        "Mac"
+      ],
+      "sc:provider": "NCBI",
+      "sc:softwareHelp": {
+        "@id": "https://www.ncbi.nlm.nih.gov/dbEST/"
+      },
+      "sc:url": "http://www.ncbi.nlm.nih.gov/dbEST/"
+    },
+    {
+      "@id": "_:N94a0f87f3b344e3b9c76794785256ff8",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1105"
+      },
+      "sc:name": "dbEST accession"
+    },
+    {
+      "@id": "_:Nadacf2a829794391b8cdc0320cead5be",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2314"
+      },
+      "sc:name": "GI number"
+    },
+    {
+      "@id": "_:N004b95d13ecd4547a810cbb9fa43db86",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2314"
+      },
+      "sc:name": "GI number"
+    },
+    {
+      "@id": "_:Nffa792c5146a44a5b49c6891b4dc42e5",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1105"
+      },
+      "sc:name": "dbEST accession"
+    },
+    {
+      "@id": "_:Na00f68ac8e434452a63c5a55a6a92a94",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2314"
+      },
+      "sc:name": "GI number"
+    },
+    {
+      "@id": "_:Nc91036ac003546438fbbe91ba99f6973",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1105"
+      },
+      "sc:name": "dbEST accession"
+    },
+    {
+      "@id": "_:Nb199e42d695c479e81e6a78629e185a3",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1105"
+      },
+      "sc:name": "dbEST accession"
+    },
+    {
+      "@id": "_:N2cb7f10675ec4454a785ea39a5f65cc7",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1105"
+      },
+      "sc:name": "dbEST accession"
+    },
+    {
+      "@id": "_:Nc732a0a07d0245dd9026695040471bd9",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2314"
+      },
+      "sc:name": "GI number"
+    },
+    {
+      "@id": "_:Nf56872c68aae4ec3aa130bbe00b36725",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2314"
+      },
+      "sc:name": "GI number"
+    },
+    {
+      "@id": "_:N1448d0fa2b214bbb8fd6f38218c20fbd",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0849"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2331"
+      },
+      "sc:name": "Sequence record"
+    },
+    {
+      "@id": "_:N3630af9e6f4b44c1b9ccf1ee85d576d7",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0849"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2331"
+      },
+      "sc:name": "Sequence record"
+    },
+    {
+      "@id": "_:Nc316378976464053858e9c88436beb45",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0849"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2331"
+      },
+      "sc:name": "Sequence record"
+    },
+    {
+      "@id": "_:N0e0cb54742624a46bf57785105ba9f44",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0849"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2310"
+      },
+      "sc:name": "Sequence record"
+    },
+    {
+      "@id": "_:N03368d51563d41649f71880fb07ad0fb",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0849"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2532"
+      },
+      "sc:name": "Sequence record"
+    },
+    {
+      "@id": "_:Nbd8930310ec2489787b82a58d931e6fe",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0849"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2331"
+      },
+      "sc:name": "Sequence record"
+    },
+    {
+      "@id": "_:Nd19254fbe0d64f53a9e50b4570564c0f",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0849"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2532"
+      },
+      "sc:name": "Sequence record"
+    },
+    {
+      "@id": "_:N6397d723b1034a92bdb136f3f62cd44f",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0849"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2310"
+      },
+      "sc:name": "Sequence record"
+    },
+    {
+      "@id": "_:N4320825c44914110b48ca928bf7810ac",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0849"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2532"
+      },
+      "sc:name": "Sequence record"
+    },
+    {
+      "@id": "_:N9954a8b5e7c542d7b70e9cad97799c05",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0849"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2532"
+      },
+      "sc:name": "Sequence record"
+    },
+    {
+      "@id": "https://doi.org/10.1038/ng0893-332",
+      "@type": "sc:CreativeWork"
+    }
+  ]
+}

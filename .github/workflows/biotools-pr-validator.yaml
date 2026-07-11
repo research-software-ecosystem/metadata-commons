@@ -1,0 +1,53 @@
+name: 'validate bio.tools json and auto-merge'
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+    paths:
+      - 'data/**/*.biotools.json'
+
+jobs:
+  validate-and-merge:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref }}
+          fetch-depth: 2
+
+      - name: set branch name
+        run: echo "BRANCH_NAME=${{ github.head_ref }}" >> $GITHUB_ENV        
+
+      - name: get tool ID from branch name
+        id: vars
+        run: |
+          TOOL_ID="${BRANCH_NAME#*__}"
+          FILE="data/$TOOL_ID/$TOOL_ID.biotools.json"
+          echo "tool_id=$TOOL_ID" >> "$GITHUB_OUTPUT"
+          echo "file=$FILE" >> "$GITHUB_OUTPUT"
+
+      - name: reformat json and commit
+        if: ${{ !endsWith(github.head_ref, '__delete') }}
+        run: |
+          jq --indent 4 'walk( if type == "array" then sort else . end )' "${{ steps.vars.outputs.file }}" > tmp.json
+          mv tmp.json "${{ steps.vars.outputs.file }}"
+          git config user.name "biotools-bot"
+          git config user.email "support-bio-tools@sdu.dk"
+          git add "${{ steps.vars.outputs.file }}"
+          git commit -m "reformat json with jq" || echo "No changes to commit"
+          git push origin HEAD:${{ github.head_ref }}
+          echo "✅ Reformatted JSON and pushed changes"
+
+      - name: Merge PR (server-side)
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git fetch origin master
+          gh pr merge ${{ github.event.pull_request.number }} --squash --delete-branch
+          echo "✅ Merged PR #${{ github.event.pull_request.number }} into master"
+
+
+ 

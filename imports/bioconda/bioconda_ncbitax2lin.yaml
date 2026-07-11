@@ -1,0 +1,44 @@
+about:
+  description: 'A tool that converts NCBI taxonomy dump into lineages
+
+    '
+  dev_url: https://github.com/zyxue/ncbitax2lin
+  home: https://github.com/zyxue/ncbitax2lin
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE.txt
+  summary: NCBItax2lin
+build:
+  entry_points:
+  - ncbitax2lin = ncbitax2lin.ncbitax2lin:main
+  noarch: python
+  number: 0
+  run_exports:
+  - null
+  script: -m pip install . -vvv --no-deps --no-build-isolation --no-cache-dir
+extra:
+  recipe-maintainers:
+  - cumbof
+package:
+  name: ncbitax2lin
+  version: 3.0.0
+requirements:
+  host:
+  - python >=3.9,<3.14
+  - pip
+  - poetry
+  run:
+  - python >=3.9,<3.14
+  - fire >=0.7.1,<0.8.0
+  - pandas >=2.3.2,<3.0.0
+  - typing-extensions >=4.15.0,<5.0.0
+source:
+  sha256: fa57570acc72a4846c76e36002a7222c2b9d10fff9685f36ddf022c8f02d4944
+  url: https://pypi.org/packages/source/n/ncbitax2lin/ncbitax2lin-3.0.0.tar.gz
+test:
+  commands:
+  - pip check
+  - which ncbitax2lin
+  - python -c "import ncbitax2lin"
+  imports:
+  - ncbitax2lin

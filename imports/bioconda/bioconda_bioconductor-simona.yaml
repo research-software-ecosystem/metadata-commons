@@ -1,0 +1,67 @@
+about:
+  description: This package implements infrastructures for ontology analysis by offering
+    efficient data structures, fast ontology traversal methods, and elegant visualizations.
+    It provides a robust toolbox supporting over 70 methods for semantic similarity
+    analysis.
+  home: https://bioconductor.org/packages/3.22/bioc/html/simona.html
+  license: MIT + file LICENSE
+  license_file: LICENSE
+  summary: Semantic Similarity on Bio-Ontologies
+build:
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+package:
+  name: bioconductor-simona
+  version: 1.8.1
+requirements:
+  build:
+  - null
+  - null
+  - make
+  host:
+  - bioconductor-complexheatmap >=2.26.0,<2.27.0
+  - bioconductor-s4vectors >=0.48.0,<0.49.0
+  - r-base
+  - r-circlize
+  - r-fastmatch
+  - r-getoptlong
+  - r-globaloptions
+  - r-igraph
+  - r-matrixstats
+  - r-polychrome
+  - r-rcpp
+  - r-shiny
+  - r-xml2 >=1.3.3
+  - libblas
+  - liblapack
+  - zlib
+  - liblzma-devel
+  - perl >=5.6.0
+  run:
+  - bioconductor-complexheatmap >=2.26.0,<2.27.0
+  - bioconductor-s4vectors >=0.48.0,<0.49.0
+  - r-base
+  - r-circlize
+  - r-fastmatch
+  - r-getoptlong
+  - r-globaloptions
+  - r-igraph
+  - r-matrixstats
+  - r-polychrome
+  - r-rcpp
+  - r-shiny
+  - r-xml2 >=1.3.3
+  - perl >=5.6.0
+source:
+  md5: 72abbdc50595aaed951f5d01b333fe3a
+  url:
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/simona_1.8.1.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/simona/simona_1.8.1.tar.gz
+  - https://bioarchive.galaxyproject.org/simona_1.8.1.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-simona/bioconductor-simona_1.8.1_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('simona')"

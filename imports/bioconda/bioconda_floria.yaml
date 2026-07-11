@@ -1,0 +1,31 @@
+about:
+  dev_url: https://github.com/bluenote-1577/floria
+  home: https://github.com/bluenote-1577/floria
+  license: MIT
+  license_family: MIT
+  summary: Floria is method for recovering strain-level haplotypes and clusters of
+    reads from metagenomic short or long read sequencing data by haplotype phasing.
+build:
+  number: 0
+  run_exports:
+  - null
+extra:
+  recipe-maintainers:
+  - bluenote-1577
+package:
+  name: floria
+  version: 0.0.2
+requirements:
+  build:
+  - null
+  - null
+  - cargo-bundle-licenses
+  - make
+  - cmake >=3.12
+  - pkg-config
+source:
+  sha256: 3c54e7d77ffe9b957dd809dacd3c42a614cc8e6c807dbf1b1277bc99bea9869e
+  url: https://github.com/bluenote-1577/floria/archive/v0.0.2.tar.gz
+test:
+  commands:
+  - floria --help

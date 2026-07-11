@@ -1,0 +1,30 @@
+about:
+  home: https://github.com/prihoda/AbNumber
+  license: MIT
+  license_family: MIT
+  summary: AbNumber - Antibody numbering using ANARCI
+build:
+  noarch: python
+  number: 0
+  run_exports:
+  - null
+  script: -m pip install . --ignore-installed --no-deps -vv
+package:
+  name: abnumber
+  version: 0.4.4
+requirements:
+  host:
+  - python >=3.6
+  - pip
+  - setuptools
+  run:
+  - python >=3.6
+  - biopython
+  - pandas
+  - anarci ==2020.04.23
+source:
+  sha256: fcbb41095c86a952bb19ef03eb1ee09b7667b55a18142635aeae86fbab2ce221
+  url: https://github.com/prihoda/abnumber/archive/v0.4.4.tar.gz
+test:
+  imports:
+  - abnumber

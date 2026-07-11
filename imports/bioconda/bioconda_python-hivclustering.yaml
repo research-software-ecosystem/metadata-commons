@@ -1,0 +1,29 @@
+about:
+  home: https://github.com/veg/hivclustering
+  license: MIT
+  license_family: MIT
+  summary: A Python 3 library that makes inferences on HIV-1 transmission networks.
+build:
+  noarch: python
+  number: 0
+  run_exports:
+  - null
+  script: -m pip install . -vvv --no-deps --no-build-isolation
+package:
+  name: python-hivclustering
+  version: 1.8.0
+requirements:
+  host:
+  - python >=3
+  - pip
+  run:
+  - python >=3
+  - python-bioext >=0.19.0
+  - python-hyphy-python >=0.1.11
+  - python-hppy >=0.9.9
+source:
+  sha256: f331d44e4998149de1aa612539b15dd20c1318b411fa0a3581406a59a211adba
+  url: https://github.com/veg/hivclustering/archive/1.8.0.tar.gz
+test:
+  imports:
+  - hivclustering

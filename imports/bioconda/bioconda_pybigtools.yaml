@@ -1,0 +1,40 @@
+about:
+  dev_url: https://github.com/jackh726/bigtools
+  doc_url: https://bigtools.readthedocs.io
+  home: https://github.com/jackh726/bigtools
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE
+  summary: 'pybigtools: Python bindings to the Bigtools Rust library for high-performance
+    BigWig and BigBed I/O'
+build:
+  number: 0
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+  identifiers:
+  - doi:10.5281/zenodo.10606493
+package:
+  name: pybigtools
+  version: 0.2.5
+requirements:
+  build:
+  - null
+  - null
+  - clangdev
+  host:
+  - pip
+  - python
+  - maturin
+  run:
+  - python
+  - numpy
+source:
+  sha256: 84c285000733d5073f9ac005f43384d9a64d5774dd1cb16d409c9bd3c05efc99
+  url: https://pypi.io/packages/source/p/pybigtools/pybigtools-0.2.5.tar.gz
+test:
+  imports:
+  - pybigtools

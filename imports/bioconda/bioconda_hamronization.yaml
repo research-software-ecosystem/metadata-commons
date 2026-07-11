@@ -1,0 +1,39 @@
+about:
+  home: https://github.com/pha4ge/hAMRonization
+  license: LGPL-3.0-only
+  license_file: LICENSE.txt
+  summary: Tool to convert and summarize AMR gene detection outputs using the hAMRonization
+    specification
+build:
+  entry_points:
+  - hamronize = hAMRonization.hamronize:main
+  noarch: python
+  number: 0
+  run_exports:
+  - null
+  script: -m pip install . -vv --no-deps --no-build-isolation
+extra:
+  recipe-maintainers:
+  - fmaguire
+package:
+  name: hamronization
+  version: 1.2.1
+requirements:
+  host:
+  - python >=3.7,<3.14
+  - pip
+  - setuptools
+  run:
+  - python >=3.7,<3.14
+  - pandas
+source:
+  sha256: da34ea26289041bdf5a7b2a3c4b3e0bf53cb3b549b3c5668e863472e723ae004
+  url: https://pypi.org/packages/source/h/hamronization/hamronization-1.2.1.tar.gz
+test:
+  commands:
+  - pip check
+  - hamronize --help
+  imports:
+  - hAMRonization
+  requires:
+  - pip

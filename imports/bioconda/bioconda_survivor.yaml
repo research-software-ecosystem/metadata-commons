@@ -1,0 +1,31 @@
+about:
+  dev_url: https://github.com/fritzsedlazeck/SURVIVOR
+  home: https://github.com/fritzsedlazeck/SURVIVOR
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE
+  summary: Toolset for SV simulation, comparison and filtering.
+build:
+  number: 7
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+package:
+  name: survivor
+  version: 1.0.7
+requirements:
+  build:
+  - make
+  - null
+  - pkg-config
+  host:
+  - zlib
+source:
+  sha256: d65b52d4317d9fb41e13b687b1feadaf40cc397637816e80cb16ce8defc832be
+  url: https://github.com/fritzsedlazeck/SURVIVOR/archive/1.0.7.tar.gz
+test:
+  commands:
+  - SURVIVOR

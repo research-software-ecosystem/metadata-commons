@@ -1,0 +1,59 @@
+about:
+  description: 'Version 2.x is a Rust-based rewrite of tasmanian-mismatch.
+
+    Some functionality relies on Python components, which are installed
+
+    via Conda (pixi is not used in this environment).
+
+
+    The original Python-only implementation is available in 1.x releases.
+
+    '
+  dev_url: https://github.com/nebiolabs/tasmanian-mismatch
+  home: https://github.com/nebiolabs/tasmanian-mismatch
+  license: LGPL-2.1-or-later
+  license_family: LGPL
+  license_file:
+  - LICENCE.txt
+  - THIRDPARTY.yml
+  summary: Tasmanian tool to analyze mismatches in sequencing data (Rust + Python
+    hybrid).
+build:
+  number: 0
+  run_exports:
+  - null
+extra:
+  recipe-maintainers:
+  - aerijman
+package:
+  name: tasmanian-mismatch
+  version: 2.0.2
+requirements:
+  build:
+  - null
+  - cargo-bundle-licenses
+  - null
+  - null
+  - null
+  - llvmdev
+  - pkg-config
+  - clangdev
+  - make
+  - cmake
+  - patchelf
+  host:
+  - htslib
+  - zlib
+  run:
+  - python >=3.10
+  - bokeh >=3,<4
+  - polars >=0.20,<2
+  - pandas
+source:
+  sha256: 31f2a3c662af4bcf6b726c1f74e795e4784a7e68bb96b91bdf0e6988f38da328
+  url: https://github.com/nebiolabs/tasmanian-mismatch/archive/v2.0.2.tar.gz
+test:
+  commands:
+  - tasmanian-mismatch --help
+  - tasmanian-diagnostics --help
+  - tasmanian-rescale-quality --help

@@ -1,0 +1,46 @@
+about:
+  dev_url: https://github.com/TsumaR/vclean
+  home: https://github.com/TsumaR/vclean
+  license: GPL-3.0-only
+  license_family: GPL3
+  license_file: LICENSE
+  summary: 'vClean: Assessing the contamination of viral genomes'
+build:
+  entry_points:
+  - vclean = vclean.cli:cli
+  noarch: python
+  number: 0
+  run_exports:
+  - null
+  script: -m pip install . -vvv --no-deps --no-build-isolation --no-cache-dir
+extra:
+  recipe-maintainers:
+  - TsumaR
+package:
+  name: vclean
+  version: 0.2.1
+requirements:
+  host:
+  - python ==3.9.0
+  - flit-core >=3.2,<4
+  - pip
+  run:
+  - python ==3.9.0
+  - pandas
+  - numpy
+  - matplotlib-base
+  - seaborn-base
+  - scikit-learn
+  - lightgbm
+  - biopython
+  - checkv
+  - seqkit
+  - kmer-jellyfish
+  - prodigal
+  - mmseqs2
+source:
+  sha256: 17aa09563d96b7f06b4052fc73a764cb9959bf0bc1306bfe0c1a696b4a08088c
+  url: https://pypi.io/packages/source/v/vclean/vclean-0.2.1.tar.gz
+test:
+  commands:
+  - vclean --help

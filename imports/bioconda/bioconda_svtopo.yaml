@@ -1,0 +1,29 @@
+about:
+  home: https://github.com/PacificBiosciences/HiFi-SVTopo
+  license: Pacific Biosciences Software License Agreement
+  summary: 'Complex structural variant visualization for HiFi sequencing data: extraction
+    tool'
+build:
+  number: 0
+  run_exports:
+  - null
+  skip: true
+extra:
+  recipe-maintainers:
+  - jbelyeu
+  skip-lints:
+  - should_use_compilers
+  - should_be_noarch_generic
+package:
+  name: svtopo
+  version: 0.3.0
+requirements:
+  run:
+  - svtopovz ==0.3.0
+source:
+  sha256: d7772761eb8de60e41aa2b4db26339f4005289e0e1f1175adbdfc60b718effd7
+  url: https://github.com/PacificBiosciences/SVTopo/releases/download/v0.3.0/svtopo-v0.3.0-x86_64-unknown-linux-gnu.tar.gz
+test:
+  commands:
+  - svtopo --version
+  - svtopo --help

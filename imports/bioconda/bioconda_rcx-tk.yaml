@@ -1,0 +1,42 @@
+about:
+  home: https://github.com/RECETOX/rcx-tk
+  license: MIT
+  license_file: LICENSE
+  summary: This package adjusts and cleans the metadata file provided by a user.
+build:
+  entry_points:
+  - rcx_tk = rcx_tk.__main__:main
+  noarch: python
+  number: 0
+  run_exports:
+  - null
+  script: -m pip install . -vv --no-deps --no-build-isolation
+extra:
+  recipe-maintainers:
+  - KristinaGomoryova
+  - hechth
+package:
+  name: rcx-tk
+  version: 0.3.1
+requirements:
+  host:
+  - python >=3.11,<4.0
+  - poetry-core
+  - pip
+  run:
+  - python >=3.11.0,<4.0.0
+  - pandas >=3.0.1,<4.0.0
+  - pandas-stubs <4.0.0.0,>=3.0.0.260204
+  - click >=8.1.7,<9.0.0
+  - openpyxl >=3.1.5,<4.0.0
+source:
+  sha256: ed27c08b972ec2783177355db981468563211970c6031a9611664bb98df3fc55
+  url: https://pypi.io/packages/source/r/rcx-tk/rcx_tk-0.3.1.tar.gz
+test:
+  commands:
+  - pip check
+  - rcx_tk --help
+  imports:
+  - rcx_tk
+  requires:
+  - pip

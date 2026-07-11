@@ -1,0 +1,53 @@
+about:
+  description: Boosting supported network analysis for high-dimensional omics applications.
+  home: https://bioconductor.org/packages/3.22/bioc/html/netboost.html
+  license: GPL-3
+  license_file: /lib/R/share/licenses/GPL-3
+  summary: Network Analysis Supported by Boosting
+build:
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+package:
+  name: bioconductor-netboost
+  version: 2.18.1
+requirements:
+  build:
+  - null
+  - null
+  - automake
+  - make
+  host:
+  - bioconductor-impute >=1.84.0,<1.85.0
+  - r-base
+  - r-colorspace
+  - r-dynamictreecut
+  - r-r.utils
+  - r-rcpp
+  - r-rcppparallel
+  - r-wgcna
+  - libblas
+  - liblapack
+  - zlib
+  - liblzma-devel
+  run:
+  - bioconductor-impute >=1.84.0,<1.85.0
+  - r-base
+  - r-colorspace
+  - r-dynamictreecut
+  - r-r.utils
+  - r-rcpp
+  - r-rcppparallel
+  - r-wgcna
+source:
+  md5: 44c583290a9a848b8622782fe46bdcc2
+  url:
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/netboost_2.18.1.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/netboost/netboost_2.18.1.tar.gz
+  - https://bioarchive.galaxyproject.org/netboost_2.18.1.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-netboost/bioconductor-netboost_2.18.1_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('netboost')"

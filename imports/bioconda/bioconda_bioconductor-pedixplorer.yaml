@@ -1,0 +1,78 @@
+about:
+  description: Routines to handle family data with a Pedigree object. The initial
+    purpose was to create correlation structures that describe family relationships
+    such as kinship and identity-by-descent, which can be used to model family data
+    in mixed effects models, such as in the coxme function. Also includes a tool for
+    Pedigree drawing which is focused on producing compact layouts without intervention.
+    Recent additions include utilities to trim the Pedigree object with various criteria,
+    and kinship for the X chromosome.
+  home: https://bioconductor.org/packages/3.22/bioc/html/Pedixplorer.html
+  license: Artistic-2.0
+  summary: Pedigree Functions
+build:
+  noarch: generic
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+package:
+  name: bioconductor-pedixplorer
+  version: 1.6.0
+requirements:
+  host:
+  - bioconductor-s4vectors >=0.48.0,<0.49.0
+  - r-base
+  - r-colourpicker
+  - r-dplyr
+  - r-dt
+  - r-ggplot2
+  - r-htmlwidgets
+  - r-igraph
+  - r-matrix
+  - r-plotly
+  - r-plyr
+  - r-quadprog
+  - r-readxl
+  - r-shiny
+  - r-shinycssloaders
+  - r-shinyhelper
+  - r-shinyjqui
+  - r-shinyjs
+  - r-shinytoastr
+  - r-shinywidgets
+  - r-stringr
+  - r-tidyr
+  run:
+  - bioconductor-s4vectors >=0.48.0,<0.49.0
+  - r-base
+  - r-colourpicker
+  - r-dplyr
+  - r-dt
+  - r-ggplot2
+  - r-htmlwidgets
+  - r-igraph
+  - r-matrix
+  - r-plotly
+  - r-plyr
+  - r-quadprog
+  - r-readxl
+  - r-shiny
+  - r-shinycssloaders
+  - r-shinyhelper
+  - r-shinyjqui
+  - r-shinyjs
+  - r-shinytoastr
+  - r-shinywidgets
+  - r-stringr
+  - r-tidyr
+source:
+  md5: a14905d7d289a34c1a5e4966745d6f2e
+  url:
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Pedixplorer_1.6.0.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/Pedixplorer/Pedixplorer_1.6.0.tar.gz
+  - https://bioarchive.galaxyproject.org/Pedixplorer_1.6.0.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-pedixplorer/bioconductor-pedixplorer_1.6.0_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('Pedixplorer')"

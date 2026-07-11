@@ -1,0 +1,40 @@
+about:
+  home: https://github.com/imgag/ClinCNV
+  license: MIT
+  license_file: LICENSE
+  summary: Copy number variation detection for clinical sequencing.
+build:
+  noarch: generic
+  number: 0
+  run_exports:
+  - null
+extra:
+  recipe-maintainers:
+  - khaled196
+package:
+  name: clincnv
+  version: 1.20.0
+requirements:
+  run:
+  - r-base
+  - r-optparse
+  - r-robustbase
+  - r-mass
+  - r-data.table
+  - r-foreach
+  - r-doparallel
+  - r-mclust
+  - r-r.utils
+  - r-rcolorbrewer
+  - r-party
+  - r-umap
+  - r-dbscan
+  - r-rcpp
+source:
+  sha256: b982d06aa924d587cf961b087dac2c80ba139ed5cb71869e3c0de7761bb10d17
+  url: https://github.com/imgag/ClinCNV/archive/refs/tags/1.20.0.zip
+test:
+  commands:
+  - clinCNV.R --help
+  - mergeFilesFromFolder.R --help
+  - mergeFilesFromFolderDT.R --help

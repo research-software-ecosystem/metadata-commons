@@ -1,0 +1,37 @@
+about:
+  description: 'Colon normal tissue and cancer samples used in Corrada Bravo, et al.
+    gene expression anti-profiles paper: BMC Bioinformatics 2012, 13:272 doi:10.1186/1471-2105-13-272.
+    Measurements are z-scores obtained from the GeneExpression Barcode in the ''frma''
+    package'
+  home: https://bioconductor.org/packages/3.22/data/experiment/html/antiProfilesData.html
+  license: Artistic-2.0
+  summary: Normal colon and cancer preprocessed affy data for antiProfile building.
+build:
+  noarch: generic
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+package:
+  name: bioconductor-antiprofilesdata
+  version: 1.46.0
+requirements:
+  host:
+  - bioconductor-biobase >=2.70.0,<2.71.0
+  - r-base
+  run:
+  - bioconductor-biobase >=2.70.0,<2.71.0
+  - r-base
+  - curl
+  - bioconductor-data-packages >=20260207
+source:
+  md5: cb7943884c486cfdb081bcc36572fea7
+  url:
+  - https://bioconductor.org/packages/3.22/data/experiment/src/contrib/antiProfilesData_1.46.0.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/antiProfilesData/antiProfilesData_1.46.0.tar.gz
+  - https://bioarchive.galaxyproject.org/antiProfilesData_1.46.0.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-antiprofilesdata/bioconductor-antiprofilesdata_1.46.0_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('antiProfilesData')"

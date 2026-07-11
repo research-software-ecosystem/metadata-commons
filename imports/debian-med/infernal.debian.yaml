@@ -1,0 +1,33 @@
+package: infernal
+distribution: debian
+release: sid
+component: main
+version: 1.1.5
+source: infernal
+homepage: http://eddylab.org/infernal/
+license: unknown
+blend: debian-med
+description_md5: 0fa26f15adcc8d61cdb1b817c872c7ec
+registries:
+- entry: OMICS_00977
+  name: OMICtools
+- entry: SCR_011809
+  name: SciCrunch
+- entry: infernal
+  name: conda:bioconda
+bib:
+- key: doi
+  value: 10.1093/bioinformatics/btp157
+tags:
+- tag: biology::nuceleic-acids
+- tag: field::biology
+- tag: field::biology:bioinformatics
+- tag: implemented-in::c
+- tag: interface::commandline
+- tag: role::program
+- tag: use::analysing
+popcon:
+- insts: 197
+  olde: 162
+  recent: 23
+  vote: 12

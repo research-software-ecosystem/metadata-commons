@@ -1,0 +1,48 @@
+about:
+  home: https://github.com/jhthorsen/json-validator
+  license: artistic_2
+  summary: Validate data against a JSON schema
+build:
+  noarch: generic
+  number: 0
+  run_exports:
+    weak:
+    - perl-json-validator =5.19
+extra:
+  recipe-maintainers:
+  - khaled196
+package:
+  name: perl-json-validator
+  version: '5.19'
+requirements:
+  host:
+  - perl =>5.32
+  - perl-mojolicious
+  - perl-yaml-pp
+  - perl-test-deep
+  - perl-yaml-libyaml
+  - make
+  - m2-make
+  run:
+  - perl =>5.32
+  - perl-mojolicious
+  - perl-yaml-pp
+source:
+  sha256: 9f1d86f6fef638aaf610e3be28d2027aec4a48e2dc0eeba52ef8cd564515e004
+  url: https://cpan.metacpan.org/authors/id/J/JH/JHTHORSEN/JSON-Validator-5.19.tar.gz
+test:
+  imports:
+  - JSON::Validator
+  - JSON::Validator::Error
+  - JSON::Validator::Formats
+  - JSON::Validator::Joi
+  - JSON::Validator::Schema
+  - JSON::Validator::Schema::Draft201909
+  - JSON::Validator::Schema::Draft4
+  - JSON::Validator::Schema::Draft6
+  - JSON::Validator::Schema::Draft7
+  - JSON::Validator::Schema::OpenAPIv2
+  - JSON::Validator::Schema::OpenAPIv3
+  - JSON::Validator::Store
+  - JSON::Validator::URI
+  - JSON::Validator::Util

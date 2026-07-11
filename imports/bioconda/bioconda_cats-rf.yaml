@@ -1,0 +1,46 @@
+about:
+  description: 'CATS-rf evaluates transcriptome assemblies using RNA-seq reads without
+    requiring a reference genome.
+
+    '
+  doc_url: https://github.com/bodulic/CATS-rf/blob/main/README.md
+  home: https://github.com/bodulic/CATS-rf
+  license: MIT
+  license_file: LICENSE
+  summary: Reference-free transcriptome assembly quality assessment tool.
+build:
+  noarch: generic
+  number: 0
+  run_exports:
+  - null
+extra:
+  recipe-maintainers: bodulic
+package:
+  name: cats-rf
+  version: 1.0.4
+requirements:
+  run:
+  - bash
+  - r-base >=4.3,<4.4.0a0
+  - r-data.table
+  - r-rmarkdown
+  - r-ggplot2
+  - r-ggdist
+  - python >=3.6
+  - bowtie2
+  - samtools
+  - kallisto
+  - parallel >=20220922
+  - bedtools
+  - pysamstats
+  - pandoc
+  - coreutils
+  - gawk
+  - sed
+source:
+  sha256: e6f7835c206473524e5a988c6cb570165ed391a4faa6763739e29f4a99c8245c
+  url: https://github.com/bodulic/CATS-rf/archive/refs/tags/v1.0.4.tar.gz
+test:
+  commands:
+  - CATS_rf 2> /dev/null
+  - CATS_rf_compare 2> /dev/null

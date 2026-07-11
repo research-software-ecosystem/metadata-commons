@@ -1,0 +1,46 @@
+about:
+  home: https://github.com/gagneurlab/wBuild
+  license: UNKNOWN
+  license_family: OTHER
+  summary: Automatic build tool for R Reports
+build:
+  entry_points:
+  - wbuild=wbuild.cli:main
+  noarch: python
+  number: 0
+  run_exports:
+  - null
+  script:
+  - sed -i.bak -e '/pytest-runner/d' -e '/[ \t]*#/d' setup.py
+  - ' -m pip install . -vv'
+extra:
+  recipe-maintainers:
+  - c-mertes
+  - Ata Jadid Ahari
+package:
+  name: wbuild
+  version: 1.8.2
+requirements:
+  host:
+  - python >=3.5
+  - pip
+  - click >=6.0
+  - click-log
+  - pyyaml >=4.2b1
+  - snakemake-minimal >=5.5.2,<8.0.0
+  run:
+  - python >=3.5
+  - click >=6.0
+  - click-log
+  - pyyaml >=4.2b1
+  - snakemake-minimal >=5.5.2,<8.0.0
+source:
+  sha256: d2ea6fdc10aa57617c1cc4f0897122ec118d7c7dbe67740171c6c829f251dae3
+  url: https://github.com/gagneurlab/wbuild/archive/v1.8.2.tar.gz
+test:
+  commands:
+  - wbuild --help
+  imports:
+  - wbuild
+  requires:
+  - pytest

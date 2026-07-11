@@ -1,0 +1,37 @@
+about:
+  doc_url: https://lcr-modules.readthedocs.io
+  home: https://github.com/LCR-BCCRC/lcr-modules
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE
+  summary: Functions for running Snakemake modules
+build:
+  noarch: python
+  number: 0
+  run_exports:
+  - null
+  script: pushd oncopipe && python -m pip install --no-deps --ignore-installed .
+extra:
+  recipe-maintainers:
+  - acaprez
+package:
+  name: oncopipe
+  version: 1.0.13
+requirements:
+  host:
+  - python >=3.6
+  - pip
+  - pyyaml
+  - pandas
+  - snakemake >=5.4,<5.19
+  run:
+  - python >=3.6
+  - pyyaml
+  - pandas
+  - snakemake >=5.4,<5.19
+source:
+  sha256: 8bbdd02da79d416d2b54314454da302e32ebd7c1cf9734adfacadaa1d453a1d6
+  url: https://github.com/LCR-BCCRC/lcr-modules/archive/v1.0.13.tar.gz
+test:
+  imports:
+  - oncopipe

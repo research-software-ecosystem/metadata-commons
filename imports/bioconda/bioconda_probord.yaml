@@ -1,0 +1,35 @@
+about:
+  home: https://github.com/mujiezhang/ProBord
+  license: MIT
+  license_file: LICENSE
+  summary: A tool for precise delimitation of provirus borders in host genomes
+build:
+  entry_points:
+  - probord = probord.cli:main
+  noarch: python
+  number: 0
+  run_exports:
+  - null
+  script: -m pip install . -vv --no-deps --no-build-isolation
+package:
+  name: probord
+  version: '1.01'
+requirements:
+  host:
+  - python >=3.8
+  - pip
+  - setuptools
+  run:
+  - python >=3.8
+  - biopython
+  - blast
+  - checkv =1.0.3
+  - ncbi-genome-download
+source:
+  sha256: e7e9466957802f569444e98c56adad38a012ffcdad3ae949a56c0d5443beafdb
+  url: https://github.com/mujiezhang/ProBord/archive/refs/tags/v1.01.tar.gz
+test:
+  commands:
+  - probord --help
+  imports:
+  - probord

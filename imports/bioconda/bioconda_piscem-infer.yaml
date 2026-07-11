@@ -1,0 +1,34 @@
+about:
+  home: https://github.com/COMBINE-lab/piscem-infer
+  license: BSD-3-Clause
+  license_file: LICENSE
+  summary: piscem-infer is a flexible tool to perform target quantification from bulk-sequencing
+    data
+build:
+  number: 0
+  run_exports:
+  - null
+package:
+  name: piscem-infer
+  version: 0.7.0
+requirements:
+  build:
+  - cmake <4.0.0
+  - autoconf
+  - make
+  - zlib
+  - bzip2
+  - null
+  - null
+  - pkg-config
+  host:
+  - zlib
+  - bzip2
+  - tapi
+  run: null
+source:
+  sha256: 21dfc14938d29134da0bb3a36348962da0dd9228b11f12cd5cac987c76dc738b
+  url: https://github.com/COMBINE-lab/piscem-infer/archive/v0.7.0.tar.gz
+test:
+  commands:
+  - piscem-infer --help

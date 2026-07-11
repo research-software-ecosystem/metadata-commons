@@ -1,0 +1,51 @@
+about:
+  description: Package for parsing Affymetrix files (CDF, CEL, CHP, BPMAP, BAR).  It
+    provides methods for fast and memory efficient parsing of Affymetrix files using
+    the Affymetrix' Fusion SDK. Both ASCII- and binary-based files are supported.  Currently,
+    there are methods for reading chip definition file (CDF) and a cell intensity
+    file (CEL).  These files can be read either in full or in part.  For example,
+    probe signals from a few probesets can be extracted very quickly from a set of
+    CEL files into a convenient list structure.
+  home: https://bioconductor.org/packages/3.22/bioc/html/affxparser.html
+  license: LGPL (>= 2)
+  license_file: /lib/R/share/licenses/LGPL-3
+  summary: Affymetrix File Parsing SDK
+build:
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+extra:
+  additional-platforms:
+  - linux-aarch64
+  parent_recipe:
+    name: bioconductor-affxparser
+    path: recipes/bioconductor-affxparser
+    version: 1.52.0
+package:
+  name: bioconductor-affxparser
+  version: 1.82.0
+requirements:
+  build:
+  - null
+  - null
+  - make
+  host:
+  - r-base
+  - libblas
+  - liblapack
+  - zlib
+  - liblzma-devel
+  run:
+  - r-base
+source:
+  md5: 9f748ecae1c1ed5c10113e2dbced634d
+  url:
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/affxparser_1.82.0.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/affxparser/affxparser_1.82.0.tar.gz
+  - https://bioarchive.galaxyproject.org/affxparser_1.82.0.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-affxparser/bioconductor-affxparser_1.82.0_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('affxparser')"

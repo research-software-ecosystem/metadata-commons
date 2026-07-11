@@ -1,0 +1,38 @@
+about:
+  dev_url: https://github.com/splatlab/squeakr
+  home: https://github.com/splatlab/squeakr
+  license: BSD-3-Clause
+  license_family: BSD
+  summary: An Exact and Approximate k-mer Counting System.
+build:
+  number: 0
+  run_exports:
+  - null
+  skip: true
+package:
+  name: squeakr
+  version: '0.8'
+requirements:
+  build:
+  - make
+  - null
+  - null
+  - pkg-config
+  host:
+  - bzip2
+  - zlib
+  - boost-cpp
+  - openssl
+  - pthread-stubs
+  run:
+  - boost-cpp
+  - openssl
+  - pthread-stubs
+source:
+  patches:
+  - 0001-Makefile.patch
+  sha256: af5c04274475c3666df38eed326ee6e8bc61f577557dc30b8ec23bf808d03e03
+  url: https://github.com/splatlab/squeakr/archive/refs/tags/v0.8.tar.gz
+test:
+  commands:
+  - squeakr help -v

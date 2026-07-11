@@ -1,0 +1,32 @@
+about:
+  dev_url: https://github.com/TravisWheelerLab/ULTRA
+  doc_url: https://github.com/TravisWheelerLab/ULTRA/blob/v1.2.1/README.md
+  home: https://github.com/TravisWheelerLab/ULTRA
+  license: BSD-3-Clause
+  license_family: BSD
+  license_file: LICENSE
+  summary: ULTRA is a tool for finding and annotating tandem repeats within genomic
+    sequence.
+build:
+  number: 0
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+package:
+  name: ultra
+  version: 1.2.1
+requirements:
+  build:
+  - make
+  - cmake
+  - null
+  - pkg-config
+source:
+  sha256: 93c3a75d558525a34c3c073d1bddde9ca2b09a22d8409afc74f75ee78235ab9a
+  url: https://github.com/TravisWheelerLab/ULTRA/archive/refs/tags/1.2.1.tar.gz
+test:
+  commands:
+  - ultra -h 2>&1

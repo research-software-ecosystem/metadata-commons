@@ -1,0 +1,50 @@
+about:
+  description: A collection of microRNAs/targets from external resources, including
+    validated microRNA-target databases (miRecords, miRTarBase and TarBase), predicted
+    microRNA-target databases (DIANA-microT, ElMMo, MicroCosm, miRanda, miRDB, PicTar,
+    PITA and TargetScan) and microRNA-disease/drug databases (miR2Disease, Pharmaco-miR
+    VerSe and PhenomiR).
+  home: https://bioconductor.org/packages/3.22/bioc/html/multiMiR.html
+  license: MIT + file LICENSE
+  license_file: LICENSE
+  summary: Integration of multiple microRNA-target databases with their disease and
+    drug associations
+build:
+  noarch: generic
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+package:
+  name: bioconductor-multimir
+  version: 1.32.0
+requirements:
+  host:
+  - bioconductor-annotationdbi >=1.72.0,<1.73.0
+  - bioconductor-biocgenerics >=0.56.0,<0.57.0
+  - r-base
+  - r-dplyr
+  - r-purrr >=0.2.2
+  - r-rcurl
+  - r-tibble >=2.0
+  - r-xml
+  run:
+  - bioconductor-annotationdbi >=1.72.0,<1.73.0
+  - bioconductor-biocgenerics >=0.56.0,<0.57.0
+  - r-base
+  - r-dplyr
+  - r-purrr >=0.2.2
+  - r-rcurl
+  - r-tibble >=2.0
+  - r-xml
+source:
+  md5: b6ae37ef2a74420c5ab7e7555cc0366d
+  url:
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/multiMiR_1.32.0.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/multiMiR/multiMiR_1.32.0.tar.gz
+  - https://bioarchive.galaxyproject.org/multiMiR_1.32.0.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-multimir/bioconductor-multimir_1.32.0_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('multiMiR')"

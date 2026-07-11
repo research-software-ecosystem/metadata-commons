@@ -1,0 +1,31 @@
+about:
+  home: https://github.com/evolbioinfo/goalign
+  license: GPL-2.0
+  summary: goalign is a set of command line tools to manipulate multiple alignments
+build:
+  binary_relocation: false
+  number: 0
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+  skip-lints:
+  - should_be_noarch_generic
+  - should_not_be_noarch_source
+package:
+  name: goalign
+  version: 0.4.0
+requirements:
+  build:
+  - go-nocgo
+source:
+- folder: src/github.com/evolbioinfo/goalign/
+  sha256: c70415088e62925dc353d6a6e1250c5ecc0f0db4c2a75e61590de8faf70595ff
+  url: https://github.com/evolbioinfo/goalign/archive/v0.4.0.tar.gz
+test:
+  commands:
+  - goalign -h
+  - goalign_test.sh
+  - goalign version

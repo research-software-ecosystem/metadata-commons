@@ -1,0 +1,34 @@
+about:
+  dev_url: https://github.com/lh3/trimadap
+  home: https://github.com/lh3/trimadap
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE.txt
+  summary: Fast but inaccurate adapter trimmer for Illumina reads.
+build:
+  number: 7
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+package:
+  name: trimadap
+  version: r11
+requirements:
+  build:
+  - make
+  - null
+  host:
+  - zlib
+source:
+  patches:
+  - trimadap-aarch64.patch
+  sha256: 40f1c0d0266d7c06f37392e6c73af7ef78a140ef74c740bf0e86bbf1e3654d05
+  url: https://github.com/lh3/trimadap/archive/ec5a764e1834363ae0c4b52f52bdb114ff7af265.tar.gz
+test:
+  commands:
+  - trimadap-mt test.fa
+  source_files:
+  - test.fa

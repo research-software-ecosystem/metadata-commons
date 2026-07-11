@@ -1,0 +1,35 @@
+about:
+  description: squigulator is a tool for simulating nanopore raw signal data.
+  home: https://github.com/hasindu2008/squigulator
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE
+  summary: A tool for simulating nanopore raw signal data
+build:
+  number: 0
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+package:
+  name: squigulator
+  version: 0.5.0
+requirements:
+  build:
+  - make
+  - null
+  - null
+  host:
+  - zlib
+  - wget
+  run:
+  - zlib
+source:
+  sha256: f8b428655d586427c6e0c939d4a0383fa8569523234e3c21951edcd23372a66a
+  url: https://github.com/hasindu2008/squigulator/releases/download/v0.5.0/squigulator-v0.5.0-release.tar.gz
+test:
+  commands:
+  - squigulator --help
+  - squigulator --version

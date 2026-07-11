@@ -1,0 +1,39 @@
+about:
+  home: https://customtkinter.tomschimansky.com
+  license: MIT
+  license_file: LICENSE
+  summary: Create modern looking GUIs with Python
+build:
+  noarch: python
+  number: 0
+  run_exports:
+  - null
+  script: ' -m pip install . --no-deps -vvv'
+extra:
+  recipe-maintainers:
+  - ypriverol
+package:
+  name: customtkinter
+  version: 6.0.0
+requirements:
+  host:
+  - python
+  - setuptools >=42
+  - wheel
+  - pip
+  run:
+  - python
+  - darkdetect
+  - typing-extensions
+  - xorg-libx11
+  - packaging
+source:
+  sha256: c782df167bc64ab3fc3140286df06967ac2de4dcc97dd5958426fe9c1a98057b
+  url: https://pypi.io/packages/source/c/customtkinter/customtkinter-6.0.0.tar.gz
+test:
+  commands:
+  - pip check
+  imports:
+  - customtkinter
+  requires:
+  - pip

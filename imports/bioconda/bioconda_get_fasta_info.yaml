@@ -1,0 +1,30 @@
+about:
+  home: https://github.com/nylander/get_fasta_info
+  license: MIT
+  license_file: LICENSE
+  summary: get_FAST{A,Q}_info - Get fast info on fasta and fastq files
+build:
+  number: 0
+  run_exports:
+  - null
+package:
+  name: get_fasta_info
+  version: 2.5.0
+requirements:
+  build:
+  - make
+  - null
+  - autoconf
+  - automake
+  host:
+  - libzlib
+  - zlib
+  run:
+  - libzlib
+source:
+  sha256: 6f401933da823766223a1b1af4bbfa1fd420f008d58ac3f88ab178004d968715
+  url: https://github.com/nylander/get_fasta_info/archive/refs/tags/v2.5.0.tar.gz
+test:
+  commands:
+  - get_fasta_info -h 2>/dev/null
+  - get_fastq_info -h 2>/dev/null

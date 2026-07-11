@@ -1,0 +1,37 @@
+about:
+  dev_url: https://github.com/Ensembl/WiggleTools
+  doc_url: https://github.com/Ensembl/WiggleTools/blob/v1.2.11/README.md
+  home: https://github.com/Ensembl/WiggleTools
+  license: Apache-2.0
+  license_family: APACHE
+  license_file: LICENSE
+  summary: The WiggleTools package allows genomewide data files to be manipulated
+    as numerical functions, equipped with all the standard functional analysis operators
+    (sum, product, product by a scalar, comparators), and derived statistics (mean,
+    median, variance, stddev, t-test, Wilcoxon's rank sum test, etc).
+build:
+  number: 10
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+package:
+  name: wiggletools
+  version: 1.2.11
+requirements:
+  build:
+  - make
+  - null
+  host:
+  - libbigwig
+  - htslib
+  - gsl
+  - libcblas
+source:
+  sha256: ba239c55d017c5d7fd7e11ebf827a1caf3e504bf61bdcd511cd9342da0e94005
+  url: https://github.com/Ensembl/WiggleTools/archive/v1.2.11.tar.gz
+test:
+  commands:
+  - wiggletools --help

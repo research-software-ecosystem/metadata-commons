@@ -1,0 +1,30 @@
+about:
+  dev_url: https://github.com/paoloshasta/shasta
+  doc_url: https://paoloshasta.github.io/shasta/
+  home: https://github.com/paoloshasta/shasta
+  license: MIT
+  license_family: MIT
+  summary: De novo assembly from Oxford Nanopore reads.
+build:
+  number: 0
+  run_exports:
+  - null
+  skip: true
+extra:
+  identifiers:
+  - doi:https://doi.org/10.1038/s41587-020-0503-6
+package:
+  name: shasta
+  version: 0.14.0
+requirements:
+  build:
+  - null
+  run:
+  - libpng
+  - python
+source:
+  sha256: ce6552279b4d5aced6385194849fb5827f2cd0f5e267247453e85d9a82009079
+  url: https://github.com/paoloshasta/shasta/releases/download/0.14.0/shasta-Linux-0.14.0
+test:
+  commands:
+  - shasta --help

@@ -1,0 +1,56 @@
+about:
+  description: A tool to measure reproducibility between genomic experiments that
+    produce two-dimensional peaks (interactions between peaks), such as ChIA-PET,
+    HiChIP, and HiC. idr2d is an extension of the original idr package, which is intended
+    for (one-dimensional) ChIP-seq peaks.
+  home: https://bioconductor.org/packages/3.22/bioc/html/idr2d.html
+  license: MIT + file LICENSE
+  license_file: LICENSE
+  summary: Irreproducible Discovery Rate for Genomic Interactions Data
+build:
+  noarch: generic
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+package:
+  name: bioconductor-idr2d
+  version: 1.24.0
+requirements:
+  host:
+  - bioconductor-genomeinfodb >=1.46.0,<1.47.0
+  - bioconductor-genomicranges >=1.62.0,<1.63.0
+  - bioconductor-iranges >=2.44.0,<2.45.0
+  - r-base
+  - r-dplyr >=0.7.6
+  - r-futile.logger >=1.4.3
+  - r-ggplot2 >=3.1.1
+  - r-idr >=1.2
+  - r-magrittr >=1.5
+  - r-reticulate >=1.13
+  - r-scales >=1.0.0
+  - r-stringr >=1.3.1
+  run:
+  - bioconductor-genomeinfodb >=1.46.0,<1.47.0
+  - bioconductor-genomicranges >=1.62.0,<1.63.0
+  - bioconductor-iranges >=2.44.0,<2.45.0
+  - r-base
+  - r-dplyr >=0.7.6
+  - r-futile.logger >=1.4.3
+  - r-ggplot2 >=3.1.1
+  - r-idr >=1.2
+  - r-magrittr >=1.5
+  - r-reticulate >=1.13
+  - r-scales >=1.0.0
+  - r-stringr >=1.3.1
+source:
+  md5: 15fea78ae6d5d18914b3969c19eb32de
+  url:
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/idr2d_1.24.0.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/idr2d/idr2d_1.24.0.tar.gz
+  - https://bioarchive.galaxyproject.org/idr2d_1.24.0.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-idr2d/bioconductor-idr2d_1.24.0_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('idr2d')"

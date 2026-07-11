@@ -1,0 +1,53 @@
+about:
+  description: "AMRf\xEDor orchestrates multiple alignment tools (BLAST, DIAMOND,\
+    \ Bowtie2, BWA, Minimap2) \nto search DNA and protein sequences against AMR databases\
+    \ with transparent, \ncoverage-based validation.\n"
+  dev_url: https://github.com/NickJD/AMRfior
+  doc_url: https://github.com/NickJD/AMRfior
+  home: https://github.com/NickJD/AMRfior
+  license: GPL-3.0-only
+  license_file: LICENSE
+  summary: "AMRf\xEDor: A customisable and multi-tool approach for antimicrobial resistance\
+    \ gene detection"
+build:
+  entry_points:
+  - AMRfior = AMRfior.AMRfior:main
+  - amrfior = AMRfior.AMRfior:main
+  noarch: python
+  number: 0
+  run_exports:
+  - null
+  script: -m pip install . -vv --no-deps --no-build-isolation
+extra:
+  recipe-maintainers:
+  - NickJD
+package:
+  name: amrfior
+  version: 0.5.1
+requirements:
+  host:
+  - python >=3.10
+  - setuptools
+  - wheel
+  - pip
+  run:
+  - python >=3.10
+  - samtools >=1.19.2
+  - blast >=2.17.0
+  - diamond >=2.1.13
+  - bowtie2 >=2.5.4
+  - bwa >=0.7.19
+  - minimap2 >=2.30
+  - seqtk >=1.4
+source:
+  sha256: 650498211b50e0f99adfaa0e191e1a287b1ac5490a8da82b5f966e8cb5385a39
+  url: https://pypi.org/packages/source/a/amrfior/amrfior-0.5.1.tar.gz
+test:
+  commands:
+  - pip check
+  - AMRfior --help
+  - amrfior --help
+  imports:
+  - AMRfior
+  requires:
+  - pip

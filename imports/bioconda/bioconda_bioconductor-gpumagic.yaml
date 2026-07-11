@@ -1,0 +1,56 @@
+about:
+  description: The package aims to help users write openCL code with little or no
+    effort. It is able to compile an user-defined R function and run it on a device
+    such as a CPU or a GPU. The user can also write and run their openCL code directly
+    by calling .kernel function.
+  home: https://bioconductor.org/packages/3.20/bioc/html/gpuMagic.html
+  license: GPL-3
+  license_file: /lib/R/share/licenses/GPL-3
+  summary: An openCL compiler with the capacity to compile R functions and run the
+    code on GPU
+build:
+  number: 1
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+package:
+  name: bioconductor-gpumagic
+  version: 1.22.0
+requirements:
+  build:
+  - null
+  - null
+  - make
+  host:
+  - bioconductor-biocgenerics >=0.52.0,<0.53.0
+  - r-base
+  - r-deriv
+  - r-desctools
+  - r-digest
+  - r-pryr
+  - r-rcpp
+  - r-stringr
+  - ocl-icd
+  - libblas
+  - liblapack
+  run:
+  - bioconductor-biocgenerics >=0.52.0,<0.53.0
+  - r-base
+  - r-deriv
+  - r-desctools
+  - r-digest
+  - r-pryr
+  - r-rcpp
+  - r-stringr
+  - ocl-icd
+source:
+  md5: cc537f655d58c0a240bb6905612a2ac3
+  url:
+  - https://bioconductor.org/packages/3.20/bioc/src/contrib/gpuMagic_1.22.0.tar.gz
+  - https://bioconductor.org/packages/3.20/bioc/src/contrib/Archive/gpuMagic/gpuMagic_1.22.0.tar.gz
+  - https://bioarchive.galaxyproject.org/gpuMagic_1.22.0.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-gpumagic/bioconductor-gpumagic_1.22.0_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('gpuMagic')"

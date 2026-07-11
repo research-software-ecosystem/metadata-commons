@@ -1,0 +1,64 @@
+about:
+  description: Co-expression analysis for expression profiles arising from high-throughput
+    sequencing data. Feature (e.g., gene) profiles are clustered using adapted transformations
+    and mixture models or a K-means algorithm, and model selection criteria (to choose
+    an appropriate number of clusters) are provided.
+  home: https://bioconductor.org/packages/3.22/bioc/html/coseq.html
+  license: GPL-3
+  license_file: /lib/R/share/licenses/GPL-3
+  summary: Co-Expression Analysis of Sequencing Data
+build:
+  noarch: generic
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+package:
+  name: bioconductor-coseq
+  version: 1.34.0
+requirements:
+  host:
+  - bioconductor-biocparallel >=1.44.0,<1.45.0
+  - bioconductor-deseq2 >=1.50.0,<1.51.0
+  - bioconductor-edger >=4.8.0,<4.9.0
+  - bioconductor-htsfilter >=1.50.0,<1.51.0
+  - bioconductor-s4vectors >=0.48.0,<0.49.0
+  - bioconductor-summarizedexperiment >=1.40.0,<1.41.0
+  - r-base
+  - r-capushe
+  - r-compositions
+  - r-corrplot
+  - r-e1071
+  - r-ggplot2
+  - r-htscluster
+  - r-mvtnorm
+  - r-rmixmod
+  - r-scales
+  run:
+  - bioconductor-biocparallel >=1.44.0,<1.45.0
+  - bioconductor-deseq2 >=1.50.0,<1.51.0
+  - bioconductor-edger >=4.8.0,<4.9.0
+  - bioconductor-htsfilter >=1.50.0,<1.51.0
+  - bioconductor-s4vectors >=0.48.0,<0.49.0
+  - bioconductor-summarizedexperiment >=1.40.0,<1.41.0
+  - r-base
+  - r-capushe
+  - r-compositions
+  - r-corrplot
+  - r-e1071
+  - r-ggplot2
+  - r-htscluster
+  - r-mvtnorm
+  - r-rmixmod
+  - r-scales
+source:
+  md5: f980813592daf072a8ed9bdc14c2cfe8
+  url:
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/coseq_1.34.0.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/coseq/coseq_1.34.0.tar.gz
+  - https://bioarchive.galaxyproject.org/coseq_1.34.0.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-coseq/bioconductor-coseq_1.34.0_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('coseq')"

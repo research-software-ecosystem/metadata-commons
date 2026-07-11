@@ -1,0 +1,28 @@
+about:
+  doc_url: https://metacpan.org/pod/Mozilla::CA
+  home: https://metacpan.org/pod/Mozilla::CA
+  license: Unknown
+  summary: Mozilla's CA cert bundle in PEM format.
+build:
+  noarch: generic
+  number: 0
+  run_exports:
+  - null
+package:
+  name: perl-mozilla-ca
+  version: '20250602'
+requirements:
+  build:
+  - make
+  host:
+  - perl
+  - perl-extutils-makemaker
+  - perl-test
+  run:
+  - perl
+source:
+  sha256: adeac0752440b2da094e8036bab6c857e22172457658868f5ac364f0c7b35481
+  url: https://cpan.metacpan.org/authors/id/L/LW/LWP/Mozilla-CA-20250602.tar.gz
+test:
+  imports:
+  - Mozilla::CA

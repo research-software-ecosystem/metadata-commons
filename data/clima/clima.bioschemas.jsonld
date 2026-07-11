@@ -1,0 +1,179 @@
+{
+  "@context": {
+    "biotools": "https://bio.tools/ontology/",
+    "brick": "https://brickschema.org/schema/Brick#",
+    "bsc": "http://bioschemas.org/",
+    "bsct": "http://bioschemas.org/types/",
+    "csvw": "http://www.w3.org/ns/csvw#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "dcam": "http://purl.org/dc/dcam/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dcmitype": "http://purl.org/dc/dcmitype/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "doap": "http://usefulinc.com/ns/doap#",
+    "edam": "http://edamontology.org/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "geo": "http://www.opengis.net/ont/geosparql#",
+    "odrl": "http://www.w3.org/ns/odrl/2/",
+    "org": "http://www.w3.org/ns/org#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "prof": "http://www.w3.org/ns/dx/prof/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "qb": "http://purl.org/linked-data/cube#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "sc": "http://schema.org/",
+    "schema": "https://schema.org/",
+    "sh": "http://www.w3.org/ns/shacl#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "sosa": "http://www.w3.org/ns/sosa/",
+    "ssn": "http://www.w3.org/ns/ssn/",
+    "time": "http://www.w3.org/2006/time#",
+    "vann": "http://purl.org/vocab/vann/",
+    "void": "http://rdfs.org/ns/void#",
+    "wgs": "https://www.w3.org/2003/01/geo/wgs84_pos#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "https://doi.org/10.1093/nar/gkn730",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://bio.tools/clima",
+      "@type": "sc:SoftwareApplication",
+      "biotools:primaryContact": "Paolo Romano",
+      "bsc:input": [
+        {
+          "@id": "_:N42c968a551ad48fba41a8985bfe559ad"
+        },
+        {
+          "@id": "_:Nb71526c22f4d4fadae40577205e8fd96"
+        },
+        {
+          "@id": "_:N3d9632579d3d4bcdbe66e565c310d1d7"
+        },
+        {
+          "@id": "_:N2b309574e9ff4e65bd446ee47e763773"
+        }
+      ],
+      "bsc:output": [
+        {
+          "@id": "_:N5f2f9f4141544810adf19cbdc399e0f8"
+        },
+        {
+          "@id": "_:N9daf2dfcb8be4fea81ac9f3a834c0aac"
+        },
+        {
+          "@id": "_:N6a5e7f5672ac445f904738f407498afb"
+        },
+        {
+          "@id": "_:N487a00840d494437be690ec1fc8d6c90"
+        }
+      ],
+      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "sc:additionalType": "Database portal",
+      "sc:applicationSubCategory": {
+        "@id": "edam:topic_2229"
+      },
+      "sc:citation": [
+        "pubmed:18927105",
+        {
+          "@id": "https://doi.org/10.1093/nar/gkn730"
+        },
+        "pmcid:PMC2686526"
+      ],
+      "sc:description": "Cell line integrated molecular authentication.",
+      "sc:featureList": {
+        "@id": "edam:operation_0224"
+      },
+      "sc:name": "CLIMA",
+      "sc:operatingSystem": [
+        "Mac",
+        "Linux",
+        "Windows"
+      ],
+      "sc:provider": "IRCSS AOU San Martino IST",
+      "sc:softwareHelp": {
+        "@id": "http://bioinformatics.hsanmartino.it/clima/help.php"
+      },
+      "sc:url": "http://bioinformatics.hsanmartino.it/clima/"
+    },
+    {
+      "@id": "_:N42c968a551ad48fba41a8985bfe559ad",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2320"
+      },
+      "sc:name": "Cell line name (assonant)"
+    },
+    {
+      "@id": "_:Nb71526c22f4d4fadae40577205e8fd96",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2317"
+      },
+      "sc:name": "Cell line name (exact)"
+    },
+    {
+      "@id": "_:N3d9632579d3d4bcdbe66e565c310d1d7",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2319"
+      },
+      "sc:name": "Cell line name (no punctuation)"
+    },
+    {
+      "@id": "_:N2b309574e9ff4e65bd446ee47e763773",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2318"
+      },
+      "sc:name": "Cell line name (truncated)"
+    },
+    {
+      "@id": "_:N5f2f9f4141544810adf19cbdc399e0f8",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0963"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2331"
+      },
+      "sc:name": "Cell line report"
+    },
+    {
+      "@id": "_:N9daf2dfcb8be4fea81ac9f3a834c0aac",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0963"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2331"
+      },
+      "sc:name": "Cell line report"
+    },
+    {
+      "@id": "_:N6a5e7f5672ac445f904738f407498afb",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0963"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2331"
+      },
+      "sc:name": "Cell line report"
+    },
+    {
+      "@id": "_:N487a00840d494437be690ec1fc8d6c90",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0963"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2331"
+      },
+      "sc:name": "Cell line report"
+    }
+  ]
+}

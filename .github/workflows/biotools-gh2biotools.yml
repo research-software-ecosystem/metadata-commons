@@ -1,0 +1,111 @@
+name: validate & run gh2biotools on .biotools.json changes to master
+
+on:
+  push:
+    paths:
+      - 'data/**/*.biotools.json'
+    branches:
+      - master
+
+jobs:
+  run-gh2biotools:
+    runs-on: ubuntu-latest
+    if: github.actor != 'biotools-bot'
+    
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: '**/*.biotools.json'
+          sparse-checkout-cone-mode: false
+          fetch-depth: 2
+
+
+      - name: check changes to biotools.json files
+        id: changes
+        uses: tj-actions/changed-files@22103cc46bda19c2b464ffe86db46df6922fd323 # v47.0.5
+        with:
+          files: | 
+            **/*.biotools.json
+
+
+      - name: validate allowed fields
+        run: |
+          echo "Validating fields in changed .biotools.json files..."
+          PROTECTED_FIELDS=(
+            "biotoolsID"
+            "biotoolsCURIE"
+            "additionDate"
+            "collectionID"
+            "elixirPlatform"
+            "elixirNode"
+            "elixirCommunity"
+            "lastUpdate"
+            "owner"
+            "editPermission"
+            "validated"
+            "homepage_status"
+            "elixir_badge"
+            "confidence_flag"
+          )
+
+          failed=false
+
+          for file in $(echo "${{ steps.changes.outputs.all_changed_files }}"); do
+            echo "Checking $file..."
+        
+            git show ${{ github.event.before }}:$file > old.json || continue
+            cat $file > new.json
+
+            for field in "${PROTECTED_FIELDS[@]}"; do
+              old_val=$(jq -e ".$field" old.json 2>/dev/null || echo "")
+              new_val=$(jq -e ".$field" new.json 2>/dev/null || echo "")
+              if [ "$old_val" != "$new_val" ]; then
+                echo "❌ Field '$field' has been modified in $file"
+                failed=true
+              fi
+            done
+          done
+
+          if [ "$failed" = true ]; then
+            echo "::error ::One or more not allowed fields have been modified."
+            exit 1
+          else
+            echo "✅ All changed fields are allowed."
+          fi
+
+
+      - name: checkout utils repo
+        uses: actions/checkout@v4
+        with:
+          repository: research-software-ecosystem/utils
+          path: content-ecosystem-utils
+          sparse-checkout: 'scripts/runbiotools'
+          sparse-checkout-cone-mode: false
+          fetch-depth: 1
+
+
+      - name: set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+
+      - name: install dependencies
+        working-directory: content-ecosystem-utils/scripts/runbiotools
+        run: |
+          pip3 install -r requirements.txt
+
+
+      - name: run gh2biotools.py script
+        env:
+          BIOTOOLS_API_TOKEN: ${{ secrets.BIOTOOLS_API_TOKEN }}
+        run: |
+          changed_files="${{ steps.changes.outputs.all_changed_files }}"
+
+          command="python content-ecosystem-utils/scripts/runbiotools/gh2biotools.py"
+
+          if [[ -n "$changed_files" ]]; then
+            command="$command --files \"$changed_files\""
+          fi
+
+          eval "$command"

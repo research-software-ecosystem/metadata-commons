@@ -1,0 +1,36 @@
+about:
+  description: Contains pre-built human (GPL570) database of gene expression profiles.
+    The gene expression data was downloaded from NCBI GEO and preprocessed and normalized
+    consistently. The biological context of each sample was recorded and manually
+    verified based on the sample description in GEO.
+  home: https://bioconductor.org/packages/3.22/data/experiment/html/Affyhgu133Plus2Expr.html
+  license: GPL (>=2)
+  license_file: /lib/R/share/licenses/GPL-3
+  summary: Affyhgu133Plus2Expr (GPL570) Expression Data Package
+build:
+  noarch: generic
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+package:
+  name: bioconductor-affyhgu133plus2expr
+  version: 1.44.0
+requirements:
+  host:
+  - r-base
+  run:
+  - r-base
+  - curl
+  - bioconductor-data-packages >=20260207
+source:
+  md5: 213d50673e66d370cc8d8da2077fb8da
+  url:
+  - https://bioconductor.org/packages/3.22/data/experiment/src/contrib/Affyhgu133Plus2Expr_1.44.0.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/Affyhgu133Plus2Expr/Affyhgu133Plus2Expr_1.44.0.tar.gz
+  - https://bioarchive.galaxyproject.org/Affyhgu133Plus2Expr_1.44.0.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-affyhgu133plus2expr/bioconductor-affyhgu133plus2expr_1.44.0_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('Affyhgu133Plus2Expr')"

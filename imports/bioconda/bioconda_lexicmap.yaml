@@ -1,0 +1,27 @@
+about:
+  home: https://github.com/shenwei356/LexicMap
+  license: MIT
+  summary: efficient sequence alignment against millions of prokaryotic genomes
+build:
+  number: 0
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+  skip-lints:
+  - should_be_noarch_generic
+  - should_not_be_noarch_source
+package:
+  name: lexicmap
+  version: 0.9.0
+requirements:
+  build:
+  - null
+source:
+  sha256: 977a8fdb86a8ed5e8304b89d5a432536e3c42681edb5b9e3018e687be59d918f
+  url: https://github.com/shenwei356/LexicMap/archive/v0.9.0.tar.gz
+test:
+  commands:
+  - lexicmap version

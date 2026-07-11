@@ -1,0 +1,25 @@
+about:
+  home: https://github.com/hartwigmedical/hmftools/blob/master/cider/README.md
+  license: GPL-3.0-only
+  license_family: GPL3
+  summary: Determine a comprehensive list of CDR3 sequences for each of the IG and
+    TCR loci from RNA and DNA sequence data.
+build:
+  noarch: generic
+  number: 0
+  run_exports:
+  - null
+package:
+  name: hmftools-cider
+  version: '1.2'
+requirements:
+  run:
+  - blast
+  - openjdk >=8,<=21
+  - zlib
+source:
+  sha256: 260fd38dce88dab5b762a9e2eb407bfa72f36387d6357523ed0fff7ebe559daf
+  url: https://github.com/hartwigmedical/hmftools/releases/download/cider-v1.2/cider_v1.2.jar
+test:
+  commands:
+  - cider -version

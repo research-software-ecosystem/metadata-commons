@@ -1,0 +1,35 @@
+about:
+  doc_url: https://metacpan.org/pod/Template::Toolkit
+  home: https://metacpan.org/pod/Template::Toolkit
+  license: perl_5
+  summary: Comprehensive template processing system.
+build:
+  number: 0
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+package:
+  name: perl-template-toolkit
+  version: '3.103'
+requirements:
+  build:
+  - make
+  - null
+  - null
+  host:
+  - perl
+  - perl-appconfig
+  - perl-image-info
+  - perl-image-size
+  - perl-test-leaktrace
+  run:
+  - perl
+  - perl-appconfig
+  - perl-image-info
+  - perl-image-size
+source:
+  sha256: 40571fd1b3ea0d735cee76ea33f807364fb560205ecdb5caaccf0339175dd984
+  url: https://cpan.metacpan.org/authors/id/T/TO/TODDR/Template-Toolkit-3.103.tar.gz
+test: null

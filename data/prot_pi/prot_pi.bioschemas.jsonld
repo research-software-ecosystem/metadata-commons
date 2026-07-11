@@ -1,0 +1,255 @@
+{
+  "@context": {
+    "biotools": "https://bio.tools/ontology/",
+    "brick": "https://brickschema.org/schema/Brick#",
+    "bsc": "http://bioschemas.org/",
+    "bsct": "http://bioschemas.org/types/",
+    "csvw": "http://www.w3.org/ns/csvw#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "dcam": "http://purl.org/dc/dcam/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dcmitype": "http://purl.org/dc/dcmitype/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "doap": "http://usefulinc.com/ns/doap#",
+    "edam": "http://edamontology.org/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "geo": "http://www.opengis.net/ont/geosparql#",
+    "odrl": "http://www.w3.org/ns/odrl/2/",
+    "org": "http://www.w3.org/ns/org#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "prof": "http://www.w3.org/ns/dx/prof/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "qb": "http://purl.org/linked-data/cube#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "sc": "http://schema.org/",
+    "schema": "https://schema.org/",
+    "sh": "http://www.w3.org/ns/shacl#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "sosa": "http://www.w3.org/ns/sosa/",
+    "ssn": "http://www.w3.org/ns/ssn/",
+    "time": "http://www.w3.org/2006/time#",
+    "vann": "http://purl.org/vocab/vann/",
+    "void": "http://rdfs.org/ns/void#",
+    "wgs": "https://www.w3.org/2003/01/geo/wgs84_pos#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "https://bio.tools/prot_pi",
+      "@type": "sc:SoftwareApplication",
+      "bsc:input": [
+        {
+          "@id": "_:Ne1d82584f3e94f37a662fefc844d9743"
+        },
+        {
+          "@id": "_:N5a8f3994d24b42f98519dce357bab80c"
+        }
+      ],
+      "bsc:output": [
+        {
+          "@id": "_:Nc8d8ff5f732c42469c4dcd3906febcad"
+        },
+        {
+          "@id": "_:N57220cdf70aa47908d6a2ec6cc6a59b6"
+        },
+        {
+          "@id": "_:N97c99d14156f4c5a96b3118a996ccb66"
+        },
+        {
+          "@id": "_:Nd6c33af8fab845d0a8d998d3f0ede21d"
+        },
+        {
+          "@id": "_:N2d014ded87dd44498fc41357e25006f9"
+        },
+        {
+          "@id": "_:Nefbeaa50cf60407ba826233d0e741d76"
+        }
+      ],
+      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "sc:additionalType": "Web application",
+      "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_0601"
+        },
+        {
+          "@id": "edam:topic_3520"
+        },
+        {
+          "@id": "edam:topic_3524"
+        },
+        {
+          "@id": "edam:topic_0121"
+        }
+      ],
+      "sc:description": "Online calculation (simulation) of many physicochemical parameters of peptides/proteins.",
+      "sc:featureList": [
+        {
+          "@id": "edam:operation_0407"
+        },
+        {
+          "@id": "edam:operation_0250"
+        },
+        {
+          "@id": "edam:operation_2426"
+        },
+        {
+          "@id": "edam:operation_2574"
+        }
+      ],
+      "sc:license": "Other",
+      "sc:name": "Prot pi",
+      "sc:operatingSystem": [
+        "Linux",
+        "Windows",
+        "Mac"
+      ],
+      "sc:softwareHelp": {
+        "@id": "https://www.protpi.ch/Home/About"
+      },
+      "sc:url": "https://www.protpi.ch"
+    },
+    {
+      "@id": "_:Nc8d8ff5f732c42469c4dcd3906febcad",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2970"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3508"
+        },
+        {
+          "@id": "edam:format_3620"
+        },
+        {
+          "@id": "edam:format_3752"
+        }
+      ],
+      "sc:name": "Protein hydropathy data"
+    },
+    {
+      "@id": "_:N57220cdf70aa47908d6a2ec6cc6a59b6",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0897"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3752"
+        },
+        {
+          "@id": "edam:format_3508"
+        },
+        {
+          "@id": "edam:format_3620"
+        }
+      ],
+      "sc:name": "Protein property"
+    },
+    {
+      "@id": "_:N97c99d14156f4c5a96b3118a996ccb66",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1528"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3508"
+        },
+        {
+          "@id": "edam:format_3752"
+        },
+        {
+          "@id": "edam:format_3620"
+        }
+      ],
+      "sc:name": "Protein isoelectric point"
+    },
+    {
+      "@id": "_:Nd6c33af8fab845d0a8d998d3f0ede21d",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1520"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3620"
+        },
+        {
+          "@id": "edam:format_3752"
+        },
+        {
+          "@id": "edam:format_3508"
+        }
+      ],
+      "sc:name": "Peptide hydrophobic moment"
+    },
+    {
+      "@id": "_:N2d014ded87dd44498fc41357e25006f9",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1522"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3591"
+        },
+        {
+          "@id": "edam:format_3752"
+        },
+        {
+          "@id": "edam:format_3579"
+        },
+        {
+          "@id": "edam:format_3467"
+        },
+        {
+          "@id": "edam:format_3603"
+        }
+      ],
+      "sc:name": "Protein sequence hydropathy plot"
+    },
+    {
+      "@id": "_:Nefbeaa50cf60407ba826233d0e741d76",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2979"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3508"
+        },
+        {
+          "@id": "edam:format_3620"
+        },
+        {
+          "@id": "edam:format_3752"
+        }
+      ],
+      "sc:name": "Peptide property"
+    },
+    {
+      "@id": "_:Ne1d82584f3e94f37a662fefc844d9743",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2974"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Protein sequence (raw)"
+    },
+    {
+      "@id": "_:N5a8f3994d24b42f98519dce357bab80c",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0846"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Chemical formula"
+    }
+  ]
+}

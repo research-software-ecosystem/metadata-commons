@@ -1,0 +1,40 @@
+about:
+  home: https://github.com/ialbert/pywgsim
+  license: MIT
+  summary: pywgsim
+build:
+  entry_points:
+  - pywgsim=pywgsim.main:run
+  number: 0
+  run_exports:
+  - null
+  script: -m pip install . -vv
+extra:
+  recipe-maintainers:
+  - tdido
+package:
+  name: pywgsim
+  version: 0.6.0
+requirements:
+  build:
+  - null
+  host:
+  - cython
+  - pip
+  - python
+  - zlib
+  - setuptools
+  run:
+  - plac
+  - python
+source:
+  sha256: 863f2de8e989dbcd667b01c5d3d8f82f9762c1086928016c467f9743dfa3f82f
+  url: https://pypi.io/packages/source/p/pywgsim/pywgsim-0.6.0.tar.gz
+test:
+  commands:
+  - pip check
+  - pywgsim --help
+  imports:
+  - pywgsim
+  requires:
+  - pip

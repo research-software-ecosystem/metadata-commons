@@ -1,0 +1,43 @@
+about:
+  description: 'Datasets of accompany Harman, a PCA and constrained optimisation based
+    technique. Contains three example datasets: IMR90, Human lung fibroblast cells
+    exposed to nitric oxide; NPM, an experiment to test skin penetration of metal
+    oxide nanoparticles following topical application of sunscreens in non-pregnant
+    mice; OLF; an experiment to gauge the response of human olfactory neurosphere-derived
+    (hONS) cells to ZnO nanoparticles. Since version 1.24, this package also contains
+    the Infinium5 dataset, a set of batch correction adjustments across 5 Illumina
+    Infinium Methylation BeadChip datasets. This file does not contain methylation
+    data, but summary statistics of 5 datasets after correction. There is also an
+    EpiSCOPE_sample file as exampling for the new methylation clustering functionality
+    in Harman.'
+  home: https://bioconductor.org/packages/3.22/data/experiment/html/HarmanData.html
+  license: GPL-3
+  license_file: /lib/R/share/licenses/GPL-3
+  summary: Data for the Harman package
+build:
+  noarch: generic
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+package:
+  name: bioconductor-harmandata
+  version: 1.38.0
+requirements:
+  host:
+  - r-base
+  run:
+  - r-base
+  - curl
+  - bioconductor-data-packages >=20260207
+source:
+  md5: ef512bbf9eded8f15e9b4f9d2af0feb3
+  url:
+  - https://bioconductor.org/packages/3.22/data/experiment/src/contrib/HarmanData_1.38.0.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/HarmanData/HarmanData_1.38.0.tar.gz
+  - https://bioarchive.galaxyproject.org/HarmanData_1.38.0.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-harmandata/bioconductor-harmandata_1.38.0_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('HarmanData')"

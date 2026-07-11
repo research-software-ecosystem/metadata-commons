@@ -1,0 +1,39 @@
+about:
+  doc_url: https://metacpan.org/pod/LWP::Protocol::https
+  home: https://metacpan.org/pod/LWP::Protocol::https
+  license: Perl_5
+  summary: Provide https support for LWP::UserAgent.
+build:
+  noarch: generic
+  number: 0
+  run_exports:
+  - null
+extra:
+  skip-lints:
+  - missing_tests
+package:
+  name: perl-lwp-protocol-https
+  version: '6.15'
+requirements:
+  build:
+  - make
+  host:
+  - perl
+  - perl-extutils-makemaker
+  - perl-file-spec
+  - perl-file-temp
+  - perl-io-socket-ssl
+  - perl-mozilla-ca
+  - perl-net-http
+  - perl-test-requiresinternet
+  - perl-test-simple
+  run:
+  - perl
+  - perl-io-socket-ssl
+  - perl-mozilla-ca
+  - perl-net-http
+  - perl-test-requiresinternet
+source:
+  sha256: 44eec2da147ba0511090871b0ca82f69794376bc31e8c76d1040961ba57f59b8
+  url: https://cpan.metacpan.org/authors/id/O/OA/OALDERS/LWP-Protocol-https-6.15.tar.gz
+test: null

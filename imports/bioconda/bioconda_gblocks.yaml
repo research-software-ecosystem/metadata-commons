@@ -1,0 +1,31 @@
+about:
+  home: https://molevol-ibe.csic.es/Gblocks.html
+  license: The software and its accompanying documentation are provided as is, without
+    guarantee of support or maintenance.
+  summary: Selection of conserved blocks from multiple alignments for their use in
+    phylogenetic analysis.
+build:
+  binary_relocation: false
+  number: 0
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - osx-arm64
+  skip-lints:
+  - should_be_noarch_generic
+  - should_not_be_noarch_source
+package:
+  name: gblocks
+  version: '1.0'
+requirements:
+  build: []
+  run: []
+source:
+- sha256: e899015c8c6583fd6c6799539af31d55a108d7d951c992930f8c452cca371c89
+  url: https://molevol-ibe.csic.es/Gblocks/Gblocks_1.0_Linux.tar.gz
+- sha256: 8be8bb7fb2146449dad02a5da9c91d312dca15139eb96f1b06f5dc88b9f3dc2d
+  url: https://molevol-ibe.csic.es/Gblocks/Gblocks_1.0_macOS.tar.gz
+test:
+  commands:
+  - which Gblocks

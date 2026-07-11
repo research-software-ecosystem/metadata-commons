@@ -1,0 +1,55 @@
+about:
+  dev_url: https://github.com/EGA-archive/crypt4gh
+  doc_url: http://crypt4gh.readthedocs.io
+  home: https://github.com/EGA-archive/crypt4gh
+  license: Apache-2.0
+  license_family: APACHE
+  license_file: LICENSE
+  summary: GA4GH cryptographic tools
+build:
+  entry_points:
+  - crypt4gh = crypt4gh.__main__:main
+  number: 1
+  run_exports:
+  - null
+  script:
+  - sed -i.bak "s/^libraries=\[\]$/libraries=['sodium']/" setup.py
+  - export LDFLAGS="${LDFLAGS} -L${PREFIX}/lib"
+  - export CFLAGS="${CFLAGS} -O3 $(pkg-config --cflags libsodium)"
+  - export SODIUM_INSTALL=system
+  - -m pip install . -vvv --no-deps --no-build-isolation --no-cache-dir
+  skip: true
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+package:
+  name: python-crypt4gh
+  version: 1.8.6
+requirements:
+  build:
+  - null
+  - null
+  - pkg-config
+  host:
+  - python
+  - pip
+  - setuptools
+  - libsodium
+  run:
+  - python
+  - pyyaml
+  - docopt-ng
+  - cryptography
+  - bcrypt
+  - libsodium
+source:
+  sha256: b2802d587c354fbaed5a524f814c82607d7ecc25323356f3264f20e959f19c31
+  url: https://github.com/EGA-archive/crypt4gh/archive/refs/tags/v1.8.6.tar.gz
+test:
+  commands:
+  - crypt4gh -h
+  imports:
+  - crypt4gh
+  - crypt4gh.header
+  - crypt4gh.sodium

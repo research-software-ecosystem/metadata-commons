@@ -1,0 +1,25 @@
+about:
+  home: https://github.com/PacificBiosciences/pigeon
+  license: BSD-3-Clause-Clear
+  summary: PacBio transcript toolkit
+build:
+  number: 0
+  run_exports:
+  - null
+  skip: true
+extra:
+  recipe-maintainers:
+  - jmattick
+  - armintoepfer
+  - pb-dseifert
+  skip-lints:
+  - should_be_noarch_generic
+package:
+  name: pbpigeon
+  version: 26.2.0
+source:
+- sha256: 680f41c80ab076a5c3b2f5a0e7ca51c4dfad858d4597535b5088bd65779ac3c8
+  url: https://github.com/PacificBiosciences/pigeon/releases/download/v26.2.0/pigeon
+test:
+  commands:
+  - pigeon -h

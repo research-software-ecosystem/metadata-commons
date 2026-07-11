@@ -1,0 +1,31 @@
+about:
+  doc_url: https://metacpan.org/pod/File::Find::Rule
+  home: https://metacpan.org/pod/File::Find::Rule
+  license: perl_5
+  summary: Alternative interface to File::Find.
+build:
+  noarch: generic
+  number: 0
+  run_exports:
+  - null
+package:
+  name: perl-file-find-rule
+  version: '0.35'
+requirements:
+  build:
+  - make
+  host:
+  - perl
+  - perl-number-compare
+  - perl-text-glob
+  - perl-extutils-makemaker
+  run:
+  - perl
+  - perl-number-compare
+  - perl-text-glob
+source:
+  sha256: 2bd556289a6d44ad2ee74803258bb0b0050d246f1e81caab0b263c303acf0c82
+  url: https://cpan.metacpan.org/authors/id/R/RC/RCLAMP/File-Find-Rule-0.35.tar.gz
+test:
+  imports:
+  - File::Find::Rule

@@ -1,0 +1,67 @@
+about:
+  description: iPath is the Bioconductor package used for calculating personalized
+    pathway score and test the association with survival outcomes. Abundant single-gene
+    biomarkers have been identified and used in the clinics. However, hundreds of
+    oncogenes or tumor-suppressor genes are involved during the process of tumorigenesis.
+    We believe individual-level expression patterns of pre-defined pathways or gene
+    sets are better biomarkers than single genes. In this study, we devised a computational
+    method named iPath to identify prognostic biomarker pathways, one sample at a
+    time. To test its utility, we conducted a pan-cancer analysis across 14 cancer
+    types from The Cancer Genome Atlas and demonstrated that iPath is capable of identifying
+    highly predictive biomarkers for clinical outcomes, including overall survival,
+    tumor subtypes, and tumor stage classifications. We found that pathway-based biomarkers
+    are more robust and effective than single genes.
+  home: https://bioconductor.org/packages/3.22/bioc/html/iPath.html
+  license: GPL-2
+  license_file: /lib/R/share/licenses/GPL-2
+  summary: iPath pipeline for detecting perturbed pathways at individual level
+build:
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+package:
+  name: bioconductor-ipath
+  version: 1.16.0
+requirements:
+  build:
+  - null
+  - null
+  - make
+  host:
+  - bioconductor-biocparallel >=1.44.0,<1.45.0
+  - r-base
+  - r-ggplot2
+  - r-ggpubr
+  - r-matrixstats
+  - r-mclust
+  - r-rcpp >=1.0.5
+  - r-rcpparmadillo
+  - r-survival
+  - r-survminer
+  - libblas
+  - liblapack
+  - zlib
+  - liblzma-devel
+  run:
+  - bioconductor-biocparallel >=1.44.0,<1.45.0
+  - r-base
+  - r-ggplot2
+  - r-ggpubr
+  - r-matrixstats
+  - r-mclust
+  - r-rcpp >=1.0.5
+  - r-rcpparmadillo
+  - r-survival
+  - r-survminer
+source:
+  md5: 7a66dbd97b8749e68c83f78d6881f3ef
+  url:
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/iPath_1.16.0.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/iPath/iPath_1.16.0.tar.gz
+  - https://bioarchive.galaxyproject.org/iPath_1.16.0.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-ipath/bioconductor-ipath_1.16.0_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('iPath')"

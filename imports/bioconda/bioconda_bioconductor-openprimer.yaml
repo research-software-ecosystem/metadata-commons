@@ -1,0 +1,89 @@
+about:
+  description: An implementation of methods for designing, evaluating, and comparing
+    primer sets for multiplex PCR. Primers are designed by solving a set cover problem
+    such that the number of covered template sequences is maximized with the smallest
+    possible set of primers. To guarantee that high-quality primers are generated,
+    only primers fulfilling constraints on their physicochemical properties are selected.
+    A Shiny app providing a user interface for the functionalities of this package
+    is provided by the 'openPrimeRui' package.
+  home: https://bioconductor.org/packages/3.22/bioc/html/openPrimeR.html
+  license: GPL-2
+  license_file: /lib/R/share/licenses/GPL-2
+  summary: Multiplex PCR Primer Design and Analysis
+build:
+  noarch: generic
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+package:
+  name: bioconductor-openprimer
+  version: 1.32.0
+requirements:
+  host:
+  - bioconductor-biocgenerics >=0.56.0,<0.57.0
+  - bioconductor-biostrings >=2.78.0,<2.79.0
+  - bioconductor-decipher >=3.6.0,<3.7.0
+  - bioconductor-genomicranges >=1.62.0,<1.63.0
+  - bioconductor-iranges >=2.44.0,<2.45.0
+  - bioconductor-pwalign >=1.6.0,<1.7.0
+  - bioconductor-s4vectors >=0.48.0,<0.49.0
+  - r-ape >=3.5
+  - r-base
+  - r-digest >=0.6.9
+  - r-dplyr >=0.5.0
+  - r-foreach >=1.4.3
+  - r-ggplot2 >=2.1.0
+  - r-hmisc >=3.17-4
+  - r-lpsolveapi >=5.5.2.0-17
+  - r-magrittr >=1.5
+  - r-openxlsx >=4.0.17
+  - r-plyr >=1.8.4
+  - r-rcolorbrewer >=1.1-2
+  - r-reshape2 >=1.4.1
+  - r-scales >=0.4.0
+  - r-seqinr >=3.3-3
+  - r-stringdist >=0.9.4.1
+  - r-stringr >=1.0.0
+  - r-uniqtag >=1.0
+  - r-xml >=3.98-1.4
+  - mafft >=7.305
+  run:
+  - bioconductor-biocgenerics >=0.56.0,<0.57.0
+  - bioconductor-biostrings >=2.78.0,<2.79.0
+  - bioconductor-decipher >=3.6.0,<3.7.0
+  - bioconductor-genomicranges >=1.62.0,<1.63.0
+  - bioconductor-iranges >=2.44.0,<2.45.0
+  - bioconductor-pwalign >=1.6.0,<1.7.0
+  - bioconductor-s4vectors >=0.48.0,<0.49.0
+  - r-ape >=3.5
+  - r-base
+  - r-digest >=0.6.9
+  - r-dplyr >=0.5.0
+  - r-foreach >=1.4.3
+  - r-ggplot2 >=2.1.0
+  - r-hmisc >=3.17-4
+  - r-lpsolveapi >=5.5.2.0-17
+  - r-magrittr >=1.5
+  - r-openxlsx >=4.0.17
+  - r-plyr >=1.8.4
+  - r-rcolorbrewer >=1.1-2
+  - r-reshape2 >=1.4.1
+  - r-scales >=0.4.0
+  - r-seqinr >=3.3-3
+  - r-stringdist >=0.9.4.1
+  - r-stringr >=1.0.0
+  - r-uniqtag >=1.0
+  - r-xml >=3.98-1.4
+  - mafft >=7.305
+source:
+  md5: ff37f6162daf94107af766811ecd5ce9
+  url:
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/openPrimeR_1.32.0.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/openPrimeR/openPrimeR_1.32.0.tar.gz
+  - https://bioarchive.galaxyproject.org/openPrimeR_1.32.0.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-openprimer/bioconductor-openprimer_1.32.0_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('openPrimeR')"

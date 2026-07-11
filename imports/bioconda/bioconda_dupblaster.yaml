@@ -1,0 +1,36 @@
+about:
+  dev_url: https://github.com/fulcrumgenomics/dupblaster
+  doc_url: https://github.com/fulcrumgenomics/dupblaster/blob/main/README.md
+  home: https://github.com/fulcrumgenomics/dupblaster
+  license: MIT
+  license_family: MIT
+  license_file:
+  - LICENSE
+  - THIRDPARTY.yml
+  summary: Fast duplicate marking for query-grouped SAM/BAM files, inspired by samblaster
+    and Picard MarkDuplicates
+build:
+  number: 0
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+  recipe-maintainers:
+  - tfenne
+package:
+  name: dupblaster
+  version: 0.1.1
+requirements:
+  build:
+  - null
+  - null
+  - null
+  - cargo-bundle-licenses
+source:
+  sha256: 3c6bb7ec48bc1a8645ac022777cfb8c0cb251016de89a01e716d9cd1b273cd15
+  url: https://github.com/fulcrumgenomics/dupblaster/archive/v0.1.1.tar.gz
+test:
+  commands:
+  - dupblaster --help

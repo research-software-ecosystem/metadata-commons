@@ -1,0 +1,26 @@
+about:
+  doc_url: https://metacpan.org/release/ExtUtils-Manifest
+  home: https://metacpan.org/release/ExtUtils-Manifest
+  license: Perl_5
+  summary: Utilities to write and check a MANIFEST file.
+build:
+  noarch: generic
+  number: 0
+  run_exports:
+  - null
+package:
+  name: perl-extutils-manifest
+  version: '1.75'
+requirements:
+  build:
+  - make
+  host:
+  - perl
+  run:
+  - perl
+source:
+  sha256: 7fc8c180ac88b80e974384d265c66ed6ac58c5757ff280bc3e1a35a85338ebba
+  url: https://cpan.metacpan.org/authors/id/E/ET/ETHER/ExtUtils-Manifest-1.75.tar.gz
+test:
+  imports:
+  - ExtUtils::Manifest

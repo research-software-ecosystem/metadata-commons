@@ -1,0 +1,29 @@
+about:
+  dev_url: https://github.com/oushujun/LTR_FINDER_parallel
+  doc_url: https://github.com/oushujun/LTR_FINDER_parallel
+  home: https://github.com/oushujun/LTR_FINDER_parallel
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE
+  summary: Perl wrapper to parallelize ltr_finder
+build:
+  noarch: generic
+  number: 0
+  run_exports:
+  - null
+extra:
+  identifiers:
+  - doi:10.1186/s13100-019-0193-0
+package:
+  name: ltr_finder_parallel
+  version: '1.4'
+requirements:
+  run:
+  - ltr_finder
+source:
+  sha256: 8c6cceb76c7ce2f4c9a68037f9d565fc751422957323061d7a57b611f98476a4
+  url: https://github.com/oushujun/LTR_FINDER_parallel/archive/v1.4.tar.gz
+test:
+  commands:
+  - ltr_finder 2>&1 | grep -i usage
+  - LTR_FINDER_parallel -check_dependencies > /dev/null

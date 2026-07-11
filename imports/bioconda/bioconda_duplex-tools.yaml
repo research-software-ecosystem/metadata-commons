@@ -1,0 +1,49 @@
+about:
+  dev_url: https://github.com/nanoporetech/duplex-tools
+  doc_url: https://github.com/nanoporetech/duplex-tools/blob/v0.3.3/README.md
+  home: https://github.com/nanoporetech/duplex-tools
+  license: MPL-2.0
+  license_family: OTHER
+  license_file: LICENSE.md
+  summary: Duplex Tools contains a set of utilities for dealing with ONT Duplex sequencing
+    data.
+build:
+  entry_points:
+  - duplex_tools = duplex_tools:main
+  noarch: python
+  number: 0
+  run_exports:
+  - null
+  script: -m pip install . --no-deps --no-build-isolation --no-cache-dir -vvv
+extra:
+  recipe-maintainers:
+  - ollenordesjo
+package:
+  name: duplex-tools
+  version: 0.3.3
+requirements:
+  host:
+  - pip
+  - python >=3.7
+  run:
+  - python >=3.7
+  - python-edlib
+  - mappy
+  - matplotlib-base
+  - more-itertools
+  - natsort
+  - numpy
+  - pandas
+  - parasail-python
+  - pod5
+  - pyfastx >=0.9.0
+  - pysam
+  - tqdm
+source:
+  sha256: 883e0a6610d14328a640b6a31eaef90592d2967cda68db0547a4d99924281300
+  url: https://pypi.io/packages/source/d/duplex_tools/duplex_tools-0.3.3.tar.gz
+test:
+  commands:
+  - duplex_tools --help
+  imports:
+  - duplex_tools

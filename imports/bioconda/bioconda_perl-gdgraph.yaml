@@ -1,0 +1,33 @@
+about:
+  doc_url: https://metacpan.org/pod/GDGraph
+  home: https://metacpan.org/pod/GDGraph
+  license: perl_5
+  summary: Produces charts with GD.
+build:
+  noarch: generic
+  number: 0
+  run_exports:
+  - null
+package:
+  name: perl-gdgraph
+  version: '1.56'
+requirements:
+  build:
+  - make
+  host:
+  - perl
+  - perl-gd
+  - perl-capture-tiny
+  - perl-extutils-makemaker
+  - perl-test-exception
+  - perl-gdtextutil
+  run:
+  - perl
+  - perl-gd
+  - perl-gdtextutil
+source:
+  sha256: 6f49cc4e59015480db9c9b6b18afd8c50be30886687b69411513d06f38971113
+  url: https://cpan.metacpan.org/authors/id/B/BP/BPS/GDGraph-1.56.tar.gz
+test:
+  imports:
+  - GD::Graph

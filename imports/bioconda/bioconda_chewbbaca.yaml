@@ -1,0 +1,67 @@
+about:
+  description: chewBBACA is a comprehensive pipeline including a set of functions
+    for the creation and validation of whole genome and core genome MultiLocus Sequence
+    Typing (wg/cgMLST) schemas, providing an allele calling algorithm based on Blast
+    Score Ratio that can be run in multiprocessor settings and a set of functions
+    to visualize and validate allele variation in the loci.
+  doc_url: https://chewbbaca.readthedocs.io/en/latest/index.html
+  home: https://github.com/B-UMMI/chewBBACA
+  license: GPL-3.0-or-later
+  license_family: GPL3
+  license_file: LICENSE
+  summary: A complete suite for gene-by-gene schema creation and strain identification.
+build:
+  entry_points:
+  - chewBBACA.py = CHEWBBACA.chewBBACA:main
+  - chewie = CHEWBBACA.chewBBACA:main
+  noarch: python
+  number: 0
+  run_exports:
+  - null
+  script: -m pip install --no-deps --no-build-isolation . -vvv
+extra:
+  identifiers:
+  - doi:10.1099/mgen.0.000166
+  recipe-maintainers:
+  - rfm-targa
+package:
+  name: chewbbaca
+  version: 3.5.4
+requirements:
+  host:
+  - python
+  - pip
+  - setuptools
+  run:
+  - python
+  - numpy >=2.0.0
+  - scipy >=1.13.0
+  - biopython >=1.86
+  - plotly >=6.3.1
+  - sparqlwrapper >=2.0.0
+  - requests >=2.27.1
+  - pandas >=2.3.3
+  - pyrodigal >=3.0.0
+  - blast >=2.9.0
+  - mafft >=7.505
+  - fasttree >=2.1.11
+source:
+  sha256: 693806073152779aeccce1a4ad6055702c64ad74a6088fa012d13430b8d3df9d
+  url: https://github.com/B-UMMI/chewBBACA/archive/refs/tags/v3.5.4.tar.gz
+test:
+  commands:
+  - chewBBACA.py --help
+  - chewie --version
+  imports:
+  - CHEWBBACA
+  - CHEWBBACA.CreateSchema
+  - CHEWBBACA.AlleleCall
+  - CHEWBBACA.SchemaEvaluator
+  - CHEWBBACA.AlleleCallEvaluator
+  - CHEWBBACA.ExtractCgMLST
+  - CHEWBBACA.PrepExternalSchema
+  - CHEWBBACA.UniprotFinder
+  - CHEWBBACA.CHEWBBACA_NS
+  - CHEWBBACA.ComputeMSA
+  - CHEWBBACA.GetAlleles
+  - CHEWBBACA.utils

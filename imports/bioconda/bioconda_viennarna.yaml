@@ -1,0 +1,52 @@
+about:
+  home: http://www.tbi.univie.ac.at/RNA/
+  license: custom
+  license_file: COPYING
+  summary: ViennaRNA package -- RNA secondary structure prediction and comparison
+build:
+  number: 1
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+package:
+  name: viennarna
+  version: 2.7.2
+requirements:
+  build:
+  - make
+  - swig
+  - null
+  - null
+  host:
+  - pkgconfig
+  - perl
+  - python
+  - zlib
+  - mpfr
+  - gsl
+  - lapack
+  - llvm-openmp
+  run:
+  - perl
+  - python
+  - llvm-openmp
+source:
+  patches:
+  - fix_python_module_copy.patch
+  sha256: 1ab5f4a4f76fc85a2243546088e45f5d85f2d7a56cc656e969b005cce9bfab5f
+  url: https://www.tbi.univie.ac.at/RNA/download/sourcecode/2_7_x/ViennaRNA-2.7.2.tar.gz
+test:
+  commands:
+  - RNAalifold --version
+  - RNAeval    --version
+  - RNAfold    --version
+  - RNAplot    --version
+  - RNAplfold  --version
+  - RNAsubopt  --version
+  - RNAlocmin  --version
+  - kinwalker  --help >& /dev/null
+  - python -c "import RNA"
+  - perl -MRNA -e "print qq(ok\n)"

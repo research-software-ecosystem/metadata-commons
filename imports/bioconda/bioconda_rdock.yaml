@@ -1,0 +1,55 @@
+about:
+  description: 'rDock is a fast and versatile Open Source docking program that can
+    be used to dock small molecules against proteins and nucleic acids.
+
+    It is designed for High Throughput Virtual Screening (HTVS) campaigns and Binding
+    Mode prediction studies.
+
+    '
+  dev_url: https://github.com/CBDD/rDock
+  doc_url: https://rdock.github.io/documentation
+  home: https://rdock.github.io
+  license: LGPL-3.0-or-later
+  license_family: LGPL
+  license_file: license.txt
+  summary: A Fast, Versatile and Open Source Program for Docking Ligands to Proteins
+    and Nucleic Acids.
+build:
+  number: 4
+  run_exports:
+  - null
+  skip: true
+extra:
+  additional-platforms:
+  - linux-aarch64
+  identifiers:
+  - doi:10.1371/journal.pcbi.1003571
+  - usegalaxy-eu:rdock_rbdock
+  recipe-maintainers:
+  - eunos-1128
+package:
+  name: rdock
+  version: 24.04.204_legacy
+requirements:
+  build:
+  - null
+  - make
+  - pkg-config
+  host:
+  - popt
+  run:
+  - numpy >=1,<2
+  - openbabel >=3,<4
+  - perl
+  - pytest
+  - python >=3.10,<3.13
+source:
+  patches:
+  - NMObjective.h.patch
+  - 0001-RbtTypes.patch
+  sha256: cf5bf35d60254ae74c45f0c5ed3050513bbc8ae8df9c665157eb26f6b5a33d16
+  url: https://github.com/CBDD/rdock/archive/refs/tags/v24.04.204-legacy.tar.gz
+test:
+  commands:
+  - rbdock --help
+  - rbcavity --help

@@ -1,0 +1,53 @@
+about:
+  dev_url: null
+  doc_url: null
+  home: https://github.com/raw-lab/metacerberus
+  license: BSD-3-Clause
+  license_family: BSD
+  license_file: LICENSE.txt
+  summary: 'MetaCerberus with reduced dependencies: Versatile Functional Ontology
+    Assignments for Metagenomes via Hidden Markov Model (HMM) searching with environmental
+    focus of shotgun meta''omics data'
+build:
+  noarch: python
+  number: 1
+  run_exports:
+  - null
+  script: ' -m pip install . -vv'
+extra:
+  recipe-maintainers:
+  - decrevi
+  - raw-lab
+package:
+  name: metacerberus-lite
+  version: 1.4.0
+requirements:
+  host:
+  - pip
+  - python >=3.8
+  - setuptools <70.0.0
+  - wheel
+  run:
+  - python >=3.8
+  - setuptools <70.0.0
+  - pandas
+  - flash2
+  - pyrodigal
+  - pyrodigal-gv
+  - pyhmmer =0.10
+  - plotly
+  - scikit-learn
+  - dominate
+  - python-kaleido
+  - configargparse
+  - metaomestats
+  - psutil
+  - hydrampp
+source:
+  sha256: 0651000d6b9a3ed4fb8301ccc2508befdd32e39be6bbeb3bb29bdc0142816be3
+  url: https://github.com/raw-lab/MetaCerberus/archive/refs/tags/v1.4.0.tar.gz
+test:
+  commands:
+  - metacerberus.py --help
+  imports:
+  - meta_cerberus

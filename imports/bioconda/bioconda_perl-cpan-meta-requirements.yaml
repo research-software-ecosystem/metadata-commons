@@ -1,0 +1,30 @@
+about:
+  home: https://github.com/Perl-Toolchain-Gang/CPAN-Meta-Requirements
+  license: Perl_5
+  summary: A set of version requirements for a CPAN dist.
+build:
+  noarch: generic
+  number: 0
+  run_exports:
+  - null
+package:
+  name: perl-cpan-meta-requirements
+  version: '2.145'
+requirements:
+  build:
+  - make
+  host:
+  - perl
+  - perl-carp
+  - perl-extutils-makemaker
+  - perl-version
+  run:
+  - perl
+  - perl-carp
+  - perl-version
+source:
+  sha256: 1557093e3ff0d650262a8340a1dafc5d033af986f98ee3e8a889d04b53e18019
+  url: https://cpan.metacpan.org/authors/id/R/RJ/RJBS/CPAN-Meta-Requirements-2.145.tar.gz
+test:
+  imports:
+  - CPAN::Meta::Requirements

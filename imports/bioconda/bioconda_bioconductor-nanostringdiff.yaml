@@ -1,0 +1,49 @@
+about:
+  description: This Package utilizes a generalized linear model(GLM) of the negative
+    binomial family to characterize count data and allows for multi-factor design.
+    NanoStrongDiff incorporate size factors, calculated from positive controls and
+    housekeeping controls, and background level, obtained from negative controls,
+    in the model framework so that all the normalization information provided by NanoString
+    nCounter Analyzer is fully utilized.
+  home: https://bioconductor.org/packages/3.22/bioc/html/NanoStringDiff.html
+  license: GPL
+  license_file: /lib/R/share/licenses/GPL-3
+  summary: Differential Expression Analysis of NanoString nCounter Data
+build:
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+package:
+  name: bioconductor-nanostringdiff
+  version: 1.40.0
+requirements:
+  build:
+  - null
+  - null
+  - make
+  host:
+  - bioconductor-biobase >=2.70.0,<2.71.0
+  - r-base
+  - r-matrixstats
+  - r-rcpp
+  - libblas
+  - liblapack
+  - zlib
+  - liblzma-devel
+  run:
+  - bioconductor-biobase >=2.70.0,<2.71.0
+  - r-base
+  - r-matrixstats
+  - r-rcpp
+source:
+  md5: 51a87ceb939e70ddfe1e167e46e80786
+  url:
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/NanoStringDiff_1.40.0.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/NanoStringDiff/NanoStringDiff_1.40.0.tar.gz
+  - https://bioarchive.galaxyproject.org/NanoStringDiff_1.40.0.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-nanostringdiff/bioconductor-nanostringdiff_1.40.0_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('NanoStringDiff')"

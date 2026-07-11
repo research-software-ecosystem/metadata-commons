@@ -1,0 +1,57 @@
+about:
+  dev_url: https://github.com/pangenome/smoothxg
+  doc_url: https://github.com/pangenome/smoothxg/blob/v0.8.2/README.md
+  home: https://github.com/pangenome/smoothxg
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE
+  summary: Local reconstruction of variation graphs using partial order alignment.
+build:
+  number: 1
+  run_exports:
+  - null
+  skip: true
+extra:
+  additional-platforms:
+  - linux-aarch64
+  identifiers:
+  - doi:10.1038/s41592-024-02430-3
+  recipe-maintainers:
+  - AndreaGuarracino
+package:
+  name: smoothxg
+  version: 0.8.2
+requirements:
+  build:
+  - null
+  - null
+  - cmake
+  - make
+  - pkg-config
+  - llvm-openmp
+  - libgomp
+  - ninja
+  host:
+  - llvm-openmp
+  - libgomp
+  - zlib
+  - zstd
+  - jemalloc
+  - gsl
+  - sdsl-lite
+  - odgi
+  - pybind11
+  run:
+  - llvm-openmp
+  - libgomp
+  - sdsl-lite
+  - odgi
+  - jemalloc
+source:
+  patches:
+  - CMakeLists.patch
+  sha256: e6f6a9c7d89e7bab414196ce124fa2ccb23d45ffbbf0aa7300f41390a8510ac3
+  url: https://github.com/pangenome/smoothxg/releases/download/v0.8.2/smoothxg-v0.8.2.tar.gz
+test:
+  commands:
+  - smoothxg --help

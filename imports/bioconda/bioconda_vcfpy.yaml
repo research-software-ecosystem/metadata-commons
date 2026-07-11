@@ -1,0 +1,32 @@
+about:
+  dev_url: https://github.com/bihealth/vcfpy
+  doc_url: https://vcfpy.readthedocs.io/en/stable
+  home: https://github.com/bihealth/vcfpy
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE
+  summary: Python 3 VCF library with good support for both reading and writing.
+build:
+  noarch: python
+  number: 0
+  run_exports:
+  - null
+  script: -m pip install . -vvv --no-deps --no-build-isolation
+package:
+  name: vcfpy
+  version: 0.14.2
+requirements:
+  host:
+  - python >=3.10,<3.14
+  - pip
+  - hatchling
+  run:
+  - python >=3.10,<3.14
+source:
+  patches:
+  - fix-package-path.patch
+  sha256: 89786ed8f49013c2a6fd4add57a1590a43140c3fac4628da0f27e92d50bfd891
+  url: https://pypi.org/packages/source/v/vcfpy/vcfpy-0.14.2.tar.gz
+test:
+  imports:
+  - vcfpy

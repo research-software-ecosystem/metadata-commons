@@ -1,0 +1,42 @@
+about:
+  description: CPStools is a package for analyzing chloroplast genome sequences.
+  dev_url: https://github.com/Xwb7533/CPStools
+  home: https://github.com/Xwb7533/CPStools
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE
+  summary: CPStools is a package for analyzing chloroplast genome sequences.
+build:
+  entry_points:
+  - cpstools = cpstools.cmdline:main
+  noarch: python
+  number: 0
+  run_exports:
+  - null
+  script: -m pip install . --no-deps --no-build-isolation --no-cache-dir -vvv
+extra:
+  recipe-maintainers:
+  - mencian
+package:
+  name: cpstools
+  version: '3.0'
+requirements:
+  host:
+  - python >=3.9
+  - poetry-core
+  - pip
+  run:
+  - python >=3.9
+  - biopython >=1.84.0
+  - numpy >=1.26.4
+  - tqdm >=4.66.5
+  - pandas >=2.0.0
+  - matplotlib-base >=3.7.0
+source:
+  sha256: 22f26daf557a636e750818ebfe18ba2ea25648b78cbf5449382fef81cfb1324c
+  url: https://pypi.io/packages/source/c/cpstools/cpstools-3.0.tar.gz
+test:
+  commands:
+  - cpstools --help
+  imports:
+  - cpstools

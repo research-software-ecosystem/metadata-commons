@@ -1,0 +1,35 @@
+about:
+  home: https://github.com/jingqing-hu/FuFiHLA
+  license: MIT
+  license_file: LICENSE
+  summary: HLA typing pipeline for long reads (FuFiHLA) with a location-aware CLI.
+build:
+  noarch: generic
+  number: 1
+  run_exports:
+  - null
+extra:
+  recipe-maintainers:
+  - jingqing-hu
+package:
+  name: fufihla
+  version: 0.2.4
+requirements:
+  host: []
+  run:
+  - python
+  - minimap2
+  - samtools
+  - bcftools
+  - htslib
+  - seqtk
+  - longcalld
+  - unzip
+  - wget
+source:
+  sha256: edc1a8509278b818ddc771b65a3c251d1680151cc22577f6bab916568b5fc6db
+  url: https://github.com/jingqing-hu/FuFiHLA/archive/refs/tags/v0.2.4.tar.gz
+test:
+  commands:
+  - fufihla -h
+  - fufihla -h | grep -- '--ont'

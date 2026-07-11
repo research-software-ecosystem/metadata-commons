@@ -1,0 +1,59 @@
+about:
+  home: https://github.com/AntonioDeFalco/SCEVAN/
+  license: GPL-3.0-only
+  license_family: GPL3
+  license_file: /lib/R/share/licenses/GPL-3
+  summary: Single CEll Variational Aneuploidy aNalysis
+build:
+  noarch: generic
+  number: 0
+  rpaths:
+  - lib/R/lib
+  - lib
+  run_exports: ''
+package:
+  name: r-scevan
+  version: 1.0.3
+requirements:
+  host:
+  - r-base
+  - r-remotes
+  - r-devtools
+  - r-rcpp
+  - r-paralleldist
+  - r-pheatmap
+  - r-forcats
+  - r-dplyr
+  - bioconductor-fgsea
+  - r-cluster
+  - r-ggplot2
+  - r-Rtsne
+  - bioconductor-scran
+  - r-ape
+  - bioconductor-ggtree
+  - r-tidytree
+  - r-ggrepel
+  - r-optparse
+  run:
+  - r-base
+  - r-devtools
+  - r-paralleldist
+  - r-pheatmap
+  - r-forcats
+  - r-dplyr
+  - bioconductor-fgsea
+  - r-cluster
+  - r-ggplot2
+  - r-Rtsne
+  - bioconductor-scran
+  - r-ape
+  - bioconductor-ggtree
+  - r-tidytree
+  - r-ggrepel
+  - r-optparse
+source:
+  sha256: 61091c1ebec8f665bbe6aed2ed375da0700efd1c54ac6874d7bcfc354a835278
+  url: https://github.com/AntonioDeFalco/SCEVAN/archive/refs/tags/v1.0.3.tar.gz
+test:
+  commands:
+  - $R -e "library(SCEVAN)"

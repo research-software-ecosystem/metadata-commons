@@ -1,0 +1,37 @@
+about:
+  home: https://github.com/mcfrith/seg-suite
+  license: GPL-3.0-or-later
+  license_file: COPYING.txt
+  summary: The seg suite provides tools for manipulating segments, alignments, and
+    annotations of sequences.
+build:
+  number: 0
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+package:
+  name: seg-suite
+  version: '98'
+requirements:
+  build:
+  - make
+  - null
+  host:
+  - python
+  run:
+  - python
+source:
+  sha256: 4e6a43ead780d0b23468e33453b9d18274519d3317a2d7860f4a840cc50b4fa7
+  url: https://github.com/mcfrith/seg-suite/archive/refs/tags/98.tar.gz
+test:
+  commands:
+  - seg-import -h
+  - seg-join -h
+  - seg-mask -h
+  - seg-merge -h
+  - seg-seq -h
+  - seg-shift -h
+  - seg-swap -h

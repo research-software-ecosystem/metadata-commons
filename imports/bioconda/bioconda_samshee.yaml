@@ -1,0 +1,37 @@
+about:
+  home: https://github.com/lit-regensburg/samshee
+  license: MIT
+  license_file: LICENSE
+  summary: A schema-agnostic parser and writer for illumina sample sheets v2.
+build:
+  noarch: python
+  number: 0
+  run_exports:
+  - null
+  script: -m pip install . -vv --no-deps --no-build-isolation
+extra:
+  recipe-maintainers:
+  - j4cko
+  - nschcolnicov
+package:
+  name: samshee
+  version: 0.2.14
+requirements:
+  host:
+  - python >=3.9
+  - setuptools >=61.0
+  - pip
+  run:
+  - python >=3.9
+  - jsonschema >=4.19
+  - requests >=2.31.0
+source:
+  sha256: 770beef690553e39f99d24608dc7eb4f3b3b13214612b01663c265a50a73299d
+  url: https://files.pythonhosted.org/packages/15/6e/f4a9acdea6d6711a3f80be055b9bea6ba2274795345dca404ae5f90065b9/samshee-0.2.14.tar.gz
+test:
+  commands:
+  - pip check
+  imports:
+  - samshee
+  requires:
+  - pip

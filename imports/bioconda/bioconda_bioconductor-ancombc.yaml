@@ -1,0 +1,69 @@
+about:
+  description: 'ANCOMBC is a package containing differential abundance (DA) and correlation
+    analyses for microbiome data. Specifically, the package includes Analysis of Compositions
+    of Microbiomes with Bias Correction 2 (ANCOM-BC2), Analysis of Compositions of
+    Microbiomes with Bias Correction (ANCOM-BC), and Analysis of Composition of Microbiomes
+    (ANCOM) for DA analysis, and Sparse Estimation of Correlations among Microbiomes
+    (SECOM) for correlation analysis. Microbiome data are typically subject to two
+    sources of biases: unequal sampling fractions (sample-specific biases) and differential
+    sequencing efficiencies (taxon-specific biases). Methodologies included in the
+    ANCOMBC package are designed to correct these biases and construct statistically
+    consistent estimators.'
+  home: https://bioconductor.org/packages/3.22/bioc/html/ANCOMBC.html
+  license: Artistic-2.0
+  summary: Microbiome differential abudance and correlation analyses with bias correction
+build:
+  noarch: generic
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+package:
+  name: bioconductor-ancombc
+  version: 2.12.0
+requirements:
+  host:
+  - r-base
+  - r-cvxr
+  - r-desctools
+  - r-doparallel
+  - r-dorng
+  - r-energy
+  - r-foreach
+  - r-gtools
+  - r-hmisc
+  - r-lme4
+  - r-lmertest
+  - r-mass
+  - r-matrix
+  - r-multcomp
+  - r-nloptr
+  - r-rdpack
+  run:
+  - r-base
+  - r-cvxr
+  - r-desctools
+  - r-doparallel
+  - r-dorng
+  - r-energy
+  - r-foreach
+  - r-gtools
+  - r-hmisc
+  - r-lme4
+  - r-lmertest
+  - r-mass
+  - r-matrix
+  - r-multcomp
+  - r-nloptr
+  - r-rdpack
+source:
+  md5: 510fcf30fb4105da098313d20bc57266
+  url:
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/ANCOMBC_2.12.0.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/ANCOMBC/ANCOMBC_2.12.0.tar.gz
+  - https://bioarchive.galaxyproject.org/ANCOMBC_2.12.0.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-ancombc/bioconductor-ancombc_2.12.0_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('ANCOMBC')"

@@ -1,0 +1,46 @@
+about:
+  home: https://github.com/bihealth/varfish-cli
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE
+  summary: Command line interface to VarFish via REST API
+build:
+  entry_points:
+  - varfish-cli = varfish_cli.__main__:main
+  noarch: python
+  number: 0
+  run_exports:
+  - null
+  script: -m pip install . --no-deps --no-build-isolation -vvv
+package:
+  name: varfish-cli
+  version: 0.7.0
+requirements:
+  host:
+  - python >=3
+  - pip
+  - setuptools
+  run:
+  - python >=3.9
+  - attrs
+  - cattrs
+  - jsonschema
+  - logzero
+  - toml
+  - requests
+  - tqdm
+  - tabulate
+  - polyleven
+  - pydantic >=2.0,<3.0
+  - python-dateutil
+  - simplejson
+  - typeguard
+  - typer
+source:
+  sha256: e12d4808cad87c8e9e81abc3e96c2117fb16d3815dfaa0302030c1fcebab82e2
+  url: https://pypi.io/packages/source/v/varfish_cli/varfish_cli-0.7.0.tar.gz
+test:
+  commands:
+  - varfish-cli --help
+  imports:
+  - varfish_cli

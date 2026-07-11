@@ -1,0 +1,46 @@
+about:
+  dev_url: https://github.com/acidgenomics/r-acidbase
+  home: https://r.acidgenomics.com/packages/acidbase/
+  license: Apache-2.0
+  license_family: APACHE
+  license_file: LICENSE.md
+  summary: Low-level base functions imported by Acid Genomics packages.
+build:
+  noarch: generic
+  number: 0
+  run_exports:
+  - null
+extra:
+  recipe-maintainers:
+  - acidgenomics
+  - mjsteinbaugh
+package:
+  name: r-acidbase
+  version: 0.7.7
+requirements:
+  host:
+  - r-base
+  - bioconductor-biocgenerics >=0.48.0
+  - bioconductor-s4vectors >=0.40.0
+  - r-acidgenerics >=0.7.11
+  - r-goalie >=0.7.10
+  - r-acidcli >=0.3.3
+  - r-memuse >=4.2.3
+  - r-processx >=3.8.3
+  - r-withr >=2.5.2
+  run:
+  - r-base
+  - bioconductor-biocgenerics >=0.48.0
+  - bioconductor-s4vectors >=0.40.0
+  - r-acidgenerics >=0.7.11
+  - r-goalie >=0.7.10
+  - r-acidcli >=0.3.3
+  - r-memuse >=4.2.3
+  - r-processx >=3.8.3
+  - r-withr >=2.5.2
+source:
+  sha256: dbbb8d5018bea07870d570a6ac1916f1ae778d67cd9a1dee386e6c44aefb37e3
+  url: https://github.com/acidgenomics/r-acidbase/archive/v0.7.7.tar.gz
+test:
+  commands:
+  - $R -e "library('AcidBase')"

@@ -1,0 +1,51 @@
+about:
+  home: https://github.com/gagneurlab/tMAE
+  license: MIT
+  license_family: MIT
+  summary: Tests and visualizations for mono-allelicly expressed variants.
+build:
+  noarch: generic
+  number: 1
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+extra:
+  recipe-maintainers:
+  - c-mertes
+  - mumichae
+  - atajadidahari
+package:
+  name: r-tmae
+  version: 1.0.5
+requirements:
+  host:
+  - r-base
+  - r-BiocManager
+  - r-data.table
+  - r-dplyr
+  - r-ggplot2
+  - bioconductor-BiocGenerics
+  - bioconductor-DESeq2
+  - bioconductor-IRanges
+  - bioconductor-GenomicRanges
+  - bioconductor-GenomicScores
+  - bioconductor-S4Vectors
+  run:
+  - r-base
+  - r-BiocManager
+  - r-data.table
+  - r-dplyr
+  - r-ggplot2
+  - bioconductor-BiocGenerics
+  - bioconductor-DESeq2
+  - bioconductor-IRanges
+  - bioconductor-GenomicRanges
+  - bioconductor-GenomicScores
+  - bioconductor-S4Vectors
+source:
+  sha256: c43f24bdd846ad39672d7911581cd6190af726503b1dd674d75f739cf90ed1e2
+  url: https://github.com/gagneurlab/tMAE/archive/1.0.5.tar.gz
+test:
+  commands:
+  - $R -e "library('tMAE')"

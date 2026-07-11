@@ -1,0 +1,85 @@
+about:
+  dev_url: https://github.com/sequana/sequana
+  doc_url: https://sequana.readthedocs.io
+  home: https://sequana.readthedocs.io
+  license: BSD-3-Clause
+  license_family: BSD
+  license_file: LICENSE
+  summary: A set of standalone application and snakemake pipelines dedicated to NGS
+    (new generation sequencing) analysis.
+build:
+  entry_points:
+  - sequana = sequana.scripts.main.main:main
+  - sequana_taxonomy = sequana.scripts.taxonomy:main
+  - sequana_coverage = sequana.scripts.coverage:main
+  noarch: python
+  number: 0
+  run_exports:
+  - null
+  script: -m pip install . --no-deps --no-build-isolation --no-cache-dir -vvv
+extra:
+  recipe-maintainers:
+  - cokelaer
+  skip-lints:
+  - cython_must_be_in_host
+package:
+  name: sequana
+  version: 0.22.0
+requirements:
+  host:
+  - python >=3.10
+  - pip
+  - poetry-core
+  run:
+  - adjusttext
+  - aiohttp
+  - bioservices >=1.10.0
+  - brokenaxes
+  - bx-python
+  - click >=8.1.8
+  - colorlog >=6.9.0
+  - colormap
+  - cython
+  - deprecated
+  - docutils
+  - easydev
+  - gseapy
+  - itolapi
+  - lxml
+  - matplotlib-base >3
+  - matplotlib-venn
+  - mock
+  - multiqc >=1.18,<=1.27
+  - natsort >=8.4.0
+  - packaging
+  - pandas >=2.2.3
+  - plotly
+  - psutil
+  - pulp <2.8.0
+  - pykwalify
+  - pysam >=0.22.1
+  - python >=3.10
+  - python-kaleido >=0.1
+  - rich-click
+  - ruamel.yaml >=0.16.0
+  - scikit-learn
+  - scipy
+  - selenium
+  - setuptools <81
+  - snakemake-minimal <8
+  - seaborn-base
+  - statsmodels
+  - tqdm
+  - upsetplot
+  - vcfpy
+  - xlrd
+source:
+  sha256: 162fc08e291ff2e89be4af2a9b201d483390827faf67ef564245b24e9b7cd848
+  url: https://github.com/sequana/sequana/archive/v0.22.0.tar.gz
+test:
+  commands:
+  - sequana --help
+  - sequana_taxonomy --help
+  - sequana_coverage --help
+  imports:
+  - sequana

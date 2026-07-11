@@ -1,0 +1,33 @@
+about:
+  home: https://github.com/dralshehri/epiweeks
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE
+  summary: Epidemiological weeks calculation based on the US CDC (MMWR) and ISO week
+    numbering systems
+build:
+  noarch: python
+  number: 0
+  run_exports:
+  - null
+  script: -m pip install . -vv
+extra:
+  recipe-maintainers:
+  - dralshehri
+package:
+  name: epiweeks
+  version: 2.4.0
+requirements:
+  host:
+  - python >=3.10
+  - pip
+  - hatchling
+  - hatch-fancy-pypi-readme
+  run:
+  - python >=3.10
+source:
+  sha256: 0096132a50cfc4b52b2bfc8cf841d278740414d01cac303df05146db8b526539
+  url: https://pypi.io/packages/source/e/epiweeks/epiweeks-2.4.0.tar.gz
+test:
+  imports:
+  - epiweeks

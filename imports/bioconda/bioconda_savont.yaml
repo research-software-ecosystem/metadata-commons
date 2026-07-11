@@ -1,0 +1,37 @@
+about:
+  dev_url: https://github.com/bluenote-1577/savont
+  home: https://github.com/bluenote-1577/savont
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE
+  summary: Amplicon sequencing variants (ASVs) and taxonomic profiling from modern
+    long-read (nanopore + PacBio) amplicon sequencing with > 98% accuracy.
+build:
+  number: 0
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+  recipe-maintainers:
+  - bluenote-1577
+package:
+  name: savont
+  version: 0.6.0
+requirements:
+  build:
+  - null
+  - null
+  - null
+  - null
+  - make
+  - cmake >=3.12
+  - cargo-bundle-licenses
+  - pkg-config
+source:
+  sha256: 51af40e87b16ce240cc6ec458b225b680fb54d5bdb93160aa426ef5d6cf50a13
+  url: https://github.com/bluenote-1577/savont/archive/v0.6.0.tar.gz
+test:
+  commands:
+  - savont --help

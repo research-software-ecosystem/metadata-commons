@@ -1,0 +1,44 @@
+about:
+  description: 'Basic peak calling on STARR-seq data based on a method introduced
+    in "Genome-Wide Quantitative Enhancer Activity Maps Identified by STARR-seq" Arnold
+    et al. Science. 2013 Mar 1;339(6123):1074-7. doi: 10.1126/science. 1232542. Epub
+    2013 Jan 17.'
+  home: https://bioconductor.org/packages/3.22/bioc/html/BasicSTARRseq.html
+  license: LGPL-3
+  license_file: /lib/R/share/licenses/LGPL-3
+  summary: Basic peak calling on STARR-seq data
+build:
+  noarch: generic
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+package:
+  name: bioconductor-basicstarrseq
+  version: 1.38.0
+requirements:
+  host:
+  - bioconductor-genomicalignments >=1.46.0,<1.47.0
+  - bioconductor-genomicranges >=1.62.0,<1.63.0
+  - bioconductor-iranges >=2.44.0,<2.45.0
+  - bioconductor-s4vectors >=0.48.0,<0.49.0
+  - bioconductor-seqinfo >=1.0.0,<1.1.0
+  - r-base
+  run:
+  - bioconductor-genomicalignments >=1.46.0,<1.47.0
+  - bioconductor-genomicranges >=1.62.0,<1.63.0
+  - bioconductor-iranges >=2.44.0,<2.45.0
+  - bioconductor-s4vectors >=0.48.0,<0.49.0
+  - bioconductor-seqinfo >=1.0.0,<1.1.0
+  - r-base
+source:
+  md5: 73e4089af213eba0d905e7de91805773
+  url:
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/BasicSTARRseq_1.38.0.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/BasicSTARRseq/BasicSTARRseq_1.38.0.tar.gz
+  - https://bioarchive.galaxyproject.org/BasicSTARRseq_1.38.0.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-basicstarrseq/bioconductor-basicstarrseq_1.38.0_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('BasicSTARRseq')"

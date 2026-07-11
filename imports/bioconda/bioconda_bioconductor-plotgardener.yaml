@@ -1,0 +1,73 @@
+about:
+  description: Coordinate-based genomic visualization package for R. It grants users
+    the ability to programmatically produce complex, multi-paneled figures. Tailored
+    for genomics, plotgardener allows users to visualize large complex genomic datasets
+    and provides exquisite control over how plots are placed and arranged on a page.
+  home: https://bioconductor.org/packages/3.22/bioc/html/plotgardener.html
+  license: MIT + file LICENSE
+  license_file: LICENSE
+  summary: Coordinate-Based Genomic Visualization Package for R
+build:
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+package:
+  name: bioconductor-plotgardener
+  version: 1.16.0
+requirements:
+  build:
+  - null
+  - null
+  - make
+  host:
+  - bioconductor-genomeinfodb >=1.46.0,<1.47.0
+  - bioconductor-genomicranges >=1.62.0,<1.63.0
+  - bioconductor-iranges >=2.44.0,<2.45.0
+  - bioconductor-plyranges >=1.30.0,<1.31.0
+  - bioconductor-rhdf5 >=2.54.0,<2.55.0
+  - r-base
+  - r-curl
+  - r-data.table
+  - r-dplyr
+  - r-ggplotify
+  - r-glue
+  - r-purrr
+  - r-rcolorbrewer
+  - r-rcpp
+  - r-rlang
+  - r-strawr
+  - r-withr
+  - libblas
+  - liblapack
+  - zlib
+  - liblzma-devel
+  run:
+  - bioconductor-genomeinfodb >=1.46.0,<1.47.0
+  - bioconductor-genomicranges >=1.62.0,<1.63.0
+  - bioconductor-iranges >=2.44.0,<2.45.0
+  - bioconductor-plyranges >=1.30.0,<1.31.0
+  - bioconductor-rhdf5 >=2.54.0,<2.55.0
+  - r-base
+  - r-curl
+  - r-data.table
+  - r-dplyr
+  - r-ggplotify
+  - r-glue
+  - r-purrr
+  - r-rcolorbrewer
+  - r-rcpp
+  - r-rlang
+  - r-strawr
+  - r-withr
+source:
+  md5: 158c15b4f98786dc04d82111ce3441c5
+  url:
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/plotgardener_1.16.0.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/plotgardener/plotgardener_1.16.0.tar.gz
+  - https://bioarchive.galaxyproject.org/plotgardener_1.16.0.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-plotgardener/bioconductor-plotgardener_1.16.0_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('plotgardener')"

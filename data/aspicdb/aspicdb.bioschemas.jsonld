@@ -1,0 +1,197 @@
+{
+  "@context": {
+    "biotools": "https://bio.tools/ontology/",
+    "brick": "https://brickschema.org/schema/Brick#",
+    "bsc": "http://bioschemas.org/",
+    "bsct": "http://bioschemas.org/types/",
+    "csvw": "http://www.w3.org/ns/csvw#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "dcam": "http://purl.org/dc/dcam/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dcmitype": "http://purl.org/dc/dcmitype/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "doap": "http://usefulinc.com/ns/doap#",
+    "edam": "http://edamontology.org/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "geo": "http://www.opengis.net/ont/geosparql#",
+    "odrl": "http://www.w3.org/ns/odrl/2/",
+    "org": "http://www.w3.org/ns/org#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "prof": "http://www.w3.org/ns/dx/prof/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "qb": "http://purl.org/linked-data/cube#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "sc": "http://schema.org/",
+    "schema": "https://schema.org/",
+    "sh": "http://www.w3.org/ns/shacl#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "sosa": "http://www.w3.org/ns/sosa/",
+    "ssn": "http://www.w3.org/ns/ssn/",
+    "time": "http://www.w3.org/2006/time#",
+    "vann": "http://purl.org/vocab/vann/",
+    "void": "http://rdfs.org/ns/void#",
+    "wgs": "https://www.w3.org/2003/01/geo/wgs84_pos#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "https://doi.org/10.1093/nar/gkl324",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://bio.tools/aspicdb",
+      "@type": "sc:SoftwareApplication",
+      "biotools:primaryContact": {
+        "@id": "https://orcid.org/0000-0003-3663-0859"
+      },
+      "bsc:input": [
+        {
+          "@id": "_:N87102070c23844afaa4bb1ce773ae75a"
+        },
+        {
+          "@id": "_:Nd1d094a570274b1db1ec34b41c1ecf48"
+        },
+        {
+          "@id": "_:N08e250c1e11246e0a1a852b67f09e560"
+        },
+        {
+          "@id": "_:N55e1e7f44c1744d6a3ac4218ba190d5b"
+        },
+        {
+          "@id": "_:N1573cd8160844e0b9da70a6583c8ee88"
+        },
+        {
+          "@id": "_:Nebf6fcb0215c4c95a34bc4a5a313f214"
+        }
+      ],
+      "bsc:output": [
+        {
+          "@id": "_:N5724e32757a24ee68f1b879f96c46bbb"
+        },
+        {
+          "@id": "_:N416eaa9e384e42afad0a1066c3a1a801"
+        }
+      ],
+      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "sc:additionalType": "Database portal",
+      "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_3320"
+        },
+        {
+          "@id": "edam:topic_0114"
+        },
+        {
+          "@id": "edam:topic_3512"
+        }
+      ],
+      "sc:citation": [
+        {
+          "@id": "https://doi.org/10.1093/nar/gkl324"
+        },
+        "pubmed:16845044",
+        "pubmed:22537006",
+        "pmcid:PMC1538898",
+        "pmcid:PMC3358663",
+        {
+          "@id": "https://doi.org/10.1186/1471-2105-13-S5-S2"
+        }
+      ],
+      "sc:description": "Database designed to provide access to reliable annotations of the alternative splicing pattern of human genes, obtained by ASPic algorithm and Pintron algorithm, and to the functional annotation of predicted isoforms.",
+      "sc:featureList": {
+        "@id": "edam:operation_0224"
+      },
+      "sc:isAccessibleForFree": true,
+      "sc:name": "Alternative splicing prediction database (ASPICdb)",
+      "sc:operatingSystem": [
+        "Windows",
+        "Mac",
+        "Linux"
+      ],
+      "sc:provider": "ELIXIR-ITA-CNR",
+      "sc:softwareHelp": {
+        "@id": "http://srv00.recas.ba.infn.it/ASPicDB/help.php"
+      },
+      "sc:url": "http://srv00.recas.ba.infn.it/ASPicDB/"
+    },
+    {
+      "@id": "_:N87102070c23844afaa4bb1ce773ae75a",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0968"
+      },
+      "sc:name": "Keyword"
+    },
+    {
+      "@id": "_:Nd1d094a570274b1db1ec34b41c1ecf48",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0968"
+      },
+      "sc:name": "Keyword"
+    },
+    {
+      "@id": "_:N08e250c1e11246e0a1a852b67f09e560",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0582"
+      },
+      "sc:name": "Ontology"
+    },
+    {
+      "@id": "_:N55e1e7f44c1744d6a3ac4218ba190d5b",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1026"
+      },
+      "sc:name": "Gene symbol"
+    },
+    {
+      "@id": "_:N1573cd8160844e0b9da70a6583c8ee88",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1026"
+      },
+      "sc:name": "Gene symbol"
+    },
+    {
+      "@id": "_:Nebf6fcb0215c4c95a34bc4a5a313f214",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0582"
+      },
+      "sc:name": "Ontology"
+    },
+    {
+      "@id": "_:N5724e32757a24ee68f1b879f96c46bbb",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0896"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2331"
+      },
+      "sc:name": "Protein report"
+    },
+    {
+      "@id": "_:N416eaa9e384e42afad0a1066c3a1a801",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3134"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2331"
+      },
+      "sc:name": "Gene transcript report"
+    },
+    {
+      "@id": "https://doi.org/10.1186/1471-2105-13-S5-S2",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-3663-0859",
+      "@type": "sc:Person"
+    }
+  ]
+}

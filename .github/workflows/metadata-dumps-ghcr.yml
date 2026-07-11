@@ -1,0 +1,130 @@
+name: Publish weekly metadata dumps to GHCR
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 2 * * 0'
+
+permissions:
+  contents: read
+  packages: write
+
+concurrency:
+  group: metadata-dumps-ghcr
+  cancel-in-progress: false
+
+jobs:
+  build-and-publish-datasets:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: metadata-commons
+
+      - uses: actions/checkout@v4
+        with:
+          repository: research-software-ecosystem/utils
+          path: utils
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.9"
+
+      - name: Install dependencies
+        run: |
+          pip install -r ${{ github.workspace }}/utils/bioschemas-gen/requirements.txt
+          pip install -r ${{ github.workspace }}/utils/biii-import/requirements.txt
+
+      - name: Point legacy generators at the metadata-commons checkout
+        continue-on-error: true
+        run: |
+          sed -i 's#../../content/#../../metadata-commons/#g' \
+            ${{ github.workspace }}/utils/bioschemas-gen/*_bioschemas_dump.py
+
+      - name: Build aggregate metadata dumps
+        run: |
+          cd ${{ github.workspace }}/utils/bioschemas-gen
+          for generator in \
+            biotools_bioschemas_dump.py \
+            bioconda_bioschemas_dump.py \
+            biocontainers_bioschemas_dump.py \
+            debian_bioschemas_dump.py \
+            galaxy_bioschemas_dump.py \
+            workflowhub_bioschemas_dump.py
+          do
+            python "$generator"
+          done
+
+      - name: Build BIII dumps
+        run: |
+          cd ${{ github.workspace }}/utils/biii-import
+          python biseEU_LD_export.py \
+            -td https://dev.biii.eurobioimaging.eu \
+            -dump
+          python biseEU_LD_export.py \
+            -td http://biii.eu \
+            -dump \
+            -leg
+          mv datasets/bioschemas-biii-dump.ttl \
+            ${{ github.workspace }}/metadata-commons/datasets/
+          mv datasets/bise-ontology-biii-dump.ttl \
+            ${{ github.workspace }}/metadata-commons/datasets/
+
+      - name: Prepare datasets archive and checksums
+        run: |
+          dataset_dir="${{ github.workspace }}/metadata-commons/datasets"
+          artifact_dir="${{ runner.temp }}/metadata-commons-datasets"
+
+          test -s "$dataset_dir/bioschemas-dump.ttl"
+          test -s "$dataset_dir/bioconda-dump.ttl"
+          test -s "$dataset_dir/biocontainers-dump.ttl"
+          test -s "$dataset_dir/debian-dump.ttl"
+          test -s "$dataset_dir/galaxy-dump.ttl"
+          test -s "$dataset_dir/workflowhub-dump.ttl"
+          test -s "$dataset_dir/bioschemas-biii-dump.ttl"
+          test -s "$dataset_dir/bise-ontology-biii-dump.ttl"
+          test -s "$dataset_dir/biotools_bioschemas_files_list.txt"
+          test -s "$dataset_dir/bioconda_bioschemas_files_list.txt"
+          test -s "$dataset_dir/biocontainers_bioschemas_files_list.txt"
+
+          mkdir -p "$artifact_dir"
+          cd "${{ github.workspace }}/metadata-commons"
+          find datasets -maxdepth 1 -type f ! -name SHA256SUMS -print0 \
+            | sort -z \
+            | xargs -0 sha256sum > datasets/SHA256SUMS
+          tar -czf "$artifact_dir/metadata-commons-datasets.tar.gz" datasets
+          cd "$artifact_dir"
+          sha256sum metadata-commons-datasets.tar.gz \
+            > metadata-commons-datasets.tar.gz.sha256
+
+      - name: Set up ORAS
+        uses: oras-project/setup-oras@v1
+
+      - name: Log in to GHCR
+        run: |
+          echo "${{ secrets.GITHUB_TOKEN }}" | oras login ghcr.io \
+            --username "${{ github.actor }}" \
+            --password-stdin
+
+      - name: Publish weekly datasets package and update latest
+        env:
+          PACKAGE: ghcr.io/research-software-ecosystem/metadata-commons-datasets
+        run: |
+          week_tag="$(date -u +'%G-%V')"
+          created="$(date -u +'%Y-%m-%dT%H:%M:%SZ')"
+          cd "${{ runner.temp }}/metadata-commons-datasets"
+
+          oras push \
+            --artifact-type application/vnd.research-software-ecosystem.metadata-commons.datasets.v1 \
+            --annotation "org.opencontainers.image.title=Metadata Commons datasets" \
+            --annotation "org.opencontainers.image.description=Weekly aggregate metadata dumps generated from metadata-commons" \
+            --annotation "org.opencontainers.image.created=$created" \
+            --annotation "org.opencontainers.image.source=https://github.com/${{ github.repository }}" \
+            --annotation "org.opencontainers.image.revision=${{ github.sha }}" \
+            "$PACKAGE:$week_tag,latest" \
+            metadata-commons-datasets.tar.gz:application/gzip \
+            metadata-commons-datasets.tar.gz.sha256:text/plain
+
+          echo "Published $PACKAGE with tags $week_tag and latest"

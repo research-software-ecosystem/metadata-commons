@@ -1,0 +1,34 @@
+about:
+  dev_url: 'dev_url: https://github.com/alejandrogzi/xloci'
+  home: https://github.com/alejandrogzi/xloci
+  license: Apache-2.0
+  license_family: APACHE
+  summary: get sequences from 2bit/fa using bed/gtf/gff
+build:
+  number: 0
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+  recipe-maintainers:
+  - alejandrogzi
+  skip-lints:
+  - compiler_needs_stdlib_c
+package:
+  name: xloci
+  version: 0.0.5
+requirements:
+  build:
+  - null
+  - null
+  - cargo-bundle-licenses
+  - pkg-config
+source:
+  sha256: cd9e543bd69ef0a8eb9ac5ab7f9262c225b85f02a19734116c8390dacff49d13
+  url: https://github.com/alejandrogzi/xloci/archive/refs/tags/v0.0.5.tar.gz
+test:
+  commands:
+  - xloci --help
+  - xloci --version

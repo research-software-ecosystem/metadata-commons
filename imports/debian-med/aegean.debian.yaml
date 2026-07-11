@@ -1,0 +1,39 @@
+package: aegean
+distribution: debian
+release: sid
+component: main
+version: 0.16.0
+source: aegean
+homepage: https://standage.github.io/AEGeAn
+license: unknown
+blend: debian-med
+description_md5: 2efce1184b400907195563de7b546560
+topics:
+- Sequencing
+edam_scopes:
+- name: summary
+  input:
+  - data: Sequence features
+    formats:
+    - GFF3
+  output:
+  - data: Sequence features
+    formats:
+    - GFF3
+  - data: Report
+    formats:
+    - Textual format
+  function:
+  - Genome feature comparison
+  - Sequence file editing
+registries:
+- entry: OMICS_19721
+  name: OMICtools
+bib:
+- key: doi
+  value: 10.1186/1471-2105-13-187
+popcon:
+- insts: 113
+  olde: 82
+  recent: 23
+  vote: 8

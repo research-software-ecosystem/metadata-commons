@@ -1,0 +1,52 @@
+about:
+  description: The two main functions in the package are pairwiseAlignment() and stringDist().
+    The former solves (Needleman-Wunsch) global alignment, (Smith-Waterman) local
+    alignment, and (ends-free) overlap alignment problems. The latter computes the
+    Levenshtein edit distance or pairwise alignment score matrix for a set of strings.
+  home: https://bioconductor.org/packages/3.22/bioc/html/pwalign.html
+  license: Artistic-2.0
+  summary: Perform pairwise sequence alignments
+build:
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+extra:
+  additional-platforms:
+  - linux-aarch64
+package:
+  name: bioconductor-pwalign
+  version: 1.6.0
+requirements:
+  build:
+  - null
+  - make
+  host:
+  - bioconductor-biocgenerics >=0.56.0,<0.57.0
+  - bioconductor-biostrings >=2.78.0,<2.79.0
+  - bioconductor-iranges >=2.44.0,<2.45.0
+  - bioconductor-s4vectors >=0.48.0,<0.49.0
+  - bioconductor-xvector >=0.50.0,<0.51.0
+  - r-base
+  - libblas
+  - liblapack
+  - zlib
+  - liblzma-devel
+  run:
+  - bioconductor-biocgenerics >=0.56.0,<0.57.0
+  - bioconductor-biostrings >=2.78.0,<2.79.0
+  - bioconductor-iranges >=2.44.0,<2.45.0
+  - bioconductor-s4vectors >=0.48.0,<0.49.0
+  - bioconductor-xvector >=0.50.0,<0.51.0
+  - r-base
+source:
+  md5: b6a8497c27e51bda092fcb2f5efe02ba
+  url:
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/pwalign_1.6.0.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/pwalign/pwalign_1.6.0.tar.gz
+  - https://bioarchive.galaxyproject.org/pwalign_1.6.0.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-pwalign/bioconductor-pwalign_1.6.0_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('pwalign')"

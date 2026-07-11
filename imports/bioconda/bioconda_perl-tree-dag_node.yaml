@@ -1,0 +1,29 @@
+about:
+  home: http://metacpan.org/pod/Tree-DAG_Node
+  license: artistic_2
+  summary: An N-ary tree.
+build:
+  noarch: generic
+  number: 0
+  run_exports:
+  - null
+package:
+  name: perl-tree-dag_node
+  version: '1.35'
+requirements:
+  build:
+  - make
+  host:
+  - perl
+  - perl-extutils-makemaker >=7.7
+  - perl-file-slurper >=0.014
+  run:
+  - perl
+  - perl-extutils-makemaker >=7.7
+  - perl-file-slurper >=0.014
+source:
+  sha256: 27467e3644c8dfbb08e26e6d698a75ef7c1b1a810bda9fca50f922eea5429eb1
+  url: https://cpan.metacpan.org/authors/id/R/RS/RSAVAGE/Tree-DAG_Node-1.35.tgz
+test:
+  imports:
+  - Tree::DAG_Node

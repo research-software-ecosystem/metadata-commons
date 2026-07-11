@@ -1,0 +1,36 @@
+about:
+  dev_url: https://github.com/betteridiot/seqlogo
+  home: https://github.com/betteridiot/seqlogo
+  license: BSD-3-Clause
+  license_family: BSD
+  license_file: LICENSE
+  summary: Python port of the R Bioconductor `seqlogo` package
+build:
+  noarch: python
+  number: 0
+  run_exports:
+  - null
+  script: ' -m pip install . --no-deps --no-build-isolation --no-cache-dir -vvv'
+extra:
+  recipe-maintainers:
+  - betteridiot
+package:
+  name: seqlogo
+  version: 5.29.11
+requirements:
+  host:
+  - pip
+  - python >=3
+  - setuptools >=40.8.0
+  run:
+  - numpy
+  - pandas
+  - python >=3
+  - weblogo
+  - ghostscript
+source:
+  sha256: db5700e49c4f0d435db2b3e59c8890fb37364ff5ce015d70e92b0a514e8378a5
+  url: https://pypi.io/packages/source/s/seqlogo/seqlogo-5.29.11.tar.gz
+test:
+  imports:
+  - seqlogo

@@ -1,0 +1,64 @@
+about:
+  description: A python package implementing a statistical method for inferring and
+    visualizing gene-flow in spatial population genetic data.
+  dev_url: https://github.com/NovembreLab/feems
+  doc_url: https://github.com/NovembreLab/feems/blob/v2.0.1/README.md
+  home: https://github.com/NovembreLab/feems
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE
+  summary: Fast Estimation of Effective Migration Surfaces (FEEMS) + admixture (FEEMSmix)
+build:
+  noarch: python
+  number: 0
+  run_exports:
+  - null
+  script: -m pip install . --no-deps --no-build-isolation --no-cache-dir --use-pep517
+    -vvv
+extra:
+  identifiers:
+  - doi:10.7554/eLife.61927
+  - doi:10.1371/journal.pgen.1011612
+  recipe-maintainers:
+  - bernt-matthias
+  - vivaswats
+package:
+  name: feems
+  version: 2.0.1
+requirements:
+  host:
+  - pip
+  - python >=3.8
+  - setuptools
+  run:
+  - python >=3.8
+  - setuptools
+  - suitesparse
+  - scipy
+  - scikit-learn
+  - scikit-sparse
+  - cartopy
+  - pytest
+  - pep8
+  - flake8
+  - click
+  - statsmodels
+  - pyyaml
+  - xlrd
+  - openpyxl
+  - fiona
+  - matplotlib-base
+  - pandas
+  - pandas-plink
+  - msprime
+  - numpy <2
+  - networkx
+  - shapely
+  - pyproj
+source:
+  sha256: 705a8cc081def2d095c013cebe173843bfb2017a70c644539426c01a5418551a
+  url: https://github.com/NovembreLab/feems/archive/refs/tags/v2.0.1.tar.gz
+test:
+  imports:
+  - feems
+  - feems.utils

@@ -1,0 +1,48 @@
+about:
+  description: An R package to build, validate and apply absolute risk models
+  home: https://bioconductor.org/packages/3.22/bioc/html/iCARE.html
+  license: GPL-3 + file LICENSE
+  license_file: LICENSE
+  summary: Individualized Coherent Absolute Risk Estimation (iCARE)
+build:
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+extra:
+  parent_recipe:
+    name: bioconductor-icare
+    path: recipes/bioconductor-icare
+    version: 1.10.2
+package:
+  name: bioconductor-icare
+  version: 1.38.0
+requirements:
+  build:
+  - null
+  - make
+  host:
+  - r-base
+  - r-gtools
+  - r-hmisc
+  - r-plotrix
+  - libblas
+  - liblapack
+  - zlib
+  - liblzma-devel
+  run:
+  - r-base
+  - r-gtools
+  - r-hmisc
+  - r-plotrix
+source:
+  md5: 9ef7beb4e7244aa8f53b5900e011c038
+  url:
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/iCARE_1.38.0.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/iCARE/iCARE_1.38.0.tar.gz
+  - https://bioarchive.galaxyproject.org/iCARE_1.38.0.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-icare/bioconductor-icare_1.38.0_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('iCARE')"

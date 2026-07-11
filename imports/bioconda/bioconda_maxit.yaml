@@ -1,0 +1,58 @@
+about:
+  description: "MAXIT assists in the processing and curation of macromolecular structure\
+    \ data. MAXIT can:\n  - Read and write PDB and mmCIF format files, and translate\
+    \ between file formats.\n  - Perform consistency checks on coordinates, sequence,\
+    \ and crystal data.\n  - Automatically construct, transform, and merge information\
+    \ between formats\n  - Align residue numbering in the coordinates with the sequence\n\
+    \  - Reorder and rename atoms in standard and nonstandard residues and ligands\
+    \ according to the Chemical Component Dictionary\n  - Assign ligands the same\
+    \ chain IDs as the adjacent polymers\n  - Detect missing or additional atoms\n"
+  doc_url: https://sw-tools.rcsb.org/apps/MAXIT/README-source
+  home: https://sw-tools.rcsb.org/apps/MAXIT
+  license: RCSB PDB Software License
+  license_family: OTHER
+  summary: MAXIT assists in the processing and curation of macromolecular structure
+    data.
+build:
+  number: 0
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - osx-arm64
+  recipe-maintainers:
+  - eunos-1128
+package:
+  name: maxit
+  version: '11.4'
+requirements:
+  build:
+  - null
+  - null
+  - make
+  - bison
+  - flex
+  - coreutils
+  host:
+  - tcsh
+  run:
+  - tcsh
+source:
+- patches:
+  - platform.sh.patch
+  - generate_assembly_cif_file.C.patch
+  - maxit.C.patch
+  - process_entry.C.patch
+  - make.platform.gnu8.patch
+  - binary.csh.patch
+  - system-util.C.patch
+  sha256: 2bcb9d7495048546c0159282d4edd6f95b56cdf310d661078b0853157bd24978
+  url: https://sw-tools.rcsb.org/apps/MAXIT/maxit-v11.400-prod-src.tar.gz
+test:
+  commands:
+  - wget https://files.rcsb.org/view/7KNT.pdb
+  - maxit -input 7KNT.pdb -output 7KNT.cif -o 1
+  - cat maxit.log
+  - test -f 7KNT.cif
+  requires:
+  - wget

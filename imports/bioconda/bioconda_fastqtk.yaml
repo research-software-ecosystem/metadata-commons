@@ -1,0 +1,33 @@
+about:
+  home: https://github.com/ndaniel/fastqtk
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE
+  summary: fastqtk is a fast and lightweight tool for interleaving/deinterleaving/counting/trimming
+    FASTQ files.
+build:
+  number: 0
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+package:
+  name: fastqtk
+  version: '0.28'
+requirements:
+  build:
+  - null
+  - null
+  - make
+  - zlib
+  host:
+  - zlib
+source:
+  patches:
+  - makefile.patch
+  sha256: 55963e1e899e6f36cd85c26ec330929d5fd4d5ad3ce31e87861886eb846efd50
+  url: https://github.com/ndaniel/fastqtk/archive/refs/tags/v0.28.tar.gz
+test:
+  commands:
+  - fastqtk 2>&1 | grep "Version" > /dev/null

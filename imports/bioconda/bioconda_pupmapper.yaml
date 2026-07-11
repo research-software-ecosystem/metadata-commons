@@ -1,0 +1,42 @@
+about:
+  dev_url: https://github.com/maxgmarin/pupmapper
+  home: https://github.com/maxgmarin/pupmapper
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE
+  summary: Tool & python package for calculating genome wide pileup mappability.
+build:
+  entry_points:
+  - pupmapper = pupmapper.__init__:main
+  noarch: python
+  number: 0
+  run_exports:
+  - null
+  script: -m pip install . -vvv --no-deps --no-build-isolation --no-cache-dir
+extra:
+  recipe-maintainers:
+  - maxgmarin
+package:
+  name: pupmapper
+  version: 0.2.0
+requirements:
+  host:
+  - python >=3.8
+  - hatchling
+  - pip
+  run:
+  - python >=3.8
+  - pandas
+  - numpy
+  - tqdm
+  - bioframe >=0.7.2
+  - genmap =1.3
+  - bigtools
+source:
+  sha256: 66fbb2ba6324e1233d141a3a76563add37e688e283fa340f991593174e9979dd
+  url: https://pypi.org/packages/source/p/pupmapper/pupmapper-0.2.0.tar.gz
+test:
+  commands:
+  - pupmapper --help
+  imports:
+  - pupmapper

@@ -1,0 +1,24 @@
+about:
+  home: https://github.com/apeltzer/ClipAndMerge
+  license: GPLv3
+  license_file: LICENSE
+  summary: Clip&Merge is a tool to clip off adapters from sequencing reads and merge
+    overlapping paired end reads together.
+build:
+  noarch: generic
+  number: 0
+  run_exports:
+  - null
+package:
+  name: clipandmerge
+  version: 1.7.9
+requirements:
+  run:
+  - openjdk
+  - python
+source:
+  md5: 2951ba364b4a5add18caf21459291cfe
+  url: https://github.com/apeltzer/ClipAndMerge/releases/download/1.7.9/ClipAndMerge-1.7.9.jar
+test:
+  commands:
+  - ClipAndMerge -h

@@ -1,0 +1,47 @@
+about:
+  dev_url: https://github.com/genomehubs/blobtk
+  doc_url: https://github.com/genomehubs/blobtk/wiki
+  home: https://github.com/genomehubs/blobtk
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE
+  summary: Core functionality shared across BlobToolKit tools.
+build:
+  number: 0
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+package:
+  name: blobtk
+  version: 0.8.0
+requirements:
+  build:
+  - null
+  - null
+  - null
+  - cmake
+  - make
+  - clangdev
+  - llvmlite
+  - pkg-config
+  host:
+  - python
+  - pip
+  - maturin
+  - curl
+  - wget
+  - openssl
+  - zlib
+  run:
+  - python
+source:
+  sha256: a32c7e532a550b74cbbf649e7d1d37879f6404336ca5d4c5c7690d9d4d0a8c19
+  url: https://github.com/genomehubs/blobtk/archive/0.8.0.tar.gz
+test:
+  commands:
+  - blobtk --help
+  imports:
+  - blobtk

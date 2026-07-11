@@ -1,0 +1,36 @@
+about:
+  description: "Bash script to download/update snapshots of files from NCBI genomes\
+    \ repository \n(refseq/genbank) with track of changes and without redundancy \
+    \ \n"
+  home: https://github.com/pirovc/genome_updater
+  license: MIT License
+  license_family: MIT
+  summary: 'genome_updater: bash script to download/update snapshots of refseq/genbank'
+build:
+  noarch: generic
+  number: 0
+  run_exports:
+  - null
+extra:
+  recipe-maintainers:
+  - pirovc
+package:
+  name: genome_updater
+  version: 0.8.1
+requirements:
+  run:
+  - tar
+  - bc
+  - parallel >=20160822
+  - gawk
+  - coreutils
+  - wget
+  - findutils
+  - curl
+  - gzip
+source:
+  sha256: e6305d8e06e77e990eeed4ea49d777423b1ef5c91815c169f378e07c2d1a9345
+  url: https://github.com/pirovc/genome_updater/archive/v0.8.1.tar.gz
+test:
+  commands:
+  - "genome_updater.sh -h 2>&1 | grep -e \"\u250C\" -e \"\u2514\" -e \"\u2502\""

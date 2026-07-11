@@ -1,0 +1,36 @@
+about:
+  dev_url: https://github.com/acidgenomics/r-acidmarkdown
+  home: https://r.acidgenomics.com/packages/acidmarkdown/
+  license: Apache-2.0
+  license_family: APACHE
+  license_file: LICENSE.md
+  summary: Toolkit for extending the functionality of R Markdown.
+build:
+  noarch: generic
+  number: 0
+  run_exports:
+  - null
+extra:
+  recipe-maintainers:
+  - acidgenomics
+  - mjsteinbaugh
+package:
+  name: r-acidmarkdown
+  version: 0.3.2
+requirements:
+  host:
+  - r-base
+  - r-acidgenerics
+  - r-goalie
+  - r-knitr
+  run:
+  - r-base
+  - r-acidgenerics
+  - r-goalie
+  - r-knitr
+source:
+  sha256: 3061a4652640eed8f48adaf8dfb51aa5d2c3eff93876a6a9de2ca8720b2333a4
+  url: https://github.com/acidgenomics/r-acidmarkdown/archive/v0.3.2.tar.gz
+test:
+  commands:
+  - $R -e "library('AcidMarkdown')"

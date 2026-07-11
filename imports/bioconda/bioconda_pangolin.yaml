@@ -1,0 +1,50 @@
+about:
+  home: https://github.com/cov-lineages/pangolin
+  license: GPL-3.0-only
+  license_file: LICENSE.txt
+  summary: Phylogenetic Assignment of Named Global Outbreak LINeages
+build:
+  noarch: python
+  number: 1
+  run_exports:
+  - null
+  script: -m pip install --no-deps --ignore-installed .
+extra:
+  identifiers:
+  - usegalaxy-eu:pangolin
+package:
+  name: pangolin
+  version: '4.4'
+requirements:
+  host:
+  - python >=3.10
+  - pip >=19.3.1
+  - setuptools
+  run:
+  - python >=3.10
+  - biopython >=1.74
+  - pandas >=2.3.1
+  - joblib >=0.11
+  - scikit-learn >=0.23.1,<1.3.0
+  - tabulate
+  - pulp >=2
+  - minimap2 >=2.16
+  - snakemake-minimal >=9.9.0
+  - gofasta
+  - usher >=0.6.2,!=0.6.4,!=0.6.5
+  - ucsc-fatovcf >=426
+  - git
+  - git-lfs
+  - scorpio >=0.3.12
+  - constellations >=0.0.15
+  - pangolin-data >=1.2.133.2
+  - conda
+  - pip >=19.3.1
+source:
+  sha256: c367075a9392cc0e288d3d4ea5c1a23eb4981177caa2b67f902daf74f1b73958
+  url: https://github.com/cov-lineages/pangolin/archive/refs/tags/v4.4.tar.gz
+test:
+  commands:
+  - pangolin -h
+  - pangolin --all-versions
+  - pangolin --update-data --datadir "$(mktemp -d)"

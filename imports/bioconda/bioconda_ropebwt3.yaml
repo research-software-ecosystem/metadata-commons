@@ -1,0 +1,34 @@
+about:
+  dev_url: https://github.com/lh3/ropebwt3
+  doc_url: https://github.com/lh3/ropebwt3/blob/v3.10/README.md
+  home: https://github.com/lh3/ropebwt3
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE.txt
+  summary: Constructs the FM-index of a large DNA sequence set and searches for matches
+    against the FM-index.
+build:
+  number: 0
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+package:
+  name: ropebwt3
+  version: '3.1'
+requirements:
+  build:
+  - make
+  - null
+  host:
+  - zlib
+  - libgomp
+  - llvm-openmp
+source:
+  sha256: 072231015c834d7ffcdc621c9ae260dafebf9f22ed9a780fe0026c2e0a845c5a
+  url: https://github.com/lh3/ropebwt3/archive/refs/tags/v3.10.tar.gz
+test:
+  commands:
+  - ropebwt3 version /dev/null 2>&1

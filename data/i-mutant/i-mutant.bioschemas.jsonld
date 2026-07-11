@@ -1,0 +1,160 @@
+{
+  "@context": {
+    "biotools": "https://bio.tools/ontology/",
+    "brick": "https://brickschema.org/schema/Brick#",
+    "bsc": "http://bioschemas.org/",
+    "bsct": "http://bioschemas.org/types/",
+    "csvw": "http://www.w3.org/ns/csvw#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "dcam": "http://purl.org/dc/dcam/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dcmitype": "http://purl.org/dc/dcmitype/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "doap": "http://usefulinc.com/ns/doap#",
+    "edam": "http://edamontology.org/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "geo": "http://www.opengis.net/ont/geosparql#",
+    "odrl": "http://www.w3.org/ns/odrl/2/",
+    "org": "http://www.w3.org/ns/org#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "prof": "http://www.w3.org/ns/dx/prof/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "qb": "http://purl.org/linked-data/cube#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "sc": "http://schema.org/",
+    "schema": "https://schema.org/",
+    "sh": "http://www.w3.org/ns/shacl#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "sosa": "http://www.w3.org/ns/sosa/",
+    "ssn": "http://www.w3.org/ns/ssn/",
+    "time": "http://www.w3.org/2006/time#",
+    "vann": "http://purl.org/vocab/vann/",
+    "void": "http://rdfs.org/ns/void#",
+    "wgs": "https://www.w3.org/2003/01/geo/wgs84_pos#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "https://bio.tools/i-mutant",
+      "@type": "sc:SoftwareApplication",
+      "biotools:primaryContact": "Emidio Capriotti",
+      "bsc:input": [
+        {
+          "@id": "_:N0f481e8952194d2586b6da698c5ada8b"
+        },
+        {
+          "@id": "_:N2e0a88f60c6f40a2aa46d69f530db66d"
+        },
+        {
+          "@id": "_:N58fd0286603f4522a49717fc2c56d81d"
+        },
+        {
+          "@id": "_:N1e1351db668f4815bb531f85878f098e"
+        }
+      ],
+      "bsc:output": [
+        {
+          "@id": "_:N471fcd4e10dd4b7ba54c4a605f9fa327"
+        },
+        {
+          "@id": "_:Ne724ff6114424bd78b1255f494964cba"
+        }
+      ],
+      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "sc:additionalType": "Web application",
+      "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_2885"
+        },
+        {
+          "@id": "edam:topic_0130"
+        }
+      ],
+      "sc:citation": [
+        "pubmed:15980478",
+        {
+          "@id": "https://doi.org/10.1093/nar/gki375"
+        },
+        "pmcid:PMC1160136"
+      ],
+      "sc:description": "Neural Network based Predictor of Protein stability Changes upon Single Point Mutation from the Protein Structure.",
+      "sc:featureList": {
+        "@id": "edam:operation_2406"
+      },
+      "sc:name": "I-MUTANT",
+      "sc:operatingSystem": [
+        "Windows",
+        "Mac",
+        "Linux"
+      ],
+      "sc:provider": "ELIXIR-ITA-BOLOGNA",
+      "sc:softwareHelp": {
+        "@id": "http://folding.biofold.org/i-mutant//pages/I-Mutant2.0_Tutorial.html"
+      },
+      "sc:softwareVersion": "2.0",
+      "sc:url": "http://folding.biofold.org/i-mutant/i-mutant2.0.html"
+    },
+    {
+      "@id": "_:N0f481e8952194d2586b6da698c5ada8b",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1742"
+      },
+      "sc:name": "PDB residue number"
+    },
+    {
+      "@id": "_:N2e0a88f60c6f40a2aa46d69f530db66d",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2974"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "Protein sequence (raw)"
+    },
+    {
+      "@id": "_:N58fd0286603f4522a49717fc2c56d81d",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1467"
+      },
+      "sc:name": "Protein chain"
+    },
+    {
+      "@id": "_:N1e1351db668f4815bb531f85878f098e",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1127"
+      },
+      "sc:name": "PDB ID"
+    },
+    {
+      "@id": "_:N471fcd4e10dd4b7ba54c4a605f9fa327",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1537"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Protein structure report"
+    },
+    {
+      "@id": "_:Ne724ff6114424bd78b1255f494964cba",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1537"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Protein structure report"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/gki375",
+      "@type": "sc:CreativeWork"
+    }
+  ]
+}

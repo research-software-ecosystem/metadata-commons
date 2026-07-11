@@ -1,0 +1,31 @@
+package: hhsuite
+distribution: debian
+release: sid
+component: main
+version: 3.3.0+ds
+source: hhsuite
+homepage: https://toolkit.tuebingen.mpg.de/
+license: unknown
+blend: debian-med
+description_md5: 33cb7e8c769908e574aec96cb70eb73a
+registries:
+- entry: OMICS_28407
+  name: OMICtools
+- entry: SCR_010277
+  name: SciCrunch
+- entry: hhsuite
+  name: conda:bioconda
+bib:
+- key: doi
+  value: 10.1038/NMETH.1818
+- key: doi
+  rank: 1
+  value: 10.1093/bioinformatics/bti125
+- key: doi
+  rank: 2
+  value: 10.1101/560029
+popcon:
+- insts: 119
+  olde: 85
+  recent: 23
+  vote: 11

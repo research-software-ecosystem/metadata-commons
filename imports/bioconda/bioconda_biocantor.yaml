@@ -1,0 +1,35 @@
+about:
+  home: https://github.com/ifiddes/BioCantor
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE
+  summary: Coordinate Maniuplation and Genome Annotation Data Model
+build:
+  noarch: python
+  number: 0
+  run_exports:
+  - null
+  script: ' -m pip install .[io] --ignore-installed --no-deps -vv'
+package:
+  name: biocantor
+  version: 1.3.0
+requirements:
+  host:
+  - pip
+  - python
+  run:
+  - pysam
+  - pyvcf3
+  - gffutils
+  - biopython
+  - marshmallow
+  - methodtools
+  - marshmallow-dataclass
+  - marshmallow-enum
+  - marshmallow-union
+source:
+  sha256: a1266f0993d19e75bcb25c51bf2c537d355b79041841b488d45544091fb00bea
+  url: https://github.com/ifiddes/biocantor/archive/refs/tags/1.3.0.tar.gz
+test:
+  imports:
+  - biocantor

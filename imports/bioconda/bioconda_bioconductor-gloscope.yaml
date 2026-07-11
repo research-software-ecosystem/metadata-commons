@@ -1,0 +1,64 @@
+about:
+  description: This package aims at representing and summarizing the entire single-cell
+    profile of a sample. It allows researchers to perform important bioinformatic
+    analyses at the sample-level such as visualization and quality control. The main
+    functions Estimate sample distribution and calculate statistical divergence among
+    samples, and visualize the distance matrix through MDS plots.
+  home: https://bioconductor.org/packages/3.22/bioc/html/GloScope.html
+  license: Artistic-2.0
+  summary: Population-level Representation on scRNA-Seq data
+build:
+  noarch: generic
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+package:
+  name: bioconductor-gloscope
+  version: 2.0.1
+requirements:
+  host:
+  - bioconductor-biocparallel >=1.44.0,<1.45.0
+  - bioconductor-singlecellexperiment >=1.32.0,<1.33.0
+  - r-base
+  - r-boot
+  - r-cluster
+  - r-fnn
+  - r-ggplot2
+  - r-mass
+  - r-mclust
+  - r-mvnfast
+  - r-permute
+  - r-pheatmap
+  - r-rann
+  - r-rcolorbrewer
+  - r-rlang
+  - r-vegan
+  run:
+  - bioconductor-biocparallel >=1.44.0,<1.45.0
+  - bioconductor-singlecellexperiment >=1.32.0,<1.33.0
+  - r-base
+  - r-boot
+  - r-cluster
+  - r-fnn
+  - r-ggplot2
+  - r-mass
+  - r-mclust
+  - r-mvnfast
+  - r-permute
+  - r-pheatmap
+  - r-rann
+  - r-rcolorbrewer
+  - r-rlang
+  - r-vegan
+source:
+  md5: 405ecc1532f2b7458aba2242b76ac4c9
+  url:
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/GloScope_2.0.1.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/GloScope/GloScope_2.0.1.tar.gz
+  - https://bioarchive.galaxyproject.org/GloScope_2.0.1.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-gloscope/bioconductor-gloscope_2.0.1_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('GloScope')"

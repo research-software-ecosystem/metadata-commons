@@ -1,0 +1,57 @@
+about:
+  dev-url: https://github.com/qwx9/strangepg
+  home: https://github.com/qwx9/strangepg
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE
+  summary: Strange pangenome-scale interactive graph visualizer
+build:
+  number: 0
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+  container:
+    extended-base: true
+  recipe-maintainers:
+  - qwx9
+package:
+  name: strangepg
+  version: 0.9.6
+requirements:
+  build:
+  - null
+  - null
+  - make
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  host:
+  - libegl-devel
+  - libgles-devel
+  - xorg-libx11
+  - xorg-libxcursor
+  - xorg-libxi
+  - xorg-xorgproto
+  run:
+  - libxcb
+  - xorg-libx11
+  - xorg-libxau
+  - xorg-libxcursor
+  - xorg-libxdmcp
+  - xorg-libxext
+  - xorg-libxfixes
+  - xorg-libxi
+  - xorg-libxrandr
+source:
+  sha256: 182bb4bd22c57d618a98704883eaf747f6ff6814a91ce8bf7669a7c8dc9ea434
+  url: https://github.com/qwx9/strangepg/archive/refs/tags/0.9.6.tar.gz
+test:
+  source_files:
+  - test/frag10.gfa

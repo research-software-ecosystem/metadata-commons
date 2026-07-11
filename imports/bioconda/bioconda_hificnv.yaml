@@ -1,0 +1,27 @@
+about:
+  home: https://github.com/PacificBiosciences/HiFiCNV
+  license: BSD-3-Clause-Clear
+  license_family: BSD
+  summary: Copy number variant caller and depth visualization utility for PacBio HiFi
+    reads
+build:
+  number: 0
+  run_exports:
+  - null
+  skip: true
+extra:
+  recipe-maintainers:
+  - holtjma
+  - ctsa
+  skip-lints:
+  - should_use_compilers
+  - should_be_noarch_generic
+package:
+  name: hificnv
+  version: 1.0.1
+source:
+  sha256: 3f5c32cbf46ac8aacaa6ac5984e6b8678779a177201cf50c354fb904750f9376
+  url: https://github.com/PacificBiosciences/HiFiCNV/releases/download/v1.0.1/hificnv-v1.0.1-x86_64-unknown-linux-gnu.tar.gz
+test:
+  commands:
+  - hificnv --version

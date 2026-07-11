@@ -1,0 +1,36 @@
+about:
+  doc_url: https://metacpan.org/pod/ExtUtils::CppGuess
+  home: https://metacpan.org/pod/ExtUtils::CppGuess
+  license: Perl_5
+  summary: Guess C++ compiler and flags.
+build:
+  number: 0
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+package:
+  name: perl-extutils-cppguess
+  version: '0.27'
+requirements:
+  build:
+  - make
+  - null
+  host:
+  - perl
+  - perl-data-dumper
+  - perl-extutils-makemaker
+  - perl-module-build
+  - perl-extutils-manifest
+  - perl-capture-tiny
+  run:
+  - perl
+  - perl-capture-tiny
+source:
+  sha256: b2c7b581901054a32dfcea12536fda8626457ed0bfbc02600bd354bde7e2a9b4
+  url: https://cpan.metacpan.org/authors/id/E/ET/ETJ/ExtUtils-CppGuess-0.27.tar.gz
+test:
+  imports:
+  - ExtUtils::CppGuess

@@ -1,0 +1,96 @@
+about:
+  description: Statistical and computational method to analyze the co-expression of
+    gene pairs at single cell level. It provides the foundation for single-cell gene
+    interactome analysis. The basic idea is studying the zero UMI counts' distribution
+    instead of focusing on positive counts; this is done with a generalized contingency
+    tables framework. COTAN can effectively assess the correlated or anti-correlated
+    expression of gene pairs. It provides a numerical index related to the correlation
+    and an approximate p-value for the associated independence test. COTAN can also
+    evaluate whether single genes are differentially expressed, scoring them with
+    a newly defined global differentiation index. Moreover, this approach provides
+    ways to plot and cluster genes according to their co-expression pattern with other
+    genes, effectively helping the study of gene interactions and becoming a new tool
+    to identify cell-identity marker genes.
+  home: https://bioconductor.org/packages/3.22/bioc/html/COTAN.html
+  license: GPL-3
+  license_file: /lib/R/share/licenses/GPL-3
+  summary: COexpression Tables ANalysis
+build:
+  noarch: generic
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+package:
+  name: bioconductor-cotan
+  version: 2.10.3
+requirements:
+  host:
+  - bioconductor-biocsingular >=1.26.0,<1.27.0
+  - bioconductor-complexheatmap >=2.26.0,<2.27.0
+  - bioconductor-singlecellexperiment >=1.32.0,<1.33.0
+  - bioconductor-summarizedexperiment >=1.40.0,<1.41.0
+  - r-assertthat
+  - r-base
+  - r-circlize
+  - r-dendextend
+  - r-dplyr
+  - r-ggdist
+  - r-ggplot2
+  - r-ggrepel
+  - r-ggthemes
+  - r-matrix
+  - r-paralleldist
+  - r-parallelly
+  - r-proxy
+  - r-rcolorbrewer
+  - r-rfast
+  - r-rlang
+  - r-rspectra
+  - r-scales
+  - r-seurat
+  - r-stringr
+  - r-tibble
+  - r-tidyr
+  - r-withr
+  - r-zeallot
+  run:
+  - bioconductor-biocsingular >=1.26.0,<1.27.0
+  - bioconductor-complexheatmap >=2.26.0,<2.27.0
+  - bioconductor-singlecellexperiment >=1.32.0,<1.33.0
+  - bioconductor-summarizedexperiment >=1.40.0,<1.41.0
+  - r-assertthat
+  - r-base
+  - r-circlize
+  - r-dendextend
+  - r-dplyr
+  - r-ggdist
+  - r-ggplot2
+  - r-ggrepel
+  - r-ggthemes
+  - r-matrix
+  - r-paralleldist
+  - r-parallelly
+  - r-proxy
+  - r-rcolorbrewer
+  - r-rfast
+  - r-rlang
+  - r-rspectra
+  - r-scales
+  - r-seurat
+  - r-stringr
+  - r-tibble
+  - r-tidyr
+  - r-withr
+  - r-zeallot
+source:
+  md5: 01d7912a1b8030313c56ffc1a5dac6e4
+  url:
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/COTAN_2.10.3.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/COTAN/COTAN_2.10.3.tar.gz
+  - https://bioarchive.galaxyproject.org/COTAN_2.10.3.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-cotan/bioconductor-cotan_2.10.3_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('COTAN')"

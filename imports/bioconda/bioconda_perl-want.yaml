@@ -1,0 +1,32 @@
+about:
+  doc_url: https://search.cpan.org/~robin/Want-0.29/Want.pm
+  home: https://search.cpan.org/~robin/Want-0.29/Want.pm
+  license: Perl_5
+  summary: This module generalises the mechanism of the wantarray function, allowing
+    a function.
+build:
+  number: 7
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+package:
+  name: perl-want
+  version: '0.29'
+requirements:
+  build:
+  - make
+  - null
+  host:
+  - perl >=5.26.2
+  - perl-module-build >=0.4224
+  run:
+  - perl >=5.26.2
+source:
+  md5: 33b2dae5db59781b9a0434fa1db04aab
+  url: https://search.cpan.org/CPAN/authors/id/R/RO/ROBIN/Want-0.29.tar.gz
+test:
+  imports:
+  - Want

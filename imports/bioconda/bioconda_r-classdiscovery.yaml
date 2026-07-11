@@ -1,0 +1,41 @@
+about:
+  home: https://oompa.r-forge.r-project.org
+  license: Apache-2.0
+  license_family: APACHE
+  summary: 'Defines the classes used for "class discovery" problems in the OOMPA project
+    (<http://oompa.r-forge.r-project.org/>). Class discovery primarily consists of
+    unsupervised clustering methods with attempts to assess their statistical significance. '
+build:
+  noarch: generic
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports:
+  - null
+package:
+  name: r-classdiscovery
+  version: 3.4.9
+requirements:
+  host:
+  - r-base
+  - bioconductor-biobase
+  - r-cluster
+  - r-mclust
+  - r-oompabase >=3.0.1
+  - r-oompadata
+  run:
+  - r-base
+  - bioconductor-biobase
+  - r-cluster
+  - r-mclust
+  - r-oompabase >=3.0.1
+  - r-oompadata
+source:
+  sha256: bcd1ad1dea040654dd7d9306de3f599c28db4b0e278334445c9bba3cbf966a15
+  url:
+  - /src/contrib/ClassDiscovery_3.4.9.tar.gz
+  - /src/contrib/Archive/ClassDiscovery/ClassDiscovery_3.4.9.tar.gz
+test:
+  commands:
+  - $R -e "library('ClassDiscovery')"

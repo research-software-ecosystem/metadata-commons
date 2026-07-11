@@ -1,0 +1,49 @@
+about:
+  description: Defines and includes a set of class-based templates for developing
+    and implementing data processing and analysis workflows, with a strong emphasis
+    on statistics and machine learning. The templates can be used and where needed
+    extended to 'wrap' tools and methods from other packages into a common standardised
+    structure to allow for effective and fast integration. Model objects can be combined
+    into sequences, and sequences nested in iterators using overloaded operators to
+    simplify and improve readability of the code. Ontology lookup has been integrated
+    and implemented to provide standardised definitions for methods, inputs and outputs
+    wrapped using the class-based templates.
+  home: https://bioconductor.org/packages/3.22/bioc/html/struct.html
+  license: GPL-3
+  license_file: /lib/R/share/licenses/GPL-3
+  summary: Statistics in R Using Class-based Templates
+build:
+  noarch: generic
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+package:
+  name: bioconductor-struct
+  version: 1.22.1
+requirements:
+  host:
+  - bioconductor-rols >=3.6.0,<3.7.0
+  - bioconductor-s4vectors >=0.48.0,<0.49.0
+  - bioconductor-summarizedexperiment >=1.40.0,<1.41.0
+  - r-base
+  - r-knitr
+  - r-ontologyindex
+  run:
+  - bioconductor-rols >=3.6.0,<3.7.0
+  - bioconductor-s4vectors >=0.48.0,<0.49.0
+  - bioconductor-summarizedexperiment >=1.40.0,<1.41.0
+  - r-base
+  - r-knitr
+  - r-ontologyindex
+source:
+  md5: 4557f2e57d2c1075337e47fdcff38cb3
+  url:
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/struct_1.22.1.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/struct/struct_1.22.1.tar.gz
+  - https://bioarchive.galaxyproject.org/struct_1.22.1.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-struct/bioconductor-struct_1.22.1_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('struct')"

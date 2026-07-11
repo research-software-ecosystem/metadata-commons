@@ -1,0 +1,33 @@
+about:
+  home: https://github.com/wdecoster/nanoget
+  license: GPL-3.0-only
+  license_family: GPL
+  license_file: LICENSE
+  summary: Functions to extract information from Oxford Nanopore sequencing data and
+    alignments.
+build:
+  noarch: python
+  number: 0
+  run_exports:
+  - null
+  script: -m pip install . --no-deps -vvv
+package:
+  name: nanoget
+  version: 1.19.5
+requirements:
+  host:
+  - python >=3.0
+  - pip
+  - setuptools
+  run:
+  - python >=3.0
+  - pandas >=2.0.0
+  - numpy
+  - biopython
+  - pysam >0.10.0
+source:
+  sha256: 31f4bebba409acbe8f2c3642927b59ab30b50d0a63b74a72aae5524ab85b079a
+  url: https://pypi.io/packages/source/n/nanoget/nanoget-1.19.5.tar.gz
+test:
+  imports:
+  - nanoget

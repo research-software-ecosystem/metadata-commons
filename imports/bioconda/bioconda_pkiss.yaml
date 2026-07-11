@@ -1,0 +1,39 @@
+about:
+  doc_url: https://bibiserv.cebitec.uni-bielefeld.de/pkiss
+  home: https://bibiserv.cebitec.uni-bielefeld.de/pkiss
+  license: GPL-3.0-or-later
+  license_file: LICENSE
+  summary: RNA secondary structure prediction including K-type and kissing hairpin-
+    pseudoknots.
+build:
+  number: 4
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+  identifiers:
+  - doi:10.1007/978-3-642-15294-8_5
+  - doi:10.1093/bioinformatics/btu649
+package:
+  name: pkiss
+  version: 2.3.0
+requirements:
+  build:
+  - make
+  - null
+  - pkg-config
+  host:
+  - perl
+  - bellmans-gapc >=2024.01.12
+  run:
+  - perl
+  - bellmans-gapc >=2024.01.12
+source:
+  sha256: 0c5b7d91893d0a23189f4af3602e18f110f030eac49a3658f7acede23596fde0
+  url: https://github.com/jlab/fold-grammars/archive/2.3.1.tar.gz
+test:
+  commands:
+  - echo "UGGCCGGCAUGGUCCCAGCCUCCUCGCUGGCGCCGGCUGGGCAACAUUCC" | pKiss --mode=probs
+    &> /dev/null

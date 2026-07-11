@@ -1,0 +1,25 @@
+about:
+  home: https://github.com/PacificBiosciences/mitorsaw
+  license: Pacific Biosciences Software License Agreement
+  summary: A tool for mitochondrial analysis for HiFi sequencing data
+build:
+  number: 0
+  run_exports:
+  - null
+  skip: true
+extra:
+  recipe-maintainers:
+  - holtjma
+  - ctsa
+  skip-lints:
+  - should_use_compilers
+  - should_be_noarch_generic
+package:
+  name: mitorsaw
+  version: 0.2.10
+source:
+  sha256: 0c0db408e1b50d269e3001dd6037e650bb9660eda6722bd5526506ef79ee70d9
+  url: https://github.com/PacificBiosciences/mitorsaw/releases/download/v0.2.10/mitorsaw-v0.2.10-x86_64-unknown-linux-gnu.tar.gz
+test:
+  commands:
+  - mitorsaw --version

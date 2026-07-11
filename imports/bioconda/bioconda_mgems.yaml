@@ -1,0 +1,41 @@
+about:
+  dev_url: https://github.com/PROBIC/mGEMS
+  home: https://github.com/PROBIC/mGEMS
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE
+  summary: mGEMS - sequencing data binning based on probabilistic classification
+build:
+  number: 2
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+  identifiers:
+  - doi:10.1099/mgen.0.000691
+  recipe-maintainers:
+  - tmaklin
+package:
+  name: mgems
+  version: 1.3.3
+requirements:
+  build:
+  - null
+  - null
+  - cmake >=3.0.0
+  - make
+  - git
+  host:
+  - llvm-openmp
+  - libgomp
+  - zlib
+  - xz
+  - bzip2
+source:
+  sha256: c16db45f575d039ca5219b9bc7b7a4dc4bc3ceb3239b2a61085106d3d666b57a
+  url: https://github.com/PROBIC/mGEMS/archive/v1.3.3.tar.gz
+test:
+  commands:
+  - mGEMS

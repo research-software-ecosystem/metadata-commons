@@ -1,0 +1,27 @@
+about:
+  home: https://www.gnu.org/software/libidn/
+  license: LGPLv3
+  license_file: COPYING.LESSERv3
+  summary: Library for internationalized domain name support
+build:
+  number: 10
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+package:
+  name: libidn
+  version: 7.45.0
+requirements:
+  build:
+  - autoconf
+  - make
+  - null
+  - null
+source:
+  md5: 4dd8356ba577287ea7076bfa1554b534
+  url: http://ftp.gnu.org/gnu/libidn/libidn-1.32.tar.gz
+test:
+  commands:
+  - 'true'

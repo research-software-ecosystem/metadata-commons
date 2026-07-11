@@ -1,0 +1,48 @@
+about:
+  description: 'Kalamari is a curated database of assemblies and taxonomies.
+
+    These assemblies are curated mainly for foodborne bacteria but have other taxa
+
+    such as SARS-CoV-2 and Crytposporidium.
+
+    Taxonomy has been modified from NCBI Taxonomy and has been minimalized to
+
+    just what is needed here.
+
+    '
+  dev_url: https://github.com/lskatz/Kalamari
+  doc_url: https://github.com/lskatz/Kalamari/blob/master/README.md
+  home: https://github.com/lskatz/kalamari
+  identifiers:
+  - doi: 10.1128/mra.00963-24
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE
+  summary: A curated database of completed assemblies with taxonomy IDs
+build:
+  noarch: generic
+  number: 0
+  run_exports:
+  - null
+extra:
+  recipe-maintainers:
+  - lskatz
+  - rpetit3
+package:
+  name: kalamari
+  version: '5.9'
+requirements:
+  host:
+  - perl
+  - perl-module-build
+  - entrez-direct
+  run:
+  - perl
+  - perl-module-build
+  - entrez-direct
+source:
+  sha256: 700f3229b22aa026dcfd38f525c83aaefed32768e1e008cfb9228f0bf9a92984
+  url: https://github.com/lskatz/Kalamari/archive/refs/tags/v5.9.tar.gz
+test:
+  commands:
+  - downloadKalamari.pl --help

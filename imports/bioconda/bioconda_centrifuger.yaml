@@ -1,0 +1,38 @@
+about:
+  home: https://github.com/mourisl/centrifuger
+  license: MIT
+  summary: Lossless compression of microbial genomes for efficient and accurate metagenomic
+    sequence classification.
+build:
+  number: 0
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+  identifiers:
+  - doi:10.1101/2023.11.15.567129
+package:
+  name: centrifuger
+  version: 1.1.2
+requirements:
+  build:
+  - make
+  - null
+  - null
+  host:
+  - zlib
+  run:
+  - zlib
+  - perl
+  - wget
+  - tar
+  - python
+source:
+  sha256: 69222efe1d7bcba880f102405ea612bb3401502402c25479c0181029ddeaa9cd
+  url: https://github.com/mourisl/centrifuger/archive/refs/tags/v1.1.2.tar.gz
+test:
+  commands:
+  - centrifuger -v | grep 'Centrifuger v'
+  - centrifuger-inspect 2>&1 | grep 'Required'

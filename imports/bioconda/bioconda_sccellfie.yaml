@@ -1,0 +1,48 @@
+about:
+  home: https://github.com/earmingol/scCellFie
+  license: MIT
+  license_file: LICENSE.txt
+  summary: A tool for inferring metabolic activities from single-cell and spatial
+    transcriptomics
+build:
+  noarch: python
+  number: 0
+  run_exports:
+  - null
+  script: -m pip install . -vv --no-deps --no-build-isolation
+extra:
+  recipe-maintainers:
+  - nilchia
+package:
+  name: sccellfie
+  version: 0.6.0
+requirements:
+  host:
+  - python
+  - pip
+  run:
+  - python >=
+  - scanpy
+  - numpy >=1.23.5,<2.3
+  - pandas
+  - cobra
+  - tqdm
+  - scipy
+  - anndata <0.11
+  - squidpy
+  - networkx
+  - geopandas
+  - esda
+  - matplotlib-base
+  - seaborn
+  - glasbey
+source:
+  sha256: 204d3186835d7ac9ba2f53c94bf74ce5d7ca9353d6565aec5742d3b21c77bef0
+  url: https://pypi.org/packages/source/s/sccellfie/sccellfie-0.6.0.tar.gz
+test:
+  commands:
+  - pip check
+  imports:
+  - sccellfie
+  requires:
+  - pip

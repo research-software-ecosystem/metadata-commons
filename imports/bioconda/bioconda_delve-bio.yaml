@@ -1,0 +1,37 @@
+about:
+  home: https://github.com/berndbohmeier/delve
+  license: MIT
+  license_file:
+  - LICENSE
+  - THIRDPARTY.yml
+  summary: A variant caller for mixed infections
+build:
+  number: 0
+  run_exports:
+  - null
+  script:
+  - cargo-bundle-licenses --format yaml --output THIRDPARTY.yml
+  - cargo install -v --locked --no-track --root $PREFIX --path .
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+  recipe-maintainers:
+  - berndbohmeier
+  - JasonAHendry
+package:
+  name: delve-bio
+  version: 0.3.0
+requirements:
+  build:
+  - null
+  - null
+  - null
+  - cargo-bundle-licenses
+  - clangdev <22
+source:
+  sha256: 7f8a34bbdecc09200af60324885b79b15affedc94c856a3114544f160b79272a
+  url: https://github.com/berndbohmeier/delve/archive/v0.3.0.tar.gz
+test:
+  commands:
+  - delve --version

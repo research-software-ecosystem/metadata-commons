@@ -1,0 +1,52 @@
+about:
+  dev_url: https://github.com/compomics/ThermoRawFileParser
+  doc_url: https://github.com/compomics/ThermoRawFileParser/blob/master/README.md
+  home: https://github.com/compomics/ThermoRawFileParser
+  license: Apache-2.0
+  license_family: APACHE
+  license_file: /LICENSE
+  summary: Parser for Thermo RAW files based on the ThermoFisher ThermoRawFileReader
+    library.
+build:
+  number: 1
+  run_exports:
+  - null
+  script:
+  - mkdir -p $PREFIX/bin
+  - cp -r * $PREFIX/bin
+  - chmod +x $PREFIX/bin/ThermoRawFileParser
+  - ln -sf $PREFIX/bin/ThermoRawFileParser $PREFIX/bin/thermorawfileparser
+  skip: true
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+  recipe-maintainers:
+  - RECETOX
+  - hechth
+  skip-lints:
+  - should_be_noarch_generic
+package:
+  name: thermorawfileparser
+  version: 2.0.0.dev
+requirements:
+  run:
+  - icu >=70.1
+  - libstdcxx-ng >=7.5.0
+  - libzlib
+  - openssl
+  - wget
+source:
+- sha256: 19566762ce6759a93cee9aa4cef50de1e9ae2ad9078bd95826e8e733d4bb0d52
+  url: https://github.com/compomics/ThermoRawFileParser/releases/download/v.2.0.0-dev/ThermoRawFileParser-v.2.0.0-dev-linux.zip
+- sha256: 98bc806d5f45f32684d77d379c720bfd25aafe04cebcd4dc07f185fbc1942c59
+  url: https://github.com/compomics/ThermoRawFileParser/releases/download/v.2.0.0-dev/ThermoRawFileParser-v.2.0.0-dev-osx.zip
+- sha256: 7099145a2f473278b6d0220763f412718affd738e0bdb1a90f15aeaef63273e1
+  url: https://github.com/compomics/ThermoRawFileParser/releases/download/v.2.0.0-dev/ThermoRawFileParser-v.2.0.0-dev-osx-arm64.zip
+test:
+  commands:
+  - ThermoRawFileParser --version
+  - wget https://github.com/CompOmics/ThermoRawFileParser/raw/refs/heads/master/ThermoRawFileParserTest/Data/small.RAW
+  - ThermoRawFileParser -i small.RAW
+  requires:
+  - wget

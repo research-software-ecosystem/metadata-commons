@@ -1,0 +1,68 @@
+{
+    "Archs": "x64",
+    "Author": "Zytnicki Matthias [aut, cre]",
+    "Date/Publication": "2026-04-28",
+    "Depends": [
+        "R (>= 3.6)"
+    ],
+    "Description": "RNA-Seq is currently used routinely, and it provides accurate information on gene transcription. However, the method cannot accurately estimate duplicated genes expression. Several strategies have been previously used, but all of them provide biased results. With Rmmquant, if a read maps at different positions, the tool detects that the corresponding genes are duplicated; it merges the genes and creates a merged gene. The counts of ambiguous reads is then based on the input genes and the merged genes. Rmmquant is a drop-in replacement of the widely used tools findOverlaps and featureCounts that handles multi-mapping reads in an unabiased way.",
+    "Imports": [
+        "BiocStyle",
+        "DESeq2",
+        "GenomicRanges",
+        "Rcpp (>= 0.12.8)",
+        "S4Vectors",
+        "SummarizedExperiment",
+        "TBX20BamSubset",
+        "TxDb.Mmusculus.UCSC.mm9.knownGene",
+        "apeglm",
+        "devtools",
+        "methods",
+        "org.Mm.eg.db"
+    ],
+    "License": "GPL-3",
+    "LinkingTo": [
+        "Rcpp"
+    ],
+    "MD5sum": "fded0519456ec6372bb53648ee40b4aa",
+    "Maintainer": "Zytnicki Matthias <matthias.zytnicki@inra.fr>",
+    "NeedsCompilation": "yes",
+    "Package": "Rmmquant",
+    "Rank": 1496,
+    "Rfiles": [
+        "vignettes/Rmmquant/inst/doc/Rmmquant.R"
+    ],
+    "Suggests": [
+        "knitr",
+        "rmarkdown",
+        "testthat"
+    ],
+    "SystemRequirements": "C++11",
+    "Title": "RNA-Seq multi-mapping Reads Quantification Tool",
+    "Version": "1.30.0",
+    "VignetteBuilder": "knitr",
+    "biocViews": [
+        "GeneExpression",
+        "Software",
+        "Transcription"
+    ],
+    "dependencyCount": "179",
+    "git_branch": "RELEASE_3_23",
+    "git_last_commit": "f1e0981",
+    "git_last_commit_date": "2026-04-28",
+    "git_url": "https://git.bioconductor.org/packages/Rmmquant",
+    "hasINSTALL": false,
+    "hasLICENSE": false,
+    "hasNEWS": true,
+    "hasREADME": false,
+    "mac.binary.big-sur-x86_64.ver": "bin/macosx/big-sur-x86_64/contrib/4.6/Rmmquant_1.30.0.tgz",
+    "mac.binary.sonoma-arm64.ver": "bin/macosx/sonoma-arm64/contrib/4.6/Rmmquant_1.30.0.tgz",
+    "source.ver": "src/contrib/Rmmquant_1.30.0.tar.gz",
+    "vignetteTitles": [
+        "The Rmmquant package"
+    ],
+    "vignettes": [
+        "vignettes/Rmmquant/inst/doc/Rmmquant.html"
+    ],
+    "win.binary.ver": "bin/windows/contrib/4.6/Rmmquant_1.30.0.zip"
+}

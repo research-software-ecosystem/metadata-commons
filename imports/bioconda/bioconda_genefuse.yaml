@@ -1,0 +1,35 @@
+about:
+  dev_url: https://github.com/OpenGene/genefuse
+  home: https://github.com/OpenGene/genefuse
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE
+  summary: Gene fusion detection and visualization.
+build:
+  number: 4
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+  identifiers:
+  - doi:10.7150/ijbs.24626
+package:
+  name: genefuse
+  version: 0.8.0
+requirements:
+  build:
+  - make
+  - null
+  - null
+  host:
+  - zlib
+source:
+  patches:
+  - patch
+  sha256: c6da54a885d8c1a8be3a64dd3c8d6ea31a03b7c6e54df23950664541624c5377
+  url: https://github.com/OpenGene/GeneFuse/archive/v0.8.0.tar.gz
+test:
+  commands:
+  - genefuse --help

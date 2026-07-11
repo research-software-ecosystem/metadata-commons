@@ -1,0 +1,53 @@
+about:
+  dev_url: https://github.com/fg-labs/bwa-mem3
+  doc_url: https://bwa-mem3.readthedocs.io
+  home: https://github.com/fg-labs/bwa-mem3
+  license: MIT AND Apache-2.0
+  license_family: MIT
+  license_file:
+  - LICENSE
+  - ext/sse2neon/LICENSE
+  summary: Short-read aligner derived from bwa-mem2 with correctness fixes, performance
+    improvements, and methylation alignment.
+build:
+  number: 0
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+  identifiers:
+  - doi:10.1109/IPDPS.2019.00041
+  recipe-maintainers:
+  - nh13
+package:
+  name: bwa-mem3
+  version: 0.3.0
+requirements:
+  build:
+  - make
+  - cmake
+  - null
+  - null
+  - null
+  host:
+  - zlib
+  - mimalloc >=3.3,<4
+  - htslib >=1.21,<2
+  - libsais >=2.10.4,<3
+  - sse2neon ==1.9.1
+  - llvm-openmp
+  - libgomp
+  run:
+  - mimalloc >=3.3,<4
+  - htslib >=1.21,<2
+  - libsais >=2.10.4,<3
+  - llvm-openmp
+  - libgomp
+source:
+  sha256: 153a9eda8b7b436212c7862a6d7226efd5302f71c577483edf010a76169d6934
+  url: https://github.com/fg-labs/bwa-mem3/releases/download/v0.3.0/Source_code_including_submodules.tar.gz
+test:
+  commands:
+  - bwa-mem3 version

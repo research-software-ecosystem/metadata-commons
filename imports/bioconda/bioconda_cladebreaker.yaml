@@ -1,0 +1,29 @@
+about:
+  home: https://github.com/andriesfeder/cladebreaker
+  license: MIT
+  summary: Nextflow pipeline for phylogenetic analysis.
+build:
+  noarch: generic
+  number: 0
+  run_exports:
+  - cladebreaker
+extra:
+  container:
+    extended-base: true
+  copy_test_source_files: true
+  final: true
+package:
+  name: cladebreaker
+  version: 0.3.1
+requirements:
+  run:
+  - python
+  - biopython
+  - nextflow
+  - graphviz
+source:
+  sha256: e6fcff8554e02529a86f568a0e56f46c7caef3151272528cd74e8a156cb0b274
+  url: https://github.com/andriesfeder/cladebreaker/archive/refs/tags/v0.3.1.tar.gz
+test:
+  commands:
+  - cladebreaker --version

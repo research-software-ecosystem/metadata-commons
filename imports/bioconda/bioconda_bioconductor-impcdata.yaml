@@ -1,0 +1,33 @@
+about:
+  description: Package contains methods for data retrieval from IMPC Database.
+  home: https://bioconductor.org/packages/3.22/bioc/html/IMPCdata.html
+  license: file LICENSE
+  license_file: LICENSE
+  summary: Retrieves data from IMPC database
+build:
+  noarch: generic
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+package:
+  name: bioconductor-impcdata
+  version: 1.46.0
+requirements:
+  host:
+  - r-base
+  - r-rjson
+  run:
+  - r-base
+  - r-rjson
+source:
+  md5: 1cb38c3610f5fa83120e6e76a17e99d8
+  url:
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/IMPCdata_1.46.0.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/IMPCdata/IMPCdata_1.46.0.tar.gz
+  - https://bioarchive.galaxyproject.org/IMPCdata_1.46.0.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-impcdata/bioconductor-impcdata_1.46.0_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('IMPCdata')"

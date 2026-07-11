@@ -1,0 +1,30 @@
+about:
+  doc_url: https://metacpan.org/pod/Module::CoreList
+  home: https://metacpan.org/pod/Module::CoreList
+  license: Perl_5
+  summary: What modules shipped with versions of perl.
+build:
+  noarch: generic
+  number: 0
+  run_exports:
+  - null
+package:
+  name: perl-module-corelist
+  version: '5.20260601'
+requirements:
+  build:
+  - make
+  host:
+  - perl
+  - perl-version
+  - perl-extutils-makemaker
+  run:
+  - perl
+  - perl-version
+source:
+  sha256: b3c70d3e868c3cd230f558c4d2774bfd56777c9d4c1414867ef8bd28b9be7496
+  url: https://cpan.metacpan.org/authors/id/B/BI/BINGOS/Module-CoreList-5.20260601.tar.gz
+test:
+  imports:
+  - Module::CoreList
+  - Module::CoreList::Utils

@@ -1,0 +1,24 @@
+about:
+  home: https://github.com/hartwigmedical/hmftools/tree/master/pave
+  license: GPL-3.0-only
+  license_family: GPL
+  summary: PAVE annotates SNV/MNV/INDEL calls with consequence on corresponding genes,
+    transcripts, and proteins.
+build:
+  noarch: generic
+  number: 0
+  run_exports:
+  - null
+package:
+  name: hmftools-pave
+  version: '1.9'
+requirements:
+  run:
+  - zlib
+  - openjdk >=8,<=21
+source:
+  sha256: 41abd2d5b75d6a96f78c468b3b311cb50e5baab61c677a32bfd9fd4284c9d3a0
+  url: https://github.com/hartwigmedical/hmftools/releases/download/pave-v1.9/pave_v1.9.jar
+test:
+  commands:
+  - pave -version | grep Pave

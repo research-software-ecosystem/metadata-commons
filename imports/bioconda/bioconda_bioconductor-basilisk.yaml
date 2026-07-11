@@ -1,0 +1,38 @@
+about:
+  description: Installs a self-contained conda instance that is managed by the R/Bioconductor
+    installation machinery. This aims to provide a consistent Python environment that
+    can be used reliably by Bioconductor packages. Functions are also provided to
+    enable smooth interoperability of multiple Python environments in a single R session.
+  home: https://bioconductor.org/packages/3.22/bioc/html/basilisk.html
+  license: GPL-3
+  license_file: /lib/R/share/licenses/GPL-3
+  summary: Freezing Python Dependencies Inside Bioconductor Packages
+build:
+  noarch: generic
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+package:
+  name: bioconductor-basilisk
+  version: 1.22.0
+requirements:
+  host:
+  - bioconductor-dir.expiry >=1.18.0,<1.19.0
+  - r-base
+  - r-reticulate
+  run:
+  - bioconductor-dir.expiry >=1.18.0,<1.19.0
+  - r-base
+  - r-reticulate
+source:
+  md5: b7097501b21ad7bedf2831a8883bafc0
+  url:
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/basilisk_1.22.0.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/basilisk/basilisk_1.22.0.tar.gz
+  - https://bioarchive.galaxyproject.org/basilisk_1.22.0.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-basilisk/bioconductor-basilisk_1.22.0_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('basilisk')"

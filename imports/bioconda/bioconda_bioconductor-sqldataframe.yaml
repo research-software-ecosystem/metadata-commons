@@ -1,0 +1,46 @@
+about:
+  description: Implements bindings for SQL tables that are compatible with Bioconductor
+    S4 data structures, namely the DataFrame and DelayedArray. This allows SQL-derived
+    data to be easily used inside other Bioconductor objects (e.g., SummarizedExperiments)
+    while keeping everything on disk.
+  home: https://bioconductor.org/packages/3.20/bioc/html/SQLDataFrame.html
+  license: LGPL (>= 3); File LICENSE
+  license_file: LICENSE
+  summary: Representation of SQL tables in DataFrame metaphor
+build:
+  noarch: generic
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+package:
+  name: bioconductor-sqldataframe
+  version: 1.20.0
+requirements:
+  host:
+  - bioconductor-biocgenerics >=0.52.0,<0.53.0
+  - bioconductor-delayedarray >=0.32.0,<0.33.0
+  - bioconductor-s4vectors >=0.44.0,<0.45.0
+  - r-base
+  - r-dbi
+  - r-duckdb
+  - r-rsqlite
+  run:
+  - bioconductor-biocgenerics >=0.52.0,<0.53.0
+  - bioconductor-delayedarray >=0.32.0,<0.33.0
+  - bioconductor-s4vectors >=0.44.0,<0.45.0
+  - r-base
+  - r-dbi
+  - r-duckdb
+  - r-rsqlite
+source:
+  md5: 2448466a5203b92539fe0e1b7522379b
+  url:
+  - https://bioconductor.org/packages/3.20/bioc/src/contrib/SQLDataFrame_1.20.0.tar.gz
+  - https://bioconductor.org/packages/3.20/bioc/src/contrib/Archive/SQLDataFrame/SQLDataFrame_1.20.0.tar.gz
+  - https://bioarchive.galaxyproject.org/SQLDataFrame_1.20.0.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-sqldataframe/bioconductor-sqldataframe_1.20.0_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('SQLDataFrame')"

@@ -1,0 +1,33 @@
+about:
+  dev_url: https://github.com/treangenlab/mft-tools
+  doc_url: https://github.com/treangenlab/mft-tools/blob/main/README.md
+  home: https://github.com/treangenlab/mft-tools
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE
+  summary: Tranform DNA sequences using the Min-Frame Transformation (MFT)
+build:
+  number: 0
+  run_exports:
+  - null
+  script:
+  - cargo-bundle-licenses --format yaml --output THIRDPARTY.yml
+  - cargo install -v --locked --no-track --root $PREFIX --path .
+extra:
+  additional-platforms: -linux-aarch64 -osx-arm64
+  recipe-maintainers:
+  - rdoughty10
+package:
+  name: mft-tools
+  version: 0.1.1
+requirements:
+  build:
+  - null
+  - cargo-bundle-licenses
+  - null
+source:
+  sha256: 0386cf83c3ad124ede0db7a07fffe1a28fb6ed524f230fe8eb02f88836bba9dc
+  url: https://github.com/treangenlab/mft-tools/archive/refs/tags/v0.1.1.tar.gz
+test:
+  commands:
+  - mft --help

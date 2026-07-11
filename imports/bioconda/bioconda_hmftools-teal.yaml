@@ -1,0 +1,24 @@
+about:
+  home: https://github.com/hartwigmedical/hmftools/blob/master/teal/README.md
+  license: GPL-3.0-only
+  license_family: GPL3
+  summary: Characterises telomeres in tumor and normal samples from WGS data.
+build:
+  noarch: generic
+  number: 0
+  run_exports:
+  - null
+package:
+  name: hmftools-teal
+  version: '1.4'
+requirements:
+  run:
+  - openjdk >=8,<=21
+  - zlib
+  - samtools >=1.14
+source:
+  sha256: f420a76635649ac7e4129a9ad18df381dd0a506c0e19be2bcdb7f459e8f1a69d
+  url: https://github.com/hartwigmedical/hmftools/releases/download/teal-v1.4/teal_v1.4.jar
+test:
+  commands:
+  - teal -version

@@ -1,0 +1,33 @@
+about:
+  description: R objects describing the HEEBO oligo set.
+  home: https://bioconductor.org/packages/3.22/data/experiment/html/HEEBOdata.html
+  license: LGPL
+  license_file: /lib/R/share/licenses/LGPL-3
+  summary: HEEBO set and HEEBO controls.
+build:
+  noarch: generic
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+package:
+  name: bioconductor-heebodata
+  version: 1.48.0
+requirements:
+  host:
+  - r-base
+  run:
+  - r-base
+  - curl
+  - bioconductor-data-packages >=20260207
+source:
+  md5: c758fb82c26f4ce0745d43dbacb8835f
+  url:
+  - https://bioconductor.org/packages/3.22/data/experiment/src/contrib/HEEBOdata_1.48.0.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/HEEBOdata/HEEBOdata_1.48.0.tar.gz
+  - https://bioarchive.galaxyproject.org/HEEBOdata_1.48.0.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-heebodata/bioconductor-heebodata_1.48.0_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('HEEBOdata')"

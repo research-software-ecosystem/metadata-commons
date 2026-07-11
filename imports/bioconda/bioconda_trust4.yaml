@@ -1,0 +1,48 @@
+about:
+  dev_url: https://github.com/liulab-dfci/TRUST4
+  doc_url: https://github.com/liulab-dfci/TRUST4/blob/v1.1.9/README.md
+  home: https://github.com/liulab-dfci/TRUST4
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE.txt
+  summary: TCR and BCR assembly from bulk or single-cell RNA-seq data.
+build:
+  number: 0
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+  identifiers:
+  - doi:10.1038/s41592-021-01142-2
+  - biotools:trust4
+package:
+  name: trust4
+  version: 1.1.9
+requirements:
+  build:
+  - make
+  - null
+  - null
+  host:
+  - samtools 0.1.19.*
+  - zlib
+  run:
+  - perl
+source:
+  sha256: 484694e38256acfb5acc81190da5b0f73921f49049f4a1f26b4875f179e15338
+  url: https://github.com/liulab-dfci/TRUST4/archive/v1.1.9.tar.gz
+test:
+  commands:
+  - trust4 2>&1 | cat > /dev/null
+  - fastq-extractor 2>&1 | cat > /dev/null
+  - bam-extractor 2>&1 | cat > /dev/null
+  - annotator 2>&1 | cat > /dev/null
+  - test -x ${PREFIX}/bin/trust-simplerep.pl
+  - test -x ${PREFIX}/bin/trust-barcoderep.pl
+  - test -x ${PREFIX}/bin/trust-smartseq.pl
+  - test -x ${PREFIX}/bin/trust-airr.pl
+  - test -x ${PREFIX}/bin/BuildDatabaseFa.pl
+  - test -x ${PREFIX}/bin/BuildImgtAnnot.pl
+  - test -x ${PREFIX}/bin/run-trust4

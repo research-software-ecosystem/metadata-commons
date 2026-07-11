@@ -1,0 +1,31 @@
+about:
+  dev_url: https://github.com/MGXlab/CAT_pack
+  home: https://github.com/MGXlab/CAT_pack
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE.md
+  summary: 'CAT/BAT: tool for taxonomic classification of contigs and metagenome-assembled
+    genomes (MAGs)
+
+    '
+build:
+  noarch: generic
+  number: 1
+  run_exports:
+  - null
+package:
+  name: cat
+  version: 6.0.1
+requirements:
+  run:
+  - python >=3
+  - diamond
+  - prodigal
+  - bwa
+  - samtools
+source:
+  sha256: 189707d8a0f6fa3ce50ed5fd5e9955b97119b514d38a190d393a701ec652f8fc
+  url: https://github.com/MGXlab/CAT_pack/archive/v6.0.1.tar.gz
+test:
+  commands:
+  - CAT_pack prepare -h

@@ -1,0 +1,55 @@
+about:
+  description: Provides a user-friendly interface to map on-targets and off-targets
+    of CRISPR gRNA spacer sequences using bowtie. The alignment is fast, and can be
+    performed using either commonly-used or custom CRISPR nucleases. The alignment
+    can work with any reference or custom genomes. Both DNA- and RNA-targeting nucleases
+    are supported.
+  home: https://bioconductor.org/packages/3.22/bioc/html/crisprBowtie.html
+  license: MIT + file LICENSE
+  license_file: LICENSE
+  summary: Bowtie-based alignment of CRISPR gRNA spacer sequences
+build:
+  noarch: generic
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+package:
+  name: bioconductor-crisprbowtie
+  version: 1.14.0
+requirements:
+  host:
+  - bioconductor-biocgenerics >=0.56.0,<0.57.0
+  - bioconductor-biostrings >=2.78.0,<2.79.0
+  - bioconductor-bsgenome >=1.78.0,<1.79.0
+  - bioconductor-crisprbase >=1.14.0,<1.15.0
+  - bioconductor-genomicranges >=1.62.0,<1.63.0
+  - bioconductor-iranges >=2.44.0,<2.45.0
+  - bioconductor-rbowtie >=1.50.0,<1.51.0
+  - bioconductor-seqinfo >=1.0.0,<1.1.0
+  - r-base
+  - r-readr
+  - r-stringr
+  run:
+  - bioconductor-biocgenerics >=0.56.0,<0.57.0
+  - bioconductor-biostrings >=2.78.0,<2.79.0
+  - bioconductor-bsgenome >=1.78.0,<1.79.0
+  - bioconductor-crisprbase >=1.14.0,<1.15.0
+  - bioconductor-genomicranges >=1.62.0,<1.63.0
+  - bioconductor-iranges >=2.44.0,<2.45.0
+  - bioconductor-rbowtie >=1.50.0,<1.51.0
+  - bioconductor-seqinfo >=1.0.0,<1.1.0
+  - r-base
+  - r-readr
+  - r-stringr
+source:
+  md5: e6a8db7a25aa2d27b7c3b99f324e53f3
+  url:
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/crisprBowtie_1.14.0.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/crisprBowtie/crisprBowtie_1.14.0.tar.gz
+  - https://bioarchive.galaxyproject.org/crisprBowtie_1.14.0.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-crisprbowtie/bioconductor-crisprbowtie_1.14.0_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('crisprBowtie')"

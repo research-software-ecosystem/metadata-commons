@@ -1,0 +1,41 @@
+about:
+  doc_url: https://metacpan.org/pod/Sereal::Decoder
+  home: https://metacpan.org/pod/Sereal::Decoder
+  license: perl_5
+  summary: Fast, compact, powerful binary deserialization.
+build:
+  number: 0
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+package:
+  name: perl-sereal-decoder
+  version: '5.004'
+requirements:
+  build:
+  - make
+  - null
+  host:
+  - perl
+  - perl-file-path
+  - perl-test-warn
+  - perl-test-simple
+  - perl-extutils-makemaker
+  - perl-test-longstring
+  - perl-scalar-list-utils
+  - perl-pathtools
+  - perl-extutils-parsexs
+  - perl-devel-checklib >=1.16
+  run:
+  - perl
+source:
+  sha256: 68ef0314d87d1a6e60bb0f66fcf43eb2cacdeb1754432f5e25e784e39d3e6784
+  url: https://cpan.metacpan.org/authors/id/Y/YV/YVES/Sereal-Decoder-5.004.tar.gz
+test:
+  imports:
+  - Sereal::Decoder
+  - Sereal::Decoder::Constants
+  - Sereal::Performance

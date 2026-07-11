@@ -1,0 +1,32 @@
+about:
+  dev_url: https://github.com/alastair-droop/fqtools
+  home: https://github.com/alastair-droop/fqtools
+  license: GPL-3.0-or-later
+  license_family: GPL3
+  summary: An efficient FASTQ manipulation suite.
+build:
+  number: 15
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+package:
+  name: fqtools
+  version: '2.0'
+requirements:
+  build:
+  - make
+  - null
+  host:
+  - zlib
+  - htslib
+  run:
+  - htslib
+source:
+  md5: 2b1f6454dfed9d1ca1af39b16f419b2b
+  url: https://github.com/alastair-droop/fqtools/archive/986e451.tar.gz
+test:
+  commands:
+  - fqtools -h

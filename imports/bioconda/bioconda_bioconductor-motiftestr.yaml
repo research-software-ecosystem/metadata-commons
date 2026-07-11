@@ -1,0 +1,57 @@
+about:
+  description: Taking a set of sequence motifs as PWMs, test a set of sequences for
+    over-representation of these motifs, as well as any positional features within
+    the set of motifs. Enrichment analysis can be undertaken using multiple statistical
+    approaches. The package also contains core functions to prepare data for analysis,
+    and to visualise results.
+  home: https://bioconductor.org/packages/3.22/bioc/html/motifTestR.html
+  license: GPL-3
+  license_file: /lib/R/share/licenses/GPL-3
+  summary: Perform key tests for binding motifs in sequence data
+build:
+  noarch: generic
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+package:
+  name: bioconductor-motiftestr
+  version: 1.6.1
+requirements:
+  host:
+  - bioconductor-biostrings >=2.78.0,<2.79.0
+  - bioconductor-genomicranges >=1.62.0,<1.63.0
+  - bioconductor-iranges >=2.44.0,<2.45.0
+  - bioconductor-s4vectors >=0.48.0,<0.49.0
+  - bioconductor-seqinfo >=1.0.0,<1.1.0
+  - bioconductor-universalmotif >=1.28.0,<1.29.0
+  - r-base
+  - r-ggplot2 >=4.0.0
+  - r-harmonicmeanp
+  - r-matrixstats
+  - r-patchwork
+  - r-rlang
+  run:
+  - bioconductor-biostrings >=2.78.0,<2.79.0
+  - bioconductor-genomicranges >=1.62.0,<1.63.0
+  - bioconductor-iranges >=2.44.0,<2.45.0
+  - bioconductor-s4vectors >=0.48.0,<0.49.0
+  - bioconductor-seqinfo >=1.0.0,<1.1.0
+  - bioconductor-universalmotif >=1.28.0,<1.29.0
+  - r-base
+  - r-ggplot2 >=4.0.0
+  - r-harmonicmeanp
+  - r-matrixstats
+  - r-patchwork
+  - r-rlang
+source:
+  md5: 3e561154ea9e2247ad6ae93a5e97f83e
+  url:
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/motifTestR_1.6.1.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/motifTestR/motifTestR_1.6.1.tar.gz
+  - https://bioarchive.galaxyproject.org/motifTestR_1.6.1.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-motiftestr/bioconductor-motiftestr_1.6.1_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('motifTestR')"

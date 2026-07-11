@@ -1,0 +1,46 @@
+about:
+  home: https://github.com/omicscodeathon/rhinotype
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE
+  summary: A python tool used to automatically genotype rhinovirus.
+build:
+  entry_points:
+  - rhinotype = rhinotype.main:main
+  noarch: python
+  number: 0
+  run_exports:
+  - null
+  script: -m pip install . --no-deps -vv
+extra:
+  recipe-maintainers:
+  - Ephantus-Wambui
+  - laitanawe
+  skip-lints: []
+package:
+  name: rhinotype
+  version: 3.0.0
+requirements:
+  host:
+  - pip
+  - python >=3.8
+  - setuptools >=45
+  - wheel
+  run:
+  - biopython >=1.84
+  - mafft >=7.0
+  - matplotlib-base >=3.8
+  - numpy >=2.2
+  - pandas >=2.2
+  - python >=3.8
+  - scipy >=1.15
+  - seaborn >=0.13
+  - plotly >=5
+source:
+  sha256: 84886cc85669ac5585f79de3cb49b8f8ec1a12c5ec029a77c6245ddc10167fdc
+  url: https://pypi.io/packages/source/r/rhinotype/rhinotype-3.0.0.tar.gz
+test:
+  commands:
+  - rhinotype --help
+  imports:
+  - rhinotype

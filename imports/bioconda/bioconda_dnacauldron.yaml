@@ -1,0 +1,45 @@
+about:
+  home: https://github.com/Edinburgh-Genome-Foundry/DnaCauldron
+  license: MIT
+  license_file: LICENCE.txt
+  summary: Cloning simulation for DNA assembly (Golden Gate, Gibson...).
+build:
+  noarch: python
+  number: 0
+  run_exports:
+  - null
+  script: -m pip install . -vvv --no-deps --no-build-isolation --no-cache-dir
+extra:
+  recipe-maintainers:
+  - asford
+package:
+  name: dnacauldron
+  version: 2.0.12
+requirements:
+  host:
+  - pip
+  - python
+  - setuptools
+  run:
+  - biopython
+  - dna_features_viewer
+  - flametree
+  - fuzzywuzzy
+  - matplotlib-base
+  - networkx
+  - numpy
+  - openpyxl
+  - pandas
+  - proglog
+  - python
+  - python-levenshtein
+  - scipy
+  - snapgene-reader
+  - xlrd
+  - xlwt
+source:
+  sha256: c31e21b6b65e239f4be25bff886b6a1f2b9102ec7a1d27d388d9c0949838cf8f
+  url: https://pypi.io/packages/source/d/dnacauldron/dnacauldron-2.0.12.tar.gz
+test:
+  imports:
+  - dnacauldron

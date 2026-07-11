@@ -1,0 +1,42 @@
+about:
+  description: 'iTOL Python API for the Interactive Tree of Life (iTOL). Created by
+    Albert Wang (git at albertyw.com) With Complements to: `iTOL (Interactive Tree
+    of Life). This iTOL API allows local software to upload trees to iTOL using itol.py
+    and export uploaded trees using itolexport.py using direct Python calls or through
+    shell.  An active internet connection to the iTOL website is required.'
+  dev_url: https://github.com/albertyw/itolapi
+  home: https://github.com/albertyw/itolapi
+  license: MIT
+  license_family: MIT
+  summary: API for interacting with itol.embl.de.
+build:
+  entry_points:
+  - itol = itolapi.itol:cli
+  - itolexport = itolapi.itolexport:cli
+  noarch: python
+  number: 0
+  run_exports:
+  - null
+  script: -m pip install . --no-deps --no-build-isolation --no-cache-dir -vvv
+extra:
+  recipe-maintainers:
+  - cokelaer
+package:
+  name: itolapi
+  version: 4.1.6
+requirements:
+  host:
+  - python >=3.7
+  - setuptools
+  run:
+  - python >=3.7
+  - requests >=2.0,<3.0
+source:
+  sha256: 2d124a244abbdf227801aad6a61bc9e466177001edd164fd731f3e18f008f00d
+  url: https://pypi.org/packages/source/i/itolapi/itolapi-4.1.6.tar.gz
+test:
+  commands:
+  - itol --help
+  - itolexport --help
+  imports:
+  - itolapi

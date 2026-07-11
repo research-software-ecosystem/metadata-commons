@@ -1,0 +1,23 @@
+about:
+  home: https://github.com/PacificBiosciences/actc
+  license: BSD-3-Clause-Clear
+  summary: PacBio utility to align clr to ccs reads
+build:
+  number: 0
+  run_exports:
+  - null
+  skip: true
+extra:
+  recipe-maintainers:
+  - armintoepfer
+  skip-lints:
+  - should_be_noarch_generic
+package:
+  name: actc
+  version: 0.6.1
+source:
+- sha256: 5548900ace897435f60fa4c3361f3c9c889868dd8764ded8c9d456698f7774f0
+  url: https://github.com/PacificBiosciences/actc/releases/download/v0.6.1/actc
+test:
+  commands:
+  - actc -h

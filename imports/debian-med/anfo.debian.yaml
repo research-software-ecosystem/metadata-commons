@@ -1,0 +1,45 @@
+package: anfo
+distribution: debian
+release: bullseye
+component: main
+version: '0.98'
+source: anfo
+homepage: https://bioinf.eva.mpg.de/anfo/
+license: unknown
+blend: debian-med
+description_md5: 9d40ff8dbfbc176f7e331dbd4776af7e
+topics:
+- Sequencing
+edam_scopes:
+- name: summary
+  input:
+  - data: DNA Sequence
+    formats:
+    - FASTQ
+  - data: DNA Sequence
+    formats:
+    - FASTA
+  output:
+  - data: Sequence
+    formats:
+    - FASTQ
+  - data: Alignment
+    formats:
+    - SAM
+    - FASTA
+    - Binary
+  - data: Report
+    formats:
+    - TSV
+  function:
+  - Read mapping
+  - Sequence filter
+registries:
+- entry: OMICS_08846
+  name: OMICtools
+- entry: SCR_015973
+  name: SciCrunch
+popcon:
+- insts: 13
+  olde: 12
+  vote: 1

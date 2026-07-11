@@ -1,0 +1,57 @@
+about:
+  description: This package defines interfaces from R to scvi-tools.  A vignette works
+    through the totalVI tutorial for analyzing CITE-seq data.  Another vignette compares
+    outputs of Chapter 12 of the OSCA book with analogous outputs based on totalVI
+    quantifications. Future work will address other components of scvi-tools, with
+    a focus on building understanding of probabilistic methods based on variational
+    autoencoders.
+  home: https://bioconductor.org/packages/3.22/bioc/html/scviR.html
+  license: Artistic-2.0
+  summary: experimental inferface from R to scvi-tools
+build:
+  noarch: generic
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+package:
+  name: bioconductor-scvir
+  version: 1.10.0
+requirements:
+  host:
+  - bioconductor-basilisk >=1.22.0,<1.23.0
+  - bioconductor-biocfilecache >=3.0.0,<3.1.0
+  - bioconductor-limma >=3.66.0,<3.67.0
+  - bioconductor-matrixgenerics >=1.22.0,<1.23.0
+  - bioconductor-s4vectors >=0.48.0,<0.49.0
+  - bioconductor-scater >=1.38.0,<1.39.0
+  - bioconductor-singlecellexperiment >=1.32.0,<1.33.0
+  - bioconductor-summarizedexperiment >=1.40.0,<1.41.0
+  - r-base
+  - r-pheatmap
+  - r-reticulate
+  - r-shiny
+  run:
+  - bioconductor-basilisk >=1.22.0,<1.23.0
+  - bioconductor-biocfilecache >=3.0.0,<3.1.0
+  - bioconductor-limma >=3.66.0,<3.67.0
+  - bioconductor-matrixgenerics >=1.22.0,<1.23.0
+  - bioconductor-s4vectors >=0.48.0,<0.49.0
+  - bioconductor-scater >=1.38.0,<1.39.0
+  - bioconductor-singlecellexperiment >=1.32.0,<1.33.0
+  - bioconductor-summarizedexperiment >=1.40.0,<1.41.0
+  - r-base
+  - r-pheatmap
+  - r-reticulate
+  - r-shiny
+source:
+  md5: 382d62ef63bdaddba74b45cb24488746
+  url:
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/scviR_1.10.0.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/scviR/scviR_1.10.0.tar.gz
+  - https://bioarchive.galaxyproject.org/scviR_1.10.0.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-scvir/bioconductor-scvir_1.10.0_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('scviR')"

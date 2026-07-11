@@ -1,0 +1,38 @@
+package: miniasm
+distribution: debian
+release: sid
+component: main
+version: '0.3'
+source: miniasm
+homepage: https://github.com/lh3/miniasm
+license: unknown
+blend: debian-med
+description_md5: d44d7ac1bcd50721e3666cbc9c312439
+topics:
+- Sequence assembly
+edam_scopes:
+- name: summary
+  input:
+  - data: Sequence
+    formats:
+    - FASTQ
+    - FASTA
+  - data: Alignment
+    formats:
+    - TSV
+  output:
+  - data: Sequence assembly
+    formats:
+    - Sequence assembly format (text)
+  function:
+  - De-novo assembly
+registries:
+- entry: OMICS_11366
+  name: OMICtools
+- entry: miniasm
+  name: conda:bioconda
+popcon:
+- insts: 114
+  olde: 88
+  recent: 23
+  vote: 3

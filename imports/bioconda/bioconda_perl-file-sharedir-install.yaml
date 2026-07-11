@@ -1,0 +1,32 @@
+about:
+  dev_url: https://github.com/Perl-Toolchain-Gang/File-ShareDir-Install
+  home: https://github.com/Perl-Toolchain-Gang/File-ShareDir-Install
+  license: perl_5
+  summary: Install shared files.
+build:
+  noarch: generic
+  number: 0
+  run_exports:
+  - null
+package:
+  name: perl-file-sharedir-install
+  version: '0.14'
+requirements:
+  build:
+  - make
+  host:
+  - perl
+  - perl-exporter
+  - perl-extutils-makemaker
+  - perl-carp
+  - perl-file-path
+  run:
+  - perl
+  - perl-exporter
+  - perl-carp
+source:
+  sha256: 8f9533b198f2d4a9a5288cbc7d224f7679ad05a7a8573745599789428bc5aea0
+  url: https://cpan.metacpan.org/authors/id/E/ET/ETHER/File-ShareDir-Install-0.14.tar.gz
+test:
+  imports:
+  - File::ShareDir::Install

@@ -1,0 +1,49 @@
+about:
+  dev_url: https://github.com/Griffan/VerifyBamID
+  doc_url: https://griffan.github.io/VerifyBamID
+  home: https://github.com/Griffan/VerifyBamID
+  license: MIT
+  license_family: MIT
+  summary: A robust tool for DNA contamination estimation from sequence reads using
+    ancestry-agnostic method.
+build:
+  number: 0
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+  identifiers:
+  - biotools:verifybamid
+  - doi:10.1101/gr.246934.118
+package:
+  name: verifybamid2
+  version: 2.0.2
+requirements:
+  build:
+  - ninja
+  - null
+  - null
+  - cmake
+  - autoconf
+  - automake
+  - libtool
+  - pkg-config
+  host:
+  - zlib
+  - bzip2
+  - htslib
+  - xz
+  - curl
+  - openssl
+  run:
+  - htslib
+source:
+  sha256: bccd0d9c8f0bb80986ab73b22656c82919635453a50420001a0d7376f487820c
+  url: https://github.com/Griffan/VerifyBamID/archive/refs/tags/V2.0.2.tar.gz
+test:
+  commands:
+  - test -f "${PREFIX}/bin/verifybamid2"
+  - verifybamid2 2>&1 | grep "VerifyBamID2"
+  - verifybamid2 -h 2>&1 | grep "VerifyBamID2"

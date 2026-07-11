@@ -1,0 +1,33 @@
+about:
+  dev_url: https://github.com/mdshw5/simplesam
+  doc_url: http://simplesam.readthedocs.io/en/latest/
+  home: http://mattshirley.com
+  license: MIT
+  summary: Simple pure Python SAM parser and objects for working with SAM records
+build:
+  noarch: python
+  number: 0
+  run_exports:
+  - null
+  script: python -m pip install . --no-deps --ignore-installed -vv
+extra:
+  skip-lints:
+  - uses_setuptools
+package:
+  name: simplesam
+  version: 0.1.4.2
+requirements:
+  host:
+  - pip
+  - python
+  - setuptools-scm
+  run:
+  - python
+  - six
+  - setuptools
+source:
+  sha256: e71fc4559dfa0343aee5e82973615273aa01cda8ccf58d904f53d210f3bbaf15
+  url: https://pypi.io/packages/source/s/simplesam/simplesam-0.1.4.2.tar.gz
+test:
+  imports:
+  - simplesam

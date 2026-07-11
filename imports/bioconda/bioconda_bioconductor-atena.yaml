@@ -1,0 +1,72 @@
+about:
+  description: Quantify expression of transposable elements (TEs) from RNA-seq data
+    through different methods, including ERVmap, TEtranscripts and Telescope. A common
+    interface is provided to use each of these methods, which consists of building
+    a parameter object, calling the quantification function with this object and getting
+    a SummarizedExperiment object as output container of the quantified expression
+    profiles. The implementation allows one to quantify TEs and gene transcripts in
+    an integrated manner.
+  home: https://bioconductor.org/packages/3.22/bioc/html/atena.html
+  license: Artistic-2.0
+  summary: Analysis of Transposable Elements
+build:
+  noarch: generic
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+package:
+  name: bioconductor-atena
+  version: 1.16.1
+requirements:
+  host:
+  - bioconductor-annotationhub >=4.0.0,<4.1.0
+  - bioconductor-biocgenerics >=0.56.0,<0.57.0
+  - bioconductor-biocparallel >=1.44.0,<1.45.0
+  - bioconductor-genomeinfodb >=1.46.0,<1.47.0
+  - bioconductor-genomicalignments >=1.46.0,<1.47.0
+  - bioconductor-genomicfeatures >=1.62.0,<1.63.0
+  - bioconductor-genomicranges >=1.62.0,<1.63.0
+  - bioconductor-iranges >=2.44.0,<2.45.0
+  - bioconductor-matrixgenerics >=1.22.0,<1.23.0
+  - bioconductor-rsamtools >=2.26.0,<2.27.0
+  - bioconductor-s4vectors >=0.48.0,<0.49.0
+  - bioconductor-seqinfo >=1.0.0,<1.1.0
+  - bioconductor-sparsematrixstats >=1.22.0,<1.23.0
+  - bioconductor-summarizedexperiment >=1.40.0,<1.41.0
+  - r-base
+  - r-cli
+  - r-matrix
+  - r-matrixstats
+  - r-squarem
+  run:
+  - bioconductor-annotationhub >=4.0.0,<4.1.0
+  - bioconductor-biocgenerics >=0.56.0,<0.57.0
+  - bioconductor-biocparallel >=1.44.0,<1.45.0
+  - bioconductor-genomeinfodb >=1.46.0,<1.47.0
+  - bioconductor-genomicalignments >=1.46.0,<1.47.0
+  - bioconductor-genomicfeatures >=1.62.0,<1.63.0
+  - bioconductor-genomicranges >=1.62.0,<1.63.0
+  - bioconductor-iranges >=2.44.0,<2.45.0
+  - bioconductor-matrixgenerics >=1.22.0,<1.23.0
+  - bioconductor-rsamtools >=2.26.0,<2.27.0
+  - bioconductor-s4vectors >=0.48.0,<0.49.0
+  - bioconductor-seqinfo >=1.0.0,<1.1.0
+  - bioconductor-sparsematrixstats >=1.22.0,<1.23.0
+  - bioconductor-summarizedexperiment >=1.40.0,<1.41.0
+  - r-base
+  - r-cli
+  - r-matrix
+  - r-matrixstats
+  - r-squarem
+source:
+  md5: 008e7114a2c3026bbc1e82d9da9169ee
+  url:
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/atena_1.16.1.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/atena/atena_1.16.1.tar.gz
+  - https://bioarchive.galaxyproject.org/atena_1.16.1.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-atena/bioconductor-atena_1.16.1_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('atena')"

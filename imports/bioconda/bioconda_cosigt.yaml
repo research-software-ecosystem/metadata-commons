@@ -1,0 +1,29 @@
+about:
+  dev_url: https://github.com/davidebolo1993/cosigt
+  home: https://github.com/davidebolo1993/cosigt
+  license: GNU General Public License v3 (GPLv3)
+  license_family: GPL3
+  license_file: LICENSE
+  summary: Cosigt (COsine SImilarity-based GenoTyper)
+build:
+  number: 0
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+  recipe-maintainers:
+  - AndreaGuarracino
+package:
+  name: cosigt
+  version: 0.1.7
+requirements:
+  build:
+  - null
+source:
+- sha256: 54c308ff1da8f1e6c7234cca3bc7ce83d5b4730df9c1cacde655c9c0ca72874e
+  url: https://github.com/davidebolo1993/cosigt/archive/refs/tags/v0.1.7.tar.gz
+test:
+  commands:
+  - cosigt -h

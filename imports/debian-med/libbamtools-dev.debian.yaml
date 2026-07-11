@@ -1,0 +1,29 @@
+package: libbamtools-dev
+distribution: debian
+release: sid
+component: main
+version: 2.5.3
+source: bamtools
+homepage: https://github.com/pezmaster31/bamtools/wiki
+license: unknown
+blend: debian-med
+description_md5: 071b9c0ea5e1e93a613add87519c2ca9
+registries:
+- entry: OMICS_11315
+  name: OMICtools
+- entry: SCR_015987
+  name: SciCrunch
+- entry: BamTools
+  name: bio.tools
+- entry: bamtools
+  name: conda:bioconda
+- entry: bamtools
+  name: guix
+bib:
+- key: doi
+  value: 10.1093/bioinformatics/btr174
+popcon:
+- insts: 114
+  olde: 88
+  recent: 25
+  vote: 1

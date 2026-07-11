@@ -1,0 +1,49 @@
+about:
+  dev_url: https://github.com/Edinburgh-Genome-Foundry/genedom
+  home: https://github.com/Edinburgh-Genome-Foundry/genedom
+  license: MIT
+  license_family: MIT
+  summary: Genetic part standardization.
+build:
+  noarch: python
+  number: 0
+  run_exports:
+  - null
+  script: -m pip install . -vvv --no-deps --no-build-isolation --no-cache-dir
+extra:
+  recipe-maintainers:
+  - ramez17khaled
+package:
+  name: genedom
+  version: 0.2.2
+requirements:
+  host:
+  - python
+  - setuptools
+  - pip
+  run:
+  - python
+  - openpyxl
+  - pandas
+  - python-box
+  - dnachisel
+  - sequenticon
+  - dna_features_viewer
+  - snapgene-reader
+  - flametree
+  - pdf-reports
+source:
+  sha256: 0ff304250a6be8b71dcd19969dce3a0b14ffba17731487e28b406e32a86de0d6
+  url: https://github.com/Edinburgh-Genome-Foundry/genedom/archive/refs/tags/v0.2.2.tar.gz
+test:
+  commands:
+  - if command -v pytest >/dev/null 2>&1; then pytest tests/; else echo "pytest not
+    available, skipping tests."; fi
+  imports:
+  - genedom
+  requires:
+  - python
+  - matplotlib
+  - pytest
+  source_files:
+  - tests/

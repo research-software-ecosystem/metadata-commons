@@ -1,0 +1,39 @@
+about:
+  description: Haplotype simulations of rare variant genetic data that emulates real
+    data can be performed with RAREsim. RAREsim uses the expected number of variants
+    in MAC bins - either as provided by default parameters or estimated from target
+    data - and an abundance of rare variants as simulated HAPGEN2 to probabilistically
+    prune variants. RAREsim produces haplotypes that emulate real sequencing data
+    with respect to the total number of variants, allele frequency spectrum, haplotype
+    structure, and variant annotation.
+  home: https://bioconductor.org/packages/3.22/bioc/html/RAREsim.html
+  license: GPL-3
+  license_file: /lib/R/share/licenses/GPL-3
+  summary: Simulation of Rare Variant Genetic Data
+build:
+  noarch: generic
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+package:
+  name: bioconductor-raresim
+  version: 1.14.0
+requirements:
+  host:
+  - r-base
+  - r-nloptr
+  run:
+  - r-base
+  - r-nloptr
+source:
+  md5: de585232da9f618d76e93f83016937ee
+  url:
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/RAREsim_1.14.0.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/RAREsim/RAREsim_1.14.0.tar.gz
+  - https://bioarchive.galaxyproject.org/RAREsim_1.14.0.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-raresim/bioconductor-raresim_1.14.0_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('RAREsim')"

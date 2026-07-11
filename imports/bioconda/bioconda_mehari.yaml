@@ -1,0 +1,49 @@
+about:
+  dev_url: https://github.com/varfish-org/mehari
+  doc_url: https://github.com/varfish-org/mehari/blob/v0.44.1/README.md
+  home: https://github.com/varfish-org/mehari
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE.txt
+  summary: VEP-like tool for sequence ontology and HGVS annotation of VCF files written
+    in Rust.
+build:
+  number: 0
+  run_exports:
+  - null
+  skip: true
+extra:
+  additional-platforms:
+  - linux-aarch64
+  identifiers:
+  - doi:10.5281/zenodo.10603122
+  skip-lints:
+  - compiler_needs_stdlib_c
+package:
+  name: mehari
+  version: 0.44.1
+requirements:
+  build:
+  - null
+  - null
+  - null
+  - cmake
+  - make
+  - cargo-bundle-licenses
+  - pkg-config
+  host:
+  - clangdev
+  - llvmlite
+  - openssl
+  - protobuf
+  - libprotobuf
+  - zlib
+  - sqlite
+  run:
+  - sqlite
+source:
+  sha256: f7c7828f2f0c9dbd70c2645a5503191caf1b66bf5dbc096b466a74ddeda3a2af
+  url: https://github.com/varfish-org/mehari/archive/mehari-v0.44.1.tar.gz
+test:
+  commands:
+  - mehari -h

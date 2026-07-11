@@ -1,0 +1,66 @@
+about:
+  description: "UniFrac is a commonly phylogenetic diversity distance metric used\
+    \ in \nmicrobiome research. The metric relates two microbiome samples together\n\
+    within the context of an evolutionary history, and produces a distance\nthat corresponds\
+    \ to how similar two samples by the amount of overlapping\nbranch length.\n"
+  dev_url: https://github.com/biocore/unifrac
+  doc_url: https://github.com/biocore/unifrac/blob/1.5.1/README.md
+  home: https://github.com/biocore/unifrac
+  license: BSD-3-Clause
+  license_family: BSD
+  license_file: LICENSE
+  summary: Fast phylogenetic diversity calculations.
+build:
+  number: 0
+  run_exports:
+  - null
+  script:
+  - sed -i.bak "s#CONDA_PREFIX#PREFIX#g" setup.py
+  - rm -rf *.bak
+  - -m pip install . --no-build-isolation --no-deps --no-cache-dir -vvv
+extra:
+  additional-platforms:
+  - osx-arm64
+  identifiers:
+  - doi:10.1038/s41592-018-0187-8
+  - doi:10.1128/msystems.00028-22
+  recipe-maintainers:
+  - wasade
+  - sfiligoi
+package:
+  name: unifrac
+  version: 1.5.1
+requirements:
+  build:
+  - null
+  host:
+  - python
+  - pip
+  - h5py >=3.3.0
+  - cython >=0.26
+  - numpy >=1.21
+  - biom-format
+  - scipy >=1.9.0
+  - scikit-bio >=0.6.0
+  - unifrac-binaries >=1.5.1
+  - iow
+  run:
+  - python
+  - null
+  - h5py >=3.3.0
+  - biom-format
+  - scipy >=1.9.0
+  - scikit-bio >=0.6.0
+  - unifrac-binaries >=1.5.1
+  - iow
+source:
+  sha256: 4e33eb030a20d02deaac928b91eeb57056b10303aaacc57f20b917c875fa18f9
+  url: https://github.com/biocore/unifrac/archive/refs/tags/1.5.1.tar.gz
+test:
+  commands:
+  - ssu --help
+  - faithpd --help
+  - python -m unittest unifrac.tests.test_methods
+  - python -m unittest unifrac.tests.test_api
+  imports:
+  - unifrac

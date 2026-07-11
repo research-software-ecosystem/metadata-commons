@@ -1,0 +1,37 @@
+about:
+  dev_url: https://github.com/clintval/vartovcf
+  doc_url: https://github.com/clintval/vartovcf/blob/1.5.1/README.md
+  home: https://github.com/clintval/vartovcf
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE
+  summary: Convert variants from VarDict/VarDictJava into VCF v4.2 format.
+build:
+  number: 0
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+  recipe-maintainers:
+  - clintval
+package:
+  name: vartovcf
+  version: 1.5.1
+requirements:
+  build:
+  - null
+  - null
+  - null
+  - cargo-bundle-licenses
+  - clangdev
+  - pkg-config
+  - make
+  - cmake
+source:
+  sha256: aee2646f0db41bd2525d46d7daa291892e14cd517a18b2b7a09d31f7004107ff
+  url: https://github.com/clintval/vartovcf/archive/1.5.1.tar.gz
+test:
+  commands:
+  - vartovcf --help

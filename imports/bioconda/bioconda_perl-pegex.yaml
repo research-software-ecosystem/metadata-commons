@@ -1,0 +1,40 @@
+about:
+  doc_url: https://metacpan.org/dist/Pegex/view/lib/Pegex.pod
+  home: https://metacpan.org/dist/Pegex/view/lib/Pegex.pod
+  license: Perl_5
+  summary: Pegex Grammar for the Pegex Grammar Language.
+build:
+  noarch: generic
+  number: 0
+  run_exports:
+  - null
+package:
+  name: perl-pegex
+  version: '0.75'
+requirements:
+  build:
+  - make
+  host:
+  - perl
+  - perl-extutils-makemaker
+  - perl-file-sharedir-install
+  - perl-json-pp
+  - perl-test-pod
+  - perl-tie-ixhash
+  - perl-xxx
+  - perl-yaml-pp
+  run:
+  - perl
+  - perl-extutils-makemaker
+  - perl-file-sharedir-install
+  - perl-carp
+  - perl-json-pp
+  - perl-scalar-list-utils
+  - perl-xxx
+  - perl-yaml-pp
+source:
+  sha256: 4dc8d335de80b25247cdb3f946f0d10d9ba0b3c34b0ed7d00316fd068fd05edc
+  url: https://cpan.metacpan.org/authors/id/I/IN/INGY/Pegex-0.75.tar.gz
+test:
+  imports:
+  - Pegex

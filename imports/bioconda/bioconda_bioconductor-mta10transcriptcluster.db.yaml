@@ -1,0 +1,37 @@
+about:
+  description: Affymetrix mta10 annotation data (chip mta10transcriptcluster) assembled
+    using data from public repositories
+  home: https://bioconductor.org/packages/3.22/data/annotation/html/mta10transcriptcluster.db.html
+  license: Artistic-2.0
+  summary: Affymetrix mta10 annotation data (chip mta10transcriptcluster)
+build:
+  noarch: generic
+  number: 6
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+package:
+  name: bioconductor-mta10transcriptcluster.db
+  version: 8.8.0
+requirements:
+  host:
+  - bioconductor-annotationdbi >=1.72.0,<1.73.0
+  - bioconductor-org.mm.eg.db >=3.22.0,<3.23.0
+  - r-base
+  run:
+  - bioconductor-annotationdbi >=1.72.0,<1.73.0
+  - bioconductor-org.mm.eg.db >=3.22.0,<3.23.0
+  - r-base
+  - curl
+  - bioconductor-data-packages >=20260207
+source:
+  md5: bfd13b16b71ac2cfc82f40f2d102892b
+  url:
+  - https://bioconductor.org/packages/3.22/data/annotation/src/contrib/mta10transcriptcluster.db_8.8.0.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/mta10transcriptcluster.db/mta10transcriptcluster.db_8.8.0.tar.gz
+  - https://bioarchive.galaxyproject.org/mta10transcriptcluster.db_8.8.0.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-mta10transcriptcluster.db/bioconductor-mta10transcriptcluster.db_8.8.0_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('mta10transcriptcluster.db')"

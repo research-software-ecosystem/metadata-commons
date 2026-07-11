@@ -1,0 +1,39 @@
+about:
+  home: https://metacpan.org/pod/HTTP::Daemon
+  license: perl_5
+  summary: a simple http server class
+build:
+  noarch: generic
+  number: 0
+  run_exports:
+  - null
+package:
+  name: perl-http-daemon
+  version: '6.17'
+requirements:
+  host:
+  - perl
+  - perl-http-date
+  - perl-http-message
+  - perl-lwp-mediatypes
+  - perl-file-spec
+  - perl-http-tiny >=0.042
+  - perl-module-build-tiny >=0.034
+  - perl-module-metadata
+  - perl-test
+  - perl-test-more >=0.98
+  - perl-test-needs
+  - perl-uri
+  run:
+  - perl
+  - perl-http-date
+  - perl-http-message
+  - perl-lwp-mediatypes
+  - perl-carp
+  - perl-socket
+source:
+  sha256: 16281580c40e23108d028434698b5d7d53637bf904c9df822481e253cbec920c
+  url: https://cpan.metacpan.org/authors/id/O/OA/OALDERS/HTTP-Daemon-6.17.tar.gz
+test:
+  imports:
+  - HTTP::Daemon

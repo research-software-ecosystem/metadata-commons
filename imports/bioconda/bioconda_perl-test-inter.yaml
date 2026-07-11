@@ -1,0 +1,30 @@
+about:
+  doc_url: https://metacpan.org/pod/Test::Inter
+  home: https://metacpan.org/pod/Test::Inter
+  license: Perl_5
+  summary: Framework for more readable interactive test scripts.
+build:
+  noarch: generic
+  number: 0
+  run_exports:
+  - null
+package:
+  name: perl-test-inter
+  version: '1.12'
+requirements:
+  build:
+  - make
+  host:
+  - perl
+  - perl-test-pod
+  - perl-file-find-rule
+  - perl-test-pod-coverage
+  - perl-extutils-makemaker
+  run:
+  - perl
+source:
+  sha256: f2b1987ecef9f6c9223e8fba2e8e48854333896650aabea81bdc30e0c9656b63
+  url: https://cpan.metacpan.org/authors/id/S/SB/SBECK/Test-Inter-1.12.tar.gz
+test:
+  imports:
+  - Test::Inter

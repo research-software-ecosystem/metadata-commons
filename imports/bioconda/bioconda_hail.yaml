@@ -1,0 +1,71 @@
+about:
+  dev_url: https://github.com/hail-is/hail
+  home: https://hail.is
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE
+  summary: Hail is Python-based data analysis tool for working with genomic data.
+build:
+  number: 3
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+  recipe-maintainers:
+  - raivivek
+  skip-lints:
+  - uses_vcs_url
+package:
+  name: hail
+  version: 0.2.61
+requirements:
+  build:
+  - null
+  - make
+  host:
+  - python >=3.7,<3.12
+  - setuptools <81.0.0
+  - numpy <1.24
+  - pyspark
+  - openjdk 8.*
+  - lz4
+  - pytest-runner
+  - pip
+  - bokeh >=2.4.0,<3.0.0
+  - rsync
+  run:
+  - python >=3.7,<3.12
+  - numpy <1.24
+  - openjdk 8.*
+  - pyspark
+  - aiohttp
+  - aiohttp-session
+  - bokeh >=2.4.0,<3.0.0
+  - decorator <5
+  - deprecated
+  - gcsfs
+  - humanize
+  - hurry.filesize
+  - jinja2 <3.1
+  - nest-asyncio
+  - parsimonious
+  - pyjwt
+  - python-json-logger ==0.1.11
+  - requests
+  - scipy
+  - tabulate ==0.8.3
+  - tqdm ==4.42.1
+  - dill
+  - asyncinit
+  - google-cloud-sdk
+  - google-cloud-storage
+  - google-api-core
+source:
+  git_rev: 0.2.61
+  git_url: https://github.com/hail-is/hail.git
+  sha256: unused
+test:
+  imports:
+  - hail
+  - hailtop.batch

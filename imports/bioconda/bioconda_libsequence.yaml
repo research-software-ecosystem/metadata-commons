@@ -1,0 +1,41 @@
+about:
+  dev_url: https://github.com/molpopgen/libsequence
+  doc_url: https://molpopgen.github.io/libsequence
+  home: https://github.com/molpopgen/libsequence
+  license: LGPL-3.0-or-later
+  license_family: LGPL
+  license_file: LICENSE
+  summary: A C++ class library for evolutionary genetics.
+build:
+  number: 8
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+package:
+  name: libsequence
+  version: 1.9.8
+requirements:
+  build:
+  - make
+  - null
+  - null
+  - autoconf
+  - automake
+  - libtool
+  - pkg-config
+  - gnuconfig
+  host:
+  - zlib
+  - boost-cpp
+source:
+  patches:
+  - patch
+  - fix-build.patch
+  sha256: 16c3ff6490861806292391195a8698fc17f4d5d30cbe3f5e5e1de1a03d1105f8
+  url: https://github.com/molpopgen/libsequence/archive/1.9.8.tar.gz
+test:
+  commands:
+  - libsequenceConfig --version | grep 1.9.8

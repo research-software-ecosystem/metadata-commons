@@ -1,0 +1,67 @@
+about:
+  description: An interactive web application for quality control, filtering and trimming
+    of FASTQ files. This user-friendly tool combines a pipeline for data processing
+    based on Biostrings and ShortRead infrastructure, with a cutting-edge visual environment.
+    Single-Read and Paired-End files can be locally processed. Diagnostic interactive
+    plots (CG content, per-base sequence quality, etc.) are provided for both the
+    input and output files.
+  home: https://bioconductor.org/packages/3.22/bioc/html/FastqCleaner.html
+  license: MIT + file LICENSE
+  license_file: LICENSE
+  summary: A Shiny Application for Quality Control, Filtering and Trimming of FASTQ
+    Files
+build:
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+extra:
+  additional-platforms:
+  - linux-aarch64
+  identifiers:
+  - biotools:fastqcleaner
+package:
+  name: bioconductor-fastqcleaner
+  version: 1.28.0
+requirements:
+  build:
+  - null
+  - null
+  - make
+  host:
+  - bioconductor-biostrings >=2.78.0,<2.79.0
+  - bioconductor-iranges >=2.44.0,<2.45.0
+  - bioconductor-s4vectors >=0.48.0,<0.49.0
+  - bioconductor-shortread >=1.68.0,<1.69.0
+  - r-base
+  - r-dt
+  - r-htmltools
+  - r-rcpp >=0.12.12
+  - r-shiny
+  - r-shinybs
+  - libblas
+  - liblapack
+  - zlib
+  - liblzma-devel
+  run:
+  - bioconductor-biostrings >=2.78.0,<2.79.0
+  - bioconductor-iranges >=2.44.0,<2.45.0
+  - bioconductor-s4vectors >=0.48.0,<0.49.0
+  - bioconductor-shortread >=1.68.0,<1.69.0
+  - r-base
+  - r-dt
+  - r-htmltools
+  - r-rcpp >=0.12.12
+  - r-shiny
+  - r-shinybs
+source:
+  md5: b52e54d2a3e5f34d0434b5e8ad1e7109
+  url:
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/FastqCleaner_1.28.0.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/FastqCleaner/FastqCleaner_1.28.0.tar.gz
+  - https://bioarchive.galaxyproject.org/FastqCleaner_1.28.0.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-fastqcleaner/bioconductor-fastqcleaner_1.28.0_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('FastqCleaner')"

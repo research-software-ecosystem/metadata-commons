@@ -1,0 +1,24 @@
+about:
+  home: https://github.com/PacificBiosciences/owl
+  license: BSD-3-Clause-Clear
+  summary: Microsatellite analysis for HiFi data
+build:
+  binary_relocation: false
+  number: 1
+  run_exports:
+  - null
+  skip: true
+extra:
+  recipe-maintainers:
+  - zeeev
+  skip-lints:
+  - should_be_noarch_generic
+package:
+  name: owl
+  version: 0.4.0
+source:
+- sha256: 67f35ab4f8a724cc676ce3eca505ea564283121d2acb51f57e482b047d8e41c4
+  url: https://github.com/PacificBiosciences/owl/releases/download/v0.4.0/owl-0.4.0-linux-x86_64.tar.gz
+test:
+  commands:
+  - owl --version

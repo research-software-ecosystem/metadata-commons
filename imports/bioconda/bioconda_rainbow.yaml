@@ -1,0 +1,36 @@
+about:
+  doc_url: https://sourceforge.net/projects/bio-rainbow
+  home: https://sourceforge.net/projects/bio-rainbow
+  license: GPL-2.0-or-later
+  license_family: GPL
+  summary: Efficient tool for clustering and assembling short reads, especially for
+    RAD.
+build:
+  number: 11
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+package:
+  name: rainbow
+  version: 2.0.4
+requirements:
+  build:
+  - make
+  - null
+  host:
+  - perl
+  run:
+  - perl
+source:
+  sha256: 79281aae3bccd1ad467afef6fc7c8327aaa8d56f538821e2833d2b8f26b5bafc
+  url: https://downloads.sourceforge.net/project/bio-rainbow/rainbow_2.0.4.tar.gz
+test:
+  commands:
+  - rainbow -h &> /dev/null || [[ "$?" == 1 ]]
+  - select_all_rbcontig.pl &> /dev/null || [[ "$?" == 255 ]]
+  - select_all_rbcontig.pl &> /dev/null || [[ "$?" == 255 ]]
+  - select_sec_rbcontig.pl &> /dev/null || [[ "$?" == 255 ]]
+  - select_best_rbcontig_plus_read1.pl &> /dev/null || [[ "$?" == 255 ]]

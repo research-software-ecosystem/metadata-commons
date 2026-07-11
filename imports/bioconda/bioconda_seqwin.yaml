@@ -1,0 +1,54 @@
+about:
+  dev_url: https://github.com/treangenlab/Seqwin
+  doc_url: https://github.com/treangenlab/Seqwin/wiki
+  home: https://github.com/treangenlab/Seqwin
+  license: GPL-3.0-only
+  license_family: GPL3
+  license_file: LICENSE
+  summary: Ultrafast identification of signature sequences in microbial genomes
+build:
+  number: 0
+  run_exports:
+  - null
+  script:
+  - export CXXFLAGS="${CXXFLAGS} -D_LIBCPP_DISABLE_AVAILABILITY"
+  - -m pip install . --no-deps --no-build-isolation --no-cache-dir -vvv
+  skip: true
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+package:
+  name: seqwin
+  version: 0.4.1
+requirements:
+  build:
+  - null
+  - null
+  - cmake >=3.18
+  - ninja >=1.10
+  - make
+  host:
+  - python
+  - pip
+  - scikit-build-core >=0.12
+  - pybind11 >=2.12
+  run:
+  - python
+  - numpy >=2
+  - pandas >=2
+  - networkx
+  - pydantic >=2
+  - typer
+  - mash
+  - blast
+  - ncbi-datasets-cli
+source:
+  sha256: 88ecf60923bd84d4c5cf06e3fcb0fe2f7d3d7f283d86072c25c0f7bf806a1011
+  url: https://github.com/treangenlab/Seqwin/archive/refs/tags/v0.4.1.tar.gz
+test:
+  commands:
+  - seqwin --help
+  imports:
+  - seqwin
+  - seqwin.graph

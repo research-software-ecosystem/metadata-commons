@@ -1,0 +1,39 @@
+about:
+  description: MetaboCoreUtils defines metabolomics-related core functionality provided
+    as low-level functions to allow a data structure-independent usage across various
+    R packages. This includes functions to calculate between ion (adduct) and compound
+    mass-to-charge ratios and masses or functions to work with chemical formulas.
+    The package provides also a set of adduct definitions and information on some
+    commercially available internal standard mixes commonly used in MS experiments.
+  home: https://bioconductor.org/packages/3.22/bioc/html/MetaboCoreUtils.html
+  license: Artistic-2.0
+  summary: Core Utils for Metabolomics Data
+build:
+  noarch: generic
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+package:
+  name: bioconductor-metabocoreutils
+  version: 1.18.1
+requirements:
+  host:
+  - bioconductor-biocparallel >=1.44.0,<1.45.0
+  - bioconductor-mscoreutils >=1.22.0,<1.23.0
+  - r-base
+  run:
+  - bioconductor-biocparallel >=1.44.0,<1.45.0
+  - bioconductor-mscoreutils >=1.22.0,<1.23.0
+  - r-base
+source:
+  md5: 10bfc049ffd1203f5023d47ee3c860c5
+  url:
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/MetaboCoreUtils_1.18.1.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/MetaboCoreUtils/MetaboCoreUtils_1.18.1.tar.gz
+  - https://bioarchive.galaxyproject.org/MetaboCoreUtils_1.18.1.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-metabocoreutils/bioconductor-metabocoreutils_1.18.1_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('MetaboCoreUtils')"

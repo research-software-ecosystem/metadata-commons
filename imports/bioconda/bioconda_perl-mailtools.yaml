@@ -1,0 +1,39 @@
+about:
+  doc_url: https://metacpan.org/pod/MailTools
+  home: https://metacpan.org/pod/MailTools
+  license: Perl_5
+  summary: Various e-mail related modules.
+build:
+  noarch: generic
+  number: 0
+  run_exports:
+  - null
+package:
+  name: perl-mailtools
+  version: '2.22'
+requirements:
+  build:
+  - make
+  host:
+  - perl
+  - perl-timedate
+  run:
+  - perl
+  - perl-timedate
+source:
+  sha256: 3bf68bb212298fa699a52749dddff35583a74f36a92ca89c843b854f29d87c77
+  url: https://cpan.metacpan.org/authors/id/M/MA/MARKOV/MailTools-2.22.tar.gz
+test:
+  imports:
+  - Mail::Address
+  - Mail::Cap
+  - Mail::Field
+  - Mail::Field::AddrList
+  - Mail::Field::Date
+  - Mail::Field::Generic
+  - Mail::Filter
+  - Mail::Header
+  - Mail::Internet
+  - Mail::Mailer
+  - Mail::Send
+  - Mail::Util

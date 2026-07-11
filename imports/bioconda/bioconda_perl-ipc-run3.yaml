@@ -1,0 +1,29 @@
+about:
+  doc_url: https://metacpan.org/pod/IPC::Run3
+  home: https://metacpan.org/pod/IPC::Run3
+  license: Open-Source
+  summary: Run a subprocess with input/ouput redirection.
+build:
+  noarch: generic
+  number: 0
+  run_exports:
+  - null
+package:
+  name: perl-ipc-run3
+  version: '0.049'
+requirements:
+  build:
+  - make
+  host:
+  - perl
+  - perl-time-hires
+  - perl-extutils-makemaker
+  run:
+  - perl
+  - perl-time-hires
+source:
+  sha256: 9d048ae7b9ae63871bae976ba01e081d887392d904e5d48b04e22d35ed22011a
+  url: https://cpan.metacpan.org/authors/id/R/RJ/RJBS/IPC-Run3-0.049.tar.gz
+test:
+  imports:
+  - IPC::Run3

@@ -1,0 +1,31 @@
+@prefix biotools: <https://bio.tools/> .
+@prefix debianmed: <https://salsa.debian.org/med-team/> .
+@prefix schema1: <http://schema.org/> .
+@prefix scicrunch: <https://scicrunch.org/resolver/> .
+
+debianmed:clustalx a schema1:SoftwareApplication ;
+    schema1:citation "doi:10.1093/bioinformatics/btm404" ;
+    schema1:identifier biotools:clustal2,
+        scicrunch:SCR_002909,
+        "omictools:OMICS_02562" ;
+    schema1:keywords "biology::format:aln",
+        "biology::nuceleic-acids",
+        "biology::peptidic",
+        "field::biology",
+        "field::biology:bioinformatics",
+        "implemented-in::c",
+        "interface::x11",
+        "role::program",
+        "scope::utility",
+        "uitoolkit::motif",
+        "use::analysing",
+        "use::comparing",
+        "use::viewing",
+        "works-with-format::plaintext",
+        "works-with::TODO",
+        "x11::application" ;
+    schema1:license "unknown" ;
+    schema1:name "clustalx" ;
+    schema1:softwareVersion "2.1" ;
+    schema1:url "http://www.clustal.org/clustal2/" .
+

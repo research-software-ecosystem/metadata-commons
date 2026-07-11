@@ -1,0 +1,42 @@
+about:
+  description: "votuderep is a tool designed to dereplicate and filter viral \nOperational\
+    \ Taxonomic Units (vOTUs).\n"
+  dev_url: https://github.com/quadram-institute-bioscience/votuderep
+  home: https://github.com/quadram-institute-bioscience/votuderep
+  license: MIT
+  license_file: LICENSE
+  summary: A tool to dereplicate and filter vOTUs
+build:
+  noarch: python
+  number: 0
+  run_exports:
+  - null
+  script: -m pip install . -vv --no-deps --no-build-isolation
+extra:
+  recipe-maintainers:
+  - telatin
+package:
+  name: votuderep
+  version: 0.6.0
+requirements:
+  host:
+  - python >=3.8
+  - pip
+  - setuptools
+  run:
+  - python >=3.8
+  - blast
+  - pyfastx
+  - pandas >=1.0
+  - numpy
+  - seqfu >=1.20
+  - rich
+  - rich-click
+source:
+  sha256: dba87d24d20391e12f1ec3d3d77744b0b9f923d49ebe2c33c5715bf19e9abf2b
+  url: https://github.com/quadram-institute-bioscience/votuderep/archive/refs/tags/v0.6.0.tar.gz
+test:
+  commands:
+  - votuderep --help
+  imports:
+  - votuderep

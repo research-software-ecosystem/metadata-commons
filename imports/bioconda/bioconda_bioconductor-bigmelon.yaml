@@ -1,0 +1,47 @@
+about:
+  description: Methods for working with Illumina arrays using gdsfmt.
+  home: https://bioconductor.org/packages/3.22/bioc/html/bigmelon.html
+  license: GPL-3
+  license_file: /lib/R/share/licenses/GPL-3
+  summary: Illumina methylation array analysis for large experiments
+build:
+  noarch: generic
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+package:
+  name: bioconductor-bigmelon
+  version: 1.36.0
+requirements:
+  host:
+  - bioconductor-biobase >=2.70.0,<2.71.0
+  - bioconductor-biocgenerics >=0.56.0,<0.57.0
+  - bioconductor-gdsfmt >=1.46.0,<1.47.0
+  - bioconductor-geoquery >=2.78.0,<2.79.0
+  - bioconductor-illuminaio >=0.52.0,<0.53.0
+  - bioconductor-methylumi >=2.56.0,<2.57.0
+  - bioconductor-minfi >=1.56.0,<1.57.0
+  - bioconductor-watermelon >=2.16.0,<2.17.0
+  - r-base
+  run:
+  - bioconductor-biobase >=2.70.0,<2.71.0
+  - bioconductor-biocgenerics >=0.56.0,<0.57.0
+  - bioconductor-gdsfmt >=1.46.0,<1.47.0
+  - bioconductor-geoquery >=2.78.0,<2.79.0
+  - bioconductor-illuminaio >=0.52.0,<0.53.0
+  - bioconductor-methylumi >=2.56.0,<2.57.0
+  - bioconductor-minfi >=1.56.0,<1.57.0
+  - bioconductor-watermelon >=2.16.0,<2.17.0
+  - r-base
+source:
+  md5: adce1bfc650d789b93ecb1778390c0f1
+  url:
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/bigmelon_1.36.0.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/bigmelon/bigmelon_1.36.0.tar.gz
+  - https://bioarchive.galaxyproject.org/bigmelon_1.36.0.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-bigmelon/bioconductor-bigmelon_1.36.0_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('bigmelon')"

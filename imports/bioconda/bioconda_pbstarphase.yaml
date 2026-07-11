@@ -1,0 +1,26 @@
+about:
+  home: https://github.com/PacificBiosciences/pb-StarPhase
+  license: BSD-3-Clause-Clear
+  summary: A phase-aware pharmacogenomic diplotyper for PacBio sequencing data
+build:
+  number: 0
+  run_exports:
+  - null
+  skip: true
+extra:
+  recipe-maintainers:
+  - holtjma
+  - ctsa
+  - zeeev
+  skip-lints:
+  - should_use_compilers
+  - should_be_noarch_generic
+package:
+  name: pbstarphase
+  version: 2.1.0
+source:
+  sha256: 3cbfda34061608d46228ea34ec309eefbf8d7029f19d8b2b5278ab5a620839b2
+  url: https://github.com/PacificBiosciences/pb-StarPhase/releases/download/v2.1.0/pbstarphase-v2.1.0-x86_64-unknown-linux-gnu.tar.gz
+test:
+  commands:
+  - pbstarphase --version

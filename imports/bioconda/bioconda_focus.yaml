@@ -1,0 +1,48 @@
+about:
+  description: 'FOCUS uses k-mer counting (Jellyfish) and non-negative least squares
+    (NNLS)
+
+    to estimate the relative abundance of organisms in a metagenome without
+
+    assembly or read mapping.
+
+    '
+  home: https://github.com/metageni/FOCUS
+  license: GPL-3.0-or-later
+  license_file: COPYING
+  summary: FOCUS - An Agile Profiler for Metagenomic Data
+build:
+  noarch: python
+  number: 0
+  run_exports:
+  - null
+  script: -m pip install . --no-deps --no-build-isolation -q
+extra:
+  recipe-maintainers:
+  - metageni
+package:
+  name: focus
+  version: 2.0.0
+requirements:
+  host:
+  - python >=3.8
+  - pip
+  - setuptools >=68
+  - wheel
+  run:
+  - python >=3.8
+  - click >=8.0
+  - numpy >=1.12.1
+  - scipy >=0.19.0
+  - jellyfish
+source:
+  sha256: b1a098abbdf4c981493ff3829f315f5407b1f07eb01915ddf9cc378346cf7af7
+  url: https://github.com/metageni/FOCUS/archive/v2.0.0.tar.gz
+test:
+  commands:
+  - focus --help
+  - focus --version
+  imports:
+  - focus_app
+  - focus_app.focus
+  - focus_app.cli

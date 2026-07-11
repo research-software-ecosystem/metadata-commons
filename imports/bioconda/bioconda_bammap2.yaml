@@ -1,0 +1,35 @@
+about:
+  home: https://github.com/wangyibin/bammap2
+  license: BSD 3-Clause
+  license_family: BSD
+  license_file: LICENSE
+  summary: A fast BAM file mapping tool
+build:
+  number: 0
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+  recipe-maintainers:
+  - wangyibin
+package:
+  name: bammap2
+  version: 0.1.7
+requirements:
+  build:
+  - null
+  - null
+  - pkg-config
+  - clangdev
+  - automake
+  - autoconf
+  - jemalloc
+  - make
+  - cargo-bundle-licenses
+source:
+  sha256: 3fd8343ad019edb56649d441f055bf9880728040ee818083319ae2b371278ce9
+  url: https://github.com/wangyibin/bammap2/archive/refs/tags/v0.1.7.tar.gz
+test:
+  commands:
+  - bammap2 --help

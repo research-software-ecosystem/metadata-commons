@@ -1,0 +1,59 @@
+about:
+  description: SingleCellMultiModal is an ExperimentHub package that serves multiple
+    datasets obtained from GEO and other sources and represents them as MultiAssayExperiment
+    objects. We provide several multi-modal datasets including scNMT, 10X Multiome,
+    seqFISH, CITEseq, SCoPE2, and others. The scope of the package is is to provide
+    data for benchmarking and analysis. To cite, use the 'citation' function and see
+    <https://doi.org/10.1371/journal.pcbi.1011324>.
+  home: https://bioconductor.org/packages/3.22/data/experiment/html/SingleCellMultiModal.html
+  license: Artistic-2.0
+  summary: Integrating Multi-modal Single Cell Experiment datasets
+build:
+  noarch: generic
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+package:
+  name: bioconductor-singlecellmultimodal
+  version: 1.22.0
+requirements:
+  host:
+  - bioconductor-annotationhub >=4.0.0,<4.1.0
+  - bioconductor-biocbaseutils >=1.12.0,<1.13.0
+  - bioconductor-biocfilecache >=3.0.0,<3.1.0
+  - bioconductor-experimenthub >=3.0.0,<3.1.0
+  - bioconductor-hdf5array >=1.38.0,<1.39.0
+  - bioconductor-multiassayexperiment >=1.36.0,<1.37.0
+  - bioconductor-s4vectors >=0.48.0,<0.49.0
+  - bioconductor-singlecellexperiment >=1.32.0,<1.33.0
+  - bioconductor-spatialexperiment >=1.20.0,<1.21.0
+  - bioconductor-summarizedexperiment >=1.40.0,<1.41.0
+  - r-base
+  - r-matrix
+  run:
+  - bioconductor-annotationhub >=4.0.0,<4.1.0
+  - bioconductor-biocbaseutils >=1.12.0,<1.13.0
+  - bioconductor-biocfilecache >=3.0.0,<3.1.0
+  - bioconductor-experimenthub >=3.0.0,<3.1.0
+  - bioconductor-hdf5array >=1.38.0,<1.39.0
+  - bioconductor-multiassayexperiment >=1.36.0,<1.37.0
+  - bioconductor-s4vectors >=0.48.0,<0.49.0
+  - bioconductor-singlecellexperiment >=1.32.0,<1.33.0
+  - bioconductor-spatialexperiment >=1.20.0,<1.21.0
+  - bioconductor-summarizedexperiment >=1.40.0,<1.41.0
+  - r-base
+  - r-matrix
+  - curl
+  - bioconductor-data-packages >=20260207
+source:
+  md5: e400ebb19ca5a1d35d22409ac9fdcae1
+  url:
+  - https://bioconductor.org/packages/3.22/data/experiment/src/contrib/SingleCellMultiModal_1.22.0.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/SingleCellMultiModal/SingleCellMultiModal_1.22.0.tar.gz
+  - https://bioarchive.galaxyproject.org/SingleCellMultiModal_1.22.0.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-singlecellmultimodal/bioconductor-singlecellmultimodal_1.22.0_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('SingleCellMultiModal')"

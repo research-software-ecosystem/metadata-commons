@@ -1,0 +1,42 @@
+about:
+  dev_url: https://github.com/jeremymcrae/liftover
+  home: https://github.com/jeremymcrae/liftover
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE.txt
+  summary: A Python package for converting point coordinates between genome assemblies,
+    inspired by pyliftover.
+build:
+  number: 0
+  run_exports:
+  - null
+  script: -m pip install . --no-deps --no-build-isolation --no-cache-dir -vvv
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+  recipe-maintainers:
+  - mencian
+  skip-lints:
+  - compiler_needs_stdlib_c
+package:
+  name: liftover
+  version: 1.4.0
+requirements:
+  build:
+  - null
+  host:
+  - python
+  - setuptools
+  - pip
+  - cython
+  - zlib
+  run:
+  - python
+  - urllib3
+source:
+  sha256: 2caac38bd30ef7b4b24a9606a20f615a479d25d66de21b9a6369a41f87d86ca0
+  url: https://pypi.org/packages/source/l/liftover/liftover-1.4.0.tar.gz
+test:
+  imports:
+  - liftover

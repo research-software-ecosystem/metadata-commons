@@ -1,0 +1,35 @@
+about:
+  dev_url: https://github.com/mkrg01/permucn
+  doc_url: https://github.com/mkrg01/permucn/wiki
+  home: https://github.com/mkrg01/permucn
+  license: MIT
+  license_file: LICENSE
+  summary: Permutation-based test for copy-number and binary trait association.
+build:
+  noarch: python
+  number: 0
+  run_exports:
+  - null
+  script: -m pip install . --no-deps --no-build-isolation -vv
+extra:
+  recipe-maintainers:
+  - mkrg01
+package:
+  name: permucn
+  version: 0.1.1
+requirements:
+  host:
+  - python >=3.12
+  - pip
+  - setuptools >=68
+  - wheel
+  run:
+  - python >=3.12
+source:
+  sha256: 2c0141ca5bc6b1fd32124f3aeea7caab804019dbc848834e20afad8a8faac8db
+  url: https://pypi.org/packages/source/p/permucn/permucn-0.1.1.tar.gz
+test:
+  commands:
+  - permucn --help
+  imports:
+  - permucn

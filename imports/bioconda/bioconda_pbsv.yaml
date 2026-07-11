@@ -1,0 +1,25 @@
+about:
+  home: https://github.com/PacificBiosciences/pbbioconda
+  license: BSD-3-Clause-Clear
+  summary: pbsv - PacBio structural variant (SV) calling and analysis tools
+build:
+  binary_relocation: false
+  number: 0
+  run_exports:
+  - null
+  skip: true
+extra:
+  recipe-maintainers:
+  - armintoepfer
+  - pb-dseifert
+  skip-lints:
+  - should_be_noarch_generic
+package:
+  name: pbsv
+  version: 2.11.0
+source:
+  sha256: 01d83ec77ce40a5416b2a591f98090c51870b25d66650eccc7d7c493e1da5ae6
+  url: https://github.com/PacificBiosciences/pbsv/releases/download/v2.11.0/pbsv
+test:
+  commands:
+  - pbsv -h

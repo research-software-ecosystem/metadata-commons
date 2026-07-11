@@ -1,0 +1,34 @@
+about:
+  dev_url: https://github.com/pangenome/vcfbub
+  doc_url: https://github.com/pangenome/vcfbub/blob/main/README.md
+  home: https://github.com/pangenome/vcfbub
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE
+  summary: Popping bubbles in vg deconstruct VCFs.
+build:
+  number: 1
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+  recipe-maintainers:
+  - AndreaGuarracino
+package:
+  name: vcfbub
+  version: 0.1.2
+requirements:
+  build:
+  - null
+  - null
+  - cargo-bundle-licenses
+  - clangdev
+  - pkg-config
+source:
+  sha256: 831f38d1e4e8720614dce90704a590e88bf7d2039d09fe2cf0314c7eec0d46c9
+  url: https://github.com/pangenome/vcfbub/archive/refs/tags/v0.1.2.tar.gz
+test:
+  commands:
+  - vcfbub --help

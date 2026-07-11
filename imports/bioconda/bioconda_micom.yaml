@@ -1,0 +1,40 @@
+about:
+  home: https://github.com/micom-dev/micom
+  license: Apache-2.0
+  license_family: APACHE
+  license_file: LICENSE
+  summary: Microbial community modeling based on cobrapy.
+build:
+  noarch: python
+  number: 0
+  run_exports:
+  - null
+  script: ' -m pip install . -vv'
+package:
+  name: micom
+  version: 0.37.1
+requirements:
+  host:
+  - pip
+  - python >=3
+  - cobra >=0.17.1
+  - jinja2 >=2.10.0
+  - scikit-learn >=0.22.0
+  - scipy >=1.0.0
+  - python-symengine >=0.6.1
+  - osqp >=0.6.2
+  run:
+  - python >=3
+  - cobra >=0.17.1
+  - jinja2 >=2.10.0
+  - scikit-learn >=0.22.0
+  - scipy >=1.0.0
+  - python-symengine >=0.6.1
+  - osqp >=0.6.2
+source:
+  sha256: 061eeca17ec970f39e866e499bfcd3fd2b9c58196995a36281f4a6af2eec8a2c
+  url: https://pypi.io/packages/source/m/micom/micom-0.37.1.tar.gz
+test:
+  imports:
+  - micom
+  - micom.data

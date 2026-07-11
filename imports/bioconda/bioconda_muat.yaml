@@ -1,0 +1,46 @@
+about:
+  home: https://github.com/primasanjaya/muat
+  license: Apache-2.0
+  license_file: LICENSE
+  summary: A package for Mutation Attention Tool
+build:
+  noarch: python
+  number: 0
+  run_exports:
+  - null
+  script: -m pip install . --no-deps -vv
+extra:
+  recipe-maintainers:
+  - primasanjaya
+package:
+  name: muat
+  version: 0.1.20
+requirements:
+  host:
+  - python
+  - pip
+  - setuptools
+  run:
+  - python
+  - setuptools
+  - numpy
+  - pandas
+  - requests
+  - bedtools
+  - htslib
+  - natsort
+  - boto3
+  - openpyxl
+  - scikit-learn
+  - pytorch
+  - pyliftover
+  - bcftools
+  - tqdm
+  - bedops
+  - swalign
+source:
+  sha256: af7150defd8a5aacbe1a72f6e2be9eedd965b0ed4e2c0605901d200f876f2a1b
+  url: https://github.com/primasanjaya/muat/archive/refs/tags/v0.1.20.tar.gz
+test:
+  imports:
+  - muat

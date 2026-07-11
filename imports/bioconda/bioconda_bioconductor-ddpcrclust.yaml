@@ -1,0 +1,52 @@
+about:
+  description: The ddPCRclust algorithm can automatically quantify the CPDs of non-orthogonal
+    ddPCR reactions with up to four targets. In order to determine the correct droplet
+    count for each target, it is crucial to both identify all clusters and label them
+    correctly based on their position. For more information on what data can be analyzed
+    and how a template needs to be formatted, please check the vignette.
+  home: https://bioconductor.org/packages/3.22/bioc/html/ddPCRclust.html
+  license: Artistic-2.0
+  summary: Clustering algorithm for ddPCR data
+build:
+  noarch: generic
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+package:
+  name: bioconductor-ddpcrclust
+  version: 1.30.0
+requirements:
+  host:
+  - bioconductor-flowcore >=2.22.0,<2.23.0
+  - bioconductor-flowdensity >=1.44.0,<1.45.0
+  - bioconductor-flowpeaks >=1.56.0,<1.57.0
+  - bioconductor-samspectral >=1.64.0,<1.65.0
+  - r-base
+  - r-clue
+  - r-ggplot2
+  - r-openxlsx
+  - r-plotrix
+  - r-r.utils
+  run:
+  - bioconductor-flowcore >=2.22.0,<2.23.0
+  - bioconductor-flowdensity >=1.44.0,<1.45.0
+  - bioconductor-flowpeaks >=1.56.0,<1.57.0
+  - bioconductor-samspectral >=1.64.0,<1.65.0
+  - r-base
+  - r-clue
+  - r-ggplot2
+  - r-openxlsx
+  - r-plotrix
+  - r-r.utils
+source:
+  md5: 6bade4eebf1c0a0b31264bb552e19dda
+  url:
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/ddPCRclust_1.30.0.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/ddPCRclust/ddPCRclust_1.30.0.tar.gz
+  - https://bioarchive.galaxyproject.org/ddPCRclust_1.30.0.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-ddpcrclust/bioconductor-ddpcrclust_1.30.0_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('ddPCRclust')"

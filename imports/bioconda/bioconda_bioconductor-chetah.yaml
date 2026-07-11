@@ -1,0 +1,62 @@
+about:
+  description: 'CHETAH (CHaracterization of cEll Types Aided by Hierarchical classification)
+    is an accurate, selective and fast scRNA-seq classifier. Classification is guided
+    by a reference dataset, preferentially also a scRNA-seq dataset. By hierarchical
+    clustering of the reference data, CHETAH creates a classification tree that enables
+    a step-wise, top-to-bottom classification. Using a novel stopping rule, CHETAH
+    classifies the input cells to the cell types of the references and to "intermediate
+    types": more general classifications that ended in an intermediate node of the
+    tree.'
+  home: https://bioconductor.org/packages/3.22/bioc/html/CHETAH.html
+  license: file LICENSE
+  license_file: LICENSE
+  summary: Fast and accurate scRNA-seq cell type identification
+build:
+  noarch: generic
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+package:
+  name: bioconductor-chetah
+  version: 1.26.0
+requirements:
+  host:
+  - bioconductor-biodist >=1.82.0,<1.83.0
+  - bioconductor-s4vectors >=0.48.0,<0.49.0
+  - bioconductor-singlecellexperiment >=1.32.0,<1.33.0
+  - bioconductor-summarizedexperiment >=1.40.0,<1.41.0
+  - r-base
+  - r-corrplot
+  - r-cowplot
+  - r-dendextend
+  - r-ggplot2
+  - r-pheatmap
+  - r-plotly
+  - r-reshape2
+  - r-shiny
+  run:
+  - bioconductor-biodist >=1.82.0,<1.83.0
+  - bioconductor-s4vectors >=0.48.0,<0.49.0
+  - bioconductor-singlecellexperiment >=1.32.0,<1.33.0
+  - bioconductor-summarizedexperiment >=1.40.0,<1.41.0
+  - r-base
+  - r-corrplot
+  - r-cowplot
+  - r-dendextend
+  - r-ggplot2
+  - r-pheatmap
+  - r-plotly
+  - r-reshape2
+  - r-shiny
+source:
+  md5: 332ef94d78b97ff6b7cd46ff96068c6d
+  url:
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/CHETAH_1.26.0.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/CHETAH/CHETAH_1.26.0.tar.gz
+  - https://bioarchive.galaxyproject.org/CHETAH_1.26.0.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-chetah/bioconductor-chetah_1.26.0_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('CHETAH')"

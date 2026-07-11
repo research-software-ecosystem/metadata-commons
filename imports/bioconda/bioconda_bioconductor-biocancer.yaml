@@ -1,0 +1,86 @@
+about:
+  description: This package is a Shiny App to visualize and analyse interactively
+    Multi-Assays of Cancer Genomic Data.
+  home: https://bioconductor.org/packages/3.22/bioc/html/bioCancer.html
+  license: AGPL-3 | file LICENSE
+  license_file: LICENSE
+  summary: Interactive Multi-Omics Cancers Data Visualization and Analysis
+build:
+  noarch: generic
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+package:
+  name: bioconductor-biocancer
+  version: 1.38.0
+requirements:
+  host:
+  - bioconductor-annotationdbi >=1.72.0,<1.73.0
+  - bioconductor-biobase >=2.70.0,<2.71.0
+  - bioconductor-cbioportaldata >=2.22.0,<2.23.0
+  - bioconductor-clusterprofiler >=4.18.0,<4.19.0
+  - bioconductor-dose >=4.4.0,<4.5.0
+  - bioconductor-genetclassifier >=1.50.0,<1.51.0
+  - bioconductor-go.db >=3.22.0,<3.23.0
+  - bioconductor-org.bt.eg.db >=3.22.0,<3.23.0
+  - bioconductor-org.hs.eg.db >=3.22.0,<3.23.0
+  - bioconductor-reactome.db >=1.95.0,<1.96.0
+  - bioconductor-reactomepa >=1.54.0,<1.55.0
+  - r-algdesign >=1.1.7.3
+  - r-base
+  - r-diagrammer <=1.01
+  - r-dplyr >=0.7.2
+  - r-dt >=0.3
+  - r-htmlwidgets
+  - r-import >=1.1.0
+  - r-plyr
+  - r-r.methodss3
+  - r-r.oo
+  - r-radiant.data >=0.9.1
+  - r-shiny >=1.0.5
+  - r-shinythemes
+  - r-tibble
+  - r-tidyr
+  - r-visnetwork
+  - r-xml >=3.98
+  run:
+  - bioconductor-annotationdbi >=1.72.0,<1.73.0
+  - bioconductor-biobase >=2.70.0,<2.71.0
+  - bioconductor-cbioportaldata >=2.22.0,<2.23.0
+  - bioconductor-clusterprofiler >=4.18.0,<4.19.0
+  - bioconductor-dose >=4.4.0,<4.5.0
+  - bioconductor-genetclassifier >=1.50.0,<1.51.0
+  - bioconductor-go.db >=3.22.0,<3.23.0
+  - bioconductor-org.bt.eg.db >=3.22.0,<3.23.0
+  - bioconductor-org.hs.eg.db >=3.22.0,<3.23.0
+  - bioconductor-reactome.db >=1.95.0,<1.96.0
+  - bioconductor-reactomepa >=1.54.0,<1.55.0
+  - r-algdesign >=1.1.7.3
+  - r-base
+  - r-diagrammer <=1.01
+  - r-dplyr >=0.7.2
+  - r-dt >=0.3
+  - r-htmlwidgets
+  - r-import >=1.1.0
+  - r-plyr
+  - r-r.methodss3
+  - r-r.oo
+  - r-radiant.data >=0.9.1
+  - r-shiny >=1.0.5
+  - r-shinythemes
+  - r-tibble
+  - r-tidyr
+  - r-visnetwork
+  - r-xml >=3.98
+source:
+  md5: df48eec917d6e9f2290290644cba68fc
+  url:
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/bioCancer_1.38.0.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/bioCancer/bioCancer_1.38.0.tar.gz
+  - https://bioarchive.galaxyproject.org/bioCancer_1.38.0.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-biocancer/bioconductor-biocancer_1.38.0_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('bioCancer')"

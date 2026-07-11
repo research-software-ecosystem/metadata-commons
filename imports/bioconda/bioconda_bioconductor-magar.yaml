@@ -1,0 +1,71 @@
+about:
+  description: '"Methylation-Aware Genotype Association in R" (MAGAR) computes methQTL
+    from DNA methylation and genotyping data from matched samples. MAGAR uses a linear
+    modeling stragety to call CpGs/SNPs that are methQTLs. MAGAR accounts for the
+    local correlation structure of CpGs.'
+  home: https://bioconductor.org/packages/3.22/bioc/html/MAGAR.html
+  license: GPL-3
+  license_file: /lib/R/share/licenses/GPL-3
+  summary: 'MAGAR: R-package to compute methylation Quantitative Trait Loci (methQTL)
+    from DNA methylation and genotyping data'
+build:
+  noarch: generic
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+package:
+  name: bioconductor-magar
+  version: 1.18.0
+requirements:
+  host:
+  - bioconductor-crlmm >=1.68.0,<1.69.0
+  - bioconductor-hdf5array >=1.38.0,<1.39.0
+  - bioconductor-impute >=1.84.0,<1.85.0
+  - bioconductor-rnbeads >=2.28.0,<2.29.0
+  - bioconductor-rnbeads.hg19 >=1.42.0,<1.43.0
+  - bioconductor-rnbeads.hg38 >=1.42.0,<1.43.0
+  - bioconductor-snpstats >=1.60.0,<1.61.0
+  - r-argparse
+  - r-base
+  - r-bigstatsr
+  - r-data.table
+  - r-doparallel
+  - r-ff
+  - r-igraph
+  - r-jsonlite
+  - r-plyr
+  - r-reshape2
+  - r-rjson
+  - r-upsetr
+  run:
+  - bioconductor-crlmm >=1.68.0,<1.69.0
+  - bioconductor-hdf5array >=1.38.0,<1.39.0
+  - bioconductor-impute >=1.84.0,<1.85.0
+  - bioconductor-rnbeads >=2.28.0,<2.29.0
+  - bioconductor-rnbeads.hg19 >=1.42.0,<1.43.0
+  - bioconductor-rnbeads.hg38 >=1.42.0,<1.43.0
+  - bioconductor-snpstats >=1.60.0,<1.61.0
+  - r-argparse
+  - r-base
+  - r-bigstatsr
+  - r-data.table
+  - r-doparallel
+  - r-ff
+  - r-igraph
+  - r-jsonlite
+  - r-plyr
+  - r-reshape2
+  - r-rjson
+  - r-upsetr
+source:
+  md5: 57257e0cbc7655c3a231f8b9003182cf
+  url:
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/MAGAR_1.18.0.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/MAGAR/MAGAR_1.18.0.tar.gz
+  - https://bioarchive.galaxyproject.org/MAGAR_1.18.0.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-magar/bioconductor-magar_1.18.0_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('MAGAR')"

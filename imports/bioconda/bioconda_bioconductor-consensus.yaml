@@ -1,0 +1,47 @@
+about:
+  description: An implementation of the American Society for Testing and Materials
+    (ASTM) Standard E691 for interlaboratory testing procedures, designed for cross-platform
+    genomic measurements. Given three (3) or more genomic platforms or laboratory
+    protocols, this package provides interlaboratory testing procedures giving per-locus
+    comparisons for sensitivity and precision between platforms.
+  home: https://bioconductor.org/packages/3.22/bioc/html/consensus.html
+  license: BSD_3_clause + file LICENSE
+  license_file: LICENSE
+  summary: Cross-platform consensus analysis of genomic measurements via interlaboratory
+    testing method
+build:
+  noarch: generic
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+extra:
+  parent_recipe:
+    name: bioconductor-consensus
+    path: recipes/bioconductor-consensus
+    version: 1.0.0
+package:
+  name: bioconductor-consensus
+  version: 1.28.0
+requirements:
+  host:
+  - r-base
+  - r-gplots
+  - r-matrixstats
+  - r-rcolorbrewer
+  run:
+  - r-base
+  - r-gplots
+  - r-matrixstats
+  - r-rcolorbrewer
+source:
+  md5: 12aa61a62a75bd36c747bbadbe003598
+  url:
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/consensus_1.28.0.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/consensus/consensus_1.28.0.tar.gz
+  - https://bioarchive.galaxyproject.org/consensus_1.28.0.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-consensus/bioconductor-consensus_1.28.0_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('consensus')"

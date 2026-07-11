@@ -1,0 +1,35 @@
+about:
+  description: RnBeads annotation package for the assembly hg38.
+  home: https://bioconductor.org/packages/3.22/data/experiment/html/RnBeads.hg38.html
+  license: GPL-3
+  license_file: /lib/R/share/licenses/GPL-3
+  summary: RnBeads.hg38
+build:
+  noarch: generic
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+package:
+  name: bioconductor-rnbeads.hg38
+  version: 1.42.1
+requirements:
+  host:
+  - bioconductor-genomicranges >=1.62.0,<1.63.0
+  - r-base
+  run:
+  - bioconductor-genomicranges >=1.62.0,<1.63.0
+  - r-base
+  - curl
+  - bioconductor-data-packages >=20260207
+source:
+  md5: ba3088fa19405b11692703d6d87fc259
+  url:
+  - https://bioconductor.org/packages/3.22/data/experiment/src/contrib/RnBeads.hg38_1.42.1.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/RnBeads.hg38/RnBeads.hg38_1.42.1.tar.gz
+  - https://bioarchive.galaxyproject.org/RnBeads.hg38_1.42.1.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-rnbeads.hg38/bioconductor-rnbeads.hg38_1.42.1_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('RnBeads.hg38')"

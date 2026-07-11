@@ -1,0 +1,40 @@
+about:
+  dev_url: https://github.com/nanoporetech/modkit
+  doc_url: https://nanoporetech.github.io/modkit
+  home: https://github.com/nanoporetech/modkit
+  license: Oxford Nanopore Technologies PLC. Public License Version 1.0
+  license_family: PROPRIETARY
+  license_file: LICENCE.txt
+  summary: A bioinformatics tool for working with modified bases in Oxford Nanopore
+    sequencing data.
+build:
+  number: 0
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+package:
+  name: ont-modkit
+  version: 0.6.4
+requirements:
+  build:
+  - null
+  - null
+  - null
+  - cargo-bundle-licenses
+  - cmake
+  - make
+  - autoconf
+  - automake
+  - libtool
+  - pkg-config
+  host:
+  - zlib
+source:
+  sha256: 0197d49c0313551c1bb4fd6399a6ee4e44abb2233c9704bed2019389bee2fd61
+  url: https://github.com/nanoporetech/modkit/archive/refs/tags/v0.6.4.tar.gz
+test:
+  commands:
+  - modkit --version

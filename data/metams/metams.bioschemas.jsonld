@@ -1,0 +1,123 @@
+{
+  "@context": {
+    "biotools": "https://bio.tools/ontology/",
+    "brick": "https://brickschema.org/schema/Brick#",
+    "bsc": "http://bioschemas.org/",
+    "bsct": "http://bioschemas.org/types/",
+    "csvw": "http://www.w3.org/ns/csvw#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "dcam": "http://purl.org/dc/dcam/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dcmitype": "http://purl.org/dc/dcmitype/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "doap": "http://usefulinc.com/ns/doap#",
+    "edam": "http://edamontology.org/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "geo": "http://www.opengis.net/ont/geosparql#",
+    "odrl": "http://www.w3.org/ns/odrl/2/",
+    "org": "http://www.w3.org/ns/org#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "prof": "http://www.w3.org/ns/dx/prof/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "qb": "http://purl.org/linked-data/cube#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "sc": "http://schema.org/",
+    "schema": "https://schema.org/",
+    "sh": "http://www.w3.org/ns/shacl#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "sosa": "http://www.w3.org/ns/sosa/",
+    "ssn": "http://www.w3.org/ns/ssn/",
+    "time": "http://www.w3.org/2006/time#",
+    "vann": "http://purl.org/vocab/vann/",
+    "void": "http://rdfs.org/ns/void#",
+    "wgs": "https://www.w3.org/2003/01/geo/wgs84_pos#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "https://bio.tools/metams",
+      "@type": "sc:SoftwareApplication",
+      "bsc:input": {
+        "@id": "_:N9be02e3d96ff4cf6af88910fa5898f77"
+      },
+      "bsc:output": [
+        {
+          "@id": "_:N8bc38eb4e65648e396c6b10f2f368473"
+        },
+        {
+          "@id": "_:Na2c485eafa4e4a099e2f8dbbe586e7ee"
+        }
+      ],
+      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "sc:additionalType": [
+        "Command-line tool",
+        "Library"
+      ],
+      "sc:applicationSubCategory": {
+        "@id": "edam:topic_3172"
+      },
+      "sc:author": [
+        "Pietro Franceschi",
+        "Ron Wehrens"
+      ],
+      "sc:contributor": [
+        "Julien Saint-Vanne",
+        "Nir Shahaf",
+        "Yann Guitton",
+        "Georg Weingart",
+        "Matthias Scholz",
+        "Elisabete Carvalho"
+      ],
+      "sc:description": "MS-based metabolomics data processing and compound annotation pipeline.",
+      "sc:featureList": {
+        "@id": "edam:operation_3214"
+      },
+      "sc:license": "GPL-2.0-or-later",
+      "sc:name": "metaMS",
+      "sc:operatingSystem": [
+        "Mac",
+        "Linux",
+        "Windows"
+      ],
+      "sc:softwareHelp": {
+        "@id": "https://bioconductor.org/packages/metaMS"
+      },
+      "sc:softwareVersion": "1.48.0",
+      "sc:url": "https://bioconductor.org/packages/metaMS"
+    },
+    {
+      "@id": "_:N8bc38eb4e65648e396c6b10f2f368473",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2603"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3752"
+      },
+      "sc:name": "Expression data"
+    },
+    {
+      "@id": "_:Na2c485eafa4e4a099e2f8dbbe586e7ee",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0943"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_4039"
+      },
+      "sc:name": "Mass spectrum"
+    },
+    {
+      "@id": "_:N9be02e3d96ff4cf6af88910fa5898f77",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0943"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2333"
+      },
+      "sc:name": "Mass spectrum"
+    }
+  ]
+}

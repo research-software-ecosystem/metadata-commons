@@ -1,0 +1,85 @@
+about:
+  description: 'This package allows to estimate chronological and gestational DNA
+    methylation (DNAm) age as well as biological age using different methylation clocks.
+    Chronological DNAm age (in years) : Horvath''s clock, Hannum''s clock, BNN, Horvath''s
+    skin+blood clock, PedBE clock and Wu''s clock. Gestational DNAm age : Knight''s
+    clock, Bohlin''s clock, Mayne''s clock and Lee''s clocks. Biological DNAm clocks
+    : Levine''s clock and Telomere Length''s clock.'
+  home: https://bioconductor.org/packages/3.22/bioc/html/methylclock.html
+  license: MIT + file LICENSE
+  license_file: LICENSE
+  summary: Methylclock - DNA methylation-based clocks
+build:
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+package:
+  name: bioconductor-methylclock
+  version: 1.16.0
+requirements:
+  build:
+  - null
+  - null
+  - make
+  host:
+  - bioconductor-biobase >=2.70.0,<2.71.0
+  - bioconductor-experimenthub >=3.0.0,<3.1.0
+  - bioconductor-impute >=1.84.0,<1.85.0
+  - bioconductor-methylclockdata >=1.18.0,<1.19.0
+  - bioconductor-minfi >=1.56.0,<1.57.0
+  - bioconductor-planet >=1.18.0,<1.19.0
+  - bioconductor-preprocesscore >=1.72.0,<1.73.0
+  - r-base
+  - r-devtools
+  - r-dplyr
+  - r-dynamictreecut
+  - r-ggplot2
+  - r-ggpmisc
+  - r-ggpubr
+  - r-gridextra
+  - r-performanceanalytics
+  - r-quadprog
+  - r-rcpp >=1.0.6
+  - r-rpmm
+  - r-tibble
+  - r-tidyr
+  - r-tidyverse
+  - libblas
+  - liblapack
+  - zlib
+  - liblzma-devel
+  run:
+  - bioconductor-biobase >=2.70.0,<2.71.0
+  - bioconductor-experimenthub >=3.0.0,<3.1.0
+  - bioconductor-impute >=1.84.0,<1.85.0
+  - bioconductor-methylclockdata >=1.18.0,<1.19.0
+  - bioconductor-minfi >=1.56.0,<1.57.0
+  - bioconductor-planet >=1.18.0,<1.19.0
+  - bioconductor-preprocesscore >=1.72.0,<1.73.0
+  - r-base
+  - r-devtools
+  - r-dplyr
+  - r-dynamictreecut
+  - r-ggplot2
+  - r-ggpmisc
+  - r-ggpubr
+  - r-gridextra
+  - r-performanceanalytics
+  - r-quadprog
+  - r-rcpp >=1.0.6
+  - r-rpmm
+  - r-tibble
+  - r-tidyr
+  - r-tidyverse
+source:
+  md5: e697bc677eaec3772f42109001128d68
+  url:
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/methylclock_1.16.0.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/methylclock/methylclock_1.16.0.tar.gz
+  - https://bioarchive.galaxyproject.org/methylclock_1.16.0.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-methylclock/bioconductor-methylclock_1.16.0_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('methylclock')"

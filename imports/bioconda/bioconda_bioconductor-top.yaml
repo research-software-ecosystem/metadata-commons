@@ -1,0 +1,90 @@
+about:
+  description: TOP constructs a transferable model across gene expression platforms
+    for prospective experiments. Such a transferable model can be trained to make
+    predictions on independent validation data with an accuracy that is similar to
+    a re-substituted model. The TOP procedure also has the flexibility to be adapted
+    to suit the most common clinical response variables, including linear response,
+    binomial and Cox PH models.
+  home: https://bioconductor.org/packages/3.22/bioc/html/TOP.html
+  license: GPL-3
+  license_file: /lib/R/share/licenses/GPL-3
+  summary: TOP Constructs Transferable Model Across Gene Expression Platforms
+build:
+  noarch: generic
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+package:
+  name: bioconductor-top
+  version: 1.10.0
+requirements:
+  host:
+  - bioconductor-classifyr >=3.14.0,<3.15.0
+  - bioconductor-limma >=3.66.0,<3.67.0
+  - r-assertthat
+  - r-base
+  - r-caret
+  - r-directpa
+  - r-doparallel
+  - r-dplyr
+  - r-ggnewscale
+  - r-ggplot2
+  - r-ggraph
+  - r-ggrepel
+  - r-ggthemes
+  - r-glmnet
+  - r-hmisc
+  - r-igraph
+  - r-latex2exp
+  - r-magrittr
+  - r-plotly
+  - r-proc
+  - r-purrr
+  - r-reshape2
+  - r-statmod
+  - r-stringr
+  - r-survival
+  - r-tibble
+  - r-tidygraph
+  - r-tidyr
+  run:
+  - bioconductor-classifyr >=3.14.0,<3.15.0
+  - bioconductor-limma >=3.66.0,<3.67.0
+  - r-assertthat
+  - r-base
+  - r-caret
+  - r-directpa
+  - r-doparallel
+  - r-dplyr
+  - r-ggnewscale
+  - r-ggplot2
+  - r-ggraph
+  - r-ggrepel
+  - r-ggthemes
+  - r-glmnet
+  - r-hmisc
+  - r-igraph
+  - r-latex2exp
+  - r-magrittr
+  - r-plotly
+  - r-proc
+  - r-purrr
+  - r-reshape2
+  - r-statmod
+  - r-stringr
+  - r-survival
+  - r-tibble
+  - r-tidygraph
+  - r-tidyr
+source:
+  md5: 30b4b46eff1355765c1aec74fd2aa625
+  url:
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/TOP_1.10.0.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/TOP/TOP_1.10.0.tar.gz
+  - https://bioarchive.galaxyproject.org/TOP_1.10.0.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-top/bioconductor-top_1.10.0_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('TOP')"

@@ -1,0 +1,33 @@
+about:
+  home: https://github.com/alejandrogzi/bed2gtf
+  license: MIT
+  license_family: MIT
+  license_file:
+  - LICENSE
+  - THIRDPARTY.yml
+  summary: A high-performance BED-to-GTF converter written in Rust
+build:
+  number: 0
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+  recipe-maintainers:
+  - alejandrogzi
+package:
+  name: bed2gtf
+  version: 2.0.0
+requirements:
+  build:
+  - null
+  - null
+  - cargo-bundle-licenses
+  - pkg-config
+source:
+  sha256: 69c1ec8b896aa4626007d6549d56c18ac906d00c43e46c783cee3c875644a094
+  url: https://github.com/alejandrogzi/bed2gtf/archive/refs/tags/v.2.0.0.tar.gz
+test:
+  commands:
+  - bed2gtf --help
+  - bed2gtf --version

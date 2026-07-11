@@ -1,0 +1,84 @@
+about:
+  dev_url: https://github.com/kcleal/dysgu
+  doc_url: https://github.com/kcleal/dysgu/blob/v1.8.9/README.rst
+  home: https://github.com/kcleal/dysgu
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE.md
+  summary: A collection of tools for calling structural variants using short or long
+    reads.
+build:
+  binary_relocation: false
+  entry_points:
+  - dysgu = dysgu.main:cli
+  number: 0
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+  container:
+    extended-base: true
+  identifiers:
+  - doi:10.1093/nar/gkac039
+  recipe-maintainers:
+  - kcleal
+  skip-lints:
+  - cython_must_be_in_host
+  - compiler_needs_stdlib_c
+package:
+  name: dysgu
+  version: 1.8.9
+requirements:
+  build:
+  - make
+  - null
+  - null
+  - clangdev
+  host:
+  - python
+  - pip
+  - cython >=0.29
+  - meson-python
+  - htslib >=1.12
+  - numpy >=1.18
+  - lightgbm >=3.1
+  - zlib >=1.2
+  - pysam >=0.19
+  - libcurl >=7.75
+  - openssl >=1.1
+  - bzip2 >=1.0.8
+  - xz >=5.2
+  - scipy >=1.7
+  - pandas >=1.2
+  - networkx >=2.4
+  - scikit-learn >=0.22
+  - superintervals >=0.3.0
+  run:
+  - python
+  - cython >=0.29
+  - numpy >=1.18
+  - scipy >=1.7
+  - pandas >=1.2
+  - networkx >=2.4
+  - scikit-learn >=0.22
+  - sortedcontainers
+  - lightgbm >=3.1
+  - click >=8.0
+  - pysam >=0.23
+  - openssl >=1.1
+  - htslib >=1.12
+  - superintervals >=0.3.0
+source:
+  sha256: 299c33bfbd935200125243d5d79d4fdedc0aee0328aac14aff02817629cf9d74
+  url: https://github.com/kcleal/dysgu/archive/v1.8.9.tar.gz
+test:
+  commands:
+  - dysgu --help
+  files:
+  - dysgu/tests/*
+  imports:
+  - dysgu
+  requires:
+  - cython

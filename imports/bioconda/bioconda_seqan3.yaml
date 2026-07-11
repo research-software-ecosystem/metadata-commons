@@ -1,0 +1,39 @@
+about:
+  dev_url: https://github.com/seqan/seqan3
+  doc_url: https://github.com/seqan/seqan3/blob/3.4.2/README.md
+  home: https://www.seqan.de
+  license: BSD-3-Clause
+  license_family: BSD
+  license_file: LICENSE.md
+  summary: SeqAn3 is the new version of the popular SeqAn template library for the
+    analysis of biological sequences.
+build:
+  number: 0
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+  recipe-maintainers:
+  - eseiler
+package:
+  name: seqan3
+  version: 3.4.2
+requirements:
+  build:
+  - make
+  - cmake >=3.14
+  - null
+  - pkg-config
+  host:
+  - cereal
+  - bzip2
+  - zlib
+source:
+  sha256: 47568bb116981f06276cec9b433482d38d9b12f5f5d83299734c469eb9d80448
+  url: https://github.com/seqan/seqan3/releases/download/3.4.2/seqan3-3.4.2-Source.tar.xz
+test:
+  commands:
+  - test -f $PREFIX/share/cmake/seqan3/seqan3-config.cmake
+  - test -f $PREFIX/include/seqan3/version.hpp

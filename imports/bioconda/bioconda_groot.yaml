@@ -1,0 +1,32 @@
+about:
+  dev_url: https://github.com/will-rowe/groot
+  doc_url: https://groot-documentation.readthedocs.io/en/latest/?badge=latest
+  home: https://github.com/will-rowe/groot
+  license: MIT
+  license_family: MIT
+  summary: A tool for resistome profiling of metagenomic samples.
+build:
+  number: 7
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+package:
+  name: groot
+  version: 1.1.2
+requirements:
+  build:
+  - null
+  - null
+  - go-licenses
+  run:
+  - ca-certificates
+source:
+  sha256: 46c6f67990397c2230f580be40697e4fdc284fbe7f0a38999a05d81cd6da5928
+  url: https://github.com/will-rowe/groot/archive/1.1.2.tar.gz
+test:
+  commands:
+  - groot
+  - groot version

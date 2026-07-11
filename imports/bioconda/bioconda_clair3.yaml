@@ -1,0 +1,72 @@
+about:
+  dev_url: https://github.com/HKU-BAL/Clair3
+  doc_url: https://github.com/HKU-BAL/Clair3
+  home: https://github.com/HKU-BAL/Clair3
+  license: BSD-3-Clause
+  license_family: BSD
+  license_file: LICENSE.md
+  summary: Clair3 is a small variant caller for long-reads. Clair3 makes the best
+    of both worlds of using pileup or full-alignment as input for deep-learning based
+    long-read small variant calling. Clair3 is simple and modular for easy deployment
+    and integration.
+build:
+  number: 0
+  run_exports:
+  - null
+  skip: true
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+  container:
+    extended-base: true
+  skip-lints:
+  - compiler_needs_stdlib_c
+package:
+  name: clair3
+  version: 2.0.2
+requirements:
+  build:
+  - null
+  - null
+  - pkg-config
+  - make
+  - automake
+  - autoconf
+  - libtool
+  - gnuconfig
+  host:
+  - python 3.11.*
+  - mpmath
+  - cffi <2
+  - bzip2
+  - xz
+  - zlib
+  - libcurl
+  - openssl
+  - libdeflate
+  - longphase
+  run:
+  - python 3.11.*
+  - pytorch-cpu
+  - torchmetrics
+  - numpy
+  - h5py
+  - hdf5plugin
+  - numexpr
+  - tqdm
+  - samtools >=1.15
+  - whatshap >=1.0
+  - pigz
+  - parallel >=20191122
+  - openssl
+  - cffi <2
+  - longphase
+source:
+- sha256: 144afb25e96c984c1d2aeb7dcf4f09412e47fc479922023ce20c5f9b0d473c66
+  url: https://github.com/HKU-BAL/Clair3/archive/refs/tags/v2.0.2.tar.gz
+test:
+  commands:
+  - longphase --version
+  - which run_clair3.sh
+  - run_clair3.sh -v

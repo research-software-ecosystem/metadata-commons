@@ -1,0 +1,94 @@
+{
+  "@context": {
+    "biotools": "https://bio.tools/ontology/",
+    "brick": "https://brickschema.org/schema/Brick#",
+    "bsc": "http://bioschemas.org/",
+    "bsct": "http://bioschemas.org/types/",
+    "csvw": "http://www.w3.org/ns/csvw#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "dcam": "http://purl.org/dc/dcam/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dcmitype": "http://purl.org/dc/dcmitype/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "doap": "http://usefulinc.com/ns/doap#",
+    "edam": "http://edamontology.org/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "geo": "http://www.opengis.net/ont/geosparql#",
+    "odrl": "http://www.w3.org/ns/odrl/2/",
+    "org": "http://www.w3.org/ns/org#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "prof": "http://www.w3.org/ns/dx/prof/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "qb": "http://purl.org/linked-data/cube#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "sc": "http://schema.org/",
+    "schema": "https://schema.org/",
+    "sh": "http://www.w3.org/ns/shacl#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "sosa": "http://www.w3.org/ns/sosa/",
+    "ssn": "http://www.w3.org/ns/ssn/",
+    "time": "http://www.w3.org/2006/time#",
+    "vann": "http://purl.org/vocab/vann/",
+    "void": "http://rdfs.org/ns/void#",
+    "wgs": "https://www.w3.org/2003/01/geo/wgs84_pos#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "https://bio.tools/ekokrati",
+      "@type": "sc:SoftwareApplication",
+      "bsc:input": {
+        "@id": "_:N85e58fe789b344f483437b8afde76b9e"
+      },
+      "bsc:output": [
+        {
+          "@id": "_:N9c5782b6587b45d6a75c183914ee18db"
+        },
+        {
+          "@id": "_:Nc38625f519624f99b5f1a2ea7c04257c"
+        }
+      ],
+      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_3050"
+        },
+        {
+          "@id": "edam:topic_0610"
+        }
+      ],
+      "sc:description": "ekokrati computes habitat connectivity metrics (PC, IIC, EC(PC), dPC and its decomposition into intra-patch, flux and connector components) for habitat patch networks. Users upload polygon data as GeoPackage or shapefile, set species-specific dispersal parameters, and receive patch importance scores and landscape-level indices. Designed for conservation planners, landscape ecologists and environmental consultants. No installation required.",
+      "sc:featureList": {
+        "@id": "edam:operation_3927"
+      },
+      "sc:license": "Proprietary",
+      "sc:name": "ekokrati",
+      "sc:url": "https://app.ekokrati.se"
+    },
+    {
+      "@id": "_:N9c5782b6587b45d6a75c183914ee18db",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3707"
+      },
+      "sc:name": "Biodiversity data"
+    },
+    {
+      "@id": "_:Nc38625f519624f99b5f1a2ea7c04257c",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3736"
+      },
+      "sc:name": "Ecological data"
+    },
+    {
+      "@id": "_:N85e58fe789b344f483437b8afde76b9e",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3736"
+      },
+      "sc:name": "Ecological data"
+    }
+  ]
+}

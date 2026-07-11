@@ -1,0 +1,36 @@
+about:
+  dev_url: https://github.com/varda/varda2_preprocessing
+  home: https://github.com/varda/varda2_preprocessing
+  license: MIT
+  license_family: MIT
+  summary: Coverage extractor from gVCF files.
+build:
+  number: 11
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+  recipe-maintainers:
+  - marksantcroos
+  skip-lints:
+  - uses_vcs_url
+package:
+  name: gvcf2coverage
+  version: '0.1'
+requirements:
+  build:
+  - make
+  - null
+  host:
+  - htslib
+  run:
+  - htslib
+source:
+  git_rev: 5fe1f218484595d52fd6b6c53fa4d332c518b73e
+  git_url: https://github.com/varda/varda2_preprocessing.git
+  sha256: unused
+test:
+  commands:
+  - gvcf2coverage -h

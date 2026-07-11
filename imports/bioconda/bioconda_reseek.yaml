@@ -1,0 +1,39 @@
+about:
+  dev_url: https://github.com/rcedgar/reseek
+  doc_url: https://drive5.com/reseek/doc.html
+  home: https://github.com/rcedgar/reseek
+  license: GPL-3.0-only
+  license_family: GPL3
+  license_file: LICENSE
+  summary: Protein structure alignment and search algorithm.
+build:
+  number: 0
+  run_exports:
+  - null
+package:
+  name: reseek
+  version: 2.6.1
+requirements:
+  build:
+  - null
+  - null
+  - make
+  - pkg-config
+  host:
+  - libgomp
+  - llvm-openmp
+  run:
+  - libgomp
+  - llvm-openmp
+source:
+- patches:
+  - arm_support.patch
+  - parasail.patch
+  sha256: c8fe1543b3a2899f8caaae5b07a6dab06d05a17aac6ee597892c7452feee7008
+  url: https://github.com/rcedgar/reseek/archive/refs/tags/v2.6.1.tar.gz
+- folder: zlib-1.3.1
+  sha256: 9a93b2b7dfdac77ceba5a558a580e74667dd6fede4585b91eefb60f03b72df23
+  url: https://github.com/madler/zlib/releases/download/v1.3.1/zlib-1.3.1.tar.gz
+test:
+  commands:
+  - reseek -version

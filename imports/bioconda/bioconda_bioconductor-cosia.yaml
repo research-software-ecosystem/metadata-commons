@@ -1,0 +1,81 @@
+about:
+  description: Cross-Species Investigation and Analysis (CoSIA) is a package that
+    provides researchers with an alternative methodology for comparing across species
+    and tissues using normal wild-type RNA-Seq Gene Expression data from Bgee. Using
+    RNA-Seq Gene Expression data, CoSIA provides multiple visualization tools to explore
+    the transcriptome diversity and variation across genes, tissues, and species.
+    CoSIA uses the Coefficient of Variation and Shannon Entropy and Specificity to
+    calculate transcriptome diversity and variation. CoSIA also provides additional
+    conversion tools and utilities to provide a streamlined methodology for cross-species
+    comparison.
+  home: https://bioconductor.org/packages/3.22/bioc/html/CoSIA.html
+  license: MIT + file LICENSE
+  license_file: LICENSE
+  summary: An Investigation Across Different Species and Tissues
+build:
+  noarch: generic
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+package:
+  name: bioconductor-cosia
+  version: 1.10.1
+requirements:
+  host:
+  - bioconductor-annotationdbi >=1.72.0,<1.73.0
+  - bioconductor-annotationtools >=1.84.0,<1.85.0
+  - bioconductor-biomart >=2.66.0,<2.67.0
+  - bioconductor-experimenthub >=3.0.0,<3.1.0
+  - bioconductor-org.ce.eg.db >=3.22.0,<3.23.0
+  - bioconductor-org.dm.eg.db >=3.22.0,<3.23.0
+  - bioconductor-org.dr.eg.db >=3.22.0,<3.23.0
+  - bioconductor-org.hs.eg.db >=3.22.0,<3.23.0
+  - bioconductor-org.mm.eg.db >=3.22.0,<3.23.0
+  - bioconductor-org.rn.eg.db >=3.22.0,<3.23.0
+  - r-base
+  - r-dplyr >=1.0.7
+  - r-ggplot2 >=3.3.5
+  - r-homologene >=1.4.68.19
+  - r-magrittr >=2.0.1
+  - r-plotly >=4.10.0
+  - r-rcolorbrewer >=1.1-2
+  - r-readr >=2.1.1
+  - r-stringr >=1.4.0
+  - r-tibble >=3.1.7
+  - r-tidyr >=1.2.0
+  - r-tidyselect >=1.1.2
+  run:
+  - bioconductor-annotationdbi >=1.72.0,<1.73.0
+  - bioconductor-annotationtools >=1.84.0,<1.85.0
+  - bioconductor-biomart >=2.66.0,<2.67.0
+  - bioconductor-experimenthub >=3.0.0,<3.1.0
+  - bioconductor-org.ce.eg.db >=3.22.0,<3.23.0
+  - bioconductor-org.dm.eg.db >=3.22.0,<3.23.0
+  - bioconductor-org.dr.eg.db >=3.22.0,<3.23.0
+  - bioconductor-org.hs.eg.db >=3.22.0,<3.23.0
+  - bioconductor-org.mm.eg.db >=3.22.0,<3.23.0
+  - bioconductor-org.rn.eg.db >=3.22.0,<3.23.0
+  - r-base
+  - r-dplyr >=1.0.7
+  - r-ggplot2 >=3.3.5
+  - r-homologene >=1.4.68.19
+  - r-magrittr >=2.0.1
+  - r-plotly >=4.10.0
+  - r-rcolorbrewer >=1.1-2
+  - r-readr >=2.1.1
+  - r-stringr >=1.4.0
+  - r-tibble >=3.1.7
+  - r-tidyr >=1.2.0
+  - r-tidyselect >=1.1.2
+source:
+  md5: 4054081e7b29ab1ca7b46848d0dec36b
+  url:
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/CoSIA_1.10.1.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/CoSIA/CoSIA_1.10.1.tar.gz
+  - https://bioarchive.galaxyproject.org/CoSIA_1.10.1.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-cosia/bioconductor-cosia_1.10.1_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('CoSIA')"

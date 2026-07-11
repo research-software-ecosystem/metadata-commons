@@ -1,0 +1,177 @@
+{
+  "@context": {
+    "biotools": "https://bio.tools/ontology/",
+    "brick": "https://brickschema.org/schema/Brick#",
+    "bsc": "http://bioschemas.org/",
+    "bsct": "http://bioschemas.org/types/",
+    "csvw": "http://www.w3.org/ns/csvw#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "dcam": "http://purl.org/dc/dcam/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dcmitype": "http://purl.org/dc/dcmitype/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "doap": "http://usefulinc.com/ns/doap#",
+    "edam": "http://edamontology.org/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "geo": "http://www.opengis.net/ont/geosparql#",
+    "odrl": "http://www.w3.org/ns/odrl/2/",
+    "org": "http://www.w3.org/ns/org#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "prof": "http://www.w3.org/ns/dx/prof/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "qb": "http://purl.org/linked-data/cube#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "sc": "http://schema.org/",
+    "schema": "https://schema.org/",
+    "sh": "http://www.w3.org/ns/shacl#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "sosa": "http://www.w3.org/ns/sosa/",
+    "ssn": "http://www.w3.org/ns/ssn/",
+    "time": "http://www.w3.org/2006/time#",
+    "vann": "http://purl.org/vocab/vann/",
+    "void": "http://rdfs.org/ns/void#",
+    "wgs": "https://www.w3.org/2003/01/geo/wgs84_pos#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "https://bio.tools/orphadata",
+      "@type": "sc:SoftwareApplication",
+      "biotools:primaryContact": "Marc Hanauer",
+      "bsc:input": [
+        {
+          "@id": "_:N12f3e5fd26d2456f9b44c74f070d9f76"
+        },
+        {
+          "@id": "_:N0dc1d9d1a916426cb7e3756b86a20ac6"
+        },
+        {
+          "@id": "_:Naa609dff20f24c988df96ded58a05de8"
+        }
+      ],
+      "bsc:output": [
+        {
+          "@id": "_:Ndf974490a8444f2fb898268f523d894a"
+        },
+        {
+          "@id": "_:Nfcfb6594f5ad4b4ea38f6513e213bc9c"
+        }
+      ],
+      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "sc:additionalType": [
+        "Web API",
+        "Database portal",
+        "SPARQL endpoint"
+      ],
+      "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_3325"
+        },
+        {
+          "@id": "edam:topic_3068"
+        },
+        {
+          "@id": "edam:topic_0089"
+        }
+      ],
+      "sc:citation": [
+        {
+          "@id": "https://doi.org/10.1002/humu.22078"
+        },
+        "pubmed:22422702"
+      ],
+      "sc:contributor": [
+        "Samuel Demarest",
+        "Céline Rousselot"
+      ],
+      "sc:description": "A comprehensive, high-quality and freely-accessible dataset related to rare diseases and orphan drugs, in a reusable format.",
+      "sc:featureList": [
+        {
+          "@id": "edam:operation_0227"
+        },
+        {
+          "@id": "edam:operation_0226"
+        },
+        {
+          "@id": "edam:operation_2990"
+        }
+      ],
+      "sc:isAccessibleForFree": true,
+      "sc:license": "CC-BY-4.0",
+      "sc:name": "Orphadata",
+      "sc:operatingSystem": [
+        "Windows",
+        "Mac",
+        "Linux"
+      ],
+      "sc:provider": [
+        "Orphanet Inserm",
+        "Inserm US14"
+      ],
+      "sc:softwareHelp": {
+        "@id": "http://www.orphadata.org/cgi-bin/index.php/"
+      },
+      "sc:url": "http://www.orphadata.org/"
+    },
+    {
+      "@id": "_:N12f3e5fd26d2456f9b44c74f070d9f76",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1026"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1964"
+      },
+      "sc:name": "Gene symbol"
+    },
+    {
+      "@id": "_:N0dc1d9d1a916426cb7e3756b86a20ac6",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2099"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1964"
+      },
+      "sc:name": "Name"
+    },
+    {
+      "@id": "_:Naa609dff20f24c988df96ded58a05de8",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2299"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1964"
+      },
+      "sc:name": "Gene name"
+    },
+    {
+      "@id": "_:Ndf974490a8444f2fb898268f523d894a",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2800"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3255"
+      },
+      "sc:name": "Orpha number"
+    },
+    {
+      "@id": "_:Nfcfb6594f5ad4b4ea38f6513e213bc9c",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2800"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2332"
+      },
+      "sc:name": "Orpha number"
+    },
+    {
+      "@id": "https://doi.org/10.1002/humu.22078",
+      "@type": "sc:CreativeWork"
+    }
+  ]
+}

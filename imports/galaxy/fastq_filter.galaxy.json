@@ -1,0 +1,286 @@
+{
+    "Description": "Filter FASTQ reads by quality score and length",
+    "EDAM_operations": [],
+    "EDAM_reduced_operations": [],
+    "EDAM_reduced_topics": [],
+    "EDAM_topics": [],
+    "Homepage": "https://github.com/galaxyproject/sequence_utils",
+    "Latest_suite_conda_package_version": "1.2.0",
+    "Number_of_tools_on_APOSTL": 0,
+    "Number_of_tools_on_CIRM-CFBP": 0,
+    "Number_of_tools_on_ChemFlow": 0,
+    "Number_of_tools_on_Coloc-stats": 0,
+    "Number_of_tools_on_GASLINI": 0,
+    "Number_of_tools_on_Galaxy@AuBi": 0,
+    "Number_of_tools_on_Galaxy@Pasteur": 0,
+    "Number_of_tools_on_GalaxyTrakr": 1,
+    "Number_of_tools_on_HyPhy_HIV_NGS_Tools": 0,
+    "Number_of_tools_on_IPK_Galaxy_Blast_Suite": 0,
+    "Number_of_tools_on_ImmPort_Galaxy": 0,
+    "Number_of_tools_on_InteractoMIX": 0,
+    "Number_of_tools_on_Lebanese_University_Galaxy": 0,
+    "Number_of_tools_on_MBAC_Metabiome_Portal": 1,
+    "Number_of_tools_on_MISSISSIPPI": 0,
+    "Number_of_tools_on_Mandoiu_Lab": 0,
+    "Number_of_tools_on_Oqtans": 0,
+    "Number_of_tools_on_Palfinder": 0,
+    "Number_of_tools_on_PepSimili": 0,
+    "Number_of_tools_on_PhagePromotor": 0,
+    "Number_of_tools_on_UseGalaxy.be": 1,
+    "Number_of_tools_on_UseGalaxy.cz": 1,
+    "Number_of_tools_on_UseGalaxy.eu": 1,
+    "Number_of_tools_on_UseGalaxy.fr": 1,
+    "Number_of_tools_on_UseGalaxy.no": 1,
+    "Number_of_tools_on_UseGalaxy.org.au": 1,
+    "Number_of_tools_on_UseGalaxy.org_(Main)": 1,
+    "Number_of_tools_on_Viral_Variant_Visualizer_(VVV)": 0,
+    "Related_Tutorials": [
+        "https://training.galaxyproject.org/training-material/topics/ecology/tutorials/ENA_Biodiv_submission/tutorial.html",
+        "https://training.galaxyproject.org/training-material/topics/microbiome/tutorials/mgnify-amplicon/tutorial.html"
+    ],
+    "Related_Workflows": [
+        {
+            "create_time": "2025-12-16",
+            "latest_version": "1",
+            "link": "https://workflowhub.eu/workflows/2038?version=1",
+            "name": "De novo"
+        },
+        {
+            "create_time": "2025-12-15",
+            "latest_version": "1",
+            "link": "https://workflowhub.eu/workflows/2036?version=1",
+            "name": "Map-to-reference"
+        },
+        {
+            "create_time": "2025-08-11",
+            "latest_version": "1",
+            "link": "https://workflowhub.eu/workflows/1854?version=1",
+            "name": "MGnify's amplicon pipeline v5.0 - Quality control PE"
+        },
+        {
+            "create_time": "2025-08-11",
+            "latest_version": "1",
+            "link": "https://workflowhub.eu/workflows/1850?version=1",
+            "name": "MGnify's amplicon pipeline v5.0 - Quality control SE"
+        },
+        {
+            "create_time": "2025-03-26",
+            "latest_version": "2",
+            "link": "https://workflowhub.eu/workflows/1272?version=2",
+            "name": "mgnify-amplicon-pipeline-v5-quality-control-paired-end/main"
+        },
+        {
+            "create_time": "2025-03-26",
+            "latest_version": "3",
+            "link": "https://workflowhub.eu/workflows/1271?version=3",
+            "name": "mgnify-amplicon-pipeline-v5-quality-control-single-end/main"
+        },
+        {
+            "create_time": "2025-02-06",
+            "latest_version": "1",
+            "link": "https://usegalaxy.eu/published/workflow?id=0609a4b1941d1a68",
+            "name": "MGnify's amplicon pipeline v5.0 - Quality control PE (release v0.1)"
+        },
+        {
+            "create_time": "2025-02-06",
+            "latest_version": "1",
+            "link": "https://usegalaxy.eu/published/workflow?id=d6ff6be33b8bfe85",
+            "name": "MGnify's amplicon pipeline v5.0 - Quality control SE (release v0.1)"
+        },
+        {
+            "create_time": "2025-02-27",
+            "latest_version": "1",
+            "link": "https://usegalaxy.eu/published/workflow?id=76e9cd837ea5e7da",
+            "name": "MGnify's amplicon pipeline v5.0 - Quality control SE (release v0.2)"
+        },
+        {
+            "create_time": "2025-03-13",
+            "latest_version": "1",
+            "link": "https://usegalaxy.eu/published/workflow?id=9fddc44294236e8f",
+            "name": "MGnify's amplicon pipeline v5.0 - Quality control PE (release v0.2)"
+        },
+        {
+            "create_time": "2025-03-13",
+            "latest_version": "1",
+            "link": "https://usegalaxy.eu/published/workflow?id=da19c0eaa757fa39",
+            "name": "MGnify's amplicon pipeline v5.0 - Quality control SE (release v0.3)"
+        },
+        {
+            "create_time": "2024-06-26",
+            "latest_version": "6",
+            "link": "https://usegalaxy.eu/published/workflow?id=c7f34c67c9054234",
+            "name": "Data Submission Workflow 2"
+        },
+        {
+            "create_time": "2023-02-06",
+            "latest_version": "1",
+            "link": "https://usegalaxy.eu/published/workflow?id=f39528391f22aab0",
+            "name": "Workflow constructed from history 'test for training' "
+        },
+        {
+            "create_time": "2020-06-19",
+            "latest_version": "16",
+            "link": "https://usegalaxy.eu/published/workflow?id=e271d95a671182ec",
+            "name": "SARS-CoV-2: IVT reads filter, sample, alignment"
+        },
+        {
+            "create_time": "2025-02-06",
+            "latest_version": "1",
+            "link": "https://usegalaxy.org/published/workflow?id=a71fcbc60caae8b6",
+            "name": "MGnify's amplicon pipeline v5.0 - Quality control PE (release v0.1)"
+        },
+        {
+            "create_time": "2025-02-06",
+            "latest_version": "1",
+            "link": "https://usegalaxy.org/published/workflow?id=5f878c4cc3bff68c",
+            "name": "MGnify's amplicon pipeline v5.0 - Quality control SE (release v0.1)"
+        },
+        {
+            "create_time": "2025-03-06",
+            "latest_version": "1",
+            "link": "https://usegalaxy.org/published/workflow?id=afb67b4b9952f57d",
+            "name": "MGnify's amplicon pipeline v5.0 - Quality control SE (release v0.2)"
+        },
+        {
+            "create_time": "2025-03-13",
+            "latest_version": "1",
+            "link": "https://usegalaxy.org/published/workflow?id=20b7ae4b517a80fd",
+            "name": "MGnify's amplicon pipeline v5.0 - Quality control PE (release v0.2)"
+        },
+        {
+            "create_time": "2025-03-13",
+            "latest_version": "1",
+            "link": "https://usegalaxy.org/published/workflow?id=46f184a0e95f3c1c",
+            "name": "MGnify's amplicon pipeline v5.0 - Quality control SE (release v0.3)"
+        },
+        {
+            "create_time": "2019-04-22",
+            "latest_version": "3",
+            "link": "https://usegalaxy.org/published/workflow?id=3f8e0395007c8e9e",
+            "name": "RNASeq-HISAT-Limma"
+        },
+        {
+            "create_time": "2018-05-15",
+            "latest_version": "19",
+            "link": "https://usegalaxy.org/published/workflow?id=48adcc44fe62a99c",
+            "name": "microRNA Analysis"
+        },
+        {
+            "create_time": "2016-06-15",
+            "latest_version": "1",
+            "link": "https://usegalaxy.org/published/workflow?id=091896754bcc8ec1",
+            "name": "Workflow_Biseq data preparation"
+        },
+        {
+            "create_time": "2015-11-20",
+            "latest_version": "7",
+            "link": "https://usegalaxy.org/published/workflow?id=535484d6482b80f4",
+            "name": "HW5"
+        },
+        {
+            "create_time": "2015-02-21",
+            "latest_version": "2",
+            "link": "https://usegalaxy.org/published/workflow?id=14f62361a15f8a24",
+            "name": "Rearrangement Junction Detection Arabidopsis Plastid"
+        },
+        {
+            "create_time": "2015-07-01",
+            "latest_version": "1",
+            "link": "https://usegalaxy.org/published/workflow?id=3767c9c07462b777",
+            "name": "20150701"
+        },
+        {
+            "create_time": "2015-03-23",
+            "latest_version": "0",
+            "link": "https://usegalaxy.org/published/workflow?id=bb9ee8e05f7042a9",
+            "name": "Rearrangement Junction Detection E. coli"
+        },
+        {
+            "create_time": "2014-09-17",
+            "latest_version": "0",
+            "link": "https://usegalaxy.org/published/workflow?id=5004f1087f5e87db",
+            "name": "Rearrangement Junction Detection Human Mitochondrion"
+        },
+        {
+            "create_time": "2014-08-27",
+            "latest_version": "2",
+            "link": "https://usegalaxy.org/published/workflow?id=4266aa248d5b1ea4",
+            "name": "Rearrangement Junction Detection Arabidopsis Mitochondrion"
+        },
+        {
+            "create_time": "2015-02-28",
+            "latest_version": "0",
+            "link": "https://usegalaxy.org/published/workflow?id=ea69f4fbdbb88c71",
+            "name": "Trim Reads Based on Quality (imported from uploaded file)"
+        },
+        {
+            "create_time": "2015-02-07",
+            "latest_version": "1",
+            "link": "https://usegalaxy.org/published/workflow?id=61d324b1eca6300e",
+            "name": "Lab_3_Bioinformatica"
+        },
+        {
+            "create_time": "2013-03-20",
+            "latest_version": "-1",
+            "link": "https://usegalaxy.org/published/workflow?id=85c3a1fc1d3d3df8",
+            "name": "small RNA"
+        },
+        {
+            "create_time": "2012-02-26",
+            "latest_version": "2",
+            "link": "https://usegalaxy.org/published/workflow?id=344a79d4f12d2cff",
+            "name": "small RNA"
+        },
+        {
+            "create_time": "2011-06-14",
+            "latest_version": "4",
+            "link": "https://usegalaxy.org/published/workflow?id=d860749fd34809d7",
+            "name": "miRNA Secondary Analysis"
+        },
+        {
+            "create_time": "2025-06-16",
+            "latest_version": "3",
+            "link": "https://usegalaxy.org.au/published/workflow?id=8d47811c6154d347",
+            "name": "Grupo# 04_Flujo-de-Trabajo"
+        }
+    ],
+    "Suite_ID": "fastq_filter",
+    "Suite_conda_package": "galaxy_sequence_utils",
+    "Suite_first_commit_date": "2019-06-21",
+    "Suite_owner": "devteam",
+    "Suite_parsed_folder": "https://github.com/galaxyproject/tools-iuc/tree/main/tool_collections/galaxy_sequence_utils/fastq_filter",
+    "Suite_runs_(last_5_years)_(usegalaxy.eu)": 22450,
+    "Suite_runs_(last_5_years)_(usegalaxy.fr)": 436,
+    "Suite_runs_(last_5_years)_(usegalaxy.org)": 35516,
+    "Suite_runs_(last_5_years)_(usegalaxy.org.au)": 4753,
+    "Suite_runs_(last_5_years)_on_main_servers": 63155,
+    "Suite_runs_(usegalaxy.eu)": 29161,
+    "Suite_runs_(usegalaxy.fr)": 436,
+    "Suite_runs_(usegalaxy.org)": 127334,
+    "Suite_runs_(usegalaxy.org.au)": 6800,
+    "Suite_runs_on_main_servers": 163731,
+    "Suite_source": "https://github.com/galaxyproject/tools-iuc/tree/main/tool_collections/galaxy_sequence_utils/fastq_filter",
+    "Suite_users_(last_5_years)_(usegalaxy.eu)": 867,
+    "Suite_users_(last_5_years)_(usegalaxy.fr)": 84,
+    "Suite_users_(last_5_years)_(usegalaxy.org)": 2532,
+    "Suite_users_(last_5_years)_(usegalaxy.org.au)": 219,
+    "Suite_users_(last_5_years)_on_main_servers": 3702,
+    "Suite_users_(usegalaxy.eu)": 1046,
+    "Suite_users_(usegalaxy.fr)": 84,
+    "Suite_users_(usegalaxy.org)": 9682,
+    "Suite_users_(usegalaxy.org.au)": 331,
+    "Suite_users_on_main_servers": 11143,
+    "Suite_version": "1.2",
+    "Suite_version_status": "To update",
+    "ToolShed_categories": [
+        "Fastq Manipulation"
+    ],
+    "Tool_IDs": [
+        "fastq_filter"
+    ],
+    "Tool_output_formats": [],
+    "biii_ID": null,
+    "bio.tool_ID": null,
+    "bio.tool_description": null,
+    "bio.tool_name": null
+}

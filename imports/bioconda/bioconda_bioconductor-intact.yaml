@@ -1,0 +1,47 @@
+about:
+  description: This package integrates colocalization probabilities from colocalization
+    analysis with transcriptome-wide association study (TWAS) scan summary statistics
+    to implicate genes that may be biologically relevant to a complex trait. The probabilistic
+    framework implemented in this package constrains the TWAS scan z-score-based likelihood
+    using a gene-level colocalization probability. Given gene set annotations, this
+    package can estimate gene set enrichment using posterior probabilities from the
+    TWAS-colocalization integration step.
+  home: https://bioconductor.org/packages/3.22/bioc/html/INTACT.html
+  license: GPL-3 + file LICENSE
+  license_file: LICENSE
+  summary: Integrate TWAS and Colocalization Analysis for Gene Set Enrichment Analysis
+build:
+  noarch: generic
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+package:
+  name: bioconductor-intact
+  version: 1.10.0
+requirements:
+  host:
+  - r-base
+  - r-bdsmatrix
+  - r-ggplot2
+  - r-numderiv
+  - r-squarem
+  - r-tidyr
+  run:
+  - r-base
+  - r-bdsmatrix
+  - r-ggplot2
+  - r-numderiv
+  - r-squarem
+  - r-tidyr
+source:
+  md5: c9d4e0c99fb15ff8e6b792fa2def3085
+  url:
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/INTACT_1.10.0.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/INTACT/INTACT_1.10.0.tar.gz
+  - https://bioarchive.galaxyproject.org/INTACT_1.10.0.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-intact/bioconductor-intact_1.10.0_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('INTACT')"

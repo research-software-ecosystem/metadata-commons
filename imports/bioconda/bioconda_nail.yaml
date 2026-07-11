@@ -1,0 +1,33 @@
+about:
+  dev_url: https://github.com/TravisWheelerLab/nail
+  home: https://github.com/TravisWheelerLab/nail
+  license: BSD-3-Clause
+  license_family: BSD
+  license_file: LICENSE
+  summary: Profile Hidden Markov Model (pHMM) biological sequence alignment tool.
+build:
+  number: 0
+  run_exports:
+  - null
+  script: cargo install --no-track --locked --verbose --root "${PREFIX}" --path nail
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+  identifiers:
+  - doi:10.1101/2024.01.27.577580
+package:
+  name: nail
+  version: 0.5.0
+requirements:
+  build:
+  - null
+  - null
+  run:
+  - mmseqs2
+source:
+  sha256: b29fbce8d01c1b9949cf33f58d0ece01a381a0ebb2fa785929b70ec37fb2f4c3
+  url: https://github.com/TravisWheelerLab/nail/archive/refs/tags/nail-v0.5.0.tar.gz
+test:
+  commands:
+  - nail --help

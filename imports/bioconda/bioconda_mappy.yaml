@@ -1,0 +1,33 @@
+about:
+  home: https://github.com/lh3/minimap2
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE.txt
+  summary: Minimap2 Python binding
+build:
+  number: 0
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+package:
+  name: mappy
+  version: '2.3'
+requirements:
+  build:
+  - null
+  host:
+  - python
+  - cython
+  - pip
+  - zlib
+  run:
+  - python
+source:
+  sha256: a25448004558a28cb0d74fb1e55b6ffe9a78aa15dd6b2763630fbbabbaa97a27
+  url: https://pypi.io/packages/source/m/mappy/mappy-2.30.tar.gz
+test:
+  imports:
+  - mappy

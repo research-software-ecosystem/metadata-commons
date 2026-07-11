@@ -1,0 +1,41 @@
+about:
+  description: Processing and Analysis of Agilent microRNA data
+  home: https://bioconductor.org/packages/3.22/bioc/html/AgiMicroRna.html
+  license: GPL-3
+  license_file: /lib/R/share/licenses/GPL-3
+  summary: Processing and Differential Expression Analysis of Agilent microRNA chips
+build:
+  noarch: generic
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+package:
+  name: bioconductor-agimicrorna
+  version: 2.60.0
+requirements:
+  host:
+  - bioconductor-affy >=1.88.0,<1.89.0
+  - bioconductor-affycoretools >=1.82.0,<1.83.0
+  - bioconductor-biobase >=2.70.0,<2.71.0
+  - bioconductor-limma >=3.66.0,<3.67.0
+  - bioconductor-preprocesscore >=1.72.0,<1.73.0
+  - r-base
+  run:
+  - bioconductor-affy >=1.88.0,<1.89.0
+  - bioconductor-affycoretools >=1.82.0,<1.83.0
+  - bioconductor-biobase >=2.70.0,<2.71.0
+  - bioconductor-limma >=3.66.0,<3.67.0
+  - bioconductor-preprocesscore >=1.72.0,<1.73.0
+  - r-base
+source:
+  md5: e273adf8c7691e8a67897166ae451f54
+  url:
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/AgiMicroRna_2.60.0.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/AgiMicroRna/AgiMicroRna_2.60.0.tar.gz
+  - https://bioarchive.galaxyproject.org/AgiMicroRna_2.60.0.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-agimicrorna/bioconductor-agimicrorna_2.60.0_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('AgiMicroRna')"

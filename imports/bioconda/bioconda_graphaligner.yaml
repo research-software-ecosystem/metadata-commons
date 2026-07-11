@@ -1,0 +1,46 @@
+about:
+  dev_url: https://github.com/maickrau/GraphAligner
+  doc_url: https://github.com/maickrau/GraphAligner/blob/v1.0.20/README.md
+  home: https://github.com/maickrau/GraphAligner
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE.md
+  summary: Sequence to graph aligner for long reads.
+build:
+  number: 1
+  run_exports:
+  - null
+extra:
+  identifiers:
+  - doi:10.1186/s13059-020-02157-2
+package:
+  name: graphaligner
+  version: 1.0.20
+requirements:
+  build:
+  - make
+  - null
+  - pkg-config
+  host:
+  - jemalloc ==5.2.0
+  - zlib
+  - sparsehash
+  - libdivsufsort
+  - protobuf <5
+  - sdsl-lite
+  - bamtools ==2.5.3
+  run:
+  - protobuf <5
+  - jemalloc ==5.2.0
+  - libdivsufsort
+  - bamtools
+source:
+  patches:
+  - version.patch
+  - linux_link.patch
+  - osx_link.patch
+  sha256: b5d95302fac6f433994e0b62e3f19648120aee0e0ee9a3c392f42b4a749346bf
+  url: https://github.com/user-attachments/files/17976913/GraphAligner.tar.gz
+test:
+  commands:
+  - (GraphAligner -h || true) | grep GraphAligner

@@ -1,0 +1,68 @@
+about:
+  description: The package is user friendly interface based on the cgdsr and other
+    modeling packages to explore, compare, and analyse all available Cancer Data (Clinical
+    data, Gene Mutation, Gene Methylation, Gene Expression, Protein Phosphorylation,
+    Copy Number Alteration) hosted by the Computational Biology Center at Memorial-Sloan-Kettering
+    Cancer Center (MSKCC).
+  home: https://bioconductor.org/packages/3.22/bioc/html/canceR.html
+  license: GPL-2
+  license_file: /lib/R/share/licenses/GPL-2
+  summary: A Graphical User Interface for accessing and modeling the Cancer Genomics
+    Data of MSKCC
+build:
+  noarch: generic
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+package:
+  name: bioconductor-cancer
+  version: 1.44.0
+requirements:
+  host:
+  - bioconductor-biobase >=2.70.0,<2.71.0
+  - bioconductor-cbioportaldata >=2.22.0,<2.23.0
+  - bioconductor-genetclassifier >=1.50.0,<1.51.0
+  - bioconductor-gseabase >=1.72.0,<1.73.0
+  - bioconductor-phenotest >=1.58.0,<1.59.0
+  - r-base
+  - r-circlize
+  - r-dplyr
+  - r-formula
+  - r-plyr
+  - r-r.methodss3
+  - r-r.oo
+  - r-rpart
+  - r-runit
+  - r-survival
+  - r-tidyr
+  - r-tkrplot
+  run:
+  - bioconductor-biobase >=2.70.0,<2.71.0
+  - bioconductor-cbioportaldata >=2.22.0,<2.23.0
+  - bioconductor-genetclassifier >=1.50.0,<1.51.0
+  - bioconductor-gseabase >=1.72.0,<1.73.0
+  - bioconductor-phenotest >=1.58.0,<1.59.0
+  - r-base
+  - r-circlize
+  - r-dplyr
+  - r-formula
+  - r-plyr
+  - r-r.methodss3
+  - r-r.oo
+  - r-rpart
+  - r-runit
+  - r-survival
+  - r-tidyr
+  - r-tkrplot
+source:
+  md5: 211bf388a571156bb7062877b94ded60
+  url:
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/canceR_1.44.0.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/canceR/canceR_1.44.0.tar.gz
+  - https://bioarchive.galaxyproject.org/canceR_1.44.0.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-cancer/bioconductor-cancer_1.44.0_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('canceR')"

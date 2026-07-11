@@ -1,0 +1,29 @@
+package: phylonium
+distribution: debian
+release: sid
+component: main
+version: '1.7'
+source: phylonium
+homepage: https://github.com/EvolBioInf/phylonium
+license: unknown
+blend: debian-med
+description_md5: a4b999c60e439b64fe841796b996fd33
+topics:
+- Phylogenetics
+edam_scopes:
+- name: summary
+  input:
+  - data: Sequence
+    formats:
+    - FASTA
+  output:
+  - data: Sequence distance matrix
+    formats:
+    - Phylip distance matrix
+  function:
+  - Sequence distance matrix generation
+popcon:
+- insts: 106
+  olde: 80
+  recent: 23
+  vote: 3

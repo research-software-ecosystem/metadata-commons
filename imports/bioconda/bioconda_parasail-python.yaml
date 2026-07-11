@@ -1,0 +1,64 @@
+about:
+  dev_url: https://github.com/jeffdaily/parasail-python
+  doc_url: https://github.com/jeffdaily/parasail-python/blob/v1.3.4c1/README.rst
+  home: https://github.com/jeffdaily/parasail-python
+  license: BSD-3-Clause
+  license_family: BSD
+  license_file: COPYING
+  summary: Python bindings for the parasail C library containing implementations of
+    pairwise sequence alignment algorithms.
+build:
+  number: 6
+  run_exports:
+  - null
+  script:
+  - export LC_ALL="en_US.UTF-8"
+  - export CPPFLAGS="${CPPFLAGS} -I${PREFIX}/include"
+  - export LDFLAGS="${LDFLAGS} -L${PREFIX}/lib"
+  - export CFLAGS="${CFLAGS} -O3"
+  - sed -i.bak '1 s|^.*$|#!/usr/bin/env perl|g' $PREFIX/bin/aclocal
+  - sed -i.bak '1 s|^.*$|#!/usr/bin/env perl|g' $PREFIX/bin/automake
+  - sed -i.bak '1 s|^.*$|#!/usr/bin/env perl|g' $PREFIX/bin/autom4te
+  - sed -i.bak '1 s|^.*$|#!/usr/bin/env perl|g' $PREFIX/bin/autoheader
+  - sed -i.bak '1 s|^.*$|#!/usr/bin/env perl|g' $PREFIX/bin/autoreconf
+  - sed -i.bak '1 s|^.*$|#!/usr/bin/env perl|g' $PREFIX/bin/ifnames
+  - sed -i.bak '1 s|^.*$|#!/usr/bin/env perl|g' $PREFIX/bin/autoscan
+  - sed -i.bak '1 s|^.*$|#!/usr/bin/env perl|g' $PREFIX/bin/autoupdate
+  - -m pip install . --no-deps --no-build-isolation --no-cache-dir --use-pep517 -vvv
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+  identifiers:
+  - doi:10.1186/s12859-016-0930-z
+package:
+  name: parasail-python
+  version: 1.3.4
+requirements:
+  build:
+  - null
+  - null
+  - make
+  - autoconf
+  - automake
+  - libtool
+  - pkg-config
+  - gnuconfig
+  host:
+  - python
+  - pip
+  - setuptools
+  - wheel
+  - zlib
+  run:
+  - python
+  - numpy
+source:
+  patches:
+  - darwin-libtool-name.patch
+  - 0001-setup.py.patch
+  sha256: d6a7035dfae3ef5aafdd7e6915711214c22b572ea059fa69d9d7ecbfb9b61b0f
+  url: https://pypi.org/packages/source/p/parasail/parasail-1.3.4.tar.gz
+test:
+  imports:
+  - parasail

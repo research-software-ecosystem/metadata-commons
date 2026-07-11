@@ -1,0 +1,58 @@
+about:
+  Description: "Set of Linux utilities to validate and manipulate fastq files. It\
+    \ also \nincludes a set of programs to preprocess barcodes (namely UMIs, cells\
+    \ \nand samples), add the barcodes as tags in BAM files and count UMIs. \n"
+  dev_url: https://github.com/nunofonseca/fastq_utils
+  doc_url: https://github.com/nunofonseca/fastq_utils/blob/0.25.3/README.md
+  home: https://github.com/nunofonseca/fastq_utils
+  license: GPL-3.0-only
+  license_family: GPL3
+  license_file: LICENSE
+  summary: Validation and manipulation of FASTQ files, scRNA-seq barcode pre-processing
+    and UMI quantification.
+build:
+  number: 0
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+  recipe-maintainers:
+  - pinin4fjords
+  - nunofonseca
+package:
+  name: fastq_utils
+  version: 0.25.3
+requirements:
+  build:
+  - null
+  - make
+  host:
+  - zlib
+  - bzip2
+  - xz
+  - ncurses
+  - wget
+  - tar
+  - samtools 0.1.19 =h20b1175_10
+  run:
+  - samtools
+source:
+  patches:
+  - 0001-Makefile.patch
+  - 0002-install_deps.patch
+  sha256: 73dcefe69c45986d1b2f4e0f66f736e000504f2f3d904f1054840319d3944bb7
+  url: https://github.com/nunofonseca/fastq_utils/archive/0.25.3.tar.gz
+test:
+  commands:
+  - test -x ${PREFIX}/bin/fastq_info
+  - test -x ${PREFIX}/bin/fastq_filterpair
+  - test -x ${PREFIX}/bin/fastq_filter_n
+  - test -x ${PREFIX}/bin/fastq_num_reads
+  - test -x ${PREFIX}/bin/fastq_trim_poly_at
+  - test -x ${PREFIX}/bin/fastq_pre_barcodes
+  - test -x ${PREFIX}/bin/bam_add_tags
+  - test -x ${PREFIX}/bin/bam_umi_count
+  - test -x ${PREFIX}/bin/fastq2bam
+  - test -x ${PREFIX}/bin/bam2fastq

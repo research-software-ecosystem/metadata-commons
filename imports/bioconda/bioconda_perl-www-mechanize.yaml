@@ -1,0 +1,48 @@
+about:
+  doc_url: https://metacpan.org/pod/WWW::Mechanize
+  home: https://metacpan.org/pod/WWW::Mechanize
+  license: Perl_5
+  summary: Handy web browsing in a Perl object.
+build:
+  noarch: generic
+  number: 0
+  run_exports:
+  - null
+package:
+  name: perl-www-mechanize
+  version: '2.22'
+requirements:
+  build:
+  - make
+  host:
+  - perl
+  - perl-http-server-simple
+  - perl-module-build
+  - perl-html-form
+  - perl-cgi
+  - perl-extutils-makemaker
+  - perl-path-tiny
+  - perl-test-deep
+  - perl-test-fatal
+  - perl-test-output
+  - perl-test-taint
+  - perl-test-warnings
+  - perl-test-memory-cycle
+  - perl-encode-locale
+  - perl-html-tree
+  - perl-libwww-perl
+  run:
+  - perl
+  - perl-http-server-simple
+  - perl-html-form
+  - perl-cgi
+  - perl-encode-locale
+  - perl-module-build
+  - perl-html-tree
+  - perl-libwww-perl
+source:
+  sha256: 2ed28cbeea54de40d08e88eb52f4dd5fcb05062efb6b2feb9da8376ca4308e60
+  url: https://cpan.metacpan.org/authors/id/O/OA/OALDERS/WWW-Mechanize-2.22.tar.gz
+test:
+  imports:
+  - WWW::Mechanize

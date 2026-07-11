@@ -1,0 +1,48 @@
+about:
+  home: https://github.com/panoptes-organization/panoptes
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE.md
+  summary: 'panoptes: monitor computational workflows in real time'
+build:
+  entry_points:
+  - panoptes=panoptes:main
+  noarch: python
+  number: 0
+  run_exports:
+  - null
+  script: ' -m pip install . --no-deps --no-build-isolation -vv'
+extra:
+  recipe-maintainers:
+  - fgypas
+package:
+  name: panoptes-ui
+  version: 1.1.1
+requirements:
+  host:
+  - flask >=1.1.1
+  - humanfriendly >=4.18
+  - marshmallow >=3.0.1
+  - pip
+  - python >=3.11
+  - setuptools
+  - sqlalchemy >=1.3.7
+  run:
+  - flask >=1.1.1
+  - humanfriendly >=4.18
+  - marshmallow >=3.0.1
+  - python >=3.11
+  - sqlalchemy >=1.3.7
+source:
+  sha256: b054614e1be1bdeaa8fc43b7a53ebeebc083767faa42047103741e9711c592aa
+  url: https://pypi.io/packages/source/p/panoptes-ui/panoptes_ui-1.1.1.tar.gz
+test:
+  commands:
+  - panoptes --help
+  imports:
+  - panoptes
+  - panoptes.routes
+  - panoptes.server_utilities
+  - panoptes.static
+  - panoptes.static.src
+  - panoptes.tests

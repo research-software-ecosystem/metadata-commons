@@ -1,0 +1,93 @@
+about:
+  description: Visualization of next generation sequencing (NGS) data is essential
+    for interpreting high-throughput genomics experiment results. 'GenomicPlot' facilitates
+    plotting of NGS data in various formats (bam, bed, wig and bigwig); both coverage
+    and enrichment over input can be computed and displayed with respect to genomic
+    features (such as UTR, CDS, enhancer), and user defined genomic loci or regions.
+    Statistical tests on signal intensity within user defined regions of interest
+    can be performed and represented as boxplots or bar graphs. Parallel processing
+    is used to speed up computation on multicore platforms. In addition to genomic
+    plots which is suitable for displaying of coverage of genomic DNA (such as ChIPseq
+    data), metagenomic (without introns) plots can also be made for RNAseq or CLIPseq
+    data as well.
+  home: https://bioconductor.org/packages/3.22/bioc/html/GenomicPlot.html
+  license: GPL-2
+  license_file: /lib/R/share/licenses/GPL-2
+  summary: Plot profiles of next generation sequencing data in genomic features
+build:
+  noarch: generic
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+package:
+  name: bioconductor-genomicplot
+  version: 1.8.1
+requirements:
+  host:
+  - bioconductor-biocgenerics >=0.56.0,<0.57.0
+  - bioconductor-complexheatmap >=2.26.0,<2.27.0
+  - bioconductor-edger >=4.8.0,<4.9.0
+  - bioconductor-genomation >=1.42.0,<1.43.0
+  - bioconductor-genomicalignments >=1.46.0,<1.47.0
+  - bioconductor-genomicfeatures >=1.62.0,<1.63.0
+  - bioconductor-genomicranges >=1.62.0,<1.63.0
+  - bioconductor-iranges >=2.44.0,<2.45.0
+  - bioconductor-plyranges >=1.30.0,<1.31.0
+  - bioconductor-rcas >=1.36.0,<1.37.0
+  - bioconductor-rsamtools >=2.26.0,<2.27.0
+  - bioconductor-rtracklayer >=1.70.0,<1.71.0
+  - bioconductor-seqinfo >=1.0.0,<1.1.0
+  - bioconductor-txdbmaker >=1.6.0,<1.7.0
+  - r-base
+  - r-circlize
+  - r-cowplot >=1.1.1
+  - r-dplyr
+  - r-ggplot2 >=3.3.5
+  - r-ggplotify
+  - r-ggpubr
+  - r-ggsci >=2.9
+  - r-ggsignif >=0.6.3
+  - r-scales >=1.2.0
+  - r-tidyr
+  - r-venndiagram
+  - r-viridis
+  run:
+  - bioconductor-biocgenerics >=0.56.0,<0.57.0
+  - bioconductor-complexheatmap >=2.26.0,<2.27.0
+  - bioconductor-edger >=4.8.0,<4.9.0
+  - bioconductor-genomation >=1.42.0,<1.43.0
+  - bioconductor-genomicalignments >=1.46.0,<1.47.0
+  - bioconductor-genomicfeatures >=1.62.0,<1.63.0
+  - bioconductor-genomicranges >=1.62.0,<1.63.0
+  - bioconductor-iranges >=2.44.0,<2.45.0
+  - bioconductor-plyranges >=1.30.0,<1.31.0
+  - bioconductor-rcas >=1.36.0,<1.37.0
+  - bioconductor-rsamtools >=2.26.0,<2.27.0
+  - bioconductor-rtracklayer >=1.70.0,<1.71.0
+  - bioconductor-seqinfo >=1.0.0,<1.1.0
+  - bioconductor-txdbmaker >=1.6.0,<1.7.0
+  - r-base
+  - r-circlize
+  - r-cowplot >=1.1.1
+  - r-dplyr
+  - r-ggplot2 >=3.3.5
+  - r-ggplotify
+  - r-ggpubr
+  - r-ggsci >=2.9
+  - r-ggsignif >=0.6.3
+  - r-scales >=1.2.0
+  - r-tidyr
+  - r-venndiagram
+  - r-viridis
+source:
+  md5: 0b729b0c91d3c7a28903cc541fd0b11a
+  url:
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/GenomicPlot_1.8.1.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/GenomicPlot/GenomicPlot_1.8.1.tar.gz
+  - https://bioarchive.galaxyproject.org/GenomicPlot_1.8.1.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-genomicplot/bioconductor-genomicplot_1.8.1_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('GenomicPlot')"

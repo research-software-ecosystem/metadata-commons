@@ -1,0 +1,31 @@
+about:
+  dev_url: https://github.com/statgen/libStatGen
+  home: https://genome.sph.umich.edu/wiki/C++_Library:_libStatGen
+  license: GPL-3.0-or-later
+  license_family: GPL3
+  license_file: copyrights/LICENSE.txt
+  summary: Useful set of classes for creating statistical genetic programs.
+build:
+  number: 7
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+package:
+  name: libstatgen
+  version: 1.0.15
+requirements:
+  build:
+  - make
+  - null
+  - pkg-config
+  host:
+  - zlib
+source:
+  sha256: 075dcd891409c48d76c0c66186c0cc479bc3cd50bba093e7f318e1d1d19961ff
+  url: https://github.com/statgen/libStatGen/archive/v1.0.15.tar.gz
+test:
+  commands:
+  - test -f ${PREFIX}/lib/libStatGen.a

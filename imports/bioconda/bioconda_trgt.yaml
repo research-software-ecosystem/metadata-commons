@@ -1,0 +1,30 @@
+about:
+  home: https://github.com/PacificBiosciences/trgt
+  license: Pacific Biosciences Software License (https://github.com/PacificBiosciences/trgt/blob/main/LICENSE.md)
+  summary: Tandem repeat genotyping and visualization from PacBio HiFi data
+build:
+  noarch: false
+  number: 0
+  run_exports:
+  - null
+  script:
+  - mkdir -p ${PREFIX}/bin
+  - cp trgt ${PREFIX}/bin/
+  - chmod +x ${PREFIX}/bin/trgt
+  skip: true
+extra:
+  recipe-maintainers:
+  - zeeev
+  - williamrowell
+  - tmokveld
+  skip-lints:
+  - should_be_noarch_generic
+package:
+  name: trgt
+  version: 5.1.0
+source:
+- sha256: 2ab9ddb0f52516ea92de66c336c151dc3bd5bb22494e2b9dcb8bffa9eb710f63
+  url: https://github.com/PacificBiosciences/trgt/releases/download/v5.1.0/trgt-v5.1.0-x86_64-unknown-linux-gnu.tar.gz
+test:
+  commands:
+  - trgt --version

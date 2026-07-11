@@ -1,0 +1,58 @@
+about:
+  description: This package implements four major subtype classifiers for high-grade
+    serous (HGS) ovarian cancer as described by Helland et al. (PLoS One, 2011), Bentink
+    et al. (PLoS One, 2012), Verhaak et al. (J Clin Invest, 2013), and Konecny et
+    al. (J Natl Cancer Inst, 2014). In addition, the package implements a consensus
+    classifier, which consolidates and improves on the robustness of the proposed
+    subtype classifiers, thereby providing reliable stratification of patients with
+    HGS ovarian tumors of clearly defined subtype.
+  home: https://bioconductor.org/packages/3.22/bioc/html/consensusOV.html
+  license: Artistic-2.0
+  summary: Gene expression-based subtype classification for high-grade serous ovarian
+    cancer
+build:
+  noarch: generic
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+extra:
+  parent_recipe:
+    name: bioconductor-consensusov
+    path: recipes/bioconductor-consensusov
+    version: 1.2.0
+package:
+  name: bioconductor-consensusov
+  version: 1.32.0
+requirements:
+  host:
+  - bioconductor-biobase >=2.70.0,<2.71.0
+  - bioconductor-biocparallel >=1.44.0,<1.45.0
+  - bioconductor-genefu >=2.42.0,<2.43.0
+  - bioconductor-gsva >=2.4.0,<2.5.0
+  - bioconductor-limma >=3.66.0,<3.67.0
+  - r-base
+  - r-gdata
+  - r-matrixstats
+  - r-randomforest
+  run:
+  - bioconductor-biobase >=2.70.0,<2.71.0
+  - bioconductor-biocparallel >=1.44.0,<1.45.0
+  - bioconductor-genefu >=2.42.0,<2.43.0
+  - bioconductor-gsva >=2.4.0,<2.5.0
+  - bioconductor-limma >=3.66.0,<3.67.0
+  - r-base
+  - r-gdata
+  - r-matrixstats
+  - r-randomforest
+source:
+  md5: b922bb9935762d89bc907d77c6f898f0
+  url:
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/consensusOV_1.32.0.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/consensusOV/consensusOV_1.32.0.tar.gz
+  - https://bioarchive.galaxyproject.org/consensusOV_1.32.0.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-consensusov/bioconductor-consensusov_1.32.0_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('consensusOV')"

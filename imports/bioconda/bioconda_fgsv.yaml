@@ -1,0 +1,29 @@
+about:
+  home: https://github.com/fulcrumgenomics/fgsv
+  license: MIT
+  summary: Tools to find evidence for structural variation.
+build:
+  noarch: generic
+  number: 1
+  run_exports:
+  - null
+extra:
+  identifiers:
+  - DOI:10.5281/zenodo.10452647
+  recipe-maintainers:
+  - nh13
+  - tfenne
+package:
+  name: fgsv
+  version: 0.2.1
+requirements:
+  run:
+  - openjdk >=8
+  - python
+source:
+  sha256: e3f15c7f1a97c009be65663405194faedf473c2636a3c3d742f463030caba860
+  url: https://github.com/fulcrumgenomics/fgsv/releases/download/0.2.1/fgsv-0.2.1.jar
+test:
+  commands:
+  - fgsv 2>&1 | grep "SvPileup"
+  - fgsv --version 2>&1 | grep "Version"

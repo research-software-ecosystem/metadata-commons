@@ -1,0 +1,53 @@
+about:
+  description: This package estimates epigenetic age in skeletal muscle, using DNA
+    methylation data generated with the Illumina Infinium technology (HM27, HM450
+    and HMEPIC).
+  home: https://bioconductor.org/packages/3.22/bioc/html/MEAT.html
+  license: MIT + file LICENSE
+  license_file: LICENSE
+  summary: Muscle Epigenetic Age Test
+build:
+  noarch: generic
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+package:
+  name: bioconductor-meat
+  version: 1.22.0
+requirements:
+  host:
+  - bioconductor-impute >=1.84.0,<1.85.0
+  - bioconductor-minfi >=1.56.0,<1.57.0
+  - bioconductor-summarizedexperiment >=1.40.0,<1.41.0
+  - bioconductor-watermelon >=2.16.0,<2.17.0
+  - r-base
+  - r-dplyr
+  - r-dynamictreecut >=1.63
+  - r-glmnet >=2.0
+  - r-rpmm >=1.25
+  - r-stringr
+  - r-tibble
+  run:
+  - bioconductor-impute >=1.84.0,<1.85.0
+  - bioconductor-minfi >=1.56.0,<1.57.0
+  - bioconductor-summarizedexperiment >=1.40.0,<1.41.0
+  - bioconductor-watermelon >=2.16.0,<2.17.0
+  - r-base
+  - r-dplyr
+  - r-dynamictreecut >=1.63
+  - r-glmnet >=2.0
+  - r-rpmm >=1.25
+  - r-stringr
+  - r-tibble
+source:
+  md5: 72a91b7372956a03de3ae97fcb92370a
+  url:
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/MEAT_1.22.0.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/MEAT/MEAT_1.22.0.tar.gz
+  - https://bioarchive.galaxyproject.org/MEAT_1.22.0.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-meat/bioconductor-meat_1.22.0_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('MEAT')"

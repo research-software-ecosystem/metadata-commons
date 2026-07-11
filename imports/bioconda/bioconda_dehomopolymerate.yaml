@@ -1,0 +1,27 @@
+about:
+  home: https://github.com/tseemann/dehomopolymerate
+  license: GPL-3.0-or-later
+  license_file: LICENSE
+  summary: Collapse homopolymer runs in FASTQ files
+build:
+  number: 0
+  run_exports:
+  - null
+package:
+  name: dehomopolymerate
+  version: 0.4.1
+requirements:
+  build:
+  - null
+  - make
+  host:
+  - zlib
+  run:
+  - zlib
+source:
+  sha256: 7cfec4dc0da0829ebbaed9200ea4d96ab1165f068470871d9513d42a462d8880
+  url: https://github.com/tseemann/dehomopolymerate/archive/v0.4.1.tar.gz
+test:
+  commands:
+  - dehomopolymerate -v | grep '0.4.1'
+  - dehomopolymerate -h

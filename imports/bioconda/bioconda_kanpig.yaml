@@ -1,0 +1,33 @@
+about:
+  dev_url: https://github.com/ACEnglish/kanpig
+  doc_url: https://github.com/ACEnglish/kanpig/wiki
+  home: https://github.com/ACEnglish/kanpig
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE
+  summary: A fast tool for genotyping structural variants with long-reads.
+build:
+  number: 0
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+  recipe-maintainers:
+  - ldenti
+package:
+  name: kanpig
+  version: 2.0.2
+requirements:
+  build:
+  - null
+  - make
+  - null
+  - cargo-bundle-licenses
+source:
+  sha256: 7f648a570defdb31d2dd2af55df524f76bdbde995f758b795e489c037203cc68
+  url: https://github.com/ACEnglish/kanpig/archive/refs/tags/v2.0.2.tar.gz
+test:
+  commands:
+  - kanpig --help

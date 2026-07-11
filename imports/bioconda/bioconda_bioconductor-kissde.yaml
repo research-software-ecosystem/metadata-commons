@@ -1,0 +1,61 @@
+about:
+  description: Retrieves condition-specific variants in RNA-seq data (SNVs, alternative-splicings,
+    indels). It has been developed as a post-treatment of 'KisSplice' but can also
+    be used with user's own data.
+  home: https://bioconductor.org/packages/3.22/bioc/html/kissDE.html
+  license: GPL (>= 2)
+  license_file: /lib/R/share/licenses/GPL-3
+  summary: Retrieves Condition-Specific Variants in RNA-Seq Data
+build:
+  noarch: generic
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+package:
+  name: bioconductor-kissde
+  version: 1.30.0
+requirements:
+  host:
+  - bioconductor-biobase >=2.70.0,<2.71.0
+  - bioconductor-deseq2 >=1.50.0,<1.51.0
+  - bioconductor-dss >=2.58.0,<2.59.0
+  - r-ade4
+  - r-aods3
+  - r-base
+  - r-doparallel
+  - r-dt
+  - r-factoextra
+  - r-foreach
+  - r-ggplot2
+  - r-gplots
+  - r-matrixstats
+  - r-shiny
+  - r-shinycssloaders
+  run:
+  - bioconductor-biobase >=2.70.0,<2.71.0
+  - bioconductor-deseq2 >=1.50.0,<1.51.0
+  - bioconductor-dss >=2.58.0,<2.59.0
+  - r-ade4
+  - r-aods3
+  - r-base
+  - r-doparallel
+  - r-dt
+  - r-factoextra
+  - r-foreach
+  - r-ggplot2
+  - r-gplots
+  - r-matrixstats
+  - r-shiny
+  - r-shinycssloaders
+source:
+  md5: b2a3d9836a5a84052f59f60ebf5899d3
+  url:
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/kissDE_1.30.0.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/kissDE/kissDE_1.30.0.tar.gz
+  - https://bioarchive.galaxyproject.org/kissDE_1.30.0.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-kissde/bioconductor-kissde_1.30.0_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('kissDE')"

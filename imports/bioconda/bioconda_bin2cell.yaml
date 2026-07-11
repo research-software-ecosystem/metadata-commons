@@ -1,0 +1,38 @@
+about:
+  home: https://github.com/Teichlab/bin2cell
+  license: MIT
+  license_file: LICENSE
+  summary: Join subcellular Visium HD bins into cells
+build:
+  noarch: python
+  number: 0
+  run_exports:
+  - null
+  script: -m pip install . -vv --no-deps --no-build-isolation
+extra:
+  recipe-maintainers:
+  - camlloyd
+package:
+  name: bin2cell
+  version: 0.3.4
+requirements:
+  host:
+  - python >=3.7
+  - flit-core >=3.2,<4
+  - pip
+  run:
+  - python >=3.7
+  - scanpy
+  - opencv
+  - scikit-image
+  - fastparquet
+source:
+  sha256: c035a8dd591425d334dbf37cd7a60ed1f1a9f843e02f1979d40fd364f70f1151
+  url: https://pypi.org/packages/source/b/bin2cell/bin2cell-0.3.4.tar.gz
+test:
+  commands:
+  - pip check
+  imports:
+  - bin2cell
+  requires:
+  - pip

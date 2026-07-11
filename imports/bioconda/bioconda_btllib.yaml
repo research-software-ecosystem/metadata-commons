@@ -1,0 +1,65 @@
+about:
+  dev_url: https://github.com/BirolLab/btllib
+  doc_url: https://birollab.github.io/btllib/
+  home: https://github.com/BirolLab/btllib
+  license: GPL-3.0-or-later
+  license_family: GPL3
+  license_file: LICENSE
+  summary: Bioinformatics common code library in C++ with Python wrappers, from Bioinformatics
+    Technology Lab.
+build:
+  number: 0
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+  identifiers:
+  - doi:10.21105/joss.04720
+  - doi:10.1093/bioadv/vbad162
+package:
+  name: btllib
+  version: 1.7.8
+requirements:
+  build:
+  - null
+  - null
+  - python
+  - cmake <4
+  - meson
+  - ninja
+  - pkg-config
+  - setuptools
+  host:
+  - python
+  - pip
+  - llvm-openmp
+  - libgomp
+  - setuptools
+  - samtools
+  - swig
+  - doxygen
+  - pigz
+  - gzip
+  - tar
+  - bzip2
+  - xz
+  - lrzip
+  - zip
+  - wget
+  run:
+  - python
+  - samtools
+  - llvm-openmp
+  - libgomp
+source:
+  patches:
+  - sdsl-louds-tree-fix.patch
+  sha256: cd213d20a971ae3441551dd61b0e46a08559e3d9da19cb59ee8dc3397807f121
+  url: https://github.com/BirolLab/btllib/releases/download/v1.7.8/btllib-1.7.8.tar.gz
+test:
+  commands:
+  - indexlr --help
+  imports:
+  - btllib

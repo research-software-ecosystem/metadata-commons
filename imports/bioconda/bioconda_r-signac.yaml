@@ -1,0 +1,104 @@
+about:
+  dev_url: https://github.com/timoast/signac
+  doc_url: https://satijalab.org/signac
+  home: https://github.com/timoast/signac
+  license: MIT
+  license_family: MIT
+  license_file: /lib/R/share/licenses/MIT
+  summary: A framework for the analysis and exploration of single-cell chromatin data.
+    The 'Signac' package contains functions for quantifying single-cell chromatin
+    data, computing per-cell quality control metrics, dimension reduction and normalization,
+    visualization, and DNA sequence motif analysis.
+build:
+  number: 1
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+  identifiers:
+  - doi:10.1016/j.cell.2019.05.031
+  skip-lints:
+  - compiler_needs_stdlib_c
+package:
+  name: r-signac
+  version: 1.17.1
+requirements:
+  build:
+  - null
+  - null
+  - make
+  - pkg-config
+  host:
+  - r-base
+  - bioconductor-biocgenerics
+  - bioconductor-fgsea
+  - bioconductor-genomeinfodb >=1.29.3
+  - bioconductor-genomicranges
+  - bioconductor-iranges
+  - bioconductor-seqinfo
+  - bioconductor-sparsematrixstats
+  - r-matrix
+  - r-rcpp
+  - r-rcpproll
+  - bioconductor-rsamtools
+  - bioconductor-s4vectors
+  - r-seuratobject >=5.0.2
+  - r-data.table
+  - r-dplyr >=1.0.0
+  - r-fastmatch
+  - r-future
+  - r-future.apply
+  - r-ggplot2
+  - r-patchwork
+  - r-pbapply
+  - r-rlang
+  - r-rspectra
+  - r-scales
+  - r-stringi
+  - r-tidyr
+  - r-tidyselect
+  - r-vctrs
+  - zlib
+  run:
+  - r-base
+  - bioconductor-biocgenerics
+  - bioconductor-fgsea
+  - bioconductor-genomeinfodb >=1.29.3
+  - bioconductor-genomicranges
+  - bioconductor-iranges
+  - bioconductor-seqinfo
+  - bioconductor-sparsematrixstats
+  - r-matrix
+  - r-rcpp
+  - r-rcpproll
+  - bioconductor-rsamtools
+  - bioconductor-s4vectors
+  - r-seuratobject >=5.0.2
+  - r-data.table
+  - r-dplyr >=1.0.0
+  - r-fastmatch
+  - r-future
+  - r-future.apply
+  - r-ggplot2
+  - r-patchwork
+  - r-pbapply
+  - r-rlang
+  - r-rspectra
+  - r-scales
+  - r-stringi
+  - r-tidyr
+  - r-tidyselect
+  - r-vctrs
+source:
+  sha256: bc67a2e8be9773127f5e78d2faaa002e14309938cfd2cf1f5738fd88830bd011
+  url:
+  - /src/contrib/Signac_1.17.1.tar.gz
+  - /src/contrib/Archive/Signac/Signac_1.17.1.tar.gz
+test:
+  commands:
+  - $R -e "library('Signac')"

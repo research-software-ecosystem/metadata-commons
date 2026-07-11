@@ -1,0 +1,79 @@
+about:
+  dev_url: https://github.com/grunwaldlab/PathoSurveilR
+  home: https://github.com/grunwaldlab/PathoSurveilR
+  license: MIT
+  license_family: MIT
+  summary: Utilities for interacting with the pathogensurveillance pipeline.
+build:
+  noarch: generic
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports:
+  - null
+  script: ${R} CMD INSTALL --build . ${R_ARGS}
+package:
+  name: r-pathosurveilr
+  version: 0.4.6
+requirements:
+  host:
+  - r-base
+  - r-ape
+  - r-heatmaply
+  - r-pheatmap
+  - r-ggplot2
+  - r-phytools
+  - r-ggnewscale
+  - r-adegenet
+  - r-DT
+  - r-base64enc
+  - r-htmlwidgets
+  - r-igraph
+  - r-kableExtra
+  - r-lubridate
+  - r-plotly
+  - r-poppr
+  - r-readODS
+  - r-readxl
+  - r-rcppsimdjson
+  - r-rentrez
+  - r-tibble
+  - r-tidygeocoder
+  - r-webshot2
+  - r-xml2
+  - r-yaml
+  - r-heattree
+  run:
+  - r-base
+  - r-ape
+  - r-heatmaply
+  - r-pheatmap
+  - r-ggplot2
+  - r-phytools
+  - r-ggnewscale
+  - r-adegenet
+  - r-DT
+  - r-base64enc
+  - r-htmlwidgets
+  - r-igraph
+  - r-kableExtra
+  - r-lubridate
+  - r-plotly
+  - r-poppr
+  - r-readODS
+  - r-readxl
+  - r-rcppsimdjson
+  - r-rentrez
+  - r-tibble
+  - r-tidygeocoder
+  - r-webshot2
+  - r-xml2
+  - r-yaml
+  - r-heattree
+source:
+  sha256: fb39ab0ff1a44f3ba7ef2787753fce1ee32e48448d8af8e97574f9ea574c4460
+  url: https://github.com/grunwaldlab/PathoSurveilR/archive/v0.4.6.tar.gz
+test:
+  commands:
+  - $R -e "library('PathoSurveilR')"

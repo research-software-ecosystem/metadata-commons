@@ -1,0 +1,37 @@
+about:
+  dev_url: https://github.com/hexylena/galaxyxml/
+  doc_url: https://github.com/hexylena/galaxyxml/
+  home: https://github.com/hexylena/galaxyxml/
+  license: Apache-2.0
+  license_family: APACHE
+  license_file: LICENSE.TXT
+  summary: Galaxy XML generation library
+build:
+  noarch: python
+  number: 0
+  run_exports:
+  - null
+  script: ' -m pip install . --no-deps --no-build-isolation -vvv'
+extra:
+  recipe-maintainers:
+  - bernt-matthias
+  - hexylena
+package:
+  name: galaxyxml
+  version: 0.5.5
+requirements:
+  host:
+  - pip
+  - python
+  run:
+  - lxml
+  - python
+  - galaxy-tool-util
+source:
+  sha256: b9377ff74bd1dd7bd79f2d44777fc743d40a0f53f801d529b549cf808cdaa92b
+  url: https://pypi.io/packages/source/g/galaxyxml/galaxyxml-0.5.5.tar.gz
+test:
+  imports:
+  - galaxyxml
+  - galaxyxml.tool
+  - galaxyxml.tool.parameters

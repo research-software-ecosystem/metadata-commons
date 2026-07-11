@@ -1,0 +1,33 @@
+about:
+  home: https://github.com/fedarko/pyfastg
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE
+  summary: Minimal Python library for parsing FASTG files
+build:
+  noarch: python
+  number: 0
+  run_exports:
+  - ''
+  script: ' -m pip install . -vv'
+extra:
+  recipe-maintainers:
+  - fedarko
+package:
+  name: pyfastg
+  version: 0.2.0
+requirements:
+  host:
+  - networkx >=2
+  - pip
+  - setuptools
+  - python >=3.6
+  run:
+  - networkx >=2
+  - python >=3.6
+source:
+  sha256: dab40e3fdb123fdd9aadb24931d252f7bf983ec91e4f6498b3fe22cb7d9ade94
+  url: https://pypi.io/packages/source/p/pyfastg/pyfastg-0.2.0.tar.gz
+test:
+  imports:
+  - pyfastg

@@ -1,0 +1,21 @@
+about:
+  home: https://github.com/caozhichongchong/QuickVariants
+  license: MIT
+  summary: Fast and accurate genetic variant identification
+build:
+  noarch: generic
+  number: 0
+  run_exports:
+  - null
+package:
+  name: quick-variants
+  version: 1.2.5
+requirements:
+  run:
+  - openjdk >=7,<=21
+source:
+  sha256: 3e84d750dd05536f9f8ee6a33098327ec4d712edd1de4c8047204f79ab982517
+  url: https://github.com/caozhichongchong/QuickVariants/releases/download/1.2.5/quick-variants-1.2.5.jar
+test:
+  commands:
+  - quick-variants --version

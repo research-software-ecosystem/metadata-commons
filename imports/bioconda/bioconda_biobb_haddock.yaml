@@ -1,0 +1,77 @@
+about:
+  description: '# biobb_haddock
+
+
+    ### Introduction
+
+    biobb_haddock is the Biobb module collection to compute information-driven flexible
+    protein-protein docking.
+
+    The latest documentation of this package can be found in our readthedocs site:
+
+    [latest API documentation](http://biobb-haddock.readthedocs.io/en/latest/).
+
+
+
+    ### Copyright & Licensing
+
+    This software has been developed in the [MMB group](http://mmb.irbbarcelona.org)
+    at the [BSC](http://www.bsc.es/) & [IRB](https://www.irbbarcelona.org/) for the
+    [European BioExcel](http://bioexcel.eu/), funded by the European Commission (EU
+    Horizon Europe [101093290](https://cordis.europa.eu/project/id/101093290), EU
+    H2020 [823830](http://cordis.europa.eu/projects/823830), EU H2020 [675728](http://cordis.europa.eu/projects/675728)).
+
+
+    * (c) 2015-2025 [Barcelona Supercomputing Center](https://www.bsc.es/)
+
+    * (c) 2015-2025 [Institute for Research in Biomedicine](https://www.irbbarcelona.org/)
+
+    Licensed under the
+
+    [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0), see the file
+    LICENSE for details.
+
+
+    ![](https://bioexcel.eu/wp-content/uploads/2019/04/Bioexcell_logo_1080px_transp.png
+    "Bioexcel")
+
+
+
+    '
+  dev_url: https://github.com/bioexcel/biobb_haddock
+  doc_url: http://biobb_haddock.readthedocs.io/en/latest/
+  home: https://github.com/bioexcel/biobb_haddock
+  license: Apache-2.0
+  license_family: APACHE
+  license_file: ''
+  summary: biobb_haddock is the Biobb module collection to compute information-driven
+    flexible protein-protein docking.
+build:
+  noarch: python
+  number: 0
+  run_exports:
+  - null
+  script: ' -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv'
+extra:
+  recipe-maintainers:
+  - gbayarri
+  - RubenChM
+package:
+  name: biobb_haddock
+  version: 5.2.1
+requirements:
+  host:
+  - python
+  - setuptools
+  - pip
+  run:
+  - python >=3.10
+  - biobb_common ==5.2.0
+  - haddock_biobb ==2025.11
+source:
+- sha256: 5dcc4679e8b0db683045a7853f7628dd679290002645462c1c1e8e16534fabaa
+  url: https://pypi.io/packages/source/b/biobb_haddock/biobb_haddock-5.2.1.tar.gz
+test:
+  imports:
+  - biobb_haddock
+  - biobb_haddock.haddock

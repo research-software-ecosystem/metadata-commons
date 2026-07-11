@@ -1,0 +1,31 @@
+about:
+  home: https://horvathlab.github.io/NGS/SCReadCounts
+  license: MIT
+  summary: 'SCReadCounts is a computational tool for a cell-level assessment of the
+    read counts bearing a particular nucleotide at genomic positions of interest from
+    single cell RNA sequencing (scRNA-seq) data. '
+build:
+  noarch: generic
+  number: 0
+  run_exports:
+  - null
+extra:
+  skip-lints:
+  - should_be_noarch_python
+package:
+  name: screadcounts
+  version: 1.4.2
+requirements:
+  run:
+  - python >=3.7
+  - pysam
+  - wxpython
+  - samtools
+  - numpy
+  - scipy
+source:
+  sha256: 416c3427c8c40be0e13be204a07e30a3ae244cfbc5de8de9ca63c47c84dfa3bb
+  url: https://github.com/HorvathLab/NGS/releases/download/SCReadCounts-1.4.2/SCReadCounts-1.4.2.Python-3.7.tgz
+test:
+  commands:
+  - scReadCounts -h

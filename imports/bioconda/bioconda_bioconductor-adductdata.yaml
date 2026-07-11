@@ -1,0 +1,36 @@
+about:
+  description: mzXML files from Grigoryan et al 2016 (Anal Chem).
+  home: https://bioconductor.org/packages/3.22/data/experiment/html/adductData.html
+  license: Artistic-2.0
+  summary: Data from untargeted MS of modifications to Cys34 of serum albumin
+build:
+  noarch: generic
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+package:
+  name: bioconductor-adductdata
+  version: 1.26.0
+requirements:
+  host:
+  - bioconductor-annotationhub >=4.0.0,<4.1.0
+  - bioconductor-experimenthub >=3.0.0,<3.1.0
+  - r-base
+  run:
+  - bioconductor-annotationhub >=4.0.0,<4.1.0
+  - bioconductor-experimenthub >=3.0.0,<3.1.0
+  - r-base
+  - curl
+  - bioconductor-data-packages >=20260207
+source:
+  md5: c028bcccb06c5dc4bbcd74c00da66785
+  url:
+  - https://bioconductor.org/packages/3.22/data/experiment/src/contrib/adductData_1.26.0.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/adductData/adductData_1.26.0.tar.gz
+  - https://bioarchive.galaxyproject.org/adductData_1.26.0.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-adductdata/bioconductor-adductdata_1.26.0_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('adductData')"

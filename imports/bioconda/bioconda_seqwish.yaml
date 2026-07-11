@@ -1,0 +1,39 @@
+about:
+  home: https://github.com/ekg/seqwish
+  license: MIT
+  license_file: LICENSE
+  summary: Alignment to variation graph inducer
+build:
+  number: 1
+  run_exports:
+  - null
+  skip: true
+extra:
+  additional-platforms:
+  - linux-aarch64
+  recipe-maintainers:
+  - AndreaGuarracino
+  skip-lints:
+  - uses_vcs_url
+package:
+  name: seqwish
+  version: 0.7.11
+requirements:
+  build:
+  - null
+  - null
+  - llvm-openmp
+  - cmake
+  - make
+  host:
+  - zlib
+  - jemalloc
+  run:
+  - llvm-openmp
+  - python >=3.6
+source:
+  sha256: 9cbf51990787a93c58a1ee04239608785beb7e8a38efeb02929121b3c8c4a103
+  url: https://github.com/ekg/seqwish/releases/download/v0.7.11/seqwish-v0.7.11.tar.gz
+test:
+  commands:
+  - seqwish --help

@@ -1,0 +1,65 @@
+about:
+  dev_url: https://github.com/pmqs/IO-Compress
+  doc_url: https://metacpan.org/pod/IO::Compress
+  home: https://metacpan.org/pod/IO::Compress
+  license: Perl_5
+  summary: IO Interface to compressed data files/buffers.
+build:
+  number: 0
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+package:
+  name: perl-io-compress
+  version: '2.216'
+requirements:
+  build:
+  - make
+  - null
+  - null
+  - pkg-config
+  host:
+  - perl
+  - perl-compress-raw-zlib >=2.214
+  - perl-compress-raw-bzip2 >=2.214
+  - perl-scalar-list-utils
+  - perl-extutils-makemaker
+  run:
+  - perl
+  - perl-compress-raw-zlib >=2.214
+  - perl-compress-raw-bzip2 >=2.214
+  - perl-encode
+  - perl-scalar-list-utils
+source:
+  sha256: 0d3966aec681c47573c0c97f29aa6640a3f2a0ab3f56b505b3d17338ba4861e6
+  url: https://cpan.metacpan.org/authors/id/P/PM/PMQS/IO-Compress-2.216.tar.gz
+test:
+  imports:
+  - IO::Compress::Adapter::Bzip2
+  - IO::Compress::Adapter::Deflate
+  - IO::Compress::Adapter::Identity
+  - IO::Compress::Base
+  - IO::Compress::Base::Common
+  - IO::Compress::Bzip2
+  - IO::Compress::Deflate
+  - IO::Compress::Gzip
+  - IO::Compress::Gzip::Constants
+  - IO::Compress::RawDeflate
+  - IO::Compress::Zip
+  - IO::Compress::Zip::Constants
+  - IO::Compress::Zlib::Constants
+  - IO::Compress::Zlib::Extra
+  - IO::Uncompress::Adapter::Bunzip2
+  - IO::Uncompress::Adapter::Identity
+  - IO::Uncompress::Adapter::Inflate
+  - IO::Uncompress::AnyInflate
+  - IO::Uncompress::AnyUncompress
+  - IO::Uncompress::Base
+  - IO::Uncompress::Bunzip2
+  - IO::Uncompress::Gunzip
+  - IO::Uncompress::Inflate
+  - IO::Uncompress::RawInflate
+  - IO::Uncompress::Unzip

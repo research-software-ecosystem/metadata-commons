@@ -1,0 +1,32 @@
+about:
+  dev_url: https://github.com/xfengnefx/hifiasm-meta
+  home: https://github.com/xfengnefx/hifiasm-meta
+  license: MIT
+  license_family: MIT
+  summary: Metagenome assembler for Hifi reads, based on hifiasm.
+build:
+  number: 0
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+package:
+  name: hifiasm_meta
+  version: hamtv0.3.5
+requirements:
+  build:
+  - null
+  - null
+  - make
+  host:
+  - zlib
+source:
+  patches:
+  - hifiasm_meta-aarch64.patch
+  sha256: 8c1c1f394e0d4d3be2c78cb76c4122dd0caf2d088a8b986c161d4d90c194f560
+  url: https://github.com/xfengnefx/hifiasm-meta/archive/refs/tags/hamtv0.3.5.tar.gz
+test:
+  commands:
+  - hifiasm_meta 2>&1 | grep 'Usage'

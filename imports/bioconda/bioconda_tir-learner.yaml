@@ -1,0 +1,35 @@
+about:
+  dev_url: https://github.com/KGerhardt/TIR-Learner
+  doc_url: https://github.com/KGerhardt/TIR-Learner/blob/main/README.md
+  home: https://github.com/KGerhardt/TIR-Learner
+  license: GPL-3.0-or-later
+  license_family: GPL3
+  license_file: LICENSE
+  summary: Accelerated tool for identifying TIR transposable elements
+build:
+  noarch: generic
+  number: 0
+  run_exports:
+  - null
+package:
+  name: tir-learner
+  version: '4.08'
+requirements:
+  run:
+  - python >=3.9,<3.13
+  - numpy
+  - pyfastx
+  - pywfa
+  - keras
+  - pytorch
+  - tirvish-rs >=0.1.0
+  - grfmite-rs >=0.3.0
+  - blast
+  - pigz
+source:
+  sha256: 42ef9f3d8257456e45878f66b361cb9abefd9ae8fd6812c695cc9ee9221a79db
+  url: https://github.com/KGerhardt/TIR-Learner/archive/refs/tags/v4.08.tar.gz
+test:
+  commands:
+  - TIR-Learner --help
+  - tirlearner4 --help

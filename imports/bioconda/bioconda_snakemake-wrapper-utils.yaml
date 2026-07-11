@@ -1,0 +1,32 @@
+about:
+  dev_url: https://github.com/snakemake/snakemake-wrapper-utils
+  home: https://github.com/snakemake/snakemake-wrapper-utils
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE.md
+  summary: A collection of utility functions and classes for Snakemake wrappers.
+build:
+  noarch: python
+  number: 0
+  run_exports:
+  - null
+  script: ' -m pip install . --no-build-isolation --no-cache-dir --no-deps -vvv'
+extra:
+  recipe-maintainers:
+  - johanneskoester
+package:
+  name: snakemake-wrapper-utils
+  version: 0.8.0
+requirements:
+  host:
+  - python >=3.8
+  - pip
+  - poetry-core
+  run:
+  - python >=3.8
+source:
+  sha256: f14390bd016645d659ecd6da9b22add80bc0bbbcbe926b8d9a5823053c40a8f3
+  url: https://pypi.io/packages/source/s/snakemake-wrapper-utils/snakemake_wrapper_utils-0.8.0.tar.gz
+test:
+  imports:
+  - snakemake_wrapper_utils

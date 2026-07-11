@@ -1,0 +1,31 @@
+about:
+  home: https://github.com/jianshu93/bindashtree
+  license: MIT
+  license_file:
+  - LICENSE-MIT
+  - THIRDPARTY.yml
+  summary: bindashtree is a ultra-fast tool to build genome phylogenetic tree via
+    Binwise Densified MinHash and Rapid Neighbor-joining
+build:
+  number: 0
+  run_exports:
+  - null
+  skip: true
+extra:
+  maintainers:
+  - Jianshu Zhao
+package:
+  name: bindashtree
+  version: 0.1.1
+requirements:
+  build:
+  - null
+  - null
+  - null
+  - cargo-bundle-licenses
+source:
+  sha256: 106abf050a94d110d62dccdfa7e564b64b0bdc92305903440aa9c1e4c01658dc
+  url: https://github.com/jianshu93/bindashtree/archive/v0.1.1.tar.gz
+test:
+  commands:
+  - bindashtree -h

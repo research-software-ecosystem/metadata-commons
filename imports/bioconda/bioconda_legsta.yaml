@@ -1,0 +1,27 @@
+about:
+  home: https://github.com/tseemann/legsta
+  license: GPL-3.0
+  license_file: LICENSE
+  summary: In silico Legionella pneumophila Sequence Based Typing
+build:
+  noarch: generic
+  number: 0
+  run_exports:
+  - null
+package:
+  name: legsta
+  version: 0.5.2
+requirements:
+  build: null
+  run:
+  - perl
+  - ispcr
+  - any2fasta
+source:
+  sha256: 73db39cdc695e6a889b0b0092c2eda4119e9fa463e5992e9b5de91186cc97101
+  url: https://github.com/tseemann/legsta/archive/v0.5.2.tar.gz
+test:
+  commands:
+  - legsta --version | grep '0.5.2'
+  - legsta --help
+  - legsta $(dirname $(which legsta))/../db/pilE.tfa

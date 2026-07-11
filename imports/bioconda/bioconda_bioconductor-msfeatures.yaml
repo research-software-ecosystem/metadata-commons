@@ -1,0 +1,45 @@
+about:
+  description: The MsFeature package defines functionality for Mass Spectrometry features.
+    This includes functions to group (LC-MS) features based on some of their properties,
+    such as retention time (coeluting features), or correlation of signals across
+    samples. This packge hence allows to group features, and its results can be used
+    as an input for the `QFeatures` package which allows to aggregate abundance levels
+    of features within each group. This package defines concepts and functions for
+    base and common data types, implementations for more specific data types are expected
+    to be implemented in the respective packages (such as e.g. `xcms`). All functionality
+    of this package is implemented in a modular way which allows combination of different
+    grouping approaches and enables its re-use in other R packages.
+  home: https://bioconductor.org/packages/3.22/bioc/html/MsFeatures.html
+  license: Artistic-2.0
+  summary: Functionality for Mass Spectrometry Features
+build:
+  noarch: generic
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+package:
+  name: bioconductor-msfeatures
+  version: 1.18.0
+requirements:
+  host:
+  - bioconductor-mscoreutils >=1.22.0,<1.23.0
+  - bioconductor-protgenerics >=1.42.0,<1.43.0
+  - bioconductor-summarizedexperiment >=1.40.0,<1.41.0
+  - r-base
+  run:
+  - bioconductor-mscoreutils >=1.22.0,<1.23.0
+  - bioconductor-protgenerics >=1.42.0,<1.43.0
+  - bioconductor-summarizedexperiment >=1.40.0,<1.41.0
+  - r-base
+source:
+  md5: 32f901b7d2cfba19b7d1f6840f368f8a
+  url:
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/MsFeatures_1.18.0.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/MsFeatures/MsFeatures_1.18.0.tar.gz
+  - https://bioarchive.galaxyproject.org/MsFeatures_1.18.0.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-msfeatures/bioconductor-msfeatures_1.18.0_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('MsFeatures')"

@@ -1,0 +1,58 @@
+about:
+  description: MsImpute is a package for imputation of peptide intensity in proteomics
+    experiments. It additionally contains tools for MAR/MNAR diagnosis and assessment
+    of distortions to the probability distribution of the data post imputation.  The
+    missing values are imputed by low-rank approximation of the underlying data matrix
+    if they are MAR (method = "v2"), by Barycenter approach if missingness is MNAR
+    ("v2-mnar"), or by Peptide Identity Propagation (PIP).
+  home: https://bioconductor.org/packages/3.22/bioc/html/msImpute.html
+  license: GPL (>=2)
+  license_file: /lib/R/share/licenses/GPL-3
+  summary: Imputation of label-free mass spectrometry peptides
+build:
+  noarch: generic
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+package:
+  name: bioconductor-msimpute
+  version: 1.20.0
+requirements:
+  host:
+  - bioconductor-limma >=3.66.0,<3.67.0
+  - bioconductor-scran >=1.38.0,<1.39.0
+  - r-base
+  - r-data.table
+  - r-dplyr
+  - r-fnn
+  - r-matrixstats
+  - r-mvtnorm
+  - r-pdist
+  - r-reticulate
+  - r-softimpute
+  - r-tidyr
+  run:
+  - bioconductor-limma >=3.66.0,<3.67.0
+  - bioconductor-scran >=1.38.0,<1.39.0
+  - r-base
+  - r-data.table
+  - r-dplyr
+  - r-fnn
+  - r-matrixstats
+  - r-mvtnorm
+  - r-pdist
+  - r-reticulate
+  - r-softimpute
+  - r-tidyr
+source:
+  md5: 6b6dbc584bd5dc744bf43c1c37358725
+  url:
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/msImpute_1.20.0.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/msImpute/msImpute_1.20.0.tar.gz
+  - https://bioarchive.galaxyproject.org/msImpute_1.20.0.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-msimpute/bioconductor-msimpute_1.20.0_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('msImpute')"

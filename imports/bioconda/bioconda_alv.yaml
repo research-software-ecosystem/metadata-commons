@@ -1,0 +1,33 @@
+about:
+  home: https://github.com/arvestad/alv
+  license: GPL-3.0-only
+  license_family: GPL3
+  license_file: LICENSE
+  summary: A console-based sequence alignment viewer
+build:
+  noarch: python
+  number: 0
+  run_exports:
+  - null
+  script: ' -m pip install . --no-deps --no-build-isolation -vv'
+extra:
+  recipe-maintainers:
+  - mptrsen
+package:
+  name: alv
+  version: 1.8.3
+requirements:
+  host:
+  - pip
+  - python >=3.6
+  - setuptools
+  run:
+  - biopython >=1.70
+  - colorama >=0.3.8
+  - python >=3.6
+source:
+  sha256: 8f19648a53dada8be8664c4ec985b047a046e5997413936de97a70c0c5d65935
+  url: https://pypi.io/packages/source/a/alv/alv-1.8.3.tar.gz
+test:
+  commands:
+  - alv --help

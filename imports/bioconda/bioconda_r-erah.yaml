@@ -1,0 +1,61 @@
+about:
+  description: Outputs a table with compound names, matching scores and the integrated
+    area of the compound for each sample. Package implementation is described in Domingo-Almenara
+    et al. (2016) <doi:10.1021/acs.analchem.6b02927>.
+  home: https://CRAN.R-project.org/package=erah
+  license: GPL-2.0-or-later
+  license_file:
+  - /lib/R/share/licenses/GPL-2
+  summary: Automated compound deconvolution, alignment across samples, and identification
+    of metabolites by spectral library matching in Gas Chromatography - Mass spectrometry
+    (GC-MS) untargeted metabolomics.
+build:
+  merge_build_host: false
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports:
+  - null
+  script: R CMD INSTALL --build .
+extra:
+  recipe-maintainers:
+  - hechth
+package:
+  name: r-erah
+  version: 2.2.0
+requirements:
+  build:
+  - null
+  - null
+  - cross-r-base
+  host:
+  - r-base
+  - r-hiclimr
+  - r-furrr
+  - r-future
+  - r-igraph
+  - r-osd
+  - r-progress
+  - r-quantreg
+  - r-signal
+  - r-tibble
+  run:
+  - r-base
+  - r-hiclimr
+  - r-furrr
+  - r-future
+  - r-igraph
+  - r-osd
+  - r-progress
+  - r-quantreg
+  - r-signal
+  - r-tibble
+source:
+  sha256: e9b796489ff69fd59d9aa104e9273246c2c9ccb0e1bf412c29cefd9858b27b48
+  url:
+  - /src/contrib/erah_2.2.0.tar.gz
+  - /src/contrib/Archive/erah/erah_2.2.0.tar.gz
+test:
+  commands:
+  - $R -e "library('erah')"

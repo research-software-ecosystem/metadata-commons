@@ -1,0 +1,32 @@
+about:
+  home: https://github.com/hartwigmedical/hmftools/tree/master/purple
+  license: GPL-3.0-only
+  license_family: GPL3
+  summary: PURPLE is a purity ploidy estimator for tumor samples.
+build:
+  noarch: generic
+  number: 0
+  run_exports:
+  - null
+package:
+  name: hmftools-purple
+  version: '4.4'
+requirements:
+  run:
+  - zlib
+  - openjdk >=8,<=21
+  - xorg-libxtst
+  - circos >=0.69.6
+  - perl-gd >=2.76
+  - bioconductor-variantannotation
+  - r-cairo
+  - r-cowplot
+  - r-dplyr
+  - r-ggplot2
+  - r-tidyr
+source:
+  sha256: ee34446d33f8f0e745036d3c0289600a9e66b25eaa0bb1431f407e56f8e23d14
+  url: https://github.com/hartwigmedical/hmftools/releases/download/purple-v4.4/purple_v4.4.jar
+test:
+  commands:
+  - purple -version | grep Purple

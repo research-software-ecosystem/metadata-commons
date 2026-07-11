@@ -1,0 +1,37 @@
+about:
+  description: kmtricks allows for efficient construction of k-mer and Bloom filter
+    matrices from large read collections
+  dev_url: https://github.com/tlemane/kmtricks/
+  doc_url: https://github.com/tlemane/kmtricks/wiki
+  home: https://github.com/tlemane/kmtricks
+  license: AGPL-3.0
+  license_family: AGPL
+  license_file: LICENSE
+  summary: A k-mer matrix framework
+build:
+  number: 0
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+  recipe-maintainers:
+  - tlemane
+package:
+  name: kmtricks
+  version: 1.5.1
+requirements:
+  build:
+  - null
+  - make
+  - cmake
+  - zlib
+  run:
+  - zlib
+source:
+  sha256: 83f33aee79fe3a28ec0600b5e03a075fcef83c592eb302bc8eba0c8ac9ba1b8a
+  url: https://github.com/tlemane/kmtricks/releases/download/v1.5.1/kmtricks-v1.5.1-sources.tar.gz
+test:
+  commands:
+  - kmtricks infos

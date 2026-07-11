@@ -1,0 +1,60 @@
+about:
+  description: A comprehensive package for visualizing multi-set intersections and
+    extracting detailed subset information. VennDetail generates high-resolution visualizations
+    including traditional Venn diagrams, Venn-pie plots, and UpSet-style plots. It
+    provides functions to extract and combine subset details with user datasets in
+    various formats. The package is particularly useful for bioinformatics applications
+    but can be used for any multi-set analysis.
+  home: https://bioconductor.org/packages/3.22/bioc/html/VennDetail.html
+  license: GPL-2
+  license_file: /lib/R/share/licenses/GPL-2
+  summary: Comprehensive Visualization and Analysis of Multi-Set Intersections
+build:
+  noarch: generic
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+package:
+  name: bioconductor-venndetail
+  version: 1.26.0
+requirements:
+  host:
+  - r-base
+  - r-dplyr
+  - r-dt
+  - r-ggplot2
+  - r-htmlwidgets
+  - r-magrittr
+  - r-patchwork
+  - r-plotly
+  - r-purrr
+  - r-rlang
+  - r-shiny
+  - r-tibble
+  - r-tidyr
+  run:
+  - r-base
+  - r-dplyr
+  - r-dt
+  - r-ggplot2
+  - r-htmlwidgets
+  - r-magrittr
+  - r-patchwork
+  - r-plotly
+  - r-purrr
+  - r-rlang
+  - r-shiny
+  - r-tibble
+  - r-tidyr
+source:
+  md5: 39b36390be01e22c73bbce0b1d2f171c
+  url:
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/VennDetail_1.26.0.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/VennDetail/VennDetail_1.26.0.tar.gz
+  - https://bioarchive.galaxyproject.org/VennDetail_1.26.0.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-venndetail/bioconductor-venndetail_1.26.0_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('VennDetail')"

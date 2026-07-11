@@ -1,0 +1,31 @@
+about:
+  home: https://metacpan.org/pod/Test::Script
+  license: perl_5
+  summary: Basic cross-platform tests for scripts
+build:
+  noarch: generic
+  number: 0
+  run_exports:
+    weak:
+    - perl-test-script =1.31
+package:
+  name: perl-test-script
+  version: '1.31'
+requirements:
+  build:
+  - make
+  host:
+  - perl
+  - perl-capture-tiny
+  - perl-probe-perl
+  - perl-test2-suite >=0.000117
+  run:
+  - perl
+  - perl-capture-tiny
+  - perl-probe-perl
+source:
+  sha256: 44053b183a5b0188199cbddbb5ac0b1ba9e506afb3d4c5698ef2514c28ccd347
+  url: https://cpan.metacpan.org/authors/id/P/PL/PLICEASE/Test-Script-1.31.tar.gz
+test:
+  imports:
+  - Test::Script

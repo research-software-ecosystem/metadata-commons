@@ -1,0 +1,48 @@
+about:
+  home: https://github.com/liaoherui/VirStrain
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE
+  summary: An RNA/DNA virus strain-level identification tool for short reads.
+build:
+  entry_points:
+  - virstrain = VirStrain.VirStrain:main
+  - virstrain_build = VirStrain.VirStrain_build:main
+  - virstrain_contig = VirStrain.VirStrain_contig:main
+  - virstrain_merge = VirStrain.VirStrain_contigDB_merge:main
+  noarch: python
+  number: 0
+  run_exports:
+  - null
+  script: ' -m pip install . --no-deps --no-build-isolation -vvv'
+extra:
+  recipe-maintainers:
+  - liaoherui
+package:
+  name: virstrain
+  version: '1.18'
+requirements:
+  host:
+  - pip
+  - python >=3.8
+  - setuptools
+  run:
+  - python >=3.8
+  - biopython >=1.78
+  - matplotlib-base >=3.1
+  - networkx >=2.4
+  - numpy >=1.17
+  - pandas >=1.0
+  - plotly >=5.0
+  - bowtie2
+source:
+  sha256: 0197ed06bb04d7bc4e097579be99324dac889a233cee797e7576cd9270478d46
+  url: https://pypi.io/packages/source/v/virstrain/virstrain-1.18.tar.gz
+test:
+  commands:
+  - virstrain --help
+  - virstrain_build --help
+  - virstrain_contig --help
+  - virstrain_merge --help
+  imports:
+  - VirStrain

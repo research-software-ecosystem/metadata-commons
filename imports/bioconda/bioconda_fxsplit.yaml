@@ -1,0 +1,33 @@
+about:
+  dev_url: https://github.com/alejandrogzi/fxsplit
+  home: https://github.com/alejandrogzi/fxsplit
+  license: Apache-2.0
+  license_family: APACHE
+  summary: split FASTX (and 2bit) into N chunks/files/headers
+build:
+  number: 0
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+  recipe-maintainers:
+  - alejandrogzi
+package:
+  name: fxsplit
+  version: 0.0.5
+requirements:
+  build:
+  - null
+  - null
+  - null
+  - cargo-bundle-licenses
+  - pkg-config
+source:
+  sha256: 5bacdf8ad19655844d86a332b978ce7dc20dda6db94c53830673b2af1f937c66
+  url: https://github.com/alejandrogzi/fxsplit/archive/refs/tags/v0.0.5.tar.gz
+test:
+  commands:
+  - fxsplit --help
+  - fxsplit --version

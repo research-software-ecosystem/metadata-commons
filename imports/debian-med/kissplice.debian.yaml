@@ -1,0 +1,53 @@
+package: kissplice
+distribution: debian
+release: sid
+component: main
+version: 2.6.7
+source: kissplice
+homepage: https://kissplice.prabi.fr/
+license: unknown
+blend: debian-med
+description_md5: 6d716ae983176c617d58d582ce80f786
+topics:
+- RNA-seq
+- RNA splicing
+- Gene structure
+edam_scopes:
+- name: summary
+  input:
+  - data: Sequence
+    formats:
+    - FASTQ
+    - FASTA
+  output:
+  - data: Gene transcript report
+    formats:
+    - Text
+  function:
+  - Transcriptome assembly
+  - Polymorphism detection
+  - Splice transcript prediction
+registries:
+- entry: OMICS_01321
+  name: OMICtools
+- entry: SCR_011893
+  name: SciCrunch
+- entry: kissplice
+  name: conda:bioconda
+bib:
+- key: doi
+  value: 10.1186/1471-2105-13-S6-S5
+tags:
+- tag: biology::nuceleic-acids
+- tag: field::biology
+- tag: field::biology:bioinformatics
+- tag: implemented-in::c++
+- tag: interface::commandline
+- tag: role::program
+- tag: use::analysing
+- tag: works-with::biological-sequence
+popcon:
+- insts: 113
+  olde: 84
+  recent: 23
+  vote: 6

@@ -1,0 +1,103 @@
+{
+    "Author": "Maddy Griswold [cre, aut], Nicole Ortogero [aut], Zhi Yang [aut], Ronalyn Vitancol [aut], David Henderson [aut]",
+    "Date/Publication": "2026-04-28",
+    "Depends": [
+        "Biobase",
+        "NanoStringNCTools",
+        "R (>= 3.6)",
+        "S4Vectors"
+    ],
+    "Description": "Tools for NanoString Technologies GeoMx Technology. Package provides functions for reading in DCC and PKC files based on an ExpressionSet derived object.  Normalization and QC functions are also included.",
+    "Imports": [
+        "BiocGenerics",
+        "EnvStats",
+        "GGally",
+        "SeuratObject",
+        "data.table",
+        "dplyr",
+        "ggplot2",
+        "grDevices",
+        "graphics",
+        "lmerTest",
+        "methods",
+        "readxl",
+        "reshape2",
+        "rjson",
+        "rlang",
+        "stats",
+        "stringr",
+        "utils"
+    ],
+    "License": "MIT",
+    "MD5sum": "c9aa1ef52b288bbcbfbb1ced34f4fa29",
+    "Maintainer": "Maddy Griswold <mgriswold@nanostring.com>",
+    "NeedsCompilation": "no",
+    "Package": "GeomxTools",
+    "Rank": 392,
+    "Rfiles": [
+        "vignettes/GeomxTools/inst/doc/Developer_Introduction_to_the_NanoStringGeoMxSet.R",
+        "vignettes/GeomxTools/inst/doc/GeomxSet_coercions.R",
+        "vignettes/GeomxTools/inst/doc/Protein_in_GeomxTools.R"
+    ],
+    "Suggests": [
+        "Seurat",
+        "SpatialDecon",
+        "SpatialExperiment (>= 1.4.0)",
+        "ggiraph",
+        "knitr",
+        "parallel",
+        "patchwork",
+        "rmarkdown",
+        "testthat (>= 3.0.0)"
+    ],
+    "Title": "NanoString GeoMx Tools",
+    "Version": "3.16.0",
+    "VignetteBuilder": "knitr",
+    "biocViews": [
+        "CellBasedAssays",
+        "DataImport",
+        "ExperimentalDesign",
+        "GeneExpression",
+        "Normalization",
+        "ProprietaryPlatforms",
+        "Proteomics",
+        "RNASeq",
+        "Sequencing",
+        "Software",
+        "Spatial",
+        "Transcription",
+        "Transcriptomics",
+        "mRNAMicroarray"
+    ],
+    "dependencyCount": "123",
+    "dependsOnMe": [
+        "GeoMxWorkflows"
+    ],
+    "git_branch": "RELEASE_3_23",
+    "git_last_commit": "6033ab5",
+    "git_last_commit_date": "2026-04-28",
+    "git_url": "https://git.bioconductor.org/packages/GeomxTools",
+    "hasINSTALL": false,
+    "hasLICENSE": true,
+    "hasNEWS": true,
+    "hasREADME": false,
+    "importsMe": [
+        "GeoDiff",
+        "SpatialDecon",
+        "SpatialOmicsOverlay"
+    ],
+    "mac.binary.big-sur-x86_64.ver": "bin/macosx/big-sur-x86_64/contrib/4.6/GeomxTools_3.16.0.tgz",
+    "mac.binary.sonoma-arm64.ver": "bin/macosx/sonoma-arm64/contrib/4.6/GeomxTools_3.16.0.tgz",
+    "source.ver": "src/contrib/GeomxTools_3.16.0.tar.gz",
+    "vignetteTitles": [
+        "Coercion of GeoMxSet to Seurat and SpatialExperiment Objects",
+        "Developer Introduction to the NanoStringGeoMxSet",
+        "Protein data using GeomxTools"
+    ],
+    "vignettes": [
+        "vignettes/GeomxTools/inst/doc/Developer_Introduction_to_the_NanoStringGeoMxSet.html",
+        "vignettes/GeomxTools/inst/doc/GeomxSet_coercions.html",
+        "vignettes/GeomxTools/inst/doc/Protein_in_GeomxTools.html"
+    ],
+    "win.binary.ver": "bin/windows/contrib/4.6/GeomxTools_3.16.0.zip"
+}

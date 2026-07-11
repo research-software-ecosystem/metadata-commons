@@ -1,0 +1,37 @@
+package: tantan
+distribution: debian
+release: sid
+component: main
+version: '51'
+source: tantan
+homepage: https://gitlab.com/mcfrith/tantan
+license: unknown
+blend: debian-med
+description_md5: c4250117adf2a184c317b8e7c68ffc7a
+topics:
+- Sequence composition, complexity and repeats
+edam_scopes:
+- name: summary
+  input:
+  - data: Sequence
+    formats:
+    - FASTA
+  output:
+  - data: Sequence
+    formats:
+    - FASTA
+  function:
+  - Sequence masking
+registries:
+- entry: OMICS_15197
+  name: OMICtools
+- entry: tantan
+  name: conda:bioconda
+bib:
+- key: doi
+  value: 10.1093/nar/gkq1212
+popcon:
+- insts: 107
+  olde: 80
+  recent: 23
+  vote: 4

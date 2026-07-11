@@ -1,0 +1,28 @@
+about:
+  home: http://noble.gs.washington.edu/~mmh1/software/optbuild/
+  license: GNU GPLv2
+  summary: build command lines for external programs
+build:
+  noarch: python
+  number: 0
+  run_exports:
+  - null
+  script: -m pip install . --ignore-installed --no-deps -vv
+package:
+  name: optbuild
+  version: 0.2.3
+requirements:
+  host:
+  - python
+  - pip
+  - setuptools
+  run:
+  - python
+  - autolog
+  - six
+source:
+  sha256: 0bea93e2f9a3ddff1355ea0175f04fc1d961ac009e50b1e4fbcb05fc4f266cc7
+  url: https://files.pythonhosted.org/packages/e4/07/b882a3ebbbcb774f4ed6f7728c1dbe924bb839ce9eca4c29828abc069013/optbuild-0.2.3.tar.gz
+test:
+  imports:
+  - optbuild

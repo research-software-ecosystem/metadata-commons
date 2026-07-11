@@ -1,0 +1,44 @@
+about:
+  dev_url: https://github.com/openvax/pyensembl
+  home: https://github.com/openvax/pyensembl
+  license: Apache-2.0
+  license_family: APACHE
+  license_file: LICENSE
+  summary: Python interface to ensembl reference genome metadata.
+build:
+  entry_points:
+  - pyensembl = pyensembl.shell:run
+  noarch: python
+  number: 0
+  run_exports:
+  - null
+  script: -m pip install . -vvv --no-deps --no-build-isolation --no-cache-dir
+package:
+  name: pyensembl
+  version: 2.10.1
+requirements:
+  host:
+  - python >=3.9
+  - pip
+  - setuptools
+  run:
+  - python >=3.9
+  - typechecks >=0.0.2
+  - numpy >=2.0.0
+  - pandas >=0.15
+  - datacache >=1.4.0,<2.0
+  - memoized-property >=1.0.2
+  - six >=1.9.0
+  - gtfparse >=2.5.0
+  - serializable
+  - tinytimer
+  - pylint >=1.4.4
+  - python-dateutil >=2.5.0
+source:
+  sha256: 3fe9b2665da7ce27864d8f15a60fad99618101eb24d31e1ce9d3a4944a84ffd1
+  url: https://pypi.org/packages/source/p/pyensembl/pyensembl-2.10.1.tar.gz
+test:
+  commands:
+  - pyensembl --help
+  imports:
+  - pyensembl

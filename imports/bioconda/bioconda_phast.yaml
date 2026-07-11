@@ -1,0 +1,48 @@
+about:
+  description: 'PHAST is a C-based toolkit for phylogenetic analysis, comparative
+    genomics,
+
+    and evolutionary modeling.
+
+    '
+  home: https://github.com/CshlSiepelLab/phast
+  license: BSD-3-Clause
+  license_file: LICENSE
+  summary: 'PHAST: Phylogenetic Analysis with Space/Time models'
+build:
+  number: 0
+  run_exports:
+  - null
+  script:
+  - ln -sf "${BUILD_PREFIX}/bin/${HOST}-otool" "${BUILD_PREFIX}/bin/otool"
+  - cmake -S . -B build -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=${PREFIX}
+    -DCMAKE_INSTALL_LIBDIR=lib -DCMAKE_INSTALL_BINDIR=bin -DCMAKE_INSTALL_INCLUDEDIR=include
+  - cmake --build build --parallel ${CPU_COUNT}
+  - cmake --install build
+  skip: true
+extra:
+  recipe-maintainers:
+  - asiepel
+package:
+  name: phast
+  version: 1.9.7
+requirements:
+  build:
+  - null
+  - cmake
+  - make
+  - cctools
+  host:
+  - pcre
+  - blas
+  - lapack
+  run:
+  - pcre >=8.45,<9.0a0
+  - libopenblas
+source:
+  sha256: 78b86fc4234444ed15010c33208cfe48313205962f498bcfe91ece0dd1876892
+  url: https://github.com/CshlSiepelLab/phast/archive/refs/tags/v1.9.7.tar.gz
+test:
+  commands:
+  - phastCons --help
+  - phyloFit --help

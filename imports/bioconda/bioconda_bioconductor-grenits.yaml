@@ -1,0 +1,50 @@
+about:
+  description: 'The package offers four network inference statistical models using
+    Dynamic Bayesian Networks and Gibbs Variable Selection: a linear interaction model,
+    two linear interaction models with added experimental noise (Gaussian and Student
+    distributed) for the case where replicates are available and a non-linear interaction
+    model.'
+  home: https://bioconductor.org/packages/3.22/bioc/html/GRENITS.html
+  license: GPL (>= 2)
+  license_file: /lib/R/share/licenses/GPL-3
+  summary: Gene Regulatory Network Inference Using Time Series
+build:
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+package:
+  name: bioconductor-grenits
+  version: 1.62.0
+requirements:
+  build:
+  - null
+  - null
+  - make
+  host:
+  - r-base
+  - r-ggplot2 >=0.9.0
+  - r-rcpp >=0.8.6
+  - r-rcpparmadillo >=0.2.8
+  - r-reshape2
+  - libblas
+  - liblapack
+  - zlib
+  - liblzma-devel
+  run:
+  - r-base
+  - r-ggplot2 >=0.9.0
+  - r-rcpp >=0.8.6
+  - r-rcpparmadillo >=0.2.8
+  - r-reshape2
+source:
+  md5: 0adf487b9a857c10ff386265cd75fc62
+  url:
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/GRENITS_1.62.0.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/GRENITS/GRENITS_1.62.0.tar.gz
+  - https://bioarchive.galaxyproject.org/GRENITS_1.62.0.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-grenits/bioconductor-grenits_1.62.0_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('GRENITS')"

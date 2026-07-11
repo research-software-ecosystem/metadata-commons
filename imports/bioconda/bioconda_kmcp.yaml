@@ -1,0 +1,31 @@
+about:
+  home: https://github.com/shenwei356/kmcp
+  license: MIT
+  summary: accurate metagenomic profiling of both prokaryotic and viral populations
+    by pseudo-mapping
+build:
+  number: 0
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+  skip-lints:
+  - should_be_noarch_generic
+  - should_not_be_noarch_source
+package:
+  name: kmcp
+  version: 0.9.5
+source:
+- md5: bf5662dbaace6d63fca5b6973cac144d
+  url: https://github.com/shenwei356/kmcp/releases/download/v0.9.5/kmcp_darwin_amd64.tar.gz
+- md5: af9615b92f8ddf4810297e45762fe8c3
+  url: https://github.com/shenwei356/kmcp/releases/download/v0.9.5/kmcp_linux_amd64.tar.gz
+- md5: 03ac274a035fbab39f1bd02498bcbb8e
+  url: https://github.com/shenwei356/kmcp/releases/download/v0.9.5/kmcp_linux_arm64.tar.gz
+- md5: b7963db7e9de5e4e3591b1bb256ec1c2
+  url: https://github.com/shenwei356/kmcp/releases/download/v0.9.5/kmcp_darwin_arm64.tar.gz
+test:
+  commands:
+  - kmcp version --help

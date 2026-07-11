@@ -1,0 +1,40 @@
+about:
+  description: 'fastreeR is a Python+Java CLI tool for calculating distance matrices
+    from VCF or FASTA files
+
+    and constructing Newick trees using a Java backend and Python frontend.
+
+    '
+  dev_url: https://github.com/gkanogiannis/fastreeR
+  home: https://github.com/gkanogiannis/fastreeR
+  license: GPL-3.0-only
+  license_family: GPL3
+  license_file: LICENSE.md
+  summary: Phylogenetic, distance, and tree-building utilities for VCF and FASTA files.
+build:
+  noarch: python
+  number: 0
+  run_exports:
+  - null
+extra:
+  identifiers:
+  - doi:10.1186/s12859-016-1186-3
+  recipe-maintainers:
+  - gkanogiannis
+package:
+  name: fastreer
+  version: 2.2.0
+requirements:
+  build:
+  - python
+  - openjdk >=11.0.1
+  run:
+  - python >=
+  - openjdk >=11.0.1
+source:
+  sha256: aa26ea0bd94d4eb08db8d1c9164ef74eaf52529bed26a92bbe70a1e10406514b
+  url: https://github.com/gkanogiannis/fastreeR/archive/refs/tags/2.2.0.zip
+test:
+  commands:
+  - fastreeR --version
+  - fastreeR --help

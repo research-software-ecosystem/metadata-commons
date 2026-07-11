@@ -1,0 +1,31 @@
+about:
+  home: https://github.com/cobilab/cryfa
+  license: GPL-3.0-or-later
+  license_family: GPL
+  license_file: LICENSE
+  summary: A secure encryption tool for genomic data.
+build:
+  number: 0
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+package:
+  name: cryfa
+  version: '26.05'
+requirements:
+  build:
+  - make
+  - cmake
+  - null
+  - null
+  host:
+  - cryptopp
+source:
+  sha256: 20045d0baccad6dec725cb2a6c34b7e078cd52dd086b600daab9e1024f3b7a4e
+  url: https://github.com/cobilab/cryfa/archive/refs/tags/v26.05.tar.gz
+test:
+  commands:
+  - (cryfa --version 2>&1 || true) | grep -F "26.05"

@@ -1,0 +1,55 @@
+about:
+  home: https://github.com/AmpliconSuite
+  license: BSD 2-Clause License (AmpliconSuite-pipeline and AmpliconClassifier) &
+    University of California Software License (AmpliconArchitect). Please see https://github.com/AmpliconSuite/AmpliconSuite-pipeline
+    for more details on licenses.
+  summary: An end-to-end wrapper for focal amplification analysis from whole-genome
+    sequencing using AmpliconArchitect and associated tools.
+build:
+  noarch: python
+  number: 0
+  run_exports:
+  - null
+package:
+  name: ampliconsuite
+  version: 1.5.3
+requirements:
+  build:
+  - python >=3
+  - setuptools
+  host:
+  - python >=3
+  - setuptools
+  run:
+  - python >=3
+  - bwa
+  - cnvkit >=0.9.10
+  - Flask
+  - future
+  - intervaltree
+  - matplotlib-base
+  - mscorefonts
+  - numpy
+  - pysam
+  - samtools
+  - scipy
+  - bedtools
+source:
+- sha256: 7db92d6cc2a1f3074877079e868dd8b16163858d6ef2d0fdc6d5a8e1b4588dbb
+  url: https://github.com/AmpliconSuite/AmpliconSuite-pipeline/archive/v1.5.3.tar.gz
+- folder: ampliconarchitectlib
+  sha256: 4149f9db0cc8c8479f61f8189bb8ec40ea387eff51b5d55d874d632b9f219b69
+  url: https://github.com/AmpliconSuite/AmpliconArchitect/archive/v1.5.r7.tar.gz
+- sha256: d12094407bf43dc102b3f3979d1ef154cf729146d59c699dfe31ce50df1e8f17
+  url: https://github.com/AmpliconSuite/AmpliconClassifier/archive/v1.5.2.tar.gz
+test:
+  commands:
+  - python3 $(which AmpliconSuite-pipeline.py) -v
+  - python3 $(which GroupedAnalysisAmpSuite.py) -v
+  - python3 $(which amplicon_classifier.py) -v
+  - python3 $(which feature_similarity.py) -h
+  - python3 $(which make_results_table.py) -h
+  imports:
+  - paalib
+  - ampliconarchitectlib
+  - ampclasslib

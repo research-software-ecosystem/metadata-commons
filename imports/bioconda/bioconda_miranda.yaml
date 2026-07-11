@@ -1,0 +1,31 @@
+about:
+  dev_url: https://github.com/hacktrackgnulinux/miranda
+  home: http://www.microrna.org
+  license: GPLv2 + RNAlib license (no commercial redistribution)
+  summary: An algorithm for finding genomic targets for microRNAs.
+build:
+  number: 9
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+package:
+  name: miranda
+  version: 3.3a
+requirements:
+  build:
+  - make
+  - null
+  - gnuconfig
+  - autoconf
+  - automake
+  - libtool
+  - pkg-config
+source:
+  sha256: a671da562cf4636ef5085b27349df2df2f335774663fd423deb08f31212ec778
+  url: http://ftp.genek.cn:8888/Share/linux_software/miRanda-aug2010.tar.gz
+test:
+  commands:
+  - miranda --version

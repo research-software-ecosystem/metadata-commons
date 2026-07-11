@@ -1,0 +1,56 @@
+about:
+  dev_url: https://github.com/TaliaferroLab/OINC-seq
+  doc_url: https://github.com/TaliaferroLab/OINC-seq/blob/v0.0.9/README.md
+  home: https://github.com/TaliaferroLab/OINC-seq
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE
+  summary: A package to quantify RNA localization using OINC-seq data.
+build:
+  noarch: python
+  number: 0
+  run_exports:
+  - null
+  script: -m pip install . -vvv --no-deps --no-build-isolation --no-cache-dir
+extra:
+  identifiers:
+  - https://doi.org/10.1101/2024.11.12.623278
+  maintainers:
+  - taliaferrojm
+package:
+  name: pigpen
+  version: 0.0.9
+requirements:
+  host:
+  - python >=3.5,<3.11
+  - pip
+  - setuptools
+  run:
+  - python >=3.5,<3.11
+  - samtools >=1.15
+  - varscan >=2.4.4
+  - bcftools >=1.15
+  - pysam >=0.19
+  - numpy >=1.21
+  - pandas >=1.3.5
+  - bamtools >=2.5.2
+  - salmon >=1.9.0
+  - gffutils >=0.11.0
+  - pybedtools >=0.9.0
+  - umi_tools >=1.1.0
+  - star >=2.7.10
+  - statsmodels >=0.13.2
+  - rpy2 >=3.4.5
+  - r-base >=4.1
+  - r-lme4 >=1.1
+  - postmaster >=0.1.0
+source:
+  sha256: 9b2d24987d0cfd53bf608c2048ecf1c192ce6618dd6143e0dbd240d187a6d8a7
+  url: https://github.com/TaliaferroLab/OINC-seq/archive/refs/tags/v0.0.9.tar.gz
+test:
+  commands:
+  - pigpen -h
+  - bacon -h
+  - postmaster -h
+  imports:
+  - pigpen

@@ -1,0 +1,43 @@
+about:
+  doc_url: https://metacpan.org/pod/Sys::Info::Driver::Linux
+  home: https://metacpan.org/pod/Sys::Info::Driver::Linux
+  license: Perl_5
+  summary: Linux driver for Sys::Info
+build:
+  noarch: generic
+  number: 0
+  run_exports:
+  - null
+extra:
+  recipe-maintainers:
+  - xileF1337
+package:
+  name: perl-sys-info-driver-linux
+  version: '0.7911'
+requirements:
+  build:
+  - make
+  host:
+  - perl
+  - perl-test-sys-info
+  - perl-unix-processors
+  - perl-extutils-makemaker
+  - perl-sys-info-base
+  - perl-config-general
+  run:
+  - perl
+  - perl-config-general
+  - perl-unix-processors
+  - perl-sys-info-base
+source:
+  sha256: d59f752307621e00e7e0b68b67968e387055bc99e3fbd805726f5e7ac4f3cc48
+  url: https://cpan.metacpan.org/authors/id/B/BU/BURAK/Sys-Info-Driver-Linux-0.7911.tar.gz
+test:
+  imports:
+  - Sys::Info::Driver::Linux
+  - Sys::Info::Driver::Linux::Constants
+  - Sys::Info::Driver::Linux::Device
+  - Sys::Info::Driver::Linux::Device::CPU
+  - Sys::Info::Driver::Linux::OS
+  - Sys::Info::Driver::Linux::OS::Distribution
+  - Sys::Info::Driver::Linux::OS::Distribution::Conf

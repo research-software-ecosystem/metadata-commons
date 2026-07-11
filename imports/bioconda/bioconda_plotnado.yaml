@@ -1,0 +1,51 @@
+about:
+  dev_url: https://github.com/alsmith151/plotnado
+  doc_url: https://github.com/alsmith151/plotnado
+  home: https://github.com/alsmith151/plotnado
+  license: GPL-3.0-or-later
+  license_file: LICENSE
+  summary: Simple genomic track visualization and genome browser-style plotting
+build:
+  noarch: python
+  number: 0
+  run_exports:
+  - null
+  script: -m pip install . --no-deps --no-build-isolation -vv
+extra:
+  recipe-maintainers:
+  - alsmith151
+package:
+  name: plotnado
+  version: 0.3.1
+requirements:
+  host:
+  - pip
+  - python >=3.12
+  - setuptools >=61
+  - setuptools-scm >=6.2
+  - wheel
+  run:
+  - python >=3.12
+  - cooler
+  - loguru
+  - matplotlib-base
+  - numpy
+  - pandas
+  - pandera
+  - pybigtools
+  - pydantic >=2
+  - pyranges1
+  - tomli-w
+  - tqdm
+  - typer
+source:
+  sha256: f21241afdedd8a74e347fd6ac238661ceee5c397ec90f314235ce221b7518e5d
+  url: https://pypi.org/packages/source/p/plotnado/plotnado-0.3.1.tar.gz
+test:
+  commands:
+  - plotnado --help
+  - pip check
+  imports:
+  - plotnado
+  requires:
+  - pip

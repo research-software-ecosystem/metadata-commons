@@ -1,0 +1,63 @@
+about:
+  dev_url: https://github.com/aprilweilab/mrpast
+  doc_url: https://mrpast.readthedocs.io/en/latest
+  home: https://aprilweilab.github.io
+  license: GPL-3.0-only
+  license_family: GPL3
+  license_file: LICENSE
+  summary: Demographic inference from Ancestral Recombination Graphs.
+build:
+  entry_points:
+  - mrpast = mrpast.main:main
+  number: 0
+  run_exports:
+  - null
+  script: -m pip install . --no-deps --no-cache-dir --no-build-isolation -vvv
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+  recipe-maintainers:
+  - dcdehaas
+package:
+  name: mrpast
+  version: '0.3'
+requirements:
+  build:
+  - null
+  - null
+  - cmake
+  - make
+  host:
+  - numpy >=2.0.0
+  - dataclasses-json
+  - msprime
+  - orjson
+  - pandas
+  - pip
+  - pyfaidx
+  - python
+  - pyyaml
+  - tabulate
+  - tqdm
+  - tskit
+  run:
+  - null
+  - dataclasses-json
+  - msprime
+  - orjson
+  - pandas
+  - pyfaidx
+  - python
+  - pyyaml
+  - tabulate
+  - tqdm
+  - tskit
+source:
+  sha256: 823a0394b07b5d9af6ca547700159c329e8abc87341e3420f7d05867f4ca4027
+  url: https://pypi.org/packages/source/m/mrpast/mrpast-0.3.tar.gz
+test:
+  commands:
+  - mrpast --help
+  imports:
+  - mrpast

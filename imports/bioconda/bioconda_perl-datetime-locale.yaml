@@ -1,0 +1,52 @@
+about:
+  doc_url: https://metacpan.org/pod/DateTime::Locale
+  home: https://metacpan.org/pod/DateTime::Locale
+  license: Perl_5
+  summary: Localization support for DateTime.pm.
+build:
+  number: 1
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+package:
+  name: perl-datetime-locale
+  version: '1.45'
+requirements:
+  build:
+  - make
+  - null
+  host:
+  - perl
+  - perl-cpan-meta-check
+  - perl-test-requires
+  - perl-test-warnings
+  - perl-extutils-makemaker
+  - perl-specio
+  - perl-params-validationcompiler
+  - perl-test-more
+  - perl-namespace-autoclean
+  - perl-dist-checkconflicts
+  - perl-file-sharedir-install
+  - perl-file-sharedir
+  - perl-test2-plugin-nowarnings
+  run:
+  - perl
+  - perl-namespace-autoclean
+  - perl-dist-checkconflicts
+  - perl-params-validationcompiler
+  - perl-specio
+  - perl-file-sharedir
+source:
+  sha256: 1bc56dc2ff4b3152612e1d474ca65071ae2c00912e3fa4bc6f5a99e5e7a1da68
+  url: https://cpan.metacpan.org/authors/id/D/DR/DROLSKY/DateTime-Locale-1.45.tar.gz
+test:
+  imports:
+  - DateTime::Locale
+  - DateTime::Locale::Base
+  - DateTime::Locale::Catalog
+  - DateTime::Locale::Data
+  - DateTime::Locale::FromData
+  - DateTime::Locale::Util

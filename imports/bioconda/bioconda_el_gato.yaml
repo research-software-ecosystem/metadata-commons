@@ -1,0 +1,46 @@
+about:
+  dev_url: https://github.com/CDCgov/el_gato
+  doc_url: https://github.com/CDCgov/el_gato/blob/1.23.0/README.md
+  home: https://github.com/CDCgov/el_gato
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE
+  summary: Perform Legionella pneumophila Sequence Based Typing (SBT) from short reads
+    or assemblies.
+build:
+  noarch: generic
+  number: 0
+  run_exports:
+  - null
+  script:
+  - mkdir -p $PREFIX/bin/db
+  - cp -rf el_gato/db/* $PREFIX/bin/db/
+  - -m pip install . -vvv --no-deps --no-build-isolation --no-cache-dir
+extra:
+  skip-lints:
+  - should_be_noarch_python
+package:
+  name: el_gato
+  version: 1.23.0
+requirements:
+  build:
+  - python
+  host:
+  - python >=3.8,<3.12
+  - pip
+  run:
+  - python >=3.8,<3.12
+  - minimap2 >=2.24
+  - samtools >=1.15.1
+  - blast >=2.13
+  - ispcr >=33.0
+  - fpdf2
+  - packaging
+  - colorama
+  - importlib-metadata
+source:
+  sha256: 06db3e96810a18f5f4db6574253bbfc749cf3ea676e3efdb513c92cbbc9f4a32
+  url: https://github.com/CDCgov/el_gato/archive/refs/tags/1.23.0.tar.gz
+test:
+  commands:
+  - el_gato.py --version

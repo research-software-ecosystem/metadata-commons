@@ -1,0 +1,34 @@
+package: minimap
+distribution: debian
+release: sid
+component: main
+version: '0.2'
+source: minimap
+homepage: https://github.com/lh3/minimap
+license: unknown
+blend: debian-med
+description_md5: 31578520bb87ccfae197ec449e13eb73
+topics:
+- Mapping
+edam_scopes:
+- name: summary
+  input:
+  - data: Sequence
+    formats:
+    - FASTA
+  output:
+  - data: Alignment
+    formats:
+    - TSV
+  function:
+  - Read mapping
+registries:
+- entry: OMICS_29235
+  name: OMICtools
+- entry: minimap
+  name: conda:bioconda
+popcon:
+- insts: 116
+  olde: 88
+  recent: 23
+  vote: 5

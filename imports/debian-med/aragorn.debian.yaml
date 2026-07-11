@@ -1,0 +1,42 @@
+package: aragorn
+distribution: debian
+release: sid
+component: main
+version: 1.2.41
+source: aragorn
+homepage: http://mbio-serv2.mbioekol.lu.se/ARAGORN/
+license: unknown
+blend: debian-med
+description_md5: 9dfb74b77cab6ab1e8b625d5e65b71c6
+topics:
+- Functional, regulatory and non-coding RNA
+edam_scopes:
+- name: summary
+  input:
+  - data: Sequence
+    formats:
+    - FASTA
+  output:
+  - data: Sequence
+    formats:
+    - FASTA
+  - data: RNA secondary structure
+    formats:
+    - RNA secondary structure format
+  function:
+  - tRNA gene prediction
+registries:
+- entry: OMICS_04227
+  name: OMICtools
+- entry: SCR_015974
+  name: SciCrunch
+- entry: aragorn
+  name: conda:bioconda
+bib:
+- key: doi
+  value: 10.1093/nar/gkh152
+popcon:
+- insts: 120
+  olde: 90
+  recent: 23
+  vote: 7

@@ -1,0 +1,38 @@
+about:
+  dev_url: https://github.com/libwww-perl/http-cookies
+  home: https://github.com/libwww-perl/http-cookies
+  license: perl_5
+  summary: HTTP cookie jars.
+build:
+  noarch: generic
+  number: 0
+  run_exports:
+  - null
+package:
+  name: perl-http-cookies
+  version: '6.11'
+requirements:
+  build:
+  - make
+  host:
+  - perl
+  - perl-extutils-makemaker
+  - perl-uri
+  - perl-test
+  - perl-http-date
+  - perl-time-local
+  - perl-carp
+  - perl-http-message
+  run:
+  - perl
+  - perl-http-date
+  - perl-time-local
+  - perl-carp
+  - perl-http-message
+source:
+  sha256: 8c9a541a4a39f6c0c7e3d0b700b05dfdb830bd490a1b1942a7dedd1b50d9a8c8
+  url: https://cpan.metacpan.org/authors/id/O/OA/OALDERS/HTTP-Cookies-6.11.tar.gz
+test:
+  imports:
+  - HTTP::Cookies
+  - HTTP::Cookies::Netscape

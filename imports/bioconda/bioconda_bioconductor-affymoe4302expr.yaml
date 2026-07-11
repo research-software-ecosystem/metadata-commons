@@ -1,0 +1,36 @@
+about:
+  description: Contains pre-built mouse (GPL1261) database of gene expression profiles.
+    The gene expression data was downloaded from NCBI GEO, preprocessed and normalized
+    consistently. The biological context of each sample was recorded and manually
+    verified based on the sample description in GEO.
+  home: https://bioconductor.org/packages/3.22/data/experiment/html/Affymoe4302Expr.html
+  license: GPL (>=2)
+  license_file: /lib/R/share/licenses/GPL-3
+  summary: Affymetrix Mouse Genome 430 2.0 Array (GPL1261) Expression Data Package
+build:
+  noarch: generic
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+package:
+  name: bioconductor-affymoe4302expr
+  version: 1.48.0
+requirements:
+  host:
+  - r-base
+  run:
+  - r-base
+  - curl
+  - bioconductor-data-packages >=20260207
+source:
+  md5: 717596fbb5b5167d47cef236d375889d
+  url:
+  - https://bioconductor.org/packages/3.22/data/experiment/src/contrib/Affymoe4302Expr_1.48.0.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/Affymoe4302Expr/Affymoe4302Expr_1.48.0.tar.gz
+  - https://bioarchive.galaxyproject.org/Affymoe4302Expr_1.48.0.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-affymoe4302expr/bioconductor-affymoe4302expr_1.48.0_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('Affymoe4302Expr')"

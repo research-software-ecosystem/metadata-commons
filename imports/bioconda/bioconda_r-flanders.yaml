@@ -1,0 +1,63 @@
+about:
+  description: "flanders is an R package designed to seamlessly convert finemapping\
+    \ output files from the nf-flanders pipeline\ninto a unified AnnData object and\
+    \ facilitate colocalization analysis.\nThe package provides functions to:\n- Convert\
+    \ multiple *finemap.rds files into a single AnnData object with credible set metadata.\n\
+    - Generate an input table (coloc_input) for colocalization testing.\n- Run pairwise\
+    \ colocalization tests, with minimal runtime overhead (typically 5\u201310 tests\
+    \ per second on standard hardware).\n"
+  home: https://github.com/Biostatistics-Unit-HT/flanders_r
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE
+  summary: Fast colocalization using AnnData objects in R
+build:
+  noarch: generic
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports:
+  - null
+  script: '$R CMD INSTALL --build .
+
+    '
+extra:
+  recipe-maintainers:
+  - Sodbo
+  - edg1983
+package:
+  name: r-flanders
+  version: 1.0.1
+requirements:
+  host:
+  - r-base >=4.0
+  - r-anndata
+  - r-coloc
+  - r-data.table
+  - r-dplyr
+  - r-matrix
+  - r-optparse
+  - r-susier
+  - bioconductor-singlecellexperiment
+  - bioconductor-zellkonverter
+  - bioconductor-scrnaseq
+  run:
+  - r-anndata
+  - r-base >=4.0
+  - r-coloc
+  - r-data.table
+  - r-dplyr
+  - r-matrix
+  - r-optparse
+  - r-susier
+  - bioconductor-singlecellexperiment
+  - bioconductor-zellkonverter
+  - bioconductor-scrnaseq
+source:
+  sha256: 62728f8eb694b1eadfb696d33a5f65897ec405a3f3f1ff050b013c4f88acf2bc
+  url: https://github.com/Biostatistics-Unit-HT/flanders_r/releases/download/v1.0.1/flanders_1.0.1.tar.gz
+test:
+  commands:
+  - $R -e "library('flanders')"
+  - '"%R%" -e "library(''flanders'')"'

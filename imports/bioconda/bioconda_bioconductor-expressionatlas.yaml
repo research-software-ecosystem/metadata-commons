@@ -1,0 +1,55 @@
+about:
+  description: This package is for searching for datasets in EMBL-EBI Expression Atlas,
+    and downloading them into R for further analysis. Each Expression Atlas dataset
+    is represented as a SimpleList object with one element per platform. Sequencing
+    data is contained in a SummarizedExperiment object, while microarray data is contained
+    in an ExpressionSet or MAList object.
+  home: https://bioconductor.org/packages/3.22/bioc/html/ExpressionAtlas.html
+  license: GPL (>= 3)
+  license_file: /lib/R/share/licenses/GPL-3
+  summary: Download datasets from EMBL-EBI Expression Atlas
+build:
+  noarch: generic
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+package:
+  name: bioconductor-expressionatlas
+  version: 2.2.0
+requirements:
+  host:
+  - bioconductor-biobase >=2.70.0,<2.71.0
+  - bioconductor-biocstyle >=2.38.0,<2.39.0
+  - bioconductor-limma >=3.66.0,<3.67.0
+  - bioconductor-s4vectors >=0.48.0,<0.49.0
+  - bioconductor-summarizedexperiment >=1.40.0,<1.41.0
+  - r-base
+  - r-httr
+  - r-jsonlite
+  - r-rcurl
+  - r-xml
+  - r-xml2
+  run:
+  - bioconductor-biobase >=2.70.0,<2.71.0
+  - bioconductor-biocstyle >=2.38.0,<2.39.0
+  - bioconductor-limma >=3.66.0,<3.67.0
+  - bioconductor-s4vectors >=0.48.0,<0.49.0
+  - bioconductor-summarizedexperiment >=1.40.0,<1.41.0
+  - r-base
+  - r-httr
+  - r-jsonlite
+  - r-rcurl
+  - r-xml
+  - r-xml2
+source:
+  md5: 39ed929b2983bbf6ee48c855217f6354
+  url:
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/ExpressionAtlas_2.2.0.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/ExpressionAtlas/ExpressionAtlas_2.2.0.tar.gz
+  - https://bioarchive.galaxyproject.org/ExpressionAtlas_2.2.0.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-expressionatlas/bioconductor-expressionatlas_2.2.0_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('ExpressionAtlas')"

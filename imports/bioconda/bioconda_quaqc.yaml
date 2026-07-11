@@ -1,0 +1,39 @@
+about:
+  dev_url: https://github.com/bjmt/quaqc
+  doc_url: https://github.com/bjmt/quaqc/blob/v1.6/README.md
+  home: https://github.com/bjmt/quaqc
+  license: GPL-3.0-only
+  license_family: GPL3
+  license_file: LICENSE
+  summary: Quick ATAC-seq Quality Control.
+build:
+  number: 0
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+  identifiers:
+  - doi:10.1093/bioinformatics/btae649
+  recipe-maintainers:
+  - bjmt
+package:
+  name: quaqc
+  version: '1.6'
+requirements:
+  build:
+  - make
+  - null
+  - null
+  host:
+  - zlib
+  - htslib >=1.17
+  run:
+  - htslib >=1.17
+source:
+  sha256: 20b55b1ed606d65fda2a420f34ab2c41943264d7dd3b8465fd29d2767413113c
+  url: https://github.com/bjmt/quaqc/archive/refs/tags/v1.6.tar.gz
+test:
+  commands:
+  - quaqc --help

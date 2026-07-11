@@ -1,0 +1,45 @@
+about:
+  dev_url: https://github.com/CompEvol/beast2
+  home: http://www.beast2.org
+  license: LGPL-2.1-or-later
+  license_file: beast/LICENSE.txt
+  summary: BEAST 2 is a cross-platform program for Bayesian phylogenetic analysis
+    of molecular sequences.
+build:
+  noarch: generic
+  number: 0
+  run_exports:
+  - null
+package:
+  name: beast2
+  version: 2.7.7
+requirements:
+  host:
+  - beagle-lib
+  - fontconfig
+  - font-ttf-ubuntu
+  - freetype
+  - xorg-libxtst
+  run:
+  - beagle-lib
+  - fontconfig
+  - font-ttf-ubuntu
+  - freetype
+  - xorg-libxtst
+source:
+  folder: beast
+  patches:
+  - beast.patch
+  - applauncher.patch
+  - loganalyser.patch
+  sha256: a866f3e5da4ef890a042f01849e32322aa0a8e16e3e1cb2c59f823de2611781a
+  url: https://github.com/CompEvol/beast2/releases/download/v2.7.7/BEAST.v2.7.7.Linux.x86.tgz
+test:
+  commands:
+  - beast -version
+  - beast -beagle_info \| grep Flags
+  - applauncher -help
+  - packagemanager -help
+  - loganalyser -h
+  - logcombiner -help
+  - treeannotator -help

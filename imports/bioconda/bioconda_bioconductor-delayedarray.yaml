@@ -1,0 +1,64 @@
+about:
+  description: Wrapping an array-like object (typically an on-disk object) in a DelayedArray
+    object allows one to perform common array operations on it without loading the
+    object in memory. In order to reduce memory usage and optimize performance, operations
+    on the object are either delayed or executed using a block processing mechanism.
+    Note that this also works on in-memory array-like objects like DataFrame objects
+    (typically with Rle columns), Matrix objects, ordinary arrays and, data frames.
+  home: https://bioconductor.org/packages/3.22/bioc/html/DelayedArray.html
+  license: Artistic-2.0
+  summary: A unified framework for working transparently with on-disk and in-memory
+    array-like datasets
+build:
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+  parent_recipe:
+    name: bioconductor-delayedarray
+    path: recipes/bioconductor-delayedarray
+    version: 0.6.6
+package:
+  name: bioconductor-delayedarray
+  version: 0.36.0
+requirements:
+  build:
+  - null
+  - make
+  host:
+  - bioconductor-biocgenerics >=0.56.0,<0.57.0
+  - bioconductor-iranges >=2.44.0,<2.45.0
+  - bioconductor-matrixgenerics >=1.22.0,<1.23.0
+  - bioconductor-s4arrays >=1.10.0,<1.11.0
+  - bioconductor-s4vectors >=0.48.0,<0.49.0
+  - bioconductor-sparsearray >=1.10.0,<1.11.0
+  - r-base
+  - r-matrix
+  - libblas
+  - liblapack
+  - zlib
+  - liblzma-devel
+  run:
+  - bioconductor-biocgenerics >=0.56.0,<0.57.0
+  - bioconductor-iranges >=2.44.0,<2.45.0
+  - bioconductor-matrixgenerics >=1.22.0,<1.23.0
+  - bioconductor-s4arrays >=1.10.0,<1.11.0
+  - bioconductor-s4vectors >=0.48.0,<0.49.0
+  - bioconductor-sparsearray >=1.10.0,<1.11.0
+  - r-base
+  - r-matrix
+source:
+  md5: 57b2fd485d73f5dc5fcb65ec23e16429
+  url:
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/DelayedArray_0.36.0.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/DelayedArray/DelayedArray_0.36.0.tar.gz
+  - https://bioarchive.galaxyproject.org/DelayedArray_0.36.0.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-delayedarray/bioconductor-delayedarray_0.36.0_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('DelayedArray')"

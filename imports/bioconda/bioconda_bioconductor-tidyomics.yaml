@@ -1,0 +1,53 @@
+about:
+  description: "The tidyomics ecosystem is a set of packages for \u2019omic data analysis\
+    \ that work together in harmony; they share common data representations and API\
+    \ design, consistent with the tidyverse ecosystem. The tidyomics package is designed\
+    \ to make it easy to install and load core packages from the tidyomics ecosystem\
+    \ with a single command."
+  home: https://bioconductor.org/packages/3.22/bioc/html/tidyomics.html
+  license: MIT + file LICENSE
+  license_file: LICENSE
+  summary: Easily install and load the tidyomics ecosystem
+build:
+  noarch: generic
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+package:
+  name: bioconductor-tidyomics
+  version: 1.6.0
+requirements:
+  host:
+  - bioconductor-plyranges >=1.30.0,<1.31.0
+  - bioconductor-tidysinglecellexperiment >=1.20.0,<1.21.0
+  - bioconductor-tidyspatialexperiment >=1.6.0,<1.7.0
+  - bioconductor-tidysummarizedexperiment >=1.20.0,<1.21.0
+  - r-base
+  - r-cli
+  - r-purrr
+  - r-rlang
+  - r-stringr
+  - r-tidyseurat
+  run:
+  - bioconductor-plyranges >=1.30.0,<1.31.0
+  - bioconductor-tidysinglecellexperiment >=1.20.0,<1.21.0
+  - bioconductor-tidyspatialexperiment >=1.6.0,<1.7.0
+  - bioconductor-tidysummarizedexperiment >=1.20.0,<1.21.0
+  - r-base
+  - r-cli
+  - r-purrr
+  - r-rlang
+  - r-stringr
+  - r-tidyseurat
+source:
+  md5: b7e55839fd2d85090f51794ba1fe6456
+  url:
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/tidyomics_1.6.0.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/tidyomics/tidyomics_1.6.0.tar.gz
+  - https://bioarchive.galaxyproject.org/tidyomics_1.6.0.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-tidyomics/bioconductor-tidyomics_1.6.0_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('tidyomics')"

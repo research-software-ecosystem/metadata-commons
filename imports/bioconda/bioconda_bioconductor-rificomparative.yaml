@@ -1,0 +1,76 @@
+about:
+  description: '''rifiComparative'' is a continuation of rifi package. It compares
+    two conditions output of rifi using half-life and mRNA at time 0 segments. As
+    an input for the segmentation, the difference between half-life of both condtions
+    and log2FC of the mRNA at time 0 are used. The package provides segmentation,
+    statistics, summary table, fragments visualization and some additional useful
+    plots for further anaylsis.'
+  home: https://bioconductor.org/packages/3.22/bioc/html/rifiComparative.html
+  license: GPL-3 + file LICENSE
+  license_file: LICENSE
+  summary: '''rifiComparative'' compares the output of rifi from two different conditions.'
+build:
+  noarch: generic
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+package:
+  name: bioconductor-rificomparative
+  version: 1.10.0
+requirements:
+  host:
+  - bioconductor-dta >=2.56.0,<2.57.0
+  - bioconductor-rtracklayer >=1.70.0,<1.71.0
+  - bioconductor-s4vectors >=0.48.0,<0.49.0
+  - bioconductor-summarizedexperiment >=1.40.0,<1.41.0
+  - r-base
+  - r-cowplot
+  - r-devtools
+  - r-domc
+  - r-dplyr
+  - r-egg
+  - r-foreach
+  - r-ggplot2
+  - r-ggrepel
+  - r-lsd
+  - r-nnet
+  - r-reshape2
+  - r-rlang
+  - r-scales
+  - r-stringr
+  - r-tibble
+  - r-writexl
+  run:
+  - bioconductor-dta >=2.56.0,<2.57.0
+  - bioconductor-rtracklayer >=1.70.0,<1.71.0
+  - bioconductor-s4vectors >=0.48.0,<0.49.0
+  - bioconductor-summarizedexperiment >=1.40.0,<1.41.0
+  - r-base
+  - r-cowplot
+  - r-devtools
+  - r-domc
+  - r-dplyr
+  - r-egg
+  - r-foreach
+  - r-ggplot2
+  - r-ggrepel
+  - r-lsd
+  - r-nnet
+  - r-reshape2
+  - r-rlang
+  - r-scales
+  - r-stringr
+  - r-tibble
+  - r-writexl
+source:
+  md5: f694b242e177775020e6bde9bb8aac81
+  url:
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/rifiComparative_1.10.0.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/rifiComparative/rifiComparative_1.10.0.tar.gz
+  - https://bioarchive.galaxyproject.org/rifiComparative_1.10.0.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-rificomparative/bioconductor-rificomparative_1.10.0_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('rifiComparative')"

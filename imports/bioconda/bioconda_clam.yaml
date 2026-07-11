@@ -1,0 +1,39 @@
+about:
+  dev_url: https://github.com/cademirch/clam
+  home: https://github.com/cademirch/clam
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE
+  summary: clam is a tool for classification of callable loci intervals, and accurate
+    estimation of population genetic statistics.
+build:
+  number: 0
+  run_exports:
+  - null
+  skip: true
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+  skip-lints:
+  - should_use_compilers
+package:
+  name: clam
+  version: 1.1.4
+requirements:
+  build:
+  - null
+  - null
+  - null
+  - cargo-bundle-licenses
+  - gcc
+  - clangdev
+  - pkg-config
+  - make
+  - cmake
+source:
+  sha256: 304ea534d4bccb030fce3f40cbdf499302ed803f3ef0a4fa303e28613b262b47
+  url: https://github.com/cademirch/clam/archive/v1.1.4.tar.gz
+test:
+  commands:
+  - clam --help

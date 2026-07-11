@@ -1,0 +1,55 @@
+about:
+  description: High-throughput experimental data are accumulating exponentially in
+    public databases. However, mining valid scientific discoveries from these abundant
+    resources is hampered by technical artifacts and inherent biological heterogeneity.
+    The former are usually termed "batch effects," and the latter is often modelled
+    by "subtypes." The R package BUScorrect fits a Bayesian hierarchical model, the
+    Batch-effects-correction-with-Unknown-Subtypes model (BUS), to correct batch effects
+    in the presence of unknown subtypes. BUS is capable of (a) correcting batch effects
+    explicitly, (b) grouping samples that share similar characteristics into subtypes,
+    (c) identifying features that distinguish subtypes, and (d) enjoying a linear-order
+    computation complexity.
+  home: https://bioconductor.org/packages/3.22/bioc/html/BUScorrect.html
+  license: GPL (>= 2)
+  license_file: /lib/R/share/licenses/GPL-3
+  summary: Batch Effects Correction with Unknown Subtypes
+build:
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+extra:
+  additional-platforms:
+  - linux-aarch64
+  identifiers:
+  - biotools:buscorrect
+package:
+  name: bioconductor-buscorrect
+  version: 1.28.0
+requirements:
+  build:
+  - null
+  - make
+  host:
+  - bioconductor-summarizedexperiment >=1.40.0,<1.41.0
+  - r-base
+  - r-gplots
+  - libblas
+  - liblapack
+  - zlib
+  - liblzma-devel
+  run:
+  - bioconductor-summarizedexperiment >=1.40.0,<1.41.0
+  - r-base
+  - r-gplots
+source:
+  md5: de3142a1290b94587b8aa4b4a2bc596e
+  url:
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/BUScorrect_1.28.0.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/BUScorrect/BUScorrect_1.28.0.tar.gz
+  - https://bioarchive.galaxyproject.org/BUScorrect_1.28.0.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-buscorrect/bioconductor-buscorrect_1.28.0_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('BUScorrect')"

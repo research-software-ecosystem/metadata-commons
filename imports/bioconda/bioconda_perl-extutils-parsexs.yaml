@@ -1,0 +1,43 @@
+about:
+  doc_url: https://metacpan.org/pod/ExtUtils::ParseXS
+  home: https://metacpan.org/pod/ExtUtils::ParseXS
+  license: Unknown
+  summary: Converts Perl XS code into C code.
+build:
+  noarch: generic
+  number: 0
+  run_exports:
+  - null
+package:
+  name: perl-extutils-parsexs
+  version: '3.63'
+requirements:
+  build:
+  - make
+  host:
+  - perl
+  - perl-carp
+  - perl-exporter
+  - perl-extutils-cbuilder
+  - perl-extutils-makemaker >=6.46
+  run:
+  - perl
+  - perl-carp
+  - perl-exporter
+  - perl-extutils-cbuilder
+  - perl-extutils-makemaker >=6.46
+source:
+  sha256: d19a3f29288f0950ef8f1838db99270284ba475758246f0e5ab1113a9d9a7548
+  url: https://cpan.metacpan.org/authors/id/L/LE/LEONT/ExtUtils-ParseXS-3.63.tar.gz
+test:
+  imports:
+  - ExtUtils::ParseXS
+  - ExtUtils::ParseXS::Constants
+  - ExtUtils::ParseXS::CountLines
+  - ExtUtils::ParseXS::Eval
+  - ExtUtils::ParseXS::Utilities
+  - ExtUtils::Typemaps
+  - ExtUtils::Typemaps::Cmd
+  - ExtUtils::Typemaps::InputMap
+  - ExtUtils::Typemaps::OutputMap
+  - ExtUtils::Typemaps::Type

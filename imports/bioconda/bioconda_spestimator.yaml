@@ -1,0 +1,43 @@
+about:
+  home: https://github.com/erinyoung/Spestimator
+  license: MIT
+  license_file: LICENSE
+  summary: A tool to predict bacterial species from fasta files using RefSeq 16S.
+build:
+  entry_points:
+  - spestimator = spestimator.cli:main
+  noarch: python
+  number: 0
+  run_exports:
+  - null
+  script: -m pip install . -vv --no-deps --no-build-isolation
+extra:
+  recipe-maintainers:
+  - erinyoung
+package:
+  name: spestimator
+  version: 0.3.0.235
+requirements:
+  host:
+  - python >=3.9
+  - setuptools >=61.0
+  - wheel
+  - pip
+  run:
+  - python >=3.9
+  - blast
+  - pandas
+  - requests
+  - tqdm
+  - ncbi-datasets-pyclient
+source:
+  sha256: 4694e32825c887ef0acb7b2e05aef4b091bc2be0088e35c98f86f93f72be0d65
+  url: https://pypi.org/packages/source/S/Spestimator/spestimator-0.3.0.235.tar.gz
+test:
+  commands:
+  - pip check
+  - spestimator --help
+  imports:
+  - spestimator
+  requires:
+  - pip

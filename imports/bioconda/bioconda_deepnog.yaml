@@ -1,0 +1,53 @@
+about:
+  dev_url: https://github.com/univieCUBE/deepnog
+  doc_url: https://deepnog.readthedocs.io
+  home: https://github.com/univieCUBE/deepnog
+  license: BSD 3-Clause
+  license_family: BSD
+  license_file: LICENSE
+  summary: Deep learning tool for protein orthologous group assignment
+build:
+  entry_points:
+  - deepnog = deepnog.client:main
+  noarch: python
+  number: 0
+  run_exports:
+  - null
+  script: ' -m pip install . -vv'
+extra:
+  recipe-maintainers:
+  - VarIr
+  - LokiLuciferase
+package:
+  name: deepnog
+  version: 1.2.4
+requirements:
+  host:
+  - pip
+  - python
+  run:
+  - biopython
+  - numpy
+  - pandas
+  - python
+  - pytorch
+  - pyyaml
+  - scikit-learn
+  - tensorboard
+  - tqdm
+source:
+  sha256: 24c754c9d36d91b8dae91cb38f5d90ea68db4a25e0a3aef12c59813f28cdd3a2
+  url: https://pypi.io/packages/source/d/deepnog/deepnog-1.2.4.tar.gz
+test:
+  commands:
+  - deepnog --version
+  - deepnog --help
+  - deepnog infer --help
+  - deepnog train --help
+  imports:
+  - deepnog
+  - deepnog.client
+  - deepnog.learning
+  - deepnog.models
+  - deepnog.tests
+  - deepnog.utils

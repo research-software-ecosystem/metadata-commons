@@ -1,0 +1,74 @@
+about:
+  description: CYPRESS is a cell-type-specific power tool. This package aims to perform
+    power analysis for the cell-type-specific data. It calculates FDR, FDC, and power,
+    under various study design parameters, including but not limited to sample size,
+    and effect size. It takes the input of a SummarizeExperimental(SE) object with
+    observed mixture data (feature by sample matrix), and the cell-type mixture proportions
+    (sample by cell-type matrix). It can solve the cell-type mixture proportions from
+    the reference free panel from TOAST and conduct tests to identify cell-type-specific
+    differential expression (csDE) genes.
+  home: https://bioconductor.org/packages/3.22/bioc/html/cypress.html
+  license: GPL-2 | GPL-3
+  license_file: /lib/R/share/licenses/GPL-3
+  summary: Cell-Type-Specific Power Assessment
+build:
+  noarch: generic
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+package:
+  name: bioconductor-cypress
+  version: 1.6.0
+requirements:
+  host:
+  - bioconductor-biocparallel >=1.44.0,<1.45.0
+  - bioconductor-deseq2 >=1.50.0,<1.51.0
+  - bioconductor-edger >=4.8.0,<4.9.0
+  - bioconductor-preprocesscore >=1.72.0,<1.73.0
+  - bioconductor-proper >=1.42.0,<1.43.0
+  - bioconductor-summarizedexperiment >=1.40.0,<1.41.0
+  - bioconductor-toast >=1.24.0,<1.25.0
+  - r-abind
+  - r-base
+  - r-checkmate
+  - r-dplyr
+  - r-e1071
+  - r-mass
+  - r-mvtnorm
+  - r-rcolorbrewer
+  - r-rlang
+  - r-sirt
+  - r-tca
+  - r-tibble
+  run:
+  - bioconductor-biocparallel >=1.44.0,<1.45.0
+  - bioconductor-deseq2 >=1.50.0,<1.51.0
+  - bioconductor-edger >=4.8.0,<4.9.0
+  - bioconductor-preprocesscore >=1.72.0,<1.73.0
+  - bioconductor-proper >=1.42.0,<1.43.0
+  - bioconductor-summarizedexperiment >=1.40.0,<1.41.0
+  - bioconductor-toast >=1.24.0,<1.25.0
+  - r-abind
+  - r-base
+  - r-checkmate
+  - r-dplyr
+  - r-e1071
+  - r-mass
+  - r-mvtnorm
+  - r-rcolorbrewer
+  - r-rlang
+  - r-sirt
+  - r-tca
+  - r-tibble
+source:
+  md5: 280ea735877c08169eb1453c542d1a97
+  url:
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/cypress_1.6.0.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/cypress/cypress_1.6.0.tar.gz
+  - https://bioarchive.galaxyproject.org/cypress_1.6.0.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-cypress/bioconductor-cypress_1.6.0_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('cypress')"

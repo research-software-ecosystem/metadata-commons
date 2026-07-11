@@ -1,0 +1,36 @@
+about:
+  description: PWMEnrich pre-compiled background objects for M.musculus (mouse) and
+    MotifDb M. musculus motifs.
+  home: https://bioconductor.org/packages/3.22/data/experiment/html/PWMEnrich.Mmusculus.background.html
+  license: GPL-3
+  license_file: /lib/R/share/licenses/GPL-3
+  summary: M. musculus background for PWMEnrich
+build:
+  noarch: generic
+  number: 0
+  rpaths:
+  - lib/R/lib/
+  - lib/
+  run_exports: ''
+package:
+  name: bioconductor-pwmenrich.mmusculus.background
+  version: 4.44.0
+requirements:
+  host:
+  - bioconductor-pwmenrich >=4.46.0,<4.47.0
+  - r-base
+  run:
+  - bioconductor-pwmenrich >=4.46.0,<4.47.0
+  - r-base
+  - curl
+  - bioconductor-data-packages >=20260207
+source:
+  md5: 9a1ecb29bf15cfad7914c3d2892ccf1f
+  url:
+  - https://bioconductor.org/packages/3.22/data/experiment/src/contrib/PWMEnrich.Mmusculus.background_4.44.0.tar.gz
+  - https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/PWMEnrich.Mmusculus.background/PWMEnrich.Mmusculus.background_4.44.0.tar.gz
+  - https://bioarchive.galaxyproject.org/PWMEnrich.Mmusculus.background_4.44.0.tar.gz
+  - https://depot.galaxyproject.org/software/bioconductor-pwmenrich.mmusculus.background/bioconductor-pwmenrich.mmusculus.background_4.44.0_src_all.tar.gz
+test:
+  commands:
+  - $R -e "library('PWMEnrich.Mmusculus.background')"

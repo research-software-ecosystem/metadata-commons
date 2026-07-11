@@ -1,0 +1,38 @@
+about:
+  dev_url: https://github.com/lskatz/mashtree
+  doc_url: https://github.com/lskatz/mashtree/blob/v1.4.6/README.md
+  home: https://github.com/lskatz/mashtree
+  license: GPL-3.0-or-later
+  license_family: GPL3
+  license_file: LICENSE
+  summary: Create a tree using Mash distances.
+build:
+  number: 4
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+package:
+  name: mashtree
+  version: 1.4.6
+requirements:
+  build:
+  - null
+  host:
+  - perl
+  - perl-module-build
+  - perl-bioperl
+  run:
+  - perl
+  - perl-bioperl
+  - perl-file-which
+  - mash >=2
+  - quicktree
+source:
+  sha256: 1bd427aba025886d9df99c95f685e06dc2226bca080a64a9cb9d341b5a3d6dac
+  url: https://github.com/lskatz/mashtree/archive/v1.4.6.tar.gz
+test:
+  commands:
+  - mashtree --version

@@ -1,0 +1,40 @@
+about:
+  doc_url: https://metacpan.org/pod/JSON::Create
+  home: https://metacpan.org/pod/JSON::Create
+  license: Perl_5
+  summary: Fast, minimal, UTF-8-only serialization of data to JSON.
+build:
+  number: 0
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+package:
+  name: perl-json-create
+  version: '0.36'
+requirements:
+  build:
+  - make
+  - null
+  - null
+  host:
+  - perl
+  - perl-carp
+  - perl-extutils-makemaker
+  - perl-unicode-utf8
+  - perl-json-parse >=0.60
+  - perl-file-spec
+  - perl-file-temp
+  run:
+  - perl
+  - perl-carp
+  - perl-json-parse >=0.60
+  - perl-unicode-utf8 >=0.62
+source:
+  sha256: 3adb7e599e328397c5b9c00d6b1320a4c0b42217a0df4257d574b6021673cc49
+  url: https://cpan.metacpan.org/authors/id/B/BK/BKB/JSON-Create-0.36.tar.gz
+test:
+  imports:
+  - JSON::Create

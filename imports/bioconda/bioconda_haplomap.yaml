@@ -1,0 +1,33 @@
+about:
+  dev_url: https://github.com/zqfang/haplomap
+  home: https://github.com/zqfang/haplomap
+  license: MIT
+  license_family: MIT
+  summary: Haplotype-based computational genetic mapping.
+build:
+  number: 1
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+package:
+  name: haplomap
+  version: 0.1.2
+requirements:
+  build:
+  - make
+  - cmake
+  - null
+  - null
+  host:
+  - gsl
+  run:
+  - gsl
+source:
+  sha256: 427f79a2c02a43d397675c1b2b0dc66db67e105d61165bcc6d5a180b55e47bb1
+  url: https://github.com/zqfang/haplomap/archive/refs/tags/0.1.2.tar.gz
+test:
+  commands:
+  - haplomap --help

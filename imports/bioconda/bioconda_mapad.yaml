@@ -1,0 +1,33 @@
+about:
+  home: https://github.com/mpieva/mapAD
+  license: MIT
+  license_file: LICENSE
+  summary: An aDNA aware short-read mapper
+build:
+  number: 1
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+  recipe-maintainers:
+  - jch-13
+package:
+  name: mapad
+  version: 0.45.0
+requirements:
+  build:
+  - null
+  - null
+  - null
+  - cargo-bundle-licenses
+  - pkg-config
+  host:
+  - zlib
+  run: null
+source:
+  sha256: 8dcd11c126c8bbd7c8ff732c5897cd27c0775b86e35916a3f653964fc6f184c0
+  url: https://github.com/mpieva/mapAD/archive/refs/tags/v0.45.0.tar.gz
+test:
+  commands:
+  - mapad --help
