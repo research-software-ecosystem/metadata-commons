@@ -46,6 +46,8 @@ Some servers do not support partial Git clones and may ignore the blob filter. T
 
 The exact raw email emitted by Git (`%ae` and `%ce`, without `.mailmap`) is the identity. Different email strings are never merged. Names are retained only as observations associated with that exact email. Commit-message bodies are not read.
 
+`email_sha256` is calculated from the lowercased raw email so hashes match across case-only variants; `raw_email` remains unchanged.
+
 No profile, name, affiliation, ORCID, or similarity-based resolution is performed.
 
 ## Transparent state and outputs

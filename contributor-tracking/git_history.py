@@ -23,6 +23,11 @@ CONTRIBUTOR_FIELDS = [
 ]
 
 
+def email_sha256(email: str) -> str:
+    """Hash an email case-insensitively while retaining its exact raw value."""
+    return hashlib.sha256(email.lower().encode()).hexdigest()
+
+
 class CollectionError(Exception):
     def __init__(self, kind: str, message: str, retryable: bool = True, accessible: str = "unknown"):
         super().__init__(message)
@@ -200,7 +205,7 @@ def extract(job: dict, mirror: Path, output: Path, log: Path, stop: threading.Ev
         "provider": job["provider"],
         "metadata_sources": job["metadata_sources"],
         "raw_email": email,
-        "email_sha256": hashlib.sha256(email.encode()).hexdigest(),
+        "email_sha256": email_sha256(email),
         "observed_names": " | ".join(sorted(item["names"])),
         "author_commit_count": item["author"],
         "committer_commit_count": item["committer"],
