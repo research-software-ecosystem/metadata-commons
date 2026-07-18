@@ -45,9 +45,9 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          git fetch origin master
+          git fetch origin main
           gh pr merge ${{ github.event.pull_request.number }} --squash --delete-branch
-          echo "✅ Merged PR #${{ github.event.pull_request.number }} into master"
+          echo "✅ Merged PR #${{ github.event.pull_request.number }} into main"
 
 
  

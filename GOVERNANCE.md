@@ -12,7 +12,7 @@ Research software is a critical component of modern data-driven research. Thus, 
 
 ## Roles And Responsibilities within the RSEc
 
-This section lists a number of categories of roles and users for the tools ecosystem. All users and contributors are subject to the code of conduct specified and available in the RSEc main repository and website.
+This section lists a number of categories of roles and users for the RSEc. All users and contributors are subject to the code of conduct specified and available in the RSEc main repository and website.
 
 ### Users
 
