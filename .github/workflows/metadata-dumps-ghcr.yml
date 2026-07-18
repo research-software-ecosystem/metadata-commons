@@ -46,14 +46,7 @@ jobs:
       - name: Build aggregate metadata dumps
         run: |
           cd ${{ github.workspace }}/utils/bioschemas-gen
-          for generator in \
-            biotools_bioschemas_dump.py \
-            bioconda_bioschemas_dump.py \
-            biocontainers_bioschemas_dump.py \
-            debian_bioschemas_dump.py \
-            galaxy_bioschemas_dump.py \
-            workflowhub_bioschemas_dump.py
-          do
+          for generator in *_dump.py; do
             python "$generator"
           done
 
