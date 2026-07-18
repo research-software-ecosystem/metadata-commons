@@ -123,8 +123,10 @@ jobs:
             --annotation "org.opencontainers.image.created=$created" \
             --annotation "org.opencontainers.image.source=https://github.com/${{ github.repository }}" \
             --annotation "org.opencontainers.image.revision=${{ github.sha }}" \
-            "$PACKAGE:$week_tag,latest" \
+            "$PACKAGE:$week_tag" \
             metadata-commons-datasets.tar.gz:application/gzip \
             metadata-commons-datasets.tar.gz.sha256:text/plain
+
+          oras copy "$PACKAGE:$week_tag" "$PACKAGE:latest"
 
           echo "Published $PACKAGE with tags $week_tag and latest"
