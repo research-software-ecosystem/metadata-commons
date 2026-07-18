@@ -70,17 +70,6 @@ jobs:
           dataset_dir="${{ github.workspace }}/metadata-commons/datasets"
           artifact_dir="${{ runner.temp }}/metadata-commons-datasets"
 
-          test -s "$dataset_dir/bioschemas-dump.ttl"
-          test -s "$dataset_dir/bioconda-dump.ttl"
-          test -s "$dataset_dir/biocontainers-dump.ttl"
-          test -s "$dataset_dir/debian-dump.ttl"
-          test -s "$dataset_dir/galaxy-dump.ttl"
-          test -s "$dataset_dir/workflowhub-dump.ttl"
-          test -s "$dataset_dir/bioschemas-biii-dump.ttl"
-          test -s "$dataset_dir/bise-ontology-biii-dump.ttl"
-          test -s "$dataset_dir/biotools_bioschemas_files_list.txt"
-          test -s "$dataset_dir/bioconda_bioschemas_files_list.txt"
-          test -s "$dataset_dir/biocontainers_bioschemas_files_list.txt"
 
           mkdir -p "$artifact_dir"
           cd "${{ github.workspace }}/metadata-commons"
