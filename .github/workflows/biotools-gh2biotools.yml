@@ -1,11 +1,11 @@
-name: validate & run gh2biotools on .biotools.json changes to master
+name: validate & run gh2biotools on .biotools.json changes to main
 
 on:
   push:
     paths:
       - 'data/**/*.biotools.json'
     branches:
-      - master
+      - main
 
 jobs:
   run-gh2biotools:
