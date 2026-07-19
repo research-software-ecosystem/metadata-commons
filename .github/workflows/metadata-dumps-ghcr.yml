@@ -38,7 +38,7 @@ jobs:
 
       - name: Prepare datasets staging directory
         run: mkdir -p "${{ github.workspace }}/metadata-commons/datasets"
-        
+
       - name: Point legacy generators at the metadata-commons checkout
         continue-on-error: true
         run: |
