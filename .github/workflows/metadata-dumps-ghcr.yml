@@ -69,7 +69,6 @@ jobs:
 
       - name: Prepare datasets archive and checksums
         run: |
-          dataset_dir="${{ github.workspace }}/metadata-commons/datasets"
           artifact_dir="${{ runner.temp }}/metadata-commons-datasets"
           mkdir -p "$artifact_dir"
           cd "${{ github.workspace }}/metadata-commons"
