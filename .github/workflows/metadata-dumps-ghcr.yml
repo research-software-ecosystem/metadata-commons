@@ -37,6 +37,8 @@ jobs:
           pip install -r ${{ github.workspace }}/utils/bioschemas-gen/requirements.txt
           pip install -r ${{ github.workspace }}/utils/biii-import/requirements.txt
 
+      - name: Prepare datasets staging directory
+        run: mkdir -p "${{ github.workspace }}/metadata-commons/datasets"
       - name: Point legacy generators at the metadata-commons checkout
         continue-on-error: true
         run: |
@@ -67,10 +69,7 @@ jobs:
 
       - name: Prepare datasets archive and checksums
         run: |
-          dataset_dir="${{ github.workspace }}/metadata-commons/datasets"
           artifact_dir="${{ runner.temp }}/metadata-commons-datasets"
-
-
           mkdir -p "$artifact_dir"
           cd "${{ github.workspace }}/metadata-commons"
           find datasets -maxdepth 1 -type f ! -name SHA256SUMS -print0 \
