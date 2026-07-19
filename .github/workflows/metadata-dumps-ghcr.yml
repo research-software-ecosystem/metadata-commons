@@ -75,7 +75,7 @@ jobs:
           cd "${{ github.workspace }}/metadata-commons"
           find datasets -maxdepth 1 -type f ! -name SHA256SUMS -print0 \
             | sort -z \
-            | xargs -0 sha256sum > datasets/SHA256SUMS
+            | xargs -0 -r sha256sum > datasets/SHA256SUMS
           tar -czf "$artifact_dir/metadata-commons-datasets.tar.gz" datasets
           cd "$artifact_dir"
           sha256sum metadata-commons-datasets.tar.gz \
