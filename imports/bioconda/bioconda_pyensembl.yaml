@@ -15,7 +15,7 @@ build:
   script: -m pip install . -vvv --no-deps --no-build-isolation --no-cache-dir
 package:
   name: pyensembl
-  version: 2.10.1
+  version: 2.10.4
 requirements:
   host:
   - python >=3.9
@@ -35,8 +35,8 @@ requirements:
   - pylint >=1.4.4
   - python-dateutil >=2.5.0
 source:
-  sha256: 3fe9b2665da7ce27864d8f15a60fad99618101eb24d31e1ce9d3a4944a84ffd1
-  url: https://pypi.org/packages/source/p/pyensembl/pyensembl-2.10.1.tar.gz
+  sha256: 7b95ebbf30299aaad9707af729a8610d8d8428844cd828c75fb2386189428f8b
+  url: https://pypi.org/packages/source/p/pyensembl/pyensembl-2.10.4.tar.gz
 test:
   commands:
   - pyensembl --help

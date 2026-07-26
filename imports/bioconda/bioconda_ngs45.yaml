@@ -1,0 +1,67 @@
+about:
+  description: 'ngs45 recovers the 45S nrDNA transcribed unit (18S-ITS1-5.8S-ITS2-26S)
+    and
+
+    ITS barcode from Illumina short reads: it baits rDNA reads against a conserved
+
+    45S seed, assembles them with SPAdes, resolves a single repeat unit, trims to
+
+    the mature 18S/26S boundaries with Rfam SSU/LSU covariance models, annotates
+
+    the ITS regions, and reports intragenomic ribotype heterozygosity (a
+
+    hybridisation / allopolyploidy signal). Short-read counterpart of easy45 (HiFi).
+
+    '
+  dev_url: https://github.com/maidinhvn/ngs45
+  doc_url: https://github.com/maidinhvn/ngs45/tree/main/docs
+  home: https://github.com/maidinhvn/ngs45
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE
+  summary: Recover the 45S nrDNA transcribed unit from Illumina short reads
+build:
+  entry_points:
+  - ngs45 = ngs45.cli:main
+  noarch: python
+  number: 0
+  run_exports:
+  - null
+  script: -m pip install . -vv --no-deps --no-build-isolation
+extra:
+  recipe-maintainers:
+  - maidinhvn
+package:
+  name: ngs45
+  version: 0.2.0
+requirements:
+  host:
+  - python
+  - pip
+  - setuptools
+  - wheel
+  run:
+  - python
+  - biopython >=1.79
+  - barrnap
+  - bcftools
+  - blast
+  - bowtie2
+  - bwa
+  - cutadapt
+  - infernal
+  - itsx
+  - samtools
+  - seqkit
+  - spades
+source:
+  sha256: 248bb4dda2e760cca16615c55182952cc7db1112cf2fc9a36beb1f5d6931227b
+  url: https://github.com/maidinhvn/ngs45/archive/refs/tags/v0.2.0.tar.gz
+test:
+  commands:
+  - pip check
+  - ngs45 --version
+  imports:
+  - ngs45
+  requires:
+  - pip

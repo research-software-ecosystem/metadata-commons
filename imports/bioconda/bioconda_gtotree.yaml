@@ -39,7 +39,7 @@ extra:
   - should_be_noarch_generic
 package:
   name: gtotree
-  version: 1.8.17
+  version: 1.8.19
 requirements:
   host:
   - tar
@@ -67,9 +67,11 @@ requirements:
   - curl
   - pyarrow
   - tar
+  - requests =2.34
+  - tqdm =4.68
 source:
-  sha256: 319eba185cb0d21d7463bc78fbf890c54eaad481cdc5dd0c0dc8cbe12c38e43b
-  url: https://github.com/AstrobioMike/GToTree/archive/v1.8.17.tar.gz
+  sha256: 25ee2cf8d45138ef155b23bc8db3acb1e20dcd59b961acc4fa879350589571b8
+  url: https://github.com/AstrobioMike/GToTree/archive/v1.8.19.tar.gz
 test:
   commands:
   - GToTree -h
