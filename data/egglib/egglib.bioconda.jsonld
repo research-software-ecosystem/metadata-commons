@@ -1,6 +1,6 @@
 {
   "@context": {
-    "bioconda": "https://bioconda.github.io/recipes/",
+    "bioconda": "https://github.com/bioconda/bioconda-recipes/tree/master/recipes/",
     "biotools": "https://bio.tools/",
     "brick": "https://brickschema.org/schema/Brick#",
     "csvw": "http://www.w3.org/ns/csvw#",
@@ -38,6 +38,16 @@
   "schema1:citation": "doi:10.1111/1755-0998.13672",
   "schema1:description": "Evolutionary Genetics and Genomics Library. EggLib is a C++/Python library and program package for evolutionary genetics and genomics. Main features are sequence data management, sequence polymorphism analysis, and coalescent simulations. EggLib is a flexible Python module with a performant underlying C++ library and allows fast and intuitive development of Python programs and scripts.",
   "schema1:downloadUrl": "https://pypi.org/packages/source/e/egglib/egglib-3.6.0.tar.gz",
+  "schema1:hasPart": [
+    "python",
+    "pip",
+    "setuptools-scm",
+    "svgwrite",
+    "sphinx",
+    "numpydoc",
+    "htslib",
+    "swig"
+  ],
   "schema1:identifier": {
     "@id": "biotools:egglib"
   },
