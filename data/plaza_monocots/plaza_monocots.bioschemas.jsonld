@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,16 +36,20 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/gku986",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/plaza_monocots",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Klaas",
       "bsc:input": {
-        "@id": "_:N6ce52c4152c545c0901709c06d6c1e7f"
+        "@id": "_:Na1098107a11947e7bc6f111c11b121db"
       },
       "bsc:output": {
-        "@id": "_:Nc701a1ee020248c5836167825a1159ef"
+        "@id": "_:N6cc4585401f74529a7cd0737bad53abf"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0797"
@@ -59,8 +63,8 @@
       },
       "sc:name": "PLAZA monocots",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:provider": "PSB",
@@ -71,15 +75,7 @@
       "sc:url": "http://bioinformatics.psb.ugent.be/plaza/versions/plaza_v3_monocots/"
     },
     {
-      "@id": "_:Nc701a1ee020248c5836167825a1159ef",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0872"
-      },
-      "sc:name": "Phylogenetic tree"
-    },
-    {
-      "@id": "_:N6ce52c4152c545c0901709c06d6c1e7f",
+      "@id": "_:Na1098107a11947e7bc6f111c11b121db",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0842"
@@ -87,8 +83,12 @@
       "sc:name": "Identifier"
     },
     {
-      "@id": "https://doi.org/10.1093/nar/gku986",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N6cc4585401f74529a7cd0737bad53abf",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0872"
+      },
+      "sc:name": "Phylogenetic tree"
     }
   ]
 }

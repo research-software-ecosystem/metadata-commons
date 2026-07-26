@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,48 +36,48 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1021/acs.jproteome.8b00483",
+      "@id": "https://doi.org/10.1002/pmic.201400620",
       "@type": "sc:CreativeWork"
     },
     {
-      "@id": "https://doi.org/10.1002/pmic.201400620",
+      "@id": "https://doi.org/10.1021/acs.jproteome.8b00483",
       "@type": "sc:CreativeWork"
     },
     {
       "@id": "https://bio.tools/ebprot",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
-        "Hiromi W.L. Koh",
         "Christine Vogel",
+        "Hiromi W.L. Koh",
         "Hyungwon Choi",
         "Yunbin Zhang"
       ],
       "bsc:input": {
-        "@id": "_:N52b60c52c2634f29a5586357830dedb6"
+        "@id": "_:N75bbc3ee20fb45b28f7b242b6b8b11be"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Plug-in",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0121"
       },
       "sc:citation": [
         "pubmed:30411623",
-        "pubmed:25913743",
+        "pmcid:PMC6433620",
         {
           "@id": "https://doi.org/10.1021/acs.jproteome.8b00483"
         },
+        "pubmed:25913743",
         {
           "@id": "https://doi.org/10.1002/pmic.201400620"
-        },
-        "pmcid:PMC6433620"
+        }
       ],
       "sc:description": "Perseus plugin for differential protein abundance analysis of labeling-based and label-free quantitative proteomics data",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3635"
+          "@id": "edam:operation_3634"
         },
         {
-          "@id": "edam:operation_3634"
+          "@id": "edam:operation_3635"
         }
       ],
       "sc:isAccessibleForFree": true,
@@ -91,7 +91,7 @@
       "sc:url": "https://github.com/cssblab/EBprot"
     },
     {
-      "@id": "_:N52b60c52c2634f29a5586357830dedb6",
+      "@id": "_:N75bbc3ee20fb45b28f7b242b6b8b11be",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0945"

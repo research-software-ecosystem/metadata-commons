@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -42,35 +42,35 @@
     {
       "@id": "https://bio.tools/genefu",
       "@type": "sc:SoftwareApplication",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Library",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3518"
+          "@id": "edam:topic_0203"
         },
         {
-          "@id": "edam:topic_0203"
+          "@id": "edam:topic_3518"
         },
         {
           "@id": "edam:topic_2640"
         }
       ],
       "sc:author": [
-        "Laia Pare",
-        "Natchar Ratanasirigulchai",
-        "Joel S Parker",
-        "Markus S. Schroeder",
+        "Aleix Prat",
         "Benjamin Haibe-Kains",
         "Deena M.A. Gendoo",
-        "Aleix Prat"
+        "Joel S Parker",
+        "Laia Pare",
+        "Markus S. Schroeder",
+        "Natchar Ratanasirigulchai"
       ],
       "sc:citation": {
         "@id": "https://doi.org/10.18129/B9.bioc.genefu"
       },
       "sc:contributor": [
         "Christopher Eeles",
-        "Nikta Feizi",
-        "Jermiah Joseph"
+        "Jermiah Joseph",
+        "Nikta Feizi"
       ],
       "sc:description": "This package contains functions implementing various tasks usually required by gene expression analysis, especially in breast cancer studies: gene mapping between different microarray platforms, identification of molecular subtypes, implementation of published gene signatures, gene selection, and survival analysis.",
       "sc:featureList": [
@@ -84,8 +84,8 @@
       "sc:license": "Artistic-2.0",
       "sc:name": "genefu",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {

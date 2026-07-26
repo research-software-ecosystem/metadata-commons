@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,33 +40,33 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N2054ddc2491d44f8a864a4a915e3f65a"
+          "@id": "_:N40b136147d444f58a09f3f2a36d057e4"
         },
         {
-          "@id": "_:Ne00f341e4a664309b3783e5044c25d4b"
+          "@id": "_:N385484d39e3a4ecab4a854ec4335a5ab"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N89327e62bdfd4f5e9d60bc6013cc8731"
+          "@id": "_:N4e1ae9457bbe4e52a5ce62db339b3024"
         },
         {
-          "@id": "_:N3b930d569a9544dfa30d522870e5673b"
+          "@id": "_:Ne52fe001f3f245a4a5332512b1ff8d06"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
-        "Web application",
-        "Web API"
+        "Web API",
+        "Web application"
       ],
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0080"
       },
       "sc:author": [
-        "Thomas Gatter",
+        "Chris Schleiermacher",
         "Daniel Hagemeier",
-        "Chris Schleiermacher"
+        "Thomas Gatter"
       ],
       "sc:citation": "pubmed:8877506",
       "sc:description": "Based on the assumption that genes with related function from different organisms show high sequence similarity, degenerate primers can be designed from sequences of homologues genes. It is an interactive web-based program for designing degenerate primers.",
@@ -76,14 +76,14 @@
       "sc:isAccessibleForFree": true,
       "sc:name": "genefisher2",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": [
+        "BiBiServ",
         "Bielefeld University",
-        "CeBiTec",
-        "BiBiServ"
+        "CeBiTec"
       ],
       "sc:softwareHelp": {
         "@id": "https://bibiserv.cebitec.uni-bielefeld.de/genefisher2?id=genefisher_manual_manual"
@@ -92,20 +92,14 @@
       "sc:url": "http://bibiserv.cebitec.uni-bielefeld.de/genefisher2"
     },
     {
-      "@id": "_:N2054ddc2491d44f8a864a4a915e3f65a",
+      "@id": "_:N40b136147d444f58a09f3f2a36d057e4",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2975"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_1942"
-        },
-        {
-          "@id": "edam:format_1210"
-        },
-        {
-          "@id": "edam:format_1209"
+          "@id": "edam:format_1927"
         },
         {
           "@id": "edam:format_1929"
@@ -114,10 +108,19 @@
           "@id": "edam:format_1930"
         },
         {
-          "@id": "edam:format_1927"
+          "@id": "edam:format_2330"
+        },
+        {
+          "@id": "edam:format_2332"
         },
         {
           "@id": "edam:format_1925"
+        },
+        {
+          "@id": "edam:format_1209"
+        },
+        {
+          "@id": "edam:format_1942"
         },
         {
           "@id": "edam:format_1948"
@@ -126,35 +129,29 @@
           "@id": "edam:format_1215"
         },
         {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_2332"
+          "@id": "edam:format_1210"
         }
       ],
       "sc:name": "Nucleic acid sequence (raw)"
     },
     {
-      "@id": "_:Ne00f341e4a664309b3783e5044c25d4b",
+      "@id": "_:N385484d39e3a4ecab4a854ec4335a5ab",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0863"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_1219"
-        },
-        {
-          "@id": "edam:format_1982"
+          "@id": "edam:format_1921"
         },
         {
           "@id": "edam:format_2555"
         },
         {
-          "@id": "edam:format_1925"
+          "@id": "edam:format_1982"
         },
         {
-          "@id": "edam:format_1948"
+          "@id": "edam:format_1929"
         },
         {
           "@id": "edam:format_1997"
@@ -163,22 +160,25 @@
           "@id": "edam:format_2330"
         },
         {
+          "@id": "edam:format_1925"
+        },
+        {
           "@id": "edam:format_1942"
+        },
+        {
+          "@id": "edam:format_1948"
         },
         {
           "@id": "edam:format_1210"
         },
         {
-          "@id": "edam:format_1921"
-        },
-        {
-          "@id": "edam:format_1929"
+          "@id": "edam:format_1219"
         }
       ],
       "sc:name": "Sequence alignment"
     },
     {
-      "@id": "_:N89327e62bdfd4f5e9d60bc6013cc8731",
+      "@id": "_:N4e1ae9457bbe4e52a5ce62db339b3024",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1276"
@@ -186,7 +186,7 @@
       "sc:name": "Nucleic acid features"
     },
     {
-      "@id": "_:N3b930d569a9544dfa30d522870e5673b",
+      "@id": "_:Ne52fe001f3f245a4a5332512b1ff8d06",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1240"

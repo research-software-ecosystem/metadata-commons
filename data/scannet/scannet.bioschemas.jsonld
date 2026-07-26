@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,40 +36,36 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1101/2021.09.05.459013",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/scannet",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N929567a5b7a0495aaae76dfeb96af20d"
+          "@id": "_:N406b1a2ee3de481485be7890ae669f2e"
         },
         {
-          "@id": "_:Na732b9a3720c48a1875a96c86c6d2316"
+          "@id": "_:Nefb539a8f3a14c7b8b725ce5ff2aec6a"
         }
       ],
       "bsc:output": {
-        "@id": "_:Nb4724aefa6e741ffa61f06bc1537b87a"
+        "@id": "_:N7d5e0a0c9dbb402c97d9b8e3a22111fe"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
           "@id": "edam:topic_2830"
         },
         {
-          "@id": "edam:topic_0736"
-        },
-        {
-          "@id": "edam:topic_0154"
+          "@id": "edam:topic_3474"
         },
         {
           "@id": "edam:topic_3534"
         },
         {
-          "@id": "edam:topic_3474"
+          "@id": "edam:topic_0736"
+        },
+        {
+          "@id": "edam:topic_0154"
         }
       ],
       "sc:citation": {
@@ -81,10 +77,10 @@
           "@id": "edam:operation_2575"
         },
         {
-          "@id": "edam:operation_0252"
+          "@id": "edam:operation_0416"
         },
         {
-          "@id": "edam:operation_0416"
+          "@id": "edam:operation_0252"
         },
         {
           "@id": "edam:operation_0477"
@@ -100,7 +96,23 @@
       "sc:url": "http://bioinfo3d.cs.tau.ac.il/ScanNet/"
     },
     {
-      "@id": "_:Nb4724aefa6e741ffa61f06bc1537b87a",
+      "@id": "_:N406b1a2ee3de481485be7890ae669f2e",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1127"
+      },
+      "sc:name": "PDB ID"
+    },
+    {
+      "@id": "_:Nefb539a8f3a14c7b8b725ce5ff2aec6a",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2291"
+      },
+      "sc:name": "UniProt ID"
+    },
+    {
+      "@id": "_:N7d5e0a0c9dbb402c97d9b8e3a22111fe",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2080"
@@ -116,20 +128,8 @@
       "sc:name": "Database search results"
     },
     {
-      "@id": "_:N929567a5b7a0495aaae76dfeb96af20d",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2291"
-      },
-      "sc:name": "UniProt ID"
-    },
-    {
-      "@id": "_:Na732b9a3720c48a1875a96c86c6d2316",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1127"
-      },
-      "sc:name": "PDB ID"
+      "@id": "https://doi.org/10.1101/2021.09.05.459013",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

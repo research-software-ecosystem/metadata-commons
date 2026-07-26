@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -43,27 +43,27 @@
       "@id": "https://bio.tools/datac",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N0f35bca6605a4852a97a864422253d46"
+        "@id": "_:N62a24b87bd0e421f9cab16b5cb07acaa"
       },
       "bsc:output": [
         {
-          "@id": "_:N52b604c4cad844478f73590d40ac22ea"
+          "@id": "_:Nd3002a7bb6c248c79fea50f3b6bf4a5f"
         },
         {
-          "@id": "_:Ndb822403393a423e8d8df94c09f9ea5b"
+          "@id": "_:Nd2f5cdf7a0a7410a873c14e362ea6316"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web application",
-        "Database portal"
+        "Database portal",
+        "Web application"
       ],
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3305"
       },
       "sc:citation": [
-        "pmcid:PMC7399783",
         "pubmed:32853931",
+        "pmcid:PMC7399783",
         {
           "@id": "https://doi.org/10.1016/j.scitotenv.2020.141424"
         }
@@ -71,23 +71,31 @@
       "sc:description": "DatAC (Data Against COVID-19), a data fusion project with an interactive web frontend that integrates COVID-19 and environmental data in Spain. DatAC is provided with powerful data analysis and statistical capabilities that allow users to explore and analyze individual trends and associations among the provided data.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3659"
+          "@id": "edam:operation_3436"
         },
         {
-          "@id": "edam:operation_3436"
+          "@id": "edam:operation_3659"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:name": "DatAC",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:url": "https://covid19.genyo.es"
     },
     {
-      "@id": "_:N52b604c4cad844478f73590d40ac22ea",
+      "@id": "_:N62a24b87bd0e421f9cab16b5cb07acaa",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2337"
+      },
+      "sc:name": "Resource metadata"
+    },
+    {
+      "@id": "_:Nd3002a7bb6c248c79fea50f3b6bf4a5f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3905"
@@ -95,20 +103,12 @@
       "sc:name": "Histogram"
     },
     {
-      "@id": "_:Ndb822403393a423e8d8df94c09f9ea5b",
+      "@id": "_:Nd2f5cdf7a0a7410a873c14e362ea6316",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0950"
       },
       "sc:name": "Mathematical model"
-    },
-    {
-      "@id": "_:N0f35bca6605a4852a97a864422253d46",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2337"
-      },
-      "sc:name": "Resource metadata"
     }
   ]
 }

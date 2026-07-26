@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -43,12 +43,12 @@
         "Australia"
       ],
       "bsc:input": {
-        "@id": "_:N3ae4419523264edfa86c4da784d2120f"
+        "@id": "_:Nd5d3eadee35f42988a5cea5123954d01"
       },
       "bsc:output": {
-        "@id": "_:N54511c01d7ac477c8335974941b2aada"
+        "@id": "_:Nd71bd9666e354139a8d43b444210d88c"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Web application"
@@ -69,12 +69,12 @@
       "sc:license": "GPL-3.0",
       "sc:name": "Barrnap",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:provider": [
-        "unimelb.edu.au",
-        "University of Melbourne, Australia"
+        "University of Melbourne, Australia",
+        "unimelb.edu.au"
       ],
       "sc:softwareHelp": {
         "@id": "https://github.com/tseemann/barrnap/blob/master/README.md"
@@ -83,18 +83,7 @@
       "sc:url": "https://github.com/tseemann/barrnap"
     },
     {
-      "@id": "_:N54511c01d7ac477c8335974941b2aada",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1255"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1975"
-      },
-      "sc:name": "Sequence features"
-    },
-    {
-      "@id": "_:N3ae4419523264edfa86c4da784d2120f",
+      "@id": "_:Nd5d3eadee35f42988a5cea5123954d01",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3494"
@@ -103,6 +92,17 @@
         "@id": "edam:format_1929"
       },
       "sc:name": "DNA sequence"
+    },
+    {
+      "@id": "_:Nd71bd9666e354139a8d43b444210d88c",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1255"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1975"
+      },
+      "sc:name": "Sequence features"
     }
   ]
 }

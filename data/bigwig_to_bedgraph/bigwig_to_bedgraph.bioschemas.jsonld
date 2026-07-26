@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,30 +36,26 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/nar/gkw343",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/bigwig_to_bedgraph",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Galaxy Support Team",
       "bsc:input": {
-        "@id": "_:Nb7132455cbe74bc8a60ce9bde22e2e9e"
+        "@id": "_:Ndf56ec3ada0742379322e317b3eae77a"
       },
       "bsc:output": {
-        "@id": "_:N641030deb9be4214b0189f3fb591b9af"
+        "@id": "_:N0e76fb22d41349eaabb99f9cae1a69a3"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3168"
       },
       "sc:citation": [
         {
-          "@id": "https://doi.org/10.7490/f1000research.1114334.1"
+          "@id": "https://doi.org/10.1093/nar/gkw343"
         },
         {
-          "@id": "https://doi.org/10.1093/nar/gkw343"
+          "@id": "https://doi.org/10.7490/f1000research.1114334.1"
         }
       ],
       "sc:description": "Convert from bigWig to bedGraph format.",
@@ -68,15 +64,15 @@
       },
       "sc:name": "bigwig_to_bedgraph",
       "sc:operatingSystem": [
-        "Windows",
         "Linux",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:softwareVersion": "v4",
       "sc:url": "http://hgdownload.cse.ucsc.edu/downloads.html"
     },
     {
-      "@id": "_:Nb7132455cbe74bc8a60ce9bde22e2e9e",
+      "@id": "_:Ndf56ec3ada0742379322e317b3eae77a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3002"
@@ -87,7 +83,7 @@
       "sc:name": "Annotation track"
     },
     {
-      "@id": "_:N641030deb9be4214b0189f3fb591b9af",
+      "@id": "_:N0e76fb22d41349eaabb99f9cae1a69a3",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0006"
@@ -99,6 +95,10 @@
     },
     {
       "@id": "https://doi.org/10.7490/f1000research.1114334.1",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/gkw343",
       "@type": "sc:CreativeWork"
     }
   ]

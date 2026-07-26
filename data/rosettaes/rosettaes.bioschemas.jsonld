@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -41,34 +41,34 @@
       "biotools:primaryContact": "Frank Dimaio",
       "bsc:input": [
         {
-          "@id": "_:Nfdb44ed21f7547c5a7a61700d0f65bec"
+          "@id": "_:Nf164ebe3e2fb4d8f9aad7132bd827f35"
         },
         {
-          "@id": "_:Nf42f2ee4e3dd4bfe94f3f4a59fea63e3"
+          "@id": "_:N3592f27d16c24f6fbbe72d9c26d3f5fe"
         }
       ],
       "bsc:output": {
-        "@id": "_:Nc42c9a1903e6469d895aa40ddab05b2c"
+        "@id": "_:N991d3304926e49428579b884de9f070a"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Plug-in",
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_0081"
-        },
         {
           "@id": "edam:topic_0611"
         },
         {
           "@id": "edam:topic_1317"
+        },
+        {
+          "@id": "edam:topic_0081"
         }
       ],
       "sc:citation": [
         "pubmed:28628127",
+        "pmcid:PMC6009829",
         {
           "@id": "https://doi.org/10.1038/nmeth.4340"
-        },
-        "pmcid:PMC6009829"
+        }
       ],
       "sc:description": "An automated tool that uses a fragment-based sampling strategy for de novo model completion of macromolecular structures from cryo-EM density maps at 3–5-Å resolution.",
       "sc:featureList": [
@@ -83,8 +83,8 @@
       "sc:license": "Other",
       "sc:name": "RosettaES",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -93,18 +93,7 @@
       "sc:url": "https://www.rosettacommons.org/"
     },
     {
-      "@id": "_:Nfdb44ed21f7547c5a7a61700d0f65bec",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1710"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1476"
-      },
-      "sc:name": "Structure image"
-    },
-    {
-      "@id": "_:Nf42f2ee4e3dd4bfe94f3f4a59fea63e3",
+      "@id": "_:Nf164ebe3e2fb4d8f9aad7132bd827f35",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2976"
@@ -115,7 +104,18 @@
       "sc:name": "Protein sequence"
     },
     {
-      "@id": "_:Nc42c9a1903e6469d895aa40ddab05b2c",
+      "@id": "_:N3592f27d16c24f6fbbe72d9c26d3f5fe",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1710"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1476"
+      },
+      "sc:name": "Structure image"
+    },
+    {
+      "@id": "_:N991d3304926e49428579b884de9f070a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0889"

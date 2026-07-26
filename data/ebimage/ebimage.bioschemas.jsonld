@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,16 +36,12 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btq046",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/ebimage",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N49dfad16c65d47b296ade9a8757992f9"
+        "@id": "_:N39da01aa2136490c9d709df8275bccd1"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3383"
@@ -61,9 +57,9 @@
       "sc:license": "LGPL-2.0-or-later",
       "sc:name": "EBImage",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://bioconductor.org/packages/EBImage"
@@ -72,12 +68,16 @@
       "sc:url": "https://bioconductor.org/packages/EBImage"
     },
     {
-      "@id": "_:N49dfad16c65d47b296ade9a8757992f9",
+      "@id": "_:N39da01aa2136490c9d709df8275bccd1",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2968"
       },
       "sc:name": "Image"
+    },
+    {
+      "@id": "https://doi.org/10.1093/bioinformatics/btq046",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

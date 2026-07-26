@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,14 +39,11 @@
       "@id": "https://bio.tools/taxibgc",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nd9e686504a4a486c84a9669096bc9167"
+        "@id": "_:Na3c8e76e40e846ecadf1f022bd3df1da"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_3419"
-        },
         {
           "@id": "edam:topic_3172"
         },
@@ -55,6 +52,9 @@
         },
         {
           "@id": "edam:topic_3697"
+        },
+        {
+          "@id": "edam:topic_3419"
         },
         {
           "@id": "edam:topic_0154"
@@ -71,14 +71,14 @@
       "sc:license": "Not licensed",
       "sc:name": "TaxiBGC",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:url": "https://doi.org/10.1101/2021.07.30.454505"
     },
     {
-      "@id": "_:Nd9e686504a4a486c84a9669096bc9167",
+      "@id": "_:Na3c8e76e40e846ecadf1f022bd3df1da",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"

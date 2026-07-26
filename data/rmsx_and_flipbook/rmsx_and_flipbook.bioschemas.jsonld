@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,35 +36,31 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1038/s41598-026-39869-7",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/rmsx_and_flipbook",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N85c83105326447b8bdb4f357cbcb130b"
+        "@id": "_:N4961d944d13c4146a318ec66ca859829"
       },
       "bsc:output": {
-        "@id": "_:Nee4264dad25148b7abf43ca9df6bf948"
+        "@id": "_:Nc48ff1b9222b47d683dd0c725157b4b7"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Suite",
         "Workflow"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0176"
-        },
-        {
-          "@id": "edam:topic_3332"
+          "@id": "edam:topic_3306"
         },
         {
           "@id": "edam:topic_3307"
         },
         {
-          "@id": "edam:topic_3306"
+          "@id": "edam:topic_3332"
+        },
+        {
+          "@id": "edam:topic_0176"
         }
       ],
       "sc:citation": [
@@ -81,14 +77,14 @@
       "sc:license": "MIT",
       "sc:name": "RMSX and Flipbook",
       "sc:operatingSystem": [
-        "Windows",
         "Linux",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:url": "https://github.com/AntunesLab/rmsx"
     },
     {
-      "@id": "_:N85c83105326447b8bdb4f357cbcb130b",
+      "@id": "_:N4961d944d13c4146a318ec66ca859829",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3870"
@@ -96,12 +92,16 @@
       "sc:name": "Trajectory data"
     },
     {
-      "@id": "_:Nee4264dad25148b7abf43ca9df6bf948",
+      "@id": "_:Nc48ff1b9222b47d683dd0c725157b4b7",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2968"
       },
       "sc:name": "Image"
+    },
+    {
+      "@id": "https://doi.org/10.1038/s41598-026-39869-7",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,64 +40,54 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N788f6647ff4e4c9ca39c9d43fa623d75"
+          "@id": "_:N09ac6ecb6f7b4ed39d61879c6283ad12"
         },
         {
-          "@id": "_:N1e7b3d8389fa4ab798dd2d91414e7c49"
+          "@id": "_:N46c0ec95a12f49a8a39de2a27090b1f4"
         },
         {
-          "@id": "_:Ndae9015af37b4b2eb60b8ec6841331cb"
+          "@id": "_:N424dabb19ff04f0c80a08722882d4e96"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Nf70ddc764d7b450abb617eaa531059e0"
+          "@id": "_:N74febf719e954815882a0b69d79576d2"
         },
         {
-          "@id": "_:N41f91999ab4b4b71a19683eedd3620e7"
+          "@id": "_:N1dbc02849d0e44d6b4d3632b16b4bd21"
         },
         {
-          "@id": "_:N5b32de122a774290b75d2a2a52c3ad80"
+          "@id": "_:Ne702e496b6a449cd96656c58a70f45ff"
         },
         {
-          "@id": "_:N56a6736cccdc451184c21418f8281a52"
+          "@id": "_:Nf5e404e1d73b4870907d65ce8759530e"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3170"
-        },
-        {
           "@id": "edam:topic_3169"
         },
         {
           "@id": "edam:topic_3071"
+        },
+        {
+          "@id": "edam:topic_3170"
         }
       ],
       "sc:author": [
+        "Hervé Pagès",
         "Michael Lawrence",
-        "Patrick Aboyoun",
-        "Hervé Pagès"
+        "Patrick Aboyoun"
       ],
       "sc:citation": {
         "@id": "https://doi.org/10.1371/journal.pcbi.1003118"
       },
-      "sc:contributor": [
-        "Valerie Obenchain",
-        "Marcel Ramos",
-        "Lori Shepherd",
-        "Sonali Arora",
-        "Dan Tenenbaum",
-        "Martin Morgan",
-        "Daniel van Twisk",
-        "Kayla Morrell"
-      ],
-      "sc:description": "The ability to efficiently represent and manipulate genomic annotations and alignments is playing a central role when it comes to analyzing high-throughput sequencing data (a.k.a. NGS data). The GenomicRanges package defines general purpose containers for storing and manipulating genomic intervals and variables defined along a genome. More specialized containers for representing and manipulating short alignments against a reference genome, or a matrix-like summarization of an experiment, are defined in the GenomicAlignments and SummarizedExperiment packages, respectively. Both packages build on top of the GenomicRanges infrastructure.",
+      "sc:description": "Provides efficient low-level and highly reusable S4 classes for storing, manipulating and aggregating over annotated ranges of integers. Implements an algebra of range operations, including efficient algorithms for finding overlaps and nearest neighbors. Defines efficient list-like classes for storing, transforming and aggregating large grouped data, i.e., collections of atomic vectors and DataFrames.",
       "sc:featureList": [
         {
           "@id": "edam:operation_2409"
@@ -109,34 +99,132 @@
       "sc:license": "Artistic-2.0",
       "sc:name": "GenomicFeatures",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
-        "@id": "https://bioconductor.org/packages/GenomicRanges"
+        "@id": "https://bioconductor.org/packages/IRanges"
       },
-      "sc:softwareVersion": "1.64.0",
-      "sc:url": "https://bioconductor.org/packages/GenomicRanges"
+      "sc:softwareVersion": "2.46.0",
+      "sc:url": "https://bioconductor.org/packages/IRanges"
     },
     {
-      "@id": "_:Nf70ddc764d7b450abb617eaa531059e0",
+      "@id": "_:N09ac6ecb6f7b4ed39d61879c6283ad12",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1270"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_1975"
+        },
+        {
+          "@id": "edam:format_2306"
+        },
+        {
+          "@id": "edam:format_3621"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Feature table"
+    },
+    {
+      "@id": "_:N46c0ec95a12f49a8a39de2a27090b1f4",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1050"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_1975"
+        },
+        {
+          "@id": "edam:format_2306"
+        },
+        {
+          "@id": "edam:format_3621"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "File name"
+    },
+    {
+      "@id": "_:N424dabb19ff04f0c80a08722882d4e96",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3134"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_2330"
+          "@id": "edam:format_1975"
+        },
+        {
+          "@id": "edam:format_2306"
         },
         {
           "@id": "edam:format_3621"
+        },
+        {
+          "@id": "edam:format_2330"
         }
       ],
       "sc:name": "Gene transcript report"
     },
     {
-      "@id": "_:N41f91999ab4b4b71a19683eedd3620e7",
+      "@id": "_:N74febf719e954815882a0b69d79576d2",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3134"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3621"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Gene transcript report"
+    },
+    {
+      "@id": "_:N1dbc02849d0e44d6b4d3632b16b4bd21",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2048"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3621"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Report"
+    },
+    {
+      "@id": "_:Ne702e496b6a449cd96656c58a70f45ff",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1017"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3621"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Sequence range"
+    },
+    {
+      "@id": "_:Nf5e404e1d73b4870907d65ce8759530e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0849"
@@ -150,104 +238,6 @@
         }
       ],
       "sc:name": "Sequence record"
-    },
-    {
-      "@id": "_:N5b32de122a774290b75d2a2a52c3ad80",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2048"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_3621"
-        }
-      ],
-      "sc:name": "Report"
-    },
-    {
-      "@id": "_:N56a6736cccdc451184c21418f8281a52",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1017"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_3621"
-        }
-      ],
-      "sc:name": "Sequence range"
-    },
-    {
-      "@id": "_:N788f6647ff4e4c9ca39c9d43fa623d75",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3134"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2306"
-        },
-        {
-          "@id": "edam:format_1975"
-        },
-        {
-          "@id": "edam:format_3621"
-        },
-        {
-          "@id": "edam:format_2330"
-        }
-      ],
-      "sc:name": "Gene transcript report"
-    },
-    {
-      "@id": "_:N1e7b3d8389fa4ab798dd2d91414e7c49",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1270"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_1975"
-        },
-        {
-          "@id": "edam:format_3621"
-        },
-        {
-          "@id": "edam:format_2306"
-        },
-        {
-          "@id": "edam:format_2330"
-        }
-      ],
-      "sc:name": "Feature table"
-    },
-    {
-      "@id": "_:Ndae9015af37b4b2eb60b8ec6841331cb",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1050"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_1975"
-        },
-        {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_3621"
-        },
-        {
-          "@id": "edam:format_2306"
-        }
-      ],
-      "sc:name": "File name"
     },
     {
       "@id": "https://doi.org/10.1371/journal.pcbi.1003118",

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -43,45 +43,45 @@
       "@id": "https://bio.tools/rnatips",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Dmitrij Frishman",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0082"
+          "@id": "edam:topic_0621"
         },
         {
           "@id": "edam:topic_0097"
         },
         {
-          "@id": "edam:topic_0621"
+          "@id": "edam:topic_0099"
+        },
+        {
+          "@id": "edam:topic_0082"
         },
         {
           "@id": "edam:topic_0781"
-        },
-        {
-          "@id": "edam:topic_0099"
         }
       ],
       "sc:citation": [
+        "pubmed:23766288",
         "pmcid:PMC3692058",
         {
           "@id": "https://doi.org/10.1093/nar/gkt486"
-        },
-        "pubmed:23766288"
+        }
       ],
       "sc:description": "Web server that takes in RNA sequences of the same length and a temperature range to predict regions with high likelihood of temperature induced structural changes.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_2439"
-        },
-        {
-          "@id": "edam:operation_0570"
-        },
-        {
           "@id": "edam:operation_0502"
         },
         {
+          "@id": "edam:operation_2439"
+        },
+        {
           "@id": "edam:operation_0278"
+        },
+        {
+          "@id": "edam:operation_0570"
         }
       ],
       "sc:isAccessibleForFree": true,
@@ -89,8 +89,8 @@
       "sc:name": "RNAtips",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://rnatips.org/cgi-bin/help.cgi"

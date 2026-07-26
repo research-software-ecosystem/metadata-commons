@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -43,36 +43,36 @@
       "@id": "https://bio.tools/cpmd",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
-        "Emiliano Ippoliti",
-        "CPMD contact"
+        "CPMD contact",
+        "Emiliano Ippoliti"
       ],
       "bsc:input": [
         {
-          "@id": "_:Necb05d6dec464853a1aa7c57b218823d"
+          "@id": "_:Nb8ea133bab7c44de9b22aef26aec61c0"
         },
         {
-          "@id": "_:N4e0f57e92fa6424f8d07f111d7e50516"
+          "@id": "_:N60d29dff1bb642fab5494f90fa4a7582"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N056dd3837f5846eba9a305fd80d703ac"
+          "@id": "_:N5f37baa77cfe40efb6bc5f9fc98c9472"
         },
         {
-          "@id": "_:N6835f06b46d946e08361f84b297789c7"
+          "@id": "_:Nc232505b4f9a402ba8544d8e30994817"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Workflow",
-        "Command-line tool"
+        "Command-line tool",
+        "Workflow"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0176"
+          "@id": "edam:topic_3332"
         },
         {
-          "@id": "edam:topic_3332"
+          "@id": "edam:topic_0176"
         }
       ],
       "sc:citation": {
@@ -87,13 +87,13 @@
       "sc:operatingSystem": "Linux",
       "sc:softwareHelp": [
         {
-          "@id": "http://cpmd.org/documentation"
-        },
-        {
           "@id": "http://cpmd.org/documentation/cpmd-html-manual"
         },
         {
           "@id": "http://cpmd.org/cpmd-tutorial"
+        },
+        {
+          "@id": "http://cpmd.org/documentation"
         },
         {
           "@id": "http://cpmd.org/downloadable-files/no-authentication/manual_v4_0_1.pdf"
@@ -102,7 +102,7 @@
       "sc:url": "http://www.cpmd.org/"
     },
     {
-      "@id": "_:Necb05d6dec464853a1aa7c57b218823d",
+      "@id": "_:Nb8ea133bab7c44de9b22aef26aec61c0",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1463"
@@ -110,7 +110,7 @@
       "sc:name": "Small molecule structure"
     },
     {
-      "@id": "_:N4e0f57e92fa6424f8d07f111d7e50516",
+      "@id": "_:N60d29dff1bb642fab5494f90fa4a7582",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0883"
@@ -118,7 +118,7 @@
       "sc:name": "Structure"
     },
     {
-      "@id": "_:N056dd3837f5846eba9a305fd80d703ac",
+      "@id": "_:N5f37baa77cfe40efb6bc5f9fc98c9472",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1463"
@@ -126,7 +126,7 @@
       "sc:name": "Small molecule structure"
     },
     {
-      "@id": "_:N6835f06b46d946e08361f84b297789c7",
+      "@id": "_:Nc232505b4f9a402ba8544d8e30994817",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0883"

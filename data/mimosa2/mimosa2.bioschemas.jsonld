@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,39 +36,43 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/btac003",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/mimosa2",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N311ff8162aa14d02a831604d0c78a887"
+        "@id": "_:N18626144f837468f9d45c371a6e8e1d1"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web application",
-        "Library"
+        "Library",
+        "Web application"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3697"
-        },
-        {
-          "@id": "edam:topic_0154"
+          "@id": "edam:topic_3407"
         },
         {
           "@id": "edam:topic_3172"
         },
         {
-          "@id": "edam:topic_3407"
+          "@id": "edam:topic_3697"
         },
         {
           "@id": "edam:topic_0602"
+        },
+        {
+          "@id": "edam:topic_0154"
         }
       ],
       "sc:citation": [
         "pubmed:34999748",
+        "pmcid:PMC8896604",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btac003"
-        },
-        "pmcid:PMC8896604"
+        }
       ],
       "sc:description": "MIMOSA2 is a tool for metabolic model-based evaluation of paired microbiome and metabolomics datasets. MIMOSA2 1) constructs community metabolic models, 2) assesses whether metabolite measurements are consistent with estimated community metabolic potential, and 3) identifies specific taxa and reactions that can explain metabolite variation.",
       "sc:featureList": [
@@ -87,8 +91,8 @@
       "sc:name": "MIMOSA2",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://borenstein-lab.github.io/MIMOSA2shiny/"
@@ -96,16 +100,12 @@
       "sc:url": "http://elbo-spice.cs.tau.ac.il/shiny/MIMOSA2shiny/"
     },
     {
-      "@id": "_:N311ff8162aa14d02a831604d0c78a887",
+      "@id": "_:N18626144f837468f9d45c371a6e8e1d1",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3498"
       },
       "sc:name": "Sequence variations"
-    },
-    {
-      "@id": "https://doi.org/10.1093/bioinformatics/btac003",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

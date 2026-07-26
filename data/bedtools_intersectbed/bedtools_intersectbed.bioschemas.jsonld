@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,51 +40,47 @@
       "@type": "sc:CreativeWork"
     },
     {
-      "@id": "https://doi.org/10.7490/f1000research.1114334.1",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/bedtools_intersectbed",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Galaxy Support Team",
       "bsc:input": [
         {
-          "@id": "_:N29d1987e3dbb49f0ac2bf1185c3029da"
+          "@id": "_:N614fa0615cb743cba40ec4f133fa2e4d"
         },
         {
-          "@id": "_:N98c5557f8b6b4fd1abf9da090ab1aeb4"
+          "@id": "_:N9e3cd160003341f9b7133866ab89add5"
         },
         {
-          "@id": "_:N9d1b7439b68d485597f9fc07485c03ac"
+          "@id": "_:N44354514d9f042bc9ccb771f0591c55e"
         },
         {
-          "@id": "_:N804ec5b6db4e4fbdba56d11475a3055f"
+          "@id": "_:Nfc87b41eca03437db4e14117236d4f3f"
         },
         {
-          "@id": "_:Na03be899af434b7cadb3d80d58b2a10a"
+          "@id": "_:N6ce8e27cc1f74619a52448eaebb80a42"
         },
         {
-          "@id": "_:Nb061b95f45164ce7aba17c485f1cb553"
+          "@id": "_:N8185aeb992104ce3a682adca81c6655c"
         },
         {
-          "@id": "_:N54dcd6f2728343d9a5ac8209644a9b3a"
+          "@id": "_:N8825857d6a344e648f43f932ce3198b1"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Nd54e573a3c6d43b1a8d2b901682302d0"
+          "@id": "_:Nd64a7166219c46f18ea5b0aa611def99"
         },
         {
-          "@id": "_:N90eb6931834d4656968374034f150979"
+          "@id": "_:N0a96bdd9fafb48569efb8d3dd48d8827"
         },
         {
-          "@id": "_:N2fbfdabdb9e747ecba223244a5dce570"
+          "@id": "_:N65c461391d9b4ee7ba0c12cb4c3791de"
         },
         {
-          "@id": "_:N042d0f88d67c48f3bcd19fd894e6ebb7"
+          "@id": "_:N4b9143b6a46045f7b5e8f71190d82541"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3168"
@@ -93,10 +89,10 @@
         "pubmed:25199790",
         "pmcid:PMC4213956",
         {
-          "@id": "https://doi.org/10.7490/f1000research.1114334.1"
+          "@id": "https://doi.org/10.1002/0471250953.bi1112s47"
         },
         {
-          "@id": "https://doi.org/10.1002/0471250953.bi1112s47"
+          "@id": "https://doi.org/10.7490/f1000research.1114334.1"
         }
       ],
       "sc:description": "Report overlaps between two feature files.",
@@ -105,8 +101,8 @@
       },
       "sc:name": "bedtools_intersectbed",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -116,7 +112,29 @@
       "sc:url": "https://github.com/arq5x/bedtools6"
     },
     {
-      "@id": "_:Nd54e573a3c6d43b1a8d2b901682302d0",
+      "@id": "_:N614fa0615cb743cba40ec4f133fa2e4d",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3002"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3003"
+      },
+      "sc:name": "Annotation track"
+    },
+    {
+      "@id": "_:N9e3cd160003341f9b7133866ab89add5",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3002"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3003"
+      },
+      "sc:name": "Annotation track"
+    },
+    {
+      "@id": "_:N44354514d9f042bc9ccb771f0591c55e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0006"
@@ -127,7 +145,18 @@
       "sc:name": "Data"
     },
     {
-      "@id": "_:N90eb6931834d4656968374034f150979",
+      "@id": "_:Nfc87b41eca03437db4e14117236d4f3f",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0006"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2305"
+      },
+      "sc:name": "Data"
+    },
+    {
+      "@id": "_:N6ce8e27cc1f74619a52448eaebb80a42",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0924"
@@ -138,7 +167,29 @@
       "sc:name": "Sequence trace"
     },
     {
-      "@id": "_:N2fbfdabdb9e747ecba223244a5dce570",
+      "@id": "_:N8185aeb992104ce3a682adca81c6655c",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3498"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3016"
+      },
+      "sc:name": "Sequence variations"
+    },
+    {
+      "@id": "_:N8825857d6a344e648f43f932ce3198b1",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3498"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3016"
+      },
+      "sc:name": "Sequence variations"
+    },
+    {
+      "@id": "_:Nd64a7166219c46f18ea5b0aa611def99",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3002"
@@ -149,18 +200,7 @@
       "sc:name": "Annotation track"
     },
     {
-      "@id": "_:N042d0f88d67c48f3bcd19fd894e6ebb7",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3498"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3016"
-      },
-      "sc:name": "Sequence variations"
-    },
-    {
-      "@id": "_:N29d1987e3dbb49f0ac2bf1185c3029da",
+      "@id": "_:N0a96bdd9fafb48569efb8d3dd48d8827",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0006"
@@ -171,18 +211,7 @@
       "sc:name": "Data"
     },
     {
-      "@id": "_:N98c5557f8b6b4fd1abf9da090ab1aeb4",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3498"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3016"
-      },
-      "sc:name": "Sequence variations"
-    },
-    {
-      "@id": "_:N9d1b7439b68d485597f9fc07485c03ac",
+      "@id": "_:N65c461391d9b4ee7ba0c12cb4c3791de",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0924"
@@ -193,40 +222,7 @@
       "sc:name": "Sequence trace"
     },
     {
-      "@id": "_:N804ec5b6db4e4fbdba56d11475a3055f",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0006"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2305"
-      },
-      "sc:name": "Data"
-    },
-    {
-      "@id": "_:Na03be899af434b7cadb3d80d58b2a10a",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3002"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3003"
-      },
-      "sc:name": "Annotation track"
-    },
-    {
-      "@id": "_:Nb061b95f45164ce7aba17c485f1cb553",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3002"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3003"
-      },
-      "sc:name": "Annotation track"
-    },
-    {
-      "@id": "_:N54dcd6f2728343d9a5ac8209644a9b3a",
+      "@id": "_:N4b9143b6a46045f7b5e8f71190d82541",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3498"
@@ -235,6 +231,10 @@
         "@id": "edam:format_3016"
       },
       "sc:name": "Sequence variations"
+    },
+    {
+      "@id": "https://doi.org/10.7490/f1000research.1114334.1",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

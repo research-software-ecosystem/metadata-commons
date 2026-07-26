@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -43,12 +43,12 @@
       "@id": "https://bio.tools/flowstats",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nac48b30f50eb46888cc6579465de661a"
+        "@id": "_:N1e3dea3d1a124ef9a3f11be6c24e25e8"
       },
       "bsc:output": {
-        "@id": "_:N6cfa5e28f3b0457298e8744767153ac5"
+        "@id": "_:Nf3c4d31e1a1d489489e5a7cd85a82409"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
@@ -72,8 +72,8 @@
       "sc:name": "flowStats",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://bioconductor.org/packages/flowStats"
@@ -82,18 +82,7 @@
       "sc:url": "https://bioconductor.org/packages/flowStats"
     },
     {
-      "@id": "_:N6cfa5e28f3b0457298e8744767153ac5",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2884"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3547"
-      },
-      "sc:name": "Plot"
-    },
-    {
-      "@id": "_:Nac48b30f50eb46888cc6579465de661a",
+      "@id": "_:N1e3dea3d1a124ef9a3f11be6c24e25e8",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3108"
@@ -102,6 +91,17 @@
         "@id": "edam:format_2330"
       },
       "sc:name": "Experimental measurement"
+    },
+    {
+      "@id": "_:Nf3c4d31e1a1d489489e5a7cd85a82409",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2884"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3547"
+      },
+      "sc:name": "Plot"
     }
   ]
 }

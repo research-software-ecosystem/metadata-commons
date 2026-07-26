@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,12 +39,12 @@
       "@id": "https://bio.tools/complexheatmap",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N8f026317b9934dc8856ae92f13d4db4e"
+        "@id": "_:N544ab48a36f94eaeb2f5f3f1198876ac"
       },
       "bsc:output": {
-        "@id": "_:N8f5bbec39bc0458292a89b27f616492f"
+        "@id": "_:Ne8cbc23c91584d13bef90fe1d253e7cf"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
@@ -73,8 +73,8 @@
       "sc:license": "MIT",
       "sc:name": "ComplexHeatmap",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -84,18 +84,7 @@
       "sc:url": "https://bioconductor.org/packages/ComplexHeatmap"
     },
     {
-      "@id": "_:N8f5bbec39bc0458292a89b27f616492f",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1636"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3547"
-      },
-      "sc:name": "Heat map"
-    },
-    {
-      "@id": "_:N8f026317b9934dc8856ae92f13d4db4e",
+      "@id": "_:N544ab48a36f94eaeb2f5f3f1198876ac",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2082"
@@ -106,11 +95,22 @@
       "sc:name": "Matrix"
     },
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btw313",
-      "@type": "sc:CreativeWork"
+      "@id": "_:Ne8cbc23c91584d13bef90fe1d253e7cf",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1636"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3547"
+      },
+      "sc:name": "Heat map"
     },
     {
       "@id": "https://doi.org/10.1002/imt2.43",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1093/bioinformatics/btw313",
       "@type": "sc:CreativeWork"
     }
   ]

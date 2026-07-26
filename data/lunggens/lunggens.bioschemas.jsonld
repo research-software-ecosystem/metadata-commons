@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,26 +36,30 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1136/thoraxjnl-2015-207035",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/lunggens",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Yan Xu",
       "bsc:input": {
-        "@id": "_:N669bd351d6e44a588c9d4bcf5eb07b8e"
+        "@id": "_:N3cd81cbdee40425eb5d6dbe5874047e2"
       },
       "bsc:output": {
-        "@id": "_:N97f54bc77c9c49fdb32473e0332e0702"
+        "@id": "_:Nbf25109888b544b0a7b80c6f8c5ba7ab"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Database portal",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3170"
+          "@id": "edam:topic_0203"
         },
         {
           "@id": "edam:topic_3512"
         },
         {
-          "@id": "edam:topic_0203"
+          "@id": "edam:topic_3170"
         }
       ],
       "sc:citation": [
@@ -71,14 +75,14 @@
       },
       "sc:name": "LungGENS",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:url": "https://research.cchmc.org/pbge/lunggens/default.html"
     },
     {
-      "@id": "_:N669bd351d6e44a588c9d4bcf5eb07b8e",
+      "@id": "_:N3cd81cbdee40425eb5d6dbe5874047e2",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1026"
@@ -86,16 +90,12 @@
       "sc:name": "Gene symbol"
     },
     {
-      "@id": "_:N97f54bc77c9c49fdb32473e0332e0702",
+      "@id": "_:Nbf25109888b544b0a7b80c6f8c5ba7ab",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2603"
       },
       "sc:name": "Gene expression data"
-    },
-    {
-      "@id": "https://doi.org/10.1136/thoraxjnl-2015-207035",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

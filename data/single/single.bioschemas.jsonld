@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,39 +39,39 @@
       "@id": "https://bio.tools/SINGLe",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N54fafe508c274344a14770a5dab3ce53"
+        "@id": "_:Nea9a69844cf24155aac0f841e6f45945"
       },
       "bsc:output": {
-        "@id": "_:Nb2189ae800a4480283f8c13382a16288"
+        "@id": "_:Nedf7b92ae47b4408b5d855883e809949"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Script",
       "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_3912"
+        },
         {
           "@id": "edam:topic_3168"
         },
         {
           "@id": "edam:topic_3895"
-        },
-        {
-          "@id": "edam:topic_3912"
         }
       ],
       "sc:description": "Accurate consensus sequence from nanopore reads of a DNA gene library. SINGLe corrects for systematic errors in nanopore sequencing reads of gene libraries and it retrieves true consensus sequences of variants identified by a barcode, needing only a few reads per variant.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_2403"
+          "@id": "edam:operation_3219"
         },
         {
-          "@id": "edam:operation_3219"
+          "@id": "edam:operation_2403"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "MIT",
       "sc:name": "SINGLe",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -80,28 +80,28 @@
       "sc:url": "https://github.com/rocioespci/single"
     },
     {
-      "@id": "_:Nb2189ae800a4480283f8c13382a16288",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0860"
-      },
-      "sc:name": "Sequence signature data"
-    },
-    {
-      "@id": "_:N54fafe508c274344a14770a5dab3ce53",
+      "@id": "_:Nea9a69844cf24155aac0f841e6f45945",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2977"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_2546"
+          "@id": "edam:format_2572"
         },
         {
-          "@id": "edam:format_2572"
+          "@id": "edam:format_2546"
         }
       ],
       "sc:name": "Nucleic acid sequence"
+    },
+    {
+      "@id": "_:Nedf7b92ae47b4408b5d855883e809949",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0860"
+      },
+      "sc:name": "Sequence signature data"
     }
   ]
 }

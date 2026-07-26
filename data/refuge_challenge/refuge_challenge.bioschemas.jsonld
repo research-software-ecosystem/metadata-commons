@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -38,7 +38,7 @@
     {
       "@id": "https://bio.tools/REFUGE_Challenge",
       "@type": "sc:SoftwareApplication",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:applicationSubCategory": [
         {
           "@id": "edam:topic_3360"
@@ -62,13 +62,13 @@
       "sc:description": "A unified framework for evaluating automated methods for glaucoma assessment from fundus photographs.\n\nThe goal of the Retinal Fundus Glaucoma Challenge (REFUGE) is to evaluate and compare automated algorithms for glaucoma detection and optic disc/cup segmentation on a common dataset of retinal fundus images.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3553"
-        },
-        {
           "@id": "edam:operation_3283"
         },
         {
           "@id": "edam:operation_3443"
+        },
+        {
+          "@id": "edam:operation_3553"
         }
       ],
       "sc:name": "REFUGE Challenge",

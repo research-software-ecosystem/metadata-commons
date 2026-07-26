@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,24 +36,24 @@
   },
   "@graph": [
     {
-      "@id": "http://orcid.org/0000-0003-0060-6486",
-      "@type": "sc:Person"
-    },
-    {
       "@id": "https://doi.org/10.1093/nar/gkn840",
       "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "http://orcid.org/0000-0003-0060-6486",
+      "@type": "sc:Person"
     },
     {
       "@id": "https://bio.tools/netmhcpan",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Morten Nielsen",
       "bsc:input": {
-        "@id": "_:Ne06c9f2a174042d5b00ae309180ed9a9"
+        "@id": "_:N5b69c5c474b54c74b7dbd720a417ad6a"
       },
       "bsc:output": {
-        "@id": "_:Na0e3bbee5dbf47ce925de233108189d8"
+        "@id": "_:N5b4bc8c7ee8f4d22bf5b9c71aa6c313f"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Web application"
@@ -62,11 +62,11 @@
         "@id": "edam:topic_3534"
       },
       "sc:citation": [
+        "pubmed:18981051",
+        "pmcid:PMC2686430",
         {
           "@id": "https://doi.org/10.1093/nar/gkn840"
-        },
-        "pubmed:18981051",
-        "pmcid:PMC2686430"
+        }
       ],
       "sc:contributor": {
         "@id": "http://orcid.org/0000-0003-0060-6486"
@@ -74,18 +74,18 @@
       "sc:description": "Predict binding of peptides to any known MHC molecule using artificial neural networks (ANNs).",
       "sc:featureList": [
         {
-          "@id": "edam:operation_2575"
+          "@id": "edam:operation_0416"
         },
         {
-          "@id": "edam:operation_0416"
+          "@id": "edam:operation_2575"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "Other",
       "sc:name": "NetMHCpan",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:provider": "CBS",
       "sc:softwareHelp": {
@@ -95,18 +95,7 @@
       "sc:url": "http://www.cbs.dtu.dk/services/NetMHCpan/"
     },
     {
-      "@id": "_:Na0e3bbee5dbf47ce925de233108189d8",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1277"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2331"
-      },
-      "sc:name": "Protein features"
-    },
-    {
-      "@id": "_:Ne06c9f2a174042d5b00ae309180ed9a9",
+      "@id": "_:N5b69c5c474b54c74b7dbd720a417ad6a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
@@ -115,6 +104,17 @@
         "@id": "edam:format_1929"
       },
       "sc:name": "Sequence"
+    },
+    {
+      "@id": "_:N5b4bc8c7ee8f4d22bf5b9c71aa6c313f",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1277"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2331"
+      },
+      "sc:name": "Protein features"
     }
   ]
 }

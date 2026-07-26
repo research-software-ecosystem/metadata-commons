@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,6 +36,14 @@
   },
   "@graph": [
     {
+      "@id": "https://orcid.org/0000-0002-1103-2425",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.3390/v17101385",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/vvv2_display",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
@@ -43,50 +51,50 @@
       },
       "bsc:input": [
         {
-          "@id": "_:N62d9547221d24ddab106a29a85fabc40"
+          "@id": "_:Ne7a061473b4545448144d99de087f729"
         },
         {
-          "@id": "_:Nee12ad9c329b4a58ba5f8ae5b88c1683"
+          "@id": "_:N346557694a8742828cf88850d783425b"
         },
         {
-          "@id": "_:Nb3bbb258034740af9c0b69f5ef47b6bd"
+          "@id": "_:N279b4113c8064e8391985cb649ad3dea"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Nbf2bfd4e25d843d39fb05107e873a600"
+          "@id": "_:N64f504fc9b66414aaa68fc347e16ee34"
         },
         {
-          "@id": "_:Nf1a28820dd814288b830321b74a75463"
+          "@id": "_:N2daa99f1c42942019a60e346e423176d"
         },
         {
-          "@id": "_:N9dbc77e57ca04a3dbb700a3cf179bf83"
+          "@id": "_:N7cd11a94fa9c4c6abaf5b618ffbfeb5c"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0781"
+          "@id": "edam:topic_0080"
         },
         {
-          "@id": "edam:topic_0080"
+          "@id": "edam:topic_0781"
         }
       ],
       "sc:citation": [
         "pubmed:41157655",
+        "pmcid:PMC12567792",
         {
           "@id": "https://doi.org/10.3390/v17101385"
-        },
-        "pmcid:PMC12567792"
+        }
       ],
       "sc:description": "Display SNP proportions (vardict outputs), CDS (vadr annotations) of an assembly/genome, coverage depth (samtools depth), in png image and a tsv file, filtering results to summarize analyses (alignment, variant calling, annotation).",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3184"
+          "@id": "edam:operation_0287"
         },
         {
-          "@id": "edam:operation_0287"
+          "@id": "edam:operation_3184"
         }
       ],
       "sc:isAccessibleForFree": true,
@@ -97,62 +105,7 @@
       "sc:url": "https://github.com/ANSES-Ploufragan/vvv2_display"
     },
     {
-      "@id": "_:Nbf2bfd4e25d843d39fb05107e873a600",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2968"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3603"
-      },
-      "sc:name": "Image"
-    },
-    {
-      "@id": "_:Nf1a28820dd814288b830321b74a75463",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3779"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Annotated text"
-    },
-    {
-      "@id": "_:N9dbc77e57ca04a3dbb700a3cf179bf83",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3498"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3016"
-      },
-      "sc:name": "Sequence variations"
-    },
-    {
-      "@id": "_:N62d9547221d24ddab106a29a85fabc40",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3498"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3016"
-      },
-      "sc:name": "Sequence variations"
-    },
-    {
-      "@id": "_:Nee12ad9c329b4a58ba5f8ae5b88c1683",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2526"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Text data"
-    },
-    {
-      "@id": "_:Nb3bbb258034740af9c0b69f5ef47b6bd",
+      "@id": "_:Ne7a061473b4545448144d99de087f729",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1270"
@@ -163,12 +116,59 @@
       "sc:name": "Feature table"
     },
     {
-      "@id": "https://doi.org/10.3390/v17101385",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N346557694a8742828cf88850d783425b",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3498"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3016"
+      },
+      "sc:name": "Sequence variations"
     },
     {
-      "@id": "https://orcid.org/0000-0002-1103-2425",
-      "@type": "sc:Person"
+      "@id": "_:N279b4113c8064e8391985cb649ad3dea",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2526"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Text data"
+    },
+    {
+      "@id": "_:N64f504fc9b66414aaa68fc347e16ee34",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3779"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Annotated text"
+    },
+    {
+      "@id": "_:N2daa99f1c42942019a60e346e423176d",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2968"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3603"
+      },
+      "sc:name": "Image"
+    },
+    {
+      "@id": "_:N7cd11a94fa9c4c6abaf5b618ffbfeb5c",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3498"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3016"
+      },
+      "sc:name": "Sequence variations"
     }
   ]
 }

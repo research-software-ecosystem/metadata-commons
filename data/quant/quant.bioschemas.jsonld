@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,30 +40,30 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N84958b8bbc284f74bbbfd3f30e43717f"
+          "@id": "_:N20701c50a535430797d79de5b462d8fa"
         },
         {
-          "@id": "_:N7407b3f1002f438692f0494faf657c8f"
+          "@id": "_:N51e75362c2bb4a9d8e6fdf925adbbc23"
         },
         {
-          "@id": "_:Nefd847236fb64c7aa40b07febcaf8511"
+          "@id": "_:Nda3b543e11c24a8e83035de1db96274c"
         },
         {
-          "@id": "_:N5a7658051dac4519abddc82153d8261f"
+          "@id": "_:N39562ec7c141447cb8359170853148c0"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Nf9b75bbfa5514f5fb01ad20ba57066c4"
+          "@id": "_:N2341ac47a6854b7690e56cbcb993059e"
         },
         {
-          "@id": "_:Nccf8cea4874a46e09609d9675e30f754"
+          "@id": "_:N653f1dba3b0f403a83391f0680c5919d"
         },
         {
-          "@id": "_:N090a6c415bc1439baaefeac830d5f94b"
+          "@id": "_:N146e48dfbf874849bd185c6a68a68d9d"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
@@ -74,19 +74,19 @@
         }
       ],
       "sc:citation": [
+        "pubmed:17584939",
+        "pmcid:PMC1940031",
         {
           "@id": "https://doi.org/10.1186/1471-2105-8-214"
-        },
-        "pubmed:17584939",
-        "pmcid:PMC1940031"
+        }
       ],
       "sc:description": "MATLAB program for protein quantitation by iTRAQ.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3630"
+          "@id": "edam:operation_3635"
         },
         {
-          "@id": "edam:operation_3635"
+          "@id": "edam:operation_3630"
         },
         {
           "@id": "edam:operation_3639"
@@ -97,8 +97,8 @@
       ],
       "sc:name": "Quant",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "https://sourceforge.net/p/protms/wiki/Home/"
@@ -106,7 +106,7 @@
       "sc:url": "http://sourceforge.net/projects/protms"
     },
     {
-      "@id": "_:N84958b8bbc284f74bbbfd3f30e43717f",
+      "@id": "_:N20701c50a535430797d79de5b462d8fa",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0943"
@@ -117,7 +117,7 @@
       "sc:name": "Mass spectrometry spectra"
     },
     {
-      "@id": "_:N7407b3f1002f438692f0494faf657c8f",
+      "@id": "_:N51e75362c2bb4a9d8e6fdf925adbbc23",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0945"
@@ -128,7 +128,7 @@
       "sc:name": "Peptide identification"
     },
     {
-      "@id": "_:Nefd847236fb64c7aa40b07febcaf8511",
+      "@id": "_:Nda3b543e11c24a8e83035de1db96274c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0943"
@@ -139,7 +139,7 @@
       "sc:name": "Mass spectrometry spectra"
     },
     {
-      "@id": "_:N5a7658051dac4519abddc82153d8261f",
+      "@id": "_:N39562ec7c141447cb8359170853148c0",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0945"
@@ -150,7 +150,7 @@
       "sc:name": "Peptide identification"
     },
     {
-      "@id": "_:Nf9b75bbfa5514f5fb01ad20ba57066c4",
+      "@id": "_:N2341ac47a6854b7690e56cbcb993059e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2603"
@@ -161,7 +161,18 @@
       "sc:name": "Expression data"
     },
     {
-      "@id": "_:Nccf8cea4874a46e09609d9675e30f754",
+      "@id": "_:N653f1dba3b0f403a83391f0680c5919d",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2603"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3603"
+      },
+      "sc:name": "Expression data"
+    },
+    {
+      "@id": "_:N146e48dfbf874849bd185c6a68a68d9d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
@@ -170,17 +181,6 @@
         "@id": "edam:format_3603"
       },
       "sc:name": "Plot"
-    },
-    {
-      "@id": "_:N090a6c415bc1439baaefeac830d5f94b",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2603"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3603"
-      },
-      "sc:name": "Expression data"
     },
     {
       "@id": "https://doi.org/10.1186/1471-2105-8-214",

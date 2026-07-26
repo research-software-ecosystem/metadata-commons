@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -47,27 +47,27 @@
       },
       "bsc:input": [
         {
-          "@id": "_:N7d6a531e17d3497cb028d146311773cf"
+          "@id": "_:Nc590e6dec33b41d6955ba5486c503c7d"
         },
         {
-          "@id": "_:N36b39afe265d427aad076263e95f4ae3"
+          "@id": "_:N9c5ed435e1544c298668bc8ff10a68be"
         },
         {
-          "@id": "_:Ne1742f0b625f4cccb0f125e88da54141"
+          "@id": "_:N48ed1c1a1eb248c6b747d21cd8859c1d"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N206a406220fb47e6bd714abb960a14ec"
+          "@id": "_:Ne77c5c6fd66848168b3141f8e641d2c2"
         },
         {
-          "@id": "_:Nc4d2bc6f6bae4deb93807d1dc8ccb772"
+          "@id": "_:Nd4b5f20c5b0641edb37a9daef0d0dc51"
         },
         {
-          "@id": "_:N1c88fac2e74d403c92b10bd836211712"
+          "@id": "_:Ne15a8506d38c485fb37bf288a1fb5ebb"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Workflow",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3174"
@@ -78,10 +78,10 @@
       "sc:description": "metagWGS is a workflow dedicated to the analysis of metagenomic data. It allows assembly, taxonomic annotation, and functional annotation of predicted genes. Since release 2.3, binning step with the possibility of cross-alignment is included. It has been developed in collaboration with several CATI BIOS4biol agents. Funded by Antiselfish Project (Labex Ecofect), ExpoMicoPig project (France Futur elevage) and SeqOccIn project (CPER - Occitanie Toulouse / FEDER), ATB_Biofilm funded by PNREST Anses, France genomique (ANR-10-INBS-09-08) and Resalab Ouest.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0524"
+          "@id": "edam:operation_3672"
         },
         {
-          "@id": "edam:operation_3672"
+          "@id": "edam:operation_0524"
         },
         {
           "@id": "edam:operation_3460"
@@ -97,35 +97,13 @@
       },
       "sc:softwareVersion": [
         "2.3",
-        "2.6.0",
-        "2.5.0"
+        "2.5.0",
+        "2.6.0"
       ],
       "sc:url": "https://forge.inrae.fr/genotoul-bioinfo/metagwgs"
     },
     {
-      "@id": "_:N7d6a531e17d3497cb028d146311773cf",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3494"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1930"
-      },
-      "sc:name": "DNA sequence"
-    },
-    {
-      "@id": "_:N36b39afe265d427aad076263e95f4ae3",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3494"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1930"
-      },
-      "sc:name": "DNA sequence"
-    },
-    {
-      "@id": "_:Ne1742f0b625f4cccb0f125e88da54141",
+      "@id": "_:Nc590e6dec33b41d6955ba5486c503c7d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3494"
@@ -136,18 +114,29 @@
       "sc:name": "DNA sequence"
     },
     {
-      "@id": "_:N206a406220fb47e6bd714abb960a14ec",
+      "@id": "_:N9c5ed435e1544c298668bc8ff10a68be",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3494"
       },
       "sc:encodingFormat": {
-        "@id": "edam:format_1929"
+        "@id": "edam:format_1930"
       },
       "sc:name": "DNA sequence"
     },
     {
-      "@id": "_:Nc4d2bc6f6bae4deb93807d1dc8ccb772",
+      "@id": "_:N48ed1c1a1eb248c6b747d21cd8859c1d",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3494"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1930"
+      },
+      "sc:name": "DNA sequence"
+    },
+    {
+      "@id": "_:Ne77c5c6fd66848168b3141f8e641d2c2",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3917"
@@ -158,7 +147,18 @@
       "sc:name": "Count matrix"
     },
     {
-      "@id": "_:N1c88fac2e74d403c92b10bd836211712",
+      "@id": "_:Nd4b5f20c5b0641edb37a9daef0d0dc51",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3494"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "DNA sequence"
+    },
+    {
+      "@id": "_:Ne15a8506d38c485fb37bf288a1fb5ebb",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3028"

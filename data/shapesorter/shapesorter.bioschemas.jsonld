@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,33 +36,37 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/gkac405",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/shapesorter",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N05f8f87d6427426a847250c2b3b60f77"
+        "@id": "_:Nb98e497179b64effb2e099b140d195e6"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0099"
-        },
-        {
-          "@id": "edam:topic_0632"
+          "@id": "edam:topic_0097"
         },
         {
           "@id": "edam:topic_0084"
         },
         {
-          "@id": "edam:topic_0082"
+          "@id": "edam:topic_0632"
         },
         {
-          "@id": "edam:topic_0097"
+          "@id": "edam:topic_0099"
+        },
+        {
+          "@id": "edam:topic_0082"
         }
       ],
       "sc:citation": [
-        "pmcid:PMC9410897",
         "pubmed:35641016",
+        "pmcid:PMC9410897",
         {
           "@id": "https://doi.org/10.1093/nar/gkac405"
         }
@@ -70,41 +74,37 @@
       "sc:description": "A fully probabilistic method for detecting conserved RNA structure features supported by SHAPE evidence.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_2441"
-        },
-        {
           "@id": "edam:operation_2422"
-        },
-        {
-          "@id": "edam:operation_0570"
         },
         {
           "@id": "edam:operation_0502"
         },
         {
           "@id": "edam:operation_0278"
+        },
+        {
+          "@id": "edam:operation_2441"
+        },
+        {
+          "@id": "edam:operation_0570"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:name": "ShapeSorter",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:url": "http://www.e-rna.org/shapesorter"
     },
     {
-      "@id": "_:N05f8f87d6427426a847250c2b3b60f77",
+      "@id": "_:Nb98e497179b64effb2e099b140d195e6",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3495"
       },
       "sc:name": "RNA sequence"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gkac405",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

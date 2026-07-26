@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,16 +40,16 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N2d6d2432e16b43aabc75280e642b37ad"
+          "@id": "_:N91459020c1f0457ead31c3a60e96eb9a"
         },
         {
-          "@id": "_:Na4507cb571cb49e18608fd3cd3870721"
+          "@id": "_:N1483276917644f18be00ffa8b1d45bc8"
         }
       ],
       "bsc:output": {
-        "@id": "_:N8c2e81af4c9e49a8b6279fdc3343a2b1"
+        "@id": "_:Necd2cccbb27f4d048ff8ad00f137d54e"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0622"
@@ -63,25 +63,25 @@
       "sc:license": "CC0-1.0",
       "sc:name": "RepeatAfterMe",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:softwareVersion": "v0.0.7",
       "sc:url": "https://github.com/Dfam-consortium/RepeatAfterMe"
     },
     {
-      "@id": "_:N8c2e81af4c9e49a8b6279fdc3343a2b1",
+      "@id": "_:N91459020c1f0457ead31c3a60e96eb9a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_0863"
+        "@id": "edam:data_3494"
       },
       "sc:encodingFormat": {
-        "@id": "edam:format_1929"
+        "@id": "edam:format_3009"
       },
-      "sc:name": "Sequence alignment"
+      "sc:name": "DNA sequence"
     },
     {
-      "@id": "_:N2d6d2432e16b43aabc75280e642b37ad",
+      "@id": "_:N1483276917644f18be00ffa8b1d45bc8",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1017"
@@ -92,15 +92,15 @@
       "sc:name": "Sequence range"
     },
     {
-      "@id": "_:Na4507cb571cb49e18608fd3cd3870721",
+      "@id": "_:Necd2cccbb27f4d048ff8ad00f137d54e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_3494"
+        "@id": "edam:data_0863"
       },
       "sc:encodingFormat": {
-        "@id": "edam:format_3009"
+        "@id": "edam:format_1929"
       },
-      "sc:name": "DNA sequence"
+      "sc:name": "Sequence alignment"
     }
   ]
 }

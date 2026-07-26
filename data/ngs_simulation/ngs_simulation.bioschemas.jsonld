@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,40 +36,36 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/nar/gkw343",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/ngs_simulation",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Galaxy Support Team",
       "bsc:input": {
-        "@id": "_:N7893ed2d6a56447a9eae927fa85f6cb0"
+        "@id": "_:N5bc9dd0aafe54502a32ca2f496e6e82f"
       },
       "bsc:output": [
         {
-          "@id": "_:N12b56103ae51474a943c2750fe5597b7"
+          "@id": "_:Ncabb1c3d12174391a6b50df37f1692cf"
         },
         {
-          "@id": "_:Nb3672664b6b841a0b9debf8514571513"
+          "@id": "_:N7e8d8bdd207441968e011477d6a72d60"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3168"
+          "@id": "edam:topic_3572"
         },
         {
           "@id": "edam:topic_0607"
         },
         {
-          "@id": "edam:topic_3572"
+          "@id": "edam:topic_3168"
         }
       ],
       "sc:citation": [
-        "pmcid:PMC4987906",
         "pubmed:27137889",
+        "pmcid:PMC4987906",
         {
           "@id": "https://doi.org/10.1093/nar/gkw343"
         },
@@ -91,9 +87,9 @@
       ],
       "sc:name": "ngs_simulation",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://galaxy.pasteur.fr/root?tool_id=ngs_simulation"
@@ -102,7 +98,7 @@
       "sc:url": "https://github.com/galaxyproject/galaxy/tree/dev/tools"
     },
     {
-      "@id": "_:N7893ed2d6a56447a9eae927fa85f6cb0",
+      "@id": "_:N5bc9dd0aafe54502a32ca2f496e6e82f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0863"
@@ -113,7 +109,7 @@
       "sc:name": "Sequence alignment"
     },
     {
-      "@id": "_:N12b56103ae51474a943c2750fe5597b7",
+      "@id": "_:Ncabb1c3d12174391a6b50df37f1692cf",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0006"
@@ -124,7 +120,7 @@
       "sc:name": "Data"
     },
     {
-      "@id": "_:Nb3672664b6b841a0b9debf8514571513",
+      "@id": "_:N7e8d8bdd207441968e011477d6a72d60",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2968"
@@ -136,6 +132,10 @@
     },
     {
       "@id": "https://doi.org/10.7490/f1000research.1114334.1",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/gkw343",
       "@type": "sc:CreativeWork"
     }
   ]

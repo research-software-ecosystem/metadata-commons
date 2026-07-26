@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,15 +39,15 @@
       "@id": "https://bio.tools/erccdashboard",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nde6f429a21da44f9adfa105d23c178d6"
+        "@id": "_:N2e1b75d00608433582bc7716c30c6473"
       },
       "bsc:output": {
-        "@id": "_:N899cc4457b094bfaa8a6c38588df03c8"
+        "@id": "_:N0595031e72f041f8bb8b8e4cb66d5ef7"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
         {
@@ -64,8 +64,8 @@
       "sc:license": "GPL-2.0-only",
       "sc:name": "erccdashboard",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -75,18 +75,7 @@
       "sc:url": "https://bioconductor.org/packages/erccdashboard"
     },
     {
-      "@id": "_:N899cc4457b094bfaa8a6c38588df03c8",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2884"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3508"
-      },
-      "sc:name": "Plot"
-    },
-    {
-      "@id": "_:Nde6f429a21da44f9adfa105d23c178d6",
+      "@id": "_:N2e1b75d00608433582bc7716c30c6473",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2603"
@@ -95,6 +84,17 @@
         "@id": "edam:format_2058"
       },
       "sc:name": "Gene expression data"
+    },
+    {
+      "@id": "_:N0595031e72f041f8bb8b8e4cb66d5ef7",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2884"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3508"
+      },
+      "sc:name": "Plot"
     }
   ]
 }

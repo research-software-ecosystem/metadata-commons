@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -38,22 +38,22 @@
     {
       "@id": "https://bio.tools/sparcleqc",
       "@type": "sc:SoftwareApplication",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0154"
+          "@id": "edam:topic_3314"
         },
         {
           "@id": "edam:topic_0176"
         },
         {
-          "@id": "edam:topic_3314"
+          "@id": "edam:topic_3318"
         },
         {
           "@id": "edam:topic_0128"
         },
         {
-          "@id": "edam:topic_3318"
+          "@id": "edam:topic_0154"
         }
       ],
       "sc:citation": [
@@ -66,13 +66,13 @@
       "sc:description": "SparcleQC is a Python package that automates the creation of QM/MM input files for electronic structure theory packages, facilitating the study of protein:ligand complexes.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_4009"
-        },
-        {
           "@id": "edam:operation_2476"
         },
         {
           "@id": "edam:operation_0387"
+        },
+        {
+          "@id": "edam:operation_4009"
         }
       ],
       "sc:name": "SparcleQC",

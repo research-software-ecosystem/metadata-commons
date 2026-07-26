@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,27 +39,27 @@
       "@id": "https://bio.tools/chipenrich",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N96b35876474f4d5e8bbd2a4bf8a070cc"
+        "@id": "_:Nb0be10f68a1c4420b7ada7e44d40730a"
       },
       "bsc:output": [
         {
-          "@id": "_:N245b0bbda0a34a9290a8b28aa8564c35"
+          "@id": "_:N636adb46b76340fcacc77c948250222f"
         },
         {
-          "@id": "_:N7268673641864adc83d72e3fd5914ddc"
+          "@id": "_:Na3371afdde9b4a3b83b8596072095a3b"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3572"
+          "@id": "edam:topic_3169"
         },
         {
-          "@id": "edam:topic_3169"
+          "@id": "edam:topic_3572"
         }
       ],
       "sc:author": [
@@ -75,8 +75,8 @@
       "sc:license": "GPL-3.0-only",
       "sc:name": "chipenrich",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -86,18 +86,26 @@
       "sc:url": "https://bioconductor.org/packages/chipenrich"
     },
     {
-      "@id": "_:N245b0bbda0a34a9290a8b28aa8564c35",
+      "@id": "_:Nb0be10f68a1c4420b7ada7e44d40730a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2884"
+        "@id": "edam:data_2012"
       },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3508"
-      },
-      "sc:name": "Plot"
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3003"
+        },
+        {
+          "@id": "edam:format_3613"
+        },
+        {
+          "@id": "edam:format_3475"
+        }
+      ],
+      "sc:name": "Sequence coordinates"
     },
     {
-      "@id": "_:N7268673641864adc83d72e3fd5914ddc",
+      "@id": "_:N636adb46b76340fcacc77c948250222f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1276"
@@ -108,23 +116,15 @@
       "sc:name": "Nucleic acid features"
     },
     {
-      "@id": "_:N96b35876474f4d5e8bbd2a4bf8a070cc",
+      "@id": "_:Na3371afdde9b4a3b83b8596072095a3b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2012"
+        "@id": "edam:data_2884"
       },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3613"
-        },
-        {
-          "@id": "edam:format_3003"
-        },
-        {
-          "@id": "edam:format_3475"
-        }
-      ],
-      "sc:name": "Sequence coordinates"
+      "sc:encodingFormat": {
+        "@id": "edam:format_3508"
+      },
+      "sc:name": "Plot"
     }
   ]
 }

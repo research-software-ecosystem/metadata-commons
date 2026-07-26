@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,41 +40,49 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N5237e29da7f34161be9c9af329f27a87"
+          "@id": "_:N603b3d617e03442b8978e99bf0da2885"
         },
         {
-          "@id": "_:N1be0e8d7358841b78496c707799b1aed"
+          "@id": "_:N0930a8a620134fc8b69c8cb8e9c8c36c"
         },
         {
-          "@id": "_:N86c176cd1bb647b5b76f8ede06582392"
+          "@id": "_:N25765cb4fad84690bb504e3fc23072be"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_0196"
-        },
         {
           "@id": "edam:topic_0203"
         },
         {
           "@id": "edam:topic_0621"
+        },
+        {
+          "@id": "edam:topic_0196"
         }
       ],
       "sc:description": "Program to Assemble Spliced Alignment. PASA, acronym for Program to Assemble Spliced Alignments, is a eukaryotic genome annotation tool that exploits spliced alignments of expressed transcript sequences to automatically model gene structures, and to maintain gene structure annotation consistent with the most recently available experimental sequence data. PASA also identifies and classifies all splicing variations supported by the transcript alignments.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0232"
+          "@id": "edam:operation_0310"
         },
         {
-          "@id": "edam:operation_0310"
+          "@id": "edam:operation_0232"
         }
       ],
       "sc:name": "PASA",
       "sc:url": "https://sourceforge.net/projects/pasa/"
     },
     {
-      "@id": "_:N5237e29da7f34161be9c9af329f27a87",
+      "@id": "_:N603b3d617e03442b8978e99bf0da2885",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1916"
+      },
+      "sc:name": "Alignment"
+    },
+    {
+      "@id": "_:N0930a8a620134fc8b69c8cb8e9c8c36c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0916"
@@ -82,20 +90,12 @@
       "sc:name": "Gene report"
     },
     {
-      "@id": "_:N1be0e8d7358841b78496c707799b1aed",
+      "@id": "_:N25765cb4fad84690bb504e3fc23072be",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0968"
       },
       "sc:name": "Keyword"
-    },
-    {
-      "@id": "_:N86c176cd1bb647b5b76f8ede06582392",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1916"
-      },
-      "sc:name": "Alignment"
     }
   ]
 }

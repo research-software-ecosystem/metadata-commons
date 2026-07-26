@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -41,13 +41,13 @@
       "biotools:primaryContact": "Colin Clarke",
       "bsc:input": [
         {
-          "@id": "_:Nec1da99cf63c46df80446edcf478514b"
+          "@id": "_:N330bb94e171c4155ac78362c4c90200c"
         },
         {
-          "@id": "_:Nbdf98996d01a4eecbc9dfb0337bcc7b6"
+          "@id": "_:Nc0b2846b180d450889b21cd7c347c322"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Library",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_2885"
@@ -55,48 +55,48 @@
       "sc:description": "Extraction of single nucleotide polymorphism data from HGVBASE",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0484"
+          "@id": "edam:operation_0308"
         },
         {
           "@id": "edam:operation_3661"
         },
         {
-          "@id": "edam:operation_0308"
+          "@id": "edam:operation_0484"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:name": "gethgvbase",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:softwareVersion": "1.0.0.0",
       "sc:url": "https://www.mathworks.com/matlabcentral/fileexchange/12280-gethgvbase"
     },
     {
-      "@id": "_:Nec1da99cf63c46df80446edcf478514b",
+      "@id": "_:N330bb94e171c4155ac78362c4c90200c",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1151"
+      },
+      "sc:name": "HGVbase ID"
+    },
+    {
+      "@id": "_:Nc0b2846b180d450889b21cd7c347c322",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1276"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_1207"
+          "@id": "edam:format_2331"
         },
         {
-          "@id": "edam:format_2331"
+          "@id": "edam:format_1207"
         }
       ],
       "sc:name": "Nucleic acid features"
-    },
-    {
-      "@id": "_:Nbdf98996d01a4eecbc9dfb0337bcc7b6",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1151"
-      },
-      "sc:name": "HGVbase ID"
     }
   ]
 }

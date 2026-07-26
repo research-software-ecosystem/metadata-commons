@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,32 +36,33 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/gkq603",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/annovar_summarize",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Galaxy Support Team",
       "bsc:input": {
-        "@id": "_:N6627cd0b4ee2446bbdbf3534b2e7b951"
+        "@id": "_:Ne3b85eea1bba415badcf57a75425107b"
       },
       "bsc:output": [
         {
-          "@id": "_:N89a6432b25f746cc8a46142d22592f57"
+          "@id": "_:N930dcd64b5044c059717600a0ca24b75"
         },
         {
-          "@id": "_:N186f8a99cd00409ea490881b4f34d141"
+          "@id": "_:Nd31918e9ed294b45a07fa46fa2993f06"
         },
         {
-          "@id": "_:Nd47e3317eef84034bfe684fdc104745f"
+          "@id": "_:N8b1285fae303457aa7a3547b0ac297e6"
         },
         {
-          "@id": "_:N157d8b054dd54f6fa709d9d94bd9d6f1"
+          "@id": "_:N1e2a6e4d4a414f05a2169902f7bb5644"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_3168"
-        },
         {
           "@id": "edam:topic_0199"
         },
@@ -70,31 +71,34 @@
         },
         {
           "@id": "edam:topic_2815"
+        },
+        {
+          "@id": "edam:topic_3168"
         }
       ],
       "sc:citation": [
-        "pmcid:PMC2938201",
         "pubmed:20601685",
-        {
-          "@id": "https://doi.org/10.7490/f1000research.1114334.1"
-        },
+        "pmcid:PMC2938201",
         {
           "@id": "https://doi.org/10.1093/nar/gkq603"
+        },
+        {
+          "@id": "https://doi.org/10.7490/f1000research.1114334.1"
         }
       ],
       "sc:description": "Annotate genetic variants detected from human genome.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0362"
+          "@id": "edam:operation_3197"
         },
         {
-          "@id": "edam:operation_3197"
+          "@id": "edam:operation_0362"
         }
       ],
       "sc:name": "annovar_summarize",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -104,68 +108,64 @@
       "sc:url": "http://annovar.openbioinformatics.org/en/latest/"
     },
     {
-      "@id": "_:N89a6432b25f746cc8a46142d22592f57",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0006"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3475"
-      },
-      "sc:name": "Data"
-    },
-    {
-      "@id": "_:N186f8a99cd00409ea490881b4f34d141",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0006"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3475"
-      },
-      "sc:name": "Data"
-    },
-    {
-      "@id": "_:Nd47e3317eef84034bfe684fdc104745f",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0006"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3475"
-      },
-      "sc:name": "Data"
-    },
-    {
-      "@id": "_:N157d8b054dd54f6fa709d9d94bd9d6f1",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0006"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3475"
-      },
-      "sc:name": "Data"
-    },
-    {
-      "@id": "_:N6627cd0b4ee2446bbdbf3534b2e7b951",
+      "@id": "_:Ne3b85eea1bba415badcf57a75425107b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0006"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_2330"
+          "@id": "edam:format_3475"
         },
         {
-          "@id": "edam:format_3475"
+          "@id": "edam:format_2330"
         }
       ],
       "sc:name": "Data"
     },
     {
-      "@id": "https://doi.org/10.1093/nar/gkq603",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N930dcd64b5044c059717600a0ca24b75",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0006"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3475"
+      },
+      "sc:name": "Data"
+    },
+    {
+      "@id": "_:Nd31918e9ed294b45a07fa46fa2993f06",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0006"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3475"
+      },
+      "sc:name": "Data"
+    },
+    {
+      "@id": "_:N8b1285fae303457aa7a3547b0ac297e6",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0006"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3475"
+      },
+      "sc:name": "Data"
+    },
+    {
+      "@id": "_:N1e2a6e4d4a414f05a2169902f7bb5644",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0006"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3475"
+      },
+      "sc:name": "Data"
     },
     {
       "@id": "https://doi.org/10.7490/f1000research.1114334.1",

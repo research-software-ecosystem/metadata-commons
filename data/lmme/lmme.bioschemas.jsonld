@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,28 +36,32 @@
   },
   "@graph": [
     {
+      "@id": "https://orcid.org/0000-0002-1286-1372",
+      "@type": "sc:Person"
+    },
+    {
       "@id": "https://bio.tools/lmme",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "https://orcid.org/0000-0002-1286-1372"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Plug-in",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0605"
-        },
-        {
-          "@id": "edam:topic_0154"
+          "@id": "edam:topic_3070"
         },
         {
           "@id": "edam:topic_3407"
         },
         {
-          "@id": "edam:topic_3070"
+          "@id": "edam:topic_0605"
         },
         {
           "@id": "edam:topic_0202"
+        },
+        {
+          "@id": "edam:topic_0154"
         }
       ],
       "sc:citation": [
@@ -81,10 +85,6 @@
       "sc:license": "GPL-3.0",
       "sc:name": "LMME",
       "sc:url": "http://www.cls.uni-konstanz.de/software/lmme"
-    },
-    {
-      "@id": "https://orcid.org/0000-0002-1286-1372",
-      "@type": "sc:Person"
     },
     {
       "@id": "https://doi.org/10.1093/BIOINFORMATICS/BTAB335",

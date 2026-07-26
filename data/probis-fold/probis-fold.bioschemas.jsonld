@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -44,32 +44,32 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N0223cd67d1ca482889a8c8a4932c9c46"
+          "@id": "_:N2303a977674142628a504c426bd800ae"
         },
         {
-          "@id": "_:Nf1723cd8e2184c8680815bfe00b74f61"
+          "@id": "_:Ndc84057d88f241de8b6481a037c64eca"
         },
         {
-          "@id": "_:N126394681e984734a7f292d02d5bd672"
+          "@id": "_:N8fa80ba7a1694e3aa4d3c7508973a1e0"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0154"
-        },
-        {
-          "@id": "edam:topic_0082"
+          "@id": "edam:topic_3336"
         },
         {
           "@id": "edam:topic_3534"
         },
         {
-          "@id": "edam:topic_3336"
+          "@id": "edam:topic_0121"
         },
         {
-          "@id": "edam:topic_0121"
+          "@id": "edam:topic_0154"
+        },
+        {
+          "@id": "edam:topic_0082"
         }
       ],
       "sc:citation": [
@@ -84,31 +84,31 @@
           "@id": "edam:operation_2575"
         },
         {
-          "@id": "edam:operation_0224"
+          "@id": "edam:operation_0474"
         },
         {
-          "@id": "edam:operation_0474"
+          "@id": "edam:operation_0224"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:name": "ProBiS-Fold",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:url": "http://probis-fold.insilab.org"
     },
     {
-      "@id": "_:N0223cd67d1ca482889a8c8a4932c9c46",
+      "@id": "_:N2303a977674142628a504c426bd800ae",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2764"
+        "@id": "edam:data_1127"
       },
-      "sc:name": "Protein name (UniProt)"
+      "sc:name": "PDB ID"
     },
     {
-      "@id": "_:Nf1723cd8e2184c8680815bfe00b74f61",
+      "@id": "_:Ndc84057d88f241de8b6481a037c64eca",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1008"
@@ -116,12 +116,12 @@
       "sc:name": "Polypeptide chain ID"
     },
     {
-      "@id": "_:N126394681e984734a7f292d02d5bd672",
+      "@id": "_:N8fa80ba7a1694e3aa4d3c7508973a1e0",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_1127"
+        "@id": "edam:data_2764"
       },
-      "sc:name": "PDB ID"
+      "sc:name": "Protein name (UniProt)"
     }
   ]
 }

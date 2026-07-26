@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,76 +36,104 @@
   },
   "@graph": [
     {
+      "@id": "https://orcid.org/0000-0001-6002-1856",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-7848-8216",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-0045-0872",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-6281-7505",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-3139-3700",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.1093/bioinformatics/bty386",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-9677-5078",
+      "@type": "sc:Person"
+    },
+    {
       "@id": "https://bio.tools/caver_analyst",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "CAVER team",
       "bsc:input": [
         {
-          "@id": "_:N2db6dc13a38741018fe1ab5126ce03ee"
+          "@id": "_:N5f043ed42c874f51b5a187d4ad40819d"
         },
         {
-          "@id": "_:N1dc68f61180549559f5a62627e2d87f2"
+          "@id": "_:Nd2a0f715ed25478b8f9773a6aa2c1f7e"
         }
       ],
       "bsc:output": {
-        "@id": "_:N11eb1529312142eebcb4ea7537b70d22"
+        "@id": "_:N4d9c5e3b75d8400386ed9c0273f8f6fa"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Desktop application",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0078"
+          "@id": "edam:topic_2814"
         },
         {
-          "@id": "edam:topic_2814"
+          "@id": "edam:topic_0078"
         }
       ],
       "sc:author": [
-        "Adam Jurcik",
-        {
-          "@id": "https://orcid.org/0000-0003-3139-3700"
-        },
-        "Katarina Furmanova",
         {
           "@id": "https://orcid.org/0000-0002-1248-7042"
         },
-        "Antonin Pavelka",
-        "Jan Byska",
         {
           "@id": "https://orcid.org/0000-0002-8077-4692"
-        }
+        },
+        {
+          "@id": "https://orcid.org/0000-0003-3139-3700"
+        },
+        "Antonin Pavelka",
+        "Adam Jurcik",
+        "Jan Byska",
+        "Katarina Furmanova"
       ],
       "sc:citation": [
         "pubmed:29741570",
+        "pmcid:PMC6184705",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/bty386"
-        },
-        "pmcid:PMC6184705"
+        }
       ],
       "sc:contributor": [
-        "Czech Science Foundation",
-        {
-          "@id": "https://orcid.org/0000-0001-9677-5078"
-        },
         {
           "@id": "https://orcid.org/0000-0002-7848-8216"
         },
-        "Ministry of Education of the Czech Republic",
         {
-          "@id": "https://orcid.org/0000-0001-6002-1856"
+          "@id": "https://orcid.org/0000-0003-2502-9224"
         },
         {
           "@id": "https://orcid.org/0000-0002-6803-0340"
         },
         {
+          "@id": "https://orcid.org/0000-0001-9677-5078"
+        },
+        {
           "@id": "https://orcid.org/0000-0003-0045-0872"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-6002-1856"
         },
         {
           "@id": "https://orcid.org/0000-0002-6281-7505"
         },
-        {
-          "@id": "https://orcid.org/0000-0003-2502-9224"
-        },
+        "Czech Science Foundation",
+        "Ministry of Education of the Czech Republic",
         "Norwegian Research Council"
       ],
       "sc:description": "A tool for interactive visualization and analysis of tunnels, channels and cavities in protein structures.",
@@ -124,63 +152,38 @@
         }
       ],
       "sc:funder": [
-        "Norwegian Research Council",
+        "Czech Science Foundation",
         "Ministry of Education of the Czech Republic",
-        "Czech Science Foundation"
+        "Norwegian Research Council"
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "Proprietary",
       "sc:name": "CAVER Analyst",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:provider": [
-        "Loschmidt Laboratories",
-        "International Centre for Clinical Research, Brno, Czech Republic",
-        "University of West Bohemia, Plzen, Czech Republic",
         "ELIXIR-CZ",
-        "Masaryk University, Brno, Czech Republic"
+        "International Centre for Clinical Research, Brno, Czech Republic",
+        "Loschmidt Laboratories",
+        "Masaryk University, Brno, Czech Republic",
+        "University of West Bohemia, Plzen, Czech Republic"
       ],
       "sc:softwareHelp": [
         {
-          "@id": "https://caver.cz/fil/download/manual/CAVER_Analyst_2.0_Beta-user_guide.pdf"
+          "@id": "http://www.caver.cz/index.php?sid=123"
         },
         {
-          "@id": "http://www.caver.cz/index.php?sid=123"
+          "@id": "https://caver.cz/fil/download/manual/CAVER_Analyst_2.0_Beta-user_guide.pdf"
         }
       ],
       "sc:softwareVersion": "2.0",
       "sc:url": "https://www.caver.cz"
     },
     {
-      "@id": "_:N2db6dc13a38741018fe1ab5126ce03ee",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3870"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3881"
-        },
-        {
-          "@id": "edam:format_3910"
-        },
-        {
-          "@id": "edam:format_3650"
-        },
-        {
-          "@id": "edam:format_3882"
-        },
-        {
-          "@id": "edam:format_3875"
-        }
-      ],
-      "sc:name": "Trajectory data"
-    },
-    {
-      "@id": "_:N1dc68f61180549559f5a62627e2d87f2",
+      "@id": "_:N5f043ed42c874f51b5a187d4ad40819d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1460"
@@ -196,7 +199,32 @@
       "sc:name": "Protein structure"
     },
     {
-      "@id": "_:N11eb1529312142eebcb4ea7537b70d22",
+      "@id": "_:Nd2a0f715ed25478b8f9773a6aa2c1f7e",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3870"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3881"
+        },
+        {
+          "@id": "edam:format_3650"
+        },
+        {
+          "@id": "edam:format_3882"
+        },
+        {
+          "@id": "edam:format_3875"
+        },
+        {
+          "@id": "edam:format_3910"
+        }
+      ],
+      "sc:name": "Trajectory data"
+    },
+    {
+      "@id": "_:N4d9c5e3b75d8400386ed9c0273f8f6fa",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1537"
@@ -212,11 +240,11 @@
       "sc:name": "Protein structure report"
     },
     {
-      "@id": "https://orcid.org/0000-0002-1248-7042",
+      "@id": "https://orcid.org/0000-0002-6803-0340",
       "@type": "sc:Person"
     },
     {
-      "@id": "https://orcid.org/0000-0002-6803-0340",
+      "@id": "https://orcid.org/0000-0002-1248-7042",
       "@type": "sc:Person"
     },
     {
@@ -224,35 +252,7 @@
       "@type": "sc:Person"
     },
     {
-      "@id": "https://orcid.org/0000-0003-0045-0872",
-      "@type": "sc:Person"
-    },
-    {
       "@id": "https://orcid.org/0000-0003-2502-9224",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://orcid.org/0000-0001-6002-1856",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://orcid.org/0000-0002-6281-7505",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://orcid.org/0000-0003-3139-3700",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://orcid.org/0000-0002-7848-8216",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://doi.org/10.1093/bioinformatics/bty386",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://orcid.org/0000-0001-9677-5078",
       "@type": "sc:Person"
     }
   ]

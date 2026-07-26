@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,39 +36,35 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.5281/zenodo.3298029",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/Epigenomics_Workflow_on_Galaxy_and_Jupyter",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N62c0dbebfb464f83b60751fcef52e0e2"
+          "@id": "_:Nf2bbfe478b794e19bc8bbf9b5e571433"
         },
         {
-          "@id": "_:N821d548c352b40e3acbec6ac4091e280"
+          "@id": "_:Nf44a739dc88f45daadb6b1625a4d69ee"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N4bc3d4b5231843ada80abe3e14472595"
+          "@id": "_:N1d779aad44c54c4c864d7edd514e0778"
         },
         {
-          "@id": "_:Nb34ae3e0c30448798ff8625b6f2e7cbf"
+          "@id": "_:N0f4738b852e3475b9ef5874eedd960bb"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Workflow",
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_3512"
-        },
         {
           "@id": "edam:topic_3125"
         },
         {
           "@id": "edam:topic_3173"
+        },
+        {
+          "@id": "edam:topic_3512"
         }
       ],
       "sc:citation": {
@@ -92,18 +88,7 @@
       "sc:url": "https://github.com/wilkinsonlab/epigenomics_pipeline"
     },
     {
-      "@id": "_:N62c0dbebfb464f83b60751fcef52e0e2",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3495"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1931"
-      },
-      "sc:name": "RNA sequence"
-    },
-    {
-      "@id": "_:N821d548c352b40e3acbec6ac4091e280",
+      "@id": "_:Nf2bbfe478b794e19bc8bbf9b5e571433",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3494"
@@ -114,7 +99,29 @@
       "sc:name": "DNA sequence"
     },
     {
-      "@id": "_:N4bc3d4b5231843ada80abe3e14472595",
+      "@id": "_:Nf44a739dc88f45daadb6b1625a4d69ee",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3495"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1931"
+      },
+      "sc:name": "RNA sequence"
+    },
+    {
+      "@id": "_:N1d779aad44c54c4c864d7edd514e0778",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2012"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3003"
+      },
+      "sc:name": "Sequence coordinates"
+    },
+    {
+      "@id": "_:N0f4738b852e3475b9ef5874eedd960bb",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3112"
@@ -125,15 +132,8 @@
       "sc:name": "Gene expression matrix"
     },
     {
-      "@id": "_:Nb34ae3e0c30448798ff8625b6f2e7cbf",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2012"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3003"
-      },
-      "sc:name": "Sequence coordinates"
+      "@id": "https://doi.org/10.5281/zenodo.3298029",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

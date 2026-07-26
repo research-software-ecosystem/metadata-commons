@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -38,19 +38,19 @@
     {
       "@id": "https://bio.tools/spaflow",
       "@type": "sc:SoftwareApplication",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3308"
+          "@id": "edam:topic_0625"
         },
         {
           "@id": "edam:topic_3168"
         },
         {
-          "@id": "edam:topic_0769"
+          "@id": "edam:topic_3308"
         },
         {
-          "@id": "edam:topic_0625"
+          "@id": "edam:topic_0769"
         }
       ],
       "sc:citation": [
@@ -63,13 +63,13 @@
       "sc:description": "SpaFlow is a Nextflow pipeline for quality control and clustering of multiplex immunofluorescence (MxIF) datasets, integrating Seurat, SCIMAP, and CELESTA. It facilitates reproducible and scalable analyses with robust quality control and meta-clustering approaches.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_2428"
-        },
-        {
           "@id": "edam:operation_3432"
         },
         {
           "@id": "edam:operation_3799"
+        },
+        {
+          "@id": "edam:operation_2428"
         }
       ],
       "sc:name": "SpaFlow",

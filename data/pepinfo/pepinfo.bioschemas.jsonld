@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,126 +36,7 @@
   },
   "@graph": [
     {
-      "@id": "https://bio.tools/pepinfo",
-      "@type": "sc:SoftwareApplication",
-      "bsc:input": [
-        {
-          "@id": "_:N6707757c58f347f381b31bcab726cf4c"
-        },
-        {
-          "@id": "_:Nd81dbac12b9d44b6a98857bfad58b17d"
-        },
-        {
-          "@id": "_:N84c8929918924f6cae4ab51a553b8679"
-        }
-      ],
-      "bsc:output": [
-        {
-          "@id": "_:N9b4a291d566b490aa78958a6a4f5b316"
-        },
-        {
-          "@id": "_:N7f9bbffce89c42cc8006da1bc4304b3b"
-        }
-      ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
-      "sc:additionalType": "Command-line tool",
-      "sc:applicationSubCategory": {
-        "@id": "edam:topic_0123"
-      },
-      "sc:citation": [
-        {
-          "@id": "https://doi.org/10.1017/CBO9781139151405"
-        },
-        {
-          "@id": "https://doi.org/10.1017/CBO9781139151399"
-        },
-        {
-          "@id": "https://doi.org/10.1016/S0168-9525(00)02024-2"
-        }
-      ],
-      "sc:contributor": [
-        "UK MRC",
-        "UK BBSRC",
-        "EMBOSS Contributors",
-        "Wellcome Trust"
-      ],
-      "sc:description": "Plot amino acid properties of a protein sequence in parallel.",
-      "sc:featureList": {
-        "@id": "edam:operation_0250"
-      },
-      "sc:funder": [
-        "UK MRC",
-        "UK BBSRC",
-        "Wellcome Trust"
-      ],
-      "sc:isAccessibleForFree": true,
-      "sc:license": "GPL-3.0",
-      "sc:name": "pepinfo",
-      "sc:operatingSystem": [
-        "Windows",
-        "Mac",
-        "Linux"
-      ],
-      "sc:provider": [
-        "EMBL-EBI",
-        "EMBOSS"
-      ],
-      "sc:softwareHelp": [
-        {
-          "@id": "http://emboss.open-bio.org/html/dev/ch01s01.html"
-        },
-        {
-          "@id": "http://emboss.open-bio.org/html/use/pr02s04.html"
-        },
-        {
-          "@id": "http://emboss.open-bio.org/rel/rel6/apps/pepinfo.html"
-        }
-      ],
-      "sc:softwareVersion": "r6",
-      "sc:url": "http://emboss.open-bio.org/rel/rel6/apps/pepinfo.html"
-    },
-    {
-      "@id": "_:N9b4a291d566b490aa78958a6a4f5b316",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1522"
-      },
-      "sc:name": "Protein sequence hydropathy plot"
-    },
-    {
-      "@id": "_:N7f9bbffce89c42cc8006da1bc4304b3b",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0897"
-      },
-      "sc:name": "Protein property"
-    },
-    {
-      "@id": "_:N6707757c58f347f381b31bcab726cf4c",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1502"
-      },
-      "sc:name": "Amino acid index (chemical classes)"
-    },
-    {
-      "@id": "_:Nd81dbac12b9d44b6a98857bfad58b17d",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1506"
-      },
-      "sc:name": "Amino acid index (hydropathy)"
-    },
-    {
-      "@id": "_:N84c8929918924f6cae4ab51a553b8679",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2886"
-      },
-      "sc:name": "Protein sequence record"
-    },
-    {
-      "@id": "https://doi.org/10.1016/S0168-9525(00)02024-2",
+      "@id": "https://doi.org/10.1017/CBO9781139151405",
       "@type": "sc:CreativeWork"
     },
     {
@@ -163,7 +44,126 @@
       "@type": "sc:CreativeWork"
     },
     {
-      "@id": "https://doi.org/10.1017/CBO9781139151405",
+      "@id": "https://bio.tools/pepinfo",
+      "@type": "sc:SoftwareApplication",
+      "bsc:input": [
+        {
+          "@id": "_:N2f14e1ca914f4a5ca4fbf19c3f2bdfb3"
+        },
+        {
+          "@id": "_:N2e871ce41a794dfabcc2e65f62ceb7cd"
+        },
+        {
+          "@id": "_:Na98643d8ad12449ebff47b4ed0af687f"
+        }
+      ],
+      "bsc:output": [
+        {
+          "@id": "_:Nd0454b0b1866479089866e14bce9ac3b"
+        },
+        {
+          "@id": "_:N5b8140099ad9476d9fc450f853821789"
+        }
+      ],
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "sc:additionalType": "Command-line tool",
+      "sc:applicationSubCategory": {
+        "@id": "edam:topic_0123"
+      },
+      "sc:citation": [
+        {
+          "@id": "https://doi.org/10.1016/S0168-9525(00)02024-2"
+        },
+        {
+          "@id": "https://doi.org/10.1017/CBO9781139151399"
+        },
+        {
+          "@id": "https://doi.org/10.1017/CBO9781139151405"
+        }
+      ],
+      "sc:contributor": [
+        "UK BBSRC",
+        "UK MRC",
+        "Wellcome Trust",
+        "EMBOSS Contributors"
+      ],
+      "sc:description": "Plot amino acid properties of a protein sequence in parallel.",
+      "sc:featureList": {
+        "@id": "edam:operation_0250"
+      },
+      "sc:funder": [
+        "UK BBSRC",
+        "UK MRC",
+        "Wellcome Trust"
+      ],
+      "sc:isAccessibleForFree": true,
+      "sc:license": "GPL-3.0",
+      "sc:name": "pepinfo",
+      "sc:operatingSystem": [
+        "Linux",
+        "Mac",
+        "Windows"
+      ],
+      "sc:provider": [
+        "EMBL-EBI",
+        "EMBOSS"
+      ],
+      "sc:softwareHelp": [
+        {
+          "@id": "http://emboss.open-bio.org/html/use/pr02s04.html"
+        },
+        {
+          "@id": "http://emboss.open-bio.org/rel/rel6/apps/pepinfo.html"
+        },
+        {
+          "@id": "http://emboss.open-bio.org/html/dev/ch01s01.html"
+        }
+      ],
+      "sc:softwareVersion": "r6",
+      "sc:url": "http://emboss.open-bio.org/rel/rel6/apps/pepinfo.html"
+    },
+    {
+      "@id": "_:N2f14e1ca914f4a5ca4fbf19c3f2bdfb3",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1502"
+      },
+      "sc:name": "Amino acid index (chemical classes)"
+    },
+    {
+      "@id": "_:N2e871ce41a794dfabcc2e65f62ceb7cd",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1506"
+      },
+      "sc:name": "Amino acid index (hydropathy)"
+    },
+    {
+      "@id": "_:Na98643d8ad12449ebff47b4ed0af687f",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2886"
+      },
+      "sc:name": "Protein sequence record"
+    },
+    {
+      "@id": "_:Nd0454b0b1866479089866e14bce9ac3b",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0897"
+      },
+      "sc:name": "Protein property"
+    },
+    {
+      "@id": "_:N5b8140099ad9476d9fc450f853821789",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1522"
+      },
+      "sc:name": "Protein sequence hydropathy plot"
+    },
+    {
+      "@id": "https://doi.org/10.1016/S0168-9525(00)02024-2",
       "@type": "sc:CreativeWork"
     }
   ]

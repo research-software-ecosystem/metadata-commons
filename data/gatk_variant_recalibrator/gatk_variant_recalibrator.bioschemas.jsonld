@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -41,39 +41,39 @@
       "biotools:primaryContact": "Galaxy Support Team",
       "bsc:input": [
         {
-          "@id": "_:N695268e23afb4217b78dc402624e6a82"
+          "@id": "_:N7de1bdf51fd04f118ca708314ec5341c"
         },
         {
-          "@id": "_:Nb9c23b28898a49379375aea4a7cd5fdc"
+          "@id": "_:N4955bdf6135d41cbb7a8802c70dea254"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N08dc511d2a924a4699f0243bae857315"
+          "@id": "_:Nd29f2a14721240749c2f70a596405f46"
         },
         {
-          "@id": "_:Ncee2eb093ec641a6a70e1fa1ba1d3fd3"
+          "@id": "_:N52c270a545d84905be4e8f53ebfc46c6"
         },
         {
-          "@id": "_:Neb0696736aa6458687003aeae61d4aa3"
+          "@id": "_:N8efd89d4bb0a456aa9956a5d9447513f"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3168"
+          "@id": "edam:topic_0199"
         },
         {
-          "@id": "edam:topic_0199"
+          "@id": "edam:topic_3168"
         }
       ],
       "sc:citation": [
         {
-          "@id": "https://doi.org/10.7490/f1000research.1114334.1"
+          "@id": "https://doi.org/10.1038/npre.2011.6107"
         },
         {
-          "@id": "https://doi.org/10.1038/npre.2011.6107"
+          "@id": "https://doi.org/10.7490/f1000research.1114334.1"
         }
       ],
       "sc:description": "Takes variant calls as .vcf files, learns a Gaussian mixture model over the variant annotations and evaluates the variant -- assigning an informative lod score.",
@@ -82,8 +82,8 @@
       },
       "sc:name": "gatk_variant_recalibrator",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -93,20 +93,20 @@
       "sc:url": "https://software.broadinstitute.org/gatk/"
     },
     {
-      "@id": "_:N695268e23afb4217b78dc402624e6a82",
+      "@id": "_:N7de1bdf51fd04f118ca708314ec5341c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0006"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_2330"
-        },
-        {
           "@id": "edam:format_3003"
         },
         {
           "@id": "edam:format_3475"
+        },
+        {
+          "@id": "edam:format_2330"
         },
         {
           "@id": "edam:format_3016"
@@ -115,7 +115,7 @@
       "sc:name": "Data"
     },
     {
-      "@id": "_:Nb9c23b28898a49379375aea4a7cd5fdc",
+      "@id": "_:N4955bdf6135d41cbb7a8802c70dea254",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3498"
@@ -126,18 +126,18 @@
       "sc:name": "Sequence variations"
     },
     {
-      "@id": "_:N08dc511d2a924a4699f0243bae857315",
+      "@id": "_:Nd29f2a14721240749c2f70a596405f46",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0006"
       },
       "sc:encodingFormat": {
-        "@id": "edam:format_2330"
+        "@id": "edam:format_3508"
       },
       "sc:name": "Data"
     },
     {
-      "@id": "_:Ncee2eb093ec641a6a70e1fa1ba1d3fd3",
+      "@id": "_:N52c270a545d84905be4e8f53ebfc46c6",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0006"
@@ -148,13 +148,13 @@
       "sc:name": "Data"
     },
     {
-      "@id": "_:Neb0696736aa6458687003aeae61d4aa3",
+      "@id": "_:N8efd89d4bb0a456aa9956a5d9447513f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0006"
       },
       "sc:encodingFormat": {
-        "@id": "edam:format_3508"
+        "@id": "edam:format_2330"
       },
       "sc:name": "Data"
     },

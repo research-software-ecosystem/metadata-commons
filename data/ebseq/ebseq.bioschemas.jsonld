@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -43,45 +43,45 @@
       "@id": "https://bio.tools/ebseq",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N1285d9d4158342a7ba617127d8dda95b"
+        "@id": "_:N8999673439b4427eb6658794cb31fa3d"
       },
       "bsc:output": [
         {
-          "@id": "_:N0a40b67fe3384f679101ba2e23225692"
+          "@id": "_:N0567b78af0a14107b1f33de934171ff7"
         },
         {
-          "@id": "_:Na6d064b43e1a47b39eab127613633e75"
+          "@id": "_:N357e53ab600a4a8ab33fb4a50a933a4f"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_2269"
+          "@id": "edam:topic_0203"
         },
         {
           "@id": "edam:topic_0602"
         },
         {
-          "@id": "edam:topic_0203"
+          "@id": "edam:topic_3170"
         },
         {
-          "@id": "edam:topic_3170"
+          "@id": "edam:topic_2269"
         }
       ],
       "sc:author": [
-        "Xiuyu Ma",
-        "Ning Leng"
+        "Ning Leng",
+        "Xiuyu Ma"
       ],
       "sc:citation": {
         "@id": "https://doi.org/10.18129/B9.bioc.EBSeq"
       },
       "sc:contributor": [
-        "Michael A. Newton",
-        "Christina Kendziorski"
+        "Christina Kendziorski",
+        "Michael A. Newton"
       ],
       "sc:description": "Differential Expression analysis at both gene and isoform level using RNA-seq data",
       "sc:featureList": [
@@ -98,9 +98,9 @@
       "sc:license": "Artistic-2.0",
       "sc:name": "EBSeq",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://bioconductor.org/packages/EBSeq"
@@ -109,7 +109,7 @@
       "sc:url": "https://bioconductor.org/packages/EBSeq"
     },
     {
-      "@id": "_:N1285d9d4158342a7ba617127d8dda95b",
+      "@id": "_:N8999673439b4427eb6658794cb31fa3d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0928"
@@ -125,23 +125,7 @@
       "sc:name": "Gene expression profile"
     },
     {
-      "@id": "_:N0a40b67fe3384f679101ba2e23225692",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2048"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3547"
-        },
-        {
-          "@id": "edam:format_2330"
-        }
-      ],
-      "sc:name": "Report"
-    },
-    {
-      "@id": "_:Na6d064b43e1a47b39eab127613633e75",
+      "@id": "_:N0567b78af0a14107b1f33de934171ff7",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
@@ -155,6 +139,22 @@
         }
       ],
       "sc:name": "Plot"
+    },
+    {
+      "@id": "_:N357e53ab600a4a8ab33fb4a50a933a4f",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2048"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Report"
     }
   ]
 }

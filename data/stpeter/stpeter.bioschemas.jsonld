@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,56 +39,56 @@
       "@id": "https://bio.tools/stpeter",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N95c307d2e47b4225a6787c33d52bd4ab"
+        "@id": "_:Na7341ac028504f7181f4352671603e77"
       },
       "bsc:output": {
-        "@id": "_:Nbc77b44c39e54cb28e08b6ea9fc13602"
+        "@id": "_:N988f8390637641609d291b00ae1c8844"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3520"
+          "@id": "edam:topic_0121"
         },
         {
-          "@id": "edam:topic_0121"
+          "@id": "edam:topic_3520"
         }
       ],
       "sc:citation": [
+        "pubmed:29400476",
         "pmcid:PMC5891225",
         {
           "@id": "https://doi.org/10.1021/acs.jproteome.7b00786"
-        },
-        "pubmed:29400476"
+        }
       ],
       "sc:description": "A tool for analyzing proteomics data acquired by mass spectrometry. Quantifies proteins from shotgun MS/MS data using normalized spectral count or normalized spectral index techniques. Incorporates distributed techniques to account for peptide sequence degeneracy.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3630"
-        },
-        {
           "@id": "edam:operation_3634"
         },
         {
-          "@id": "edam:operation_3637"
+          "@id": "edam:operation_3630"
         },
         {
           "@id": "edam:operation_3799"
+        },
+        {
+          "@id": "edam:operation_3637"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "Apache-2.0",
       "sc:name": "StPeter",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareVersion": "1.4.0",
       "sc:url": "http://tppms.org"
     },
     {
-      "@id": "_:Nbc77b44c39e54cb28e08b6ea9fc13602",
+      "@id": "_:Na7341ac028504f7181f4352671603e77",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0896"
@@ -99,7 +99,7 @@
       "sc:name": "Protein report"
     },
     {
-      "@id": "_:N95c307d2e47b4225a6787c33d52bd4ab",
+      "@id": "_:N988f8390637641609d291b00ae1c8844",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0896"

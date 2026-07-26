@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,6 +36,10 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1186/1758-2946-6-12",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://doi.org/10.1186/1758-2946-1-13",
       "@type": "sc:CreativeWork"
     },
@@ -45,68 +49,68 @@
       "biotools:primaryContact": "ProteinsPlus Support",
       "bsc:input": [
         {
-          "@id": "_:N936f5b619cfb4bb9b3dc66f3018e8abc"
+          "@id": "_:N4ef48214e7a54752bff6ca3f232ebc43"
         },
         {
-          "@id": "_:Nbad48a6e970049238b0eedbffc4bcbc7"
+          "@id": "_:Ne123520282ac4bb1853b06bd31ff4769"
         },
         {
-          "@id": "_:Nd2f24b6776c240059e738630522efbc7"
+          "@id": "_:Na9c7b9cf1ad547419e55ace09b25bc88"
         },
         {
-          "@id": "_:N506a10d069594a3e9f4f5777b5f41eb8"
+          "@id": "_:N78d0b2f890e14712bc6ac9c09d8d1e06"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Neff7db6418ac433c8b72816a85ccfd44"
+          "@id": "_:N5c09996af1ba433b986bfddb1db8fe0c"
         },
         {
-          "@id": "_:Ndba5a380aa9a44a9a1789db48e52c09b"
+          "@id": "_:Nacfb3f45e06549dda6a89a7db65454fe"
         },
         {
-          "@id": "_:Nb356938be768424b96c74ff5fae6bf60"
+          "@id": "_:Nf85058b9f5ae400c96dcf6ed3d9ee97c"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web service",
-        "Web API"
+        "Web API",
+        "Web service"
       ],
       "sc:applicationSubCategory": [
         {
           "@id": "edam:topic_0091"
         },
         {
-          "@id": "edam:topic_0082"
-        },
-        {
           "@id": "edam:topic_3336"
-        },
-        {
-          "@id": "edam:topic_1317"
-        },
-        {
-          "@id": "edam:topic_3534"
-        },
-        {
-          "@id": "edam:topic_2275"
         },
         {
           "@id": "edam:topic_0602"
         },
         {
+          "@id": "edam:topic_2275"
+        },
+        {
+          "@id": "edam:topic_3534"
+        },
+        {
           "@id": "edam:topic_0128"
+        },
+        {
+          "@id": "edam:topic_1317"
+        },
+        {
+          "@id": "edam:topic_0082"
         }
       ],
       "sc:citation": [
-        "pmcid:PMC4019353",
+        "pubmed:20298519",
+        "pmcid:PMC3225823",
         {
           "@id": "https://doi.org/10.1186/1758-2946-1-13"
         },
-        "pmcid:PMC3225823",
-        "pubmed:20298519",
         "pubmed:24694216",
+        "pmcid:PMC4019353",
         {
           "@id": "https://doi.org/10.1186/1758-2946-6-12"
         }
@@ -125,8 +129,8 @@
       "sc:name": "Protoss",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:provider": "University of Hamburg, ZBH - Center for Bioinformatics",
       "sc:softwareHelp": {
@@ -135,45 +139,7 @@
       "sc:url": "https://www.zbh.uni-hamburg.de/en/forschung/amd/software/protoss.html"
     },
     {
-      "@id": "_:N936f5b619cfb4bb9b3dc66f3018e8abc",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1461"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3814"
-        },
-        {
-          "@id": "edam:format_1476"
-        }
-      ],
-      "sc:name": "Protein-ligand complex"
-    },
-    {
-      "@id": "_:Nbad48a6e970049238b0eedbffc4bcbc7",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1460"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1476"
-      },
-      "sc:name": "Protein structure"
-    },
-    {
-      "@id": "_:Nd2f24b6776c240059e738630522efbc7",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1463"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3814"
-      },
-      "sc:name": "Small molecule structure"
-    },
-    {
-      "@id": "_:N506a10d069594a3e9f4f5777b5f41eb8",
+      "@id": "_:N4ef48214e7a54752bff6ca3f232ebc43",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3021"
@@ -181,18 +147,7 @@
       "sc:name": "UniProt accession"
     },
     {
-      "@id": "_:Neff7db6418ac433c8b72816a85ccfd44",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1463"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3814"
-      },
-      "sc:name": "Small molecule structure"
-    },
-    {
-      "@id": "_:Ndba5a380aa9a44a9a1789db48e52c09b",
+      "@id": "_:Ne123520282ac4bb1853b06bd31ff4769",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1460"
@@ -203,24 +158,69 @@
       "sc:name": "Protein structure"
     },
     {
-      "@id": "_:Nb356938be768424b96c74ff5fae6bf60",
+      "@id": "_:Na9c7b9cf1ad547419e55ace09b25bc88",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1461"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_3814"
+          "@id": "edam:format_1476"
         },
         {
-          "@id": "edam:format_1476"
+          "@id": "edam:format_3814"
         }
       ],
       "sc:name": "Protein-ligand complex"
     },
     {
-      "@id": "https://doi.org/10.1186/1758-2946-6-12",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N78d0b2f890e14712bc6ac9c09d8d1e06",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1463"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3814"
+      },
+      "sc:name": "Small molecule structure"
+    },
+    {
+      "@id": "_:N5c09996af1ba433b986bfddb1db8fe0c",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1460"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1476"
+      },
+      "sc:name": "Protein structure"
+    },
+    {
+      "@id": "_:Nacfb3f45e06549dda6a89a7db65454fe",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1461"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_1476"
+        },
+        {
+          "@id": "edam:format_3814"
+        }
+      ],
+      "sc:name": "Protein-ligand complex"
+    },
+    {
+      "@id": "_:Nf85058b9f5ae400c96dcf6ed3d9ee97c",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1463"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3814"
+      },
+      "sc:name": "Small molecule structure"
     }
   ]
 }

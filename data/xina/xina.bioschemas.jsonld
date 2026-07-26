@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,16 +39,16 @@
       "@id": "https://bio.tools/xina",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
-        "Sasha A. Singh",
-        "Lang Ho Lee"
+        "Lang Ho Lee",
+        "Sasha A. Singh"
       ],
       "bsc:input": {
-        "@id": "_:Nd29bbdb3d03147049863a46e8c5a38d7"
+        "@id": "_:N269cdba93a51435fbfb3a78a2b82a8d4"
       },
       "bsc:output": {
-        "@id": "_:Nb5eb785d55824e09aff6b79c5e1a4f58"
+        "@id": "_:Ndfaf0175a8584edd925bce0ee34e1375"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Library",
       "sc:applicationSubCategory": [
         {
@@ -72,9 +72,9 @@
       "sc:license": "GPL-3.0",
       "sc:name": "XINA",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://www.bioconductor.org/packages/devel/bioc/manuals/XINA/man/XINA.pdf"
@@ -83,18 +83,7 @@
       "sc:url": "https://www.bioconductor.org/packages/devel/bioc/html/XINA.html"
     },
     {
-      "@id": "_:Nb5eb785d55824e09aff6b79c5e1a4f58",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2884"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3508"
-      },
-      "sc:name": "Plot"
-    },
-    {
-      "@id": "_:Nd29bbdb3d03147049863a46e8c5a38d7",
+      "@id": "_:N269cdba93a51435fbfb3a78a2b82a8d4",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2603"
@@ -103,6 +92,17 @@
         "@id": "edam:format_3752"
       },
       "sc:name": "Expression data"
+    },
+    {
+      "@id": "_:Ndfaf0175a8584edd925bce0ee34e1375",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2884"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3508"
+      },
+      "sc:name": "Plot"
     },
     {
       "@id": "https://doi.org/10.1021/acs.jproteome.8b00615",

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,48 +36,44 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.18129/B9.bioc.PREDA",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/preda",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Nad3b0f94a64142168ac98479f0c74310"
+          "@id": "_:N4c3b38ba03134d4294e1add6680f6741"
         },
         {
-          "@id": "_:Nb3de0c69fa314198b6ddf7eb7e7a7d5f"
+          "@id": "_:N9bc2e0b19c98420baaffefe171b1b2bd"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N12c14692739345c49779ede34b4178b3"
+          "@id": "_:N0683554de52d4e40860f8ea4fecdc4bb"
         },
         {
-          "@id": "_:N97cca31d325d4b03993cf92a41b463a7"
+          "@id": "_:N0a632f9d83bd4bbaad7f0bffc901be9b"
         },
         {
-          "@id": "_:N0459e534ae7540f08931e7e5720e52a7"
+          "@id": "_:N576604fe50744b7ebef9b7e7adadd4e4"
         },
         {
-          "@id": "_:N9fee8ae993484e479a9094cffaf0e8d0"
+          "@id": "_:N07e99ad4548542b2a16118eac48eded4"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3055"
+          "@id": "edam:topic_0085"
         },
         {
           "@id": "edam:topic_2640"
         },
         {
-          "@id": "edam:topic_0085"
+          "@id": "edam:topic_3055"
         }
       ],
       "sc:citation": {
@@ -90,8 +86,8 @@
       "sc:license": "GPL-2.0-only",
       "sc:name": "PREDA",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -101,39 +97,45 @@
       "sc:url": "https://bioconductor.org/packages/PREDA"
     },
     {
-      "@id": "_:N12c14692739345c49779ede34b4178b3",
+      "@id": "_:N4c3b38ba03134d4294e1add6680f6741",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2166"
+        "@id": "edam:data_3112"
       },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3033"
-        },
-        {
-          "@id": "edam:format_3547"
-        }
-      ],
-      "sc:name": "Sequence composition plot"
+      "sc:encodingFormat": {
+        "@id": "edam:format_3033"
+      },
+      "sc:name": "Gene expression matrix"
     },
     {
-      "@id": "_:N97cca31d325d4b03993cf92a41b463a7",
+      "@id": "_:N9bc2e0b19c98420baaffefe171b1b2bd",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2012"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3033"
+      },
+      "sc:name": "Sequence coordinates"
+    },
+    {
+      "@id": "_:N0683554de52d4e40860f8ea4fecdc4bb",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1288"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_3033"
+          "@id": "edam:format_3547"
         },
         {
-          "@id": "edam:format_3547"
+          "@id": "edam:format_3033"
         }
       ],
       "sc:name": "Genome map"
     },
     {
-      "@id": "_:N0459e534ae7540f08931e7e5720e52a7",
+      "@id": "_:N0a632f9d83bd4bbaad7f0bffc901be9b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1772"
@@ -149,7 +151,23 @@
       "sc:name": "Score"
     },
     {
-      "@id": "_:N9fee8ae993484e479a9094cffaf0e8d0",
+      "@id": "_:N576604fe50744b7ebef9b7e7adadd4e4",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2166"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_3033"
+        }
+      ],
+      "sc:name": "Sequence composition plot"
+    },
+    {
+      "@id": "_:N07e99ad4548542b2a16118eac48eded4",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2012"
@@ -165,26 +183,8 @@
       "sc:name": "Sequence coordinates"
     },
     {
-      "@id": "_:Nad3b0f94a64142168ac98479f0c74310",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2012"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3033"
-      },
-      "sc:name": "Sequence coordinates"
-    },
-    {
-      "@id": "_:Nb3de0c69fa314198b6ddf7eb7e7a7d5f",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3112"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3033"
-      },
-      "sc:name": "Gene expression matrix"
+      "@id": "https://doi.org/10.18129/B9.bioc.PREDA",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,24 +36,12 @@
   },
   "@graph": [
     {
-      "@id": "https://orcid.org/0000-0002-5139-4308",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://orcid.org/0000-0002-7458-3072",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://doi.org/10.1038/s41467-024-55089-x",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/picnic-bio.webservice",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "https://orcid.org/0000-0002-5139-4308"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web service",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3474"
@@ -67,8 +55,8 @@
         }
       ],
       "sc:citation": [
-        "pmcid:PMC11634905",
         "pubmed:39663388",
+        "pmcid:PMC11634905",
         {
           "@id": "https://doi.org/10.1038/s41467-024-55089-x"
         }
@@ -78,8 +66,8 @@
       "sc:license": "CC-BY-SA-4.0",
       "sc:name": "picnic-bio.webservice",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -89,7 +77,19 @@
       "sc:url": "https://picnic-bio.org/"
     },
     {
+      "@id": "https://doi.org/10.1038/s41467-024-55089-x",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-5139-4308",
+      "@type": "sc:Person"
+    },
+    {
       "@id": "https://orcid.org/0000-0001-7159-924X",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-7458-3072",
       "@type": "sc:Person"
     }
   ]

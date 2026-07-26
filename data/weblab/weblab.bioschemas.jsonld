@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,10 +36,14 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/gkp428",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/weblab",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "WebLab Team",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
@@ -56,8 +60,8 @@
         }
       ],
       "sc:citation": [
-        "pmcid:PMC2703900",
         "pubmed:19465388",
+        "pmcid:PMC2703900",
         {
           "@id": "https://doi.org/10.1093/nar/gkp428"
         }
@@ -65,23 +69,19 @@
       "sc:description": "An integrative knowledge sharing system that supports collaboration of biological researchers from various fields. WebLab allows users to fetch, analyze with more than 260 integrated bioinformatic tools, manipulate and share data under an intuitive web interface. These tools can be further organized as customized workflows.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0306"
+          "@id": "edam:operation_0305"
         },
         {
-          "@id": "edam:operation_0305"
+          "@id": "edam:operation_0306"
         }
       ],
       "sc:name": "WebLab",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:url": "http://weblab.cbi.pku.edu.cn"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gkp428",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

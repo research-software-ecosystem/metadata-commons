@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -44,19 +44,19 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Juan Felipe Beltrán",
       "bsc:input": {
-        "@id": "_:N1a09983721e343ce8eb528869fe69def"
+        "@id": "_:N507af813d97d4656a6915ad1a023f044"
       },
       "bsc:output": {
-        "@id": "_:N84508b2362b447189946f72e1b5a8865"
+        "@id": "_:Nddddd08103514195bc5305e855a93982"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0085"
+          "@id": "edam:topic_3077"
         },
         {
-          "@id": "edam:topic_3077"
+          "@id": "edam:topic_0085"
         },
         {
           "@id": "edam:topic_0199"
@@ -66,19 +66,19 @@
         }
       ],
       "sc:citation": [
+        "pubmed:29355848",
+        "pmcid:PMC6026581",
         {
           "@id": "https://doi.org/10.1038/nmeth.4540"
-        },
-        "pubmed:29355848",
-        "pmcid:PMC6026581"
+        }
       ],
       "sc:description": "A tool to link genomic variant information with structural protein–protein interactomes.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3672"
+          "@id": "edam:operation_2422"
         },
         {
-          "@id": "edam:operation_2422"
+          "@id": "edam:operation_3672"
         },
         {
           "@id": "edam:operation_3197"
@@ -91,9 +91,9 @@
       "sc:license": "Freeware",
       "sc:name": "Interactome INSIDER",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://interactomeinsider.yulab.org/about.html"
@@ -101,15 +101,7 @@
       "sc:url": "http://interactomeinsider.yulab.org/"
     },
     {
-      "@id": "_:N84508b2362b447189946f72e1b5a8865",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2600"
-      },
-      "sc:name": "Pathway or network"
-    },
-    {
-      "@id": "_:N1a09983721e343ce8eb528869fe69def",
+      "@id": "_:N507af813d97d4656a6915ad1a023f044",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1048"
@@ -118,6 +110,14 @@
         "@id": "edam:format_2330"
       },
       "sc:name": "Database ID"
+    },
+    {
+      "@id": "_:Nddddd08103514195bc5305e855a93982",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2600"
+      },
+      "sc:name": "Pathway or network"
     }
   ]
 }

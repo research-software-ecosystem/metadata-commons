@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,39 +40,47 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Ne480b82d64154cdc8837e481f99640ae"
+          "@id": "_:N675cdeefeaaf4f8b8025e70428ff01c8"
         },
         {
-          "@id": "_:Ndae76d4b10f4437ba5f804ec33e8f3f4"
+          "@id": "_:N9e6fd1182fd84781ae809c095d8c5814"
         },
         {
-          "@id": "_:N79351f8b23b0490dba014ff829a0da4d"
+          "@id": "_:N99d5617a5ec242beb751a7e3ae918509"
         },
         {
-          "@id": "_:Nd832458931d749c3a2d63c591cc317b1"
+          "@id": "_:N9c2d16288c76413e84ed9edcef4dc1cc"
         }
       ],
       "bsc:output": {
-        "@id": "_:Nac9361803684455d91184d497a2bd750"
+        "@id": "_:N5548a6807b0a49b18addeada311cf33a"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:description": "3128391233213",
       "sc:featureList": [
+        {
+          "@id": "edam:operation_2928"
+        },
         {
           "@id": "edam:operation_0302"
         },
         {
           "@id": "edam:operation_0303"
-        },
-        {
-          "@id": "edam:operation_2928"
         }
       ],
       "sc:name": "odysseyOA1",
       "sc:url": "https://github.com/Yu606/odyssey"
     },
     {
-      "@id": "_:Ne480b82d64154cdc8837e481f99640ae",
+      "@id": "_:N675cdeefeaaf4f8b8025e70428ff01c8",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3108"
+      },
+      "sc:name": "Experimental measurement"
+    },
+    {
+      "@id": "_:N9e6fd1182fd84781ae809c095d8c5814",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1916"
@@ -83,7 +91,7 @@
       "sc:name": "Alignment"
     },
     {
-      "@id": "_:Ndae76d4b10f4437ba5f804ec33e8f3f4",
+      "@id": "_:N99d5617a5ec242beb751a7e3ae918509",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3707"
@@ -94,15 +102,7 @@
       "sc:name": "Biodiversity data"
     },
     {
-      "@id": "_:N79351f8b23b0490dba014ff829a0da4d",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3108"
-      },
-      "sc:name": "Experimental measurement"
-    },
-    {
-      "@id": "_:Nd832458931d749c3a2d63c591cc317b1",
+      "@id": "_:N9c2d16288c76413e84ed9edcef4dc1cc",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0914"
@@ -113,7 +113,7 @@
       "sc:name": "Codon usage data"
     },
     {
-      "@id": "_:Nac9361803684455d91184d497a2bd750",
+      "@id": "_:N5548a6807b0a49b18addeada311cf33a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1916"

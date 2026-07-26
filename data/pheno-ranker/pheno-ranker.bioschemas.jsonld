@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -38,8 +38,11 @@
     {
       "@id": "https://bio.tools/pheno-ranker",
       "@type": "sc:SoftwareApplication",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_3337"
+        },
         {
           "@id": "edam:topic_0625"
         },
@@ -48,9 +51,6 @@
         },
         {
           "@id": "edam:topic_3315"
-        },
-        {
-          "@id": "edam:topic_3337"
         },
         {
           "@id": "edam:topic_0218"
@@ -66,13 +66,13 @@
       "sc:description": "Pheno-Ranker is an open-source toolkit for comparing phenotypic data stored in GA4GH standards, enabling individual-level comparisons and statistical significance analysis. It supports various data formats and provides a command-line tool and a web-based user interface for interactive analysis.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3435"
+          "@id": "edam:operation_2422"
         },
         {
           "@id": "edam:operation_2940"
         },
         {
-          "@id": "edam:operation_2422"
+          "@id": "edam:operation_3435"
         }
       ],
       "sc:name": "Pheno-Ranker",

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,54 +40,54 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N091da674f4b44583b2a7466e423695a6"
+          "@id": "_:Nc6e188582a554229ba3fcb1330d1c992"
         },
         {
-          "@id": "_:N0519f874d24b4c888e285c6671e1a700"
+          "@id": "_:Nca70b9357fe9469081d25e81badd4748"
         },
         {
-          "@id": "_:N3c472e4a1f1a452a998288a3db448656"
+          "@id": "_:Nf33be5d168e345d8be14d162a0f39259"
         },
         {
-          "@id": "_:Nbfb824fb29e846288f100769468c15ac"
+          "@id": "_:N80b44bf09a6f43b6ba3466e0f338685d"
         },
         {
-          "@id": "_:N3c49e1e7144740bf9ace70a1b82b4b95"
+          "@id": "_:N5df6a9ecd4904d3399757adacaec8d39"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Ne94bb9954b6844b0831044cd6900482b"
+          "@id": "_:N6e1b60b543174e57a348f85365c354f5"
         },
         {
-          "@id": "_:Ne721316618dd4fd39f546ebeae8f8f3d"
+          "@id": "_:Na61f145df7d74a1c95a2201c41457a2e"
         },
         {
-          "@id": "_:Nc1b8c89337f04e6480398fda8031f3ea"
+          "@id": "_:N3b0770ef01864ae28548778379cbe466"
         },
         {
-          "@id": "_:Nc0098209d8e34131aaf5dd5c427e9ab9"
+          "@id": "_:N51ec7dcc3fef472cb4700de3e007c69e"
         },
         {
-          "@id": "_:N67d321a3185b46b6859655883d8c100a"
+          "@id": "_:N382044675f3f469793d63d4c28859360"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Database portal",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0736"
+          "@id": "edam:topic_0623"
         },
         {
-          "@id": "edam:topic_0623"
+          "@id": "edam:topic_0736"
         }
       ],
       "sc:citation": [
+        "pubmed:10592243",
         "pmcid:PMC102458",
         {
           "@id": "https://doi.org/10.1093/nar/28.1.267"
-        },
-        "pubmed:10592243"
+        }
       ],
       "sc:description": "A comprehensive set of protein domain families automatically generated from the UniProt Knowledge Database.",
       "sc:featureList": {
@@ -95,8 +95,8 @@
       },
       "sc:name": "ProDom protein domain database",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -105,18 +105,47 @@
       "sc:url": "http://prodom.prabi.fr/prodom/current/html/home.php"
     },
     {
-      "@id": "_:Ne94bb9954b6844b0831044cd6900482b",
+      "@id": "_:Nc6e188582a554229ba3fcb1330d1c992",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_1384"
+        "@id": "edam:data_1142"
       },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Sequence alignment (protein)"
+      "sc:name": "ProDom accession number"
     },
     {
-      "@id": "_:Ne721316618dd4fd39f546ebeae8f8f3d",
+      "@id": "_:Nca70b9357fe9469081d25e81badd4748",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1142"
+      },
+      "sc:name": "ProDom accession number"
+    },
+    {
+      "@id": "_:Nf33be5d168e345d8be14d162a0f39259",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1142"
+      },
+      "sc:name": "ProDom accession number"
+    },
+    {
+      "@id": "_:N80b44bf09a6f43b6ba3466e0f338685d",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1142"
+      },
+      "sc:name": "ProDom accession number"
+    },
+    {
+      "@id": "_:N5df6a9ecd4904d3399757adacaec8d39",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1142"
+      },
+      "sc:name": "ProDom accession number"
+    },
+    {
+      "@id": "_:N6e1b60b543174e57a348f85365c354f5",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1276"
@@ -127,29 +156,7 @@
       "sc:name": "Nucleic acid features"
     },
     {
-      "@id": "_:Nc1b8c89337f04e6480398fda8031f3ea",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1384"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2331"
-      },
-      "sc:name": "Sequence alignment (protein)"
-    },
-    {
-      "@id": "_:Nc0098209d8e34131aaf5dd5c427e9ab9",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0907"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2331"
-      },
-      "sc:name": "Protein family report"
-    },
-    {
-      "@id": "_:N67d321a3185b46b6859655883d8c100a",
+      "@id": "_:Na61f145df7d74a1c95a2201c41457a2e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0872"
@@ -160,44 +167,37 @@
       "sc:name": "Phylogenetic tree"
     },
     {
-      "@id": "_:N091da674f4b44583b2a7466e423695a6",
+      "@id": "_:N3b0770ef01864ae28548778379cbe466",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_1142"
+        "@id": "edam:data_0907"
       },
-      "sc:name": "ProDom accession number"
+      "sc:encodingFormat": {
+        "@id": "edam:format_2331"
+      },
+      "sc:name": "Protein family report"
     },
     {
-      "@id": "_:N0519f874d24b4c888e285c6671e1a700",
+      "@id": "_:N51ec7dcc3fef472cb4700de3e007c69e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_1142"
+        "@id": "edam:data_1384"
       },
-      "sc:name": "ProDom accession number"
+      "sc:encodingFormat": {
+        "@id": "edam:format_2331"
+      },
+      "sc:name": "Sequence alignment (protein)"
     },
     {
-      "@id": "_:N3c472e4a1f1a452a998288a3db448656",
+      "@id": "_:N382044675f3f469793d63d4c28859360",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_1142"
+        "@id": "edam:data_1384"
       },
-      "sc:name": "ProDom accession number"
-    },
-    {
-      "@id": "_:Nbfb824fb29e846288f100769468c15ac",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1142"
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
       },
-      "sc:name": "ProDom accession number"
-    },
-    {
-      "@id": "_:N3c49e1e7144740bf9ace70a1b82b4b95",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1142"
-      },
-      "sc:name": "ProDom accession number"
+      "sc:name": "Sequence alignment (protein)"
     },
     {
       "@id": "https://doi.org/10.1093/nar/28.1.267",

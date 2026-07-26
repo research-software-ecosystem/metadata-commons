@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,27 +36,31 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1371/journal.pgen.1003495",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/tsspredator",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nfe0b2576c1ff4287aa5fe5e69ef37855"
+        "@id": "_:N8bce1f717aea4b1eb034a594b6b5d250"
       },
       "bsc:output": {
-        "@id": "_:N04af07f3b034443f963454733d89c3cd"
+        "@id": "_:N1ee00f1d598446d191ff3023f571d8f2"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Desktop application",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0749"
+          "@id": "edam:topic_3170"
         },
         {
-          "@id": "edam:topic_3170"
+          "@id": "edam:topic_0749"
         }
       ],
       "sc:citation": [
-        "pmcid:PMC3656092",
         "pubmed:23696746",
+        "pmcid:PMC3656092",
         {
           "@id": "https://doi.org/10.1371/journal.pgen.1003495"
         }
@@ -64,10 +68,10 @@
       "sc:description": "TSSpredator, a Java program for the automated detection and classification of TSS from RNA-seq data. TSSpredator reads RNA-seq data in the form of simple wiggle files and performs a genome wide comparative prediction of TSS, for example between different growth conditions.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3208"
+          "@id": "edam:operation_2454"
         },
         {
-          "@id": "edam:operation_2454"
+          "@id": "edam:operation_3208"
         },
         {
           "@id": "edam:operation_0438"
@@ -76,22 +80,22 @@
       "sc:isAccessibleForFree": true,
       "sc:name": "TSSpredator",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": [
         {
-          "@id": "https://tsspredator20-rtd.readthedocs.io/en/latest/index.html"
+          "@id": "https://itnc.informatik.uni-tuebingen.de/index.php/s/J9fQjSdc2JWpCFx"
         },
         {
-          "@id": "https://itnc.informatik.uni-tuebingen.de/index.php/s/J9fQjSdc2JWpCFx"
+          "@id": "https://tsspredator20-rtd.readthedocs.io/en/latest/index.html"
         }
       ],
       "sc:url": "https://uni-tuebingen.de/fakultaeten/mathematisch-naturwissenschaftliche-fakultaet/fachbereiche/informatik/lehrstuehle/integrative-transkriptomik/software/tsspredator"
     },
     {
-      "@id": "_:Nfe0b2576c1ff4287aa5fe5e69ef37855",
+      "@id": "_:N8bce1f717aea4b1eb034a594b6b5d250",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2603"
@@ -102,16 +106,12 @@
       "sc:name": "Expression data"
     },
     {
-      "@id": "_:N04af07f3b034443f963454733d89c3cd",
+      "@id": "_:N1ee00f1d598446d191ff3023f571d8f2",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2371"
       },
       "sc:name": "ASTD ID (tss)"
-    },
-    {
-      "@id": "https://doi.org/10.1371/journal.pgen.1003495",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

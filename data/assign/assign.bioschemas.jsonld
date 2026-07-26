@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,29 +36,25 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.18129/B9.bioc.ASSIGN",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/assign",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Nca14885c1a2b48afa5b28e61acc221fb"
+          "@id": "_:N63eadb2979544b3ca6004df388362c1f"
         },
         {
-          "@id": "_:Nef332735b71c4eef902962e7d235f571"
+          "@id": "_:Nffdf125da66b4dcc85f58037b2e3f0ec"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Nb5e965993e7c4410868e8879e147f5ca"
+          "@id": "_:N12a2ea7357154302b18a03bd88f3a389"
         },
         {
-          "@id": "_:Nf4d48415f34c45a68d25fe15d2605fd5"
+          "@id": "_:Na12bae9eb0b745b287ad650d96758e18"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
@@ -81,8 +77,8 @@
       "sc:license": "MIT",
       "sc:name": "ASSIGN",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -92,7 +88,7 @@
       "sc:url": "https://bioconductor.org/packages/ASSIGN"
     },
     {
-      "@id": "_:Nca14885c1a2b48afa5b28e61acc221fb",
+      "@id": "_:N63eadb2979544b3ca6004df388362c1f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3112"
@@ -108,7 +104,7 @@
       "sc:name": "Gene expression matrix"
     },
     {
-      "@id": "_:Nef332735b71c4eef902962e7d235f571",
+      "@id": "_:Nffdf125da66b4dcc85f58037b2e3f0ec",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2600"
@@ -124,7 +120,18 @@
       "sc:name": "Pathway or network"
     },
     {
-      "@id": "_:Nb5e965993e7c4410868e8879e147f5ca",
+      "@id": "_:N12a2ea7357154302b18a03bd88f3a389",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2600"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Pathway or network"
+    },
+    {
+      "@id": "_:Na12bae9eb0b745b287ad650d96758e18",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1772"
@@ -135,15 +142,8 @@
       "sc:name": "Score"
     },
     {
-      "@id": "_:Nf4d48415f34c45a68d25fe15d2605fd5",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2600"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Pathway or network"
+      "@id": "https://doi.org/10.18129/B9.bioc.ASSIGN",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

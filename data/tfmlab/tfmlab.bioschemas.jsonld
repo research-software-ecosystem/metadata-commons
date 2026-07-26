@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -38,8 +38,11 @@
     {
       "@id": "https://bio.tools/tfmlab",
       "@type": "sc:SoftwareApplication",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_3382"
+        },
         {
           "@id": "edam:topic_3068"
         },
@@ -48,9 +51,6 @@
         },
         {
           "@id": "edam:topic_0769"
-        },
-        {
-          "@id": "edam:topic_3382"
         }
       ],
       "sc:citation": {
@@ -59,13 +59,13 @@
       "sc:description": "a MATLAB toolbox for 4D traction force microscopy.\n\n\nPIV(Particle Image Velocimetry), Traction force microscopy, Template matching (OpenCV), Export movie files using ffmpeg, Align slices in stack and autofocus plugins for imageJ.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3435"
-        },
-        {
           "@id": "edam:operation_3443"
         },
         {
           "@id": "edam:operation_3552"
+        },
+        {
+          "@id": "edam:operation_3435"
         }
       ],
       "sc:name": "TFMLAB",

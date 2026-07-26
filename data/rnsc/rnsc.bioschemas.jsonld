@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -37,42 +37,42 @@
   "@id": "https://bio.tools/rnsc",
   "@type": "sc:SoftwareApplication",
   "biotools:primaryContact": "Dr. Igor Jurisica",
-  "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+  "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
   "sc:additionalType": "Web application",
   "sc:applicationSubCategory": [
     {
-      "@id": "edam:topic_0078"
+      "@id": "edam:topic_1775"
     },
     {
       "@id": "edam:topic_0602"
     },
     {
-      "@id": "edam:topic_1775"
+      "@id": "edam:topic_0128"
     },
     {
-      "@id": "edam:topic_0128"
+      "@id": "edam:topic_0078"
     }
   ],
   "sc:citation": "pubmed:15180928",
   "sc:description": "This tool efficiently partitions networks into clusters using a cost function. Used to detect known and predict still undiscovered protein complexes within the cell's protein-protein interaction (PPI) network. The increasing amount of available PPI data necessitates an accurate and scalable approach to protein complex identification.",
   "sc:featureList": [
     {
-      "@id": "edam:operation_3439"
+      "@id": "edam:operation_3432"
     },
     {
-      "@id": "edam:operation_2464"
+      "@id": "edam:operation_3439"
     },
     {
       "@id": "edam:operation_2492"
     },
     {
-      "@id": "edam:operation_3432"
+      "@id": "edam:operation_2464"
     }
   ],
   "sc:name": "RNSC",
   "sc:operatingSystem": [
-    "Mac",
     "Linux",
+    "Mac",
     "Windows"
   ],
   "sc:softwareHelp": {

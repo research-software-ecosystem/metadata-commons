@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,39 +36,35 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/NAR/GKX246",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/galaxyhomomer",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N2353355a831745b6bacd33746d71b746"
+          "@id": "_:Nfc866ff9f11649eea6fccf9310d13df5"
         },
         {
-          "@id": "_:N7e28aa29e82049b2adf59245c511fdf5"
+          "@id": "_:Nddd2f0164a004026b31d07f60518e26b"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N176b3f7b21a44e499df09f2cfe533230"
+          "@id": "_:Nd8438c1164ce476fb5683a720e2239e8"
         },
         {
-          "@id": "_:Nf78c363e3a1246a794de729530cf300d"
+          "@id": "_:N2cfa85cf84db4fd780ca33e8a894ed28"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_3300"
+        },
         {
           "@id": "edam:topic_0736"
         },
         {
           "@id": "edam:topic_0082"
-        },
-        {
-          "@id": "edam:topic_3300"
         }
       ],
       "sc:citation": [
@@ -81,13 +77,13 @@
       "sc:description": "Protein oligomer structure prediction from a monomer sequence or structure. It carries out template-based modeling, ab initio docking or both depending on the availability of proper oligomer templates.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0267"
-        },
-        {
           "@id": "edam:operation_3662"
         },
         {
           "@id": "edam:operation_0478"
+        },
+        {
+          "@id": "edam:operation_0267"
         }
       ],
       "sc:name": "GalaxyHomomer",
@@ -97,18 +93,7 @@
       "sc:url": "http://galaxy.seoklab.org/homomer"
     },
     {
-      "@id": "_:N2353355a831745b6bacd33746d71b746",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1460"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1476"
-      },
-      "sc:name": "Protein structure"
-    },
-    {
-      "@id": "_:N7e28aa29e82049b2adf59245c511fdf5",
+      "@id": "_:Nfc866ff9f11649eea6fccf9310d13df5",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2976"
@@ -119,7 +104,18 @@
       "sc:name": "Protein sequence"
     },
     {
-      "@id": "_:N176b3f7b21a44e499df09f2cfe533230",
+      "@id": "_:Nddd2f0164a004026b31d07f60518e26b",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1460"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1476"
+      },
+      "sc:name": "Protein structure"
+    },
+    {
+      "@id": "_:Nd8438c1164ce476fb5683a720e2239e8",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1460"
@@ -127,7 +123,7 @@
       "sc:name": "Protein structure"
     },
     {
-      "@id": "_:Nf78c363e3a1246a794de729530cf300d",
+      "@id": "_:N2cfa85cf84db4fd780ca33e8a894ed28",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1537"
@@ -136,6 +132,10 @@
         "@id": "edam:format_2330"
       },
       "sc:name": "Protein structure report"
+    },
+    {
+      "@id": "https://doi.org/10.1093/NAR/GKX246",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,27 +36,23 @@
   },
   "@graph": [
     {
-      "@id": "https://orcid.org/0000-0003-1170-0785",
-      "@type": "sc:Person"
-    },
-    {
       "@id": "https://bio.tools/emapper2gbk",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N00aa469c90854719b33b06263f50db16"
+          "@id": "_:Nc9119f7e08c4447490afa2c46f71582b"
         },
         {
-          "@id": "_:Nde05336b7f5646e2a1722ad9a0e96a38"
+          "@id": "_:N2d9647b41f9a40678877990a6093ab8e"
         },
         {
-          "@id": "_:Nc013cc0405144f9c96f314979172a2b3"
+          "@id": "_:N0fefb6df18914064a5cfcf349251995f"
         }
       ],
       "bsc:output": {
-        "@id": "_:N986e8c7ffc664a18826b3d594ac81be7"
+        "@id": "_:N26ecb0ef246241539624578d17110277"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_4011"
@@ -79,29 +75,7 @@
       "sc:url": "https://github.com/AuReMe/emapper2gbk"
     },
     {
-      "@id": "_:N986e8c7ffc664a18826b3d594ac81be7",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1270"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2205"
-      },
-      "sc:name": "Feature table"
-    },
-    {
-      "@id": "_:N00aa469c90854719b33b06263f50db16",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2012"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2305"
-      },
-      "sc:name": "Sequence coordinates"
-    },
-    {
-      "@id": "_:Nde05336b7f5646e2a1722ad9a0e96a38",
+      "@id": "_:Nc9119f7e08c4447490afa2c46f71582b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0925"
@@ -112,7 +86,18 @@
       "sc:name": "Sequence assembly"
     },
     {
-      "@id": "_:Nc013cc0405144f9c96f314979172a2b3",
+      "@id": "_:N2d9647b41f9a40678877990a6093ab8e",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2012"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2305"
+      },
+      "sc:name": "Sequence coordinates"
+    },
+    {
+      "@id": "_:N0fefb6df18914064a5cfcf349251995f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1233"
@@ -121,6 +106,21 @@
         "@id": "edam:format_1929"
       },
       "sc:name": "Sequence set (protein)"
+    },
+    {
+      "@id": "_:N26ecb0ef246241539624578d17110277",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1270"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2205"
+      },
+      "sc:name": "Feature table"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-1170-0785",
+      "@type": "sc:Person"
     }
   ]
 }

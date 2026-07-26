@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,35 +36,31 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1101/771485",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/fcite",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N3e61cc0294e3407c99a17afee6699a67"
+        "@id": "_:N1942c8436b304e4183b4db74000fb119"
       },
       "bsc:output": {
-        "@id": "_:N2d496ebe11e24add984f2b4082ce2468"
+        "@id": "_:Ne6b125252d954e929f77fb43ec08b21e"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web service",
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_3474"
-        },
-        {
-          "@id": "edam:topic_3068"
-        },
-        {
-          "@id": "edam:topic_0605"
-        },
         {
           "@id": "edam:topic_3473"
         },
         {
           "@id": "edam:topic_0092"
+        },
+        {
+          "@id": "edam:topic_0605"
+        },
+        {
+          "@id": "edam:topic_3068"
+        },
+        {
+          "@id": "edam:topic_3474"
         }
       ],
       "sc:citation": {
@@ -73,13 +69,13 @@
       "sc:description": "A tool to quantify an individual's scientific research output based on citations, RCR, and the H-index divided by the number of authors in publications. \n\nIn 2021, the tool stats are calculated based on over 34 million of PMIDs with over 555 million citations coming from over 34,000 journals.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0224"
+          "@id": "edam:operation_3438"
         },
         {
           "@id": "edam:operation_2424"
         },
         {
-          "@id": "edam:operation_3438"
+          "@id": "edam:operation_0224"
         }
       ],
       "sc:isAccessibleForFree": true,
@@ -90,19 +86,27 @@
           "@id": "http://fcite.org/frequently_asked_questions.html"
         },
         {
+          "@id": "http://fcite.org/help.html"
+        },
+        {
           "@id": "http://fcite.org/examples.html"
         },
         {
           "@id": "http://fcite.org/stats.html"
-        },
-        {
-          "@id": "http://fcite.org/help.html"
         }
       ],
       "sc:url": "http://fcite.org"
     },
     {
-      "@id": "_:N2d496ebe11e24add984f2b4082ce2468",
+      "@id": "_:N1942c8436b304e4183b4db74000fb119",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1187"
+      },
+      "sc:name": "PubMed ID"
+    },
+    {
+      "@id": "_:Ne6b125252d954e929f77fb43ec08b21e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0970"
@@ -113,12 +117,8 @@
       "sc:name": "Citation"
     },
     {
-      "@id": "_:N3e61cc0294e3407c99a17afee6699a67",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1187"
-      },
-      "sc:name": "PubMed ID"
+      "@id": "https://doi.org/10.1101/771485",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

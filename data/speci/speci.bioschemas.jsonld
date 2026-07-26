@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,6 +36,10 @@
   },
   "@graph": [
     {
+      "@id": "http://orcid.org/0000-0003-1429-7485",
+      "@type": "sc:Person"
+    },
+    {
       "@id": "https://bio.tools/speci",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
@@ -43,26 +47,26 @@
       },
       "bsc:input": [
         {
-          "@id": "_:N546d5b9eb48540e4a4125f21681434d1"
+          "@id": "_:N92be5de5460841ab9923821b422e2d89"
         },
         {
-          "@id": "_:N59e2c20a49df46f5992c31e69b5cad33"
+          "@id": "_:Nb3e865909ad049bb8b9797102958879b"
         }
       ],
       "bsc:output": {
-        "@id": "_:N8654248367154be8b50e3dcaad95a2eb"
+        "@id": "_:N41815366575e45abb5f60579b58f5fa6"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web service",
-        "Command-line tool"
+        "Command-line tool",
+        "Web service"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3174"
+          "@id": "edam:topic_0622"
         },
         {
-          "@id": "edam:topic_0622"
+          "@id": "edam:topic_3174"
         }
       ],
       "sc:citation": [
@@ -74,10 +78,10 @@
       "sc:description": "SpecI is a species identification tool using genomic sequences to delineate prokaryotic species. It facilitates fast, accurate and automated taxonomic assignments of newly sequenced genomes based on comparisons of 40 universal, single-copy phylogenetic marker genes extracted from a comprehensive database of sequenced prokaryotic genomes.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3460"
+          "@id": "edam:operation_3432"
         },
         {
-          "@id": "edam:operation_3432"
+          "@id": "edam:operation_3460"
         }
       ],
       "sc:isAccessibleForFree": true,
@@ -85,8 +89,8 @@
       "sc:name": "SpecI",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:provider": [
         "European Molecular Biology Laboratory (EMBL)",
@@ -99,26 +103,7 @@
       "sc:url": "http://vm-lux.embl.de/~mende/specI/"
     },
     {
-      "@id": "_:N8654248367154be8b50e3dcaad95a2eb",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1868"
-      },
-      "sc:name": "Taxon"
-    },
-    {
-      "@id": "_:N546d5b9eb48540e4a4125f21681434d1",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2886"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1929"
-      },
-      "sc:name": "Protein sequence record"
-    },
-    {
-      "@id": "_:N59e2c20a49df46f5992c31e69b5cad33",
+      "@id": "_:N92be5de5460841ab9923821b422e2d89",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2887"
@@ -129,8 +114,23 @@
       "sc:name": "Nucleic acid sequence record"
     },
     {
-      "@id": "http://orcid.org/0000-0003-1429-7485",
-      "@type": "sc:Person"
+      "@id": "_:Nb3e865909ad049bb8b9797102958879b",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2886"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "Protein sequence record"
+    },
+    {
+      "@id": "_:N41815366575e45abb5f60579b58f5fa6",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1868"
+      },
+      "sc:name": "Taxon"
     },
     {
       "@id": "https://doi.org/10.1038/nmeth.2575",

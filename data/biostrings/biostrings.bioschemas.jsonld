@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,87 +36,83 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.18129/B9.bioc.Biostrings",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/biostrings",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Ne081d11782ae4966b4fcdb53af6e71b8"
+          "@id": "_:Nbea052bc23a14aaebd4f0e571a0eec07"
         },
         {
-          "@id": "_:Ne85c364a16c3472e806bd500b296d4b8"
+          "@id": "_:N9e10f914cfa4498c9d6fc48dd725ec90"
         },
         {
-          "@id": "_:Nec7bc005f7574ff08def27d7b3e160f8"
+          "@id": "_:N5e498f5f3eec4c2a811fd0c2d9305533"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Nf16d9a40d4944cfe9b95738333eff583"
+          "@id": "_:Nc62789407e16467b941a8f99a44ebda3"
         },
         {
-          "@id": "_:N2e77259620434a2fb57842797f42705e"
+          "@id": "_:Ne9873d6240da4c31882677c147f4089a"
         },
         {
-          "@id": "_:N67e12180bf3f4134942967539337aa84"
+          "@id": "_:N480b20c466164422adeb7f62ad05b6ef"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0080"
+          "@id": "edam:topic_3071"
         },
         {
-          "@id": "edam:topic_3071"
+          "@id": "edam:topic_0080"
         }
       ],
       "sc:author": [
-        "Patrick Aboyoun",
         "Hervé Pagès",
-        "Saikat DebRoy",
-        "Robert Gentleman"
+        "Patrick Aboyoun",
+        "Robert Gentleman",
+        "Saikat DebRoy"
       ],
       "sc:citation": {
         "@id": "https://doi.org/10.18129/B9.bioc.Biostrings"
       },
       "sc:contributor": [
-        "Felix Ernst",
-        "Vince Carey",
-        "Albert Vill",
-        "Haleema Khan",
-        "Valerie Obenchain",
-        "Beryl Kanali",
-        "Nicolas Delhomme",
-        "Marcel Ramos",
-        "Jen Wokaty",
         "Aidan Lakshman",
-        "Wolfgang Huber",
+        "Albert Vill",
+        "Beryl Kanali",
+        "Erik Wright",
+        "Felix Ernst",
+        "Haleema Khan",
+        "Jen Wokaty",
         "Kieran O'Neill",
-        "Erik Wright"
+        "Marcel Ramos",
+        "Nicolas Delhomme",
+        "Valerie Obenchain",
+        "Vince Carey",
+        "Wolfgang Huber"
       ],
       "sc:description": "Memory efficient string containers, string matching algorithms, and other utilities, for fast manipulation of large biological sequences or sets of sequences.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_2403"
+          "@id": "edam:operation_1812"
         },
         {
-          "@id": "edam:operation_1812"
+          "@id": "edam:operation_2403"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "Artistic-2.0",
       "sc:name": "Biostrings",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://bioconductor.org/packages/Biostrings"
@@ -125,7 +121,64 @@
       "sc:url": "https://bioconductor.org/packages/Biostrings"
     },
     {
-      "@id": "_:Nf16d9a40d4944cfe9b95738333eff583",
+      "@id": "_:Nbea052bc23a14aaebd4f0e571a0eec07",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3115"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2554"
+        },
+        {
+          "@id": "edam:format_2061"
+        },
+        {
+          "@id": "edam:format_1919"
+        }
+      ],
+      "sc:name": "Microarray metadata"
+    },
+    {
+      "@id": "_:N9e10f914cfa4498c9d6fc48dd725ec90",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0863"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2554"
+        },
+        {
+          "@id": "edam:format_2061"
+        },
+        {
+          "@id": "edam:format_1919"
+        }
+      ],
+      "sc:name": "Sequence alignment"
+    },
+    {
+      "@id": "_:N5e498f5f3eec4c2a811fd0c2d9305533",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0849"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2554"
+        },
+        {
+          "@id": "edam:format_2061"
+        },
+        {
+          "@id": "edam:format_1919"
+        }
+      ],
+      "sc:name": "Sequence record"
+    },
+    {
+      "@id": "_:Nc62789407e16467b941a8f99a44ebda3",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3115"
@@ -136,7 +189,7 @@
       "sc:name": "Microarray metadata"
     },
     {
-      "@id": "_:N2e77259620434a2fb57842797f42705e",
+      "@id": "_:Ne9873d6240da4c31882677c147f4089a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0863"
@@ -147,7 +200,7 @@
       "sc:name": "Sequence alignment"
     },
     {
-      "@id": "_:N67e12180bf3f4134942967539337aa84",
+      "@id": "_:N480b20c466164422adeb7f62ad05b6ef",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0849"
@@ -158,61 +211,8 @@
       "sc:name": "Sequence record"
     },
     {
-      "@id": "_:Ne081d11782ae4966b4fcdb53af6e71b8",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0863"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2061"
-        },
-        {
-          "@id": "edam:format_2554"
-        },
-        {
-          "@id": "edam:format_1919"
-        }
-      ],
-      "sc:name": "Sequence alignment"
-    },
-    {
-      "@id": "_:Ne85c364a16c3472e806bd500b296d4b8",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3115"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2061"
-        },
-        {
-          "@id": "edam:format_2554"
-        },
-        {
-          "@id": "edam:format_1919"
-        }
-      ],
-      "sc:name": "Microarray metadata"
-    },
-    {
-      "@id": "_:Nec7bc005f7574ff08def27d7b3e160f8",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0849"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2061"
-        },
-        {
-          "@id": "edam:format_2554"
-        },
-        {
-          "@id": "edam:format_1919"
-        }
-      ],
-      "sc:name": "Sequence record"
+      "@id": "https://doi.org/10.18129/B9.bioc.Biostrings",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

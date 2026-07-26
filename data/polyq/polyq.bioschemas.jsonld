@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -37,36 +37,36 @@
   "@id": "https://bio.tools/polyq",
   "@type": "sc:SoftwareApplication",
   "biotools:primaryContact": "Ashley M. Buckle",
-  "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+  "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
   "sc:additionalType": "Database portal",
   "sc:applicationSubCategory": [
+    {
+      "@id": "edam:topic_2815"
+    },
     {
       "@id": "edam:topic_0634"
     },
     {
-      "@id": "edam:topic_2815"
+      "@id": "edam:topic_0736"
     },
     {
       "@id": "edam:topic_0078"
     },
     {
       "@id": "edam:topic_0157"
-    },
-    {
-      "@id": "edam:topic_0736"
     }
   ],
   "sc:citation": "pubmed:21059684",
   "sc:description": "Collection of sequences of all human proteins containing runs of seven or more glutamine residues and their annotated sequences with domain information. It can be interrogated such that the sequence context of polyglutamine repeats in disease and non-disease associated proteins can be investigated.",
   "sc:featureList": [
     {
-      "@id": "edam:operation_0246"
-    },
-    {
       "@id": "edam:operation_3436"
     },
     {
       "@id": "edam:operation_3431"
+    },
+    {
+      "@id": "edam:operation_0246"
     },
     {
       "@id": "edam:operation_0303"
@@ -77,8 +77,8 @@
   ],
   "sc:name": "PolyQ",
   "sc:operatingSystem": [
-    "Mac",
     "Linux",
+    "Mac",
     "Windows"
   ],
   "sc:softwareHelp": {

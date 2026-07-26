@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,19 +36,19 @@
   },
   "@graph": [
     {
-      "@id": "http://orcid.org/0000-0001-7786-2109",
+      "@id": "https://orcid.org/0000-0002-7502-3157",
       "@type": "sc:Person"
     },
     {
       "@id": "https://bio.tools/pydockweb",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N3adf0cfd3b854e5bb7c4721140f45873"
+        "@id": "_:N0e13d26467544ff49c5a893b479ea398"
       },
       "bsc:output": {
-        "@id": "_:N15137789e9934ebebc889b43c8bfc0fe"
+        "@id": "_:N4b9d15268feb4663a3de68bfb0f70ca5"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3332"
@@ -74,35 +74,24 @@
       "sc:isAccessibleForFree": true,
       "sc:name": "pyDockWEB",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": "Barcelona Supercomputing Center",
       "sc:softwareHelp": [
         {
-          "@id": "https://life.bsc.es/pid/pydockweb/info/terms"
+          "@id": "https://life.bsc.es/pid/pydockweb/info/faq_and_help"
         },
         {
-          "@id": "https://life.bsc.es/pid/pydockweb/info/faq_and_help"
+          "@id": "https://life.bsc.es/pid/pydockweb/info/terms"
         }
       ],
       "sc:softwareVersion": "3.5.1",
       "sc:url": "https://life.bsc.es/pid/pydockweb"
     },
     {
-      "@id": "_:N15137789e9934ebebc889b43c8bfc0fe",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2877"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1476"
-      },
-      "sc:name": "Protein complex"
-    },
-    {
-      "@id": "_:N3adf0cfd3b854e5bb7c4721140f45873",
+      "@id": "_:N0e13d26467544ff49c5a893b479ea398",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1460"
@@ -113,12 +102,23 @@
       "sc:name": "Protein structure"
     },
     {
-      "@id": "https://orcid.org/0000-0002-7502-3157",
-      "@type": "sc:Person"
+      "@id": "_:N4b9d15268feb4663a3de68bfb0f70ca5",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2877"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1476"
+      },
+      "sc:name": "Protein complex"
     },
     {
       "@id": "https://doi.org/10.1093/bioinformatics/btt262",
       "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "http://orcid.org/0000-0001-7786-2109",
+      "@type": "sc:Person"
     }
   ]
 }

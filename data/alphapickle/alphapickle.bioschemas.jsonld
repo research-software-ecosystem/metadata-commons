@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,17 +39,17 @@
       "@id": "https://bio.tools/alphapickle",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N4f0fc20827854fe78974334fcaed54d6"
+        "@id": "_:N63f4591d883c40de9e51a2fffb6738b6"
       },
       "bsc:output": [
         {
-          "@id": "_:N1805b32c80c24670943c3f517789544b"
+          "@id": "_:Ne3f6f455424d4b92ba9435522cd23273"
         },
         {
-          "@id": "_:N4e030b47825149879a8a2e4fe94583a1"
+          "@id": "_:N023a0d23d01b4945bb5c637022e520b4"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:description": "AlphaPickle is a Python tool that converts AlphaFold and ColabFold output files into user-friendly CSV files and plots, enabling easy analysis and visualization of protein prediction data without requiring programming expertise. It processes .pkl, .json, and PDB files to extract and visualize metrics like pLDDT and PAE.",
       "sc:featureList": {
         "@id": "edam:operation_2480"
@@ -60,7 +60,7 @@
       "sc:url": "https://github.com/mattarnoldbio/alphapickle"
     },
     {
-      "@id": "_:N4f0fc20827854fe78974334fcaed54d6",
+      "@id": "_:N63f4591d883c40de9e51a2fffb6738b6",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2085"
@@ -71,18 +71,7 @@
       "sc:name": "Structure report"
     },
     {
-      "@id": "_:N1805b32c80c24670943c3f517789544b",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1539"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3752"
-      },
-      "sc:name": "Protein structural quality report"
-    },
-    {
-      "@id": "_:N4e030b47825149879a8a2e4fe94583a1",
+      "@id": "_:Ne3f6f455424d4b92ba9435522cd23273",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
@@ -91,6 +80,17 @@
         "@id": "edam:format_3603"
       },
       "sc:name": "Plot"
+    },
+    {
+      "@id": "_:N023a0d23d01b4945bb5c637022e520b4",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1539"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3752"
+      },
+      "sc:name": "Protein structural quality report"
     }
   ]
 }

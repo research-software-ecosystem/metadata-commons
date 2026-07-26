@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,19 +36,15 @@
   },
   "@graph": [
     {
-      "@id": "https://orcid.org/0000-0003-3020-7945",
-      "@type": "sc:Person"
-    },
-    {
       "@id": "https://bio.tools/epitopepredict",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N6661bb3827f6459ea71d27a90a93f78a"
+        "@id": "_:Na38f1733be7441f1b613e41b34f26dbe"
       },
       "bsc:output": {
-        "@id": "_:N475f7bf8eb7946a1a19673b1f944b556"
+        "@id": "_:N66463d6be0b042f6af1f9dfc5e676ae4"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3534"
@@ -71,18 +67,7 @@
       "sc:url": "https://github.com/dmnfarrell/epitopepredict"
     },
     {
-      "@id": "_:N475f7bf8eb7946a1a19673b1f944b556",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1277"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Protein features"
-    },
-    {
-      "@id": "_:N6661bb3827f6459ea71d27a90a93f78a",
+      "@id": "_:Na38f1733be7441f1b613e41b34f26dbe",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2886"
@@ -96,6 +81,21 @@
         }
       ],
       "sc:name": "Protein sequence record"
+    },
+    {
+      "@id": "_:N66463d6be0b042f6af1f9dfc5e676ae4",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1277"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Protein features"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-3020-7945",
+      "@type": "sc:Person"
     }
   ]
 }

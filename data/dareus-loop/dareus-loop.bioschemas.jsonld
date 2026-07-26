@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -44,16 +44,16 @@
       ],
       "bsc:input": [
         {
-          "@id": "_:Nf67758ceb7894a709398cc9e6dee3c48"
+          "@id": "_:N6011c0def4514989bc30b98a14a560f7"
         },
         {
-          "@id": "_:Nc172e56452cd49728e5c52a99e40f473"
+          "@id": "_:N1cc0d69649d5419491f50a1ff2a79c64"
         }
       ],
       "bsc:output": {
-        "@id": "_:N1b504ff5e0dd4122b69e129cd962c881"
+        "@id": "_:N2b74fe03b94e41b69a209722f133353a"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
@@ -64,13 +64,13 @@
         }
       ],
       "sc:citation": [
-        "pmcid:PMC6602439",
         "pubmed:30209260",
-        "pubmed:31114872",
         "pmcid:PMC6135855",
         {
           "@id": "https://doi.org/10.1038/s41598-018-32079-w"
         },
+        "pubmed:31114872",
+        "pmcid:PMC6602439",
         {
           "@id": "https://doi.org/10.1093/nar/gkz403"
         }
@@ -89,7 +89,7 @@
       "sc:url": "https://mobyle.rpbs.univ-paris-diderot.fr/cgi-bin/portal.py#forms::DaReUS-Loop"
     },
     {
-      "@id": "_:Nf67758ceb7894a709398cc9e6dee3c48",
+      "@id": "_:N6011c0def4514989bc30b98a14a560f7",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2976"
@@ -100,7 +100,7 @@
       "sc:name": "Protein sequence"
     },
     {
-      "@id": "_:Nc172e56452cd49728e5c52a99e40f473",
+      "@id": "_:N1cc0d69649d5419491f50a1ff2a79c64",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1460"
@@ -111,7 +111,7 @@
       "sc:name": "Protein structure"
     },
     {
-      "@id": "_:N1b504ff5e0dd4122b69e129cd962c881",
+      "@id": "_:N2b74fe03b94e41b69a209722f133353a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1460"
@@ -120,13 +120,13 @@
         "@id": "edam:format_1476"
       },
       "sc:name": "Protein structure"
-    },
-    {
-      "@id": "https://doi.org/10.1038/s41598-018-32079-w",
-      "@type": "sc:CreativeWork"
     },
     {
       "@id": "https://doi.org/10.1093/nar/gkz403",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1038/s41598-018-32079-w",
       "@type": "sc:CreativeWork"
     }
   ]

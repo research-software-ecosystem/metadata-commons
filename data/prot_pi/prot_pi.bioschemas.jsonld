@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,69 +40,69 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Ne1d82584f3e94f37a662fefc844d9743"
+          "@id": "_:N7a3ebb0e7fae447a83b43bfc60d71ba9"
         },
         {
-          "@id": "_:N5a8f3994d24b42f98519dce357bab80c"
+          "@id": "_:N309912f8693746e0b2b7e3f0ea847e3d"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Nc8d8ff5f732c42469c4dcd3906febcad"
+          "@id": "_:Nc7132c6063f649c482869436cb6fdaf4"
         },
         {
-          "@id": "_:N57220cdf70aa47908d6a2ec6cc6a59b6"
+          "@id": "_:Nf92e26ed5d2f459789157f306120b343"
         },
         {
-          "@id": "_:N97c99d14156f4c5a96b3118a996ccb66"
+          "@id": "_:Nb71a64b087b242758f30a3940c5e3511"
         },
         {
-          "@id": "_:Nd6c33af8fab845d0a8d998d3f0ede21d"
+          "@id": "_:N323ded72532e4d7dabb53569072e3189"
         },
         {
-          "@id": "_:N2d014ded87dd44498fc41357e25006f9"
+          "@id": "_:N322385f4d98246699205ed54737d2afc"
         },
         {
-          "@id": "_:Nefbeaa50cf60407ba826233d0e741d76"
+          "@id": "_:N04adb115d8824cc4a7ae08c0464aa26e"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
           "@id": "edam:topic_0601"
         },
         {
+          "@id": "edam:topic_0121"
+        },
+        {
           "@id": "edam:topic_3520"
         },
         {
           "@id": "edam:topic_3524"
-        },
-        {
-          "@id": "edam:topic_0121"
         }
       ],
       "sc:description": "Online calculation (simulation) of many physicochemical parameters of peptides/proteins.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0407"
-        },
-        {
-          "@id": "edam:operation_0250"
-        },
-        {
           "@id": "edam:operation_2426"
         },
         {
           "@id": "edam:operation_2574"
+        },
+        {
+          "@id": "edam:operation_0407"
+        },
+        {
+          "@id": "edam:operation_0250"
         }
       ],
       "sc:license": "Other",
       "sc:name": "Prot pi",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://www.protpi.ch/Home/About"
@@ -110,26 +110,105 @@
       "sc:url": "https://www.protpi.ch"
     },
     {
-      "@id": "_:Nc8d8ff5f732c42469c4dcd3906febcad",
+      "@id": "_:N7a3ebb0e7fae447a83b43bfc60d71ba9",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0846"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Chemical formula"
+    },
+    {
+      "@id": "_:N309912f8693746e0b2b7e3f0ea847e3d",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2974"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Protein sequence (raw)"
+    },
+    {
+      "@id": "_:Nc7132c6063f649c482869436cb6fdaf4",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1520"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3752"
+        },
+        {
+          "@id": "edam:format_3508"
+        },
+        {
+          "@id": "edam:format_3620"
+        }
+      ],
+      "sc:name": "Peptide hydrophobic moment"
+    },
+    {
+      "@id": "_:Nf92e26ed5d2f459789157f306120b343",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2979"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3752"
+        },
+        {
+          "@id": "edam:format_3508"
+        },
+        {
+          "@id": "edam:format_3620"
+        }
+      ],
+      "sc:name": "Peptide property"
+    },
+    {
+      "@id": "_:Nb71a64b087b242758f30a3940c5e3511",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2970"
       },
       "sc:encodingFormat": [
         {
+          "@id": "edam:format_3752"
+        },
+        {
           "@id": "edam:format_3508"
         },
         {
           "@id": "edam:format_3620"
-        },
-        {
-          "@id": "edam:format_3752"
         }
       ],
       "sc:name": "Protein hydropathy data"
     },
     {
-      "@id": "_:N57220cdf70aa47908d6a2ec6cc6a59b6",
+      "@id": "_:N323ded72532e4d7dabb53569072e3189",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1528"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3752"
+        },
+        {
+          "@id": "edam:format_3508"
+        },
+        {
+          "@id": "edam:format_3620"
+        }
+      ],
+      "sc:name": "Protein isoelectric point"
+    },
+    {
+      "@id": "_:N322385f4d98246699205ed54737d2afc",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0897"
@@ -148,108 +227,29 @@
       "sc:name": "Protein property"
     },
     {
-      "@id": "_:N97c99d14156f4c5a96b3118a996ccb66",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1528"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3508"
-        },
-        {
-          "@id": "edam:format_3752"
-        },
-        {
-          "@id": "edam:format_3620"
-        }
-      ],
-      "sc:name": "Protein isoelectric point"
-    },
-    {
-      "@id": "_:Nd6c33af8fab845d0a8d998d3f0ede21d",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1520"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3620"
-        },
-        {
-          "@id": "edam:format_3752"
-        },
-        {
-          "@id": "edam:format_3508"
-        }
-      ],
-      "sc:name": "Peptide hydrophobic moment"
-    },
-    {
-      "@id": "_:N2d014ded87dd44498fc41357e25006f9",
+      "@id": "_:N04adb115d8824cc4a7ae08c0464aa26e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1522"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_3591"
-        },
-        {
           "@id": "edam:format_3752"
-        },
-        {
-          "@id": "edam:format_3579"
         },
         {
           "@id": "edam:format_3467"
         },
         {
+          "@id": "edam:format_3579"
+        },
+        {
           "@id": "edam:format_3603"
+        },
+        {
+          "@id": "edam:format_3591"
         }
       ],
       "sc:name": "Protein sequence hydropathy plot"
-    },
-    {
-      "@id": "_:Nefbeaa50cf60407ba826233d0e741d76",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2979"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3508"
-        },
-        {
-          "@id": "edam:format_3620"
-        },
-        {
-          "@id": "edam:format_3752"
-        }
-      ],
-      "sc:name": "Peptide property"
-    },
-    {
-      "@id": "_:Ne1d82584f3e94f37a662fefc844d9743",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2974"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Protein sequence (raw)"
-    },
-    {
-      "@id": "_:N5a8f3994d24b42f98519dce357bab80c",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0846"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Chemical formula"
     }
   ]
 }

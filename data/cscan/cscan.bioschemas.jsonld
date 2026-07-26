@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,17 +36,13 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/nar/gks483",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/cscan",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
         "Federico Zambelli",
         "Giulio Pavesi"
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0160"
@@ -61,18 +57,18 @@
       "sc:description": "Web resource that includes a large collection of genome-wide ChIP-Seq experiments performed on TFs, histone modifications, RNA polymerases and others. Enriched peak regions from the ChIP-Seq experiments are crossed with the genomic coordinates of a set of input genes, to identify which of the experiments present a statistically significant number of peaks within the input genes’ loci.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0349"
+          "@id": "edam:operation_3501"
         },
         {
-          "@id": "edam:operation_3501"
+          "@id": "edam:operation_0349"
         }
       ],
       "sc:license": "GPL-3.0",
       "sc:name": "Cscan",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:provider": "ELIXIR-ITA-MILANO",
       "sc:softwareHelp": {
@@ -80,6 +76,10 @@
       },
       "sc:softwareVersion": "1.2",
       "sc:url": "http://www.beaconlab.it/cscan"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/gks483",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

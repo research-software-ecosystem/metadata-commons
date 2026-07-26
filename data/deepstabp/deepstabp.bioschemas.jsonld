@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,31 +36,35 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.3390/IJMS24087444",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/deepstabp",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N1a62c2eaf3664c7ebabbbf35d8203aff"
+        "@id": "_:N0f3dfd5323e540428affef858d5ed826"
       },
       "bsc:output": {
-        "@id": "_:N7d4b815c60a34ee49af069d40dfafe45"
+        "@id": "_:Nc8cb15f257f34f76a2f0c96bbf4a2d72"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web application",
-        "Desktop application"
+        "Desktop application",
+        "Web application"
       ],
       "sc:applicationSubCategory": [
         {
           "@id": "edam:topic_0130"
         },
         {
-          "@id": "edam:topic_0080"
+          "@id": "edam:topic_0601"
         },
         {
           "@id": "edam:topic_0121"
         },
         {
-          "@id": "edam:topic_0601"
+          "@id": "edam:topic_0080"
         },
         {
           "@id": "edam:topic_0154"
@@ -68,10 +72,10 @@
       ],
       "sc:citation": [
         "pubmed:37108605",
+        "pmcid:PMC10138888",
         {
           "@id": "https://doi.org/10.3390/IJMS24087444"
-        },
-        "pmcid:PMC10138888"
+        }
       ],
       "sc:description": "An AI based web tool to predict the melting temperature (Tm) of proteins based on their amino acid sequence and various growth conditions.",
       "sc:featureList": [
@@ -89,14 +93,14 @@
       "sc:license": "MIT",
       "sc:name": "DeepSTABp",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:url": "https://csb-deepstabp.bio.rptu.de"
     },
     {
-      "@id": "_:N1a62c2eaf3664c7ebabbbf35d8203aff",
+      "@id": "_:N0f3dfd5323e540428affef858d5ed826",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2976"
@@ -112,16 +116,12 @@
       "sc:name": "Protein sequence"
     },
     {
-      "@id": "_:N7d4b815c60a34ee49af069d40dfafe45",
+      "@id": "_:Nc8cb15f257f34f76a2f0c96bbf4a2d72",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0897"
       },
       "sc:name": "Protein property"
-    },
-    {
-      "@id": "https://doi.org/10.3390/IJMS24087444",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

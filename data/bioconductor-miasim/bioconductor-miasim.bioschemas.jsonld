@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -42,33 +42,33 @@
     {
       "@id": "https://bio.tools/bioconductor-miasim",
       "@type": "sc:SoftwareApplication",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
       ],
       "sc:author": [
-        "Emma Gheysen",
         "Daniel Rios Garza",
-        "Yu Gao",
-        "Leo Lahti",
+        "Emma Gheysen",
         "Karoline Faust",
+        "Leo Lahti",
+        "Tuomas Borman",
         "Yagmur Simsek",
-        "Tuomas Borman"
+        "Yu Gao"
       ],
       "sc:citation": {
         "@id": "https://doi.org/10.1111/2041-210X.14129"
       },
       "sc:contributor": [
-        "Geraldson Muluh",
-        "Akewak Jeba"
+        "Akewak Jeba",
+        "Geraldson Muluh"
       ],
       "sc:description": "Microbiome time series simulation with generalized Lotka-Volterra model, Self-Organized Instability (SOI), and other models. Hubbell's Neutral model is used to determine the abundance matrix. The resulting abundance matrix is applied to (Tree)SummarizedExperiment objects.",
       "sc:license": "Artistic-2.0",
       "sc:name": "miaSim",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,14 +36,13 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.3389/FCELL.2024.1456728",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/deepo-glcnac",
       "@type": "sc:SoftwareApplication",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_3489"
+        },
         {
           "@id": "edam:topic_3474"
         },
@@ -51,13 +50,10 @@
           "@id": "edam:topic_0634"
         },
         {
-          "@id": "edam:topic_3489"
+          "@id": "edam:topic_0601"
         },
         {
           "@id": "edam:topic_0121"
-        },
-        {
-          "@id": "edam:topic_0601"
         }
       ],
       "sc:citation": [
@@ -70,10 +66,10 @@
       "sc:description": "DeepO-GlcNAc is a web server for predicting protein O-GlcNAcylation sites using deep learning, offering a user-friendly platform for researchers. The tool leverages LSTM, CNN, and attention mechanisms and is available for investigation and usage by the scientific community.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3645"
+          "@id": "edam:operation_3927"
         },
         {
-          "@id": "edam:operation_3927"
+          "@id": "edam:operation_3645"
         },
         {
           "@id": "edam:operation_0417"
@@ -81,6 +77,10 @@
       ],
       "sc:name": "DeepO-GlcNAc",
       "sc:url": "https://oglcnac.org/atlas/download/"
+    },
+    {
+      "@id": "https://doi.org/10.3389/FCELL.2024.1456728",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

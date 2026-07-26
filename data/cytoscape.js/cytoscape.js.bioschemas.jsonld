@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,25 +36,21 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btv557",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/cytoscape.js",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Max Franz",
       "bsc:input": [
         {
-          "@id": "_:Naccdf96e879d49d480748f12506bdceb"
+          "@id": "_:Nf474cd4617384aeb8fa573630b2bd5be"
         },
         {
-          "@id": "_:N32632403957a465fbdbdec527bd2eb4e"
+          "@id": "_:N488d74f2878f47d59b7d1a716f51af23"
         }
       ],
       "bsc:output": {
-        "@id": "_:N8dd950d7305d463485bfa3599a9d1376"
+        "@id": "_:N0f03232015c74418b138bb9745c61731"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Library",
       "sc:applicationSubCategory": [
         {
@@ -91,15 +87,15 @@
       "sc:url": "http://js.cytoscape.org/"
     },
     {
-      "@id": "_:N8dd950d7305d463485bfa3599a9d1376",
+      "@id": "_:Nf474cd4617384aeb8fa573630b2bd5be",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2600"
+        "@id": "edam:data_2603"
       },
-      "sc:name": "Pathway or network"
+      "sc:name": "Gene expression data"
     },
     {
-      "@id": "_:Naccdf96e879d49d480748f12506bdceb",
+      "@id": "_:N488d74f2878f47d59b7d1a716f51af23",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0905"
@@ -107,12 +103,16 @@
       "sc:name": "Protein interaction raw data"
     },
     {
-      "@id": "_:N32632403957a465fbdbdec527bd2eb4e",
+      "@id": "_:N0f03232015c74418b138bb9745c61731",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2603"
+        "@id": "edam:data_2600"
       },
-      "sc:name": "Gene expression data"
+      "sc:name": "Pathway or network"
+    },
+    {
+      "@id": "https://doi.org/10.1093/bioinformatics/btv557",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

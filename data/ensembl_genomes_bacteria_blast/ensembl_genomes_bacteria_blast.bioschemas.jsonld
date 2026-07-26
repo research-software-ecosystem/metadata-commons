@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,25 +36,21 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1016/S0022-2836(05)80360-2",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/ensembl_genomes_bacteria_blast",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Ensembl team",
       "bsc:input": {
-        "@id": "_:N1809de22621b4c8e81e90b0e5535fe89"
+        "@id": "_:N3583178c791b49dda0bb7300b0fc57b6"
       },
       "bsc:output": [
         {
-          "@id": "_:Nc976425ac1ff4bad825df8e0ff5347d2"
+          "@id": "_:N53ea7caa26fd428dad27fc1430441e0f"
         },
         {
-          "@id": "_:N88fd98ad1a4646088f2c3acc23966e90"
+          "@id": "_:Na63be9e4a4784d0f8c731c906b9208d8"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0080"
@@ -66,17 +62,17 @@
       "sc:description": "Searches Ensembl Bacteria sequences using WU-BLAST.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0346"
+          "@id": "edam:operation_0292"
         },
         {
-          "@id": "edam:operation_0292"
+          "@id": "edam:operation_0346"
         }
       ],
       "sc:name": "Ensembl Genomes Bacteria Blast",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": "EMBL-EBI",
       "sc:softwareHelp": [
@@ -91,23 +87,7 @@
       "sc:url": "http://bacteria.ensembl.org/Multi/blastview"
     },
     {
-      "@id": "_:Nc976425ac1ff4bad825df8e0ff5347d2",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0857"
-      },
-      "sc:name": "Sequence search results"
-    },
-    {
-      "@id": "_:N88fd98ad1a4646088f2c3acc23966e90",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0863"
-      },
-      "sc:name": "Sequence alignment"
-    },
-    {
-      "@id": "_:N1809de22621b4c8e81e90b0e5535fe89",
+      "@id": "_:N3583178c791b49dda0bb7300b0fc57b6",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
@@ -116,6 +96,26 @@
         "@id": "edam:format_1929"
       },
       "sc:name": "Sequence"
+    },
+    {
+      "@id": "_:N53ea7caa26fd428dad27fc1430441e0f",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0863"
+      },
+      "sc:name": "Sequence alignment"
+    },
+    {
+      "@id": "_:Na63be9e4a4784d0f8c731c906b9208d8",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0857"
+      },
+      "sc:name": "Sequence search results"
+    },
+    {
+      "@id": "https://doi.org/10.1016/S0022-2836(05)80360-2",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

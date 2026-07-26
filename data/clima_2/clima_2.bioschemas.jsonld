@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,40 +40,36 @@
       "@type": "sc:CreativeWork"
     },
     {
-      "@id": "http://orcid.org/0000-0003-4694-3883",
-      "@type": "sc:Person"
-    },
-    {
       "@id": "https://bio.tools/clima_2",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
-        "Barbara Parodi",
         {
           "@id": "http://orcid.org/0000-0003-4694-3883"
-        }
+        },
+        "Barbara Parodi"
       ],
       "bsc:input": [
         {
-          "@id": "_:Na67840cb762d469e9ff3dfe9563b5f5a"
+          "@id": "_:Nd9f24078f8574e5fb143830ca88fbd6e"
         },
         {
-          "@id": "_:N1c2983d5e18d4e05a012917d163dc85b"
+          "@id": "_:N8bc0107c33ac4714bfb7c495a39310ad"
         },
         {
-          "@id": "_:Neb3378c3bfe148ce9641ed88fc835707"
+          "@id": "_:N550bafdc5c4746618c57f337d2625cd8"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Database portal",
         "Web application"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3571"
+          "@id": "edam:topic_3340"
         },
         {
-          "@id": "edam:topic_3340"
+          "@id": "edam:topic_3571"
         },
         {
           "@id": "edam:topic_2815"
@@ -81,8 +77,8 @@
       ],
       "sc:author": "Paolo Romano",
       "sc:citation": [
-        "pmcid:PMC2686526",
         "pubmed:18927105",
+        "pmcid:PMC2686526",
         {
           "@id": "https://doi.org/10.1093/nar/gkn730"
         }
@@ -94,10 +90,10 @@
       "sc:description": "Cell Line Integrated Molecular Authentication database and Identification tool. It represents a reference for validated molecular authentication of human cell lines independently from the platforms used.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3431"
+          "@id": "edam:operation_2421"
         },
         {
-          "@id": "edam:operation_2421"
+          "@id": "edam:operation_3431"
         }
       ],
       "sc:isAccessibleForFree": true,
@@ -110,7 +106,7 @@
       "sc:url": "http://bioinformatics.hsanmartino.it/clima2/"
     },
     {
-      "@id": "_:Na67840cb762d469e9ff3dfe9563b5f5a",
+      "@id": "_:Nd9f24078f8574e5fb143830ca88fbd6e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2892"
@@ -118,7 +114,15 @@
       "sc:name": "Cell type name"
     },
     {
-      "@id": "_:N1c2983d5e18d4e05a012917d163dc85b",
+      "@id": "_:N8bc0107c33ac4714bfb7c495a39310ad",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1691"
+      },
+      "sc:name": "Email address"
+    },
+    {
+      "@id": "_:N550bafdc5c4746618c57f337d2625cd8",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0006"
@@ -129,12 +133,8 @@
       "sc:name": "Data"
     },
     {
-      "@id": "_:Neb3378c3bfe148ce9641ed88fc835707",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1691"
-      },
-      "sc:name": "Email address"
+      "@id": "http://orcid.org/0000-0003-4694-3883",
+      "@type": "sc:Person"
     }
   ]
 }

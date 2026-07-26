@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -44,29 +44,29 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Ndfc51de0d18842efb4c888d04a94381e"
+          "@id": "_:N77cc2b8c943849ef88164b5b4e3fb4a1"
         },
         {
-          "@id": "_:N0c32ae3b283e4e0bbd36bd2b952d7b4f"
+          "@id": "_:Nebe6f6fdb6124027884295d8b6e46095"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_3375"
-        },
         {
           "@id": "edam:topic_3373"
         },
         {
-          "@id": "edam:topic_0154"
+          "@id": "edam:topic_3336"
+        },
+        {
+          "@id": "edam:topic_3375"
         },
         {
           "@id": "edam:topic_3407"
         },
         {
-          "@id": "edam:topic_3336"
+          "@id": "edam:topic_0154"
         }
       ],
       "sc:citation": [
@@ -81,36 +81,36 @@
           "@id": "edam:operation_0452"
         },
         {
-          "@id": "edam:operation_0451"
+          "@id": "edam:operation_3929"
         },
         {
-          "@id": "edam:operation_3929"
+          "@id": "edam:operation_0451"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:name": "PredMS",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:url": "https://predms.netlify.app"
     },
     {
-      "@id": "_:Ndfc51de0d18842efb4c888d04a94381e",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2301"
-      },
-      "sc:name": "SMILES string"
-    },
-    {
-      "@id": "_:N0c32ae3b283e4e0bbd36bd2b952d7b4f",
+      "@id": "_:N77cc2b8c943849ef88164b5b4e3fb4a1",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1712"
       },
       "sc:name": "Chemical structure image"
+    },
+    {
+      "@id": "_:Nebe6f6fdb6124027884295d8b6e46095",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2301"
+      },
+      "sc:name": "SMILES string"
     }
   ]
 }

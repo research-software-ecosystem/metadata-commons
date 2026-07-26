@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,32 +36,36 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1101/gr.074492.107",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/velvet",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Daniel Zerbino",
       "bsc:input": [
         {
-          "@id": "_:N1c47863bfda1456badccd17becf5958a"
+          "@id": "_:N2d64c3536d534d1787b6d1a3286a7d00"
         },
         {
-          "@id": "_:N876c1490ec0941f2ab1b29f43ebba00f"
+          "@id": "_:N8817e2fd4e8d453a8751d6a041c02e1f"
         },
         {
-          "@id": "_:Nb9a208c64b214bb19bb2de17a24468d2"
+          "@id": "_:N2f0af1a448b9432e904aa0977602f424"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N56209194dd534bd8b3f80aeb96e0661e"
+          "@id": "_:N59d7e614e1bc4efeb818b2fa0596a3a9"
         },
         {
-          "@id": "_:N8f42b8a42bf4484bb588b7edf713a690"
+          "@id": "_:Nb263424dd25b4df3b5c1654346a9f4d2"
         },
         {
-          "@id": "_:Nc462b25ab22245bc9a238dc97fe20d68"
+          "@id": "_:N30a50af699b842c7849bc3123f40d4c9"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0196"
@@ -85,8 +89,8 @@
       "sc:license": "GPL-3.0",
       "sc:name": "Velvet",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "https://github.com/dzerbino/velvet/blob/master/Manual.pdf"
@@ -94,7 +98,15 @@
       "sc:url": "https://github.com/dzerbino/velvet"
     },
     {
-      "@id": "_:N1c47863bfda1456badccd17becf5958a",
+      "@id": "_:N2d64c3536d534d1787b6d1a3286a7d00",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2337"
+      },
+      "sc:name": "Resource metadata"
+    },
+    {
+      "@id": "_:N8817e2fd4e8d453a8751d6a041c02e1f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
@@ -102,15 +114,12 @@
       "sc:name": "Sequence"
     },
     {
-      "@id": "_:N876c1490ec0941f2ab1b29f43ebba00f",
+      "@id": "_:N2f0af1a448b9432e904aa0977602f424",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
       },
       "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2573"
-        },
         {
           "@id": "edam:format_2572"
         },
@@ -119,28 +128,15 @@
         },
         {
           "@id": "edam:format_1930"
+        },
+        {
+          "@id": "edam:format_2573"
         }
       ],
       "sc:name": "Sequence"
     },
     {
-      "@id": "_:Nb9a208c64b214bb19bb2de17a24468d2",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2337"
-      },
-      "sc:name": "Resource metadata"
-    },
-    {
-      "@id": "_:N56209194dd534bd8b3f80aeb96e0661e",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2044"
-      },
-      "sc:name": "Sequence"
-    },
-    {
-      "@id": "_:N8f42b8a42bf4484bb588b7edf713a690",
+      "@id": "_:N59d7e614e1bc4efeb818b2fa0596a3a9",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0925"
@@ -148,7 +144,7 @@
       "sc:name": "Sequence assembly"
     },
     {
-      "@id": "_:Nc462b25ab22245bc9a238dc97fe20d68",
+      "@id": "_:Nb263424dd25b4df3b5c1654346a9f4d2",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2337"
@@ -156,8 +152,12 @@
       "sc:name": "Resource metadata"
     },
     {
-      "@id": "https://doi.org/10.1101/gr.074492.107",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N30a50af699b842c7849bc3123f40d4c9",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2044"
+      },
+      "sc:name": "Sequence"
     }
   ]
 }

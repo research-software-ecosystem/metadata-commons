@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,7 +36,7 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/nar/gku1056",
+      "@id": "https://doi.org/10.1093/nar/gki010",
       "@type": "sc:CreativeWork"
     },
     {
@@ -44,72 +44,72 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Nc2f96185c0c346d2a76c4cf3f981f4eb"
+          "@id": "_:Nce60421899c941e6ba69b1d618e159da"
         },
         {
-          "@id": "_:Ncc2a9538bcc449c4b1671363a35a8d39"
+          "@id": "_:N14f48c3b23634c4e8dd67c194bc5891e"
         },
         {
-          "@id": "_:Nc63f1e243ddc45949fe83b1bf683ca02"
+          "@id": "_:N6ee04f7fcb4c4e3ba1e687b04c7e7e2d"
         },
         {
-          "@id": "_:N001172fcca924598867a193d96fd6973"
+          "@id": "_:N290dacc5d692411c97a59306fa349621"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Nbcda3bb819e04991b78e7a77d82a80c2"
+          "@id": "_:Nfcb4dc18406f40c094c95c50318a61aa"
         },
         {
-          "@id": "_:N1d8c44b1e34d4f17bbb5128e8e961ce0"
+          "@id": "_:Nb25e109431274fb3807d953a115c17fc"
         },
         {
-          "@id": "_:Nfa3a5f2847a34970ba114d965706ef5c"
+          "@id": "_:N8fbc44782eb34a3cb51b5a59680dd5be"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Database portal",
         "Web application"
       ],
       "sc:applicationSubCategory": [
         {
+          "@id": "edam:topic_3930"
+        },
+        {
           "@id": "edam:topic_3948"
         },
         {
           "@id": "edam:topic_0804"
-        },
-        {
-          "@id": "edam:topic_3930"
         }
       ],
       "sc:citation": [
+        "pubmed:15608191",
         "pmcid:PMC539964",
         {
-          "@id": "https://doi.org/10.1093/nar/gku1056"
+          "@id": "https://doi.org/10.1093/nar/gki010"
         },
         "pubmed:25378316",
         "pmcid:PMC4383898",
         {
-          "@id": "https://doi.org/10.1093/nar/gki010"
-        },
-        "pubmed:15608191"
+          "@id": "https://doi.org/10.1093/nar/gku1056"
+        }
       ],
       "sc:description": "IMGT/GENE-DB is the IMGT® database for immunoglobulin (IG) and T cell receptor (TR) genes and alleles (international nomenclature).\nAnnotation is based on the IMGT-ONTOLOGY concepts.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0224"
+          "@id": "edam:operation_2421"
         },
         {
-          "@id": "edam:operation_2421"
+          "@id": "edam:operation_0224"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:name": "IMGT GENE-DB",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": [
         {
@@ -125,40 +125,7 @@
       "sc:url": "http://www.imgt.org/genedb/"
     },
     {
-      "@id": "_:Nc2f96185c0c346d2a76c4cf3f981f4eb",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0842"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Identifier"
-    },
-    {
-      "@id": "_:Ncc2a9538bcc449c4b1671363a35a8d39",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0968"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Keyword"
-    },
-    {
-      "@id": "_:Nc63f1e243ddc45949fe83b1bf683ca02",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2858"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Ontology concept"
-    },
-    {
-      "@id": "_:N001172fcca924598867a193d96fd6973",
+      "@id": "_:Nce60421899c941e6ba69b1d618e159da",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2299"
@@ -169,23 +136,40 @@
       "sc:name": "Gene name"
     },
     {
-      "@id": "_:Nbcda3bb819e04991b78e7a77d82a80c2",
+      "@id": "_:N14f48c3b23634c4e8dd67c194bc5891e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_0916"
+        "@id": "edam:data_0842"
       },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_2331"
-        }
-      ],
-      "sc:name": "Gene report"
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Identifier"
     },
     {
-      "@id": "_:N1d8c44b1e34d4f17bbb5128e8e961ce0",
+      "@id": "_:N6ee04f7fcb4c4e3ba1e687b04c7e7e2d",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0968"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Keyword"
+    },
+    {
+      "@id": "_:N290dacc5d692411c97a59306fa349621",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2858"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Ontology concept"
+    },
+    {
+      "@id": "_:Nfcb4dc18406f40c094c95c50318a61aa",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2080"
@@ -201,7 +185,23 @@
       "sc:name": "Database search results"
     },
     {
-      "@id": "_:Nfa3a5f2847a34970ba114d965706ef5c",
+      "@id": "_:Nb25e109431274fb3807d953a115c17fc",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0916"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2331"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Gene report"
+    },
+    {
+      "@id": "_:N8fbc44782eb34a3cb51b5a59680dd5be",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
@@ -212,7 +212,7 @@
       "sc:name": "Sequence"
     },
     {
-      "@id": "https://doi.org/10.1093/nar/gki010",
+      "@id": "https://doi.org/10.1093/nar/gku1056",
       "@type": "sc:CreativeWork"
     }
   ]

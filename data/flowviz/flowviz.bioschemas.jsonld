@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,25 +36,29 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.18129/B9.bioc.flowViz",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/flowviz",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nbd53cbdb359d42d08817097b756d23af"
+        "@id": "_:N1d1024fba19d42918cbb879f38004315"
       },
       "bsc:output": {
-        "@id": "_:Nc03f4ab224bb4dbe969e10b8680f536f"
+        "@id": "_:Nf63fe0351f234618b155585ff3729ddd"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0092"
+          "@id": "edam:topic_3306"
         },
         {
-          "@id": "edam:topic_3306"
+          "@id": "edam:topic_0092"
         }
       ],
       "sc:citation": {
@@ -67,8 +71,8 @@
       "sc:license": "Artistic-2.0",
       "sc:name": "flowViz",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -78,18 +82,7 @@
       "sc:url": "https://bioconductor.org/packages/flowViz"
     },
     {
-      "@id": "_:Nc03f4ab224bb4dbe969e10b8680f536f",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2884"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3547"
-      },
-      "sc:name": "Plot"
-    },
-    {
-      "@id": "_:Nbd53cbdb359d42d08817097b756d23af",
+      "@id": "_:N1d1024fba19d42918cbb879f38004315",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3108"
@@ -100,8 +93,15 @@
       "sc:name": "Experimental measurement"
     },
     {
-      "@id": "https://doi.org/10.18129/B9.bioc.flowViz",
-      "@type": "sc:CreativeWork"
+      "@id": "_:Nf63fe0351f234618b155585ff3729ddd",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2884"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3547"
+      },
+      "sc:name": "Plot"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,19 +40,19 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Ndb6cc4c333bd4846b56403b63f4eb166"
+          "@id": "_:Nc9789c87ebc24d55b6ad2447726eaef7"
         },
         {
-          "@id": "_:Nda1ebcf63c434252bc148619c66243c5"
+          "@id": "_:Ne78a3061dae64547b87a834569dd5326"
         },
         {
-          "@id": "_:Nf370de304ec848bcb224081c913ebe7c"
+          "@id": "_:Nb1922124223a40c68bc276d37ee2ef2d"
         },
         {
-          "@id": "_:Ncb9ef5123aca44969cfaf8de1c8b510d"
+          "@id": "_:Nfc1aa699d00645778f8ba9e39b0c1026"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
@@ -62,10 +62,10 @@
           "@id": "edam:topic_0622"
         },
         {
-          "@id": "edam:topic_3390"
+          "@id": "edam:topic_3301"
         },
         {
-          "@id": "edam:topic_3301"
+          "@id": "edam:topic_3390"
         },
         {
           "@id": "edam:topic_0769"
@@ -84,17 +84,17 @@
           "@id": "edam:operation_2422"
         },
         {
-          "@id": "edam:operation_0337"
+          "@id": "edam:operation_0362"
         },
         {
-          "@id": "edam:operation_0362"
+          "@id": "edam:operation_0337"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:name": "TransAAP",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -103,7 +103,7 @@
       "sc:url": "http://www.membranetransport.org/transportDB2/TransAAP_login.html"
     },
     {
-      "@id": "_:Ndb6cc4c333bd4846b56403b63f4eb166",
+      "@id": "_:Nc9789c87ebc24d55b6ad2447726eaef7",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1870"
@@ -111,7 +111,7 @@
       "sc:name": "Genus name"
     },
     {
-      "@id": "_:Nda1ebcf63c434252bc148619c66243c5",
+      "@id": "_:Ne78a3061dae64547b87a834569dd5326",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1045"
@@ -119,7 +119,15 @@
       "sc:name": "Species name"
     },
     {
-      "@id": "_:Nf370de304ec848bcb224081c913ebe7c",
+      "@id": "_:Nb1922124223a40c68bc276d37ee2ef2d",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1046"
+      },
+      "sc:name": "Strain name"
+    },
+    {
+      "@id": "_:Nfc1aa699d00645778f8ba9e39b0c1026",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2976"
@@ -128,14 +136,6 @@
         "@id": "edam:format_1929"
       },
       "sc:name": "Protein sequence"
-    },
-    {
-      "@id": "_:Ncb9ef5123aca44969cfaf8de1c8b510d",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1046"
-      },
-      "sc:name": "Strain name"
     },
     {
       "@id": "https://doi.org/10.1099/mgen.0.000927",

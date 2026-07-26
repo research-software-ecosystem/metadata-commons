@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,34 +36,30 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1002/1615-9861",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/glycomod",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N64af93bc05184d71a0a47c6a251e0753"
+          "@id": "_:N5bac20e2630c467f9c8f148a1fe3158c"
         },
         {
-          "@id": "_:Nb03a22b24ea54b9d9bc0ea5c292544c8"
+          "@id": "_:Ne2ba0b8e2b00426ca014b2bdf37b5a7e"
         },
         {
-          "@id": "_:N1834927d8ae940ac9c0592791a54124d"
+          "@id": "_:Ne1ea08a032f44bc3a38cced68fe949f5"
         }
       ],
       "bsc:output": {
-        "@id": "_:N40bcc891c2344d1baa54a50f8bee4dca"
+        "@id": "_:Nd562e76121524fccb79be771411fcf3c"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
           "@id": "edam:topic_0601"
         },
         {
-          "@id": "edam:topic_0082"
+          "@id": "edam:topic_0121"
         },
         {
           "@id": "edam:topic_3520"
@@ -75,7 +71,7 @@
           "@id": "edam:topic_0122"
         },
         {
-          "@id": "edam:topic_0121"
+          "@id": "edam:topic_0082"
         }
       ],
       "sc:citation": {
@@ -84,13 +80,13 @@
       "sc:description": "Predict possible oligosaccharide structures that occur on proteins from their experimentally determined masses. The program can be used for free or derivatized oligosaccharides and for glycopeptides.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0417"
+          "@id": "edam:operation_0476"
         },
         {
           "@id": "edam:operation_0416"
         },
         {
-          "@id": "edam:operation_0476"
+          "@id": "edam:operation_0417"
         },
         {
           "@id": "edam:operation_3644"
@@ -98,9 +94,9 @@
       ],
       "sc:name": "GlycoMod",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://web.expasy.org/glycomod/glycomod-doc.html"
@@ -108,18 +104,7 @@
       "sc:url": "https://web.expasy.org/glycomod/"
     },
     {
-      "@id": "_:N64af93bc05184d71a0a47c6a251e0753",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3021"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "UniProt accession"
-    },
-    {
-      "@id": "_:Nb03a22b24ea54b9d9bc0ea5c292544c8",
+      "@id": "_:N5bac20e2630c467f9c8f148a1fe3158c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0844"
@@ -130,7 +115,7 @@
       "sc:name": "Molecular mass"
     },
     {
-      "@id": "_:N1834927d8ae940ac9c0592791a54124d",
+      "@id": "_:Ne2ba0b8e2b00426ca014b2bdf37b5a7e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1233"
@@ -141,7 +126,18 @@
       "sc:name": "Sequence set (protein)"
     },
     {
-      "@id": "_:N40bcc891c2344d1baa54a50f8bee4dca",
+      "@id": "_:Ne1ea08a032f44bc3a38cced68fe949f5",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3021"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "UniProt accession"
+    },
+    {
+      "@id": "_:Nd562e76121524fccb79be771411fcf3c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0846"
@@ -150,6 +146,10 @@
         "@id": "edam:format_2330"
       },
       "sc:name": "Chemical formula"
+    },
+    {
+      "@id": "https://doi.org/10.1002/1615-9861",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

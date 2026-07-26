@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,22 +39,22 @@
       "@id": "https://bio.tools/samclip",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Ndac44d80a5794d9ab572c28ca1712431"
+        "@id": "_:N50eee2cb5d754b2ab031a4602c49c8c5"
       },
       "bsc:output": {
-        "@id": "_:Ne68d5ae4ca0f4c7f8174b36cb381d8ea"
+        "@id": "_:N0febf5777976428ba6e625d78761fec4"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_0102"
-        },
         {
           "@id": "edam:topic_0091"
         },
         {
           "@id": "edam:topic_0622"
+        },
+        {
+          "@id": "edam:topic_0102"
         }
       ],
       "sc:description": "Filter SAM file for soft and hard clipped alignments",
@@ -63,8 +63,8 @@
       },
       "sc:name": "samclip",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "https://github.com/tseemann/samclip"
@@ -73,7 +73,7 @@
       "sc:url": "https://github.com/tseemann/samclip"
     },
     {
-      "@id": "_:Ne68d5ae4ca0f4c7f8174b36cb381d8ea",
+      "@id": "_:N50eee2cb5d754b2ab031a4602c49c8c5",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1383"
@@ -81,7 +81,7 @@
       "sc:name": "Nucleic acid sequence alignment"
     },
     {
-      "@id": "_:Ndac44d80a5794d9ab572c28ca1712431",
+      "@id": "_:N0febf5777976428ba6e625d78761fec4",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1383"

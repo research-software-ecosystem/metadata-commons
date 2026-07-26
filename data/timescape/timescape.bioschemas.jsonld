@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,33 +36,37 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.18129/B9.bioc.timescape",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/timescape",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N7b9e01489d5f42cabd75e1c8e12894f6"
+          "@id": "_:Na83f1696acba41ffa3cac10ae907fe72"
         },
         {
-          "@id": "_:N7f38064ddbc4483aa4a986989f9f5c5c"
+          "@id": "_:N60a93faa6c3f42e7b2af8a0b9452f08f"
         }
       ],
       "bsc:output": {
-        "@id": "_:Nff5d5779115842a6b4f834ed252686e9"
+        "@id": "_:N077776d356724c35a626cec584a2265d"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Plug-in",
-        "Library"
+        "Library",
+        "Plug-in"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_2640"
+          "@id": "edam:topic_2229"
         },
         {
           "@id": "edam:topic_0092"
         },
         {
-          "@id": "edam:topic_2229"
+          "@id": "edam:topic_2640"
         }
       ],
       "sc:author": "Maia Smith",
@@ -72,22 +76,22 @@
       "sc:description": "TimeScape is an automated tool for navigating temporal clonal evolution data. The key attributes of this implementation involve the enumeration of clones, their evolutionary relationships and their shifting dynamics over time. TimeScape requires two inputs: (i) the clonal phylogeny and (ii) the clonal prevalences. Optionally, TimeScape accepts a data table of targeted mutations observed in each clone and their allele prevalences over time. The output is the TimeScape plot showing clonal prevalence vertically, time horizontally, and the plot height optionally encoding tumour volume during tumour-shrinking events. At each sampling time point (denoted by a faint white line), the height of each clone accurately reflects its proportionate prevalence. These prevalences form the anchors for bezier curves that visually represent the dynamic transitions between time points.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0567"
+          "@id": "edam:operation_2426"
         },
         {
           "@id": "edam:operation_2497"
         },
         {
-          "@id": "edam:operation_2426"
+          "@id": "edam:operation_0567"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "GPL-3.0-only",
       "sc:name": "TimeScape",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://bioconductor.org/packages/timescape"
@@ -96,15 +100,7 @@
       "sc:url": "https://bioconductor.org/packages/timescape"
     },
     {
-      "@id": "_:Nff5d5779115842a6b4f834ed252686e9",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2884"
-      },
-      "sc:name": "Plot"
-    },
-    {
-      "@id": "_:N7b9e01489d5f42cabd75e1c8e12894f6",
+      "@id": "_:Na83f1696acba41ffa3cac10ae907fe72",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0920"
@@ -112,7 +108,7 @@
       "sc:name": "Genotype/phenotype report"
     },
     {
-      "@id": "_:N7f38064ddbc4483aa4a986989f9f5c5c",
+      "@id": "_:N60a93faa6c3f42e7b2af8a0b9452f08f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2523"
@@ -120,8 +116,12 @@
       "sc:name": "Phylogenetic data"
     },
     {
-      "@id": "https://doi.org/10.18129/B9.bioc.timescape",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N077776d356724c35a626cec584a2265d",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2884"
+      },
+      "sc:name": "Plot"
     }
   ]
 }

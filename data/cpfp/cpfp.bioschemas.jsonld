@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,28 +36,32 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/btq081",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/cpfp",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nb81433f4852d48efb928d4d73fad9714"
+        "@id": "_:Nb5c1cece0e7841ada87e37adf9def1f0"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web application",
-        "Suite"
+        "Suite",
+        "Web application"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0769"
+          "@id": "edam:topic_3366"
         },
         {
-          "@id": "edam:topic_3366"
+          "@id": "edam:topic_0121"
         },
         {
           "@id": "edam:topic_3520"
         },
         {
-          "@id": "edam:topic_0121"
+          "@id": "edam:topic_0769"
         }
       ],
       "sc:citation": [
@@ -69,10 +73,10 @@
       "sc:description": "A data analysis pipeline for shotgun mass-spectrometry proteomics.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_2479"
+          "@id": "edam:operation_2421"
         },
         {
-          "@id": "edam:operation_2421"
+          "@id": "edam:operation_2479"
         },
         {
           "@id": "edam:operation_3214"
@@ -81,8 +85,8 @@
       "sc:license": "CDDL-1.0",
       "sc:name": "CPFP",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "http://cpfp.sourceforge.net/#install"
@@ -90,7 +94,7 @@
       "sc:url": "http://cpfp.sourceforge.net"
     },
     {
-      "@id": "_:Nb81433f4852d48efb928d4d73fad9714",
+      "@id": "_:Nb5c1cece0e7841ada87e37adf9def1f0",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0006"
@@ -104,10 +108,6 @@
         }
       ],
       "sc:name": "Data"
-    },
-    {
-      "@id": "https://doi.org/10.1093/bioinformatics/btq081",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,15 +36,19 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bib/bbr024",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/orthodisease",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N611e9695bd524a67ae49c113d60b256e"
+        "@id": "_:N520cebfdb66b47749d20be92561e7972"
       },
       "bsc:output": {
-        "@id": "_:N711c5e17957f4866a2727f2f4fb50b23"
+        "@id": "_:N50d3beb7be694b51b9875d399979facb"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Database portal",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0634"
@@ -61,8 +65,8 @@
       },
       "sc:name": "Orthodisease",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:provider": "bils.se",
@@ -72,7 +76,7 @@
       "sc:url": "http://orthodisease.sbc.su.se/"
     },
     {
-      "@id": "_:N611e9695bd524a67ae49c113d60b256e",
+      "@id": "_:N520cebfdb66b47749d20be92561e7972",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1150"
@@ -80,16 +84,12 @@
       "sc:name": "Disease ID"
     },
     {
-      "@id": "_:N711c5e17957f4866a2727f2f4fb50b23",
+      "@id": "_:N50d3beb7be694b51b9875d399979facb",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1622"
       },
       "sc:name": "Disease report"
-    },
-    {
-      "@id": "https://doi.org/10.1093/bib/bbr024",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

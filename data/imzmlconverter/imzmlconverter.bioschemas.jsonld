@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,33 +40,33 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N95914109392840f098142ae21ba58975"
+          "@id": "_:N5aea282c0b8a4d7381632b9e70c72743"
         },
         {
-          "@id": "_:N7b1bcf81b724449ba3d629e5c92b192f"
+          "@id": "_:Ncf2cae23d8ed494887029fb2cc97b89c"
         },
         {
-          "@id": "_:Nfd1eb8f8ea3f497089f4fe8f689d717b"
+          "@id": "_:N4ecba0ee10804c68a251315b049b6450"
         },
         {
-          "@id": "_:Nc7f2ac962a844cb2974646c67e5ccd18"
+          "@id": "_:N30eb53e5b41c4cf5984e71bb30345782"
         },
         {
-          "@id": "_:Ne57cac7c4f2148a6b0d273a304e0a093"
+          "@id": "_:Nb90b739045264e5c966a64182dd1d9ea"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N5bbef1ff93ed4c69ac575df183739353"
+          "@id": "_:N146eab7033c949deb43e96f31e9806ee"
         },
         {
-          "@id": "_:N21f4de168d3c4f729268442a9f108640"
+          "@id": "_:N0f937b9e23864a1d91368ca82095db05"
         },
         {
-          "@id": "_:N44e49f826afb4053bfbad1f7a8920dd3"
+          "@id": "_:Nb8c6afda8ffb46419f8a20b8556d4c27"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:description": "imzMLConverter is a tool designed to convert various mass spectrometry imaging (MSI) data formats into the open standard imzML format, enabling cross-platform data sharing and compatibility with different software and instruments.",
       "sc:featureList": {
@@ -76,15 +76,15 @@
       "sc:license": "BSD-3-Clause",
       "sc:name": "imzMLConverter",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareVersion": "2.1.1",
       "sc:url": "https://github.com/AlanRace/imzMLConverter"
     },
     {
-      "@id": "_:N95914109392840f098142ae21ba58975",
+      "@id": "_:N5aea282c0b8a4d7381632b9e70c72743",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2536"
@@ -95,40 +95,7 @@
       "sc:name": "Mass spectrometry data"
     },
     {
-      "@id": "_:N7b1bcf81b724449ba3d629e5c92b192f",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2536"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3858"
-      },
-      "sc:name": "Mass spectrometry data"
-    },
-    {
-      "@id": "_:Nfd1eb8f8ea3f497089f4fe8f689d717b",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2536"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3710"
-      },
-      "sc:name": "Mass spectrometry data"
-    },
-    {
-      "@id": "_:Nc7f2ac962a844cb2974646c67e5ccd18",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2536"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Mass spectrometry data"
-    },
-    {
-      "@id": "_:Ne57cac7c4f2148a6b0d273a304e0a093",
+      "@id": "_:Ncf2cae23d8ed494887029fb2cc97b89c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2536"
@@ -139,7 +106,40 @@
       "sc:name": "Mass spectrometry data"
     },
     {
-      "@id": "_:N5bbef1ff93ed4c69ac575df183739353",
+      "@id": "_:N4ecba0ee10804c68a251315b049b6450",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2536"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Mass spectrometry data"
+    },
+    {
+      "@id": "_:N30eb53e5b41c4cf5984e71bb30345782",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2536"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3858"
+      },
+      "sc:name": "Mass spectrometry data"
+    },
+    {
+      "@id": "_:Nb90b739045264e5c966a64182dd1d9ea",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2536"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3710"
+      },
+      "sc:name": "Mass spectrometry data"
+    },
+    {
+      "@id": "_:N146eab7033c949deb43e96f31e9806ee",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2536"
@@ -150,7 +150,7 @@
       "sc:name": "Mass spectrometry data"
     },
     {
-      "@id": "_:N21f4de168d3c4f729268442a9f108640",
+      "@id": "_:N0f937b9e23864a1d91368ca82095db05",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2536"
@@ -161,7 +161,7 @@
       "sc:name": "Mass spectrometry data"
     },
     {
-      "@id": "_:N44e49f826afb4053bfbad1f7a8920dd3",
+      "@id": "_:Nb8c6afda8ffb46419f8a20b8556d4c27",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2536"

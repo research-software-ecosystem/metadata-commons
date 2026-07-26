@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,19 +36,15 @@
   },
   "@graph": [
     {
-      "@id": "https://orcid.org/0000-0002-7271-733X",
-      "@type": "sc:Person"
-    },
-    {
       "@id": "https://bio.tools/findcpcli",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N5ee9069ef9e041df8ce6e127dcd0507a"
+        "@id": "_:N31ee49adcc8a423a84b1da4971541bf0"
       },
       "bsc:output": {
-        "@id": "_:N40639a8eb17f434d9e006281ceb6b2af"
+        "@id": "_:N31954539cffd4e6185c5ef0626e72b2b"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0602"
@@ -65,16 +61,27 @@
       "sc:name": "findCPcli",
       "sc:softwareHelp": [
         {
-          "@id": "https://findcpcli.readthedocs.io/en/latest/"
+          "@id": "https://findcpcore.readthedocs.io/en/latest/"
         },
         {
-          "@id": "https://findcpcore.readthedocs.io/en/latest/"
+          "@id": "https://findcpcli.readthedocs.io/en/latest/"
         }
       ],
       "sc:url": "https://github.com/findCP/findCPcli"
     },
     {
-      "@id": "_:N40639a8eb17f434d9e006281ceb6b2af",
+      "@id": "_:N31ee49adcc8a423a84b1da4971541bf0",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2600"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2585"
+      },
+      "sc:name": "Pathway or network"
+    },
+    {
+      "@id": "_:N31954539cffd4e6185c5ef0626e72b2b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"
@@ -85,15 +92,8 @@
       "sc:name": "Report"
     },
     {
-      "@id": "_:N5ee9069ef9e041df8ce6e127dcd0507a",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2600"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2585"
-      },
-      "sc:name": "Pathway or network"
+      "@id": "https://orcid.org/0000-0002-7271-733X",
+      "@type": "sc:Person"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,45 +39,45 @@
       "@id": "https://bio.tools/flowfp",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nd6279be2870244a780420ee31505fc0e"
+        "@id": "_:N2649f9b765ac4c3f8b431a24825983b3"
       },
       "bsc:output": [
         {
-          "@id": "_:N384a9460f5964c2ba1f8d5bd33dc5818"
+          "@id": "_:Ne9ad4cfc45074fa6bdd78f312e53f845"
         },
         {
-          "@id": "_:Nd95a03e64fa347439ff8fe5ab0b44ce9"
+          "@id": "_:N69b97170b42642ba93a01d0345ad5ae4"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_2269"
+          "@id": "edam:topic_3306"
         },
         {
-          "@id": "edam:topic_3306"
+          "@id": "edam:topic_3071"
         },
         {
           "@id": "edam:topic_3361"
         },
         {
-          "@id": "edam:topic_3071"
+          "@id": "edam:topic_2269"
         }
       ],
       "sc:description": "Fingerprint generation of flow cytometry data, used to facilitate the application of machine learning and datamining tools for flow cytometry.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_2238"
-        },
-        {
           "@id": "edam:operation_2409"
         },
         {
           "@id": "edam:operation_2426"
+        },
+        {
+          "@id": "edam:operation_2238"
         },
         {
           "@id": "edam:operation_0337"
@@ -86,9 +86,9 @@
       "sc:license": "Artistic-2.0",
       "sc:name": "flowFP",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://bioconductor.org/packages/flowFP"
@@ -97,7 +97,7 @@
       "sc:url": "https://bioconductor.org/packages/flowFP"
     },
     {
-      "@id": "_:Nd6279be2870244a780420ee31505fc0e",
+      "@id": "_:N2649f9b765ac4c3f8b431a24825983b3",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3108"
@@ -108,7 +108,7 @@
       "sc:name": "Experimental measurement"
     },
     {
-      "@id": "_:N384a9460f5964c2ba1f8d5bd33dc5818",
+      "@id": "_:Ne9ad4cfc45074fa6bdd78f312e53f845",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
@@ -124,17 +124,17 @@
       "sc:name": "Plot"
     },
     {
-      "@id": "_:Nd95a03e64fa347439ff8fe5ab0b44ce9",
+      "@id": "_:N69b97170b42642ba93a01d0345ad5ae4",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_2330"
+          "@id": "edam:format_3547"
         },
         {
-          "@id": "edam:format_3547"
+          "@id": "edam:format_2330"
         }
       ],
       "sc:name": "Report"

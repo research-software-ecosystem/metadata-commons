@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -45,21 +45,21 @@
       "biotools:primaryContact": "Mali Salmon-Divon",
       "bsc:input": [
         {
-          "@id": "_:N8bd5422f537349429d127176a885b66c"
+          "@id": "_:N87c25305dad74fd49a906b7e33e16743"
         },
         {
-          "@id": "_:Nb647106aed924459961790c8bca326b6"
+          "@id": "_:N3c8da4dfeda84f1087eb62fbcd52fa1c"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Nda61bb154576443eb7bfe871df785c6b"
+          "@id": "_:N7f71445b3cfe432db959014c4b455c34"
         },
         {
-          "@id": "_:Nc2c3f76ab14845c8953c45a0b227b449"
+          "@id": "_:Nc5e3ffe7d2c848e4a6ee22a60c3f1b2e"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Suite",
       "sc:applicationSubCategory": [
         {
@@ -78,13 +78,13 @@
       "sc:description": "A set of utilities for the automated processing and annotation of genome-wide signal enrichment peaks derived through functional genomics techniques",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3501"
-        },
-        {
           "@id": "edam:operation_0226"
         },
         {
           "@id": "edam:operation_3432"
+        },
+        {
+          "@id": "edam:operation_3501"
         },
         {
           "@id": "edam:operation_3695"
@@ -93,33 +93,25 @@
       "sc:isAccessibleForFree": true,
       "sc:name": "PeakAnalyzer",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:url": "http://www.bioinformatics.org/peakanalyzer/wiki/"
     },
     {
-      "@id": "_:Nda61bb154576443eb7bfe871df785c6b",
+      "@id": "_:N87c25305dad74fd49a906b7e33e16743",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2048"
-      },
-      "sc:name": "Report"
-    },
-    {
-      "@id": "_:Nc2c3f76ab14845c8953c45a0b227b449",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0950"
+        "@id": "edam:data_2531"
       },
       "sc:encodingFormat": {
-        "@id": "edam:format_2032"
+        "@id": "edam:format_3005"
       },
-      "sc:name": "Mathematical model"
+      "sc:name": "Experiment report"
     },
     {
-      "@id": "_:N8bd5422f537349429d127176a885b66c",
+      "@id": "_:N3c8da4dfeda84f1087eb62fbcd52fa1c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2530"
@@ -135,15 +127,23 @@
       "sc:name": "Organism report"
     },
     {
-      "@id": "_:Nb647106aed924459961790c8bca326b6",
+      "@id": "_:N7f71445b3cfe432db959014c4b455c34",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2531"
+        "@id": "edam:data_2048"
+      },
+      "sc:name": "Report"
+    },
+    {
+      "@id": "_:Nc5e3ffe7d2c848e4a6ee22a60c3f1b2e",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0950"
       },
       "sc:encodingFormat": {
-        "@id": "edam:format_3005"
+        "@id": "edam:format_2032"
       },
-      "sc:name": "Experiment report"
+      "sc:name": "Mathematical model"
     }
   ]
 }

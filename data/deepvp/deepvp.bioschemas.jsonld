@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,13 +40,13 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N3da18bbb6e6a4d7da8679bc88c7a749e"
+          "@id": "_:N34e107d1479a4842ab751255cdce0ab0"
         },
         {
-          "@id": "_:Ncb9e81e4343541a9a646715627d648b9"
+          "@id": "_:N7857018950014ccc89728f5f2a9af00f"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0623"
       },
@@ -58,7 +58,15 @@
       "sc:url": "https://github.com/fangzcbio/DeePVP"
     },
     {
-      "@id": "_:N3da18bbb6e6a4d7da8679bc88c7a749e",
+      "@id": "_:N34e107d1479a4842ab751255cdce0ab0",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0907"
+      },
+      "sc:name": "Protein family report"
+    },
+    {
+      "@id": "_:N7857018950014ccc89728f5f2a9af00f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0945"
@@ -67,14 +75,6 @@
         "@id": "edam:format_1208"
       },
       "sc:name": "Peptide identification"
-    },
-    {
-      "@id": "_:Ncb9e81e4343541a9a646715627d648b9",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0907"
-      },
-      "sc:name": "Protein family report"
     }
   ]
 }

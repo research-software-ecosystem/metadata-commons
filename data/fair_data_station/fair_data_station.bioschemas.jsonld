@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,32 +36,28 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1101/2022.08.03.502622",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/fair_data_station",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N34adb91b032a476f94813719c1716f94"
+        "@id": "_:Ne6bbe8befb8b42f19e68b0427d24ede4"
       },
       "bsc:output": {
-        "@id": "_:N9e08b314f1e942a98064d47c18583b2e"
+        "@id": "_:Nef01d9c679e74c3fb14bd2cf1ee55e6b"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
           "@id": "edam:topic_3070"
         },
         {
-          "@id": "edam:topic_3391"
-        },
-        {
           "@id": "edam:topic_3307"
         },
         {
           "@id": "edam:topic_3678"
+        },
+        {
+          "@id": "edam:topic_3391"
         }
       ],
       "sc:citation": {
@@ -70,19 +66,19 @@
       "sc:description": "FAIR Data Station for Lightweight Metadata Management & Validation of Omics Studies",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3778"
+          "@id": "edam:operation_0336"
         },
         {
-          "@id": "edam:operation_0336"
+          "@id": "edam:operation_3778"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "Apache-2.0",
       "sc:name": "FAIR Data Station",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://docs.fairbydesign.nl"
@@ -91,23 +87,7 @@
       "sc:url": "https://fairbydesign.nl"
     },
     {
-      "@id": "_:N9e08b314f1e942a98064d47c18583b2e",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2526"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2332"
-        },
-        {
-          "@id": "edam:format_3255"
-        }
-      ],
-      "sc:name": "Text data"
-    },
-    {
-      "@id": "_:N34adb91b032a476f94813719c1716f94",
+      "@id": "_:Ne6bbe8befb8b42f19e68b0427d24ede4",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2337"
@@ -116,6 +96,26 @@
         "@id": "edam:format_3620"
       },
       "sc:name": "Resource metadata"
+    },
+    {
+      "@id": "_:Nef01d9c679e74c3fb14bd2cf1ee55e6b",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2526"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3255"
+        },
+        {
+          "@id": "edam:format_2332"
+        }
+      ],
+      "sc:name": "Text data"
+    },
+    {
+      "@id": "https://doi.org/10.1101/2022.08.03.502622",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

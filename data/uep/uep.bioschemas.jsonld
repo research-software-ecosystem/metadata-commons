@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,19 +39,19 @@
       "@id": "https://bio.tools/uep",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nd1056651e29e48be8eac5fa10c48bbbb"
+        "@id": "_:N65408fac18db431a9f00cf8a5637138c"
       },
       "bsc:output": {
-        "@id": "_:Nd9cdec4e80b54ece985105036eefbd91"
+        "@id": "_:Nf5a730bef84e4666b393b855d0017515"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_2814"
+          "@id": "edam:topic_0091"
         },
         {
-          "@id": "edam:topic_0091"
+          "@id": "edam:topic_2814"
         }
       ],
       "sc:author": "Pep Amengual",
@@ -72,25 +72,14 @@
       ],
       "sc:name": "UEP",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:provider": "V. Guallar Lab: Electronic and Atomic Protein Modelling @ Barcelona Supercomputer Center",
       "sc:url": "https://github.com/pepamengual/UEP"
     },
     {
-      "@id": "_:Nd9cdec4e80b54ece985105036eefbd91",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2856"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3752"
-      },
-      "sc:name": "Structural distance matrix"
-    },
-    {
-      "@id": "_:Nd1056651e29e48be8eac5fa10c48bbbb",
+      "@id": "_:N65408fac18db431a9f00cf8a5637138c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2877"
@@ -99,6 +88,17 @@
         "@id": "edam:format_1476"
       },
       "sc:name": "Protein complex"
+    },
+    {
+      "@id": "_:Nf5a730bef84e4666b393b855d0017515",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2856"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3752"
+      },
+      "sc:name": "Structural distance matrix"
     },
     {
       "@id": "https://doi.org/10.1093/bioinformatics/btaa708",

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -42,14 +42,14 @@
     {
       "@id": "https://bio.tools/bioconductor-screclassify",
       "@type": "sc:SoftwareApplication",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
       ],
       "sc:author": [
-        "Taiyun Kim",
-        "Pengyi Yang"
+        "Pengyi Yang",
+        "Taiyun Kim"
       ],
       "sc:citation": {
         "@id": "https://doi.org/10.1186/s12864-019-6305-x"
@@ -58,8 +58,8 @@
       "sc:license": "GPL-3.0-only",
       "sc:name": "scReClassify",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {

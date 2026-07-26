@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,19 +40,19 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N8e5a9e316bdb47879e7f27d18e20d78d"
+          "@id": "_:N154fa697eed44535a8f45bb59b92f9ee"
         },
         {
-          "@id": "_:Nb108b1ffe14b4ad9a77382d8c6017928"
+          "@id": "_:N947a1de1fd55443eb3f532ed08f0d274"
         },
         {
-          "@id": "_:N80f9fdfd3bcb4438a6e3d96d492f46c8"
+          "@id": "_:N8d2bccde848f41cab2855a70d52e3006"
         }
       ],
       "bsc:output": {
-        "@id": "_:N24636f844dfa4934aa37168e060a9fc5"
+        "@id": "_:N0607d67efcb3413fa275bf08d3828ad6"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:description": "a database of llps rna",
       "sc:featureList": {
         "@id": "edam:operation_0292"
@@ -61,7 +61,15 @@
       "sc:url": "https://bio.tools/register"
     },
     {
-      "@id": "_:N8e5a9e316bdb47879e7f27d18e20d78d",
+      "@id": "_:N154fa697eed44535a8f45bb59b92f9ee",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1916"
+      },
+      "sc:name": "Alignment"
+    },
+    {
+      "@id": "_:N947a1de1fd55443eb3f532ed08f0d274",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3707"
@@ -69,7 +77,7 @@
       "sc:name": "Biodiversity data"
     },
     {
-      "@id": "_:Nb108b1ffe14b4ad9a77382d8c6017928",
+      "@id": "_:N8d2bccde848f41cab2855a70d52e3006",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3736"
@@ -80,15 +88,7 @@
       "sc:name": "Ecological data"
     },
     {
-      "@id": "_:N80f9fdfd3bcb4438a6e3d96d492f46c8",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1916"
-      },
-      "sc:name": "Alignment"
-    },
-    {
-      "@id": "_:N24636f844dfa4934aa37168e060a9fc5",
+      "@id": "_:N0607d67efcb3413fa275bf08d3828ad6",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0914"

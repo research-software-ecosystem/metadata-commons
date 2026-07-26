@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -45,44 +45,44 @@
       "biotools:primaryContact": "Institute for Research in Biomedicine Barcelona",
       "bsc:input": [
         {
-          "@id": "_:Na385d228a3464a0aa4226495ca4d6e29"
+          "@id": "_:Nd264134b5e4d4481b91a7bb0fd78ea62"
         },
         {
-          "@id": "_:Nb8641ecb7f2e4f15b2f3d92d52cf41e7"
+          "@id": "_:Na93d509c97a34abe821d3167dbf594b6"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Workbench",
-        "Web application"
+        "Web application",
+        "Workbench"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0081"
+          "@id": "edam:topic_3306"
         },
         {
           "@id": "edam:topic_0176"
         },
         {
-          "@id": "edam:topic_3306"
+          "@id": "edam:topic_2275"
         },
         {
-          "@id": "edam:topic_2275"
+          "@id": "edam:topic_0081"
         }
       ],
       "sc:citation": [
+        "pubmed:22437851",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/bts139"
-        },
-        "pubmed:22437851"
+        }
       ],
       "sc:description": "Web-based platform to help access to molecular dynamics (MD). The platform provides tools to prepare systems from PDB structures mimicking the procedures followed by human experts. It provides inputs and can send simulations for three of the most popular MD packages (Amber, NAMD and Gromacs). Tools for analysis of trajectories are also incorporated.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0570"
+          "@id": "edam:operation_2476"
         },
         {
-          "@id": "edam:operation_2476"
+          "@id": "edam:operation_0570"
         }
       ],
       "sc:isAccessibleForFree": true,
@@ -95,7 +95,7 @@
       "sc:url": "http://mmb.irbbarcelona.org/MDWeb2"
     },
     {
-      "@id": "_:Na385d228a3464a0aa4226495ca4d6e29",
+      "@id": "_:Nd264134b5e4d4481b91a7bb0fd78ea62",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1127"
@@ -106,7 +106,7 @@
       "sc:name": "PDB ID"
     },
     {
-      "@id": "_:Nb8641ecb7f2e4f15b2f3d92d52cf41e7",
+      "@id": "_:Na93d509c97a34abe821d3167dbf594b6",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0883"

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,24 +36,28 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1109/ACCESS.2022.3221936",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/extended_a_priori_probability_tool",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Ana María Arias Beltrán",
       "bsc:input": [
         {
-          "@id": "_:N57021420aa9f4175bc1b9fd8e7e29261"
+          "@id": "_:N26c72c7a80354c59938a567d9721bdef"
         },
         {
-          "@id": "_:N6548b04369ad4621a8ddf6b87c28e921"
+          "@id": "_:N57fccd8bf5d848868d0d4c6a140fe793"
         },
         {
-          "@id": "_:N370ebb5f80df43e68c0c7a29da8b67ad"
+          "@id": "_:N3535821990544e0e9a735395da2de15c"
         }
       ],
       "bsc:output": {
-        "@id": "_:N95c4a68f1ed442e8bde87326b14a8f41"
+        "@id": "_:N64aaebd9d8ec4b6db190c1185a067e03"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
@@ -73,8 +77,8 @@
       "sc:license": "Proprietary",
       "sc:name": "EAPP - Extended a Priori Probability tool",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:provider": "Instituto Tecnológico de Informática (ITI)",
@@ -93,40 +97,7 @@
       "sc:url": "https://harbor.eucaim.cancerimage.eu/harbor/projects/4/repositories/image_batch_iti-eapp"
     },
     {
-      "@id": "_:N95c4a68f1ed442e8bde87326b14a8f41",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0883"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3464"
-      },
-      "sc:name": "Structure"
-    },
-    {
-      "@id": "_:N57021420aa9f4175bc1b9fd8e7e29261",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0883"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3752"
-      },
-      "sc:name": "Structure"
-    },
-    {
-      "@id": "_:N6548b04369ad4621a8ddf6b87c28e921",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2968"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3603"
-      },
-      "sc:name": "Image"
-    },
-    {
-      "@id": "_:N370ebb5f80df43e68c0c7a29da8b67ad",
+      "@id": "_:N26c72c7a80354c59938a567d9721bdef",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2968"
@@ -137,8 +108,37 @@
       "sc:name": "Image"
     },
     {
-      "@id": "https://doi.org/10.1109/ACCESS.2022.3221936",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N57fccd8bf5d848868d0d4c6a140fe793",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2968"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3603"
+      },
+      "sc:name": "Image"
+    },
+    {
+      "@id": "_:N3535821990544e0e9a735395da2de15c",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0883"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3752"
+      },
+      "sc:name": "Structure"
+    },
+    {
+      "@id": "_:N64aaebd9d8ec4b6db190c1185a067e03",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0883"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3464"
+      },
+      "sc:name": "Structure"
     }
   ]
 }

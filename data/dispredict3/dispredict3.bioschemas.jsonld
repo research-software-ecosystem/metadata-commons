@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,16 +40,16 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N7ff2b71055c745f4b12f30150872eab2"
+          "@id": "_:Nead0d9228c094062961f38b76536552d"
         },
         {
-          "@id": "_:N238134fb70374a4395fdf8a9d0bc20f5"
+          "@id": "_:Nfa941f0a653748feada0a596cece9ccd"
         },
         {
-          "@id": "_:N861fbe7418754266b1e924d9bcc8eea9"
+          "@id": "_:N2ac333eb336f497482308561fa5264fa"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3538"
@@ -57,10 +57,10 @@
       "sc:description": "Dispredict3.0 allows the prediction of intrinsically disordered proteins with protein language model.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0477"
+          "@id": "edam:operation_3904"
         },
         {
-          "@id": "edam:operation_3904"
+          "@id": "edam:operation_0477"
         },
         {
           "@id": "edam:operation_0470"
@@ -75,7 +75,15 @@
       "sc:url": "https://cs.uno.edu/~tamjid/Software.html"
     },
     {
-      "@id": "_:N7ff2b71055c745f4b12f30150872eab2",
+      "@id": "_:Nead0d9228c094062961f38b76536552d",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1526"
+      },
+      "sc:name": "Protein globularity"
+    },
+    {
+      "@id": "_:Nfa941f0a653748feada0a596cece9ccd",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2969"
@@ -83,7 +91,7 @@
       "sc:name": "Sequence image"
     },
     {
-      "@id": "_:N238134fb70374a4395fdf8a9d0bc20f5",
+      "@id": "_:N2ac333eb336f497482308561fa5264fa",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1277"
@@ -92,14 +100,6 @@
         "@id": "edam:format_1208"
       },
       "sc:name": "Protein features"
-    },
-    {
-      "@id": "_:N861fbe7418754266b1e924d9bcc8eea9",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1526"
-      },
-      "sc:name": "Protein globularity"
     }
   ]
 }

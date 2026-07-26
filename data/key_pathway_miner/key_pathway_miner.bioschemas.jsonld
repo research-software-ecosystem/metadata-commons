@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,38 +36,34 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1080/15427951.2011.604548",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/key_pathway_miner",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Jan Baumbach",
       "bsc:input": [
         {
-          "@id": "_:N1b62aa6ff3d246dea0f7743ea81b8558"
+          "@id": "_:N1af12018b3994bbd96fb1422b74011d8"
         },
         {
-          "@id": "_:N2d3603f55a9f4f089126a8c5fe4c284c"
+          "@id": "_:Nadcbf982868647dfa3ad7b7012cfce39"
         }
       ],
       "bsc:output": {
-        "@id": "_:Nf360ee46bd9d49b5b90a79bcf01067ff"
+        "@id": "_:Ne9c088128ca04d0eb63913c0b30056d9"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Desktop application",
-        "Command-line tool"
+        "Command-line tool",
+        "Desktop application"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_2259"
+          "@id": "edam:topic_3360"
         },
         {
           "@id": "edam:topic_3391"
         },
         {
-          "@id": "edam:topic_3360"
+          "@id": "edam:topic_2259"
         }
       ],
       "sc:citation": {
@@ -76,20 +72,20 @@
       "sc:description": "Extracts all maximal connected sub-networks that contain the genes that are differentially expressed. The exact quantities are modeled with two easy-to-interpret parameters (K, L) that allows the user to control the number of outliers (not dysregulated genes/cases) in the solutions. We developed two slightly varying models (INES and GLONE) that fall into the class of NP-Hard optimization problems.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3501"
+          "@id": "edam:operation_1781"
         },
         {
           "@id": "edam:operation_0533"
         },
         {
-          "@id": "edam:operation_1781"
+          "@id": "edam:operation_3501"
         }
       ],
       "sc:name": "Key Pathway Miner",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": "bmb.sdu.dk",
       "sc:softwareHelp": {
@@ -99,15 +95,7 @@
       "sc:url": "http://keypathwayminer.compbio.sdu.dk/"
     },
     {
-      "@id": "_:N1b62aa6ff3d246dea0f7743ea81b8558",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2600"
-      },
-      "sc:name": "Pathway or network"
-    },
-    {
-      "@id": "_:N2d3603f55a9f4f089126a8c5fe4c284c",
+      "@id": "_:N1af12018b3994bbd96fb1422b74011d8",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2603"
@@ -115,12 +103,24 @@
       "sc:name": "Gene expression data"
     },
     {
-      "@id": "_:Nf360ee46bd9d49b5b90a79bcf01067ff",
+      "@id": "_:Nadcbf982868647dfa3ad7b7012cfce39",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2600"
       },
       "sc:name": "Pathway or network"
+    },
+    {
+      "@id": "_:Ne9c088128ca04d0eb63913c0b30056d9",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2600"
+      },
+      "sc:name": "Pathway or network"
+    },
+    {
+      "@id": "https://doi.org/10.1080/15427951.2011.604548",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

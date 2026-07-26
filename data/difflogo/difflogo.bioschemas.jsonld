@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,22 +40,22 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Nf1324559c4454361b1f50f2dabffa3df"
+          "@id": "_:Ne49de7db87a340979a63492476a93483"
         },
         {
-          "@id": "_:Nf3ffdbe130bb4358b2dca6cc58f2d498"
+          "@id": "_:N3925d34e86844c7fac0ce660f8688d8f"
         },
         {
-          "@id": "_:N7ee1e4837fbd42df9e1f4f796b3c49bd"
+          "@id": "_:N5161f60352fd4f81a40eefa2ba9bdf1c"
         },
         {
-          "@id": "_:N6340d684142849d98c9d238ca95f2428"
+          "@id": "_:Ne4be06da585b4e6486be96da6704e49a"
         }
       ],
       "bsc:output": {
-        "@id": "_:N95ba91f0394340b39c1cfced8dd85da2"
+        "@id": "_:N9c21e0c4fdaf41d6a6fd2cef0e464b8e"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
@@ -70,9 +70,9 @@
       "sc:license": "GPL-2.0-or-later",
       "sc:name": "DiffLogo",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://bioconductor.org/packages/DiffLogo"
@@ -81,39 +81,7 @@
       "sc:url": "https://bioconductor.org/packages/DiffLogo"
     },
     {
-      "@id": "_:Nf1324559c4454361b1f50f2dabffa3df",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2976"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_1919"
-        },
-        {
-          "@id": "edam:format_3033"
-        }
-      ],
-      "sc:name": "Protein sequence"
-    },
-    {
-      "@id": "_:Nf3ffdbe130bb4358b2dca6cc58f2d498",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2082"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_1919"
-        },
-        {
-          "@id": "edam:format_3033"
-        }
-      ],
-      "sc:name": "Matrix"
-    },
-    {
-      "@id": "_:N7ee1e4837fbd42df9e1f4f796b3c49bd",
+      "@id": "_:Ne49de7db87a340979a63492476a93483",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3494"
@@ -129,23 +97,55 @@
       "sc:name": "DNA sequence"
     },
     {
-      "@id": "_:N6340d684142849d98c9d238ca95f2428",
+      "@id": "_:N3925d34e86844c7fac0ce660f8688d8f",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2082"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3033"
+        },
+        {
+          "@id": "edam:format_1919"
+        }
+      ],
+      "sc:name": "Matrix"
+    },
+    {
+      "@id": "_:N5161f60352fd4f81a40eefa2ba9bdf1c",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2976"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3033"
+        },
+        {
+          "@id": "edam:format_1919"
+        }
+      ],
+      "sc:name": "Protein sequence"
+    },
+    {
+      "@id": "_:Ne4be06da585b4e6486be96da6704e49a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3495"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_1919"
+          "@id": "edam:format_3033"
         },
         {
-          "@id": "edam:format_3033"
+          "@id": "edam:format_1919"
         }
       ],
       "sc:name": "RNA sequence"
     },
     {
-      "@id": "_:N95ba91f0394340b39c1cfced8dd85da2",
+      "@id": "_:N9c21e0c4fdaf41d6a6fd2cef0e464b8e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"

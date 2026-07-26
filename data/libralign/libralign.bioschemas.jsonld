@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,19 +40,19 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Ben Stöver",
       "bsc:input": {
-        "@id": "_:Nd65505ee17944fbb96cf9b8f4eab1c2c"
+        "@id": "_:Nd57f4ae1c2684172a0b1eb965354b9bf"
       },
       "bsc:output": {
-        "@id": "_:N1e2f34c2dc6c49fba96a009311b833cb"
+        "@id": "_:N083275f36c2e40e9854db6c7d9adc28a"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Library",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3307"
+          "@id": "edam:topic_3070"
         },
         {
-          "@id": "edam:topic_3070"
+          "@id": "edam:topic_3307"
         },
         {
           "@id": "edam:topic_0080"
@@ -63,10 +63,10 @@
       "sc:description": "A Java GUI component library for displaying and editing multiple sequence alignments and attached data.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0564"
+          "@id": "edam:operation_3081"
         },
         {
-          "@id": "edam:operation_3081"
+          "@id": "edam:operation_0564"
         }
       ],
       "sc:funder": "German Reseach Foundation",
@@ -74,8 +74,8 @@
       "sc:license": "LGPL-3.0",
       "sc:name": "LibrAlign",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": [
@@ -86,17 +86,17 @@
           "@id": "http://bioinfweb.info/LibrAlign/Documentation"
         },
         {
-          "@id": "http://r.bioinfweb.info/LibrAlignSwingDemo"
+          "@id": "http://bioinfweb.info/LibrAlign/License"
         },
         {
-          "@id": "http://bioinfweb.info/LibrAlign/License"
+          "@id": "http://r.bioinfweb.info/LibrAlignSwingDemo"
         }
       ],
       "sc:softwareVersion": "0.8.0",
       "sc:url": "http://bioinfweb.info/LibrAlign/"
     },
     {
-      "@id": "_:Nd65505ee17944fbb96cf9b8f4eab1c2c",
+      "@id": "_:Nd57f4ae1c2684172a0b1eb965354b9bf",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1385"
@@ -106,35 +106,35 @@
           "@id": "edam:format_1929"
         },
         {
+          "@id": "edam:format_3160"
+        },
+        {
           "@id": "edam:format_1912"
         },
         {
           "@id": "edam:format_2924"
-        },
-        {
-          "@id": "edam:format_3160"
         }
       ],
       "sc:name": "Sequence alignment (hybrid)"
     },
     {
-      "@id": "_:N1e2f34c2dc6c49fba96a009311b833cb",
+      "@id": "_:N083275f36c2e40e9854db6c7d9adc28a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1385"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_1912"
-        },
-        {
-          "@id": "edam:format_2924"
+          "@id": "edam:format_1929"
         },
         {
           "@id": "edam:format_3160"
         },
         {
-          "@id": "edam:format_1929"
+          "@id": "edam:format_1912"
+        },
+        {
+          "@id": "edam:format_2924"
         }
       ],
       "sc:name": "Sequence alignment (hybrid)"

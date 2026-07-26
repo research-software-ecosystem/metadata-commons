@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,19 +36,15 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1101/2023.05.23.540769",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/SanntiS",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nf58ced052be640329691ca1e956b54cc"
+        "@id": "_:Nde288943ccc7497686fdbbcc938144e0"
       },
       "bsc:output": {
-        "@id": "_:Nfd7d55d4116940db8af71d2baa52ec62"
+        "@id": "_:N3f0ae053865346dd8bd4e0ca60cf6e3f"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3307"
@@ -68,7 +64,7 @@
       "sc:url": "https://github.com/Finn-Lab/SanntiS"
     },
     {
-      "@id": "_:Nf58ced052be640329691ca1e956b54cc",
+      "@id": "_:Nde288943ccc7497686fdbbcc938144e0",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2977"
@@ -79,7 +75,7 @@
       "sc:name": "Nucleic acid sequence"
     },
     {
-      "@id": "_:Nfd7d55d4116940db8af71d2baa52ec62",
+      "@id": "_:N3f0ae053865346dd8bd4e0ca60cf6e3f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1255"
@@ -88,6 +84,10 @@
         "@id": "edam:format_1975"
       },
       "sc:name": "Sequence features"
+    },
+    {
+      "@id": "https://doi.org/10.1101/2023.05.23.540769",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

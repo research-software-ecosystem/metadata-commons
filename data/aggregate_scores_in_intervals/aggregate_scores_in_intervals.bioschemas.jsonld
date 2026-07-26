@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,40 +36,36 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/nar/gkw343",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/aggregate_scores_in_intervals",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Galaxy Support Team",
       "bsc:input": [
         {
-          "@id": "_:Nd4325eca21dd4c02aa37624d453fa80e"
+          "@id": "_:N3a785cd7990b412f8be0577e9790afe5"
         },
         {
-          "@id": "_:N6fa21a7732844724b6bd182965e57403"
+          "@id": "_:Nee8ef3e1ff4346d1ace441b8bada56c7"
         }
       ],
       "bsc:output": {
-        "@id": "_:Nc9ee764718fa440a9ee948b6aceb126d"
+        "@id": "_:N628ce1f7e0954b93bfe6493e4c865081"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0080"
+          "@id": "edam:topic_3572"
         },
         {
           "@id": "edam:topic_0622"
         },
         {
-          "@id": "edam:topic_3572"
+          "@id": "edam:topic_0080"
         }
       ],
       "sc:citation": [
-        "pmcid:PMC4987906",
         "pubmed:27137889",
+        "pmcid:PMC4987906",
         {
           "@id": "https://doi.org/10.1093/nar/gkw343"
         },
@@ -88,8 +84,8 @@
       ],
       "sc:name": "aggregate_scores_in_intervals",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -99,7 +95,7 @@
       "sc:url": "https://github.com/bxlab/bx-python"
     },
     {
-      "@id": "_:Nd4325eca21dd4c02aa37624d453fa80e",
+      "@id": "_:N3a785cd7990b412f8be0577e9790afe5",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3002"
@@ -110,7 +106,7 @@
       "sc:name": "Annotation track"
     },
     {
-      "@id": "_:N6fa21a7732844724b6bd182965e57403",
+      "@id": "_:Nee8ef3e1ff4346d1ace441b8bada56c7",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0006"
@@ -121,7 +117,7 @@
       "sc:name": "Data"
     },
     {
-      "@id": "_:Nc9ee764718fa440a9ee948b6aceb126d",
+      "@id": "_:N628ce1f7e0954b93bfe6493e4c865081",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0006"
@@ -133,6 +129,10 @@
     },
     {
       "@id": "https://doi.org/10.7490/f1000research.1114334.1",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/gkw343",
       "@type": "sc:CreativeWork"
     }
   ]

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,73 +36,81 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1017/CBO9781139151405",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1017/CBO9781139151399",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/noreturn",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N0ba1352633f949af95d4966482a05b7f"
+        "@id": "_:N017e982a24be400ca5e68787bbccc7ae"
       },
       "bsc:output": {
-        "@id": "_:N98672cead58e45f88540825366af8ee4"
+        "@id": "_:Nf155ad6f51ed4ef494a82db35cbedbaa"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3071"
       },
       "sc:citation": [
         {
-          "@id": "https://doi.org/10.1017/CBO9781139151405"
+          "@id": "https://doi.org/10.1016/S0168-9525(00)02024-2"
         },
         {
           "@id": "https://doi.org/10.1017/CBO9781139151399"
         },
         {
-          "@id": "https://doi.org/10.1016/S0168-9525(00)02024-2"
+          "@id": "https://doi.org/10.1017/CBO9781139151405"
         }
       ],
       "sc:contributor": [
-        "EMBOSS Contributors",
-        "Wellcome Trust",
+        "UK BBSRC",
         "UK MRC",
-        "UK BBSRC"
+        "Wellcome Trust",
+        "EMBOSS Contributors"
       ],
       "sc:description": "Remove carriage return from ASCII files.",
       "sc:featureList": {
         "@id": "edam:operation_0335"
       },
       "sc:funder": [
-        "Wellcome Trust",
+        "UK BBSRC",
         "UK MRC",
-        "UK BBSRC"
+        "Wellcome Trust"
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "GPL-3.0",
       "sc:name": "noreturn",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": [
-        "EMBOSS",
-        "EMBL-EBI"
+        "EMBL-EBI",
+        "EMBOSS"
       ],
       "sc:softwareHelp": [
-        {
-          "@id": "http://emboss.open-bio.org/html/dev/ch01s01.html"
-        },
         {
           "@id": "http://emboss.open-bio.org/html/use/pr02s04.html"
         },
         {
           "@id": "http://emboss.open-bio.org/rel/rel6/apps/noreturn.html"
+        },
+        {
+          "@id": "http://emboss.open-bio.org/html/dev/ch01s01.html"
         }
       ],
       "sc:softwareVersion": "r6",
       "sc:url": "http://emboss.open-bio.org/rel/rel6/apps/noreturn.html"
     },
     {
-      "@id": "_:N0ba1352633f949af95d4966482a05b7f",
+      "@id": "_:N017e982a24be400ca5e68787bbccc7ae",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"
@@ -110,7 +118,7 @@
       "sc:name": "Report"
     },
     {
-      "@id": "_:N98672cead58e45f88540825366af8ee4",
+      "@id": "_:Nf155ad6f51ed4ef494a82db35cbedbaa",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"
@@ -119,14 +127,6 @@
     },
     {
       "@id": "https://doi.org/10.1016/S0168-9525(00)02024-2",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1017/CBO9781139151399",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1017/CBO9781139151405",
       "@type": "sc:CreativeWork"
     }
   ]

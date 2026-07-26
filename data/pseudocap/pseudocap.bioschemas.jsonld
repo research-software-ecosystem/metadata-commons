@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,31 +40,31 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N2b927b68a57746a28ae763bd4a3d218f"
+          "@id": "_:N00c64c2ffb7a473fbb17ea835065f54e"
         },
         {
-          "@id": "_:N8ba93e7cf7b64aa6b7c5510f4cfd016b"
+          "@id": "_:N2f5c76097e57412db0c0bd31eec31a0b"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N81492560d7fe43cba437d525b2900484"
+          "@id": "_:Nfaa749e17a2d4fddbdd7da988f9d2b3e"
         },
         {
-          "@id": "_:N685dad8cb0d24ceb95148da5b1b2d6f1"
+          "@id": "_:Nf11d54be9379412cb268ad657600faa0"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Database portal",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0621"
       },
       "sc:citation": [
+        "pubmed:20929876",
         "pmcid:PMC3013766",
         {
           "@id": "https://doi.org/10.1093/nar/gkq869"
-        },
-        "pubmed:20929876"
+        }
       ],
       "sc:contributor": {
         "@id": "http://orcid.org/0000-0001-6848-1638"
@@ -75,9 +75,9 @@
       },
       "sc:name": "PseudoCAP pseudomonas genome database",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://www.pseudomonas.com/pseudocap"
@@ -85,15 +85,7 @@
       "sc:url": "http://www.pseudomonas.com/"
     },
     {
-      "@id": "_:N2b927b68a57746a28ae763bd4a3d218f",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2744"
-      },
-      "sc:name": "Locus ID (PseudoCAP)"
-    },
-    {
-      "@id": "_:N8ba93e7cf7b64aa6b7c5510f4cfd016b",
+      "@id": "_:N00c64c2ffb7a473fbb17ea835065f54e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2314"
@@ -101,7 +93,15 @@
       "sc:name": "GI number"
     },
     {
-      "@id": "_:N81492560d7fe43cba437d525b2900484",
+      "@id": "_:N2f5c76097e57412db0c0bd31eec31a0b",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2744"
+      },
+      "sc:name": "Locus ID (PseudoCAP)"
+    },
+    {
+      "@id": "_:Nfaa749e17a2d4fddbdd7da988f9d2b3e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0916"
@@ -112,7 +112,7 @@
       "sc:name": "Gene report"
     },
     {
-      "@id": "_:N685dad8cb0d24ceb95148da5b1b2d6f1",
+      "@id": "_:Nf11d54be9379412cb268ad657600faa0",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0916"
@@ -121,14 +121,14 @@
         "@id": "edam:format_2331"
       },
       "sc:name": "Gene report"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gkq869",
-      "@type": "sc:CreativeWork"
     },
     {
       "@id": "http://orcid.org/0000-0001-6848-1638",
       "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/gkq869",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

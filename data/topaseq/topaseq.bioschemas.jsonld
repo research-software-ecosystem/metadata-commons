@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,30 +36,26 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1186/s12859-015-0763-1",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/topaseq",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Ivana Ihnatova",
       "bsc:input": [
         {
-          "@id": "_:Ne7faab0e7ef249649e14735a74cdaaf0"
+          "@id": "_:N79b2eb856e0b4f969989789c9b27d977"
         },
         {
-          "@id": "_:N45e5f066f0ff4ce6ae77a13a63e2e755"
+          "@id": "_:Nd98f956d695f47b6a35a8ae6c1ce8fc0"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N6b07d98974a2449db99cb4b56b41d6f0"
+          "@id": "_:Nc88b9945587741e89512d87068fdb3a7"
         },
         {
-          "@id": "_:Na0745aa302cf4d72a7126118fa645d45"
+          "@id": "_:Nb16cdb8474c947dcb1c612b21ef0ab59"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
@@ -69,18 +65,18 @@
           "@id": "edam:topic_0602"
         },
         {
-          "@id": "edam:topic_3308"
+          "@id": "edam:topic_3170"
         },
         {
-          "@id": "edam:topic_3170"
+          "@id": "edam:topic_3308"
         }
       ],
       "sc:citation": [
         "pubmed:26514335",
+        "pmcid:PMC4625615",
         {
           "@id": "https://doi.org/10.1186/s12859-015-0763-1"
-        },
-        "pmcid:PMC4625615"
+        }
       ],
       "sc:description": "Implementation of seven methods for topology-based pathway analysis of both RNASeq and microarray data: SPIA, DEGraph, TopologyGSA, TAPPA, PRS, PWEA and a visualization tool for a single pathway.",
       "sc:featureList": {
@@ -89,9 +85,9 @@
       "sc:license": "GPL-3.0",
       "sc:name": "ToPASeq",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/ToPASeq.html"
@@ -100,7 +96,39 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/ToPASeq.html"
     },
     {
-      "@id": "_:N6b07d98974a2449db99cb4b56b41d6f0",
+      "@id": "_:N79b2eb856e0b4f969989789c9b27d977",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2603"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2013"
+        },
+        {
+          "@id": "edam:format_2058"
+        }
+      ],
+      "sc:name": "Gene expression data"
+    },
+    {
+      "@id": "_:Nd98f956d695f47b6a35a8ae6c1ce8fc0",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2600"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2013"
+        },
+        {
+          "@id": "edam:format_2058"
+        }
+      ],
+      "sc:name": "Pathway or network"
+    },
+    {
+      "@id": "_:Nc88b9945587741e89512d87068fdb3a7",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
@@ -111,7 +139,7 @@
       "sc:name": "Plot"
     },
     {
-      "@id": "_:Na0745aa302cf4d72a7126118fa645d45",
+      "@id": "_:Nb16cdb8474c947dcb1c612b21ef0ab59",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0951"
@@ -122,36 +150,8 @@
       "sc:name": "Statistical estimate score"
     },
     {
-      "@id": "_:Ne7faab0e7ef249649e14735a74cdaaf0",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2603"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2058"
-        },
-        {
-          "@id": "edam:format_2013"
-        }
-      ],
-      "sc:name": "Gene expression data"
-    },
-    {
-      "@id": "_:N45e5f066f0ff4ce6ae77a13a63e2e755",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2600"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2058"
-        },
-        {
-          "@id": "edam:format_2013"
-        }
-      ],
-      "sc:name": "Pathway or network"
+      "@id": "https://doi.org/10.1186/s12859-015-0763-1",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -38,7 +38,7 @@
     {
       "@id": "https://bio.tools/bioccheck",
       "@type": "sc:SoftwareApplication",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
@@ -52,18 +52,18 @@
         }
       ],
       "sc:author": [
-        "Marcel Ramos",
+        "Bioconductor Package Maintainer",
         "Lori Shepherd",
-        "Bioconductor Package Maintainer"
+        "Marcel Ramos"
       ],
       "sc:citation": {
         "@id": "https://doi.org/10.18129/B9.bioc.BiocCheck"
       },
       "sc:contributor": [
         "Daniel von Twisk",
-        "Leonardo Collado-Torres",
         "Federico Marini",
-        "Kevin Rue"
+        "Kevin Rue",
+        "Leonardo Collado-Torres"
       ],
       "sc:description": "BiocCheck guides maintainers through Bioconductor best practicies. It runs Bioconductor-specific package checks by searching through package code, examples, and vignettes. Maintainers are required to address all errors, warnings, and most notes produced.",
       "sc:featureList": {
@@ -72,8 +72,8 @@
       "sc:license": "Artistic-2.0",
       "sc:name": "BiocCheck",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {

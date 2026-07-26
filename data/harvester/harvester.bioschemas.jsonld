@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,15 +36,16 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/bth146",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/harvester",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Urban Liebel",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_0121"
-        },
         {
           "@id": "edam:topic_2815"
         },
@@ -53,6 +54,9 @@
         },
         {
           "@id": "edam:topic_0078"
+        },
+        {
+          "@id": "edam:topic_0121"
         }
       ],
       "sc:citation": [
@@ -64,10 +68,10 @@
       "sc:description": "Fast access to public bioinformatic databases and servers for human proteins. Results are returned as a single HTML page that contains the cached and cross-linked output from the following databases/servers: Uniprot/SWISSprot, ensEMBL, BLAST (NCBI), SOURCE, SMART, STRING, PSORT2, CDART, UniGene and SOSUI.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3092"
+          "@id": "edam:operation_2421"
         },
         {
-          "@id": "edam:operation_2421"
+          "@id": "edam:operation_3092"
         },
         {
           "@id": "edam:operation_1777"
@@ -75,15 +79,11 @@
       ],
       "sc:name": "Harvester",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:url": "http://harvester.fzk.de/harvester/"
-    },
-    {
-      "@id": "https://doi.org/10.1093/bioinformatics/bth146",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

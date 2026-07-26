@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,35 +36,47 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1017/CBO9781139151405",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1017/CBO9781139151399",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1016/S0168-9525(00)02024-2",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/prettyseq",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N04e398a0b8664ad8bd0b566a77feb5d6"
+        "@id": "_:Nb914ef6276ea4f3db9528734a99c3726"
       },
       "bsc:output": {
-        "@id": "_:Nd7833ff7770841b5b1252ae25bd94a88"
+        "@id": "_:N78d75a8421f940e09738251d3a8b9dc9"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0203"
       },
       "sc:citation": [
         {
-          "@id": "https://doi.org/10.1017/CBO9781139151399"
+          "@id": "https://doi.org/10.1016/S0168-9525(00)02024-2"
         },
         {
-          "@id": "https://doi.org/10.1016/S0168-9525(00)02024-2"
+          "@id": "https://doi.org/10.1017/CBO9781139151399"
         },
         {
           "@id": "https://doi.org/10.1017/CBO9781139151405"
         }
       ],
       "sc:contributor": [
-        "UK MRC",
         "UK BBSRC",
-        "EMBOSS Contributors",
-        "Wellcome Trust"
+        "UK MRC",
+        "Wellcome Trust",
+        "EMBOSS Contributors"
       ],
       "sc:description": "Write a nucleotide sequence and its translation to file.",
       "sc:featureList": [
@@ -76,8 +88,8 @@
         }
       ],
       "sc:funder": [
-        "UK MRC",
         "UK BBSRC",
+        "UK MRC",
         "Wellcome Trust"
       ],
       "sc:isAccessibleForFree": true,
@@ -85,8 +97,8 @@
       "sc:name": "prettyseq",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:provider": [
         "EMBL-EBI",
@@ -107,7 +119,7 @@
       "sc:url": "http://emboss.open-bio.org/rel/rel6/apps/prettyseq.html"
     },
     {
-      "@id": "_:N04e398a0b8664ad8bd0b566a77feb5d6",
+      "@id": "_:Nb914ef6276ea4f3db9528734a99c3726",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0849"
@@ -115,24 +127,12 @@
       "sc:name": "Sequence record"
     },
     {
-      "@id": "_:Nd7833ff7770841b5b1252ae25bd94a88",
+      "@id": "_:N78d75a8421f940e09738251d3a8b9dc9",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1276"
       },
       "sc:name": "Nucleic acid features"
-    },
-    {
-      "@id": "https://doi.org/10.1016/S0168-9525(00)02024-2",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1017/CBO9781139151399",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1017/CBO9781139151405",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

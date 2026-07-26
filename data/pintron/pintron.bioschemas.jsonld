@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,28 +36,24 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1186/1471-2105-13-s5-s2",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/pintron",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
-        "Yuri Pirola",
+        "Paola Bonizzoni",
         "Raffaella Rizzi",
-        "Paola Bonizzoni"
+        "Yuri Pirola"
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
           "@id": "edam:topic_3512"
         },
         {
-          "@id": "edam:topic_3308"
+          "@id": "edam:topic_3320"
         },
         {
-          "@id": "edam:topic_3320"
+          "@id": "edam:topic_3308"
         }
       ],
       "sc:citation": [
@@ -80,8 +76,8 @@
       "sc:license": "AGPL-3.0",
       "sc:name": "PIntron",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:provider": "ELIXIR-ITA-BICOCCA",
       "sc:softwareHelp": {
@@ -89,6 +85,10 @@
       },
       "sc:softwareVersion": "1",
       "sc:url": "http://pintron.algolab.eu/"
+    },
+    {
+      "@id": "https://doi.org/10.1186/1471-2105-13-s5-s2",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

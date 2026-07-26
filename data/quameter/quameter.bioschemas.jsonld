@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,24 +36,20 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1021/ac300629p",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/quameter",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Nbded6c950c5f468883ccbff08b48fc37"
+          "@id": "_:N3abf04e3134a4841bdf7170dd2416130"
         },
         {
-          "@id": "_:N3831033809d64a728a0978c58b2a75ec"
+          "@id": "_:N41cdf081227c41aaa9508d6d8e4d8de6"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:citation": [
-        "pmcid:PMC3730131",
         "pubmed:22697456",
+        "pmcid:PMC3730131",
         {
           "@id": "https://doi.org/10.1021/ac300629p"
         }
@@ -66,23 +62,7 @@
       "sc:url": "https://github.com/ProteoWizard/pwiz/tree/57ebe87e642dcf096e114913e24104adf7b08f13/pwiz_tools/Bumbershoot/quameter"
     },
     {
-      "@id": "_:Nbded6c950c5f468883ccbff08b48fc37",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0945"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3655"
-        },
-        {
-          "@id": "edam:format_3247"
-        }
-      ],
-      "sc:name": "Peptide identification"
-    },
-    {
-      "@id": "_:N3831033809d64a728a0978c58b2a75ec",
+      "@id": "_:N3abf04e3134a4841bdf7170dd2416130",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2536"
@@ -91,6 +71,26 @@
         "@id": "edam:format_3244"
       },
       "sc:name": "Mass spectrometry data"
+    },
+    {
+      "@id": "_:N41cdf081227c41aaa9508d6d8e4d8de6",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0945"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3247"
+        },
+        {
+          "@id": "edam:format_3655"
+        }
+      ],
+      "sc:name": "Peptide identification"
+    },
+    {
+      "@id": "https://doi.org/10.1021/ac300629p",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

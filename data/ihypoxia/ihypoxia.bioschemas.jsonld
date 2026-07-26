@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -44,38 +44,38 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Ne18171ce729c49e3b36eb5c8e316065e"
+          "@id": "_:N1efe419e2a7946268d3176ae089c6914"
         },
         {
-          "@id": "_:Neafe05395a9c45349a9f996ca1ebcf83"
+          "@id": "_:N7478d5175bf449f1b72c05ab61ddaaf1"
         },
         {
-          "@id": "_:N84edd4a6dfa147de80545791e2b1e8a2"
+          "@id": "_:N0906b675f906473ab52ad3e55a75cd46"
         },
         {
-          "@id": "_:N063c26ddb9a14586b25f424a48e280fe"
+          "@id": "_:N8d4b111ca2134a6c9e40dcf5ea0a1070"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Database portal",
         "Web application"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0621"
-        },
-        {
-          "@id": "edam:topic_3500"
-        },
-        {
           "@id": "edam:topic_0203"
+        },
+        {
+          "@id": "edam:topic_0621"
         },
         {
           "@id": "edam:topic_2640"
         },
         {
           "@id": "edam:topic_0601"
+        },
+        {
+          "@id": "edam:topic_3500"
         }
       ],
       "sc:citation": {
@@ -84,26 +84,26 @@
       "sc:description": "An integrative database of the expression dynamics of proteins in response to hypoxia in animals.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3630"
-        },
-        {
           "@id": "edam:operation_2476"
         },
         {
           "@id": "edam:operation_0417"
+        },
+        {
+          "@id": "edam:operation_3630"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:name": "iHypoxia",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:url": "http://ihypoxia.omicsbio.info"
     },
     {
-      "@id": "_:Ne18171ce729c49e3b36eb5c8e316065e",
+      "@id": "_:N1efe419e2a7946268d3176ae089c6914",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1033"
@@ -111,7 +111,7 @@
       "sc:name": "Ensembl gene ID"
     },
     {
-      "@id": "_:Neafe05395a9c45349a9f996ca1ebcf83",
+      "@id": "_:N7478d5175bf449f1b72c05ab61ddaaf1",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2299"
@@ -119,20 +119,20 @@
       "sc:name": "Gene name"
     },
     {
-      "@id": "_:N84edd4a6dfa147de80545791e2b1e8a2",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2291"
-      },
-      "sc:name": "UniProt ID"
-    },
-    {
-      "@id": "_:N063c26ddb9a14586b25f424a48e280fe",
+      "@id": "_:N0906b675f906473ab52ad3e55a75cd46",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1009"
       },
       "sc:name": "Protein name"
+    },
+    {
+      "@id": "_:N8d4b111ca2134a6c9e40dcf5ea0a1070",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2291"
+      },
+      "sc:name": "UniProt ID"
     }
   ]
 }

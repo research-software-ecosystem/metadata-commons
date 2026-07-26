@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,80 +40,80 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Na12cf9bb40504ecc8e03b9ac64b48023"
+          "@id": "_:N74a118e161634eae80c54af850e4cd6e"
         },
         {
-          "@id": "_:N5d7ea28221c7415d94d5d858c0289abb"
+          "@id": "_:Ncd8e8ee54a794278acc98e47420c1f44"
         },
         {
-          "@id": "_:N63f388d800ff47c69584c82d00ae1c28"
+          "@id": "_:N96ce6221291b48f5bd41f380a1d42dee"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N2fefc104ddb743d08d96731e4cad6eac"
+          "@id": "_:N6b6f575652fc44f0aa25c384ab9b87cc"
         },
         {
-          "@id": "_:N2ed889bf3a6a437783046cf75cbe9803"
+          "@id": "_:N5a0f76e779ec4006af6abf3f7b76e036"
         },
         {
-          "@id": "_:N486652cf9f7c41ef8dce2d9f75028382"
+          "@id": "_:N2030e7549ed64c4abf8b54030f35c89a"
         },
         {
-          "@id": "_:N66ae696ea3514d3f840aba9829e29e9e"
+          "@id": "_:Nd5c0dcb10e9f457daade0052b54e471e"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_2269"
+          "@id": "edam:topic_0121"
         },
         {
           "@id": "edam:topic_3520"
         },
         {
-          "@id": "edam:topic_0769"
+          "@id": "edam:topic_2269"
         },
         {
-          "@id": "edam:topic_0121"
+          "@id": "edam:topic_0769"
         }
       ],
       "sc:citation": "pubmed:24794931",
       "sc:description": "Statistical tool for quantitative mass spectrometry-based proteomics.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3799"
-        },
-        {
-          "@id": "edam:operation_3658"
-        },
-        {
-          "@id": "edam:operation_3435"
-        },
-        {
-          "@id": "edam:operation_3441"
+          "@id": "edam:operation_2409"
         },
         {
           "@id": "edam:operation_3741"
         },
         {
-          "@id": "edam:operation_2409"
+          "@id": "edam:operation_3799"
+        },
+        {
+          "@id": "edam:operation_3435"
+        },
+        {
+          "@id": "edam:operation_3658"
         },
         {
           "@id": "edam:operation_3664"
         },
         {
-          "@id": "edam:operation_0335"
+          "@id": "edam:operation_0531"
         },
         {
-          "@id": "edam:operation_0531"
+          "@id": "edam:operation_3441"
+        },
+        {
+          "@id": "edam:operation_0335"
         }
       ],
       "sc:name": "MSstats",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "http://msstats.org/msstats-2/"
@@ -121,7 +121,7 @@
       "sc:url": "http://www.msstats.org/"
     },
     {
-      "@id": "_:Na12cf9bb40504ecc8e03b9ac64b48023",
+      "@id": "_:N74a118e161634eae80c54af850e4cd6e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2603"
@@ -132,7 +132,18 @@
       "sc:name": "Expression data"
     },
     {
-      "@id": "_:N5d7ea28221c7415d94d5d858c0289abb",
+      "@id": "_:Ncd8e8ee54a794278acc98e47420c1f44",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2603"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3752"
+      },
+      "sc:name": "Expression data"
+    },
+    {
+      "@id": "_:N96ce6221291b48f5bd41f380a1d42dee",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2603"
@@ -143,29 +154,7 @@
       "sc:name": "Expression data"
     },
     {
-      "@id": "_:N63f388d800ff47c69584c82d00ae1c28",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2603"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3752"
-      },
-      "sc:name": "Expression data"
-    },
-    {
-      "@id": "_:N2fefc104ddb743d08d96731e4cad6eac",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1636"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3508"
-      },
-      "sc:name": "Heat map"
-    },
-    {
-      "@id": "_:N2ed889bf3a6a437783046cf75cbe9803",
+      "@id": "_:N6b6f575652fc44f0aa25c384ab9b87cc",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0951"
@@ -176,18 +165,18 @@
       "sc:name": "Statistical estimate score"
     },
     {
-      "@id": "_:N486652cf9f7c41ef8dce2d9f75028382",
+      "@id": "_:N5a0f76e779ec4006af6abf3f7b76e036",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2603"
+        "@id": "edam:data_1636"
       },
       "sc:encodingFormat": {
-        "@id": "edam:format_3752"
+        "@id": "edam:format_3508"
       },
-      "sc:name": "Expression data"
+      "sc:name": "Heat map"
     },
     {
-      "@id": "_:N66ae696ea3514d3f840aba9829e29e9e",
+      "@id": "_:N2030e7549ed64c4abf8b54030f35c89a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
@@ -196,6 +185,17 @@
         "@id": "edam:format_3508"
       },
       "sc:name": "Plot"
+    },
+    {
+      "@id": "_:Nd5c0dcb10e9f457daade0052b54e471e",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2603"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3752"
+      },
+      "sc:name": "Expression data"
     }
   ]
 }

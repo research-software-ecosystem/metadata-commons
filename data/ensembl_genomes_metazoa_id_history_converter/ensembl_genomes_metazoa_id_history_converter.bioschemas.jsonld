@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,20 +36,16 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/nar/gkv1157",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/ensembl_genomes_metazoa_id_history_converter",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Ensembl Genomes webteam",
       "bsc:input": {
-        "@id": "_:N4ca13c608d8945ea9078c047f81cc4ba"
+        "@id": "_:Nd6d7834b927144ee882d476a99b333da"
       },
       "bsc:output": {
-        "@id": "_:Nd9d4d61ec7224d9989752d4a1738791b"
+        "@id": "_:N94d469751db44dab99293cf5f814530b"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3345"
@@ -68,24 +64,24 @@
       },
       "sc:name": "Ensembl Genomes Metazoa ID history converter",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": "EMBL-EBI",
       "sc:softwareHelp": [
         {
-          "@id": "http://www.ebi.ac.uk/about/terms-of-use"
+          "@id": "http://metazoa.ensembl.org/info/website/help/index.html"
         },
         {
-          "@id": "http://metazoa.ensembl.org/info/website/help/index.html"
+          "@id": "http://www.ebi.ac.uk/about/terms-of-use"
         }
       ],
       "sc:softwareVersion": "1",
       "sc:url": "http://metazoa.ensembl.org/tools.html"
     },
     {
-      "@id": "_:N4ca13c608d8945ea9078c047f81cc4ba",
+      "@id": "_:Nd6d7834b927144ee882d476a99b333da",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2610"
@@ -93,12 +89,16 @@
       "sc:name": "Ensembl ID"
     },
     {
-      "@id": "_:Nd9d4d61ec7224d9989752d4a1738791b",
+      "@id": "_:N94d469751db44dab99293cf5f814530b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2610"
       },
       "sc:name": "Ensembl ID"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/gkv1157",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

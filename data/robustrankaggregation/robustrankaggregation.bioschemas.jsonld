@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -44,17 +44,17 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Raivo Kolde",
       "bsc:input": {
-        "@id": "_:N3de651886b0541c2bcf9e3ba8d6106c7"
+        "@id": "_:Nced7534d2704408181f2a6166eb47850"
       },
       "bsc:output": [
         {
-          "@id": "_:N91b54fb75a604006823aad222d89c4ee"
+          "@id": "_:N518172d140ef4a4f93112c9f8d37bac0"
         },
         {
-          "@id": "_:N8f04c9cb7dcc46d8a5f382fa778829c2"
+          "@id": "_:N0b824b672ab1407cbac8c262cdc7f946"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
@@ -65,11 +65,11 @@
         }
       ],
       "sc:citation": [
+        "pubmed:22247279",
+        "pmcid:PMC3278763",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btr709"
-        },
-        "pmcid:PMC3278763",
-        "pubmed:22247279"
+        }
       ],
       "sc:description": "Methods for aggregating ranked lists, especially lists of genes. It implements the Robust Rank Aggregation (RRA) and some other simple algorithms for the task. RRA method uses a probabilistic model for aggregation that isrobust to noise and also facilitates the calculation of significance probabilities for all the elements in the final ranking.",
       "sc:featureList": {
@@ -77,9 +77,9 @@
       },
       "sc:name": "RobustRankAggregation",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": "ELIXIR-EE",
       "sc:softwareHelp": {
@@ -89,7 +89,7 @@
       "sc:url": "http://cran.r-project.org/web/packages/RobustRankAggreg/"
     },
     {
-      "@id": "_:N3de651886b0541c2bcf9e3ba8d6106c7",
+      "@id": "_:Nced7534d2704408181f2a6166eb47850",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2872"
@@ -97,7 +97,7 @@
       "sc:name": "ID list"
     },
     {
-      "@id": "_:N91b54fb75a604006823aad222d89c4ee",
+      "@id": "_:N518172d140ef4a4f93112c9f8d37bac0",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2872"
@@ -105,7 +105,7 @@
       "sc:name": "ID list"
     },
     {
-      "@id": "_:N8f04c9cb7dcc46d8a5f382fa778829c2",
+      "@id": "_:N0b824b672ab1407cbac8c262cdc7f946",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1669"

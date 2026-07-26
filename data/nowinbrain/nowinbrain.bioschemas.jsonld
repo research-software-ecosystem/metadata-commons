@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -38,14 +38,11 @@
     {
       "@id": "https://bio.tools/nowinbrain",
       "@type": "sc:SoftwareApplication",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
           "@id": "edam:topic_3067"
-        },
-        {
-          "@id": "edam:topic_3452"
         },
         {
           "@id": "edam:topic_3444"
@@ -55,6 +52,9 @@
         },
         {
           "@id": "edam:topic_3304"
+        },
+        {
+          "@id": "edam:topic_3452"
         }
       ],
       "sc:citation": [
@@ -67,20 +67,20 @@
       "sc:description": "A Large, Systematic, and Extendable Repository of 3D Reconstructed Images of a Living Human Brain Cum Head and Neck.",
       "sc:featureList": [
         {
+          "@id": "edam:operation_3431"
+        },
+        {
           "@id": "edam:operation_3443"
         },
         {
           "@id": "edam:operation_3553"
-        },
-        {
-          "@id": "edam:operation_3431"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:name": "NOWinBRAIN",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:url": "http://www.nowinbrain.org"

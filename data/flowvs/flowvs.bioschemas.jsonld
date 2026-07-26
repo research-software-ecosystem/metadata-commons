@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,41 +36,45 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.18129/B9.bioc.flowVS",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/flowvs",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N3572a9de63124f58b654e350f1f230ee"
+          "@id": "_:Ne9ea749dc97145909727ceb40fc8691d"
         },
         {
-          "@id": "_:N5fe8670fff394462977836b72d23c6cc"
+          "@id": "_:N93b19cede7bf47c8b2540ee164baf326"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N3ef23e87d7e14c2a90ca7f9082a185d2"
+          "@id": "_:N97f26b13b78d452cb42a7de169f01c45"
         },
         {
-          "@id": "_:Nf3286e25f02248cea3a98ba902d3bf41"
+          "@id": "_:N30150be9bbc7498984ac32ec2876c703"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3361"
+          "@id": "edam:topic_3306"
         },
         {
-          "@id": "edam:topic_2269"
+          "@id": "edam:topic_3361"
         },
         {
           "@id": "edam:topic_3518"
         },
         {
-          "@id": "edam:topic_3306"
+          "@id": "edam:topic_2269"
         }
       ],
       "sc:citation": {
@@ -83,8 +87,8 @@
       "sc:license": "Artistic-2.0",
       "sc:name": "flowVS",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -94,7 +98,7 @@
       "sc:url": "https://bioconductor.org/packages/flowVS"
     },
     {
-      "@id": "_:N3572a9de63124f58b654e350f1f230ee",
+      "@id": "_:Ne9ea749dc97145909727ceb40fc8691d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3108"
@@ -105,7 +109,7 @@
       "sc:name": "Experimental measurement"
     },
     {
-      "@id": "_:N5fe8670fff394462977836b72d23c6cc",
+      "@id": "_:N93b19cede7bf47c8b2540ee164baf326",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2603"
@@ -116,7 +120,7 @@
       "sc:name": "Gene expression data"
     },
     {
-      "@id": "_:N3ef23e87d7e14c2a90ca7f9082a185d2",
+      "@id": "_:N97f26b13b78d452cb42a7de169f01c45",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
@@ -132,7 +136,7 @@
       "sc:name": "Plot"
     },
     {
-      "@id": "_:Nf3286e25f02248cea3a98ba902d3bf41",
+      "@id": "_:N30150be9bbc7498984ac32ec2876c703",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"
@@ -146,10 +150,6 @@
         }
       ],
       "sc:name": "Report"
-    },
-    {
-      "@id": "https://doi.org/10.18129/B9.bioc.flowVS",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

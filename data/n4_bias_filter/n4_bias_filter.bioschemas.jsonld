@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,35 +36,43 @@
   },
   "@graph": [
     {
+      "@id": "https://orcid.org/0000-0001-5242-6060",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.1016/j.mri.2023.03.012",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/n4_bias_filter",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Nba718c75ec004def9ab61161ab86c41b"
+          "@id": "_:N4879e4c41eca42ccadc836cad1514ca3"
         },
         {
-          "@id": "_:Ne9ef7b89f4644e3b911d5d354501d003"
+          "@id": "_:Nf4d5703b49ca4b3f8a30db2f5a5df125"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Nd9f034ec66394cfb9edc9cea8ac18943"
+          "@id": "_:Ne9623089b4af4ba58db54252bd602be8"
         },
         {
-          "@id": "_:N90a48891953740fe85e03ce57140ace9"
+          "@id": "_:N2d3ce04c8510442a9ae280fd4a71bccf"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Workflow",
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_3474"
-        },
         {
           "@id": "edam:topic_3572"
         },
         {
           "@id": "edam:topic_0092"
+        },
+        {
+          "@id": "edam:topic_3474"
         }
       ],
       "sc:author": {
@@ -79,18 +87,18 @@
       "sc:description": "The tool is designed to perform image pre-processing to reduce the bias field effect, improving the quality of the image. Two main functionalities are offered: (1) Apply N4 filter to image/images (either with the default parameters values or with parameters values defined by the user) (2) Find the optimal configuration of the N4 filter for specific image/images by measuring the Full Width at Half Maximum (FWHM) of the periprostatic fat distribution.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3443"
+          "@id": "edam:operation_3695"
         },
         {
-          "@id": "edam:operation_3695"
+          "@id": "edam:operation_3443"
         }
       ],
       "sc:license": "EUPL-1.1",
       "sc:name": "N4 Bias Filter",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": [
         {
@@ -104,7 +112,40 @@
       "sc:url": "https://cbml-gitlab.ics.forth.gr/adovrou/n4biasfilter/-/tree/eucaim?ref_type=heads"
     },
     {
-      "@id": "_:Nd9f034ec66394cfb9edc9cea8ac18943",
+      "@id": "_:N4879e4c41eca42ccadc836cad1514ca3",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2968"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3548"
+      },
+      "sc:name": "Image"
+    },
+    {
+      "@id": "_:Nf4d5703b49ca4b3f8a30db2f5a5df125",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2968"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3548"
+      },
+      "sc:name": "Image"
+    },
+    {
+      "@id": "_:Ne9623089b4af4ba58db54252bd602be8",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2968"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3548"
+      },
+      "sc:name": "Image"
+    },
+    {
+      "@id": "_:N2d3ce04c8510442a9ae280fd4a71bccf",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3671"
@@ -113,47 +154,6 @@
         "@id": "edam:format_3620"
       },
       "sc:name": "Text"
-    },
-    {
-      "@id": "_:N90a48891953740fe85e03ce57140ace9",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2968"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3548"
-      },
-      "sc:name": "Image"
-    },
-    {
-      "@id": "_:Nba718c75ec004def9ab61161ab86c41b",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2968"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3548"
-      },
-      "sc:name": "Image"
-    },
-    {
-      "@id": "_:Ne9ef7b89f4644e3b911d5d354501d003",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2968"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3548"
-      },
-      "sc:name": "Image"
-    },
-    {
-      "@id": "https://doi.org/10.1016/j.mri.2023.03.012",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://orcid.org/0000-0001-5242-6060",
-      "@type": "sc:Person"
     }
   ]
 }

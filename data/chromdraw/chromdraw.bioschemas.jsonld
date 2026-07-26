@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,20 +36,24 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1007/s10577-015-9513-5",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/chromdraw",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N718bd8bff2f14aa09f69909f181d967e"
+          "@id": "_:N4999b704c06b41f5bb56323e0bc37bb3"
         },
         {
-          "@id": "_:N4dbe017a267f4fc6969542bf7a93e924"
+          "@id": "_:N4a53e00847ab4afbb20601e0a926b21c"
         }
       ],
       "bsc:output": {
-        "@id": "_:N55b91b850b2248f798d06cfa30c61d76"
+        "@id": "_:N309ae8e242ed4ebb95899e76043c667d"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
@@ -67,9 +71,9 @@
       "sc:license": "GPL-3.0-only",
       "sc:name": "chromDraw",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://bioconductor.org/packages/chromDraw"
@@ -78,56 +82,52 @@
       "sc:url": "https://bioconductor.org/packages/chromDraw"
     },
     {
-      "@id": "_:N55b91b850b2248f798d06cfa30c61d76",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1283"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3604"
-        },
-        {
-          "@id": "edam:format_3466"
-        }
-      ],
-      "sc:name": "Cytogenetic map"
-    },
-    {
-      "@id": "_:N718bd8bff2f14aa09f69909f181d967e",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1276"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_3003"
-        }
-      ],
-      "sc:name": "Nucleic acid features"
-    },
-    {
-      "@id": "_:N4dbe017a267f4fc6969542bf7a93e924",
+      "@id": "_:N4999b704c06b41f5bb56323e0bc37bb3",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3236"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_2330"
+          "@id": "edam:format_3003"
         },
         {
-          "@id": "edam:format_3003"
+          "@id": "edam:format_2330"
         }
       ],
       "sc:name": "Cytoband position"
     },
     {
-      "@id": "https://doi.org/10.1007/s10577-015-9513-5",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N4a53e00847ab4afbb20601e0a926b21c",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1276"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3003"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Nucleic acid features"
+    },
+    {
+      "@id": "_:N309ae8e242ed4ebb95899e76043c667d",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1283"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3466"
+        },
+        {
+          "@id": "edam:format_3604"
+        }
+      ],
+      "sc:name": "Cytogenetic map"
     }
   ]
 }

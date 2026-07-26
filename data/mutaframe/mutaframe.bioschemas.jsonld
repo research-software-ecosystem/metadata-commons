@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,19 +36,15 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/nar/gkx390",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/MutaFrame",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Ncc1a8c430be94c8093bbe85c91777c60"
+        "@id": "_:Ne6cdf6a620314ad8ad21f3f115ccb2a7"
       },
       "bsc:output": {
-        "@id": "_:Nf282cb1881a142c88c9bcb1029d35c2a"
+        "@id": "_:Nc9dccc13ab2b4a97b6376abedbe9b013"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web service",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3510"
@@ -74,7 +70,7 @@
       "sc:url": "https://mutaframe.com/"
     },
     {
-      "@id": "_:Ncc1a8c430be94c8093bbe85c91777c60",
+      "@id": "_:Ne6cdf6a620314ad8ad21f3f115ccb2a7",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3021"
@@ -82,12 +78,16 @@
       "sc:name": "UniProt accession"
     },
     {
-      "@id": "_:Nf282cb1881a142c88c9bcb1029d35c2a",
+      "@id": "_:Nc9dccc13ab2b4a97b6376abedbe9b013",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1277"
       },
       "sc:name": "Protein features"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/gkx390",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

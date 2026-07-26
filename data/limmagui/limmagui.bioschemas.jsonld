@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,27 +39,27 @@
       "@id": "https://bio.tools/limmagui",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nde717325bde24bedbc005dda2bf6274f"
+        "@id": "_:N333a6265f12d4ec5bfaf0dd70e948933"
       },
       "bsc:output": [
         {
-          "@id": "_:N7f54f5c040a64ada82aef063a5669308"
+          "@id": "_:Nd40a0d592e544d62b96d702f5dbd36f2"
         },
         {
-          "@id": "_:N41258dc46df243fe802d075598f7913d"
+          "@id": "_:N3a79ae14710c4a42b1c4c4420c19c6ec"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0203"
+          "@id": "edam:topic_0091"
         },
         {
-          "@id": "edam:topic_0091"
+          "@id": "edam:topic_0203"
         }
       ],
       "sc:author": [
@@ -74,9 +74,9 @@
       "sc:license": "GPL-2.0-only",
       "sc:name": "limmaGUI",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://bioconductor.org/packages/limmaGUI"
@@ -85,23 +85,18 @@
       "sc:url": "https://bioconductor.org/packages/limmaGUI"
     },
     {
-      "@id": "_:N7f54f5c040a64ada82aef063a5669308",
+      "@id": "_:N333a6265f12d4ec5bfaf0dd70e948933",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2048"
+        "@id": "edam:data_2603"
       },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2331"
-        },
-        {
-          "@id": "edam:format_3547"
-        }
-      ],
-      "sc:name": "Report"
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Gene expression data"
     },
     {
-      "@id": "_:N41258dc46df243fe802d075598f7913d",
+      "@id": "_:Nd40a0d592e544d62b96d702f5dbd36f2",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
@@ -117,15 +112,20 @@
       "sc:name": "Plot"
     },
     {
-      "@id": "_:Nde717325bde24bedbc005dda2bf6274f",
+      "@id": "_:N3a79ae14710c4a42b1c4c4420c19c6ec",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2603"
+        "@id": "edam:data_2048"
       },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Gene expression data"
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2331"
+        },
+        {
+          "@id": "edam:format_3547"
+        }
+      ],
+      "sc:name": "Report"
     }
   ]
 }

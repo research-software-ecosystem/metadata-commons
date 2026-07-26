@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,20 +39,20 @@
       "@id": "https://bio.tools/cogaps",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N811015b2415140cfa44d3c79e86583db"
+        "@id": "_:N0eacea08cafd4dae8a11dbf4a7b7719f"
       },
       "bsc:output": [
         {
-          "@id": "_:Na887612b7ce244419d2b3bde41514655"
+          "@id": "_:Nedd35d26f954425aba16c214a855aa56"
         },
         {
-          "@id": "_:N8e7f997cf5b54ce1ad38e6fb6382990e"
+          "@id": "_:N4c6df25723b249bb9f8e9a2ae16343ef"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0203"
@@ -64,9 +64,9 @@
       "sc:license": "BSD-3-Clause",
       "sc:name": "CoGAPS",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://bioconductor.org/packages/CoGAPS"
@@ -75,7 +75,18 @@
       "sc:url": "https://bioconductor.org/packages/CoGAPS"
     },
     {
-      "@id": "_:Na887612b7ce244419d2b3bde41514655",
+      "@id": "_:N0eacea08cafd4dae8a11dbf4a7b7719f",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2603"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2058"
+      },
+      "sc:name": "Gene expression data"
+    },
+    {
+      "@id": "_:Nedd35d26f954425aba16c214a855aa56",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
@@ -86,7 +97,7 @@
       "sc:name": "Plot"
     },
     {
-      "@id": "_:N8e7f997cf5b54ce1ad38e6fb6382990e",
+      "@id": "_:N4c6df25723b249bb9f8e9a2ae16343ef",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1772"
@@ -95,17 +106,6 @@
         "@id": "edam:format_3508"
       },
       "sc:name": "Score"
-    },
-    {
-      "@id": "_:N811015b2415140cfa44d3c79e86583db",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2603"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2058"
-      },
-      "sc:name": "Gene expression data"
     }
   ]
 }

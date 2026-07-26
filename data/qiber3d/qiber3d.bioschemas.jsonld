@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,16 +40,16 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N9ec9178acc404fc788890f253ec2cbd6"
+          "@id": "_:Nddf8773f60f2404fb57be2d23afa9252"
         },
         {
-          "@id": "_:N5556ae0f3fd2421b9e9c174cdafbfcfe"
+          "@id": "_:N0a31dd2ca4c1484aba03cb9c08035a50"
         },
         {
-          "@id": "_:Na5f1dbcaf1894d1db66c2f47a2d21720"
+          "@id": "_:N4b00f0f2884240fea6624c83978f01b5"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Library",
       "sc:applicationSubCategory": [
         {
@@ -67,8 +67,8 @@
       "sc:license": "MIT",
       "sc:name": "Qiber3D",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -78,15 +78,7 @@
       "sc:url": "https://github.com/theia-dev/Qiber3D"
     },
     {
-      "@id": "_:N9ec9178acc404fc788890f253ec2cbd6",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0949"
-      },
-      "sc:name": "Workflow metadata"
-    },
-    {
-      "@id": "_:N5556ae0f3fd2421b9e9c174cdafbfcfe",
+      "@id": "_:Nddf8773f60f2404fb57be2d23afa9252",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3108"
@@ -94,7 +86,15 @@
       "sc:name": "Experimental measurement"
     },
     {
-      "@id": "_:Na5f1dbcaf1894d1db66c2f47a2d21720",
+      "@id": "_:N0a31dd2ca4c1484aba03cb9c08035a50",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0949"
+      },
+      "sc:name": "Workflow metadata"
+    },
+    {
+      "@id": "_:N4b00f0f2884240fea6624c83978f01b5",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3424"

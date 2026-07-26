@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -44,19 +44,19 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Paolo Marcatili",
       "bsc:input": {
-        "@id": "_:N1b09ac17bdc14585bd190119bc9978f1"
+        "@id": "_:N97d8ddb8297246f58db49b94184541ce"
       },
       "bsc:output": {
-        "@id": "_:Nf08e91ea23974702afe8f00b62efdad1"
+        "@id": "_:Nd143aae570e14a20bea7e4c0228aa0c3"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Database portal",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0082"
+          "@id": "edam:topic_0080"
         },
         {
-          "@id": "edam:topic_0080"
+          "@id": "edam:topic_0082"
         }
       ],
       "sc:citation": [
@@ -69,16 +69,16 @@
       "sc:description": "A database of immunoglobulin variable domain sequences and related search and modelling tools.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0361"
+          "@id": "edam:operation_2423"
         },
         {
-          "@id": "edam:operation_2423"
+          "@id": "edam:operation_0361"
         }
       ],
       "sc:name": "DIGIT",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:provider": "ELIXIR-ITA-SAPIENZA",
@@ -88,20 +88,20 @@
       "sc:url": "http://www.biocomputing.it/digit/"
     },
     {
-      "@id": "_:Nf08e91ea23974702afe8f00b62efdad1",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0896"
-      },
-      "sc:name": "Protein report"
-    },
-    {
-      "@id": "_:N1b09ac17bdc14585bd190119bc9978f1",
+      "@id": "_:N97d8ddb8297246f58db49b94184541ce",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2976"
       },
       "sc:name": "Protein sequence"
+    },
+    {
+      "@id": "_:Nd143aae570e14a20bea7e4c0228aa0c3",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0896"
+      },
+      "sc:name": "Protein report"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -38,23 +38,23 @@
     {
       "@id": "https://bio.tools/utr.annotation",
       "@type": "sc:SoftwareApplication",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Library",
       "sc:applicationSubCategory": [
         {
+          "@id": "edam:topic_0203"
+        },
+        {
           "@id": "edam:topic_3512"
+        },
+        {
+          "@id": "edam:topic_0199"
         },
         {
           "@id": "edam:topic_0622"
         },
         {
-          "@id": "edam:topic_0203"
-        },
-        {
           "@id": "edam:topic_0204"
-        },
-        {
-          "@id": "edam:topic_0199"
         }
       ],
       "sc:citation": {
@@ -63,13 +63,13 @@
       "sc:description": "A tool for annotating genomic variants that could influence post-transcriptional regulation. utR.annotation is an R package that can be used to annotate potential deleterious variants in the UTR regions for both human and mouse species.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3226"
+          "@id": "edam:operation_0362"
         },
         {
           "@id": "edam:operation_0331"
         },
         {
-          "@id": "edam:operation_0362"
+          "@id": "edam:operation_3226"
         }
       ],
       "sc:isAccessibleForFree": true,

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,25 +36,29 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1021/acs.analchem.4c04091",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/mzspeclib",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N1e605d82996540bd8ce08d8b759fb4af"
+          "@id": "_:N849bfebb8ee34a02823e1aedac78cbd7"
         },
         {
-          "@id": "_:Nd0bd2864ee1e4890b844b68b8bdd07fd"
+          "@id": "_:Nf03334349faa4c03921c6569608b4e29"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N84727c56945c42febc5c6ef3f9dae619"
+          "@id": "_:N293940d8eda54023869be2b4983cb98d"
         },
         {
-          "@id": "_:Ne05882af4e3942b9af2223a789b1d444"
+          "@id": "_:Nee716e07954f4bdc874342913820a1b1"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
@@ -73,10 +77,10 @@
       "sc:description": "A python reference implementation of the mzSpecLib spectral library format.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0336"
+          "@id": "edam:operation_3434"
         },
         {
-          "@id": "edam:operation_3434"
+          "@id": "edam:operation_0336"
         }
       ],
       "sc:isAccessibleForFree": true,
@@ -89,23 +93,7 @@
       "sc:url": "https://github.com/HUPO-PSI/mzspeclib-py"
     },
     {
-      "@id": "_:N84727c56945c42febc5c6ef3f9dae619",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0943"
-      },
-      "sc:name": "Mass spectrum"
-    },
-    {
-      "@id": "_:Ne05882af4e3942b9af2223a789b1d444",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0943"
-      },
-      "sc:name": "Mass spectrum"
-    },
-    {
-      "@id": "_:N1e605d82996540bd8ce08d8b759fb4af",
+      "@id": "_:N849bfebb8ee34a02823e1aedac78cbd7",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0943"
@@ -121,7 +109,7 @@
       "sc:name": "Mass spectrum"
     },
     {
-      "@id": "_:Nd0bd2864ee1e4890b844b68b8bdd07fd",
+      "@id": "_:Nf03334349faa4c03921c6569608b4e29",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0943"
@@ -129,8 +117,20 @@
       "sc:name": "Mass spectrum"
     },
     {
-      "@id": "https://doi.org/10.1021/acs.analchem.4c04091",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N293940d8eda54023869be2b4983cb98d",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0943"
+      },
+      "sc:name": "Mass spectrum"
+    },
+    {
+      "@id": "_:Nee716e07954f4bdc874342913820a1b1",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0943"
+      },
+      "sc:name": "Mass spectrum"
     }
   ]
 }

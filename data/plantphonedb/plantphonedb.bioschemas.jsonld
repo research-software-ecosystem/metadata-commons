@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,9 +39,9 @@
       "@id": "https://bio.tools/plantphonedb",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N4f82dd898e6243818828c8a8e9b4e668"
+        "@id": "_:Ncbaa22e486e64af2aafd15ad3cf39d5a"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Database portal",
       "sc:applicationSubCategory": [
         {
@@ -51,18 +51,18 @@
           "@id": "edam:topic_0780"
         },
         {
-          "@id": "edam:topic_3308"
+          "@id": "edam:topic_3170"
         },
         {
-          "@id": "edam:topic_3170"
+          "@id": "edam:topic_3308"
         }
       ],
       "sc:citation": [
+        "pubmed:35842742",
+        "pmcid:PMC9616517",
         {
           "@id": "https://doi.org/10.1111/pbi.13893"
-        },
-        "pmcid:PMC9616517",
-        "pubmed:35842742"
+        }
       ],
       "sc:description": "A manually curated pan-plant database of ligand-receptor pairs infers cell-cell communication.",
       "sc:featureList": {
@@ -71,14 +71,14 @@
       "sc:isAccessibleForFree": true,
       "sc:name": "PlantPhoneDB",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:url": "https://jasonxu.shinyapps.io/PlantPhoneDB/"
     },
     {
-      "@id": "_:N4f82dd898e6243818828c8a8e9b4e668",
+      "@id": "_:Ncbaa22e486e64af2aafd15ad3cf39d5a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1026"

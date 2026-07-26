@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,21 +40,21 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N6e860aa17af84f8da907dce73e503917"
+          "@id": "_:N9d23923f23b245bfb3bc54df34fdb6ca"
         },
         {
-          "@id": "_:N59f01e46ae9d425e8e42ad282407f890"
+          "@id": "_:N899a1217b56644af9b7e2e65bd0f91e8"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Nc8c4cb211a9a4808bdf3652106de684e"
+          "@id": "_:N78a2424f6ee342ec9541701a4c0eae5c"
         },
         {
-          "@id": "_:N59d78565d2104a0e8ddc8f735a885130"
+          "@id": "_:N9addcb7e2c7749a79e1ffb19224b7b6f"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Desktop application",
       "sc:applicationSubCategory": [
         {
@@ -68,13 +68,13 @@
       "sc:description": "The DiversityImageInspector (DWB-DII) is a stand-alone application of Diversity Workbench (DWB). It might be installed as an independent tool. The DII is designed to scan a bulk of images for included barcodes and relevant EXIF metadata (e.g., GPS coordinates, date, time) and returns the results in a table. The table can be saved as text file (CSV) along with the corresponding image file names. DII is able to rename the multimedia input files by adding a prefix to the file name to fit, e. g., the naming convention of an image data repository. This feature might be used to organize the multimedia file storage, e. g. on a web server. DII combines the functions of two freeware tools: (a) ExifTool, to extract the search tags from the metadata of an image and (b) ZBar bar code reader, to find barcodes within a picture. The latter software supports barcodes of the following types: EAN-13/UPC-A, UPC-E, EAN-8, Code 128, Code 39, Interleaved 2 of 5 and QR Code.",
       "sc:featureList": [
         {
+          "@id": "edam:operation_3438"
+        },
+        {
           "@id": "edam:operation_2409"
         },
         {
           "@id": "edam:operation_3443"
-        },
-        {
-          "@id": "edam:operation_3438"
         }
       ],
       "sc:funder": "Deutsche Forschungsgemeinschaft (DFG)",
@@ -86,7 +86,7 @@
       "sc:url": "https://diversityworkbench.net/Portal/DiversityImageInspector"
     },
     {
-      "@id": "_:N6e860aa17af84f8da907dce73e503917",
+      "@id": "_:N9d23923f23b245bfb3bc54df34fdb6ca",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2968"
@@ -102,7 +102,7 @@
       "sc:name": "Image"
     },
     {
-      "@id": "_:N59f01e46ae9d425e8e42ad282407f890",
+      "@id": "_:N899a1217b56644af9b7e2e65bd0f91e8",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2526"
@@ -113,7 +113,7 @@
       "sc:name": "Text data"
     },
     {
-      "@id": "_:Nc8c4cb211a9a4808bdf3652106de684e",
+      "@id": "_:N78a2424f6ee342ec9541701a4c0eae5c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0842"
@@ -124,7 +124,7 @@
       "sc:name": "Identifier"
     },
     {
-      "@id": "_:N59d78565d2104a0e8ddc8f735a885130",
+      "@id": "_:N9addcb7e2c7749a79e1ffb19224b7b6f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3671"

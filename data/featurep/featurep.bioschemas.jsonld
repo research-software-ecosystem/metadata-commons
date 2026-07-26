@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,17 +40,17 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Henrik Nielsen",
       "bsc:input": {
-        "@id": "_:N60bbc1cd3a2d439f9e6784039c88d8ef"
+        "@id": "_:Naaa8e2b8ba794266a0bbd6e3781c86c6"
       },
       "bsc:output": [
         {
-          "@id": "_:N8e7ab07493ec451f94f745c26ecdaabb"
+          "@id": "_:Na08d20133db840da871611ef3156b83a"
         },
         {
-          "@id": "_:N48d22c516fde4c959fc9065bf786e294"
+          "@id": "_:N57cf18bac48b46a8b5040183643e4503"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Web application",
         "Web service"
@@ -59,10 +59,10 @@
         "@id": "edam:topic_0160"
       },
       "sc:citation": [
+        "pubmed:20403684",
         {
           "@id": "https://doi.org/10.1016/j.sbi.2010.03.008"
-        },
-        "pubmed:20403684"
+        }
       ],
       "sc:description": "Comparative analysis of protein sequences derived from the same transcript by alternative splicing, genome variation data (SNPs) or protein families from one or more organisms.",
       "sc:featureList": {
@@ -80,26 +80,7 @@
       "sc:url": "http://cbs.dtu.dk/services/EPipe/"
     },
     {
-      "@id": "_:N8e7ab07493ec451f94f745c26ecdaabb",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1277"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Protein features"
-    },
-    {
-      "@id": "_:N48d22c516fde4c959fc9065bf786e294",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2955"
-      },
-      "sc:name": "Sequence report"
-    },
-    {
-      "@id": "_:N60bbc1cd3a2d439f9e6784039c88d8ef",
+      "@id": "_:Naaa8e2b8ba794266a0bbd6e3781c86c6",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
@@ -108,6 +89,25 @@
         "@id": "edam:format_1929"
       },
       "sc:name": "Sequence"
+    },
+    {
+      "@id": "_:Na08d20133db840da871611ef3156b83a",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2955"
+      },
+      "sc:name": "Sequence report"
+    },
+    {
+      "@id": "_:N57cf18bac48b46a8b5040183643e4503",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1277"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Protein features"
     },
     {
       "@id": "https://doi.org/10.1016/j.sbi.2010.03.008",

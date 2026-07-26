@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,12 +39,12 @@
       "@id": "https://bio.tools/profisis",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N945d4f2030664a1a9171436a6f6f9fba"
+        "@id": "_:N59cce31b9d204e2ba8f822143522e359"
       },
       "bsc:output": {
-        "@id": "_:Nae7869c085c443d6925279cb64dd2d53"
+        "@id": "_:Ndc16c223f87d45e8a052a990e57cd173"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Web application"
@@ -54,14 +54,14 @@
       },
       "sc:author": "Yanay Ofran",
       "sc:citation": [
+        "pubmed:17237081",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btl303"
-        },
-        "pubmed:17237081"
+        }
       ],
       "sc:contributor": [
-        "Burkhard Rost",
-        "Grants RO1-GM63029-01 and R01-GM64633-01 from the National Institutes of Health (NIH)"
+        "Grants RO1-GM63029-01 and R01-GM64633-01 from the National Institutes of Health (NIH)",
+        "Burkhard Rost"
       ],
       "sc:description": "Prediction of protein-protein interaction sites identified from sequence.",
       "sc:featureList": {
@@ -73,8 +73,8 @@
       "sc:name": "PROFisis",
       "sc:operatingSystem": "Linux",
       "sc:provider": [
-        "RostLab",
-        "Columbia University"
+        "Columbia University",
+        "RostLab"
       ],
       "sc:softwareHelp": {
         "@id": "https://rostlab.org/owiki/index.php/PROFisis"
@@ -83,18 +83,7 @@
       "sc:url": "https://rostlab.org/owiki/index.php/PROFisis"
     },
     {
-      "@id": "_:Nae7869c085c443d6925279cb64dd2d53",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1276"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2062"
-      },
-      "sc:name": "Nucleic acid features"
-    },
-    {
-      "@id": "_:N945d4f2030664a1a9171436a6f6f9fba",
+      "@id": "_:N59cce31b9d204e2ba8f822143522e359",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2886"
@@ -103,6 +92,17 @@
         "@id": "edam:format_2200"
       },
       "sc:name": "Protein sequence record"
+    },
+    {
+      "@id": "_:Ndc16c223f87d45e8a052a990e57cd173",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1276"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2062"
+      },
+      "sc:name": "Nucleic acid features"
     },
     {
       "@id": "https://doi.org/10.1093/bioinformatics/btl303",

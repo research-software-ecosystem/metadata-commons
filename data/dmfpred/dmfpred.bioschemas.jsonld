@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -38,23 +38,23 @@
     {
       "@id": "https://bio.tools/dmfpred",
       "@type": "sc:SoftwareApplication",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
           "@id": "edam:topic_0209"
         },
         {
-          "@id": "edam:topic_0218"
-        },
-        {
           "@id": "edam:topic_0621"
         },
         {
-          "@id": "edam:topic_0160"
+          "@id": "edam:topic_0218"
         },
         {
           "@id": "edam:topic_3538"
+        },
+        {
+          "@id": "edam:topic_0160"
         }
       ],
       "sc:citation": [
@@ -70,9 +70,6 @@
           "@id": "edam:operation_3904"
         },
         {
-          "@id": "edam:operation_4009"
-        },
-        {
           "@id": "edam:operation_1777"
         },
         {
@@ -80,14 +77,17 @@
         },
         {
           "@id": "edam:operation_0239"
+        },
+        {
+          "@id": "edam:operation_4009"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "Not licensed",
       "sc:name": "DMFpred",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:url": "http://bliulab.net/DMFpred/"

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,48 +40,48 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N6dac21928289419baa7d72a3a070c7d3"
+          "@id": "_:N7684b546ff7f43888ee278297db74c3d"
         },
         {
-          "@id": "_:N583c15a9525e446d802608eb1417a3b4"
+          "@id": "_:Nac48d439915647f2a636042295c6d1aa"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0154"
+          "@id": "edam:topic_3172"
         },
         {
-          "@id": "edam:topic_3172"
+          "@id": "edam:topic_0154"
         }
       ],
       "sc:description": "Despite the increasing importance of non-targeted metabolomics to answer various\nlife science questions, extracting biochemically relevant information from metabolomics\nspectral data is still an incompletely solved problem. \nOur framework captures potential relationships between spectral features and\nsubstructures learned from public spectral libraries. These associations are used to\nrecommend substructures for any unknown mass spectrum. Our method does not\nrequire any predefined metabolite candidates, and therefore it can be used for the\npartial identification of unknown unknowns.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3801"
+          "@id": "edam:operation_3803"
         },
         {
-          "@id": "edam:operation_3803"
+          "@id": "edam:operation_3801"
         }
       ],
       "sc:name": "MESSAR (MEtabolite SubStructure Auto-Recommender)",
       "sc:url": "https://messar.biodatamining.be"
     },
     {
-      "@id": "_:N6dac21928289419baa7d72a3a070c7d3",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3483"
-      },
-      "sc:name": "Spectrum"
-    },
-    {
-      "@id": "_:N583c15a9525e446d802608eb1417a3b4",
+      "@id": "_:N7684b546ff7f43888ee278297db74c3d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0943"
       },
       "sc:name": "Mass spectrum"
+    },
+    {
+      "@id": "_:Nac48d439915647f2a636042295c6d1aa",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3483"
+      },
+      "sc:name": "Spectrum"
     }
   ]
 }

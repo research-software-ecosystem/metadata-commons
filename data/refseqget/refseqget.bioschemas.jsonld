@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,33 +36,41 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1017/CBO9781139151405",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1017/CBO9781139151399",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/refseqget",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N3010088dd6314c2993dc062c0039808a"
+        "@id": "_:Ned8c87bebf7748e29ea332e7a1c89c8c"
       },
       "bsc:output": {
-        "@id": "_:N263e7ef2ca3e400c958961d4bbfc3e96"
+        "@id": "_:Ne1b5dd36648d42fd8d65206f918a871d"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
           "@id": "edam:topic_3071"
         },
         {
-          "@id": "edam:topic_0080"
+          "@id": "edam:topic_0622"
         },
         {
-          "@id": "edam:topic_0622"
+          "@id": "edam:topic_0080"
         }
       ],
       "sc:citation": [
         {
-          "@id": "https://doi.org/10.1017/CBO9781139151399"
+          "@id": "https://doi.org/10.1016/S0168-9525(00)02024-2"
         },
         {
-          "@id": "https://doi.org/10.1016/S0168-9525(00)02024-2"
+          "@id": "https://doi.org/10.1017/CBO9781139151399"
         },
         {
           "@id": "https://doi.org/10.1017/CBO9781139151405"
@@ -70,9 +78,9 @@
       ],
       "sc:contributor": [
         "UK BBSRC",
-        "EMBOSS Contributors",
+        "UK MRC",
         "Wellcome Trust",
-        "UK MRC"
+        "EMBOSS Contributors"
       ],
       "sc:description": "An Emboss tool that reads a reference sequence and returns the data in one of the EMBOSS reference sequence formats.",
       "sc:featureList": [
@@ -87,16 +95,16 @@
         }
       ],
       "sc:funder": [
-        "UK MRC",
         "UK BBSRC",
+        "UK MRC",
         "Wellcome Trust"
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "GPL-3.0",
       "sc:name": "refseqget",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:provider": [
@@ -105,10 +113,10 @@
       ],
       "sc:softwareHelp": [
         {
-          "@id": "http://emboss.open-bio.org/rel/rel6/apps/refseqget.html"
+          "@id": "http://emboss.open-bio.org/html/use/pr02s04.html"
         },
         {
-          "@id": "http://emboss.open-bio.org/html/use/pr02s04.html"
+          "@id": "http://emboss.open-bio.org/rel/rel6/apps/refseqget.html"
         },
         {
           "@id": "http://emboss.open-bio.org/html/dev/ch01s01.html"
@@ -118,7 +126,7 @@
       "sc:url": "http://www.bioinformatics.nl/cgi-bin/emboss/refseqget"
     },
     {
-      "@id": "_:N263e7ef2ca3e400c958961d4bbfc3e96",
+      "@id": "_:Ned8c87bebf7748e29ea332e7a1c89c8c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0849"
@@ -129,7 +137,7 @@
       "sc:name": "Sequence record"
     },
     {
-      "@id": "_:N3010088dd6314c2993dc062c0039808a",
+      "@id": "_:Ne1b5dd36648d42fd8d65206f918a871d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0849"
@@ -141,14 +149,6 @@
     },
     {
       "@id": "https://doi.org/10.1016/S0168-9525(00)02024-2",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1017/CBO9781139151399",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1017/CBO9781139151405",
       "@type": "sc:CreativeWork"
     }
   ]

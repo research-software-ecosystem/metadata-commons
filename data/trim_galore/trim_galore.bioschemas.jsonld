@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,16 +36,20 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.5281/zenodo.7598955",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/trim_galore",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "F. Krueger",
       "bsc:input": {
-        "@id": "_:Nd0f515bb64934f5c840cc38a888f4fc4"
+        "@id": "_:Nf0b81db71089419f8925dd9b2a8d1683"
       },
       "bsc:output": {
-        "@id": "_:N3b59f10512b649b7acbb4465364e451c"
+        "@id": "_:N109f0c201572490e99a27456c315cf28"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0080"
@@ -56,13 +60,13 @@
       "sc:description": "A wrapper tool around Cutadapt and FastQC to consistently apply quality and adapter trimming to FastQ files, with some extra functionality for MspI-digested RRBS-type (Reduced Representation Bisufite-Seq) libraries.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3192"
-        },
-        {
           "@id": "edam:operation_3237"
         },
         {
           "@id": "edam:operation_3219"
+        },
+        {
+          "@id": "edam:operation_3192"
         }
       ],
       "sc:name": "Trim Galore",
@@ -76,7 +80,7 @@
       "sc:url": "https://www.bioinformatics.babraham.ac.uk/projects/trim_galore/"
     },
     {
-      "@id": "_:N3b59f10512b649b7acbb4465364e451c",
+      "@id": "_:Nf0b81db71089419f8925dd9b2a8d1683",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1383"
@@ -87,7 +91,7 @@
       "sc:name": "Nucleic acid sequence alignment"
     },
     {
-      "@id": "_:Nd0f515bb64934f5c840cc38a888f4fc4",
+      "@id": "_:N109f0c201572490e99a27456c315cf28",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1383"
@@ -96,10 +100,6 @@
         "@id": "edam:format_2572"
       },
       "sc:name": "Nucleic acid sequence alignment"
-    },
-    {
-      "@id": "https://doi.org/10.5281/zenodo.7598955",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

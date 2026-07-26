@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,17 +36,21 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/btl504",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/foldunfold",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N03d8d432a6ae48d392d921ae017958a1"
+          "@id": "_:N517c454c5d334af180ba8922c09790f0"
         },
         {
-          "@id": "_:N0376c406471e46069f605ee71ba879f8"
+          "@id": "_:N29e53e16049e4414a95349ad0bd77b7a"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
@@ -57,10 +61,10 @@
         }
       ],
       "sc:citation": [
+        "pubmed:17021161",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btl504"
-        },
-        "pubmed:17021161"
+        }
       ],
       "sc:description": "FoldUnfold is a web server that detects disordered regions in a protein sequence.",
       "sc:featureList": {
@@ -69,14 +73,14 @@
       "sc:isAccessibleForFree": true,
       "sc:name": "FoldUnfold",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:url": "http://skuld.protres.ru/~mlobanov/ogu/ogu.cgi"
     },
     {
-      "@id": "_:N03d8d432a6ae48d392d921ae017958a1",
+      "@id": "_:N517c454c5d334af180ba8922c09790f0",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2976"
@@ -84,7 +88,7 @@
       "sc:name": "Protein sequence"
     },
     {
-      "@id": "_:N0376c406471e46069f605ee71ba879f8",
+      "@id": "_:N29e53e16049e4414a95349ad0bd77b7a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1277"
@@ -93,10 +97,6 @@
         "@id": "edam:format_1208"
       },
       "sc:name": "Protein features"
-    },
-    {
-      "@id": "https://doi.org/10.1093/bioinformatics/btl504",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -43,21 +43,21 @@
       "@id": "https://bio.tools/cytofkit",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
-        "Hao Chen",
-        "Jinmiao Chen"
+        "Jinmiao Chen",
+        "Hao Chen"
       ],
       "bsc:input": {
-        "@id": "_:N42f9cc3527ef44fe90eec0b3d348f734"
+        "@id": "_:N4a6d53fe555c4dfb9b2ead72d0327432"
       },
       "bsc:output": [
         {
-          "@id": "_:N0242b3069f35452287af0f624eb3e18c"
+          "@id": "_:N934c1f5e60c344168f7c63af17dc3610"
         },
         {
-          "@id": "_:N81c4e5df15cd413680f46dc61890d62b"
+          "@id": "_:N7048a96e2c2f4b05be962fdd78102684"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
@@ -67,10 +67,10 @@
           "@id": "edam:topic_3473"
         },
         {
-          "@id": "edam:topic_3361"
+          "@id": "edam:topic_0092"
         },
         {
-          "@id": "edam:topic_0092"
+          "@id": "edam:topic_3361"
         }
       ],
       "sc:citation": [
@@ -86,18 +86,18 @@
           "@id": "edam:operation_3432"
         },
         {
-          "@id": "edam:operation_0337"
+          "@id": "edam:operation_3214"
         },
         {
-          "@id": "edam:operation_3214"
+          "@id": "edam:operation_0337"
         }
       ],
       "sc:license": "Artistic-2.0",
       "sc:name": "cytofkit",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/cytofkit.html"
@@ -106,7 +106,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/cytofkit.html"
     },
     {
-      "@id": "_:N42f9cc3527ef44fe90eec0b3d348f734",
+      "@id": "_:N4a6d53fe555c4dfb9b2ead72d0327432",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2536"
@@ -117,7 +117,29 @@
       "sc:name": "Mass spectrometry data"
     },
     {
-      "@id": "_:N0242b3069f35452287af0f624eb3e18c",
+      "@id": "_:N934c1f5e60c344168f7c63af17dc3610",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2884"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2333"
+        },
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_3033"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Plot"
+    },
+    {
+      "@id": "_:N7048a96e2c2f4b05be962fdd78102684",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"
@@ -127,38 +149,16 @@
           "@id": "edam:format_2333"
         },
         {
-          "@id": "edam:format_3033"
+          "@id": "edam:format_3547"
         },
         {
-          "@id": "edam:format_3547"
+          "@id": "edam:format_3033"
         },
         {
           "@id": "edam:format_2330"
         }
       ],
       "sc:name": "Report"
-    },
-    {
-      "@id": "_:N81c4e5df15cd413680f46dc61890d62b",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2884"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_2333"
-        },
-        {
-          "@id": "edam:format_3033"
-        },
-        {
-          "@id": "edam:format_3547"
-        }
-      ],
-      "sc:name": "Plot"
     }
   ]
 }

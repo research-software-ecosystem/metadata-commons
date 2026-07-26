@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,21 +40,21 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N9ad7b492bfaf4979ad5bc4a728017f8d"
+          "@id": "_:N8c7be67c722947b4a5080fd4c8509a08"
         },
         {
-          "@id": "_:N93051f5c3edf4a528054d0b30cc7a9a9"
+          "@id": "_:N2561d7abefad4237af7193864486bba6"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Nda6eb8bfc4544495aa36ebde72a8cb93"
+          "@id": "_:N70e9f0358d27448bbf23fbb9db82f83c"
         },
         {
-          "@id": "_:Nfbdf4d533fc744de84abfe05807383fe"
+          "@id": "_:N801b3de5378346dbbd71b499567c317e"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Desktop application",
       "sc:applicationSubCategory": [
         {
@@ -73,19 +73,13 @@
       "sc:description": "Tool for processing and analyzing ICPL LC-MS/MS (ESI) data.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3631"
-        },
-        {
-          "@id": "edam:operation_3635"
-        },
-        {
           "@id": "edam:operation_3629"
         },
         {
           "@id": "edam:operation_3705"
         },
         {
-          "@id": "edam:operation_3630"
+          "@id": "edam:operation_3635"
         },
         {
           "@id": "edam:operation_3636"
@@ -94,14 +88,20 @@
           "@id": "edam:operation_3215"
         },
         {
+          "@id": "edam:operation_3630"
+        },
+        {
           "@id": "edam:operation_3203"
+        },
+        {
+          "@id": "edam:operation_3631"
         }
       ],
       "sc:name": "ICPL_ESIQuant",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://sourceforge.net/p/icplquant/wiki/Home/"
@@ -109,29 +109,7 @@
       "sc:url": "https://www.biochem.mpg.de/en/rg/lottspeich/technologies/ICPLQuant"
     },
     {
-      "@id": "_:Nda6eb8bfc4544495aa36ebde72a8cb93",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2603"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Expression data"
-    },
-    {
-      "@id": "_:Nfbdf4d533fc744de84abfe05807383fe",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0944"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3651"
-      },
-      "sc:name": "Peptide mass fingerprint"
-    },
-    {
-      "@id": "_:N9ad7b492bfaf4979ad5bc4a728017f8d",
+      "@id": "_:N8c7be67c722947b4a5080fd4c8509a08",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0943"
@@ -142,7 +120,7 @@
       "sc:name": "Mass spectrometry spectra"
     },
     {
-      "@id": "_:N93051f5c3edf4a528054d0b30cc7a9a9",
+      "@id": "_:N2561d7abefad4237af7193864486bba6",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0945"
@@ -151,6 +129,28 @@
         "@id": "edam:format_3713"
       },
       "sc:name": "Peptide identification"
+    },
+    {
+      "@id": "_:N70e9f0358d27448bbf23fbb9db82f83c",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0944"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3651"
+      },
+      "sc:name": "Peptide mass fingerprint"
+    },
+    {
+      "@id": "_:N801b3de5378346dbbd71b499567c317e",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2603"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Expression data"
     },
     {
       "@id": "https://doi.org/10.1016/j.bbapap.2013.02.019",

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -38,17 +38,17 @@
     {
       "@id": "https://bio.tools/r-crispr",
       "@type": "sc:SoftwareApplication",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Library",
       "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_3474"
+        },
         {
           "@id": "edam:topic_3303"
         },
         {
           "@id": "edam:topic_0099"
-        },
-        {
-          "@id": "edam:topic_3474"
         }
       ],
       "sc:citation": [
@@ -61,10 +61,10 @@
       "sc:description": "A Deep Learning Network to Predict Off-Target Activities with Mismatch, Insertion and Deletion in CRISPR-Cas9 System.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3927"
+          "@id": "edam:operation_2575"
         },
         {
-          "@id": "edam:operation_2575"
+          "@id": "edam:operation_3927"
         },
         {
           "@id": "edam:operation_0415"
@@ -73,9 +73,9 @@
       "sc:isAccessibleForFree": true,
       "sc:name": "R-CRISPR",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:url": "https://codeocean.com/capsule/9553651/tree/v1"
     },

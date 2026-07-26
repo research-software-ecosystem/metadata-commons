@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,56 +36,44 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/nar/gkac240",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gkae241",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1016/S0168-9525(00)02024-2",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/backtranseq-ebi",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Job Dispatcher",
       "bsc:input": {
-        "@id": "_:N7f7cf0a5c6004193ae5e6e7063ff0b46"
+        "@id": "_:Ne41ff9ce3ad0468f9301f788349f279f"
       },
       "bsc:output": {
-        "@id": "_:N21fdacc0ba9d4f86a4310fc61808259a"
+        "@id": "_:N4d8d9ce0d81241289af1347ac696f0de"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
+        "Web API",
         "Web application",
-        "Web service",
-        "Web API"
+        "Web service"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0080"
+          "@id": "edam:topic_3489"
         },
         {
-          "@id": "edam:topic_3489"
+          "@id": "edam:topic_0080"
         }
       ],
       "sc:author": "EMBOSS",
       "sc:citation": [
+        "pubmed:35412617",
         "pmcid:PMC9252731",
         {
           "@id": "https://doi.org/10.1093/nar/gkac240"
         },
+        "pubmed:38597606",
+        "pmcid:PMC11223882",
         {
           "@id": "https://doi.org/10.1093/nar/gkae241"
         },
         {
           "@id": "https://doi.org/10.1016/S0168-9525(00)02024-2"
-        },
-        "pubmed:35412617",
-        "pubmed:38597606",
-        "pmcid:PMC11223882"
+        }
       ],
       "sc:description": "Back-translate a protein sequence to a nucleotide sequence, using codon frequency.It reads a protein sequence and writes the nucleic acid sequence it is most likely to have come from.",
       "sc:featureList": {
@@ -93,8 +81,8 @@
       },
       "sc:name": "backtranseq (EBI)",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:provider": "EMBL-EBI",
@@ -103,17 +91,25 @@
           "@id": "https://emboss.sourceforge.net/"
         },
         {
-          "@id": "http://www.ebi.ac.uk/about/terms-of-use"
+          "@id": "https://www.ebi.ac.uk/jdispatcher/help"
         },
         {
-          "@id": "https://www.ebi.ac.uk/jdispatcher/help"
+          "@id": "http://www.ebi.ac.uk/about/terms-of-use"
         }
       ],
       "sc:softwareVersion": "1",
       "sc:url": "http://www.ebi.ac.uk/jdispatcher/st/emboss_backtranseq/"
     },
     {
-      "@id": "_:N21fdacc0ba9d4f86a4310fc61808259a",
+      "@id": "_:Ne41ff9ce3ad0468f9301f788349f279f",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2976"
+      },
+      "sc:name": "Protein sequence"
+    },
+    {
+      "@id": "_:N4d8d9ce0d81241289af1347ac696f0de",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2977"
@@ -121,12 +117,16 @@
       "sc:name": "Nucleic acid sequence"
     },
     {
-      "@id": "_:N7f7cf0a5c6004193ae5e6e7063ff0b46",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2976"
-      },
-      "sc:name": "Protein sequence"
+      "@id": "https://doi.org/10.1093/nar/gkae241",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/gkac240",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1016/S0168-9525(00)02024-2",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

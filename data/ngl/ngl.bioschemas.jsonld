@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -42,17 +42,17 @@
     {
       "@id": "https://bio.tools/NGL",
       "@type": "sc:SoftwareApplication",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_0099"
-        },
         {
           "@id": "edam:topic_3382"
         },
         {
           "@id": "edam:topic_3047"
+        },
+        {
+          "@id": "edam:topic_0099"
         }
       ],
       "sc:citation": {
@@ -61,13 +61,13 @@
       "sc:description": "CaBLAM for chiropraxis in cryoEM, UnDowser to rethink “waters”, and NGL Viewer to recapture online 3D graphics in MolProbity validation.\n\nNGL Viewer is a web application for molecular visualization. WebGL is employed to display molecules like proteins and DNA/RNA with a variety of representations.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0337"
+          "@id": "edam:operation_3891"
         },
         {
           "@id": "edam:operation_0321"
         },
         {
-          "@id": "edam:operation_3891"
+          "@id": "edam:operation_0337"
         }
       ],
       "sc:license": "MIT",

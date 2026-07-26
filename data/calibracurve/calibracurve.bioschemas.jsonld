@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -43,37 +43,37 @@
       "@id": "https://bio.tools/calibracurve",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N9fbb392ffd7144929620264483620391"
+        "@id": "_:N6cdf7069d9914b149f7b4a805386c902"
       },
       "bsc:output": [
         {
-          "@id": "_:N4bf5e4c38a614a7c9ba8ec48240ecfce"
+          "@id": "_:N3f344e9a74f244908257357e4662ff09"
         },
         {
-          "@id": "_:Nb88e32e494b04d28acbbaedfafa0aad2"
+          "@id": "_:N447db07e13e2405c9c5d1951a8e7f6c8"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Plug-in",
-        "Workflow",
         "Desktop application",
-        "Script"
+        "Plug-in",
+        "Script",
+        "Workflow"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0121"
+          "@id": "edam:topic_3678"
         },
         {
-          "@id": "edam:topic_3678"
+          "@id": "edam:topic_0121"
         }
       ],
       "sc:author": [
-        "Robin Grugel",
-        "Martin Eisenacher",
-        "Markus Stepath",
         "Karin Schork",
-        "Michael Kohl"
+        "Markus Stepath",
+        "Martin Eisenacher",
+        "Michael Kohl",
+        "Robin Grugel"
       ],
       "sc:citation": {
         "@id": "https://doi.org/10.1002/pmic.201900143"
@@ -82,18 +82,18 @@
       "sc:description": "CalibraCurve is a computational tool designed to generate calibration curves for targeted mass spectrometry-based quantitative data. It is applicable to various omics disciplines, including proteomics, lipidomics, and metabolomics. The package also offers functionalities for data and calibration curve visualization and concentration prediction from new datasets based on the established curves.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0337"
+          "@id": "edam:operation_2945"
         },
         {
-          "@id": "edam:operation_2945"
+          "@id": "edam:operation_0337"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "BSD-3-Clause",
       "sc:name": "CalibraCurve",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -103,7 +103,7 @@
       "sc:url": "https://bioconductor.org/packages/CalibraCurve"
     },
     {
-      "@id": "_:N9fbb392ffd7144929620264483620391",
+      "@id": "_:N6cdf7069d9914b149f7b4a805386c902",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2526"
@@ -114,7 +114,7 @@
       "sc:name": "Text data"
     },
     {
-      "@id": "_:N4bf5e4c38a614a7c9ba8ec48240ecfce",
+      "@id": "_:N3f344e9a74f244908257357e4662ff09",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2968"
@@ -125,7 +125,7 @@
       "sc:name": "Image"
     },
     {
-      "@id": "_:Nb88e32e494b04d28acbbaedfafa0aad2",
+      "@id": "_:N447db07e13e2405c9c5d1951a8e7f6c8",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2526"

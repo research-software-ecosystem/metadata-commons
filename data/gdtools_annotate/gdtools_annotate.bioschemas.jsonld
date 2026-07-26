@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,49 +36,53 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1186/1471-2164-15-1039",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/gdtools_annotate",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Galaxy Support Team",
       "bsc:input": {
-        "@id": "_:N9805f7762ce249a4a0f6b6de2039edda"
+        "@id": "_:N497941845bca4d88883ebd8acdced139"
       },
       "bsc:output": [
         {
-          "@id": "_:N2d86936122cb440d867ccf2b843ac941"
+          "@id": "_:N592ef91d6b82426ca43f13ee2bc65378"
         },
         {
-          "@id": "_:N91a73d3ff38d410d87991d22412e56f4"
+          "@id": "_:Nfd7237cb3c0a4579ad0c9e29ef26f609"
         },
         {
-          "@id": "_:N9d120e25f9594e7fae64e788b96a89b7"
+          "@id": "_:N970113464ff4493d9409f17c56386433"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0199"
+          "@id": "edam:topic_3071"
         },
         {
-          "@id": "edam:topic_3071"
+          "@id": "edam:topic_0199"
         },
         {
           "@id": "edam:topic_0622"
         }
       ],
       "sc:citation": [
-        "pmcid:PMC4300727",
-        "pmcid:PMC4987906",
-        "pubmed:25432719",
         "pubmed:27137889",
+        "pmcid:PMC4987906",
         {
           "@id": "https://doi.org/10.1093/nar/gkw343"
         },
-        {
-          "@id": "https://doi.org/10.7490/f1000research.1114334.1"
-        },
+        "pubmed:25432719",
+        "pmcid:PMC4300727",
         {
           "@id": "https://doi.org/10.1186/1471-2164-15-1039"
+        },
+        {
+          "@id": "https://doi.org/10.7490/f1000research.1114334.1"
         }
       ],
       "sc:description": "Merge multiple GenomeDiff input files.",
@@ -87,9 +91,9 @@
       },
       "sc:name": "gdtools_annotate",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://galaxy.pasteur.fr/root?tool_id=toolshed.pasteur.fr%2Frepos%2Fmvalade%2Fgdtools%2Fgdtools_annotate%2F0.26"
@@ -98,7 +102,7 @@
       "sc:url": "http://barricklab.org/twiki/pub/Lab/ToolsBacterialGenomeResequencing/documentation/gd_usage.html"
     },
     {
-      "@id": "_:N9805f7762ce249a4a0f6b6de2039edda",
+      "@id": "_:N497941845bca4d88883ebd8acdced139",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0006"
@@ -109,18 +113,18 @@
       "sc:name": "Data"
     },
     {
-      "@id": "_:N2d86936122cb440d867ccf2b843ac941",
+      "@id": "_:N592ef91d6b82426ca43f13ee2bc65378",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2048"
+        "@id": "edam:data_0006"
       },
       "sc:encodingFormat": {
-        "@id": "edam:format_2331"
+        "@id": "edam:format_3475"
       },
-      "sc:name": "Report"
+      "sc:name": "Data"
     },
     {
-      "@id": "_:N91a73d3ff38d410d87991d22412e56f4",
+      "@id": "_:Nfd7237cb3c0a4579ad0c9e29ef26f609",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0006"
@@ -131,22 +135,18 @@
       "sc:name": "Data"
     },
     {
-      "@id": "_:N9d120e25f9594e7fae64e788b96a89b7",
+      "@id": "_:N970113464ff4493d9409f17c56386433",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_0006"
+        "@id": "edam:data_2048"
       },
       "sc:encodingFormat": {
-        "@id": "edam:format_3475"
+        "@id": "edam:format_2331"
       },
-      "sc:name": "Data"
+      "sc:name": "Report"
     },
     {
       "@id": "https://doi.org/10.1093/nar/gkw343",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1186/1471-2164-15-1039",
       "@type": "sc:CreativeWork"
     },
     {

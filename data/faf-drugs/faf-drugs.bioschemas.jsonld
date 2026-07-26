@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -43,21 +43,21 @@
       "@id": "https://bio.tools/faf-drugs",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
-        "David Lagorce",
-        "Bruno Villoutreix"
+        "Bruno Villoutreix",
+        "David Lagorce"
       ],
       "bsc:input": {
-        "@id": "_:Nb1bcda2c37eb45dba7cf02e43d65cd26"
+        "@id": "_:Nbe628c7b2c9b4b28a08b015a6b300b72"
       },
       "bsc:output": [
         {
-          "@id": "_:N2638f0535f6d4ef4bd8d3c06e476866b"
+          "@id": "_:Nb07deb5a46894315980697ff707aff3e"
         },
         {
-          "@id": "_:N2c4af7bf147147fea42b185714296412"
+          "@id": "_:N3ff7f0646db0407fb4d64e063ea7b6e1"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3336"
@@ -83,7 +83,7 @@
       "sc:url": "https://mobyle.rpbs.univ-paris-diderot.fr/cgi-bin/portal.py#forms::FAF-Drugs4"
     },
     {
-      "@id": "_:Nb1bcda2c37eb45dba7cf02e43d65cd26",
+      "@id": "_:Nbe628c7b2c9b4b28a08b015a6b300b72",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1463"
@@ -94,18 +94,7 @@
       "sc:name": "Small molecule structure"
     },
     {
-      "@id": "_:N2638f0535f6d4ef4bd8d3c06e476866b",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1463"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3814"
-      },
-      "sc:name": "Small molecule structure"
-    },
-    {
-      "@id": "_:N2c4af7bf147147fea42b185714296412",
+      "@id": "_:Nb07deb5a46894315980697ff707aff3e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2087"
@@ -114,6 +103,17 @@
         "@id": "edam:format_2331"
       },
       "sc:name": "Molecular property"
+    },
+    {
+      "@id": "_:N3ff7f0646db0407fb4d64e063ea7b6e1",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1463"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3814"
+      },
+      "sc:name": "Small molecule structure"
     }
   ]
 }

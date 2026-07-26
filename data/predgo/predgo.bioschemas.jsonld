@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -43,13 +43,16 @@
       "@id": "https://bio.tools/predgo",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nd783fb25f7a7414fb7556e8c330647d5"
+        "@id": "_:N245518f496d54b168226484faa691bb8"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
           "@id": "edam:topic_3473"
+        },
+        {
+          "@id": "edam:topic_1775"
         },
         {
           "@id": "edam:topic_3474"
@@ -59,9 +62,6 @@
         },
         {
           "@id": "edam:topic_0082"
-        },
-        {
-          "@id": "edam:topic_1775"
         }
       ],
       "sc:citation": [
@@ -73,26 +73,26 @@
       "sc:description": "Large-scale predicting protein functions through heterogeneous feature fusion.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0474"
+          "@id": "edam:operation_3092"
         },
         {
           "@id": "edam:operation_2492"
         },
         {
-          "@id": "edam:operation_3092"
+          "@id": "edam:operation_0474"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:name": "PredGO",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:url": "http://predgo.denglab.org/"
     },
     {
-      "@id": "_:Nd783fb25f7a7414fb7556e8c330647d5",
+      "@id": "_:N245518f496d54b168226484faa691bb8",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2976"

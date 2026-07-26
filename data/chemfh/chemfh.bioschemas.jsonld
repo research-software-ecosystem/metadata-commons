@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,6 +36,10 @@
   },
   "@graph": [
     {
+      "@id": "https://orcid.org/0000-0001-6823-1882",
+      "@type": "sc:Person"
+    },
+    {
       "@id": "https://doi.org/10.1093/nar/gkae424",
       "@type": "sc:CreativeWork"
     },
@@ -43,20 +47,20 @@
       "@id": "https://bio.tools/chemfh",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N1158555b69794c6fac62d18b03077adf"
+        "@id": "_:N512adde3bedb448aaf03da97f9200caa"
       },
       "bsc:output": [
         {
-          "@id": "_:N61e97da6d66e4ef39a4c060ef3d9ebb0"
+          "@id": "_:N29de230c665b4747af07acde55e3f4ed"
         },
         {
-          "@id": "_:N400102f31d9a43b3b476fb2eeac6824a"
+          "@id": "_:Nb45d35c62f7947a1ba334d7d06524299"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Script",
-        "Command-line tool"
+        "Command-line tool",
+        "Script"
       ],
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0209"
@@ -79,39 +83,23 @@
       "sc:license": "MIT",
       "sc:name": "ChemFH",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": [
         {
-          "@id": "https://chemfh.scbdd.com/documentation/#/"
+          "@id": "https://github.com/antwiser/ChemFH/blob/main/README.md"
         },
         {
-          "@id": "https://github.com/antwiser/ChemFH/blob/main/README.md"
+          "@id": "https://chemfh.scbdd.com/documentation/#/"
         }
       ],
       "sc:softwareVersion": "1.0.0",
       "sc:url": "https://chemfh.scbdd.com/"
     },
     {
-      "@id": "_:N61e97da6d66e4ef39a4c060ef3d9ebb0",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1696"
-      },
-      "sc:name": "Drug report"
-    },
-    {
-      "@id": "_:N400102f31d9a43b3b476fb2eeac6824a",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1712"
-      },
-      "sc:name": "Chemical structure image"
-    },
-    {
-      "@id": "_:N1158555b69794c6fac62d18b03077adf",
+      "@id": "_:N512adde3bedb448aaf03da97f9200caa",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2301"
@@ -119,8 +107,20 @@
       "sc:name": "SMILES string"
     },
     {
-      "@id": "https://orcid.org/0000-0001-6823-1882",
-      "@type": "sc:Person"
+      "@id": "_:N29de230c665b4747af07acde55e3f4ed",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1712"
+      },
+      "sc:name": "Chemical structure image"
+    },
+    {
+      "@id": "_:Nb45d35c62f7947a1ba334d7d06524299",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1696"
+      },
+      "sc:name": "Drug report"
     }
   ]
 }

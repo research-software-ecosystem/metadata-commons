@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,12 +39,12 @@
       "@id": "https://bio.tools/mfungd",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nb1d94ff906ef4187aaf27e302a1bcf7d"
+        "@id": "_:Nd8ae41e488d44d718e0297e39ede5e2c"
       },
       "bsc:output": {
-        "@id": "_:N63ef464379ee40859d0d70297cd06d35"
+        "@id": "_:Na4a4718b09ec470889e285d4674e6d73"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Database portal",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0621"
@@ -62,8 +62,8 @@
       },
       "sc:name": "MIPS mouse functional genome database (MfunGD)",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -72,7 +72,15 @@
       "sc:url": "http://bio2rdf.org/describe/?uri=http://bio2rdf.org/lsr:mfungd"
     },
     {
-      "@id": "_:N63ef464379ee40859d0d70297cd06d35",
+      "@id": "_:Nd8ae41e488d44d718e0297e39ede5e2c",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2799"
+      },
+      "sc:name": "Gene ID (MfunGD)"
+    },
+    {
+      "@id": "_:Na4a4718b09ec470889e285d4674e6d73",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0916"
@@ -81,14 +89,6 @@
         "@id": "edam:format_2331"
       },
       "sc:name": "Gene report"
-    },
-    {
-      "@id": "_:Nb1d94ff906ef4187aaf27e302a1bcf7d",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2799"
-      },
-      "sc:name": "Gene ID (MfunGD)"
     },
     {
       "@id": "https://doi.org/10.1093/nar/gkj074",

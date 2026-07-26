@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,26 +36,30 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1021/acs.analchem.7b01010",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/gc-meox-tms",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "RECETOX SpecDatRI",
       "bsc:input": {
-        "@id": "_:Naff9d0bd5fc44a6aaca6015b8e8eb2ea"
+        "@id": "_:Nc392a690e3b445daae7b58438c3ace2e"
       },
       "bsc:output": {
-        "@id": "_:N65cc592a4ee9451cb926a028fe216f44"
+        "@id": "_:N0d5cd20ecab84e81bc9ffbebe1ebf3c1"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_0154"
-        },
         {
           "@id": "edam:topic_3370"
         },
         {
           "@id": "edam:topic_3172"
+        },
+        {
+          "@id": "edam:topic_0154"
         }
       ],
       "sc:author": "RECETOX SpecDatRI",
@@ -84,7 +88,7 @@
       "sc:url": "https://github.com/RECETOX/gc-meox-tms"
     },
     {
-      "@id": "_:N65cc592a4ee9451cb926a028fe216f44",
+      "@id": "_:Nc392a690e3b445daae7b58438c3ace2e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2301"
@@ -92,16 +96,12 @@
       "sc:name": "SMILES string"
     },
     {
-      "@id": "_:Naff9d0bd5fc44a6aaca6015b8e8eb2ea",
+      "@id": "_:N0d5cd20ecab84e81bc9ffbebe1ebf3c1",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2301"
       },
       "sc:name": "SMILES string"
-    },
-    {
-      "@id": "https://doi.org/10.1021/acs.analchem.7b01010",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

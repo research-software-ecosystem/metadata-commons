@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,25 +36,37 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1111/age.12307",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1186/s12859-015-0453-z",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1111/age.13159",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/meshr",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Na3bb8984c89c49399f1507b577c280eb"
+          "@id": "_:Ndb253109af5f4541bf46be262254da4d"
         },
         {
-          "@id": "_:N764ff0b6eddc478da3eb9ba5dfdb2606"
+          "@id": "_:N8c3ad5014c6947ca8204854511795530"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N3584d4755f93497c8af93b2624ef49ff"
+          "@id": "_:N92d67e8d2e12405381fd5bc494b902ef"
         },
         {
-          "@id": "_:Nb66ec125ec534678882449e72ff11824"
+          "@id": "_:Na4fb7626fb9c4bdcae8b710d83e381aa"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
@@ -69,13 +81,13 @@
       ],
       "sc:citation": [
         {
+          "@id": "https://doi.org/10.1111/age.12307"
+        },
+        {
           "@id": "https://doi.org/10.1111/age.13159"
         },
         {
           "@id": "https://doi.org/10.1186/s12859-015-0453-z"
-        },
-        {
-          "@id": "https://doi.org/10.1111/age.12307"
         }
       ],
       "sc:description": "A set of annotation maps describing the entire MeSH assembled using data from MeSH.",
@@ -85,8 +97,8 @@
       "sc:license": "Artistic-2.0",
       "sc:name": "meshr",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -96,29 +108,7 @@
       "sc:url": "https://bioconductor.org/packages/meshr"
     },
     {
-      "@id": "_:N3584d4755f93497c8af93b2624ef49ff",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3509"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Ontology mapping"
-    },
-    {
-      "@id": "_:Nb66ec125ec534678882449e72ff11824",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2048"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Report"
-    },
-    {
-      "@id": "_:Na3bb8984c89c49399f1507b577c280eb",
+      "@id": "_:Ndb253109af5f4541bf46be262254da4d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2295"
@@ -134,32 +124,42 @@
       "sc:name": "Gene ID"
     },
     {
-      "@id": "_:N764ff0b6eddc478da3eb9ba5dfdb2606",
+      "@id": "_:N8c3ad5014c6947ca8204854511795530",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0582"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_2330"
+          "@id": "edam:format_2195"
         },
         {
-          "@id": "edam:format_2195"
+          "@id": "edam:format_2330"
         }
       ],
       "sc:name": "Ontology"
     },
     {
-      "@id": "https://doi.org/10.1186/s12859-015-0453-z",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N92d67e8d2e12405381fd5bc494b902ef",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3509"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Ontology mapping"
     },
     {
-      "@id": "https://doi.org/10.1111/age.12307",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1111/age.13159",
-      "@type": "sc:CreativeWork"
+      "@id": "_:Na4fb7626fb9c4bdcae8b710d83e381aa",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2048"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Report"
     }
   ]
 }

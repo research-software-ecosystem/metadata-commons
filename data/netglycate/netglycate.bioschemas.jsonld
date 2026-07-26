@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,17 +40,17 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Morten Bo Johansen",
       "bsc:input": {
-        "@id": "_:N12795c555123401f87e266ffb420fdde"
+        "@id": "_:N6ac5820f920344c1b08b2599b722f2b2"
       },
       "bsc:output": [
         {
-          "@id": "_:Nfb1a3ddc831d416489ef9d2b35197943"
+          "@id": "_:Nb3a96d25a314456ab07290f4ba475a2d"
         },
         {
-          "@id": "_:Nc8b50fedd3064de9b7073ef9e30f0813"
+          "@id": "_:N7e0939852b73402baffca991c48e9871"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Web application",
         "Web service"
@@ -80,7 +80,7 @@
       "sc:url": "http://cbs.dtu.dk/services/NetGlycate/"
     },
     {
-      "@id": "_:N12795c555123401f87e266ffb420fdde",
+      "@id": "_:N6ac5820f920344c1b08b2599b722f2b2",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
@@ -91,18 +91,7 @@
       "sc:name": "Sequence"
     },
     {
-      "@id": "_:Nfb1a3ddc831d416489ef9d2b35197943",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2955"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2333"
-      },
-      "sc:name": "Sequence report"
-    },
-    {
-      "@id": "_:Nc8b50fedd3064de9b7073ef9e30f0813",
+      "@id": "_:Nb3a96d25a314456ab07290f4ba475a2d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1277"
@@ -111,6 +100,17 @@
         "@id": "edam:format_3467"
       },
       "sc:name": "Protein features"
+    },
+    {
+      "@id": "_:N7e0939852b73402baffca991c48e9871",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2955"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2333"
+      },
+      "sc:name": "Sequence report"
     },
     {
       "@id": "https://doi.org/10.1093/glycob/cwl009",

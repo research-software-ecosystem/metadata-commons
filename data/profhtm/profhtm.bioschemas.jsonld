@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,15 +36,19 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1002/pro.5560040318",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/profhtm",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N490997fe051d4faea3c3b1358fdbd69c"
+        "@id": "_:Nd59a04ef953a4c42b7b6f83c34790234"
       },
       "bsc:output": {
-        "@id": "_:N7758600f007344248eb7c498908ece23"
+        "@id": "_:N59d1e904398d402c925be66468de9e35"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Web application"
@@ -59,8 +63,8 @@
       ],
       "sc:author": "Burkhard Rost",
       "sc:citation": [
-        "pmcid:PMC2143072",
         "pubmed:7795533",
+        "pmcid:PMC2143072",
         {
           "@id": "https://doi.org/10.1002/pro.5560040318"
         }
@@ -74,8 +78,8 @@
       "sc:license": "GPL-2.0",
       "sc:name": "PROFhtm",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:provider": [
@@ -89,7 +93,7 @@
       "sc:url": "http://ppopen.informatik.tu-muenchen.de/"
     },
     {
-      "@id": "_:N490997fe051d4faea3c3b1358fdbd69c",
+      "@id": "_:Nd59a04ef953a4c42b7b6f83c34790234",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2886"
@@ -100,7 +104,7 @@
       "sc:name": "Protein sequence record"
     },
     {
-      "@id": "_:N7758600f007344248eb7c498908ece23",
+      "@id": "_:N59d1e904398d402c925be66468de9e35",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0896"
@@ -109,10 +113,6 @@
         "@id": "edam:format_3475"
       },
       "sc:name": "Protein report"
-    },
-    {
-      "@id": "https://doi.org/10.1002/pro.5560040318",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

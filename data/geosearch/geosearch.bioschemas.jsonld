@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,31 +36,35 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1038/nmeth.3252",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/geosearch",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Zhicheng Ji",
       "bsc:input": {
-        "@id": "_:Nf098b81634d04eeb85f08fdb917593b5"
+        "@id": "_:Na075dd8440ba40e0b84a15aadedd96e8"
       },
       "bsc:output": {
-        "@id": "_:Naa98b07930d144068254fa80a57aee88"
+        "@id": "_:Nfe1753af892947c9bc32b1a9bf32061f"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0622"
+          "@id": "edam:topic_0203"
         },
         {
-          "@id": "edam:topic_0203"
+          "@id": "edam:topic_0622"
         }
       ],
       "sc:author": [
-        "Hongkai Ji",
-        "Zhicheng Ji"
+        "Zhicheng Ji",
+        "Hongkai Ji"
       ],
       "sc:citation": [
         "pubmed:25633503",
@@ -77,9 +81,9 @@
       "sc:license": "GPL-2.0",
       "sc:name": "GEOsearch",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": "BioConductor",
       "sc:softwareHelp": {
@@ -89,7 +93,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/GEOsearch.html"
     },
     {
-      "@id": "_:Nf098b81634d04eeb85f08fdb917593b5",
+      "@id": "_:Na075dd8440ba40e0b84a15aadedd96e8",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2299"
@@ -100,7 +104,7 @@
       "sc:name": "Gene name"
     },
     {
-      "@id": "_:Naa98b07930d144068254fa80a57aee88",
+      "@id": "_:Nfe1753af892947c9bc32b1a9bf32061f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2080"
@@ -114,10 +118,6 @@
         }
       ],
       "sc:name": "Database search results"
-    },
-    {
-      "@id": "https://doi.org/10.1038/nmeth.3252",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

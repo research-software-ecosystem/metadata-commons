@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,25 +39,25 @@
       "@id": "https://bio.tools/ReaDDy",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "ReaDDy",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Library",
       "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_3314"
+        },
         {
           "@id": "edam:topic_0176"
         },
         {
           "@id": "edam:topic_0602"
-        },
-        {
-          "@id": "edam:topic_3314"
         }
       ],
       "sc:citation": [
+        "pubmed:30818351",
+        "pmcid:PMC6413953",
         {
           "@id": "https://doi.org/10.1371/journal.pcbi.1006830"
-        },
-        "pubmed:30818351",
-        "pmcid:PMC6413953"
+        }
       ],
       "sc:description": "Reaction Diffusion Dynamics (ReaDDy) - software framework for interacting-particle reaction dynamics.",
       "sc:featureList": [
@@ -75,15 +75,15 @@
       "sc:license": "GPL-3.0",
       "sc:name": "ReaDDy",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:softwareHelp": [
         {
-          "@id": "https://readdy.github.io/installation.html"
+          "@id": "https://readdy.github.io/"
         },
         {
-          "@id": "https://readdy.github.io/"
+          "@id": "https://readdy.github.io/installation.html"
         }
       ],
       "sc:url": "https://readdy.github.io/"

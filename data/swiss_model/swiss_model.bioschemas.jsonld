@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,124 +36,92 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1002/elps.1150181505",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gku340",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1093/bioinformatics/bti770",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gkh008",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gkw1132",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1002/elps.200900140",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gky427",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gkg520",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/swiss_model",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Protein Structure Bioinformatics Group",
       "bsc:input": [
         {
-          "@id": "_:Nc4ccd8d1dbdf4fc083bae221753df684"
+          "@id": "_:N49aca0ad6f0e4665af16a1b4a5b8d559"
         },
         {
-          "@id": "_:Nc851a3c9792345d5ace86cc5ea596dd7"
+          "@id": "_:Necf336fd268b43acb36db1b73da8314e"
         },
         {
-          "@id": "_:N36b3ffbe094a4700aaca3fddd77a9f8c"
+          "@id": "_:N6c262f3ac3b74777ab613b59cd202e65"
         },
         {
-          "@id": "_:Nf6a484efac394b93a64632e4ae16fec4"
+          "@id": "_:N32586b0bf1694007bb9568a2e336f872"
         },
         {
-          "@id": "_:Nd76e61136b424e78a1eda330c0ca4679"
+          "@id": "_:Nf62c6d273dc846489839adb378f1468c"
         }
       ],
       "bsc:output": {
-        "@id": "_:Nd3a1860554614a9aafbb3fd5a647f6df"
+        "@id": "_:Nb435aee945184f0182b83187ed37d8ef"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0078"
-        },
-        {
-          "@id": "edam:topic_0082"
-        },
-        {
           "@id": "edam:topic_0602"
+        },
+        {
+          "@id": "edam:topic_2275"
         },
         {
           "@id": "edam:topic_2814"
         },
         {
-          "@id": "edam:topic_2275"
+          "@id": "edam:topic_0078"
+        },
+        {
+          "@id": "edam:topic_0082"
         }
       ],
       "sc:citation": [
-        "pubmed:29788355",
-        "pubmed:24782522",
-        "pubmed:9322042",
-        "pubmed:16381875",
-        {
-          "@id": "https://doi.org/10.1093/nar/gkj056"
-        },
-        {
-          "@id": "https://doi.org/10.1093/nar/gkh008"
-        },
-        "pubmed:19517507",
-        {
-          "@id": "https://doi.org/10.1002/elps.1150181505"
-        },
+        "pubmed:12824332",
         "pmcid:PMC168927",
-        {
-          "@id": "https://doi.org/10.1093/nar/gkw1132"
-        },
-        "pubmed:9504803",
-        {
-          "@id": "https://doi.org/10.1093/nar/gku340"
-        },
-        "pmcid:PMC1347419",
-        {
-          "@id": "https://doi.org/10.1093/nar/gky427"
-        },
-        "pmcid:PMC6030848",
-        {
-          "@id": "https://doi.org/10.1093/bioinformatics/bti770"
-        },
-        {
-          "@id": "https://doi.org/10.1002/elps.200900140"
-        },
-        "pmcid:PMC4086089",
         {
           "@id": "https://doi.org/10.1093/nar/gkg520"
         },
+        "pubmed:16381875",
+        "pmcid:PMC1347419",
+        {
+          "@id": "https://doi.org/10.1093/nar/gkj056"
+        },
+        "pubmed:24782522",
+        "pmcid:PMC4086089",
+        {
+          "@id": "https://doi.org/10.1093/nar/gku340"
+        },
         "pubmed:27899672",
-        "pmcid:PMC308743",
-        "pubmed:14681401",
         "pmcid:PMC5210589",
-        "pubmed:12824332",
-        "pubmed:16301204"
+        {
+          "@id": "https://doi.org/10.1093/nar/gkw1132"
+        },
+        "pubmed:29788355",
+        "pmcid:PMC6030848",
+        {
+          "@id": "https://doi.org/10.1093/nar/gky427"
+        },
+        "pubmed:9504803",
+        {
+          "@id": "https://doi.org/10.1002/elps.1150181505"
+        },
+        "pubmed:19517507",
+        {
+          "@id": "https://doi.org/10.1002/elps.200900140"
+        },
+        "pubmed:16301204",
+        {
+          "@id": "https://doi.org/10.1093/bioinformatics/bti770"
+        },
+        "pubmed:14681401",
+        "pmcid:PMC308743",
+        {
+          "@id": "https://doi.org/10.1093/nar/gkh008"
+        },
+        "pubmed:9322042"
       ],
       "sc:description": "SWISS-MODEL is a fully automated protein structure homology-modelling server, accessible via the ExPASy web server, or from the program DeepView (Swiss Pdb-Viewer). The purpose of this server is to make Protein Modelling accessible to all biochemists and molecular biologists worldwide.",
       "sc:featureList": [
@@ -166,8 +134,8 @@
       ],
       "sc:name": "SWISS-MODEL",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -176,7 +144,31 @@
       "sc:url": "https://swissmodel.expasy.org/"
     },
     {
-      "@id": "_:Nc4ccd8d1dbdf4fc083bae221753df684",
+      "@id": "_:N49aca0ad6f0e4665af16a1b4a5b8d559",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2974"
+      },
+      "sc:name": "Protein sequence (raw)"
+    },
+    {
+      "@id": "_:Necf336fd268b43acb36db1b73da8314e",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2291"
+      },
+      "sc:name": "UniProt ID"
+    },
+    {
+      "@id": "_:N6c262f3ac3b74777ab613b59cd202e65",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3021"
+      },
+      "sc:name": "UniProt accession"
+    },
+    {
+      "@id": "_:N32586b0bf1694007bb9568a2e336f872",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2974"
@@ -187,7 +179,7 @@
       "sc:name": "Protein sequence (raw)"
     },
     {
-      "@id": "_:Nc851a3c9792345d5ace86cc5ea596dd7",
+      "@id": "_:Nf62c6d273dc846489839adb378f1468c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1384"
@@ -198,47 +190,55 @@
       "sc:name": "Sequence alignment (protein)"
     },
     {
-      "@id": "_:N36b3ffbe094a4700aaca3fddd77a9f8c",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2291"
-      },
-      "sc:name": "UniProt ID"
-    },
-    {
-      "@id": "_:Nf6a484efac394b93a64632e4ae16fec4",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2974"
-      },
-      "sc:name": "Protein sequence (raw)"
-    },
-    {
-      "@id": "_:Nd76e61136b424e78a1eda330c0ca4679",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3021"
-      },
-      "sc:name": "UniProt accession"
-    },
-    {
-      "@id": "_:Nd3a1860554614a9aafbb3fd5a647f6df",
+      "@id": "_:Nb435aee945184f0182b83187ed37d8ef",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1460"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_1477"
+          "@id": "edam:format_1476"
         },
         {
-          "@id": "edam:format_1476"
+          "@id": "edam:format_1477"
         }
       ],
       "sc:name": "Protein structure"
     },
     {
+      "@id": "https://doi.org/10.1093/nar/gkh008",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/gkw1132",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1002/elps.1150181505",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1002/elps.200900140",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/gku340",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://doi.org/10.1093/nar/gkj056",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1093/bioinformatics/bti770",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/gky427",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/gkg520",
       "@type": "sc:CreativeWork"
     }
   ]

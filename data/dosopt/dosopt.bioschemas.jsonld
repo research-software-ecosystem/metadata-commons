@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,30 +36,26 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1097/ftd.0000000000000456",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/dosopt",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Tõnis Tasa",
       "bsc:input": {
-        "@id": "_:N50f429ab9ac3419f8323e114a94d2583"
+        "@id": "_:N91a843f65c78428e87d147aa4c6b574f"
       },
       "bsc:output": {
-        "@id": "_:N8022e40fb88745f085f0b9f40fa392b9"
+        "@id": "_:Nb70b703088fc48c6a70810c3483866fd"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
           "@id": "edam:topic_3375"
         },
         {
-          "@id": "edam:topic_3577"
+          "@id": "edam:topic_3063"
         },
         {
-          "@id": "edam:topic_3063"
+          "@id": "edam:topic_3577"
         }
       ],
       "sc:citation": [
@@ -81,8 +77,8 @@
       "sc:license": "Freeware",
       "sc:name": "DosOpt",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -91,7 +87,7 @@
       "sc:url": "http://www.biit.cs.ut.ee/DosOpt"
     },
     {
-      "@id": "_:N50f429ab9ac3419f8323e114a94d2583",
+      "@id": "_:N91a843f65c78428e87d147aa4c6b574f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3108"
@@ -102,7 +98,7 @@
       "sc:name": "Experimental measurement"
     },
     {
-      "@id": "_:N8022e40fb88745f085f0b9f40fa392b9",
+      "@id": "_:Nb70b703088fc48c6a70810c3483866fd",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"
@@ -111,6 +107,10 @@
         "@id": "edam:format_3508"
       },
       "sc:name": "Report"
+    },
+    {
+      "@id": "https://doi.org/10.1097/ftd.0000000000000456",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,34 +36,26 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1186/s12859-014-0404-0",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "http://orcid.org/0000-0001-8231-3323",
-      "@type": "sc:Person"
-    },
-    {
       "@id": "https://bio.tools/exparna-p",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
-        "Christina Otto",
         {
           "@id": "http://orcid.org/0000-0001-8231-3323"
-        }
+        },
+        "Christina Otto"
       ],
       "bsc:input": {
-        "@id": "_:N37f9b164bb7847918c7d4e092fa3c556"
+        "@id": "_:N04f0b7d525e74309aa7d2be0f3745d08"
       },
       "bsc:output": [
         {
-          "@id": "_:N828b4ab3950b4c288eba94a36f40ca69"
+          "@id": "_:Nab98764e437a4a4c86931373c9392b5f"
         },
         {
-          "@id": "_:N775e4f1330ec4cc19d7748f2c9f38e3e"
+          "@id": "_:Ne131661ff88343c48a1f0a1e04ff184e"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
@@ -74,15 +66,15 @@
         }
       ],
       "sc:author": [
-        "Christina Otto",
-        "Rolf Backofen"
+        "Rolf Backofen",
+        "Christina Otto"
       ],
       "sc:citation": [
         "pubmed:25551362",
+        "pmcid:PMC4302096",
         {
           "@id": "https://doi.org/10.1186/s12859-014-0404-0"
-        },
-        "pmcid:PMC4302096"
+        }
       ],
       "sc:description": "Simultaneous exact pattern matching and folding of RNAs.",
       "sc:featureList": {
@@ -92,12 +84,12 @@
       "sc:license": "GPL-3.0",
       "sc:name": "ExpaRNA-P",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:provider": [
-        "rnateam",
-        "University Freiburg"
+        "University Freiburg",
+        "rnateam"
       ],
       "sc:softwareHelp": {
         "@id": "http://www.bioinf.uni-freiburg.de/Software/ExpaRNA-P/"
@@ -106,29 +98,7 @@
       "sc:url": "http://www.bioinf.uni-freiburg.de/Software/ExpaRNA-P/"
     },
     {
-      "@id": "_:N828b4ab3950b4c288eba94a36f40ca69",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2968"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3466"
-      },
-      "sc:name": "Image"
-    },
-    {
-      "@id": "_:N775e4f1330ec4cc19d7748f2c9f38e3e",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1916"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1982"
-      },
-      "sc:name": "Alignment"
-    },
-    {
-      "@id": "_:N37f9b164bb7847918c7d4e092fa3c556",
+      "@id": "_:N04f0b7d525e74309aa7d2be0f3745d08",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3495"
@@ -142,6 +112,36 @@
         }
       ],
       "sc:name": "RNA sequence"
+    },
+    {
+      "@id": "_:Nab98764e437a4a4c86931373c9392b5f",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1916"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1982"
+      },
+      "sc:name": "Alignment"
+    },
+    {
+      "@id": "_:Ne131661ff88343c48a1f0a1e04ff184e",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2968"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3466"
+      },
+      "sc:name": "Image"
+    },
+    {
+      "@id": "http://orcid.org/0000-0001-8231-3323",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.1186/s12859-014-0404-0",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

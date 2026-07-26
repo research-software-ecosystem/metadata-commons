@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -38,15 +38,9 @@
     {
       "@id": "https://bio.tools/inspire",
       "@type": "sc:SoftwareApplication",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Script",
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_0154"
-        },
-        {
-          "@id": "edam:topic_0769"
-        },
         {
           "@id": "edam:topic_3922"
         },
@@ -55,14 +49,20 @@
         },
         {
           "@id": "edam:topic_3520"
+        },
+        {
+          "@id": "edam:topic_0154"
+        },
+        {
+          "@id": "edam:topic_0769"
         }
       ],
       "sc:citation": [
+        "pubmed:36280141",
+        "pmcid:PMC9720494",
         {
           "@id": "https://doi.org/10.1016/j.mcpro.2022.100432"
-        },
-        "pubmed:36280141",
-        "pmcid:PMC9720494"
+        }
       ],
       "sc:description": "An Open-Source Tool for Increased Mass Spectrometry Identification Rates Using Prosit Spectral Prediction.",
       "sc:featureList": [
@@ -80,8 +80,8 @@
       "sc:license": "Apache-2.0",
       "sc:name": "inSPIRE",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:url": "https://figshare.com/articles/software/inSPIRE_Models/20368035"

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,10 +36,14 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/gkr321",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/snpsyn",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Tomaz Curk",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
@@ -49,32 +53,32 @@
           "@id": "edam:topic_3678"
         },
         {
-          "@id": "edam:topic_0634"
-        },
-        {
           "@id": "edam:topic_3517"
         },
         {
           "@id": "edam:topic_0602"
+        },
+        {
+          "@id": "edam:topic_0634"
         }
       ],
       "sc:citation": [
         "pubmed:21576219",
+        "pmcid:PMC3125755",
         {
           "@id": "https://doi.org/10.1093/nar/gkr321"
-        },
-        "pmcid:PMC3125755"
+        }
       ],
       "sc:description": "Tool for the discovery of synergistic pairs of SNPs from large genome-wide case-control association studies data on complex diseases. The web server receives GWAS data submissions, invokes the interaction analysis and returns results. The user can explore details on identified SNP-SNP pairs, perform gene set enrichment analysis and interact with the constructed SNP synergy network.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0276"
+          "@id": "edam:operation_2436"
         },
         {
           "@id": "edam:operation_3501"
         },
         {
-          "@id": "edam:operation_2436"
+          "@id": "edam:operation_0276"
         },
         {
           "@id": "edam:operation_0484"
@@ -83,17 +87,13 @@
       "sc:name": "SNPsyn",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://snpsyn.biolab.si/documentation.html"
       },
       "sc:url": "http://snpsyn.biolab.si"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gkr321",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

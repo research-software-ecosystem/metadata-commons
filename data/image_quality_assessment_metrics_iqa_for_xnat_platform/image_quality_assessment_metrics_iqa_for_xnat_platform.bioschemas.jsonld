@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,17 +39,17 @@
       "@id": "https://bio.tools/image_quality_assessment_metrics_iqa_for_xnat_platform",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N510b76a8df4b43008c654ce263d114ce"
+        "@id": "_:Ne47d4173f6e14854bc1421189c587780"
       },
       "bsc:output": [
         {
-          "@id": "_:N24d7630e4f8a430b906ad2c57693838a"
+          "@id": "_:N90359867558846f2bd69a4329ac91318"
         },
         {
-          "@id": "_:N4417fe98200b4bbb98b69403f0f74fe3"
+          "@id": "_:N0a7770779a764da98708f00e8cfb9a0b"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Script"
@@ -65,8 +65,8 @@
       "sc:license": "CC-BY-NC-ND-4.0",
       "sc:name": "Image Quality Assessment metrics  (IQA) for XNAT platform",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -76,7 +76,7 @@
       "sc:url": "https://github.com/FerielRamdhane/Image-Quality-Assessment-metrics-IQA-for-XNAT-platform"
     },
     {
-      "@id": "_:N510b76a8df4b43008c654ce263d114ce",
+      "@id": "_:Ne47d4173f6e14854bc1421189c587780",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2968"
@@ -87,18 +87,7 @@
       "sc:name": "Image"
     },
     {
-      "@id": "_:N24d7630e4f8a430b906ad2c57693838a",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1772"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3620"
-      },
-      "sc:name": "Score"
-    },
-    {
-      "@id": "_:N4417fe98200b4bbb98b69403f0f74fe3",
+      "@id": "_:N90359867558846f2bd69a4329ac91318",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2968"
@@ -107,6 +96,17 @@
         "@id": "edam:format_3603"
       },
       "sc:name": "Image"
+    },
+    {
+      "@id": "_:N0a7770779a764da98708f00e8cfb9a0b",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1772"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3620"
+      },
+      "sc:name": "Score"
     }
   ]
 }

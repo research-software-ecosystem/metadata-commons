@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,13 +36,9 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btad536",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/decenttree",
       "@type": "sc:SoftwareApplication",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
@@ -52,13 +48,13 @@
           "@id": "edam:topic_0659"
         },
         {
-          "@id": "edam:topic_0769"
+          "@id": "edam:topic_0622"
         },
         {
           "@id": "edam:topic_3293"
         },
         {
-          "@id": "edam:topic_0622"
+          "@id": "edam:topic_0769"
         }
       ],
       "sc:citation": [
@@ -74,16 +70,20 @@
           "@id": "edam:operation_0323"
         },
         {
-          "@id": "edam:operation_3435"
+          "@id": "edam:operation_0289"
         },
         {
-          "@id": "edam:operation_0289"
+          "@id": "edam:operation_3435"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "GPL-2.0",
       "sc:name": "DecentTree",
       "sc:url": "https://github.com/iqtree/decenttree"
+    },
+    {
+      "@id": "https://doi.org/10.1093/bioinformatics/btad536",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

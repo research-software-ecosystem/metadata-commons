@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,12 +39,12 @@
       "@id": "https://bio.tools/reporter",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nbf670a52da32447e85be85d7c0e88d8b"
+        "@id": "_:N7d95f5ecfd3c48d795b161527c85504e"
       },
       "bsc:output": {
-        "@id": "_:N05a456dd21dd4a4092b06aefdf1e46fa"
+        "@id": "_:N1db8776dfb644ce8929b3c28554952f4"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Desktop application",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0121"
@@ -56,8 +56,8 @@
       "sc:name": "Reporter",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:provider": "ugent.be",
       "sc:softwareHelp": {
@@ -67,20 +67,20 @@
       "sc:url": "http://compomics.github.io/projects/reporter.html"
     },
     {
-      "@id": "_:N05a456dd21dd4a4092b06aefdf1e46fa",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2886"
-      },
-      "sc:name": "Protein sequence record"
-    },
-    {
-      "@id": "_:Nbf670a52da32447e85be85d7c0e88d8b",
+      "@id": "_:N7d95f5ecfd3c48d795b161527c85504e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2536"
       },
       "sc:name": "Mass spectrometry data"
+    },
+    {
+      "@id": "_:N1db8776dfb644ce8929b3c28554952f4",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2886"
+      },
+      "sc:name": "Protein sequence record"
     }
   ]
 }

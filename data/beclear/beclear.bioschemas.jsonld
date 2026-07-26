@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,28 +39,28 @@
       "@id": "https://bio.tools/beclear",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N584ae4cc14ae4abca3ae16e253b354f7"
+        "@id": "_:N532e3787ec4b4ea0b61f127c169ee531"
       },
       "bsc:output": {
-        "@id": "_:N19ba8dc415db4691ad76deed9eeb2e24"
+        "@id": "_:Nf64a3c5879d640cab3a239a504d0772b"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3295"
+          "@id": "edam:topic_3572"
         },
         {
-          "@id": "edam:topic_3572"
+          "@id": "edam:topic_3295"
         }
       ],
       "sc:author": [
+        "Livia Rasp",
         "Markus Merl",
-        "Ruslan Akulenko",
-        "Livia Rasp"
+        "Ruslan Akulenko"
       ],
       "sc:citation": {
         "@id": "https://doi.org/10.1371/journal.pone.0159921"
@@ -77,9 +77,9 @@
       "sc:license": "GPL-3.0-only",
       "sc:name": "BEclear",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://bioconductor.org/packages/BEclear"
@@ -88,18 +88,7 @@
       "sc:url": "https://bioconductor.org/packages/BEclear"
     },
     {
-      "@id": "_:N19ba8dc415db4691ad76deed9eeb2e24",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1772"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Score"
-    },
-    {
-      "@id": "_:N584ae4cc14ae4abca3ae16e253b354f7",
+      "@id": "_:N532e3787ec4b4ea0b61f127c169ee531",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1276"
@@ -108,6 +97,17 @@
         "@id": "edam:format_2548"
       },
       "sc:name": "Nucleic acid features"
+    },
+    {
+      "@id": "_:Nf64a3c5879d640cab3a239a504d0772b",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1772"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Score"
     },
     {
       "@id": "https://doi.org/10.1371/journal.pone.0159921",

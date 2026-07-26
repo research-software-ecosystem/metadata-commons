@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,12 +39,12 @@
       "@id": "https://bio.tools/causalbuilder",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N6f285e43e6f249fd9dbc84897eb4cfca"
+        "@id": "_:Nc42cdf3cc2564bf28e9b76bff96a4733"
       },
       "bsc:output": {
-        "@id": "_:Nfe267e423e5b4933b621feedd01323fb"
+        "@id": "_:Nd907a9a419614204bfe05e5753a1e591"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0602"
@@ -52,19 +52,19 @@
       "sc:description": "The causalBuilder is a prototype web application for the curation of molecular interaction causal statements. This interface takes advantage of the VSM framework (https://github.com/vsmjs/) to generate customized VSM-templates for the annotation of specific causal statements. The causal statements generated are compatible with the MI2CAST (Minimum Information about a Molecular Interaction Causal Statement) checklist that is available at https://github.com/MI2CAST/MI2CAST.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3762"
+          "@id": "edam:operation_0226"
         },
         {
-          "@id": "edam:operation_0226"
+          "@id": "edam:operation_3762"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "AGPL-3.0",
       "sc:name": "causalBuilder",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://mi2cast.github.io/causalBuilder/documentation"
@@ -72,7 +72,15 @@
       "sc:url": "https://mi2cast.github.io/causalBuilder/"
     },
     {
-      "@id": "_:Nfe267e423e5b4933b621feedd01323fb",
+      "@id": "_:Nc42cdf3cc2564bf28e9b76bff96a4733",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3671"
+      },
+      "sc:name": "Text"
+    },
+    {
+      "@id": "_:Nd907a9a419614204bfe05e5753a1e591",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3779"
@@ -86,14 +94,6 @@
         }
       ],
       "sc:name": "Annotated text"
-    },
-    {
-      "@id": "_:N6f285e43e6f249fd9dbc84897eb4cfca",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3671"
-      },
-      "sc:name": "Text"
     }
   ]
 }

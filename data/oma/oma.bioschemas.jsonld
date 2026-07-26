@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,43 +36,27 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/nar/gkx1019",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gkaa1007",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gkad1020",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gku1158",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/oma",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Christophe Dessimoz",
       "bsc:input": [
         {
-          "@id": "_:N3303aa8c8fc24d9689489ba264d37251"
+          "@id": "_:Nde139a256cf94cc2b2eda23caf6899e7"
         },
         {
-          "@id": "_:Nada1016d2c81471ebb3bcee6d362b34c"
+          "@id": "_:N2d8f20e7c9784ea69d4d433b5f791d27"
         },
         {
-          "@id": "_:Nea5c681fd15c4ea4a8cb4056d3aaf289"
+          "@id": "_:Na147f93cd0724899a772f3c13ffd1c5e"
         },
         {
-          "@id": "_:N67bbc00dedec4e389cb8db309ba8f25c"
+          "@id": "_:Nb6082aae9eeb4834acaa30fcb954b890"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Desktop application",
         "Database portal",
+        "Desktop application",
         "Web application"
       ],
       "sc:applicationSubCategory": [
@@ -84,26 +68,26 @@
         }
       ],
       "sc:citation": [
-        "pubmed:37962356",
         "pubmed:33174605",
-        "pmcid:PMC10767875",
-        "pmcid:PMC4383958",
-        "pmcid:PMC5753216",
+        "pmcid:PMC7779010",
         {
           "@id": "https://doi.org/10.1093/nar/gkaa1007"
         },
-        "pubmed:29106550",
-        {
-          "@id": "https://doi.org/10.1093/nar/gkx1019"
-        },
-        "pmcid:PMC7779010",
+        "pubmed:37962356",
+        "pmcid:PMC10767875",
         {
           "@id": "https://doi.org/10.1093/nar/gkad1020"
         },
+        "pubmed:25399418",
+        "pmcid:PMC4383958",
         {
           "@id": "https://doi.org/10.1093/nar/gku1158"
         },
-        "pubmed:25399418"
+        "pubmed:29106550",
+        "pmcid:PMC5753216",
+        {
+          "@id": "https://doi.org/10.1093/nar/gkx1019"
+        }
       ],
       "sc:description": "Project that aims to identify orthologs among publicly available, complete genomes. With many hundreds of genomes analyzed to date, it is one of the largest projects of its kind.",
       "sc:featureList": {
@@ -111,9 +95,9 @@
       },
       "sc:name": "OMA",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": "SIB",
       "sc:softwareHelp": {
@@ -122,15 +106,7 @@
       "sc:url": "http://omabrowser.org/oma/home/"
     },
     {
-      "@id": "_:N3303aa8c8fc24d9689489ba264d37251",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2974"
-      },
-      "sc:name": "Protein sequence (raw)"
-    },
-    {
-      "@id": "_:Nada1016d2c81471ebb3bcee6d362b34c",
+      "@id": "_:Nde139a256cf94cc2b2eda23caf6899e7",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0842"
@@ -138,7 +114,23 @@
       "sc:name": "Identifier"
     },
     {
-      "@id": "_:Nea5c681fd15c4ea4a8cb4056d3aaf289",
+      "@id": "_:N2d8f20e7c9784ea69d4d433b5f791d27",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2974"
+      },
+      "sc:name": "Protein sequence (raw)"
+    },
+    {
+      "@id": "_:Na147f93cd0724899a772f3c13ffd1c5e",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3671"
+      },
+      "sc:name": "Text"
+    },
+    {
+      "@id": "_:Nb6082aae9eeb4834acaa30fcb954b890",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3021"
@@ -146,12 +138,20 @@
       "sc:name": "UniProt accession"
     },
     {
-      "@id": "_:N67bbc00dedec4e389cb8db309ba8f25c",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3671"
-      },
-      "sc:name": "Text"
+      "@id": "https://doi.org/10.1093/nar/gkad1020",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/gkaa1007",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/gkx1019",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/gku1158",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

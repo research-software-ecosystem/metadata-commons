@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,10 +36,6 @@
   },
   "@graph": [
     {
-      "@id": "https://orcid.org/0000-0002-8029-7160",
-      "@type": "sc:Person"
-    },
-    {
       "@id": "https://bio.tools/eucaim-cdm-federated-unbalance-cheker",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
@@ -47,21 +43,21 @@
       },
       "bsc:input": [
         {
-          "@id": "_:N40317128aea44b8da42e0eaf8f22faeb"
+          "@id": "_:N5d04b4074d6944769393dfd172b244ba"
         },
         {
-          "@id": "_:N0f16b175327449bea3bf9dcb75593e56"
+          "@id": "_:Nf8a5eb6d5b564f68bfbe39f084eb54aa"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N0f340280f02c44868b56b79254d11b6e"
+          "@id": "_:N016f982d66f34ceb86f22e62b1664c3b"
         },
         {
-          "@id": "_:N3da04ed2ba1c4218a0a7c873fd7dceed"
+          "@id": "_:N1b21cbef5d7f453d89c4bfeb0620f098"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3572"
@@ -77,9 +73,9 @@
       "sc:license": "MIT",
       "sc:name": "EUCAIM CDM Federated Unbalance Cheker",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://gitlab.bsc.es/fl/eucaim-cdm-federated-unbalance/-/blob/main/README.md"
@@ -88,7 +84,7 @@
       "sc:url": "https://gitlab.bsc.es/fl/eucaim-cdm-federated-unbalance"
     },
     {
-      "@id": "_:N40317128aea44b8da42e0eaf8f22faeb",
+      "@id": "_:N5d04b4074d6944769393dfd172b244ba",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1772"
@@ -96,7 +92,7 @@
       "sc:name": "Score"
     },
     {
-      "@id": "_:N0f16b175327449bea3bf9dcb75593e56",
+      "@id": "_:Nf8a5eb6d5b564f68bfbe39f084eb54aa",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"
@@ -104,7 +100,7 @@
       "sc:name": "Report"
     },
     {
-      "@id": "_:N0f340280f02c44868b56b79254d11b6e",
+      "@id": "_:N016f982d66f34ceb86f22e62b1664c3b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1772"
@@ -112,12 +108,16 @@
       "sc:name": "Score"
     },
     {
-      "@id": "_:N3da04ed2ba1c4218a0a7c873fd7dceed",
+      "@id": "_:N1b21cbef5d7f453d89c4bfeb0620f098",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1772"
       },
       "sc:name": "Score"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-8029-7160",
+      "@type": "sc:Person"
     }
   ]
 }

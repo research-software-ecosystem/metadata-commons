@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,17 +39,17 @@
       "@id": "https://bio.tools/covenntree",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nc7343a7a04464e928ad118e85ce04096"
+        "@id": "_:N94349d5c25674aa7a9b534132b9763fb"
       },
       "bsc:output": [
         {
-          "@id": "_:N902a41f8c4eb40beae4d1805466b94d7"
+          "@id": "_:N6364658ad01b436bb401de8404201db9"
         },
         {
-          "@id": "_:N9fcfda3c79d849b5a769085d8ff2664b"
+          "@id": "_:N6fd3f3bf6ef24a97b4dd59d3850b9e93"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Web application"
@@ -59,10 +59,10 @@
           "@id": "edam:topic_3070"
         },
         {
-          "@id": "edam:topic_3174"
+          "@id": "edam:topic_0092"
         },
         {
-          "@id": "edam:topic_0092"
+          "@id": "edam:topic_3174"
         }
       ],
       "sc:citation": [
@@ -75,10 +75,10 @@
       "sc:description": "It is developed to simultaneously compare up to three multifarious datasets by aggregating and propagating information from the bottom to the top level and produces a graphical output in Cytoscape. With the introduction of weighted Venn structures, the contents and relationships of various datasets can be correlated and simultaneously aggregated without losing information. It has been integrated into the Galaxy ToolShed and can be directly downloaded and integrated into the user instance.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3432"
+          "@id": "edam:operation_3436"
         },
         {
-          "@id": "edam:operation_3436"
+          "@id": "edam:operation_3432"
         },
         {
           "@id": "edam:operation_0337"
@@ -87,8 +87,8 @@
       "sc:isAccessibleForFree": true,
       "sc:name": "CoVennTree",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "https://toolshed.g2.bx.psu.edu/repository?repository_id=a28ac1e84572e3ca&changeset_revision=745aede829e9"
@@ -96,7 +96,7 @@
       "sc:url": "https://toolshed.g2.bx.psu.edu/repository?repository_id=a28ac1e84572e3ca"
     },
     {
-      "@id": "_:Nc7343a7a04464e928ad118e85ce04096",
+      "@id": "_:N94349d5c25674aa7a9b534132b9763fb",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3028"
@@ -107,18 +107,7 @@
       "sc:name": "Taxonomy"
     },
     {
-      "@id": "_:N902a41f8c4eb40beae4d1805466b94d7",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2526"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Text data"
-    },
-    {
-      "@id": "_:N9fcfda3c79d849b5a769085d8ff2664b",
+      "@id": "_:N6364658ad01b436bb401de8404201db9",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2600"
@@ -127,6 +116,17 @@
         "@id": "edam:format_2330"
       },
       "sc:name": "Pathway or network"
+    },
+    {
+      "@id": "_:N6fd3f3bf6ef24a97b4dd59d3850b9e93",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2526"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Text data"
     },
     {
       "@id": "https://doi.org/10.3389/fgene.2015.00043",

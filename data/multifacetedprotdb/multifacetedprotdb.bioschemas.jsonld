@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,6 +36,10 @@
   },
   "@graph": [
     {
+      "@id": "https://orcid.org/0000-0002-0274-5669",
+      "@type": "sc:Person"
+    },
+    {
       "@id": "https://doi.org/10.1093/nar/gkad783",
       "@type": "sc:CreativeWork"
     },
@@ -44,59 +48,55 @@
       "@type": "sc:Person"
     },
     {
-      "@id": "https://orcid.org/0000-0002-0274-5669",
-      "@type": "sc:Person"
-    },
-    {
       "@id": "https://bio.tools/multifacetedprotdb",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
-        "Elisa Bertolini",
-        "Giulia Babbi",
         {
           "@id": "https://orcid.org/0000-0002-0274-5669"
         },
+        "Elisa Bertolini",
+        "Giulia Babbi",
         "Rita Casadio"
       ],
       "bsc:input": [
         {
-          "@id": "_:N23021751f55942abbe8a08b477583f5f"
+          "@id": "_:Nd8728c1896f54b78a3ea7fc55d750d14"
         },
         {
-          "@id": "_:Na200f6367ea74bedbbdaa423f2157b9f"
+          "@id": "_:N5bd9cf8c26fb45fb9715c4cc8207e071"
         },
         {
-          "@id": "_:N1544b34d604a46b89a10063f87cfe48c"
+          "@id": "_:N15be86368d8f490fb4dfe8ee1a5c200f"
         },
         {
-          "@id": "_:N49d5a1ee5f4d4abb82e380ecf7f3532a"
+          "@id": "_:N905aaf3e6f844b61956c7062a14af0f3"
         },
         {
-          "@id": "_:N7caf082be2d440c7b17487860e772d76"
+          "@id": "_:Nd0d7fa962b2e45819b3b1a0b316809eb"
         },
         {
-          "@id": "_:N098efde1b69d482a9b0d7ab7cda3607c"
+          "@id": "_:Nf5edf06c053841c0b41f99a535abebf0"
         },
         {
-          "@id": "_:Nd2c29ab311ed45cd9399c123b5ccd525"
+          "@id": "_:N6080d9b49d6c4223b4705f690d21978e"
         },
         {
-          "@id": "_:N4370a601008d42d6892f6e2f0afeb482"
+          "@id": "_:N2f03a7833a9c453e95a17afd6bb709c0"
         },
         {
-          "@id": "_:Nc442615fe61b42d0939c7e4b91f3875e"
+          "@id": "_:Nc9f91b299cdb4a0181ba33cc92239745"
         },
         {
-          "@id": "_:Ndb2429f85f404c91bdc19940c6ecbd33"
+          "@id": "_:N8d78767f406c4a0b98ee4304d004fcbb"
         },
         {
-          "@id": "_:Nc68b7237209d460081da8f652716e16d"
+          "@id": "_:N8f002b5567494775831ff4a5899e393c"
         }
       ],
       "bsc:output": {
-        "@id": "_:N63079800e21e4954bd540510fb83a52d"
+        "@id": "_:Ncd5ec8e17e4e4e30a14522e97fc4cc66"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Database portal",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_1775"
@@ -109,11 +109,11 @@
         "Giulia Babbi"
       ],
       "sc:citation": [
+        "pubmed:37791887",
+        "pmcid:PMC10767882",
         {
           "@id": "https://doi.org/10.1093/nar/gkad783"
-        },
-        "pubmed:37791887",
-        "pmcid:PMC10767882"
+        }
       ],
       "sc:description": "MultifacetedProtDB is an integrated and manually curated database providing a comprehensive collection of multifunctional UniProt/SwissProt human proteins.",
       "sc:featureList": {
@@ -123,9 +123,9 @@
       "sc:license": "CC-BY-NC-4.0",
       "sc:name": "MultifacetedProtDB",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": "ELIXIR-ITA-BOLOGNA",
       "sc:softwareHelp": {
@@ -134,63 +134,7 @@
       "sc:url": "https://multifacetedprotdb.biocomp.unibo.it/"
     },
     {
-      "@id": "_:N23021751f55942abbe8a08b477583f5f",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3668"
-      },
-      "sc:name": "Disease name"
-    },
-    {
-      "@id": "_:Na200f6367ea74bedbbdaa423f2157b9f",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3667"
-      },
-      "sc:name": "Disease identifier"
-    },
-    {
-      "@id": "_:N1544b34d604a46b89a10063f87cfe48c",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3021"
-      },
-      "sc:name": "UniProt accession"
-    },
-    {
-      "@id": "_:N49d5a1ee5f4d4abb82e380ecf7f3532a",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1176"
-      },
-      "sc:name": "GO concept ID"
-    },
-    {
-      "@id": "_:N7caf082be2d440c7b17487860e772d76",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2299"
-      },
-      "sc:name": "Gene name"
-    },
-    {
-      "@id": "_:N098efde1b69d482a9b0d7ab7cda3607c",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1138"
-      },
-      "sc:name": "Pfam accession number"
-    },
-    {
-      "@id": "_:Nd2c29ab311ed45cd9399c123b5ccd525",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1009"
-      },
-      "sc:name": "Protein name"
-    },
-    {
-      "@id": "_:N4370a601008d42d6892f6e2f0afeb482",
+      "@id": "_:Nd8728c1896f54b78a3ea7fc55d750d14",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2892"
@@ -198,7 +142,23 @@
       "sc:name": "Cell type name"
     },
     {
-      "@id": "_:Nc442615fe61b42d0939c7e4b91f3875e",
+      "@id": "_:N5bd9cf8c26fb45fb9715c4cc8207e071",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3667"
+      },
+      "sc:name": "Disease identifier"
+    },
+    {
+      "@id": "_:N15be86368d8f490fb4dfe8ee1a5c200f",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3668"
+      },
+      "sc:name": "Disease name"
+    },
+    {
+      "@id": "_:N905aaf3e6f844b61956c7062a14af0f3",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1011"
@@ -206,7 +166,23 @@
       "sc:name": "EC number"
     },
     {
-      "@id": "_:Ndb2429f85f404c91bdc19940c6ecbd33",
+      "@id": "_:Nd0d7fa962b2e45819b3b1a0b316809eb",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1176"
+      },
+      "sc:name": "GO concept ID"
+    },
+    {
+      "@id": "_:Nf5edf06c053841c0b41f99a535abebf0",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2299"
+      },
+      "sc:name": "Gene name"
+    },
+    {
+      "@id": "_:N6080d9b49d6c4223b4705f690d21978e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1133"
@@ -214,7 +190,7 @@
       "sc:name": "InterPro accession"
     },
     {
-      "@id": "_:Nc68b7237209d460081da8f652716e16d",
+      "@id": "_:N2f03a7833a9c453e95a17afd6bb709c0",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1155"
@@ -222,7 +198,31 @@
       "sc:name": "Pathway ID (reactome)"
     },
     {
-      "@id": "_:N63079800e21e4954bd540510fb83a52d",
+      "@id": "_:Nc9f91b299cdb4a0181ba33cc92239745",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1138"
+      },
+      "sc:name": "Pfam accession number"
+    },
+    {
+      "@id": "_:N8d78767f406c4a0b98ee4304d004fcbb",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1009"
+      },
+      "sc:name": "Protein name"
+    },
+    {
+      "@id": "_:N8f002b5567494775831ff4a5899e393c",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3021"
+      },
+      "sc:name": "UniProt accession"
+    },
+    {
+      "@id": "_:Ncd5ec8e17e4e4e30a14522e97fc4cc66",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0896"

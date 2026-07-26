@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,29 +36,25 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/nar/gkm981",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/toxodb",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Ndc9693b33eb3430c9edff1063353fb5a"
+        "@id": "_:N564fdec51f7541a5a1a1a1d33534d14c"
       },
       "bsc:output": {
-        "@id": "_:N81831ab0d10c4f67ae987a420bf3f066"
+        "@id": "_:Na3d5650b510c4f8c9e635b17e1d6c0fa"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Database portal",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0621"
       },
       "sc:citation": [
+        "pubmed:18003657",
+        "pmcid:PMC2238934",
         {
           "@id": "https://doi.org/10.1093/nar/gkm981"
-        },
-        "pubmed:18003657",
-        "pmcid:PMC2238934"
+        }
       ],
       "sc:description": "Genomic-scale datasets associated with the eukaryotic pathogens Toxoplasma.",
       "sc:featureList": {
@@ -66,8 +62,8 @@
       },
       "sc:name": "Toxoplasma genome resources (ToxoDB)",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -76,7 +72,15 @@
       "sc:url": "http://toxodb.org/toxo/"
     },
     {
-      "@id": "_:N81831ab0d10c4f67ae987a420bf3f066",
+      "@id": "_:N564fdec51f7541a5a1a1a1d33534d14c",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2295"
+      },
+      "sc:name": "Gene ID"
+    },
+    {
+      "@id": "_:Na3d5650b510c4f8c9e635b17e1d6c0fa",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0916"
@@ -87,12 +91,8 @@
       "sc:name": "Gene report"
     },
     {
-      "@id": "_:Ndc9693b33eb3430c9edff1063353fb5a",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2295"
-      },
-      "sc:name": "Gene ID"
+      "@id": "https://doi.org/10.1093/nar/gkm981",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

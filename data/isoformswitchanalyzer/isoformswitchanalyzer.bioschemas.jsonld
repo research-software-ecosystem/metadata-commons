@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,17 +36,9 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1158/1541-7786.MCR-16-0459",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1093/bioinformatics/btz247",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/isoformswitchanalyzer",
       "@type": "sc:SoftwareApplication",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Library",
       "sc:applicationSubCategory": [
         {
@@ -66,9 +58,9 @@
         }
       ],
       "sc:contributor": [
-        "Jeroen Gilis",
+        "Chunxu Han",
         "Elena Iriondo Delgado",
-        "Chunxu Han"
+        "Jeroen Gilis"
       ],
       "sc:description": "Analysis of alternative splicing and isoform switches with predicted functional consequences (e.g. gain/loss of protein domains etc.) from quantification of all types of RNA-seq (short/long) by tools such as Kallisto, Salmon, StringTie, Tallon, IsoQuant etc.",
       "sc:featureList": [
@@ -83,8 +75,8 @@
       "sc:license": "GPL-2.0-or-later",
       "sc:name": "IsoformSwitchAnalyzeR",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -92,6 +84,14 @@
       },
       "sc:softwareVersion": "2.12.0",
       "sc:url": "https://bioconductor.org/packages/IsoformSwitchAnalyzeR"
+    },
+    {
+      "@id": "https://doi.org/10.1093/bioinformatics/btz247",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1158/1541-7786.MCR-16-0459",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

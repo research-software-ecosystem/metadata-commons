@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,55 +36,47 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/nar/gkw343",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.7490/f1000research.1114334.1",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/presartools",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Galaxy Support Team",
       "bsc:input": [
         {
-          "@id": "_:N39634834d6ed453daa5a3457f282918e"
+          "@id": "_:N573d264507ac4fa4b3a9c7f27ba9760e"
         },
         {
-          "@id": "_:N0c3af04e0a46404c86a7c37ed8e0176e"
+          "@id": "_:N88551c5d95774208a2b187c960b0566a"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N18992a0cf3a64613af3188c44c5ca686"
+          "@id": "_:Naef483c553c947869e05820703cda472"
         },
         {
-          "@id": "_:N2134bf7d65b04b9bbf4cf2f4a5359c13"
+          "@id": "_:N499b1ba25e8746a4be308703ed6ead8c"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_3071"
+        },
         {
           "@id": "edam:topic_0203"
         },
         {
           "@id": "edam:topic_3170"
-        },
-        {
-          "@id": "edam:topic_3071"
         }
       ],
       "sc:citation": [
         "pubmed:27137889",
+        "pmcid:PMC4987906",
         {
           "@id": "https://doi.org/10.1093/nar/gkw343"
         },
         {
           "@id": "https://doi.org/10.7490/f1000research.1114334.1"
-        },
-        "pmcid:PMC4987906"
+        }
       ],
       "sc:description": "Generate design/target file and archive for SARTools inputs.",
       "sc:featureList": {
@@ -93,8 +85,8 @@
       "sc:name": "presartools",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://galaxy.pasteur.fr/root?tool_id=toolshed.pasteur.fr%2Frepos%2Fmvalade%2Fpresartools%2Fpresartools%2F0.1.0"
@@ -103,7 +95,7 @@
       "sc:url": "https://github.com/PF2-pasteur-fr/SARTools"
     },
     {
-      "@id": "_:N39634834d6ed453daa5a3457f282918e",
+      "@id": "_:N573d264507ac4fa4b3a9c7f27ba9760e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0006"
@@ -114,7 +106,7 @@
       "sc:name": "Data"
     },
     {
-      "@id": "_:N0c3af04e0a46404c86a7c37ed8e0176e",
+      "@id": "_:N88551c5d95774208a2b187c960b0566a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0006"
@@ -125,7 +117,18 @@
       "sc:name": "Data"
     },
     {
-      "@id": "_:N18992a0cf3a64613af3188c44c5ca686",
+      "@id": "_:Naef483c553c947869e05820703cda472",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0006"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2333"
+      },
+      "sc:name": "Data"
+    },
+    {
+      "@id": "_:N499b1ba25e8746a4be308703ed6ead8c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0006"
@@ -136,15 +139,12 @@
       "sc:name": "Data"
     },
     {
-      "@id": "_:N2134bf7d65b04b9bbf4cf2f4a5359c13",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0006"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2333"
-      },
-      "sc:name": "Data"
+      "@id": "https://doi.org/10.7490/f1000research.1114334.1",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/gkw343",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

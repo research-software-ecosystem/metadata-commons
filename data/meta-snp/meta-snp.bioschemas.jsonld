@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,6 +36,10 @@
   },
   "@graph": [
     {
+      "@id": "http://orcid.org/0000-0002-2323-0963",
+      "@type": "sc:Person"
+    },
+    {
       "@id": "https://bio.tools/meta-snp",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
@@ -43,16 +47,16 @@
       },
       "bsc:input": [
         {
-          "@id": "_:N001a680876484b3e963acf97120aa077"
+          "@id": "_:Nb687ea6427314388b03892b3972c52fd"
         },
         {
-          "@id": "_:N718a43af01d6460491da412af74eaddf"
+          "@id": "_:Ne75663eb0fa446acb826c4ded39bb449"
         }
       ],
       "bsc:output": {
-        "@id": "_:N22b8805da028421ebca3a046f22fb365"
+        "@id": "_:Nd4e05628897e4820a1ba4afbb54b5267"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web service",
       "sc:applicationSubCategory": [
         {
@@ -66,8 +70,8 @@
         "@id": "http://orcid.org/0000-0002-2323-0963"
       },
       "sc:citation": [
-        "pmcid:PMC3839641",
         "pubmed:23819846",
+        "pmcid:PMC3839641",
         {
           "@id": "https://doi.org/10.1186/1471-2164-14-s3-s2"
         }
@@ -79,9 +83,9 @@
       "sc:isAccessibleForFree": true,
       "sc:name": "Meta-SNP",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://snps.biofold.org/meta-snp/pages/help.html"
@@ -90,18 +94,7 @@
       "sc:url": "http://snps.biofold.org/meta-snp"
     },
     {
-      "@id": "_:N22b8805da028421ebca3a046f22fb365",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1622"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2331"
-      },
-      "sc:name": "Disease report"
-    },
-    {
-      "@id": "_:N001a680876484b3e963acf97120aa077",
+      "@id": "_:Nb687ea6427314388b03892b3972c52fd",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2209"
@@ -112,7 +105,7 @@
       "sc:name": "Mutation ID"
     },
     {
-      "@id": "_:N718a43af01d6460491da412af74eaddf",
+      "@id": "_:Ne75663eb0fa446acb826c4ded39bb449",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2974"
@@ -123,8 +116,15 @@
       "sc:name": "Protein sequence (raw)"
     },
     {
-      "@id": "http://orcid.org/0000-0002-2323-0963",
-      "@type": "sc:Person"
+      "@id": "_:Nd4e05628897e4820a1ba4afbb54b5267",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1622"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2331"
+      },
+      "sc:name": "Disease report"
     },
     {
       "@id": "https://doi.org/10.1186/1471-2164-14-s3-s2",

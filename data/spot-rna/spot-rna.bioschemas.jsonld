@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,32 +40,28 @@
       "@type": "sc:Person"
     },
     {
-      "@id": "https://doi.org/10.1038/s41467-019-13395-9",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/SPOT-RNA",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "https://orcid.org/0000-0002-0478-5533"
       },
       "bsc:input": {
-        "@id": "_:N631b864463724c18aa466142cfe62b7e"
+        "@id": "_:Nab69a0debf204d57965d9de79c71ec18"
       },
       "bsc:output": {
-        "@id": "_:Nc63975e8813342a287b0a08a954674ae"
+        "@id": "_:N3431054d640441d7b9dc817f1e1188af"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0097"
       },
       "sc:citation": [
         "pubmed:31776342",
+        "pmcid:PMC6881452",
         {
           "@id": "https://doi.org/10.1038/s41467-019-13395-9"
-        },
-        "pmcid:PMC6881452"
+        }
       ],
       "sc:description": "RNA secondary structure predictor",
       "sc:featureList": {
@@ -80,15 +76,7 @@
       "sc:url": "http://sparks-lab.org/jaswinder/server/SPOT-RNA/"
     },
     {
-      "@id": "_:Nc63975e8813342a287b0a08a954674ae",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0880"
-      },
-      "sc:name": "RNA secondary structure"
-    },
-    {
-      "@id": "_:N631b864463724c18aa466142cfe62b7e",
+      "@id": "_:Nab69a0debf204d57965d9de79c71ec18",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3495"
@@ -97,6 +85,18 @@
         "@id": "edam:format_1929"
       },
       "sc:name": "RNA sequence"
+    },
+    {
+      "@id": "_:N3431054d640441d7b9dc817f1e1188af",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0880"
+      },
+      "sc:name": "RNA secondary structure"
+    },
+    {
+      "@id": "https://doi.org/10.1038/s41467-019-13395-9",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,37 +40,37 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N67ac7196ea384b75aa225f4ae5be15ea"
+          "@id": "_:N43308dc55832453cb6bd639f893eee8f"
         },
         {
-          "@id": "_:N5304a35e51e8417598bd15d7fb6c577c"
+          "@id": "_:Nf9105601d89b47feb3c142bc225f82e9"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N1c98aa3c4c594e71877afafb2271b376"
+          "@id": "_:N7e5a9c0a9b104b53b597960b95cc35bb"
         },
         {
-          "@id": "_:N79c20a5cb3de42cb8a281a4e760d30f3"
+          "@id": "_:Na98c8ab697274420825f7ba32499f3b8"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Bioinformatics portal",
       "sc:applicationSubCategory": [
         {
           "@id": "edam:topic_0091"
         },
         {
-          "@id": "edam:topic_3391"
+          "@id": "edam:topic_0219"
         },
         {
           "@id": "edam:topic_3512"
         },
         {
-          "@id": "edam:topic_3170"
+          "@id": "edam:topic_3391"
         },
         {
-          "@id": "edam:topic_0219"
+          "@id": "edam:topic_3170"
         }
       ],
       "sc:description": "Curated plant RNASeq data portal, focusing on multiple transcriptomes of Capsicum annuum. The portal currently contains about 70 high quality hand-curated studies, along with pre-computed quality charts, analysis-ready data in csv, parquet and yaml (metadata) forms and advanced search that allows to pick not just full studies but also individual samples into the dataset. \n\nFour curated Capsicum transcriptomes are currently available.\n\nThe portal is free for academic use, both for students and researchers. Working E-mail or social login is required as protection from botnet attacks. Academic email automatically unlocks full access, otherwise you can contact us to unlock it if you think you are eligible.",
@@ -81,9 +81,9 @@
       "sc:license": "Other",
       "sc:name": "Verdanta.tech",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://verdanta.tech/data-organization/"
@@ -92,15 +92,7 @@
       "sc:url": "https://verdanta.tech"
     },
     {
-      "@id": "_:N67ac7196ea384b75aa225f4ae5be15ea",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0842"
-      },
-      "sc:name": "Identifier"
-    },
-    {
-      "@id": "_:N5304a35e51e8417598bd15d7fb6c577c",
+      "@id": "_:N43308dc55832453cb6bd639f893eee8f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2589"
@@ -108,7 +100,15 @@
       "sc:name": "Hierarchy"
     },
     {
-      "@id": "_:N1c98aa3c4c594e71877afafb2271b376",
+      "@id": "_:Nf9105601d89b47feb3c142bc225f82e9",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0842"
+      },
+      "sc:name": "Identifier"
+    },
+    {
+      "@id": "_:N7e5a9c0a9b104b53b597960b95cc35bb",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2603"
@@ -116,7 +116,7 @@
       "sc:name": "Expression data"
     },
     {
-      "@id": "_:N79c20a5cb3de42cb8a281a4e760d30f3",
+      "@id": "_:Na98c8ab697274420825f7ba32499f3b8",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"

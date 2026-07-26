@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,6 +36,10 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1371/journal.pone.0243135",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/nra-tool",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
@@ -47,26 +51,26 @@
         }
       ],
       "bsc:input": {
-        "@id": "_:Nbd8bdab9f1d5441db35668b0d0d7635b"
+        "@id": "_:Nd0538bda1b3749c4b55799c83c1499c2"
       },
       "bsc:output": [
         {
-          "@id": "_:N27334a42bb664acc8a9229aff3a29439"
+          "@id": "_:Nad8314bb4ed040849115ba906c277a31"
         },
         {
-          "@id": "_:N6cecc770272c4a6d906f2b286b6d9cf6"
+          "@id": "_:N344bd88b1bf5496bb2757fada9e34ff2"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3855"
+          "@id": "edam:topic_3050"
         },
         {
           "@id": "edam:topic_0092"
         },
         {
-          "@id": "edam:topic_3050"
+          "@id": "edam:topic_3855"
         }
       ],
       "sc:author": [
@@ -102,7 +106,7 @@
       "sc:url": "https://sourceforge.net/projects/arcgis-nra-tool/"
     },
     {
-      "@id": "_:Nbd8bdab9f1d5441db35668b0d0d7635b",
+      "@id": "_:Nd0538bda1b3749c4b55799c83c1499c2",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2019"
@@ -110,7 +114,15 @@
       "sc:name": "Map data"
     },
     {
-      "@id": "_:N27334a42bb664acc8a9229aff3a29439",
+      "@id": "_:Nad8314bb4ed040849115ba906c277a31",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2019"
+      },
+      "sc:name": "Map data"
+    },
+    {
+      "@id": "_:N344bd88b1bf5496bb2757fada9e34ff2",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"
@@ -121,20 +133,8 @@
       "sc:name": "Report"
     },
     {
-      "@id": "_:N6cecc770272c4a6d906f2b286b6d9cf6",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2019"
-      },
-      "sc:name": "Map data"
-    },
-    {
       "@id": "https://orcid.org/0000-0003-1954-334X",
       "@type": "sc:Person"
-    },
-    {
-      "@id": "https://doi.org/10.1371/journal.pone.0243135",
-      "@type": "sc:CreativeWork"
     },
     {
       "@id": "https://orcid.org/0000-0002-6860-8085",

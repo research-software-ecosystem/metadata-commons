@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,32 +39,32 @@
       "@id": "https://bio.tools/StructureProfiler",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
-        "NAOMI ChemBio Suite Support",
-        "ProteinsPlus Support"
+        "ProteinsPlus Support",
+        "NAOMI ChemBio Suite Support"
       ],
       "bsc:input": [
         {
-          "@id": "_:N5e3cbb06c0cf4801b9e68327f6e88f2b"
+          "@id": "_:N4ccc207dcf4d41eca664431512fbdc4f"
         },
         {
-          "@id": "_:N60d08a8865724e069ec7a9563e9ea207"
+          "@id": "_:Nea18d090ea6e4dca8aaa90805f6935e3"
         },
         {
-          "@id": "_:N065997aae9114888924f705791878f21"
+          "@id": "_:Naced2d7f88ec45f9830497d31d217cac"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Nfe1ba12ce681490da72d48c336503984"
+          "@id": "_:Nd1c9586fac2a403fb896edf3a2b85656"
         },
         {
-          "@id": "_:N0906fb51a3e24e62b9227ada94a9a0c6"
+          "@id": "_:N7b6813a703de4e7cbb4765a864eb4338"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web API",
         "Command-line tool",
+        "Web API",
         "Web service"
       ],
       "sc:applicationSubCategory": [
@@ -72,19 +72,19 @@
           "@id": "edam:topic_0091"
         },
         {
-          "@id": "edam:topic_3534"
+          "@id": "edam:topic_3572"
         },
         {
           "@id": "edam:topic_3336"
+        },
+        {
+          "@id": "edam:topic_3534"
         },
         {
           "@id": "edam:topic_1317"
         },
         {
           "@id": "edam:topic_0081"
-        },
-        {
-          "@id": "edam:topic_3572"
         }
       ],
       "sc:citation": [
@@ -96,6 +96,9 @@
       "sc:description": "Three-dimensional protein structures play a vital role in drug design. Structure-based design necessitates an in-depth examination of the available quality data before using the structure in computational experiments and for method evaluation. StructureProfiler assists in automatically profiling sets of protein-ligand complex structures based on multiple quality indicators, ranging from model characteristics, e.g., the R factor, and active site features, e.g., bond length deviations, to ligand properties such as electron density support and the validity of torsion angles.",
       "sc:featureList": [
         {
+          "@id": "edam:operation_3695"
+        },
+        {
           "@id": "edam:operation_1844"
         },
         {
@@ -106,18 +109,15 @@
         },
         {
           "@id": "edam:operation_0321"
-        },
-        {
-          "@id": "edam:operation_3695"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "Other",
       "sc:name": "StructureProfiler",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": "University of Hamburg, ZBH - Center for Bioinformatics",
       "sc:softwareHelp": {
@@ -126,7 +126,7 @@
       "sc:url": "https://www.zbh.uni-hamburg.de/en/forschung/amd/software/structureprofiler.html"
     },
     {
-      "@id": "_:N5e3cbb06c0cf4801b9e68327f6e88f2b",
+      "@id": "_:N4ccc207dcf4d41eca664431512fbdc4f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1460"
@@ -137,23 +137,23 @@
       "sc:name": "Protein structure"
     },
     {
-      "@id": "_:N60d08a8865724e069ec7a9563e9ea207",
+      "@id": "_:Nea18d090ea6e4dca8aaa90805f6935e3",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1461"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_3814"
+          "@id": "edam:format_1476"
         },
         {
-          "@id": "edam:format_1476"
+          "@id": "edam:format_3814"
         }
       ],
       "sc:name": "Protein-ligand complex"
     },
     {
-      "@id": "_:N065997aae9114888924f705791878f21",
+      "@id": "_:Naced2d7f88ec45f9830497d31d217cac",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1463"
@@ -164,7 +164,7 @@
       "sc:name": "Small molecule structure"
     },
     {
-      "@id": "_:Nfe1ba12ce681490da72d48c336503984",
+      "@id": "_:Nd1c9586fac2a403fb896edf3a2b85656",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2991"
@@ -172,7 +172,7 @@
       "sc:name": "Protein geometry data"
     },
     {
-      "@id": "_:N0906fb51a3e24e62b9227ada94a9a0c6",
+      "@id": "_:N7b6813a703de4e7cbb4765a864eb4338",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1539"

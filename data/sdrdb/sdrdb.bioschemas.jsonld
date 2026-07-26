@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,12 +39,12 @@
       "@id": "https://bio.tools/sdrdb",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nb2fe0583a74a40ad8bbf240c0ca40fd6"
+        "@id": "_:Nccb5d0e7a7e14d38a30cfdea6ba83462"
       },
       "bsc:output": {
-        "@id": "_:N06e0d2c772b94551baaa60ad31c3aec0"
+        "@id": "_:N7a9e3e60bdf2417987fd69adf84b1ef3"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Database portal",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0080"
@@ -58,20 +58,20 @@
       "sc:url": "http://www.bioinfo.ifm.liu.se/services/sdr/"
     },
     {
-      "@id": "_:N06e0d2c772b94551baaa60ad31c3aec0",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1277"
-      },
-      "sc:name": "Protein features"
-    },
-    {
-      "@id": "_:Nb2fe0583a74a40ad8bbf240c0ca40fd6",
+      "@id": "_:Nccb5d0e7a7e14d38a30cfdea6ba83462",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2976"
       },
       "sc:name": "Protein sequence"
+    },
+    {
+      "@id": "_:N7a9e3e60bdf2417987fd69adf84b1ef3",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1277"
+      },
+      "sc:name": "Protein features"
     }
   ]
 }

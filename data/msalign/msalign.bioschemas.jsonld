@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,16 +40,16 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Nef4a25e4437146718848de2be5076e49"
+          "@id": "_:N73e1d7bf75c3410ab7c7720ead71532c"
         },
         {
-          "@id": "_:Nb1ae38d650884527ac2f90d930881b4b"
+          "@id": "_:N7f10dba9ee024faaa90e6ddbf1a813d1"
         }
       ],
       "bsc:output": {
-        "@id": "_:N19ad8f301dc043d0845d047937156c57"
+        "@id": "_:N75279ebaedb843138c39abf15c76917f"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
@@ -75,8 +75,8 @@
       "sc:license": "GPL-3.0",
       "sc:name": "msalign",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "http://www.ms-utils.org/msalign/index.html"
@@ -84,18 +84,7 @@
       "sc:url": "http://www.ms-utils.org/msalign/index.html"
     },
     {
-      "@id": "_:N19ad8f301dc043d0845d047937156c57",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1916"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1921"
-      },
-      "sc:name": "Alignment"
-    },
-    {
-      "@id": "_:Nef4a25e4437146718848de2be5076e49",
+      "@id": "_:N73e1d7bf75c3410ab7c7720ead71532c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0943"
@@ -106,7 +95,7 @@
       "sc:name": "Mass spectrometry spectra"
     },
     {
-      "@id": "_:Nb1ae38d650884527ac2f90d930881b4b",
+      "@id": "_:N7f10dba9ee024faaa90e6ddbf1a813d1",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0945"
@@ -115,6 +104,17 @@
         "@id": "edam:format_3655"
       },
       "sc:name": "Peptide identification"
+    },
+    {
+      "@id": "_:N75279ebaedb843138c39abf15c76917f",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1916"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1921"
+      },
+      "sc:name": "Alignment"
     },
     {
       "@id": "https://doi.org/10.1016/j.jasms.2007.07.018",

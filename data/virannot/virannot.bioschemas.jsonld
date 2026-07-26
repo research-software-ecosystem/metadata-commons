@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,10 +36,6 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1094/PBIOMES-07-19-0037-A",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "http://orcid.org/0000-0001-7361-4159",
       "@type": "sc:Person"
     },
@@ -51,19 +47,19 @@
       },
       "bsc:input": [
         {
-          "@id": "_:Nf63ad977174d4644b9b978eac33461c6"
+          "@id": "_:N6afe5ccb4b704697a3adcf6d9c6d0885"
         },
         {
-          "@id": "_:N28e86dbc6c314b89a43195b5319ee3a8"
+          "@id": "_:Nef616ec75bd54632a575a4edf1da3ed2"
         },
         {
-          "@id": "_:Nd3dcb55a53454a3caf4e6ed4118f2fde"
+          "@id": "_:Nc6e915c4663247d49adc82175a89d8c3"
         }
       ],
       "bsc:output": {
-        "@id": "_:Nd3ef03b88ff449d6ad00bbe78678ee61"
+        "@id": "_:Nf0996fe120214b3e8c76e2fb353ffb40"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
@@ -90,13 +86,13 @@
       "sc:description": "VirAnnot was build to ease the assembly, blast search, taxonomic annotation and OTUs assignation of viral metagenomic HTS data. It is used in Virologie team of UMR1332 BFP laboratory at INRAE. VirAnnot also takes part of the Euphresco project \"Plant Health Bioinformatics Network\". See more.\n\nIt is designed to identify viruses in plant metagenomic data but it can be used to assemble and annotate any sequences with the NCBI taxonomy.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0291"
-        },
-        {
           "@id": "edam:operation_0361"
         },
         {
           "@id": "edam:operation_0566"
+        },
+        {
+          "@id": "edam:operation_0291"
         }
       ],
       "sc:name": "virAnnot",
@@ -107,15 +103,7 @@
       "sc:url": "https://github.com/marieBvr/virAnnot"
     },
     {
-      "@id": "_:Nf63ad977174d4644b9b978eac33461c6",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2976"
-      },
-      "sc:name": "Protein sequence"
-    },
-    {
-      "@id": "_:N28e86dbc6c314b89a43195b5319ee3a8",
+      "@id": "_:N6afe5ccb4b704697a3adcf6d9c6d0885",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2977"
@@ -123,7 +111,15 @@
       "sc:name": "Nucleic acid sequence"
     },
     {
-      "@id": "_:Nd3dcb55a53454a3caf4e6ed4118f2fde",
+      "@id": "_:Nef616ec75bd54632a575a4edf1da3ed2",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2976"
+      },
+      "sc:name": "Protein sequence"
+    },
+    {
+      "@id": "_:Nc6e915c4663247d49adc82175a89d8c3",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2977"
@@ -134,7 +130,7 @@
       "sc:name": "Nucleic acid sequence"
     },
     {
-      "@id": "_:Nd3ef03b88ff449d6ad00bbe78678ee61",
+      "@id": "_:Nf0996fe120214b3e8c76e2fb353ffb40",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0872"
@@ -143,6 +139,10 @@
         "@id": "edam:format_2331"
       },
       "sc:name": "Phylogenetic tree"
+    },
+    {
+      "@id": "https://doi.org/10.1094/PBIOMES-07-19-0037-A",
+      "@type": "sc:CreativeWork"
     },
     {
       "@id": "https://orcid.org/0000-0002-3093-5873",

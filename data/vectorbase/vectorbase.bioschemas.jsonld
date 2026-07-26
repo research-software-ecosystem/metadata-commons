@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -43,34 +43,34 @@
       "@id": "https://bio.tools/vectorbase",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
-        "VectorBase contact email",
-        "Dan Lawson"
+        "Dan Lawson",
+        "VectorBase contact email"
       ],
       "bsc:input": {
-        "@id": "_:N43df9f0709ee474389f6f5e614282bda"
+        "@id": "_:Nf129afce58e142f1a64417d6bc5562c5"
       },
       "bsc:output": {
-        "@id": "_:N51d7e67d19eb4d31b1af412e8a6faa87"
+        "@id": "_:N4e88460654f64372b5b89b52b6465250"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Database portal",
       "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_0114"
+        },
         {
           "@id": "edam:topic_0622"
         },
         {
           "@id": "edam:topic_0078"
-        },
-        {
-          "@id": "edam:topic_0114"
         }
       ],
       "sc:citation": [
+        "pubmed:19028744",
+        "pmcid:PMC2686483",
         {
           "@id": "https://doi.org/10.1093/nar/gkn857"
-        },
-        "pubmed:19028744",
-        "pmcid:PMC2686483"
+        }
       ],
       "sc:description": "Bioinformatic Resource Center focused on invertebrate vectors of human pathogens. It annotates and curates vector genomes providing a web accessible integrated resource for the research community. Currently, it contains genome information for three mosquito species: Aedes aegypti, Anopheles gambiae and Culex quinquefasciatus, a body louse Pediculus humanus and a tick species Ixodes scapularis.",
       "sc:featureList": {
@@ -78,8 +78,8 @@
       },
       "sc:name": "VectorBase",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:provider": "Identifiers.org",
@@ -89,7 +89,7 @@
       "sc:url": "http://www.vectorbase.org/"
     },
     {
-      "@id": "_:N43df9f0709ee474389f6f5e614282bda",
+      "@id": "_:Nf129afce58e142f1a64417d6bc5562c5",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2759"
@@ -97,7 +97,7 @@
       "sc:name": "Gene ID (VectorBase)"
     },
     {
-      "@id": "_:N51d7e67d19eb4d31b1af412e8a6faa87",
+      "@id": "_:N4e88460654f64372b5b89b52b6465250",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2749"

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,10 +36,6 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btac125",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/bamtocov",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
@@ -47,23 +43,23 @@
       },
       "bsc:input": [
         {
-          "@id": "_:N13e3d78d45a845b89f23c3e3db6015e4"
+          "@id": "_:Nf1889dd41f274937baa0cf6d0cf03f51"
         },
         {
-          "@id": "_:Nf32849fe0fb749d7b775d79e06a70cfa"
+          "@id": "_:N0f9c0f84fc9a4f65aae889aa06acfa24"
         }
       ],
       "bsc:output": {
-        "@id": "_:N87667cb63b0b4f929974b01f92e8cb19"
+        "@id": "_:Nec278d28189b442289ae79b7c4a7f0c3"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:author": {
         "@id": "https://orcid.org/0000-0003-0160-9312"
       },
       "sc:citation": [
-        "pmcid:PMC9048650",
         "pubmed:35199151",
+        "pmcid:PMC9048650",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btac125"
         },
@@ -78,18 +74,18 @@
       "sc:license": "MIT",
       "sc:name": "bamtocov",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:softwareVersion": [
         "2.5.0",
-        "2.8.0",
-        "2.7.0"
+        "2.7.0",
+        "2.8.0"
       ],
       "sc:url": "https://telatin.github.io/bamtocov/"
     },
     {
-      "@id": "_:N13e3d78d45a845b89f23c3e3db6015e4",
+      "@id": "_:Nf1889dd41f274937baa0cf6d0cf03f51",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3002"
@@ -100,7 +96,7 @@
       "sc:name": "Annotation track"
     },
     {
-      "@id": "_:Nf32849fe0fb749d7b775d79e06a70cfa",
+      "@id": "_:N0f9c0f84fc9a4f65aae889aa06acfa24",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1383"
@@ -116,7 +112,7 @@
       "sc:name": "Nucleic acid sequence alignment"
     },
     {
-      "@id": "_:N87667cb63b0b4f929974b01f92e8cb19",
+      "@id": "_:Nec278d28189b442289ae79b7c4a7f0c3",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3002"
@@ -132,11 +128,15 @@
       "sc:name": "Annotation track"
     },
     {
-      "@id": "https://orcid.org/0000-0001-7619-281X",
-      "@type": "sc:Person"
+      "@id": "https://doi.org/10.1093/bioinformatics/btac125",
+      "@type": "sc:CreativeWork"
     },
     {
       "@id": "https://orcid.org/0000-0003-0160-9312",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-7619-281X",
       "@type": "sc:Person"
     },
     {

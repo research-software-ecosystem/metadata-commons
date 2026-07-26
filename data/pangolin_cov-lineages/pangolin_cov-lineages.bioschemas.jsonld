@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,19 +36,15 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/ve/veab064",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/pangolin_cov-lineages",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N7b247670c50f49b8991c016accab29f2"
+        "@id": "_:N106776aaab4443b2bf783d22e6fe9b2b"
       },
       "bsc:output": {
-        "@id": "_:Na8b3cbf5d0c7474cafa83b14b1f68f26"
+        "@id": "_:Na37e0fc2d8704e58802ad2ab04adc060"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0781"
@@ -64,24 +60,24 @@
       "sc:description": "Phylogenetic Assignment of Named Global Outbreak LINeages - software package for assigning SARS-CoV-2 genome sequences to global lineages",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3225"
+          "@id": "edam:operation_0499"
         },
         {
-          "@id": "edam:operation_0499"
+          "@id": "edam:operation_3225"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "GPL-3.0",
       "sc:name": "pangolin",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:softwareVersion": "v4.0 -  v4.3.1",
       "sc:url": "https://cov-lineages.org/resources/pangolin.html"
     },
     {
-      "@id": "_:N7b247670c50f49b8991c016accab29f2",
+      "@id": "_:N106776aaab4443b2bf783d22e6fe9b2b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3494"
@@ -92,7 +88,7 @@
       "sc:name": "DNA sequence"
     },
     {
-      "@id": "_:Na8b3cbf5d0c7474cafa83b14b1f68f26",
+      "@id": "_:Na37e0fc2d8704e58802ad2ab04adc060",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1872"
@@ -101,6 +97,10 @@
         "@id": "edam:format_3751"
       },
       "sc:name": "Taxonomic classification"
+    },
+    {
+      "@id": "https://doi.org/10.1093/ve/veab064",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -44,21 +44,21 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N592480859ba249e58f7cb60245fd04e1"
+          "@id": "_:Ne12535a5327d4b1a84a3375a601aae3c"
         },
         {
-          "@id": "_:N0416ed31d69046dcb31d90d85e056e89"
+          "@id": "_:N73fa4c96c42944a897711ae8e0d8d2f0"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Nfdfd965bf7aa4f0bb089d290196ea48a"
+          "@id": "_:N6b62c31fe8d7476c8668e89ade825994"
         },
         {
-          "@id": "_:N6f481ec8baeb4809b6bf7f04d5331637"
+          "@id": "_:Ne77fe735db1f45669c653802148bf971"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
@@ -69,8 +69,8 @@
         }
       ],
       "sc:citation": [
-        "pmcid:PMC3443552",
         "pubmed:22688413",
+        "pmcid:PMC3443552",
         {
           "@id": "https://doi.org/10.1038/nmeth.2066"
         }
@@ -82,9 +82,9 @@
       "sc:license": "MIT",
       "sc:name": "MetaPhlAn",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://github.com/biobakery/MetaPhlAn"
@@ -92,7 +92,18 @@
       "sc:url": "http://segatalab.cibio.unitn.it/tools/metaphlan/index.html"
     },
     {
-      "@id": "_:N592480859ba249e58f7cb60245fd04e1",
+      "@id": "_:Ne12535a5327d4b1a84a3375a601aae3c",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3028"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3751"
+      },
+      "sc:name": "Taxonomy"
+    },
+    {
+      "@id": "_:N73fa4c96c42944a897711ae8e0d8d2f0",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3494"
@@ -111,7 +122,7 @@
       "sc:name": "DNA sequence"
     },
     {
-      "@id": "_:N0416ed31d69046dcb31d90d85e056e89",
+      "@id": "_:N6b62c31fe8d7476c8668e89ade825994",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3028"
@@ -122,18 +133,7 @@
       "sc:name": "Taxonomy"
     },
     {
-      "@id": "_:Nfdfd965bf7aa4f0bb089d290196ea48a",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3028"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3751"
-      },
-      "sc:name": "Taxonomy"
-    },
-    {
-      "@id": "_:N6f481ec8baeb4809b6bf7f04d5331637",
+      "@id": "_:Ne77fe735db1f45669c653802148bf971",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3028"

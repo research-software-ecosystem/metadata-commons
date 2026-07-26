@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -38,8 +38,11 @@
     {
       "@id": "https://bio.tools/eucamod",
       "@type": "sc:SoftwareApplication",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_3295"
+        },
         {
           "@id": "edam:topic_4021"
         },
@@ -47,13 +50,10 @@
           "@id": "edam:topic_0780"
         },
         {
-          "@id": "edam:topic_3308"
-        },
-        {
-          "@id": "edam:topic_3295"
-        },
-        {
           "@id": "edam:topic_3170"
+        },
+        {
+          "@id": "edam:topic_3308"
         }
       ],
       "sc:citation": [
@@ -66,16 +66,16 @@
       "sc:description": "EucaMOD is a comprehensive multi-omics database for Eucalyptus trees, integrating genomics, transcriptomics, epigenetics, and variomics data. It provides a range of analysis tools and a tutorial page for data mining and genetic breeding research.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0337"
+          "@id": "edam:operation_3196"
+        },
+        {
+          "@id": "edam:operation_0308"
         },
         {
           "@id": "edam:operation_0445"
         },
         {
-          "@id": "edam:operation_3196"
-        },
-        {
-          "@id": "edam:operation_0308"
+          "@id": "edam:operation_0337"
         }
       ],
       "sc:name": "Eucalyptus Multi-omics Database (EucaMOD)",

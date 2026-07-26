@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -41,24 +41,24 @@
       "biotools:primaryContact": "Brian Searle",
       "bsc:input": [
         {
-          "@id": "_:N1a033a9f14a9490f8b7a6dcaeff2398e"
+          "@id": "_:Nc64caf8d93d8490e9d51b9e8973b330f"
         },
         {
-          "@id": "_:N04cd64fb34eb4d9abb615f691bd0330c"
+          "@id": "_:N47f38b6a9cc2421180655812505fc97b"
         },
         {
-          "@id": "_:Neebd49a4d4a44ac3972979343b13bf3a"
+          "@id": "_:N881bc8e1882144e087790b674c493be2"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N738b323f691f4b58bd4f710d0afa8960"
+          "@id": "_:Nd15f1d4098f946f0bce0e26bdf2fc412"
         },
         {
-          "@id": "_:N3e4d7e9e85954a9890d5798683589105"
+          "@id": "_:Ncffe839df3894b0caf7f0fa9f17c550c"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Desktop application",
       "sc:applicationSubCategory": [
         {
@@ -72,30 +72,30 @@
       "sc:description": "EncyclopeDIA is library search engine comprised of several algorithms for DIA data analysis and can search for peptides using either DDA-based spectrum libraries or DIA-based chromatogram libraries.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3631"
+          "@id": "edam:operation_3215"
         },
         {
           "@id": "edam:operation_3646"
         },
         {
+          "@id": "edam:operation_3631"
+        },
+        {
           "@id": "edam:operation_3860"
         },
         {
-          "@id": "edam:operation_0335"
-        },
-        {
-          "@id": "edam:operation_3215"
-        },
-        {
           "@id": "edam:operation_3649"
+        },
+        {
+          "@id": "edam:operation_0335"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "Apache-2.0",
       "sc:name": "EncyclopeDIA",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -105,18 +105,7 @@
       "sc:url": "https://bitbucket.org/searleb/encyclopedia/"
     },
     {
-      "@id": "_:N738b323f691f4b58bd4f710d0afa8960",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0945"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3245"
-      },
-      "sc:name": "Peptide identification"
-    },
-    {
-      "@id": "_:N3e4d7e9e85954a9890d5798683589105",
+      "@id": "_:Nc64caf8d93d8490e9d51b9e8973b330f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0943"
@@ -127,7 +116,18 @@
       "sc:name": "Mass spectrometry spectra"
     },
     {
-      "@id": "_:N1a033a9f14a9490f8b7a6dcaeff2398e",
+      "@id": "_:N47f38b6a9cc2421180655812505fc97b",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0850"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "Sequence set"
+    },
+    {
+      "@id": "_:N881bc8e1882144e087790b674c493be2",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0943"
@@ -138,7 +138,18 @@
       "sc:name": "Mass spectrometry spectra"
     },
     {
-      "@id": "_:N04cd64fb34eb4d9abb615f691bd0330c",
+      "@id": "_:Nd15f1d4098f946f0bce0e26bdf2fc412",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0945"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3245"
+      },
+      "sc:name": "Peptide identification"
+    },
+    {
+      "@id": "_:Ncffe839df3894b0caf7f0fa9f17c550c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0943"
@@ -147,17 +158,6 @@
         "@id": "edam:format_3621"
       },
       "sc:name": "Mass spectrometry spectra"
-    },
-    {
-      "@id": "_:Neebd49a4d4a44ac3972979343b13bf3a",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0850"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1929"
-      },
-      "sc:name": "Sequence set"
     }
   ]
 }

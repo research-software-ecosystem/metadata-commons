@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,45 +36,41 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.18129/B9.bioc.flowPlots",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/flowplots",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Nb701703b548e47a0b83ed3bf1f46eb8e"
+          "@id": "_:N3613245c52ea4433925e09d685e6823d"
         },
         {
-          "@id": "_:N6e87b461a8494adeaf190bd482c24a1e"
+          "@id": "_:Nc7e0903254aa4c138437007e96f5ca03"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N1515a1e6d8ba4c939910d53f6aaf9378"
+          "@id": "_:Ncbc246a354114fdc8ba8afb0722e5f30"
         },
         {
-          "@id": "_:Nbca4ae657acb47bf8ce17608f9065a56"
+          "@id": "_:N3a6cc811c2334cc18ea3b2644cedb078"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_0092"
-        },
         {
           "@id": "edam:topic_3306"
         },
         {
-          "@id": "edam:topic_3361"
+          "@id": "edam:topic_0092"
         },
         {
           "@id": "edam:topic_2830"
+        },
+        {
+          "@id": "edam:topic_3361"
         }
       ],
       "sc:citation": {
@@ -83,21 +79,21 @@
       "sc:description": "Graphical displays with embedded statistical tests for gated ICS flow cytometry data, and a data class which stores \"stacked\" data and has methods for computing summary measures on stacked data, such as marginal and polyfunctional degree data.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0337"
+          "@id": "edam:operation_2945"
         },
         {
           "@id": "edam:operation_2409"
         },
         {
-          "@id": "edam:operation_2945"
+          "@id": "edam:operation_0337"
         }
       ],
       "sc:license": "Artistic-2.0",
       "sc:name": "flowPlots",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://bioconductor.org/packages/flowPlots"
@@ -106,18 +102,7 @@
       "sc:url": "https://bioconductor.org/packages/flowPlots"
     },
     {
-      "@id": "_:Nb701703b548e47a0b83ed3bf1f46eb8e",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2048"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Report"
-    },
-    {
-      "@id": "_:N6e87b461a8494adeaf190bd482c24a1e",
+      "@id": "_:N3613245c52ea4433925e09d685e6823d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3108"
@@ -128,7 +113,34 @@
       "sc:name": "Experimental measurement"
     },
     {
-      "@id": "_:N1515a1e6d8ba4c939910d53f6aaf9378",
+      "@id": "_:Nc7e0903254aa4c138437007e96f5ca03",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2048"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Report"
+    },
+    {
+      "@id": "_:Ncbc246a354114fdc8ba8afb0722e5f30",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2884"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Plot"
+    },
+    {
+      "@id": "_:N3a6cc811c2334cc18ea3b2644cedb078",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"
@@ -144,20 +156,8 @@
       "sc:name": "Report"
     },
     {
-      "@id": "_:Nbca4ae657acb47bf8ce17608f9065a56",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2884"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_3547"
-        }
-      ],
-      "sc:name": "Plot"
+      "@id": "https://doi.org/10.18129/B9.bioc.flowPlots",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

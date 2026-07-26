@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,19 +36,15 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1038/srep17617",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/arabidopsis_growth_regulators_network",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nad84bbfdd5394a868ac92c789703aa7c"
+        "@id": "_:N4f6021bb116a4b7f8b00d869f65fc3c9"
       },
       "bsc:output": {
-        "@id": "_:Nd963872f0f264d449ac41ecf4a24e9b6"
+        "@id": "_:N64cab67304304e3aa42542d833952b7e"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Library",
       "sc:applicationSubCategory": [
         {
@@ -59,11 +55,11 @@
         }
       ],
       "sc:citation": [
+        "pubmed:26620795",
+        "pmcid:PMC4664945",
         {
           "@id": "https://doi.org/10.1038/srep17617"
-        },
-        "pubmed:26620795",
-        "pmcid:PMC4664945"
+        }
       ],
       "sc:description": "Integrated network of Arabidopsis growth regulators.",
       "sc:featureList": {
@@ -82,7 +78,7 @@
       "sc:url": "http://bioinformatics.psb.ugent.be/supplementary_data/ehsab/gene_prioritization/"
     },
     {
-      "@id": "_:Nd963872f0f264d449ac41ecf4a24e9b6",
+      "@id": "_:N4f6021bb116a4b7f8b00d869f65fc3c9",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2600"
@@ -90,12 +86,16 @@
       "sc:name": "Pathway or network"
     },
     {
-      "@id": "_:Nad84bbfdd5394a868ac92c789703aa7c",
+      "@id": "_:N64cab67304304e3aa42542d833952b7e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2600"
       },
       "sc:name": "Pathway or network"
+    },
+    {
+      "@id": "https://doi.org/10.1038/srep17617",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

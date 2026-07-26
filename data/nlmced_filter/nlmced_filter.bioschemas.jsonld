@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,10 +36,6 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1504/IJCVR.2018.090012",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://doi.org/10.1002/mrm.28676",
       "@type": "sc:CreativeWork"
     },
@@ -47,22 +43,22 @@
       "@id": "https://bio.tools/nlmced_filter",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N742894f52dbe43fa97aee5b3bf373904"
+        "@id": "_:N94cb201684664ae1a6208696a918c879"
       },
       "bsc:output": {
-        "@id": "_:N8208dbccd8d34e6fa5b1ca72e580e4c9"
+        "@id": "_:N7ff12933395b43b392265ac01f503a30"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Script",
       "sc:applicationSubCategory": [
         {
           "@id": "edam:topic_3382"
         },
         {
-          "@id": "edam:topic_3384"
+          "@id": "edam:topic_3444"
         },
         {
-          "@id": "edam:topic_3444"
+          "@id": "edam:topic_3384"
         }
       ],
       "sc:citation": [
@@ -86,8 +82,8 @@
       "sc:license": "CC-BY-NC-ND-4.0",
       "sc:name": "NLmCED Filter",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -97,7 +93,7 @@
       "sc:url": "https://github.com/FerielRamdhane/NLmCED-Filter/tree/main"
     },
     {
-      "@id": "_:N742894f52dbe43fa97aee5b3bf373904",
+      "@id": "_:N94cb201684664ae1a6208696a918c879",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2968"
@@ -108,23 +104,27 @@
       "sc:name": "Image"
     },
     {
-      "@id": "_:N8208dbccd8d34e6fa5b1ca72e580e4c9",
+      "@id": "_:N7ff12933395b43b392265ac01f503a30",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2968"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_3579"
+          "@id": "edam:format_3548"
         },
         {
-          "@id": "edam:format_3548"
+          "@id": "edam:format_3579"
         },
         {
           "@id": "edam:format_3626"
         }
       ],
       "sc:name": "Image"
+    },
+    {
+      "@id": "https://doi.org/10.1504/IJCVR.2018.090012",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,33 +39,33 @@
       "@id": "https://bio.tools/ab-amy",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N4e850d0a00f647a08c267e8d547182e8"
+        "@id": "_:Nb198cd5b4708488197d25de14769f7ac"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
+          "@id": "edam:topic_2830"
+        },
+        {
           "@id": "edam:topic_3474"
+        },
+        {
+          "@id": "edam:topic_0621"
         },
         {
           "@id": "edam:topic_0634"
         },
         {
-          "@id": "edam:topic_2830"
-        },
-        {
           "@id": "edam:topic_3377"
-        },
-        {
-          "@id": "edam:topic_0621"
         }
       ],
       "sc:citation": [
+        "pubmed:37492587",
+        "pmcid:PMC10365155",
         {
           "@id": "https://doi.org/10.1093/ABT/TBAD007"
-        },
-        "pmcid:PMC10365155",
-        "pubmed:37492587"
+        }
       ],
       "sc:description": "Machine learning aided amyloidogenic risk prediction of therapeutic antibody light chains.",
       "sc:featureList": [
@@ -83,24 +83,24 @@
       "sc:license": "CC-BY-NC-4.0",
       "sc:name": "AB-Amy",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:url": "http://i.uestc.edu.cn/AB-Amy/"
     },
     {
-      "@id": "_:N4e850d0a00f647a08c267e8d547182e8",
+      "@id": "_:Nb198cd5b4708488197d25de14769f7ac",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2976"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_1957"
+          "@id": "edam:format_1929"
         },
         {
-          "@id": "edam:format_1929"
+          "@id": "edam:format_1957"
         }
       ],
       "sc:name": "Protein sequence"

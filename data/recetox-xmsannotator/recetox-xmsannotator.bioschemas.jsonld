@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,16 +40,16 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Nbc53d8b78c6d429394713725e3f438f4"
+          "@id": "_:N74442ed791cf4a56a8634d613e0a4d95"
         },
         {
-          "@id": "_:N02cbd7df7c274e3ca210a4ea03937bd8"
+          "@id": "_:Nf8a2ca3925d048c6b48e1244bad55dee"
         }
       ],
       "bsc:output": {
-        "@id": "_:N897023b9f829427895bfd0955cf386c4"
+        "@id": "_:N81226b28d37e4c5b94d8e2dfe04cb7da"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Library",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3172"
@@ -58,10 +58,10 @@
       "sc:description": "Annotation tool for untargeted LCMS1 data. Uses a database and adduct list for compound annotation and intensity networks, isotopic patterns and pathways for annotation scoring.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3629"
+          "@id": "edam:operation_0226"
         },
         {
-          "@id": "edam:operation_0226"
+          "@id": "edam:operation_3629"
         },
         {
           "@id": "edam:operation_0533"
@@ -77,23 +77,23 @@
       "sc:url": "https://github.com/RECETOX/recetox-xMSannotator"
     },
     {
-      "@id": "_:N897023b9f829427895bfd0955cf386c4",
+      "@id": "_:N74442ed791cf4a56a8634d613e0a4d95",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2603"
+        "@id": "edam:data_3917"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_3751"
+          "@id": "edam:format_2333"
         },
         {
-          "@id": "edam:format_2333"
+          "@id": "edam:format_2330"
         }
       ],
-      "sc:name": "Expression data"
+      "sc:name": "Count matrix"
     },
     {
-      "@id": "_:Nbc53d8b78c6d429394713725e3f438f4",
+      "@id": "_:Nf8a2ca3925d048c6b48e1244bad55dee",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0943"
@@ -104,20 +104,20 @@
       "sc:name": "Mass spectrum"
     },
     {
-      "@id": "_:N02cbd7df7c274e3ca210a4ea03937bd8",
+      "@id": "_:N81226b28d37e4c5b94d8e2dfe04cb7da",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_3917"
+        "@id": "edam:data_2603"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_2330"
+          "@id": "edam:format_2333"
         },
         {
-          "@id": "edam:format_2333"
+          "@id": "edam:format_3751"
         }
       ],
-      "sc:name": "Count matrix"
+      "sc:name": "Expression data"
     }
   ]
 }

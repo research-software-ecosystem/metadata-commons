@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -42,27 +42,27 @@
         "@id": "https://orcid.org/0000-0002-7260-2129"
       },
       "bsc:input": {
-        "@id": "_:N015f5d8d13f74dd185e0b662058e978d"
+        "@id": "_:Na08cb253d2d642dd93d6a92f39628ded"
       },
       "bsc:output": [
         {
-          "@id": "_:N62c5f8935fcf4203a5c4c451e83d45f9"
+          "@id": "_:Ndee185a42a5546ef863a391eef9fc66b"
         },
         {
-          "@id": "_:N0276f715613b419f8ba7bec598dc2939"
+          "@id": "_:N54ab7ef190ea4f94b1cd87e49a85d2e5"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
           "@id": "edam:topic_3071"
         },
         {
-          "@id": "edam:topic_4010"
+          "@id": "edam:topic_3489"
         },
         {
-          "@id": "edam:topic_3489"
+          "@id": "edam:topic_4010"
         }
       ],
       "sc:author": {
@@ -71,40 +71,48 @@
       "sc:description": "An open source research information system, used to manage, collect and analyse research outputs of institutions and networks.",
       "sc:featureList": [
         {
+          "@id": "edam:operation_0224"
+        },
+        {
           "@id": "edam:operation_3760"
         },
         {
           "@id": "edam:operation_0337"
-        },
-        {
-          "@id": "edam:operation_0224"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "MIT",
       "sc:name": "OSIRIS",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:provider": "OSIRIS Solutions GmbH",
       "sc:softwareHelp": [
         {
+          "@id": "https://wiki.osiris-app.de"
+        },
+        {
           "@id": "https://wiki.osiris-app.de/FAQs/"
         },
         {
           "@id": "https://wiki.osiris-app.de/technical/"
-        },
-        {
-          "@id": "https://wiki.osiris-app.de"
         }
       ],
       "sc:softwareVersion": "1.6.0",
       "sc:url": "https://osiris-app.de"
     },
     {
-      "@id": "_:N62c5f8935fcf4203a5c4c451e83d45f9",
+      "@id": "_:Na08cb253d2d642dd93d6a92f39628ded",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3505"
+      },
+      "sc:name": "Bibliography"
+    },
+    {
+      "@id": "_:Ndee185a42a5546ef863a391eef9fc66b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"
@@ -112,20 +120,12 @@
       "sc:name": "Report"
     },
     {
-      "@id": "_:N0276f715613b419f8ba7bec598dc2939",
+      "@id": "_:N54ab7ef190ea4f94b1cd87e49a85d2e5",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
       },
       "sc:name": "Plot"
-    },
-    {
-      "@id": "_:N015f5d8d13f74dd185e0b662058e978d",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3505"
-      },
-      "sc:name": "Bibliography"
     },
     {
       "@id": "https://orcid.org/0000-0002-7260-2129",

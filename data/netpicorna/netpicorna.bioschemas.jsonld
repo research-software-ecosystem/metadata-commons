@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,17 +39,17 @@
       "@id": "https://bio.tools/netpicorna",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nd7ed76d91b774b3abcc2778842cff3c6"
+        "@id": "_:N4a070d10d0344c1c8f06006d6f843b44"
       },
       "bsc:output": [
         {
-          "@id": "_:N2a2133b6d55542238d0de02d015154e3"
+          "@id": "_:N0a0c73750e0545b3a608dda6a9dc9182"
         },
         {
-          "@id": "_:Nb3d0b84d7b0d45e1979c6e0e8c8f9a16"
+          "@id": "_:N76887f4879c14bb5907ba97176afd82b"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
@@ -82,7 +82,7 @@
       "sc:url": "http://cbs.dtu.dk/services/NetPicoRNA/"
     },
     {
-      "@id": "_:Nd7ed76d91b774b3abcc2778842cff3c6",
+      "@id": "_:N4a070d10d0344c1c8f06006d6f843b44",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
@@ -93,18 +93,7 @@
       "sc:name": "Sequence"
     },
     {
-      "@id": "_:N2a2133b6d55542238d0de02d015154e3",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2955"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2333"
-      },
-      "sc:name": "Sequence report"
-    },
-    {
-      "@id": "_:Nb3d0b84d7b0d45e1979c6e0e8c8f9a16",
+      "@id": "_:N0a0c73750e0545b3a608dda6a9dc9182",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1277"
@@ -113,6 +102,17 @@
         "@id": "edam:format_2330"
       },
       "sc:name": "Protein features"
+    },
+    {
+      "@id": "_:N76887f4879c14bb5907ba97176afd82b",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2955"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2333"
+      },
+      "sc:name": "Sequence report"
     },
     {
       "@id": "https://doi.org/10.1002/pro.5560051107",

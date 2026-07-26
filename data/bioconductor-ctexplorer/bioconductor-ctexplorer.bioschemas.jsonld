@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,17 +36,21 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.18129/B9.bioc.CTexploreR",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/bioconductor-ctexplorer",
       "@type": "sc:SoftwareApplication",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
       ],
       "sc:author": [
         "Axelle Loriot",
-        "Laurent Gatto",
-        "Julie Devis"
+        "Julie Devis",
+        "Laurent Gatto"
       ],
       "sc:citation": {
         "@id": "https://doi.org/10.18129/B9.bioc.CTexploreR"
@@ -57,18 +61,14 @@
       "sc:name": "CTexploreR",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://bioconductor.org/packages/CTexploreR"
       },
       "sc:softwareVersion": "1.8.0",
       "sc:url": "https://bioconductor.org/packages/CTexploreR"
-    },
-    {
-      "@id": "https://doi.org/10.18129/B9.bioc.CTexploreR",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

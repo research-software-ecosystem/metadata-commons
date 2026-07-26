@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,51 +40,51 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N32190686ed124f6c96c370640fb4ac22"
+          "@id": "_:N91479d60cad04116beea85ecaf5ca97c"
         },
         {
-          "@id": "_:N6627e59954654033b41694248aa59934"
+          "@id": "_:N9aa9be4b9a664b34aff3b64dcf67da41"
         },
         {
-          "@id": "_:N0eb2825423894489bbdea1e0a271c890"
+          "@id": "_:Nbd16de9d272942cdb66f3a34fd31cecf"
         },
         {
-          "@id": "_:N0359878555b8404f870189bd15e4279d"
+          "@id": "_:N7c2711cd8437494f92f7e3360fc64886"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Na2866ec19d9f4db08b5342a0673d8c98"
+          "@id": "_:Ndaca3ef0c37249c9b509d7eb0f599d2a"
         },
         {
-          "@id": "_:N90517ffaa7304255a3aacd7276a6eaed"
+          "@id": "_:Nc6cb76ddcd3842a996b0608a11833189"
         },
         {
-          "@id": "_:N0cd7b105796941efbea12bc89eeb2547"
+          "@id": "_:N4a163560cb2a485f9dc25baad88542b7"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Desktop application",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0601"
+          "@id": "edam:topic_0623"
         },
         {
-          "@id": "edam:topic_3520"
+          "@id": "edam:topic_0601"
         },
         {
           "@id": "edam:topic_0121"
         },
         {
-          "@id": "edam:topic_0623"
+          "@id": "edam:topic_3520"
         }
       ],
       "sc:citation": [
+        "pubmed:22186715",
+        "pmcid:PMC3322562",
         {
           "@id": "https://doi.org/10.1074/mcp.m111.010587"
-        },
-        "pubmed:22186715",
-        "pmcid:PMC3322562"
+        }
       ],
       "sc:description": "\"De novo'' assisted database search.",
       "sc:featureList": [
@@ -92,63 +92,157 @@
           "@id": "edam:operation_3694"
         },
         {
-          "@id": "edam:operation_3645"
-        },
-        {
-          "@id": "edam:operation_3643"
-        },
-        {
-          "@id": "edam:operation_3644"
-        },
-        {
-          "@id": "edam:operation_3648"
-        },
-        {
-          "@id": "edam:operation_3631"
-        },
-        {
           "@id": "edam:operation_3441"
         },
         {
-          "@id": "edam:operation_0291"
+          "@id": "edam:operation_3645"
         },
         {
           "@id": "edam:operation_3755"
         },
         {
-          "@id": "edam:operation_3649"
+          "@id": "edam:operation_3646"
+        },
+        {
+          "@id": "edam:operation_3631"
+        },
+        {
+          "@id": "edam:operation_2929"
         },
         {
           "@id": "edam:operation_3767"
         },
         {
-          "@id": "edam:operation_3646"
+          "@id": "edam:operation_0291"
         },
         {
-          "@id": "edam:operation_2929"
+          "@id": "edam:operation_3643"
+        },
+        {
+          "@id": "edam:operation_3649"
+        },
+        {
+          "@id": "edam:operation_3648"
+        },
+        {
+          "@id": "edam:operation_3644"
         }
       ],
       "sc:name": "PEAKS DB",
       "sc:url": "http://www.bioinfor.com/peaks/features/peaksdb.html"
     },
     {
-      "@id": "_:Na2866ec19d9f4db08b5342a0673d8c98",
+      "@id": "_:N91479d60cad04116beea85ecaf5ca97c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_0945"
+        "@id": "edam:data_0943"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3651"
+        },
+        {
+          "@id": "edam:format_3712"
+        },
+        {
+          "@id": "edam:format_3652"
+        },
+        {
+          "@id": "edam:format_3244"
+        },
+        {
+          "@id": "edam:format_3654"
+        },
+        {
+          "@id": "edam:format_3653"
+        }
+      ],
+      "sc:name": "Mass spectrometry spectra"
+    },
+    {
+      "@id": "_:N9aa9be4b9a664b34aff3b64dcf67da41",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2886"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "Protein sequence record"
+    },
+    {
+      "@id": "_:Nbd16de9d272942cdb66f3a34fd31cecf",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0943"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3651"
+        },
+        {
+          "@id": "edam:format_3712"
+        },
+        {
+          "@id": "edam:format_3652"
+        },
+        {
+          "@id": "edam:format_3244"
+        },
+        {
+          "@id": "edam:format_3654"
+        },
+        {
+          "@id": "edam:format_3653"
+        }
+      ],
+      "sc:name": "Mass spectrometry spectra"
+    },
+    {
+      "@id": "_:N7c2711cd8437494f92f7e3360fc64886",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2886"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "Protein sequence record"
+    },
+    {
+      "@id": "_:Ndaca3ef0c37249c9b509d7eb0f599d2a",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2884"
       },
       "sc:encodingFormat": [
         {
           "@id": "edam:format_2331"
         },
         {
+          "@id": "edam:format_3603"
+        }
+      ],
+      "sc:name": "Plot"
+    },
+    {
+      "@id": "_:Nc6cb76ddcd3842a996b0608a11833189",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0945"
+      },
+      "sc:encodingFormat": [
+        {
           "@id": "edam:format_3752"
+        },
+        {
+          "@id": "edam:format_2331"
         }
       ],
       "sc:name": "Peptide identification"
     },
     {
-      "@id": "_:N90517ffaa7304255a3aacd7276a6eaed",
+      "@id": "_:N4a163560cb2a485f9dc25baad88542b7",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0907"
@@ -162,100 +256,6 @@
         }
       ],
       "sc:name": "Protein family report"
-    },
-    {
-      "@id": "_:N0cd7b105796941efbea12bc89eeb2547",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2884"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3603"
-        },
-        {
-          "@id": "edam:format_2331"
-        }
-      ],
-      "sc:name": "Plot"
-    },
-    {
-      "@id": "_:N32190686ed124f6c96c370640fb4ac22",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2886"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1929"
-      },
-      "sc:name": "Protein sequence record"
-    },
-    {
-      "@id": "_:N6627e59954654033b41694248aa59934",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0943"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3244"
-        },
-        {
-          "@id": "edam:format_3652"
-        },
-        {
-          "@id": "edam:format_3654"
-        },
-        {
-          "@id": "edam:format_3651"
-        },
-        {
-          "@id": "edam:format_3712"
-        },
-        {
-          "@id": "edam:format_3653"
-        }
-      ],
-      "sc:name": "Mass spectrometry spectra"
-    },
-    {
-      "@id": "_:N0eb2825423894489bbdea1e0a271c890",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0943"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3651"
-        },
-        {
-          "@id": "edam:format_3244"
-        },
-        {
-          "@id": "edam:format_3652"
-        },
-        {
-          "@id": "edam:format_3654"
-        },
-        {
-          "@id": "edam:format_3712"
-        },
-        {
-          "@id": "edam:format_3653"
-        }
-      ],
-      "sc:name": "Mass spectrometry spectra"
-    },
-    {
-      "@id": "_:N0359878555b8404f870189bd15e4279d",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2886"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1929"
-      },
-      "sc:name": "Protein sequence record"
     },
     {
       "@id": "https://doi.org/10.1074/mcp.m111.010587",

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,35 +36,39 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.18129/B9.bioc.traseR",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/traser",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N5cee38db34cb4aba82eff9502c25b475"
+          "@id": "_:N7778802e959e44c0b454bab73ccfb876"
         },
         {
-          "@id": "_:N725a27cd0e214f1788829042fda8e464"
+          "@id": "_:N0346dc078c1349e7bcfabd7bdf7a91e2"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Nba24b7ad71d64d28b99b9f4bd74213a9"
+          "@id": "_:N8fcfcce36fac43208c1c205477a45619"
         },
         {
-          "@id": "_:Nd78966d179ea4a219ed37e57ed49a8ea"
+          "@id": "_:Ncd8b0c38fad94a7cbf1f273eec99fa85"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3517"
+          "@id": "edam:topic_2885"
         },
         {
-          "@id": "edam:topic_2885"
+          "@id": "edam:topic_3517"
         },
         {
           "@id": "edam:topic_3053"
@@ -80,9 +84,9 @@
       "sc:license": "GPL-1.0-or-later",
       "sc:name": "traseR",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://bioconductor.org/packages/traseR"
@@ -91,7 +95,23 @@
       "sc:url": "https://bioconductor.org/packages/traseR"
     },
     {
-      "@id": "_:N5cee38db34cb4aba82eff9502c25b475",
+      "@id": "_:N7778802e959e44c0b454bab73ccfb876",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3494"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2197"
+        },
+        {
+          "@id": "edam:format_3475"
+        }
+      ],
+      "sc:name": "DNA sequence"
+    },
+    {
+      "@id": "_:N0346dc078c1349e7bcfabd7bdf7a91e2",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1017"
@@ -107,56 +127,36 @@
       "sc:name": "Sequence range"
     },
     {
-      "@id": "_:N725a27cd0e214f1788829042fda8e464",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3494"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3475"
-        },
-        {
-          "@id": "edam:format_2197"
-        }
-      ],
-      "sc:name": "DNA sequence"
-    },
-    {
-      "@id": "_:Nba24b7ad71d64d28b99b9f4bd74213a9",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0951"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_3547"
-        }
-      ],
-      "sc:name": "Statistical estimate score"
-    },
-    {
-      "@id": "_:Nd78966d179ea4a219ed37e57ed49a8ea",
+      "@id": "_:N8fcfcce36fac43208c1c205477a45619",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_2330"
+          "@id": "edam:format_3547"
         },
         {
-          "@id": "edam:format_3547"
+          "@id": "edam:format_2330"
         }
       ],
       "sc:name": "Plot"
     },
     {
-      "@id": "https://doi.org/10.18129/B9.bioc.traseR",
-      "@type": "sc:CreativeWork"
+      "@id": "_:Ncd8b0c38fad94a7cbf1f273eec99fa85",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0951"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Statistical estimate score"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,20 +36,16 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btn344",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/triton",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Martin Prokop",
       "bsc:input": {
-        "@id": "_:Nbaa3840a7e534dce95f4caa027444a1e"
+        "@id": "_:Nff6b792be91946f5b975235d6192cae2"
       },
       "bsc:output": {
-        "@id": "_:N630deb3eca04409682c4323eea2121e2"
+        "@id": "_:N8e367222ee974c0bbb1f90d53fb7c41f"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Desktop application",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3332"
@@ -78,20 +74,20 @@
       "sc:provider": "ELIXIR-CZ",
       "sc:softwareHelp": [
         {
+          "@id": "http://www.ncbr.muni.cz/triton/publications.html"
+        },
+        {
           "@id": "http://www.ncbr.muni.cz/triton/documentation.html"
         },
         {
           "@id": "http://www.ncbr.muni.cz/triton/LICENCE.html"
-        },
-        {
-          "@id": "http://www.ncbr.muni.cz/triton/publications.html"
         }
       ],
       "sc:softwareVersion": "4.0",
       "sc:url": "http://ncbr.chemi.muni.cz/triton/triton.html"
     },
     {
-      "@id": "_:Nbaa3840a7e534dce95f4caa027444a1e",
+      "@id": "_:Nff6b792be91946f5b975235d6192cae2",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1759"
@@ -99,12 +95,16 @@
       "sc:name": "PDB model number"
     },
     {
-      "@id": "_:N630deb3eca04409682c4323eea2121e2",
+      "@id": "_:N8e367222ee974c0bbb1f90d53fb7c41f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"
       },
       "sc:name": "Report"
+    },
+    {
+      "@id": "https://doi.org/10.1093/bioinformatics/btn344",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

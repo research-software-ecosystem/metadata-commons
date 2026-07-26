@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,19 +36,15 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/nar/29.1.308",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/dbsnp",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nf02b28f259f640d9b9029c11a0edd15a"
+        "@id": "_:Nc8009d647b50459b9823fe8bf0bd6265"
       },
       "bsc:output": {
-        "@id": "_:Ncf5874d696994a9d90c3dd572f4cf3a9"
+        "@id": "_:Nca56f6116f724dc68aaf199f4a034920"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Database portal",
         "Web application"
@@ -58,10 +54,10 @@
           "@id": "edam:topic_2885"
         },
         {
-          "@id": "edam:topic_3325"
+          "@id": "edam:topic_3574"
         },
         {
-          "@id": "edam:topic_3574"
+          "@id": "edam:topic_3325"
         },
         {
           "@id": "edam:topic_0080"
@@ -85,15 +81,15 @@
       "sc:isAccessibleForFree": true,
       "sc:name": "dbSNP",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:provider": "NCBI",
       "sc:url": "http://www.ncbi.nlm.nih.gov/SNP/"
     },
     {
-      "@id": "_:Nf02b28f259f640d9b9029c11a0edd15a",
+      "@id": "_:Nc8009d647b50459b9823fe8bf0bd6265",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1106"
@@ -101,7 +97,7 @@
       "sc:name": "dbSNP ID"
     },
     {
-      "@id": "_:Ncf5874d696994a9d90c3dd572f4cf3a9",
+      "@id": "_:Nca56f6116f724dc68aaf199f4a034920",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3498"
@@ -110,6 +106,10 @@
         "@id": "edam:format_2331"
       },
       "sc:name": "Sequence variations"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/29.1.308",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,12 +39,12 @@
       "@id": "https://bio.tools/patternlab",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N18791224ba824be788107c50a92e5fdb"
+        "@id": "_:N3d405f1801f84c7c8a0dd4a8f9eea437"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Suite",
-        "Desktop application"
+        "Desktop application",
+        "Suite"
       ],
       "sc:applicationSubCategory": [
         {
@@ -55,14 +55,17 @@
         }
       ],
       "sc:citation": [
+        "pubmed:18644148",
         "pmcid:PMC2488363",
         {
           "@id": "https://doi.org/10.1186/1471-2105-9-316"
-        },
-        "pubmed:18644148"
+        }
       ],
       "sc:description": "Suite of pattern recognition software for interpretation of quantiative proteomics data.",
       "sc:featureList": [
+        {
+          "@id": "edam:operation_3647"
+        },
         {
           "@id": "edam:operation_3203"
         },
@@ -70,20 +73,17 @@
           "@id": "edam:operation_3634"
         },
         {
-          "@id": "edam:operation_3647"
+          "@id": "edam:operation_3635"
         },
         {
           "@id": "edam:operation_3694"
-        },
-        {
-          "@id": "edam:operation_3635"
         }
       ],
       "sc:name": "PatternLab",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://www.patternlabforproteomics.org/"
@@ -91,17 +91,17 @@
       "sc:url": "http://pcarvalho.com/patternlab/"
     },
     {
-      "@id": "_:N18791224ba824be788107c50a92e5fdb",
+      "@id": "_:N3d405f1801f84c7c8a0dd4a8f9eea437",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0006"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_3244"
+          "@id": "edam:format_3712"
         },
         {
-          "@id": "edam:format_3712"
+          "@id": "edam:format_3244"
         }
       ],
       "sc:name": "Data"

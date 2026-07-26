@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,35 +36,31 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btt656",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/featurecounts",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
         "Yang Liao",
-        "Gordon K Smyth",
-        "Wei Shi"
+        "Wei Shi",
+        "Gordon K Smyth"
       ],
       "bsc:input": [
         {
-          "@id": "_:N2f5ecb91d3764ab292dd293243551146"
+          "@id": "_:N19744ffbe1ad4a62b80a4d908085924d"
         },
         {
-          "@id": "_:N4b361ae9c6ab4db68b34da0d60bf3bf5"
+          "@id": "_:N9134fdcd7ad94b3ca03fc7ccd5ac1567"
         },
         {
-          "@id": "_:Nf03b3eb2455842558b3ae960277a2b58"
+          "@id": "_:N7df0f3a0fe0e4b269ffb9c098300abab"
         },
         {
-          "@id": "_:N0f63daf10ccb4ea2a2342e16ee30cc46"
+          "@id": "_:Nec8d16333caf4dafba0ca4146a26768f"
         }
       ],
       "bsc:output": {
-        "@id": "_:Nc972393cb611451ba999532b1eed0e3d"
+        "@id": "_:N41b8bff401e14e67a4b85bb6259b5e86"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3170"
@@ -78,10 +74,10 @@
       "sc:description": "featureCounts is a very efficient read quantifier. It can be used to summarize RNA-seq reads and gDNA-seq reads to a variety of genomic features such as genes, exons, promoters, gene bodies and genomic bins. It is included in the Bioconductor Rsubread package and also in the SourceForge Subread package.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3793"
+          "@id": "edam:operation_3800"
         },
         {
-          "@id": "edam:operation_3800"
+          "@id": "edam:operation_3793"
         }
       ],
       "sc:license": "GPL-3.0",
@@ -96,7 +92,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/Rsubread.html"
     },
     {
-      "@id": "_:N2f5ecb91d3764ab292dd293243551146",
+      "@id": "_:N19744ffbe1ad4a62b80a4d908085924d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3002"
@@ -107,29 +103,7 @@
       "sc:name": "Annotation track"
     },
     {
-      "@id": "_:N4b361ae9c6ab4db68b34da0d60bf3bf5",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1383"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2573"
-      },
-      "sc:name": "Nucleic acid sequence alignment"
-    },
-    {
-      "@id": "_:Nf03b3eb2455842558b3ae960277a2b58",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1383"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2572"
-      },
-      "sc:name": "Nucleic acid sequence alignment"
-    },
-    {
-      "@id": "_:N0f63daf10ccb4ea2a2342e16ee30cc46",
+      "@id": "_:N9134fdcd7ad94b3ca03fc7ccd5ac1567",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3002"
@@ -140,7 +114,29 @@
       "sc:name": "Annotation track"
     },
     {
-      "@id": "_:Nc972393cb611451ba999532b1eed0e3d",
+      "@id": "_:N7df0f3a0fe0e4b269ffb9c098300abab",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1383"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2572"
+      },
+      "sc:name": "Nucleic acid sequence alignment"
+    },
+    {
+      "@id": "_:Nec8d16333caf4dafba0ca4146a26768f",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1383"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2573"
+      },
+      "sc:name": "Nucleic acid sequence alignment"
+    },
+    {
+      "@id": "_:N41b8bff401e14e67a4b85bb6259b5e86",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3917"
@@ -149,6 +145,10 @@
         "@id": "edam:format_3751"
       },
       "sc:name": "Count matrix"
+    },
+    {
+      "@id": "https://doi.org/10.1093/bioinformatics/btt656",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

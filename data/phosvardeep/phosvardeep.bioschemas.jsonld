@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,38 +39,38 @@
       "@id": "https://bio.tools/phosvardeep",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N211a08e3b6644349be1b117308021f9a"
+        "@id": "_:N5667b39cda094b9c94c1cc9c9f67da7a"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Script",
       "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_3474"
+        },
         {
           "@id": "edam:topic_3063"
         },
         {
           "@id": "edam:topic_0160"
-        },
-        {
-          "@id": "edam:topic_3474"
         }
       ],
       "sc:citation": [
         "pubmed:35310161",
+        "pmcid:PMC8929166",
         {
           "@id": "https://doi.org/10.7717/peerj.12847"
-        },
-        "pmcid:PMC8929166"
+        }
       ],
       "sc:description": "Deep-learning based prediction of phospho-variants using sequence information.",
       "sc:featureList": [
-        {
-          "@id": "edam:operation_0331"
-        },
         {
           "@id": "edam:operation_3092"
         },
         {
           "@id": "edam:operation_0253"
+        },
+        {
+          "@id": "edam:operation_0331"
         }
       ],
       "sc:isAccessibleForFree": true,
@@ -78,13 +78,13 @@
       "sc:name": "PhosVarDeep",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:url": "https://github.com/lisalikegaga/PhosVarDeep"
     },
     {
-      "@id": "_:N211a08e3b6644349be1b117308021f9a",
+      "@id": "_:N5667b39cda094b9c94c1cc9c9f67da7a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2976"

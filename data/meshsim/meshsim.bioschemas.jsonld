@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,21 +36,25 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1142/s0219720015420020",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/meshsim",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Jing ZHou",
       "bsc:input": [
         {
-          "@id": "_:N0e7723cbb66f491097d8fd9c7e3d5b5f"
+          "@id": "_:N564d2bdb6f24450e94ba2dd5a8f21da5"
         },
         {
-          "@id": "_:Nbc43cff59f5b49fd8ea4640c7012590a"
+          "@id": "_:N3333bdb5a6ef45e3a0de147896bb4f12"
         }
       ],
       "bsc:output": {
-        "@id": "_:Nf031ac00a95740e3991d23360042fa98"
+        "@id": "_:Nc0c39ff409bc4653919be8f9be05ee8e"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
@@ -81,9 +85,9 @@
       "sc:license": "GPL-2.0",
       "sc:name": "MeSHSim",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/MeSHSim.html"
@@ -92,23 +96,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/MeSHSim.html"
     },
     {
-      "@id": "_:N0e7723cbb66f491097d8fd9c7e3d5b5f",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2526"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2020"
-        },
-        {
-          "@id": "edam:format_2195"
-        }
-      ],
-      "sc:name": "Text data"
-    },
-    {
-      "@id": "_:Nbc43cff59f5b49fd8ea4640c7012590a",
+      "@id": "_:N564d2bdb6f24450e94ba2dd5a8f21da5",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0582"
@@ -124,7 +112,23 @@
       "sc:name": "Ontology"
     },
     {
-      "@id": "_:Nf031ac00a95740e3991d23360042fa98",
+      "@id": "_:N3333bdb5a6ef45e3a0de147896bb4f12",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2526"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2020"
+        },
+        {
+          "@id": "edam:format_2195"
+        }
+      ],
+      "sc:name": "Text data"
+    },
+    {
+      "@id": "_:Nc0c39ff409bc4653919be8f9be05ee8e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1772"
@@ -133,10 +137,6 @@
         "@id": "edam:format_2330"
       },
       "sc:name": "Score"
-    },
-    {
-      "@id": "https://doi.org/10.1142/s0219720015420020",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

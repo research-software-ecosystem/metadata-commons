@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -38,22 +38,22 @@
     {
       "@id": "https://bio.tools/mph",
       "@type": "sc:SoftwareApplication",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0102"
+          "@id": "edam:topic_3810"
         },
         {
           "@id": "edam:topic_0199"
+        },
+        {
+          "@id": "edam:topic_0102"
         },
         {
           "@id": "edam:topic_3055"
         },
         {
           "@id": "edam:topic_3500"
-        },
-        {
-          "@id": "edam:topic_3810"
         }
       ],
       "sc:citation": [
@@ -66,13 +66,13 @@
       "sc:description": "MPH is a C++ program for fast REML estimation of genetic (co)variance components, designed for large-scale genome partitioning of quantitative genetic variation. It offers enhanced computational efficiency compared to existing tools and is available at the provided GitHub repository.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3659"
-        },
-        {
           "@id": "edam:operation_3196"
         },
         {
           "@id": "edam:operation_3799"
+        },
+        {
+          "@id": "edam:operation_3659"
         }
       ],
       "sc:name": "MPH (MINQUE for Partitioning Heritability)",

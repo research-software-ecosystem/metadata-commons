@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,32 +36,28 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.3390/metabo11020113",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/mmtb",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N9aa2ec3c23654c529a7b22bc0643ead5"
+        "@id": "_:Nedc2eb20c21c457298665791abdc1efe"
       },
       "bsc:output": {
-        "@id": "_:N5848b2bf4ce74846a1298dcdf7fcedbc"
+        "@id": "_:Nd451ae2cd91d424c99721945e14e43d6"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Web application"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3391"
+          "@id": "edam:topic_3307"
         },
         {
           "@id": "edam:topic_0602"
         },
         {
-          "@id": "edam:topic_3307"
+          "@id": "edam:topic_3391"
         }
       ],
       "sc:author": "Julia Koblitz",
@@ -77,8 +73,8 @@
       "sc:name": "MMTB",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:provider": "Leibniz-Institut DSMZ-Deutsche Sammlung von Mikroorganismen und Zellkulturen GmbH",
       "sc:softwareHelp": {
@@ -87,7 +83,15 @@
       "sc:url": "https://mmtb.brenda-enzymes.org/"
     },
     {
-      "@id": "_:N5848b2bf4ce74846a1298dcdf7fcedbc",
+      "@id": "_:Nedc2eb20c21c457298665791abdc1efe",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2526"
+      },
+      "sc:name": "Text data"
+    },
+    {
+      "@id": "_:Nd451ae2cd91d424c99721945e14e43d6",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3869"
@@ -95,12 +99,8 @@
       "sc:name": "Simulation"
     },
     {
-      "@id": "_:N9aa2ec3c23654c529a7b22bc0643ead5",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2526"
-      },
-      "sc:name": "Text data"
+      "@id": "https://doi.org/10.3390/metabo11020113",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

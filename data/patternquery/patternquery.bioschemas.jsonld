@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,10 +36,6 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/nar/gkv561",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/patternquery",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
@@ -49,29 +45,29 @@
       ],
       "bsc:input": [
         {
-          "@id": "_:Nf12013a5578248daa7a0bf39f3281b25"
+          "@id": "_:N226366433f894e70a958ad585fce59eb"
         },
         {
-          "@id": "_:N2b4326ac2978470aad3cb6a6e9c68c6c"
+          "@id": "_:Neca1a9ff169c4ec185013648c97d582e"
         }
       ],
       "bsc:output": {
-        "@id": "_:Nacfe22faf7754f94b4b0dad2f399b3e2"
+        "@id": "_:Nf3d10bbc64bb474091d04db2f218e232"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Web application"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0154"
-        },
-        {
           "@id": "edam:topic_3510"
         },
         {
           "@id": "edam:topic_0166"
+        },
+        {
+          "@id": "edam:topic_0154"
         },
         {
           "@id": "edam:topic_1317"
@@ -89,27 +85,27 @@
         }
       ],
       "sc:contributor": [
-        "Radka Svobodová Vařeková",
         "Crina-Maria Ionescu",
-        "Lukáš Pravda"
+        "Lukáš Pravda",
+        "Radka Svobodová Vařeková"
       ],
       "sc:description": "A web application to define, extract, and analyze structural patterns or biomolecular complexes in real-time.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0570"
+          "@id": "edam:operation_0250"
         },
         {
           "@id": "edam:operation_0245"
         },
         {
-          "@id": "edam:operation_0250"
+          "@id": "edam:operation_0570"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:name": "PatternQuery",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:provider": [
@@ -118,20 +114,20 @@
       ],
       "sc:softwareHelp": [
         {
-          "@id": "http://webchem.ncbr.muni.cz/Platform/Home/About"
+          "@id": "http://nar.oxfordjournals.org/citmgr?gca=nar%3B43%2FW1%2FW383"
         },
         {
           "@id": "http://webchem.ncbr.muni.cz/Wiki/PatternQuery:UserManual"
         },
         {
-          "@id": "http://nar.oxfordjournals.org/citmgr?gca=nar%3B43%2FW1%2FW383"
+          "@id": "http://webchem.ncbr.muni.cz/Platform/Home/About"
         }
       ],
       "sc:softwareVersion": "1.0",
       "sc:url": "http://ncbr.muni.cz/PatternQuery"
     },
     {
-      "@id": "_:Nf12013a5578248daa7a0bf39f3281b25",
+      "@id": "_:N226366433f894e70a958ad585fce59eb",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1127"
@@ -142,7 +138,7 @@
       "sc:name": "PDB ID"
     },
     {
-      "@id": "_:N2b4326ac2978470aad3cb6a6e9c68c6c",
+      "@id": "_:Neca1a9ff169c4ec185013648c97d582e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0883"
@@ -152,7 +148,23 @@
           "@id": "edam:format_1476"
         },
         {
+          "@id": "edam:format_2033"
+        },
+        {
           "@id": "edam:format_1477"
+        }
+      ],
+      "sc:name": "Structure"
+    },
+    {
+      "@id": "_:Nf3d10bbc64bb474091d04db2f218e232",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0883"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_1476"
         },
         {
           "@id": "edam:format_2033"
@@ -161,20 +173,8 @@
       "sc:name": "Structure"
     },
     {
-      "@id": "_:Nacfe22faf7754f94b4b0dad2f399b3e2",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0883"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_1476"
-        },
-        {
-          "@id": "edam:format_2033"
-        }
-      ],
-      "sc:name": "Structure"
+      "@id": "https://doi.org/10.1093/nar/gkv561",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

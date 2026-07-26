@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,15 +36,14 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.3389/fcimb.2022.988717",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/mecaf",
       "@type": "sc:SoftwareApplication",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Script",
       "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_3324"
+        },
         {
           "@id": "edam:topic_3174"
         },
@@ -53,9 +52,6 @@
         },
         {
           "@id": "edam:topic_3168"
-        },
-        {
-          "@id": "edam:topic_3324"
         }
       ],
       "sc:citation": [
@@ -68,21 +64,25 @@
       "sc:description": "A maximum-type microbial differential abundance test with application to high-dimensional microbiome data analyses.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_2238"
+          "@id": "edam:operation_3223"
         },
         {
-          "@id": "edam:operation_3223"
+          "@id": "edam:operation_2238"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "GPL-3.0",
       "sc:name": "MECAF",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:url": "https://github.com/Jiyuan-NYU-Langone/MECAF"
+    },
+    {
+      "@id": "https://doi.org/10.3389/fcimb.2022.988717",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

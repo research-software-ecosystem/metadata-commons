@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,15 +36,11 @@
   },
   "@graph": [
     {
-      "@id": "https://orcid.org/0000-0002-3649-7675",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://doi.org/10.1186/s12859-014-0427-6",
+      "@id": "https://doi.org/10.1186/1471-2105-6-52",
       "@type": "sc:CreativeWork"
     },
     {
-      "@id": "https://doi.org/10.1186/1471-2105-6-52",
+      "@id": "https://doi.org/10.1186/s12859-014-0427-6",
       "@type": "sc:CreativeWork"
     },
     {
@@ -59,30 +55,30 @@
       },
       "bsc:input": [
         {
-          "@id": "_:N9a18c618df35466a84237b2b3b6e2955"
+          "@id": "_:N0851a38077824b798946201d8a608937"
         },
         {
-          "@id": "_:N350338ee1a9142b384a72344744b1dcf"
+          "@id": "_:N7b6bcd2630ec437280ba3b1063ac3a69"
         },
         {
-          "@id": "_:N2d32a0b6db1d4b26b98e66a01e2ce046"
+          "@id": "_:N82fafe12d20a43a29127b87b37f132f2"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Nb6ecdfc5edee4ffcb43e33f70617a3c5"
+          "@id": "_:N7a063cac4b9045a18f3b96994100f2a0"
         },
         {
-          "@id": "_:N7be7aae00ee04e08a173ee4934f2a5eb"
+          "@id": "_:N5fed74e96208498f80f0d6ddac08f0c3"
         },
         {
-          "@id": "_:Nd1db689c40f843cb908a030e6f3d9539"
+          "@id": "_:N0ce8910af3be4304acf55eb8a3fa74c4"
         },
         {
-          "@id": "_:Ne9cf1365e45849f29665f43c8f3604cc"
+          "@id": "_:N0368ba9aa0f142b29b35193d1c44f4fd"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Suite",
         "Web API"
@@ -99,28 +95,28 @@
         {
           "@id": "https://orcid.org/0000-0002-3649-7675"
         },
-        "Edvin Fuglebakk",
-        "Lars Skjærven",
-        "Kidane M Tekle",
-        "Svenn H Grindhaug",
         {
           "@id": "https://orcid.org/0000-0002-0747-3826"
         },
-        "Tristan Cragnolini",
+        "Edvin Fuglebakk",
+        "Gisle Salensminde",
+        "Kidane M Tekle",
+        "Lars Skjærven",
         "Siv M Hollup",
-        "Gisle Salensminde"
+        "Svenn H Grindhaug",
+        "Tristan Cragnolini"
       ],
       "sc:citation": [
-        {
-          "@id": "https://doi.org/10.1186/s12859-014-0427-6"
-        },
+        "pubmed:15762993",
+        "pmcid:PMC1274249",
         {
           "@id": "https://doi.org/10.1186/1471-2105-6-52"
         },
         "pubmed:25547242",
         "pmcid:PMC4339738",
-        "pmcid:PMC1274249",
-        "pubmed:15762993"
+        {
+          "@id": "https://doi.org/10.1186/s12859-014-0427-6"
+        }
       ],
       "sc:description": "WEBnm@ provides quick, automated computation and analysis of low-frequency normal modes for protein structures.",
       "sc:featureList": [
@@ -128,13 +124,13 @@
           "@id": "edam:operation_0244"
         },
         {
-          "@id": "edam:operation_0337"
+          "@id": "edam:operation_0570"
         },
         {
           "@id": "edam:operation_2487"
         },
         {
-          "@id": "edam:operation_0570"
+          "@id": "edam:operation_0337"
         }
       ],
       "sc:isAccessibleForFree": true,
@@ -142,30 +138,30 @@
       "sc:name": "WEBnma",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:provider": [
-        "Department of Molecular Biology, University of Bergen, Norway",
         "Computational Biology Unit, Department of Informatics, University of Bergen, Norway",
+        "Department of Molecular Biology, University of Bergen, Norway",
         "UiB"
       ],
       "sc:softwareHelp": [
-        {
-          "@id": "http://apps.cbu.uib.no/webnma3/howto/single"
-        },
         {
           "@id": "http://apps.cbu.uib.no/webnma3/about"
         },
         {
           "@id": "http://apps.cbu.uib.no/webnma3/qanda"
+        },
+        {
+          "@id": "http://apps.cbu.uib.no/webnma3/howto/single"
         }
       ],
       "sc:softwareVersion": "3.5",
       "sc:url": "http://apps.cbu.uib.no/webnma"
     },
     {
-      "@id": "_:N9a18c618df35466a84237b2b3b6e2955",
+      "@id": "_:N0851a38077824b798946201d8a608937",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1460"
@@ -176,7 +172,7 @@
       "sc:name": "Protein structure"
     },
     {
-      "@id": "_:N350338ee1a9142b384a72344744b1dcf",
+      "@id": "_:N7b6bcd2630ec437280ba3b1063ac3a69",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1460"
@@ -187,7 +183,7 @@
       "sc:name": "Protein structure"
     },
     {
-      "@id": "_:N2d32a0b6db1d4b26b98e66a01e2ce046",
+      "@id": "_:N82fafe12d20a43a29127b87b37f132f2",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0886"
@@ -198,18 +194,18 @@
       "sc:name": "Structure alignment"
     },
     {
-      "@id": "_:Nb6ecdfc5edee4ffcb43e33f70617a3c5",
+      "@id": "_:N7a063cac4b9045a18f3b96994100f2a0",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_0889"
+        "@id": "edam:data_2884"
       },
       "sc:encodingFormat": {
-        "@id": "edam:format_2330"
+        "@id": "edam:format_3508"
       },
-      "sc:name": "Structural profile"
+      "sc:name": "Plot"
     },
     {
-      "@id": "_:N7be7aae00ee04e08a173ee4934f2a5eb",
+      "@id": "_:N5fed74e96208498f80f0d6ddac08f0c3",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1354"
@@ -220,7 +216,7 @@
       "sc:name": "Sequence profile"
     },
     {
-      "@id": "_:Nd1db689c40f843cb908a030e6f3d9539",
+      "@id": "_:N0ce8910af3be4304acf55eb8a3fa74c4",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
@@ -231,15 +227,19 @@
       "sc:name": "Plot"
     },
     {
-      "@id": "_:Ne9cf1365e45849f29665f43c8f3604cc",
+      "@id": "_:N0368ba9aa0f142b29b35193d1c44f4fd",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2884"
+        "@id": "edam:data_0889"
       },
       "sc:encodingFormat": {
-        "@id": "edam:format_3508"
+        "@id": "edam:format_2330"
       },
-      "sc:name": "Plot"
+      "sc:name": "Structural profile"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-3649-7675",
+      "@type": "sc:Person"
     }
   ]
 }

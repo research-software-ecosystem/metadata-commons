@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -38,14 +38,14 @@
     {
       "@id": "https://bio.tools/aligngraph2",
       "@type": "sc:SoftwareApplication",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0769"
+          "@id": "edam:topic_0196"
         },
         {
-          "@id": "edam:topic_0196"
+          "@id": "edam:topic_0769"
         }
       ],
       "sc:citation": [
@@ -57,19 +57,19 @@
       "sc:description": "AlignGraph2 is a tool for genome-assisted reassembly pipeline for PacBio long reads. It extends and refines contigs assembled from the long reads with a published genome similar to the sequencing genome.",
       "sc:featureList": [
         {
+          "@id": "edam:operation_0524"
+        },
+        {
           "@id": "edam:operation_0525"
         },
         {
           "@id": "edam:operation_3798"
         },
         {
-          "@id": "edam:operation_3216"
-        },
-        {
-          "@id": "edam:operation_0524"
-        },
-        {
           "@id": "edam:operation_3198"
+        },
+        {
+          "@id": "edam:operation_3216"
         }
       ],
       "sc:name": "AlignGraph2",

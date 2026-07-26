@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,16 +40,16 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N4ba3f295754141ed80e057cfc07fbe14"
+          "@id": "_:Nee8a5eae1172421887218c0d1562b357"
         },
         {
-          "@id": "_:Ne044980d43e64429a6f84aeb33e37d48"
+          "@id": "_:N02425cc051754da89a4e80808e328385"
         },
         {
-          "@id": "_:Nf37174acc03e43de99f06f8fe927c4fd"
+          "@id": "_:Nce34f390b5454c39a9db02c63846d546"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Database portal",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0610"
@@ -57,10 +57,10 @@
       "sc:contributor": [
         "František Mastil",
         "Jakub Geyer",
-        "Miloš Prokýšek",
-        "Rudolf Vohnout",
         "Jiří Hauser",
-        "Ondřej Doktor"
+        "Miloš Prokýšek",
+        "Ondřej Doktor",
+        "Rudolf Vohnout"
       ],
       "sc:description": "Universal Catalog Database for biological findings",
       "sc:featureList": {
@@ -69,8 +69,8 @@
       "sc:license": "Other",
       "sc:name": "UniCatDB",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:provider": "Institute of Applied Informatics, Faculty of Science, University of South Bohemia",
@@ -80,15 +80,7 @@
       "sc:url": "https://www.unicatdb.org/"
     },
     {
-      "@id": "_:N4ba3f295754141ed80e057cfc07fbe14",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2019"
-      },
-      "sc:name": "Map data"
-    },
-    {
-      "@id": "_:Ne044980d43e64429a6f84aeb33e37d48",
+      "@id": "_:Nee8a5eae1172421887218c0d1562b357",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3736"
@@ -96,7 +88,15 @@
       "sc:name": "Ecological data"
     },
     {
-      "@id": "_:Nf37174acc03e43de99f06f8fe927c4fd",
+      "@id": "_:N02425cc051754da89a4e80808e328385",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2019"
+      },
+      "sc:name": "Map data"
+    },
+    {
+      "@id": "_:Nce34f390b5454c39a9db02c63846d546",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2019"

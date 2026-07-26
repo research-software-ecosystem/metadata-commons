@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -41,26 +41,26 @@
       "biotools:primaryContact": "Dominique Lavenier",
       "bsc:input": [
         {
-          "@id": "_:N81855206e891488cbe2d7fa6f101af63"
+          "@id": "_:N1bda86cdc7a1496abf311f186c03a5ca"
         },
         {
-          "@id": "_:Nb00356b3c18249aab34f40e1a0d459c4"
+          "@id": "_:N8e6fd7e3d923452082f4e40ce0c9b545"
         }
       ],
       "bsc:output": {
-        "@id": "_:N835c4b978be9421db0b12b37dc3e4bce"
+        "@id": "_:N1db0ff1d31c14c6ba4cd353e09e60104"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0080"
       },
       "sc:citation": [
+        "pubmed:19821978",
+        "pmcid:PMC2770072",
         {
           "@id": "https://doi.org/10.1186/1471-2105-10-329"
-        },
-        "pubmed:19821978",
-        "pmcid:PMC2770072"
+        }
       ],
       "sc:description": "Parallel Local Alignment Search Tool for Database Comparison.",
       "sc:featureList": {
@@ -70,8 +70,8 @@
       "sc:license": "CECILL-2.0",
       "sc:name": "Plast",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:provider": "GenOuest",
@@ -82,7 +82,7 @@
       "sc:url": "http://www.irisa.fr/symbiose/projects/plast/"
     },
     {
-      "@id": "_:N81855206e891488cbe2d7fa6f101af63",
+      "@id": "_:N1bda86cdc7a1496abf311f186c03a5ca",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
@@ -93,7 +93,7 @@
       "sc:name": "Sequence"
     },
     {
-      "@id": "_:Nb00356b3c18249aab34f40e1a0d459c4",
+      "@id": "_:N8e6fd7e3d923452082f4e40ce0c9b545",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
@@ -104,7 +104,7 @@
       "sc:name": "Sequence"
     },
     {
-      "@id": "_:N835c4b978be9421db0b12b37dc3e4bce",
+      "@id": "_:N1db0ff1d31c14c6ba4cd353e09e60104",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0863"

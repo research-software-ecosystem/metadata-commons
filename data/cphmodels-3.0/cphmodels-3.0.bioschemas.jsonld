@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,65 +36,69 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/gkq535",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/cphmodels-3.0",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Morten Nielsen",
       "bsc:input": [
         {
-          "@id": "_:N9092dec251c448e68a69fae3cc0e21e9"
+          "@id": "_:N3821e06600b84412ab27e96f016c5ecc"
         },
         {
-          "@id": "_:N64c528a9b08341eaba02c172e8e12176"
+          "@id": "_:Na8ab1d4efd0f451193f731ab3b288439"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0080"
-        },
-        {
-          "@id": "edam:topic_0078"
+          "@id": "edam:topic_2275"
         },
         {
           "@id": "edam:topic_0736"
         },
         {
-          "@id": "edam:topic_2814"
-        },
-        {
           "@id": "edam:topic_0166"
         },
         {
-          "@id": "edam:topic_0082"
+          "@id": "edam:topic_2814"
         },
         {
-          "@id": "edam:topic_2275"
+          "@id": "edam:topic_0078"
+        },
+        {
+          "@id": "edam:topic_0080"
+        },
+        {
+          "@id": "edam:topic_0082"
         }
       ],
       "sc:citation": [
+        "pubmed:20542909",
+        "pmcid:PMC2896139",
         {
           "@id": "https://doi.org/10.1093/nar/gkq535"
-        },
-        "pubmed:20542909",
-        "pmcid:PMC2896139"
+        }
       ],
       "sc:description": "A web server predicting protein 3D structure by use of single template homology modeling.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0474"
+          "@id": "edam:operation_3092"
         },
         {
           "@id": "edam:operation_0303"
         },
         {
+          "@id": "edam:operation_0477"
+        },
+        {
           "@id": "edam:operation_0267"
         },
         {
-          "@id": "edam:operation_3092"
-        },
-        {
-          "@id": "edam:operation_0477"
+          "@id": "edam:operation_0474"
         }
       ],
       "sc:isAccessibleForFree": true,
@@ -102,8 +106,8 @@
       "sc:name": "CPHmodels-3.0",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:provider": "CBS",
       "sc:softwareHelp": {
@@ -112,7 +116,23 @@
       "sc:url": "http://www.cbs.dtu.dk/services/CPHmodels/"
     },
     {
-      "@id": "_:N9092dec251c448e68a69fae3cc0e21e9",
+      "@id": "_:N3821e06600b84412ab27e96f016c5ecc",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1277"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_1476"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Protein features"
+    },
+    {
+      "@id": "_:Na8ab1d4efd0f451193f731ab3b288439",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
@@ -121,26 +141,6 @@
         "@id": "edam:format_1929"
       },
       "sc:name": "Sequence"
-    },
-    {
-      "@id": "_:N64c528a9b08341eaba02c172e8e12176",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1277"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_1476"
-        }
-      ],
-      "sc:name": "Protein features"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gkq535",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

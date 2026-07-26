@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,47 +36,51 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/btu384",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/netbiov",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Shailesh tripathi",
       "bsc:input": {
-        "@id": "_:Na9c46085297844e39f60020925cc789f"
+        "@id": "_:N35cbed4eb2bb42fcb24bcb9f64fc21e8"
       },
       "bsc:output": [
         {
-          "@id": "_:N82094c35dfda4511b3bcc6aa22ea574b"
+          "@id": "_:Nbb513e85393c4da5b3df13721fd07fa2"
         },
         {
-          "@id": "_:N7e581681ee274381b67e9f3f5ff2a5ff"
+          "@id": "_:N4aa85f14c2214b5bab1a72096ab25a5b"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
       ],
       "sc:applicationSubCategory": [
         {
+          "@id": "edam:topic_3070"
+        },
+        {
           "@id": "edam:topic_0092"
         },
         {
-          "@id": "edam:topic_3070"
+          "@id": "edam:topic_3303"
         },
         {
           "@id": "edam:topic_0602"
         },
         {
           "@id": "edam:topic_2640"
-        },
-        {
-          "@id": "edam:topic_3303"
         }
       ],
       "sc:citation": [
+        "pubmed:24928209",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btu384"
-        },
-        "pubmed:24928209"
+        }
       ],
       "sc:description": "A package that provides an effective visualization of large biological networks.",
       "sc:featureList": {
@@ -85,9 +89,9 @@
       "sc:license": "GPL-2.0",
       "sc:name": "netbiov",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/netbiov.html"
@@ -96,29 +100,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/netbiov.html"
     },
     {
-      "@id": "_:N82094c35dfda4511b3bcc6aa22ea574b",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2884"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3547"
-      },
-      "sc:name": "Plot"
-    },
-    {
-      "@id": "_:N7e581681ee274381b67e9f3f5ff2a5ff",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2600"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3547"
-      },
-      "sc:name": "Pathway or network"
-    },
-    {
-      "@id": "_:Na9c46085297844e39f60020925cc789f",
+      "@id": "_:N35cbed4eb2bb42fcb24bcb9f64fc21e8",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2082"
@@ -129,8 +111,26 @@
       "sc:name": "Matrix"
     },
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btu384",
-      "@type": "sc:CreativeWork"
+      "@id": "_:Nbb513e85393c4da5b3df13721fd07fa2",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2600"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3547"
+      },
+      "sc:name": "Pathway or network"
+    },
+    {
+      "@id": "_:N4aa85f14c2214b5bab1a72096ab25a5b",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2884"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3547"
+      },
+      "sc:name": "Plot"
     }
   ]
 }

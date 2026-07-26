@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,12 +39,12 @@
       "@id": "https://bio.tools/mgi",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nc6d2fe72775b4cbb9fdaee77a103c7cd"
+        "@id": "_:N575d93dea30a45b0b0ec8e1fac2c46e4"
       },
       "bsc:output": {
-        "@id": "_:N76fd4ddd1b6c4033bce10b6081fb3e7a"
+        "@id": "_:Nd4f448d8e424437ea7d4efd5f7b49638"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Database portal",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0621"
@@ -62,8 +62,8 @@
       },
       "sc:name": "Mouse Genome Informatics (MGI)",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -72,7 +72,15 @@
       "sc:url": "http://www.informatics.jax.org/"
     },
     {
-      "@id": "_:N76fd4ddd1b6c4033bce10b6081fb3e7a",
+      "@id": "_:N575d93dea30a45b0b0ec8e1fac2c46e4",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1026"
+      },
+      "sc:name": "Gene symbol"
+    },
+    {
+      "@id": "_:Nd4f448d8e424437ea7d4efd5f7b49638",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2093"
@@ -81,14 +89,6 @@
         "@id": "edam:format_2331"
       },
       "sc:name": "Data reference"
-    },
-    {
-      "@id": "_:Nc6d2fe72775b4cbb9fdaee77a103c7cd",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1026"
-      },
-      "sc:name": "Gene symbol"
     },
     {
       "@id": "https://doi.org/10.1093/nar/gku967",

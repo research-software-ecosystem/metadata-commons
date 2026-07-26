@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -43,25 +43,25 @@
       "@id": "https://bio.tools/orione",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Gianmauro Cuccuru",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Workbench",
       "sc:applicationSubCategory": [
         {
           "@id": "edam:topic_0091"
         },
         {
-          "@id": "edam:topic_0080"
+          "@id": "edam:topic_0622"
         },
         {
-          "@id": "edam:topic_0622"
+          "@id": "edam:topic_0080"
         }
       ],
       "sc:citation": [
+        "pubmed:24618473",
+        "pmcid:PMC4071203",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btu135"
-        },
-        "pmcid:PMC4071203",
-        "pubmed:24618473"
+        }
       ],
       "sc:description": "Specialized domain server for integrative analysis of NGS microbial data, that covers the whole life cycle of microbiology research data, bringing together all the tools to perform steps such as quality check, alignment, assembly, scaffolding and annotation.",
       "sc:featureList": {
@@ -69,8 +69,8 @@
       },
       "sc:name": "Orione",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:provider": [

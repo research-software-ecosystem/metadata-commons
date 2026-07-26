@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -50,12 +50,12 @@
         "@id": "http://orcid.org/0000-0001-9437-2099"
       },
       "bsc:input": {
-        "@id": "_:N4abdb86ed2a5479db077bc7928dc04f1"
+        "@id": "_:Naf3e9db121c24e23912bff4576583bbd"
       },
       "bsc:output": {
-        "@id": "_:Nc3f64401fda04264a870e376d5c3c425"
+        "@id": "_:N0ea27bb09dbe4aec8c55d2494e20cb31"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
@@ -64,10 +64,10 @@
         "@id": "edam:topic_0091"
       },
       "sc:citation": [
+        "pubmed:21378980",
         {
           "@id": "https://doi.org/10.1038/nmeth.1581"
-        },
-        "pubmed:21378980"
+        }
       ],
       "sc:description": "This tool estimates genetic interactions from multi-dimensional read-outs like features extracted from images. The screen is assumed to be performed in multi-well plates or similar designs. Starting from a list of features (e.g. cell number, area, fluorescence intensity) per well, genetic interactions are estimated. The packages provides functions for reporting interacting gene pairs, plotting heatmaps and double RNAi plots. An HTML report can be written for quality control and analysis.",
       "sc:featureList": {
@@ -77,8 +77,8 @@
       "sc:name": "RNAinteract",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/RNAinteract.html"
@@ -87,18 +87,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/RNAinteract.html"
     },
     {
-      "@id": "_:Nc3f64401fda04264a870e376d5c3c425",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2048"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2331"
-      },
-      "sc:name": "Report"
-    },
-    {
-      "@id": "_:N4abdb86ed2a5479db077bc7928dc04f1",
+      "@id": "_:Naf3e9db121c24e23912bff4576583bbd",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1276"
@@ -107,6 +96,17 @@
         "@id": "edam:format_3547"
       },
       "sc:name": "Nucleic acid features"
+    },
+    {
+      "@id": "_:N0ea27bb09dbe4aec8c55d2494e20cb31",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2048"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2331"
+      },
+      "sc:name": "Report"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,32 +36,36 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1186/s13059-019-1664-9",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/rnbeads",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N1b5a5e20703240d1a7491c67b6e28964"
+        "@id": "_:Ne3f4878d6cfe434d92d11197606cec83"
       },
       "bsc:output": {
-        "@id": "_:Nf40be11ff608483ba3e0f436630b509d"
+        "@id": "_:N6b33669750254e7db881c4e7f721c866"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Library",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3173"
       },
       "sc:author": [
+        "Christoph Bock",
+        "Fabian Mueller",
         "Michael Scherer",
         "Pavlo Lutsik",
-        "Christoph Bock",
-        "Yassen Assenov",
-        "Fabian Mueller"
+        "Yassen Assenov"
       ],
       "sc:citation": [
         {
-          "@id": "https://doi.org/10.1186/s13059-019-1664-9"
+          "@id": "https://doi.org/10.1038/nmeth.3115"
         },
         {
-          "@id": "https://doi.org/10.1038/nmeth.3115"
+          "@id": "https://doi.org/10.1186/s13059-019-1664-9"
         }
       ],
       "sc:description": "RnBeads facilitates comprehensive analysis of various types of DNA methylation data at the genome scale.",
@@ -77,8 +81,8 @@
       "sc:license": "GPL-3.0-only",
       "sc:name": "RnBeads",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -88,7 +92,7 @@
       "sc:url": "https://bioconductor.org/packages/RnBeads"
     },
     {
-      "@id": "_:N1b5a5e20703240d1a7491c67b6e28964",
+      "@id": "_:Ne3f4878d6cfe434d92d11197606cec83",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2012"
@@ -104,7 +108,7 @@
       "sc:name": "Sequence coordinates"
     },
     {
-      "@id": "_:Nf40be11ff608483ba3e0f436630b509d",
+      "@id": "_:N6b33669750254e7db881c4e7f721c866",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"
@@ -113,10 +117,6 @@
         "@id": "edam:format_2331"
       },
       "sc:name": "Report"
-    },
-    {
-      "@id": "https://doi.org/10.1186/s13059-019-1664-9",
-      "@type": "sc:CreativeWork"
     },
     {
       "@id": "https://doi.org/10.1038/nmeth.3115",

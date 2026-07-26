@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,10 +36,14 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1371/journal.pcbi.1006843",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/SoS",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "B. Peng",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Workflow"
@@ -53,11 +57,11 @@
         }
       ],
       "sc:citation": [
+        "pubmed:30811390",
         "pmcid:PMC6411228",
         {
           "@id": "https://doi.org/10.1371/journal.pcbi.1006843"
-        },
-        "pubmed:30811390"
+        }
       ],
       "sc:description": "Script of Scripts (SoS) is a computational environment for the development and execution of scripts in multiple languages for daily computational research.",
       "sc:featureList": [
@@ -75,8 +79,8 @@
       "sc:license": "BSD-3-Clause",
       "sc:name": "SoS",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": [
@@ -91,10 +95,6 @@
         }
       ],
       "sc:url": "https://vatlab.github.io/sos-docs/"
-    },
-    {
-      "@id": "https://doi.org/10.1371/journal.pcbi.1006843",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

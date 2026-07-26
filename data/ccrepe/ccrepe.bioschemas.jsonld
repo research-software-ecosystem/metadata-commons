@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,30 +36,34 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.18129/B9.bioc.ccrepe",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/ccrepe",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nfd5d7180f274452f851e83838e868302"
+        "@id": "_:N88fdd4a9c1b6407487689712595c3f1c"
       },
       "bsc:output": [
         {
-          "@id": "_:N93792966f8c3466992439a4f542ffb4b"
+          "@id": "_:Nd893bccf8ff546cea76f89dd99dacece"
         },
         {
-          "@id": "_:N2b3969ae94c041efbc63a3419dd940af"
+          "@id": "_:Nc40b3b48d5e944058ba728a4a2c6112b"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3174"
+          "@id": "edam:topic_0091"
         },
         {
-          "@id": "edam:topic_0091"
+          "@id": "edam:topic_3174"
         },
         {
           "@id": "edam:topic_2269"
@@ -71,18 +75,18 @@
       "sc:description": "The CCREPE (Compositionality Corrected by REnormalizaion and PErmutation) package is designed to assess the significance of general similarity measures in compositional datasets.  In microbial abundance data, for example, the total abundances of all microbes sum to one; CCREPE is designed to take this constraint into account when assigning p-values to similarity measures between the microbes.  The package has two functions: ccrepe: Calculates similarity measures, p-values and q-values for relative abundances of bugs in one or two body sites using bootstrap and permutation matrices of the data. nc.score: Calculates species-level co-variation and co-exclusion patterns based on an extension of the checkerboard score to ordinal data.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3435"
+          "@id": "edam:operation_3465"
         },
         {
-          "@id": "edam:operation_3465"
+          "@id": "edam:operation_3435"
         }
       ],
       "sc:license": "MIT",
       "sc:name": "ccrepe",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://bioconductor.org/packages/ccrepe"
@@ -91,7 +95,7 @@
       "sc:url": "https://bioconductor.org/packages/ccrepe"
     },
     {
-      "@id": "_:Nfd5d7180f274452f851e83838e868302",
+      "@id": "_:N88fdd4a9c1b6407487689712595c3f1c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3108"
@@ -102,40 +106,36 @@
       "sc:name": "Experimental measurement"
     },
     {
-      "@id": "_:N93792966f8c3466992439a4f542ffb4b",
+      "@id": "_:Nd893bccf8ff546cea76f89dd99dacece",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_2330"
+          "@id": "edam:format_3547"
         },
         {
-          "@id": "edam:format_3547"
+          "@id": "edam:format_2330"
         }
       ],
       "sc:name": "Plot"
     },
     {
-      "@id": "_:N2b3969ae94c041efbc63a3419dd940af",
+      "@id": "_:Nc40b3b48d5e944058ba728a4a2c6112b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0951"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_2330"
+          "@id": "edam:format_3547"
         },
         {
-          "@id": "edam:format_3547"
+          "@id": "edam:format_2330"
         }
       ],
       "sc:name": "Statistical estimate score"
-    },
-    {
-      "@id": "https://doi.org/10.18129/B9.bioc.ccrepe",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

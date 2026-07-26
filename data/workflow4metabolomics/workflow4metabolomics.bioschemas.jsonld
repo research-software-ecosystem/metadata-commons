@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,128 +36,120 @@
   },
   "@graph": [
     {
-      "@id": "https://orcid.org/0000-0001-8177-4873",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://orcid.org/0000-0002-4479-0636",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://orcid.org/0000-0003-1742-9711",
+      "@id": "https://orcid.org/0000-0001-6063-4214",
       "@type": "sc:Person"
     },
     {
       "@id": "https://bio.tools/workflow4metabolomics",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
-        "Marie Tremblay-Franco",
-        {
-          "@id": "https://orcid.org/0000-0003-1742-9711"
-        },
-        {
-          "@id": "https://orcid.org/0000-0002-4479-0636"
-        },
         {
           "@id": "https://orcid.org/0000-0001-6063-4214"
         },
         {
+          "@id": "https://orcid.org/0000-0003-1742-9711"
+        },
+        {
           "@id": "https://orcid.org/0000-0003-1019-4577"
-        }
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-4479-0636"
+        },
+        "Marie Tremblay-Franco"
       ],
       "bsc:input": [
         {
-          "@id": "_:N7b980883bc2f42528d1186770a924e79"
+          "@id": "_:N62ba6f2408f443ebadb5a4cdad710d6d"
         },
         {
-          "@id": "_:N72c2b1f52302499392fd7e776ee9b4b6"
+          "@id": "_:N212b6941eb5044b5871f58fddb8666ec"
         },
         {
-          "@id": "_:Naf740fe5fa0b40e0b07ec289b81056dc"
+          "@id": "_:N04098d6fbf134527a20aa426d8170ccf"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N7aefefb116214ee3a085456c2985e613"
+          "@id": "_:N0c8646c1f1994925ab715da34bbc3732"
         },
         {
-          "@id": "_:Nc058c23bf2404b69b1baeab25500b618"
+          "@id": "_:Ne6d112b8d34b4078960fe25c36490cb9"
         },
         {
-          "@id": "_:N74277c733a234c309b28262afcf01263"
+          "@id": "_:Nc6620c72844c42b7913c447bd083c8a9"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Bioinformatics portal",
       "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_3307"
+        },
         {
           "@id": "edam:topic_3172"
         },
         {
           "@id": "edam:topic_2259"
-        },
-        {
-          "@id": "edam:topic_3307"
         }
       ],
       "sc:author": [
-        "Pierre Pericard",
-        "Marion Landi",
         {
           "@id": "https://orcid.org/0000-0001-8177-4873"
         },
-        "Mélanie Pétéra",
+        "Jean-François Martin",
+        "Marion Landi",
         "Misharl Monsoor",
-        "Jean-François Martin"
+        "Mélanie Pétéra",
+        "Pierre Pericard"
       ],
       "sc:citation": [
-        "pmcid:PMC4410648",
         "pubmed:28710041",
-        "pubmed:25527831",
-        {
-          "@id": "https://doi.org/10.1093/bioinformatics/btu813"
-        },
         {
           "@id": "https://doi.org/10.1016/j.biocel.2017.07.002"
+        },
+        "pubmed:25527831",
+        "pmcid:PMC4410648",
+        {
+          "@id": "https://doi.org/10.1093/bioinformatics/btu813"
         }
       ],
       "sc:contributor": [
-        "Christophe Caron",
         "Alexis Delabrière",
+        "Christophe Caron",
         "Sophie Goulitquer"
       ],
       "sc:description": "First fully open-source and collaborative online platform for computational metabolomics. It includes preprocessing, normalization, quality control, statistical analysis of LC/MS, FIA-MS, GC/MS and NMR data.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_2238"
-        },
-        {
-          "@id": "edam:operation_3694"
-        },
-        {
           "@id": "edam:operation_0226"
         },
         {
-          "@id": "edam:operation_0337"
-        },
-        {
-          "@id": "edam:operation_2940"
+          "@id": "edam:operation_3501"
         },
         {
           "@id": "edam:operation_3214"
         },
         {
+          "@id": "edam:operation_2238"
+        },
+        {
+          "@id": "edam:operation_0337"
+        },
+        {
           "@id": "edam:operation_3203"
         },
         {
-          "@id": "edam:operation_3501"
+          "@id": "edam:operation_3694"
+        },
+        {
+          "@id": "edam:operation_2940"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:name": "Workflow4Metabolomics",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": [
@@ -174,7 +166,7 @@
       "sc:url": "https://workflow4metabolomics.org/"
     },
     {
-      "@id": "_:N7b980883bc2f42528d1186770a924e79",
+      "@id": "_:N62ba6f2408f443ebadb5a4cdad710d6d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3488"
@@ -182,29 +174,29 @@
       "sc:name": "NMR spectrum"
     },
     {
-      "@id": "_:N72c2b1f52302499392fd7e776ee9b4b6",
+      "@id": "_:N212b6941eb5044b5871f58fddb8666ec",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0943"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_3244"
-        },
-        {
           "@id": "edam:format_3650"
         },
         {
-          "@id": "edam:format_3654"
+          "@id": "edam:format_3834"
         },
         {
-          "@id": "edam:format_3834"
+          "@id": "edam:format_3244"
+        },
+        {
+          "@id": "edam:format_3654"
         }
       ],
       "sc:name": "Mass spectrum"
     },
     {
-      "@id": "_:Naf740fe5fa0b40e0b07ec289b81056dc",
+      "@id": "_:N04098d6fbf134527a20aa426d8170ccf",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2536"
@@ -220,7 +212,15 @@
       "sc:name": "Mass spectrometry data"
     },
     {
-      "@id": "_:N7aefefb116214ee3a085456c2985e613",
+      "@id": "_:N0c8646c1f1994925ab715da34bbc3732",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2855"
+      },
+      "sc:name": "Distance matrix"
+    },
+    {
+      "@id": "_:Ne6d112b8d34b4078960fe25c36490cb9",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0982"
@@ -231,7 +231,7 @@
       "sc:name": "Molecule identifier"
     },
     {
-      "@id": "_:Nc058c23bf2404b69b1baeab25500b618",
+      "@id": "_:Nc6620c72844c42b7913c447bd083c8a9",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
@@ -239,12 +239,8 @@
       "sc:name": "Plot"
     },
     {
-      "@id": "_:N74277c733a234c309b28262afcf01263",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2855"
-      },
-      "sc:name": "Distance matrix"
+      "@id": "https://doi.org/10.1093/bioinformatics/btu813",
+      "@type": "sc:CreativeWork"
     },
     {
       "@id": "https://orcid.org/0000-0003-1019-4577",
@@ -255,12 +251,16 @@
       "@type": "sc:CreativeWork"
     },
     {
-      "@id": "https://orcid.org/0000-0001-6063-4214",
+      "@id": "https://orcid.org/0000-0002-4479-0636",
       "@type": "sc:Person"
     },
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btu813",
-      "@type": "sc:CreativeWork"
+      "@id": "https://orcid.org/0000-0001-8177-4873",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-1742-9711",
+      "@type": "sc:Person"
     }
   ]
 }

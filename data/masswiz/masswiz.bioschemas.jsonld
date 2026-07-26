@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -43,40 +43,40 @@
       "@id": "https://bio.tools/masswiz",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N84babd2fa51245ea91ec3d711283ea34"
+        "@id": "_:N9f90f1d96bb7452f99cf5d2d8869826b"
       },
       "bsc:output": {
-        "@id": "_:N6efd814ebe954920baf3788902a4f57a"
+        "@id": "_:N4695f4770412483aa004f14888e70069"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Desktop application",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3520"
+          "@id": "edam:topic_0121"
         },
         {
-          "@id": "edam:topic_0121"
+          "@id": "edam:topic_3520"
         }
       ],
       "sc:citation": [
+        "pubmed:21417338",
         {
           "@id": "https://doi.org/10.1021/pr200031z"
-        },
-        "pubmed:21417338"
+        }
       ],
       "sc:description": "Peptide identification and FDR calculation.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3648"
+          "@id": "edam:operation_3646"
         },
         {
           "@id": "edam:operation_3631"
         },
         {
-          "@id": "edam:operation_3646"
+          "@id": "edam:operation_3649"
         },
         {
-          "@id": "edam:operation_3649"
+          "@id": "edam:operation_3648"
         }
       ],
       "sc:name": "MassWiz",
@@ -87,7 +87,7 @@
       "sc:url": "http://sourceforge.net/projects/masswiz/"
     },
     {
-      "@id": "_:N84babd2fa51245ea91ec3d711283ea34",
+      "@id": "_:N9f90f1d96bb7452f99cf5d2d8869826b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0943"
@@ -106,7 +106,7 @@
       "sc:name": "Mass spectrometry spectra"
     },
     {
-      "@id": "_:N6efd814ebe954920baf3788902a4f57a",
+      "@id": "_:N4695f4770412483aa004f14888e70069",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0945"

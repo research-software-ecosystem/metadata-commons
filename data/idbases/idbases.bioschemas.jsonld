@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -44,25 +44,25 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N4b54d5fb62204a56b4b6fac6cca195b7"
+          "@id": "_:N117f8c97d0b94d2499f2a0f61925f262"
         },
         {
-          "@id": "_:N379a30a15d3947208264611dd36d345d"
+          "@id": "_:Nabd4bcbfd078457b90afd71c11faba25"
         }
       ],
       "bsc:output": {
-        "@id": "_:Neb8af9e300634703ba97d76acfd98188"
+        "@id": "_:N54a1fcc640204614b19d91aaeb7a4e94"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Database portal",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0634"
       },
       "sc:citation": [
+        "pubmed:17004234",
         {
           "@id": "https://doi.org/10.1002/humu.20405"
-        },
-        "pubmed:17004234"
+        }
       ],
       "sc:description": "Locus-specific databases for immunodeficiency-causing mutations.",
       "sc:featureList": {
@@ -70,9 +70,9 @@
       },
       "sc:name": "Immunodeficiency mutation databases (IDbases)",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://structure.bmc.lu.se/idbase/administration/idbases_how_to_cite.php"
@@ -80,7 +80,7 @@
       "sc:url": "http://structure.bmc.lu.se/idbase/"
     },
     {
-      "@id": "_:N4b54d5fb62204a56b4b6fac6cca195b7",
+      "@id": "_:N117f8c97d0b94d2499f2a0f61925f262",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1025"
@@ -88,7 +88,7 @@
       "sc:name": "Gene identifier"
     },
     {
-      "@id": "_:N379a30a15d3947208264611dd36d345d",
+      "@id": "_:Nabd4bcbfd078457b90afd71c11faba25",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1097"
@@ -96,7 +96,7 @@
       "sc:name": "Sequence accession (nucleic acid)"
     },
     {
-      "@id": "_:Neb8af9e300634703ba97d76acfd98188",
+      "@id": "_:N54a1fcc640204614b19d91aaeb7a4e94",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3498"

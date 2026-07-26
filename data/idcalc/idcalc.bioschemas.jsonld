@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,30 +36,34 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1016/S0003-2670(00)83059-7",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/idcalc",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Nb7efd31d124b4aeca11c41ba36153e46"
+          "@id": "_:N6aa7374dd3264936b86653e432d05ef3"
         },
         {
-          "@id": "_:N5ef9bb7b469d4950a0a08331f8bf733a"
+          "@id": "_:Nf094403c4c984856abe38d8ca422309d"
         }
       ],
       "bsc:output": {
-        "@id": "_:N1d60078a21fc42369ddde8a3a3e093e8"
+        "@id": "_:N6db1148fe53e4d6194546eb2ca82427f"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Desktop application",
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_2269"
-        },
         {
           "@id": "edam:topic_0121"
         },
         {
           "@id": "edam:topic_3520"
+        },
+        {
+          "@id": "edam:topic_2269"
         }
       ],
       "sc:citation": {
@@ -71,10 +75,10 @@
           "@id": "edam:operation_3632"
         },
         {
-          "@id": "edam:operation_2238"
+          "@id": "edam:operation_3441"
         },
         {
-          "@id": "edam:operation_3441"
+          "@id": "edam:operation_2238"
         }
       ],
       "sc:name": "IDCalc",
@@ -85,18 +89,7 @@
       "sc:url": "http://proteome.gs.washington.edu/software/IDCalc"
     },
     {
-      "@id": "_:Nb7efd31d124b4aeca11c41ba36153e46",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2976"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2571"
-      },
-      "sc:name": "Protein sequence"
-    },
-    {
-      "@id": "_:N5ef9bb7b469d4950a0a08331f8bf733a",
+      "@id": "_:N6aa7374dd3264936b86653e432d05ef3",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1857"
@@ -107,7 +100,18 @@
       "sc:name": "Atomic occupancy"
     },
     {
-      "@id": "_:N1d60078a21fc42369ddde8a3a3e093e8",
+      "@id": "_:Nf094403c4c984856abe38d8ca422309d",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2976"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2571"
+      },
+      "sc:name": "Protein sequence"
+    },
+    {
+      "@id": "_:N6db1148fe53e4d6194546eb2ca82427f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"
@@ -116,10 +120,6 @@
         "@id": "edam:format_3475"
       },
       "sc:name": "Report"
-    },
-    {
-      "@id": "https://doi.org/10.1016/S0003-2670(00)83059-7",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

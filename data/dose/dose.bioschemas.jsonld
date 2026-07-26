@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,28 +36,32 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/btu684",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/dose",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N463664235ae54918adb400efe8e0cb6f"
+          "@id": "_:Na02ad9c0adf2436fb6a1c45b40e9b927"
         },
         {
-          "@id": "_:Ne25ea774e6fa4f52b398fd62cbc97c09"
+          "@id": "_:N7941a54ce0084ab3bbdb1509d5e65cf5"
         },
         {
-          "@id": "_:Ncb7ac1b3792045d1bbc516bd316070d7"
+          "@id": "_:N555a8194d02a4b6e91f8fa46cde05738"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N0b00d05d593d48559e0cb5359b48fafb"
+          "@id": "_:Nf0a54c47accf4dac9fe51360bae3283d"
         },
         {
-          "@id": "_:Nf11585d342e54509b1029b0f1bee6234"
+          "@id": "_:N5f42ef08be3b497cb104d2b113052722"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
@@ -75,9 +79,9 @@
         "@id": "https://doi.org/10.1093/bioinformatics/btu684"
       },
       "sc:contributor": [
-        "Vladislav Petyuk",
         "Giovanni Dall'Olio",
-        "Li-Gen Wang"
+        "Li-Gen Wang",
+        "Vladislav Petyuk"
       ],
       "sc:description": "This package implements five methods proposed by Resnik, Schlicker, Jiang, Lin and Wang respectively for measuring semantic similarities among DO terms and gene products. Enrichment analyses including hypergeometric model and gene set enrichment analysis are also implemented for discovering disease associations of high-throughput biological data.",
       "sc:featureList": [
@@ -85,18 +89,18 @@
           "@id": "edam:operation_3223"
         },
         {
-          "@id": "edam:operation_3352"
+          "@id": "edam:operation_2436"
         },
         {
-          "@id": "edam:operation_2436"
+          "@id": "edam:operation_3352"
         }
       ],
       "sc:license": "Artistic-2.0",
       "sc:name": "DOSE",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://bioconductor.org/packages/DOSE"
@@ -105,7 +109,7 @@
       "sc:url": "https://bioconductor.org/packages/DOSE"
     },
     {
-      "@id": "_:N463664235ae54918adb400efe8e0cb6f",
+      "@id": "_:Na02ad9c0adf2436fb6a1c45b40e9b927",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2295"
@@ -116,7 +120,7 @@
       "sc:name": "Gene ID"
     },
     {
-      "@id": "_:Ne25ea774e6fa4f52b398fd62cbc97c09",
+      "@id": "_:N7941a54ce0084ab3bbdb1509d5e65cf5",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2603"
@@ -127,7 +131,7 @@
       "sc:name": "Gene expression data"
     },
     {
-      "@id": "_:Ncb7ac1b3792045d1bbc516bd316070d7",
+      "@id": "_:N555a8194d02a4b6e91f8fa46cde05738",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0582"
@@ -138,40 +142,36 @@
       "sc:name": "Ontology"
     },
     {
-      "@id": "_:N0b00d05d593d48559e0cb5359b48fafb",
+      "@id": "_:Nf0a54c47accf4dac9fe51360bae3283d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_2330"
+          "@id": "edam:format_3547"
         },
         {
-          "@id": "edam:format_3547"
+          "@id": "edam:format_2330"
         }
       ],
       "sc:name": "Plot"
     },
     {
-      "@id": "_:Nf11585d342e54509b1029b0f1bee6234",
+      "@id": "_:N5f42ef08be3b497cb104d2b113052722",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_2330"
+          "@id": "edam:format_3547"
         },
         {
-          "@id": "edam:format_3547"
+          "@id": "edam:format_2330"
         }
       ],
       "sc:name": "Report"
-    },
-    {
-      "@id": "https://doi.org/10.1093/bioinformatics/btu684",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

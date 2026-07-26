@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,39 +36,35 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.18129/B9.bioc.similaRpeak",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/similarpeak",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Ndcce4b75148a4455b79dced8cc95f2b7"
+        "@id": "_:N486b453022ad4a108cc81d33356b3f2d"
       },
       "bsc:output": {
-        "@id": "_:Nfac2015c8bd542b1a8b31a2ac1bd2fc8"
+        "@id": "_:N13e7d592c866480cb04024577ef3e311"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3534"
+          "@id": "edam:topic_3169"
         },
         {
-          "@id": "edam:topic_3169"
+          "@id": "edam:topic_3534"
         }
       ],
       "sc:author": [
-        "Charles Joly Beauparlant",
-        "Fabien Claude Lamaze",
-        "Elsa Bernatchez",
-        "Pascal Belleau",
-        "Rawane Samb",
         "Arnaud Droit",
-        "Astrid Deschênes"
+        "Astrid Deschênes",
+        "Charles Joly Beauparlant",
+        "Elsa Bernatchez",
+        "Fabien Claude Lamaze",
+        "Pascal Belleau",
+        "Rawane Samb"
       ],
       "sc:citation": {
         "@id": "https://doi.org/10.18129/B9.bioc.similaRpeak"
@@ -80,9 +76,9 @@
       "sc:license": "Artistic-2.0",
       "sc:name": "similaRpeak",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://bioconductor.org/packages/similaRpeak"
@@ -91,7 +87,18 @@
       "sc:url": "https://bioconductor.org/packages/similaRpeak"
     },
     {
-      "@id": "_:Nfac2015c8bd542b1a8b31a2ac1bd2fc8",
+      "@id": "_:N486b453022ad4a108cc81d33356b3f2d",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0863"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2572"
+      },
+      "sc:name": "Sequence alignment"
+    },
+    {
+      "@id": "_:N13e7d592c866480cb04024577ef3e311",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0865"
@@ -107,15 +114,8 @@
       "sc:name": "Sequence similarity score"
     },
     {
-      "@id": "_:Ndcce4b75148a4455b79dced8cc95f2b7",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0863"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2572"
-      },
-      "sc:name": "Sequence alignment"
+      "@id": "https://doi.org/10.18129/B9.bioc.similaRpeak",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

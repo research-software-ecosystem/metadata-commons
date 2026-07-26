@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -44,29 +44,29 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N9374e2ae9a7042a18214f7fd93503b77"
+          "@id": "_:N434c17a074a5449fa5bd418c1aee7ad9"
         },
         {
-          "@id": "_:N065d94d54a124a95af286b88e963467a"
+          "@id": "_:N50a4341850dd4d41aca927ef7b1ca6a9"
         }
       ],
       "bsc:output": {
-        "@id": "_:Nff47c7ef7d1d4e42a3d9fb69fe97150a"
+        "@id": "_:Nf1386e2a379b4dab980a7ab491021743"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Desktop application",
-        "Command-line tool"
+        "Command-line tool",
+        "Desktop application"
       ],
       "sc:applicationSubCategory": [
         {
           "@id": "edam:topic_0092"
         },
         {
-          "@id": "edam:topic_3520"
+          "@id": "edam:topic_0121"
         },
         {
-          "@id": "edam:topic_0121"
+          "@id": "edam:topic_3520"
         }
       ],
       "sc:citation": [
@@ -78,32 +78,32 @@
       "sc:description": "Graphical user interface for proteomics identification search engines",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3694"
-        },
-        {
-          "@id": "edam:operation_3767"
-        },
-        {
           "@id": "edam:operation_3647"
         },
         {
-          "@id": "edam:operation_3644"
+          "@id": "edam:operation_3694"
         },
         {
-          "@id": "edam:operation_3648"
+          "@id": "edam:operation_3646"
         },
         {
           "@id": "edam:operation_3631"
         },
         {
-          "@id": "edam:operation_3646"
+          "@id": "edam:operation_3767"
+        },
+        {
+          "@id": "edam:operation_3648"
+        },
+        {
+          "@id": "edam:operation_3644"
         }
       ],
       "sc:name": "SearchGUI",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": "ugent.be",
       "sc:softwareHelp": {
@@ -113,34 +113,7 @@
       "sc:url": "http://compomics.github.io/projects/searchgui.html"
     },
     {
-      "@id": "_:Nff47c7ef7d1d4e42a3d9fb69fe97150a",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0945"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3247"
-        },
-        {
-          "@id": "edam:format_3711"
-        }
-      ],
-      "sc:name": "Peptide identification"
-    },
-    {
-      "@id": "_:N9374e2ae9a7042a18214f7fd93503b77",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2976"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1929"
-      },
-      "sc:name": "Protein sequence"
-    },
-    {
-      "@id": "_:N065d94d54a124a95af286b88e963467a",
+      "@id": "_:N434c17a074a5449fa5bd418c1aee7ad9",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0943"
@@ -154,6 +127,33 @@
         }
       ],
       "sc:name": "Mass spectrometry spectra"
+    },
+    {
+      "@id": "_:N50a4341850dd4d41aca927ef7b1ca6a9",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2976"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "Protein sequence"
+    },
+    {
+      "@id": "_:Nf1386e2a379b4dab980a7ab491021743",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0945"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3711"
+        },
+        {
+          "@id": "edam:format_3247"
+        }
+      ],
+      "sc:name": "Peptide identification"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,16 +40,16 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Ne9b962098abb44c38051bb641436f4ed"
+          "@id": "_:Nb407e1ae93b3491e9052d927d2d110b2"
         },
         {
-          "@id": "_:N17add8b0ed7746dfb7505b9688560f72"
+          "@id": "_:Nbfa3b88d9d9244338af3b86b7bd50c9d"
         }
       ],
       "bsc:output": {
-        "@id": "_:N7028cafffd424826bff0c80004cc39ca"
+        "@id": "_:N26f60a6e3e7e4c50b68a6a8a4bc1f4f7"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3170"
@@ -74,18 +74,7 @@
       "sc:url": "https://github.com/AlgoLab/shark"
     },
     {
-      "@id": "_:N7028cafffd424826bff0c80004cc39ca",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3495"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1930"
-      },
-      "sc:name": "RNA sequence"
-    },
-    {
-      "@id": "_:Ne9b962098abb44c38051bb641436f4ed",
+      "@id": "_:Nb407e1ae93b3491e9052d927d2d110b2",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3494"
@@ -96,7 +85,7 @@
       "sc:name": "DNA sequence"
     },
     {
-      "@id": "_:N17add8b0ed7746dfb7505b9688560f72",
+      "@id": "_:Nbfa3b88d9d9244338af3b86b7bd50c9d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3495"
@@ -107,11 +96,22 @@
       "sc:name": "RNA sequence"
     },
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btaa779",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N26f60a6e3e7e4c50b68a6a8a4bc1f4f7",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3495"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1930"
+      },
+      "sc:name": "RNA sequence"
     },
     {
       "@id": "https://doi.org/10.1101/836130",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1093/bioinformatics/btaa779",
       "@type": "sc:CreativeWork"
     }
   ]

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -38,14 +38,14 @@
     {
       "@id": "https://bio.tools/ontarget",
       "@type": "sc:SoftwareApplication",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0749"
+          "@id": "edam:topic_2885"
         },
         {
-          "@id": "edam:topic_2885"
+          "@id": "edam:topic_3295"
         },
         {
           "@id": "edam:topic_3930"
@@ -54,15 +54,15 @@
           "@id": "edam:topic_3168"
         },
         {
-          "@id": "edam:topic_3295"
+          "@id": "edam:topic_0749"
         }
       ],
       "sc:citation": [
+        "pubmed:37166953",
+        "pmcid:PMC10320062",
         {
           "@id": "https://doi.org/10.1093/nar/gkad375"
-        },
-        "pubmed:37166953",
-        "pmcid:PMC10320062"
+        }
       ],
       "sc:description": "In silico design of mini promoters for targeted delivery of expression.",
       "sc:featureList": {
@@ -72,8 +72,8 @@
       "sc:license": "MIT",
       "sc:name": "OnTarget",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:url": "http://ontarget.cmmt.ubc.ca"

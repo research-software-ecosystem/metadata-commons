@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,12 +36,12 @@
   },
   "@graph": [
     {
-      "@id": "https://orcid.org/0000-0003-0185-8861",
-      "@type": "sc:Person"
-    },
-    {
       "@id": "https://doi.org/10.1093/nar/gkq1039",
       "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-0185-8861",
+      "@type": "sc:Person"
     },
     {
       "@id": "https://bio.tools/PathwayCommons_web_service_API",
@@ -51,37 +51,37 @@
       },
       "bsc:input": [
         {
-          "@id": "_:Nc3763bd68e9d495b9d724d7a2bfa2c36"
+          "@id": "_:Na46733b60b6e4d99b7da5efd58d21760"
         },
         {
-          "@id": "_:Nf9b95130ba6f49a3a294fe30c004824d"
+          "@id": "_:N6e0fd895730d4f2dac23a25aeaacc061"
         },
         {
-          "@id": "_:N309edfc4519c4520bf91ee51e372650c"
+          "@id": "_:Na70ef9681b114ce5b6906cc2c8097bd9"
         },
         {
-          "@id": "_:Nb37197f45faa42bdbb6ba0cd6a5a6c90"
+          "@id": "_:Nc7d34a1db66c44a1839fb0d2939e4e90"
         }
       ],
       "bsc:output": {
-        "@id": "_:N7e2efdb3a500419f924c2b7b8592b135"
+        "@id": "_:Nf10fe79d0cba4dceab1fe5b606e0ead3"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web service",
-        "Web API"
+        "Web API",
+        "Web service"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_2259"
+          "@id": "edam:topic_3307"
         },
         {
-          "@id": "edam:topic_3307"
+          "@id": "edam:topic_2259"
         }
       ],
       "sc:citation": [
-        "pmcid:PMC3013659",
         "pubmed:21071392",
+        "pmcid:PMC3013659",
         {
           "@id": "https://doi.org/10.1093/nar/gkq1039"
         }
@@ -99,29 +99,7 @@
       "sc:url": "https://www.pathwaycommons.org/pc2/home"
     },
     {
-      "@id": "_:N7e2efdb3a500419f924c2b7b8592b135",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2600"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3261"
-      },
-      "sc:name": "Pathway or network"
-    },
-    {
-      "@id": "_:Nc3763bd68e9d495b9d724d7a2bfa2c36",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3786"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Query script"
-    },
-    {
-      "@id": "_:Nf9b95130ba6f49a3a294fe30c004824d",
+      "@id": "_:Na46733b60b6e4d99b7da5efd58d21760",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0842"
@@ -132,7 +110,29 @@
       "sc:name": "Identifier"
     },
     {
-      "@id": "_:N309edfc4519c4520bf91ee51e372650c",
+      "@id": "_:N6e0fd895730d4f2dac23a25aeaacc061",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0968"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Keyword"
+    },
+    {
+      "@id": "_:Na70ef9681b114ce5b6906cc2c8097bd9",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3786"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Query script"
+    },
+    {
+      "@id": "_:Nc7d34a1db66c44a1839fb0d2939e4e90",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1047"
@@ -143,15 +143,15 @@
       "sc:name": "URI"
     },
     {
-      "@id": "_:Nb37197f45faa42bdbb6ba0cd6a5a6c90",
+      "@id": "_:Nf10fe79d0cba4dceab1fe5b606e0ead3",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_0968"
+        "@id": "edam:data_2600"
       },
       "sc:encodingFormat": {
-        "@id": "edam:format_2330"
+        "@id": "edam:format_3261"
       },
-      "sc:name": "Keyword"
+      "sc:name": "Pathway or network"
     }
   ]
 }

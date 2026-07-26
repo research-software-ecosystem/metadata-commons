@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,19 +36,15 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.3390/IJMS25042002",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/vspipe-gui",
       "@type": "sc:SoftwareApplication",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3343"
+          "@id": "edam:topic_2258"
         },
         {
-          "@id": "edam:topic_2258"
+          "@id": "edam:topic_3343"
         },
         {
           "@id": "edam:topic_0209"
@@ -70,10 +66,10 @@
       "sc:description": "VSpipe-GUI is an open-source, cross-platform Python toolkit providing a graphical user interface for virtual screening and hit selection. It improves upon the previous command-line version by offering a more user-friendly and faster workflow, incorporating a spatial filtering module.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3899"
+          "@id": "edam:operation_0321"
         },
         {
-          "@id": "edam:operation_0321"
+          "@id": "edam:operation_3899"
         },
         {
           "@id": "edam:operation_3938"
@@ -81,6 +77,10 @@
       ],
       "sc:name": "VSpipe-GUI",
       "sc:url": "https://github.com/rashid-bioinfo/vspipe-gui"
+    },
+    {
+      "@id": "https://doi.org/10.3390/IJMS25042002",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

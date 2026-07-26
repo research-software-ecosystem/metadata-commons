@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -42,23 +42,23 @@
     {
       "@id": "https://bio.tools/oncotrf",
       "@type": "sc:SoftwareApplication",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
+          "@id": "edam:topic_3360"
+        },
+        {
           "@id": "edam:topic_0659"
+        },
+        {
+          "@id": "edam:topic_0204"
         },
         {
           "@id": "edam:topic_2640"
         },
         {
           "@id": "edam:topic_3170"
-        },
-        {
-          "@id": "edam:topic_3360"
-        },
-        {
-          "@id": "edam:topic_0204"
         }
       ],
       "sc:citation": [
@@ -71,13 +71,13 @@
       "sc:description": "An online resource for exploration of tRNA-derived fragments in human cancers.\n\na comprehensive database for tRNA-derived RNA fragments in human cancer research.\n\nOncotRF provides an integrated view of dysregulated tRFs among cancers. It serves as a starting point for users to study tRF gene regulation and its functional role in cancers.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3503"
-        },
-        {
           "@id": "edam:operation_3501"
         },
         {
           "@id": "edam:operation_2495"
+        },
+        {
+          "@id": "edam:operation_3503"
         }
       ],
       "sc:name": "OncotRF",

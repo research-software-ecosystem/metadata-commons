@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,14 +36,6 @@
   },
   "@graph": [
     {
-      "@id": "https://orcid.org/0000-0001-5930-4111",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://doi.org/10.1093/NAR/GKZ405",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/Gene_Sculpt_Suite",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
@@ -53,10 +45,10 @@
         "Stephen C. Ekker",
         "Jeffrey J. Essner"
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web application",
-        "Suite"
+        "Suite",
+        "Web application"
       ],
       "sc:applicationSubCategory": [
         {
@@ -70,8 +62,8 @@
         }
       ],
       "sc:citation": [
-        "pmcid:PMC6602503",
         "pubmed:31127311",
+        "pmcid:PMC6602503",
         {
           "@id": "https://doi.org/10.1093/NAR/GKZ405"
         }
@@ -79,24 +71,32 @@
       "sc:description": "Set of tools for assisting in highly precise genome editing and engineering.",
       "sc:featureList": [
         {
+          "@id": "edam:operation_3096"
+        },
+        {
           "@id": "edam:operation_0420"
         },
         {
           "@id": "edam:operation_3198"
-        },
-        {
-          "@id": "edam:operation_3096"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "GPL-3.0",
       "sc:name": "Gene Sculpt Suite",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:url": "http://www.genesculpt.org"
+    },
+    {
+      "@id": "https://doi.org/10.1093/NAR/GKZ405",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-5930-4111",
+      "@type": "sc:Person"
     }
   ]
 }

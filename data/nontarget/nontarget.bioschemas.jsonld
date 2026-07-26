@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,27 +40,27 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N020cd26d2faa4893839580786b2de271"
+          "@id": "_:N9790ab3e132a4511a21506077acd2dda"
         },
         {
-          "@id": "_:N57830c6795554aec8f7b1ca2d2a17aab"
+          "@id": "_:N84bf991a88e24c30b126886daad12668"
         },
         {
-          "@id": "_:N9a45b9faca514f1cafa6d1634bb50de5"
+          "@id": "_:N25d7fe1a3c684ab2a1277c074525b2e4"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Ncd4c3a141dc54496ad0ddb68187a770b"
+          "@id": "_:N7f9330c9cef34757b9711bbc02afd62b"
         },
         {
-          "@id": "_:Nbce3e4a3fca24fd7aadd0e779ca6f80a"
+          "@id": "_:Ncb0f195954b049048f0993f74c514618"
         },
         {
-          "@id": "_:N327528b1f47d42dab1d5b9324fa6324e"
+          "@id": "_:Nad428ba47fbe43de92395befad472e5f"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
@@ -91,9 +91,9 @@
       ],
       "sc:name": "nontarget",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://cran.r-project.org/web/packages/nontarget/nontarget.pdf"
@@ -101,23 +101,7 @@
       "sc:url": "http://cran.r-project.org/web/packages/nontarget/index.html"
     },
     {
-      "@id": "_:N020cd26d2faa4893839580786b2de271",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0943"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3752"
-        },
-        {
-          "@id": "edam:format_2330"
-        }
-      ],
-      "sc:name": "Mass spectrometry spectra"
-    },
-    {
-      "@id": "_:N57830c6795554aec8f7b1ca2d2a17aab",
+      "@id": "_:N9790ab3e132a4511a21506077acd2dda",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2536"
@@ -133,34 +117,39 @@
       "sc:name": "Mass spectrometry data"
     },
     {
-      "@id": "_:N9a45b9faca514f1cafa6d1634bb50de5",
+      "@id": "_:N84bf991a88e24c30b126886daad12668",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0943"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3752"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Mass spectrometry spectra"
+    },
+    {
+      "@id": "_:N25d7fe1a3c684ab2a1277c074525b2e4",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0944"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_2330"
+          "@id": "edam:format_3752"
         },
         {
-          "@id": "edam:format_3752"
+          "@id": "edam:format_2330"
         }
       ],
       "sc:name": "Peptide mass fingerprint"
     },
     {
-      "@id": "_:Ncd4c3a141dc54496ad0ddb68187a770b",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0943"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Mass spectrometry spectra"
-    },
-    {
-      "@id": "_:Nbce3e4a3fca24fd7aadd0e779ca6f80a",
+      "@id": "_:N7f9330c9cef34757b9711bbc02afd62b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2536"
@@ -171,7 +160,18 @@
       "sc:name": "Mass spectrometry data"
     },
     {
-      "@id": "_:N327528b1f47d42dab1d5b9324fa6324e",
+      "@id": "_:Ncb0f195954b049048f0993f74c514618",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0943"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Mass spectrometry spectra"
+    },
+    {
+      "@id": "_:Nad428ba47fbe43de92395befad472e5f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0944"

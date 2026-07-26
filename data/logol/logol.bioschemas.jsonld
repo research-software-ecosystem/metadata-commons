@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,21 +36,25 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1007/978-3-319-09192-1_4",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/logol",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "GenOuest",
       "bsc:input": [
         {
-          "@id": "_:N3954a919c20b418bbf6cd53d24af80e4"
+          "@id": "_:N7b7ff45cd7064f9bba430cb04400d673"
         },
         {
-          "@id": "_:N7105843598da4b748c5e44e72e416df2"
+          "@id": "_:Nabdaf46222324daaaec0495f9d598220"
         }
       ],
       "bsc:output": {
-        "@id": "_:N09a8549a10aa4941af413d98e9325347"
+        "@id": "_:N5d832fa6c8ea4b30874d32736f248270"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Web application"
@@ -69,8 +73,8 @@
       "sc:license": "CECILL-2.0",
       "sc:name": "Logol",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:provider": "GenOuest",
@@ -81,29 +85,7 @@
       "sc:url": "http://logol.genouest.org"
     },
     {
-      "@id": "_:N09a8549a10aa4941af413d98e9325347",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0858"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2332"
-      },
-      "sc:name": "Sequence signature matches"
-    },
-    {
-      "@id": "_:N3954a919c20b418bbf6cd53d24af80e4",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1353"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Sequence motif"
-    },
-    {
-      "@id": "_:N7105843598da4b748c5e44e72e416df2",
+      "@id": "_:N7b7ff45cd7064f9bba430cb04400d673",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
@@ -114,8 +96,26 @@
       "sc:name": "Sequence"
     },
     {
-      "@id": "https://doi.org/10.1007/978-3-319-09192-1_4",
-      "@type": "sc:CreativeWork"
+      "@id": "_:Nabdaf46222324daaaec0495f9d598220",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1353"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Sequence motif"
+    },
+    {
+      "@id": "_:N5d832fa6c8ea4b30874d32736f248270",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0858"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2332"
+      },
+      "sc:name": "Sequence signature matches"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -43,17 +43,17 @@
       "@id": "https://bio.tools/ppiexp",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N006775b778254b72a62c6528077dae97"
+        "@id": "_:Nb6f92e9c27074318858c972724c36f8c"
       },
       "bsc:output": [
         {
-          "@id": "_:N6f3d13cd0fbb4718a96c5d2d34ff0abf"
+          "@id": "_:N39406d47b91e4cdb8104a271431507c9"
         },
         {
-          "@id": "_:Nf7cc37bc9f5447bdbe32a1e0088399f3"
+          "@id": "_:Nd2c32d5bf6544a6285fe039c1cca7d68"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
@@ -64,10 +64,10 @@
         }
       ],
       "sc:citation": [
+        "pubmed:30565464",
         {
           "@id": "https://doi.org/10.1021/acs.jproteome.8b00713"
-        },
-        "pubmed:30565464"
+        }
       ],
       "sc:description": "A web-based platform for building protein-protein interaction networks, performing clustering analyses according to protein abundances, and functional enrichment analyses.",
       "sc:featureList": {
@@ -77,9 +77,9 @@
       "sc:license": "Unlicense",
       "sc:name": "PPIExp",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://www.fgvis.com/expressvis/tutorial"
@@ -88,7 +88,34 @@
       "sc:url": "http://www.fgvis.com/expressvis/PPIExp"
     },
     {
-      "@id": "_:N6f3d13cd0fbb4718a96c5d2d34ff0abf",
+      "@id": "_:Nb6f92e9c27074318858c972724c36f8c",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2603"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Expression data"
+    },
+    {
+      "@id": "_:N39406d47b91e4cdb8104a271431507c9",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3768"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3464"
+        },
+        {
+          "@id": "edam:format_3603"
+        }
+      ],
+      "sc:name": "Clustered expression profiles"
+    },
+    {
+      "@id": "_:Nd2c32d5bf6544a6285fe039c1cca7d68",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2600"
@@ -102,33 +129,6 @@
         }
       ],
       "sc:name": "Pathway or network"
-    },
-    {
-      "@id": "_:Nf7cc37bc9f5447bdbe32a1e0088399f3",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3768"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3603"
-        },
-        {
-          "@id": "edam:format_3464"
-        }
-      ],
-      "sc:name": "Clustered expression profiles"
-    },
-    {
-      "@id": "_:N006775b778254b72a62c6528077dae97",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2603"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Expression data"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,24 +36,20 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1016/j.cell.2007.05.052",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/networkin",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Nd4c4b3e090b745b99b251310f3027ffb"
+          "@id": "_:Nebea462544194fd8a4dd7dfcd0ce6826"
         },
         {
-          "@id": "_:N4c874216ac104ea49ec92cedf79868d4"
+          "@id": "_:Na34a7c0d937f4066b27c44d7a8d422c1"
         }
       ],
       "bsc:output": {
-        "@id": "_:Nca680d94bd98439da902f681423b8265"
+        "@id": "_:Nb2cbb42b7ea44d1fbae1c54919c5fa73"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0160"
@@ -72,8 +68,8 @@
       "sc:isAccessibleForFree": true,
       "sc:name": "NetworKIN",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:provider": "CBS",
@@ -84,18 +80,7 @@
       "sc:url": "http://www.networkin.info/"
     },
     {
-      "@id": "_:Nd4c4b3e090b745b99b251310f3027ffb",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2775"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Kinase name"
-    },
-    {
-      "@id": "_:N4c874216ac104ea49ec92cedf79868d4",
+      "@id": "_:Nebea462544194fd8a4dd7dfcd0ce6826",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2299"
@@ -106,7 +91,18 @@
       "sc:name": "Gene name"
     },
     {
-      "@id": "_:Nca680d94bd98439da902f681423b8265",
+      "@id": "_:Na34a7c0d937f4066b27c44d7a8d422c1",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2775"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Kinase name"
+    },
+    {
+      "@id": "_:Nb2cbb42b7ea44d1fbae1c54919c5fa73",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1277"
@@ -115,6 +111,10 @@
         "@id": "edam:format_2330"
       },
       "sc:name": "Protein features"
+    },
+    {
+      "@id": "https://doi.org/10.1016/j.cell.2007.05.052",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

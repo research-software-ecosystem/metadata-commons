@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,29 +36,25 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.18129/B9.bioc.annmap",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/annmap",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N782cc0420c734669933b257701f4ea18"
+        "@id": "_:N8fa66fa3108a4f11b7fd3743b412ec6c"
       },
       "bsc:output": {
-        "@id": "_:N5e481f66ceb44b12a1cdfe3db306d059"
+        "@id": "_:Nb3a253942dea4f3689873705b5c8be00"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0077"
+          "@id": "edam:topic_0092"
         },
         {
-          "@id": "edam:topic_0092"
+          "@id": "edam:topic_0077"
         }
       ],
       "sc:citation": {
@@ -71,8 +67,8 @@
       "sc:license": "GPL-2.0-only",
       "sc:name": "annmap",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -82,7 +78,18 @@
       "sc:url": "https://bioconductor.org/packages/annmap"
     },
     {
-      "@id": "_:N5e481f66ceb44b12a1cdfe3db306d059",
+      "@id": "_:N8fa66fa3108a4f11b7fd3743b412ec6c",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1276"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2031"
+      },
+      "sc:name": "Nucleic acid features"
+    },
+    {
+      "@id": "_:Nb3a253942dea4f3689873705b5c8be00",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2080"
@@ -93,15 +100,8 @@
       "sc:name": "Database search results"
     },
     {
-      "@id": "_:N782cc0420c734669933b257701f4ea18",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1276"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2031"
-      },
-      "sc:name": "Nucleic acid features"
+      "@id": "https://doi.org/10.18129/B9.bioc.annmap",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

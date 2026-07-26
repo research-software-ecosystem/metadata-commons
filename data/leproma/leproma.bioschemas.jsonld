@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,21 +40,21 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N182dd8482fcf46658916276ee3f8829e"
+          "@id": "_:N324177d9e11e4fc5b9a1718b5f4daa1e"
         },
         {
-          "@id": "_:N24a7e03f502b48ebb227b7ed7c42afb2"
+          "@id": "_:Ne29c47c28c874189a3adf540f35c652b"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Ne2ef56858ac44dd4a09e0a0a899e3638"
+          "@id": "_:Na4cb5cf375da4d49813879b121fe9d47"
         },
         {
-          "@id": "_:Nf943df1b76824451bbd79b4df2e0bbb5"
+          "@id": "_:N2148bf36d0a244b4a328c3bf67b67b3f"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Database portal",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0621"
@@ -65,9 +65,9 @@
       },
       "sc:name": "Mycobacterium leprae genome database",
       "sc:operatingSystem": [
-        "Windows",
         "Linux",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://genolist.pasteur.fr/Leproma/help/general.html"
@@ -75,29 +75,15 @@
       "sc:url": "http://genolist.pasteur.fr/Leproma/"
     },
     {
-      "@id": "_:Ne2ef56858ac44dd4a09e0a0a899e3638",
+      "@id": "_:N324177d9e11e4fc5b9a1718b5f4daa1e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_0916"
+        "@id": "edam:data_1026"
       },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2331"
-      },
-      "sc:name": "Gene report"
+      "sc:name": "Gene symbol"
     },
     {
-      "@id": "_:Nf943df1b76824451bbd79b4df2e0bbb5",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0916"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2331"
-      },
-      "sc:name": "Gene report"
-    },
-    {
-      "@id": "_:N182dd8482fcf46658916276ee3f8829e",
+      "@id": "_:Ne29c47c28c874189a3adf540f35c652b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1097"
@@ -105,12 +91,26 @@
       "sc:name": "Sequence accession (nucleic acid)"
     },
     {
-      "@id": "_:N24a7e03f502b48ebb227b7ed7c42afb2",
+      "@id": "_:Na4cb5cf375da4d49813879b121fe9d47",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_1026"
+        "@id": "edam:data_0916"
       },
-      "sc:name": "Gene symbol"
+      "sc:encodingFormat": {
+        "@id": "edam:format_2331"
+      },
+      "sc:name": "Gene report"
+    },
+    {
+      "@id": "_:N2148bf36d0a244b4a328c3bf67b67b3f",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0916"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2331"
+      },
+      "sc:name": "Gene report"
     }
   ]
 }

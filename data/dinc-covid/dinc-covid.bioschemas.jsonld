@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,36 +36,40 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1016/J.COMPBIOMED.2021.104943",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/dinc-covid",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N89304c1dd7ae41e889b6bc8fa3c3d8eb"
+        "@id": "_:Ne6f007ba244a412aaff24c2bb68d8ad1"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_2828"
+          "@id": "edam:topic_0209"
         },
         {
           "@id": "edam:topic_0176"
         },
         {
-          "@id": "edam:topic_0209"
+          "@id": "edam:topic_2275"
         },
         {
           "@id": "edam:topic_0154"
         },
         {
-          "@id": "edam:topic_2275"
+          "@id": "edam:topic_2828"
         }
       ],
       "sc:citation": [
+        "pubmed:34717233",
         "pmcid:PMC8518241",
         {
           "@id": "https://doi.org/10.1016/J.COMPBIOMED.2021.104943"
-        },
-        "pubmed:34717233"
+        }
       ],
       "sc:description": "A webserver for ensemble docking with flexible SARS-CoV-2 proteins.",
       "sc:featureList": [
@@ -73,46 +77,42 @@
           "@id": "edam:operation_3891"
         },
         {
-          "@id": "edam:operation_4009"
+          "@id": "edam:operation_0478"
+        },
+        {
+          "@id": "edam:operation_2476"
         },
         {
           "@id": "edam:operation_3454"
         },
         {
-          "@id": "edam:operation_0478"
-        },
-        {
-          "@id": "edam:operation_2476"
+          "@id": "edam:operation_4009"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:name": "DINC-COVID",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:url": "http://dinc-covid.kavrakilab.org"
     },
     {
-      "@id": "_:N89304c1dd7ae41e889b6bc8fa3c3d8eb",
+      "@id": "_:Ne6f007ba244a412aaff24c2bb68d8ad1",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1463"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_1476"
+          "@id": "edam:format_3816"
         },
         {
-          "@id": "edam:format_3816"
+          "@id": "edam:format_1476"
         }
       ],
       "sc:name": "Small molecule structure"
-    },
-    {
-      "@id": "https://doi.org/10.1016/J.COMPBIOMED.2021.104943",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

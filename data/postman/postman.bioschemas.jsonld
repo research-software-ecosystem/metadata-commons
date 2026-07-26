@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,45 +40,36 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N86a17f5bbfce47deafcf3f62269a56ee"
+          "@id": "_:N959b4914fb914af5b7f5239a74fd60c2"
         },
         {
-          "@id": "_:Nd222a0572ba24e8ca8efb08505e60d5d"
+          "@id": "_:N78021d642e3f4375bb6421150660a9a7"
         }
       ],
       "bsc:output": {
-        "@id": "_:N734f42b490574388a4fb804ad8106405"
+        "@id": "_:N7b76910a90a74e659745ad88e00b4bee"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Desktop application",
       "sc:applicationSubCategory": [
         {
           "@id": "edam:topic_0601"
         },
         {
-          "@id": "edam:topic_3520"
+          "@id": "edam:topic_0121"
         },
         {
-          "@id": "edam:topic_0121"
+          "@id": "edam:topic_3520"
         }
       ],
       "sc:citation": "pubmed:19253288",
       "sc:description": "Post-translational modification software.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3646"
-        },
-        {
-          "@id": "edam:operation_2929"
-        },
-        {
-          "@id": "edam:operation_3441"
-        },
-        {
-          "@id": "edam:operation_0417"
-        },
-        {
           "@id": "edam:operation_3628"
+        },
+        {
+          "@id": "edam:operation_3695"
         },
         {
           "@id": "edam:operation_3645"
@@ -87,14 +78,23 @@
           "@id": "edam:operation_3755"
         },
         {
-          "@id": "edam:operation_3695"
+          "@id": "edam:operation_3646"
+        },
+        {
+          "@id": "edam:operation_3441"
+        },
+        {
+          "@id": "edam:operation_0417"
+        },
+        {
+          "@id": "edam:operation_2929"
         }
       ],
       "sc:name": "POSTMan",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://www.uib.no/en/rg/probe/65847/postman"
@@ -102,7 +102,7 @@
       "sc:url": "http://www.uib.no/en/rg/probe/65847/postman"
     },
     {
-      "@id": "_:N86a17f5bbfce47deafcf3f62269a56ee",
+      "@id": "_:N959b4914fb914af5b7f5239a74fd60c2",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0943"
@@ -113,7 +113,7 @@
       "sc:name": "Mass spectrometry spectra"
     },
     {
-      "@id": "_:Nd222a0572ba24e8ca8efb08505e60d5d",
+      "@id": "_:N78021d642e3f4375bb6421150660a9a7",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2886"
@@ -124,7 +124,7 @@
       "sc:name": "Protein sequence record"
     },
     {
-      "@id": "_:N734f42b490574388a4fb804ad8106405",
+      "@id": "_:N7b76910a90a74e659745ad88e00b4bee",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0944"

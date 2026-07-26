@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,23 +40,23 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Ne53421110aed464cbff7245a681bf32c"
+          "@id": "_:N614bc690c14d4d6d865e23d2b131aadc"
         },
         {
-          "@id": "_:N8e3391f948014fabbe8f09e1b92bf358"
+          "@id": "_:N33b76759e1ce480993fa1a20f15e4d25"
         }
       ],
       "bsc:output": {
-        "@id": "_:N79564f4176fe409b98fe4f2e6010819f"
+        "@id": "_:N6cf40217505f46f49cc025e5e6075947"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3174"
+          "@id": "edam:topic_3837"
         },
         {
-          "@id": "edam:topic_3837"
+          "@id": "edam:topic_3174"
         }
       ],
       "sc:citation": [
@@ -69,47 +69,31 @@
       "sc:description": "FOCUS (Find Organisms by Composition Usage) is an agile profiler for metagenomic data.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3472"
+          "@id": "edam:operation_3431"
         },
         {
-          "@id": "edam:operation_3431"
+          "@id": "edam:operation_3472"
         }
       ],
       "sc:license": "GPL-3.0",
       "sc:name": "FOCUS",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": [
         {
-          "@id": "https://github.com/metageni/FOCUS#installation"
+          "@id": "https://github.com/metageni/FOCUS#usage"
         },
         {
-          "@id": "https://github.com/metageni/FOCUS#usage"
+          "@id": "https://github.com/metageni/FOCUS#installation"
         }
       ],
       "sc:url": "https://github.com/metageni/FOCUS"
     },
     {
-      "@id": "_:Ne53421110aed464cbff7245a681bf32c",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2044"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_1930"
-        },
-        {
-          "@id": "edam:format_1929"
-        }
-      ],
-      "sc:name": "Sequence"
-    },
-    {
-      "@id": "_:N8e3391f948014fabbe8f09e1b92bf358",
+      "@id": "_:N614bc690c14d4d6d865e23d2b131aadc",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
@@ -125,7 +109,23 @@
       "sc:name": "Sequence"
     },
     {
-      "@id": "_:N79564f4176fe409b98fe4f2e6010819f",
+      "@id": "_:N33b76759e1ce480993fa1a20f15e4d25",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2044"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_1929"
+        },
+        {
+          "@id": "edam:format_1930"
+        }
+      ],
+      "sc:name": "Sequence"
+    },
+    {
+      "@id": "_:N6cf40217505f46f49cc025e5e6075947",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1872"

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,12 +40,12 @@
       "@type": "sc:CreativeWork"
     },
     {
-      "@id": "https://orcid.org/0000-0003-1033-9895",
-      "@type": "sc:Person"
-    },
-    {
       "@id": "https://doi.org/10.1007/978-1-4939-6798-8_3",
       "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-1033-9895",
+      "@type": "sc:Person"
     },
     {
       "@id": "https://bio.tools/pep-sitefinder",
@@ -55,16 +55,16 @@
       },
       "bsc:input": [
         {
-          "@id": "_:Nc6c3283666324dadb7e9167b3231cf8f"
+          "@id": "_:Na32ec75675924f489f41df3c4230754c"
         },
         {
-          "@id": "_:N70c4fb0087bc48a1997bb7e67a0c9e4f"
+          "@id": "_:N9facc8339d484e8a905b5df182c49cad"
         }
       ],
       "bsc:output": {
-        "@id": "_:N7a7601b133c8491ca22e738fe2e5dc2e"
+        "@id": "_:Ncf7ff4757a084eb3aa9cf6fea095ff1d"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
@@ -76,22 +76,22 @@
       ],
       "sc:citation": [
         "pubmed:24803671",
+        "pmcid:PMC4086095",
         {
           "@id": "https://doi.org/10.1093/nar/gku404"
         },
-        "pmcid:PMC4086095",
+        "pubmed:28236231",
         {
           "@id": "https://doi.org/10.1007/978-1-4939-6798-8_3"
-        },
-        "pubmed:28236231"
+        }
       ],
       "sc:description": "PEP-SiteFinder is a web server tool for the blind identification of peptide binding sites on protein surfaces.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3897"
+          "@id": "edam:operation_0476"
         },
         {
-          "@id": "edam:operation_0476"
+          "@id": "edam:operation_3897"
         }
       ],
       "sc:isAccessibleForFree": true,
@@ -104,18 +104,7 @@
       "sc:url": "https://mobyle.rpbs.univ-paris-diderot.fr/cgi-bin/portal.py#forms::PEP-SiteFinder"
     },
     {
-      "@id": "_:Nc6c3283666324dadb7e9167b3231cf8f",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1460"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1476"
-      },
-      "sc:name": "Protein structure"
-    },
-    {
-      "@id": "_:N70c4fb0087bc48a1997bb7e67a0c9e4f",
+      "@id": "_:Na32ec75675924f489f41df3c4230754c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2976"
@@ -126,7 +115,18 @@
       "sc:name": "Protein sequence"
     },
     {
-      "@id": "_:N7a7601b133c8491ca22e738fe2e5dc2e",
+      "@id": "_:N9facc8339d484e8a905b5df182c49cad",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1460"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1476"
+      },
+      "sc:name": "Protein structure"
+    },
+    {
+      "@id": "_:Ncf7ff4757a084eb3aa9cf6fea095ff1d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1461"

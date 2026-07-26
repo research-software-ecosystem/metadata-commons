@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,22 +36,6 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.3389/fgene.2019.00858",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://orcid.org/0000-0003-2090-3621",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://orcid.org/0000-0001-5980-8002",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://doi.org/10.1101/272450",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/pathfindR",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
@@ -59,49 +43,49 @@
       },
       "bsc:input": [
         {
-          "@id": "_:Nf3bcaac866564362b397bfe9bbf25125"
+          "@id": "_:N682b385b31a8491594e04fddd110a0e2"
         },
         {
-          "@id": "_:N7c1ce0294bcd4d839060d79cd355c093"
+          "@id": "_:N05c89d6e76874101bf965743997ab280"
         },
         {
-          "@id": "_:N9e8cac7797064ab2bf4149bbff650265"
+          "@id": "_:N5faee241f2b04bcf9859f84f6fd47e99"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N213949ace946455980b8d89a8ba8d47b"
+          "@id": "_:N686672adebf94625b5dd1e33eb6cf2d8"
         },
         {
-          "@id": "_:Nf98dc8ea9dff4d6884cec8113023427a"
+          "@id": "_:Nb524d8df1f7b4d378711cf1d7aaf7adc"
         },
         {
-          "@id": "_:Nd10589e52c0b4696b9ca7fe972d3223f"
+          "@id": "_:N6685a4529ae446d0a9945be8ecfb5017"
         },
         {
-          "@id": "_:Na053cf32f432412781764b5f273d73e1"
+          "@id": "_:N0663f815e89144a2900d8093172657f7"
         },
         {
-          "@id": "_:Na7d75bbb856342bb94ac7c30bdc47e61"
+          "@id": "_:Ne4b253ca49dc49409916caba02653126"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3053"
-        },
-        {
-          "@id": "edam:topic_0128"
-        },
-        {
           "@id": "edam:topic_0092"
         },
         {
+          "@id": "edam:topic_3053"
+        },
+        {
           "@id": "edam:topic_0602"
+        },
+        {
+          "@id": "edam:topic_0128"
         }
       ],
       "sc:author": [
@@ -114,13 +98,13 @@
       ],
       "sc:citation": [
         "pubmed:31608109",
+        "pmcid:PMC6773876",
         {
           "@id": "https://doi.org/10.3389/fgene.2019.00858"
         },
         {
           "@id": "https://doi.org/10.1101/272450"
-        },
-        "pmcid:PMC6773876"
+        }
       ],
       "sc:description": "Pathway enrichment analysis enables researchers to uncover mechanisms underlying the phenotype. pathfindR is a tool for pathway enrichment analysis utilizing active subnetworks. It identifies active subnetworks in a protein-protein interaction network using user-provided a list of genes. It performs pathway enrichment analyses on the identified subnetworks. pathfindR also offers functionalities to cluster enriched pathways and identify representative pathways, visualize analysis results and to score the pathways per sample.",
       "sc:featureList": [
@@ -131,18 +115,18 @@
           "@id": "edam:operation_0337"
         },
         {
-          "@id": "edam:operation_0276"
+          "@id": "edam:operation_2436"
         },
         {
-          "@id": "edam:operation_2436"
+          "@id": "edam:operation_0276"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "MIT",
       "sc:name": "pathfindR",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -152,7 +136,15 @@
       "sc:url": "https://github.com/egeulgen/pathfindR"
     },
     {
-      "@id": "_:Nf3bcaac866564362b397bfe9bbf25125",
+      "@id": "_:N682b385b31a8491594e04fddd110a0e2",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3753"
+      },
+      "sc:name": "Over-representation data"
+    },
+    {
+      "@id": "_:N05c89d6e76874101bf965743997ab280",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1026"
@@ -160,7 +152,7 @@
       "sc:name": "Gene symbol"
     },
     {
-      "@id": "_:N7c1ce0294bcd4d839060d79cd355c093",
+      "@id": "_:N5faee241f2b04bcf9859f84f6fd47e99",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1669"
@@ -168,7 +160,7 @@
       "sc:name": "P-value"
     },
     {
-      "@id": "_:N9e8cac7797064ab2bf4149bbff650265",
+      "@id": "_:N686672adebf94625b5dd1e33eb6cf2d8",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3753"
@@ -176,7 +168,7 @@
       "sc:name": "Over-representation data"
     },
     {
-      "@id": "_:N213949ace946455980b8d89a8ba8d47b",
+      "@id": "_:Nb524d8df1f7b4d378711cf1d7aaf7adc",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1669"
@@ -184,15 +176,23 @@
       "sc:name": "P-value"
     },
     {
-      "@id": "_:Nf98dc8ea9dff4d6884cec8113023427a",
+      "@id": "_:N6685a4529ae446d0a9945be8ecfb5017",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_3753"
+        "@id": "edam:data_2884"
       },
-      "sc:name": "Over-representation data"
+      "sc:name": "Plot"
     },
     {
-      "@id": "_:Nd10589e52c0b4696b9ca7fe972d3223f",
+      "@id": "_:N0663f815e89144a2900d8093172657f7",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2048"
+      },
+      "sc:name": "Report"
+    },
+    {
+      "@id": "_:Ne4b253ca49dc49409916caba02653126",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3753"
@@ -203,20 +203,20 @@
       "sc:name": "Over-representation data"
     },
     {
-      "@id": "_:Na053cf32f432412781764b5f273d73e1",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2048"
-      },
-      "sc:name": "Report"
+      "@id": "https://doi.org/10.3389/fgene.2019.00858",
+      "@type": "sc:CreativeWork"
     },
     {
-      "@id": "_:Na7d75bbb856342bb94ac7c30bdc47e61",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2884"
-      },
-      "sc:name": "Plot"
+      "@id": "https://orcid.org/0000-0001-5980-8002",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.1101/272450",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-2090-3621",
+      "@type": "sc:Person"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,28 +36,32 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/bts577",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/HumanMine",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N44cd0081403d446bb88a22315ee20eac"
+          "@id": "_:N124217d1ee2f4a62a5e62c1eca5d948b"
         },
         {
-          "@id": "_:N4f21c1c9809f47d1a669fd9040395076"
+          "@id": "_:N89362de6497a49eb907f8fab068ecabc"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N6b1a84b7c2b348adb9d99f79169bfed6"
+          "@id": "_:N0a3f5f2a18a044bea0eb3c82f62cf973"
         },
         {
-          "@id": "_:Ne8da64e1f9f44eb8b27d94c016001afb"
+          "@id": "_:N30bfced9c21244e4ba395fe37df901d1"
         },
         {
-          "@id": "_:Ne0014a52661d465cb5376bc9c9725475"
+          "@id": "_:N3145220592774ffb9f058b3f1a97b614"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Database portal",
         "Web application",
@@ -75,8 +79,8 @@
         }
       ],
       "sc:citation": [
-        "pmcid:PMC3516146",
         "pubmed:23023984",
+        "pmcid:PMC3516146",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/bts577"
         }
@@ -84,62 +88,38 @@
       "sc:description": "HumanMine integrates many types of data for Homo sapiens and Mus musculus",
       "sc:featureList": [
         {
-          "@id": "edam:operation_2436"
+          "@id": "edam:operation_2422"
         },
         {
-          "@id": "edam:operation_0337"
+          "@id": "edam:operation_2436"
         },
         {
           "@id": "edam:operation_0224"
         },
         {
-          "@id": "edam:operation_2422"
+          "@id": "edam:operation_0337"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "LGPL-2.1",
       "sc:name": "HumanMine",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:softwareHelp": [
         {
-          "@id": "http://intermine.org/intermine-user-docs"
+          "@id": "http://intermine.org/im-docs/docs/web-services/index"
         },
         {
-          "@id": "http://intermine.org/im-docs/docs/web-services/index"
+          "@id": "http://intermine.org/intermine-user-docs"
         }
       ],
       "sc:softwareVersion": "6.0 2019 May",
       "sc:url": "https://www.humanmine.org/humanmine"
     },
     {
-      "@id": "_:N6b1a84b7c2b348adb9d99f79169bfed6",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3786"
-      },
-      "sc:name": "Query script"
-    },
-    {
-      "@id": "_:Ne8da64e1f9f44eb8b27d94c016001afb",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3753"
-      },
-      "sc:name": "Over-representation data"
-    },
-    {
-      "@id": "_:Ne0014a52661d465cb5376bc9c9725475",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1255"
-      },
-      "sc:name": "Sequence features"
-    },
-    {
-      "@id": "_:N44cd0081403d446bb88a22315ee20eac",
+      "@id": "_:N124217d1ee2f4a62a5e62c1eca5d948b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2353"
@@ -147,7 +127,7 @@
       "sc:name": "Ontology data"
     },
     {
-      "@id": "_:N4f21c1c9809f47d1a669fd9040395076",
+      "@id": "_:N89362de6497a49eb907f8fab068ecabc",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1255"
@@ -155,8 +135,28 @@
       "sc:name": "Sequence features"
     },
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/bts577",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N0a3f5f2a18a044bea0eb3c82f62cf973",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3753"
+      },
+      "sc:name": "Over-representation data"
+    },
+    {
+      "@id": "_:N30bfced9c21244e4ba395fe37df901d1",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3786"
+      },
+      "sc:name": "Query script"
+    },
+    {
+      "@id": "_:N3145220592774ffb9f058b3f1a97b614",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1255"
+      },
+      "sc:name": "Sequence features"
     }
   ]
 }

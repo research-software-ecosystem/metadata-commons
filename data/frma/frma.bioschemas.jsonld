@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,25 +39,25 @@
       "@id": "https://bio.tools/frma",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N0864ad0b249c4b80975e64f382dc592d"
+        "@id": "_:Nccdee97b333b4ec0a5ff709d3629240c"
       },
       "bsc:output": {
-        "@id": "_:N7918c8a6c89b4ee980eda4db3a89faca"
+        "@id": "_:N390929f0557843858b786146ffe77d61"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_0203"
+        },
         {
           "@id": "edam:topic_3518"
         },
         {
           "@id": "edam:topic_3047"
-        },
-        {
-          "@id": "edam:topic_0203"
         },
         {
           "@id": "edam:topic_0632"
@@ -75,8 +75,8 @@
       "sc:license": "GPL-2.0-or-later",
       "sc:name": "frma",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -86,7 +86,7 @@
       "sc:url": "https://bioconductor.org/packages/frma"
     },
     {
-      "@id": "_:N0864ad0b249c4b80975e64f382dc592d",
+      "@id": "_:Nccdee97b333b4ec0a5ff709d3629240c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2603"
@@ -97,7 +97,7 @@
       "sc:name": "Gene expression data"
     },
     {
-      "@id": "_:N7918c8a6c89b4ee980eda4db3a89faca",
+      "@id": "_:N390929f0557843858b786146ffe77d61",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1772"

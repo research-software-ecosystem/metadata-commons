@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,24 +36,20 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1021/ACS.CHEMRESTOX.9B00011",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/SiliS-PTOXRA",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "César R. García-Jacas",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Desktop application",
       "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_3343"
+        },
         {
           "@id": "edam:topic_0154"
         },
         {
           "@id": "edam:topic_2840"
-        },
-        {
-          "@id": "edam:topic_3343"
         }
       ],
       "sc:citation": [
@@ -70,14 +66,18 @@
       "sc:license": "Unlicense",
       "sc:name": "SiliS-PTOXRA",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://tomocomd.com/apps/ptoxra"
       },
       "sc:url": "http://tomocomd.com/apps/ptoxra"
+    },
+    {
+      "@id": "https://doi.org/10.1021/ACS.CHEMRESTOX.9B00011",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

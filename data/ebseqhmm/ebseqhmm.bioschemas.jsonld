@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,41 +40,41 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Ning Leng",
       "bsc:input": {
-        "@id": "_:N53f2b7da23634bcc89477e4600016cab"
+        "@id": "_:N7850519076034eb8af5304e692ca8734"
       },
       "bsc:output": [
         {
-          "@id": "_:Nbc8a93ccb1e446faacb0a7abc0567ad6"
+          "@id": "_:N4162fa41d5ca436a935b2f1875637a9f"
         },
         {
-          "@id": "_:Nbc8e53a69f77467cb62996817efa9391"
+          "@id": "_:N51093124fcf74d30990c5cd7ab6a998c"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_2269"
+          "@id": "edam:topic_0203"
         },
         {
           "@id": "edam:topic_0602"
         },
         {
-          "@id": "edam:topic_0203"
+          "@id": "edam:topic_3170"
         },
         {
-          "@id": "edam:topic_3170"
+          "@id": "edam:topic_2269"
         }
       ],
       "sc:citation": [
+        "pubmed:25847007",
         "pmcid:PMC4528625",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btv193"
-        },
-        "pubmed:25847007"
+        }
       ],
       "sc:description": "This package implements an auto-regressive hidden Markov model for statistical analysis in ordered RNA-seq experiments (e.g. time course or spatial course data). It provides functions to identify genes and isoforms that have non-constant expression profile over the time points/positions, and cluster them into expression paths.",
       "sc:featureList": [
@@ -91,9 +91,9 @@
       "sc:license": "Artistic-2.0",
       "sc:name": "EBSeqHMM",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/EBSeqHMM.html"
@@ -102,39 +102,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/EBSeqHMM.html"
     },
     {
-      "@id": "_:Nbc8a93ccb1e446faacb0a7abc0567ad6",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2048"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_3547"
-        }
-      ],
-      "sc:name": "Report"
-    },
-    {
-      "@id": "_:Nbc8e53a69f77467cb62996817efa9391",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2884"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_3547"
-        }
-      ],
-      "sc:name": "Plot"
-    },
-    {
-      "@id": "_:N53f2b7da23634bcc89477e4600016cab",
+      "@id": "_:N7850519076034eb8af5304e692ca8734",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0928"
@@ -148,6 +116,38 @@
         }
       ],
       "sc:name": "Gene expression profile"
+    },
+    {
+      "@id": "_:N4162fa41d5ca436a935b2f1875637a9f",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2884"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Plot"
+    },
+    {
+      "@id": "_:N51093124fcf74d30990c5cd7ab6a998c",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2048"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Report"
     },
     {
       "@id": "https://doi.org/10.1093/bioinformatics/btv193",

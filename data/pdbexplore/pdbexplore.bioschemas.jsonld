@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,27 +40,27 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Jose Dana",
       "bsc:input": {
-        "@id": "_:N62577c539b394a70a7f0c7ecee179453"
+        "@id": "_:N95c29d5736ef44c7a6ca6cc43ca514a1"
       },
       "bsc:output": [
         {
-          "@id": "_:Nc437060b107b4243870ef1e3ca7ed718"
+          "@id": "_:Na9ea2aaf21f8442f888fd8592b49c275"
         },
         {
-          "@id": "_:N772a059954e6409a8b9f0ae6cb6c230f"
+          "@id": "_:N1279fccf5d3a4277b8390b2e8b291cd3"
         },
         {
-          "@id": "_:N97b3942ab8d24085a38d61e57f68a5eb"
+          "@id": "_:N3cb69fc5beac43d7b857927ce88566fb"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0080"
       },
       "sc:author": [
-        "PDBe development team",
-        "Jose Dana"
+        "Jose Dana",
+        "PDBe development team"
       ],
       "sc:description": "Search and alignment of protein sequences in PDB.",
       "sc:featureList": {
@@ -68,24 +68,32 @@
       },
       "sc:name": "PDBeXplore: sequence similarity search",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": "EMBL-EBI",
       "sc:softwareHelp": [
         {
-          "@id": "http://www.ebi.ac.uk/about/terms-of-use"
+          "@id": "http://pdbe.org/FASTA"
         },
         {
-          "@id": "http://pdbe.org/FASTA"
+          "@id": "http://www.ebi.ac.uk/about/terms-of-use"
         }
       ],
       "sc:softwareVersion": "1",
       "sc:url": "http://pdbe.org/FASTA"
     },
     {
-      "@id": "_:Nc437060b107b4243870ef1e3ca7ed718",
+      "@id": "_:N95c29d5736ef44c7a6ca6cc43ca514a1",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2976"
+      },
+      "sc:name": "Protein sequence"
+    },
+    {
+      "@id": "_:Na9ea2aaf21f8442f888fd8592b49c275",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1381"
@@ -93,7 +101,7 @@
       "sc:name": "Sequence alignment (pair)"
     },
     {
-      "@id": "_:N772a059954e6409a8b9f0ae6cb6c230f",
+      "@id": "_:N1279fccf5d3a4277b8390b2e8b291cd3",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1384"
@@ -101,20 +109,12 @@
       "sc:name": "Sequence alignment (protein)"
     },
     {
-      "@id": "_:N97b3942ab8d24085a38d61e57f68a5eb",
+      "@id": "_:N3cb69fc5beac43d7b857927ce88566fb",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0857"
       },
       "sc:name": "Sequence search results"
-    },
-    {
-      "@id": "_:N62577c539b394a70a7f0c7ecee179453",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2976"
-      },
-      "sc:name": "Protein sequence"
     }
   ]
 }

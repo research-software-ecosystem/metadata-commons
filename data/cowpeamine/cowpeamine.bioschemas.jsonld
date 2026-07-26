@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,32 +36,28 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/bts577",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/CowpeaMine",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Neee81728833c42fea7023dfc78456160"
+          "@id": "_:Na1eb6ab400e946db931d96cd01bb10e7"
         },
         {
-          "@id": "_:N31eba473856142f5a6cc13f4ee85dad7"
+          "@id": "_:N9e387796bc114af8873f19719feed926"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N114ed04299f940b9b37280e4ce2e9ad7"
+          "@id": "_:N4e69adf4d4844c759ae23861bff2e713"
         },
         {
-          "@id": "_:Ned12513cce154ee09ed22f7957b7cd2d"
+          "@id": "_:N8412823810f24f2cacf4aedb903f5a0a"
         },
         {
-          "@id": "_:N542ca77633bd4471a272674444c7b524"
+          "@id": "_:Nd69b2fd7cc2847dfb26a0d4ce4496141"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Database portal",
         "Web application",
@@ -79,11 +75,11 @@
         }
       ],
       "sc:citation": [
+        "pubmed:23023984",
+        "pmcid:PMC3516146",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/bts577"
-        },
-        "pmcid:PMC3516146",
-        "pubmed:23023984"
+        }
       ],
       "sc:description": "A mine containing both cowpea genetic and genomic data, courtesy UC-Riverside",
       "sc:featureList": [
@@ -94,56 +90,32 @@
           "@id": "edam:operation_2436"
         },
         {
-          "@id": "edam:operation_0337"
+          "@id": "edam:operation_0224"
         },
         {
-          "@id": "edam:operation_0224"
+          "@id": "edam:operation_0337"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "LGPL-2.1",
       "sc:name": "CowpeaMine",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:softwareHelp": [
         {
-          "@id": "https://flymine.readthedocs.io/en/latest/"
+          "@id": "http://intermine.readthedocs.org/en/latest/web-services/"
         },
         {
-          "@id": "http://intermine.readthedocs.org/en/latest/web-services/"
+          "@id": "https://flymine.readthedocs.io/en/latest/"
         }
       ],
       "sc:softwareVersion": "0.10",
       "sc:url": "https://mines.legumeinfo.org/cowpeamine"
     },
     {
-      "@id": "_:N114ed04299f940b9b37280e4ce2e9ad7",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1255"
-      },
-      "sc:name": "Sequence features"
-    },
-    {
-      "@id": "_:Ned12513cce154ee09ed22f7957b7cd2d",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3786"
-      },
-      "sc:name": "Query script"
-    },
-    {
-      "@id": "_:N542ca77633bd4471a272674444c7b524",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3753"
-      },
-      "sc:name": "Over-representation data"
-    },
-    {
-      "@id": "_:Neee81728833c42fea7023dfc78456160",
+      "@id": "_:Na1eb6ab400e946db931d96cd01bb10e7",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2353"
@@ -151,12 +123,40 @@
       "sc:name": "Ontology data"
     },
     {
-      "@id": "_:N31eba473856142f5a6cc13f4ee85dad7",
+      "@id": "_:N9e387796bc114af8873f19719feed926",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1255"
       },
       "sc:name": "Sequence features"
+    },
+    {
+      "@id": "_:N4e69adf4d4844c759ae23861bff2e713",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3753"
+      },
+      "sc:name": "Over-representation data"
+    },
+    {
+      "@id": "_:N8412823810f24f2cacf4aedb903f5a0a",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3786"
+      },
+      "sc:name": "Query script"
+    },
+    {
+      "@id": "_:Nd69b2fd7cc2847dfb26a0d4ce4496141",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1255"
+      },
+      "sc:name": "Sequence features"
+    },
+    {
+      "@id": "https://doi.org/10.1093/bioinformatics/bts577",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

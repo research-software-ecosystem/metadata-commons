@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,10 +40,6 @@
       "@type": "sc:CreativeWork"
     },
     {
-      "@id": "https://doi.org/10.1186/1471-2105-14-184",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://doi.org/10.7490/f1000research.1114334.1",
       "@type": "sc:CreativeWork"
     },
@@ -53,52 +49,52 @@
       "biotools:primaryContact": "Ben Langmead",
       "bsc:input": [
         {
-          "@id": "_:N1b4c06ffb7284dc18db4d83f56976162"
+          "@id": "_:N7a51fc0975a44a89ad3a02f01a7aa384"
         },
         {
-          "@id": "_:N8c16911bac374e42983576c473b823c7"
+          "@id": "_:N041e7348bc614486aa087168e2b555c7"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N46fb9a78612b4a2e8a3846089e3ee042"
+          "@id": "_:N877cef02ec944c05ab5d0fe8d5a8b092"
         },
         {
-          "@id": "_:Ned8d66a1d7d2487fb6a9b4c9c4e43192"
+          "@id": "_:Nb1cf675ae22947ef80b0f8274eb05b31"
         },
         {
-          "@id": "_:Nfcd761a86fb1413089c41200498a6a03"
+          "@id": "_:Nd29ce66d78094df0be7388aa265b6395"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
           "@id": "edam:topic_0622"
         },
         {
+          "@id": "edam:topic_0102"
+        },
+        {
           "@id": "edam:topic_0196"
         },
         {
           "@id": "edam:topic_3168"
-        },
-        {
-          "@id": "edam:topic_0102"
         }
       ],
       "sc:citation": [
-        {
-          "@id": "https://doi.org/10.7490/f1000research.1114334.1"
-        },
+        "pubmed:23758764",
+        "pmcid:PMC3694458",
         {
           "@id": "https://doi.org/10.1186/1471-2105-14-184"
         },
-        "pubmed:23758764",
-        "pmcid:PMC3694458",
-        "pmcid:PMC2690996",
         "pubmed:19261174",
+        "pmcid:PMC2690996",
         {
           "@id": "https://doi.org/10.1186/gb-2009-10-3-r25"
+        },
+        {
+          "@id": "https://doi.org/10.7490/f1000research.1114334.1"
         }
       ],
       "sc:description": "Bowtie is an ultrafast, memory-efficient short read aligner.",
@@ -108,8 +104,8 @@
       "sc:isAccessibleForFree": true,
       "sc:name": "Bowtie",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -119,29 +115,42 @@
       "sc:url": "http://bowtie-bio.sourceforge.net/index.shtml"
     },
     {
-      "@id": "_:N46fb9a78612b4a2e8a3846089e3ee042",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0924"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2573"
-      },
-      "sc:name": "Sequence trace"
-    },
-    {
-      "@id": "_:Ned8d66a1d7d2487fb6a9b4c9c4e43192",
+      "@id": "_:N7a51fc0975a44a89ad3a02f01a7aa384",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0006"
       },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_1929"
+        },
+        {
+          "@id": "edam:format_2331"
+        }
+      ],
       "sc:name": "Data"
     },
     {
-      "@id": "_:Nfcd761a86fb1413089c41200498a6a03",
+      "@id": "_:N041e7348bc614486aa087168e2b555c7",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0006"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_1931"
+        },
+        {
+          "@id": "edam:format_1932"
+        },
+        {
+          "@id": "edam:format_1933"
+        }
+      ],
+      "sc:name": "Data"
+    },
+    {
+      "@id": "_:N877cef02ec944c05ab5d0fe8d5a8b092",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0006"
@@ -152,39 +161,30 @@
       "sc:name": "Data"
     },
     {
-      "@id": "_:N1b4c06ffb7284dc18db4d83f56976162",
+      "@id": "_:Nb1cf675ae22947ef80b0f8274eb05b31",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0006"
       },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2331"
-        },
-        {
-          "@id": "edam:format_1929"
-        }
-      ],
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
       "sc:name": "Data"
     },
     {
-      "@id": "_:N8c16911bac374e42983576c473b823c7",
+      "@id": "_:Nd29ce66d78094df0be7388aa265b6395",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_0006"
+        "@id": "edam:data_0924"
       },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_1932"
-        },
-        {
-          "@id": "edam:format_1933"
-        },
-        {
-          "@id": "edam:format_1931"
-        }
-      ],
-      "sc:name": "Data"
+      "sc:encodingFormat": {
+        "@id": "edam:format_2573"
+      },
+      "sc:name": "Sequence trace"
+    },
+    {
+      "@id": "https://doi.org/10.1186/1471-2105-14-184",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

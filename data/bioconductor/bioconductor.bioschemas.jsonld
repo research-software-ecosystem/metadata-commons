@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,10 +36,6 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1186/gb-2004-5-10-r80",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://doi.org/10.1038/nmeth.3252",
       "@type": "sc:CreativeWork"
     },
@@ -48,40 +44,40 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N2e363a3a79fc40ebbd0bdeb3d3c4947e"
+          "@id": "_:Ncc31b0ca7a1a41f49bfec090fa8dde3a"
         },
         {
-          "@id": "_:N22f881d27994489b92327fcba171714e"
+          "@id": "_:N283c0c1dc61b40289ccbec82b23d1c54"
         },
         {
-          "@id": "_:Ndb86af97f6fc459b8c3ae67db7318a73"
+          "@id": "_:N5a224bb00c864e58ad302ca8455630ef"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Nc2185e2906fb4e528195456cf875129b"
+          "@id": "_:N151954aabaa84b73833ce8bed36c91ef"
         },
         {
-          "@id": "_:N4e475675bf534d4ca2933250412beeba"
+          "@id": "_:Ned926969ba7546b081f87ffbfb1e63b7"
         },
         {
-          "@id": "_:Naaefbe019d944b118c2b8aa1d4443358"
+          "@id": "_:Nb5858907bb64407ca2c557574b80abc4"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Suite",
       "sc:applicationSubCategory": [
         {
           "@id": "edam:topic_0091"
         },
         {
-          "@id": "edam:topic_2269"
+          "@id": "edam:topic_3307"
         },
         {
           "@id": "edam:topic_3071"
         },
         {
-          "@id": "edam:topic_3307"
+          "@id": "edam:topic_2269"
         }
       ],
       "sc:citation": [
@@ -95,20 +91,20 @@
       "sc:description": "Open development software project, based on the R programming language, providing tools for the analysis of high-throughput genomic data. The project aims to enable interdisciplinary research, collaboration and rapid development of scientific software.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_2238"
+          "@id": "edam:operation_2945"
         },
         {
           "@id": "edam:operation_2409"
         },
         {
-          "@id": "edam:operation_2945"
+          "@id": "edam:operation_2238"
         }
       ],
       "sc:name": "Bioconductor",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://www.bioconductor.org/about/"
@@ -116,15 +112,31 @@
       "sc:url": "http://www.bioconductor.org"
     },
     {
-      "@id": "_:Nc2185e2906fb4e528195456cf875129b",
+      "@id": "_:Ncc31b0ca7a1a41f49bfec090fa8dde3a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2048"
+        "@id": "edam:data_2093"
       },
-      "sc:name": "Report"
+      "sc:name": "Data reference"
     },
     {
-      "@id": "_:N4e475675bf534d4ca2933250412beeba",
+      "@id": "_:N283c0c1dc61b40289ccbec82b23d1c54",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3108"
+      },
+      "sc:name": "Experimental measurement"
+    },
+    {
+      "@id": "_:N5a224bb00c864e58ad302ca8455630ef",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2044"
+      },
+      "sc:name": "Sequence"
+    },
+    {
+      "@id": "_:N151954aabaa84b73833ce8bed36c91ef",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2353"
@@ -132,7 +144,15 @@
       "sc:name": "Ontology data"
     },
     {
-      "@id": "_:Naaefbe019d944b118c2b8aa1d4443358",
+      "@id": "_:Ned926969ba7546b081f87ffbfb1e63b7",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2048"
+      },
+      "sc:name": "Report"
+    },
+    {
+      "@id": "_:Nb5858907bb64407ca2c557574b80abc4",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0950"
@@ -143,28 +163,8 @@
       "sc:name": "Mathematical model"
     },
     {
-      "@id": "_:N2e363a3a79fc40ebbd0bdeb3d3c4947e",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2093"
-      },
-      "sc:name": "Data reference"
-    },
-    {
-      "@id": "_:N22f881d27994489b92327fcba171714e",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3108"
-      },
-      "sc:name": "Experimental measurement"
-    },
-    {
-      "@id": "_:Ndb86af97f6fc459b8c3ae67db7318a73",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2044"
-      },
-      "sc:name": "Sequence"
+      "@id": "https://doi.org/10.1186/gb-2004-5-10-r80",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

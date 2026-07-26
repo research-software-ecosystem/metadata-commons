@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,7 +36,7 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.7490/f1000research.1114334.1",
+      "@id": "https://doi.org/10.1186/gb-2011-12-3-r22",
       "@type": "sc:CreativeWork"
     },
     {
@@ -44,29 +44,26 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N3b4308a79f484b18b231af710a85d94a"
+          "@id": "_:Nb134b7aee9c94e7d990c7cdea5650422"
         },
         {
-          "@id": "_:N40a952d6a7f94cd8a2a0a1ab4a85892b"
+          "@id": "_:N80f3cd8dadb147a9afaa5e2762de54f5"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Ne21648df169247b6b39df54154cc2564"
+          "@id": "_:N749fc58b2ab24d2081bbbdf2e403e101"
         },
         {
-          "@id": "_:N901c6559bd004c1cb407cec63591eab5"
+          "@id": "_:Ncb551a4ef4f346c98a4995b0a41e4397"
         },
         {
-          "@id": "_:N5a6ec448798c456f8a5c775879313c17"
+          "@id": "_:N8bb4aac2c12e43bea803c0bf19c55c5d"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_3174"
-        },
         {
           "@id": "edam:topic_3169"
         },
@@ -74,15 +71,18 @@
           "@id": "edam:topic_0203"
         },
         {
+          "@id": "edam:topic_3174"
+        },
+        {
           "@id": "edam:topic_3170"
         }
       ],
       "sc:citation": [
+        "pubmed:21410973",
         "pmcid:PMC3129672",
         {
           "@id": "https://doi.org/10.1186/gb-2011-12-3-r22"
         },
-        "pubmed:21410973",
         {
           "@id": "https://doi.org/10.7490/f1000research.1114334.1"
         }
@@ -95,58 +95,23 @@
       "sc:license": "Apache-2.0",
       "sc:name": "eXpress",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": [
         {
-          "@id": "https://pachterlab.github.io/eXpress/manual.html"
+          "@id": "https://github.com/adarob/express-d/wiki"
         },
         {
-          "@id": "https://github.com/adarob/express-d/wiki"
+          "@id": "https://pachterlab.github.io/eXpress/manual.html"
         }
       ],
       "sc:softwareVersion": "1.5.1",
       "sc:url": "https://pachterlab.github.io/eXpress/index.html"
     },
     {
-      "@id": "_:Ne21648df169247b6b39df54154cc2564",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2048"
-      },
-      "sc:name": "Report"
-    },
-    {
-      "@id": "_:N901c6559bd004c1cb407cec63591eab5",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2048"
-      },
-      "sc:name": "Report"
-    },
-    {
-      "@id": "_:N5a6ec448798c456f8a5c775879313c17",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0006"
-      },
-      "sc:name": "Data"
-    },
-    {
-      "@id": "_:N3b4308a79f484b18b231af710a85d94a",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1234"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1929"
-      },
-      "sc:name": "Sequence set (nucleic acid)"
-    },
-    {
-      "@id": "_:N40a952d6a7f94cd8a2a0a1ab4a85892b",
+      "@id": "_:Nb134b7aee9c94e7d990c7cdea5650422",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1383"
@@ -162,7 +127,42 @@
       "sc:name": "Sequence alignment (nucleic acid)"
     },
     {
-      "@id": "https://doi.org/10.1186/gb-2011-12-3-r22",
+      "@id": "_:N80f3cd8dadb147a9afaa5e2762de54f5",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1234"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "Sequence set (nucleic acid)"
+    },
+    {
+      "@id": "_:N749fc58b2ab24d2081bbbdf2e403e101",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0006"
+      },
+      "sc:name": "Data"
+    },
+    {
+      "@id": "_:Ncb551a4ef4f346c98a4995b0a41e4397",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2048"
+      },
+      "sc:name": "Report"
+    },
+    {
+      "@id": "_:N8bb4aac2c12e43bea803c0bf19c55c5d",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2048"
+      },
+      "sc:name": "Report"
+    },
+    {
+      "@id": "https://doi.org/10.7490/f1000research.1114334.1",
       "@type": "sc:CreativeWork"
     }
   ]

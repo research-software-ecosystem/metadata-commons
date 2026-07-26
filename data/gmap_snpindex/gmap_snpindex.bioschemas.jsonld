@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,43 +36,47 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.7490/f1000research.1114334.1",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/gmap_snpindex",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Galaxy Support Team",
       "bsc:input": [
         {
-          "@id": "_:N615afa70fdd649d4801257a281784c49"
+          "@id": "_:N53b0f4adf95e45e2ab10f873026caf66"
         },
         {
-          "@id": "_:N7c39f442e52c41809525590e5d987209"
+          "@id": "_:Nd5de57c41caa45a68ea50a91880edfc3"
         }
       ],
       "bsc:output": {
-        "@id": "_:N24b73469f7b643e78b7f1c69555bbfed"
+        "@id": "_:N7ee7db67e7a3423cb420d9d5e4f9fcd4"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0080"
+          "@id": "edam:topic_2885"
         },
         {
-          "@id": "edam:topic_2885"
+          "@id": "edam:topic_0080"
         }
       ],
       "sc:citation": [
+        "pubmed:27137889",
         "pmcid:PMC4987906",
         {
           "@id": "https://doi.org/10.1093/nar/gkw343"
         },
-        "pubmed:27137889",
-        {
-          "@id": "https://doi.org/10.7490/f1000research.1114334.1"
-        },
+        "pubmed:15728110",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/bti310"
         },
-        "pubmed:15728110"
+        {
+          "@id": "https://doi.org/10.7490/f1000research.1114334.1"
+        }
       ],
       "sc:description": "Build index files for known SNPs.",
       "sc:featureList": [
@@ -85,8 +89,8 @@
       ],
       "sc:name": "gmap_snpindex",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -96,29 +100,7 @@
       "sc:url": "http://research-pub.gene.com/gmap/"
     },
     {
-      "@id": "_:N24b73469f7b643e78b7f1c69555bbfed",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0006"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Data"
-    },
-    {
-      "@id": "_:N615afa70fdd649d4801257a281784c49",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0006"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Data"
-    },
-    {
-      "@id": "_:N7c39f442e52c41809525590e5d987209",
+      "@id": "_:N53b0f4adf95e45e2ab10f873026caf66",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0006"
@@ -129,15 +111,33 @@
       "sc:name": "Data"
     },
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/bti310",
-      "@type": "sc:CreativeWork"
+      "@id": "_:Nd5de57c41caa45a68ea50a91880edfc3",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0006"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Data"
+    },
+    {
+      "@id": "_:N7ee7db67e7a3423cb420d9d5e4f9fcd4",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0006"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Data"
     },
     {
       "@id": "https://doi.org/10.1093/nar/gkw343",
       "@type": "sc:CreativeWork"
     },
     {
-      "@id": "https://doi.org/10.7490/f1000research.1114334.1",
+      "@id": "https://doi.org/10.1093/bioinformatics/bti310",
       "@type": "sc:CreativeWork"
     }
   ]

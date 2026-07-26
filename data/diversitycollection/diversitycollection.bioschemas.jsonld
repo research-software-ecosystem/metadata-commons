@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -43,37 +43,31 @@
       },
       "bsc:input": [
         {
-          "@id": "_:Nd2df2b4bd147482797e7f0f22ae58d73"
+          "@id": "_:Nbcef15f561e34c06945c0ec7adb2f160"
         },
         {
-          "@id": "_:Nc40f71a2de70413fb9b5803c97027787"
+          "@id": "_:Nbc626ca333a04aa890b680146d604cd7"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N4a94521950404a4388f7e9a1666e8c39"
+          "@id": "_:Ne5e51233e9d140acaef947bdd57be5a1"
         },
         {
-          "@id": "_:Nfa256b825b2b43c3a8a7bbf1e48b05fa"
+          "@id": "_:Nba3ff1986c97486b97788f47bdd718e7"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Desktop application",
         "Web service"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0780"
-        },
-        {
           "@id": "edam:topic_3679"
         },
         {
           "@id": "edam:topic_3050"
-        },
-        {
-          "@id": "edam:topic_3382"
         },
         {
           "@id": "edam:topic_3071"
@@ -82,20 +76,32 @@
           "@id": "edam:topic_3299"
         },
         {
+          "@id": "edam:topic_3678"
+        },
+        {
           "@id": "edam:topic_0622"
+        },
+        {
+          "@id": "edam:topic_3382"
         },
         {
           "@id": "edam:topic_3301"
         },
         {
-          "@id": "edam:topic_3500"
+          "@id": "edam:topic_0780"
         },
         {
-          "@id": "edam:topic_3678"
+          "@id": "edam:topic_3500"
         }
       ],
       "sc:description": "DiversityCollection (DWB-DC) is an application of the Diversity Workbench (DWB). It might be installed as part of a DWB environment, but also as a stand-alone application, e. g., in a local installation. Each DWB module is devoted to a specific data domain. DC is designed for data describing collection events, collections, collection vouchers and specimens, parts of specimens, as well as observation and occurrence data with assigned multimedia objects and documents. It is processing any action concerning the gathering, storage, transaction and treatment of specimens in a collection and is also appropriate to store observation data with analyses added. DC is unique among  collection management systems by its focus on biological relations between organisms linked together as one or more specimens or observations (e. g., host, parasite, hyperparasite, symbionts, etc.) and by its interoperability through internal and external services.",
       "sc:featureList": [
+        {
+          "@id": "edam:operation_2945"
+        },
+        {
+          "@id": "edam:operation_0226"
+        },
         {
           "@id": "edam:operation_3434"
         },
@@ -103,16 +109,10 @@
           "@id": "edam:operation_2409"
         },
         {
-          "@id": "edam:operation_0226"
-        },
-        {
           "@id": "edam:operation_3429"
         },
         {
           "@id": "edam:operation_0337"
-        },
-        {
-          "@id": "edam:operation_2945"
         }
       ],
       "sc:funder": "Deutsche Forschungsgemeinschaft (DFG)",
@@ -138,7 +138,26 @@
       "sc:url": "https://diversityworkbench.net/Portal/DiversityCollection"
     },
     {
-      "@id": "_:Nd2df2b4bd147482797e7f0f22ae58d73",
+      "@id": "_:Nbcef15f561e34c06945c0ec7adb2f160",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3707"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3706"
+        },
+        {
+          "@id": "edam:format_2331"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Biodiversity data"
+    },
+    {
+      "@id": "_:Nbc626ca333a04aa890b680146d604cd7",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3736"
@@ -149,7 +168,7 @@
       "sc:name": "Ecological data"
     },
     {
-      "@id": "_:Nc40f71a2de70413fb9b5803c97027787",
+      "@id": "_:Ne5e51233e9d140acaef947bdd57be5a1",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3707"
@@ -163,53 +182,34 @@
         },
         {
           "@id": "edam:format_2330"
+        },
+        {
+          "@id": "edam:format_2332"
         }
       ],
       "sc:name": "Biodiversity data"
     },
     {
-      "@id": "_:N4a94521950404a4388f7e9a1666e8c39",
+      "@id": "_:Nba3ff1986c97486b97788f47bdd718e7",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3736"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_2332"
-        },
-        {
           "@id": "edam:format_3706"
         },
         {
           "@id": "edam:format_2331"
+        },
+        {
+          "@id": "edam:format_2330"
+        },
+        {
+          "@id": "edam:format_2332"
         }
       ],
       "sc:name": "Ecological data"
-    },
-    {
-      "@id": "_:Nfa256b825b2b43c3a8a7bbf1e48b05fa",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3707"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_2332"
-        },
-        {
-          "@id": "edam:format_3706"
-        },
-        {
-          "@id": "edam:format_2331"
-        }
-      ],
-      "sc:name": "Biodiversity data"
     },
     {
       "@id": "https://orcid.org/0000-0003-1980-3148",

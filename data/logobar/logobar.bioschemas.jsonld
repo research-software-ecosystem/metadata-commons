@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,30 +36,26 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/bti761",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/logobar",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Thomas Burglin",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0157"
-        },
-        {
           "@id": "edam:topic_0623"
-        },
-        {
-          "@id": "edam:topic_0154"
         },
         {
           "@id": "edam:topic_3510"
         },
         {
           "@id": "edam:topic_0078"
+        },
+        {
+          "@id": "edam:topic_0157"
+        },
+        {
+          "@id": "edam:topic_0154"
         }
       ],
       "sc:citation": [
@@ -71,25 +67,29 @@
       "sc:description": "LogoBar is a Java application to display protein sequence logos. With this application you can generate protein sequence logos from multiple sequence alignments that show the amino acid incidence at every position.",
       "sc:featureList": [
         {
+          "@id": "edam:operation_0492"
+        },
+        {
           "@id": "edam:operation_2479"
         },
         {
           "@id": "edam:operation_0448"
-        },
-        {
-          "@id": "edam:operation_0492"
         }
       ],
       "sc:name": "LogoBar",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://www.biosci.ki.se/groups/tbu/logobar/logobardocumentation.pdf"
       },
       "sc:url": "http://www.biosci.ki.se/groups/tbu/logobar/"
+    },
+    {
+      "@id": "https://doi.org/10.1093/bioinformatics/bti761",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

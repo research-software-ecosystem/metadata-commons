@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -43,21 +43,21 @@
       },
       "bsc:input": [
         {
-          "@id": "_:Nae6f9ed2614a4d4c8f52489ef3e30e2a"
+          "@id": "_:Ndd09d5ff43c34544bd93e41df9fcc982"
         },
         {
-          "@id": "_:N90e4085e63744513aa5ce76503b31cdc"
+          "@id": "_:Na6327fce2efd4471b9ab216d3af2b8a3"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N94830cfbda314454ade1023e608cb26d"
+          "@id": "_:N76bf13a300cf4d8cb9e8d13a513d3a20"
         },
         {
-          "@id": "_:Nc65652633813400092404d59f779a6fd"
+          "@id": "_:N2c7caffed95c443697377447f767ab30"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Desktop application",
       "sc:applicationSubCategory": [
         {
@@ -70,10 +70,10 @@
       "sc:description": "DiversityAgents (DWB-DA) is an application of Diversity Workbench (DWB). It might be installed as part of a DWB environment, but also as a stand-alone application, e. g., in a local installation. Each DWB module is devoted to a specific data domain. DA is focused on the management of agents, that means persons and organisations. In this context it is designed to manage names (variant names, different names, academic degrees, standardized abbreviations etc.), bibliographic data,  postal addresses, agent relation to projects, resources like images and documents and additional agent-related data including agent IDs and the hierarchy of person-related data.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_2409"
+          "@id": "edam:operation_3349"
         },
         {
-          "@id": "edam:operation_3349"
+          "@id": "edam:operation_2409"
         }
       ],
       "sc:isAccessibleForFree": true,
@@ -92,26 +92,39 @@
       "sc:url": "https://diversityworkbench.net/Portal/DiversityAgents"
     },
     {
-      "@id": "_:N94830cfbda314454ade1023e608cb26d",
+      "@id": "_:Ndd09d5ff43c34544bd93e41df9fcc982",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0842"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2333"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Identifier"
+    },
+    {
+      "@id": "_:Na6327fce2efd4471b9ab216d3af2b8a3",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2526"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_2332"
-        },
-        {
           "@id": "edam:format_2333"
+        },
+        {
+          "@id": "edam:format_2330"
         }
       ],
       "sc:name": "Text data"
     },
     {
-      "@id": "_:Nc65652633813400092404d59f779a6fd",
+      "@id": "_:N76bf13a300cf4d8cb9e8d13a513d3a20",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0842"
@@ -127,23 +140,7 @@
       "sc:name": "Identifier"
     },
     {
-      "@id": "_:Nae6f9ed2614a4d4c8f52489ef3e30e2a",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0842"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_2333"
-        }
-      ],
-      "sc:name": "Identifier"
-    },
-    {
-      "@id": "_:N90e4085e63744513aa5ce76503b31cdc",
+      "@id": "_:N2c7caffed95c443697377447f767ab30",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2526"
@@ -154,6 +151,9 @@
         },
         {
           "@id": "edam:format_2330"
+        },
+        {
+          "@id": "edam:format_2332"
         }
       ],
       "sc:name": "Text data"

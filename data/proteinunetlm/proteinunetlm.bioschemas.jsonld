@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,23 +36,24 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1002/prot.26452",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/proteinunetlm",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nf03d9e64b3944f57942bce8d97070eb2"
+        "@id": "_:N8d954c43de7d48daa022e7a2849ac5a3"
       },
       "bsc:output": {
-        "@id": "_:N6837248d9efb4867895719641b8e63b3"
+        "@id": "_:Nfdfe49ed03284ac4878eac534beb2c5d"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Script",
         "Web application"
       ],
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_0082"
-        },
         {
           "@id": "edam:topic_3070"
         },
@@ -64,6 +65,9 @@
         },
         {
           "@id": "edam:topic_0154"
+        },
+        {
+          "@id": "edam:topic_0082"
         }
       ],
       "sc:citation": [
@@ -75,10 +79,10 @@
       "sc:description": "Convolutional ProteinUnetLM competitive with LSTM-based protein secondary structure predictors.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_2488"
+          "@id": "edam:operation_0303"
         },
         {
-          "@id": "edam:operation_0303"
+          "@id": "edam:operation_2488"
         },
         {
           "@id": "edam:operation_0267"
@@ -88,25 +92,14 @@
       "sc:license": "Apache-2.0",
       "sc:name": "ProteinUnetLM",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:url": "https://biolib.com/SUT/ProteinUnetLM/"
     },
     {
-      "@id": "_:N6837248d9efb4867895719641b8e63b3",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0883"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3752"
-      },
-      "sc:name": "Structure"
-    },
-    {
-      "@id": "_:Nf03d9e64b3944f57942bce8d97070eb2",
+      "@id": "_:N8d954c43de7d48daa022e7a2849ac5a3",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
@@ -117,8 +110,15 @@
       "sc:name": "Sequence"
     },
     {
-      "@id": "https://doi.org/10.1002/prot.26452",
-      "@type": "sc:CreativeWork"
+      "@id": "_:Nfdfe49ed03284ac4878eac534beb2c5d",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0883"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3752"
+      },
+      "sc:name": "Structure"
     }
   ]
 }

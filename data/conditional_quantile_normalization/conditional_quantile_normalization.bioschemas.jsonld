@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -44,12 +44,12 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Bioconductor",
       "bsc:input": {
-        "@id": "_:N64adb6a5b1d04e13a68cbbdb0c581d70"
+        "@id": "_:Na4ef5fdbf8014f55bc17ca8d85015731"
       },
       "bsc:output": {
-        "@id": "_:N8a96a6b16f0640e1b414596635089d4c"
+        "@id": "_:N523b972665b44dd4b3aba3bdb41595ab"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0085"
@@ -60,10 +60,10 @@
       ],
       "sc:citation": [
         "pubmed:22285995",
+        "pmcid:PMC3297825",
         {
           "@id": "https://doi.org/10.1093/biostatistics/kxr054"
-        },
-        "pmcid:PMC3297825"
+        }
       ],
       "sc:description": "A normalization tool for RNA-Seq data, implementing the conditional quantile normalization method.",
       "sc:featureList": {
@@ -73,8 +73,8 @@
       "sc:name": "Conditional quantile normalization",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:provider": "sanger.ac.uk",
       "sc:softwareHelp": {
@@ -84,21 +84,21 @@
       "sc:url": "http://www.bioconductor.org/packages/release/bioc/html/cqn.html"
     },
     {
-      "@id": "_:N8a96a6b16f0640e1b414596635089d4c",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3112"
-      },
-      "sc:name": "Gene expression matrix"
-    },
-    {
-      "@id": "_:N64adb6a5b1d04e13a68cbbdb0c581d70",
+      "@id": "_:Na4ef5fdbf8014f55bc17ca8d85015731",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3112"
       },
       "sc:encodingFormat": {
         "@id": "edam:format_2330"
+      },
+      "sc:name": "Gene expression matrix"
+    },
+    {
+      "@id": "_:N523b972665b44dd4b3aba3bdb41595ab",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3112"
       },
       "sc:name": "Gene expression matrix"
     }

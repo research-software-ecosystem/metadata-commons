@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,41 +36,37 @@
   },
   "@graph": [
     {
-      "@id": "https://orcid.org/0000-0001-8280-8940",
-      "@type": "sc:Person"
-    },
-    {
       "@id": "https://bio.tools/nf-rnaseqcount",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "https://orcid.org/0000-0001-8280-8940"
       },
       "bsc:input": {
-        "@id": "_:Nbca7522087d5424292628e0e8f99b142"
+        "@id": "_:Nff5a1cfd5de247ceb7376e4762b09fe2"
       },
       "bsc:output": {
-        "@id": "_:N344ef6af19c94cf08a66159a07933ca6"
+        "@id": "_:N43589a0912bf4b01a132baf779cb72c9"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Workflow"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3308"
+          "@id": "edam:topic_0203"
         },
         {
-          "@id": "edam:topic_0203"
+          "@id": "edam:topic_3308"
         }
       ],
       "sc:description": "A Nextflow pipeline for obtaining raw read counts from RNA-seq data using a given reference genome and annotation.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3198"
+          "@id": "edam:operation_3800"
         },
         {
-          "@id": "edam:operation_3800"
+          "@id": "edam:operation_3198"
         },
         {
           "@id": "edam:operation_3218"
@@ -80,8 +76,8 @@
       "sc:license": "MIT",
       "sc:name": "nf-rnaSeqCount",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "https://github.com/phelelani/nf-rnaSeqCount/blob/master/README.md"
@@ -90,7 +86,7 @@
       "sc:url": "https://github.com/phelelani/nf-rnaSeqCount"
     },
     {
-      "@id": "_:Nbca7522087d5424292628e0e8f99b142",
+      "@id": "_:Nff5a1cfd5de247ceb7376e4762b09fe2",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2603"
@@ -101,7 +97,7 @@
       "sc:name": "Expression data"
     },
     {
-      "@id": "_:N344ef6af19c94cf08a66159a07933ca6",
+      "@id": "_:N43589a0912bf4b01a132baf779cb72c9",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3112"
@@ -110,6 +106,10 @@
         "@id": "edam:format_3752"
       },
       "sc:name": "Gene expression matrix"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-8280-8940",
+      "@type": "sc:Person"
     }
   ]
 }

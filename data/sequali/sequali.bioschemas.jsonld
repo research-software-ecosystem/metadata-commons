@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,19 +36,15 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/bioadv/vbaf010",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/sequali",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Na54118fb117847e19e1faf8a912c38c3"
+        "@id": "_:Nfd5b4267321849b1b11409eeca236711"
       },
       "bsc:output": {
-        "@id": "_:Ne7de89aaae8c46fc8323053b7f9b18a8"
+        "@id": "_:N82c206fa4e494a7c9f42b8bf50e99341"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
@@ -75,23 +71,23 @@
       "sc:url": "https://github.com/rhpvorderman/sequali"
     },
     {
-      "@id": "_:Na54118fb117847e19e1faf8a912c38c3",
+      "@id": "_:Nfd5b4267321849b1b11409eeca236711",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3494"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_2182"
+          "@id": "edam:format_2572"
         },
         {
-          "@id": "edam:format_2572"
+          "@id": "edam:format_2182"
         }
       ],
       "sc:name": "DNA sequence"
     },
     {
-      "@id": "_:Ne7de89aaae8c46fc8323053b7f9b18a8",
+      "@id": "_:N82c206fa4e494a7c9f42b8bf50e99341",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3914"
@@ -105,6 +101,10 @@
         }
       ],
       "sc:name": "Quality control report"
+    },
+    {
+      "@id": "https://doi.org/10.1093/bioadv/vbaf010",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

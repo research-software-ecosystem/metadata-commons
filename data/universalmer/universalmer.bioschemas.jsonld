@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,37 +40,37 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Nb5b3c6b4558948f28ec205054f3bea30"
+          "@id": "_:Nd4a6a292ced34c5b8c19da98c99cbdbd"
         },
         {
-          "@id": "_:Nddb7f66a183f4b119818bedd24068fda"
+          "@id": "_:Nea153565416949f28cffbc94b5c22d2d"
         },
         {
-          "@id": "_:N4b0f9cd94366417f876a382d6dda839e"
+          "@id": "_:Nd36ca290f5d948d680f039a42f0dfbdd"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N55443683331d42b8ad2034821b60ad59"
+          "@id": "_:N9526487e3dba4f4cba522a3e6e7acb2d"
         },
         {
-          "@id": "_:Nb882052d18744da3a78f76056cfc1a9e"
+          "@id": "_:Ncb866415df3a471a93f7aa69a834db0b"
         },
         {
-          "@id": "_:N8ccf5ffa16ae4f08a736d2fb730d9bbc"
+          "@id": "_:N2c8b3703f066459eb350596781079076"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_0080"
-        },
         {
           "@id": "edam:topic_0091"
         },
         {
           "@id": "edam:topic_3473"
+        },
+        {
+          "@id": "edam:topic_0080"
         }
       ],
       "sc:description": "UniversalMer is a k-mer counting tool for multiple size of k at once. It is available for DNA, RNA, and protein sequences. The program counts and summarizes the exact frequency of all k-mers from 1-mer to a user-defined maximum length (kmax). Analyzing the k-mer spectrum across multiple values of k can be done in seconds. This program is designed for bioinformatics researchers and scientists.",
@@ -88,31 +88,18 @@
       "sc:url": "https://ugrammer.github.io"
     },
     {
-      "@id": "_:N55443683331d42b8ad2034821b60ad59",
+      "@id": "_:Nd4a6a292ced34c5b8c19da98c99cbdbd",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_3671"
+        "@id": "edam:data_3494"
       },
-      "sc:name": "Text"
+      "sc:encodingFormat": {
+        "@id": "edam:format_2546"
+      },
+      "sc:name": "DNA sequence"
     },
     {
-      "@id": "_:Nb882052d18744da3a78f76056cfc1a9e",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1266"
-      },
-      "sc:name": "Base word frequencies table"
-    },
-    {
-      "@id": "_:N8ccf5ffa16ae4f08a736d2fb730d9bbc",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1265"
-      },
-      "sc:name": "Base frequencies table"
-    },
-    {
-      "@id": "_:Nb5b3c6b4558948f28ec205054f3bea30",
+      "@id": "_:Nea153565416949f28cffbc94b5c22d2d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2976"
@@ -123,7 +110,7 @@
       "sc:name": "Protein sequence"
     },
     {
-      "@id": "_:Nddb7f66a183f4b119818bedd24068fda",
+      "@id": "_:Nd36ca290f5d948d680f039a42f0dfbdd",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3495"
@@ -134,15 +121,28 @@
       "sc:name": "RNA sequence"
     },
     {
-      "@id": "_:N4b0f9cd94366417f876a382d6dda839e",
+      "@id": "_:N9526487e3dba4f4cba522a3e6e7acb2d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_3494"
+        "@id": "edam:data_1265"
       },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2546"
+      "sc:name": "Base frequencies table"
+    },
+    {
+      "@id": "_:Ncb866415df3a471a93f7aa69a834db0b",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1266"
       },
-      "sc:name": "DNA sequence"
+      "sc:name": "Base word frequencies table"
+    },
+    {
+      "@id": "_:N2c8b3703f066459eb350596781079076",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3671"
+      },
+      "sc:name": "Text"
     }
   ]
 }

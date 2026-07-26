@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,6 +36,10 @@
   },
   "@graph": [
     {
+      "@id": "https://orcid.org/0000-0001-8424-4157",
+      "@type": "sc:Person"
+    },
+    {
       "@id": "https://doi.org/10.5281/zenodo.19097245",
       "@type": "sc:CreativeWork"
     },
@@ -50,25 +54,25 @@
         "@id": "https://orcid.org/0000-0001-8424-4157"
       },
       "bsc:input": {
-        "@id": "_:N690ae5487010476ca8b016b85c0650ce"
+        "@id": "_:N7e3365869ffc474d93d9f109e3c703e9"
       },
       "bsc:output": {
-        "@id": "_:Na25dca6fcffa410db319a2f339b53254"
+        "@id": "_:Nf0100b96130848fca062eb988028f99b"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Desktop application",
-        "Command-line tool"
+        "Command-line tool",
+        "Desktop application"
       ],
       "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_4044"
+        },
         {
           "@id": "edam:topic_4012"
         },
         {
           "@id": "edam:topic_3384"
-        },
-        {
-          "@id": "edam:topic_4044"
         }
       ],
       "sc:author": [
@@ -92,23 +96,23 @@
       "sc:license": "EUPL-1.2",
       "sc:name": "Lethe DICOM Anonymizer",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": "Computational BioMedicine Laboratory, Foundation for Research and Technology Hellas (FORTH)",
       "sc:softwareHelp": {
         "@id": "https://github.com/cbml-forth/lethe_anon_pipeline/blob/main/README.md"
       },
       "sc:softwareVersion": [
-        "0.9.12",
+        "0.10.1",
         "0.11.2",
-        "0.10.1"
+        "0.9.12"
       ],
       "sc:url": "https://harbor.eucaim.cancerimage.eu/harbor/projects/3/repositories/lethe-dicom-anonymizer/info-tab"
     },
     {
-      "@id": "_:N690ae5487010476ca8b016b85c0650ce",
+      "@id": "_:N7e3365869ffc474d93d9f109e3c703e9",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3424"
@@ -119,7 +123,7 @@
       "sc:name": "Raw image"
     },
     {
-      "@id": "_:Na25dca6fcffa410db319a2f339b53254",
+      "@id": "_:Nf0100b96130848fca062eb988028f99b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3424"
@@ -128,10 +132,6 @@
         "@id": "edam:format_3548"
       },
       "sc:name": "Raw image"
-    },
-    {
-      "@id": "https://orcid.org/0000-0001-8424-4157",
-      "@type": "sc:Person"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,6 +36,10 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/btx324",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/phyd3",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
@@ -44,31 +48,31 @@
       ],
       "bsc:input": [
         {
-          "@id": "_:Nfcb018a63f7d4eb796224f002131e381"
+          "@id": "_:Ned85c9181d4f4487b3aa3c3dbc69066a"
         },
         {
-          "@id": "_:Nc42a19cc3ce34418b5806f97eb4432a3"
+          "@id": "_:N6a56bd848a77459d83e24efae4e794b1"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N96aefde840574b3db968cc6db6aace1c"
+          "@id": "_:Ne459f6096eb44245ab3d506c6149f567"
         },
         {
-          "@id": "_:N6092d320b56c4994bb0c52727f2cd155"
+          "@id": "_:Nba5fc8848d934aa3a6cd54ef57b14bcf"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3293"
       },
       "sc:author": "Lukasz Kreft",
       "sc:citation": [
+        "pubmed:28525531",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btx324"
-        },
-        "pubmed:28525531"
+        }
       ],
       "sc:contributor": "Michiel Van Bel",
       "sc:description": "Phylogenetic tree viewer based on d3.js. It was developed as an alternative to Archaeopteryx.",
@@ -84,42 +88,23 @@
       "sc:license": "GPL-3.0",
       "sc:name": "PhyD3",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:provider": "VIB",
       "sc:softwareHelp": [
         {
-          "@id": "https://github.com/vibbits/phyd3/blob/master/README.md"
+          "@id": "https://phyd3.bits.vib.be/documentation.html"
         },
         {
-          "@id": "https://phyd3.bits.vib.be/documentation.html"
+          "@id": "https://github.com/vibbits/phyd3/blob/master/README.md"
         }
       ],
       "sc:softwareVersion": "1.1",
       "sc:url": "https://phyd3.bits.vib.be"
     },
     {
-      "@id": "_:N96aefde840574b3db968cc6db6aace1c",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0872"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3159"
-      },
-      "sc:name": "Phylogenetic tree"
-    },
-    {
-      "@id": "_:N6092d320b56c4994bb0c52727f2cd155",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1707"
-      },
-      "sc:name": "Phylogenetic tree image"
-    },
-    {
-      "@id": "_:Nfcb018a63f7d4eb796224f002131e381",
+      "@id": "_:Ned85c9181d4f4487b3aa3c3dbc69066a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0872"
@@ -135,7 +120,7 @@
       "sc:name": "Phylogenetic tree"
     },
     {
-      "@id": "_:Nc42a19cc3ce34418b5806f97eb4432a3",
+      "@id": "_:N6a56bd848a77459d83e24efae4e794b1",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2337"
@@ -146,8 +131,23 @@
       "sc:name": "Resource metadata"
     },
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btx324",
-      "@type": "sc:CreativeWork"
+      "@id": "_:Ne459f6096eb44245ab3d506c6149f567",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1707"
+      },
+      "sc:name": "Phylogenetic tree image"
+    },
+    {
+      "@id": "_:Nba5fc8848d934aa3a6cd54ef57b14bcf",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0872"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3159"
+      },
+      "sc:name": "Phylogenetic tree"
     }
   ]
 }

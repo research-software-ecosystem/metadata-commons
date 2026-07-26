@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,19 +39,19 @@
       "@id": "https://bio.tools/pepshell",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N7d112cdd5934458f862f35b7fb87fb79"
+        "@id": "_:Nf890fd3510854f92a7916d1c0ba71a52"
       },
       "bsc:output": {
-        "@id": "_:Ne9b245a35acc4e58a3b1ea90b82effa9"
+        "@id": "_:N4212623b3dba40c9b4b89eb5d1949cf5"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Desktop application",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0121"
+          "@id": "edam:topic_0078"
         },
         {
-          "@id": "edam:topic_0078"
+          "@id": "edam:topic_0121"
         }
       ],
       "sc:citation": [
@@ -66,9 +66,9 @@
       },
       "sc:name": "Pepshell",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": "ugent.be",
       "sc:softwareHelp": {
@@ -78,20 +78,20 @@
       "sc:url": "https://github.com/compomics/pepshell"
     },
     {
-      "@id": "_:Ne9b245a35acc4e58a3b1ea90b82effa9",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2992"
-      },
-      "sc:name": "Protein structure image"
-    },
-    {
-      "@id": "_:N7d112cdd5934458f862f35b7fb87fb79",
+      "@id": "_:Nf890fd3510854f92a7916d1c0ba71a52",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2536"
       },
       "sc:name": "Mass spectrometry data"
+    },
+    {
+      "@id": "_:N4212623b3dba40c9b4b89eb5d1949cf5",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2992"
+      },
+      "sc:name": "Protein structure image"
     },
     {
       "@id": "https://doi.org/10.1021/pr5012125",

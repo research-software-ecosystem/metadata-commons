@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,7 +36,7 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1038/nmeth.2221",
+      "@id": "https://doi.org/10.1002/humu.23114",
       "@type": "sc:CreativeWork"
     },
     {
@@ -44,7 +44,7 @@
       "@type": "sc:CreativeWork"
     },
     {
-      "@id": "https://doi.org/10.1002/humu.23114",
+      "@id": "https://doi.org/10.1038/nmeth.2221",
       "@type": "sc:CreativeWork"
     },
     {
@@ -52,39 +52,42 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Santiago Marco-Sola",
       "bsc:input": {
-        "@id": "_:N5dc8fc3d99a3491c816d68aec9dd329e"
+        "@id": "_:N214ee8b34a8442ffa9df9a4c4dd1b285"
       },
       "bsc:output": {
-        "@id": "_:N5a34f5ea5cc341528068fe3815a6ffd8"
+        "@id": "_:N7ee8c2ba41894448a3f578f3f22e0252"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0102"
       },
       "sc:author": [
+        "Alejandro Chacon",
         "Santiago Marco-Sola",
-        "Simon Heath",
-        "Alejandro Chacon"
+        "Simon Heath"
       ],
       "sc:citation": [
-        {
-          "@id": "https://doi.org/10.1002/0471250953.bi1113s50"
-        },
         "pubmed:27604516",
-        {
-          "@id": "https://doi.org/10.1038/nmeth.2221"
-        },
-        "pubmed:26094690",
+        "pmcid:PMC5129537",
         {
           "@id": "https://doi.org/10.1002/humu.23114"
         },
+        "pubmed:26094690",
+        {
+          "@id": "https://doi.org/10.1002/0471250953.bi1113s50"
+        },
         "pubmed:23103880",
-        "pmcid:PMC5129537"
+        {
+          "@id": "https://doi.org/10.1038/nmeth.2221"
+        }
       ],
       "sc:contributor": "Paolo Ribeca",
       "sc:description": "High-performance mapping for aligning sequenced reads against large reference genomes (e.g. human genome). In particular, it is designed to obtain best results when mapping sequences up to 1K bases long. It indexes the reference genome using a custom FM-Index design, and performs an adaptive gapped search based on the characteristics of the input and the user settings.",
       "sc:featureList": [
+        {
+          "@id": "edam:operation_3211"
+        },
         {
           "@id": "edam:operation_0496"
         },
@@ -95,9 +98,6 @@
           "@id": "edam:operation_3198"
         },
         {
-          "@id": "edam:operation_3211"
-        },
-        {
           "@id": "edam:operation_0292"
         }
       ],
@@ -105,14 +105,14 @@
       "sc:license": "GPL-3.0",
       "sc:name": "GEM-Mapper v3",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:softwareVersion": "v3.6",
       "sc:url": "https://github.com/smarco/gem3-mapper"
     },
     {
-      "@id": "_:N5dc8fc3d99a3491c816d68aec9dd329e",
+      "@id": "_:N214ee8b34a8442ffa9df9a4c4dd1b285",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1193"
@@ -123,7 +123,7 @@
       "sc:name": "Tool name (FASTA)"
     },
     {
-      "@id": "_:N5a34f5ea5cc341528068fe3815a6ffd8",
+      "@id": "_:N7ee8c2ba41894448a3f578f3f22e0252",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3671"

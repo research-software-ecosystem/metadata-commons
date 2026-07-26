@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,32 +36,24 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/nar/gkac240",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1093/bioinformatics/btu031",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/interproscan_ebi",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Job Dispatcher",
       "bsc:input": {
-        "@id": "_:N0dacac53c4f142358d0472e764c6193b"
+        "@id": "_:Ne1ac255f54fc40c9b47bca7f256037e0"
       },
       "bsc:output": [
         {
-          "@id": "_:N2c2dca4975c44b9ebc7348e610e2105e"
+          "@id": "_:Nead5181f5c5742048e508bfc1f24a93a"
         },
         {
-          "@id": "_:N4e1044d1d57448ebb696f1d127e5ba6b"
+          "@id": "_:N6058186a9cc948858307b2637cd5fbd3"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web service",
-        "Web application"
+        "Web application",
+        "Web service"
       ],
       "sc:applicationSubCategory": [
         {
@@ -73,12 +65,12 @@
       ],
       "sc:author": "InterPro team",
       "sc:citation": [
-        "pubmed:35412617",
         "pubmed:24451626",
         "pmcid:PMC3998142",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btu031"
         },
+        "pubmed:35412617",
         "pmcid:PMC9252731",
         {
           "@id": "https://doi.org/10.1093/nar/gkac240"
@@ -87,32 +79,40 @@
       "sc:description": "Scan sequences against the InterPro protein signature databases.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0239"
+          "@id": "edam:operation_3092"
         },
         {
-          "@id": "edam:operation_3092"
+          "@id": "edam:operation_0239"
         }
       ],
       "sc:name": "InterProScan (EBI)",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": "EMBL-EBI",
       "sc:softwareHelp": [
         {
-          "@id": "https://www.ebi.ac.uk/about/terms-of-use"
+          "@id": "https://www.ebi.ac.uk/interpro/search/sequence/"
         },
         {
-          "@id": "https://www.ebi.ac.uk/interpro/search/sequence/"
+          "@id": "https://www.ebi.ac.uk/about/terms-of-use"
         }
       ],
       "sc:softwareVersion": "1",
       "sc:url": "https://www.ebi.ac.uk/interpro/search/sequence/"
     },
     {
-      "@id": "_:N2c2dca4975c44b9ebc7348e610e2105e",
+      "@id": "_:Ne1ac255f54fc40c9b47bca7f256037e0",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2976"
+      },
+      "sc:name": "Protein sequence"
+    },
+    {
+      "@id": "_:Nead5181f5c5742048e508bfc1f24a93a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1277"
@@ -120,7 +120,7 @@
       "sc:name": "Protein features"
     },
     {
-      "@id": "_:N4e1044d1d57448ebb696f1d127e5ba6b",
+      "@id": "_:N6058186a9cc948858307b2637cd5fbd3",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0858"
@@ -128,12 +128,12 @@
       "sc:name": "Sequence signature matches"
     },
     {
-      "@id": "_:N0dacac53c4f142358d0472e764c6193b",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2976"
-      },
-      "sc:name": "Protein sequence"
+      "@id": "https://doi.org/10.1093/nar/gkac240",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1093/bioinformatics/btu031",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

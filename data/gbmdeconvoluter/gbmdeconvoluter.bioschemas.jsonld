@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -43,13 +43,13 @@
       "@id": "https://bio.tools/gbmdeconvoluter",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N35e21190ab8541218131a74ae98a104e"
+        "@id": "_:Nc6f386a746454f50b4a0381e165cb104"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3170"
+          "@id": "edam:topic_2229"
         },
         {
           "@id": "edam:topic_3934"
@@ -58,7 +58,7 @@
           "@id": "edam:topic_0625"
         },
         {
-          "@id": "edam:topic_2229"
+          "@id": "edam:topic_3170"
         },
         {
           "@id": "edam:topic_3308"
@@ -74,26 +74,26 @@
       "sc:description": "GBMdeconvoluteR accurately infers proportions of neoplastic and immune cell populations from bulk glioblastoma transcriptomics data.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3799"
-        },
-        {
           "@id": "edam:operation_3629"
         },
         {
           "@id": "edam:operation_0314"
+        },
+        {
+          "@id": "edam:operation_3799"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:name": "GBMdeconvoluteR",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:url": "https://gbmdeconvoluter.leeds.ac.uk"
     },
     {
-      "@id": "_:N35e21190ab8541218131a74ae98a104e",
+      "@id": "_:Nc6f386a746454f50b4a0381e165cb104",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2603"
@@ -103,10 +103,10 @@
           "@id": "edam:format_3752"
         },
         {
-          "@id": "edam:format_3620"
+          "@id": "edam:format_3475"
         },
         {
-          "@id": "edam:format_3475"
+          "@id": "edam:format_3620"
         }
       ],
       "sc:name": "Expression data"

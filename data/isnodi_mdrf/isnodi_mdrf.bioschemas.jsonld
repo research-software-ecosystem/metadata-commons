@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,22 +39,22 @@
       "@id": "https://bio.tools/isnodi_mdrf",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N229b462dbe3f4f28bc4d29904512fb12"
+        "@id": "_:Nf094115d3967467ba51985cf5e068254"
       },
       "bsc:output": {
-        "@id": "_:Ne9810ade411c4106a73a8838bdc2edb7"
+        "@id": "_:Nc63c69af517b4a45a9dd741d80cb9cc0"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
           "@id": "edam:topic_0659"
         },
         {
-          "@id": "edam:topic_0634"
+          "@id": "edam:topic_3361"
         },
         {
-          "@id": "edam:topic_3361"
+          "@id": "edam:topic_0634"
         }
       ],
       "sc:citation": [
@@ -66,31 +66,23 @@
       "sc:description": "Identifying snoRNA-disease associations based on multiple biological data by ranking framework.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_2478"
+          "@id": "edam:operation_3436"
         },
         {
-          "@id": "edam:operation_3436"
+          "@id": "edam:operation_2478"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:name": "iSnoDi-MDRF",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:url": "http://bliulab.net/iSnoDi-MDRF/"
     },
     {
-      "@id": "_:Ne9810ade411c4106a73a8838bdc2edb7",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1772"
-      },
-      "sc:name": "Score"
-    },
-    {
-      "@id": "_:N229b462dbe3f4f28bc4d29904512fb12",
+      "@id": "_:Nf094115d3967467ba51985cf5e068254",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3495"
@@ -99,6 +91,14 @@
         "@id": "edam:format_1929"
       },
       "sc:name": "RNA sequence"
+    },
+    {
+      "@id": "_:Nc63c69af517b4a45a9dd741d80cb9cc0",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1772"
+      },
+      "sc:name": "Score"
     },
     {
       "@id": "https://doi.org/10.1109/tcbb.2023.3258448",

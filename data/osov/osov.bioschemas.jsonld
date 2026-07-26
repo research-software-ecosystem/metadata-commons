@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,22 +36,26 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.3390/BIOLOGY11010023",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/osov",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N658c8fd982734be68b73633a45a41c3c"
+        "@id": "_:N87c133cdf74f499aaf4886f2efde7030"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Database portal",
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_2640"
-        },
         {
           "@id": "edam:topic_3360"
         },
         {
           "@id": "edam:topic_0203"
+        },
+        {
+          "@id": "edam:topic_2640"
         }
       ],
       "sc:citation": [
@@ -67,26 +71,22 @@
           "@id": "edam:operation_0314"
         },
         {
-          "@id": "edam:operation_0224"
+          "@id": "edam:operation_3503"
         },
         {
-          "@id": "edam:operation_3503"
+          "@id": "edam:operation_0224"
         }
       ],
       "sc:name": "OSov",
       "sc:url": "https://bioinfo.henu.edu.cn/OV/OVList.jsp"
     },
     {
-      "@id": "_:N658c8fd982734be68b73633a45a41c3c",
+      "@id": "_:N87c133cdf74f499aaf4886f2efde7030",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1026"
       },
       "sc:name": "Gene symbol"
-    },
-    {
-      "@id": "https://doi.org/10.3390/BIOLOGY11010023",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

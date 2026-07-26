@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,12 +36,12 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.48550/arXiv.2509.24952",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://orcid.org/0000-0002-1964-3976",
       "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.48550/arXiv.2509.24952",
+      "@type": "sc:CreativeWork"
     },
     {
       "@id": "https://bio.tools/winnow",
@@ -52,16 +52,16 @@
       ],
       "bsc:input": [
         {
-          "@id": "_:N02f6050b38a94a229eaa2d5e24251487"
+          "@id": "_:N9924d3640e934965a6d426c07db62040"
         },
         {
-          "@id": "_:Nc67f963349f64f53b5335a5f41984ad4"
+          "@id": "_:N15b7afdcff3c4f1eb8d6e7a16b514f22"
         }
       ],
       "bsc:output": {
-        "@id": "_:Nf6dc9124781d47ecaabaa64962d76e7e"
+        "@id": "_:Nee864831a41948a4883ede20d85cb567"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
@@ -91,26 +91,42 @@
       "sc:operatingSystem": "Linux",
       "sc:softwareHelp": [
         {
-          "@id": "https://instadeepai.github.io/winnow/cli/"
+          "@id": "https://instadeepai.github.io/winnow/api/datasets/"
         },
         {
-          "@id": "https://instadeepai.github.io/winnow/api/datasets/"
+          "@id": "https://instadeepai.github.io/winnow/#bibtex-entry-and-citation-info"
+        },
+        {
+          "@id": "https://instadeepai.github.io/winnow/cli/"
         },
         {
           "@id": "https://instadeepai.github.io/winnow/contributing/"
         },
         {
           "@id": "https://instadeepai.github.io/winnow/#installation"
-        },
-        {
-          "@id": "https://instadeepai.github.io/winnow/#bibtex-entry-and-citation-info"
         }
       ],
       "sc:softwareVersion": "1.0.3",
       "sc:url": "https://github.com/instadeepai/winnow"
     },
     {
-      "@id": "_:N02f6050b38a94a229eaa2d5e24251487",
+      "@id": "_:N9924d3640e934965a6d426c07db62040",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0943"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3752"
+        },
+        {
+          "@id": "edam:format_3651"
+        }
+      ],
+      "sc:name": "Mass spectrum"
+    },
+    {
+      "@id": "_:N15b7afdcff3c4f1eb8d6e7a16b514f22",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0945"
@@ -121,23 +137,7 @@
       "sc:name": "Peptide identification"
     },
     {
-      "@id": "_:Nc67f963349f64f53b5335a5f41984ad4",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0943"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3651"
-        },
-        {
-          "@id": "edam:format_3752"
-        }
-      ],
-      "sc:name": "Mass spectrum"
-    },
-    {
-      "@id": "_:Nf6dc9124781d47ecaabaa64962d76e7e",
+      "@id": "_:Nee864831a41948a4883ede20d85cb567",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0945"

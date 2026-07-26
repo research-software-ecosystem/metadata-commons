@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,20 +36,16 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1186/1745-7580-2-2",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/bepipred",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Morten Nielsen",
       "bsc:input": {
-        "@id": "_:Nd9fb752cb70348198c57daefe4bcb8d4"
+        "@id": "_:N8cc1533a634845c4bdaf541f2e4fcb0a"
       },
       "bsc:output": {
-        "@id": "_:Nfee2d813f35a4f86ac3dc79ebe6b43f0"
+        "@id": "_:N59d72d7e9e194674adf01e69ecef6172"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Web application"
@@ -59,11 +55,11 @@
       },
       "sc:author": "Morten Nielsen",
       "sc:citation": [
+        "pubmed:16635264",
+        "pmcid:PMC1479323",
         {
           "@id": "https://doi.org/10.1186/1745-7580-2-2"
-        },
-        "pmcid:PMC1479323",
-        "pubmed:16635264"
+        }
       ],
       "sc:description": "Prediction of the location of linear B-cell epitopes.",
       "sc:featureList": {
@@ -81,7 +77,7 @@
       "sc:url": "http://cbs.dtu.dk/services/BepiPred/"
     },
     {
-      "@id": "_:Nd9fb752cb70348198c57daefe4bcb8d4",
+      "@id": "_:N8cc1533a634845c4bdaf541f2e4fcb0a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
@@ -92,7 +88,7 @@
       "sc:name": "Sequence"
     },
     {
-      "@id": "_:Nfee2d813f35a4f86ac3dc79ebe6b43f0",
+      "@id": "_:N59d72d7e9e194674adf01e69ecef6172",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1277"
@@ -101,6 +97,10 @@
         "@id": "edam:format_2305"
       },
       "sc:name": "Protein features"
+    },
+    {
+      "@id": "https://doi.org/10.1186/1745-7580-2-2",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

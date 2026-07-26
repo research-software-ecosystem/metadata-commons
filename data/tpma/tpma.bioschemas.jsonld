@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,23 +36,19 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1371/journal.pcbi.1011988",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/tpma",
       "@type": "sc:SoftwareApplication",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Library",
       "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_2229"
+        },
         {
           "@id": "edam:topic_0077"
         },
         {
           "@id": "edam:topic_0080"
-        },
-        {
-          "@id": "edam:topic_2229"
         }
       ],
       "sc:citation": [
@@ -65,18 +61,22 @@
       "sc:description": "A two pointers meta-alignment tool to ensemble different multiple nucleic acid sequence alignments.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0492"
+          "@id": "edam:operation_0496"
         },
         {
           "@id": "edam:operation_0495"
         },
         {
-          "@id": "edam:operation_0496"
+          "@id": "edam:operation_0492"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:name": "TPMA",
       "sc:url": "https://github.com/malabz/TPMA"
+    },
+    {
+      "@id": "https://doi.org/10.1371/journal.pcbi.1011988",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

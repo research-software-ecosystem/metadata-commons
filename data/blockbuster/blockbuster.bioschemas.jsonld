@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,28 +36,24 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btp419",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/blockbuster",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N57d90c5b8f494282a16ea6964b49eb79"
+        "@id": "_:N8a1253de1ce34ef69e82b3541622615c"
       },
       "bsc:output": {
-        "@id": "_:Neffa96552225434a86b3d3fc2f13941d"
+        "@id": "_:N36f4551dc8b846aea656f2ea0a948668"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0622"
       },
       "sc:citation": [
+        "pubmed:19584066",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btp419"
-        },
-        "pubmed:19584066"
+        }
       ],
       "sc:description": "detect blocks of overlapping reads using a gaussian-distribution approach",
       "sc:featureList": {
@@ -70,7 +66,18 @@
       "sc:url": "http://hoffmann.bioinf.uni-leipzig.de/LIFE/blockbuster.html"
     },
     {
-      "@id": "_:Neffa96552225434a86b3d3fc2f13941d",
+      "@id": "_:N8a1253de1ce34ef69e82b3541622615c",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2012"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3003"
+      },
+      "sc:name": "Sequence coordinates"
+    },
+    {
+      "@id": "_:N36f4551dc8b846aea656f2ea0a948668",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2012"
@@ -81,15 +88,8 @@
       "sc:name": "Sequence coordinates"
     },
     {
-      "@id": "_:N57d90c5b8f494282a16ea6964b49eb79",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2012"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3003"
-      },
-      "sc:name": "Sequence coordinates"
+      "@id": "https://doi.org/10.1093/bioinformatics/btp419",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

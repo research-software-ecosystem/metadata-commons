@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -43,17 +43,17 @@
       "@id": "https://bio.tools/mutvis",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Vidya Niranjan",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Workbench",
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_0769"
-        },
         {
           "@id": "edam:topic_0199"
         },
         {
           "@id": "edam:topic_0622"
+        },
+        {
+          "@id": "edam:topic_0769"
         }
       ],
       "sc:citation": [
@@ -65,13 +65,13 @@
       "sc:description": "MutVis is an automated framework for analysis and visualization of mutational signatures in pathogenic bacterial strains. MutVis is an open-source, user-friendly, automated framework for analysis and visualization of mutational signatures in pathogenic bacterial strains, regardless the number, origin or species. The current framework integrates various opensource tools and is scripted using Python, R programming and Snakemake workflow management software. MutVis supports variant calling, processing of VCF files, transition and transversion graphical representation, generation of mutational count matrix, graphical visualization of basepair substitution spectrum (BPS) and mutation signatures.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0337"
+          "@id": "edam:operation_3227"
         },
         {
           "@id": "edam:operation_3461"
         },
         {
-          "@id": "edam:operation_3227"
+          "@id": "edam:operation_0337"
         }
       ],
       "sc:license": "MIT",

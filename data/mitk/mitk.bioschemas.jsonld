@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,30 +40,26 @@
       "@type": "sc:CreativeWork"
     },
     {
-      "@id": "https://doi.org/10.1016/j.media.2005.04.005",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/mitk",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nd23943a5b12b42deb49a499af7ae92dc"
+        "@id": "_:Nfcd404da3cca49859744729263554276"
       },
       "bsc:output": {
-        "@id": "_:N8af1d6332de742e3b770cac1ed78675d"
+        "@id": "_:Ne8c0af6dc12b449795f0f63f8c8e6949"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Desktop application",
-        "Workbench",
-        "Library"
+        "Library",
+        "Workbench"
       ],
       "sc:citation": [
-        "pubmed:15896995",
         "pubmed:23588509",
         {
           "@id": "https://doi.org/10.1007/s11548-013-0840-8"
         },
+        "pubmed:15896995",
         {
           "@id": "https://doi.org/10.1016/j.media.2005.04.005"
         }
@@ -76,8 +72,8 @@
       "sc:license": "BSD-3-Clause",
       "sc:name": "MITK",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -87,42 +83,46 @@
       "sc:url": "https://www.mitk.org/"
     },
     {
-      "@id": "_:N8af1d6332de742e3b770cac1ed78675d",
+      "@id": "_:Nfcd404da3cca49859744729263554276",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2968"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_3551"
-        },
-        {
           "@id": "edam:format_3548"
         },
         {
           "@id": "edam:format_3549"
+        },
+        {
+          "@id": "edam:format_3551"
         }
       ],
       "sc:name": "Image"
     },
     {
-      "@id": "_:Nd23943a5b12b42deb49a499af7ae92dc",
+      "@id": "_:Ne8c0af6dc12b449795f0f63f8c8e6949",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2968"
       },
       "sc:encodingFormat": [
         {
+          "@id": "edam:format_3548"
+        },
+        {
           "@id": "edam:format_3549"
         },
         {
           "@id": "edam:format_3551"
-        },
-        {
-          "@id": "edam:format_3548"
         }
       ],
       "sc:name": "Image"
+    },
+    {
+      "@id": "https://doi.org/10.1016/j.media.2005.04.005",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

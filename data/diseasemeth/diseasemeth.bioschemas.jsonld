@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,6 +36,10 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/gkr1169",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://orcid.org/0000-0002-5307-2484",
       "@type": "sc:Person"
     },
@@ -51,26 +55,26 @@
       },
       "bsc:input": [
         {
-          "@id": "_:N3efeb6ed9afe4bb09b644b1e99da8156"
+          "@id": "_:N83c5338b268547a49ae1088fab804a81"
         },
         {
-          "@id": "_:Nf21532da758f4ce4aeade15d1018d561"
+          "@id": "_:N1f7b396021be460baf9ec97e1b9646fa"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web application",
-        "Database portal"
+        "Database portal",
+        "Web application"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3674"
+          "@id": "edam:topic_0654"
         },
         {
           "@id": "edam:topic_3295"
         },
         {
-          "@id": "edam:topic_0654"
+          "@id": "edam:topic_3674"
         },
         {
           "@id": "edam:topic_0634"
@@ -78,15 +82,15 @@
       ],
       "sc:citation": [
         "pubmed:34792145",
-        "pmcid:PMC3245164",
         "pmcid:PMC8728278",
-        {
-          "@id": "https://doi.org/10.1093/nar/gkr1169"
-        },
         {
           "@id": "https://doi.org/10.1093/NAR/GKAB1088"
         },
-        "pubmed:22135302"
+        "pubmed:22135302",
+        "pmcid:PMC3245164",
+        {
+          "@id": "https://doi.org/10.1093/nar/gkr1169"
+        }
       ],
       "sc:description": "The Human Disease Methylation Database Version 3.0 is a web-based resource that focuses on the abnormal methylome of human diseases.",
       "sc:featureList": [
@@ -94,10 +98,10 @@
           "@id": "edam:operation_3204"
         },
         {
-          "@id": "edam:operation_3206"
+          "@id": "edam:operation_3207"
         },
         {
-          "@id": "edam:operation_3207"
+          "@id": "edam:operation_3206"
         },
         {
           "@id": "edam:operation_0308"
@@ -106,15 +110,15 @@
       "sc:isAccessibleForFree": true,
       "sc:name": "DiseaseMeth",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareVersion": "3.0",
       "sc:url": "http://218.8.241.243:8080/DiseaseMeth3.0/index.html"
     },
     {
-      "@id": "_:N3efeb6ed9afe4bb09b644b1e99da8156",
+      "@id": "_:N83c5338b268547a49ae1088fab804a81",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1026"
@@ -122,16 +126,12 @@
       "sc:name": "Gene symbol"
     },
     {
-      "@id": "_:Nf21532da758f4ce4aeade15d1018d561",
+      "@id": "_:N1f7b396021be460baf9ec97e1b9646fa",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2769"
       },
       "sc:name": "Transcript ID"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gkr1169",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

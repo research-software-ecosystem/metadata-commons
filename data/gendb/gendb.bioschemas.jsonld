@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -44,26 +44,26 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N585808f1f4e34bd4a80d3f21bd97580e"
+          "@id": "_:Nde455e69ef49469890ab57c646689f52"
         },
         {
-          "@id": "_:N59d1dcdc4e2c4763af740b6496ac86df"
+          "@id": "_:Ne3060e708b564a80b15ac3c4c930f184"
         }
       ],
       "bsc:output": {
-        "@id": "_:N60be242d3d18453fa2696cab9a85fc48"
+        "@id": "_:N54fea674589649feac138c2551af1e3c"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Workbench",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0085"
       },
       "sc:citation": [
         "pubmed:12682369",
+        "pmcid:PMC153740",
         {
           "@id": "https://doi.org/10.1093/nar/gkg312"
-        },
-        "pmcid:PMC153740"
+        }
       ],
       "sc:description": "Genome annotation system for prokaryotic genomes. The system has been developed as an extensible and user friendly framework for both bioinformatics researchers and biologists to use in their genome projects. This annotation engine will automatically identify, classify and annotate genes using a large collection of software tools. Many groups view this automatic annotation as the first step that needs to be followed by expert annotation of the genome.",
       "sc:featureList": {
@@ -74,8 +74,8 @@
       "sc:name": "GenDB",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:provider": "bigi",
       "sc:softwareHelp": {
@@ -85,7 +85,7 @@
       "sc:url": "http://gendb.computational.bio"
     },
     {
-      "@id": "_:N585808f1f4e34bd4a80d3f21bd97580e",
+      "@id": "_:Nde455e69ef49469890ab57c646689f52",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3497"
@@ -96,23 +96,23 @@
       "sc:name": "DNA sequence (raw)"
     },
     {
-      "@id": "_:N59d1dcdc4e2c4763af740b6496ac86df",
+      "@id": "_:Ne3060e708b564a80b15ac3c4c930f184",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2887"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_1936"
+          "@id": "edam:format_1927"
         },
         {
-          "@id": "edam:format_1927"
+          "@id": "edam:format_1936"
         }
       ],
       "sc:name": "Nucleic acid sequence record"
     },
     {
-      "@id": "_:N60be242d3d18453fa2696cab9a85fc48",
+      "@id": "_:N54fea674589649feac138c2551af1e3c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2887"

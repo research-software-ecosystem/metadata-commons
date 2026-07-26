@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -38,8 +38,11 @@
     {
       "@id": "https://bio.tools/fijiyama",
       "@type": "sc:SoftwareApplication",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_3067"
+        },
         {
           "@id": "edam:topic_3444"
         },
@@ -48,9 +51,6 @@
         },
         {
           "@id": "edam:topic_3384"
-        },
-        {
-          "@id": "edam:topic_3067"
         },
         {
           "@id": "edam:topic_3452"
@@ -65,10 +65,10 @@
       "sc:description": "The plugin Fijiyama (Yet Another Matching and Alignment tool for Fiji) is a generic tool for registration and alignment of 3D image series collected from various imaging modalities (MRI, X-rays, Microscopy, Photography, etc.).",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0337"
+          "@id": "edam:operation_3443"
         },
         {
-          "@id": "edam:operation_3443"
+          "@id": "edam:operation_0337"
         }
       ],
       "sc:license": "GPL-3.0",

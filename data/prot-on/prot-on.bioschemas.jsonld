@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,19 +39,22 @@
       "@id": "https://bio.tools/prot-on",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nd6c67483147a43f29db0d04449cd2233"
+        "@id": "_:Nf0c3ea37a97943bfb273ac9a8118e7c4"
       },
       "bsc:output": {
-        "@id": "_:N2cfe04df147d4c609198c198e1d69671"
+        "@id": "_:N668c8f2c35944157957a437b77ad48c2"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web service",
-        "Command-line tool",
         "Bioinformatics portal",
-        "Web application"
+        "Command-line tool",
+        "Web application",
+        "Web service"
       ],
       "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_0091"
+        },
         {
           "@id": "edam:topic_3306"
         },
@@ -59,16 +62,13 @@
           "@id": "edam:topic_3373"
         },
         {
-          "@id": "edam:topic_0128"
-        },
-        {
-          "@id": "edam:topic_0091"
+          "@id": "edam:topic_3534"
         },
         {
           "@id": "edam:topic_0130"
         },
         {
-          "@id": "edam:topic_3534"
+          "@id": "edam:topic_0128"
         }
       ],
       "sc:description": "The identification of critical amino acids for redesigning the structurally characterized protein-protein interfaces paves the way for developing protein-based therapeutics to dealing with diverse range of diseases. To find such amino acids positions, the residues across the protein interaction surfaces are either randomly or strategically mutated. Scanning mutations in this manner is experimentally costly. Therefore, computational methods have been developed to estimate the impact of an interfacial mutation on protein-protein interactions. In this work, we present the PROT-ON tool that scans all possible interfacial mutations by using EvoEF1 (active in both on the web server and stand-alone versions) or FoldX (active only in the stand-alone version) with the aim of finding the most mutable positions.",
@@ -79,13 +79,13 @@
       "sc:license": "Apache-2.0",
       "sc:name": "PROT-ON",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:url": "http://proton.tools.ibg.edu.tr:8001"
     },
     {
-      "@id": "_:Nd6c67483147a43f29db0d04449cd2233",
+      "@id": "_:Nf0c3ea37a97943bfb273ac9a8118e7c4",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2877"
@@ -96,7 +96,7 @@
       "sc:name": "Protein complex"
     },
     {
-      "@id": "_:N2cfe04df147d4c609198c198e1d69671",
+      "@id": "_:N668c8f2c35944157957a437b77ad48c2",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0906"

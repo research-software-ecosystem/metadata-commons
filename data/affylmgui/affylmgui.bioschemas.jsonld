@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,12 +39,12 @@
       "@id": "https://bio.tools/affylmgui",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N8e0304a4a42d45a3ac931e2b928e58ee"
+        "@id": "_:N55036a9f612c4f94b0f6b3669511d101"
       },
       "bsc:output": {
-        "@id": "_:Nb0c88a58c8f8464b87c50564e555ac41"
+        "@id": "_:N2e1328fc477f4940b9127dba25ba4d97"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
@@ -62,8 +62,8 @@
       ],
       "sc:author": [
         "Gordon Smyth",
-        "Ken Simpson",
-        "James Wettenhall"
+        "James Wettenhall",
+        "Ken Simpson"
       ],
       "sc:contributor": "Keith Satterley",
       "sc:description": "A Graphical User Interface (GUI) for analysis of Affymetrix microarray gene expression data using the affy and limma packages.",
@@ -73,8 +73,8 @@
       "sc:license": "GPL-2.0-only",
       "sc:name": "affylmGUI",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -84,18 +84,7 @@
       "sc:url": "https://bioconductor.org/packages/affylmGUI"
     },
     {
-      "@id": "_:Nb0c88a58c8f8464b87c50564e555ac41",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2048"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3547"
-      },
-      "sc:name": "Report"
-    },
-    {
-      "@id": "_:N8e0304a4a42d45a3ac931e2b928e58ee",
+      "@id": "_:N55036a9f612c4f94b0f6b3669511d101",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0928"
@@ -104,6 +93,17 @@
         "@id": "edam:format_2058"
       },
       "sc:name": "Gene expression profile"
+    },
+    {
+      "@id": "_:N2e1328fc477f4940b9127dba25ba4d97",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2048"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3547"
+      },
+      "sc:name": "Report"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -41,13 +41,13 @@
       "biotools:primaryContact": "Contact form",
       "bsc:input": [
         {
-          "@id": "_:N2f1cda4d9a8947e2aef36215e0458fb5"
+          "@id": "_:N77c146371ee1460c807c9198754387ae"
         },
         {
-          "@id": "_:N5ce890081b0b48ccaae0dc0be5667e67"
+          "@id": "_:Ne0ed12eb625f48d0b74984cf418146db"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Desktop application",
       "sc:applicationSubCategory": [
         {
@@ -69,22 +69,22 @@
       "sc:description": "VarAFT (Variant Analysis and Filtration Tool) is a standalone and multiplatform tool for annotation and prioritization of potential disease causing genes. With this tool users can annotate variant (VCF) files, combine multiple samples from various individuals, prioritize list of variants by multi-filtering parameters. Additionally, users can perform a coverage analysis and quality check from any BAM file.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3763"
+          "@id": "edam:operation_3436"
         },
         {
-          "@id": "edam:operation_3218"
+          "@id": "edam:operation_3695"
         },
         {
           "@id": "edam:operation_3661"
         },
         {
+          "@id": "edam:operation_3218"
+        },
+        {
+          "@id": "edam:operation_3763"
+        },
+        {
           "@id": "edam:operation_3225"
-        },
-        {
-          "@id": "edam:operation_3436"
-        },
-        {
-          "@id": "edam:operation_3695"
         }
       ],
       "sc:isAccessibleForFree": true,
@@ -92,8 +92,8 @@
       "sc:name": "VarAFT",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://varaft.eu/download_files/VarAFT_Documentation_V2.pdf"
@@ -102,7 +102,7 @@
       "sc:url": "http://varaft.eu"
     },
     {
-      "@id": "_:N2f1cda4d9a8947e2aef36215e0458fb5",
+      "@id": "_:N77c146371ee1460c807c9198754387ae",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0863"
@@ -113,7 +113,7 @@
       "sc:name": "Sequence alignment"
     },
     {
-      "@id": "_:N5ce890081b0b48ccaae0dc0be5667e67",
+      "@id": "_:Ne0ed12eb625f48d0b74984cf418146db",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3498"

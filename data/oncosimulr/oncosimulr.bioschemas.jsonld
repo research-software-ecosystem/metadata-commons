@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,112 +36,104 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1371/journal.pcbi.1007246",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1093/bioinformatics/btx077",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/oncosimulr",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N5b3763a877e649e196dd5b0741f88d85"
+        "@id": "_:N993351d49b834c45926920d53921f5f1"
       },
       "bsc:output": [
         {
-          "@id": "_:Nc09414c3379048339b78eadbec52fdab"
+          "@id": "_:N88b0ea35fd234f4bad51bcdd6dfed91d"
         },
         {
-          "@id": "_:N9185a22d3de14b81a74e27111333c71c"
+          "@id": "_:Ne50cd323cecd41c5b4b04321f4354891"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3056"
+          "@id": "edam:topic_2640"
         },
         {
-          "@id": "edam:topic_2640"
+          "@id": "edam:topic_3056"
         },
         {
           "@id": "edam:topic_3524"
         }
       ],
       "sc:author": [
-        "Ramon Diaz-Uriarte",
-        "Sergio Sanchez-Carrillo",
         "Alberto Gonzalez Klein",
         "Javier Lopez Cano",
+        "Javier Mu~noz Haro",
         "Juan Antonio Miguel Gonzalez",
-        "Javier Mu~noz Haro"
+        "Ramon Diaz-Uriarte",
+        "Sergio Sanchez-Carrillo"
       ],
       "sc:citation": [
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btx077"
         },
         {
-          "@id": "https://doi.org/10.1186/s12859-015-0466-7"
+          "@id": "https://doi.org/10.1093/bioinformatics/btx663"
         },
         {
-          "@id": "https://doi.org/10.1093/bioinformatics/btx663"
+          "@id": "https://doi.org/10.1186/s12859-015-0466-7"
         },
         {
           "@id": "https://doi.org/10.1371/journal.pcbi.1007246"
         }
       ],
       "sc:contributor": [
-        "Claudio Lottaz",
-        "Francisco Mu~noz Lopez",
-        "Lucia Sanchez Garcia",
-        "Arash Partow",
-        "Guillermo Garcia Hoyos",
-        "Ivan Lorca Alonso",
-        "Silvia Talavera Marcos",
-        "Rafael Barrero Rodriguez",
-        "Alejandro de los Reyes Benitez",
-        "Sophie Brouillet",
-        "Harry Annoni",
-        "Alejandro Martin Mu~noz",
-        "Niklas Endres",
-        "Alvaro Huertas Garcia",
-        "Guillermo Gorines Cordero",
-        "Esperanza Lopez Lopez",
-        "Marta Couce Iglesias",
-        "Asier Fernandez Pato",
         "Achim Tresch",
-        "Florian Markowetz",
-        "Mark Taylor",
-        "Alvaro Quevedo",
-        "Silvia Garcia Cobos",
-        "Tim Beissbarth",
-        "Christian Bender",
-        "Cristina Devesa",
-        "Wolodzko Tymoteusz",
-        "Sebastian Matuszewski",
-        "Theresa Niederberger",
-        "Matthias Maneck",
-        "Ana Rodriguez Ronchel",
-        "Rosalia Palomino Cabrera",
-        "Pablo Perez",
         "Alberto Manuel Parra Perez",
-        "Ana del Ramo Galian",
-        "Holger Froehlich",
-        "Guillaume Achaz",
-        "Luca Ferretti",
-        "Yolanda Benitez Quesada",
-        "Miguel Hernandez del Valle",
-        "Sara Dorado Alfaro",
-        "Jorge Garcia Calleja",
-        "Carlos Madariaga Aramendi",
         "Alejandro Herrador",
+        "Alejandro Martin Mu~noz",
+        "Alejandro de los Reyes Benitez",
+        "Alvaro Huertas Garcia",
+        "Alvaro Quevedo",
+        "Ana Rodriguez Ronchel",
+        "Ana del Ramo Galian",
+        "Arash Partow",
+        "Asier Fernandez Pato",
+        "Carlos Madariaga Aramendi",
+        "Christian Bender",
+        "Claudio Lottaz",
+        "Cristina Devesa",
+        "David Roncero Moro~no",
         "Diego Ma~nanes Cayero",
-        "David Roncero Moro~no"
+        "Esperanza Lopez Lopez",
+        "Florian Markowetz",
+        "Francisco Mu~noz Lopez",
+        "Guillaume Achaz",
+        "Guillermo Garcia Hoyos",
+        "Guillermo Gorines Cordero",
+        "Harry Annoni",
+        "Holger Froehlich",
+        "Ivan Lorca Alonso",
+        "Jorge Garcia Calleja",
+        "Luca Ferretti",
+        "Lucia Sanchez Garcia",
+        "Mark Taylor",
+        "Marta Couce Iglesias",
+        "Matthias Maneck",
+        "Miguel Hernandez del Valle",
+        "Niklas Endres",
+        "Pablo Perez",
+        "Rafael Barrero Rodriguez",
+        "Rosalia Palomino Cabrera",
+        "Sara Dorado Alfaro",
+        "Sebastian Matuszewski",
+        "Silvia Garcia Cobos",
+        "Silvia Talavera Marcos",
+        "Sophie Brouillet",
+        "Theresa Niederberger",
+        "Tim Beissbarth",
+        "Wolodzko Tymoteusz",
+        "Yolanda Benitez Quesada"
       ],
       "sc:description": "Functions for forward population genetic simulation in asexual populations, with special focus on cancer progression. Fitness can be an arbitrary function of genetic interactions between multiple genes or modules of genes, including epistasis, order restrictions in mutation accumulation, and order effects. Fitness (including just birth, just death, or both birth and death) can also be a function of the relative and absolute frequencies of other genotypes (i.e., frequency-dependent fitness). Mutation rates can differ between genes, and we can include mutator/antimutator genes (to model mutator phenotypes). Simulating multi-species scenarios and therapeutic interventions, including adaptive therapy, is also possible. Simulations use continuous-time models and can include driver and passenger genes and modules. Also included are functions for: simulating random DAGs of the type found in Oncogenetic Trees, Conjunctive Bayesian Networks, and other cancer progression models; plotting and sampling from single or multiple realizations of the simulations, including single-cell sampling; plotting the parent-child relationships of the clones; generating random fitness landscapes (Rough Mount Fuji, House of Cards, additive, NK, Ising, and Eggbox models) and plotting them.",
       "sc:featureList": {
@@ -150,8 +142,8 @@
       "sc:license": "GPL-3.0-or-later",
       "sc:name": "OncoSimulR",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -161,29 +153,7 @@
       "sc:url": "https://bioconductor.org/packages/OncoSimulR"
     },
     {
-      "@id": "_:Nc09414c3379048339b78eadbec52fdab",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2884"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3547"
-      },
-      "sc:name": "Plot"
-    },
-    {
-      "@id": "_:N9185a22d3de14b81a74e27111333c71c",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1772"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3547"
-      },
-      "sc:name": "Score"
-    },
-    {
-      "@id": "_:N5b3763a877e649e196dd5b0741f88d85",
+      "@id": "_:N993351d49b834c45926920d53921f5f1",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3722"
@@ -194,11 +164,41 @@
       "sc:name": "Physiology parameter"
     },
     {
-      "@id": "https://doi.org/10.1186/s12859-015-0466-7",
+      "@id": "_:N88b0ea35fd234f4bad51bcdd6dfed91d",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2884"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3547"
+      },
+      "sc:name": "Plot"
+    },
+    {
+      "@id": "_:Ne50cd323cecd41c5b4b04321f4354891",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1772"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3547"
+      },
+      "sc:name": "Score"
+    },
+    {
+      "@id": "https://doi.org/10.1371/journal.pcbi.1007246",
       "@type": "sc:CreativeWork"
     },
     {
       "@id": "https://doi.org/10.1093/bioinformatics/btx663",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1093/bioinformatics/btx077",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1186/s12859-015-0466-7",
       "@type": "sc:CreativeWork"
     }
   ]

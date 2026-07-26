@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,15 +36,19 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1371/journal.pone.0013066",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/nextbio",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Naf07d913749a41579c44fcc361e9cb98"
+        "@id": "_:N61d4cf8ff2f946fab1853ef78945054c"
       },
       "bsc:output": {
-        "@id": "_:Nb9dd0276c366429a810262b7b7fd382f"
+        "@id": "_:N3cc4a62c9db940058a13c4b4621efa3d"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Database portal",
       "sc:applicationSubCategory": [
         {
@@ -55,11 +59,11 @@
         }
       ],
       "sc:citation": [
+        "pubmed:20927376",
+        "pmcid:PMC2947508",
         {
           "@id": "https://doi.org/10.1371/journal.pone.0013066"
-        },
-        "pubmed:20927376",
-        "pmcid:PMC2947508"
+        }
       ],
       "sc:description": "The platform enables biologists to examine a gene, protein, compound or disease of interest in a global, biological, or clinical context.",
       "sc:featureList": {
@@ -67,8 +71,8 @@
       },
       "sc:name": "NextBio gene-centric data",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -77,7 +81,7 @@
       "sc:url": "http://www.nextbio.com/"
     },
     {
-      "@id": "_:Naf07d913749a41579c44fcc361e9cb98",
+      "@id": "_:N61d4cf8ff2f946fab1853ef78945054c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0842"
@@ -85,7 +89,7 @@
       "sc:name": "Identifier"
     },
     {
-      "@id": "_:Nb9dd0276c366429a810262b7b7fd382f",
+      "@id": "_:N3cc4a62c9db940058a13c4b4621efa3d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0916"
@@ -94,10 +98,6 @@
         "@id": "edam:format_2331"
       },
       "sc:name": "Gene report"
-    },
-    {
-      "@id": "https://doi.org/10.1371/journal.pone.0013066",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

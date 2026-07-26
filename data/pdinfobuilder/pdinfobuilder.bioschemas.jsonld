@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -43,25 +43,25 @@
       "@id": "https://bio.tools/pdinfobuilder",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N879a9a6647834d22b4b9e55caa58089e"
+        "@id": "_:N95089735da784326b2eb28d2623be5a5"
       },
       "bsc:output": {
-        "@id": "_:Nf2de3c1d192642d4a15e12b2ea54fdc5"
+        "@id": "_:Naf6dd1836a8c44e4a0de8b642a575d64"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_3518"
-        },
         {
           "@id": "edam:topic_2885"
         },
         {
           "@id": "edam:topic_3489"
+        },
+        {
+          "@id": "edam:topic_3518"
         }
       ],
       "sc:citation": {
@@ -79,8 +79,8 @@
       "sc:license": "Artistic-2.0",
       "sc:name": "pdInfoBuilder",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -90,18 +90,7 @@
       "sc:url": "https://bioconductor.org/packages/pdInfoBuilder"
     },
     {
-      "@id": "_:Nf2de3c1d192642d4a15e12b2ea54fdc5",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3111"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3621"
-      },
-      "sc:name": "Processed microarray data"
-    },
-    {
-      "@id": "_:N879a9a6647834d22b4b9e55caa58089e",
+      "@id": "_:N95089735da784326b2eb28d2623be5a5",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3110"
@@ -110,6 +99,17 @@
         "@id": "edam:format_1638"
       },
       "sc:name": "Raw microarray data"
+    },
+    {
+      "@id": "_:Naf6dd1836a8c44e4a0de8b642a575d64",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3111"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3621"
+      },
+      "sc:name": "Processed microarray data"
     }
   ]
 }

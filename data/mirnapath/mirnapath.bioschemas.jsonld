@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,24 +40,24 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Na5f665aed7dd489e9f98d06d4d767423"
+          "@id": "_:Ne06a646ee86f435aa8c7ae52c0c1e474"
         },
         {
-          "@id": "_:N07a34ebb3a964cc98312267c5fe37bad"
+          "@id": "_:Ndbe2da4723014246a09e5c4593fe8746"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N93935b8219bc4df898eaa98f7a44c058"
+          "@id": "_:N5089ae47f850430ebe9f034223c819cd"
         },
         {
-          "@id": "_:Nb5c4c594f4934193b8f14cc6b2b3f0c6"
+          "@id": "_:N2495990b4dfb46dd9cabdd55231cde69"
         },
         {
-          "@id": "_:N935a24e440e54a5d97945028f1105261"
+          "@id": "_:N583dec35d48f4064a4111a2c6eec33e5"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
@@ -77,8 +77,8 @@
       "sc:license": "LGPL-2.1-only",
       "sc:name": "miRNApath",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -88,7 +88,45 @@
       "sc:url": "https://bioconductor.org/packages/miRNApath"
     },
     {
-      "@id": "_:N93935b8219bc4df898eaa98f7a44c058",
+      "@id": "_:Ne06a646ee86f435aa8c7ae52c0c1e474",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3112"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3475"
+      },
+      "sc:name": "Gene expression matrix"
+    },
+    {
+      "@id": "_:Ndbe2da4723014246a09e5c4593fe8746",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3115"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3475"
+      },
+      "sc:name": "Microarray metadata"
+    },
+    {
+      "@id": "_:N5089ae47f850430ebe9f034223c819cd",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1636"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_3033"
+        }
+      ],
+      "sc:name": "Heat map"
+    },
+    {
+      "@id": "_:N2495990b4dfb46dd9cabdd55231cde69",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1669"
@@ -104,58 +142,20 @@
       "sc:name": "P-value"
     },
     {
-      "@id": "_:Nb5c4c594f4934193b8f14cc6b2b3f0c6",
+      "@id": "_:N583dec35d48f4064a4111a2c6eec33e5",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1772"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_3033"
+          "@id": "edam:format_3547"
         },
         {
-          "@id": "edam:format_3547"
+          "@id": "edam:format_3033"
         }
       ],
       "sc:name": "Score"
-    },
-    {
-      "@id": "_:N935a24e440e54a5d97945028f1105261",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1636"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3033"
-        },
-        {
-          "@id": "edam:format_3547"
-        }
-      ],
-      "sc:name": "Heat map"
-    },
-    {
-      "@id": "_:Na5f665aed7dd489e9f98d06d4d767423",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3112"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3475"
-      },
-      "sc:name": "Gene expression matrix"
-    },
-    {
-      "@id": "_:N07a34ebb3a964cc98312267c5fe37bad",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3115"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3475"
-      },
-      "sc:name": "Microarray metadata"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,7 +36,7 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/nar/gkac240",
+      "@id": "https://doi.org/10.1093/nar/gkae241",
       "@type": "sc:CreativeWork"
     },
     {
@@ -44,12 +44,12 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Job Dispatcher",
       "bsc:input": {
-        "@id": "_:N023aade52ae547f2817b5097a4480ef5"
+        "@id": "_:N24635b437e254f2abed8de19e9bb17c2"
       },
       "bsc:output": {
-        "@id": "_:N337e2b823ac24398b79f31b2e062a360"
+        "@id": "_:Ne33dc3e379084db182b8f8793dffa773"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Web application",
         "Web service"
@@ -59,19 +59,19 @@
       },
       "sc:author": "EMBOSS",
       "sc:citation": [
-        "pubmed:38597606",
-        "pmcid:PMC11223882",
+        {
+          "@id": "https://doi.org/10.1016/S0168-9525(00)02024-2"
+        },
+        "pubmed:35412617",
         "pmcid:PMC9252731",
         {
           "@id": "https://doi.org/10.1093/nar/gkac240"
         },
+        "pubmed:38597606",
+        "pmcid:PMC11223882",
         {
           "@id": "https://doi.org/10.1093/nar/gkae241"
-        },
-        {
-          "@id": "https://doi.org/10.1016/S0168-9525(00)02024-2"
-        },
-        "pubmed:35412617"
+        }
       ],
       "sc:description": "Draw a threshold dotplot of two sequences.",
       "sc:featureList": {
@@ -79,17 +79,17 @@
       },
       "sc:name": "dotmatcher (EBI)",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:provider": "EMBL-EBI",
       "sc:softwareHelp": [
         {
-          "@id": "https://www.ebi.ac.uk/jdispatcher/help"
+          "@id": "https://emboss.sourceforge.net/"
         },
         {
-          "@id": "https://emboss.sourceforge.net/"
+          "@id": "https://www.ebi.ac.uk/jdispatcher/help"
         },
         {
           "@id": "http://www.ebi.ac.uk/about/terms-of-use"
@@ -99,7 +99,7 @@
       "sc:url": "https://www.ebi.ac.uk/jdispatcher/seqstats/emboss_dotmatcher"
     },
     {
-      "@id": "_:N023aade52ae547f2817b5097a4480ef5",
+      "@id": "_:N24635b437e254f2abed8de19e9bb17c2",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0849"
@@ -107,7 +107,7 @@
       "sc:name": "Sequence record"
     },
     {
-      "@id": "_:N337e2b823ac24398b79f31b2e062a360",
+      "@id": "_:Ne33dc3e379084db182b8f8793dffa773",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0862"
@@ -115,7 +115,7 @@
       "sc:name": "Dotplot"
     },
     {
-      "@id": "https://doi.org/10.1093/nar/gkae241",
+      "@id": "https://doi.org/10.1093/nar/gkac240",
       "@type": "sc:CreativeWork"
     },
     {

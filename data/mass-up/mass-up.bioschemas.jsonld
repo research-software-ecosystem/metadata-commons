@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,25 +36,21 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1186/s12859-015-0752-4",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/mass-up",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Hugo López-Fernández",
       "bsc:input": [
         {
-          "@id": "_:N6398c4cd31254b01acbaf9e02604ebbf"
+          "@id": "_:Ncd754b317c814a85ae1fb4a215fc592f"
         },
         {
-          "@id": "_:N68ba15adf0a942118b983ebb1dbd4296"
+          "@id": "_:N918a0e8d81c441c59bc01c251e7a87be"
         }
       ],
       "bsc:output": {
-        "@id": "_:N5745d04f231e4aca97db33a6b104d3e8"
+        "@id": "_:N4206a871d5ff49b99b593d4f2667d8d0"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Desktop application",
       "sc:applicationSubCategory": [
         {
@@ -64,10 +60,10 @@
           "@id": "edam:topic_0121"
         },
         {
-          "@id": "edam:topic_2269"
+          "@id": "edam:topic_3520"
         },
         {
-          "@id": "edam:topic_3520"
+          "@id": "edam:topic_2269"
         }
       ],
       "sc:author": "SING Group",
@@ -78,39 +74,39 @@
       "sc:description": "Open-source mass spectrometry software for proteomics designed to support the preprocessing and analysis of MALDI-TOF mass spectrometry data.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_2409"
-        },
-        {
-          "@id": "edam:operation_1812"
+          "@id": "edam:operation_2990"
         },
         {
           "@id": "edam:operation_3432"
         },
         {
-          "@id": "edam:operation_0531"
-        },
-        {
-          "@id": "edam:operation_3215"
-        },
-        {
-          "@id": "edam:operation_2990"
+          "@id": "edam:operation_2409"
         },
         {
           "@id": "edam:operation_3695"
         },
         {
-          "@id": "edam:operation_3648"
+          "@id": "edam:operation_0531"
+        },
+        {
+          "@id": "edam:operation_1812"
+        },
+        {
+          "@id": "edam:operation_3215"
         },
         {
           "@id": "edam:operation_3435"
+        },
+        {
+          "@id": "edam:operation_3648"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "GPL-3.0",
       "sc:name": "Mass-Up",
       "sc:operatingSystem": [
-        "Windows",
-        "Linux"
+        "Linux",
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://www.sing-group.org/mass-up/manual"
@@ -119,45 +115,49 @@
       "sc:url": "http://www.sing-group.org/mass-up"
     },
     {
-      "@id": "_:N5745d04f231e4aca97db33a6b104d3e8",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0944"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3752"
-      },
-      "sc:name": "Peptide mass fingerprint"
-    },
-    {
-      "@id": "_:N6398c4cd31254b01acbaf9e02604ebbf",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0944"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3752"
-      },
-      "sc:name": "Peptide mass fingerprint"
-    },
-    {
-      "@id": "_:N68ba15adf0a942118b983ebb1dbd4296",
+      "@id": "_:Ncd754b317c814a85ae1fb4a215fc592f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0943"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_3654"
-        },
-        {
           "@id": "edam:format_3752"
         },
         {
           "@id": "edam:format_3244"
+        },
+        {
+          "@id": "edam:format_3654"
         }
       ],
       "sc:name": "Mass spectrometry spectra"
+    },
+    {
+      "@id": "_:N918a0e8d81c441c59bc01c251e7a87be",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0944"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3752"
+      },
+      "sc:name": "Peptide mass fingerprint"
+    },
+    {
+      "@id": "_:N4206a871d5ff49b99b593d4f2667d8d0",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0944"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3752"
+      },
+      "sc:name": "Peptide mass fingerprint"
+    },
+    {
+      "@id": "https://doi.org/10.1186/s12859-015-0752-4",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

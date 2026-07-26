@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,36 +36,32 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btw521",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/nvt",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
-        "Thomas Eder",
-        "CUBE-AT"
+        "CUBE-AT",
+        "Thomas Eder"
       ],
       "bsc:input": {
-        "@id": "_:N0406b58e167e4493b63e469bf754fa6d"
+        "@id": "_:N9d7590f2dc2b4baa9712ce5ae308af8b"
       },
       "bsc:output": {
-        "@id": "_:N3150d35f1f584566aacb0ec8cbbea9b4"
+        "@id": "_:Naaf4054124394bd2888af5dbb4511df3"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": {
         "@id": "edam:topic_2259"
       },
       "sc:citation": [
+        "pubmed:27515738",
         "pmcid:PMC5133377",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btw521"
-        },
-        "pubmed:27515738"
+        }
       ],
       "sc:description": "An R package for the assessment of RNA-Seq normalization methods.",
       "sc:featureList": {
@@ -73,8 +69,8 @@
       },
       "sc:name": "NVT",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -84,7 +80,15 @@
       "sc:url": "https://github.com/Edert/NVT"
     },
     {
-      "@id": "_:N3150d35f1f584566aacb0ec8cbbea9b4",
+      "@id": "_:N9d7590f2dc2b4baa9712ce5ae308af8b",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1270"
+      },
+      "sc:name": "Feature table"
+    },
+    {
+      "@id": "_:Naaf4054124394bd2888af5dbb4511df3",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"
@@ -92,12 +96,8 @@
       "sc:name": "Report"
     },
     {
-      "@id": "_:N0406b58e167e4493b63e469bf754fa6d",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1270"
-      },
-      "sc:name": "Feature table"
+      "@id": "https://doi.org/10.1093/bioinformatics/btw521",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

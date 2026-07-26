@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,41 +36,37 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1186/1471-2105-12-342",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/cornai",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Elin Axelsson",
       "bsc:input": {
-        "@id": "_:Nc02c2c87a41a4092a0a85624a548b364"
+        "@id": "_:N0427177822c2466fa95e3f7d9bfe1886"
       },
       "bsc:output": [
         {
-          "@id": "_:Nb2c9f21cab454338b7f8f113f55d9d60"
+          "@id": "_:N4d53c08b1de1411389a378fb7738b571"
         },
         {
-          "@id": "_:Nc805193dfe55423899071492a5a66d26"
+          "@id": "_:N76ab8b92df2746618f3cae742b96bbc7"
         },
         {
-          "@id": "_:N40fde8e97fb844b9ab119560b86a7764"
+          "@id": "_:Nf12afd5f090145d9ab87fbafb8009910"
         },
         {
-          "@id": "_:Na1ed0416af854608945afb61e789a9ac"
+          "@id": "_:Nc50a0194bf6d49fd872858a62dc724ca"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0602"
+          "@id": "edam:topic_3071"
         },
         {
-          "@id": "edam:topic_3071"
+          "@id": "edam:topic_0602"
         },
         {
           "@id": "edam:topic_3523"
@@ -78,34 +74,34 @@
       ],
       "sc:citation": [
         "pubmed:21849035",
+        "pmcid:PMC3230910",
         {
           "@id": "https://doi.org/10.1186/1471-2105-12-342"
-        },
-        "pmcid:PMC3230910"
+        }
       ],
       "sc:description": "Analysis of combinatorial cell-based RNAi screens.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3439"
+          "@id": "edam:operation_2495"
         },
         {
           "@id": "edam:operation_1812"
         },
         {
-          "@id": "edam:operation_2428"
+          "@id": "edam:operation_3439"
         },
         {
           "@id": "edam:operation_3435"
         },
         {
-          "@id": "edam:operation_2495"
+          "@id": "edam:operation_2428"
         }
       ],
       "sc:license": "Artistic-2.0",
       "sc:name": "coRNAi",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -115,39 +111,34 @@
       "sc:url": "https://bioconductor.org/packages/3.4/bioc/html/coRNAi.html"
     },
     {
-      "@id": "_:Nb2c9f21cab454338b7f8f113f55d9d60",
+      "@id": "_:N0427177822c2466fa95e3f7d9bfe1886",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2048"
+        "@id": "edam:data_3108"
       },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3547"
-        },
-        {
-          "@id": "edam:format_2330"
-        }
-      ],
-      "sc:name": "Report"
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Experimental measurement"
     },
     {
-      "@id": "_:Nc805193dfe55423899071492a5a66d26",
+      "@id": "_:N4d53c08b1de1411389a378fb7738b571",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1636"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_2330"
+          "@id": "edam:format_3547"
         },
         {
-          "@id": "edam:format_3547"
+          "@id": "edam:format_2330"
         }
       ],
       "sc:name": "Heat map"
     },
     {
-      "@id": "_:N40fde8e97fb844b9ab119560b86a7764",
+      "@id": "_:N76ab8b92df2746618f3cae742b96bbc7",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1669"
@@ -163,31 +154,40 @@
       "sc:name": "P-value"
     },
     {
-      "@id": "_:Na1ed0416af854608945afb61e789a9ac",
+      "@id": "_:Nf12afd5f090145d9ab87fbafb8009910",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_2330"
+          "@id": "edam:format_3547"
         },
         {
-          "@id": "edam:format_3547"
+          "@id": "edam:format_2330"
         }
       ],
       "sc:name": "Plot"
     },
     {
-      "@id": "_:Nc02c2c87a41a4092a0a85624a548b364",
+      "@id": "_:Nc50a0194bf6d49fd872858a62dc724ca",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_3108"
+        "@id": "edam:data_2048"
       },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Experimental measurement"
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Report"
+    },
+    {
+      "@id": "https://doi.org/10.1186/1471-2105-12-342",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,32 +36,25 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1101/2021.06.17.448827",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/matrixqcvis",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Naf448ad4cd1e4eaf8fee0644ec763b4d"
+        "@id": "_:N1302ee4e31da43858c13cd2b61c0f1dc"
       },
       "bsc:output": [
         {
-          "@id": "_:N45abee8daeff4e4e8ee6c5168ab81cb5"
+          "@id": "_:N2d8c41c0ab62488b81ad11f3f694d854"
         },
         {
-          "@id": "_:Nf1cea1282d02438ca16d481f1c0ebd61"
+          "@id": "_:N9532d0a5d4f645c7b6a0f72b318f4051"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_0769"
-        },
         {
           "@id": "edam:topic_3172"
         },
@@ -70,6 +63,9 @@
         },
         {
           "@id": "edam:topic_3308"
+        },
+        {
+          "@id": "edam:topic_0769"
         }
       ],
       "sc:citation": {
@@ -78,46 +74,46 @@
       "sc:description": "shiny-based interactive data quality exploration for omics data.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0337"
+          "@id": "edam:operation_2495"
         },
         {
           "@id": "edam:operation_3799"
         },
         {
-          "@id": "edam:operation_2495"
+          "@id": "edam:operation_0337"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "GPL-3.0",
       "sc:name": "MatrixQCvis",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": [
         {
-          "@id": "https://bioconductor.org/packages/release/bioc/vignettes/MatrixQCvis/inst/doc/MatrixQCvis.html"
+          "@id": "https://bioconductor.org/packages/release/bioc/manuals/MatrixQCvis/man/MatrixQCvis.pdf"
         },
         {
-          "@id": "https://bioconductor.org/packages/release/bioc/manuals/MatrixQCvis/man/MatrixQCvis.pdf"
+          "@id": "https://bioconductor.org/packages/release/bioc/vignettes/MatrixQCvis/inst/doc/MatrixQCvis.html"
         }
       ],
       "sc:url": "https://www.bioconductor.org/packages/release/bioc/html/MatrixQCvis.html"
     },
     {
-      "@id": "_:N45abee8daeff4e4e8ee6c5168ab81cb5",
+      "@id": "_:N1302ee4e31da43858c13cd2b61c0f1dc",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_3914"
+        "@id": "edam:data_3917"
       },
       "sc:encodingFormat": {
-        "@id": "edam:format_3547"
+        "@id": "edam:format_3751"
       },
-      "sc:name": "Quality control report"
+      "sc:name": "Count matrix"
     },
     {
-      "@id": "_:Nf1cea1282d02438ca16d481f1c0ebd61",
+      "@id": "_:N2d8c41c0ab62488b81ad11f3f694d854",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
@@ -128,15 +124,19 @@
       "sc:name": "Plot"
     },
     {
-      "@id": "_:Naf448ad4cd1e4eaf8fee0644ec763b4d",
+      "@id": "_:N9532d0a5d4f645c7b6a0f72b318f4051",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_3917"
+        "@id": "edam:data_3914"
       },
       "sc:encodingFormat": {
-        "@id": "edam:format_3751"
+        "@id": "edam:format_3547"
       },
-      "sc:name": "Count matrix"
+      "sc:name": "Quality control report"
+    },
+    {
+      "@id": "https://doi.org/10.1101/2021.06.17.448827",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

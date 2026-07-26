@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,16 +36,20 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/gks1235",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/ecogene",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Dr. Kenneth E. Rudd",
       "bsc:input": {
-        "@id": "_:N5bdec1f31c764365a7abf6420246d0ff"
+        "@id": "_:N9a9caf22486e405b961c7bddaf697617"
       },
       "bsc:output": {
-        "@id": "_:Nba4c3808e80c4d45980ca2a687d601b2"
+        "@id": "_:N3ccb6d31669846f89e318ad8de05c3ae"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Database portal",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0621"
@@ -63,8 +67,8 @@
       },
       "sc:name": "EcoGene",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:provider": "University of Miami",
@@ -75,7 +79,7 @@
       "sc:url": "http://www.ecogene.org/old/"
     },
     {
-      "@id": "_:N5bdec1f31c764365a7abf6420246d0ff",
+      "@id": "_:N9a9caf22486e405b961c7bddaf697617",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1795"
@@ -83,7 +87,7 @@
       "sc:name": "Gene ID (EcoGene)"
     },
     {
-      "@id": "_:Nba4c3808e80c4d45980ca2a687d601b2",
+      "@id": "_:N3ccb6d31669846f89e318ad8de05c3ae",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0916"
@@ -92,10 +96,6 @@
         "@id": "edam:format_2331"
       },
       "sc:name": "Gene report"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gks1235",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

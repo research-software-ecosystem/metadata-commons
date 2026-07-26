@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,21 +40,21 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Na2014e47ca4148f19f9368c5367bb8e0"
+          "@id": "_:N95ad736b63c64561809622fa2cbbf990"
         },
         {
-          "@id": "_:Ne698d2da99564f1b84a2d0385b88f74b"
+          "@id": "_:Nfeb6b59dca974b5ba714fb793f129d34"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N2d5561ce332f48a59bfc2efc2eede578"
+          "@id": "_:Nd258e518804b4c5e96b2c3390dae1b37"
         },
         {
-          "@id": "_:N12066f1db04b490d96e2dc6495a69fbb"
+          "@id": "_:N6c6f34752b5f48fe956883c89dea7105"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:applicationSubCategory": [
         {
           "@id": "edam:topic_0128"
@@ -72,13 +72,13 @@
           "@id": "edam:operation_0531"
         },
         {
-          "@id": "edam:operation_3766"
-        },
-        {
           "@id": "edam:operation_3925"
         },
         {
           "@id": "edam:operation_2406"
+        },
+        {
+          "@id": "edam:operation_3766"
         }
       ],
       "sc:license": "LGPL-3.0",
@@ -87,7 +87,26 @@
       "sc:url": "https://github.com/tekpinar/correlationplus"
     },
     {
-      "@id": "_:N2d5561ce332f48a59bfc2efc2eede578",
+      "@id": "_:N95ad736b63c64561809622fa2cbbf990",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2082"
+      },
+      "sc:name": "Matrix"
+    },
+    {
+      "@id": "_:Nfeb6b59dca974b5ba714fb793f129d34",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1460"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1476"
+      },
+      "sc:name": "Protein structure"
+    },
+    {
+      "@id": "_:Nd258e518804b4c5e96b2c3390dae1b37",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2082"
@@ -98,7 +117,7 @@
       "sc:name": "Matrix"
     },
     {
-      "@id": "_:N12066f1db04b490d96e2dc6495a69fbb",
+      "@id": "_:N6c6f34752b5f48fe956883c89dea7105",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1460"
@@ -107,25 +126,6 @@
         "@id": "edam:format_1476"
       },
       "sc:name": "Protein structure"
-    },
-    {
-      "@id": "_:Na2014e47ca4148f19f9368c5367bb8e0",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1460"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1476"
-      },
-      "sc:name": "Protein structure"
-    },
-    {
-      "@id": "_:Ne698d2da99564f1b84a2d0385b88f74b",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2082"
-      },
-      "sc:name": "Matrix"
     }
   ]
 }

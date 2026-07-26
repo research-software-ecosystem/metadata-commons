@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,12 +39,12 @@
       "@id": "https://bio.tools/unifiedwmwqpcr",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N72e38bec41064c6394dbf8142e90c30c"
+        "@id": "_:N1c4e8e68750741ceac34a92d83b7459d"
       },
       "bsc:output": {
-        "@id": "_:N07e895a32f0e4d949517c3eb59cab8ae"
+        "@id": "_:N9d05dd60684d480e8d5661288d84635c"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
@@ -59,8 +59,8 @@
       "sc:license": "GPL-2.0-only",
       "sc:name": "unifiedWMWqPCR",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -70,7 +70,7 @@
       "sc:url": "https://bioconductor.org/packages/unifiedWMWqPCR"
     },
     {
-      "@id": "_:N72e38bec41064c6394dbf8142e90c30c",
+      "@id": "_:N1c4e8e68750741ceac34a92d83b7459d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2603"
@@ -81,20 +81,20 @@
       "sc:name": "Gene expression data"
     },
     {
-      "@id": "_:N07e895a32f0e4d949517c3eb59cab8ae",
+      "@id": "_:N9d05dd60684d480e8d5661288d84635c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2603"
       },
       "sc:encodingFormat": [
         {
+          "@id": "edam:format_2331"
+        },
+        {
           "@id": "edam:format_3033"
         },
         {
           "@id": "edam:format_3475"
-        },
-        {
-          "@id": "edam:format_2331"
         }
       ],
       "sc:name": "Gene expression data"

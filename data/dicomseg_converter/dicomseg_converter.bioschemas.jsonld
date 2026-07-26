@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,47 +36,43 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1186/s13244-021-01081-8",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/dicomseg_converter",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N530126af9fe145fca7e488d60c50d547"
+          "@id": "_:N0254967f57ec45678f775bc783f87a84"
         },
         {
-          "@id": "_:N85b3e57cd65d4e6da2e2b815f20bf352"
+          "@id": "_:Ne2fc4081e6a34304a8f23cf1a27d18dc"
         },
         {
-          "@id": "_:Nf7b967f1baad4e6da9f64a96acdd3e44"
+          "@id": "_:N03d7eb08e0fa4dda9776a20dbf40897b"
         },
         {
-          "@id": "_:N3268d4bc1fcf47bcaa1f3ef659083023"
+          "@id": "_:N4867cef04d574bbfb7b381dfc61c3d04"
         },
         {
-          "@id": "_:Nc497ea74d5974487bf9024acc184730d"
+          "@id": "_:Ne2487c77c6cf4f44a556d521dde75548"
         },
         {
-          "@id": "_:N26fbd06a2b5a4782bb9e761d0c4fbb21"
+          "@id": "_:N0230caa3c20a46f79e8c957e0e3b8804"
         },
         {
-          "@id": "_:N871dbb06ffae4fcd987b2381e878b5e9"
+          "@id": "_:Nd37c5a052c7e4f7996503699b4cfb5d4"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N8c5a9716e06e4ecabedc7424ec198711"
+          "@id": "_:Nb80c9f1196bf431eb3252d202887fe1c"
         },
         {
-          "@id": "_:Nf548967f275440b9b19dd485219b25b4"
+          "@id": "_:Nc247085d9e20497eaef7f22fce076f58"
         },
         {
-          "@id": "_:N7758099f743940c3b59c64adb2525090"
+          "@id": "_:Nfafd11afc1d14bbc90f79c46428d10c6"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:applicationSubCategory": [
         {
           "@id": "edam:topic_0219"
@@ -101,8 +97,8 @@
       "sc:name": "Annotation Seg Converter",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://github.com/marver17/DICOMSEG_Converter"
@@ -111,29 +107,7 @@
       "sc:url": "https://github.com/marver17/DICOMSEG_Converter"
     },
     {
-      "@id": "_:N530126af9fe145fca7e488d60c50d547",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2968"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3548"
-      },
-      "sc:name": "Image"
-    },
-    {
-      "@id": "_:N85b3e57cd65d4e6da2e2b815f20bf352",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2968"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3548"
-      },
-      "sc:name": "Image"
-    },
-    {
-      "@id": "_:Nf7b967f1baad4e6da9f64a96acdd3e44",
+      "@id": "_:N0254967f57ec45678f775bc783f87a84",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"
@@ -141,7 +115,7 @@
       "sc:name": "Report"
     },
     {
-      "@id": "_:N3268d4bc1fcf47bcaa1f3ef659083023",
+      "@id": "_:Ne2fc4081e6a34304a8f23cf1a27d18dc",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2968"
@@ -152,7 +126,7 @@
       "sc:name": "Image"
     },
     {
-      "@id": "_:Nc497ea74d5974487bf9024acc184730d",
+      "@id": "_:N03d7eb08e0fa4dda9776a20dbf40897b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2968"
@@ -163,7 +137,7 @@
       "sc:name": "Image"
     },
     {
-      "@id": "_:N26fbd06a2b5a4782bb9e761d0c4fbb21",
+      "@id": "_:N4867cef04d574bbfb7b381dfc61c3d04",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2968"
@@ -174,7 +148,7 @@
       "sc:name": "Image"
     },
     {
-      "@id": "_:N871dbb06ffae4fcd987b2381e878b5e9",
+      "@id": "_:Ne2487c77c6cf4f44a556d521dde75548",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2968"
@@ -185,7 +159,40 @@
       "sc:name": "Image"
     },
     {
-      "@id": "_:N8c5a9716e06e4ecabedc7424ec198711",
+      "@id": "_:N0230caa3c20a46f79e8c957e0e3b8804",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2968"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3548"
+      },
+      "sc:name": "Image"
+    },
+    {
+      "@id": "_:Nd37c5a052c7e4f7996503699b4cfb5d4",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2968"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3548"
+      },
+      "sc:name": "Image"
+    },
+    {
+      "@id": "_:Nb80c9f1196bf431eb3252d202887fe1c",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2968"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3548"
+      },
+      "sc:name": "Image"
+    },
+    {
+      "@id": "_:Nc247085d9e20497eaef7f22fce076f58",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2968"
@@ -196,7 +203,7 @@
       "sc:name": "Image"
     },
     {
-      "@id": "_:Nf548967f275440b9b19dd485219b25b4",
+      "@id": "_:Nfafd11afc1d14bbc90f79c46428d10c6",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2968"
@@ -207,15 +214,8 @@
       "sc:name": "Image"
     },
     {
-      "@id": "_:N7758099f743940c3b59c64adb2525090",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2968"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3548"
-      },
-      "sc:name": "Image"
+      "@id": "https://doi.org/10.1186/s13244-021-01081-8",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

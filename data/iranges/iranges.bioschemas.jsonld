@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -42,49 +42,49 @@
     {
       "@id": "https://bio.tools/iranges",
       "@type": "sc:SoftwareApplication",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3315"
+          "@id": "edam:topic_3071"
         },
         {
-          "@id": "edam:topic_3071"
+          "@id": "edam:topic_3315"
         }
       ],
       "sc:author": [
-        "V. Obenchain",
-        "M. Lawrence",
+        "D. Sarkar",
+        "H. Pagès",
         "M. Carlson",
+        "M. Lawrence",
         "M. Morgan",
         "P. Aboyoun",
         "S. Falcon",
-        "D. Sarkar",
-        "H. Pagès"
+        "V. Obenchain"
       ],
       "sc:citation": {
         "@id": "https://doi.org/10.1371/journal.pcbi.1003118"
       },
       "sc:contributor": [
-        "S. Saini",
-        "D. Van Twisk",
-        "P. Shannon",
         "D. Tenenbaum",
+        "D. Van Twisk",
         "J. MacDonald",
-        "M. Ramos",
         "L. Shepherd",
-        "S. Arora"
+        "M. Ramos",
+        "P. Shannon",
+        "S. Arora",
+        "S. Saini"
       ],
       "sc:description": "Extract the genomic locations of genes, transcripts, exons, introns, and CDS, for the gene models stored in a TxDb object. A TxDb object is a small database that contains the gene models of a given organism/assembly. Bioconductor provides a small collection of TxDb objects in the form of ready-to-install TxDb packages for the most commonly studied organisms. Additionally, the user can easily make a TxDb object (or package) for the organism/assembly of their choice by using the tools from the txdbmaker package.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3438"
+          "@id": "edam:operation_3436"
         },
         {
-          "@id": "edam:operation_3436"
+          "@id": "edam:operation_3438"
         },
         {
           "@id": "edam:operation_3431"
@@ -93,8 +93,8 @@
       "sc:license": "Artistic-2.0",
       "sc:name": "IRanges",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {

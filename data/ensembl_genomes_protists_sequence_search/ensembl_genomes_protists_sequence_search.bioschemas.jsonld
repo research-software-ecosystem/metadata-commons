@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -44,12 +44,12 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Ensembl Genomes webteam",
       "bsc:input": {
-        "@id": "_:N843f7e9175354202b0764171bfe417ef"
+        "@id": "_:N688b8e9ddc484242a15bbd2b98361560"
       },
       "bsc:output": {
-        "@id": "_:N323839a725284b0aafea52c05763a319"
+        "@id": "_:Nf9ba8f0efacc440d9540c60b41ff0e3e"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0080"
@@ -57,10 +57,10 @@
       "sc:author": "Ensembl team",
       "sc:citation": [
         "pubmed:26687719",
+        "pmcid:PMC4702834",
         {
           "@id": "https://doi.org/10.1093/nar/gkv1157"
-        },
-        "pmcid:PMC4702834"
+        }
       ],
       "sc:description": "Searches Ensembl Protists sequences using Exonerate.",
       "sc:featureList": {
@@ -68,32 +68,24 @@
       },
       "sc:name": "Ensembl Genomes Protists sequence search",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:provider": "EMBL-EBI",
       "sc:softwareHelp": [
         {
-          "@id": "http://www.ebi.ac.uk/about/terms-of-use"
+          "@id": "http://protists.ensembl.org/info/website/help/index.html"
         },
         {
-          "@id": "http://protists.ensembl.org/info/website/help/index.html"
+          "@id": "http://www.ebi.ac.uk/about/terms-of-use"
         }
       ],
       "sc:softwareVersion": "1",
       "sc:url": "http://protists.ensembl.org/Multi/enasearch"
     },
     {
-      "@id": "_:N323839a725284b0aafea52c05763a319",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0863"
-      },
-      "sc:name": "Sequence alignment"
-    },
-    {
-      "@id": "_:N843f7e9175354202b0764171bfe417ef",
+      "@id": "_:N688b8e9ddc484242a15bbd2b98361560",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
@@ -102,6 +94,14 @@
         "@id": "edam:format_1929"
       },
       "sc:name": "Sequence"
+    },
+    {
+      "@id": "_:Nf9ba8f0efacc440d9540c60b41ff0e3e",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0863"
+      },
+      "sc:name": "Sequence alignment"
     }
   ]
 }

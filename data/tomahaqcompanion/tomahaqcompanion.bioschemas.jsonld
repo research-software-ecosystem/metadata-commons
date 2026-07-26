@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,24 +36,20 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1021/acs.jproteome.8b00767",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/tomahaqcompanion",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N8095082dd5a048a2b9e92731cd7b3b5e"
+          "@id": "_:N5c81a23fa19841929bcf88720bef3421"
         },
         {
-          "@id": "_:Nd42350e50bcd42b09ec0fbc45f21914b"
+          "@id": "_:Ndc9cc6fdc4974174942e8f67b9ddb6c6"
         }
       ],
       "bsc:output": {
-        "@id": "_:N0aebbaabc9d145fe9b38b96b667a2e19"
+        "@id": "_:Na606809a42934deba1b37eb4ded35671"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Desktop application",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0121"
@@ -80,15 +76,18 @@
       "sc:url": "https://github.com/CMRose3355/TomahaqCompanionProgram"
     },
     {
-      "@id": "_:N0aebbaabc9d145fe9b38b96b667a2e19",
+      "@id": "_:N5c81a23fa19841929bcf88720bef3421",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_0006"
+        "@id": "edam:data_0943"
       },
-      "sc:name": "Data"
+      "sc:encodingFormat": {
+        "@id": "edam:format_3712"
+      },
+      "sc:name": "Mass spectrometry spectra"
     },
     {
-      "@id": "_:N8095082dd5a048a2b9e92731cd7b3b5e",
+      "@id": "_:Ndc9cc6fdc4974174942e8f67b9ddb6c6",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2974"
@@ -99,15 +98,16 @@
       "sc:name": "Protein sequence (raw)"
     },
     {
-      "@id": "_:Nd42350e50bcd42b09ec0fbc45f21914b",
+      "@id": "_:Na606809a42934deba1b37eb4ded35671",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_0943"
+        "@id": "edam:data_0006"
       },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3712"
-      },
-      "sc:name": "Mass spectrometry spectra"
+      "sc:name": "Data"
+    },
+    {
+      "@id": "https://doi.org/10.1021/acs.jproteome.8b00767",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,23 +36,27 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1101/032573",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/biojs-vis-hgv",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Saket Choudhary",
       "bsc:input": {
-        "@id": "_:Na630329c5ab34174aa74d56cd5536d49"
+        "@id": "_:Ndab175bc31324787b5068ed58cc09e78"
       },
       "bsc:output": {
-        "@id": "_:N8e6ea7c4ea6742cdae603b62e9d32399"
+        "@id": "_:N21e232731632474194b5a49ce6882071"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Library",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0092"
+          "@id": "edam:topic_2885"
         },
         {
-          "@id": "edam:topic_2885"
+          "@id": "edam:topic_0092"
         }
       ],
       "sc:citation": {
@@ -65,8 +69,8 @@
       "sc:license": "Apache-2.0",
       "sc:name": "biojs-vis-hgv",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:provider": "BioJS",
@@ -77,15 +81,7 @@
       "sc:url": "https://github.com/saketkc/hgv2"
     },
     {
-      "@id": "_:N8e6ea7c4ea6742cdae603b62e9d32399",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1274"
-      },
-      "sc:name": "Map"
-    },
-    {
-      "@id": "_:Na630329c5ab34174aa74d56cd5536d49",
+      "@id": "_:Ndab175bc31324787b5068ed58cc09e78",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0006"
@@ -96,8 +92,12 @@
       "sc:name": "Data"
     },
     {
-      "@id": "https://doi.org/10.1101/032573",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N21e232731632474194b5a49ce6882071",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1274"
+      },
+      "sc:name": "Map"
     }
   ]
 }

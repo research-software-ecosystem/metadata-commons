@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,15 +36,19 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1021/ct500592m",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://orcid.org/0000-0003-1033-9895",
       "@type": "sc:Person"
     },
     {
-      "@id": "https://doi.org/10.1093/nar/gkw329",
+      "@id": "https://doi.org/10.1093/nar/gkp323",
       "@type": "sc:CreativeWork"
     },
     {
-      "@id": "https://doi.org/10.1021/ct500592m",
+      "@id": "https://doi.org/10.1093/nar/gkw329",
       "@type": "sc:CreativeWork"
     },
     {
@@ -58,36 +62,36 @@
         "@id": "https://orcid.org/0000-0003-1033-9895"
       },
       "bsc:input": {
-        "@id": "_:Nee8d12d0cdbb4aa0ad2309cad9f01fbd"
+        "@id": "_:N8c4f4c6f47344b1990e772dd975abe79"
       },
       "bsc:output": {
-        "@id": "_:Nadbb9947544b4f4082b31caef3f1bbe2"
+        "@id": "_:N0aee4b9166834503b134f577fb483ac8"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_2275"
       },
       "sc:citation": [
+        "pubmed:19433514",
+        "pmcid:PMC2703897",
+        {
+          "@id": "https://doi.org/10.1093/nar/gkp323"
+        },
+        "pubmed:22581768",
         "pmcid:PMC3394260",
         {
           "@id": "https://doi.org/10.1093/nar/gks419"
         },
-        {
-          "@id": "https://doi.org/10.1093/nar/gkp323"
-        },
-        {
-          "@id": "https://doi.org/10.1021/ct500592m"
-        },
         "pubmed:27131374",
         "pmcid:PMC4987898",
-        "pmcid:PMC2703897",
         {
           "@id": "https://doi.org/10.1093/nar/gkw329"
         },
         "pubmed:26588162",
-        "pubmed:22581768",
-        "pubmed:19433514"
+        {
+          "@id": "https://doi.org/10.1021/ct500592m"
+        }
       ],
       "sc:description": "PEP-FOLD uses a hidden Markov model-derived structural alphabet for de novo modeling of 3D conformations of peptides between 9-25 amino acids in aqueous solution. Updates to PEP-FOLD allow for modeling of linear and disulphide bonded cyclic peptides with 9-36 amino acids using benchmarked peptides.",
       "sc:featureList": {
@@ -106,7 +110,7 @@
       "sc:url": "https://mobyle.rpbs.univ-paris-diderot.fr/cgi-bin/portal.py#forms::PEP-FOLD3"
     },
     {
-      "@id": "_:Nee8d12d0cdbb4aa0ad2309cad9f01fbd",
+      "@id": "_:N8c4f4c6f47344b1990e772dd975abe79",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2976"
@@ -117,7 +121,7 @@
       "sc:name": "Protein sequence"
     },
     {
-      "@id": "_:Nadbb9947544b4f4082b31caef3f1bbe2",
+      "@id": "_:N0aee4b9166834503b134f577fb483ac8",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1460"
@@ -126,10 +130,6 @@
         "@id": "edam:format_1476"
       },
       "sc:name": "Protein structure"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gkp323",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

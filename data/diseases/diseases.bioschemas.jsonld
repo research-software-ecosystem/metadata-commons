@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -45,21 +45,21 @@
       "biotools:primaryContact": "Lars Juhl Jensen",
       "bsc:input": [
         {
-          "@id": "_:Nf2a53bcd60054d3b8edebe67f37dd172"
+          "@id": "_:Nec4350b6be83449195951a9836ff8864"
         },
         {
-          "@id": "_:N74fae64005bb4bf4a579c722e90c9920"
+          "@id": "_:N373acbc50547438a8f0caefeaa6ae20c"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Na977bb5237d14c40adefb03c16428ea5"
+          "@id": "_:Ne14719ca3e6744d1a1b131842b3aa1bb"
         },
         {
-          "@id": "_:N34c66df16ac54ab08c0c4c36f8f73e29"
+          "@id": "_:N06711188d9424efa843428150b058ad4"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Database portal",
       "sc:applicationSubCategory": [
         {
@@ -83,22 +83,14 @@
       "sc:license": "CC-BY-4.0",
       "sc:name": "DISEASES",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:url": "https://diseases.jensenlab.org/"
     },
     {
-      "@id": "_:Nf2a53bcd60054d3b8edebe67f37dd172",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1025"
-      },
-      "sc:name": "Gene identifier"
-    },
-    {
-      "@id": "_:N74fae64005bb4bf4a579c722e90c9920",
+      "@id": "_:Nec4350b6be83449195951a9836ff8864",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3667"
@@ -106,20 +98,28 @@
       "sc:name": "Disease identifier"
     },
     {
-      "@id": "_:Na977bb5237d14c40adefb03c16428ea5",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3667"
-      },
-      "sc:name": "Disease identifier"
-    },
-    {
-      "@id": "_:N34c66df16ac54ab08c0c4c36f8f73e29",
+      "@id": "_:N373acbc50547438a8f0caefeaa6ae20c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1025"
       },
       "sc:name": "Gene identifier"
+    },
+    {
+      "@id": "_:Ne14719ca3e6744d1a1b131842b3aa1bb",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1025"
+      },
+      "sc:name": "Gene identifier"
+    },
+    {
+      "@id": "_:N06711188d9424efa843428150b058ad4",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3667"
+      },
+      "sc:name": "Disease identifier"
     }
   ]
 }

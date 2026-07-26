@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,86 +36,82 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1021/pr400208w",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/peppy",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Na5aaab0f6f9e41f89297e21361c11cae"
+          "@id": "_:N77442eea84ba402ea13b19d9daf47ae2"
         },
         {
-          "@id": "_:N825f387d2137457a8bb1cf6b45f948b8"
+          "@id": "_:N519f841a9edb42d8a82ab350da43c38e"
         },
         {
-          "@id": "_:N03ab34ea289545a1bc98d0a3bdb9e545"
+          "@id": "_:Nfeab6bcbc9d64cddb6b13a4948853ae7"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Nc8de79aaadd84cb1987e86a3988f0e9b"
+          "@id": "_:N120e1829bd8847f6b11197b3913e13b5"
         },
         {
-          "@id": "_:N11c222f443b44d7687cc23aebe708c6c"
+          "@id": "_:N73f7c710d4464aedb9a99b22cc64d62d"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Desktop application",
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_3520"
-        },
         {
           "@id": "edam:topic_0622"
         },
         {
-          "@id": "edam:topic_0121"
+          "@id": "edam:topic_2640"
         },
         {
           "@id": "edam:topic_0078"
         },
         {
-          "@id": "edam:topic_2640"
+          "@id": "edam:topic_0121"
+        },
+        {
+          "@id": "edam:topic_3520"
         }
       ],
       "sc:citation": [
+        "pubmed:23614390",
+        "pmcid:PMC4117251",
         {
           "@id": "https://doi.org/10.1021/pr400208w"
-        },
-        "pmcid:PMC4117251",
-        "pubmed:23614390"
+        }
       ],
       "sc:description": "A software that identifies new proteins and aberrant protein forms withing proteomic data.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0366"
-        },
-        {
           "@id": "edam:operation_0362"
         },
         {
-          "@id": "edam:operation_3649"
-        },
-        {
-          "@id": "edam:operation_3767"
-        },
-        {
-          "@id": "edam:operation_3648"
+          "@id": "edam:operation_3646"
         },
         {
           "@id": "edam:operation_3631"
         },
         {
-          "@id": "edam:operation_3646"
+          "@id": "edam:operation_3767"
+        },
+        {
+          "@id": "edam:operation_0366"
+        },
+        {
+          "@id": "edam:operation_3649"
+        },
+        {
+          "@id": "edam:operation_3648"
         }
       ],
       "sc:name": "Peppy",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://www.geneffects.com/peppy/"
@@ -123,18 +119,7 @@
       "sc:url": "http://www.geneffects.com/peppy/"
     },
     {
-      "@id": "_:Na5aaab0f6f9e41f89297e21361c11cae",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2887"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1929"
-      },
-      "sc:name": "Nucleic acid sequence record"
-    },
-    {
-      "@id": "_:N825f387d2137457a8bb1cf6b45f948b8",
+      "@id": "_:N77442eea84ba402ea13b19d9daf47ae2",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0943"
@@ -153,7 +138,18 @@
       "sc:name": "Mass spectrometry spectra"
     },
     {
-      "@id": "_:N03ab34ea289545a1bc98d0a3bdb9e545",
+      "@id": "_:N519f841a9edb42d8a82ab350da43c38e",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2887"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "Nucleic acid sequence record"
+    },
+    {
+      "@id": "_:Nfeab6bcbc9d64cddb6b13a4948853ae7",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2886"
@@ -164,7 +160,7 @@
       "sc:name": "Protein sequence record"
     },
     {
-      "@id": "_:Nc8de79aaadd84cb1987e86a3988f0e9b",
+      "@id": "_:N120e1829bd8847f6b11197b3913e13b5",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3002"
@@ -175,7 +171,7 @@
       "sc:name": "Annotation track"
     },
     {
-      "@id": "_:N11c222f443b44d7687cc23aebe708c6c",
+      "@id": "_:N73f7c710d4464aedb9a99b22cc64d62d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0945"
@@ -184,6 +180,10 @@
         "@id": "edam:format_2331"
       },
       "sc:name": "Peptide identification"
+    },
+    {
+      "@id": "https://doi.org/10.1021/pr400208w",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

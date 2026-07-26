@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,20 +39,20 @@
       "@id": "https://bio.tools/bubbletree",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N89fd2dc79c594e7cb0f4a8724748fd53"
+        "@id": "_:N71d7aa3ed1ae43ed918fe4e57558bee2"
       },
       "bsc:output": [
         {
-          "@id": "_:N55a912f3ac6540bb925e81bc964fe1ac"
+          "@id": "_:N7c8871b9f0264f6f8d0ff5fa6ba6a8e1"
         },
         {
-          "@id": "_:Nf9b622c5dcda4386b89c6a298ce15876"
+          "@id": "_:N75e746661a6b44bab4047dece4639e93"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
         {
@@ -65,10 +65,10 @@
       "sc:description": "",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3731"
+          "@id": "edam:operation_3233"
         },
         {
-          "@id": "edam:operation_3233"
+          "@id": "edam:operation_3731"
         },
         {
           "@id": "edam:operation_3227"
@@ -76,9 +76,9 @@
       ],
       "sc:name": "BubbleTree",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://bioconductor.org/packages/BubbleTree"
@@ -87,7 +87,39 @@
       "sc:url": "https://bioconductor.org/packages/BubbleTree"
     },
     {
-      "@id": "_:N55a912f3ac6540bb925e81bc964fe1ac",
+      "@id": "_:N71d7aa3ed1ae43ed918fe4e57558bee2",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3498"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2155"
+        },
+        {
+          "@id": "edam:format_2921"
+        }
+      ],
+      "sc:name": "Sequence variations"
+    },
+    {
+      "@id": "_:N7c8871b9f0264f6f8d0ff5fa6ba6a8e1",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1622"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_3468"
+        }
+      ],
+      "sc:name": "Disease report"
+    },
+    {
+      "@id": "_:N75e746661a6b44bab4047dece4639e93",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3567"
@@ -101,38 +133,6 @@
         }
       ],
       "sc:name": "Reference sample report"
-    },
-    {
-      "@id": "_:Nf9b622c5dcda4386b89c6a298ce15876",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1622"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3468"
-        },
-        {
-          "@id": "edam:format_3547"
-        }
-      ],
-      "sc:name": "Disease report"
-    },
-    {
-      "@id": "_:N89fd2dc79c594e7cb0f4a8724748fd53",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3498"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2921"
-        },
-        {
-          "@id": "edam:format_2155"
-        }
-      ],
-      "sc:name": "Sequence variations"
     }
   ]
 }

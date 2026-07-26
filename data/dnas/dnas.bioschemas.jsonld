@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,22 +40,22 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Bohdan Schneider",
       "bsc:input": {
-        "@id": "_:N053578c201cb4044b02651adfa61b027"
+        "@id": "_:Ne88c4c24408847329ce08a2a29d39045"
       },
       "bsc:output": {
-        "@id": "_:N3b3ceb8e185c4d30b5bde5e30b638fd8"
+        "@id": "_:Nc68397c96c40418181e20caebc7c49f5"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0097"
       },
       "sc:citation": [
         "pubmed:27150812",
+        "pmcid:PMC4987927",
         {
           "@id": "https://doi.org/10.1093/nar/gkw381"
-        },
-        "pmcid:PMC4987927"
+        }
       ],
       "sc:description": "A web service providing assignment of nucleic acid conformers used in bioinformatic analysis of nucleic acids and protein/DNA interfaces.",
       "sc:featureList": {
@@ -63,9 +63,9 @@
       },
       "sc:name": "DNAS",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": "ELIXIR-CZ",
       "sc:softwareHelp": {
@@ -75,20 +75,20 @@
       "sc:url": "http://www.structbio.org/dnas"
     },
     {
-      "@id": "_:N3b3ceb8e185c4d30b5bde5e30b638fd8",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1537"
-      },
-      "sc:name": "Protein structure report"
-    },
-    {
-      "@id": "_:N053578c201cb4044b02651adfa61b027",
+      "@id": "_:Ne88c4c24408847329ce08a2a29d39045",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1127"
       },
       "sc:name": "PDB ID"
+    },
+    {
+      "@id": "_:Nc68397c96c40418181e20caebc7c49f5",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1537"
+      },
+      "sc:name": "Protein structure report"
     },
     {
       "@id": "https://doi.org/10.1093/nar/gkw381",

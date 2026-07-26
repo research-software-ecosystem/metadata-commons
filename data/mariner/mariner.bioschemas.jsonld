@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,25 +36,21 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/BIOINFORMATICS/BTAE352",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/mariner",
       "@type": "sc:SoftwareApplication",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0769"
+          "@id": "edam:topic_4052"
         },
         {
           "@id": "edam:topic_3382"
         },
         {
-          "@id": "edam:topic_4052"
+          "@id": "edam:topic_0634"
         },
         {
-          "@id": "edam:topic_0634"
+          "@id": "edam:topic_0769"
         }
       ],
       "sc:citation": [
@@ -67,10 +63,10 @@
       "sc:description": "mariner is an R/Bioconductor package for exploring Hi-C data that provides functions for manipulating, extracting, and aggregating chromatin interaction data. It simplifies the process of querying and extracting contacts from multiple Hi-C files and enables complete analysis and visualization of Hi-C data in R.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_2422"
+          "@id": "edam:operation_3436"
         },
         {
-          "@id": "edam:operation_3436"
+          "@id": "edam:operation_2422"
         },
         {
           "@id": "edam:operation_0337"
@@ -79,6 +75,10 @@
       "sc:license": "MIT",
       "sc:name": "mariner",
       "sc:url": "https://www.bioconductor.org/packages/release/bioc/html/mariner.html"
+    },
+    {
+      "@id": "https://doi.org/10.1093/BIOINFORMATICS/BTAE352",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

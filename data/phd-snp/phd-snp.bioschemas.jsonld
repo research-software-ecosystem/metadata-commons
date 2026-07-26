@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,10 +36,6 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btl423",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/phd-snp",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
@@ -47,21 +43,21 @@
         "Emidio Capriotti"
       ],
       "bsc:input": {
-        "@id": "_:Ndd56c2ed5f6940fdbb0a24751d6a9f61"
+        "@id": "_:Nd1e059751442498fb4edf785ef32d915"
       },
       "bsc:output": {
-        "@id": "_:N658e1539ff72475c9f7ba685f0d37c16"
+        "@id": "_:Nc3ebf6dd999648fdb026f3ec42bcfb81"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_2885"
       },
       "sc:citation": [
+        "pubmed:16895930",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btl423"
-        },
-        "pubmed:16895930"
+        }
       ],
       "sc:description": "Support Vector Machines based Predictor of human Deleterious Single Nucleotide Polymorphisms.",
       "sc:featureList": {
@@ -70,8 +66,8 @@
       "sc:name": "PhD-SNP",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:provider": "ELIXIR-ITA-BOLOGNA",
       "sc:softwareHelp": {
@@ -81,7 +77,18 @@
       "sc:url": "http://snps.biofold.org/phd-snp/"
     },
     {
-      "@id": "_:N658e1539ff72475c9f7ba685f0d37c16",
+      "@id": "_:Nd1e059751442498fb4edf785ef32d915",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2974"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "Protein sequence (raw)"
+    },
+    {
+      "@id": "_:Nc3ebf6dd999648fdb026f3ec42bcfb81",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1622"
@@ -92,15 +99,8 @@
       "sc:name": "Disease report"
     },
     {
-      "@id": "_:Ndd56c2ed5f6940fdbb0a24751d6a9f61",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2974"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1929"
-      },
-      "sc:name": "Protein sequence (raw)"
+      "@id": "https://doi.org/10.1093/bioinformatics/btl423",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

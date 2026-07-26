@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -44,39 +44,39 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N78117728b45642f3bdf52d118810a17e"
+          "@id": "_:N564bfa1b1d6744f192f6677319525d95"
         },
         {
-          "@id": "_:Naf75d724069c4b7f9d40f7ab168b3a89"
+          "@id": "_:N439d8475c17342e8801a19f6a6bf33d4"
         },
         {
-          "@id": "_:Nc64649966b2542d78a1e8020b0f20630"
+          "@id": "_:N379d9e2a5ddc4044969b4a52cdab2c9e"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N3d8bccf05c444ea7a187333b5551c0ca"
+          "@id": "_:N044f18a93b7145c1beaa541da1cd1ef7"
         },
         {
-          "@id": "_:N3cb609d253f342a3bf863435676d4e27"
+          "@id": "_:Naf5014e6c4444fe7ad0e48357af1c888"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Database portal",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0114"
+          "@id": "edam:topic_3473"
         },
         {
-          "@id": "edam:topic_3473"
+          "@id": "edam:topic_0114"
         }
       ],
       "sc:citation": [
+        "pubmed:25378313",
+        "pmcid:PMC4383901",
         {
           "@id": "https://doi.org/10.1093/nar/gku1060"
-        },
-        "pubmed:25378313",
-        "pmcid:PMC4383901"
+        }
       ],
       "sc:description": "A comprehensive compendium of human long non-coding RNA.",
       "sc:featureList": {
@@ -84,9 +84,9 @@
       },
       "sc:name": "LNCipedia",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": "ugent.be",
       "sc:softwareHelp": {
@@ -95,15 +95,7 @@
       "sc:url": "http://www.lncipedia.org/"
     },
     {
-      "@id": "_:N78117728b45642f3bdf52d118810a17e",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2012"
-      },
-      "sc:name": "Sequence coordinates"
-    },
-    {
-      "@id": "_:Naf75d724069c4b7f9d40f7ab168b3a89",
+      "@id": "_:N564bfa1b1d6744f192f6677319525d95",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3495"
@@ -111,29 +103,7 @@
       "sc:name": "RNA sequence"
     },
     {
-      "@id": "_:Nc64649966b2542d78a1e8020b0f20630",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2295"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2306"
-        },
-        {
-          "@id": "edam:format_3003"
-        },
-        {
-          "@id": "edam:format_2305"
-        },
-        {
-          "@id": "edam:format_1929"
-        }
-      ],
-      "sc:name": "Gene ID"
-    },
-    {
-      "@id": "_:N3d8bccf05c444ea7a187333b5551c0ca",
+      "@id": "_:N439d8475c17342e8801a19f6a6bf33d4",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2012"
@@ -141,7 +111,37 @@
       "sc:name": "Sequence coordinates"
     },
     {
-      "@id": "_:N3cb609d253f342a3bf863435676d4e27",
+      "@id": "_:N379d9e2a5ddc4044969b4a52cdab2c9e",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2295"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3003"
+        },
+        {
+          "@id": "edam:format_1929"
+        },
+        {
+          "@id": "edam:format_2305"
+        },
+        {
+          "@id": "edam:format_2306"
+        }
+      ],
+      "sc:name": "Gene ID"
+    },
+    {
+      "@id": "_:N044f18a93b7145c1beaa541da1cd1ef7",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2012"
+      },
+      "sc:name": "Sequence coordinates"
+    },
+    {
+      "@id": "_:Naf5014e6c4444fe7ad0e48357af1c888",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3002"
@@ -151,10 +151,10 @@
           "@id": "edam:format_3003"
         },
         {
-          "@id": "edam:format_2305"
+          "@id": "edam:format_1929"
         },
         {
-          "@id": "edam:format_1929"
+          "@id": "edam:format_2305"
         },
         {
           "@id": "edam:format_2306"

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,12 +39,12 @@
       "@id": "https://bio.tools/TCoffee_API_EBI",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nabdfb22ddb8f49a8a427a914f5c6fad5"
+        "@id": "_:N0774c7481f2a4a4b81a620107c0794e0"
       },
       "bsc:output": {
-        "@id": "_:N80c28ea4fa2545ada16f173f5e6c8bd1"
+        "@id": "_:Na2b8b5a862924ab783a55eb3649aef7c"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web API",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0080"
@@ -68,8 +68,8 @@
       "sc:name": "T-Coffee API (EBI)",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://www.ebi.ac.uk/Tools/webservices/services/msa/tcoffee_rest"
@@ -78,20 +78,20 @@
       "sc:url": "http://www.ebi.ac.uk/Tools/webservices/services/msa/tcoffee_rest"
     },
     {
-      "@id": "_:N80c28ea4fa2545ada16f173f5e6c8bd1",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0863"
-      },
-      "sc:name": "Sequence alignment"
-    },
-    {
-      "@id": "_:Nabdfb22ddb8f49a8a427a914f5c6fad5",
+      "@id": "_:N0774c7481f2a4a4b81a620107c0794e0",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
       },
       "sc:name": "Sequence"
+    },
+    {
+      "@id": "_:Na2b8b5a862924ab783a55eb3649aef7c",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0863"
+      },
+      "sc:name": "Sequence alignment"
     },
     {
       "@id": "https://doi.org/10.1006/jmbi.2000.4042",

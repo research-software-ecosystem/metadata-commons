@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,32 +36,28 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1016/j.jpba.2018.02.046",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/ceu_mass_mediator",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N6c8626844aa64a7fa2f9da7b01f48939"
+          "@id": "_:N72f610b3176649cf8729e1fb7822afed"
         },
         {
-          "@id": "_:Na328d764dc28438da14a9441f8244e2b"
+          "@id": "_:N8a994d7d7b0943b9a0fe291860d8f884"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N1fb2705f336b43f1b04440e2a09cdc99"
+          "@id": "_:N2cff0f0626964bc3a85a39e75f1e621e"
         },
         {
-          "@id": "_:Nab5d0616d4f14129b24ea9904bbd2519"
+          "@id": "_:Ncd7eb590b3c24ac3890cffcce6aac8d9"
         },
         {
-          "@id": "_:N891f6fc9a327438d9c350206253a2496"
+          "@id": "_:Nd571c9403e1b4873a96f9f2bfd7f480a"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3172"
@@ -75,18 +71,18 @@
       "sc:description": "Tool for looking up metabolites in different databases (Kegg, HMDB, LipidMaps, Metlin and MINE) from experimental masses obtained by mass spectrometry.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_2421"
+          "@id": "edam:operation_0226"
         },
         {
-          "@id": "edam:operation_0226"
+          "@id": "edam:operation_2421"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "Unlicense",
       "sc:name": "CEU Mass Mediator",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -96,40 +92,18 @@
       "sc:url": "http://ceumass.eps.uspceu.es/"
     },
     {
-      "@id": "_:N1fb2705f336b43f1b04440e2a09cdc99",
+      "@id": "_:N72f610b3176649cf8729e1fb7822afed",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2639"
+        "@id": "edam:data_0943"
       },
       "sc:encodingFormat": {
         "@id": "edam:format_2330"
       },
-      "sc:name": "PubChem ID"
+      "sc:name": "Mass spectrometry spectra"
     },
     {
-      "@id": "_:Nab5d0616d4f14129b24ea9904bbd2519",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1772"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Score"
-    },
-    {
-      "@id": "_:N891f6fc9a327438d9c350206253a2496",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2622"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Compound ID (HMDB)"
-    },
-    {
-      "@id": "_:N6c8626844aa64a7fa2f9da7b01f48939",
+      "@id": "_:N8a994d7d7b0943b9a0fe291860d8f884",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0844"
@@ -140,15 +114,41 @@
       "sc:name": "Molecular mass"
     },
     {
-      "@id": "_:Na328d764dc28438da14a9441f8244e2b",
+      "@id": "_:N2cff0f0626964bc3a85a39e75f1e621e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_0943"
+        "@id": "edam:data_2622"
       },
       "sc:encodingFormat": {
         "@id": "edam:format_2330"
       },
-      "sc:name": "Mass spectrometry spectra"
+      "sc:name": "Compound ID (HMDB)"
+    },
+    {
+      "@id": "_:Ncd7eb590b3c24ac3890cffcce6aac8d9",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2639"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "PubChem ID"
+    },
+    {
+      "@id": "_:Nd571c9403e1b4873a96f9f2bfd7f480a",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1772"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Score"
+    },
+    {
+      "@id": "https://doi.org/10.1016/j.jpba.2018.02.046",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

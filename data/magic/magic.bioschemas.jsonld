@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,20 +36,24 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/btt739",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/magic",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N15590959c4fa49bb834311e73718e84a"
+        "@id": "_:N2f9852020b6e4a019772327feedc2edb"
       },
       "bsc:output": [
         {
-          "@id": "_:N948056a7cf5d4b93846c074144f0d20b"
+          "@id": "_:Ne5f0294679984329b5206ca6054f2120"
         },
         {
-          "@id": "_:N835d0367046d451e87ec3295f21b7134"
+          "@id": "_:Nbb30fa8408da4aa19d5dd0f92c47e72e"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Workbench",
       "sc:applicationSubCategory": [
         {
@@ -71,8 +75,8 @@
       },
       "sc:name": "Magic",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:provider": "ugent.be",
@@ -83,23 +87,7 @@
       "sc:url": "http://bioinformatics.intec.ugent.be/magic/"
     },
     {
-      "@id": "_:N948056a7cf5d4b93846c074144f0d20b",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1636"
-      },
-      "sc:name": "Heat map"
-    },
-    {
-      "@id": "_:N835d0367046d451e87ec3295f21b7134",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3134"
-      },
-      "sc:name": "Gene transcript report"
-    },
-    {
-      "@id": "_:N15590959c4fa49bb834311e73718e84a",
+      "@id": "_:N2f9852020b6e4a019772327feedc2edb",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2295"
@@ -107,8 +95,20 @@
       "sc:name": "Gene ID"
     },
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btt739",
-      "@type": "sc:CreativeWork"
+      "@id": "_:Ne5f0294679984329b5206ca6054f2120",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3134"
+      },
+      "sc:name": "Gene transcript report"
+    },
+    {
+      "@id": "_:Nbb30fa8408da4aa19d5dd0f92c47e72e",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1636"
+      },
+      "sc:name": "Heat map"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -43,30 +43,30 @@
       "@id": "https://bio.tools/blaze",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N419bdf0a4bbe4a73a9d997354ad8f36f"
+        "@id": "_:Nf55d0d7f78da4610a3627a5a64d368aa"
       },
       "bsc:output": {
-        "@id": "_:N4ba44724408048b1b4582eec8a8d6420"
+        "@id": "_:Nd72d562ef6494e1581c956e3d617d926"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Script",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0203"
+          "@id": "edam:topic_2229"
         },
         {
-          "@id": "edam:topic_3170"
+          "@id": "edam:topic_0203"
         },
         {
           "@id": "edam:topic_0099"
         },
         {
-          "@id": "edam:topic_2229"
+          "@id": "edam:topic_3170"
         }
       ],
       "sc:citation": [
-        "pmcid:PMC10077662",
         "pubmed:37024980",
+        "pmcid:PMC10077662",
         {
           "@id": "https://doi.org/10.1186/s13059-023-02907-y"
         }
@@ -77,16 +77,16 @@
           "@id": "edam:operation_3185"
         },
         {
-          "@id": "edam:operation_3933"
-        },
-        {
-          "@id": "edam:operation_3799"
-        },
-        {
           "@id": "edam:operation_3200"
         },
         {
+          "@id": "edam:operation_3933"
+        },
+        {
           "@id": "edam:operation_0314"
+        },
+        {
+          "@id": "edam:operation_3799"
         }
       ],
       "sc:isAccessibleForFree": true,
@@ -94,24 +94,13 @@
       "sc:name": "BLAZE",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:url": "https://github.com/shimlab/BLAZE"
     },
     {
-      "@id": "_:N4ba44724408048b1b4582eec8a8d6420",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2048"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3752"
-      },
-      "sc:name": "Report"
-    },
-    {
-      "@id": "_:N419bdf0a4bbe4a73a9d997354ad8f36f",
+      "@id": "_:Nf55d0d7f78da4610a3627a5a64d368aa",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3495"
@@ -120,6 +109,17 @@
         "@id": "edam:format_1930"
       },
       "sc:name": "RNA sequence"
+    },
+    {
+      "@id": "_:Nd72d562ef6494e1581c956e3d617d926",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2048"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3752"
+      },
+      "sc:name": "Report"
     }
   ]
 }

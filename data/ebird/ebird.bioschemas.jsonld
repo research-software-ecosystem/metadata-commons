@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,45 +40,45 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N1302994d0bc844d89566a1fc7097c21b"
+          "@id": "_:Nbdea944a46f54f2c8799ecdb49c137f9"
         },
         {
-          "@id": "_:N8eac66a157154e7dbe2e89e17d768172"
+          "@id": "_:Ne078f84364f74227befb5fdc230670ab"
         },
         {
-          "@id": "_:N06ee245c743442dd8d0bf6083b679072"
+          "@id": "_:N3a23aec328204c56817cea66bc3138d4"
         },
         {
-          "@id": "_:N4f8a41800a064d4dbf3a06baac208cb4"
+          "@id": "_:N83d0a84879d1402fb0b77bdb90efc9b3"
         },
         {
-          "@id": "_:Nb7803c0da72f4d5496d0267b83b9ae00"
+          "@id": "_:Ncbc06d0fb8424644a54e3280ab766a95"
         },
         {
-          "@id": "_:N3c168bc3bd8348fd81797d0430b07476"
+          "@id": "_:N355cca940b314d0e8d7ead74b1a95923"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N1aa9cb1bcf52427797918fba2b9af5f6"
+          "@id": "_:N5c1f023e55c74962b9e20dbdeda5749a"
         },
         {
-          "@id": "_:N683a50b5cb1e485f9a9f4df972cdbeea"
+          "@id": "_:N0941a3f3c67e4af0bf2ca5862bf19869"
         },
         {
-          "@id": "_:Ndcef7ad879924e9381f007a393e71b95"
+          "@id": "_:Ncd38191c9eaa4fbba517345cfafbdcf7"
         },
         {
-          "@id": "_:N538d1eee4457479ea94a3fc0984f3934"
+          "@id": "_:Nf815bf6771d64eff8431bb4bdb6f170d"
         },
         {
-          "@id": "_:N0fb9b4fb90564d8eaf9380709587080c"
+          "@id": "_:N23441e9930ba4866b49e20839232edfc"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web API",
-        "Database portal"
+        "Database portal",
+        "Web API"
       ],
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3050"
@@ -97,15 +97,7 @@
       "sc:url": "https://ebird.org/home"
     },
     {
-      "@id": "_:N1aa9cb1bcf52427797918fba2b9af5f6",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3424"
-      },
-      "sc:name": "Raw image"
-    },
-    {
-      "@id": "_:N683a50b5cb1e485f9a9f4df972cdbeea",
+      "@id": "_:Nbdea944a46f54f2c8799ecdb49c137f9",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3720"
@@ -113,31 +105,7 @@
       "sc:name": "Geographic location"
     },
     {
-      "@id": "_:Ndcef7ad879924e9381f007a393e71b95",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0957"
-      },
-      "sc:name": "Database metadata"
-    },
-    {
-      "@id": "_:N538d1eee4457479ea94a3fc0984f3934",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3905"
-      },
-      "sc:name": "Histogram"
-    },
-    {
-      "@id": "_:N0fb9b4fb90564d8eaf9380709587080c",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2019"
-      },
-      "sc:name": "Map data"
-    },
-    {
-      "@id": "_:N1302994d0bc844d89566a1fc7097c21b",
+      "@id": "_:Ne078f84364f74227befb5fdc230670ab",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3546"
@@ -145,7 +113,23 @@
       "sc:name": "Image metadata"
     },
     {
-      "@id": "_:N8eac66a157154e7dbe2e89e17d768172",
+      "@id": "_:N3a23aec328204c56817cea66bc3138d4",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3424"
+      },
+      "sc:name": "Raw image"
+    },
+    {
+      "@id": "_:N83d0a84879d1402fb0b77bdb90efc9b3",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3720"
+      },
+      "sc:name": "Geographic location"
+    },
+    {
+      "@id": "_:Ncbc06d0fb8424644a54e3280ab766a95",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2909"
@@ -153,7 +137,7 @@
       "sc:name": "Organism name"
     },
     {
-      "@id": "_:N06ee245c743442dd8d0bf6083b679072",
+      "@id": "_:N355cca940b314d0e8d7ead74b1a95923",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1045"
@@ -161,7 +145,15 @@
       "sc:name": "Species name"
     },
     {
-      "@id": "_:N4f8a41800a064d4dbf3a06baac208cb4",
+      "@id": "_:N5c1f023e55c74962b9e20dbdeda5749a",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0957"
+      },
+      "sc:name": "Database metadata"
+    },
+    {
+      "@id": "_:N0941a3f3c67e4af0bf2ca5862bf19869",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3720"
@@ -169,15 +161,23 @@
       "sc:name": "Geographic location"
     },
     {
-      "@id": "_:Nb7803c0da72f4d5496d0267b83b9ae00",
+      "@id": "_:Ncd38191c9eaa4fbba517345cfafbdcf7",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_3720"
+        "@id": "edam:data_3905"
       },
-      "sc:name": "Geographic location"
+      "sc:name": "Histogram"
     },
     {
-      "@id": "_:N3c168bc3bd8348fd81797d0430b07476",
+      "@id": "_:Nf815bf6771d64eff8431bb4bdb6f170d",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2019"
+      },
+      "sc:name": "Map data"
+    },
+    {
+      "@id": "_:N23441e9930ba4866b49e20839232edfc",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3424"

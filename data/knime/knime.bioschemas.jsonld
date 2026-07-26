@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,22 +40,19 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Alexander Fillbrunn",
       "bsc:input": {
-        "@id": "_:N450636d064a943a699d07cfb0ffa6aba"
+        "@id": "_:N3ab2d530908d480c860fec4f3c805052"
       },
       "bsc:output": [
         {
-          "@id": "_:N0bb2d08e365745eaaf9028ae2bf87c7a"
+          "@id": "_:N976776d50b914c808e423ed3d120b606"
         },
         {
-          "@id": "_:N970b46c56b7240ad8015a9aa39eae462"
+          "@id": "_:Nf5423600c42748508f4be1a14d7f6b08"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Workbench",
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_0092"
-        },
         {
           "@id": "edam:topic_0091"
         },
@@ -63,13 +60,16 @@
           "@id": "edam:topic_2258"
         },
         {
-          "@id": "edam:topic_2259"
-        },
-        {
           "@id": "edam:topic_3473"
         },
         {
+          "@id": "edam:topic_0092"
+        },
+        {
           "@id": "edam:topic_3474"
+        },
+        {
+          "@id": "edam:topic_2259"
         }
       ],
       "sc:citation": {
@@ -78,13 +78,13 @@
       "sc:description": "Open source graphical workbench for building workflows. Among others it provides various extensions for data analysis and life sciences.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3443"
+          "@id": "edam:operation_2990"
         },
         {
           "@id": "edam:operation_0531"
         },
         {
-          "@id": "edam:operation_2990"
+          "@id": "edam:operation_3443"
         },
         {
           "@id": "edam:operation_3799"
@@ -94,16 +94,16 @@
       "sc:license": "GPL-3.0",
       "sc:name": "Konstanz Information Miner (KNIME)",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": [
         {
-          "@id": "https://www.knime.org/downloads/full-license"
+          "@id": "https://www.knime.org/learning-hub"
         },
         {
-          "@id": "https://www.knime.org/learning-hub"
+          "@id": "https://www.knime.org/downloads/full-license"
         },
         {
           "@id": "https://docs.knime.com"
@@ -111,13 +111,24 @@
       ],
       "sc:softwareVersion": [
         "3.5",
-        "3.7",
-        "3.6"
+        "3.6",
+        "3.7"
       ],
       "sc:url": "http://www.knime.org"
     },
     {
-      "@id": "_:N0bb2d08e365745eaaf9028ae2bf87c7a",
+      "@id": "_:N3ab2d530908d480c860fec4f3c805052",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2968"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3547"
+      },
+      "sc:name": "Image"
+    },
+    {
+      "@id": "_:N976776d50b914c808e423ed3d120b606",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1772"
@@ -125,24 +136,13 @@
       "sc:name": "Score"
     },
     {
-      "@id": "_:N970b46c56b7240ad8015a9aa39eae462",
+      "@id": "_:Nf5423600c42748508f4be1a14d7f6b08",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2968"
       },
       "sc:encodingFormat": {
         "@id": "edam:format_2350"
-      },
-      "sc:name": "Image"
-    },
-    {
-      "@id": "_:N450636d064a943a699d07cfb0ffa6aba",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2968"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3547"
       },
       "sc:name": "Image"
     },

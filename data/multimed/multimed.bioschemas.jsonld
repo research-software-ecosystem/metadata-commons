@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,24 +36,20 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.18129/B9.bioc.MultiMed",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/multimed",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N76f557339b5148088d8e2fe852573502"
+        "@id": "_:N52a2ee30c65e465e8d397f390331a206"
       },
       "bsc:output": [
         {
-          "@id": "_:N9ae7bba5861e48eaa89c1ed1c3a80fd8"
+          "@id": "_:Nfa61adbdaf044e0f8ed4fabb00110e62"
         },
         {
-          "@id": "_:N11bcc518ef274c3ebaed76b570d95636"
+          "@id": "_:N40bb155110fd4c5faa2e2388d20ab092"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
@@ -76,8 +72,8 @@
       "sc:license": "GPL-2.0-or-later",
       "sc:name": "MultiMed",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -87,7 +83,18 @@
       "sc:url": "https://bioconductor.org/packages/MultiMed"
     },
     {
-      "@id": "_:N9ae7bba5861e48eaa89c1ed1c3a80fd8",
+      "@id": "_:N52a2ee30c65e465e8d397f390331a206",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2082"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3033"
+      },
+      "sc:name": "Matrix"
+    },
+    {
+      "@id": "_:Nfa61adbdaf044e0f8ed4fabb00110e62",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1669"
@@ -98,7 +105,7 @@
       "sc:name": "P-value"
     },
     {
-      "@id": "_:N11bcc518ef274c3ebaed76b570d95636",
+      "@id": "_:N40bb155110fd4c5faa2e2388d20ab092",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0951"
@@ -109,15 +116,8 @@
       "sc:name": "Statistical estimate score"
     },
     {
-      "@id": "_:N76f557339b5148088d8e2fe852573502",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2082"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3033"
-      },
-      "sc:name": "Matrix"
+      "@id": "https://doi.org/10.18129/B9.bioc.MultiMed",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

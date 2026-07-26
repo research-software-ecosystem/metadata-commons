@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,10 +36,6 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/nar/30.11.2478",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://doi.org/10.1093/nar/27.11.2369",
       "@type": "sc:CreativeWork"
     },
@@ -48,43 +44,47 @@
       "@type": "sc:CreativeWork"
     },
     {
+      "@id": "https://doi.org/10.1371/journal.pcbi.1005944",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/mummer",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Help list",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Suite",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3168"
+          "@id": "edam:topic_0622"
         },
         {
           "@id": "edam:topic_0102"
         },
         {
-          "@id": "edam:topic_0622"
+          "@id": "edam:topic_3168"
         }
       ],
       "sc:citation": [
-        "pmcid:PMC117189",
-        "pmcid:PMC395750",
-        "pubmed:29373581",
-        "pubmed:14759262",
-        {
-          "@id": "https://doi.org/10.1371/journal.pcbi.1005944"
-        },
-        "pmcid:PMC5802927",
+        "pubmed:10325427",
         "pmcid:PMC148804",
         {
           "@id": "https://doi.org/10.1093/nar/27.11.2369"
         },
+        "pubmed:12034836",
+        "pmcid:PMC117189",
         {
           "@id": "https://doi.org/10.1093/nar/30.11.2478"
         },
-        "pubmed:12034836",
+        "pubmed:29373581",
+        "pmcid:PMC5802927",
+        {
+          "@id": "https://doi.org/10.1371/journal.pcbi.1005944"
+        },
+        "pubmed:14759262",
+        "pmcid:PMC395750",
         {
           "@id": "https://doi.org/10.1186/gb-2004-5-2-r12"
-        },
-        "pubmed:10325427"
+        }
       ],
       "sc:description": "MUMmer is a modular system for the rapid whole genome alignment of finished or draft sequence. Basically it is a ultra-fast alignment of large-scale DNA and protein sequences",
       "sc:featureList": [
@@ -106,7 +106,7 @@
       "sc:url": "http://mummer.sourceforge.net/"
     },
     {
-      "@id": "https://doi.org/10.1371/journal.pcbi.1005944",
+      "@id": "https://doi.org/10.1093/nar/30.11.2478",
       "@type": "sc:CreativeWork"
     }
   ]

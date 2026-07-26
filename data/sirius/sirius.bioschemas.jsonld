@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,24 +36,20 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btn603",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/sirius",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nd73e028fa5584814b89e0c427ab439d8"
+        "@id": "_:N7759720d25bb44108f72b5db2c0dc557"
       },
       "bsc:output": [
         {
-          "@id": "_:N75843bafb7164f50abf743f540a672c5"
+          "@id": "_:N9539225855dc4a82a28efddd5435cb81"
         },
         {
-          "@id": "_:N23aa77332fa7441489be2c9c451c739d"
+          "@id": "_:N67c7374bfdc645c18ddb28c8983800cc"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Desktop application"
@@ -86,16 +82,16 @@
       ],
       "sc:contributor": [
         "Jan Lisec",
-        "Roberto Canteri",
-        "Miao Yu"
+        "Miao Yu",
+        "Roberto Canteri"
       ],
       "sc:description": "In high resolution mass spectrometry (HR-MS), the measured masses can be decomposed into potential element combinations (chemical sum formulas). Where additional mass/intensity information of respective isotopic peaks is available, decomposition can take this information into account to better rank the potential candidate sum formulas. To compare measured mass/intensity information with the theoretical distribution of candidate sum formulas, the latter needs to be calculated. This package implements fast algorithms to address both tasks, the calculation of isotopic distributions for arbitrary sum formulas (assuming a HR-MS resolution of roughly 30,000), and the ranked list of sum formulas fitting an observed peak or isotopic peak set.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3694"
+          "@id": "edam:operation_3632"
         },
         {
-          "@id": "edam:operation_3632"
+          "@id": "edam:operation_3694"
         },
         {
           "@id": "edam:operation_3803"
@@ -104,9 +100,9 @@
       "sc:license": "GPL-2.0-only",
       "sc:name": "Sirius",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://bioconductor.org/packages/Rdisop"
@@ -115,34 +111,7 @@
       "sc:url": "https://bioconductor.org/packages/Rdisop"
     },
     {
-      "@id": "_:N75843bafb7164f50abf743f540a672c5",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0846"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3620"
-        },
-        {
-          "@id": "edam:format_3475"
-        }
-      ],
-      "sc:name": "Chemical formula"
-    },
-    {
-      "@id": "_:N23aa77332fa7441489be2c9c451c739d",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2042"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3681"
-      },
-      "sc:name": "Evidence"
-    },
-    {
-      "@id": "_:Nd73e028fa5584814b89e0c427ab439d8",
+      "@id": "_:N7759720d25bb44108f72b5db2c0dc557",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2536"
@@ -161,11 +130,42 @@
       "sc:name": "Mass spectrometry data"
     },
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btm631",
+      "@id": "_:N9539225855dc4a82a28efddd5435cb81",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0846"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3475"
+        },
+        {
+          "@id": "edam:format_3620"
+        }
+      ],
+      "sc:name": "Chemical formula"
+    },
+    {
+      "@id": "_:N67c7374bfdc645c18ddb28c8983800cc",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2042"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3681"
+      },
+      "sc:name": "Evidence"
+    },
+    {
+      "@id": "https://doi.org/10.1093/bioinformatics/btn603",
       "@type": "sc:CreativeWork"
     },
     {
       "@id": "https://doi.org/10.1007/s00453-007-0162-8",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1093/bioinformatics/btm631",
       "@type": "sc:CreativeWork"
     }
   ]

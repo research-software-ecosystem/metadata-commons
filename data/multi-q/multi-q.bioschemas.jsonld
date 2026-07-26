@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,53 +40,53 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Nd879332606e14f7a8137cf54351f3a01"
+          "@id": "_:N4c9bee7e6e44419399622016c7b9d1d6"
         },
         {
-          "@id": "_:Ne4ba4015159741f8809cf3c9bef6e5a0"
+          "@id": "_:N5de6cf07e645422189c1b67fa49351cf"
         },
         {
-          "@id": "_:Nf11001c52140466882b35696cda24979"
+          "@id": "_:N4139b09801044b66b2261b3bacd767bd"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N0c46b6da39444193b0e3bcb7b1d5e3d5"
+          "@id": "_:Nebb094156f8647f388a6bc8d9ffe67fa"
         },
         {
-          "@id": "_:N529eeaf04fb74c349fb1b297ef0666af"
+          "@id": "_:N53bef66af4534461bd55eb87431c2add"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Desktop application",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3520"
+          "@id": "edam:topic_0121"
         },
         {
-          "@id": "edam:topic_0121"
+          "@id": "edam:topic_3520"
         }
       ],
       "sc:citation": "pubmed:16944945",
       "sc:description": "Tool for multiplexed iTRAQ-based quantitation.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3648"
+          "@id": "edam:operation_0335"
         },
         {
           "@id": "edam:operation_3635"
         },
         {
-          "@id": "edam:operation_3639"
+          "@id": "edam:operation_3215"
         },
         {
           "@id": "edam:operation_3630"
         },
         {
-          "@id": "edam:operation_0335"
+          "@id": "edam:operation_3648"
         },
         {
-          "@id": "edam:operation_3215"
+          "@id": "edam:operation_3639"
         }
       ],
       "sc:name": "Multi-Q",
@@ -97,34 +97,7 @@
       "sc:url": "http://ms.iis.sinica.edu.tw/Multi-Q/"
     },
     {
-      "@id": "_:N0c46b6da39444193b0e3bcb7b1d5e3d5",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2603"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3752"
-        },
-        {
-          "@id": "edam:format_2332"
-        }
-      ],
-      "sc:name": "Expression data"
-    },
-    {
-      "@id": "_:N529eeaf04fb74c349fb1b297ef0666af",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0943"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3654"
-      },
-      "sc:name": "Mass spectrometry spectra"
-    },
-    {
-      "@id": "_:Nd879332606e14f7a8137cf54351f3a01",
+      "@id": "_:N4c9bee7e6e44419399622016c7b9d1d6",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0943"
@@ -135,7 +108,18 @@
       "sc:name": "Mass spectrometry spectra"
     },
     {
-      "@id": "_:Ne4ba4015159741f8809cf3c9bef6e5a0",
+      "@id": "_:N5de6cf07e645422189c1b67fa49351cf",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0943"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3654"
+      },
+      "sc:name": "Mass spectrometry spectra"
+    },
+    {
+      "@id": "_:N4139b09801044b66b2261b3bacd767bd",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0945"
@@ -151,7 +135,7 @@
       "sc:name": "Peptide identification"
     },
     {
-      "@id": "_:Nf11001c52140466882b35696cda24979",
+      "@id": "_:Nebb094156f8647f388a6bc8d9ffe67fa",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0943"
@@ -160,6 +144,22 @@
         "@id": "edam:format_3654"
       },
       "sc:name": "Mass spectrometry spectra"
+    },
+    {
+      "@id": "_:N53bef66af4534461bd55eb87431c2add",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2603"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3752"
+        },
+        {
+          "@id": "edam:format_2332"
+        }
+      ],
+      "sc:name": "Expression data"
     }
   ]
 }

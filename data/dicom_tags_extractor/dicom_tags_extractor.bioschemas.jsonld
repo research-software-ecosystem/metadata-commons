@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,20 +40,20 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N52dff50825db475f843aa4588d38bf67"
+          "@id": "_:N39b5c72f7af84bfea787f5c29fc7b0a6"
         },
         {
-          "@id": "_:N88346102aefd4674afb9e329a79d4b0e"
+          "@id": "_:N06c2587a88a34ce693669be17659eab5"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3384"
+          "@id": "edam:topic_3365"
         },
         {
-          "@id": "edam:topic_3365"
+          "@id": "edam:topic_3384"
         }
       ],
       "sc:description": "Scans the DICOM files of a defined directory at the series level, and produces as output either 1/one single csv file containing all preselected DICOM tags for each detected series; 2/ one single csv file only containing the patientID and the corresponding StudyUIDs.",
@@ -74,7 +74,7 @@
       "sc:url": "https://harbor.eucaim.cancerimage.eu/harbor/projects/3/repositories/dicom-tag-extraction/artifacts-tab"
     },
     {
-      "@id": "_:N52dff50825db475f843aa4588d38bf67",
+      "@id": "_:N39b5c72f7af84bfea787f5c29fc7b0a6",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2968"
@@ -85,7 +85,7 @@
       "sc:name": "Image"
     },
     {
-      "@id": "_:N88346102aefd4674afb9e329a79d4b0e",
+      "@id": "_:N06c2587a88a34ce693669be17659eab5",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2968"

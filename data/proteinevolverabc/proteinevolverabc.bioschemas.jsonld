@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,20 +36,16 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btab617",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/proteinevolverabc",
       "@type": "sc:SoftwareApplication",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Library",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0199"
+          "@id": "edam:topic_3299"
         },
         {
-          "@id": "edam:topic_3299"
+          "@id": "edam:topic_0199"
         },
         {
           "@id": "edam:topic_0078"
@@ -76,13 +72,17 @@
       "sc:name": "ProteinEvolverABC",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://github.com/MiguelArenas/ProteinEvolverABC/blob/master/documentation/ProteinEvolverABC1.0.manual.pdf"
       },
       "sc:url": "https://github.com/miguelarenas/proteinevolverabc"
+    },
+    {
+      "@id": "https://doi.org/10.1093/bioinformatics/btab617",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

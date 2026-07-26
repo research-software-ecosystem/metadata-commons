@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,42 +36,38 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.18129/B9.bioc.CoverageView",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/coverageview",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N9df17cc1e7564842863f669418c65a70"
+          "@id": "_:N825ea1f6425f464e8598968f4bba2bd4"
         },
         {
-          "@id": "_:N6453a97d471d42c6b2ee482a62c4e13c"
+          "@id": "_:Nad9a0ebe3fa74546b769deafcda8a082"
         },
         {
-          "@id": "_:Ne5185e949a0b4ec78959019d526f7e15"
+          "@id": "_:Nbb2c821cd4474a7288c2cce2cb682b6d"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N1490039912b145429d2ecc66083f24c9"
+          "@id": "_:N73a36db80087430481ee76c8dcaac189"
         },
         {
-          "@id": "_:N6f942b8dfea0448296f9c4785e15bac7"
+          "@id": "_:N19e7b345fdc843ff8282f62e0ab1481c"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0092"
+          "@id": "edam:topic_3169"
         },
         {
-          "@id": "edam:topic_3169"
+          "@id": "edam:topic_0092"
         },
         {
           "@id": "edam:topic_3295"
@@ -95,9 +91,9 @@
       "sc:license": "Artistic-2.0",
       "sc:name": "CoverageView",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://bioconductor.org/packages/CoverageView"
@@ -106,29 +102,7 @@
       "sc:url": "https://bioconductor.org/packages/CoverageView"
     },
     {
-      "@id": "_:N1490039912b145429d2ecc66083f24c9",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2884"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3547"
-      },
-      "sc:name": "Plot"
-    },
-    {
-      "@id": "_:N6f942b8dfea0448296f9c4785e15bac7",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1636"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3547"
-      },
-      "sc:name": "Heat map"
-    },
-    {
-      "@id": "_:N9df17cc1e7564842863f669418c65a70",
+      "@id": "_:N825ea1f6425f464e8598968f4bba2bd4",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3002"
@@ -147,7 +121,26 @@
       "sc:name": "Annotation track"
     },
     {
-      "@id": "_:N6453a97d471d42c6b2ee482a62c4e13c",
+      "@id": "_:Nad9a0ebe3fa74546b769deafcda8a082",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0863"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2572"
+        },
+        {
+          "@id": "edam:format_3003"
+        },
+        {
+          "@id": "edam:format_3006"
+        }
+      ],
+      "sc:name": "Sequence alignment"
+    },
+    {
+      "@id": "_:Nbb2c821cd4474a7288c2cce2cb682b6d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2012"
@@ -166,23 +159,30 @@
       "sc:name": "Sequence coordinates"
     },
     {
-      "@id": "_:Ne5185e949a0b4ec78959019d526f7e15",
+      "@id": "_:N73a36db80087430481ee76c8dcaac189",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_0863"
+        "@id": "edam:data_1636"
       },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2572"
-        },
-        {
-          "@id": "edam:format_3003"
-        },
-        {
-          "@id": "edam:format_3006"
-        }
-      ],
-      "sc:name": "Sequence alignment"
+      "sc:encodingFormat": {
+        "@id": "edam:format_3547"
+      },
+      "sc:name": "Heat map"
+    },
+    {
+      "@id": "_:N19e7b345fdc843ff8282f62e0ab1481c",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2884"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3547"
+      },
+      "sc:name": "Plot"
+    },
+    {
+      "@id": "https://doi.org/10.18129/B9.bioc.CoverageView",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

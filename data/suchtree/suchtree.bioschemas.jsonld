@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,8 +40,8 @@
       "@type": "sc:Person"
     },
     {
-      "@id": "https://doi.org/10.21105/joss.00678",
-      "@type": "sc:CreativeWork"
+      "@id": "https://orcid.org/0000-0001-8822-8779",
+      "@type": "sc:Person"
     },
     {
       "@id": "https://bio.tools/suchtree",
@@ -50,12 +50,12 @@
         "@id": "https://orcid.org/0000-0002-2055-8381"
       },
       "bsc:input": {
-        "@id": "_:N55361cf9133241f5ac16f8992aecf8dd"
+        "@id": "_:N031b4f09472b49f48a03c484dcb76402"
       },
       "bsc:output": {
-        "@id": "_:Nd961d7c334f449c8a9617531b487644d"
+        "@id": "_:N8ec11ae6b11642229c9361aa2671c809"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Library",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0084"
@@ -69,22 +69,22 @@
       "sc:description": "A Python library for doing fast, thread-safe computations with phylogenetic trees.",
       "sc:featureList": [
         {
+          "@id": "edam:operation_0557"
+        },
+        {
           "@id": "edam:operation_0551"
         },
         {
           "@id": "edam:operation_0567"
-        },
-        {
-          "@id": "edam:operation_0557"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "BSD-3-Clause",
       "sc:name": "SuchTree",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://github.com/ryneches/SuchTree#readme"
@@ -92,7 +92,7 @@
       "sc:url": "https://github.com/ryneches/SuchTree"
     },
     {
-      "@id": "_:N55361cf9133241f5ac16f8992aecf8dd",
+      "@id": "_:N031b4f09472b49f48a03c484dcb76402",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3271"
@@ -103,7 +103,7 @@
       "sc:name": "Gene tree"
     },
     {
-      "@id": "_:Nd961d7c334f449c8a9617531b487644d",
+      "@id": "_:N8ec11ae6b11642229c9361aa2671c809",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2082"
@@ -114,8 +114,8 @@
       "sc:name": "Matrix"
     },
     {
-      "@id": "https://orcid.org/0000-0001-8822-8779",
-      "@type": "sc:Person"
+      "@id": "https://doi.org/10.21105/joss.00678",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

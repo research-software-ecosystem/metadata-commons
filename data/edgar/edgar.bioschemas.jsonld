@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,47 +36,51 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1186/s12864-017-3911-3",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/edgar",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
-        "ELIXIR-ITA-BOLOGNA",
-        "Giulia Babbi"
+        "Giulia Babbi",
+        "ELIXIR-ITA-BOLOGNA"
       ],
       "bsc:input": [
         {
-          "@id": "_:N2d4a572974a3481e89a9d12a0eb1b827"
+          "@id": "_:Nb5d2b10f0d3240f4ac3146c9eeac9ce0"
         },
         {
-          "@id": "_:N0863b6193dda4cb79cab1ba957803434"
+          "@id": "_:N52c1f87fc5424433b4845c58ce48a57c"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Nf3bd2fe82e2443029faf85a4e30a97a4"
+          "@id": "_:N0fe6f74538844c0a9b980ae2a3e58c83"
         },
         {
-          "@id": "_:Nd34cc2f16b544b9eb447e12613bdecfe"
+          "@id": "_:N8b893032e9734c70af6c97559319c955"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Database portal",
         "Web application"
       ],
       "sc:applicationSubCategory": [
         {
+          "@id": "edam:topic_3574"
+        },
+        {
           "@id": "edam:topic_0634"
         },
         {
           "@id": "edam:topic_3325"
-        },
-        {
-          "@id": "edam:topic_3574"
         }
       ],
       "sc:citation": [
-        "pmcid:PMC5558190",
         "pubmed:28812536",
+        "pmcid:PMC5558190",
         {
           "@id": "https://doi.org/10.1186/s12864-017-3911-3"
         }
@@ -84,27 +88,27 @@
       "sc:description": "A database of Disease-Gene Associations with annotated Relationships among genes.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3197"
-        },
-        {
-          "@id": "edam:operation_0276"
-        },
-        {
           "@id": "edam:operation_3561"
+        },
+        {
+          "@id": "edam:operation_3672"
+        },
+        {
+          "@id": "edam:operation_3197"
         },
         {
           "@id": "edam:operation_2497"
         },
         {
-          "@id": "edam:operation_3672"
+          "@id": "edam:operation_0276"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "CC-BY-4.0",
       "sc:name": "eDGAR",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -113,39 +117,7 @@
       "sc:url": "http://edgar.biocomp.unibo.it"
     },
     {
-      "@id": "_:Nf3bd2fe82e2443029faf85a4e30a97a4",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1622"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3752"
-        },
-        {
-          "@id": "edam:format_2331"
-        }
-      ],
-      "sc:name": "Disease report"
-    },
-    {
-      "@id": "_:Nd34cc2f16b544b9eb447e12613bdecfe",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1622"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3752"
-        },
-        {
-          "@id": "edam:format_2331"
-        }
-      ],
-      "sc:name": "Disease report"
-    },
-    {
-      "@id": "_:N2d4a572974a3481e89a9d12a0eb1b827",
+      "@id": "_:Nb5d2b10f0d3240f4ac3146c9eeac9ce0",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3668"
@@ -156,7 +128,7 @@
       "sc:name": "Disease name"
     },
     {
-      "@id": "_:N0863b6193dda4cb79cab1ba957803434",
+      "@id": "_:N52c1f87fc5424433b4845c58ce48a57c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1153"
@@ -167,8 +139,36 @@
       "sc:name": "OMIM ID"
     },
     {
-      "@id": "https://doi.org/10.1186/s12864-017-3911-3",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N0fe6f74538844c0a9b980ae2a3e58c83",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1622"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3752"
+        },
+        {
+          "@id": "edam:format_2331"
+        }
+      ],
+      "sc:name": "Disease report"
+    },
+    {
+      "@id": "_:N8b893032e9734c70af6c97559319c955",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1622"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3752"
+        },
+        {
+          "@id": "edam:format_2331"
+        }
+      ],
+      "sc:name": "Disease report"
     }
   ]
 }

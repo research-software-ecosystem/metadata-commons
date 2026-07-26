@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -38,10 +38,13 @@
     {
       "@id": "https://bio.tools/gentangle",
       "@type": "sc:SoftwareApplication",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0769"
+          "@id": "edam:topic_3316"
+        },
+        {
+          "@id": "edam:topic_4045"
         },
         {
           "@id": "edam:topic_0203"
@@ -50,26 +53,23 @@
           "@id": "edam:topic_3912"
         },
         {
-          "@id": "edam:topic_3316"
-        },
-        {
-          "@id": "edam:topic_4045"
+          "@id": "edam:topic_0769"
         }
       ],
       "sc:citation": [
+        "pubmed:38905502",
+        "pmcid:PMC11251573",
         {
           "@id": "https://doi.org/10.1093/BIOINFORMATICS/BTAE380"
-        },
-        "pubmed:38905502",
-        "pmcid:PMC11251573"
+        }
       ],
       "sc:description": "GENTANGLE is a high-performance containerized pipeline for the computational design of two overlapping genes translated in different reading frames within a microbial genome. The tool utilizes Docker/Singularity containers and offers a GitHub repository for source code and related data.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_2940"
+          "@id": "edam:operation_3095"
         },
         {
-          "@id": "edam:operation_3095"
+          "@id": "edam:operation_2940"
         }
       ],
       "sc:license": "AGPL-3.0",

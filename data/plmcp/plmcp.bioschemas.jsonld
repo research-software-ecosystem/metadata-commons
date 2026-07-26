@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -38,16 +38,16 @@
     {
       "@id": "https://bio.tools/plmcp",
       "@type": "sc:SoftwareApplication",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_0080"
-        },
         {
           "@id": "edam:topic_3299"
         },
         {
           "@id": "edam:topic_0078"
+        },
+        {
+          "@id": "edam:topic_0080"
         }
       ],
       "sc:citation": [
@@ -60,10 +60,10 @@
       "sc:description": "plmCP is a tool that utilizes Protein Language Models to detect circular permutations in proteins, addressing limitations of existing sequence and structure-based methods. It integrates genetic principles to avoid linear sequence order dependency and enables accurate identification of circular permutations.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0477"
+          "@id": "edam:operation_0495"
         },
         {
-          "@id": "edam:operation_0495"
+          "@id": "edam:operation_0477"
         },
         {
           "@id": "edam:operation_0294"

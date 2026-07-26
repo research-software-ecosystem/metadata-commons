@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -44,20 +44,20 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Ensembl Genomes webteam",
       "bsc:input": {
-        "@id": "_:N7f129813aca94ae5a2e971942c3e92b9"
+        "@id": "_:Nc012bf30ec4e4a64af0163d43a98502b"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0102"
       },
       "sc:author": "Ensembl team",
       "sc:citation": [
+        "pubmed:26687719",
         "pmcid:PMC4702834",
         {
           "@id": "https://doi.org/10.1093/nar/gkv1157"
-        },
-        "pubmed:26687719"
+        }
       ],
       "sc:description": "Map your data to the current assembly.",
       "sc:featureList": {
@@ -65,8 +65,8 @@
       },
       "sc:name": "Ensembl Genomes Protists assembly converter",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:provider": "EMBL-EBI",
@@ -82,20 +82,20 @@
       "sc:url": "http://protists.ensembl.org/tools.html"
     },
     {
-      "@id": "_:N7f129813aca94ae5a2e971942c3e92b9",
+      "@id": "_:Nc012bf30ec4e4a64af0163d43a98502b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1276"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_2306"
+          "@id": "edam:format_3003"
         },
         {
           "@id": "edam:format_2305"
         },
         {
-          "@id": "edam:format_3003"
+          "@id": "edam:format_2306"
         },
         {
           "@id": "edam:format_3007"

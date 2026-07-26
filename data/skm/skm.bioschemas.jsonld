@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,10 +36,6 @@
   },
   "@graph": [
     {
-      "@id": "https://orcid.org/0000-0003-1617-7145",
-      "@type": "sc:Person"
-    },
-    {
       "@id": "https://doi.org/10.1016/j.xplc.2024.100920",
       "@type": "sc:CreativeWork"
     },
@@ -47,47 +43,47 @@
       "@id": "https://bio.tools/skm",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N19c69afd52e247d684b8c90b6fdd6971"
+        "@id": "_:Nee1939f186ab43c597f417de466039c4"
       },
       "bsc:output": [
         {
-          "@id": "_:N8e21e662931a429692e42e92f2d3a003"
+          "@id": "_:N9ab29f90d4694c21a6e6b50f7a98dce1"
         },
         {
-          "@id": "_:Ncf6face1d2c048d3b3640bf6a8edd397"
+          "@id": "_:N9a1ab379294a47c9bbe549fccfb31cf7"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web application",
-        "Database portal"
+        "Database portal",
+        "Web application"
       ],
       "sc:applicationSubCategory": [
         {
           "@id": "edam:topic_0602"
         },
         {
-          "@id": "edam:topic_2259"
+          "@id": "edam:topic_0780"
         },
         {
-          "@id": "edam:topic_0780"
+          "@id": "edam:topic_2259"
         }
       ],
       "sc:author": [
-        "Vid Podpečan",
         {
           "@id": "https://orcid.org/0000-0003-1617-7145"
-        }
+        },
+        "Vid Podpečan"
       ],
       "sc:citation": [
+        "pubmed:38616489",
         {
           "@id": "https://doi.org/10.1016/j.xplc.2024.100920"
-        },
-        "pubmed:38616489"
+        }
       ],
       "sc:contributor": [
-        "Živa Ramšak",
-        "Kristina Gruden"
+        "Kristina Gruden",
+        "Živa Ramšak"
       ],
       "sc:description": "Stress Knowledge Map:  A compilation of knowledge on mechanisms underlying responses of plants to stress, the so called stress signalling network.",
       "sc:featureList": [
@@ -107,7 +103,7 @@
       "sc:url": "https://skm.nib.si/"
     },
     {
-      "@id": "_:N19c69afd52e247d684b8c90b6fdd6971",
+      "@id": "_:Nee1939f186ab43c597f417de466039c4",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2299"
@@ -115,39 +111,43 @@
       "sc:name": "Gene name"
     },
     {
-      "@id": "_:N8e21e662931a429692e42e92f2d3a003",
+      "@id": "_:N9ab29f90d4694c21a6e6b50f7a98dce1",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2080"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_3619"
+          "@id": "edam:format_3464"
         },
         {
-          "@id": "edam:format_3464"
+          "@id": "edam:format_3619"
         }
       ],
       "sc:name": "Database search results"
     },
     {
-      "@id": "_:Ncf6face1d2c048d3b3640bf6a8edd397",
+      "@id": "_:N9a1ab379294a47c9bbe549fccfb31cf7",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0950"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_3619"
+          "@id": "edam:format_3692"
         },
         {
           "@id": "edam:format_2585"
         },
         {
-          "@id": "edam:format_3692"
+          "@id": "edam:format_3619"
         }
       ],
       "sc:name": "Mathematical model"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-1617-7145",
+      "@type": "sc:Person"
     }
   ]
 }

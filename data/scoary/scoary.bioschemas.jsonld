@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -44,22 +44,22 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Ola Brynildsrud",
       "bsc:input": {
-        "@id": "_:Ne18c8aa7f8b449e3a08a8694edda15d8"
+        "@id": "_:Neb3563fe8f334ea0bb2b84bfd1966074"
       },
       "bsc:output": {
-        "@id": "_:N5de55fae2050433fb19d1faf92b72e4b"
+        "@id": "_:N817cc9b410ec44cbb82f97e0d3efd6b2"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
           "@id": "edam:topic_0085"
         },
         {
-          "@id": "edam:topic_0625"
+          "@id": "edam:topic_3517"
         },
         {
-          "@id": "edam:topic_3517"
+          "@id": "edam:topic_0625"
         },
         {
           "@id": "edam:topic_0621"
@@ -79,8 +79,8 @@
       "sc:name": "Scoary",
       "sc:operatingSystem": "Linux",
       "sc:provider": [
-        "UiO",
-        "Norwegian Institute of Public Health"
+        "Norwegian Institute of Public Health",
+        "UiO"
       ],
       "sc:softwareHelp": [
         {
@@ -94,18 +94,7 @@
       "sc:url": "https://github.com/AdmiralenOla/Scoary"
     },
     {
-      "@id": "_:N5de55fae2050433fb19d1faf92b72e4b",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1669"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3752"
-      },
-      "sc:name": "P-value"
-    },
-    {
-      "@id": "_:Ne18c8aa7f8b449e3a08a8694edda15d8",
+      "@id": "_:Neb3563fe8f334ea0bb2b84bfd1966074",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0916"
@@ -114,6 +103,17 @@
         "@id": "edam:format_2330"
       },
       "sc:name": "Gene report"
+    },
+    {
+      "@id": "_:N817cc9b410ec44cbb82f97e0d3efd6b2",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1669"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3752"
+      },
+      "sc:name": "P-value"
     }
   ]
 }

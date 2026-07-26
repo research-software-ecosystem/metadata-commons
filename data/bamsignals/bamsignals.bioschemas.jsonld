@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -43,27 +43,27 @@
       "@id": "https://bio.tools/bamsignals",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N97b0a65de7264ca9b30a988220e35e08"
+        "@id": "_:N087a6057545342339ac2d6fa14849321"
       },
       "bsc:output": {
-        "@id": "_:Ne45db35ff5274f5d86d8daf6149297b2"
+        "@id": "_:Nc2e4a915c4494badae5548f62527661c"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0080"
+          "@id": "edam:topic_0092"
         },
         {
-          "@id": "edam:topic_0092"
+          "@id": "edam:topic_0080"
         }
       ],
       "sc:author": [
-        "Johannes Helmuth",
-        "Alessandro Mammana"
+        "Alessandro Mammana",
+        "Johannes Helmuth"
       ],
       "sc:citation": {
         "@id": "https://doi.org/10.18129/B9.bioc.bamsignals"
@@ -75,8 +75,8 @@
       "sc:license": "GPL-2.0-only",
       "sc:name": "bamsignals",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -86,18 +86,7 @@
       "sc:url": "https://bioconductor.org/packages/bamsignals"
     },
     {
-      "@id": "_:Ne45db35ff5274f5d86d8daf6149297b2",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0867"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1921"
-      },
-      "sc:name": "Sequence alignment report"
-    },
-    {
-      "@id": "_:N97b0a65de7264ca9b30a988220e35e08",
+      "@id": "_:N087a6057545342339ac2d6fa14849321",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1383"
@@ -106,6 +95,17 @@
         "@id": "edam:format_2572"
       },
       "sc:name": "Sequence alignment (nucleic acid)"
+    },
+    {
+      "@id": "_:Nc2e4a915c4494badae5548f62527661c",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0867"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1921"
+      },
+      "sc:name": "Sequence alignment report"
     }
   ]
 }

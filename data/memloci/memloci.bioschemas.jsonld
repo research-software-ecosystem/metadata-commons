@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,46 +36,46 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btr108",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://orcid.org/0000-0002-0274-5669",
       "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.1093/bioinformatics/btr108",
+      "@type": "sc:CreativeWork"
     },
     {
       "@id": "https://bio.tools/memloci",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
-        "Andrea Pierleoni",
         {
           "@id": "https://orcid.org/0000-0002-0274-5669"
-        }
+        },
+        "Andrea Pierleoni"
       ],
       "bsc:input": {
-        "@id": "_:Ne7f658d79ef441b9b5ecbc2c056b1051"
+        "@id": "_:N8e1d191b09d6419fb9c87f5df9f4cb0a"
       },
       "bsc:output": {
-        "@id": "_:Na45ee1b095204af196c3ea122a94681b"
+        "@id": "_:N12ff7bfc27d54fc9b40c6d173d941318"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_0820"
+        },
         {
           "@id": "edam:topic_0621"
         },
         {
           "@id": "edam:topic_0140"
-        },
-        {
-          "@id": "edam:topic_0820"
         }
       ],
       "sc:citation": [
+        "pubmed:21367869",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btr108"
-        },
-        "pubmed:21367869"
+        }
       ],
       "sc:description": "Predictor for the subcellular localization of proteins associated or inserted in eukaryotes membranes.",
       "sc:featureList": {
@@ -84,9 +84,9 @@
       "sc:isAccessibleForFree": true,
       "sc:name": "MemLoci",
       "sc:operatingSystem": [
-        "Windows",
         "Linux",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:provider": "ELIXIR-ITA-BOLOGNA",
       "sc:softwareHelp": {
@@ -96,18 +96,7 @@
       "sc:url": "https://mu2py.biocomp.unibo.it/memloci"
     },
     {
-      "@id": "_:Na45ee1b095204af196c3ea122a94681b",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1277"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Protein features"
-    },
-    {
-      "@id": "_:Ne7f658d79ef441b9b5ecbc2c056b1051",
+      "@id": "_:N8e1d191b09d6419fb9c87f5df9f4cb0a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2974"
@@ -116,6 +105,17 @@
         "@id": "edam:format_1929"
       },
       "sc:name": "Protein sequence (raw)"
+    },
+    {
+      "@id": "_:N12ff7bfc27d54fc9b40c6d173d941318",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1277"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Protein features"
     }
   ]
 }

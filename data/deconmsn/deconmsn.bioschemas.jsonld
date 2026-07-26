@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,32 +36,28 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btn063",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/deconmsn",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Necd17af1050b4ba4afff8062e7631b8d"
+          "@id": "_:Na7ee1d7223764a9b8a91520e1bde9164"
         },
         {
-          "@id": "_:N8b0a1e85d92141f7a0ea6cfc3258eb31"
+          "@id": "_:Nf34c40e3ebb143bc8fa137f381f6caa7"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N5ff0ac1daf49479c98676dd1f9f3e288"
+          "@id": "_:Nd3bc215790c4481d851734f58eb59f5f"
         },
         {
-          "@id": "_:Nc5e5baa96cb64f68975d430b541645fd"
+          "@id": "_:N5c4d74044c5e4f2691dd07a44efbfc35"
         },
         {
-          "@id": "_:Nb1f8018675bb4a2aa4713e4070d14372"
+          "@id": "_:Nba2f3e94cffa4686bd4f629edf015208"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
@@ -72,8 +68,8 @@
         }
       ],
       "sc:citation": [
-        "pmcid:PMC2720627",
         "pubmed:18304935",
+        "pmcid:PMC2720627",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btn063"
         }
@@ -81,16 +77,16 @@
       "sc:description": "Tool for accurate precursor ion monoisotopic mass determination for tandem mass spectra.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3215"
+          "@id": "edam:operation_3629"
         },
         {
-          "@id": "edam:operation_3629"
+          "@id": "edam:operation_3215"
         }
       ],
       "sc:name": "DeconMSn",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -99,7 +95,7 @@
       "sc:url": "http://omics.pnl.gov/software/DeconMSn.php"
     },
     {
-      "@id": "_:Necd17af1050b4ba4afff8062e7631b8d",
+      "@id": "_:Na7ee1d7223764a9b8a91520e1bde9164",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2536"
@@ -115,23 +111,55 @@
       "sc:name": "Mass spectrometry data"
     },
     {
-      "@id": "_:N8b0a1e85d92141f7a0ea6cfc3258eb31",
+      "@id": "_:Nf34c40e3ebb143bc8fa137f381f6caa7",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0943"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_3654"
+          "@id": "edam:format_3712"
         },
         {
-          "@id": "edam:format_3712"
+          "@id": "edam:format_3654"
         }
       ],
       "sc:name": "Mass spectrometry spectra"
     },
     {
-      "@id": "_:N5ff0ac1daf49479c98676dd1f9f3e288",
+      "@id": "_:Nd3bc215790c4481d851734f58eb59f5f",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2536"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3651"
+        },
+        {
+          "@id": "edam:format_3652"
+        }
+      ],
+      "sc:name": "Mass spectrometry data"
+    },
+    {
+      "@id": "_:N5c4d74044c5e4f2691dd07a44efbfc35",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0943"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3651"
+        },
+        {
+          "@id": "edam:format_3652"
+        }
+      ],
+      "sc:name": "Mass spectrometry spectra"
+    },
+    {
+      "@id": "_:Nba2f3e94cffa4686bd4f629edf015208",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0944"
@@ -147,36 +175,8 @@
       "sc:name": "Peptide mass fingerprint"
     },
     {
-      "@id": "_:Nc5e5baa96cb64f68975d430b541645fd",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2536"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3651"
-        },
-        {
-          "@id": "edam:format_3652"
-        }
-      ],
-      "sc:name": "Mass spectrometry data"
-    },
-    {
-      "@id": "_:Nb1f8018675bb4a2aa4713e4070d14372",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0943"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3652"
-        },
-        {
-          "@id": "edam:format_3651"
-        }
-      ],
-      "sc:name": "Mass spectrometry spectra"
+      "@id": "https://doi.org/10.1093/bioinformatics/btn063",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

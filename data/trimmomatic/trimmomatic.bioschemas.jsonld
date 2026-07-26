@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -41,31 +41,31 @@
       "biotools:primaryContact": "Anthony Bolger",
       "bsc:input": [
         {
-          "@id": "_:Nb5aac373343c4eeb84d3a08248926544"
+          "@id": "_:N9631a08cc4ec4d8dbfffd4d1e2d48453"
         },
         {
-          "@id": "_:Nea8f42089d64442f9451332ebda0e32b"
+          "@id": "_:Ncef58d1da51e4e27b345e556f7768545"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Nabcf353d8ceb4bdb95279184aa00643f"
+          "@id": "_:Ncc96c0053a2f42b5b8cacd12012c3964"
         },
         {
-          "@id": "_:N4a47ee02025244679eedb76042056bb9"
+          "@id": "_:Nf7023e2a8e0647c4a7a001b5a18b3762"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_3168"
-        },
         {
           "@id": "edam:topic_3572"
         },
         {
           "@id": "edam:topic_0080"
+        },
+        {
+          "@id": "edam:topic_3168"
         }
       ],
       "sc:citation": [
@@ -88,7 +88,32 @@
       "sc:url": "http://www.usadellab.org/cms/index.php?page=trimmomatic"
     },
     {
-      "@id": "_:Nb5aac373343c4eeb84d3a08248926544",
+      "@id": "_:N9631a08cc4ec4d8dbfffd4d1e2d48453",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0006"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2333"
+        },
+        {
+          "@id": "edam:format_1930"
+        },
+        {
+          "@id": "edam:format_1931"
+        },
+        {
+          "@id": "edam:format_1932"
+        },
+        {
+          "@id": "edam:format_1933"
+        }
+      ],
+      "sc:name": "Data"
+    },
+    {
+      "@id": "_:Ncef58d1da51e4e27b345e556f7768545",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0863"
@@ -99,32 +124,7 @@
       "sc:name": "Sequence alignment"
     },
     {
-      "@id": "_:Nea8f42089d64442f9451332ebda0e32b",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0006"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_1932"
-        },
-        {
-          "@id": "edam:format_1930"
-        },
-        {
-          "@id": "edam:format_1933"
-        },
-        {
-          "@id": "edam:format_2333"
-        },
-        {
-          "@id": "edam:format_1931"
-        }
-      ],
-      "sc:name": "Data"
-    },
-    {
-      "@id": "_:Nabcf353d8ceb4bdb95279184aa00643f",
+      "@id": "_:Ncc96c0053a2f42b5b8cacd12012c3964",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0006"
@@ -135,7 +135,7 @@
       "sc:name": "Data"
     },
     {
-      "@id": "_:N4a47ee02025244679eedb76042056bb9",
+      "@id": "_:Nf7023e2a8e0647c4a7a001b5a18b3762",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0006"

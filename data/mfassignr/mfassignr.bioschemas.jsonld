@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -44,34 +44,34 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Nd1b73d1653fd49a88ff521dd9efc449d"
+          "@id": "_:Nd089d02d8dc7451d9ef61a5aae134cd8"
         },
         {
-          "@id": "_:N3bd94342e1ee485ca3ef8d631ffce8bb"
+          "@id": "_:N7c80f6c9b1aa4a23874c6db93ae5efbe"
         },
         {
-          "@id": "_:Nd9331b50d01a4a9c82600e39bc69bdb0"
+          "@id": "_:N0c895d39d92942eea47880a19c8b8540"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N7fa9e5aaab6343729ce267e6bc6b1137"
+          "@id": "_:N593992d361164c318a4f05ee3b434adb"
         },
         {
-          "@id": "_:N783925e0eaca4937b3e25cec9631e526"
+          "@id": "_:N35b51cd86e584948a9133a65a25bd8d2"
         },
         {
-          "@id": "_:N75bb4e5b865b4c718810a95bb8160978"
+          "@id": "_:N40bf33e5c5b34042a9030f5558374802"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Library",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3520"
+          "@id": "edam:topic_3172"
         },
         {
-          "@id": "edam:topic_3172"
+          "@id": "edam:topic_3520"
         },
         {
           "@id": "edam:topic_0769"
@@ -86,10 +86,10 @@
       "sc:description": "Molecular formula assignment software for ultrahigh resolution mass spectrometry analysis of environmental complex mixtures.\n\nUltrahigh resolution mass spectrometry is widely used for nontargeted analysis of complex environmental and biological mixtures, such as dissolved organic matter, due to its unparalleled ability to provide accurate mass measurements.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3629"
+          "@id": "edam:operation_0226"
         },
         {
-          "@id": "edam:operation_0226"
+          "@id": "edam:operation_3629"
         },
         {
           "@id": "edam:operation_3627"
@@ -107,7 +107,7 @@
       "sc:url": "https://github.com/skschum/MFAssignR"
     },
     {
-      "@id": "_:Nd1b73d1653fd49a88ff521dd9efc449d",
+      "@id": "_:Nd089d02d8dc7451d9ef61a5aae134cd8",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0943"
@@ -118,7 +118,7 @@
       "sc:name": "Mass spectrum"
     },
     {
-      "@id": "_:N3bd94342e1ee485ca3ef8d631ffce8bb",
+      "@id": "_:N7c80f6c9b1aa4a23874c6db93ae5efbe",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0943"
@@ -129,7 +129,7 @@
       "sc:name": "Mass spectrum"
     },
     {
-      "@id": "_:Nd9331b50d01a4a9c82600e39bc69bdb0",
+      "@id": "_:N0c895d39d92942eea47880a19c8b8540",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0943"
@@ -140,7 +140,29 @@
       "sc:name": "Mass spectrum"
     },
     {
-      "@id": "_:N7fa9e5aaab6343729ce267e6bc6b1137",
+      "@id": "_:N593992d361164c318a4f05ee3b434adb",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0943"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3751"
+      },
+      "sc:name": "Mass spectrum"
+    },
+    {
+      "@id": "_:N35b51cd86e584948a9133a65a25bd8d2",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0943"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3751"
+      },
+      "sc:name": "Mass spectrum"
+    },
+    {
+      "@id": "_:N40bf33e5c5b34042a9030f5558374802",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
@@ -149,28 +171,6 @@
         "@id": "edam:format_3603"
       },
       "sc:name": "Plot"
-    },
-    {
-      "@id": "_:N783925e0eaca4937b3e25cec9631e526",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0943"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3751"
-      },
-      "sc:name": "Mass spectrum"
-    },
-    {
-      "@id": "_:N75bb4e5b865b4c718810a95bb8160978",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0943"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3751"
-      },
-      "sc:name": "Mass spectrum"
     }
   ]
 }

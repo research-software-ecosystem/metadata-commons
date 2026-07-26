@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,21 +36,17 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.18129/B9.bioc.MatrixGenerics",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/bioconductor-matrixgenerics",
       "@type": "sc:SoftwareApplication",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
       ],
       "sc:author": [
-        "Peter Hickey",
         "Constantin Ahlmann-Eltze",
-        "Hervé Pagès"
+        "Hervé Pagès",
+        "Peter Hickey"
       ],
       "sc:citation": {
         "@id": "https://doi.org/10.18129/B9.bioc.MatrixGenerics"
@@ -59,8 +55,8 @@
       "sc:license": "Artistic-2.0",
       "sc:name": "MatrixGenerics",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -68,6 +64,10 @@
       },
       "sc:softwareVersion": "1.24.0",
       "sc:url": "https://bioconductor.org/packages/MatrixGenerics"
+    },
+    {
+      "@id": "https://doi.org/10.18129/B9.bioc.MatrixGenerics",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

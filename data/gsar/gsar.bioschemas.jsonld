@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,23 +39,23 @@
       "@id": "https://bio.tools/gsar",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Ndba174e7a3bf45d0947d7eda9ae890b0"
+        "@id": "_:N7b450c20b1b644ab988dbc961f1a622d"
       },
       "bsc:output": [
         {
-          "@id": "_:N3932e574a6344ae1b3c7267ec228d899"
+          "@id": "_:Nbb8d512d823f4a7f91929bcf22119907"
         },
         {
-          "@id": "_:N9bf9eee78940483194ea47e58131dc54"
+          "@id": "_:N16e148c25f264d13b9837031c1d9c519"
         },
         {
-          "@id": "_:Ne9f82670e8c74b5d98d15b4f957fe5b9"
+          "@id": "_:Nb3064853f4ba44d5a0aac783bbcbce79"
         },
         {
-          "@id": "_:Ndeab953880c5434f8caa2e8449dbdbcc"
+          "@id": "_:N826843bc712249d8bfcef65a16c28039"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
@@ -65,10 +65,10 @@
           "@id": "edam:topic_0203"
         },
         {
-          "@id": "edam:topic_3170"
+          "@id": "edam:topic_3518"
         },
         {
-          "@id": "edam:topic_3518"
+          "@id": "edam:topic_3170"
         },
         {
           "@id": "edam:topic_2269"
@@ -77,17 +77,17 @@
       "sc:description": "Gene set analysis using specific alternative hypotheses. Tests for differential expression, scale and net correlation structure.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3463"
+          "@id": "edam:operation_3223"
         },
         {
-          "@id": "edam:operation_3223"
+          "@id": "edam:operation_3463"
         }
       ],
       "sc:license": "GPL-2.0-only",
       "sc:name": "GSAR",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -97,7 +97,7 @@
       "sc:url": "https://bioconductor.org/packages/GSAR"
     },
     {
-      "@id": "_:Ndba174e7a3bf45d0947d7eda9ae890b0",
+      "@id": "_:N7b450c20b1b644ab988dbc961f1a622d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0928"
@@ -108,10 +108,10 @@
       "sc:name": "Gene expression profile"
     },
     {
-      "@id": "_:N3932e574a6344ae1b3c7267ec228d899",
+      "@id": "_:Nbb8d512d823f4a7f91929bcf22119907",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2884"
+        "@id": "edam:data_1669"
       },
       "sc:encodingFormat": [
         {
@@ -121,10 +121,10 @@
           "@id": "edam:format_2330"
         }
       ],
-      "sc:name": "Plot"
+      "sc:name": "P-value"
     },
     {
-      "@id": "_:N9bf9eee78940483194ea47e58131dc54",
+      "@id": "_:N16e148c25f264d13b9837031c1d9c519",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2600"
@@ -140,36 +140,36 @@
       "sc:name": "Pathway or network"
     },
     {
-      "@id": "_:Ne9f82670e8c74b5d98d15b4f957fe5b9",
+      "@id": "_:Nb3064853f4ba44d5a0aac783bbcbce79",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2884"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Plot"
+    },
+    {
+      "@id": "_:N826843bc712249d8bfcef65a16c28039",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_2330"
+          "@id": "edam:format_3547"
         },
         {
-          "@id": "edam:format_3547"
+          "@id": "edam:format_2330"
         }
       ],
       "sc:name": "Report"
-    },
-    {
-      "@id": "_:Ndeab953880c5434f8caa2e8449dbdbcc",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1669"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3547"
-        },
-        {
-          "@id": "edam:format_2330"
-        }
-      ],
-      "sc:name": "P-value"
     }
   ]
 }

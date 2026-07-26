@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,7 +36,7 @@
   },
   "@graph": [
     {
-      "@id": "https://orcid.org/0000-0002-7359-0633",
+      "@id": "https://orcid.org/0000-0002-0274-5669",
       "@type": "sc:Person"
     },
     {
@@ -44,62 +44,62 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
         {
+          "@id": "https://orcid.org/0000-0002-7359-0633"
+        },
+        {
           "@id": "https://orcid.org/0000-0002-0274-5669"
         },
         "Giulia Babbi",
-        {
-          "@id": "https://orcid.org/0000-0002-7359-0633"
-        },
         "Rita Casadio"
       ],
       "bsc:input": [
         {
-          "@id": "_:N5493eae1208a404d99ec2a31d0af6873"
+          "@id": "_:N9c0d616ef0064247983ea8a8eb29360b"
         },
         {
-          "@id": "_:N31d3a66906974918aa20f541b95e86ad"
+          "@id": "_:N054d6701e8034029bc59623fb24ed0ab"
         },
         {
-          "@id": "_:Nf77e33c482774620adf6412774157d8d"
+          "@id": "_:Nac04e83ff307419aa45afacf21fe4b4a"
         },
         {
-          "@id": "_:Nad74812b2db948d0b64b1b11025ccfae"
+          "@id": "_:Ne35ae60383eb4bcca2006207cd792ece"
         },
         {
-          "@id": "_:Nf846972a32744b7ba85c07441a235aad"
+          "@id": "_:N5f59d1a97f324a80a1b11b5b385eb89f"
         },
         {
-          "@id": "_:Ne2eefcc5ad144048b6f158c3225148f4"
+          "@id": "_:Nc7c3cf5141e7462699bc9c9326738a12"
         },
         {
-          "@id": "_:N1a6047faf616442ba52ecd2589c9119f"
+          "@id": "_:N447c73f2f1cc4509b307910fd79d0774"
         }
       ],
       "bsc:output": {
-        "@id": "_:Nb1afcee59c3a4dec91eed964cb572972"
+        "@id": "_:Na290ffb237134087b5a3e311bbe075cb"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Database portal",
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_3325"
-        },
         {
           "@id": "edam:topic_3574"
         },
         {
           "@id": "edam:topic_0634"
+        },
+        {
+          "@id": "edam:topic_3325"
         }
       ],
       "sc:author": {
         "@id": "https://orcid.org/0000-0002-7359-0633"
       },
       "sc:citation": [
+        "pubmed:36289281",
+        "pmcid:PMC9605996",
         {
           "@id": "https://doi.org/10.1038/s41598-022-22818-5"
-        },
-        "pubmed:36289281",
-        "pmcid:PMC9605996"
+        }
       ],
       "sc:description": "DAR is a database mapping disease-associated enzyme into Reactome pathways.",
       "sc:featureList": {
@@ -109,9 +109,9 @@
       "sc:license": "CC-BY-NC-4.0",
       "sc:name": "DAR",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": "ELIXIR-ITA-BOLOGNA",
       "sc:softwareHelp": {
@@ -120,31 +120,7 @@
       "sc:url": "https://dar.biocomp.unibo.it/"
     },
     {
-      "@id": "_:N5493eae1208a404d99ec2a31d0af6873",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3021"
-      },
-      "sc:name": "UniProt accession"
-    },
-    {
-      "@id": "_:N31d3a66906974918aa20f541b95e86ad",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1155"
-      },
-      "sc:name": "Pathway ID (reactome)"
-    },
-    {
-      "@id": "_:Nf77e33c482774620adf6412774157d8d",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3668"
-      },
-      "sc:name": "Disease name"
-    },
-    {
-      "@id": "_:Nad74812b2db948d0b64b1b11025ccfae",
+      "@id": "_:N9c0d616ef0064247983ea8a8eb29360b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1150"
@@ -152,23 +128,15 @@
       "sc:name": "Disease ID"
     },
     {
-      "@id": "_:Nf846972a32744b7ba85c07441a235aad",
+      "@id": "_:N054d6701e8034029bc59623fb24ed0ab",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2299"
+        "@id": "edam:data_3668"
       },
-      "sc:name": "Gene name"
+      "sc:name": "Disease name"
     },
     {
-      "@id": "_:Ne2eefcc5ad144048b6f158c3225148f4",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1009"
-      },
-      "sc:name": "Protein name"
-    },
-    {
-      "@id": "_:N1a6047faf616442ba52ecd2589c9119f",
+      "@id": "_:Nac04e83ff307419aa45afacf21fe4b4a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1011"
@@ -176,7 +144,39 @@
       "sc:name": "EC number"
     },
     {
-      "@id": "_:Nb1afcee59c3a4dec91eed964cb572972",
+      "@id": "_:Ne35ae60383eb4bcca2006207cd792ece",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2299"
+      },
+      "sc:name": "Gene name"
+    },
+    {
+      "@id": "_:N5f59d1a97f324a80a1b11b5b385eb89f",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1155"
+      },
+      "sc:name": "Pathway ID (reactome)"
+    },
+    {
+      "@id": "_:Nc7c3cf5141e7462699bc9c9326738a12",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1009"
+      },
+      "sc:name": "Protein name"
+    },
+    {
+      "@id": "_:N447c73f2f1cc4509b307910fd79d0774",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3021"
+      },
+      "sc:name": "UniProt accession"
+    },
+    {
+      "@id": "_:Na290ffb237134087b5a3e311bbe075cb",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0896"
@@ -191,7 +191,7 @@
       "@type": "sc:CreativeWork"
     },
     {
-      "@id": "https://orcid.org/0000-0002-0274-5669",
+      "@id": "https://orcid.org/0000-0002-7359-0633",
       "@type": "sc:Person"
     }
   ]

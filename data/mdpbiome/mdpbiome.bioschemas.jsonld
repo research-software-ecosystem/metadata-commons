@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,20 +36,16 @@
   },
   "@graph": [
     {
-      "@id": "https://orcid.org/0000-0002-8129-6506",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://orcid.org/0000-0002-1977-9777",
-      "@type": "sc:Person"
+      "@id": "https://doi.org/10.1093/bioinformatics/bty562",
+      "@type": "sc:CreativeWork"
     },
     {
       "@id": "https://orcid.org/0000-0001-6960-357X",
       "@type": "sc:Person"
     },
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/bty562",
-      "@type": "sc:CreativeWork"
+      "@id": "https://orcid.org/0000-0002-8129-6506",
+      "@type": "sc:Person"
     },
     {
       "@id": "https://bio.tools/MDPBiome",
@@ -58,33 +54,33 @@
         "@id": "https://orcid.org/0000-0002-8129-6506"
       },
       "bsc:input": {
-        "@id": "_:N845db9b3a9f74e91ba3f304bbceb001a"
+        "@id": "_:Naaeeb12148574c57a390fb716f1d72d7"
       },
       "bsc:output": [
         {
-          "@id": "_:Na342b78a34cd43d0a39d7a8cba9ee127"
+          "@id": "_:Ne6d8c51998044d6790c722279f0c61ed"
         },
         {
-          "@id": "_:N55c50f9bedcc4ce9af2c34ab3dbfb639"
+          "@id": "_:N49a9958493d842f7a52bb0ef0eec877e"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Library",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3301"
+          "@id": "edam:topic_0091"
         },
         {
           "@id": "edam:topic_0092"
         },
         {
-          "@id": "edam:topic_0091"
+          "@id": "edam:topic_3474"
+        },
+        {
+          "@id": "edam:topic_3301"
         },
         {
           "@id": "edam:topic_2269"
-        },
-        {
-          "@id": "edam:topic_3474"
         }
       ],
       "sc:author": {
@@ -102,10 +98,13 @@
           "@id": "edam:operation_3432"
         },
         {
-          "@id": "edam:operation_0337"
+          "@id": "edam:operation_3695"
         },
         {
-          "@id": "edam:operation_3695"
+          "@id": "edam:operation_0335"
+        },
+        {
+          "@id": "edam:operation_0004"
         },
         {
           "@id": "edam:operation_3480"
@@ -114,18 +113,15 @@
           "@id": "edam:operation_3731"
         },
         {
-          "@id": "edam:operation_0004"
-        },
-        {
-          "@id": "edam:operation_0335"
+          "@id": "edam:operation_0337"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "MIT",
       "sc:name": "MDPBiome",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -134,7 +130,18 @@
       "sc:url": "https://github.com/beatrizgj/MDPbiome"
     },
     {
-      "@id": "_:Na342b78a34cd43d0a39d7a8cba9ee127",
+      "@id": "_:Naaeeb12148574c57a390fb716f1d72d7",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3917"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3746"
+      },
+      "sc:name": "Count matrix"
+    },
+    {
+      "@id": "_:Ne6d8c51998044d6790c722279f0c61ed",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3905"
@@ -145,7 +152,7 @@
       "sc:name": "Histogram"
     },
     {
-      "@id": "_:N55c50f9bedcc4ce9af2c34ab3dbfb639",
+      "@id": "_:N49a9958493d842f7a52bb0ef0eec877e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0950"
@@ -156,15 +163,8 @@
       "sc:name": "Mathematical model"
     },
     {
-      "@id": "_:N845db9b3a9f74e91ba3f304bbceb001a",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3917"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3746"
-      },
-      "sc:name": "Count matrix"
+      "@id": "https://orcid.org/0000-0002-1977-9777",
+      "@type": "sc:Person"
     }
   ]
 }

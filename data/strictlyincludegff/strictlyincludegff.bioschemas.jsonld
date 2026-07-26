@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,31 +36,35 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.7490/f1000research.1114334.1",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/strictlyincludegff",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Galaxy Support Team",
       "bsc:input": [
         {
-          "@id": "_:Ndf0be1aeff474a8098dacdc4d0b44523"
+          "@id": "_:N4b45cc1995d14106ae0ac446f568629e"
         },
         {
-          "@id": "_:N0e9721c696e34b868cbb09c2c3957720"
+          "@id": "_:N7a3b8875324c43b5bd27f38a49b7f6d8"
         }
       ],
       "bsc:output": {
-        "@id": "_:N3661cf719f174c32ad94e4a8032fe266"
+        "@id": "_:N38b478bb809e4597afa5bdc0574ae3f7"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
           "@id": "edam:topic_3071"
         },
         {
-          "@id": "edam:topic_0080"
+          "@id": "edam:topic_0622"
         },
         {
-          "@id": "edam:topic_0622"
+          "@id": "edam:topic_0080"
         }
       ],
       "sc:citation": [
@@ -77,9 +81,9 @@
       },
       "sc:name": "strictlyincludegff",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://galaxy.pasteur.fr/root?tool_id=toolshed.pasteur.fr%2Frepos%2Ffmareuil%2Furgi_tools%2FstrictlyIncludeGff%2F1.0.0"
@@ -88,7 +92,7 @@
       "sc:url": "https://urgi.versailles.inra.fr/Tools/REPET"
     },
     {
-      "@id": "_:Ndf0be1aeff474a8098dacdc4d0b44523",
+      "@id": "_:N4b45cc1995d14106ae0ac446f568629e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0006"
@@ -99,7 +103,7 @@
       "sc:name": "Data"
     },
     {
-      "@id": "_:N0e9721c696e34b868cbb09c2c3957720",
+      "@id": "_:N7a3b8875324c43b5bd27f38a49b7f6d8",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0006"
@@ -110,7 +114,7 @@
       "sc:name": "Data"
     },
     {
-      "@id": "_:N3661cf719f174c32ad94e4a8032fe266",
+      "@id": "_:N38b478bb809e4597afa5bdc0574ae3f7",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0006"
@@ -122,10 +126,6 @@
     },
     {
       "@id": "https://doi.org/10.1093/nar/gkw343",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.7490/f1000research.1114334.1",
       "@type": "sc:CreativeWork"
     }
   ]

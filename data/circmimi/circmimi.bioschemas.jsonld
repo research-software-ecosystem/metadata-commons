@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -42,12 +42,15 @@
     {
       "@id": "https://bio.tools/circmimi",
       "@type": "sc:SoftwareApplication",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web application",
-        "Library"
+        "Library",
+        "Web application"
       ],
       "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_0659"
+        },
         {
           "@id": "edam:topic_3512"
         },
@@ -55,13 +58,10 @@
           "@id": "edam:topic_0780"
         },
         {
-          "@id": "edam:topic_3500"
-        },
-        {
-          "@id": "edam:topic_0659"
-        },
-        {
           "@id": "edam:topic_3794"
+        },
+        {
+          "@id": "edam:topic_3500"
         }
       ],
       "sc:citation": [
@@ -74,21 +74,21 @@
       "sc:description": "CircMiMi (circRNA-miRNA-mRNA interactions), a modular, Python-based software to identify circRNA-miRNA-mRNA interactions across 18 species (including 16 animals and 2 plants) with the given coordinates of circRNA junctions.",
       "sc:featureList": [
         {
+          "@id": "edam:operation_3216"
+        },
+        {
           "@id": "edam:operation_3792"
         },
         {
           "@id": "edam:operation_0463"
-        },
-        {
-          "@id": "edam:operation_3216"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "MIT",
       "sc:name": "CircMiMi",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:url": "http://circmimi.genomics.sinica.edu.tw/"

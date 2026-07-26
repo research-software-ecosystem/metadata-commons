@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,22 +39,22 @@
       "@id": "https://bio.tools/TPMCalculator",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
-        "Leonardo Mariño-Ramírez",
         "David Landsman",
+        "Leonardo Mariño-Ramírez",
         "Lorinc Pongor",
         "Roberto Vera Alvarez"
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3170"
+          "@id": "edam:topic_3512"
         },
         {
           "@id": "edam:topic_3320"
         },
         {
-          "@id": "edam:topic_3512"
+          "@id": "edam:topic_3170"
         }
       ],
       "sc:citation": {
@@ -63,10 +63,10 @@
       "sc:description": "Software to quantify mRNA abundance of genomic features.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_1812"
+          "@id": "edam:operation_2495"
         },
         {
-          "@id": "edam:operation_2495"
+          "@id": "edam:operation_1812"
         },
         {
           "@id": "edam:operation_3800"
@@ -76,9 +76,9 @@
       "sc:license": "Other",
       "sc:name": "TPMCalculator",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://github.com/ncbi/TPMCalculator/wiki"

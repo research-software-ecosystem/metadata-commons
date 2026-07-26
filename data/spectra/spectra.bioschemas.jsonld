@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,40 +39,40 @@
       "@id": "https://bio.tools/spectra",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Naea460ae509a43278a2143ef2a42f1e3"
+        "@id": "_:N576a6997d3734381a99ce3351316bf9c"
       },
       "bsc:output": {
-        "@id": "_:N8bc50dae1cad48f1b71acb887673c2c8"
+        "@id": "_:N16063c2b9a854ac58fd05bc520e1ba1c"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_3520"
-        },
         {
           "@id": "edam:topic_3172"
         },
         {
           "@id": "edam:topic_0121"
+        },
+        {
+          "@id": "edam:topic_3520"
         }
       ],
       "sc:description": "The Spectra package defines an efficient infrastructure for storing and handling mass spectrometry spectra and functionality to subset, process, visualize and compare spectra data. It provides different implementations (backends) to store mass spectrometry data. These comprise backends tuned for fast data access and processing and backends for very large data sets ensuring a small memory footprint.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3214"
+          "@id": "edam:operation_3695"
         },
         {
-          "@id": "edam:operation_3695"
+          "@id": "edam:operation_3214"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "Artistic-2.0",
       "sc:name": "Spectra",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": [
         {
@@ -85,7 +85,7 @@
       "sc:url": "https://github.com/RforMassSpectrometry/Spectra"
     },
     {
-      "@id": "_:Naea460ae509a43278a2143ef2a42f1e3",
+      "@id": "_:N576a6997d3734381a99ce3351316bf9c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2536"
@@ -95,13 +95,13 @@
           "@id": "edam:format_3651"
         },
         {
-          "@id": "edam:format_3244"
+          "@id": "edam:format_4039"
         },
         {
           "@id": "edam:format_3650"
         },
         {
-          "@id": "edam:format_4039"
+          "@id": "edam:format_3244"
         },
         {
           "@id": "edam:format_3654"
@@ -110,12 +110,18 @@
       "sc:name": "Mass spectrometry data"
     },
     {
-      "@id": "_:N8bc50dae1cad48f1b71acb887673c2c8",
+      "@id": "_:N16063c2b9a854ac58fd05bc520e1ba1c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2536"
       },
       "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3651"
+        },
+        {
+          "@id": "edam:format_4039"
+        },
         {
           "@id": "edam:format_3650"
         },
@@ -123,16 +129,10 @@
           "@id": "edam:format_3621"
         },
         {
-          "@id": "edam:format_4039"
+          "@id": "edam:format_3244"
         },
         {
           "@id": "edam:format_3654"
-        },
-        {
-          "@id": "edam:format_3651"
-        },
-        {
-          "@id": "edam:format_3244"
         }
       ],
       "sc:name": "Mass spectrometry data"

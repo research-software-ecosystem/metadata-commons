@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,33 +36,25 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/molbev/msw080",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1101/075101",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/phylo.io",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Nd9768c6f77954c9ea4b9de089d78dd1a"
+          "@id": "_:Naccfc12f44384cf19b8824866ca96d2c"
         },
         {
-          "@id": "_:N44caced0990f49e49a4dce794ddb3870"
+          "@id": "_:N8439b25fcfcb422680784d20843df9de"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N7243981a79424d8497d09609e8a95cb6"
+          "@id": "_:N852740ea8228442ca4a1a8a0e97d3719"
         },
         {
-          "@id": "_:Nfff8890b08ba40d9a9731ed60717b447"
+          "@id": "_:N5af18ff5f4764a18a63908c4812c5adc"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Library",
         "Web application"
@@ -71,14 +63,14 @@
         "@id": "edam:topic_3293"
       },
       "sc:citation": [
+        "pubmed:27189561",
+        "pmcid:PMC4948708",
         {
           "@id": "https://doi.org/10.1093/molbev/msw080"
         },
         {
           "@id": "https://doi.org/10.1101/075101"
-        },
-        "pmcid:PMC4948708",
-        "pubmed:27189561"
+        }
       ],
       "sc:description": "Astate of the art tool for visualising and comparing phylogenetic trees on the web. It can be used to view a single tree, or compare the internal structure of two differently inferred trees for the same group of taxons. Phylo.io includes a number of useful features to make the viewing and comparing of even very large trees extremely easy.",
       "sc:featureList": [
@@ -91,8 +83,8 @@
       ],
       "sc:name": "Phylo.io",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:provider": "SIB Swiss Institute of Bioinformatics",
@@ -102,23 +94,7 @@
       "sc:url": "http://phylo.io/index.html"
     },
     {
-      "@id": "_:N7243981a79424d8497d09609e8a95cb6",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1707"
-      },
-      "sc:name": "Phylogenetic tree image"
-    },
-    {
-      "@id": "_:Nfff8890b08ba40d9a9731ed60717b447",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1707"
-      },
-      "sc:name": "Phylogenetic tree image"
-    },
-    {
-      "@id": "_:Nd9768c6f77954c9ea4b9de089d78dd1a",
+      "@id": "_:Naccfc12f44384cf19b8824866ca96d2c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0872"
@@ -134,7 +110,7 @@
       "sc:name": "Phylogenetic tree"
     },
     {
-      "@id": "_:N44caced0990f49e49a4dce794ddb3870",
+      "@id": "_:N8439b25fcfcb422680784d20843df9de",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0872"
@@ -148,6 +124,30 @@
         }
       ],
       "sc:name": "Phylogenetic tree"
+    },
+    {
+      "@id": "_:N852740ea8228442ca4a1a8a0e97d3719",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1707"
+      },
+      "sc:name": "Phylogenetic tree image"
+    },
+    {
+      "@id": "_:N5af18ff5f4764a18a63908c4812c5adc",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1707"
+      },
+      "sc:name": "Phylogenetic tree image"
+    },
+    {
+      "@id": "https://doi.org/10.1093/molbev/msw080",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1101/075101",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

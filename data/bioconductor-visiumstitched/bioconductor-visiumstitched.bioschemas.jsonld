@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,24 +40,20 @@
       "@type": "sc:CreativeWork"
     },
     {
-      "@id": "https://doi.org/10.18129/B9.bioc.visiumStitched",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/bioconductor-visiumstitched",
       "@type": "sc:SoftwareApplication",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:author": "Nicholas J. Eagles",
       "sc:citation": [
         {
-          "@id": "https://doi.org/10.18129/B9.bioc.visiumStitched"
+          "@id": "https://doi.org/10.1186/s12864-024-10991-y"
         },
         {
-          "@id": "https://doi.org/10.1186/s12864-024-10991-y"
+          "@id": "https://doi.org/10.18129/B9.bioc.visiumStitched"
         }
       ],
       "sc:contributor": "Leonardo Collado-Torres",
@@ -66,14 +62,18 @@
       "sc:name": "visiumStitched",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://bioconductor.org/packages/visiumStitched"
       },
       "sc:softwareVersion": "1.4.0",
       "sc:url": "https://bioconductor.org/packages/visiumStitched"
+    },
+    {
+      "@id": "https://doi.org/10.18129/B9.bioc.visiumStitched",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

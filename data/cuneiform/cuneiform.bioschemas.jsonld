@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,33 +36,29 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.13140/RG.2.1.3547.6561",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/cuneiform",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Jörgen Brandt",
       "bsc:input": {
-        "@id": "_:N383045c646fa4bc987853b42416d0043"
+        "@id": "_:N18efc955e0514ba585dae7390ce530fa"
       },
       "bsc:output": {
-        "@id": "_:Nc1fe81576c464f51a52f762df7257d74"
+        "@id": "_:Na534e268be764bcb98beb508ec6368bf"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Workbench",
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_3366"
-        },
         {
           "@id": "edam:topic_0091"
         },
         {
-          "@id": "edam:topic_0769"
+          "@id": "edam:topic_3307"
         },
         {
-          "@id": "edam:topic_3307"
+          "@id": "edam:topic_3366"
+        },
+        {
+          "@id": "edam:topic_0769"
         }
       ],
       "sc:author": "Jörgen Brandt",
@@ -86,8 +82,8 @@
       "sc:license": "Apache-2.0",
       "sc:name": "Cuneiform",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:provider": [
         "Humboldt-Universität zu Berlin",
@@ -100,15 +96,7 @@
       "sc:url": "http://www.cuneiform-lang.org"
     },
     {
-      "@id": "_:Nc1fe81576c464f51a52f762df7257d74",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1050"
-      },
-      "sc:name": "File name"
-    },
-    {
-      "@id": "_:N383045c646fa4bc987853b42416d0043",
+      "@id": "_:N18efc955e0514ba585dae7390ce530fa",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0949"
@@ -117,6 +105,18 @@
         "@id": "edam:format_2032"
       },
       "sc:name": "Workflow metadata"
+    },
+    {
+      "@id": "_:Na534e268be764bcb98beb508ec6368bf",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1050"
+      },
+      "sc:name": "File name"
+    },
+    {
+      "@id": "https://doi.org/10.13140/RG.2.1.3547.6561",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

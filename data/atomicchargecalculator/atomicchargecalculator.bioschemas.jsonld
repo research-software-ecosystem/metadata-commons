@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,34 +36,30 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1186/s13321-015-0099-x",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/atomicchargecalculator",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
-        "David Sehnal",
         "Crina Maria Ionescu",
+        "David Sehnal",
         "Primary Contact"
       ],
       "bsc:input": [
         {
-          "@id": "_:Nac870bc69da34a61a6565917a1f2b882"
+          "@id": "_:Neaf8e2d75a0a46249f65768bf3437cc1"
         },
         {
-          "@id": "_:Nac68501d532a4791b3f141c58fba0e5c"
+          "@id": "_:Nb0c268ab059a417ba4a16374312cc266"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N7eea09f7df454f5f954d828344f913ef"
+          "@id": "_:N0569139b6de84a8d9a98b40c7a7d23e2"
         },
         {
-          "@id": "_:Nca366f36029f400b860f42feb77a13a0"
+          "@id": "_:Na1e699ef4ea148a1bd6c8dc9edc44169"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Web application"
@@ -81,35 +77,35 @@
       ],
       "sc:author": "David Sehnal",
       "sc:citation": [
+        "pubmed:26500704",
+        "pmcid:PMC4613891",
         {
           "@id": "https://doi.org/10.1186/s13321-015-0099-x"
-        },
-        "pmcid:PMC4613891",
-        "pubmed:26500704"
+        }
       ],
       "sc:contributor": [
-        "Stanislav Geidl",
+        "Crina Maria Ionescu",
         "Lukáš Pravda",
-        "Crina Maria Ionescu"
+        "Stanislav Geidl"
       ],
       "sc:description": "A web application for the calculation and analysis of atomic charges in both large biomolecular complexes and small drug-like molecules.",
       "sc:featureList": [
-        {
-          "@id": "edam:operation_0570"
-        },
         {
           "@id": "edam:operation_2238"
         },
         {
           "@id": "edam:operation_2480"
+        },
+        {
+          "@id": "edam:operation_0570"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:name": "AtomicChargeCalculator",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": [
         "ELIXIR-CZ",
@@ -117,17 +113,41 @@
       ],
       "sc:softwareHelp": [
         {
-          "@id": "http://webchem.ncbr.muni.cz/Wiki/ChargeCalculator:UserManual"
+          "@id": "http://www.jcheminf.com/content/7/1/50/citation"
         },
         {
-          "@id": "http://www.jcheminf.com/content/7/1/50/citation"
+          "@id": "http://webchem.ncbr.muni.cz/Wiki/ChargeCalculator:UserManual"
         }
       ],
       "sc:softwareVersion": "1.0",
       "sc:url": "https://ncbr.muni.cz/ACC"
     },
     {
-      "@id": "_:N7eea09f7df454f5f954d828344f913ef",
+      "@id": "_:Neaf8e2d75a0a46249f65768bf3437cc1",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1463"
+      },
+      "sc:name": "Small molecule structure"
+    },
+    {
+      "@id": "_:Nb0c268ab059a417ba4a16374312cc266",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1460"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_1476"
+        },
+        {
+          "@id": "edam:format_1477"
+        }
+      ],
+      "sc:name": "Protein structure"
+    },
+    {
+      "@id": "_:N0569139b6de84a8d9a98b40c7a7d23e2",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1917"
@@ -138,7 +158,7 @@
       "sc:name": "Atomic property"
     },
     {
-      "@id": "_:Nca366f36029f400b860f42feb77a13a0",
+      "@id": "_:Na1e699ef4ea148a1bd6c8dc9edc44169",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2085"
@@ -149,28 +169,8 @@
       "sc:name": "Structure report"
     },
     {
-      "@id": "_:Nac870bc69da34a61a6565917a1f2b882",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1463"
-      },
-      "sc:name": "Small molecule structure"
-    },
-    {
-      "@id": "_:Nac68501d532a4791b3f141c58fba0e5c",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1460"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_1477"
-        },
-        {
-          "@id": "edam:format_1476"
-        }
-      ],
-      "sc:name": "Protein structure"
+      "@id": "https://doi.org/10.1186/s13321-015-0099-x",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

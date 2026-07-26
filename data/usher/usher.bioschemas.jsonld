@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,18 +40,24 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N6e97892e2a6b4b15b499210ddbc1338e"
+          "@id": "_:Nfd25db8762394917b55d719ecb3f6892"
         },
         {
-          "@id": "_:N357282829d474690bf68f931f947aa0b"
+          "@id": "_:N90bd4f91d5f34c02a94373fb770d6572"
         }
       ],
       "bsc:output": {
-        "@id": "_:N502e3d157ac94102bf2c1e5fa53c68bb"
+        "@id": "_:Nf610e7d4ac2c4c179da597d9d880c774"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_3944"
+        },
+        {
+          "@id": "edam:topic_3299"
+        },
         {
           "@id": "edam:topic_0625"
         },
@@ -60,12 +66,6 @@
         },
         {
           "@id": "edam:topic_0084"
-        },
-        {
-          "@id": "edam:topic_3944"
-        },
-        {
-          "@id": "edam:topic_3299"
         }
       ],
       "sc:citation": {
@@ -74,10 +74,10 @@
       "sc:description": "The UShER toolkit includes a set of tools for for rapid, accurate placement of samples to existing phylogenies. While not restricted to SARS-CoV-2 phylogenetic analyses, it has enabled real-time phylogenetic analyses and genomic contact tracing in that its placement is orders of magnitude faster and more memory-efficient than previous methods.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0540"
+          "@id": "edam:operation_2990"
         },
         {
-          "@id": "edam:operation_2990"
+          "@id": "edam:operation_0540"
         },
         {
           "@id": "edam:operation_0567"
@@ -90,7 +90,15 @@
       "sc:url": "https://github.com/yatisht/usher"
     },
     {
-      "@id": "_:N6e97892e2a6b4b15b499210ddbc1338e",
+      "@id": "_:Nfd25db8762394917b55d719ecb3f6892",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0863"
+      },
+      "sc:name": "Sequence alignment"
+    },
+    {
+      "@id": "_:N90bd4f91d5f34c02a94373fb770d6572",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2523"
@@ -101,15 +109,7 @@
       "sc:name": "Phylogenetic data"
     },
     {
-      "@id": "_:N357282829d474690bf68f931f947aa0b",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0863"
-      },
-      "sc:name": "Sequence alignment"
-    },
-    {
-      "@id": "_:N502e3d157ac94102bf2c1e5fa53c68bb",
+      "@id": "_:Nf610e7d4ac2c4c179da597d9d880c774",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2523"

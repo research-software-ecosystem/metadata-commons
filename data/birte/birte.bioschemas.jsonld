@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,25 +36,21 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btv379",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/birte",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Holger Froehlich",
       "bsc:input": [
         {
-          "@id": "_:Nd1601bf40b7d4778ba723dc9247192c7"
+          "@id": "_:N3ea6911ca7c748649d26db6eb773132b"
         },
         {
-          "@id": "_:Nd62aec5f6c414bf9b228b1aedc2df025"
+          "@id": "_:Nb27e6c5a78614fcdb73f2cb0bbb9d2d1"
         }
       ],
       "bsc:output": {
-        "@id": "_:N60d18749f3c747e5846d3dce7f143c7e"
+        "@id": "_:N9c83ffb7cd61462b81bfc690c17e9799"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
@@ -71,10 +67,10 @@
         }
       ],
       "sc:citation": [
+        "pubmed:26112290",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btv379"
-        },
-        "pubmed:26112290"
+        }
       ],
       "sc:description": "This tool uses regulatory networks of TFs, miRNAs and possibly other factors, together with mRNA, miRNA and other available expression data to predict the relative influence of a regulator on the expression of its target genes. Inference is done in a Bayesian modeling framework using Markov-Chain-Monte-Carlo. A special feature is the possibility for follow-up network reverse engineering between active regulators.",
       "sc:featureList": {
@@ -83,9 +79,9 @@
       "sc:license": "GPL-2.0",
       "sc:name": "birte",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/birte.html"
@@ -94,7 +90,39 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/birte.html"
     },
     {
-      "@id": "_:N60d18749f3c747e5846d3dce7f143c7e",
+      "@id": "_:N3ea6911ca7c748649d26db6eb773132b",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2600"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2013"
+        },
+        {
+          "@id": "edam:format_1919"
+        }
+      ],
+      "sc:name": "Pathway or network"
+    },
+    {
+      "@id": "_:Nb27e6c5a78614fcdb73f2cb0bbb9d2d1",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1234"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2013"
+        },
+        {
+          "@id": "edam:format_1919"
+        }
+      ],
+      "sc:name": "Sequence set (nucleic acid)"
+    },
+    {
+      "@id": "_:N9c83ffb7cd61462b81bfc690c17e9799",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2600"
@@ -105,36 +133,8 @@
       "sc:name": "Pathway or network"
     },
     {
-      "@id": "_:Nd1601bf40b7d4778ba723dc9247192c7",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2600"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_1919"
-        },
-        {
-          "@id": "edam:format_2013"
-        }
-      ],
-      "sc:name": "Pathway or network"
-    },
-    {
-      "@id": "_:Nd62aec5f6c414bf9b228b1aedc2df025",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1234"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_1919"
-        },
-        {
-          "@id": "edam:format_2013"
-        }
-      ],
-      "sc:name": "Sequence set (nucleic acid)"
+      "@id": "https://doi.org/10.1093/bioinformatics/btv379",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

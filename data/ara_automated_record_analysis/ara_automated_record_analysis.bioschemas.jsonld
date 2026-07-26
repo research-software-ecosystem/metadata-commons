@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -44,12 +44,12 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Wojciech Karlowski",
       "bsc:input": {
-        "@id": "_:Nc7711dd568dc4cb38f1416291451f4dc"
+        "@id": "_:N46ba855c12434f07a412992ca10422dc"
       },
       "bsc:output": {
-        "@id": "_:Nb4ba5ad9d1a24c288553a2ce876e14c3"
+        "@id": "_:N7aa6ac38905e47d195448eb2a48f688f"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
@@ -69,24 +69,24 @@
       "sc:description": "An automatic pipeline for exploration of SRA datasets with sequences as a query",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0338"
-        },
-        {
-          "@id": "edam:operation_0253"
-        },
-        {
           "@id": "edam:operation_0292"
         },
         {
           "@id": "edam:operation_0361"
+        },
+        {
+          "@id": "edam:operation_0338"
+        },
+        {
+          "@id": "edam:operation_0253"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "GPL-3.0",
       "sc:name": "ARA (Automated Record Analysis)",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "https://github.com/maurya-anand/ARA/blob/main/README.md"
@@ -95,7 +95,7 @@
       "sc:url": "https://github.com/maurya-anand/ARA"
     },
     {
-      "@id": "_:Nc7711dd568dc4cb38f1416291451f4dc",
+      "@id": "_:N46ba855c12434f07a412992ca10422dc",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2977"
@@ -106,7 +106,7 @@
       "sc:name": "Nucleic acid sequence"
     },
     {
-      "@id": "_:Nb4ba5ad9d1a24c288553a2ce876e14c3",
+      "@id": "_:N7aa6ac38905e47d195448eb2a48f688f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2526"

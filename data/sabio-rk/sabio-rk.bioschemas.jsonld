@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,64 +36,72 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/gkr1046",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/gkx1065",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/sabio-rk",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Nef2eeb0b109f460d99a6b12d453a9c02"
+          "@id": "_:Nff2116caded843659b5b717e86487687"
         },
         {
-          "@id": "_:N7b2da73447f944038c927b1914da7b77"
+          "@id": "_:N74453658394849e4b52f8dd1ed7a298c"
         },
         {
-          "@id": "_:Ne37d1886820c4e658d6e3f4a1d6f6412"
+          "@id": "_:N6f54eed521e64bd3bd10b5c80cdb3fde"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Nb2af858c0d6542e99a7dbdb866eb74b0"
+          "@id": "_:Naef25e081fba4d57b6ab9ff29ca02342"
         },
         {
-          "@id": "_:N045bd67df4ee4499a6e87bfaf7c9a4ac"
+          "@id": "_:N1d91c9fdf05b4cf1acb13f697ed689b3"
         },
         {
-          "@id": "_:N81b5ad355d2e42be83eda0e2d3e30ad6"
+          "@id": "_:Nf1221bdff7984b218d51d6ef3e981074"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Database portal",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0821"
-        },
-        {
-          "@id": "edam:topic_0219"
-        },
-        {
-          "@id": "edam:topic_2259"
+          "@id": "edam:topic_3292"
         },
         {
           "@id": "edam:topic_3070"
         },
         {
+          "@id": "edam:topic_3344"
+        },
+        {
           "@id": "edam:topic_3473"
+        },
+        {
+          "@id": "edam:topic_0219"
+        },
+        {
+          "@id": "edam:topic_0821"
         },
         {
           "@id": "edam:topic_0602"
         },
         {
-          "@id": "edam:topic_3292"
-        },
-        {
-          "@id": "edam:topic_3344"
+          "@id": "edam:topic_2259"
         }
       ],
       "sc:citation": [
         {
-          "@id": "https://doi.org/10.1093/nar/gkr1046"
+          "@id": "https://doi.org/10.1093/nar/gkx1065"
         },
         {
-          "@id": "https://doi.org/10.1093/nar/gkx1065"
+          "@id": "https://doi.org/10.1093/nar/gkr1046"
         }
       ],
       "sc:description": "Curated database that contains information about biochemical reactions, their kinetic rate equations with parameters and experimental conditions.",
@@ -115,15 +123,7 @@
       "sc:url": "http://sabiork.h-its.org/"
     },
     {
-      "@id": "_:Nef2eeb0b109f460d99a6b12d453a9c02",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2648"
-      },
-      "sc:name": "Reaction kinetics ID (SABIO-RK)"
-    },
-    {
-      "@id": "_:N7b2da73447f944038c927b1914da7b77",
+      "@id": "_:Nff2116caded843659b5b717e86487687",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1011"
@@ -131,7 +131,7 @@
       "sc:name": "EC number"
     },
     {
-      "@id": "_:Ne37d1886820c4e658d6e3f4a1d6f6412",
+      "@id": "_:N74453658394849e4b52f8dd1ed7a298c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2309"
@@ -139,18 +139,15 @@
       "sc:name": "Reaction ID (SABIO-RK)"
     },
     {
-      "@id": "_:Nb2af858c0d6542e99a7dbdb866eb74b0",
+      "@id": "_:N6f54eed521e64bd3bd10b5c80cdb3fde",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2978"
+        "@id": "edam:data_2648"
       },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2331"
-      },
-      "sc:name": "Reaction data"
+      "sc:name": "Reaction kinetics ID (SABIO-RK)"
     },
     {
-      "@id": "_:N045bd67df4ee4499a6e87bfaf7c9a4ac",
+      "@id": "_:Naef25e081fba4d57b6ab9ff29ca02342",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2093"
@@ -161,7 +158,18 @@
       "sc:name": "Data reference"
     },
     {
-      "@id": "_:N81b5ad355d2e42be83eda0e2d3e30ad6",
+      "@id": "_:N1d91c9fdf05b4cf1acb13f697ed689b3",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2978"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2331"
+      },
+      "sc:name": "Reaction data"
+    },
+    {
+      "@id": "_:Nf1221bdff7984b218d51d6ef3e981074",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2024"
@@ -170,14 +178,6 @@
         "@id": "edam:format_2331"
       },
       "sc:name": "Enzyme kinetics data"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gkr1046",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gkx1065",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

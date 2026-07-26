@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -38,23 +38,23 @@
     {
       "@id": "https://bio.tools/anthraxkp",
       "@type": "sc:SoftwareApplication",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3500"
+          "@id": "edam:topic_3324"
         },
         {
           "@id": "edam:topic_0218"
         },
         {
-          "@id": "edam:topic_3397"
-        },
-        {
           "@id": "edam:topic_0089"
         },
         {
-          "@id": "edam:topic_3324"
+          "@id": "edam:topic_3397"
+        },
+        {
+          "@id": "edam:topic_3500"
         }
       ],
       "sc:citation": [
@@ -67,10 +67,10 @@
       "sc:description": "Anthrax Knowledge Portal (AnthraxKP) is a multi-module database management system, which allows researchers to query, browse and download anthrax biomedical resources in multiple formats",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3625"
+          "@id": "edam:operation_3280"
         },
         {
-          "@id": "edam:operation_3280"
+          "@id": "edam:operation_3625"
         },
         {
           "@id": "edam:operation_3778"
@@ -83,8 +83,8 @@
       "sc:name": "AnthraxKP",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:url": "http://139.224.212.120:18095/"
     },

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,10 +36,6 @@
   },
   "@graph": [
     {
-      "@id": "https://orcid.org/0000-0002-0604-3541",
-      "@type": "sc:Person"
-    },
-    {
       "@id": "https://bio.tools/phagege",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
@@ -47,16 +43,16 @@
       },
       "bsc:input": [
         {
-          "@id": "_:Nd0d9f81834fb493c9a364587da28ccab"
+          "@id": "_:N70dc0d5eaac641b4b6d3b18213f56a57"
         },
         {
-          "@id": "_:N1da224d4dc054f448d42323e80a2558f"
+          "@id": "_:Nc2d3b440ac0d42a18fb38a1b2e79f5a0"
         },
         {
-          "@id": "_:N1bea6e30801d4f50b80e7bbfa57dc304"
+          "@id": "_:Ne57ceb1bf6ed4952a02a1c92fcaea97a"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0622"
@@ -64,13 +60,13 @@
       "sc:description": "An interactive webserver for exploratory analysis and visualisation of bacteriophage genomes",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0324"
-        },
-        {
           "@id": "edam:operation_2990"
         },
         {
           "@id": "edam:operation_2409"
+        },
+        {
+          "@id": "edam:operation_0324"
         },
         {
           "@id": "edam:operation_0567"
@@ -84,15 +80,15 @@
       "sc:url": "http://phagege.com"
     },
     {
-      "@id": "_:Nd0d9f81834fb493c9a364587da28ccab",
+      "@id": "_:N70dc0d5eaac641b4b6d3b18213f56a57",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_0872"
+        "@id": "edam:data_3494"
       },
-      "sc:name": "Phylogenetic tree"
+      "sc:name": "DNA sequence"
     },
     {
-      "@id": "_:N1da224d4dc054f448d42323e80a2558f",
+      "@id": "_:Nc2d3b440ac0d42a18fb38a1b2e79f5a0",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1893"
@@ -100,12 +96,16 @@
       "sc:name": "Locus ID"
     },
     {
-      "@id": "_:N1bea6e30801d4f50b80e7bbfa57dc304",
+      "@id": "_:Ne57ceb1bf6ed4952a02a1c92fcaea97a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_3494"
+        "@id": "edam:data_0872"
       },
-      "sc:name": "DNA sequence"
+      "sc:name": "Phylogenetic tree"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-0604-3541",
+      "@type": "sc:Person"
     }
   ]
 }

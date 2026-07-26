@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -43,30 +43,30 @@
       "@id": "https://bio.tools/screen_assembly",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N97559a3297504fe5b2ea032fd70c053e"
+        "@id": "_:N43fafc0bbc004dabae4520a2b612b4ff"
       },
       "bsc:output": [
         {
-          "@id": "_:N1bd1c1f183af46b694681d3c22775600"
+          "@id": "_:Nc00af846d7fb40d49b88c375cb1f4475"
         },
         {
-          "@id": "_:N7149d64c69bf44149f40b048160d3a2c"
+          "@id": "_:N53c9e77932c94607afecb446a5e31f54"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Script",
-        "Command-line tool"
+        "Command-line tool",
+        "Script"
       ],
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0196"
       },
       "sc:citation": [
+        "pubmed:31133745",
+        "pmcid:PMC6650292",
         {
           "@id": "https://doi.org/10.1038/s41588-019-0417-8"
-        },
-        "pmcid:PMC6650292",
-        "pubmed:31133745"
+        }
       ],
       "sc:description": "Screen a bacterial assembly (contigs/CDS or proteins) for nucleotide or protein sequences.\n\nPipeline that screens for presence of genes of interest (GOI) in bacterial assemblies. Generates multiple CSVs and plots that describe which genes are present and how variable their sequence is. Can use DNA or protein query sequences (GOIs) and DNA contigs/fastas or protein fastas as database (db) to search in.",
       "sc:featureList": {
@@ -81,23 +81,7 @@
       "sc:url": "https://github.com/shimbalama/screen_assembly"
     },
     {
-      "@id": "_:N1bd1c1f183af46b694681d3c22775600",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2976"
-      },
-      "sc:name": "Protein sequence"
-    },
-    {
-      "@id": "_:N7149d64c69bf44149f40b048160d3a2c",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2977"
-      },
-      "sc:name": "Nucleic acid sequence"
-    },
-    {
-      "@id": "_:N97559a3297504fe5b2ea032fd70c053e",
+      "@id": "_:N43fafc0bbc004dabae4520a2b612b4ff",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0925"
@@ -106,6 +90,22 @@
         "@id": "edam:format_1929"
       },
       "sc:name": "Sequence assembly"
+    },
+    {
+      "@id": "_:Nc00af846d7fb40d49b88c375cb1f4475",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2977"
+      },
+      "sc:name": "Nucleic acid sequence"
+    },
+    {
+      "@id": "_:N53c9e77932c94607afecb446a5e31f54",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2976"
+      },
+      "sc:name": "Protein sequence"
     }
   ]
 }

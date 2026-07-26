@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,19 +40,19 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Nda712fbc116746ea974442d78656d3cf"
+          "@id": "_:N2376d179b9fc445f9e3111c996065d50"
         },
         {
-          "@id": "_:N701baf2a7ab14565afe141ea16c8dde7"
+          "@id": "_:N600b1e52914848c3bb1815e49a28597b"
         },
         {
-          "@id": "_:Naa1188d01e464d08a2388b688be25b12"
+          "@id": "_:Ne58dac57952645ea938badf119317ffe"
         }
       ],
       "bsc:output": {
-        "@id": "_:N03b4f6852a83486bb9ce7959788b9465"
+        "@id": "_:N0ba7f6b3c98746bc92be3cdde2643c8b"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
@@ -77,9 +77,9 @@
       "sc:license": "GPL-2.0-only",
       "sc:name": "FRGEpistasis",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://bioconductor.org/packages/FRGEpistasis"
@@ -88,73 +88,73 @@
       "sc:url": "https://bioconductor.org/packages/FRGEpistasis"
     },
     {
-      "@id": "_:Nda712fbc116746ea974442d78656d3cf",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1017"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_3286"
-        },
-        {
-          "@id": "edam:format_3475"
-        },
-        {
-          "@id": "edam:format_3285"
-        }
-      ],
-      "sc:name": "Sequence range"
-    },
-    {
-      "@id": "_:N701baf2a7ab14565afe141ea16c8dde7",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0920"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_3286"
-        },
-        {
-          "@id": "edam:format_3475"
-        },
-        {
-          "@id": "edam:format_3285"
-        }
-      ],
-      "sc:name": "Genotype/phenotype report"
-    },
-    {
-      "@id": "_:Naa1188d01e464d08a2388b688be25b12",
+      "@id": "_:N2376d179b9fc445f9e3111c996065d50",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0955"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_3475"
+          "@id": "edam:format_3285"
         },
         {
           "@id": "edam:format_3286"
         },
         {
-          "@id": "edam:format_3285"
+          "@id": "edam:format_3475"
+        },
+        {
+          "@id": "edam:format_2330"
         }
       ],
       "sc:name": "Data index"
     },
     {
-      "@id": "_:N03b4f6852a83486bb9ce7959788b9465",
+      "@id": "_:N600b1e52914848c3bb1815e49a28597b",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0920"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3285"
+        },
+        {
+          "@id": "edam:format_3286"
+        },
+        {
+          "@id": "edam:format_3475"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Genotype/phenotype report"
+    },
+    {
+      "@id": "_:Ne58dac57952645ea938badf119317ffe",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1017"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3285"
+        },
+        {
+          "@id": "edam:format_3286"
+        },
+        {
+          "@id": "edam:format_3475"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Sequence range"
+    },
+    {
+      "@id": "_:N0ba7f6b3c98746bc92be3cdde2643c8b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2955"

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,12 +40,12 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Support",
       "bsc:input": {
-        "@id": "_:N2f77d6b37f0a4381a1d2bf3c289ec309"
+        "@id": "_:N57be5bacaae24b2e9df0289e55299bc9"
       },
       "bsc:output": {
-        "@id": "_:Nad5bdb7724de4aab9cf22e4e9102589d"
+        "@id": "_:N5131fb92a5ab4238855f9ba5d4c9a498"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0080"
@@ -59,8 +59,8 @@
       },
       "sc:name": "Dotter",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:provider": "bils.se",
       "sc:softwareHelp": {
@@ -70,20 +70,20 @@
       "sc:url": "http://sonnhammer.sbc.su.se/Dotter.html"
     },
     {
-      "@id": "_:Nad5bdb7724de4aab9cf22e4e9102589d",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2161"
-      },
-      "sc:name": "Sequence similarity plot"
-    },
-    {
-      "@id": "_:N2f77d6b37f0a4381a1d2bf3c289ec309",
+      "@id": "_:N57be5bacaae24b2e9df0289e55299bc9",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2976"
       },
       "sc:name": "Protein sequence"
+    },
+    {
+      "@id": "_:N5131fb92a5ab4238855f9ba5d4c9a498",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2161"
+      },
+      "sc:name": "Sequence similarity plot"
     },
     {
       "@id": "https://doi.org/10.1016/0378-1119(95)00714-8",

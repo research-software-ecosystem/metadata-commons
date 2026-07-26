@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,25 +40,25 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Daniel Georgiev",
       "bsc:output": {
-        "@id": "_:N12568238f50a459db8b0b6091f847bae"
+        "@id": "_:N19161a74dc5e492d8419e3394025a138"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web application",
-        "Desktop application"
+        "Desktop application",
+        "Web application"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_2640"
+          "@id": "edam:topic_3303"
         },
         {
-          "@id": "edam:topic_3303"
+          "@id": "edam:topic_2640"
         }
       ],
       "sc:author": [
-        "Lucie Houdová",
         "Miloš Fetter",
-        "Daniel Georgiev"
+        "Daniel Georgiev",
+        "Lucie Houdová"
       ],
       "sc:contributor": "TA CR",
       "sc:description": "Haplotype analyzer for the Czech population.",
@@ -68,16 +68,16 @@
       "sc:funder": "TA CR",
       "sc:name": "HANA",
       "sc:operatingSystem": [
-        "Windows",
         "Linux",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:provider": "University of West Bohemia, Czech Republic",
       "sc:softwareVersion": "1",
       "sc:url": "https://cds-hana.zcu.cz/"
     },
     {
-      "@id": "_:N12568238f50a459db8b0b6091f847bae",
+      "@id": "_:N19161a74dc5e492d8419e3394025a138",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"

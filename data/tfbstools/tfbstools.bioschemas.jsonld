@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -43,15 +43,15 @@
       "@id": "https://bio.tools/tfbstools",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N5d81f58a4b7343d98339f1eeee6e09f0"
+        "@id": "_:Nf0ee1f98f1a44de4aaef1adcc9c8241b"
       },
       "bsc:output": {
-        "@id": "_:N39b0c1aa109346dfbdad83e691ea7d4a"
+        "@id": "_:N3bbb27ecbc7449baae6d369e2545d5b0"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0749"
@@ -63,20 +63,20 @@
       "sc:description": "TFBSTools is a package for the analysis and manipulation of transcription factor binding sites. It includes matrices conversion between Position Frequency Matirx (PFM), Position Weight Matirx (PWM) and Information Content Matrix (ICM). It can also scan putative TFBS from sequence/alignment, query JASPAR database and provides a wrapper of de novo motif discovery software.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0438"
+          "@id": "edam:operation_0239"
         },
         {
           "@id": "edam:operation_0445"
         },
         {
-          "@id": "edam:operation_0239"
+          "@id": "edam:operation_0438"
         }
       ],
       "sc:license": "GPL-2.0-only",
       "sc:name": "TFBSTools",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -86,18 +86,7 @@
       "sc:url": "https://bioconductor.org/packages/TFBSTools"
     },
     {
-      "@id": "_:N39b0c1aa109346dfbdad83e691ea7d4a",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2884"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3547"
-      },
-      "sc:name": "Plot"
-    },
-    {
-      "@id": "_:N5d81f58a4b7343d98339f1eeee6e09f0",
+      "@id": "_:Nf0ee1f98f1a44de4aaef1adcc9c8241b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2887"
@@ -106,6 +95,17 @@
         "@id": "edam:format_2330"
       },
       "sc:name": "Nucleic acid sequence record"
+    },
+    {
+      "@id": "_:N3bbb27ecbc7449baae6d369e2545d5b0",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2884"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3547"
+      },
+      "sc:name": "Plot"
     }
   ]
 }

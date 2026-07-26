@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,38 +36,42 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1038/s41592-019-0616-3",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/mmvec",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N6cc52c8f03534eb7b0f82c19154d8f8b"
+        "@id": "_:N5036c50759834b6386ee5d1f152d23b6"
       },
       "bsc:output": [
         {
-          "@id": "_:N0be6b6853d2f4aa0900ce654a10a3b9f"
+          "@id": "_:N75a1746f142c47028aacba3dfed75834"
         },
         {
-          "@id": "_:Nf0120271e67e4163855e6cb17760f201"
+          "@id": "_:Nb93c2ae2a995456a89543192bd80ba1a"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
           "@id": "edam:topic_3172"
         },
         {
-          "@id": "edam:topic_0602"
+          "@id": "edam:topic_3301"
         },
         {
-          "@id": "edam:topic_3301"
+          "@id": "edam:topic_0602"
         }
       ],
       "sc:citation": [
         "pubmed:31686038",
+        "pmcid:PMC6884698",
         {
           "@id": "https://doi.org/10.1038/s41592-019-0616-3"
-        },
-        "pmcid:PMC6884698"
+        }
       ],
       "sc:description": "Neural networks for estimating microbe-metabolite interactions through their co-occurence probabilities.",
       "sc:featureList": [
@@ -82,9 +86,9 @@
       "sc:license": "BSD-3-Clause",
       "sc:name": "mmvec",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://github.com/knightlab-analyses/multiomic-cooccurrences"
@@ -92,29 +96,7 @@
       "sc:url": "https://github.com/biocore/mmvec"
     },
     {
-      "@id": "_:N0be6b6853d2f4aa0900ce654a10a3b9f",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2082"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1915"
-      },
-      "sc:name": "Matrix"
-    },
-    {
-      "@id": "_:Nf0120271e67e4163855e6cb17760f201",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2884"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1915"
-      },
-      "sc:name": "Plot"
-    },
-    {
-      "@id": "_:N6cc52c8f03534eb7b0f82c19154d8f8b",
+      "@id": "_:N5036c50759834b6386ee5d1f152d23b6",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2082"
@@ -125,8 +107,26 @@
       "sc:name": "Matrix"
     },
     {
-      "@id": "https://doi.org/10.1038/s41592-019-0616-3",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N75a1746f142c47028aacba3dfed75834",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2082"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1915"
+      },
+      "sc:name": "Matrix"
+    },
+    {
+      "@id": "_:Nb93c2ae2a995456a89543192bd80ba1a",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2884"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1915"
+      },
+      "sc:name": "Plot"
     }
   ]
 }

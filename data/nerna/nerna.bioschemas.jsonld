@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -38,9 +38,12 @@
     {
       "@id": "https://bio.tools/nerna",
       "@type": "sc:SoftwareApplication",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Workflow",
       "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_0659"
+        },
         {
           "@id": "edam:topic_0199"
         },
@@ -48,36 +51,33 @@
           "@id": "edam:topic_3474"
         },
         {
-          "@id": "edam:topic_0659"
-        },
-        {
           "@id": "edam:topic_3170"
         }
       ],
       "sc:citation": [
+        "pubmed:37075604",
         {
           "@id": "https://doi.org/10.1016/j.compbiomed.2023.106861"
-        },
-        "pubmed:37075604"
+        }
       ],
       "sc:description": "A negative data generation framework for machine learning applications of noncoding RNAs.",
       "sc:featureList": [
+        {
+          "@id": "edam:operation_0303"
+        },
         {
           "@id": "edam:operation_3792"
         },
         {
           "@id": "edam:operation_0463"
-        },
-        {
-          "@id": "edam:operation_0303"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "MIT",
       "sc:name": "NeRNA",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:url": "https://github.com/Mehmeteminorhan/NegativeRNA"

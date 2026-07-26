@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,34 +40,34 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N706c472dd532437fb2436220723161a4"
+          "@id": "_:Nc9d22f09801c406b94788fa957175a4b"
         },
         {
-          "@id": "_:Nb516ff3447fc4b77b77b8d5281e0aa7e"
+          "@id": "_:Ndc8a049c51b540c198dedff62120d023"
         },
         {
-          "@id": "_:N9375e5ba5f964c5db524b5d350f2c8a3"
+          "@id": "_:N6fe94d30b43a4f51ab94072525decc6a"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N67d1cd4ae78f423d9ebf23895ca5f799"
+          "@id": "_:Nd583735383a64dc7a1e1b88e821802b0"
         },
         {
-          "@id": "_:Nf8f9a2530d3b4e5db0ea32d70222bac0"
+          "@id": "_:Nc6e34bf162ef458695bd1afb1cab2fe2"
         },
         {
-          "@id": "_:N8a2f020fcde443309f8a0215e53a990d"
+          "@id": "_:Nc4f25d9df4b7430486b250001c9c6383"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3520"
+          "@id": "edam:topic_0121"
         },
         {
-          "@id": "edam:topic_0121"
+          "@id": "edam:topic_3520"
         }
       ],
       "sc:description": "Extracts pre-defined peaks or regions into a uniform array.",
@@ -76,8 +76,8 @@
       },
       "sc:name": "Xtractor",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "http://www.ms-utils.org/Xtractor/"
@@ -85,7 +85,7 @@
       "sc:url": "http://www.ms-utils.org/Xtractor/"
     },
     {
-      "@id": "_:N706c472dd532437fb2436220723161a4",
+      "@id": "_:Nc9d22f09801c406b94788fa957175a4b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2536"
@@ -96,7 +96,7 @@
       "sc:name": "Mass spectrometry data"
     },
     {
-      "@id": "_:Nb516ff3447fc4b77b77b8d5281e0aa7e",
+      "@id": "_:Ndc8a049c51b540c198dedff62120d023",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0943"
@@ -107,7 +107,7 @@
       "sc:name": "Mass spectrometry spectra"
     },
     {
-      "@id": "_:N9375e5ba5f964c5db524b5d350f2c8a3",
+      "@id": "_:N6fe94d30b43a4f51ab94072525decc6a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0944"
@@ -118,7 +118,7 @@
       "sc:name": "Peptide mass fingerprint"
     },
     {
-      "@id": "_:N67d1cd4ae78f423d9ebf23895ca5f799",
+      "@id": "_:Nd583735383a64dc7a1e1b88e821802b0",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2536"
@@ -129,18 +129,7 @@
       "sc:name": "Mass spectrometry data"
     },
     {
-      "@id": "_:Nf8f9a2530d3b4e5db0ea32d70222bac0",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0944"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Peptide mass fingerprint"
-    },
-    {
-      "@id": "_:N8a2f020fcde443309f8a0215e53a990d",
+      "@id": "_:Nc6e34bf162ef458695bd1afb1cab2fe2",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0943"
@@ -149,6 +138,17 @@
         "@id": "edam:format_2330"
       },
       "sc:name": "Mass spectrometry spectra"
+    },
+    {
+      "@id": "_:Nc4f25d9df4b7430486b250001c9c6383",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0944"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Peptide mass fingerprint"
     }
   ]
 }

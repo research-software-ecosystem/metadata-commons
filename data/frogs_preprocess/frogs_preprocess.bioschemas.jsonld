@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -41,43 +41,43 @@
       "biotools:primaryContact": "Galaxy Support Team",
       "bsc:input": [
         {
-          "@id": "_:N4b759e52017f4ae7881ab83827b62952"
+          "@id": "_:Nc07a880887d94d65a266cbacd5c94654"
         },
         {
-          "@id": "_:Nf298d818985244f8b274dd05372368b2"
+          "@id": "_:Na7f4e1419ef442908008700c0eae0db4"
         },
         {
-          "@id": "_:Ncd8c5d8c7bbc47c1b44623e6cc388b98"
+          "@id": "_:Nddce042b52f74d3ca6f43becec8783bf"
         },
         {
-          "@id": "_:N2ad94681147741d395fa7dd49d171264"
+          "@id": "_:Ne8a604fb75b94fddbdfdaba01fd2a8e6"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N6489f126c4f04de6a61e638a6e58fdaf"
+          "@id": "_:Nb798aea908be497e85bc68032b2da46c"
         },
         {
-          "@id": "_:N871e9801955e496e9cab1183642407d4"
+          "@id": "_:Nfb1d18ac0b3046869bcb3bf029e265f2"
         },
         {
-          "@id": "_:N87a8980f179c466db927c14fe6779130"
+          "@id": "_:N1090ba34eb4b45dfa5df91393323f98d"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_3174"
-        },
-        {
-          "@id": "edam:topic_3168"
-        },
         {
           "@id": "edam:topic_3572"
         },
         {
+          "@id": "edam:topic_3174"
+        },
+        {
           "@id": "edam:topic_3519"
+        },
+        {
+          "@id": "edam:topic_3168"
         }
       ],
       "sc:citation": [
@@ -94,9 +94,9 @@
       },
       "sc:name": "frogs_preprocess",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://galaxy.pasteur.fr/root?tool_id=toolshed.pasteur.fr%2Frepos%2Fmvalade%2Ffrogs%2FFROGS_preprocess%2F1.4.2"
@@ -105,7 +105,7 @@
       "sc:url": "http://frogs.toulouse.inra.fr/"
     },
     {
-      "@id": "_:N4b759e52017f4ae7881ab83827b62952",
+      "@id": "_:Nc07a880887d94d65a266cbacd5c94654",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0006"
@@ -116,7 +116,7 @@
       "sc:name": "Data"
     },
     {
-      "@id": "_:Nf298d818985244f8b274dd05372368b2",
+      "@id": "_:Na7f4e1419ef442908008700c0eae0db4",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0006"
@@ -127,7 +127,7 @@
       "sc:name": "Data"
     },
     {
-      "@id": "_:Ncd8c5d8c7bbc47c1b44623e6cc388b98",
+      "@id": "_:Nddce042b52f74d3ca6f43becec8783bf",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0006"
@@ -138,7 +138,7 @@
       "sc:name": "Data"
     },
     {
-      "@id": "_:N2ad94681147741d395fa7dd49d171264",
+      "@id": "_:Ne8a604fb75b94fddbdfdaba01fd2a8e6",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0006"
@@ -149,18 +149,7 @@
       "sc:name": "Data"
     },
     {
-      "@id": "_:N6489f126c4f04de6a61e638a6e58fdaf",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0863"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1929"
-      },
-      "sc:name": "Sequence alignment"
-    },
-    {
-      "@id": "_:N871e9801955e496e9cab1183642407d4",
+      "@id": "_:Nb798aea908be497e85bc68032b2da46c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0006"
@@ -171,7 +160,7 @@
       "sc:name": "Data"
     },
     {
-      "@id": "_:N87a8980f179c466db927c14fe6779130",
+      "@id": "_:Nfb1d18ac0b3046869bcb3bf029e265f2",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"
@@ -182,11 +171,22 @@
       "sc:name": "Report"
     },
     {
-      "@id": "https://doi.org/10.1093/nar/gkw343",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N1090ba34eb4b45dfa5df91393323f98d",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0863"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "Sequence alignment"
     },
     {
       "@id": "https://doi.org/10.7490/f1000research.1114334.1",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/gkw343",
       "@type": "sc:CreativeWork"
     }
   ]

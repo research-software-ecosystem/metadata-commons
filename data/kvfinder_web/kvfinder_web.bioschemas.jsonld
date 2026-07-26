@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,31 +36,35 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/gkad324",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/kvfinder_web",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N7b49c505c6a143d28cc8e9f401004ac5"
+        "@id": "_:Nc891923c577a433788daa6a517042b18"
       },
       "bsc:output": {
-        "@id": "_:N81862af6ef2946d2b11da7f0a65e5a20"
+        "@id": "_:N62f93f30fbc74ffb870291c9c74f9af3"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3047"
+          "@id": "edam:topic_3489"
         },
         {
           "@id": "edam:topic_3068"
+        },
+        {
+          "@id": "edam:topic_3047"
         },
         {
           "@id": "edam:topic_0632"
         },
         {
           "@id": "edam:topic_0081"
-        },
-        {
-          "@id": "edam:topic_3489"
         }
       ],
       "sc:citation": [
@@ -73,16 +77,16 @@
       "sc:description": "A web-based application for detecting and characterizing biomolecular cavities.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3092"
-        },
-        {
-          "@id": "edam:operation_3760"
+          "@id": "edam:operation_3279"
         },
         {
           "@id": "edam:operation_3278"
         },
         {
-          "@id": "edam:operation_3279"
+          "@id": "edam:operation_3092"
+        },
+        {
+          "@id": "edam:operation_3760"
         },
         {
           "@id": "edam:operation_4009"
@@ -92,22 +96,14 @@
       "sc:license": "Apache-2.0",
       "sc:name": "KVFinder-web",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:url": "https://kvfinder-web.cnpem.br"
     },
     {
-      "@id": "_:N81862af6ef2946d2b11da7f0a65e5a20",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0889"
-      },
-      "sc:name": "Structural profile"
-    },
-    {
-      "@id": "_:N7b49c505c6a143d28cc8e9f401004ac5",
+      "@id": "_:Nc891923c577a433788daa6a517042b18",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0883"
@@ -118,8 +114,12 @@
       "sc:name": "Structure"
     },
     {
-      "@id": "https://doi.org/10.1093/nar/gkad324",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N62f93f30fbc74ffb870291c9c74f9af3",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0889"
+      },
+      "sc:name": "Structural profile"
     }
   ]
 }

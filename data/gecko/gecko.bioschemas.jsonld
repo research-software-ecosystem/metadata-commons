@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,21 +36,25 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1186/s12859-015-0679-9",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/gecko",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Esteban Pérez-Wohlfeil",
       "bsc:input": [
         {
-          "@id": "_:N2cfb226b0df14d77bfa8ceaccb41bf05"
+          "@id": "_:Ncef3d453c8314ebba20d20528589391d"
         },
         {
-          "@id": "_:Nda36aec7f1ae4a539fff80b9c736be9b"
+          "@id": "_:N48f0d6f87143411e898c43ebd5cd26ad"
         }
       ],
       "bsc:output": {
-        "@id": "_:N58fe708acf494c4a922fbf4ffa72ce71"
+        "@id": "_:N27407c28e54648dda9f81bf1a3126093"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Web application"
@@ -59,11 +63,11 @@
         "@id": "edam:topic_0080"
       },
       "sc:citation": [
+        "pubmed:26260162",
+        "pmcid:PMC4531504",
         {
           "@id": "https://doi.org/10.1186/s12859-015-0679-9"
-        },
-        "pmcid:PMC4531504",
-        "pubmed:26260162"
+        }
       ],
       "sc:description": "Software aimed at pairwise sequence comparison generating high quality results (equivalent to MUMmer) with controlled memory consumption and comparable or faster execution times particularly with long sequences.",
       "sc:featureList": {
@@ -81,7 +85,29 @@
       "sc:url": "http://bitlab-es.com/gecko/"
     },
     {
-      "@id": "_:N58fe708acf494c4a922fbf4ffa72ce71",
+      "@id": "_:Ncef3d453c8314ebba20d20528589391d",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3494"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "DNA sequence"
+    },
+    {
+      "@id": "_:N48f0d6f87143411e898c43ebd5cd26ad",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3494"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "DNA sequence"
+    },
+    {
+      "@id": "_:N27407c28e54648dda9f81bf1a3126093",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1381"
@@ -90,32 +116,6 @@
         "@id": "edam:format_2333"
       },
       "sc:name": "Sequence alignment (pair)"
-    },
-    {
-      "@id": "_:N2cfb226b0df14d77bfa8ceaccb41bf05",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3494"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1929"
-      },
-      "sc:name": "DNA sequence"
-    },
-    {
-      "@id": "_:Nda36aec7f1ae4a539fff80b9c736be9b",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3494"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1929"
-      },
-      "sc:name": "DNA sequence"
-    },
-    {
-      "@id": "https://doi.org/10.1186/s12859-015-0679-9",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -43,25 +43,25 @@
       "@id": "https://bio.tools/pride_toolsuite",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N0b5a19379e5a4ec695812c0196a8749f"
+        "@id": "_:Nf85107dfb5a84fc5ae9ff1fef82c07d4"
       },
       "bsc:output": {
-        "@id": "_:N8101ee595d1c4a8a9e1de817a7637b70"
+        "@id": "_:N02bc778a787744358e6bad85b75438b8"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Suite",
-        "Desktop application"
+        "Desktop application",
+        "Suite"
       ],
       "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_0219"
+        },
         {
           "@id": "edam:topic_0121"
         },
         {
           "@id": "edam:topic_3520"
-        },
-        {
-          "@id": "edam:topic_0219"
         }
       ],
       "sc:citation": {
@@ -73,8 +73,8 @@
       },
       "sc:name": "PRIDE Toolsuite",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "https://code.google.com/archive/p/pride-toolsuite/"
@@ -82,7 +82,7 @@
       "sc:url": "https://github.com/PRIDE-Toolsuite"
     },
     {
-      "@id": "_:N0b5a19379e5a4ec695812c0196a8749f",
+      "@id": "_:Nf85107dfb5a84fc5ae9ff1fef82c07d4",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0006"
@@ -93,7 +93,7 @@
       "sc:name": "Data"
     },
     {
-      "@id": "_:N8101ee595d1c4a8a9e1de817a7637b70",
+      "@id": "_:N02bc778a787744358e6bad85b75438b8",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0006"

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,35 +36,39 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/gkr1027",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/protonet",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N18fb083efbda40209dbe72cd034b6e8c"
+          "@id": "_:N1a1d50ca05e94c1780e4c7a09be2c449"
         },
         {
-          "@id": "_:Neacc6de5e8214b3f9b798984139c390d"
+          "@id": "_:N98c03ecccb4147beabfd733950dd1a5d"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N0eaf5eabf6bb4124843867ce36a2cc44"
+          "@id": "_:N129f4276943e4f2490a3278e567628dd"
         },
         {
-          "@id": "_:Ne4bf93dcbd6e402abfe49a4831a8057d"
+          "@id": "_:Nc682233f8d17474dbe833ee1f20c6292"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Database portal",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0623"
       },
       "sc:citation": [
+        "pubmed:22121228",
         "pmcid:PMC3245180",
         {
           "@id": "https://doi.org/10.1093/nar/gkr1027"
-        },
-        "pubmed:22121228"
+        }
       ],
       "sc:description": "Automatic hierarchical classification of protein sequences.",
       "sc:featureList": {
@@ -72,8 +76,8 @@
       },
       "sc:name": "ProtoNet",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -82,7 +86,23 @@
       "sc:url": "http://www.protonet.cs.huji.ac.il/"
     },
     {
-      "@id": "_:N0eaf5eabf6bb4124843867ce36a2cc44",
+      "@id": "_:N1a1d50ca05e94c1780e4c7a09be2c449",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3021"
+      },
+      "sc:name": "UniProt accession"
+    },
+    {
+      "@id": "_:N98c03ecccb4147beabfd733950dd1a5d",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3021"
+      },
+      "sc:name": "UniProt accession"
+    },
+    {
+      "@id": "_:N129f4276943e4f2490a3278e567628dd",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0907"
@@ -93,7 +113,7 @@
       "sc:name": "Protein family report"
     },
     {
-      "@id": "_:Ne4bf93dcbd6e402abfe49a4831a8057d",
+      "@id": "_:Nc682233f8d17474dbe833ee1f20c6292",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0907"
@@ -102,26 +122,6 @@
         "@id": "edam:format_2331"
       },
       "sc:name": "Protein family report"
-    },
-    {
-      "@id": "_:N18fb083efbda40209dbe72cd034b6e8c",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3021"
-      },
-      "sc:name": "UniProt accession"
-    },
-    {
-      "@id": "_:Neacc6de5e8214b3f9b798984139c390d",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3021"
-      },
-      "sc:name": "UniProt accession"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gkr1027",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

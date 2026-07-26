@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,15 +36,19 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1021/acs.jcim.6b00174",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/swisssimilarity",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nfdd4dd73c433468686c6fb2c5793b232"
+        "@id": "_:N7ada877a38414960a40dbf140449e4a8"
       },
       "bsc:output": {
-        "@id": "_:N8636f875fe2c40de845771fdad9964d1"
+        "@id": "_:N61791c65ba2f4b6598a20f26db9f08a7"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
@@ -66,8 +70,8 @@
       },
       "sc:name": "SwissSimilarity",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:provider": "SIB Swiss Institute of Bioinformatics",
@@ -78,15 +82,7 @@
       "sc:url": "http://www.swisssimilarity.ch/"
     },
     {
-      "@id": "_:N8636f875fe2c40de845771fdad9964d1",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2048"
-      },
-      "sc:name": "Report"
-    },
-    {
-      "@id": "_:Nfdd4dd73c433468686c6fb2c5793b232",
+      "@id": "_:N7ada877a38414960a40dbf140449e4a8",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2301"
@@ -94,8 +90,12 @@
       "sc:name": "SMILES string"
     },
     {
-      "@id": "https://doi.org/10.1021/acs.jcim.6b00174",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N61791c65ba2f4b6598a20f26db9f08a7",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2048"
+      },
+      "sc:name": "Report"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,31 +36,35 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/btad279",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/kimma",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N1d19e15422da44b2af6327a0fc1f0cc8"
+        "@id": "_:Nca1a6cd3c10a448c9758d7d0eff3d4b2"
       },
       "bsc:output": {
-        "@id": "_:Ncdbad16656374907a3df1cf5dd9ff133"
+        "@id": "_:N22c1ce376bc14310bcd508305da52033"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Library",
       "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_3400"
+        },
         {
           "@id": "edam:topic_0102"
         },
         {
-          "@id": "edam:topic_0769"
-        },
-        {
-          "@id": "edam:topic_3400"
+          "@id": "edam:topic_3170"
         },
         {
           "@id": "edam:topic_3308"
         },
         {
-          "@id": "edam:topic_3170"
+          "@id": "edam:topic_0769"
         }
       ],
       "sc:citation": [
@@ -73,16 +77,16 @@
       "sc:description": "Flexible linear mixed effects modeling with kinship covariance for RNA-seq data.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3891"
-        },
-        {
-          "@id": "edam:operation_3196"
-        },
-        {
           "@id": "edam:operation_3223"
         },
         {
+          "@id": "edam:operation_3891"
+        },
+        {
           "@id": "edam:operation_2436"
+        },
+        {
+          "@id": "edam:operation_3196"
         },
         {
           "@id": "edam:operation_3766"
@@ -92,30 +96,22 @@
       "sc:license": "GPL-3.0",
       "sc:name": "kimma",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": [
         {
-          "@id": "https://bigslu.github.io/kimma_vignette/kimma_vignette.html"
+          "@id": "https://bigslu.github.io/kimma_vignette/"
         },
         {
-          "@id": "https://bigslu.github.io/kimma_vignette/"
+          "@id": "https://bigslu.github.io/kimma_vignette/kimma_vignette.html"
         }
       ],
       "sc:url": "https://github.com/BIGslu/kimma"
     },
     {
-      "@id": "_:Ncdbad16656374907a3df1cf5dd9ff133",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0950"
-      },
-      "sc:name": "Mathematical model"
-    },
-    {
-      "@id": "_:N1d19e15422da44b2af6327a0fc1f0cc8",
+      "@id": "_:Nca1a6cd3c10a448c9758d7d0eff3d4b2",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3917"
@@ -123,8 +119,12 @@
       "sc:name": "Count matrix"
     },
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btad279",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N22c1ce376bc14310bcd508305da52033",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0950"
+      },
+      "sc:name": "Mathematical model"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,27 +36,23 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1002/trc2.12350",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/taca",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Ncf5a9d1f921d490bb8c0eae93072c077"
+          "@id": "_:N0aa41caeffe94713bb943c524fef9dfe"
         },
         {
-          "@id": "_:Ncd5b60242849444688450b0b7e5e45b0"
+          "@id": "_:N5fff1cf639754e55abd5fd55b66d993a"
         },
         {
-          "@id": "_:Nc1c5f4293f9f45c6a62c9a451b6ded44"
+          "@id": "_:N87add98811034ebd807747409165d35a"
         },
         {
-          "@id": "_:N327813a4926f4c73b0fa5fa8ffd11c76"
+          "@id": "_:N7febb332c85a4c569c0d1bddc3c0c3e4"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
@@ -66,21 +62,21 @@
           "@id": "edam:topic_0634"
         },
         {
-          "@id": "edam:topic_3308"
+          "@id": "edam:topic_0108"
         },
         {
           "@id": "edam:topic_0154"
         },
         {
-          "@id": "edam:topic_0108"
+          "@id": "edam:topic_3308"
         }
       ],
       "sc:citation": [
+        "pubmed:36254161",
         "pmcid:PMC9558163",
         {
           "@id": "https://doi.org/10.1002/trc2.12350"
-        },
-        "pubmed:36254161"
+        }
       ],
       "sc:description": "A single-cell molecular map for translational therapeutics accelerator in Alzheimer's disease.",
       "sc:featureList": [
@@ -91,31 +87,31 @@
           "@id": "edam:operation_2436"
         },
         {
-          "@id": "edam:operation_3938"
+          "@id": "edam:operation_2492"
         },
         {
-          "@id": "edam:operation_2492"
+          "@id": "edam:operation_3938"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:name": "TACA",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:url": "https://taca.lerner.ccf.org/"
     },
     {
-      "@id": "_:Ncf5a9d1f921d490bb8c0eae93072c077",
+      "@id": "_:N0aa41caeffe94713bb943c524fef9dfe",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_1026"
+        "@id": "edam:data_2899"
       },
-      "sc:name": "Gene symbol"
+      "sc:name": "Drug name"
     },
     {
-      "@id": "_:Ncd5b60242849444688450b0b7e5e45b0",
+      "@id": "_:N5fff1cf639754e55abd5fd55b66d993a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2326"
@@ -123,7 +119,15 @@
       "sc:name": "DrugBank ID"
     },
     {
-      "@id": "_:Nc1c5f4293f9f45c6a62c9a451b6ded44",
+      "@id": "_:N87add98811034ebd807747409165d35a",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1026"
+      },
+      "sc:name": "Gene symbol"
+    },
+    {
+      "@id": "_:N7febb332c85a4c569c0d1bddc3c0c3e4",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1904"
@@ -131,12 +135,8 @@
       "sc:name": "Locus ID (EntrezGene)"
     },
     {
-      "@id": "_:N327813a4926f4c73b0fa5fa8ffd11c76",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2899"
-      },
-      "sc:name": "Drug name"
+      "@id": "https://doi.org/10.1002/trc2.12350",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

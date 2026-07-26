@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,17 +36,21 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/bth230",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/BioMercator",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Nb4dd8ec1005646af8d540aab3a2672d8"
+          "@id": "_:Nb08e67d8440e443caf62d7b22f366b5e"
         },
         {
-          "@id": "_:N92e4383a005a450ca8614b45444a53af"
+          "@id": "_:N6408cb5ba8214402b30ba519d3abb980"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Desktop application",
       "sc:applicationSubCategory": [
         {
@@ -57,10 +61,10 @@
         }
       ],
       "sc:citation": [
+        "pubmed:15059820",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/bth230"
-        },
-        "pubmed:15059820"
+        }
       ],
       "sc:description": "BioMercator is a software that provides a complete set of algorithms and visualization tool covering all steps required to perform QTL meta-analysis, graphical representation of large datasets. User may import sequence and genome annotations datasets within the software in order to display functional annotation related to QTL and meta-QTL.",
       "sc:featureList": [
@@ -76,30 +80,14 @@
       "sc:name": "BioMercator",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:softwareVersion": "4.2.3",
       "sc:url": "https://sourcesup.renater.fr/projects/biomercator"
     },
     {
-      "@id": "_:Nb4dd8ec1005646af8d540aab3a2672d8",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1860"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2332"
-        },
-        {
-          "@id": "edam:format_2330"
-        }
-      ],
-      "sc:name": "QTL map"
-    },
-    {
-      "@id": "_:N92e4383a005a450ca8614b45444a53af",
+      "@id": "_:Nb08e67d8440e443caf62d7b22f366b5e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1288"
@@ -110,8 +98,20 @@
       "sc:name": "Genome map"
     },
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/bth230",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N6408cb5ba8214402b30ba519d3abb980",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1860"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2330"
+        },
+        {
+          "@id": "edam:format_2332"
+        }
+      ],
+      "sc:name": "QTL map"
     }
   ]
 }

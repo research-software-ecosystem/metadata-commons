@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -46,39 +46,39 @@
         "@id": "https://orcid.org/0000-0003-2373-769X"
       },
       "bsc:input": {
-        "@id": "_:N04df7e8040a74e42b68b51da657179f8"
+        "@id": "_:N598452bc10134e0b9620eef6ad688389"
       },
       "bsc:output": [
         {
-          "@id": "_:N74855a8e28f540de97eaf2682ea2535e"
+          "@id": "_:Na6153d15a82d4c08b9b6d62e82f1ce5b"
         },
         {
-          "@id": "_:Ne77e416ebd054617b870f505f021abbc"
+          "@id": "_:Nd4f87ec132af45fc98ed798cabd83a1e"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web API",
         "Database portal",
+        "Web API",
         "Web application"
       ],
       "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_3053"
+        },
         {
           "@id": "edam:topic_2640"
         },
         {
           "@id": "edam:topic_0154"
-        },
-        {
-          "@id": "edam:topic_3053"
         }
       ],
       "sc:citation": [
+        "pubmed:31173067",
+        "pmcid:PMC6853644",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btz465"
-        },
-        "pubmed:31173067",
-        "pmcid:PMC6853644"
+        }
       ],
       "sc:description": "Tool to prioritize therapeutic vulnerabilities in cancer.",
       "sc:featureList": [
@@ -86,23 +86,23 @@
           "@id": "edam:operation_3501"
         },
         {
-          "@id": "edam:operation_0463"
+          "@id": "edam:operation_3196"
         },
         {
-          "@id": "edam:operation_3196"
+          "@id": "edam:operation_0463"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "APL-1.0",
       "sc:name": "vulcanSpot",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": [
-        "CNIO",
-        "BU_CNIO"
+        "BU_CNIO",
+        "CNIO"
       ],
       "sc:softwareHelp": {
         "@id": "http://www.vulcanspot.org/help"
@@ -111,39 +111,7 @@
       "sc:url": "http://www.vulcanspot.org/"
     },
     {
-      "@id": "_:N74855a8e28f540de97eaf2682ea2535e",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2299"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3464"
-        },
-        {
-          "@id": "edam:format_2330"
-        }
-      ],
-      "sc:name": "Gene name"
-    },
-    {
-      "@id": "_:Ne77e416ebd054617b870f505f021abbc",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0984"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_3464"
-        }
-      ],
-      "sc:name": "Molecule name"
-    },
-    {
-      "@id": "_:N04df7e8040a74e42b68b51da657179f8",
+      "@id": "_:N598452bc10134e0b9620eef6ad688389",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2299"
@@ -152,6 +120,38 @@
         "@id": "edam:format_2330"
       },
       "sc:name": "Gene name"
+    },
+    {
+      "@id": "_:Na6153d15a82d4c08b9b6d62e82f1ce5b",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2299"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3464"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Gene name"
+    },
+    {
+      "@id": "_:Nd4f87ec132af45fc98ed798cabd83a1e",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0984"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3464"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Molecule name"
     },
     {
       "@id": "https://doi.org/10.1093/bioinformatics/btz465",

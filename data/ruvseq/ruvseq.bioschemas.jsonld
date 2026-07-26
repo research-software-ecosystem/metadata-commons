@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,31 +39,31 @@
       "@id": "https://bio.tools/ruvseq",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N85bd82d5bfcf49c09c5700fe868c3d93"
+        "@id": "_:Ne04eaa5ed2bd4c8ab19959b8b2b3a5b2"
       },
       "bsc:output": {
-        "@id": "_:N900ac869a7f747e2b147d05fa0afcf8e"
+        "@id": "_:N86f4d7d8b25f47449f03c9706713e503"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3170"
+          "@id": "edam:topic_0203"
         },
         {
-          "@id": "edam:topic_0203"
+          "@id": "edam:topic_3170"
         }
       ],
       "sc:author": [
-        "Sandrine Dudoit",
-        "Davide Risso"
+        "Davide Risso",
+        "Sandrine Dudoit"
       ],
       "sc:contributor": [
-        "Lorena Pantano",
-        "Kamil Slowikowski"
+        "Kamil Slowikowski",
+        "Lorena Pantano"
       ],
       "sc:description": "This package implements the remove unwanted variation (RUV) methods of Risso et al. (2014) for the normalization of RNA-Seq read counts between samples.",
       "sc:featureList": {
@@ -72,8 +72,8 @@
       "sc:license": "Artistic-2.0",
       "sc:name": "RUVSeq",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -83,7 +83,7 @@
       "sc:url": "https://bioconductor.org/packages/RUVSeq"
     },
     {
-      "@id": "_:N85bd82d5bfcf49c09c5700fe868c3d93",
+      "@id": "_:Ne04eaa5ed2bd4c8ab19959b8b2b3a5b2",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3495"
@@ -94,7 +94,7 @@
       "sc:name": "RNA sequence"
     },
     {
-      "@id": "_:N900ac869a7f747e2b147d05fa0afcf8e",
+      "@id": "_:N86f4d7d8b25f47449f03c9706713e503",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"

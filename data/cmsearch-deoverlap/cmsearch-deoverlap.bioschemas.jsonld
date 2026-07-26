@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,12 +39,12 @@
       "@id": "https://bio.tools/cmsearch-deoverlap",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N33b9bcec6e3c4f89b5ceb793aeaab590"
+        "@id": "_:Nbd65aa6e849a491fa2f7ed4cc50a30d3"
       },
       "bsc:output": {
-        "@id": "_:N413264fc9e254bfebb6a49d0ac293a24"
+        "@id": "_:Nd28d6ebb415f45d0a029937d441f3e0c"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Script",
       "sc:applicationSubCategory": [
         {
@@ -57,10 +57,10 @@
       "sc:description": "Removes lower scoring overlaps from cmsearch results.\nThis tool removes lower-scoring overlaps from cmsearch results. Given information about the clans and the cmsearch tbl output this tool returns a filtered cmsearch tbl output.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_2424"
+          "@id": "edam:operation_2928"
         },
         {
-          "@id": "edam:operation_2928"
+          "@id": "edam:operation_2424"
         }
       ],
       "sc:license": "Freeware",
@@ -68,7 +68,7 @@
       "sc:url": "https://github.com/EBI-Metagenomics/pipeline-v5/tree/master/tools/RNA_prediction/cmsearch-deoverlap"
     },
     {
-      "@id": "_:N33b9bcec6e3c4f89b5ceb793aeaab590",
+      "@id": "_:Nbd65aa6e849a491fa2f7ed4cc50a30d3",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1916"
@@ -79,7 +79,7 @@
       "sc:name": "Alignment"
     },
     {
-      "@id": "_:N413264fc9e254bfebb6a49d0ac293a24",
+      "@id": "_:Nd28d6ebb415f45d0a029937d441f3e0c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1916"

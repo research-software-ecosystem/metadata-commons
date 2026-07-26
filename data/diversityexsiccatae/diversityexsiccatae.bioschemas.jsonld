@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -42,21 +42,21 @@
         "@id": "https://orcid.org/0000-0003-1980-3148"
       },
       "bsc:input": {
-        "@id": "_:N625b4d923bd248f787e0fb610eabcdd7"
+        "@id": "_:N92b7ecd8bc5d45ab837d5df991d913bb"
       },
       "bsc:output": [
         {
-          "@id": "_:N81b222514f75444b94eaeac54f57b919"
+          "@id": "_:Nf45b4b0c1cab4e4b8259beb1c4d75810"
         },
         {
-          "@id": "_:N28d6567aece34cf88e27b9b17e63a3c4"
+          "@id": "_:Naaf179fee2524eff858bf20d9886c878"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web service",
+        "Database portal",
         "Desktop application",
-        "Database portal"
+        "Web service"
       ],
       "sc:applicationSubCategory": [
         {
@@ -85,35 +85,30 @@
           "@id": "https://diversityworkbench.net/Portal/DiversityExsiccatae_Information_Models"
         },
         {
-          "@id": "https://diversityworkbench.net/Portal/DWB_user_manuals"
-        },
-        {
           "@id": "http://www.botanischestaatssammlung.de/DatabaseClients/IndExs/webservice.jsp"
         },
         {
           "@id": "https://diversityworkbench.net/Portal/Training_materials"
+        },
+        {
+          "@id": "https://diversityworkbench.net/Portal/DWB_user_manuals"
         }
       ],
       "sc:url": "https://diversityworkbench.net/Portal/DiversityExsiccatae"
     },
     {
-      "@id": "_:N81b222514f75444b94eaeac54f57b919",
+      "@id": "_:N92b7ecd8bc5d45ab837d5df991d913bb",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2526"
       },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_2332"
-        }
-      ],
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
       "sc:name": "Text data"
     },
     {
-      "@id": "_:N28d6567aece34cf88e27b9b17e63a3c4",
+      "@id": "_:Nf45b4b0c1cab4e4b8259beb1c4d75810",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0842"
@@ -129,14 +124,19 @@
       "sc:name": "Identifier"
     },
     {
-      "@id": "_:N625b4d923bd248f787e0fb610eabcdd7",
+      "@id": "_:Naaf179fee2524eff858bf20d9886c878",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2526"
       },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2330"
+        },
+        {
+          "@id": "edam:format_2332"
+        }
+      ],
       "sc:name": "Text data"
     },
     {

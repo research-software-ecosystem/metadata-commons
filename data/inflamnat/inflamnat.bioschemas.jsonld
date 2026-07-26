@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,29 +36,28 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.21203/RS.3.RS-1030714/V1",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/inflamnat",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Na404442fa9214433bf90070b70dbb18e"
+          "@id": "_:Nbd0e0585e68a44dc9af52b26264d376f"
         },
         {
-          "@id": "_:Nf73cc03edf8241bd9d2c3e522a3cd25d"
+          "@id": "_:N301af41ed7464340a726274cd51d4a20"
         },
         {
-          "@id": "_:N383c7a177a25489d8f85cc5c709618f3"
+          "@id": "_:Nf4ec1c5cde7e42ee9a49e96080194495"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Database portal",
         "Web application"
       ],
       "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_3373"
+        },
         {
           "@id": "edam:topic_3375"
         },
@@ -66,13 +65,10 @@
           "@id": "edam:topic_0209"
         },
         {
-          "@id": "edam:topic_3373"
+          "@id": "edam:topic_0218"
         },
         {
           "@id": "edam:topic_0154"
-        },
-        {
-          "@id": "edam:topic_0218"
         }
       ],
       "sc:citation": {
@@ -84,31 +80,23 @@
           "@id": "edam:operation_0303"
         },
         {
-          "@id": "edam:operation_4009"
+          "@id": "edam:operation_3454"
         },
         {
-          "@id": "edam:operation_3454"
+          "@id": "edam:operation_4009"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:name": "InflamNat",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:url": "http://www.inflamnat.com/"
     },
     {
-      "@id": "_:Na404442fa9214433bf90070b70dbb18e",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1009"
-      },
-      "sc:name": "Protein name"
-    },
-    {
-      "@id": "_:Nf73cc03edf8241bd9d2c3e522a3cd25d",
+      "@id": "_:Nbd0e0585e68a44dc9af52b26264d376f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2646"
@@ -116,7 +104,15 @@
       "sc:name": "Compound ID (ChEMBL)"
     },
     {
-      "@id": "_:N383c7a177a25489d8f85cc5c709618f3",
+      "@id": "_:N301af41ed7464340a726274cd51d4a20",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1009"
+      },
+      "sc:name": "Protein name"
+    },
+    {
+      "@id": "_:Nf4ec1c5cde7e42ee9a49e96080194495",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0883"
@@ -126,13 +122,17 @@
           "@id": "edam:format_3816"
         },
         {
-          "@id": "edam:format_1196"
+          "@id": "edam:format_3814"
         },
         {
-          "@id": "edam:format_3814"
+          "@id": "edam:format_1196"
         }
       ],
       "sc:name": "Structure"
+    },
+    {
+      "@id": "https://doi.org/10.21203/RS.3.RS-1030714/V1",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

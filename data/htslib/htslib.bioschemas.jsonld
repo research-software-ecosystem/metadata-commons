@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -41,28 +41,28 @@
       "biotools:primaryContact": "Wellcome Sanger Institute",
       "bsc:input": [
         {
-          "@id": "_:Nefe14e7b658b420084f2f74f672cdfc9"
+          "@id": "_:N66588231e2784c3d9acfcfd24aae2f93"
         },
         {
-          "@id": "_:N04c44e65fd684bf3ac5edbec2d031375"
+          "@id": "_:N48cbe5ae78ee4790a061f53135bbb331"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Nb192877a112b47c6b40211d968825425"
+          "@id": "_:N783b1d05568e4c05a79a11f33ca92eb2"
         },
         {
-          "@id": "_:N14a6e8885a1a45eb87cb9c849c9daa39"
+          "@id": "_:N763331f1ad1e4d9fbc00be52363940b9"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Library",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3071"
       },
       "sc:citation": [
-        "pmcid:PMC7931820",
         "pubmed:33594436",
+        "pmcid:PMC7931820",
         {
           "@id": "https://doi.org/10.1093/gigascience/giab007"
         }
@@ -76,53 +76,53 @@
       "sc:name": "HTSlib",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:provider": "Wellcome Sanger Institute",
       "sc:softwareHelp": {
         "@id": "http://www.htslib.org/doc/#manual-pages"
       },
       "sc:softwareVersion": [
-        "1.3",
-        "1.10",
-        "1.22",
-        "1.4",
-        "1.17",
+        "1.0",
         "1.1",
-        "1.10.2",
-        "1.9",
-        "1.7",
+        "1.10",
         "1.10.1",
-        "1.23",
-        "1.8",
-        "1.3.2",
-        "1.13",
-        "1.12",
+        "1.10.2",
         "1.11",
-        "1.22.2",
-        "1.20",
+        "1.12",
+        "1.13",
+        "1.14",
+        "1.15",
+        "1.15.1",
+        "1.16",
+        "1.17",
+        "1.18",
         "1.19",
         "1.2",
-        "1.4.1",
-        "1.23.1",
-        "1.15.1",
-        "1.5",
-        "1.18",
-        "1.14",
-        "1.22.1",
-        "1.15",
-        "1.16",
-        "1.6",
-        "1.0",
         "1.2.1",
+        "1.20",
+        "1.21.1",
+        "1.22",
+        "1.22.1",
+        "1.22.2",
+        "1.23",
+        "1.23.1",
+        "1.3",
         "1.3.1",
-        "1.21.1"
+        "1.3.2",
+        "1.4",
+        "1.4.1",
+        "1.5",
+        "1.6",
+        "1.7",
+        "1.8",
+        "1.9"
       ],
       "sc:url": "http://www.htslib.org/"
     },
     {
-      "@id": "_:Nefe14e7b658b420084f2f74f672cdfc9",
+      "@id": "_:N66588231e2784c3d9acfcfd24aae2f93",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0924"
@@ -135,57 +135,47 @@
           "@id": "edam:format_3462"
         },
         {
-          "@id": "edam:format_2573"
-        },
-        {
           "@id": "edam:format_1929"
         },
         {
           "@id": "edam:format_1930"
+        },
+        {
+          "@id": "edam:format_2573"
         }
       ],
       "sc:name": "Sequence trace"
     },
     {
-      "@id": "_:N04c44e65fd684bf3ac5edbec2d031375",
+      "@id": "_:N48cbe5ae78ee4790a061f53135bbb331",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3498"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_3016"
+          "@id": "edam:format_3020"
         },
         {
-          "@id": "edam:format_3020"
+          "@id": "edam:format_3016"
         }
       ],
       "sc:name": "Sequence variations"
     },
     {
-      "@id": "_:Nb192877a112b47c6b40211d968825425",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3498"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3016"
-        },
-        {
-          "@id": "edam:format_3020"
-        }
-      ],
-      "sc:name": "Sequence variations"
-    },
-    {
-      "@id": "_:N14a6e8885a1a45eb87cb9c849c9daa39",
+      "@id": "_:N783b1d05568e4c05a79a11f33ca92eb2",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0924"
       },
       "sc:encodingFormat": [
         {
+          "@id": "edam:format_2572"
+        },
+        {
+          "@id": "edam:format_3462"
+        },
+        {
           "@id": "edam:format_1929"
         },
         {
@@ -193,15 +183,25 @@
         },
         {
           "@id": "edam:format_2573"
-        },
-        {
-          "@id": "edam:format_2572"
-        },
-        {
-          "@id": "edam:format_3462"
         }
       ],
       "sc:name": "Sequence trace"
+    },
+    {
+      "@id": "_:N763331f1ad1e4d9fbc00be52363940b9",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3498"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3020"
+        },
+        {
+          "@id": "edam:format_3016"
+        }
+      ],
+      "sc:name": "Sequence variations"
     },
     {
       "@id": "https://doi.org/10.1093/gigascience/giab007",

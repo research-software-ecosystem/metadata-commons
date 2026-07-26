@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,21 +40,21 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N524404b4f63048e594ec65de58e7d7e1"
+          "@id": "_:Ncd2e89abeccd4d1cae474975b3fb87ec"
         },
         {
-          "@id": "_:Ncbeeba5eb1a942ae839e9c6c761adacd"
+          "@id": "_:N74af4f1d32b540dd8ee46977f02a0acb"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N810a1e8d2a1141fe929ba359dc1a5d0c"
+          "@id": "_:Nb2e40b9f28774fa6a1df14768c96351f"
         },
         {
-          "@id": "_:N4b1a2363f2cc414d8ffe0a585fe15b97"
+          "@id": "_:Ndf40d0975bb44f779efb8086a299a186"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Database portal",
         "Web API"
@@ -70,10 +70,10 @@
       "sc:description": "An interactive gateway designed for the tracking and dissemination of DNA barcode reference data. The most commonly used marker is a region of the cytochrome c oxidase I (COI) gene found in mitochondria but multiple other are used for plants and fungi.\nSupported markers:  COI, ITS, rbcL, matK and 18S.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0573"
+          "@id": "edam:operation_0338"
         },
         {
-          "@id": "edam:operation_0338"
+          "@id": "edam:operation_0573"
         }
       ],
       "sc:isAccessibleForFree": true,
@@ -81,36 +81,36 @@
       "sc:url": "https://boldsystems.org/"
     },
     {
-      "@id": "_:N810a1e8d2a1141fe929ba359dc1a5d0c",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1868"
-      },
-      "sc:name": "Taxon"
-    },
-    {
-      "@id": "_:N4b1a2363f2cc414d8ffe0a585fe15b97",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3720"
-      },
-      "sc:name": "Geographic location"
-    },
-    {
-      "@id": "_:N524404b4f63048e594ec65de58e7d7e1",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3720"
-      },
-      "sc:name": "Geographic location"
-    },
-    {
-      "@id": "_:Ncbeeba5eb1a942ae839e9c6c761adacd",
+      "@id": "_:Ncd2e89abeccd4d1cae474975b3fb87ec",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3494"
       },
       "sc:name": "DNA sequence"
+    },
+    {
+      "@id": "_:N74af4f1d32b540dd8ee46977f02a0acb",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3720"
+      },
+      "sc:name": "Geographic location"
+    },
+    {
+      "@id": "_:Nb2e40b9f28774fa6a1df14768c96351f",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3720"
+      },
+      "sc:name": "Geographic location"
+    },
+    {
+      "@id": "_:Ndf40d0975bb44f779efb8086a299a186",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1868"
+      },
+      "sc:name": "Taxon"
     }
   ]
 }

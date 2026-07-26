@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,17 +40,17 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Mike Smith",
       "bsc:input": {
-        "@id": "_:Ndd4f929c9f4745728246bee374d8a4bd"
+        "@id": "_:N2e1095597c0444fe92677b37c9ed7f22"
       },
       "bsc:output": [
         {
-          "@id": "_:N789a542011c541459370bc0afe9607b3"
+          "@id": "_:Na710b6ae4234491daadb8b23b23f3a61"
         },
         {
-          "@id": "_:Nbd3b2f66b80f4e7e919e1523d109d015"
+          "@id": "_:N9795cdc73e9c4832b880ce30e10a2afa"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3168"
@@ -64,13 +64,13 @@
       "sc:license": "MIT",
       "sc:name": "IONiseR",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": [
-        "hdhub",
-        "EMBL Heidelberg"
+        "EMBL Heidelberg",
+        "hdhub"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/vignettes/IONiseR/inst/doc/IONiseR.html"
@@ -78,7 +78,7 @@
       "sc:url": "http://bioconductor.org/packages/IONiseR/"
     },
     {
-      "@id": "_:Ndd4f929c9f4745728246bee374d8a4bd",
+      "@id": "_:N2e1095597c0444fe92677b37c9ed7f22",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3108"
@@ -89,7 +89,7 @@
       "sc:name": "Experimental measurement"
     },
     {
-      "@id": "_:N789a542011c541459370bc0afe9607b3",
+      "@id": "_:Na710b6ae4234491daadb8b23b23f3a61",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
@@ -97,7 +97,7 @@
       "sc:name": "Plot"
     },
     {
-      "@id": "_:Nbd3b2f66b80f4e7e919e1523d109d015",
+      "@id": "_:N9795cdc73e9c4832b880ce30e10a2afa",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2887"

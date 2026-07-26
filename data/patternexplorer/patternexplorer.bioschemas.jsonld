@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -43,27 +43,27 @@
       "@id": "https://bio.tools/patternexplorer",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
-        "Primary Contact",
         "David Sehnal",
-        "Lukáš Pravda"
+        "Lukáš Pravda",
+        "Primary Contact"
       ],
       "bsc:input": {
-        "@id": "_:N85dff558e8734d65a73afbe7e9ec7b26"
+        "@id": "_:Nd3635001a9384aeeb630702b6f6a49cb"
       },
       "bsc:output": {
-        "@id": "_:N797c4503e90045e6b39efa5eba11605e"
+        "@id": "_:N5e6ad9aeb06b45c7a822f78e79615d75"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_0154"
-        },
         {
           "@id": "edam:topic_3510"
         },
         {
           "@id": "edam:topic_0166"
+        },
+        {
+          "@id": "edam:topic_0154"
         },
         {
           "@id": "edam:topic_1317"
@@ -82,20 +82,20 @@
       "sc:description": "A web application to define, extract, and analyze structural patterns or biomolecular complexes in real-time.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0570"
+          "@id": "edam:operation_0250"
         },
         {
           "@id": "edam:operation_0245"
         },
         {
-          "@id": "edam:operation_0250"
+          "@id": "edam:operation_0570"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:name": "PatternQuery",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:provider": [
@@ -104,49 +104,49 @@
       ],
       "sc:softwareHelp": [
         {
-          "@id": "http://webchem.ncbr.muni.cz/Platform/Home/About"
+          "@id": "http://nar.oxfordjournals.org/citmgr?gca=nar%3B43%2FW1%2FW383"
         },
         {
           "@id": "http://webchem.ncbr.muni.cz/Wiki/PatternQuery:UserManual"
         },
         {
-          "@id": "http://nar.oxfordjournals.org/citmgr?gca=nar%3B43%2FW1%2FW383"
+          "@id": "http://webchem.ncbr.muni.cz/Platform/Home/About"
         }
       ],
       "sc:softwareVersion": "1.0",
       "sc:url": "http://ncbr.muni.cz/PatternQuery"
     },
     {
-      "@id": "_:N85dff558e8734d65a73afbe7e9ec7b26",
+      "@id": "_:Nd3635001a9384aeeb630702b6f6a49cb",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1460"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_1477"
+          "@id": "edam:format_1476"
         },
         {
           "@id": "edam:format_2033"
         },
         {
-          "@id": "edam:format_1476"
+          "@id": "edam:format_1477"
         }
       ],
       "sc:name": "Protein structure"
     },
     {
-      "@id": "_:N797c4503e90045e6b39efa5eba11605e",
+      "@id": "_:N5e6ad9aeb06b45c7a822f78e79615d75",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0883"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_2033"
+          "@id": "edam:format_1476"
         },
         {
-          "@id": "edam:format_1476"
+          "@id": "edam:format_2033"
         }
       ],
       "sc:name": "Structure"

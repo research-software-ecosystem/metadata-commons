@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -38,35 +38,35 @@
     {
       "@id": "https://bio.tools/yarn",
       "@type": "sc:SoftwareApplication",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_2269"
-        },
-        {
           "@id": "edam:topic_3572"
         },
         {
-          "@id": "edam:topic_3308"
+          "@id": "edam:topic_3170"
         },
         {
-          "@id": "edam:topic_3170"
+          "@id": "edam:topic_2269"
+        },
+        {
+          "@id": "edam:topic_3308"
         }
       ],
       "sc:author": [
-        "Kimberly Glass",
-        "Maud Fagny",
-        "Marieke Kuijjer",
+        "Abhijeet Sonawane",
         "Camila Lopes-Ramos",
-        "Joseph N Paulson",
+        "Cho-Yi Chen",
         "John Platig",
         "John Quackenbush",
-        "Abhijeet Sonawane",
-        "Cho-Yi Chen"
+        "Joseph N Paulson",
+        "Kimberly Glass",
+        "Marieke Kuijjer",
+        "Maud Fagny"
       ],
       "sc:citation": {
         "@id": "https://doi.org/10.18129/B9.bioc.yarn"
@@ -74,24 +74,24 @@
       "sc:description": "Expedite large RNA-Seq analyses using a combination of previously developed tools. YARN is meant to make it easier for the user in performing basic mis-annotation quality control, filtering, and condition-aware normalization. YARN leverages many Bioconductor tools and statistical techniques to account for the large heterogeneity and sparsity found in very large RNA-seq experiments.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3435"
+          "@id": "edam:operation_3695"
+        },
+        {
+          "@id": "edam:operation_3218"
         },
         {
           "@id": "edam:operation_3762"
         },
         {
-          "@id": "edam:operation_3695"
-        },
-        {
-          "@id": "edam:operation_3218"
+          "@id": "edam:operation_3435"
         }
       ],
       "sc:license": "Artistic-2.0",
       "sc:name": "yarn",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://bioconductor.org/packages/yarn"

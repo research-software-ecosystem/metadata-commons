@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -38,7 +38,7 @@
     {
       "@id": "https://bio.tools/enrichmentbrowser",
       "@type": "sc:SoftwareApplication",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
@@ -47,19 +47,19 @@
         "@id": "edam:topic_0203"
       },
       "sc:author": [
-        "Ralf Zimmer",
         "Gergely Csaba",
-        "Ludwig Geistlinger"
+        "Ludwig Geistlinger",
+        "Ralf Zimmer"
       ],
       "sc:citation": {
         "@id": "https://doi.org/10.1186/s12859-016-0884-1"
       },
       "sc:contributor": [
-        "Rohit Satyam",
-        "Mirko Signorelli",
         "Levi Waldron",
         "Mara Santarelli",
-        "Marcel Ramos"
+        "Marcel Ramos",
+        "Mirko Signorelli",
+        "Rohit Satyam"
       ],
       "sc:description": "The EnrichmentBrowser package implements essential functionality for the enrichment analysis of gene expression data. The analysis combines the advantages of set-based and network-based enrichment analysis in order to derive high-confidence gene sets and biological pathways that are differentially regulated in the expression data under investigation. Besides, the package facilitates the visualization and exploration of such sets and pathways.",
       "sc:featureList": [
@@ -73,9 +73,9 @@
       "sc:license": "Artistic-2.0",
       "sc:name": "EnrichmentBrowser",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://bioconductor.org/packages/EnrichmentBrowser"

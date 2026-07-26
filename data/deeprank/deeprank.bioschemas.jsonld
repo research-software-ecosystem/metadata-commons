@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,15 +36,19 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1101/2021.01.29.425727",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/DeepRank",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N27c5f1d453744b4f9fc1197ec9037e9e"
+        "@id": "_:N5818bff6bb0e419bb2d7dc40fdaf6fff"
       },
       "bsc:output": {
-        "@id": "_:N13ee087154074d69a3854205f0a6b2b3"
+        "@id": "_:Nfde746793639493b841793c72bf90075"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Workflow"
@@ -63,8 +67,8 @@
       "sc:license": "Apache-2.0",
       "sc:name": "DeepRank",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -74,18 +78,7 @@
       "sc:url": "https://github.com/DeepRank/deeprank"
     },
     {
-      "@id": "_:N13ee087154074d69a3854205f0a6b2b3",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0888"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3590"
-      },
-      "sc:name": "Structure similarity score"
-    },
-    {
-      "@id": "_:N27c5f1d453744b4f9fc1197ec9037e9e",
+      "@id": "_:N5818bff6bb0e419bb2d7dc40fdaf6fff",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1461"
@@ -96,8 +89,15 @@
       "sc:name": "Protein-ligand complex"
     },
     {
-      "@id": "https://doi.org/10.1101/2021.01.29.425727",
-      "@type": "sc:CreativeWork"
+      "@id": "_:Nfde746793639493b841793c72bf90075",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0888"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3590"
+      },
+      "sc:name": "Structure similarity score"
     }
   ]
 }

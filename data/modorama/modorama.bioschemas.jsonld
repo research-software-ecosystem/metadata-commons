@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -41,31 +41,31 @@
       "biotools:primaryContact": "Jan Kosinski",
       "bsc:input": [
         {
-          "@id": "_:Nf77720e5d53a4f8486ce6f2b525a3d86"
+          "@id": "_:Na8c013d3b6264d09816a376fac6557b3"
         },
         {
-          "@id": "_:N2928c8f62e884dccb950d1e5fab25bb7"
+          "@id": "_:Ne09f528d83694146bc55f2cd349e6e29"
         },
         {
-          "@id": "_:Ne06773456a064986a82cf9e1be56ade2"
+          "@id": "_:N46d3deec02744b719d2692443d3d17ac"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0082"
       },
       "sc:citation": [
-        {
-          "@id": "https://doi.org/10.1093/bioinformatics/btt062"
-        },
+        "pubmed:22308148",
         "pmcid:PMC3315710",
-        "pubmed:23396123",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/bts070"
         },
-        "pubmed:22308148",
-        "pmcid:PMC3605600"
+        "pubmed:23396123",
+        "pmcid:PMC3605600",
+        {
+          "@id": "https://doi.org/10.1093/bioinformatics/btt062"
+        }
       ],
       "sc:description": "At MODORAMA two applications can be run: MODexplorer, an integrated tool for exploring protein sequence, structure and function relationships, and MODalign, a rich alignment editor to improve target-template alignments",
       "sc:featureList": [
@@ -81,9 +81,9 @@
       ],
       "sc:name": "MODORAMA",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": "ELIXIR-ITA-SAPIENZA",
       "sc:softwareHelp": {
@@ -93,7 +93,15 @@
       "sc:url": "http://modorama.org"
     },
     {
-      "@id": "_:Nf77720e5d53a4f8486ce6f2b525a3d86",
+      "@id": "_:Na8c013d3b6264d09816a376fac6557b3",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0893"
+      },
+      "sc:name": "Sequence-structure alignment"
+    },
+    {
+      "@id": "_:Ne09f528d83694146bc55f2cd349e6e29",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2976"
@@ -104,15 +112,7 @@
       "sc:name": "Protein sequence"
     },
     {
-      "@id": "_:N2928c8f62e884dccb950d1e5fab25bb7",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0893"
-      },
-      "sc:name": "Sequence-structure alignment"
-    },
-    {
-      "@id": "_:Ne06773456a064986a82cf9e1be56ade2",
+      "@id": "_:N46d3deec02744b719d2692443d3d17ac",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1460"

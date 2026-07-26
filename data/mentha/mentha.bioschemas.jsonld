@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,6 +36,10 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1038/nmeth.2561",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/mentha",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
@@ -43,16 +47,16 @@
         "Alberto Calderone"
       ],
       "bsc:output": {
-        "@id": "_:N24828140862249dbba921476cb9fcb39"
+        "@id": "_:N7dfaa9bc263a49fca2c48aab49c0d5ad"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3325"
+          "@id": "edam:topic_0128"
         },
         {
-          "@id": "edam:topic_0128"
+          "@id": "edam:topic_3325"
         }
       ],
       "sc:author": "Alberto Calderone",
@@ -66,18 +70,18 @@
       "sc:description": "Resource for protein-protein interactions (PPI). It integrates data curated by experts in compliance with IMEx curation policies, using the PSICQUIC protocol to implement an automatic procedure that automatically aligns the integrated database with data regularly annotated by the primary databases",
       "sc:featureList": [
         {
-          "@id": "edam:operation_2949"
+          "@id": "edam:operation_2421"
         },
         {
-          "@id": "edam:operation_2421"
+          "@id": "edam:operation_2949"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:name": "mentha",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:provider": [
         "ELIXIR-ITA-TORVERGATA",
@@ -90,7 +94,7 @@
       "sc:url": "http://mentha.uniroma2.it/"
     },
     {
-      "@id": "_:N24828140862249dbba921476cb9fcb39",
+      "@id": "_:N7dfaa9bc263a49fca2c48aab49c0d5ad",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0906"
@@ -99,10 +103,6 @@
         "@id": "edam:format_3158"
       },
       "sc:name": "Protein interaction data"
-    },
-    {
-      "@id": "https://doi.org/10.1038/nmeth.2561",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

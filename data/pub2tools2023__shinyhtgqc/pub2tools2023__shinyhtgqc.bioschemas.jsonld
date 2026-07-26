@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,23 +36,19 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.46471/GIGABYTE.74",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/pub2tools2023__shinyhtgqc",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nbdea171d2a5744a095ff208d52d539c0"
+        "@id": "_:Nc118d1b4886a4482a6c099ec2450c44c"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0203"
+          "@id": "edam:topic_3572"
         },
         {
-          "@id": "edam:topic_3572"
+          "@id": "edam:topic_0203"
         },
         {
           "@id": "edam:topic_3170"
@@ -71,24 +67,24 @@
           "@id": "edam:operation_3891"
         },
         {
-          "@id": "edam:operation_2428"
+          "@id": "edam:operation_0314"
         },
         {
-          "@id": "edam:operation_0314"
+          "@id": "edam:operation_2428"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "MIT",
       "sc:name": "shinyHTGQC",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:url": "https://lodovico.shinyapps.io/shinyHTGQC/"
     },
     {
-      "@id": "_:Nbdea171d2a5744a095ff208d52d539c0",
+      "@id": "_:Nc118d1b4886a4482a6c099ec2450c44c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3914"
@@ -97,6 +93,10 @@
         "@id": "edam:format_3620"
       },
       "sc:name": "Quality control report"
+    },
+    {
+      "@id": "https://doi.org/10.46471/GIGABYTE.74",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

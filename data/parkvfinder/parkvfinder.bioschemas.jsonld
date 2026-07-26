@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,6 +36,22 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1016/j.softx.2020.100606",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-6800-4425",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-1287-8019",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.1021/acs.jcim.3c00328",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/parkvfinder",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
@@ -47,22 +63,22 @@
         }
       ],
       "bsc:input": {
-        "@id": "_:N61297e63df374d9182c2beabd31dee9e"
+        "@id": "_:Na9ff34ab1a9b45a781203fce1b7b89e5"
       },
       "bsc:output": {
-        "@id": "_:Nb3e152119cc74481accf47e2ff78b854"
+        "@id": "_:N87e647b7c9674de4846008577a51ff39"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Plug-in"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0166"
+          "@id": "edam:topic_3332"
         },
         {
-          "@id": "edam:topic_3332"
+          "@id": "edam:topic_0166"
         },
         {
           "@id": "edam:topic_1317"
@@ -75,10 +91,10 @@
         "@id": "https://orcid.org/0000-0002-6800-4425"
       },
       "sc:citation": [
+        "pubmed:37129917",
         {
           "@id": "https://doi.org/10.1021/acs.jcim.3c00328"
         },
-        "pubmed:37129917",
         {
           "@id": "https://doi.org/10.1016/j.softx.2020.100606"
         }
@@ -91,9 +107,9 @@
       "sc:license": "GPL-3.0",
       "sc:name": "parKVFinder",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://github.com/LBC-LNBio/parKVFinder/wiki"
@@ -101,23 +117,7 @@
       "sc:url": "https://github.com/LBC-LNBio/parKVFinder"
     },
     {
-      "@id": "_:Nb3e152119cc74481accf47e2ff78b854",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2878"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_1476"
-        }
-      ],
-      "sc:name": "Protein structural motif"
-    },
-    {
-      "@id": "_:N61297e63df374d9182c2beabd31dee9e",
+      "@id": "_:Na9ff34ab1a9b45a781203fce1b7b89e5",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0883"
@@ -128,20 +128,20 @@
       "sc:name": "Structure"
     },
     {
-      "@id": "https://doi.org/10.1021/acs.jcim.3c00328",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://orcid.org/0000-0002-6800-4425",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://doi.org/10.1016/j.softx.2020.100606",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://orcid.org/0000-0002-1287-8019",
-      "@type": "sc:Person"
+      "@id": "_:N87e647b7c9674de4846008577a51ff39",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2878"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_1476"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Protein structural motif"
     }
   ]
 }

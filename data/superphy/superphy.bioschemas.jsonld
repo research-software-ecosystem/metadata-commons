@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,14 +36,10 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1186/S12866-016-0680-0",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/superphy",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Support",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
@@ -57,8 +53,8 @@
         }
       ],
       "sc:citation": [
-        "pmcid:PMC4828761",
         "pubmed:27067409",
+        "pmcid:PMC4828761",
         {
           "@id": "https://doi.org/10.1186/S12866-016-0680-0"
         }
@@ -69,11 +65,15 @@
       },
       "sc:name": "SuperPhy",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:url": "https://lfz.corefacility.ca/superphy/"
+    },
+    {
+      "@id": "https://doi.org/10.1186/S12866-016-0680-0",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

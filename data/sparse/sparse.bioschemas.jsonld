@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,56 +40,48 @@
       "@type": "sc:CreativeWork"
     },
     {
-      "@id": "http://orcid.org/0000-0002-0173-3009",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "http://orcid.org/0000-0001-8231-3323",
-      "@type": "sc:Person"
-    },
-    {
       "@id": "https://bio.tools/sparse",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
-        "Sebastian Will",
         {
           "@id": "http://orcid.org/0000-0001-8231-3323"
-        }
+        },
+        "Sebastian Will"
       ],
       "bsc:input": {
-        "@id": "_:N7aa2fbe5750349ff922cb1875f0030bd"
+        "@id": "_:N46a2769cb01f404bbc67e75b1fa4e405"
       },
       "bsc:output": [
         {
-          "@id": "_:N602286e8e7fa4922ba063d87389fbe17"
+          "@id": "_:N14fd5d8108404d86854ac00c8bee1109"
         },
         {
-          "@id": "_:N956ff561aed447709e1d938da54389ed"
+          "@id": "_:N242012ed16864b3c97354ca80c4c3e35"
         },
         {
-          "@id": "_:N552d821e63344565bcea1102639fef95"
+          "@id": "_:N4f22f5f1cec24b27b060f216756618e7"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0080"
+          "@id": "edam:topic_0097"
         },
         {
-          "@id": "edam:topic_0097"
+          "@id": "edam:topic_0080"
         }
       ],
       "sc:author": [
         {
           "@id": "http://orcid.org/0000-0002-0173-3009"
         },
-        "Sebastian Will",
-        "Rolf Backofen"
+        "Rolf Backofen",
+        "Sebastian Will"
       ],
       "sc:citation": [
-        "pmcid:PMC4514930",
         "pubmed:25838465",
+        "pmcid:PMC4514930",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btv185"
         }
@@ -103,8 +95,8 @@
       "sc:license": "GPL-3.0",
       "sc:name": "SPARSE",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:provider": [
         "University Freiburg",
@@ -117,48 +109,7 @@
       "sc:url": "http://www.bioinf.uni-freiburg.de/Software/SPARSE"
     },
     {
-      "@id": "_:N602286e8e7fa4922ba063d87389fbe17",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1465"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3466"
-      },
-      "sc:name": "RNA structure"
-    },
-    {
-      "@id": "_:N956ff561aed447709e1d938da54389ed",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1916"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_1929"
-        },
-        {
-          "@id": "edam:format_3508"
-        },
-        {
-          "@id": "edam:format_1982"
-        }
-      ],
-      "sc:name": "Alignment"
-    },
-    {
-      "@id": "_:N552d821e63344565bcea1102639fef95",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0872"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1910"
-      },
-      "sc:name": "Phylogenetic tree"
-    },
-    {
-      "@id": "_:N7aa2fbe5750349ff922cb1875f0030bd",
+      "@id": "_:N46a2769cb01f404bbc67e75b1fa4e405",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3495"
@@ -172,6 +123,55 @@
         }
       ],
       "sc:name": "RNA sequence"
+    },
+    {
+      "@id": "_:N14fd5d8108404d86854ac00c8bee1109",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1916"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_1982"
+        },
+        {
+          "@id": "edam:format_1929"
+        },
+        {
+          "@id": "edam:format_3508"
+        }
+      ],
+      "sc:name": "Alignment"
+    },
+    {
+      "@id": "_:N242012ed16864b3c97354ca80c4c3e35",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0872"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1910"
+      },
+      "sc:name": "Phylogenetic tree"
+    },
+    {
+      "@id": "_:N4f22f5f1cec24b27b060f216756618e7",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1465"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3466"
+      },
+      "sc:name": "RNA structure"
+    },
+    {
+      "@id": "http://orcid.org/0000-0001-8231-3323",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "http://orcid.org/0000-0002-0173-3009",
+      "@type": "sc:Person"
     }
   ]
 }

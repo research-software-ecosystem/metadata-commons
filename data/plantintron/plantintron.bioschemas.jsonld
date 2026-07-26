@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,12 +36,16 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1007/s11427-022-2193-3",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/plantintron",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N662b40dd2eb546cf94c465a5f18c84f9"
+        "@id": "_:Nfabd92e426024ba2bf0fd92a1aef2446"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Database portal",
       "sc:applicationSubCategory": [
         {
@@ -51,10 +55,10 @@
           "@id": "edam:topic_0780"
         },
         {
-          "@id": "edam:topic_3170"
+          "@id": "edam:topic_3320"
         },
         {
-          "@id": "edam:topic_3320"
+          "@id": "edam:topic_3170"
         }
       ],
       "sc:citation": [
@@ -66,10 +70,10 @@
       "sc:description": "Plant Intron Splicing Efficiency Database. \nSearch gene intron ratio levels from plants public RNA-Seq libraries",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0224"
+          "@id": "edam:operation_3196"
         },
         {
-          "@id": "edam:operation_3196"
+          "@id": "edam:operation_0224"
         },
         {
           "@id": "edam:operation_2499"
@@ -78,23 +82,19 @@
       "sc:isAccessibleForFree": true,
       "sc:name": "plantintron",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:url": "https://plantintron.com/"
     },
     {
-      "@id": "_:N662b40dd2eb546cf94c465a5f18c84f9",
+      "@id": "_:Nfabd92e426024ba2bf0fd92a1aef2446",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2299"
       },
       "sc:name": "Gene name"
-    },
-    {
-      "@id": "https://doi.org/10.1007/s11427-022-2193-3",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,19 +36,15 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1038/nmeth.4260",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/xcms_online",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N45709ef5b8a942af88d50acb34817d83"
+        "@id": "_:Nd01b7c988b3849ecb271203911f111b5"
       },
       "bsc:output": {
-        "@id": "_:Naf9903b14c8541c0adb8d8439853221e"
+        "@id": "_:N57caf6d86ff748038d1bf26ff8c3ec6b"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
@@ -63,10 +59,10 @@
       ],
       "sc:citation": [
         "pubmed:28448069",
+        "pmcid:PMC5933448",
         {
           "@id": "https://doi.org/10.1038/nmeth.4260"
-        },
-        "pmcid:PMC5933448"
+        }
       ],
       "sc:description": "A systems biology tool for analyzing metabolomic data. It automatically superimposes raw metabolomic data onto metabolic pathways and integrates it with transcriptomic and proteomic data.",
       "sc:featureList": [
@@ -80,14 +76,14 @@
       "sc:isAccessibleForFree": true,
       "sc:name": "XCMS Online",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:url": "http://xcmsonline.scripps.edu/landing_page.php?pgcontent=mainPage"
     },
     {
-      "@id": "_:N45709ef5b8a942af88d50acb34817d83",
+      "@id": "_:Nd01b7c988b3849ecb271203911f111b5",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3483"
@@ -98,7 +94,7 @@
       "sc:name": "Spectrum"
     },
     {
-      "@id": "_:Naf9903b14c8541c0adb8d8439853221e",
+      "@id": "_:N57caf6d86ff748038d1bf26ff8c3ec6b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2600"
@@ -107,6 +103,10 @@
         "@id": "edam:format_2013"
       },
       "sc:name": "Pathway or network"
+    },
+    {
+      "@id": "https://doi.org/10.1038/nmeth.4260",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

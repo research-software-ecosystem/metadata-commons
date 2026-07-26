@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,20 +39,20 @@
       "@id": "https://bio.tools/massir",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N1f819dca76164a29b6c4f8b30b5a3cd3"
+        "@id": "_:Nb27a6a81ce3044df824ef931eeeaa58d"
       },
       "bsc:output": [
         {
-          "@id": "_:N5ad6197f40c143d792bc8c482759085d"
+          "@id": "_:Ne45b287c97cf437f93a785ae27bb4f55"
         },
         {
-          "@id": "_:N35f434792af64bb487f1cab3dbbe734c"
+          "@id": "_:N3f88cf6be75f48658644ddc5ed2a7a97"
         },
         {
-          "@id": "_:N4a24ce994f394f15b12b22afd104631e"
+          "@id": "_:N9090b223628b4e5a81a30e99fd52a931"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
@@ -75,9 +75,9 @@
       "sc:license": "GPL-3.0-only",
       "sc:name": "massiR",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://bioconductor.org/packages/massiR"
@@ -86,7 +86,7 @@
       "sc:url": "https://bioconductor.org/packages/massiR"
     },
     {
-      "@id": "_:N1f819dca76164a29b6c4f8b30b5a3cd3",
+      "@id": "_:Nb27a6a81ce3044df824ef931eeeaa58d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2603"
@@ -97,18 +97,18 @@
       "sc:name": "Gene expression data"
     },
     {
-      "@id": "_:N5ad6197f40c143d792bc8c482759085d",
+      "@id": "_:Ne45b287c97cf437f93a785ae27bb4f55",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_1772"
+        "@id": "edam:data_1636"
       },
       "sc:encodingFormat": {
         "@id": "edam:format_3547"
       },
-      "sc:name": "Score"
+      "sc:name": "Heat map"
     },
     {
-      "@id": "_:N35f434792af64bb487f1cab3dbbe734c",
+      "@id": "_:N3f88cf6be75f48658644ddc5ed2a7a97",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
@@ -119,15 +119,15 @@
       "sc:name": "Plot"
     },
     {
-      "@id": "_:N4a24ce994f394f15b12b22afd104631e",
+      "@id": "_:N9090b223628b4e5a81a30e99fd52a931",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_1636"
+        "@id": "edam:data_1772"
       },
       "sc:encodingFormat": {
         "@id": "edam:format_3547"
       },
-      "sc:name": "Heat map"
+      "sc:name": "Score"
     },
     {
       "@id": "https://doi.org/10.1093/bioinformatics/btu161",

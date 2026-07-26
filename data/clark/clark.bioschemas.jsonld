@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,12 +40,12 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Stefano Lonardi",
       "bsc:input": {
-        "@id": "_:N83cced47931b41909b8b06123a825938"
+        "@id": "_:N34cf402ee7744a0bb49bd859f01d7787"
       },
       "bsc:output": {
-        "@id": "_:N91b0f50e07494e249a7f16a4528f7fb6"
+        "@id": "_:Nb80e3296d5684646849b645d77a912e7"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0080"
@@ -75,18 +75,7 @@
       "sc:url": "http://clark.cs.ucr.edu/"
     },
     {
-      "@id": "_:N91b0f50e07494e249a7f16a4528f7fb6",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3028"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3475"
-      },
-      "sc:name": "Taxonomy"
-    },
-    {
-      "@id": "_:N83cced47931b41909b8b06123a825938",
+      "@id": "_:N34cf402ee7744a0bb49bd859f01d7787",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3494"
@@ -95,6 +84,17 @@
         "@id": "edam:format_2546"
       },
       "sc:name": "DNA sequence"
+    },
+    {
+      "@id": "_:Nb80e3296d5684646849b645d77a912e7",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3028"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3475"
+      },
+      "sc:name": "Taxonomy"
     },
     {
       "@id": "https://doi.org/10.1186/s12864-015-1419-2",

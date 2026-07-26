@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,38 +40,38 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Nf21b7171ca2d4758adb6dddb7a2ba1d3"
+          "@id": "_:Nf6209b10039947419c5a60e3b161d788"
         },
         {
-          "@id": "_:N7d0ca48808444171be165bb42b984076"
+          "@id": "_:N89a9176b11a44b948a7691fc6a8a6e46"
         },
         {
-          "@id": "_:Nd51a37e19e994bc8a463113d4ef4c6b5"
+          "@id": "_:N9dcfee173f5d4469a08d730444c559c8"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
           "@id": "edam:topic_0654"
         },
         {
-          "@id": "edam:topic_0099"
+          "@id": "edam:topic_3538"
         },
         {
-          "@id": "edam:topic_3538"
+          "@id": "edam:topic_0099"
         }
       ],
       "sc:description": "DeepDRPBind is developed to predict DNA, RNA and protein binding residues in intrinsically disordered protein sequence.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0470"
-        },
-        {
           "@id": "edam:operation_0475"
         },
         {
           "@id": "edam:operation_3904"
+        },
+        {
+          "@id": "edam:operation_0470"
         }
       ],
       "sc:isAccessibleForFree": true,
@@ -80,7 +80,15 @@
       "sc:url": "https://github.com/roneshsharma/DNA-RNA-Protein-Binding/wiki"
     },
     {
-      "@id": "_:Nf21b7171ca2d4758adb6dddb7a2ba1d3",
+      "@id": "_:Nf6209b10039947419c5a60e3b161d788",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1526"
+      },
+      "sc:name": "Protein globularity"
+    },
+    {
+      "@id": "_:N89a9176b11a44b948a7691fc6a8a6e46",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1756"
@@ -88,31 +96,23 @@
       "sc:name": "Protein residue"
     },
     {
-      "@id": "_:N7d0ca48808444171be165bb42b984076",
+      "@id": "_:N9dcfee173f5d4469a08d730444c559c8",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2976"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_1213"
-        },
-        {
           "@id": "edam:format_1212"
         },
         {
           "@id": "edam:format_1208"
+        },
+        {
+          "@id": "edam:format_1213"
         }
       ],
       "sc:name": "Protein sequence"
-    },
-    {
-      "@id": "_:Nd51a37e19e994bc8a463113d4ef4c6b5",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1526"
-      },
-      "sc:name": "Protein globularity"
     }
   ]
 }

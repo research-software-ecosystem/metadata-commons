@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -43,12 +43,12 @@
       "@id": "https://bio.tools/blast_api_ebi",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N0ba91f3aa0a545e28a3e08437f69d846"
+        "@id": "_:N14eeb0690d274cc39cbd5c4768b8197a"
       },
       "bsc:output": {
-        "@id": "_:Nff6071bf9ca841b68f5c6ec399bd5526"
+        "@id": "_:N1fb01f909720459e8ab2e3f8368d6d83"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web API",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0080"
@@ -59,16 +59,16 @@
       "sc:description": "Sequence similarity search program.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0346"
+          "@id": "edam:operation_0292"
         },
         {
-          "@id": "edam:operation_0292"
+          "@id": "edam:operation_0346"
         }
       ],
       "sc:name": "BLAST API (EBI)",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -78,7 +78,7 @@
       "sc:url": "https://www.ebi.ac.uk/seqdb/confluence/pages/viewpage.action?pageId=54653532"
     },
     {
-      "@id": "_:N0ba91f3aa0a545e28a3e08437f69d846",
+      "@id": "_:N14eeb0690d274cc39cbd5c4768b8197a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
@@ -86,7 +86,7 @@
       "sc:name": "Sequence"
     },
     {
-      "@id": "_:Nff6071bf9ca841b68f5c6ec399bd5526",
+      "@id": "_:N1fb01f909720459e8ab2e3f8368d6d83",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0857"

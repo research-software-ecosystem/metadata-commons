@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -47,22 +47,22 @@
       },
       "bsc:input": [
         {
-          "@id": "_:Nd7267776e32b4d51bb75dcb914ea2afe"
+          "@id": "_:N7d67fd9ffaef4ad5abef33d037e9c72d"
         },
         {
-          "@id": "_:N9f953fc1330d4af381526961ea55fdcc"
+          "@id": "_:N80757c8d819b46f4b9293364bd56bbd8"
         },
         {
-          "@id": "_:Nd0f6fcb5e47b4626bad4be72102e303b"
+          "@id": "_:N30cdd55c91cb42f6b7b24e30240ac46a"
         },
         {
-          "@id": "_:Nf14d2b9c39e24233bad19c03cd807c0b"
+          "@id": "_:N631b16d6a279418e936e73cf77649e91"
         }
       ],
       "bsc:output": {
-        "@id": "_:N6fb61bb4311b45de9186eb09a99bc28d"
+        "@id": "_:N286732410c7b42819497ab98bf4eb512"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Desktop application",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0121"
@@ -71,13 +71,13 @@
       "sc:description": "Meta4P (MetaProteins-Peptides-PSMs Parser) is an easy-to-use bioinformatic application designed to integrate label-free quantitative metaproteomic data with taxonomic and functional annotations. Meta4P can retrieve, filter and process identification and quantification data from three types of inputs (proteins, peptides, PSMs) in different file formats. Abundance data can be combined with taxonomic and functional information and aggregated at different and customizable levels, including taxa, functions, pathways, as well as taxon-specific functions. Meta4P output tables, available in various formats, are ready to be used as inputs for downstream statistical analyses.",
       "sc:featureList": [
         {
+          "@id": "edam:operation_3436"
+        },
+        {
           "@id": "edam:operation_3695"
         },
         {
           "@id": "edam:operation_1812"
-        },
-        {
-          "@id": "edam:operation_3436"
         }
       ],
       "sc:isAccessibleForFree": true,
@@ -90,18 +90,7 @@
       "sc:url": "https://github.com/TheMassimo/Meta4P"
     },
     {
-      "@id": "_:N6fb61bb4311b45de9186eb09a99bc28d",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2603"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Expression data"
-    },
-    {
-      "@id": "_:Nd7267776e32b4d51bb75dcb914ea2afe",
+      "@id": "_:N7d67fd9ffaef4ad5abef33d037e9c72d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1154"
@@ -112,7 +101,7 @@
       "sc:name": "KEGG object identifier"
     },
     {
-      "@id": "_:N9f953fc1330d4af381526961ea55fdcc",
+      "@id": "_:N80757c8d819b46f4b9293364bd56bbd8",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2536"
@@ -123,7 +112,7 @@
       "sc:name": "Mass spectrometry data"
     },
     {
-      "@id": "_:Nd0f6fcb5e47b4626bad4be72102e303b",
+      "@id": "_:N30cdd55c91cb42f6b7b24e30240ac46a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2536"
@@ -134,7 +123,7 @@
       "sc:name": "Mass spectrometry data"
     },
     {
-      "@id": "_:Nf14d2b9c39e24233bad19c03cd807c0b",
+      "@id": "_:N631b16d6a279418e936e73cf77649e91",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3028"
@@ -143,6 +132,17 @@
         "@id": "edam:format_2330"
       },
       "sc:name": "Taxonomy"
+    },
+    {
+      "@id": "_:N286732410c7b42819497ab98bf4eb512",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2603"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Expression data"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,20 +36,16 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1371/journal.pcbi.1005900",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/bowhead",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Rune Linding",
       "bsc:input": {
-        "@id": "_:Nce16accfdd8d4e9e89edce5e50a00004"
+        "@id": "_:N8e256ee77fba456895a62ab9fb68f5da"
       },
       "bsc:output": {
-        "@id": "_:N15b811c0d2204dd1ab30cb9ec8671755"
+        "@id": "_:N2005c8ead801401ca37249d9d43e7db8"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Library",
       "sc:applicationSubCategory": [
         {
@@ -64,26 +60,26 @@
       ],
       "sc:citation": [
         "pubmed:29309407",
+        "pmcid:PMC5774831",
         {
           "@id": "https://doi.org/10.1371/journal.pcbi.1005900"
-        },
-        "pmcid:PMC5774831"
+        }
       ],
       "sc:description": "A package for analyzing cell velocity from time series of wound healing experiments.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_2238"
+          "@id": "edam:operation_3446"
         },
         {
-          "@id": "edam:operation_3446"
+          "@id": "edam:operation_2238"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "GPL-3.0",
       "sc:name": "Bowhead",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -92,7 +88,7 @@
       "sc:url": "https://bowhead.lindinglab.org/"
     },
     {
-      "@id": "_:Nce16accfdd8d4e9e89edce5e50a00004",
+      "@id": "_:N8e256ee77fba456895a62ab9fb68f5da",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3449"
@@ -103,12 +99,16 @@
       "sc:name": "Cell migration track image"
     },
     {
-      "@id": "_:N15b811c0d2204dd1ab30cb9ec8671755",
+      "@id": "_:N2005c8ead801401ca37249d9d43e7db8",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"
       },
       "sc:name": "Report"
+    },
+    {
+      "@id": "https://doi.org/10.1371/journal.pcbi.1005900",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

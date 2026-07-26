@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,22 +39,22 @@
       "@id": "https://bio.tools/make_random",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N24f1eb9ab9b24fa09e483dbcbddb0fd8"
+        "@id": "_:N74deee68252243808a00acf76fac0086"
       },
       "bsc:output": {
-        "@id": "_:Ne372386843dc4028a5a3f7091e5b2640"
+        "@id": "_:Na2a8c173bd2a4b38938a1587e5c0a119"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_2269"
-        },
         {
           "@id": "edam:topic_0121"
         },
         {
           "@id": "edam:topic_3520"
+        },
+        {
+          "@id": "edam:topic_2269"
         }
       ],
       "sc:description": "Generate random database through Markov process.",
@@ -70,7 +70,7 @@
       "sc:url": "http://www.ms-utils.org/make_random.html"
     },
     {
-      "@id": "_:Ne372386843dc4028a5a3f7091e5b2640",
+      "@id": "_:N74deee68252243808a00acf76fac0086",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2976"
@@ -81,7 +81,7 @@
       "sc:name": "Protein sequence"
     },
     {
-      "@id": "_:N24f1eb9ab9b24fa09e483dbcbddb0fd8",
+      "@id": "_:Na2a8c173bd2a4b38938a1587e5c0a119",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2976"

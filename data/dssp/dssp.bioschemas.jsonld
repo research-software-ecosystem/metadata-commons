@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,19 +39,19 @@
       "@id": "https://bio.tools/dssp",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N2c0c15065b4c45fdaf95a4a5b7408b02"
+        "@id": "_:N3ede89c81b2b42bd9124322a7a3e8d02"
       },
       "bsc:output": {
-        "@id": "_:N17f4f0a9fb1f47129b1e0189e695ba24"
+        "@id": "_:N7b1b245c0c1d4cc7b80a0dd4b9c28df7"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0078"
+          "@id": "edam:topic_3542"
         },
         {
-          "@id": "edam:topic_3542"
+          "@id": "edam:topic_0078"
         }
       ],
       "sc:author": [
@@ -61,11 +61,11 @@
         "Wolfgang Kabsch"
       ],
       "sc:citation": [
+        "pubmed:25352545",
         "pmcid:PMC4383885",
         {
           "@id": "https://doi.org/10.1093/nar/gku1028"
         },
-        "pubmed:25352545",
         "pubmed:6667333",
         {
           "@id": "https://doi.org/10.1002/bip.360221211"
@@ -79,8 +79,8 @@
       "sc:license": "BSD-2-Clause",
       "sc:name": "DSSP",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "https://github.com/PDB-REDO/dssp/blob/trunk/doc/mkdssp.pdf"
@@ -89,7 +89,23 @@
       "sc:url": "http://swift.cmbi.ru.nl/gv/dssp/"
     },
     {
-      "@id": "_:N17f4f0a9fb1f47129b1e0189e695ba24",
+      "@id": "_:N3ede89c81b2b42bd9124322a7a3e8d02",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1460"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_1476"
+        },
+        {
+          "@id": "edam:format_1477"
+        }
+      ],
+      "sc:name": "Protein structure"
+    },
+    {
+      "@id": "_:N7b1b245c0c1d4cc7b80a0dd4b9c28df7",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1277"
@@ -98,22 +114,6 @@
         "@id": "edam:format_1454"
       },
       "sc:name": "Protein features"
-    },
-    {
-      "@id": "_:N2c0c15065b4c45fdaf95a4a5b7408b02",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1460"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_1477"
-        },
-        {
-          "@id": "edam:format_1476"
-        }
-      ],
-      "sc:name": "Protein structure"
     },
     {
       "@id": "https://doi.org/10.1002/bip.360221211",

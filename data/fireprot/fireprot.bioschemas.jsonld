@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,23 +36,15 @@
   },
   "@graph": [
     {
-      "@id": "https://orcid.org/0000-0001-9358-4081",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://orcid.org/0000-0002-6803-0340",
-      "@type": "sc:Person"
+      "@id": "https://doi.org/10.1093/nar/gkx285",
+      "@type": "sc:CreativeWork"
     },
     {
       "@id": "https://orcid.org/0000-0001-8718-7493",
       "@type": "sc:Person"
     },
     {
-      "@id": "https://doi.org/10.1093/nar/gkx285",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://orcid.org/0000-0001-9373-7930",
+      "@id": "https://orcid.org/0000-0002-7848-8216",
       "@type": "sc:Person"
     },
     {
@@ -60,37 +52,41 @@
       "@type": "sc:Person"
     },
     {
+      "@id": "https://orcid.org/0000-0001-9373-7930",
+      "@type": "sc:Person"
+    },
+    {
       "@id": "https://bio.tools/fireprot",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "FireProt team",
       "bsc:input": {
-        "@id": "_:N562abb8a697f4321adce57e1fa00b3f2"
+        "@id": "_:Na20582dfa5a64842bfb310d9993cb878"
       },
       "bsc:output": [
         {
-          "@id": "_:Nb968c568f81b4c7dbc0872644e8e9857"
+          "@id": "_:Nc3b30aa0735c4f94b551d9d6bfd0e495"
         },
         {
-          "@id": "_:N5a488c83c2c54a2ca40aeb5403336488"
+          "@id": "_:N028e00cb39904fdfa9f90b7c86949676"
         },
         {
-          "@id": "_:N8ae0c5157830470dbd590e2e3ebe9ace"
+          "@id": "_:Nc0dee55fdc8d4f3b83f1aa447032b496"
         },
         {
-          "@id": "_:Nb8fc72a742a34cca9e0ef9513a0d9771"
+          "@id": "_:N6f64719d6e3c4c23bdd5ed5f014f2e96"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
           "@id": "edam:topic_2814"
         },
         {
-          "@id": "edam:topic_1317"
+          "@id": "edam:topic_0078"
         },
         {
-          "@id": "edam:topic_0078"
+          "@id": "edam:topic_1317"
         }
       ],
       "sc:author": [
@@ -113,53 +109,53 @@
       ],
       "sc:contributor": [
         {
-          "@id": "https://orcid.org/0000-0001-9358-4081"
-        },
-        "Czech Science Foundation",
-        "European Regional Development Fund",
-        {
-          "@id": "https://orcid.org/0000-0001-8718-7493"
-        },
-        "Tomas Martinek",
-        {
           "@id": "https://orcid.org/0000-0002-7848-8216"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-6803-0340"
         },
         {
           "@id": "https://orcid.org/0000-0001-9677-5078"
         },
-        "Ministry of Education of the Czech Republic",
         {
-          "@id": "https://orcid.org/0000-0002-6803-0340"
-        }
+          "@id": "https://orcid.org/0000-0001-9358-4081"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-8718-7493"
+        },
+        "Tomas Martinek",
+        "Czech Science Foundation",
+        "European Regional Development Fund",
+        "Ministry of Education of the Czech Republic"
       ],
       "sc:description": "FireProt is a web server for an automated design of thermostable mutants. The design of thermostable mutants is based on the integration of structural and evolutionary information obtained from several bioinformatics databases and computational tools.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0331"
+          "@id": "edam:operation_2406"
         },
         {
-          "@id": "edam:operation_2406"
+          "@id": "edam:operation_0331"
         }
       ],
       "sc:funder": [
-        "Ministry of Education of the Czech Republic",
         "Czech Science Foundation",
-        "European Regional Development Fund"
+        "European Regional Development Fund",
+        "Ministry of Education of the Czech Republic"
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "Proprietary",
       "sc:name": "FireProt",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": [
         "Brno University of Technology, Brno, Czech Republic",
         "ELIXIR-CZ",
         "International Centre for Clinical Research, Brno, Czech Republic",
-        "Masaryk University, Brno, Czech Republic",
-        "Loschmidt Laboratories"
+        "Loschmidt Laboratories",
+        "Masaryk University, Brno, Czech Republic"
       ],
       "sc:softwareHelp": [
         {
@@ -173,7 +169,7 @@
       "sc:url": "https://loschmidt.chemi.muni.cz/fireprot/"
     },
     {
-      "@id": "_:N562abb8a697f4321adce57e1fa00b3f2",
+      "@id": "_:Na20582dfa5a64842bfb310d9993cb878",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1460"
@@ -184,7 +180,7 @@
       "sc:name": "Protein structure"
     },
     {
-      "@id": "_:Nb968c568f81b4c7dbc0872644e8e9857",
+      "@id": "_:Nc3b30aa0735c4f94b551d9d6bfd0e495",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2974"
@@ -195,7 +191,18 @@
       "sc:name": "Protein sequence (raw)"
     },
     {
-      "@id": "_:N5a488c83c2c54a2ca40aeb5403336488",
+      "@id": "_:N028e00cb39904fdfa9f90b7c86949676",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1460"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1476"
+      },
+      "sc:name": "Protein structure"
+    },
+    {
+      "@id": "_:Nc0dee55fdc8d4f3b83f1aa447032b496",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1537"
@@ -211,7 +218,7 @@
       "sc:name": "Protein structure report"
     },
     {
-      "@id": "_:N8ae0c5157830470dbd590e2e3ebe9ace",
+      "@id": "_:N6f64719d6e3c4c23bdd5ed5f014f2e96",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1384"
@@ -222,26 +229,19 @@
       "sc:name": "Sequence alignment (protein)"
     },
     {
-      "@id": "_:Nb8fc72a742a34cca9e0ef9513a0d9771",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1460"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1476"
-      },
-      "sc:name": "Protein structure"
-    },
-    {
-      "@id": "https://orcid.org/0000-0001-9989-2720",
+      "@id": "https://orcid.org/0000-0001-9358-4081",
       "@type": "sc:Person"
     },
     {
-      "@id": "https://orcid.org/0000-0002-7848-8216",
+      "@id": "https://orcid.org/0000-0002-6803-0340",
       "@type": "sc:Person"
     },
     {
       "@id": "https://orcid.org/0000-0001-9677-5078",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-9989-2720",
       "@type": "sc:Person"
     }
   ]

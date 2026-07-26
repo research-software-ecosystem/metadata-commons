@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,53 +39,53 @@
       "@id": "https://bio.tools/mole_pymol_plugin",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
-        "Karel Berka",
         "David Sehnal",
-        "Lukáš Pravda",
-        "Primary Contact"
+        "Karel Berka",
+        "Primary Contact",
+        "Lukáš Pravda"
       ],
       "bsc:input": [
         {
-          "@id": "_:N7ab95ad1f3a44df8960377275e4a1405"
+          "@id": "_:Na87f250487ad48d7b04cb9a3894a77be"
         },
         {
-          "@id": "_:Na11854069a50425f9dbd496b5f309f34"
+          "@id": "_:Ne81d3d2e457b4f18aead75661c7a1da0"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N7e9127955bd4413583a13babffbb2a20"
+          "@id": "_:N76766958874147b6be414961c4e894fb"
         },
         {
-          "@id": "_:Nfdec5dda2271458db565fffbb44cbb74"
+          "@id": "_:Nbbf9193105ca4a4b9dabb52635af34a6"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Plug-in",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0154"
-        },
-        {
-          "@id": "edam:topic_0166"
-        },
-        {
-          "@id": "edam:topic_0128"
+          "@id": "edam:topic_0821"
         },
         {
           "@id": "edam:topic_0820"
         },
         {
-          "@id": "edam:topic_0821"
+          "@id": "edam:topic_0128"
         },
         {
           "@id": "edam:topic_0123"
+        },
+        {
+          "@id": "edam:topic_0166"
+        },
+        {
+          "@id": "edam:topic_0154"
         }
       ],
       "sc:author": "Lukáš Pravda",
       "sc:citation": [
-        "pmcid:PMC3765717",
         "pubmed:23953065",
+        "pmcid:PMC3765717",
         {
           "@id": "https://doi.org/10.1186/1758-2946-5-39"
         }
@@ -93,10 +93,10 @@
       "sc:description": "Plugin for MOLE 2.0 contains extended options for channel starting point automatic detection, for filtering of obtained channels to select only the relevant channels and allows estimation of basic physicochemical properties of channels.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0245"
+          "@id": "edam:operation_0250"
         },
         {
-          "@id": "edam:operation_0250"
+          "@id": "edam:operation_0245"
         },
         {
           "@id": "edam:operation_0570"
@@ -109,14 +109,14 @@
       "sc:license": "Other",
       "sc:name": "MOLE PyMOL plugin",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": [
-        "Palacký University Olomouc, Czech Republic",
         "ELIXIR-CZ",
-        "Masaryk University Brno, Czech Republic"
+        "Masaryk University Brno, Czech Republic",
+        "Palacký University Olomouc, Czech Republic"
       ],
       "sc:softwareHelp": {
         "@id": "http://www.jcheminf.com/content/5/1/39/citation"
@@ -125,7 +125,7 @@
       "sc:url": "http://webchem.ncbr.muni.cz/Platform/AppsBin/Mole/2.13.9.6/Mole2_pymol.zip"
     },
     {
-      "@id": "_:N7ab95ad1f3a44df8960377275e4a1405",
+      "@id": "_:Na87f250487ad48d7b04cb9a3894a77be",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1127"
@@ -136,7 +136,7 @@
       "sc:name": "PDB ID"
     },
     {
-      "@id": "_:Na11854069a50425f9dbd496b5f309f34",
+      "@id": "_:Ne81d3d2e457b4f18aead75661c7a1da0",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1460"
@@ -147,7 +147,18 @@
       "sc:name": "Protein structure"
     },
     {
-      "@id": "_:N7e9127955bd4413583a13babffbb2a20",
+      "@id": "_:N76766958874147b6be414961c4e894fb",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1539"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2331"
+      },
+      "sc:name": "Protein structural quality report"
+    },
+    {
+      "@id": "_:Nbbf9193105ca4a4b9dabb52635af34a6",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1460"
@@ -161,17 +172,6 @@
         }
       ],
       "sc:name": "Protein structure"
-    },
-    {
-      "@id": "_:Nfdec5dda2271458db565fffbb44cbb74",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1539"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2331"
-      },
-      "sc:name": "Protein structural quality report"
     },
     {
       "@id": "https://doi.org/10.1186/1758-2946-5-39",

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,48 +36,44 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1126/science.298.5597.1333b",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/insdc",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "ENA Contact details",
       "bsc:input": [
         {
-          "@id": "_:N98198b45619b4492b5a0c5e7e4e87edf"
+          "@id": "_:Ne669f91b99c74ba1a6a1fdbc6d94be16"
         },
         {
-          "@id": "_:Nd472e57efac24a7dbd48587ddda5d692"
+          "@id": "_:Nc92defb7837042feab360e4c8a60154f"
         },
         {
-          "@id": "_:N95d520887dda4bbf99744f976d942e29"
+          "@id": "_:Nc0f55488f9894771a90ff2e668380abf"
         },
         {
-          "@id": "_:Nce338e123a754126bd717cc57f690f04"
+          "@id": "_:Na2abc9b9284548b1856486e14b0a109c"
         },
         {
-          "@id": "_:Nf3b5a2b00f9f4c6085bbc12777711857"
+          "@id": "_:Ndadd0b338c4f426ba22cf1e78c28685a"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N81d9cdfd123d42f5a577d65de2994613"
+          "@id": "_:Nfe59559097df4768a9c0b925c0643223"
         },
         {
-          "@id": "_:Nce8224a80f024f96910dfc513ade2970"
+          "@id": "_:N07dece92e53e43529c584fbea527c3e1"
         },
         {
-          "@id": "_:Nb809883c254b404e9b602e6cc97fc604"
+          "@id": "_:N34b10925122c4f87b0312d38da0d203c"
         },
         {
-          "@id": "_:Na13a826e27e84f0ab70ef80f8c5a7741"
+          "@id": "_:N7528ade8ef7d47c387aa5410a5333cb6"
         },
         {
-          "@id": "_:N5df3ebed268f409fb7dd1489e776e210"
+          "@id": "_:Nad9993d4d5a0440aad5d3bf5f44486e8"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Database portal",
       "sc:applicationSubCategory": [
         {
@@ -99,9 +95,9 @@
       },
       "sc:name": "Nucleotide Sequence Database Collaboration",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": "Identifiers.org",
       "sc:softwareHelp": {
@@ -110,7 +106,47 @@
       "sc:url": "http://identifiers.org/insdc/"
     },
     {
-      "@id": "_:N81d9cdfd123d42f5a577d65de2994613",
+      "@id": "_:Ne669f91b99c74ba1a6a1fdbc6d94be16",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1103"
+      },
+      "sc:name": "EMBL/GenBank/DDBJ ID"
+    },
+    {
+      "@id": "_:Nc92defb7837042feab360e4c8a60154f",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1103"
+      },
+      "sc:name": "EMBL/GenBank/DDBJ ID"
+    },
+    {
+      "@id": "_:Nc0f55488f9894771a90ff2e668380abf",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1103"
+      },
+      "sc:name": "EMBL/GenBank/DDBJ ID"
+    },
+    {
+      "@id": "_:Na2abc9b9284548b1856486e14b0a109c",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1103"
+      },
+      "sc:name": "EMBL/GenBank/DDBJ ID"
+    },
+    {
+      "@id": "_:Ndadd0b338c4f426ba22cf1e78c28685a",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1103"
+      },
+      "sc:name": "EMBL/GenBank/DDBJ ID"
+    },
+    {
+      "@id": "_:Nfe59559097df4768a9c0b925c0643223",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2977"
@@ -121,7 +157,7 @@
       "sc:name": "Nucleic acid sequence"
     },
     {
-      "@id": "_:Nce8224a80f024f96910dfc513ade2970",
+      "@id": "_:N07dece92e53e43529c584fbea527c3e1",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2977"
@@ -132,7 +168,7 @@
       "sc:name": "Nucleic acid sequence"
     },
     {
-      "@id": "_:Nb809883c254b404e9b602e6cc97fc604",
+      "@id": "_:N34b10925122c4f87b0312d38da0d203c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2977"
@@ -143,7 +179,7 @@
       "sc:name": "Nucleic acid sequence"
     },
     {
-      "@id": "_:Na13a826e27e84f0ab70ef80f8c5a7741",
+      "@id": "_:N7528ade8ef7d47c387aa5410a5333cb6",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2977"
@@ -154,7 +190,7 @@
       "sc:name": "Nucleic acid sequence"
     },
     {
-      "@id": "_:N5df3ebed268f409fb7dd1489e776e210",
+      "@id": "_:Nad9993d4d5a0440aad5d3bf5f44486e8",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2977"
@@ -165,44 +201,8 @@
       "sc:name": "Nucleic acid sequence"
     },
     {
-      "@id": "_:N98198b45619b4492b5a0c5e7e4e87edf",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1103"
-      },
-      "sc:name": "EMBL/GenBank/DDBJ ID"
-    },
-    {
-      "@id": "_:Nd472e57efac24a7dbd48587ddda5d692",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1103"
-      },
-      "sc:name": "EMBL/GenBank/DDBJ ID"
-    },
-    {
-      "@id": "_:N95d520887dda4bbf99744f976d942e29",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1103"
-      },
-      "sc:name": "EMBL/GenBank/DDBJ ID"
-    },
-    {
-      "@id": "_:Nce338e123a754126bd717cc57f690f04",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1103"
-      },
-      "sc:name": "EMBL/GenBank/DDBJ ID"
-    },
-    {
-      "@id": "_:Nf3b5a2b00f9f4c6085bbc12777711857",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1103"
-      },
-      "sc:name": "EMBL/GenBank/DDBJ ID"
+      "@id": "https://doi.org/10.1126/science.298.5597.1333b",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

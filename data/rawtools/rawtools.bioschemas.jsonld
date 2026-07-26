@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -43,22 +43,22 @@
       "@id": "https://bio.tools/rawtools",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N1510b3a7971d417998afcc3b616e3f3c"
+        "@id": "_:Nd83911583a0b4604b3ecb816a91d3ff7"
       },
       "bsc:output": {
-        "@id": "_:N6508cc1f13cc4aebb7905d9ff85ecbbc"
+        "@id": "_:N1fdcb5bcc4da4fe78eff9066aa41da51"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Desktop application"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3520"
+          "@id": "edam:topic_0121"
         },
         {
-          "@id": "edam:topic_0121"
+          "@id": "edam:topic_3520"
         }
       ],
       "sc:citation": [
@@ -75,8 +75,8 @@
       "sc:license": "Apache-2.0",
       "sc:name": "RawTools",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -86,24 +86,24 @@
       "sc:url": "https://github.com/kevinkovalchik/RawTools"
     },
     {
-      "@id": "_:N6508cc1f13cc4aebb7905d9ff85ecbbc",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0943"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Mass spectrometry spectra"
-    },
-    {
-      "@id": "_:N1510b3a7971d417998afcc3b616e3f3c",
+      "@id": "_:Nd83911583a0b4604b3ecb816a91d3ff7",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0943"
       },
       "sc:encodingFormat": {
         "@id": "edam:format_3712"
+      },
+      "sc:name": "Mass spectrometry spectra"
+    },
+    {
+      "@id": "_:N1fdcb5bcc4da4fe78eff9066aa41da51",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0943"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
       },
       "sc:name": "Mass spectrometry spectra"
     }

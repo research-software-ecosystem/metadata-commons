@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,22 +39,22 @@
       "@id": "https://bio.tools/mam-pipeline",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N139aba1622204c96bc8c5b9d99057dd4"
+        "@id": "_:N20835d202fb144969a94dd71b572a630"
       },
       "bsc:output": {
-        "@id": "_:N7d757ef17bd44f46ba1ed838ea7f7db1"
+        "@id": "_:Nf8568d0e9f524db398f6dd6a6ed61304"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0080"
       },
       "sc:citation": [
+        "pubmed:25237057",
+        "pmcid:PMC4227762",
         {
           "@id": "https://doi.org/10.1093/nar/gku847"
-        },
-        "pmcid:PMC4227762",
-        "pubmed:25237057"
+        }
       ],
       "sc:description": "Monoallelic DNA-methylation pipeline for enrichment-based sequencing technologies.",
       "sc:featureList": {
@@ -62,8 +62,8 @@
       },
       "sc:name": "MAM-pipeline",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:provider": "ugent.be",
@@ -74,7 +74,7 @@
       "sc:url": "http://www.biobix.be/mam/"
     },
     {
-      "@id": "_:N139aba1622204c96bc8c5b9d99057dd4",
+      "@id": "_:N20835d202fb144969a94dd71b572a630",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3497"
@@ -82,7 +82,7 @@
       "sc:name": "DNA sequence (raw)"
     },
     {
-      "@id": "_:N7d757ef17bd44f46ba1ed838ea7f7db1",
+      "@id": "_:Nf8568d0e9f524db398f6dd6a6ed61304",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1893"

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,25 +39,25 @@
       "@id": "https://bio.tools/gene_expression_plots",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N6efba9af28ee48c8b9cb3311788d4a22"
+        "@id": "_:N094aeff5a1834e13a83eac889d319680"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3170"
-        },
-        {
-          "@id": "edam:topic_3172"
+          "@id": "edam:topic_0203"
         },
         {
           "@id": "edam:topic_0625"
         },
         {
+          "@id": "edam:topic_3172"
+        },
+        {
           "@id": "edam:topic_0780"
         },
         {
-          "@id": "edam:topic_0203"
+          "@id": "edam:topic_3170"
         }
       ],
       "sc:citation": {
@@ -66,27 +66,27 @@
       "sc:description": "Visualize and compare gene expression from standard transcriptome (RNA-Seq) data, cluster samples and genes, and infer enrichment of gene function in gene-sets.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0571"
+          "@id": "edam:operation_3501"
         },
         {
-          "@id": "edam:operation_3501"
+          "@id": "edam:operation_3891"
+        },
+        {
+          "@id": "edam:operation_0571"
         },
         {
           "@id": "edam:operation_3960"
         },
         {
           "@id": "edam:operation_2939"
-        },
-        {
-          "@id": "edam:operation_3891"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "GPL-3.0",
       "sc:name": "Gene Expression Plots",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -95,7 +95,7 @@
       "sc:url": "https://usadellab.github.io/GeneExpressionPlots/#/data"
     },
     {
-      "@id": "_:N6efba9af28ee48c8b9cb3311788d4a22",
+      "@id": "_:N094aeff5a1834e13a83eac889d319680",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2603"

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,10 +36,6 @@
   },
   "@graph": [
     {
-      "@id": "https://orcid.org/0000-0002-7359-0633",
-      "@type": "sc:Person"
-    },
-    {
       "@id": "https://doi.org/10.1093/bioinformatics/btt555",
       "@type": "sc:CreativeWork"
     },
@@ -51,16 +47,16 @@
       },
       "bsc:input": [
         {
-          "@id": "_:N407d1c95a8fb413fa6bf56e189c4b0aa"
+          "@id": "_:N8773f9254cc14526868d27de3a6f2dba"
         },
         {
-          "@id": "_:N86535355ba714716a4e466a239cd04a2"
+          "@id": "_:Ne24c41e74bce4709b831b0ae6132ae11"
         }
       ],
       "bsc:output": {
-        "@id": "_:Ncc23b5175c4246b4a851b85b4f958fb7"
+        "@id": "_:N0433fa1a115c445db8372428d70e7691"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
@@ -88,8 +84,8 @@
       "sc:license": "GPL-3.0",
       "sc:name": "BCov",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:provider": "ELIXIR-ITA-BOLOGNA",
       "sc:softwareHelp": {
@@ -99,7 +95,7 @@
       "sc:url": "http://biocomp.unibo.it/savojard/bcov/index.html"
     },
     {
-      "@id": "_:N407d1c95a8fb413fa6bf56e189c4b0aa",
+      "@id": "_:N8773f9254cc14526868d27de3a6f2dba",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1460"
@@ -110,7 +106,7 @@
       "sc:name": "Protein structure"
     },
     {
-      "@id": "_:N86535355ba714716a4e466a239cd04a2",
+      "@id": "_:Ne24c41e74bce4709b831b0ae6132ae11",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1384"
@@ -121,7 +117,7 @@
       "sc:name": "Sequence alignment (protein)"
     },
     {
-      "@id": "_:Ncc23b5175c4246b4a851b85b4f958fb7",
+      "@id": "_:N0433fa1a115c445db8372428d70e7691",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0906"
@@ -130,6 +126,10 @@
         "@id": "edam:format_2330"
       },
       "sc:name": "Protein interaction data"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-7359-0633",
+      "@type": "sc:Person"
     }
   ]
 }

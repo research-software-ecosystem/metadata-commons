@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,20 +36,24 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1101/2021.08.04.455173",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/protist_guru",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Ne9a933fff8384f70848690d4888773a2"
+          "@id": "_:N7858b899f78344beac52b26df8e7ca39"
         },
         {
-          "@id": "_:Nc88f9e0093154b6c94e04f0ae778ba46"
+          "@id": "_:N725df4816fba485ba0747b0cc97f4bb0"
         },
         {
-          "@id": "_:Nd0db1037a39144159ee35c24bd254d86"
+          "@id": "_:N133fa7bece3f48df8fe8d9ceaaaf2840"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
@@ -74,37 +78,29 @@
       "sc:description": "A platform dedicated to the visualization and analysis of protist co-expression and co-function networks.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3192"
+          "@id": "edam:operation_2421"
+        },
+        {
+          "@id": "edam:operation_3463"
         },
         {
           "@id": "edam:operation_0313"
         },
         {
-          "@id": "edam:operation_2421"
-        },
-        {
-          "@id": "edam:operation_3463"
+          "@id": "edam:operation_3192"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:name": "Protist Guru",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:url": "https://protists.sbs.ntu.edu.sg"
     },
     {
-      "@id": "_:Ne9a933fff8384f70848690d4888773a2",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2757"
-      },
-      "sc:name": "Pfam domain name"
-    },
-    {
-      "@id": "_:Nc88f9e0093154b6c94e04f0ae778ba46",
+      "@id": "_:N7858b899f78344beac52b26df8e7ca39",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3754"
@@ -112,7 +108,7 @@
       "sc:name": "GO-term enrichment data"
     },
     {
-      "@id": "_:Nd0db1037a39144159ee35c24bd254d86",
+      "@id": "_:N725df4816fba485ba0747b0cc97f4bb0",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1027"
@@ -120,8 +116,12 @@
       "sc:name": "Gene ID (NCBI)"
     },
     {
-      "@id": "https://doi.org/10.1101/2021.08.04.455173",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N133fa7bece3f48df8fe8d9ceaaaf2840",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2757"
+      },
+      "sc:name": "Pfam domain name"
     }
   ]
 }

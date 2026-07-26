@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,55 +36,51 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/nar/gkw343",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/breseq_bam2cov",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Galaxy Support Team",
       "bsc:input": [
         {
-          "@id": "_:N0434f4b782674e338c7dc7c2f5d9913f"
+          "@id": "_:N3915a913797649c2a6c0991aa337799e"
         },
         {
-          "@id": "_:N7180ad49023b497c89053f91f0d11aef"
+          "@id": "_:N1eb7e6089fd547a195b109decaf0b1c7"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N556f2271064c44f69ddf0818c82269be"
+          "@id": "_:N031fc6287ff44f35a4183a9b6942e615"
         },
         {
-          "@id": "_:N9330360a37bc49479e70a6e220e38607"
+          "@id": "_:Nc4f90d8b4a8b4a9a895be60ab1127f90"
         },
         {
-          "@id": "_:N76c82033466941259bea2958f8ee827c"
+          "@id": "_:N75804e8b33284fcb8fbb9d2ebd8caef1"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0160"
+          "@id": "edam:topic_0092"
         },
         {
           "@id": "edam:topic_0080"
         },
         {
-          "@id": "edam:topic_0092"
+          "@id": "edam:topic_0160"
         }
       ],
       "sc:citation": [
-        "pmcid:PMC4987906",
-        "pmcid:PMC4239701",
         "pubmed:24838886",
-        {
-          "@id": "https://doi.org/10.1093/nar/gkw343"
-        },
-        "pubmed:27137889",
+        "pmcid:PMC4239701",
         {
           "@id": "https://doi.org/10.1007/978-1-4939-0554-6_12"
+        },
+        "pubmed:27137889",
+        "pmcid:PMC4987906",
+        {
+          "@id": "https://doi.org/10.1093/nar/gkw343"
         },
         {
           "@id": "https://doi.org/10.7490/f1000research.1114334.1"
@@ -96,9 +92,9 @@
       },
       "sc:name": "breseq_bam2cov",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://galaxy.pasteur.fr/root?tool_id=toolshed.pasteur.fr%2Frepos%2Fmvalade%2Fbreseq%2Fbreseq_bam2cov%2F0.26"
@@ -107,18 +103,7 @@
       "sc:url": "http://barricklab.org/twiki/bin/view/Lab/ToolsBacterialGenomeResequencing"
     },
     {
-      "@id": "_:N0434f4b782674e338c7dc7c2f5d9913f",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0924"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2572"
-      },
-      "sc:name": "Sequence trace"
-    },
-    {
-      "@id": "_:N7180ad49023b497c89053f91f0d11aef",
+      "@id": "_:N3915a913797649c2a6c0991aa337799e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0863"
@@ -129,29 +114,18 @@
       "sc:name": "Sequence alignment"
     },
     {
-      "@id": "_:N556f2271064c44f69ddf0818c82269be",
+      "@id": "_:N1eb7e6089fd547a195b109decaf0b1c7",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2968"
+        "@id": "edam:data_0924"
       },
       "sc:encodingFormat": {
-        "@id": "edam:format_3547"
+        "@id": "edam:format_2572"
       },
-      "sc:name": "Image"
+      "sc:name": "Sequence trace"
     },
     {
-      "@id": "_:N9330360a37bc49479e70a6e220e38607",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0006"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3475"
-      },
-      "sc:name": "Data"
-    },
-    {
-      "@id": "_:N76c82033466941259bea2958f8ee827c",
+      "@id": "_:N031fc6287ff44f35a4183a9b6942e615",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0006"
@@ -162,11 +136,37 @@
       "sc:name": "Data"
     },
     {
+      "@id": "_:Nc4f90d8b4a8b4a9a895be60ab1127f90",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0006"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3475"
+      },
+      "sc:name": "Data"
+    },
+    {
+      "@id": "_:N75804e8b33284fcb8fbb9d2ebd8caef1",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2968"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3547"
+      },
+      "sc:name": "Image"
+    },
+    {
+      "@id": "https://doi.org/10.1007/978-1-4939-0554-6_12",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://doi.org/10.7490/f1000research.1114334.1",
       "@type": "sc:CreativeWork"
     },
     {
-      "@id": "https://doi.org/10.1007/978-1-4939-0554-6_12",
+      "@id": "https://doi.org/10.1093/nar/gkw343",
       "@type": "sc:CreativeWork"
     }
   ]

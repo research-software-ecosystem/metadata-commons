@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,6 +36,10 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.5281/zenodo.18487584",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://orcid.org/0000-0002-9750-5034",
       "@type": "sc:Person"
     },
@@ -44,12 +48,12 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Goran Neshich",
       "bsc:input": {
-        "@id": "_:N14a5deca65a643c486a961ee3435bdad"
+        "@id": "_:N4315483e260942da97bb3ed23b682ee6"
       },
       "bsc:output": {
-        "@id": "_:N7791d4c722f84c2d8c3fa49c55c9b125"
+        "@id": "_:Nabe12cb0d0174ac0b65f434cf23b5727"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Database portal"
@@ -59,10 +63,10 @@
           "@id": "edam:topic_3474"
         },
         {
-          "@id": "edam:topic_0128"
+          "@id": "edam:topic_0820"
         },
         {
-          "@id": "edam:topic_0820"
+          "@id": "edam:topic_0128"
         }
       ],
       "sc:author": {
@@ -80,18 +84,7 @@
       "sc:url": "https://github.com/omagefolorunsho/MPLID"
     },
     {
-      "@id": "_:N7791d4c722f84c2d8c3fa49c55c9b125",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1277"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3752"
-      },
-      "sc:name": "Protein features"
-    },
-    {
-      "@id": "_:N14a5deca65a643c486a961ee3435bdad",
+      "@id": "_:N4315483e260942da97bb3ed23b682ee6",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1460"
@@ -102,8 +95,15 @@
       "sc:name": "Protein structure"
     },
     {
-      "@id": "https://doi.org/10.5281/zenodo.18487584",
-      "@type": "sc:CreativeWork"
+      "@id": "_:Nabe12cb0d0174ac0b65f434cf23b5727",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1277"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3752"
+      },
+      "sc:name": "Protein features"
     }
   ]
 }

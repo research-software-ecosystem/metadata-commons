@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -44,42 +44,42 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N4149a343c341439ebe94e0936786e719"
+          "@id": "_:N80e820b53dba40c7b6764e6d2352c399"
         },
         {
-          "@id": "_:Ne9bdf623da5b4bbda6ac3547d9db4404"
+          "@id": "_:Nb38e85e741484199a8887d5aa7eaa4b9"
         },
         {
-          "@id": "_:N6855c5247ecd40719493e2344569c364"
+          "@id": "_:N090be73b717a45f4a99af686f0ae9301"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N917dd3a6f97f496391d217e2da0181a9"
+          "@id": "_:Nabda22d1936543fea827912c74cbf1c1"
         },
         {
-          "@id": "_:N118bc4f474f74b51bb4877dda58100ca"
+          "@id": "_:N3213dc064ff8407da166e9f58e48d6d8"
         },
         {
-          "@id": "_:N776043245eb240e9bc31680ea5a8e252"
+          "@id": "_:N561b34fe4b9641cfacabb9da3cf07a53"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Database portal",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0085"
+          "@id": "edam:topic_0797"
         },
         {
-          "@id": "edam:topic_0797"
+          "@id": "edam:topic_0085"
         },
         {
           "@id": "edam:topic_3308"
         }
       ],
       "sc:author": [
-        "Julien Roux",
-        "Andrea Komljenovic"
+        "Andrea Komljenovic",
+        "Julien Roux"
       ],
       "sc:citation": {
         "@id": "https://doi.org/10.1093/nar/gkaa793"
@@ -92,8 +92,8 @@
       "sc:name": "Bgee",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://bioconductor.org/packages/BgeeDB"
@@ -102,31 +102,7 @@
       "sc:url": "https://bioconductor.org/packages/BgeeDB"
     },
     {
-      "@id": "_:N917dd3a6f97f496391d217e2da0181a9",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0916"
-      },
-      "sc:name": "Gene report"
-    },
-    {
-      "@id": "_:N118bc4f474f74b51bb4877dda58100ca",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2603"
-      },
-      "sc:name": "Gene expression data"
-    },
-    {
-      "@id": "_:N776043245eb240e9bc31680ea5a8e252",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0928"
-      },
-      "sc:name": "Gene expression profile"
-    },
-    {
-      "@id": "_:N4149a343c341439ebe94e0936786e719",
+      "@id": "_:N80e820b53dba40c7b6764e6d2352c399",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1033"
@@ -134,7 +110,7 @@
       "sc:name": "Ensembl gene ID"
     },
     {
-      "@id": "_:Ne9bdf623da5b4bbda6ac3547d9db4404",
+      "@id": "_:Nb38e85e741484199a8887d5aa7eaa4b9",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2299"
@@ -142,12 +118,36 @@
       "sc:name": "Gene name"
     },
     {
-      "@id": "_:N6855c5247ecd40719493e2344569c364",
+      "@id": "_:N090be73b717a45f4a99af686f0ae9301",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3021"
       },
       "sc:name": "UniProt accession"
+    },
+    {
+      "@id": "_:Nabda22d1936543fea827912c74cbf1c1",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2603"
+      },
+      "sc:name": "Gene expression data"
+    },
+    {
+      "@id": "_:N3213dc064ff8407da166e9f58e48d6d8",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0928"
+      },
+      "sc:name": "Gene expression profile"
+    },
+    {
+      "@id": "_:N561b34fe4b9641cfacabb9da3cf07a53",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0916"
+      },
+      "sc:name": "Gene report"
     }
   ]
 }

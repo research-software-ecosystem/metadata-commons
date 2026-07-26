@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -38,9 +38,15 @@
     {
       "@id": "https://bio.tools/parazitcub",
       "@type": "sc:SoftwareApplication",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Library",
       "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_0203"
+        },
+        {
+          "@id": "edam:topic_0621"
+        },
         {
           "@id": "edam:topic_3945"
         },
@@ -49,26 +55,17 @@
         },
         {
           "@id": "edam:topic_3500"
-        },
-        {
-          "@id": "edam:topic_0203"
-        },
-        {
-          "@id": "edam:topic_0621"
         }
       ],
       "sc:citation": [
+        "pubmed:38021405",
+        "pmcid:PMC10682597",
         {
           "@id": "https://doi.org/10.12688/f1000research.143223.1"
-        },
-        "pmcid:PMC10682597",
-        "pubmed:38021405"
+        }
       ],
       "sc:description": "An R package to streamline the process of investigating the adaptations of parasites' codon usage bias.",
       "sc:featureList": [
-        {
-          "@id": "edam:operation_0335"
-        },
         {
           "@id": "edam:operation_2962"
         },
@@ -80,14 +77,17 @@
         },
         {
           "@id": "edam:operation_3891"
+        },
+        {
+          "@id": "edam:operation_0335"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "GPL-3.0",
       "sc:name": "parazitCUB",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:url": "https://github.com/AliYoussef96/parazitCUB"

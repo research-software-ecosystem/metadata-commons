@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,28 +40,28 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N7e15e68744e9450c9ae0da8c0336d9f9"
+          "@id": "_:N4c899e778e7c4a51a265cd54ae373a61"
         },
         {
-          "@id": "_:Neeae9631d6ce48f7a106a9fe6524c2a5"
+          "@id": "_:N1a0218bd59074ee2bdb323f57cb8352b"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N9b88674b8d2d4563b9531b864927c578"
+          "@id": "_:Ndd1887f63e2c465fa3f2f303bc610f9d"
         },
         {
-          "@id": "_:N6f83401bd0ae49f79e65a5ff799332b8"
+          "@id": "_:Nd534c17a24304873a886141b61c05568"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0121"
+          "@id": "edam:topic_0092"
         },
         {
-          "@id": "edam:topic_0092"
+          "@id": "edam:topic_0121"
         },
         {
           "@id": "edam:topic_3520"
@@ -71,10 +71,7 @@
       "sc:description": "Image analysis\" of LC-MS features, deconvolution etc.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3629"
-        },
-        {
-          "@id": "edam:operation_3630"
+          "@id": "edam:operation_3203"
         },
         {
           "@id": "edam:operation_3694"
@@ -83,22 +80,25 @@
           "@id": "edam:operation_3432"
         },
         {
-          "@id": "edam:operation_3215"
-        },
-        {
-          "@id": "edam:operation_3203"
+          "@id": "edam:operation_3629"
         },
         {
           "@id": "edam:operation_3695"
         },
         {
           "@id": "edam:operation_3634"
+        },
+        {
+          "@id": "edam:operation_3215"
+        },
+        {
+          "@id": "edam:operation_3630"
         }
       ],
       "sc:name": "MapQuant",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "http://genepath.med.harvard.edu/mw/MapQuant_Release_Notes"
@@ -106,18 +106,29 @@
       "sc:url": "http://arep.med.harvard.edu/MapQuant/index.html"
     },
     {
-      "@id": "_:N9b88674b8d2d4563b9531b864927c578",
+      "@id": "_:N4c899e778e7c4a51a265cd54ae373a61",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2603"
+        "@id": "edam:data_0943"
       },
       "sc:encodingFormat": {
-        "@id": "edam:format_2058"
+        "@id": "edam:format_3245"
       },
-      "sc:name": "Expression data"
+      "sc:name": "Mass spectrometry spectra"
     },
     {
-      "@id": "_:N6f83401bd0ae49f79e65a5ff799332b8",
+      "@id": "_:N1a0218bd59074ee2bdb323f57cb8352b",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0943"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3245"
+      },
+      "sc:name": "Mass spectrometry spectra"
+    },
+    {
+      "@id": "_:Ndd1887f63e2c465fa3f2f303bc610f9d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
@@ -128,26 +139,15 @@
       "sc:name": "Plot"
     },
     {
-      "@id": "_:N7e15e68744e9450c9ae0da8c0336d9f9",
+      "@id": "_:Nd534c17a24304873a886141b61c05568",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_0943"
+        "@id": "edam:data_2603"
       },
       "sc:encodingFormat": {
-        "@id": "edam:format_3245"
+        "@id": "edam:format_2058"
       },
-      "sc:name": "Mass spectrometry spectra"
-    },
-    {
-      "@id": "_:Neeae9631d6ce48f7a106a9fe6524c2a5",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0943"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3245"
-      },
-      "sc:name": "Mass spectrometry spectra"
+      "sc:name": "Expression data"
     }
   ]
 }

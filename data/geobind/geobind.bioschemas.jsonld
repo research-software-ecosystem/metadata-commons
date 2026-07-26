@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,26 +36,24 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/gkad288",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/geobind",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N2fcc95a014a344c7a0ba68af1d8b4c3f"
+        "@id": "_:N699d25fb510a4ac9bf197b474f7cf8f6"
       },
       "bsc:output": {
-        "@id": "_:N40dd51c5a04d4c9bbe77679cfc8751d6"
+        "@id": "_:N1cadac28183547a2ac74f1266c913077"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Web application"
       ],
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_0082"
-        },
-        {
-          "@id": "edam:topic_3534"
-        },
         {
           "@id": "edam:topic_3474"
         },
@@ -63,46 +61,52 @@
           "@id": "edam:topic_3511"
         },
         {
+          "@id": "edam:topic_3534"
+        },
+        {
           "@id": "edam:topic_0166"
+        },
+        {
+          "@id": "edam:topic_0082"
         }
       ],
       "sc:citation": [
+        "pubmed:37070217",
         "pmcid:PMC10250245",
         {
           "@id": "https://doi.org/10.1093/nar/gkad288"
-        },
-        "pubmed:37070217"
+        }
       ],
       "sc:description": "Segmentation of nucleic acid binding interface on protein surface with geometric deep learning.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_2464"
+          "@id": "edam:operation_3897"
         },
         {
           "@id": "edam:operation_0415"
-        },
-        {
-          "@id": "edam:operation_3897"
         },
         {
           "@id": "edam:operation_0420"
         },
         {
           "@id": "edam:operation_2492"
+        },
+        {
+          "@id": "edam:operation_2464"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "MIT",
       "sc:name": "GeoBind",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:url": "http://www.zpliulab.cn/GeoBind"
     },
     {
-      "@id": "_:N2fcc95a014a344c7a0ba68af1d8b4c3f",
+      "@id": "_:N699d25fb510a4ac9bf197b474f7cf8f6",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1460"
@@ -113,16 +117,12 @@
       "sc:name": "Protein structure"
     },
     {
-      "@id": "_:N40dd51c5a04d4c9bbe77679cfc8751d6",
+      "@id": "_:N1cadac28183547a2ac74f1266c913077",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1566"
       },
       "sc:name": "Protein-ligand interaction report"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gkad288",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,27 +36,31 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1002/pmic.200900759",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/xtandem_parser",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N3542d9eced4a4bc1b1c78302a919cb60"
+        "@id": "_:Ndce13ed7e40642c692bd6d280db7375f"
       },
       "bsc:output": [
         {
-          "@id": "_:Nd73d7b8200264c788bdb13baa8b6e44c"
+          "@id": "_:N99a77e40a00044ad9778c6d8804df763"
         },
         {
-          "@id": "_:N5b53d8393cb040f584e5c66df04dc5b1"
+          "@id": "_:N70bb0fdf985f432fbbcc595e1a12103f"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Desktop application",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3520"
+          "@id": "edam:topic_0121"
         },
         {
-          "@id": "edam:topic_0121"
+          "@id": "edam:topic_3520"
         }
       ],
       "sc:citation": {
@@ -68,17 +72,17 @@
           "@id": "edam:operation_2409"
         },
         {
-          "@id": "edam:operation_3694"
+          "@id": "edam:operation_0335"
         },
         {
-          "@id": "edam:operation_0335"
+          "@id": "edam:operation_3694"
         }
       ],
       "sc:name": "XTandem Parser",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:provider": "ugent.be",
       "sc:softwareHelp": {
@@ -88,29 +92,7 @@
       "sc:url": "http://compomics.github.io/projects/xtandem-parser.html"
     },
     {
-      "@id": "_:Nd73d7b8200264c788bdb13baa8b6e44c",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0945"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3752"
-      },
-      "sc:name": "Peptide identification"
-    },
-    {
-      "@id": "_:N5b53d8393cb040f584e5c66df04dc5b1",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0943"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3652"
-      },
-      "sc:name": "Mass spectrometry spectra"
-    },
-    {
-      "@id": "_:N3542d9eced4a4bc1b1c78302a919cb60",
+      "@id": "_:Ndce13ed7e40642c692bd6d280db7375f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0945"
@@ -121,8 +103,26 @@
       "sc:name": "Peptide identification"
     },
     {
-      "@id": "https://doi.org/10.1002/pmic.200900759",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N99a77e40a00044ad9778c6d8804df763",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0943"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3652"
+      },
+      "sc:name": "Mass spectrometry spectra"
+    },
+    {
+      "@id": "_:N70bb0fdf985f432fbbcc595e1a12103f",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0945"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3752"
+      },
+      "sc:name": "Peptide identification"
     }
   ]
 }

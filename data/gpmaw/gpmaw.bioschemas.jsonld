@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,76 +36,80 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1016/s0968-0004(01)01954-5",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/gpmaw",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Lighthouse data",
       "bsc:input": [
         {
-          "@id": "_:N4e1c4735efab4e99919488ea27f1440e"
+          "@id": "_:Nfdc8cfea55214259b13bdff68c97400a"
         },
         {
-          "@id": "_:N8a18080243b4407fa25259c4df716957"
+          "@id": "_:Ne1ec02bfb79f45f9afbbfc1f7d70cc2c"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Nc619461a8d964c72bdf4b2f4beefae22"
+          "@id": "_:Necc36dcad5c54f34a94576921ac51d74"
         },
         {
-          "@id": "_:N7d4d22890ad8497db12231812c787a05"
+          "@id": "_:N43b00255eabc488ead5a9ee25bdd0c2c"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Desktop application",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0080"
+          "@id": "edam:topic_3542"
         },
         {
           "@id": "edam:topic_3520"
         },
         {
-          "@id": "edam:topic_3542"
+          "@id": "edam:topic_0080"
         }
       ],
       "sc:citation": [
+        "pubmed:11701329",
         {
           "@id": "https://doi.org/10.1016/s0968-0004(01)01954-5"
-        },
-        "pubmed:11701329"
+        }
       ],
       "sc:description": "This tool was primarily intended as a tool for mass spectrometric analysis of proteins and peptides. However, a number of other bioinformatics tools have been included, so the use of the program extends far beyond simple mass analysis.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_2479"
-        },
-        {
-          "@id": "edam:operation_3214"
-        },
-        {
           "@id": "edam:operation_3646"
-        },
-        {
-          "@id": "edam:operation_2478"
-        },
-        {
-          "@id": "edam:operation_0492"
         },
         {
           "@id": "edam:operation_3694"
         },
         {
+          "@id": "edam:operation_0492"
+        },
+        {
+          "@id": "edam:operation_2478"
+        },
+        {
           "@id": "edam:operation_0292"
+        },
+        {
+          "@id": "edam:operation_2479"
+        },
+        {
+          "@id": "edam:operation_3214"
         }
       ],
       "sc:name": "GPMAW",
       "sc:operatingSystem": "Windows",
       "sc:softwareHelp": [
         {
-          "@id": "http://www.gpmaw.com/html/gpmaw.html"
+          "@id": "http://www.gpmaw.com/html/dummies_guide.html"
         },
         {
-          "@id": "http://www.gpmaw.com/html/dummies_guide.html"
+          "@id": "http://www.gpmaw.com/html/gpmaw.html"
         },
         {
           "@id": "http://www.gpmaw.com/download/GPMAW91.pdf"
@@ -114,26 +118,29 @@
       "sc:url": "http://www.gpmaw.com/"
     },
     {
-      "@id": "_:Nc619461a8d964c72bdf4b2f4beefae22",
+      "@id": "_:Nfdc8cfea55214259b13bdff68c97400a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_0945"
+        "@id": "edam:data_2536"
       },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3711"
-      },
-      "sc:name": "Peptide identification"
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3651"
+        },
+        {
+          "@id": "edam:format_3652"
+        },
+        {
+          "@id": "edam:format_3654"
+        },
+        {
+          "@id": "edam:format_3653"
+        }
+      ],
+      "sc:name": "Mass spectrometry data"
     },
     {
-      "@id": "_:N7d4d22890ad8497db12231812c787a05",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0943"
-      },
-      "sc:name": "Mass spectrum"
-    },
-    {
-      "@id": "_:N4e1c4735efab4e99919488ea27f1440e",
+      "@id": "_:Ne1ec02bfb79f45f9afbbfc1f7d70cc2c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2536"
@@ -144,30 +151,23 @@
       "sc:name": "Mass spectrometry data"
     },
     {
-      "@id": "_:N8a18080243b4407fa25259c4df716957",
+      "@id": "_:Necc36dcad5c54f34a94576921ac51d74",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2536"
+        "@id": "edam:data_0945"
       },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3654"
-        },
-        {
-          "@id": "edam:format_3651"
-        },
-        {
-          "@id": "edam:format_3652"
-        },
-        {
-          "@id": "edam:format_3653"
-        }
-      ],
-      "sc:name": "Mass spectrometry data"
+      "sc:encodingFormat": {
+        "@id": "edam:format_3711"
+      },
+      "sc:name": "Peptide identification"
     },
     {
-      "@id": "https://doi.org/10.1016/s0968-0004(01)01954-5",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N43b00255eabc488ead5a9ee25bdd0c2c",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0943"
+      },
+      "sc:name": "Mass spectrum"
     }
   ]
 }

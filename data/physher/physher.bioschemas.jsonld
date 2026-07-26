@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,74 +36,6 @@
   },
   "@graph": [
     {
-      "@id": "https://bio.tools/physher",
-      "@type": "sc:SoftwareApplication",
-      "biotools:primaryContact": {
-        "@id": "https://orcid.org/0000-0001-8153-9822"
-      },
-      "bsc:input": {
-        "@id": "_:N8ded73cc8e7644088b02fe4878c7b2c1"
-      },
-      "bsc:output": {
-        "@id": "_:N5a068d7113e840a8a73300d019c2299d"
-      },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
-      "sc:additionalType": "Command-line tool",
-      "sc:applicationSubCategory": {
-        "@id": "edam:topic_3293"
-      },
-      "sc:author": {
-        "@id": "https://orcid.org/0000-0001-8153-9822"
-      },
-      "sc:citation": [
-        "pubmed:25055743",
-        {
-          "@id": "https://doi.org/10.1093/sysbio/syz046"
-        },
-        "pmcid:PMC7571498",
-        {
-          "@id": "https://doi.org/10.1186/s12862-014-0163-6"
-        },
-        "pmcid:PMC4222489",
-        "pubmed:31504998"
-      ],
-      "sc:description": "A multi-algorithmic framework for phylogenetic inference",
-      "sc:featureList": {
-        "@id": "edam:operation_0547"
-      },
-      "sc:isAccessibleForFree": true,
-      "sc:license": "GPL-2.0",
-      "sc:name": "physher",
-      "sc:operatingSystem": [
-        "Mac",
-        "Linux"
-      ],
-      "sc:softwareVersion": "2.0.0",
-      "sc:url": "https://github.com/4ment/physher"
-    },
-    {
-      "@id": "_:N8ded73cc8e7644088b02fe4878c7b2c1",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1383"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1929"
-      },
-      "sc:name": "Nucleic acid sequence alignment"
-    },
-    {
-      "@id": "_:N5a068d7113e840a8a73300d019c2299d",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0872"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1910"
-      },
-      "sc:name": "Phylogenetic tree"
-    },
-    {
       "@id": "https://doi.org/10.1186/s12862-014-0163-6",
       "@type": "sc:CreativeWork"
     },
@@ -114,6 +46,74 @@
     {
       "@id": "https://doi.org/10.1093/sysbio/syz046",
       "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://bio.tools/physher",
+      "@type": "sc:SoftwareApplication",
+      "biotools:primaryContact": {
+        "@id": "https://orcid.org/0000-0001-8153-9822"
+      },
+      "bsc:input": {
+        "@id": "_:N0f4185b907d84c5ba7cfcc05b1f2c56d"
+      },
+      "bsc:output": {
+        "@id": "_:Ncfcf387d48614d9d82429ef0cb54fdb7"
+      },
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "sc:additionalType": "Command-line tool",
+      "sc:applicationSubCategory": {
+        "@id": "edam:topic_3293"
+      },
+      "sc:author": {
+        "@id": "https://orcid.org/0000-0001-8153-9822"
+      },
+      "sc:citation": [
+        "pubmed:31504998",
+        "pmcid:PMC7571498",
+        {
+          "@id": "https://doi.org/10.1093/sysbio/syz046"
+        },
+        "pubmed:25055743",
+        "pmcid:PMC4222489",
+        {
+          "@id": "https://doi.org/10.1186/s12862-014-0163-6"
+        }
+      ],
+      "sc:description": "A multi-algorithmic framework for phylogenetic inference",
+      "sc:featureList": {
+        "@id": "edam:operation_0547"
+      },
+      "sc:isAccessibleForFree": true,
+      "sc:license": "GPL-2.0",
+      "sc:name": "physher",
+      "sc:operatingSystem": [
+        "Linux",
+        "Mac"
+      ],
+      "sc:softwareVersion": "2.0.0",
+      "sc:url": "https://github.com/4ment/physher"
+    },
+    {
+      "@id": "_:N0f4185b907d84c5ba7cfcc05b1f2c56d",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1383"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "Nucleic acid sequence alignment"
+    },
+    {
+      "@id": "_:Ncfcf387d48614d9d82429ef0cb54fdb7",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0872"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1910"
+      },
+      "sc:name": "Phylogenetic tree"
     }
   ]
 }

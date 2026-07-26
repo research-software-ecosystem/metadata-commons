@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,36 +36,40 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.12688/wellcomeopenres.10004.1",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/seqplots",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Przemyslaw Stempor",
       "bsc:input": [
         {
-          "@id": "_:Nd0297214837c4f7684f751818aa11884"
+          "@id": "_:N85238e295ea94954bb233fac26782470"
         },
         {
-          "@id": "_:N1a8c19c380dc4f3891b597c80922a241"
+          "@id": "_:Na1bf3813c7404a1589402d701e7c0121"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Nd912d49c84f648fdb4929560517bdc34"
+          "@id": "_:N37e6a6cfc4fd4fe8abe8e6c605f2b1bf"
         },
         {
-          "@id": "_:Nb9175e74ad414eedb582aa23a66ce392"
+          "@id": "_:Nccd82c3f36f740159f8ea2bd56609c4d"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0622"
+          "@id": "edam:topic_0092"
         },
         {
-          "@id": "edam:topic_0092"
+          "@id": "edam:topic_0622"
         }
       ],
       "sc:citation": {
@@ -78,9 +82,9 @@
       "sc:license": "GPL-3.0",
       "sc:name": "seqplots",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/seqplots.html"
@@ -89,7 +93,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/seqplots.html"
     },
     {
-      "@id": "_:Nd0297214837c4f7684f751818aa11884",
+      "@id": "_:N85238e295ea94954bb233fac26782470",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3002"
@@ -108,7 +112,7 @@
       "sc:name": "Annotation track"
     },
     {
-      "@id": "_:N1a8c19c380dc4f3891b597c80922a241",
+      "@id": "_:Na1bf3813c7404a1589402d701e7c0121",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1270"
@@ -127,18 +131,7 @@
       "sc:name": "Feature table"
     },
     {
-      "@id": "_:Nd912d49c84f648fdb4929560517bdc34",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2884"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3508"
-      },
-      "sc:name": "Plot"
-    },
-    {
-      "@id": "_:Nb9175e74ad414eedb582aa23a66ce392",
+      "@id": "_:N37e6a6cfc4fd4fe8abe8e6c605f2b1bf",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1636"
@@ -149,8 +142,15 @@
       "sc:name": "Heat map"
     },
     {
-      "@id": "https://doi.org/10.12688/wellcomeopenres.10004.1",
-      "@type": "sc:CreativeWork"
+      "@id": "_:Nccd82c3f36f740159f8ea2bd56609c4d",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2884"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3508"
+      },
+      "sc:name": "Plot"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,18 +36,22 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1101/084715",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/pavian",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Ne5002e3174ad4a2d96a59d0088006846"
+        "@id": "_:N0d61318dbc364795ac375c086959ca41"
       },
       "bsc:output": {
-        "@id": "_:N9fe6e9ea7dec468e8f772db1762b81df"
+        "@id": "_:Nb52e30cf49ff4620aa49a984fb7844ec"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web application",
-        "Command-line tool"
+        "Command-line tool",
+        "Web application"
       ],
       "sc:applicationSubCategory": [
         {
@@ -63,17 +67,17 @@
       "sc:description": "Web application for exploring metagenomics classification results, with a special focus on infectious disease diagnosis. Pinpointing pathogens in metagenomics classification results is often complicated by host and laboratory contaminants as well as many non-pathogenic microbiota. Researchers can analyze, display and transform results from the Kraken and Centrifuge classifiers using interactive tables, heatmaps and flow diagrams.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3460"
+          "@id": "edam:operation_0226"
         },
         {
-          "@id": "edam:operation_0226"
+          "@id": "edam:operation_3460"
         }
       ],
       "sc:license": "GPL-3.0",
       "sc:name": "Pavian",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -82,7 +86,7 @@
       "sc:url": "https://ccb.jhu.edu/software/pavian/"
     },
     {
-      "@id": "_:Ne5002e3174ad4a2d96a59d0088006846",
+      "@id": "_:N0d61318dbc364795ac375c086959ca41",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3028"
@@ -93,16 +97,12 @@
       "sc:name": "Taxonomy"
     },
     {
-      "@id": "_:N9fe6e9ea7dec468e8f772db1762b81df",
+      "@id": "_:Nb52e30cf49ff4620aa49a984fb7844ec",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
       },
       "sc:name": "Plot"
-    },
-    {
-      "@id": "https://doi.org/10.1101/084715",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

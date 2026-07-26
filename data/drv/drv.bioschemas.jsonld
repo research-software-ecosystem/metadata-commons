@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -38,7 +38,7 @@
     {
       "@id": "https://bio.tools/DRV",
       "@type": "sc:SoftwareApplication",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
@@ -52,8 +52,8 @@
         }
       ],
       "sc:citation": [
-        "pmcid:PMC7141859",
         "pubmed:31793988",
+        "pmcid:PMC7141859",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btz906"
         }
@@ -61,10 +61,10 @@
       "sc:description": "DNA Readout Viewer is a free on-line service providing novel and intuitive visualisation modes for displaying sequence specific DNA-protein interactions.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0239"
+          "@id": "edam:operation_3894"
         },
         {
-          "@id": "edam:operation_3894"
+          "@id": "edam:operation_0239"
         },
         {
           "@id": "edam:operation_0337"
@@ -73,10 +73,10 @@
       "sc:name": "DNA Readout Viewer",
       "sc:softwareHelp": [
         {
-          "@id": "https://drv.brc.hu/help/quick_start_guide.html"
+          "@id": "https://drv.brc.hu/help/about_drv.html"
         },
         {
-          "@id": "https://drv.brc.hu/help/about_drv.html"
+          "@id": "https://drv.brc.hu/help/quick_start_guide.html"
         }
       ],
       "sc:url": "https://drv.brc.hu"

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,43 +36,35 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1101/099457",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1038/nmeth.2658",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/metagenomeseq",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Ne0877b198d5a467f830971ab9e89a1b0"
+          "@id": "_:N6bcb3840ad6d4865ac52037a7b037de3"
         },
         {
-          "@id": "_:Nd96a9baa70f54d61b79f95d81e310383"
+          "@id": "_:N258eb0390e924e59b7a9cd0e01c0307b"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Na27024b625e44358bbe8ae2c57c4bfc0"
+          "@id": "_:Nbe081fee69914e3288951a8644079bcd"
         },
         {
-          "@id": "_:Nf0c816ed5cea4027b9ebe8a8cec15b5b"
+          "@id": "_:N6e477d6c712f403589874c3bedfbe45c"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3168"
+          "@id": "edam:topic_3174"
         },
         {
-          "@id": "edam:topic_3174"
+          "@id": "edam:topic_3168"
         }
       ],
       "sc:citation": [
@@ -95,9 +87,9 @@
       "sc:license": "Artistic-2.0",
       "sc:name": "metagenomeSeq",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://bioconductor.org/packages/metagenomeSeq"
@@ -106,7 +98,7 @@
       "sc:url": "https://bioconductor.org/packages/metagenomeSeq"
     },
     {
-      "@id": "_:Ne0877b198d5a467f830971ab9e89a1b0",
+      "@id": "_:N6bcb3840ad6d4865ac52037a7b037de3",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"
@@ -122,23 +114,23 @@
       "sc:name": "Report"
     },
     {
-      "@id": "_:Nd96a9baa70f54d61b79f95d81e310383",
+      "@id": "_:N258eb0390e924e59b7a9cd0e01c0307b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3028"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_3752"
+          "@id": "edam:format_3746"
         },
         {
-          "@id": "edam:format_3746"
+          "@id": "edam:format_3752"
         }
       ],
       "sc:name": "Taxonomy"
     },
     {
-      "@id": "_:Na27024b625e44358bbe8ae2c57c4bfc0",
+      "@id": "_:Nbe081fee69914e3288951a8644079bcd",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1669"
@@ -154,7 +146,7 @@
       "sc:name": "P-value"
     },
     {
-      "@id": "_:Nf0c816ed5cea4027b9ebe8a8cec15b5b",
+      "@id": "_:N6e477d6c712f403589874c3bedfbe45c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
@@ -168,6 +160,14 @@
         }
       ],
       "sc:name": "Plot"
+    },
+    {
+      "@id": "https://doi.org/10.1038/nmeth.2658",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1101/099457",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

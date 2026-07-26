@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,32 +36,28 @@
   },
   "@graph": [
     {
-      "@id": "https://orcid.org/0000-0002-1126-1535",
-      "@type": "sc:Person"
-    },
-    {
       "@id": "https://bio.tools/pareidolia",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nfdbc4bb60fc342c08cbf38fd6534d5da"
+        "@id": "_:Nc81be832fffa49d297a616c6f3cd443e"
       },
       "bsc:output": {
-        "@id": "_:N1e1a38fc0ebb4f179c5bd849d7d2c825"
+        "@id": "_:N8844660138864b028f3d773d642a58d5"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
         {
           "@id": "edam:topic_0654"
         },
         {
-          "@id": "edam:topic_3173"
+          "@id": "edam:topic_3473"
         },
         {
-          "@id": "edam:topic_3473"
+          "@id": "edam:topic_3173"
         }
       ],
       "sc:author": {
@@ -90,7 +86,18 @@
       "sc:url": "https://github.com/koszullab/pareidolia"
     },
     {
-      "@id": "_:N1e1a38fc0ebb4f179c5bd849d7d2c825",
+      "@id": "_:Nc81be832fffa49d297a616c6f3cd443e",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2856"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3590"
+      },
+      "sc:name": "Structural distance matrix"
+    },
+    {
+      "@id": "_:N8844660138864b028f3d773d642a58d5",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0951"
@@ -101,15 +108,8 @@
       "sc:name": "Statistical estimate score"
     },
     {
-      "@id": "_:Nfdbc4bb60fc342c08cbf38fd6534d5da",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2856"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3590"
-      },
-      "sc:name": "Structural distance matrix"
+      "@id": "https://orcid.org/0000-0002-1126-1535",
+      "@type": "sc:Person"
     }
   ]
 }

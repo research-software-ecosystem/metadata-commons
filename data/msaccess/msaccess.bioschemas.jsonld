@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,24 +40,24 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Ncd4bbc5ee1aa4404ae9d17d31a599f2e"
+          "@id": "_:N9708f42fcd7046878ba661949f864476"
         },
         {
-          "@id": "_:N5c747f16b24442b0a8d0474e53c196f9"
+          "@id": "_:Nb193fe69107e45b9aec0860da587c364"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N0bbdd0b28ce64f92b55b0abc7f7fd66d"
+          "@id": "_:Ncf69fe9c2c6940c28147c335d55d1a62"
         },
         {
-          "@id": "_:N2fa0176c2e8347d99385e2219473739f"
+          "@id": "_:N30457adc238244fbb6d7552e0ff723dc"
         },
         {
-          "@id": "_:N9de395bf36594713983c2199f7cf10df"
+          "@id": "_:Nc03adc66bbc54e8c99d0e77fd82497d6"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
@@ -74,22 +74,22 @@
       "sc:description": "Creates a pseudo-2D-gel representation.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_2409"
-        },
-        {
-          "@id": "edam:operation_0335"
-        },
-        {
           "@id": "edam:operation_3203"
         },
         {
+          "@id": "edam:operation_2409"
+        },
+        {
           "@id": "edam:operation_3695"
+        },
+        {
+          "@id": "edam:operation_0335"
         }
       ],
       "sc:name": "msaccess",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "http://proteowizard.sourceforge.net/tools/msaccess.html"
@@ -97,23 +97,7 @@
       "sc:url": "http://proteowizard.sourceforge.net/tools/msaccess.html"
     },
     {
-      "@id": "_:Ncd4bbc5ee1aa4404ae9d17d31a599f2e",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0945"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3655"
-        },
-        {
-          "@id": "edam:format_3247"
-        }
-      ],
-      "sc:name": "Peptide identification"
-    },
-    {
-      "@id": "_:N5c747f16b24442b0a8d0474e53c196f9",
+      "@id": "_:N9708f42fcd7046878ba661949f864476",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0943"
@@ -123,10 +107,10 @@
           "@id": "edam:format_3651"
         },
         {
-          "@id": "edam:format_3244"
+          "@id": "edam:format_3712"
         },
         {
-          "@id": "edam:format_3712"
+          "@id": "edam:format_3244"
         },
         {
           "@id": "edam:format_3654"
@@ -135,7 +119,34 @@
       "sc:name": "Mass spectrometry spectra"
     },
     {
-      "@id": "_:N0bbdd0b28ce64f92b55b0abc7f7fd66d",
+      "@id": "_:Nb193fe69107e45b9aec0860da587c364",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0945"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3247"
+        },
+        {
+          "@id": "edam:format_3655"
+        }
+      ],
+      "sc:name": "Peptide identification"
+    },
+    {
+      "@id": "_:Ncf69fe9c2c6940c28147c335d55d1a62",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0942"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3547"
+      },
+      "sc:name": "2D PAGE image"
+    },
+    {
+      "@id": "_:N30457adc238244fbb6d7552e0ff723dc",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0943"
@@ -145,43 +156,32 @@
           "@id": "edam:format_3752"
         },
         {
-          "@id": "edam:format_2330"
+          "@id": "edam:format_3475"
         },
         {
-          "@id": "edam:format_3475"
+          "@id": "edam:format_2330"
         }
       ],
       "sc:name": "Mass spectrometry spectra"
     },
     {
-      "@id": "_:N2fa0176c2e8347d99385e2219473739f",
+      "@id": "_:Nc03adc66bbc54e8c99d0e77fd82497d6",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0945"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_3475"
+          "@id": "edam:format_3752"
         },
         {
-          "@id": "edam:format_3752"
+          "@id": "edam:format_3475"
         },
         {
           "@id": "edam:format_2330"
         }
       ],
       "sc:name": "Peptide identification"
-    },
-    {
-      "@id": "_:N9de395bf36594713983c2199f7cf10df",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0942"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3547"
-      },
-      "sc:name": "2D PAGE image"
     }
   ]
 }

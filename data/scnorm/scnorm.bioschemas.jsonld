@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -44,30 +44,30 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Rhonda Bacher",
       "bsc:input": {
-        "@id": "_:N09597983f9034b7ebf3aee50050800b4"
+        "@id": "_:Na787c7adebc249fbb2343c58d58a8afb"
       },
       "bsc:output": {
-        "@id": "_:N7fe2bb430b5940deb5c22a326f709a38"
+        "@id": "_:N3f1a0c9d4fe04d9d865b5d896d48d209"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Plug-in"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0080"
-        },
-        {
           "@id": "edam:topic_0203"
         },
         {
           "@id": "edam:topic_3170"
+        },
+        {
+          "@id": "edam:topic_0080"
         }
       ],
       "sc:citation": [
-        "pmcid:PMC5473255",
         "pubmed:28418000",
+        "pmcid:PMC5473255",
         {
           "@id": "https://doi.org/10.1038/nmeth.4263"
         }
@@ -75,22 +75,22 @@
       "sc:description": "A tool for normalization of single-cell RNA-seq data.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3435"
-        },
-        {
           "@id": "edam:operation_3800"
         },
         {
           "@id": "edam:operation_3563"
+        },
+        {
+          "@id": "edam:operation_3435"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "GPL-2.0",
       "sc:name": "SCnorm",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": [
         {
@@ -104,23 +104,23 @@
       "sc:url": "https://www.biostat.wisc.edu/~kendzior/SCNORM/"
     },
     {
-      "@id": "_:N09597983f9034b7ebf3aee50050800b4",
+      "@id": "_:Na787c7adebc249fbb2343c58d58a8afb",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2603"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_2032"
+          "@id": "edam:format_3033"
         },
         {
-          "@id": "edam:format_3033"
+          "@id": "edam:format_2032"
         }
       ],
       "sc:name": "Gene expression data"
     },
     {
-      "@id": "_:N7fe2bb430b5940deb5c22a326f709a38",
+      "@id": "_:N3f1a0c9d4fe04d9d865b5d896d48d209",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0928"

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,16 +40,16 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N990a5648db914c45b274b0455e122e4a"
+          "@id": "_:Nd380a3365bd8410d95e1130eda6a74d1"
         },
         {
-          "@id": "_:N4194910f13214efeaa5de0ded001c5a6"
+          "@id": "_:Na95a9808039041908cd8c9f67523ddc5"
         }
       ],
       "bsc:output": {
-        "@id": "_:Nf1da4c631e2d40c8ac213a1617ff838e"
+        "@id": "_:N9d5b006b726b4626a828e8c44e98503a"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:description": "A library for proteomics QC report based on the MultiQC framework. Specifically, pmultiqc generates a QC report for the quantms pipeline.",
       "sc:featureList": {
         "@id": "edam:operation_2428"
@@ -58,15 +58,18 @@
       "sc:url": "https://github.com/bigbio/pmultiqc"
     },
     {
-      "@id": "_:Nf1da4c631e2d40c8ac213a1617ff838e",
+      "@id": "_:Nd380a3365bd8410d95e1130eda6a74d1",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2048"
+        "@id": "edam:data_2536"
       },
-      "sc:name": "Report"
+      "sc:encodingFormat": {
+        "@id": "edam:format_3244"
+      },
+      "sc:name": "Mass spectrometry data"
     },
     {
-      "@id": "_:N990a5648db914c45b274b0455e122e4a",
+      "@id": "_:Na95a9808039041908cd8c9f67523ddc5",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0945"
@@ -77,15 +80,12 @@
       "sc:name": "Peptide identification"
     },
     {
-      "@id": "_:N4194910f13214efeaa5de0ded001c5a6",
+      "@id": "_:N9d5b006b726b4626a828e8c44e98503a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2536"
+        "@id": "edam:data_2048"
       },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3244"
-      },
-      "sc:name": "Mass spectrometry data"
+      "sc:name": "Report"
     }
   ]
 }

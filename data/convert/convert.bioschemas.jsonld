@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,30 +40,30 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N943f947ea84e45a4b73d1d27a597b594"
+          "@id": "_:N4f6cba90922d4a9db730756ff0b5bc50"
         },
         {
-          "@id": "_:N95825ea2841648c4a4653456ea5ee893"
+          "@id": "_:N82a214b2b9e740d49706a95ea2bf4b3e"
         },
         {
-          "@id": "_:N6396254e6805474e8c40183ab560c49c"
+          "@id": "_:N48e83c37d5654d199a345483c9d5cf90"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Nf5de090716bd4e1c8b58756eba012f19"
+          "@id": "_:N176771187b38445b8b332d5f717758b2"
         },
         {
-          "@id": "_:N43fe25205c2b4fb89f1af46b2076090d"
+          "@id": "_:Ncce5fba3546744408786cadef6ca7041"
         },
         {
-          "@id": "_:N76fd047d95584b41a4709f5704d27e7c"
+          "@id": "_:Na52a21ae242d471d86f2f6cac4efe350"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
         {
@@ -79,21 +79,21 @@
       "sc:description": "Define coerce methods for microarray data objects.",
       "sc:featureList": [
         {
+          "@id": "edam:operation_3434"
+        },
+        {
           "@id": "edam:operation_0335"
         },
         {
           "@id": "edam:operation_2238"
-        },
-        {
-          "@id": "edam:operation_3434"
         }
       ],
       "sc:license": "LGPL-2.0-or-later",
       "sc:name": "convert",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://bioconductor.org/packages/convert"
@@ -102,7 +102,91 @@
       "sc:url": "https://bioconductor.org/packages/convert"
     },
     {
-      "@id": "_:Nf5de090716bd4e1c8b58756eba012f19",
+      "@id": "_:N4f6cba90922d4a9db730756ff0b5bc50",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2854"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_1982"
+        },
+        {
+          "@id": "edam:format_1929"
+        },
+        {
+          "@id": "edam:format_1367"
+        },
+        {
+          "@id": "edam:format_3033"
+        },
+        {
+          "@id": "edam:format_2069"
+        },
+        {
+          "@id": "edam:format_3475"
+        }
+      ],
+      "sc:name": "Position-specific scoring matrix"
+    },
+    {
+      "@id": "_:N82a214b2b9e740d49706a95ea2bf4b3e",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0863"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_1982"
+        },
+        {
+          "@id": "edam:format_1929"
+        },
+        {
+          "@id": "edam:format_1367"
+        },
+        {
+          "@id": "edam:format_3033"
+        },
+        {
+          "@id": "edam:format_2069"
+        },
+        {
+          "@id": "edam:format_3475"
+        }
+      ],
+      "sc:name": "Sequence alignment"
+    },
+    {
+      "@id": "_:N48e83c37d5654d199a345483c9d5cf90",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0849"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_1982"
+        },
+        {
+          "@id": "edam:format_1929"
+        },
+        {
+          "@id": "edam:format_1367"
+        },
+        {
+          "@id": "edam:format_3033"
+        },
+        {
+          "@id": "edam:format_2069"
+        },
+        {
+          "@id": "edam:format_3475"
+        }
+      ],
+      "sc:name": "Sequence record"
+    },
+    {
+      "@id": "_:N176771187b38445b8b332d5f717758b2",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1669"
@@ -113,7 +197,7 @@
       "sc:name": "P-value"
     },
     {
-      "@id": "_:N43fe25205c2b4fb89f1af46b2076090d",
+      "@id": "_:Ncce5fba3546744408786cadef6ca7041",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2854"
@@ -124,7 +208,7 @@
       "sc:name": "Position-specific scoring matrix"
     },
     {
-      "@id": "_:N76fd047d95584b41a4709f5704d27e7c",
+      "@id": "_:Na52a21ae242d471d86f2f6cac4efe350",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"
@@ -133,90 +217,6 @@
         "@id": "edam:format_3475"
       },
       "sc:name": "Report"
-    },
-    {
-      "@id": "_:N943f947ea84e45a4b73d1d27a597b594",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0849"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3033"
-        },
-        {
-          "@id": "edam:format_2069"
-        },
-        {
-          "@id": "edam:format_3475"
-        },
-        {
-          "@id": "edam:format_1982"
-        },
-        {
-          "@id": "edam:format_1929"
-        },
-        {
-          "@id": "edam:format_1367"
-        }
-      ],
-      "sc:name": "Sequence record"
-    },
-    {
-      "@id": "_:N95825ea2841648c4a4653456ea5ee893",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2854"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_1982"
-        },
-        {
-          "@id": "edam:format_1367"
-        },
-        {
-          "@id": "edam:format_3033"
-        },
-        {
-          "@id": "edam:format_1929"
-        },
-        {
-          "@id": "edam:format_3475"
-        },
-        {
-          "@id": "edam:format_2069"
-        }
-      ],
-      "sc:name": "Position-specific scoring matrix"
-    },
-    {
-      "@id": "_:N6396254e6805474e8c40183ab560c49c",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0863"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_1929"
-        },
-        {
-          "@id": "edam:format_2069"
-        },
-        {
-          "@id": "edam:format_3475"
-        },
-        {
-          "@id": "edam:format_1982"
-        },
-        {
-          "@id": "edam:format_1367"
-        },
-        {
-          "@id": "edam:format_3033"
-        }
-      ],
-      "sc:name": "Sequence alignment"
     },
     {
       "@id": "https://doi.org/10.18129/B9.bioc.convert",

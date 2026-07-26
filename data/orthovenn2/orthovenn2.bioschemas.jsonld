@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,33 +36,29 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/NAR/GKZ333",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/OrthoVenn2",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Yi Wang",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web service",
+        "Web API",
         "Web application",
-        "Web API"
+        "Web service"
       ],
       "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_0102"
+        },
         {
           "@id": "edam:topic_0780"
         },
         {
           "@id": "edam:topic_3500"
-        },
-        {
-          "@id": "edam:topic_0102"
         }
       ],
       "sc:citation": [
-        "pmcid:PMC6602458",
         "pubmed:31053848",
+        "pmcid:PMC6602458",
         {
           "@id": "https://doi.org/10.1093/NAR/GKZ333"
         }
@@ -72,14 +68,18 @@
       "sc:license": "Unlicense",
       "sc:name": "OrthoVenn2",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://orthovenn2.bioinfotoolkits.net/help"
       },
       "sc:url": "https://orthovenn2.bioinfotoolkits.net"
+    },
+    {
+      "@id": "https://doi.org/10.1093/NAR/GKZ333",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

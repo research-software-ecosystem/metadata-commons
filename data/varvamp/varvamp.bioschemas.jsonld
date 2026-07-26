@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,16 +36,12 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1101/2024.05.08.593102",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/varvamp",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nb385fe815a6744c191172a0d7347281d"
+        "@id": "_:Nf630414b5ddc40038a4cd4a80779d9dd"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
@@ -71,7 +67,7 @@
       "sc:url": "https://github.com/jonas-fuchs/varVAMP"
     },
     {
-      "@id": "_:Nb385fe815a6744c191172a0d7347281d",
+      "@id": "_:Nf630414b5ddc40038a4cd4a80779d9dd",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1383"
@@ -80,6 +76,10 @@
         "@id": "edam:format_1929"
       },
       "sc:name": "Nucleic acid sequence alignment"
+    },
+    {
+      "@id": "https://doi.org/10.1101/2024.05.08.593102",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

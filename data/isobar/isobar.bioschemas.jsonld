@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,63 +40,63 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N2ab53bccfaa44b64a593f5fac6a11394"
+          "@id": "_:N01d4c19722fe4847b20f68c015f5a444"
         },
         {
-          "@id": "_:Nbfa6e2699d564ab9ac20db70324f11f7"
+          "@id": "_:Nbbf29754b2c44c09926558d5c1f84925"
         }
       ],
       "bsc:output": {
-        "@id": "_:Nebd3a018884842958e3630c9dac71ac4"
+        "@id": "_:N710a6696320f4e3f8d75f7a20a007644"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0121"
-        },
-        {
           "@id": "edam:topic_0601"
         },
         {
-          "@id": "edam:topic_2269"
+          "@id": "edam:topic_0121"
         },
         {
           "@id": "edam:topic_3520"
+        },
+        {
+          "@id": "edam:topic_2269"
         }
       ],
       "sc:description": "isobar provides methods for preprocessing, normalization, and report generation for the analysis of quantitative mass spectrometry proteomics data labeled with isobaric tags, such as iTRAQ and TMT. Features modules for integrating and validating PTM-centric datasets (isobar-PTM). More information on http://www.ms-isobar.org.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3755"
-        },
-        {
-          "@id": "edam:operation_2238"
-        },
-        {
           "@id": "edam:operation_3635"
         },
         {
+          "@id": "edam:operation_3755"
+        },
+        {
+          "@id": "edam:operation_3630"
+        },
+        {
           "@id": "edam:operation_3435"
+        },
+        {
+          "@id": "edam:operation_2238"
         },
         {
           "@id": "edam:operation_3641"
         },
         {
           "@id": "edam:operation_3639"
-        },
-        {
-          "@id": "edam:operation_3630"
         }
       ],
       "sc:license": "LGPL-2.0-only",
       "sc:name": "isobar",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -106,18 +106,7 @@
       "sc:url": "https://bioconductor.org/packages/isobar"
     },
     {
-      "@id": "_:N2ab53bccfaa44b64a593f5fac6a11394",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0944"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3651"
-      },
-      "sc:name": "Peptide mass fingerprint"
-    },
-    {
-      "@id": "_:Nbfa6e2699d564ab9ac20db70324f11f7",
+      "@id": "_:N01d4c19722fe4847b20f68c015f5a444",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0945"
@@ -128,7 +117,18 @@
       "sc:name": "Peptide identification"
     },
     {
-      "@id": "_:Nebd3a018884842958e3630c9dac71ac4",
+      "@id": "_:Nbbf29754b2c44c09926558d5c1f84925",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0944"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3651"
+      },
+      "sc:name": "Peptide mass fingerprint"
+    },
+    {
+      "@id": "_:N710a6696320f4e3f8d75f7a20a007644",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2603"

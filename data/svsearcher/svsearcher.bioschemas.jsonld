@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,30 +36,34 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1016/j.compbiomed.2023.106843",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/svsearcher",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N2953d7166e784d638d8d121de0fd6034"
+          "@id": "_:N00b76e58065a43de8f8d17c8d30281dc"
         },
         {
-          "@id": "_:N75c4e98685824f69918a5dbe3498327c"
+          "@id": "_:N7d100b491fd34860915f85027662b02a"
         }
       ],
       "bsc:output": {
-        "@id": "_:N51c43911efeb4a958f1236604246bc08"
+        "@id": "_:N00f6bcd9054a4ab6859e714f0b65d78b"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3175"
+          "@id": "edam:topic_3299"
         },
         {
           "@id": "edam:topic_0080"
         },
         {
-          "@id": "edam:topic_3299"
+          "@id": "edam:topic_3175"
         }
       ],
       "sc:citation": [
@@ -83,14 +87,14 @@
       "sc:isAccessibleForFree": true,
       "sc:name": "SVsearcher",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:url": "https://github.com/kensung-lab/SVsearcher"
     },
     {
-      "@id": "_:N2953d7166e784d638d8d121de0fd6034",
+      "@id": "_:N00b76e58065a43de8f8d17c8d30281dc",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2977"
@@ -101,7 +105,7 @@
       "sc:name": "Nucleic acid sequence"
     },
     {
-      "@id": "_:N75c4e98685824f69918a5dbe3498327c",
+      "@id": "_:N7d100b491fd34860915f85027662b02a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1383"
@@ -112,16 +116,12 @@
       "sc:name": "Nucleic acid sequence alignment"
     },
     {
-      "@id": "_:N51c43911efeb4a958f1236604246bc08",
+      "@id": "_:N00f6bcd9054a4ab6859e714f0b65d78b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3498"
       },
       "sc:name": "Sequence variations"
-    },
-    {
-      "@id": "https://doi.org/10.1016/j.compbiomed.2023.106843",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

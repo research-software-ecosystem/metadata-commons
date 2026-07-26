@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,34 +36,30 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1101/011700",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/cellosaurus",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N5738cc980662426b9178d2b16e5edbff"
+          "@id": "_:Nb2c36fd814b34342860a730d7da29c9a"
         },
         {
-          "@id": "_:N25dd6388d3f44eb5bad9d545c7e8a009"
+          "@id": "_:N9bcf5b3994964b2cba0156e7575ec6aa"
         }
       ],
       "bsc:output": {
-        "@id": "_:N702c2d786e1a4b2ba4be6b7c215b9cc5"
+        "@id": "_:N8fabd0b52b7e4d218e96a7c59abb1beb"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Database portal",
       "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_3067"
+        },
         {
           "@id": "edam:topic_2229"
         },
         {
           "@id": "edam:topic_0203"
-        },
-        {
-          "@id": "edam:topic_3067"
         },
         {
           "@id": "edam:topic_0634"
@@ -81,8 +77,8 @@
       },
       "sc:name": "Cellosaurus",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:provider": "SIB Swiss Institute of Bioinformatics",
@@ -92,15 +88,7 @@
       "sc:url": "http://web.expasy.org/cellosaurus/"
     },
     {
-      "@id": "_:N702c2d786e1a4b2ba4be6b7c215b9cc5",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0963"
-      },
-      "sc:name": "Cell line report"
-    },
-    {
-      "@id": "_:N5738cc980662426b9178d2b16e5edbff",
+      "@id": "_:Nb2c36fd814b34342860a730d7da29c9a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0842"
@@ -108,12 +96,24 @@
       "sc:name": "Identifier"
     },
     {
-      "@id": "_:N25dd6388d3f44eb5bad9d545c7e8a009",
+      "@id": "_:N9bcf5b3994964b2cba0156e7575ec6aa",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3671"
       },
       "sc:name": "Text"
+    },
+    {
+      "@id": "_:N8fabd0b52b7e4d218e96a7c59abb1beb",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0963"
+      },
+      "sc:name": "Cell line report"
+    },
+    {
+      "@id": "https://doi.org/10.1101/011700",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

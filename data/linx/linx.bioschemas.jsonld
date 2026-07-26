@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,10 +36,6 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1021/ACS.JPROTEOME.0C00858",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://orcid.org/0000-0001-7569-843X",
       "@type": "sc:Person"
     },
@@ -51,35 +47,35 @@
       },
       "bsc:input": [
         {
-          "@id": "_:Nbc414a7c84cc49899f3d1973ca9612e8"
+          "@id": "_:N642187b7c4a34975a28a084f49d655bf"
         },
         {
-          "@id": "_:N18abe73f0ae94c52be5dcd374cb89a48"
+          "@id": "_:Nc1a1795dd20e48e1abd9910394bbf727"
         }
       ],
       "bsc:output": {
-        "@id": "_:N404c3d68029943cf90f06e396b7f6e99"
+        "@id": "_:Nf9323c2cfb7f4ee6bdd91d546d5f9107"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Desktop application",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0121"
-        },
-        {
-          "@id": "edam:topic_0601"
-        },
-        {
-          "@id": "edam:topic_0154"
+          "@id": "edam:topic_3314"
         },
         {
           "@id": "edam:topic_0077"
         },
         {
-          "@id": "edam:topic_3314"
+          "@id": "edam:topic_0601"
+        },
+        {
+          "@id": "edam:topic_0121"
         },
         {
           "@id": "edam:topic_3520"
+        },
+        {
+          "@id": "edam:topic_0154"
         }
       ],
       "sc:citation": [
@@ -91,6 +87,9 @@
       "sc:description": "LinX is a Java language-based program designed for fast assignment, evaluation, and validation of mass spectrometric datasets from chemical cross-linking.",
       "sc:featureList": [
         {
+          "@id": "edam:operation_2945"
+        },
+        {
           "@id": "edam:operation_3767"
         },
         {
@@ -98,9 +97,6 @@
         },
         {
           "@id": "edam:operation_3860"
-        },
-        {
-          "@id": "edam:operation_2945"
         }
       ],
       "sc:isAccessibleForFree": true,
@@ -114,18 +110,18 @@
       "sc:url": "http://peterslab.org/downloads.php"
     },
     {
-      "@id": "_:N404c3d68029943cf90f06e396b7f6e99",
+      "@id": "_:N642187b7c4a34975a28a084f49d655bf",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_0006"
+        "@id": "edam:data_2978"
       },
       "sc:encodingFormat": {
         "@id": "edam:format_2330"
       },
-      "sc:name": "Data"
+      "sc:name": "Reaction data"
     },
     {
-      "@id": "_:Nbc414a7c84cc49899f3d1973ca9612e8",
+      "@id": "_:Nc1a1795dd20e48e1abd9910394bbf727",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
@@ -136,15 +132,19 @@
       "sc:name": "Sequence"
     },
     {
-      "@id": "_:N18abe73f0ae94c52be5dcd374cb89a48",
+      "@id": "_:Nf9323c2cfb7f4ee6bdd91d546d5f9107",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2978"
+        "@id": "edam:data_0006"
       },
       "sc:encodingFormat": {
         "@id": "edam:format_2330"
       },
-      "sc:name": "Reaction data"
+      "sc:name": "Data"
+    },
+    {
+      "@id": "https://doi.org/10.1021/ACS.JPROTEOME.0C00858",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

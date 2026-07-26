@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,12 +39,12 @@
       "@id": "https://bio.tools/metabuli",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N170a7de5a64d4037b4d4bef489b58b02"
+        "@id": "_:N0ab8c1e73c0f4888ad41e30d36792a4d"
       },
       "bsc:output": {
-        "@id": "_:Nb0aaba9001b643c1916f90d240a15b55"
+        "@id": "_:N1e9edcb143b84052a062eef4872cb061"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Desktop application"
@@ -53,10 +53,10 @@
         "@id": "edam:topic_0637"
       },
       "sc:citation": [
+        "pubmed:38769467",
         {
           "@id": "https://doi.org/10.1038/s41592-024-02273-y"
-        },
-        "pubmed:38769467"
+        }
       ],
       "sc:description": "Metabuli: specific and sensitive metagenomic classification via joint analysis of DNA and amino acid",
       "sc:featureList": {
@@ -66,14 +66,14 @@
       "sc:license": "GPL-3.0",
       "sc:name": "metabuli",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:url": "https://metabuli.steineggerlab.com"
     },
     {
-      "@id": "_:N170a7de5a64d4037b4d4bef489b58b02",
+      "@id": "_:N0ab8c1e73c0f4888ad41e30d36792a4d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3494"
@@ -84,7 +84,7 @@
       "sc:name": "DNA sequence"
     },
     {
-      "@id": "_:Nb0aaba9001b643c1916f90d240a15b55",
+      "@id": "_:N1e9edcb143b84052a062eef4872cb061",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3028"

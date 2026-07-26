@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,17 +36,21 @@
   },
   "@graph": [
     {
+      "@id": "https://orcid.org/0000-0003-1064-6895",
+      "@type": "sc:Person"
+    },
+    {
       "@id": "https://bio.tools/UVP",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Ncbad88c1b73c499f9fa46694339bcb3e"
+          "@id": "_:Nd31ad216f14843b3a93d10b9e03ecf13"
         },
         {
-          "@id": "_:N7553343a921945f7933129fe9ea906c1"
+          "@id": "_:Nbf85ded4fdb043919bc09f119e73fb76"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Workflow"
@@ -82,8 +86,8 @@
       "sc:license": "MIT",
       "sc:name": "UVP",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:softwareVersion": [
         "2.6.0",
@@ -92,7 +96,7 @@
       "sc:url": "https://github.com/CPTR-ReSeqTB/UVP"
     },
     {
-      "@id": "_:Ncbad88c1b73c499f9fa46694339bcb3e",
+      "@id": "_:Nd31ad216f14843b3a93d10b9e03ecf13",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3494"
@@ -103,7 +107,7 @@
       "sc:name": "DNA sequence"
     },
     {
-      "@id": "_:N7553343a921945f7933129fe9ea906c1",
+      "@id": "_:Nbf85ded4fdb043919bc09f119e73fb76",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3494"
@@ -116,10 +120,6 @@
     {
       "@id": "https://doi.org/10.1038/s41598-018-33731-1",
       "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://orcid.org/0000-0003-1064-6895",
-      "@type": "sc:Person"
     }
   ]
 }

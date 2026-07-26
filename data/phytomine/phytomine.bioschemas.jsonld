@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,28 +40,28 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N4602ea609946402a98481a814568b863"
+          "@id": "_:N8d00e1baa08d40dab9ca582ba515b728"
         },
         {
-          "@id": "_:N3a2c06aaf6784f7ca898ac9d9bc7bce6"
+          "@id": "_:N358fed8885754e5696c54930580560cb"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N45f10f3f41ab4faabb9c3ad6917910a4"
+          "@id": "_:N767a0b66da90482e9a5427b0430f9099"
         },
         {
-          "@id": "_:N58e2508d7ad54c3b996b3af73d910af9"
+          "@id": "_:N57cc9cae10a04bf1aa57c904a96cc1dc"
         },
         {
-          "@id": "_:N8df580639ee0415d961cd7f8ebd34c1d"
+          "@id": "_:N1bfb5b640d8b44ecab81d68deee55b11"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web service",
         "Database portal",
-        "Web application"
+        "Web application",
+        "Web service"
       ],
       "sc:applicationSubCategory": [
         {
@@ -76,10 +76,10 @@
       ],
       "sc:citation": [
         "pubmed:23023984",
+        "pmcid:PMC3516146",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/bts577"
-        },
-        "pmcid:PMC3516146"
+        }
       ],
       "sc:description": "An InterMine interface to data from Phytozome, the Plant Comparative Genomics portal of the Department of Energy's Joint Genome Institute, which hosts 81 assembled and annotation genomes, from 78 viridiplantae species.",
       "sc:featureList": [
@@ -90,32 +90,32 @@
           "@id": "edam:operation_2436"
         },
         {
-          "@id": "edam:operation_0337"
+          "@id": "edam:operation_0224"
         },
         {
-          "@id": "edam:operation_0224"
+          "@id": "edam:operation_0337"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "LGPL-2.1",
       "sc:name": "PhytoMine",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:softwareHelp": [
         {
-          "@id": "https://flymine.readthedocs.io/en/latest/"
+          "@id": "http://intermine.readthedocs.org/en/latest/web-services/"
         },
         {
-          "@id": "http://intermine.readthedocs.org/en/latest/web-services/"
+          "@id": "https://flymine.readthedocs.io/en/latest/"
         }
       ],
       "sc:softwareVersion": "13 (phytomine-13.0)",
       "sc:url": "https://phytozome.jgi.doe.gov/phytomine/"
     },
     {
-      "@id": "_:N4602ea609946402a98481a814568b863",
+      "@id": "_:N8d00e1baa08d40dab9ca582ba515b728",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2353"
@@ -123,7 +123,7 @@
       "sc:name": "Ontology data"
     },
     {
-      "@id": "_:N3a2c06aaf6784f7ca898ac9d9bc7bce6",
+      "@id": "_:N358fed8885754e5696c54930580560cb",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1255"
@@ -131,15 +131,15 @@
       "sc:name": "Sequence features"
     },
     {
-      "@id": "_:N45f10f3f41ab4faabb9c3ad6917910a4",
+      "@id": "_:N767a0b66da90482e9a5427b0430f9099",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_1255"
+        "@id": "edam:data_3753"
       },
-      "sc:name": "Sequence features"
+      "sc:name": "Over-representation data"
     },
     {
-      "@id": "_:N58e2508d7ad54c3b996b3af73d910af9",
+      "@id": "_:N57cc9cae10a04bf1aa57c904a96cc1dc",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3786"
@@ -147,12 +147,12 @@
       "sc:name": "Query script"
     },
     {
-      "@id": "_:N8df580639ee0415d961cd7f8ebd34c1d",
+      "@id": "_:N1bfb5b640d8b44ecab81d68deee55b11",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_3753"
+        "@id": "edam:data_1255"
       },
-      "sc:name": "Over-representation data"
+      "sc:name": "Sequence features"
     },
     {
       "@id": "https://doi.org/10.1093/bioinformatics/bts577",

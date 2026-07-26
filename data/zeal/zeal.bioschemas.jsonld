@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,22 +39,22 @@
       "@id": "https://bio.tools/zeal",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
-        "Ingemar André",
         {
           "@id": "https://orcid.org/0000-0001-7859-8047"
-        }
+        },
+        "Ingemar André"
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Web application"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_2814"
+          "@id": "edam:topic_0108"
         },
         {
-          "@id": "edam:topic_0108"
+          "@id": "edam:topic_2814"
         },
         {
           "@id": "edam:topic_0080"
@@ -76,16 +76,16 @@
           "@id": "edam:operation_0510"
         },
         {
-          "@id": "edam:operation_3899"
+          "@id": "edam:operation_2487"
         },
         {
-          "@id": "edam:operation_2487"
+          "@id": "edam:operation_3899"
         }
       ],
       "sc:name": "ZEAL",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:url": "https://andrelab.org/zeal"

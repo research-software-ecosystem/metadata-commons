@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -44,25 +44,25 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "James Malone",
       "bsc:input": {
-        "@id": "_:N981ee848986e47a38ee029a9dc0bdc2f"
+        "@id": "_:Nd33ccab1adbe4fdcbddd18f0fa6cfce4"
       },
       "bsc:output": {
-        "@id": "_:Nd3a351bc023843259966dffe965fb8d7"
+        "@id": "_:Nb7a2e773eb7d44fb880ce308f215a263"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_0218"
-        },
         {
           "@id": "edam:topic_3571"
         },
         {
-          "@id": "edam:topic_0089"
+          "@id": "edam:topic_0203"
         },
         {
-          "@id": "edam:topic_0203"
+          "@id": "edam:topic_0218"
+        },
+        {
+          "@id": "edam:topic_0089"
         }
       ],
       "sc:author": "James Malone",
@@ -76,13 +76,13 @@
       "sc:description": "An ontology change tool which is able to analyse two ontologies (typically two versions of the same ontology) to highlight logical changes which have occurred and to present these changes in more or less detail, as required.",
       "sc:featureList": [
         {
+          "@id": "edam:operation_0226"
+        },
+        {
           "@id": "edam:operation_2495"
         },
         {
           "@id": "edam:operation_3352"
-        },
-        {
-          "@id": "edam:operation_0226"
         },
         {
           "@id": "edam:operation_3559"
@@ -90,9 +90,9 @@
       ],
       "sc:name": "Bubastis",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": "EMBL-EBI",
       "sc:softwareHelp": [
@@ -107,20 +107,20 @@
       "sc:url": "http://www.ebi.ac.uk/efo/bubastis/"
     },
     {
-      "@id": "_:Nd3a351bc023843259966dffe965fb8d7",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2223"
-      },
-      "sc:name": "Ontology metadata"
-    },
-    {
-      "@id": "_:N981ee848986e47a38ee029a9dc0bdc2f",
+      "@id": "_:Nd33ccab1adbe4fdcbddd18f0fa6cfce4",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0582"
       },
       "sc:name": "Ontology"
+    },
+    {
+      "@id": "_:Nb7a2e773eb7d44fb880ce308f215a263",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2223"
+      },
+      "sc:name": "Ontology metadata"
     }
   ]
 }

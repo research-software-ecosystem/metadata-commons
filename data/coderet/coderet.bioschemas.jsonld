@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,56 +36,64 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1017/CBO9781139151405",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1017/CBO9781139151399",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/coderet",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nbc3f27011208418e8c61ea12f23e9afa"
+        "@id": "_:N4284b97b4f7c4c538431b77922b3a362"
       },
       "bsc:output": [
         {
-          "@id": "_:N2367a442d8054578bdaf5a8ffef97609"
+          "@id": "_:N8ac82490ea1749eb8a35a62354e44ec2"
         },
         {
-          "@id": "_:Nd531664b910d49c0b859958b4e26030e"
+          "@id": "_:Nfc5bc821584b49c9a6a0bd818b967e9d"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3077"
       },
       "sc:citation": [
         {
-          "@id": "https://doi.org/10.1017/CBO9781139151399"
+          "@id": "https://doi.org/10.1016/S0168-9525(00)02024-2"
         },
         {
-          "@id": "https://doi.org/10.1016/S0168-9525(00)02024-2"
+          "@id": "https://doi.org/10.1017/CBO9781139151399"
         },
         {
           "@id": "https://doi.org/10.1017/CBO9781139151405"
         }
       ],
       "sc:contributor": [
-        "UK MRC",
         "UK BBSRC",
-        "EMBOSS Contributors",
-        "Wellcome Trust"
+        "UK MRC",
+        "Wellcome Trust",
+        "EMBOSS Contributors"
       ],
       "sc:description": "Extract CDS, mRNA and translations from feature tables.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0371"
+          "@id": "edam:operation_0436"
         },
         {
           "@id": "edam:operation_0372"
         },
         {
-          "@id": "edam:operation_0436"
+          "@id": "edam:operation_0371"
         }
       ],
       "sc:funder": [
-        "UK MRC",
         "UK BBSRC",
+        "UK MRC",
         "Wellcome Trust"
       ],
       "sc:isAccessibleForFree": true,
@@ -93,8 +101,8 @@
       "sc:name": "coderet",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:provider": [
         "EMBL-EBI",
@@ -102,10 +110,10 @@
       ],
       "sc:softwareHelp": [
         {
-          "@id": "http://emboss.open-bio.org/rel/rel6/apps/coderet.html"
+          "@id": "http://emboss.open-bio.org/html/use/pr02s04.html"
         },
         {
-          "@id": "http://emboss.open-bio.org/html/use/pr02s04.html"
+          "@id": "http://emboss.open-bio.org/rel/rel6/apps/coderet.html"
         },
         {
           "@id": "http://emboss.open-bio.org/html/dev/ch01s01.html"
@@ -115,7 +123,7 @@
       "sc:url": "http://emboss.open-bio.org/rel/rel6/apps/coderet.html"
     },
     {
-      "@id": "_:Nbc3f27011208418e8c61ea12f23e9afa",
+      "@id": "_:N4284b97b4f7c4c538431b77922b3a362",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2887"
@@ -123,7 +131,15 @@
       "sc:name": "Nucleic acid sequence record"
     },
     {
-      "@id": "_:N2367a442d8054578bdaf5a8ffef97609",
+      "@id": "_:N8ac82490ea1749eb8a35a62354e44ec2",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2887"
+      },
+      "sc:name": "Nucleic acid sequence record"
+    },
+    {
+      "@id": "_:Nfc5bc821584b49c9a6a0bd818b967e9d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2886"
@@ -131,23 +147,7 @@
       "sc:name": "Protein sequence record"
     },
     {
-      "@id": "_:Nd531664b910d49c0b859958b4e26030e",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2887"
-      },
-      "sc:name": "Nucleic acid sequence record"
-    },
-    {
       "@id": "https://doi.org/10.1016/S0168-9525(00)02024-2",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1017/CBO9781139151399",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1017/CBO9781139151405",
       "@type": "sc:CreativeWork"
     }
   ]

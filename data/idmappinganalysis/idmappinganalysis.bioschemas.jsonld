@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,29 +36,33 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1038/nmeth.3252",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/idmappinganalysis",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
-        "Roger Day",
-        "Alex Lisovich"
+        "Alex Lisovich",
+        "Roger Day"
       ],
       "bsc:input": {
-        "@id": "_:N9c3583fd88724927b99f8dece0fc882a"
+        "@id": "_:Ndc23cd6ad22a4b6cb48d20ce4cec1c02"
       },
       "bsc:output": {
-        "@id": "_:Nf2995618c8bd40f18ebde1dea7dc7e7b"
+        "@id": "_:Nc5a2246e2cae4738bd33fa173e931643"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3071"
+          "@id": "edam:topic_0091"
         },
         {
-          "@id": "edam:topic_0091"
+          "@id": "edam:topic_3071"
         }
       ],
       "sc:citation": [
@@ -75,9 +79,9 @@
       "sc:license": "GPL-2.0",
       "sc:name": "IdMappingAnalysis",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/IdMappingAnalysis.html"
@@ -86,7 +90,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/IdMappingAnalysis.html"
     },
     {
-      "@id": "_:N9c3583fd88724927b99f8dece0fc882a",
+      "@id": "_:Ndc23cd6ad22a4b6cb48d20ce4cec1c02",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0842"
@@ -97,24 +101,20 @@
       "sc:name": "Identifier"
     },
     {
-      "@id": "_:Nf2995618c8bd40f18ebde1dea7dc7e7b",
+      "@id": "_:Nc5a2246e2cae4738bd33fa173e931643",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_2330"
+          "@id": "edam:format_3547"
         },
         {
-          "@id": "edam:format_3547"
+          "@id": "edam:format_2330"
         }
       ],
       "sc:name": "Plot"
-    },
-    {
-      "@id": "https://doi.org/10.1038/nmeth.3252",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,28 +36,32 @@
   },
   "@graph": [
     {
+      "@id": "http://orcid.org/0000-0003-4525-7793",
+      "@type": "sc:Person"
+    },
+    {
       "@id": "https://bio.tools/fells",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "http://orcid.org/0000-0003-4525-7793"
       },
       "bsc:input": {
-        "@id": "_:N05ef41e1f76b46bea056fd3120ffd769"
+        "@id": "_:Ncfc165c266984a97a9c6ad2bc4c34378"
       },
       "bsc:output": {
-        "@id": "_:N8e955da73d6646348ab417aa9c442079"
+        "@id": "_:N2a4971b711d84e01820c3deaf2173a63"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Web API",
         "Web application"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_2814"
+          "@id": "edam:topic_3510"
         },
         {
-          "@id": "edam:topic_3510"
+          "@id": "edam:topic_2814"
         }
       ],
       "sc:citation": [
@@ -78,9 +82,9 @@
       "sc:license": "CC-BY-NC-ND-4.0",
       "sc:name": "FELLS",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": "University of Padua, Department of Biomedical Sciences, BioComputing UP lab",
       "sc:softwareHelp": {
@@ -90,7 +94,7 @@
       "sc:url": "http://protein.bio.unipd.it/fells/"
     },
     {
-      "@id": "_:N05ef41e1f76b46bea056fd3120ffd769",
+      "@id": "_:Ncfc165c266984a97a9c6ad2bc4c34378",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2976"
@@ -101,27 +105,23 @@
       "sc:name": "Protein sequence"
     },
     {
-      "@id": "_:N8e955da73d6646348ab417aa9c442079",
+      "@id": "_:N2a4971b711d84e01820c3deaf2173a63",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1277"
       },
       "sc:encodingFormat": [
         {
+          "@id": "edam:format_2331"
+        },
+        {
           "@id": "edam:format_3475"
         },
         {
           "@id": "edam:format_3603"
-        },
-        {
-          "@id": "edam:format_2331"
         }
       ],
       "sc:name": "Protein features"
-    },
-    {
-      "@id": "http://orcid.org/0000-0003-4525-7793",
-      "@type": "sc:Person"
     },
     {
       "@id": "https://doi.org/10.1093/bioinformatics/btx085",

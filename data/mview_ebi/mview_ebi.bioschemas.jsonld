@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,7 +36,7 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/nar/gkac240",
+      "@id": "https://doi.org/10.1093/bioinformatics/14.4.380",
       "@type": "sc:CreativeWork"
     },
     {
@@ -49,16 +49,16 @@
       "biotools:primaryContact": "Job Dispatcher",
       "bsc:input": [
         {
-          "@id": "_:N50b38415d2aa40c390498e1c9ffe3ee6"
+          "@id": "_:N85badbd87fea4116ac75f1ac2fc0cfab"
         },
         {
-          "@id": "_:Nf4e10f4d0c3d4af3bf50f4edd9cad949"
+          "@id": "_:N505ee5cd45ec4d6ca90d6e73c46aefee"
         }
       ],
       "bsc:output": {
-        "@id": "_:Nb577756131f842a0bf8b07b9d5846390"
+        "@id": "_:N69985b7315a04e99a73c51676f8b10fb"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Web application",
         "Web service"
@@ -73,13 +73,13 @@
       ],
       "sc:author": "Nigel Brown",
       "sc:citation": [
-        "pubmed:38597606",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/14.4.380"
         },
         {
           "@id": "https://doi.org/10.1093/nar/gkac240"
         },
+        "pubmed:38597606",
         {
           "@id": "https://doi.org/10.1093/nar/gkae241"
         }
@@ -90,35 +90,27 @@
       },
       "sc:name": "MView (EBI)",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": "EMBL-EBI",
       "sc:softwareHelp": [
+        {
+          "@id": "https://desmid.github.io/mview/"
+        },
         {
           "@id": "https://www.ebi.ac.uk/jdispatcher/help"
         },
         {
           "@id": "http://www.ebi.ac.uk/about/terms-of-use"
-        },
-        {
-          "@id": "https://desmid.github.io/mview/"
         }
       ],
       "sc:softwareVersion": "1",
       "sc:url": "https://www.ebi.ac.uk/jdispatcher/msa/mview"
     },
     {
-      "@id": "_:Nb577756131f842a0bf8b07b9d5846390",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0863"
-      },
-      "sc:name": "Sequence alignment"
-    },
-    {
-      "@id": "_:N50b38415d2aa40c390498e1c9ffe3ee6",
+      "@id": "_:N85badbd87fea4116ac75f1ac2fc0cfab",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0863"
@@ -134,23 +126,31 @@
       "sc:name": "Sequence alignment"
     },
     {
-      "@id": "_:Nf4e10f4d0c3d4af3bf50f4edd9cad949",
+      "@id": "_:N505ee5cd45ec4d6ca90d6e73c46aefee",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0857"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_1948"
+          "@id": "edam:format_1982"
         },
         {
-          "@id": "edam:format_1982"
+          "@id": "edam:format_1948"
         }
       ],
       "sc:name": "Sequence search results"
     },
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/14.4.380",
+      "@id": "_:N69985b7315a04e99a73c51676f8b10fb",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0863"
+      },
+      "sc:name": "Sequence alignment"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/gkac240",
       "@type": "sc:CreativeWork"
     }
   ]

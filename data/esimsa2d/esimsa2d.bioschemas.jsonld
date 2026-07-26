@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,37 +40,37 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N54807f02c35341bc8443e3da80f75cc1"
+          "@id": "_:N01397b86069e4ad9b5973af2c3de33d2"
         },
         {
-          "@id": "_:N4dec43f3fe1c4f00b1423902ea46e23c"
+          "@id": "_:N2f4885cb1cfc4b08a23f292f15fd00ec"
         },
         {
-          "@id": "_:N9f1aeaf2faf64c4b8e1ac87ff4765a79"
+          "@id": "_:N2631a61293fa4923b76b5a92ddfb788b"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N9745d0dc5d794cf5adb817fb7d41f7cf"
+          "@id": "_:N87b123fee6a84f59bd08d21ac5d89ceb"
         },
         {
-          "@id": "_:N4b7327ea800b4b07aef7464995dab028"
+          "@id": "_:N76546064b42644f1aa4d2e0e9f97352c"
         },
         {
-          "@id": "_:N5feeebbcc03042a4be54df0833dc68c9"
+          "@id": "_:N1227ce197f4d498bbf38f47acbd7d903"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_3520"
-        },
         {
           "@id": "edam:topic_3521"
         },
         {
           "@id": "edam:topic_0121"
+        },
+        {
+          "@id": "edam:topic_3520"
         }
       ],
       "sc:description": "Simple deconvolution and 2D peak picking of LC-MS data.",
@@ -80,8 +80,8 @@
       "sc:license": "GPL-3.0",
       "sc:name": "esimsa2D",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "http://www.ms-utils.org/esimsa2D.html"
@@ -89,7 +89,18 @@
       "sc:url": "http://www.ms-utils.org/esimsa2D.html"
     },
     {
-      "@id": "_:N54807f02c35341bc8443e3da80f75cc1",
+      "@id": "_:N01397b86069e4ad9b5973af2c3de33d2",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2536"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Mass spectrometry data"
+    },
+    {
+      "@id": "_:N2f4885cb1cfc4b08a23f292f15fd00ec",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0943"
@@ -100,18 +111,7 @@
       "sc:name": "Mass spectrometry spectra"
     },
     {
-      "@id": "_:N4dec43f3fe1c4f00b1423902ea46e23c",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2536"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Mass spectrometry data"
-    },
-    {
-      "@id": "_:N9f1aeaf2faf64c4b8e1ac87ff4765a79",
+      "@id": "_:N2631a61293fa4923b76b5a92ddfb788b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0844"
@@ -122,18 +122,7 @@
       "sc:name": "Molecular mass"
     },
     {
-      "@id": "_:N9745d0dc5d794cf5adb817fb7d41f7cf",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0844"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Molecular mass"
-    },
-    {
-      "@id": "_:N4b7327ea800b4b07aef7464995dab028",
+      "@id": "_:N87b123fee6a84f59bd08d21ac5d89ceb",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2536"
@@ -144,7 +133,18 @@
       "sc:name": "Mass spectrometry data"
     },
     {
-      "@id": "_:N5feeebbcc03042a4be54df0833dc68c9",
+      "@id": "_:N76546064b42644f1aa4d2e0e9f97352c",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0844"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Molecular mass"
+    },
+    {
+      "@id": "_:N1227ce197f4d498bbf38f47acbd7d903",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0944"

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,13 +36,9 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1101/2020.04.23.055673",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/fada",
       "@type": "sc:SoftwareApplication",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
@@ -52,10 +48,10 @@
           "@id": "edam:topic_3519"
         },
         {
-          "@id": "edam:topic_3308"
+          "@id": "edam:topic_3168"
         },
         {
-          "@id": "edam:topic_3168"
+          "@id": "edam:topic_3308"
         }
       ],
       "sc:citation": {
@@ -76,6 +72,10 @@
       "sc:license": "GPL-3.0",
       "sc:name": "FaDA",
       "sc:url": "https://shiny-bird.univ-nantes.fr/app/Fada"
+    },
+    {
+      "@id": "https://doi.org/10.1101/2020.04.23.055673",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

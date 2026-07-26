@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -43,12 +43,12 @@
       "@id": "https://bio.tools/hu.map",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N3a7133eef3774b7fbfb14a0abd94df3b"
+        "@id": "_:N32e5d2b92ce943729275b87494bc231c"
       },
       "bsc:output": {
-        "@id": "_:N34c6c99b619b418f97ce1e67b188eee7"
+        "@id": "_:Ncda2705dda0e4a5abc8ee7064f8a6c87"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Database portal",
       "sc:applicationSubCategory": [
         {
@@ -64,10 +64,10 @@
       "sc:description": "A reference map data repository for human protein complexes, containing > 4,600 total complexes, > 7,700 proteins, and > 56,000 unique interactions, including thousands of confident protein interactions not identified by the original publications.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_2949"
+          "@id": "edam:operation_2421"
         },
         {
-          "@id": "edam:operation_2421"
+          "@id": "edam:operation_2949"
         },
         {
           "@id": "edam:operation_3214"
@@ -77,8 +77,8 @@
       "sc:name": "hu.MAP",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://proteincomplexes.org/about"
@@ -86,18 +86,7 @@
       "sc:url": "http://proteincomplexes.org/"
     },
     {
-      "@id": "_:N34c6c99b619b418f97ce1e67b188eee7",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2080"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2062"
-      },
-      "sc:name": "Database search results"
-    },
-    {
-      "@id": "_:N3a7133eef3774b7fbfb14a0abd94df3b",
+      "@id": "_:N32e5d2b92ce943729275b87494bc231c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0976"
@@ -106,6 +95,17 @@
         "@id": "edam:format_2330"
       },
       "sc:name": "Identifier (by type of data)"
+    },
+    {
+      "@id": "_:Ncda2705dda0e4a5abc8ee7064f8a6c87",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2080"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2062"
+      },
+      "sc:name": "Database search results"
     }
   ]
 }

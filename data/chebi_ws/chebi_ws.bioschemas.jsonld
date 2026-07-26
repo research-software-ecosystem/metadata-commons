@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,22 +39,22 @@
       "@id": "https://bio.tools/chebi_ws",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Naae1b1dec47d4d949ce2983665faa74d"
+        "@id": "_:Nf132291bc6e44465a244e8068f3d3c10"
       },
       "bsc:output": {
-        "@id": "_:N6a53261270fa41e48623bf4064e07572"
+        "@id": "_:N00812123b12b4390b2816da7f59b32b8"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web service",
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_0154"
-        },
         {
           "@id": "edam:topic_2258"
         },
         {
           "@id": "edam:topic_0089"
+        },
+        {
+          "@id": "edam:topic_0154"
         }
       ],
       "sc:citation": "pmcid:PMC2867191",
@@ -69,8 +69,8 @@
       ],
       "sc:name": "ChEBI WS",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -80,7 +80,15 @@
       "sc:url": "http://www.ebi.ac.uk/chebi/webServices.do"
     },
     {
-      "@id": "_:N6a53261270fa41e48623bf4064e07572",
+      "@id": "_:Nf132291bc6e44465a244e8068f3d3c10",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1174"
+      },
+      "sc:name": "ChEBI ID"
+    },
+    {
+      "@id": "_:N00812123b12b4390b2816da7f59b32b8",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0962"
@@ -89,14 +97,6 @@
         "@id": "edam:format_2331"
       },
       "sc:name": "Small molecule report"
-    },
-    {
-      "@id": "_:Naae1b1dec47d4d949ce2983665faa74d",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1174"
-      },
-      "sc:name": "ChEBI ID"
     }
   ]
 }

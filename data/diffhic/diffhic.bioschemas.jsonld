@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,17 +39,17 @@
       "@id": "https://bio.tools/diffhic",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nd6573e9cc673415e9b055b7fb8434430"
+        "@id": "_:Nffae0b2ae1384e3898a690dc7d3080af"
       },
       "bsc:output": [
         {
-          "@id": "_:N3398ed5869c34a57a03c4fb40a5baa3b"
+          "@id": "_:N4cdf46d3414144ddb3ca04cf53b73dde"
         },
         {
-          "@id": "_:N94309a1473ad4801947e5c4a7895a96b"
+          "@id": "_:N10a1c12d06b448cab90b1d12f860c611"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
@@ -65,18 +65,18 @@
       "sc:description": "Detects differential interactions across biological conditions in a Hi-C experiment. Methods are provided for read alignment and data pre-processing into interaction counts. Statistical analysis is based on edgeR and supports normalization and filtering. Several visualization options are also available.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3435"
+          "@id": "edam:operation_3432"
         },
         {
-          "@id": "edam:operation_3432"
+          "@id": "edam:operation_3435"
         }
       ],
       "sc:license": "GPL-3.0-only",
       "sc:name": "diffHic",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://bioconductor.org/packages/diffHic"
@@ -85,7 +85,7 @@
       "sc:url": "https://bioconductor.org/packages/diffHic"
     },
     {
-      "@id": "_:Nd6573e9cc673415e9b055b7fb8434430",
+      "@id": "_:Nffae0b2ae1384e3898a690dc7d3080af",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
@@ -96,23 +96,7 @@
       "sc:name": "Sequence"
     },
     {
-      "@id": "_:N3398ed5869c34a57a03c4fb40a5baa3b",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2884"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2333"
-        },
-        {
-          "@id": "edam:format_3547"
-        }
-      ],
-      "sc:name": "Plot"
-    },
-    {
-      "@id": "_:N94309a1473ad4801947e5c4a7895a96b",
+      "@id": "_:N4cdf46d3414144ddb3ca04cf53b73dde",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2589"
@@ -126,6 +110,22 @@
         }
       ],
       "sc:name": "Hierarchy"
+    },
+    {
+      "@id": "_:N10a1c12d06b448cab90b1d12f860c611",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2884"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2333"
+        },
+        {
+          "@id": "edam:format_3547"
+        }
+      ],
+      "sc:name": "Plot"
     }
   ]
 }

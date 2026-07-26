@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -38,7 +38,7 @@
     {
       "@id": "https://bio.tools/metamapr",
       "@type": "sc:SoftwareApplication",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
@@ -55,8 +55,8 @@
         }
       ],
       "sc:citation": [
-        "pmcid:PMC4528626",
         "pubmed:25847005",
+        "pmcid:PMC4528626",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btv194"
         }
@@ -72,10 +72,10 @@
       ],
       "sc:softwareHelp": [
         {
-          "@id": "https://github.com/dgrapov/MetaMapR/tree/master/README_files"
+          "@id": "http://dgrapov.github.io/MetaMapR/"
         },
         {
-          "@id": "http://dgrapov.github.io/MetaMapR/"
+          "@id": "https://github.com/dgrapov/MetaMapR/tree/master/README_files"
         }
       ],
       "sc:url": "http://dgrapov.github.io/MetaMapR/"

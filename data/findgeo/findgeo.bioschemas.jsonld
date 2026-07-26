@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -44,18 +44,18 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Claudia Andreini",
       "bsc:input": {
-        "@id": "_:Nc2b2d6115e43474284d6978d897ed576"
+        "@id": "_:N6576b5245d144b4bb969e232c4ee6ce0"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3292"
       },
       "sc:citation": [
+        "pubmed:22556364",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/bts246"
-        },
-        "pubmed:22556364"
+        }
       ],
       "sc:description": "Determine metal coordination geometry.",
       "sc:featureList": {
@@ -63,8 +63,8 @@
       },
       "sc:name": "FindGeo",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:provider": "CERM",
@@ -75,7 +75,7 @@
       "sc:url": "http://metalweb.cerm.unifi.it/tools/findgeo/"
     },
     {
-      "@id": "_:Nc2b2d6115e43474284d6978d897ed576",
+      "@id": "_:N6576b5245d144b4bb969e232c4ee6ce0",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1460"

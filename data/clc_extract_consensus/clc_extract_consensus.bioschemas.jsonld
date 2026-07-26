@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,34 +36,42 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.7490/f1000research.1114334.1",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1186/1471-2164-11-571",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/clc_extract_consensus",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Galaxy Support Team",
       "bsc:input": {
-        "@id": "_:N3fad903f179845f5820c1f02fdee15ee"
+        "@id": "_:N578e6501b7934a01843d459ee25fe737"
       },
       "bsc:output": [
         {
-          "@id": "_:N705dc45b33e746ac9cc87a9ea6aa7944"
+          "@id": "_:Na404a388766247e99055cc60a77284be"
         },
         {
-          "@id": "_:N2d18a22fdd874007991d1f0115a0bc10"
+          "@id": "_:N19e8d920bb51464cbec316b0b8e4f7aa"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3168"
       },
       "sc:citation": [
         {
-          "@id": "https://doi.org/10.7490/f1000research.1114334.1"
+          "@id": "https://doi.org/10.1093/nar/gkw343"
         },
         {
           "@id": "https://doi.org/10.1186/1471-2164-11-571"
         },
         {
-          "@id": "https://doi.org/10.1093/nar/gkw343"
+          "@id": "https://doi.org/10.7490/f1000research.1114334.1"
         }
       ],
       "sc:description": "Extract a consensus sequence from a read mapping. It operates on a cas file produced by the reference assembly programs.",
@@ -73,14 +81,14 @@
       "sc:name": "clc_extract_consensus",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:softwareVersion": "4.4.2",
       "sc:url": "https://bio.tools/clcbio_genomics_workbench"
     },
     {
-      "@id": "_:N3fad903f179845f5820c1f02fdee15ee",
+      "@id": "_:N578e6501b7934a01843d459ee25fe737",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0006"
@@ -91,18 +99,7 @@
       "sc:name": "Data"
     },
     {
-      "@id": "_:N705dc45b33e746ac9cc87a9ea6aa7944",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0863"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1929"
-      },
-      "sc:name": "Sequence alignment"
-    },
-    {
-      "@id": "_:N2d18a22fdd874007991d1f0115a0bc10",
+      "@id": "_:Na404a388766247e99055cc60a77284be",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0006"
@@ -113,15 +110,18 @@
       "sc:name": "Data"
     },
     {
+      "@id": "_:N19e8d920bb51464cbec316b0b8e4f7aa",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0863"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "Sequence alignment"
+    },
+    {
       "@id": "https://doi.org/10.1093/nar/gkw343",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1186/1471-2164-11-571",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.7490/f1000research.1114334.1",
       "@type": "sc:CreativeWork"
     }
   ]

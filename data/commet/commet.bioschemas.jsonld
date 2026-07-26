@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,16 +36,20 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1109/BIBM.2014.6999135",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/commet",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Pierre Peterlongo",
       "bsc:input": {
-        "@id": "_:Na1ccbcad448b42eb82edb20b3eb7245f"
+        "@id": "_:N51ffd503fe724711bf342384fd399940"
       },
       "bsc:output": {
-        "@id": "_:N08168ab362f241139dd0314091e373d2"
+        "@id": "_:N8c10a461d7b9417cba780d993ea71bf0"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0080"
@@ -68,18 +72,7 @@
       "sc:url": "https://colibread.inria.fr/software/commet/"
     },
     {
-      "@id": "_:N08168ab362f241139dd0314091e373d2",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1636"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2333"
-      },
-      "sc:name": "Heat map"
-    },
-    {
-      "@id": "_:Na1ccbcad448b42eb82edb20b3eb7245f",
+      "@id": "_:N51ffd503fe724711bf342384fd399940",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0848"
@@ -90,8 +83,15 @@
       "sc:name": "Raw sequence"
     },
     {
-      "@id": "https://doi.org/10.1109/BIBM.2014.6999135",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N8c10a461d7b9417cba780d993ea71bf0",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1636"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2333"
+      },
+      "sc:name": "Heat map"
     }
   ]
 }

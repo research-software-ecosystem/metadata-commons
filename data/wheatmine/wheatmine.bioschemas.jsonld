@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,28 +36,32 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/bts577",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/WheatMine",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Nbc56be3efb474c9abd3986d22f7f2453"
+          "@id": "_:Nb828d2e97d36429e94994ad564662a3f"
         },
         {
-          "@id": "_:N1c622748a9f844789f26e5415fc3b71c"
+          "@id": "_:Nbe943e6e3b65414499db8b9569aad7f7"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Nd8e7a5b145024cacb1978a476a17efa2"
+          "@id": "_:N0a186db721ce435e9bc60e05521b663f"
         },
         {
-          "@id": "_:Ncd3fed400ad74837b909ebc17697d37f"
+          "@id": "_:N62533225eaae4cc48c3615109a0bfa6f"
         },
         {
-          "@id": "_:Nc644ab60599d48968648d16d481fa772"
+          "@id": "_:N37feb57d3fa74477b4036a78a65737d4"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Database portal",
         "Web application",
@@ -75,8 +79,8 @@
         }
       ],
       "sc:citation": [
-        "pmcid:PMC3516146",
         "pubmed:23023984",
+        "pmcid:PMC3516146",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/bts577"
         }
@@ -84,37 +88,37 @@
       "sc:description": "Wheat IWGSC RefSeq v1.0",
       "sc:featureList": [
         {
-          "@id": "edam:operation_2436"
+          "@id": "edam:operation_2422"
         },
         {
-          "@id": "edam:operation_0337"
+          "@id": "edam:operation_2436"
         },
         {
           "@id": "edam:operation_0224"
         },
         {
-          "@id": "edam:operation_2422"
+          "@id": "edam:operation_0337"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "LGPL-2.1",
       "sc:name": "WheatMine",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:softwareHelp": [
         {
-          "@id": "https://flymine.readthedocs.io/en/latest/"
+          "@id": "http://intermine.readthedocs.org/en/latest/web-services/"
         },
         {
-          "@id": "http://intermine.readthedocs.org/en/latest/web-services/"
+          "@id": "https://flymine.readthedocs.io/en/latest/"
         }
       ],
       "sc:url": "https://urgi.versailles.inra.fr/WheatMine"
     },
     {
-      "@id": "_:Nbc56be3efb474c9abd3986d22f7f2453",
+      "@id": "_:Nb828d2e97d36429e94994ad564662a3f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2353"
@@ -122,7 +126,7 @@
       "sc:name": "Ontology data"
     },
     {
-      "@id": "_:N1c622748a9f844789f26e5415fc3b71c",
+      "@id": "_:Nbe943e6e3b65414499db8b9569aad7f7",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1255"
@@ -130,23 +134,7 @@
       "sc:name": "Sequence features"
     },
     {
-      "@id": "_:Nd8e7a5b145024cacb1978a476a17efa2",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3786"
-      },
-      "sc:name": "Query script"
-    },
-    {
-      "@id": "_:Ncd3fed400ad74837b909ebc17697d37f",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1255"
-      },
-      "sc:name": "Sequence features"
-    },
-    {
-      "@id": "_:Nc644ab60599d48968648d16d481fa772",
+      "@id": "_:N0a186db721ce435e9bc60e05521b663f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3753"
@@ -154,8 +142,20 @@
       "sc:name": "Over-representation data"
     },
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/bts577",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N62533225eaae4cc48c3615109a0bfa6f",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3786"
+      },
+      "sc:name": "Query script"
+    },
+    {
+      "@id": "_:N37feb57d3fa74477b4036a78a65737d4",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1255"
+      },
+      "sc:name": "Sequence features"
     }
   ]
 }

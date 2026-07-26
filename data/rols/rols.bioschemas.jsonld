@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,22 +36,18 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.18129/B9.bioc.rols",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/rols",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N60b34cbc8a744fa6a079cf97d97ee8f3"
+        "@id": "_:N2a8e645fea6547978e7ff0e8c58df232"
       },
       "bsc:output": {
-        "@id": "_:Nc18593d1dba94737a2846fa6aa3b9d12"
+        "@id": "_:N698594013c1744d89e888c889ca4bb96"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0089"
@@ -71,8 +67,8 @@
       "sc:license": "GPL-2.0-only",
       "sc:name": "rols",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -82,7 +78,7 @@
       "sc:url": "https://bioconductor.org/packages/rols"
     },
     {
-      "@id": "_:N60b34cbc8a744fa6a079cf97d97ee8f3",
+      "@id": "_:N2a8e645fea6547978e7ff0e8c58df232",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0966"
@@ -93,7 +89,7 @@
       "sc:name": "Ontology term"
     },
     {
-      "@id": "_:Nc18593d1dba94737a2846fa6aa3b9d12",
+      "@id": "_:N698594013c1744d89e888c889ca4bb96",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2353"
@@ -102,6 +98,10 @@
         "@id": "edam:format_2331"
       },
       "sc:name": "Ontology data"
+    },
+    {
+      "@id": "https://doi.org/10.18129/B9.bioc.rols",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

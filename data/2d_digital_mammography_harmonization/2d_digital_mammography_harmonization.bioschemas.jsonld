@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,6 +36,10 @@
   },
   "@graph": [
     {
+      "@id": "https://orcid.org/0000-0002-9506-9451",
+      "@type": "sc:Person"
+    },
+    {
       "@id": "https://bio.tools/2d_digital_mammography_harmonization",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
@@ -43,24 +47,24 @@
       },
       "bsc:input": [
         {
-          "@id": "_:Ne25a8c091f194d139e8858bd46ac2d08"
+          "@id": "_:Nd6453c038a1844d19164f428954b5021"
         },
         {
-          "@id": "_:N13d4f114237247ebbc49943be97ccac1"
+          "@id": "_:N2560d334de3f4581bacd4ddcf8b24567"
         },
         {
-          "@id": "_:N85ed5e8e99cf43e0bcfe45fcfafb4222"
+          "@id": "_:Nac0ee0f7772845c2a32be5b69677bc78"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Na33ea16cef9843ebb91a56f23c507392"
+          "@id": "_:N35ba01f6a3e04c09826011b382de7338"
         },
         {
-          "@id": "_:Na646b2e642894e6db8425027ed50618b"
+          "@id": "_:N6b4322bbf5294505a5f5a208914f98cd"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Library",
       "sc:applicationSubCategory": [
         {
@@ -70,10 +74,10 @@
           "@id": "edam:topic_0219"
         },
         {
-          "@id": "edam:topic_3382"
+          "@id": "edam:topic_3071"
         },
         {
-          "@id": "edam:topic_3071"
+          "@id": "edam:topic_3382"
         }
       ],
       "sc:author": "Manuel Marfil-Trujillo",
@@ -85,26 +89,26 @@
       "sc:license": "CC-BY-NC-ND-4.0",
       "sc:name": "2D Digital Mammography Harmonization (EUCAIM-SW-046_T-01-03-008)",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": [
         {
-          "@id": "https://drive.eucaim.cancerimage.eu/s/CC3yJTjPz9N7Ggg"
+          "@id": "https://drive.eucaim.cancerimage.eu/s/rdHWqMkNf7frQRY"
         },
         {
           "@id": "https://www.youtube.com/watch?v=IrZhMp2lB7g&list=PL3Q1XjQpjfg_GEmwPDrQeESh6nqCMnYyR&index=13"
         },
         {
-          "@id": "https://drive.eucaim.cancerimage.eu/s/rdHWqMkNf7frQRY"
+          "@id": "https://drive.eucaim.cancerimage.eu/s/CC3yJTjPz9N7Ggg"
         }
       ],
       "sc:softwareVersion": "1.1.0",
       "sc:url": "https://harbor.eucaim.cancerimage.eu/harbor/projects/4/repositories/2d_digital_mammography_harmonization/info-tab"
     },
     {
-      "@id": "_:Na33ea16cef9843ebb91a56f23c507392",
+      "@id": "_:Nd6453c038a1844d19164f428954b5021",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2968"
@@ -115,7 +119,7 @@
       "sc:name": "Image"
     },
     {
-      "@id": "_:Na646b2e642894e6db8425027ed50618b",
+      "@id": "_:N2560d334de3f4581bacd4ddcf8b24567",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2968"
@@ -126,7 +130,7 @@
       "sc:name": "Image"
     },
     {
-      "@id": "_:Ne25a8c091f194d139e8858bd46ac2d08",
+      "@id": "_:Nac0ee0f7772845c2a32be5b69677bc78",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"
@@ -137,7 +141,7 @@
       "sc:name": "Report"
     },
     {
-      "@id": "_:N13d4f114237247ebbc49943be97ccac1",
+      "@id": "_:N35ba01f6a3e04c09826011b382de7338",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2968"
@@ -148,7 +152,7 @@
       "sc:name": "Image"
     },
     {
-      "@id": "_:N85ed5e8e99cf43e0bcfe45fcfafb4222",
+      "@id": "_:N6b4322bbf5294505a5f5a208914f98cd",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2968"
@@ -157,10 +161,6 @@
         "@id": "edam:format_3548"
       },
       "sc:name": "Image"
-    },
-    {
-      "@id": "https://orcid.org/0000-0002-9506-9451",
-      "@type": "sc:Person"
     }
   ]
 }

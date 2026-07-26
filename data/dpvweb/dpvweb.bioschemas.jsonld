@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,36 +36,32 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/nar/gkj023",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/dpvweb",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Mike Adams",
       "bsc:input": [
         {
-          "@id": "_:N3492738a5891437cba3ade7cc1a4d88f"
+          "@id": "_:N5b4a7b80c37f4976b36e6d49a35452b8"
         },
         {
-          "@id": "_:Naed2e943b4b84c249a16d053995a9f61"
+          "@id": "_:N375ee1c3313e45c99e16f09b666675f4"
         },
         {
-          "@id": "_:Nbc720e7538e348bf8e7e2b81c5617eee"
+          "@id": "_:N8523b30b7ba64e3e99ba9c03df7f6a04"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N25dffc191448445ea139b31881324ad1"
+          "@id": "_:Ne205f917490c4571b327350cf173b0c2"
         },
         {
-          "@id": "_:N360d78674d6d402eb108b516fbad103f"
+          "@id": "_:Ncfbc734e510d40828ceb35ce704920c7"
         },
         {
-          "@id": "_:N7919a25a7d364a5a963b0902e19a64db"
+          "@id": "_:N1d81f2a64d554b4599eaebefe6937f2a"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Database portal",
       "sc:applicationSubCategory": [
         {
@@ -76,11 +72,11 @@
         }
       ],
       "sc:citation": [
+        "pubmed:16381892",
+        "pmcid:PMC1347386",
         {
           "@id": "https://doi.org/10.1093/nar/gkj023"
-        },
-        "pmcid:PMC1347386",
-        "pubmed:16381892"
+        }
       ],
       "sc:description": "Information about viruses, viroids and satellites of plants, fungi and protozoa, with some additional data on related animal viruses.",
       "sc:featureList": {
@@ -88,9 +84,9 @@
       },
       "sc:name": "DPVweb database of plant viruses",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": "Rothamsted Research",
       "sc:softwareHelp": {
@@ -99,48 +95,7 @@
       "sc:url": "http://www.dpvweb.net/"
     },
     {
-      "@id": "_:N25dffc191448445ea139b31881324ad1",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2530"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2331"
-      },
-      "sc:name": "Organism report"
-    },
-    {
-      "@id": "_:N360d78674d6d402eb108b516fbad103f",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2530"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2331"
-      },
-      "sc:name": "Organism report"
-    },
-    {
-      "@id": "_:N7919a25a7d364a5a963b0902e19a64db",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2530"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2331"
-      },
-      "sc:name": "Organism report"
-    },
-    {
-      "@id": "_:N3492738a5891437cba3ade7cc1a4d88f",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1870"
-      },
-      "sc:name": "Genus name"
-    },
-    {
-      "@id": "_:Naed2e943b4b84c249a16d053995a9f61",
+      "@id": "_:N5b4a7b80c37f4976b36e6d49a35452b8",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2836"
@@ -148,12 +103,57 @@
       "sc:name": "DPVweb ID"
     },
     {
-      "@id": "_:Nbc720e7538e348bf8e7e2b81c5617eee",
+      "@id": "_:N375ee1c3313e45c99e16f09b666675f4",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2732"
       },
       "sc:name": "Family name"
+    },
+    {
+      "@id": "_:N8523b30b7ba64e3e99ba9c03df7f6a04",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1870"
+      },
+      "sc:name": "Genus name"
+    },
+    {
+      "@id": "_:Ne205f917490c4571b327350cf173b0c2",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2530"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2331"
+      },
+      "sc:name": "Organism report"
+    },
+    {
+      "@id": "_:Ncfbc734e510d40828ceb35ce704920c7",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2530"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2331"
+      },
+      "sc:name": "Organism report"
+    },
+    {
+      "@id": "_:N1d81f2a64d554b4599eaebefe6937f2a",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2530"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2331"
+      },
+      "sc:name": "Organism report"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/gkj023",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

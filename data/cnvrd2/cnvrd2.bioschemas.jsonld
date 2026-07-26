@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,24 +36,20 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.18129/B9.bioc.CNVrd2",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/cnvrd2",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N1294c578473e4d7a8b5a2a7475fe0811"
+        "@id": "_:Nb957dcbbc2c14e8eabca337c11cbe1aa"
       },
       "bsc:output": [
         {
-          "@id": "_:N6973fbac293c4df2a7220cb3e9d98f30"
+          "@id": "_:Naa82d82ac2d049309cf125b38ac3cb82"
         },
         {
-          "@id": "_:Na20706a9bc7e4366975bc3f010a130ab"
+          "@id": "_:N854f5e4d3c1a4ebabbd0f6c6b0ae5da7"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
@@ -81,9 +77,9 @@
       "sc:license": "GPL-2.0-only",
       "sc:name": "CNVrd2",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://bioconductor.org/packages/CNVrd2"
@@ -92,7 +88,23 @@
       "sc:url": "https://bioconductor.org/packages/CNVrd2"
     },
     {
-      "@id": "_:N6973fbac293c4df2a7220cb3e9d98f30",
+      "@id": "_:Nb957dcbbc2c14e8eabca337c11cbe1aa",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3498"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2572"
+        },
+        {
+          "@id": "edam:format_3016"
+        }
+      ],
+      "sc:name": "Sequence variations"
+    },
+    {
+      "@id": "_:Naa82d82ac2d049309cf125b38ac3cb82",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
@@ -108,36 +120,24 @@
       "sc:name": "Plot"
     },
     {
-      "@id": "_:Na20706a9bc7e4366975bc3f010a130ab",
+      "@id": "_:N854f5e4d3c1a4ebabbd0f6c6b0ae5da7",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1772"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_2330"
+          "@id": "edam:format_3547"
         },
         {
-          "@id": "edam:format_3547"
+          "@id": "edam:format_2330"
         }
       ],
       "sc:name": "Score"
     },
     {
-      "@id": "_:N1294c578473e4d7a8b5a2a7475fe0811",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3498"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2572"
-        },
-        {
-          "@id": "edam:format_3016"
-        }
-      ],
-      "sc:name": "Sequence variations"
+      "@id": "https://doi.org/10.18129/B9.bioc.CNVrd2",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

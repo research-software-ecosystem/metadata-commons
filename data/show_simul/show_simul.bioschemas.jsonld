@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -45,16 +45,16 @@
       "biotools:primaryContact": "Pierre Nicolas",
       "bsc:input": [
         {
-          "@id": "_:N5c72083cf57148b6a2a57a9962729966"
+          "@id": "_:Ne2ca0c6fcf5f4abf9e9c72598be5ce92"
         },
         {
-          "@id": "_:Nebd09f11064b467a8966c684cd1e3e27"
+          "@id": "_:N2a680d2d16c2480cb1651da35103f55e"
         }
       ],
       "bsc:output": {
-        "@id": "_:N49ba84a00fab41078b52f3dcdea4eb67"
+        "@id": "_:N234fa838001043558c4404842315ca2e"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0160"
@@ -82,15 +82,7 @@
       "sc:url": "http://genome.jouy.inra.fr/ssb/SHOW/"
     },
     {
-      "@id": "_:N5c72083cf57148b6a2a57a9962729966",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1249"
-      },
-      "sc:name": "Sequence length"
-    },
-    {
-      "@id": "_:Nebd09f11064b467a8966c684cd1e3e27",
+      "@id": "_:Ne2ca0c6fcf5f4abf9e9c72598be5ce92",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1364"
@@ -98,7 +90,15 @@
       "sc:name": "Hidden Markov model"
     },
     {
-      "@id": "_:N49ba84a00fab41078b52f3dcdea4eb67",
+      "@id": "_:N2a680d2d16c2480cb1651da35103f55e",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1249"
+      },
+      "sc:name": "Sequence length"
+    },
+    {
+      "@id": "_:N234fa838001043558c4404842315ca2e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2977"

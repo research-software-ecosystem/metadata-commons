@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,13 +36,9 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1089/cmb.2008.0083",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/zclass",
       "@type": "sc:SoftwareApplication",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Script",
       "sc:applicationSubCategory": [
         {
@@ -67,14 +63,18 @@
       },
       "sc:name": "ZClass",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://www.uea.ac.uk/computing/zclass-zernike-class-"
       },
       "sc:url": "http://www.uea.ac.uk/computing/zclass-zernike-class-"
+    },
+    {
+      "@id": "https://doi.org/10.1089/cmb.2008.0083",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

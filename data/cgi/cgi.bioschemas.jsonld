@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -44,41 +44,41 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N802905436f2145dd9150fc79574e2346"
+          "@id": "_:Na0410b103c2a4136af01f3e1a3df8ec4"
         },
         {
-          "@id": "_:N492482eb14134b1daef1e04959e30c37"
+          "@id": "_:N48ac5c33746048e6b5b7079d3bc16a97"
         },
         {
-          "@id": "_:N5018c68552a347699fbd7cfca66e5374"
+          "@id": "_:N359beee82d294d828dba1006a2de460c"
         },
         {
-          "@id": "_:Nffb636ebd6d44797b26877c2f7b26188"
+          "@id": "_:N8a6179943c8f4075bbed23a63543b3d3"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N9d3b11f60a6e40c892bb6cb1e22df726"
+          "@id": "_:Ndc33be9b17c44325a29a32ad616ae281"
         },
         {
-          "@id": "_:N1bb674c8a1aa4ca48f1820b139927042"
+          "@id": "_:Nc899386aea6f4e95baa63d5372c800c6"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
-        "Web application",
-        "Web API"
+        "Web API",
+        "Web application"
       ],
       "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_0091"
+        },
         {
           "@id": "edam:topic_3307"
         },
         {
           "@id": "edam:topic_2640"
-        },
-        {
-          "@id": "edam:topic_0091"
         }
       ],
       "sc:citation": [
@@ -98,12 +98,12 @@
         }
       ],
       "sc:funder": [
-        "Spanish Ministry of Economy and Competitiveness",
+        "AECC",
         "AGAUR",
         "European Research Council",
-        "AECC",
+        "H2020-EU.3.1.6. - Health care provision and integrated care",
         "La Marato TV3",
-        "H2020-EU.3.1.6. - Health care provision and integrated care"
+        "Spanish Ministry of Economy and Competitiveness"
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "Apache-2.0",
@@ -111,17 +111,28 @@
       "sc:operatingSystem": "Linux",
       "sc:softwareHelp": [
         {
-          "@id": "https://creativecommons.org/licenses/by-nc/4.0/"
+          "@id": "https://www.cancergenomeinterpreter.org/faq"
         },
         {
-          "@id": "https://www.cancergenomeinterpreter.org/faq"
+          "@id": "https://creativecommons.org/licenses/by-nc/4.0/"
         }
       ],
       "sc:softwareVersion": "1.0",
       "sc:url": "https://www.cancergenomeinterpreter.org/"
     },
     {
-      "@id": "_:N802905436f2145dd9150fc79574e2346",
+      "@id": "_:Na0410b103c2a4136af01f3e1a3df8ec4",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3275"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1964"
+      },
+      "sc:name": "Phenotype name"
+    },
+    {
+      "@id": "_:N48ac5c33746048e6b5b7079d3bc16a97",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3498"
@@ -137,7 +148,7 @@
       "sc:name": "Sequence variations"
     },
     {
-      "@id": "_:N492482eb14134b1daef1e04959e30c37",
+      "@id": "_:N359beee82d294d828dba1006a2de460c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3275"
@@ -148,18 +159,7 @@
       "sc:name": "Phenotype name"
     },
     {
-      "@id": "_:N5018c68552a347699fbd7cfca66e5374",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3275"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1964"
-      },
-      "sc:name": "Phenotype name"
-    },
-    {
-      "@id": "_:Nffb636ebd6d44797b26877c2f7b26188",
+      "@id": "_:N8a6179943c8f4075bbed23a63543b3d3",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3498"
@@ -175,7 +175,7 @@
       "sc:name": "Sequence variations"
     },
     {
-      "@id": "_:N9d3b11f60a6e40c892bb6cb1e22df726",
+      "@id": "_:Ndc33be9b17c44325a29a32ad616ae281",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1270"
@@ -186,7 +186,7 @@
       "sc:name": "Feature table"
     },
     {
-      "@id": "_:N1bb674c8a1aa4ca48f1820b139927042",
+      "@id": "_:Nc899386aea6f4e95baa63d5372c800c6",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2080"

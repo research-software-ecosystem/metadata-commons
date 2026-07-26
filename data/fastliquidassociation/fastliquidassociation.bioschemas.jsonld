@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,17 +39,17 @@
       "@id": "https://bio.tools/fastliquidassociation",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N63387b630f454291a3cb2a7e4a41a3ac"
+        "@id": "_:N2c10dc1300eb4e35bd8c5509ad974a73"
       },
       "bsc:output": [
         {
-          "@id": "_:N72dc4cc2aa8b4847ac0e7ccbb870ed75"
+          "@id": "_:Nb03bdc70c5964faf8a93f67805dfe37a"
         },
         {
-          "@id": "_:N433db80fb6994d11a0a8bf3705c334f0"
+          "@id": "_:N027d1966f3a84ec3a115f41afa0c218b"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
@@ -59,10 +59,10 @@
           "@id": "edam:topic_0203"
         },
         {
-          "@id": "edam:topic_2269"
+          "@id": "edam:topic_0602"
         },
         {
-          "@id": "edam:topic_0602"
+          "@id": "edam:topic_2269"
         }
       ],
       "sc:citation": {
@@ -80,9 +80,9 @@
       "sc:license": "GPL-2.0-only",
       "sc:name": "fastLiquidAssociation",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://bioconductor.org/packages/fastLiquidAssociation"
@@ -91,7 +91,18 @@
       "sc:url": "https://bioconductor.org/packages/fastLiquidAssociation"
     },
     {
-      "@id": "_:N72dc4cc2aa8b4847ac0e7ccbb870ed75",
+      "@id": "_:N2c10dc1300eb4e35bd8c5509ad974a73",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0928"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2058"
+      },
+      "sc:name": "Gene expression profile"
+    },
+    {
+      "@id": "_:Nb03bdc70c5964faf8a93f67805dfe37a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2353"
@@ -102,7 +113,7 @@
       "sc:name": "Ontology data"
     },
     {
-      "@id": "_:N433db80fb6994d11a0a8bf3705c334f0",
+      "@id": "_:N027d1966f3a84ec3a115f41afa0c218b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1772"
@@ -111,17 +122,6 @@
         "@id": "edam:format_2330"
       },
       "sc:name": "Score"
-    },
-    {
-      "@id": "_:N63387b630f454291a3cb2a7e4a41a3ac",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0928"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2058"
-      },
-      "sc:name": "Gene expression profile"
     },
     {
       "@id": "https://doi.org/10.18129/B9.bioc.fastLiquidAssociation",

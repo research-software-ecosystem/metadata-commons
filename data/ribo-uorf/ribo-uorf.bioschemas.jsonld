@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -44,13 +44,13 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Nf50e4135028245d9b65182d296cf89b0"
+          "@id": "_:N284b31fadf7b40948e1e235830578f17"
         },
         {
-          "@id": "_:N85f03cd0bcc342448e398596aa39f222"
+          "@id": "_:Na70c103265f34f8184bf5e62be5b20d7"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Web application"
@@ -60,16 +60,16 @@
           "@id": "edam:topic_2229"
         },
         {
-          "@id": "edam:topic_0621"
-        },
-        {
-          "@id": "edam:topic_0108"
+          "@id": "edam:topic_0203"
         },
         {
           "@id": "edam:topic_3512"
         },
         {
-          "@id": "edam:topic_0203"
+          "@id": "edam:topic_0621"
+        },
+        {
+          "@id": "edam:topic_0108"
         }
       ],
       "sc:citation": [
@@ -82,40 +82,40 @@
       "sc:description": "A comprehensive data resource of upstream open reading frames (uORFs) based on ribosome profiling.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0314"
+          "@id": "edam:operation_2421"
         },
         {
           "@id": "edam:operation_3096"
         },
         {
-          "@id": "edam:operation_2421"
+          "@id": "edam:operation_0314"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "Not licensed",
       "sc:name": "Ribo-uORF",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:url": "http://rnainformatics.org.cn/RiboUORF"
     },
     {
-      "@id": "_:Nf50e4135028245d9b65182d296cf89b0",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1026"
-      },
-      "sc:name": "Gene symbol"
-    },
-    {
-      "@id": "_:N85f03cd0bcc342448e398596aa39f222",
+      "@id": "_:N284b31fadf7b40948e1e235830578f17",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2610"
       },
       "sc:name": "Ensembl ID"
+    },
+    {
+      "@id": "_:Na70c103265f34f8184bf5e62be5b20d7",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1026"
+      },
+      "sc:name": "Gene symbol"
     }
   ]
 }

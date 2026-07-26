@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,32 +36,28 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/bts577",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/GrapeMine",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N33588412b48c45e796d132cb8202edf0"
+          "@id": "_:Na779b6b1397842aa9860c8af0cf162d2"
         },
         {
-          "@id": "_:N78157501625d438c8747d8e3142e04ed"
+          "@id": "_:N70a67e68f3c840cfa570470de09e997a"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N15a08205f82c4ac2baea49f1a8b8c8fb"
+          "@id": "_:N031dfb8259de4a56b4017698db756691"
         },
         {
-          "@id": "_:N81c628a1516b40b6ab052dfd59a27616"
+          "@id": "_:N707e385253e64964bb0774defebdb1ad"
         },
         {
-          "@id": "_:N798c85a18fcd4e378aa62194e41d9d27"
+          "@id": "_:Ne517dae2373c4423a3672c6c1f3ba5ce"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Database portal",
         "Web application",
@@ -79,8 +75,8 @@
         }
       ],
       "sc:citation": [
-        "pmcid:PMC3516146",
         "pubmed:23023984",
+        "pmcid:PMC3516146",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/bts577"
         }
@@ -94,40 +90,48 @@
           "@id": "edam:operation_2436"
         },
         {
-          "@id": "edam:operation_0337"
+          "@id": "edam:operation_0224"
         },
         {
-          "@id": "edam:operation_0224"
+          "@id": "edam:operation_0337"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "LGPL-2.1",
       "sc:name": "GrapeMine",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:softwareHelp": [
         {
-          "@id": "https://flymine.readthedocs.io/en/latest/"
+          "@id": "http://intermine.readthedocs.org/en/latest/web-services/"
         },
         {
-          "@id": "http://intermine.readthedocs.org/en/latest/web-services/"
+          "@id": "https://flymine.readthedocs.io/en/latest/"
         }
       ],
       "sc:softwareVersion": "1.0",
       "sc:url": "http://urgi.versailles.inra.fr/GrapeMine"
     },
     {
-      "@id": "_:N15a08205f82c4ac2baea49f1a8b8c8fb",
+      "@id": "_:Na779b6b1397842aa9860c8af0cf162d2",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_3786"
+        "@id": "edam:data_2353"
       },
-      "sc:name": "Query script"
+      "sc:name": "Ontology data"
     },
     {
-      "@id": "_:N81c628a1516b40b6ab052dfd59a27616",
+      "@id": "_:N70a67e68f3c840cfa570470de09e997a",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1255"
+      },
+      "sc:name": "Sequence features"
+    },
+    {
+      "@id": "_:N031dfb8259de4a56b4017698db756691",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3753"
@@ -135,7 +139,15 @@
       "sc:name": "Over-representation data"
     },
     {
-      "@id": "_:N798c85a18fcd4e378aa62194e41d9d27",
+      "@id": "_:N707e385253e64964bb0774defebdb1ad",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3786"
+      },
+      "sc:name": "Query script"
+    },
+    {
+      "@id": "_:Ne517dae2373c4423a3672c6c1f3ba5ce",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1255"
@@ -143,20 +155,8 @@
       "sc:name": "Sequence features"
     },
     {
-      "@id": "_:N33588412b48c45e796d132cb8202edf0",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1255"
-      },
-      "sc:name": "Sequence features"
-    },
-    {
-      "@id": "_:N78157501625d438c8747d8e3142e04ed",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2353"
-      },
-      "sc:name": "Ontology data"
+      "@id": "https://doi.org/10.1093/bioinformatics/bts577",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

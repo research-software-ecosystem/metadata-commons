@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,12 +39,12 @@
       "@id": "https://bio.tools/rots",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nc35b5075723544b699f036707961617e"
+        "@id": "_:Nec64e1cae3c24973b83f5094ad477410"
       },
       "bsc:output": {
-        "@id": "_:N70dfe3aca2a04d9f91ece7f77ec8b947"
+        "@id": "_:N283eb4ba540240db971c31c116e32292"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
@@ -54,10 +54,10 @@
           "@id": "edam:topic_0203"
         },
         {
-          "@id": "edam:topic_2269"
+          "@id": "edam:topic_3391"
         },
         {
-          "@id": "edam:topic_3391"
+          "@id": "edam:topic_2269"
         }
       ],
       "sc:citation": {
@@ -66,19 +66,19 @@
       "sc:description": "Calculates the Reproducibility-Optimized Test Statistic (ROTS) for differential testing in omics data.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_2238"
+          "@id": "edam:operation_2495"
         },
         {
-          "@id": "edam:operation_2495"
+          "@id": "edam:operation_2238"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "GPL-2.0-or-later",
       "sc:name": "ROTS",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://bioconductor.org/packages/ROTS"
@@ -87,18 +87,7 @@
       "sc:url": "https://bioconductor.org/packages/ROTS"
     },
     {
-      "@id": "_:N70dfe3aca2a04d9f91ece7f77ec8b947",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0950"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Mathematical model"
-    },
-    {
-      "@id": "_:Nc35b5075723544b699f036707961617e",
+      "@id": "_:Nec64e1cae3c24973b83f5094ad477410",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2603"
@@ -112,6 +101,17 @@
         }
       ],
       "sc:name": "Gene expression data"
+    },
+    {
+      "@id": "_:N283eb4ba540240db971c31c116e32292",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0950"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Mathematical model"
     },
     {
       "@id": "https://doi.org/10.1371/journal.pcbi.1005562",

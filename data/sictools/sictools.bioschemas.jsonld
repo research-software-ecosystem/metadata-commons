@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,22 +39,22 @@
       "@id": "https://bio.tools/sictools",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nb064dd03e46b4ed98d77f3350843feb2"
+        "@id": "_:Nfce1b0b991d449b3b1b55dc408c72cc7"
       },
       "bsc:output": {
-        "@id": "_:N2f021be1adf0412587ca973717fd12c7"
+        "@id": "_:Ne85ed0c0533f4a2ca7d44e841c4ff9dc"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3168"
+          "@id": "edam:topic_2640"
         },
         {
-          "@id": "edam:topic_2640"
+          "@id": "edam:topic_3168"
         }
       ],
       "sc:citation": {
@@ -72,8 +72,8 @@
       "sc:license": "GPL-2.0-only",
       "sc:name": "SICtools",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -83,18 +83,7 @@
       "sc:url": "https://bioconductor.org/packages/SICtools"
     },
     {
-      "@id": "_:N2f021be1adf0412587ca973717fd12c7",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0951"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Statistical estimate score"
-    },
-    {
-      "@id": "_:Nb064dd03e46b4ed98d77f3350843feb2",
+      "@id": "_:Nfce1b0b991d449b3b1b55dc408c72cc7",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0863"
@@ -103,6 +92,17 @@
         "@id": "edam:format_2572"
       },
       "sc:name": "Sequence alignment"
+    },
+    {
+      "@id": "_:Ne85ed0c0533f4a2ca7d44e841c4ff9dc",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0951"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Statistical estimate score"
     },
     {
       "@id": "https://doi.org/10.18129/B9.bioc.SICtools",

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,6 +36,14 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1080/10618600.2015.1131161",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1186/2049-2618-2-15",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://doi.org/10.1371/journal.pone.0067019",
       "@type": "sc:CreativeWork"
     },
@@ -43,22 +51,22 @@
       "@id": "https://bio.tools/aldex2",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N29c4434b61b447f1a4c361d16c912d18"
+        "@id": "_:Nefc9c80b289c472f8b1c861f87da00d3"
       },
       "bsc:output": {
-        "@id": "_:N1b096abb99254b869df6f56b44a17b89"
+        "@id": "_:Nf30519edeb5445ad823942abd3081518"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_2269"
+          "@id": "edam:topic_0203"
         },
         {
-          "@id": "edam:topic_0203"
+          "@id": "edam:topic_2269"
         }
       ],
       "sc:citation": [
@@ -79,9 +87,9 @@
       "sc:license": "GPL-3.0-only",
       "sc:name": "ALDEx2",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://bioconductor.org/packages/ALDEx2"
@@ -90,18 +98,7 @@
       "sc:url": "https://bioconductor.org/packages/ALDEx2"
     },
     {
-      "@id": "_:N1b096abb99254b869df6f56b44a17b89",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0951"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Statistical estimate score"
-    },
-    {
-      "@id": "_:N29c4434b61b447f1a4c361d16c912d18",
+      "@id": "_:Nefc9c80b289c472f8b1c861f87da00d3",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0928"
@@ -112,12 +109,15 @@
       "sc:name": "Gene expression profile"
     },
     {
-      "@id": "https://doi.org/10.1186/2049-2618-2-15",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1080/10618600.2015.1131161",
-      "@type": "sc:CreativeWork"
+      "@id": "_:Nf30519edeb5445ad823942abd3081518",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0951"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Statistical estimate score"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,32 +36,36 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/database/bau033",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/tagtog",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "tagtog",
       "bsc:input": [
         {
-          "@id": "_:N06c4e8e3df064f25aed17f91ad50f2be"
+          "@id": "_:Nf4860472bfb24ecdbb5dea515a79f271"
         },
         {
-          "@id": "_:Nd74e2a7ea9e64946b74cb80b67a70aa9"
+          "@id": "_:Nc4421d990d5c4464942c4ba5637a559c"
         },
         {
-          "@id": "_:N9fb62548d1e54f41847fa18f07e1a461"
+          "@id": "_:Nf7fc584698e94d8a92ad9a39c8efd854"
         },
         {
-          "@id": "_:Nf8df41a30b3f43fc8bf739ab27f67033"
+          "@id": "_:N91e74226b5c641f1a347ad3ad8b9f5d3"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Nd0eb78fa923f4aa0b52ff62a3e893e9e"
+          "@id": "_:N4a541c3e4d354584b61314d2a8251387"
         },
         {
-          "@id": "_:Nbec91b85d8864fb387cce03f66bfb74c"
+          "@id": "_:Nfda3ccf0b8ab440a9b4c0126c962f362"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Web API",
         "Web application"
@@ -70,15 +74,15 @@
         "@id": "edam:topic_0218"
       },
       "sc:author": [
-        "Juan Miguel Cejuela",
-        "Jorge Campos"
+        "Jorge Campos",
+        "Juan Miguel Cejuela"
       ],
       "sc:citation": [
+        "pubmed:24715220",
+        "pmcid:PMC3978375",
         {
           "@id": "https://doi.org/10.1093/database/bau033"
-        },
-        "pubmed:24715220",
-        "pmcid:PMC3978375"
+        }
       ],
       "sc:description": "Automatic, manual, and search annotation tool.",
       "sc:featureList": {
@@ -87,9 +91,9 @@
       "sc:isAccessibleForFree": true,
       "sc:name": "tagtog",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": "tagtog.net",
       "sc:softwareHelp": {
@@ -99,39 +103,23 @@
       "sc:url": "https://www.tagtog.net"
     },
     {
-      "@id": "_:Nd0eb78fa923f4aa0b52ff62a3e893e9e",
+      "@id": "_:Nf4860472bfb24ecdbb5dea515a79f271",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2526"
+        "@id": "edam:data_3671"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_3475"
+          "@id": "edam:format_3508"
         },
         {
-          "@id": "edam:format_3464"
+          "@id": "edam:format_2330"
         }
       ],
-      "sc:name": "Text data"
+      "sc:name": "Text"
     },
     {
-      "@id": "_:Nbec91b85d8864fb387cce03f66bfb74c",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2526"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3475"
-        },
-        {
-          "@id": "edam:format_3464"
-        }
-      ],
-      "sc:name": "Text data"
-    },
-    {
-      "@id": "_:N06c4e8e3df064f25aed17f91ad50f2be",
+      "@id": "_:Nc4421d990d5c4464942c4ba5637a559c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2526"
@@ -147,56 +135,68 @@
       "sc:name": "Text data"
     },
     {
-      "@id": "_:Nd74e2a7ea9e64946b74cb80b67a70aa9",
+      "@id": "_:Nf7fc584698e94d8a92ad9a39c8efd854",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3671"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3508"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Text"
+    },
+    {
+      "@id": "_:N91e74226b5c641f1a347ad3ad8b9f5d3",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2526"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_2332"
+          "@id": "edam:format_3464"
         },
         {
-          "@id": "edam:format_3464"
+          "@id": "edam:format_2332"
         }
       ],
       "sc:name": "Text data"
     },
     {
-      "@id": "_:N9fb62548d1e54f41847fa18f07e1a461",
+      "@id": "_:N4a541c3e4d354584b61314d2a8251387",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_3671"
+        "@id": "edam:data_2526"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_2330"
+          "@id": "edam:format_3464"
         },
         {
-          "@id": "edam:format_3508"
+          "@id": "edam:format_3475"
         }
       ],
-      "sc:name": "Text"
+      "sc:name": "Text data"
     },
     {
-      "@id": "_:Nf8df41a30b3f43fc8bf739ab27f67033",
+      "@id": "_:Nfda3ccf0b8ab440a9b4c0126c962f362",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_3671"
+        "@id": "edam:data_2526"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_2330"
+          "@id": "edam:format_3464"
         },
         {
-          "@id": "edam:format_3508"
+          "@id": "edam:format_3475"
         }
       ],
-      "sc:name": "Text"
-    },
-    {
-      "@id": "https://doi.org/10.1093/database/bau033",
-      "@type": "sc:CreativeWork"
+      "sc:name": "Text data"
     }
   ]
 }

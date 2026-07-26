@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,11 +39,17 @@
       "@id": "https://bio.tools/sema_web",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nf6dc3533ac654f2f98d83c425ebe1d66"
+        "@id": "_:N1d1e1841afb54d579a985b4ce7339c6f"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_3400"
+        },
+        {
+          "@id": "edam:topic_2830"
+        },
         {
           "@id": "edam:topic_3474"
         },
@@ -52,12 +58,6 @@
         },
         {
           "@id": "edam:topic_3966"
-        },
-        {
-          "@id": "edam:topic_3400"
-        },
-        {
-          "@id": "edam:topic_2830"
         }
       ],
       "sc:citation": [
@@ -70,29 +70,29 @@
       "sc:description": "Antigen B-cell conformational epitope prediction using deep transfer learning.'",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0252"
-        },
-        {
-          "@id": "edam:operation_0480"
-        },
-        {
           "@id": "edam:operation_0416"
         },
         {
+          "@id": "edam:operation_0252"
+        },
+        {
           "@id": "edam:operation_0272"
+        },
+        {
+          "@id": "edam:operation_0480"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:name": "SEMA",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:url": "http://sema.airi.net"
     },
     {
-      "@id": "_:Nf6dc3533ac654f2f98d83c425ebe1d66",
+      "@id": "_:N1d1e1841afb54d579a985b4ce7339c6f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2976"

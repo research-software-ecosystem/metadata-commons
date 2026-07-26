@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -51,31 +51,31 @@
       },
       "bsc:input": [
         {
-          "@id": "_:N30cd2288edeb418e9cc6ae2d03c10a3f"
+          "@id": "_:N18b5324d8b87461bb59e393ffa33a783"
         },
         {
-          "@id": "_:N3521414a2ed64b3bbed8e0025dafbdae"
+          "@id": "_:N6dd765cd74614b789dc85bddcd55ffcd"
         },
         {
-          "@id": "_:N20e87e80046c436ca70f6d7fa5f37b62"
+          "@id": "_:N9f10f9426878475ab0ce09635cfc8635"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Nf0934b7e3a6a49899256595f368ab4cf"
+          "@id": "_:N84c74d508646405491129041eaeeffa3"
         },
         {
-          "@id": "_:N9d3af5550c7b4b8c961e9287c929f57c"
+          "@id": "_:Nf00b7a65ad6d47928deb2f9a03150eae"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Library",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3892"
+          "@id": "edam:topic_3569"
         },
         {
-          "@id": "edam:topic_3569"
+          "@id": "edam:topic_3892"
         },
         {
           "@id": "edam:topic_3316"
@@ -96,33 +96,55 @@
       "sc:name": "DE-Sim",
       "sc:softwareHelp": [
         {
-          "@id": "https://sandbox.karrlab.org/tree/de_sim"
+          "@id": "https://docs.karrlab.org/de_sim"
+        },
+        {
+          "@id": "https://github.com/KarrLab/de_sim/blob/master/CODE_OF_CONDUCT.md"
         },
         {
           "@id": "https://github.com/KarrLab/de_sim/blob/master/CONTRIBUTING.md"
         },
         {
-          "@id": "https://docs.karrlab.org/de_sim"
-        },
-        {
-          "@id": "https://github.com/KarrLab/de_sim/blob/master/CODE_OF_CONDUCT.md"
+          "@id": "https://sandbox.karrlab.org/tree/de_sim"
         }
       ],
       "sc:url": "https://github.com/KarrLab/de-sim"
     },
     {
-      "@id": "_:Nf0934b7e3a6a49899256595f368ab4cf",
+      "@id": "_:N18b5324d8b87461bb59e393ffa33a783",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_3870"
+        "@id": "edam:data_0950"
       },
       "sc:encodingFormat": {
-        "@id": "edam:format_3590"
+        "@id": "edam:format_3996"
       },
-      "sc:name": "Trajectory data"
+      "sc:name": "Mathematical model"
     },
     {
-      "@id": "_:N9d3af5550c7b4b8c961e9287c929f57c",
+      "@id": "_:N6dd765cd74614b789dc85bddcd55ffcd",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2600"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3996"
+      },
+      "sc:name": "Pathway or network"
+    },
+    {
+      "@id": "_:N9f10f9426878475ab0ce09635cfc8635",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3869"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3996"
+      },
+      "sc:name": "Simulation"
+    },
+    {
+      "@id": "_:N84c74d508646405491129041eaeeffa3",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
@@ -138,37 +160,15 @@
       "sc:name": "Plot"
     },
     {
-      "@id": "_:N30cd2288edeb418e9cc6ae2d03c10a3f",
+      "@id": "_:Nf00b7a65ad6d47928deb2f9a03150eae",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_0950"
+        "@id": "edam:data_3870"
       },
       "sc:encodingFormat": {
-        "@id": "edam:format_3996"
+        "@id": "edam:format_3590"
       },
-      "sc:name": "Mathematical model"
-    },
-    {
-      "@id": "_:N3521414a2ed64b3bbed8e0025dafbdae",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2600"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3996"
-      },
-      "sc:name": "Pathway or network"
-    },
-    {
-      "@id": "_:N20e87e80046c436ca70f6d7fa5f37b62",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3869"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3996"
-      },
-      "sc:name": "Simulation"
+      "sc:name": "Trajectory data"
     }
   ]
 }

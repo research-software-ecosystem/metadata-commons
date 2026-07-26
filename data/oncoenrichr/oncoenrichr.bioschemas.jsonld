@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,10 +36,6 @@
   },
   "@graph": [
     {
-      "@id": "https://orcid.org/0000-0001-8468-2050",
-      "@type": "sc:Person"
-    },
-    {
       "@id": "https://doi.org/10.48550/arXiv.2107.13247",
       "@type": "sc:CreativeWork"
     },
@@ -51,56 +47,56 @@
       },
       "bsc:input": [
         {
-          "@id": "_:N3dc57676001448a6a278a34db86c7bbd"
+          "@id": "_:Nb47d00129f224355a65849cfd068720b"
         },
         {
-          "@id": "_:N3822a612c8054c06ac68fb52716acbf2"
+          "@id": "_:N29709c82aa4443bb8aaed3ef4342178f"
         },
         {
-          "@id": "_:Nb910e8b22fa64d42aeab605acb53f7bd"
+          "@id": "_:Na1386cddfd8b4ca28aa49d7730561bb8"
         },
         {
-          "@id": "_:N5313c91479064e1ba8ba34bde04a21ff"
+          "@id": "_:N31365916322048df8522841d1c937b5b"
         },
         {
-          "@id": "_:Ndba7f2cc49b344ccb55d3da444ae6506"
+          "@id": "_:Nb0a8d240c25745598cc62acd6b899d56"
         }
       ],
       "bsc:output": {
-        "@id": "_:N625eba1a8358446f80dc091f3f869f28"
+        "@id": "_:N037a4e10a81e489eab439601e4e2a559"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Web application"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_2640"
-        },
-        {
-          "@id": "edam:topic_0085"
-        },
-        {
-          "@id": "edam:topic_3958"
-        },
-        {
-          "@id": "edam:topic_0208"
-        },
-        {
-          "@id": "edam:topic_0092"
-        },
-        {
           "@id": "edam:topic_0091"
         },
         {
-          "@id": "edam:topic_3366"
+          "@id": "edam:topic_3958"
         },
         {
           "@id": "edam:topic_2533"
         },
         {
           "@id": "edam:topic_3345"
+        },
+        {
+          "@id": "edam:topic_3366"
+        },
+        {
+          "@id": "edam:topic_0092"
+        },
+        {
+          "@id": "edam:topic_0085"
+        },
+        {
+          "@id": "edam:topic_2640"
+        },
+        {
+          "@id": "edam:topic_0208"
         }
       ],
       "sc:author": {
@@ -112,18 +108,6 @@
       "sc:description": "oncoEnrichR is an R package for functional interrogation of human genesets in the context of cancer. The package leverages an extensive amount of prior molecular knowledge for geneset interpretation along multiple dimensions.\n\noncoEnrichR is primarily intended for exploratory analysis and prioritization of a gene list from high-throughput cancer biology experiments, e.g. genetic screens (siRNA/CRISPR), protein proximity labeling, or transcriptomics (differential expression). The tool queries a number of high-quality data resources in order to assemble useful gene annotations and analyses in an interactive report.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3925"
-        },
-        {
-          "@id": "edam:operation_0276"
-        },
-        {
-          "@id": "edam:operation_3282"
-        },
-        {
-          "@id": "edam:operation_0531"
-        },
-        {
           "@id": "edam:operation_3463"
         },
         {
@@ -134,14 +118,26 @@
         },
         {
           "@id": "edam:operation_2436"
+        },
+        {
+          "@id": "edam:operation_0531"
+        },
+        {
+          "@id": "edam:operation_3282"
+        },
+        {
+          "@id": "edam:operation_3925"
+        },
+        {
+          "@id": "edam:operation_0276"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "MIT",
       "sc:name": "oncoEnrichR",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": [
@@ -162,29 +158,7 @@
       "sc:url": "https://github.com/sigven/oncoEnrichR"
     },
     {
-      "@id": "_:N3dc57676001448a6a278a34db86c7bbd",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1098"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "RefSeq accession"
-    },
-    {
-      "@id": "_:N3822a612c8054c06ac68fb52716acbf2",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1027"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Gene ID (NCBI)"
-    },
-    {
-      "@id": "_:Nb910e8b22fa64d42aeab605acb53f7bd",
+      "@id": "_:Nb47d00129f224355a65849cfd068720b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2610"
@@ -195,18 +169,7 @@
       "sc:name": "Ensembl ID"
     },
     {
-      "@id": "_:N5313c91479064e1ba8ba34bde04a21ff",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3021"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "UniProt accession"
-    },
-    {
-      "@id": "_:Ndba7f2cc49b344ccb55d3da444ae6506",
+      "@id": "_:N29709c82aa4443bb8aaed3ef4342178f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2725"
@@ -217,20 +180,57 @@
       "sc:name": "Ensembl transcript ID"
     },
     {
-      "@id": "_:N625eba1a8358446f80dc091f3f869f28",
+      "@id": "_:Na1386cddfd8b4ca28aa49d7730561bb8",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1027"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Gene ID (NCBI)"
+    },
+    {
+      "@id": "_:N31365916322048df8522841d1c937b5b",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1098"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "RefSeq accession"
+    },
+    {
+      "@id": "_:Nb0a8d240c25745598cc62acd6b899d56",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3021"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "UniProt accession"
+    },
+    {
+      "@id": "_:N037a4e10a81e489eab439601e4e2a559",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_3620"
+          "@id": "edam:format_2331"
         },
         {
-          "@id": "edam:format_2331"
+          "@id": "edam:format_3620"
         }
       ],
       "sc:name": "Report"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-8468-2050",
+      "@type": "sc:Person"
     }
   ]
 }

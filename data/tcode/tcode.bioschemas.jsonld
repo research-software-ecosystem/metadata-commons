@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,6 +36,14 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1017/CBO9781139151405",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1017/CBO9781139151399",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://doi.org/10.1016/S0168-9525(00)02024-2",
       "@type": "sc:CreativeWork"
     },
@@ -44,21 +52,21 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Nc21fafdd99c1406c8ab983d59038aab1"
+          "@id": "_:N4a902195ba7c4455bc12e24301df59d7"
         },
         {
-          "@id": "_:Ne413881e10064d028f2b03e9a1afe7ee"
+          "@id": "_:N2de009df9f3d43ea8425fab689af5f6d"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Nca80ebae077948b1a97ba724f4cae567"
+          "@id": "_:N048ff3048b89417ea07e5b0bd980ee9c"
         },
         {
-          "@id": "_:N8ad423abb76f446085842b516e4d77cc"
+          "@id": "_:N5095b105ed7440f8adfaf4edd954a2e9"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0623"
@@ -68,34 +76,34 @@
           "@id": "https://doi.org/10.1016/S0168-9525(00)02024-2"
         },
         {
-          "@id": "https://doi.org/10.1017/CBO9781139151405"
+          "@id": "https://doi.org/10.1017/CBO9781139151399"
         },
         {
-          "@id": "https://doi.org/10.1017/CBO9781139151399"
+          "@id": "https://doi.org/10.1017/CBO9781139151405"
         }
       ],
       "sc:contributor": [
-        "UK MRC",
         "UK BBSRC",
-        "EMBOSS Contributors",
-        "Wellcome Trust"
+        "UK MRC",
+        "Wellcome Trust",
+        "EMBOSS Contributors"
       ],
       "sc:description": "Identify protein-coding regions using Fickett TESTCODE statistic.",
       "sc:featureList": {
         "@id": "edam:operation_0436"
       },
       "sc:funder": [
-        "Wellcome Trust",
+        "UK BBSRC",
         "UK MRC",
-        "UK BBSRC"
+        "Wellcome Trust"
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "GPL-3.0",
       "sc:name": "tcode",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": [
         "EMBL-EBI",
@@ -103,20 +111,20 @@
       ],
       "sc:softwareHelp": [
         {
-          "@id": "http://emboss.open-bio.org/html/dev/ch01s01.html"
+          "@id": "http://emboss.open-bio.org/html/use/pr02s04.html"
         },
         {
           "@id": "http://emboss.open-bio.org/rel/rel6/apps/tcode.html"
         },
         {
-          "@id": "http://emboss.open-bio.org/html/use/pr02s04.html"
+          "@id": "http://emboss.open-bio.org/html/dev/ch01s01.html"
         }
       ],
       "sc:softwareVersion": "r6",
       "sc:url": "http://emboss.open-bio.org/rel/rel6/apps/tcode.html"
     },
     {
-      "@id": "_:Nc21fafdd99c1406c8ab983d59038aab1",
+      "@id": "_:N4a902195ba7c4455bc12e24301df59d7",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0914"
@@ -124,7 +132,7 @@
       "sc:name": "Codon usage data"
     },
     {
-      "@id": "_:Ne413881e10064d028f2b03e9a1afe7ee",
+      "@id": "_:N2de009df9f3d43ea8425fab689af5f6d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2887"
@@ -132,7 +140,7 @@
       "sc:name": "Nucleic acid sequence record"
     },
     {
-      "@id": "_:Nca80ebae077948b1a97ba724f4cae567",
+      "@id": "_:N048ff3048b89417ea07e5b0bd980ee9c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2160"
@@ -140,20 +148,12 @@
       "sc:name": "Fickett testcode plot"
     },
     {
-      "@id": "_:N8ad423abb76f446085842b516e4d77cc",
+      "@id": "_:N5095b105ed7440f8adfaf4edd954a2e9",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1276"
       },
       "sc:name": "Nucleic acid features"
-    },
-    {
-      "@id": "https://doi.org/10.1017/CBO9781139151399",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1017/CBO9781139151405",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

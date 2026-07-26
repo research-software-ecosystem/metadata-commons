@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,19 +36,23 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1038/nmeth.3252",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/arraytools",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Arthur Li",
       "bsc:input": {
-        "@id": "_:N1c5b0a6ca9524beca2c8f9f5098768b3"
+        "@id": "_:N203bf912725d43588354940a2ca8b615"
       },
       "bsc:output": {
-        "@id": "_:Nf5f5bc305de148a9b2ae96d2ae7949ca"
+        "@id": "_:N50145be308b64fbfbcbe4f4a70b228c2"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
         {
@@ -59,11 +63,11 @@
         }
       ],
       "sc:citation": [
+        "pubmed:25633503",
         "pmcid:PMC4509590",
         {
           "@id": "https://doi.org/10.1038/nmeth.3252"
-        },
-        "pubmed:25633503"
+        }
       ],
       "sc:description": "This package is designed to detect differentially expressed genes for the Affymetrix GeneChips, including both 3' -arrays and gene 1.0-ST arrays. It generates comprehensive analysis reports in HTML format. Hyperlinks on the report page will lead to a series of QC plots, processed data, and differentially expressed gene lists. Differentially expressed genes are reported in tabular format with annotations hyperlinked to online biological databases.",
       "sc:featureList": {
@@ -72,8 +76,8 @@
       "sc:license": "GPL-2.0",
       "sc:name": "ArrayTools",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -83,18 +87,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/ArrayTools.html"
     },
     {
-      "@id": "_:Nf5f5bc305de148a9b2ae96d2ae7949ca",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2048"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2331"
-      },
-      "sc:name": "Report"
-    },
-    {
-      "@id": "_:N1c5b0a6ca9524beca2c8f9f5098768b3",
+      "@id": "_:N203bf912725d43588354940a2ca8b615",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0928"
@@ -105,8 +98,15 @@
       "sc:name": "Gene expression profile"
     },
     {
-      "@id": "https://doi.org/10.1038/nmeth.3252",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N50145be308b64fbfbcbe4f4a70b228c2",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2048"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2331"
+      },
+      "sc:name": "Report"
     }
   ]
 }

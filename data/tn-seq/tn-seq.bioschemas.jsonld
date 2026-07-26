@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -38,7 +38,7 @@
     {
       "@id": "https://bio.tools/Tn-seq",
       "@type": "sc:SoftwareApplication",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:applicationSubCategory": [
         {
           "@id": "edam:topic_3386"
@@ -59,13 +59,13 @@
       "sc:description": "Scripts for analyzing transposon sequencing data used by the Whiteley lab | Custom scripts for analyzing (parsing, mapping, and tallying) Tn-seq reads and determining differentially abundant transposon insertion mutants | The scripts contained herein can be used to automatically analyze high-throughput (Illumina) sequencing reads derived from transposon-genome junctions",
       "sc:featureList": [
         {
+          "@id": "edam:operation_1812"
+        },
+        {
           "@id": "edam:operation_3192"
         },
         {
           "@id": "edam:operation_3461"
-        },
-        {
-          "@id": "edam:operation_1812"
         }
       ],
       "sc:name": "Tn-seq",

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,27 +36,23 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1038/nmeth.3688",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/ribotaper",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N83d45426f5a14d8e8c25fe34e634d4a6"
+          "@id": "_:N9aeda38512bf4c5a9cb30e599200107e"
         },
         {
-          "@id": "_:N62d3ffadb50e4cbf9e59fd1f5b989868"
+          "@id": "_:Nfbcc2c56fb8a46f1a5eafdced77b8641"
         },
         {
-          "@id": "_:N34bd0505088f44edb17fab5ba2c645bb"
+          "@id": "_:Na62d5a891f684cbd97894ba5441862fa"
         }
       ],
       "bsc:output": {
-        "@id": "_:N08b36cfa064547eeb54c863e743503fe"
+        "@id": "_:Na7ebe2bc93e54b40aec82c152544a53a"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0085"
@@ -80,7 +76,7 @@
       "sc:url": "https://ohlerlab.mdc-berlin.de/software/RiboTaper_126/"
     },
     {
-      "@id": "_:N83d45426f5a14d8e8c25fe34e634d4a6",
+      "@id": "_:N9aeda38512bf4c5a9cb30e599200107e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0863"
@@ -91,18 +87,7 @@
       "sc:name": "Sequence alignment"
     },
     {
-      "@id": "_:N62d3ffadb50e4cbf9e59fd1f5b989868",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1255"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2305"
-      },
-      "sc:name": "Sequence features"
-    },
-    {
-      "@id": "_:N34bd0505088f44edb17fab5ba2c645bb",
+      "@id": "_:Nfbcc2c56fb8a46f1a5eafdced77b8641",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0925"
@@ -113,7 +98,18 @@
       "sc:name": "Sequence assembly"
     },
     {
-      "@id": "_:N08b36cfa064547eeb54c863e743503fe",
+      "@id": "_:Na62d5a891f684cbd97894ba5441862fa",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1255"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2305"
+      },
+      "sc:name": "Sequence features"
+    },
+    {
+      "@id": "_:Na7ebe2bc93e54b40aec82c152544a53a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0928"
@@ -123,13 +119,17 @@
           "@id": "edam:format_3003"
         },
         {
-          "@id": "edam:format_3508"
+          "@id": "edam:format_1929"
         },
         {
-          "@id": "edam:format_1929"
+          "@id": "edam:format_3508"
         }
       ],
       "sc:name": "Gene expression profile"
+    },
+    {
+      "@id": "https://doi.org/10.1038/nmeth.3688",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

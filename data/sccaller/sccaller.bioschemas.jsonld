@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -44,12 +44,12 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Xiao Dong",
       "bsc:input": {
-        "@id": "_:N7812a852501e492eae6f43ca1482e035"
+        "@id": "_:N7e124386e1e3430c802800f1e2fac994"
       },
       "bsc:output": {
-        "@id": "_:Nefaaabe0f92a4f2c9eaa66e92679575a"
+        "@id": "_:N597415ba43244991a47eb2732592ab55"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
@@ -72,10 +72,10 @@
           "@id": "edam:operation_0452"
         },
         {
-          "@id": "edam:operation_3227"
+          "@id": "edam:operation_0484"
         },
         {
-          "@id": "edam:operation_0484"
+          "@id": "edam:operation_3227"
         }
       ],
       "sc:isAccessibleForFree": true,
@@ -87,18 +87,7 @@
       "sc:url": "https://github.com/biosinodx/SCcaller/"
     },
     {
-      "@id": "_:Nefaaabe0f92a4f2c9eaa66e92679575a",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3498"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3003"
-      },
-      "sc:name": "Sequence variations"
-    },
-    {
-      "@id": "_:N7812a852501e492eae6f43ca1482e035",
+      "@id": "_:N7e124386e1e3430c802800f1e2fac994",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
@@ -107,6 +96,17 @@
         "@id": "edam:format_2572"
       },
       "sc:name": "Sequence"
+    },
+    {
+      "@id": "_:N597415ba43244991a47eb2732592ab55",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3498"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3003"
+      },
+      "sc:name": "Sequence variations"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -43,26 +43,29 @@
       "@id": "https://bio.tools/phenpath",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
-        "Pier Luigi Martelli",
-        "Giulia Babbi"
+        "Giulia Babbi",
+        "Pier Luigi Martelli"
       ],
       "bsc:input": [
         {
-          "@id": "_:N1fc8aff682374cf995e13265a9ff7c8a"
+          "@id": "_:Na761a763fa4f412eaf391dc16293ef85"
         },
         {
-          "@id": "_:N2e5f2f56e145409fbaafc4aa5199e4ce"
+          "@id": "_:N7e161d12060d4438a6fa32fe52fba4e0"
         },
         {
-          "@id": "_:Nf796ae8ecf9c4a009c83c22e6c38b9da"
+          "@id": "_:N1f211f505531426db488ef7e4b4e2dae"
         }
       ],
       "bsc:output": {
-        "@id": "_:N13870ddf86a343dbac5de2b1ada1d191"
+        "@id": "_:N37360fbb549f4e8792beb18c1bc2ca97"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Database portal",
       "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_0625"
+        },
         {
           "@id": "edam:topic_0602"
         },
@@ -71,9 +74,6 @@
         },
         {
           "@id": "edam:topic_3305"
-        },
-        {
-          "@id": "edam:topic_0625"
         },
         {
           "@id": "edam:topic_3325"
@@ -90,21 +90,21 @@
       "sc:description": "A tool for characterizing biological functions underlying different phenotypes.\n\na web server for associating phenotypes with molecular functional annotations.\n\nPhenPath includes a database and a tool:.\n'",
       "sc:featureList": [
         {
+          "@id": "edam:operation_2422"
+        },
+        {
           "@id": "edam:operation_3501"
         },
         {
           "@id": "edam:operation_3672"
-        },
-        {
-          "@id": "edam:operation_2422"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "CC-BY-NC-4.0",
       "sc:name": "PhenPath",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:provider": "ELIXIR-ITA-BOLOGNA",
@@ -114,23 +114,7 @@
       "sc:url": "http://phenpath.biocomp.unibo.it"
     },
     {
-      "@id": "_:N13870ddf86a343dbac5de2b1ada1d191",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1622"
-      },
-      "sc:name": "Disease report"
-    },
-    {
-      "@id": "_:N1fc8aff682374cf995e13265a9ff7c8a",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3275"
-      },
-      "sc:name": "Phenotype name"
-    },
-    {
-      "@id": "_:N2e5f2f56e145409fbaafc4aa5199e4ce",
+      "@id": "_:Na761a763fa4f412eaf391dc16293ef85",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1150"
@@ -138,12 +122,28 @@
       "sc:name": "Disease ID"
     },
     {
-      "@id": "_:Nf796ae8ecf9c4a009c83c22e6c38b9da",
+      "@id": "_:N7e161d12060d4438a6fa32fe52fba4e0",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3668"
       },
       "sc:name": "Disease name"
+    },
+    {
+      "@id": "_:N1f211f505531426db488ef7e4b4e2dae",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3275"
+      },
+      "sc:name": "Phenotype name"
+    },
+    {
+      "@id": "_:N37360fbb549f4e8792beb18c1bc2ca97",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1622"
+      },
+      "sc:name": "Disease report"
     }
   ]
 }

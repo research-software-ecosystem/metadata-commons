@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,34 +36,38 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/gky328",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/unres",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
-        "Cezary Czaplewski",
-        "Adam Liwo"
+        "Adam Liwo",
+        "Cezary Czaplewski"
       ],
       "bsc:input": [
         {
-          "@id": "_:N001c5654d5754026b6f34de6c2922b4e"
+          "@id": "_:N1830bff1876b4a879de08309fe894fb1"
         },
         {
-          "@id": "_:N1a61c8586ad6492db9d08ef27c23bcab"
+          "@id": "_:N18aa4d6b727e48138f4b3bad4511c48d"
         }
       ],
       "bsc:output": {
-        "@id": "_:N986c110342a742cea30981ab0a03331f"
+        "@id": "_:Nfc68dbcb3ad4417b94498522240049c8"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_0176"
+        },
         {
           "@id": "edam:topic_0593"
         },
         {
           "@id": "edam:topic_0736"
-        },
-        {
-          "@id": "edam:topic_0176"
         }
       ],
       "sc:citation": [
@@ -89,26 +93,7 @@
       "sc:url": "http://unres-server.chem.ug.edu.pl/"
     },
     {
-      "@id": "_:N986c110342a742cea30981ab0a03331f",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1537"
-      },
-      "sc:name": "Protein structure report"
-    },
-    {
-      "@id": "_:N001c5654d5754026b6f34de6c2922b4e",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2976"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Protein sequence"
-    },
-    {
-      "@id": "_:N1a61c8586ad6492db9d08ef27c23bcab",
+      "@id": "_:N1830bff1876b4a879de08309fe894fb1",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1127"
@@ -119,8 +104,23 @@
       "sc:name": "PDB ID"
     },
     {
-      "@id": "https://doi.org/10.1093/nar/gky328",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N18aa4d6b727e48138f4b3bad4511c48d",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2976"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Protein sequence"
+    },
+    {
+      "@id": "_:Nfc68dbcb3ad4417b94498522240049c8",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1537"
+      },
+      "sc:name": "Protein structure report"
     }
   ]
 }

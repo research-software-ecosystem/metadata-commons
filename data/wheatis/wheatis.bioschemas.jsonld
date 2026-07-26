@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,54 +36,50 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1186/s13059-018-1491-4",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/WheatIS",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Support service",
       "bsc:input": [
         {
-          "@id": "_:N9218ede78c6241599166e68d910912cb"
+          "@id": "_:Nb141ebf157df419da59035e701723c49"
         },
         {
-          "@id": "_:N56c000a81b094480927a5103dd9c8c6b"
+          "@id": "_:Nb8350011392d4aac91690005f5553a7e"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N21d3bfd47f2d4bcd87f09be668e2780d"
+          "@id": "_:N4af5a676dc954ba2bdd4d8c23e35fdd8"
         },
         {
-          "@id": "_:N9531020fdde94a2ab9cbb94c05c92932"
+          "@id": "_:N02127a74def54cccbe7713d53bc6f475"
         },
         {
-          "@id": "_:N5b52939ee2c948ffb33a4fb886fd3864"
+          "@id": "_:N11c13a52b0b449788c700b4082ee746c"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web application",
-        "Web service",
+        "Database portal",
         "Web API",
-        "Database portal"
+        "Web application",
+        "Web service"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0610"
+          "@id": "edam:topic_3810"
         },
         {
           "@id": "edam:topic_0091"
         },
         {
-          "@id": "edam:topic_0780"
-        },
-        {
-          "@id": "edam:topic_3810"
-        },
-        {
           "@id": "edam:topic_3071"
+        },
+        {
+          "@id": "edam:topic_0610"
+        },
+        {
+          "@id": "edam:topic_0780"
         }
       ],
       "sc:citation": {
@@ -95,10 +91,10 @@
           "@id": "edam:operation_2421"
         },
         {
-          "@id": "edam:operation_3908"
+          "@id": "edam:operation_0227"
         },
         {
-          "@id": "edam:operation_0227"
+          "@id": "edam:operation_3908"
         },
         {
           "@id": "edam:operation_3625"
@@ -115,40 +111,16 @@
           "@id": "https://urgi.versailles.inra.fr/wheatis/about"
         },
         {
-          "@id": "https://urgi.versailles.inra.fr/wheatis/help"
+          "@id": "https://urgi.versailles.inra.fr/wheatis/legal"
         },
         {
-          "@id": "https://urgi.versailles.inra.fr/wheatis/legal"
+          "@id": "https://urgi.versailles.inra.fr/wheatis/help"
         }
       ],
       "sc:url": "https://urgi.versailles.inrae.fr/wheatis/"
     },
     {
-      "@id": "_:N21d3bfd47f2d4bcd87f09be668e2780d",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0842"
-      },
-      "sc:name": "Identifier"
-    },
-    {
-      "@id": "_:N9531020fdde94a2ab9cbb94c05c92932",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2093"
-      },
-      "sc:name": "Data reference"
-    },
-    {
-      "@id": "_:N5b52939ee2c948ffb33a4fb886fd3864",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2080"
-      },
-      "sc:name": "Database search results"
-    },
-    {
-      "@id": "_:N9218ede78c6241599166e68d910912cb",
+      "@id": "_:Nb141ebf157df419da59035e701723c49",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0968"
@@ -156,12 +128,40 @@
       "sc:name": "Keyword"
     },
     {
-      "@id": "_:N56c000a81b094480927a5103dd9c8c6b",
+      "@id": "_:Nb8350011392d4aac91690005f5553a7e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2353"
       },
       "sc:name": "Ontology data"
+    },
+    {
+      "@id": "_:N4af5a676dc954ba2bdd4d8c23e35fdd8",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2093"
+      },
+      "sc:name": "Data reference"
+    },
+    {
+      "@id": "_:N02127a74def54cccbe7713d53bc6f475",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2080"
+      },
+      "sc:name": "Database search results"
+    },
+    {
+      "@id": "_:N11c13a52b0b449788c700b4082ee746c",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0842"
+      },
+      "sc:name": "Identifier"
+    },
+    {
+      "@id": "https://doi.org/10.1186/s13059-018-1491-4",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

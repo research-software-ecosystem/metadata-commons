@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,30 +39,30 @@
       "@id": "https://bio.tools/utr",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N77a22e80f21f49ccb8359473a10eac62"
+        "@id": "_:N348e21f819fd4dd18fbb4eff952e578b"
       },
       "bsc:output": {
-        "@id": "_:N7e94548d069c48bbad8ace4c34706a24"
+        "@id": "_:Ncc684d6e42524b7db8ab77d29884271d"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_3512"
-        },
         {
           "@id": "edam:topic_2885"
         },
         {
           "@id": "edam:topic_3676"
+        },
+        {
+          "@id": "edam:topic_3512"
         }
       ],
       "sc:citation": [
+        "pubmed:37039842",
+        "pmcid:PMC10118999",
         {
           "@id": "https://doi.org/10.1093/BIOINFORMATICS/BTAD185"
-        },
-        "pubmed:37039842",
-        "pmcid:PMC10118999"
+        }
       ],
       "sc:description": "Decomposing mosaic tandem repeats accurately from long reads.",
       "sc:featureList": {
@@ -71,25 +71,14 @@
       "sc:isAccessibleForFree": true,
       "sc:name": "uTR",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:url": "https://github.com/morisUtokyo/uTR"
     },
     {
-      "@id": "_:N7e94548d069c48bbad8ace4c34706a24",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1255"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1929"
-      },
-      "sc:name": "Sequence features"
-    },
-    {
-      "@id": "_:N77a22e80f21f49ccb8359473a10eac62",
+      "@id": "_:N348e21f819fd4dd18fbb4eff952e578b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3494"
@@ -98,6 +87,17 @@
         "@id": "edam:format_1929"
       },
       "sc:name": "DNA sequence"
+    },
+    {
+      "@id": "_:Ncc684d6e42524b7db8ab77d29884271d",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1255"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "Sequence features"
     },
     {
       "@id": "https://doi.org/10.1093/BIOINFORMATICS/BTAD185",

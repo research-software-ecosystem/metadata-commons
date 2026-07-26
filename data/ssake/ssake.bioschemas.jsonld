@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,25 +36,21 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btl629",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/ssake",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Rene Warren",
       "bsc:input": {
-        "@id": "_:Nc97434a7470247b089f1e975254b3276"
+        "@id": "_:Ne759fbd5c0cf4450813f6892782470e8"
       },
       "bsc:output": [
         {
-          "@id": "_:N89bdb26f37e24e3aa69aac5d9f0a3d25"
+          "@id": "_:Nab7c27915f814c33b4dd7f38e777fe2f"
         },
         {
-          "@id": "_:N7addbfec970f4751966942d48cf0ed07"
+          "@id": "_:N11b8a90c005344d3ae73e83b476c1dd1"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
@@ -74,13 +70,13 @@
       "sc:description": "A program for assemblying short DNA sequences. The program cycles through sequence data stored in a hash table and progressively searches through a prefix tree for the longest possible k-mer between any two sequencis.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0230"
-        },
-        {
           "@id": "edam:operation_0524"
         },
         {
           "@id": "edam:operation_0525"
+        },
+        {
+          "@id": "edam:operation_0230"
         }
       ],
       "sc:license": "GPL-2.0",
@@ -89,7 +85,29 @@
       "sc:url": "http://www.bcgsc.ca/platform/bioinfo/software/ssake"
     },
     {
-      "@id": "_:N89bdb26f37e24e3aa69aac5d9f0a3d25",
+      "@id": "_:Ne759fbd5c0cf4450813f6892782470e8",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2977"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2546"
+      },
+      "sc:name": "Nucleic acid sequence"
+    },
+    {
+      "@id": "_:Nab7c27915f814c33b4dd7f38e777fe2f",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2977"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Nucleic acid sequence"
+    },
+    {
+      "@id": "_:N11b8a90c005344d3ae73e83b476c1dd1",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3181"
@@ -100,26 +118,8 @@
       "sc:name": "Sequence assembly report"
     },
     {
-      "@id": "_:N7addbfec970f4751966942d48cf0ed07",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2977"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Nucleic acid sequence"
-    },
-    {
-      "@id": "_:Nc97434a7470247b089f1e975254b3276",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2977"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2546"
-      },
-      "sc:name": "Nucleic acid sequence"
+      "@id": "https://doi.org/10.1093/bioinformatics/btl629",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

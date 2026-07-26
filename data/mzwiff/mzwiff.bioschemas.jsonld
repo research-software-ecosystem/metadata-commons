@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,12 +39,12 @@
       "@id": "https://bio.tools/mzWiff",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nbeb97215bfe54176856aac8295bc4a08"
+        "@id": "_:N4a3e02db110142a7a25153059d162786"
       },
       "bsc:output": {
-        "@id": "_:N76d410d37270498c96313a29b2afd122"
+        "@id": "_:N05d8edd2988a45aaae61c6bbd92b7859"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
@@ -68,7 +68,18 @@
       "sc:url": "http://tools.proteomecenter.org/wiki/index.php?title=Software:mzWiff"
     },
     {
-      "@id": "_:N76d410d37270498c96313a29b2afd122",
+      "@id": "_:N4a3e02db110142a7a25153059d162786",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0943"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3710"
+      },
+      "sc:name": "Mass spectrometry spectra"
+    },
+    {
+      "@id": "_:N05d8edd2988a45aaae61c6bbd92b7859",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0943"
@@ -81,17 +92,6 @@
           "@id": "edam:format_3654"
         }
       ],
-      "sc:name": "Mass spectrometry spectra"
-    },
-    {
-      "@id": "_:Nbeb97215bfe54176856aac8295bc4a08",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0943"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3710"
-      },
       "sc:name": "Mass spectrometry spectra"
     }
   ]

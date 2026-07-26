@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,57 +36,53 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1101/2023.02.14.528456",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/rice_gene_index",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Nd8deedcf25fd4528bd6464f1f7d16a52"
+          "@id": "_:N4792bc46537549e38a50f6914e7a9bbc"
         },
         {
-          "@id": "_:N036ad7c755de46b0ae81bd7f6364493a"
+          "@id": "_:Nf2aec297bc504f7aba311792ae0b58c2"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N85ea689d972e4d9e825c69802e71c776"
+          "@id": "_:N4971ee1738eb465e9b65364a03ab7ce0"
         },
         {
-          "@id": "_:N263ac409a865412ebc3901fd97173bdd"
+          "@id": "_:Na7eeb088ed4d40d3b43b9407cc24d7cb"
         },
         {
-          "@id": "_:Nff7c69359c8a42429785a8100c395ba8"
+          "@id": "_:N628522f32328456283173319e7a8eb84"
         },
         {
-          "@id": "_:N2022c224c8d84418a7ecebaf6ca95a89"
+          "@id": "_:N24f2dd4aef2d4859bce23b5076027cca"
         },
         {
-          "@id": "_:N75835beb6ce047069f2d13a0a1cd89b6"
+          "@id": "_:Nbda7e08676964b6cac5dc144761c1988"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Database portal",
         "Web application"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3293"
-        },
-        {
           "@id": "edam:topic_3512"
         },
         {
-          "@id": "edam:topic_3308"
+          "@id": "edam:topic_3293"
         },
         {
           "@id": "edam:topic_0780"
         },
         {
           "@id": "edam:topic_0196"
+        },
+        {
+          "@id": "edam:topic_3308"
         }
       ],
       "sc:citation": {
@@ -95,30 +91,30 @@
       "sc:description": "Comprehensive pan-genome database for comparative and functional genomics of Asian rice.",
       "sc:featureList": [
         {
+          "@id": "edam:operation_2928"
+        },
+        {
+          "@id": "edam:operation_2421"
+        },
+        {
+          "@id": "edam:operation_2495"
+        },
+        {
           "@id": "edam:operation_2436"
         },
         {
           "@id": "edam:operation_0362"
         },
         {
-          "@id": "edam:operation_2421"
-        },
-        {
           "@id": "edam:operation_3208"
-        },
-        {
-          "@id": "edam:operation_2928"
-        },
-        {
-          "@id": "edam:operation_2495"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "CC-BY-NC-ND-4.0",
       "sc:name": "Rice Gene Index",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -127,15 +123,7 @@
       "sc:url": "https://riceome.hzau.edu.cn/"
     },
     {
-      "@id": "_:Nd8deedcf25fd4528bd6464f1f7d16a52",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2977"
-      },
-      "sc:name": "Nucleic acid sequence"
-    },
-    {
-      "@id": "_:N036ad7c755de46b0ae81bd7f6364493a",
+      "@id": "_:N4792bc46537549e38a50f6914e7a9bbc",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2295"
@@ -143,23 +131,15 @@
       "sc:name": "Gene ID"
     },
     {
-      "@id": "_:N85ea689d972e4d9e825c69802e71c776",
+      "@id": "_:Nf2aec297bc504f7aba311792ae0b58c2",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_0872"
+        "@id": "edam:data_2977"
       },
-      "sc:name": "Phylogenetic tree"
+      "sc:name": "Nucleic acid sequence"
     },
     {
-      "@id": "_:N263ac409a865412ebc3901fd97173bdd",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3148"
-      },
-      "sc:name": "Gene family report"
-    },
-    {
-      "@id": "_:Nff7c69359c8a42429785a8100c395ba8",
+      "@id": "_:N4971ee1738eb465e9b65364a03ab7ce0",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1916"
@@ -167,7 +147,15 @@
       "sc:name": "Alignment"
     },
     {
-      "@id": "_:N2022c224c8d84418a7ecebaf6ca95a89",
+      "@id": "_:Na7eeb088ed4d40d3b43b9407cc24d7cb",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3754"
+      },
+      "sc:name": "GO-term enrichment data"
+    },
+    {
+      "@id": "_:N628522f32328456283173319e7a8eb84",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0928"
@@ -175,12 +163,24 @@
       "sc:name": "Gene expression profile"
     },
     {
-      "@id": "_:N75835beb6ce047069f2d13a0a1cd89b6",
+      "@id": "_:N24f2dd4aef2d4859bce23b5076027cca",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_3754"
+        "@id": "edam:data_3148"
       },
-      "sc:name": "GO-term enrichment data"
+      "sc:name": "Gene family report"
+    },
+    {
+      "@id": "_:Nbda7e08676964b6cac5dc144761c1988",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0872"
+      },
+      "sc:name": "Phylogenetic tree"
+    },
+    {
+      "@id": "https://doi.org/10.1101/2023.02.14.528456",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,37 +40,37 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Nb684c7288af748f9856ee7d6e53e9cc9"
+          "@id": "_:N5bcaa64726a34fdaa7ba48f8b1094d5a"
         },
         {
-          "@id": "_:N370e3e6e28454b97ad68a393d9879617"
+          "@id": "_:N3c3d64962f23405a82e0f3830f4ae7ea"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Database portal",
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_3512"
-        },
-        {
-          "@id": "edam:topic_0780"
-        },
         {
           "@id": "edam:topic_0821"
         },
         {
+          "@id": "edam:topic_3512"
+        },
+        {
           "@id": "edam:topic_0621"
+        },
+        {
+          "@id": "edam:topic_0780"
         },
         {
           "@id": "edam:topic_3320"
         }
       ],
       "sc:citation": [
+        "pubmed:36420165",
         "pmcid:PMC9678767",
         {
           "@id": "https://doi.org/10.1016/J.CSBJ.2022.11.022"
-        },
-        "pubmed:36420165"
+        }
       ],
       "sc:description": "A comprehensive database of RNA modification enzymes.",
       "sc:featureList": [
@@ -84,14 +84,14 @@
       "sc:isAccessibleForFree": true,
       "sc:name": "RNAME",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:url": "https://chenweilab.cn/rname/"
     },
     {
-      "@id": "_:Nb684c7288af748f9856ee7d6e53e9cc9",
+      "@id": "_:N5bcaa64726a34fdaa7ba48f8b1094d5a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1026"
@@ -99,7 +99,7 @@
       "sc:name": "Gene symbol"
     },
     {
-      "@id": "_:N370e3e6e28454b97ad68a393d9879617",
+      "@id": "_:N3c3d64962f23405a82e0f3830f4ae7ea",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2909"

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,13 +36,17 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/gkp263",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/whichgenes",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
-        "Florentino Fernández Riverola",
-        "Daniel González Peña"
+        "Daniel González Peña",
+        "Florentino Fernández Riverola"
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
@@ -62,29 +66,25 @@
       "sc:description": "WhichGenes is a web based tool for gathering, building, storing and exporting gene sets with application to gene set enrichment analysis. The user may export a gene set in any desired output format with multiple gene identifiers.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_2436"
-        },
-        {
           "@id": "edam:operation_3223"
         },
         {
           "@id": "edam:operation_3224"
+        },
+        {
+          "@id": "edam:operation_2436"
         }
       ],
       "sc:name": "WhichGenes",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://www.whichgenes.org/api/"
       },
       "sc:url": "http://www.whichgenes.org/"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gkp263",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

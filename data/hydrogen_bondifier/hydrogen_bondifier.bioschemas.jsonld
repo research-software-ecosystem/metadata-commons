@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,12 +39,12 @@
       "@id": "https://bio.tools/hydrogen_bondifier",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N303b50c9f009443ca43af31cc96da1db"
+        "@id": "_:N27204cefe02d4f23b410b942f18b3964"
       },
       "bsc:output": {
-        "@id": "_:N7d7eb39c43ff4844bd77035664c9ced2"
+        "@id": "_:Na63c2b8f110144558e604a01512dd2df"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
@@ -62,8 +62,8 @@
       "sc:name": "hydrogen_bondifier",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://github.com/jtprince/hydrogen_bondifier"
@@ -71,18 +71,7 @@
       "sc:url": "https://github.com/jtprince/hydrogen_bondifier"
     },
     {
-      "@id": "_:N7d7eb39c43ff4844bd77035664c9ced2",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1546"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Protein distance matrix"
-    },
-    {
-      "@id": "_:N303b50c9f009443ca43af31cc96da1db",
+      "@id": "_:N27204cefe02d4f23b410b942f18b3964",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1460"
@@ -91,6 +80,17 @@
         "@id": "edam:format_1476"
       },
       "sc:name": "Protein structure"
+    },
+    {
+      "@id": "_:Na63c2b8f110144558e604a01512dd2df",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1546"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Protein distance matrix"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,26 +39,26 @@
       "@id": "https://bio.tools/halvade_somatic",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N84ef8885279a4fc796cb0d1051a77259"
+        "@id": "_:Nd8b40f4d4b744949b19ec9403cb227f7"
       },
       "bsc:output": {
-        "@id": "_:Nbc87f6c5e6c54c288e653b734197430f"
+        "@id": "_:N7a2d12d7b7944693b107e1040d1b83b5"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:citation": [
+        "pubmed:35022699",
+        "pmcid:PMC8756192",
         {
           "@id": "https://doi.org/10.1093/GIGASCIENCE/GIAB094"
-        },
-        "pmcid:PMC8756192",
-        "pubmed:35022699"
+        }
       ],
       "sc:description": "Halvade implements germline and somatic variant calling pipelines based on the best-practices pipelines from the Broad Institute using the Spark framework. Halvade will produce a VCF output file which contains the single nucleotide polymorphisms (SNPs) and short insertions and deletions (indels) when supported by the used tools. This program requires Spark on either a local cluster with one or more nodes, an Amazon EMR cluster or the Docker image to run.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3227"
+          "@id": "edam:operation_0491"
         },
         {
-          "@id": "edam:operation_0491"
+          "@id": "edam:operation_3227"
         }
       ],
       "sc:license": "GPL-3.0",
@@ -68,13 +68,29 @@
         "@id": "https://halvadeforspark.readthedocs.io/en/latest/"
       },
       "sc:softwareVersion": [
-        "2.0.5",
-        "2.0.4"
+        "2.0.4",
+        "2.0.5"
       ],
       "sc:url": "https://bitbucket.org/dries_decap/halvadeforspark"
     },
     {
-      "@id": "_:Nbc87f6c5e6c54c288e653b734197430f",
+      "@id": "_:Nd8b40f4d4b744949b19ec9403cb227f7",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3494"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2572"
+        },
+        {
+          "@id": "edam:format_1930"
+        }
+      ],
+      "sc:name": "DNA sequence"
+    },
+    {
+      "@id": "_:N7a2d12d7b7944693b107e1040d1b83b5",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3779"
@@ -83,22 +99,6 @@
         "@id": "edam:format_3016"
       },
       "sc:name": "Annotated text"
-    },
-    {
-      "@id": "_:N84ef8885279a4fc796cb0d1051a77259",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3494"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_1930"
-        },
-        {
-          "@id": "edam:format_2572"
-        }
-      ],
-      "sc:name": "DNA sequence"
     },
     {
       "@id": "https://doi.org/10.1093/GIGASCIENCE/GIAB094",

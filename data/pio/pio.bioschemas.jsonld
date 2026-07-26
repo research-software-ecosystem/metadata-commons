@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,25 +39,25 @@
       "@id": "https://bio.tools/pio",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N73db6209a4874d109b2345fb14ed4882"
+        "@id": "_:Nc8a4d39c6a2249e0a6f5ecb0ab6e9a8d"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web application",
-        "Command-line tool"
+        "Command-line tool",
+        "Web application"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3577"
+          "@id": "edam:topic_3512"
         },
         {
           "@id": "edam:topic_0199"
         },
         {
-          "@id": "edam:topic_3512"
+          "@id": "edam:topic_2640"
         },
         {
-          "@id": "edam:topic_2640"
+          "@id": "edam:topic_3577"
         },
         {
           "@id": "edam:topic_3168"
@@ -79,8 +79,8 @@
       "sc:license": "MIT",
       "sc:name": "PIO",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -89,17 +89,17 @@
       "sc:url": "https://vincentalcazer.shinyapps.io/Panel_informativity_optimizer/"
     },
     {
-      "@id": "_:N73db6209a4874d109b2345fb14ed4882",
+      "@id": "_:Nc8a4d39c6a2249e0a6f5ecb0ab6e9a8d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2299"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_3475"
+          "@id": "edam:format_3752"
         },
         {
-          "@id": "edam:format_3752"
+          "@id": "edam:format_3475"
         }
       ],
       "sc:name": "Gene name"

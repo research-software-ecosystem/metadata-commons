@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,16 +36,12 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btp163",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/gff3_rebase",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nf433d82a66154787828cf3fbb4c28a4a"
+        "@id": "_:Ne7a73b48e24e4667b2415bcda28d0561"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:citation": {
         "@id": "https://doi.org/10.1093/bioinformatics/btp163"
@@ -62,19 +58,23 @@
       "sc:isAccessibleForFree": true,
       "sc:name": "GFF3 Rebase",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:url": "https://toolshed.g2.bx.psu.edu/view/iuc/gff3_rebase"
     },
     {
-      "@id": "_:Nf433d82a66154787828cf3fbb4c28a4a",
+      "@id": "_:Ne7a73b48e24e4667b2415bcda28d0561",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0976"
       },
       "sc:name": "Identifier (by type of data)"
+    },
+    {
+      "@id": "https://doi.org/10.1093/bioinformatics/btp163",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

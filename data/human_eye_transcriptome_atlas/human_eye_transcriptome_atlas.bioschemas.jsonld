@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,32 +36,28 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1016/j.ygeno.2022.110286",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/human_eye_transcriptome_atlas",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N03038eb3ec024eedb7ad59b8337bd65b"
+        "@id": "_:N25507498bbf14a9bbbbfd8217a77b98a"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Database portal",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3308"
+          "@id": "edam:topic_3337"
         },
         {
           "@id": "edam:topic_2815"
         },
         {
-          "@id": "edam:topic_3337"
+          "@id": "edam:topic_0634"
         },
         {
           "@id": "edam:topic_3170"
         },
         {
-          "@id": "edam:topic_0634"
+          "@id": "edam:topic_3308"
         }
       ],
       "sc:citation": [
@@ -73,10 +69,10 @@
       "sc:description": "A Searchable Comparative Transcriptome Database for Healthy and Diseased Human Eye Tissue.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3223"
+          "@id": "edam:operation_2422"
         },
         {
-          "@id": "edam:operation_2422"
+          "@id": "edam:operation_3223"
         },
         {
           "@id": "edam:operation_3435"
@@ -85,19 +81,23 @@
       "sc:isAccessibleForFree": true,
       "sc:name": "Human Eye Transcriptome Atlas",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:url": "https://www.eye-transcriptome.com"
     },
     {
-      "@id": "_:N03038eb3ec024eedb7ad59b8337bd65b",
+      "@id": "_:N25507498bbf14a9bbbbfd8217a77b98a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1026"
       },
       "sc:name": "Gene symbol"
+    },
+    {
+      "@id": "https://doi.org/10.1016/j.ygeno.2022.110286",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

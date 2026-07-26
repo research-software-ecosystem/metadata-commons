@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,21 +36,31 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.12688/f1000research.8736.1",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/brisskit",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
-        "Dr Jonathan Tedds",
-        "Shajid Issa"
+        "Shajid Issa",
+        "Dr Jonathan Tedds"
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web API",
-        "Workbench",
         "Command-line tool",
         "Database portal",
-        "Web application"
+        "Web API",
+        "Web application",
+        "Workbench"
       ],
       "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_3345"
+        },
+        {
+          "@id": "edam:topic_3366"
+        },
         {
           "@id": "edam:topic_3489"
         },
@@ -58,13 +68,7 @@
           "@id": "edam:topic_0607"
         },
         {
-          "@id": "edam:topic_3345"
-        },
-        {
           "@id": "edam:topic_0089"
-        },
-        {
-          "@id": "edam:topic_3366"
         }
       ],
       "sc:author": [
@@ -76,22 +80,22 @@
       },
       "sc:contributor": [
         "HEFCE UMF",
-        "Dr Jonathan Tedds (PI)",
-        "Jisc"
+        "Jisc",
+        "Dr Jonathan Tedds (PI)"
       ],
       "sc:description": "Biomedical Research Software as a Service that enables biomedical & translational researchers to securely manage and combine datasets, typically for patient cohorts. A suite of cloud enabled & integrated open source applications can be accessed in a browser, which make it easier for researchers to manage their studies. Sensitive data can be secured and only accessible to those with permission.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_2422"
-        },
-        {
-          "@id": "edam:operation_1812"
-        },
-        {
           "@id": "edam:operation_3436"
         },
         {
+          "@id": "edam:operation_2422"
+        },
+        {
           "@id": "edam:operation_2421"
+        },
+        {
+          "@id": "edam:operation_1812"
         }
       ],
       "sc:funder": [
@@ -100,30 +104,26 @@
       ],
       "sc:name": "BRISSKit",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": [
-        "University of Leicester",
-        "University of Bristol"
+        "University of Bristol",
+        "University of Leicester"
       ],
       "sc:softwareHelp": [
-        {
-          "@id": "https://wiki.brisskit.le.ac.uk/wiki/Legal"
-        },
         {
           "@id": "https://www.brisskit.le.ac.uk/node/64"
         },
         {
           "@id": "https://wiki.brisskit.le.ac.uk/wiki/Main_Page"
+        },
+        {
+          "@id": "https://wiki.brisskit.le.ac.uk/wiki/Legal"
         }
       ],
       "sc:url": "http://www.brisskit.le.ac.uk"
-    },
-    {
-      "@id": "https://doi.org/10.12688/f1000research.8736.1",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

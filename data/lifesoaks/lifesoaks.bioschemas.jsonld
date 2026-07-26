@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,6 +36,10 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1107/S205979832300582X",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/lifesoaks",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
@@ -44,46 +48,46 @@
       ],
       "bsc:input": [
         {
-          "@id": "_:N2ab6e9b698604e66bbc1afc3416e18ae"
+          "@id": "_:N41425ad9c278421d95f75a5900ff4e49"
         },
         {
-          "@id": "_:N9c51b62c30cd46c2b6e249a6305d8c84"
+          "@id": "_:N8df55f23c2254033a9d8b3e7179e1261"
         },
         {
-          "@id": "_:N6ea3065c54004ae586c4d26e965a21b2"
+          "@id": "_:Nfd0e9c8de9304dc1948b6ca3ab182a82"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N8e762ea76a17404298efcf540f8bb933"
+          "@id": "_:N315a817d480e4004965dd4f93701bdc9"
         },
         {
-          "@id": "_:N4b190d130a404ab09f4b7c0b84bb233e"
+          "@id": "_:N9ccd6aa2b61e432baff6b1510305f81d"
         },
         {
-          "@id": "_:N2eca0ef2efda4a93a2f559e940692b23"
+          "@id": "_:N3f9541ffff1c4981a2871c8ad3571bd2"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web service",
-        "Command-line tool"
+        "Command-line tool",
+        "Web service"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_2828"
-        },
-        {
           "@id": "edam:topic_0091"
-        },
-        {
-          "@id": "edam:topic_3534"
         },
         {
           "@id": "edam:topic_3336"
         },
         {
+          "@id": "edam:topic_3534"
+        },
+        {
           "@id": "edam:topic_0081"
+        },
+        {
+          "@id": "edam:topic_2828"
         }
       ],
       "sc:citation": {
@@ -95,18 +99,18 @@
           "@id": "edam:operation_0384"
         },
         {
-          "@id": "edam:operation_0570"
+          "@id": "edam:operation_2480"
         },
         {
-          "@id": "edam:operation_2480"
+          "@id": "edam:operation_0570"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "Other",
       "sc:name": "LifeSoaks",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:provider": "University of Hamburg, ZBH - Center for Bioinformatics",
@@ -116,34 +120,7 @@
       "sc:url": "https://www.zbh.uni-hamburg.de/en/forschung/amd/software/lifesoaks.html"
     },
     {
-      "@id": "_:N2ab6e9b698604e66bbc1afc3416e18ae",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1463"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3814"
-      },
-      "sc:name": "Small molecule structure"
-    },
-    {
-      "@id": "_:N9c51b62c30cd46c2b6e249a6305d8c84",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1461"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3814"
-        },
-        {
-          "@id": "edam:format_1476"
-        }
-      ],
-      "sc:name": "Protein-ligand complex"
-    },
-    {
-      "@id": "_:N6ea3065c54004ae586c4d26e965a21b2",
+      "@id": "_:N41425ad9c278421d95f75a5900ff4e49",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1460"
@@ -154,7 +131,34 @@
       "sc:name": "Protein structure"
     },
     {
-      "@id": "_:N8e762ea76a17404298efcf540f8bb933",
+      "@id": "_:N8df55f23c2254033a9d8b3e7179e1261",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1461"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_1476"
+        },
+        {
+          "@id": "edam:format_3814"
+        }
+      ],
+      "sc:name": "Protein-ligand complex"
+    },
+    {
+      "@id": "_:Nfd0e9c8de9304dc1948b6ca3ab182a82",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1463"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3814"
+      },
+      "sc:name": "Small molecule structure"
+    },
+    {
+      "@id": "_:N315a817d480e4004965dd4f93701bdc9",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2019"
@@ -162,7 +166,7 @@
       "sc:name": "Map data"
     },
     {
-      "@id": "_:N4b190d130a404ab09f4b7c0b84bb233e",
+      "@id": "_:N9ccd6aa2b61e432baff6b1510305f81d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1542"
@@ -170,7 +174,7 @@
       "sc:name": "Protein solvent accessibility"
     },
     {
-      "@id": "_:N2eca0ef2efda4a93a2f559e940692b23",
+      "@id": "_:N3f9541ffff1c4981a2871c8ad3571bd2",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1537"
@@ -179,10 +183,6 @@
         "@id": "edam:format_2330"
       },
       "sc:name": "Protein structure report"
-    },
-    {
-      "@id": "https://doi.org/10.1107/S205979832300582X",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

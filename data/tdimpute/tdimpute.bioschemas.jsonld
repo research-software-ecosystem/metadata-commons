@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -43,22 +43,22 @@
       "@id": "https://bio.tools/TDimpute",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N24aeb39dc44e47c6b18937a4afbb6ed5"
+        "@id": "_:Nf839377a06444ae4acee07ad0e0edcde"
       },
       "bsc:output": {
-        "@id": "_:N61a5e96f3eba451885c8d788523dd286"
+        "@id": "_:Nb74c154c2bd145ceb40e5f1a1bbf80db"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Bioinformatics portal",
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_3474"
-        },
         {
           "@id": "edam:topic_0091"
         },
         {
           "@id": "edam:topic_3173"
+        },
+        {
+          "@id": "edam:topic_3474"
         },
         {
           "@id": "edam:topic_3170"
@@ -81,18 +81,7 @@
       "sc:url": "https://github.com/sysu-yanglab/TDimpute"
     },
     {
-      "@id": "_:N61a5e96f3eba451885c8d788523dd286",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3112"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3752"
-      },
-      "sc:name": "Gene expression matrix"
-    },
-    {
-      "@id": "_:N24aeb39dc44e47c6b18937a4afbb6ed5",
+      "@id": "_:Nf839377a06444ae4acee07ad0e0edcde",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0006"
@@ -101,6 +90,17 @@
         "@id": "edam:format_3752"
       },
       "sc:name": "Data"
+    },
+    {
+      "@id": "_:Nb74c154c2bd145ceb40e5f1a1bbf80db",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3112"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3752"
+      },
+      "sc:name": "Gene expression matrix"
     }
   ]
 }

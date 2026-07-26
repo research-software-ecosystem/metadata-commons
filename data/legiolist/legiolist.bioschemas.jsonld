@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,39 +36,31 @@
   },
   "@graph": [
     {
-      "@id": "http://orcid.org/0000-0002-6350-5001",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://doi.org/10.1099/13500872-141-2-261",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/legiolist",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
-        "Carmen Buchrieser",
         {
           "@id": "http://orcid.org/0000-0002-6350-5001"
-        }
+        },
+        "Carmen Buchrieser"
       ],
       "bsc:input": [
         {
-          "@id": "_:Nf558d5862adf4044888582f99005d923"
+          "@id": "_:N5632883f83e44b358b2826f511188f90"
         },
         {
-          "@id": "_:N25e851598c894b8d94beafff17f45915"
+          "@id": "_:Nd1ccfda64f834eef89fb75be9a9e8e6a"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N3a97b85124464670adb2a98e9e561da9"
+          "@id": "_:Nbbcd190753d04c3aa400589ed4b5f448"
         },
         {
-          "@id": "_:Nd409669be243461785f376bc831991a5"
+          "@id": "_:N3eaf53ff018a46bd8f681e03e494928c"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Database portal",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0621"
@@ -85,9 +77,9 @@
       },
       "sc:name": "Legionella pneumophila genome database",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": "Institut Pasteur",
       "sc:softwareHelp": {
@@ -96,7 +88,7 @@
       "sc:url": "http://genolist.pasteur.fr/LegioList/"
     },
     {
-      "@id": "_:Nf558d5862adf4044888582f99005d923",
+      "@id": "_:N5632883f83e44b358b2826f511188f90",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1026"
@@ -104,7 +96,7 @@
       "sc:name": "Gene symbol"
     },
     {
-      "@id": "_:N25e851598c894b8d94beafff17f45915",
+      "@id": "_:Nd1ccfda64f834eef89fb75be9a9e8e6a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1097"
@@ -112,7 +104,7 @@
       "sc:name": "Sequence accession (nucleic acid)"
     },
     {
-      "@id": "_:N3a97b85124464670adb2a98e9e561da9",
+      "@id": "_:Nbbcd190753d04c3aa400589ed4b5f448",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0916"
@@ -123,7 +115,7 @@
       "sc:name": "Gene report"
     },
     {
-      "@id": "_:Nd409669be243461785f376bc831991a5",
+      "@id": "_:N3eaf53ff018a46bd8f681e03e494928c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0916"
@@ -132,6 +124,14 @@
         "@id": "edam:format_2331"
       },
       "sc:name": "Gene report"
+    },
+    {
+      "@id": "http://orcid.org/0000-0002-6350-5001",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.1099/13500872-141-2-261",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

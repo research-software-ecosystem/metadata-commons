@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -50,32 +50,32 @@
         "@id": "http://orcid.org/0000-0001-7885-4311"
       },
       "bsc:input": {
-        "@id": "_:N8021bf7093cf427680753535626afea3"
+        "@id": "_:N99018c03827d4f37b6e991fe521e11ed"
       },
       "bsc:output": [
         {
-          "@id": "_:N7c9f3c1d60754338baac011d40515c80"
+          "@id": "_:Nd1c46e93de194d18a1f33ac9e20a5a10"
         },
         {
-          "@id": "_:N37610a8f0e3247bead638bfcdb47dd1a"
+          "@id": "_:N99dfe52b0fa443d8bfdc8d8b6d6c46ef"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0080"
+          "@id": "edam:topic_2814"
         },
         {
-          "@id": "edam:topic_2814"
+          "@id": "edam:topic_0080"
         }
       ],
       "sc:citation": [
+        "pubmed:20542909",
+        "pmcid:PMC2896139",
         {
           "@id": "https://doi.org/10.1093/nar/gkq535"
-        },
-        "pubmed:20542909",
-        "pmcid:PMC2896139"
+        }
       ],
       "sc:description": "Protein homology modeling server.",
       "sc:featureList": {
@@ -93,7 +93,18 @@
       "sc:url": "http://cbs.dtu.dk/services/CPHmodels/"
     },
     {
-      "@id": "_:N7c9f3c1d60754338baac011d40515c80",
+      "@id": "_:N99018c03827d4f37b6e991fe521e11ed",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2044"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "Sequence"
+    },
+    {
+      "@id": "_:Nd1c46e93de194d18a1f33ac9e20a5a10",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1277"
@@ -104,7 +115,7 @@
       "sc:name": "Protein features"
     },
     {
-      "@id": "_:N37610a8f0e3247bead638bfcdb47dd1a",
+      "@id": "_:N99dfe52b0fa443d8bfdc8d8b6d6c46ef",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2085"
@@ -113,17 +124,6 @@
         "@id": "edam:format_1476"
       },
       "sc:name": "Structure report"
-    },
-    {
-      "@id": "_:N8021bf7093cf427680753535626afea3",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2044"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1929"
-      },
-      "sc:name": "Sequence"
     }
   ]
 }

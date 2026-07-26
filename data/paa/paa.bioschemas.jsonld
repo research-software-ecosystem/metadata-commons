@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,35 +36,39 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/btw037",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/paa",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Na8d3f22d0ba946d9952248ff4a069d65"
+          "@id": "_:N66d78c676c58438ea16237c8a4afe5ce"
         },
         {
-          "@id": "_:N42bee5788a2a4d28af08740b937e406a"
+          "@id": "_:N658e2743ec8a472da26845bae354e140"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Nfdd8292f807e4e95a2383f4030aa49ed"
+          "@id": "_:N110a60dee4f04eef9bb8d8dfd86a3e64"
         },
         {
-          "@id": "_:Nc1380400664c49eca3786b51bc0f942f"
+          "@id": "_:N6f57037381e846fd8de231a66d80a709"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3518"
+          "@id": "edam:topic_3360"
         },
         {
-          "@id": "edam:topic_3360"
+          "@id": "edam:topic_3518"
         },
         {
           "@id": "edam:topic_0121"
@@ -83,9 +87,9 @@
       "sc:license": "BSD-3-Clause",
       "sc:name": "PAA - Protein Array Analyzer",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://bioconductor.org/packages/PAA"
@@ -94,34 +98,7 @@
       "sc:url": "https://bioconductor.org/packages/PAA"
     },
     {
-      "@id": "_:Nfdd8292f807e4e95a2383f4030aa49ed",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2872"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3475"
-      },
-      "sc:name": "ID list"
-    },
-    {
-      "@id": "_:Nc1380400664c49eca3786b51bc0f942f",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2884"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3591"
-        },
-        {
-          "@id": "edam:format_3603"
-        }
-      ],
-      "sc:name": "Plot"
-    },
-    {
-      "@id": "_:Na8d3f22d0ba946d9952248ff4a069d65",
+      "@id": "_:N66d78c676c58438ea16237c8a4afe5ce",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3110"
@@ -129,7 +106,7 @@
       "sc:name": "Raw microarray data"
     },
     {
-      "@id": "_:N42bee5788a2a4d28af08740b937e406a",
+      "@id": "_:N658e2743ec8a472da26845bae354e140",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3671"
@@ -140,8 +117,31 @@
       "sc:name": "Text"
     },
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btw037",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N110a60dee4f04eef9bb8d8dfd86a3e64",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2872"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3475"
+      },
+      "sc:name": "ID list"
+    },
+    {
+      "@id": "_:N6f57037381e846fd8de231a66d80a709",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2884"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3603"
+        },
+        {
+          "@id": "edam:format_3591"
+        }
+      ],
+      "sc:name": "Plot"
     }
   ]
 }

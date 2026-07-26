@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,31 +36,31 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1016/j.jmb.2023.167963",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "http://orcid.org/0000-0002-0274-5669",
       "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.1016/j.jmb.2023.167963",
+      "@type": "sc:CreativeWork"
     },
     {
       "@id": "https://bio.tools/ispred-seq",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
-        "Matteo Manfredi",
-        "Castrense Savojardo",
         {
           "@id": "http://orcid.org/0000-0002-0274-5669"
         },
-        "Rita Casadio"
+        "Castrense Savojardo",
+        "Rita Casadio",
+        "Matteo Manfredi"
       ],
       "bsc:input": {
-        "@id": "_:N4d0de3bb574c4599b6a8efca3ab58c1d"
+        "@id": "_:N13baf4a9ba3d40748a0ae44f2a68d331"
       },
       "bsc:output": {
-        "@id": "_:N216360b7765843beb47ef06d525917f2"
+        "@id": "_:Neb7d245ff5fe48f484da00054cedca81"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
@@ -82,24 +82,24 @@
       "sc:description": "Deep neural networks and embeddings for predicting interaction sites in protein sequences.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3899"
+          "@id": "edam:operation_3092"
         },
         {
           "@id": "edam:operation_3094"
         },
         {
-          "@id": "edam:operation_3092"
+          "@id": "edam:operation_2492"
         },
         {
-          "@id": "edam:operation_2492"
+          "@id": "edam:operation_3899"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:name": "ISPRED-SEQ",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": "ELIXIR-ITA-BOLOGNA",
       "sc:softwareHelp": {
@@ -108,7 +108,7 @@
       "sc:url": "https://ispredws.biocomp.unibo.it"
     },
     {
-      "@id": "_:N4d0de3bb574c4599b6a8efca3ab58c1d",
+      "@id": "_:N13baf4a9ba3d40748a0ae44f2a68d331",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2976"
@@ -119,17 +119,17 @@
       "sc:name": "Protein sequence"
     },
     {
-      "@id": "_:N216360b7765843beb47ef06d525917f2",
+      "@id": "_:Neb7d245ff5fe48f484da00054cedca81",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1277"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_3475"
+          "@id": "edam:format_2331"
         },
         {
-          "@id": "edam:format_2331"
+          "@id": "edam:format_3475"
         }
       ],
       "sc:name": "Protein features"

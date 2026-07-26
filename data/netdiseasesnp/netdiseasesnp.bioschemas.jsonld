@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -42,22 +42,22 @@
         "@id": "http://orcid.org/0000-0001-6841-6676"
       },
       "bsc:input": {
-        "@id": "_:N7fd813da615447f3864805e144d998e0"
+        "@id": "_:N8855d8e58b5841dc9ce7f2fffb0ba4c7"
       },
       "bsc:output": {
-        "@id": "_:N7d6aa3fa98734e92adf2b73cdbb5145c"
+        "@id": "_:N424bb781e88a40e1ace1a0223ce07b92"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_1775"
       },
       "sc:citation": [
         "pubmed:23935863",
+        "pmcid:PMC3723835",
         {
           "@id": "https://doi.org/10.1371/journal.pone.0068370"
-        },
-        "pmcid:PMC3723835"
+        }
       ],
       "sc:description": "The tool predicts whether a single non-synonymous SNP causes a disease or is invariant.",
       "sc:featureList": {
@@ -67,8 +67,8 @@
       "sc:license": "Other",
       "sc:name": "NetDiseaseSNP",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:provider": "CBS",
@@ -79,18 +79,7 @@
       "sc:url": "http://www.cbs.dtu.dk/services/NetDiseaseSNP/"
     },
     {
-      "@id": "_:N7d6aa3fa98734e92adf2b73cdbb5145c",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2955"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Sequence report"
-    },
-    {
-      "@id": "_:N7fd813da615447f3864805e144d998e0",
+      "@id": "_:N8855d8e58b5841dc9ce7f2fffb0ba4c7",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2976"
@@ -101,12 +90,23 @@
       "sc:name": "Protein sequence"
     },
     {
-      "@id": "http://orcid.org/0000-0001-6841-6676",
-      "@type": "sc:Person"
+      "@id": "_:N424bb781e88a40e1ace1a0223ce07b92",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2955"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Sequence report"
     },
     {
       "@id": "https://doi.org/10.1371/journal.pone.0068370",
       "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "http://orcid.org/0000-0001-6841-6676",
+      "@type": "sc:Person"
     }
   ]
 }

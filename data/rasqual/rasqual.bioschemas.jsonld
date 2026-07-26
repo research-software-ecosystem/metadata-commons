@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -45,26 +45,26 @@
       "biotools:primaryContact": "GitHub Issues",
       "bsc:input": [
         {
-          "@id": "_:N9d9935ebf5d2464494bd7596441fbe81"
+          "@id": "_:N75d493e4801a40e2bb70e99b38459fef"
         },
         {
-          "@id": "_:Nd2b53d0ebdb64b09a7e1679072457ff1"
+          "@id": "_:Nb4bd676b53374e6a9abd7e0a867b7f9f"
         }
       ],
       "bsc:output": {
-        "@id": "_:N6b9960fd2d044bfabff63a824ac71aad"
+        "@id": "_:Ne11b8bb65dac442b99059c920d2b5257"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
           "@id": "edam:topic_3307"
         },
         {
-          "@id": "edam:topic_0622"
+          "@id": "edam:topic_0203"
         },
         {
-          "@id": "edam:topic_0203"
+          "@id": "edam:topic_0622"
         },
         {
           "@id": "edam:topic_3055"
@@ -84,9 +84,9 @@
       "sc:isAccessibleForFree": true,
       "sc:name": "RASQUAL",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": "sanger.ac.uk",
       "sc:softwareHelp": {
@@ -96,18 +96,18 @@
       "sc:url": "https://github.com/dg13/rasqual"
     },
     {
-      "@id": "_:N6b9960fd2d044bfabff63a824ac71aad",
+      "@id": "_:N75d493e4801a40e2bb70e99b38459fef",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_0920"
+        "@id": "edam:data_3112"
       },
       "sc:encodingFormat": {
         "@id": "edam:format_2330"
       },
-      "sc:name": "Genotype/phenotype report"
+      "sc:name": "Gene expression matrix"
     },
     {
-      "@id": "_:N9d9935ebf5d2464494bd7596441fbe81",
+      "@id": "_:Nb4bd676b53374e6a9abd7e0a867b7f9f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3498"
@@ -118,15 +118,15 @@
       "sc:name": "Sequence variations"
     },
     {
-      "@id": "_:Nd2b53d0ebdb64b09a7e1679072457ff1",
+      "@id": "_:Ne11b8bb65dac442b99059c920d2b5257",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_3112"
+        "@id": "edam:data_0920"
       },
       "sc:encodingFormat": {
         "@id": "edam:format_2330"
       },
-      "sc:name": "Gene expression matrix"
+      "sc:name": "Genotype/phenotype report"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,15 +40,19 @@
       "@type": "sc:CreativeWork"
     },
     {
+      "@id": "https://doi.org/10.1038/nmeth.4636",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/spatialde",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nab2f48632ac0405cb881564468e3e396"
+        "@id": "_:N2718d5f7f8584f4dafcce2367e0c7bf0"
       },
       "bsc:output": {
-        "@id": "_:N83d04e90cc814a559a0262c16e061a7c"
+        "@id": "_:Nb594951faa6f456f918dbe1f799ab554"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
@@ -65,9 +69,9 @@
         }
       ],
       "sc:author": [
-        "Milan Malfait",
         "Davide Corso",
-        "Lambda Moses"
+        "Lambda Moses",
+        "Milan Malfait"
       ],
       "sc:citation": [
         {
@@ -80,9 +84,6 @@
       "sc:description": "SpatialDE is a method to find spatially variable genes (SVG) from spatial transcriptomics data. This package provides wrappers to use the Python SpatialDE library in R, using reticulate and basilisk.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3664"
-        },
-        {
           "@id": "edam:operation_0571"
         },
         {
@@ -90,14 +91,17 @@
         },
         {
           "@id": "edam:operation_3562"
+        },
+        {
+          "@id": "edam:operation_3664"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "MIT",
       "sc:name": "SpatialDE",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -107,7 +111,7 @@
       "sc:url": "https://bioconductor.org/packages/spatialDE"
     },
     {
-      "@id": "_:Nab2f48632ac0405cb881564468e3e396",
+      "@id": "_:N2718d5f7f8584f4dafcce2367e0c7bf0",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2603"
@@ -115,7 +119,7 @@
       "sc:name": "Gene expression data"
     },
     {
-      "@id": "_:N83d04e90cc814a559a0262c16e061a7c",
+      "@id": "_:Nb594951faa6f456f918dbe1f799ab554",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0928"
@@ -124,10 +128,6 @@
         "@id": "edam:format_2058"
       },
       "sc:name": "Gene expression profile"
-    },
-    {
-      "@id": "https://doi.org/10.1038/nmeth.4636",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

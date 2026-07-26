@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -43,46 +43,46 @@
       "@id": "https://bio.tools/cnv_clinviewer",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nc39bc3b5f047468c9a880ed0b0e8f465"
+        "@id": "_:N1ce880974f054a76873f573df563ea0e"
       },
       "bsc:output": [
         {
-          "@id": "_:N943c3ee547e64c3b9e94a6be0443b94f"
+          "@id": "_:Nd3f645cb11b14d988038f0cc324e1f04"
         },
         {
-          "@id": "_:Nbd0040cb2bae4585aa19078d589ed944"
+          "@id": "_:Nb078edf483dd44a0b73199d4b3bb6d9e"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Desktop application",
         "Web application"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0625"
+          "@id": "edam:topic_3337"
         },
         {
           "@id": "edam:topic_3958"
         },
         {
-          "@id": "edam:topic_3337"
+          "@id": "edam:topic_0625"
         }
       ],
       "sc:citation": [
+        "pubmed:37104749",
         "pmcid:PMC10174702",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btad290"
-        },
-        "pubmed:37104749"
+        }
       ],
       "sc:description": "The CNV-clinviewer is a user-friendly web-application for the interactive visualization, genomic exploration and standardized clinical significance interpretation of large copy-number variants (CNVs).",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3196"
+          "@id": "edam:operation_2436"
         },
         {
-          "@id": "edam:operation_2436"
+          "@id": "edam:operation_3196"
         },
         {
           "@id": "edam:operation_0337"
@@ -91,22 +91,30 @@
       "sc:isAccessibleForFree": true,
       "sc:name": "CNV-ClinViewer",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:url": "https://cnv-ClinViewer.broadinstitute.org"
     },
     {
-      "@id": "_:N943c3ee547e64c3b9e94a6be0443b94f",
+      "@id": "_:N1ce880974f054a76873f573df563ea0e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_1255"
+        "@id": "edam:data_3498"
       },
-      "sc:name": "Sequence features"
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3003"
+        },
+        {
+          "@id": "edam:format_2332"
+        }
+      ],
+      "sc:name": "Sequence variations"
     },
     {
-      "@id": "_:Nbd0040cb2bae4585aa19078d589ed944",
+      "@id": "_:Nd3f645cb11b14d988038f0cc324e1f04",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3953"
@@ -114,20 +122,12 @@
       "sc:name": "Pathway overrepresentation data"
     },
     {
-      "@id": "_:Nc39bc3b5f047468c9a880ed0b0e8f465",
+      "@id": "_:Nb078edf483dd44a0b73199d4b3bb6d9e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_3498"
+        "@id": "edam:data_1255"
       },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2332"
-        },
-        {
-          "@id": "edam:format_3003"
-        }
-      ],
-      "sc:name": "Sequence variations"
+      "sc:name": "Sequence features"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -42,36 +42,39 @@
     {
       "@id": "https://bio.tools/exces-a",
       "@type": "sc:SoftwareApplication",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Workflow",
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_3320"
-        },
         {
           "@id": "edam:topic_0623"
         },
         {
-          "@id": "edam:topic_0160"
+          "@id": "edam:topic_3512"
+        },
+        {
+          "@id": "edam:topic_3320"
         },
         {
           "@id": "edam:topic_0080"
         },
         {
-          "@id": "edam:topic_3512"
+          "@id": "edam:topic_0160"
         }
       ],
       "sc:citation": [
+        "pubmed:35254744",
+        "pmcid:PMC9069663",
         {
           "@id": "https://doi.org/10.1515/jib-2021-0040"
-        },
-        "pubmed:35254744",
-        "pmcid:PMC9069663"
+        }
       ],
       "sc:description": "ExceS-A is a fast, exon-centric spliced aligner and is included in the ExonMatchSolver pipeline.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3359"
+          "@id": "edam:operation_0525"
+        },
+        {
+          "@id": "edam:operation_0292"
         },
         {
           "@id": "edam:operation_0232"
@@ -80,10 +83,7 @@
           "@id": "edam:operation_0433"
         },
         {
-          "@id": "edam:operation_0292"
-        },
-        {
-          "@id": "edam:operation_0525"
+          "@id": "edam:operation_3359"
         }
       ],
       "sc:license": "Not licensed",

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,19 +36,15 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1016/j.ebiom.2023.104472",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/covid-19_mvss",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N641b07aea6df415b80f581d31ad311bf"
+        "@id": "_:Nd8df26b5835e44dca0ab22a8a9399a51"
       },
       "bsc:output": {
-        "@id": "_:N9204ca8a41ad49b88d59a8b10cdb339d"
+        "@id": "_:Nb54d1c5c91f94aaf8a03de5d4a9e39dc"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Desktop application",
         "Web application"
@@ -74,13 +70,13 @@
       "sc:description": "The online platform to query gene expression differences between severe and mild COVID-19 patients in these datasets.",
       "sc:featureList": [
         {
+          "@id": "edam:operation_0560"
+        },
+        {
           "@id": "edam:operation_2421"
         },
         {
           "@id": "edam:operation_2238"
-        },
-        {
-          "@id": "edam:operation_0560"
         }
       ],
       "sc:isAccessibleForFree": true,
@@ -88,13 +84,21 @@
       "sc:name": "COVID-19 MvsS",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:url": "https://kuanrongchan-covid19-severity-app-t7l38g.streamlitapp.com/"
     },
     {
-      "@id": "_:N9204ca8a41ad49b88d59a8b10cdb339d",
+      "@id": "_:Nd8df26b5835e44dca0ab22a8a9399a51",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2603"
+      },
+      "sc:name": "Expression data"
+    },
+    {
+      "@id": "_:Nb54d1c5c91f94aaf8a03de5d4a9e39dc",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
@@ -102,12 +106,8 @@
       "sc:name": "Plot"
     },
     {
-      "@id": "_:N641b07aea6df415b80f581d31ad311bf",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2603"
-      },
-      "sc:name": "Expression data"
+      "@id": "https://doi.org/10.1016/j.ebiom.2023.104472",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

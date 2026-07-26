@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,21 +40,21 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Ne857a9bf6df54147ac637fb9264dc807"
+          "@id": "_:N95380cae1fd647a2833bb179707630d3"
         },
         {
-          "@id": "_:Nd58c564a5b4949418e5ca8309bac5438"
+          "@id": "_:N66f498948e4948fab30556722de3cc6c"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N8f74839622fc4c54b4f8bab8c9af8139"
+          "@id": "_:N0a15a73053e34eea925dd98bcf86dda3"
         },
         {
-          "@id": "_:N723a1ec0d45d4f2f97fb8930ba8adc26"
+          "@id": "_:N945d8d5b6e5a4cbfb94aab5f6527d502"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Plug-in",
       "sc:applicationSubCategory": [
         {
@@ -65,44 +65,33 @@
         }
       ],
       "sc:citation": [
+        "pubmed:34136096",
+        "pmcid:PMC8170118",
         {
           "@id": "https://doi.org/10.1016/j.csbj.2021.05.022"
-        },
-        "pmcid:PMC8170118",
-        "pubmed:34136096"
+        }
       ],
       "sc:description": "CyPathia is a cytoscape app, that provides a user friendly and straightforward interface. The CyPathia app is based on Hipathia Bioconductor package, allowing the Cytoscape community the possibility of using mechanistic models.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3928"
+          "@id": "edam:operation_3927"
         },
         {
-          "@id": "edam:operation_3927"
+          "@id": "edam:operation_3928"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:name": "CyPathia",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareVersion": "1.0.0",
       "sc:url": "https://apps.cytoscape.org/apps/cypathia"
     },
     {
-      "@id": "_:Ne857a9bf6df54147ac637fb9264dc807",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3110"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Raw microarray data"
-    },
-    {
-      "@id": "_:Nd58c564a5b4949418e5ca8309bac5438",
+      "@id": "_:N95380cae1fd647a2833bb179707630d3",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0928"
@@ -113,7 +102,18 @@
       "sc:name": "Gene expression profile"
     },
     {
-      "@id": "_:N8f74839622fc4c54b4f8bab8c9af8139",
+      "@id": "_:N66f498948e4948fab30556722de3cc6c",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3110"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Raw microarray data"
+    },
+    {
+      "@id": "_:N0a15a73053e34eea925dd98bcf86dda3",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2600"
@@ -124,7 +124,7 @@
       "sc:name": "Pathway or network"
     },
     {
-      "@id": "_:N723a1ec0d45d4f2f97fb8930ba8adc26",
+      "@id": "_:N945d8d5b6e5a4cbfb94aab5f6527d502",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2984"

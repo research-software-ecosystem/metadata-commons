@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,16 +36,12 @@
   },
   "@graph": [
     {
-      "@id": "http://orcid.org/0000-0001-8626-2148",
-      "@type": "sc:Person"
-    },
-    {
       "@id": "https://doi.org/10.1093/bioinformatics/btw305",
       "@type": "sc:CreativeWork"
     },
     {
-      "@id": "https://doi.org/10.1093/nar/gkv397",
-      "@type": "sc:CreativeWork"
+      "@id": "http://orcid.org/0000-0001-8626-2148",
+      "@type": "sc:Person"
     },
     {
       "@id": "https://bio.tools/phmmer",
@@ -54,63 +50,63 @@
         "@id": "http://orcid.org/0000-0001-8626-2148"
       },
       "bsc:input": {
-        "@id": "_:N9dfac696957e4ac4b11a1bce7bea5d13"
+        "@id": "_:N831eaa1c39b54351919bfcecd41f671c"
       },
       "bsc:output": [
         {
-          "@id": "_:Nd3132a2436ce49e19a1226b5cde4f8d3"
+          "@id": "_:N4bfa16dce3994d4ca7591030908d0720"
         },
         {
-          "@id": "_:N7073d414a6e942a0a4fab50837a9d483"
+          "@id": "_:N79a6131f631d44b3a47ac05aa0992194"
         },
         {
-          "@id": "_:N6c9709b3c62c40c7a89643d3a17bcb72"
+          "@id": "_:Nd9e9c706b4f34596ba534f8f2c00feee"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Web service"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0160"
+          "@id": "edam:topic_0080"
         },
         {
-          "@id": "edam:topic_0080"
+          "@id": "edam:topic_0160"
         }
       ],
       "sc:citation": [
-        {
-          "@id": "https://doi.org/10.1093/nar/gkv397"
-        },
-        "pubmed:25943547",
+        "pubmed:27256311",
         "pmcid:PMC5013910",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btw305"
         },
-        "pubmed:27256311",
-        "pmcid:PMC4489315"
+        "pubmed:25943547",
+        "pmcid:PMC4489315",
+        {
+          "@id": "https://doi.org/10.1093/nar/gkv397"
+        }
       ],
       "sc:description": "Search a protein sequence against a protein database using HMMER.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3460"
+          "@id": "edam:operation_2421"
         },
         {
           "@id": "edam:operation_0292"
         },
         {
-          "@id": "edam:operation_0224"
+          "@id": "edam:operation_3460"
         },
         {
-          "@id": "edam:operation_2421"
+          "@id": "edam:operation_0224"
         }
       ],
       "sc:name": "PHMMER",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "http://hmmer.org/documentation.html"
@@ -119,31 +115,7 @@
       "sc:url": "https://www.ebi.ac.uk/metagenomics/sequence-search/search/phmmer"
     },
     {
-      "@id": "_:Nd3132a2436ce49e19a1226b5cde4f8d3",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1394"
-      },
-      "sc:name": "Alignment score or penalty"
-    },
-    {
-      "@id": "_:N7073d414a6e942a0a4fab50837a9d483",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3028"
-      },
-      "sc:name": "Taxonomy"
-    },
-    {
-      "@id": "_:N6c9709b3c62c40c7a89643d3a17bcb72",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2085"
-      },
-      "sc:name": "Structure report"
-    },
-    {
-      "@id": "_:N9dfac696957e4ac4b11a1bce7bea5d13",
+      "@id": "_:N831eaa1c39b54351919bfcecd41f671c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3671"
@@ -152,6 +124,34 @@
         "@id": "edam:format_1929"
       },
       "sc:name": "Text"
+    },
+    {
+      "@id": "_:N4bfa16dce3994d4ca7591030908d0720",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1394"
+      },
+      "sc:name": "Alignment score or penalty"
+    },
+    {
+      "@id": "_:N79a6131f631d44b3a47ac05aa0992194",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2085"
+      },
+      "sc:name": "Structure report"
+    },
+    {
+      "@id": "_:Nd9e9c706b4f34596ba534f8f2c00feee",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3028"
+      },
+      "sc:name": "Taxonomy"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/gkv397",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

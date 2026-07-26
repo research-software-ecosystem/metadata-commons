@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,20 +36,16 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1101/389999",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/BRAPeS",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Shaked Afik",
       "bsc:input": {
-        "@id": "_:Nf76fb1b71aa647c99ca4eb3182cdaa87"
+        "@id": "_:N9875efaa796441d098791fc419c07e62"
       },
       "bsc:output": {
-        "@id": "_:N29e1568f24cc458ca603e7bbe7e23e66"
+        "@id": "_:N5857f216fc5346ecb52a01cfccdc966e"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
@@ -70,8 +66,8 @@
       "sc:license": "Other",
       "sc:name": "BRAPeS",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -80,7 +76,18 @@
       "sc:url": "https://github.com/YosefLab/BRAPeS"
     },
     {
-      "@id": "_:N29e1568f24cc458ca603e7bbe7e23e66",
+      "@id": "_:N9875efaa796441d098791fc419c07e62",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1383"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2572"
+      },
+      "sc:name": "Sequence alignment (nucleic acid)"
+    },
+    {
+      "@id": "_:N5857f216fc5346ecb52a01cfccdc966e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2955"
@@ -91,15 +98,8 @@
       "sc:name": "Sequence report"
     },
     {
-      "@id": "_:Nf76fb1b71aa647c99ca4eb3182cdaa87",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1383"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2572"
-      },
-      "sc:name": "Sequence alignment (nucleic acid)"
+      "@id": "https://doi.org/10.1101/389999",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

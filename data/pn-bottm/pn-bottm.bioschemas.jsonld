@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,24 +36,20 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1007/s00520-019-04837-7",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/PN-BOTTM",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Mandi Pratt-Chapman",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Desktop application",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3421"
+          "@id": "edam:topic_0605"
         },
         {
           "@id": "edam:topic_2640"
         },
         {
-          "@id": "edam:topic_0605"
+          "@id": "edam:topic_3421"
         }
       ],
       "sc:citation": [
@@ -71,14 +67,18 @@
       "sc:license": "Other",
       "sc:name": "PN-BOTTM",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://smhs.gwu.edu/gwci/sites/gwci/files/PNBOT%20Quick%20Start%20Guide.pdf"
       },
       "sc:url": "http://bit.ly/AboutPNBOT"
+    },
+    {
+      "@id": "https://doi.org/10.1007/s00520-019-04837-7",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,41 +36,45 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/gkw343",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/gemreads",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Galaxy Support Team",
       "bsc:input": [
         {
-          "@id": "_:Nd469f848c0d046b399bca7c9192ba0e1"
+          "@id": "_:N3551a6d4644948048ff5f22ed3a8eec8"
         },
         {
-          "@id": "_:Nd23a3a5a9a0d48fb9b1016588e17f4fc"
+          "@id": "_:Nc51eae7797114ab9bf51dfad78705143"
         },
         {
-          "@id": "_:N0b9b58c9d6fd49f4b731cbfc3306ea24"
+          "@id": "_:N9f15bac563bc4c3894dc4f31488df2e4"
         },
         {
-          "@id": "_:N3f16f47829cd41c9a30d602af74a98ef"
+          "@id": "_:N3cd1a6dfd88747a093d25a2fbc5a3ade"
         },
         {
-          "@id": "_:Naac8b7ff2af14766a9febdf5109bbcaf"
+          "@id": "_:N8f1e791ced4041ef90aadf6b7b7f1a33"
         },
         {
-          "@id": "_:N25d9dae997c045e3953adcaad41808aa"
+          "@id": "_:N161b006963f84b889138ace8561ffb6b"
         },
         {
-          "@id": "_:Nefb9c8c7f86a4443a08b42854833e0f4"
+          "@id": "_:N16c3901fcb7845fbb3cd11b4308bcf9e"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N7299730af5f94bf5add3c5d72f1d0324"
+          "@id": "_:N9cdefe67f8f6404eb2eddd12720c1a2f"
         },
         {
-          "@id": "_:N78602ef4fd5044c0a749ab7703a9bdce"
+          "@id": "_:Ncce3d38275a24a3ca39a8256b85c8fa2"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3168"
@@ -91,9 +95,9 @@
       },
       "sc:name": "gemreads",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://sourceforge.net/projects/gemsim/files/?source=navbar"
@@ -102,7 +106,7 @@
       "sc:url": "https://sourceforge.net/projects/gemsim/"
     },
     {
-      "@id": "_:Nd469f848c0d046b399bca7c9192ba0e1",
+      "@id": "_:N3551a6d4644948048ff5f22ed3a8eec8",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0006"
@@ -113,7 +117,51 @@
       "sc:name": "Data"
     },
     {
-      "@id": "_:Nd23a3a5a9a0d48fb9b1016588e17f4fc",
+      "@id": "_:Nc51eae7797114ab9bf51dfad78705143",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0006"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Data"
+    },
+    {
+      "@id": "_:N9f15bac563bc4c3894dc4f31488df2e4",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0006"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Data"
+    },
+    {
+      "@id": "_:N3cd1a6dfd88747a093d25a2fbc5a3ade",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0006"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Data"
+    },
+    {
+      "@id": "_:N8f1e791ced4041ef90aadf6b7b7f1a33",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0006"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Data"
+    },
+    {
+      "@id": "_:N161b006963f84b889138ace8561ffb6b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0863"
@@ -124,18 +172,7 @@
       "sc:name": "Sequence alignment"
     },
     {
-      "@id": "_:N0b9b58c9d6fd49f4b731cbfc3306ea24",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0006"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Data"
-    },
-    {
-      "@id": "_:N3f16f47829cd41c9a30d602af74a98ef",
+      "@id": "_:N16c3901fcb7845fbb3cd11b4308bcf9e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0863"
@@ -146,40 +183,7 @@
       "sc:name": "Sequence alignment"
     },
     {
-      "@id": "_:Naac8b7ff2af14766a9febdf5109bbcaf",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0006"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Data"
-    },
-    {
-      "@id": "_:N25d9dae997c045e3953adcaad41808aa",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0006"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Data"
-    },
-    {
-      "@id": "_:Nefb9c8c7f86a4443a08b42854833e0f4",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0006"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Data"
-    },
-    {
-      "@id": "_:N7299730af5f94bf5add3c5d72f1d0324",
+      "@id": "_:N9cdefe67f8f6404eb2eddd12720c1a2f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0006"
@@ -190,7 +194,7 @@
       "sc:name": "Data"
     },
     {
-      "@id": "_:N78602ef4fd5044c0a749ab7703a9bdce",
+      "@id": "_:Ncce3d38275a24a3ca39a8256b85c8fa2",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0006"
@@ -202,10 +206,6 @@
     },
     {
       "@id": "https://doi.org/10.7490/f1000research.1114334.1",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gkw343",
       "@type": "sc:CreativeWork"
     }
   ]

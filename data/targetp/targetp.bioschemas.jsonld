@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,8 +36,8 @@
   },
   "@graph": [
     {
-      "@id": "http://orcid.org/0000-0002-9412-9643",
-      "@type": "sc:Person"
+      "@id": "https://doi.org/10.1006/jmbi.2000.3903",
+      "@type": "sc:CreativeWork"
     },
     {
       "@id": "https://bio.tools/targetp",
@@ -46,16 +46,16 @@
         "@id": "http://orcid.org/0000-0002-9412-9643"
       },
       "bsc:input": {
-        "@id": "_:N1d5f416c86ad47d191ddd61ebad145e5"
+        "@id": "_:N8dd5be290af3465fa794bebf8af027df"
       },
       "bsc:output": {
-        "@id": "_:N3e0a6a61d5084d85bb29e49a2740c8a8"
+        "@id": "_:N4410686fc89147299e2adfef24af85f2"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web service",
         "Command-line tool",
-        "Web application"
+        "Web application",
+        "Web service"
       ],
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3510"
@@ -82,18 +82,7 @@
       "sc:url": "http://cbs.dtu.dk/services/TargetP/"
     },
     {
-      "@id": "_:N3e0a6a61d5084d85bb29e49a2740c8a8",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1277"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Protein features"
-    },
-    {
-      "@id": "_:N1d5f416c86ad47d191ddd61ebad145e5",
+      "@id": "_:N8dd5be290af3465fa794bebf8af027df",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
@@ -104,8 +93,19 @@
       "sc:name": "Sequence"
     },
     {
-      "@id": "https://doi.org/10.1006/jmbi.2000.3903",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N4410686fc89147299e2adfef24af85f2",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1277"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Protein features"
+    },
+    {
+      "@id": "http://orcid.org/0000-0002-9412-9643",
+      "@type": "sc:Person"
     }
   ]
 }

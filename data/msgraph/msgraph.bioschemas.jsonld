@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -43,17 +43,17 @@
       "@id": "https://bio.tools/msgraph",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Ne925c10cf88e46ef96580617c3390411"
+        "@id": "_:N1a178e121ba7447ea6b6c6cd86710418"
       },
       "bsc:output": [
         {
-          "@id": "_:Nd4cd6428a0e64f17a2dcf3bec5c7d5da"
+          "@id": "_:Nf221a33c94be446b8b1cb38dbfd4b61e"
         },
         {
-          "@id": "_:Nbd8bbaad68e54beaa6515b335182966a"
+          "@id": "_:Nec47b21fd3414805b0feb88d09252f58"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
@@ -72,20 +72,20 @@
           "@id": "edam:operation_3203"
         },
         {
-          "@id": "edam:operation_3441"
+          "@id": "edam:operation_3694"
         },
         {
           "@id": "edam:operation_1812"
         },
         {
-          "@id": "edam:operation_3694"
+          "@id": "edam:operation_3441"
         }
       ],
       "sc:name": "MSGraph",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://msgraph.sourceforge.net/"
@@ -93,7 +93,18 @@
       "sc:url": "http://msgraph.sourceforge.net/"
     },
     {
-      "@id": "_:Nd4cd6428a0e64f17a2dcf3bec5c7d5da",
+      "@id": "_:N1a178e121ba7447ea6b6c6cd86710418",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0943"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3245"
+      },
+      "sc:name": "Mass spectrometry spectra"
+    },
+    {
+      "@id": "_:Nf221a33c94be446b8b1cb38dbfd4b61e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0943"
@@ -104,7 +115,7 @@
       "sc:name": "Mass spectrometry spectra"
     },
     {
-      "@id": "_:Nbd8bbaad68e54beaa6515b335182966a",
+      "@id": "_:Nec47b21fd3414805b0feb88d09252f58",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
@@ -113,17 +124,6 @@
         "@id": "edam:format_3466"
       },
       "sc:name": "Plot"
-    },
-    {
-      "@id": "_:Ne925c10cf88e46ef96580617c3390411",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0943"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3245"
-      },
-      "sc:name": "Mass spectrometry spectra"
     }
   ]
 }

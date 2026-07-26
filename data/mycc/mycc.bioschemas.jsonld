@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,12 +39,12 @@
       "@id": "https://bio.tools/mycc",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N1e6cb023e49f4841b020a7862df88a70"
+        "@id": "_:N09fb64493e71400d85b3d2c1e2a182bc"
       },
       "bsc:output": {
-        "@id": "_:Ne70eba5967584621ab53992a24b20521"
+        "@id": "_:N3b51988cd9054b5d9314086e396b0af3"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3837"
@@ -57,8 +57,8 @@
       "sc:license": "Not licensed",
       "sc:name": "mycc",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -67,15 +67,7 @@
       "sc:url": "https://sourceforge.net/projects/sb2nhri/files/MyCC/"
     },
     {
-      "@id": "_:Ne70eba5967584621ab53992a24b20521",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3768"
-      },
-      "sc:name": "Clustered expression profiles"
-    },
-    {
-      "@id": "_:N1e6cb023e49f4841b020a7862df88a70",
+      "@id": "_:N09fb64493e71400d85b3d2c1e2a182bc",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
@@ -84,6 +76,14 @@
         "@id": "edam:format_1929"
       },
       "sc:name": "Sequence"
+    },
+    {
+      "@id": "_:N3b51988cd9054b5d9314086e396b0af3",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3768"
+      },
+      "sc:name": "Clustered expression profiles"
     }
   ]
 }

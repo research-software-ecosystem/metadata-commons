@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -42,22 +42,22 @@
     {
       "@id": "https://bio.tools/mimic-iii",
       "@type": "sc:SoftwareApplication",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3384"
-        },
-        {
           "@id": "edam:topic_3335"
-        },
-        {
-          "@id": "edam:topic_3063"
         },
         {
           "@id": "edam:topic_4016"
         },
         {
           "@id": "edam:topic_3474"
+        },
+        {
+          "@id": "edam:topic_3384"
+        },
+        {
+          "@id": "edam:topic_3063"
         }
       ],
       "sc:citation": [
@@ -71,13 +71,13 @@
       "sc:description": "MIMIC-III is a freely-available database containing de-identified clinical and physiological data from patients admitted to intensive care units. This resource is used to develop and evaluate machine learning models for predicting patient outcomes, such as 30-day mortality.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3359"
-        },
-        {
           "@id": "edam:operation_0303"
         },
         {
           "@id": "edam:operation_3557"
+        },
+        {
+          "@id": "edam:operation_3359"
         }
       ],
       "sc:name": "MIMIC-III",

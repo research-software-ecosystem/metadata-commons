@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,13 +36,9 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1039/D0DT03988H",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/octadist",
       "@type": "sc:SoftwareApplication",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
@@ -64,10 +60,10 @@
       "sc:description": "A tool for calculating distortion parameters in spin crossover and coordination complexes.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3435"
+          "@id": "edam:operation_0249"
         },
         {
-          "@id": "edam:operation_0249"
+          "@id": "edam:operation_3435"
         },
         {
           "@id": "edam:operation_0337"
@@ -77,13 +73,17 @@
       "sc:name": "OctaDist",
       "sc:softwareHelp": [
         {
-          "@id": "https://octadist.readthedocs.io"
+          "@id": "https://octadist.github.io/tutorial"
         },
         {
-          "@id": "https://octadist.github.io/tutorial"
+          "@id": "https://octadist.readthedocs.io"
         }
       ],
       "sc:url": "https://octadist.github.io"
+    },
+    {
+      "@id": "https://doi.org/10.1039/D0DT03988H",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

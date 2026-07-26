@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,18 +39,21 @@
       "@id": "https://bio.tools/biotransformer",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N9b3253a624a943509ba08449cd1234e4"
+        "@id": "_:N3a142aeea8ff492e887eee80eba2c2b5"
       },
       "bsc:output": {
-        "@id": "_:N17064c9ff966472ab78657da165cf042"
+        "@id": "_:Nffb5411f7e6141a9bc75d6b41e0f4bba"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Desktop application",
         "Command-line tool",
+        "Desktop application",
         "Web application"
       ],
       "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_0152"
+        },
         {
           "@id": "edam:topic_3407"
         },
@@ -58,18 +61,15 @@
           "@id": "edam:topic_3172"
         },
         {
-          "@id": "edam:topic_0152"
+          "@id": "edam:topic_0593"
         },
         {
           "@id": "edam:topic_0154"
-        },
-        {
-          "@id": "edam:topic_0593"
         }
       ],
       "sc:citation": [
-        "pmcid:PMC9252798",
         "pubmed:35536252",
+        "pmcid:PMC9252798",
         {
           "@id": "https://doi.org/10.1093/nar/gkac313"
         }
@@ -77,28 +77,28 @@
       "sc:description": "BioTransformer is a freely available web server that supports accurate, rapid and comprehensive in silico metabolism prediction.",
       "sc:featureList": [
         {
+          "@id": "edam:operation_3929"
+        },
+        {
           "@id": "edam:operation_3803"
         },
         {
           "@id": "edam:operation_0417"
-        },
-        {
-          "@id": "edam:operation_3929"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "LGPL-3.0",
       "sc:name": "BioTransformer",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareVersion": "3.1.0",
       "sc:url": "https://biotransformer.ca"
     },
     {
-      "@id": "_:N9b3253a624a943509ba08449cd1234e4",
+      "@id": "_:N3a142aeea8ff492e887eee80eba2c2b5",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1463"
@@ -109,7 +109,7 @@
       "sc:name": "Small molecule structure"
     },
     {
-      "@id": "_:N17064c9ff966472ab78657da165cf042",
+      "@id": "_:Nffb5411f7e6141a9bc75d6b41e0f4bba",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1463"

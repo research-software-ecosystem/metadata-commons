@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,21 +36,25 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1007/s13361-013-0727-5",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/hx-express",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "J Engen",
       "bsc:input": {
-        "@id": "_:N8a3076a42d8b4c15b362dd0ae10191b9"
+        "@id": "_:Nb9650f9166ed40e9928c71aadefbc96f"
       },
       "bsc:output": [
         {
-          "@id": "_:N374f7bec6b5849d5aae9398a38851c09"
+          "@id": "_:Ne958e7ca8c464cc6a21b04d5a9ce5e83"
         },
         {
-          "@id": "_:N517a891db15142d683336b26bdc6193b"
+          "@id": "_:N06fdf6dba8ab4ef098f20f57e94d682e"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Desktop application",
       "sc:applicationSubCategory": [
         {
@@ -62,15 +66,15 @@
       ],
       "sc:author": "D Weis",
       "sc:citation": [
-        "pubmed:16931036",
+        "pubmed:24018862",
+        "pmcid:PMC3855366",
         {
           "@id": "https://doi.org/10.1007/s13361-013-0727-5"
         },
-        "pubmed:24018862",
+        "pubmed:16931036",
         {
           "@id": "https://doi.org/10.1016/j.jasms.2006.07.025"
-        },
-        "pmcid:PMC3855366"
+        }
       ],
       "sc:description": "An Excel spreadsheet for analysis of H/D exchange mass spectra.",
       "sc:featureList": {
@@ -80,8 +84,8 @@
       "sc:name": "HX-Express",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://www.hxms.com/HXExpress/HX-express2_v27_Guide.pdf"
@@ -90,29 +94,7 @@
       "sc:url": "http://www.hxms.com/HXExpress/"
     },
     {
-      "@id": "_:N374f7bec6b5849d5aae9398a38851c09",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2884"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3547"
-      },
-      "sc:name": "Plot"
-    },
-    {
-      "@id": "_:N517a891db15142d683336b26bdc6193b",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1537"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Protein structure report"
-    },
-    {
-      "@id": "_:N8a3076a42d8b4c15b362dd0ae10191b9",
+      "@id": "_:Nb9650f9166ed40e9928c71aadefbc96f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0943"
@@ -123,8 +105,26 @@
       "sc:name": "Mass spectrometry spectra"
     },
     {
-      "@id": "https://doi.org/10.1007/s13361-013-0727-5",
-      "@type": "sc:CreativeWork"
+      "@id": "_:Ne958e7ca8c464cc6a21b04d5a9ce5e83",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2884"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3547"
+      },
+      "sc:name": "Plot"
+    },
+    {
+      "@id": "_:N06fdf6dba8ab4ef098f20f57e94d682e",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1537"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Protein structure report"
     },
     {
       "@id": "https://doi.org/10.1016/j.jasms.2006.07.025",

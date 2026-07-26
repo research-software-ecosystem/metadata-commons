@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,22 +39,22 @@
       "@id": "https://bio.tools/toner",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Jittima Piriyapongsa",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0622"
+          "@id": "edam:topic_0659"
         },
         {
-          "@id": "edam:topic_0659"
+          "@id": "edam:topic_0622"
         },
         {
           "@id": "edam:topic_2269"
         }
       ],
       "sc:citation": [
-        "pmcid:PMC5444824",
         "pubmed:28542466",
+        "pmcid:PMC5444824",
         {
           "@id": "https://doi.org/10.1371/journal.pone.0178483"
         }
@@ -62,16 +62,16 @@
       "sc:description": "Tool for statistical modeling of enrichment from RNA-seq data comprising enriched and unenriched control libraries.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3680"
+          "@id": "edam:operation_3501"
         },
         {
-          "@id": "edam:operation_3501"
+          "@id": "edam:operation_3680"
         }
       ],
       "sc:name": "ToNER",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {

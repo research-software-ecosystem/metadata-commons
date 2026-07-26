@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,39 +36,35 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/nar/gku1056",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/IMGT_2Dstructure-DB",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Nf7e0d3ebb54c49cab4e04ecea6f61610"
+          "@id": "_:N0097448751744f69911fa7a4f56edfdb"
         },
         {
-          "@id": "_:N1517de70eb6946039874e6d25dfdf131"
+          "@id": "_:N551d9d5257a7448cad280c143be1e8b6"
         },
         {
-          "@id": "_:Nbcc3c861a5cd48288cb6a8f7f0e97a5c"
+          "@id": "_:N1f46a1439489441f8e766cb65605e061"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N472315bcf3da480eba759747aa72acb1"
+          "@id": "_:Nb03aa0d366254fb2b28a6fa7228ad025"
         },
         {
-          "@id": "_:N5916054130f84e62afc2f5c691a1319f"
+          "@id": "_:Ncad046c240754d75ae8ee4ed25e33668"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Database portal",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3948"
+          "@id": "edam:topic_3930"
         },
         {
-          "@id": "edam:topic_3930"
+          "@id": "edam:topic_3948"
         }
       ],
       "sc:citation": [
@@ -93,9 +89,9 @@
       "sc:isAccessibleForFree": true,
       "sc:name": "IMGT 2Dstructure-DB",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://www.imgt.org/3Dstructure-DB/doc/IMGT3DstructureDBHelp.shtml"
@@ -103,29 +99,18 @@
       "sc:url": "http://www.imgt.org/3Dstructure-DB/"
     },
     {
-      "@id": "_:N472315bcf3da480eba759747aa72acb1",
+      "@id": "_:N0097448751744f69911fa7a4f56edfdb",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2955"
+        "@id": "edam:data_0842"
       },
       "sc:encodingFormat": {
-        "@id": "edam:format_2331"
+        "@id": "edam:format_2330"
       },
-      "sc:name": "Sequence report"
+      "sc:name": "Identifier"
     },
     {
-      "@id": "_:N5916054130f84e62afc2f5c691a1319f",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0863"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2331"
-      },
-      "sc:name": "Sequence alignment"
-    },
-    {
-      "@id": "_:Nf7e0d3ebb54c49cab4e04ecea6f61610",
+      "@id": "_:N551d9d5257a7448cad280c143be1e8b6",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0968"
@@ -136,7 +121,7 @@
       "sc:name": "Keyword"
     },
     {
-      "@id": "_:N1517de70eb6946039874e6d25dfdf131",
+      "@id": "_:N1f46a1439489441f8e766cb65605e061",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2858"
@@ -147,15 +132,30 @@
       "sc:name": "Ontology concept"
     },
     {
-      "@id": "_:Nbcc3c861a5cd48288cb6a8f7f0e97a5c",
+      "@id": "_:Nb03aa0d366254fb2b28a6fa7228ad025",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_0842"
+        "@id": "edam:data_0863"
       },
       "sc:encodingFormat": {
-        "@id": "edam:format_2330"
+        "@id": "edam:format_2331"
       },
-      "sc:name": "Identifier"
+      "sc:name": "Sequence alignment"
+    },
+    {
+      "@id": "_:Ncad046c240754d75ae8ee4ed25e33668",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2955"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2331"
+      },
+      "sc:name": "Sequence report"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/gku1056",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

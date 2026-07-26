@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,30 +36,26 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/nar/gkh350",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/eslpred",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "G.P.S. Raghava",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0157"
+          "@id": "edam:topic_3474"
         },
         {
           "@id": "edam:topic_0123"
         },
         {
-          "@id": "edam:topic_0154"
-        },
-        {
-          "@id": "edam:topic_3474"
-        },
-        {
           "@id": "edam:topic_0078"
+        },
+        {
+          "@id": "edam:topic_0157"
+        },
+        {
+          "@id": "edam:topic_0154"
         }
       ],
       "sc:citation": [
@@ -72,13 +68,13 @@
       "sc:description": "Tool for predicting subcellular localization of proteins using support vector machines. The predictions are based on dipeptide and amino acid composition, and physico-chemical properties.",
       "sc:featureList": [
         {
+          "@id": "edam:operation_2454"
+        },
+        {
           "@id": "edam:operation_2930"
         },
         {
           "@id": "edam:operation_0267"
-        },
-        {
-          "@id": "edam:operation_2454"
         },
         {
           "@id": "edam:operation_2489"
@@ -87,13 +83,17 @@
       "sc:name": "ESLpred",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://crdd.osdd.net/raghava/eslpred/help.html"
       },
       "sc:url": "https://webs.iiitd.edu.in/raghava/eslpred/"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/gkh350",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

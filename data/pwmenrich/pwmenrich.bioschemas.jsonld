@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,24 +36,20 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.18129/B9.bioc.PWMEnrich",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/pwmenrich",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N289abf6fcf384d7d82f177245ac504bb"
+        "@id": "_:Nf09699b781384813968cc8f45296d3ab"
       },
       "bsc:output": [
         {
-          "@id": "_:N447f52c5f9d0479e9b6bd468d0f754f9"
+          "@id": "_:Na7577e77790c474cad7247c2e5542715"
         },
         {
-          "@id": "_:N1b01874d7e244f2e96d07dc3e0666a99"
+          "@id": "_:Nee79941f7e364b789f7d5d662554ff51"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
@@ -75,17 +71,17 @@
           "@id": "edam:operation_0415"
         },
         {
-          "@id": "edam:operation_0239"
+          "@id": "edam:operation_0240"
         },
         {
-          "@id": "edam:operation_0240"
+          "@id": "edam:operation_0239"
         }
       ],
       "sc:license": "LGPL-2-or-later",
       "sc:name": "PWMEnrich",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -95,7 +91,7 @@
       "sc:url": "https://bioconductor.org/packages/PWMEnrich"
     },
     {
-      "@id": "_:N289abf6fcf384d7d82f177245ac504bb",
+      "@id": "_:Nf09699b781384813968cc8f45296d3ab",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1383"
@@ -106,7 +102,7 @@
       "sc:name": "Sequence alignment (nucleic acid)"
     },
     {
-      "@id": "_:N447f52c5f9d0479e9b6bd468d0f754f9",
+      "@id": "_:Na7577e77790c474cad7247c2e5542715",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"
@@ -117,7 +113,7 @@
       "sc:name": "Report"
     },
     {
-      "@id": "_:N1b01874d7e244f2e96d07dc3e0666a99",
+      "@id": "_:Nee79941f7e364b789f7d5d662554ff51",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1772"
@@ -126,6 +122,10 @@
         "@id": "edam:format_2330"
       },
       "sc:name": "Score"
+    },
+    {
+      "@id": "https://doi.org/10.18129/B9.bioc.PWMEnrich",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

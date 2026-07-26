@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -44,83 +44,67 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N36dfc7305bf9429c834207172bedab20"
+          "@id": "_:Na067745362c64c5b9e708a307ff50cf9"
         },
         {
-          "@id": "_:Nb8f233347b7643eda1641f1298084fed"
+          "@id": "_:Na76e737ff4e1496988e5024b30e2e05b"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0199"
+          "@id": "edam:topic_0659"
         },
         {
           "@id": "edam:topic_3512"
         },
         {
-          "@id": "edam:topic_0622"
+          "@id": "edam:topic_0199"
         },
         {
-          "@id": "edam:topic_0659"
+          "@id": "edam:topic_0622"
         },
         {
           "@id": "edam:topic_0749"
         }
       ],
       "sc:citation": [
+        "pubmed:34606615",
+        "pmcid:PMC8500130",
         {
           "@id": "https://doi.org/10.1093/NAR/GKAB877"
-        },
-        "pmcid:PMC8500130",
-        "pubmed:34606615"
+        }
       ],
       "sc:description": "An online service for somatic binding sequence annotation.",
       "sc:featureList": [
-        {
-          "@id": "edam:operation_0361"
-        },
-        {
-          "@id": "edam:operation_3227"
-        },
-        {
-          "@id": "edam:operation_0445"
-        },
         {
           "@id": "edam:operation_3096"
         },
         {
           "@id": "edam:operation_3901"
+        },
+        {
+          "@id": "edam:operation_0361"
+        },
+        {
+          "@id": "edam:operation_0445"
+        },
+        {
+          "@id": "edam:operation_3227"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:name": "SBSA",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:url": "http://innovebioinfo.com/Annotation/SBSA/SBSA.php"
     },
     {
-      "@id": "_:N36dfc7305bf9429c834207172bedab20",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1046"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3016"
-        },
-        {
-          "@id": "edam:format_3752"
-        }
-      ],
-      "sc:name": "Strain name"
-    },
-    {
-      "@id": "_:Nb8f233347b7643eda1641f1298084fed",
+      "@id": "_:Na067745362c64c5b9e708a307ff50cf9",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1353"
@@ -129,6 +113,22 @@
         "@id": "edam:format_3752"
       },
       "sc:name": "Sequence motif"
+    },
+    {
+      "@id": "_:Na76e737ff4e1496988e5024b30e2e05b",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1046"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3752"
+        },
+        {
+          "@id": "edam:format_3016"
+        }
+      ],
+      "sc:name": "Strain name"
     }
   ]
 }

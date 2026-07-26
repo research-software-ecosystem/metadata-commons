@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -42,7 +42,7 @@
     {
       "@id": "https://bio.tools/mecom",
       "@type": "sc:SoftwareApplication",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
@@ -61,21 +61,21 @@
       "sc:description": "MeCOM is a versatile tool for metalloenzyme active site comparison, which is based on the pharmacophore and α-carbon patterns. It can automatically recognize the active site of the given metalloenzyme, extract active site features, and superimpose metalloenzymes. This tool can be used to find important information to develop new specific metalloenzyme inhibitors, and it will be also useful for protein function prediction, drug repurposing, inhibitor selectivity investigation, and so on.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_1834"
+          "@id": "edam:operation_3898"
         },
         {
           "@id": "edam:operation_1831"
         },
         {
-          "@id": "edam:operation_3898"
+          "@id": "edam:operation_1834"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "Not licensed",
       "sc:name": "MeCOM",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {

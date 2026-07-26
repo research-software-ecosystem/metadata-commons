@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,30 +39,30 @@
       "@id": "https://bio.tools/imagej_nih",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N51e60ac0a5c2429fae3dc9245a2f9f6b"
+        "@id": "_:N7d61a214122b4144a39e34390c969461"
       },
       "bsc:output": [
         {
-          "@id": "_:N650d2ad19a46423f9f0cfe6f035a87fb"
+          "@id": "_:Ne947ab8585e74356a90385df32e6d884"
         },
         {
-          "@id": "_:N341dd491e04245e58fe0769440251ebd"
+          "@id": "_:N726b61a582d342e9a3d31dcf6d5d54da"
         },
         {
-          "@id": "_:N80f88ccfbd14485ea0ade0b88d21e8f3"
+          "@id": "_:Nfd10ba2b81d2488db0486d66722c2be1"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Desktop application"
+        "Desktop application",
+        "Library"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3382"
+          "@id": "edam:topic_3365"
         },
         {
-          "@id": "edam:topic_3365"
+          "@id": "edam:topic_3382"
         }
       ],
       "sc:citation": {
@@ -71,31 +71,31 @@
       "sc:description": "Public domain Java image processing program inspired by NIH Image for the Macintosh. It was designed with an open architecture that provides extensibility via Java plugins.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0337"
-        },
-        {
-          "@id": "edam:operation_2238"
-        },
-        {
           "@id": "edam:operation_3434"
         },
         {
           "@id": "edam:operation_3096"
         },
         {
-          "@id": "edam:operation_3553"
-        },
-        {
           "@id": "edam:operation_3443"
         },
         {
+          "@id": "edam:operation_3553"
+        },
+        {
           "@id": "edam:operation_1812"
+        },
+        {
+          "@id": "edam:operation_2238"
+        },
+        {
+          "@id": "edam:operation_0337"
         }
       ],
       "sc:name": "ImageJ (NIH)",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:provider": "IFB ELIXIR-FR",
@@ -106,15 +106,7 @@
       "sc:url": "http://rsb.info.nih.gov/ij/index.html"
     },
     {
-      "@id": "_:N650d2ad19a46423f9f0cfe6f035a87fb",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2048"
-      },
-      "sc:name": "Report"
-    },
-    {
-      "@id": "_:N341dd491e04245e58fe0769440251ebd",
+      "@id": "_:N7d61a214122b4144a39e34390c969461",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2968"
@@ -124,22 +116,22 @@
           "@id": "edam:format_3548"
         },
         {
-          "@id": "edam:format_3592"
-        },
-        {
-          "@id": "edam:format_3591"
-        },
-        {
           "@id": "edam:format_3467"
         },
         {
+          "@id": "edam:format_3592"
+        },
+        {
           "@id": "edam:format_1957"
+        },
+        {
+          "@id": "edam:format_3591"
         }
       ],
       "sc:name": "Image"
     },
     {
-      "@id": "_:N80f88ccfbd14485ea0ade0b88d21e8f3",
+      "@id": "_:Ne947ab8585e74356a90385df32e6d884",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3546"
@@ -147,26 +139,34 @@
       "sc:name": "Image metadata"
     },
     {
-      "@id": "_:N51e60ac0a5c2429fae3dc9245a2f9f6b",
+      "@id": "_:N726b61a582d342e9a3d31dcf6d5d54da",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2048"
+      },
+      "sc:name": "Report"
+    },
+    {
+      "@id": "_:Nfd10ba2b81d2488db0486d66722c2be1",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2968"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_1957"
+          "@id": "edam:format_3548"
         },
         {
-          "@id": "edam:format_3548"
+          "@id": "edam:format_3467"
         },
         {
           "@id": "edam:format_3592"
         },
         {
-          "@id": "edam:format_3591"
+          "@id": "edam:format_1957"
         },
         {
-          "@id": "edam:format_3467"
+          "@id": "edam:format_3591"
         }
       ],
       "sc:name": "Image"

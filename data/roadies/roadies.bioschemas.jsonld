@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,28 +36,24 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1101/2024.05.27.596098",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/roadies",
       "@type": "sc:SoftwareApplication",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0196"
+          "@id": "edam:topic_3944"
         },
         {
           "@id": "edam:topic_0621"
         },
         {
-          "@id": "edam:topic_3944"
+          "@id": "edam:topic_3293"
         },
         {
           "@id": "edam:topic_0194"
         },
         {
-          "@id": "edam:topic_3293"
+          "@id": "edam:topic_0196"
         }
       ],
       "sc:citation": {
@@ -66,18 +62,22 @@
       "sc:description": "ROADIES is a pipeline for phylogenetic tree inference from raw genome assemblies that is fully automated, scalable, and reference-free. It eliminates manual steps and offers flexibility in adjusting accuracy and runtime, making phylogenomic analyses more accessible and reproducible.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3947"
+          "@id": "edam:operation_0525"
         },
         {
           "@id": "edam:operation_0323"
         },
         {
-          "@id": "edam:operation_0525"
+          "@id": "edam:operation_3947"
         }
       ],
       "sc:license": "MIT",
       "sc:name": "ROADIES",
       "sc:url": "https://turakhia.ucsd.edu/ROADIES/"
+    },
+    {
+      "@id": "https://doi.org/10.1101/2024.05.27.596098",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

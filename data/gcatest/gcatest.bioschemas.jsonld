@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,48 +36,59 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/btv641",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1038/ng.3244",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/gcatest",
       "@type": "sc:SoftwareApplication",
-      "biotools:primaryContact": [
-        "John D. Storey",
-        "Wei Hao"
-      ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0625"
+          "@id": "edam:topic_3517"
         },
         {
-          "@id": "edam:topic_3517"
+          "@id": "edam:topic_0625"
         }
       ],
-      "sc:citation": {
-        "@id": "https://doi.org/10.1101/012682"
-      },
-      "sc:description": "Association test for genome wide association studies that controls for population structure under a general class of trait. models.",
+      "sc:author": [
+        "Alejandro Ochoa",
+        "John D. Storey",
+        "Minsun Song",
+        "Wei Hao"
+      ],
+      "sc:citation": [
+        {
+          "@id": "https://doi.org/10.1038/ng.3244"
+        },
+        {
+          "@id": "https://doi.org/10.1093/bioinformatics/btv641"
+        }
+      ],
+      "sc:description": "GCAT is an association test for genome wide association studies that controls for population structure under a general class of trait models.  This test conditions on the trait, which makes it immune to confounding by unmodeled environmental factors.  Population structure is modeled via logistic factors, which are estimated using the `lfa` package.",
       "sc:featureList": {
         "@id": "edam:operation_3196"
       },
-      "sc:license": "GPL-3.0",
+      "sc:license": "GPL-3.0-or-later",
       "sc:name": "gcatest",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
-        "@id": "http://bioconductor.org/packages/release/bioc/html/gcatest.html"
+        "@id": "https://bioconductor.org/packages/gcatest"
       },
-      "sc:softwareVersion": "1.4.0",
-      "sc:url": "http://bioconductor.org/packages/release/bioc/html/gcatest.html"
-    },
-    {
-      "@id": "https://doi.org/10.1101/012682",
-      "@type": "sc:CreativeWork"
+      "sc:softwareVersion": "2.12.0",
+      "sc:url": "https://bioconductor.org/packages/gcatest"
     }
   ]
 }

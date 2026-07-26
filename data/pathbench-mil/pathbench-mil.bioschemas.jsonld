@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,25 +36,29 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.48550/arXiv.2512.17517",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/PathBench-MIL",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N322c0ee70d7c4909ab554165130951eb"
+          "@id": "_:Nda4c7611e65947fc95c3f90dbd910dc2"
         },
         {
-          "@id": "_:N65d610e8d0144f80909af78c1efe819e"
+          "@id": "_:Nf1665a3671584bdfb752ac5b580123f2"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N18eed86f5cce4693bae270bd4718619c"
+          "@id": "_:N080f6c40889347c79da6c3a33220566d"
         },
         {
-          "@id": "_:Nd31e8f6ae3a74baba58b92256adb0f36"
+          "@id": "_:N93d6da3c57d74b93bdd35e2cf54c6600"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:applicationSubCategory": [
         {
           "@id": "edam:topic_3474"
@@ -88,40 +92,7 @@
       "sc:url": "https://github.com/Sbrussee/PathBench-MIL"
     },
     {
-      "@id": "_:N18eed86f5cce4693bae270bd4718619c",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2048"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2331"
-      },
-      "sc:name": "Report"
-    },
-    {
-      "@id": "_:Nd31e8f6ae3a74baba58b92256adb0f36",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3905"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2331"
-      },
-      "sc:name": "Histogram"
-    },
-    {
-      "@id": "_:N322c0ee70d7c4909ab554165130951eb",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2968"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3591"
-      },
-      "sc:name": "Image"
-    },
-    {
-      "@id": "_:N65d610e8d0144f80909af78c1efe819e",
+      "@id": "_:Nda4c7611e65947fc95c3f90dbd910dc2",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2093"
@@ -132,8 +103,37 @@
       "sc:name": "Data reference"
     },
     {
-      "@id": "https://doi.org/10.48550/arXiv.2512.17517",
-      "@type": "sc:CreativeWork"
+      "@id": "_:Nf1665a3671584bdfb752ac5b580123f2",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2968"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3591"
+      },
+      "sc:name": "Image"
+    },
+    {
+      "@id": "_:N080f6c40889347c79da6c3a33220566d",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3905"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2331"
+      },
+      "sc:name": "Histogram"
+    },
+    {
+      "@id": "_:N93d6da3c57d74b93bdd35e2cf54c6600",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2048"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2331"
+      },
+      "sc:name": "Report"
     }
   ]
 }

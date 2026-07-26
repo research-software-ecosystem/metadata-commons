@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,16 +40,16 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Nc24913a1687144d7a5b635a2e5faa7fa"
+          "@id": "_:N6c1bdd4d3a11417d9354f5b9ba286b1c"
         },
         {
-          "@id": "_:Ne0bd15dc55804d8b9bbba066ae412b94"
+          "@id": "_:N59c5eb919077478982c6fb18fd0e6573"
         }
       ],
       "bsc:output": {
-        "@id": "_:N81bea384d0cf4df08515ab7b0868a9ff"
+        "@id": "_:N031b6b761eab4de69bedecfdaeee5b8f"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Web API",
         "Web application",
@@ -61,10 +61,10 @@
       "sc:description": "An Extendable Quality Control Pipeline Server for High-Throughput Proteomics implemented in Python. Drag'n drop RAW files into automated pipelines. Explore the results in an interactive dashboard.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3630"
+          "@id": "edam:operation_3631"
         },
         {
-          "@id": "edam:operation_3631"
+          "@id": "edam:operation_3630"
         },
         {
           "@id": "edam:operation_0337"
@@ -80,18 +80,7 @@
       "sc:url": "https://github.com/LewisResearchGroup/ProteomicsQC"
     },
     {
-      "@id": "_:N81bea384d0cf4df08515ab7b0868a9ff",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2884"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2331"
-      },
-      "sc:name": "Plot"
-    },
-    {
-      "@id": "_:Nc24913a1687144d7a5b635a2e5faa7fa",
+      "@id": "_:N6c1bdd4d3a11417d9354f5b9ba286b1c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0943"
@@ -102,7 +91,7 @@
       "sc:name": "Mass spectrum"
     },
     {
-      "@id": "_:Ne0bd15dc55804d8b9bbba066ae412b94",
+      "@id": "_:N59c5eb919077478982c6fb18fd0e6573",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2976"
@@ -111,6 +100,17 @@
         "@id": "edam:format_1929"
       },
       "sc:name": "Protein sequence"
+    },
+    {
+      "@id": "_:N031b6b761eab4de69bedecfdaeee5b8f",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2884"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2331"
+      },
+      "sc:name": "Plot"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -44,16 +44,16 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Ne79ecef856e14bbca08d47cfab9233ab"
+          "@id": "_:N9c8d2cd7dbc44d0a91a91c50f36a071d"
         },
         {
-          "@id": "_:Nacedf12f82f44e87b76cc0c8e413a355"
+          "@id": "_:N85d005f9b1624311ab8d581bdad63087"
         }
       ],
       "bsc:output": {
-        "@id": "_:N344c75a041bb4d6fa9b47bfe1bbb8a0c"
+        "@id": "_:N5ea4391d3acd46c58b7b674e9adbcdef"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
@@ -86,8 +86,8 @@
       "sc:license": "Artistic-2.0",
       "sc:name": "AnnotationForge",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -97,23 +97,7 @@
       "sc:url": "https://bioconductor.org/packages/AnnotationForge"
     },
     {
-      "@id": "_:Ne79ecef856e14bbca08d47cfab9233ab",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2353"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2031"
-        },
-        {
-          "@id": "edam:format_2195"
-        }
-      ],
-      "sc:name": "Ontology data"
-    },
-    {
-      "@id": "_:Nacedf12f82f44e87b76cc0c8e413a355",
+      "@id": "_:N9c8d2cd7dbc44d0a91a91c50f36a071d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1276"
@@ -129,7 +113,23 @@
       "sc:name": "Nucleic acid features"
     },
     {
-      "@id": "_:N344c75a041bb4d6fa9b47bfe1bbb8a0c",
+      "@id": "_:N85d005f9b1624311ab8d581bdad63087",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2353"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2031"
+        },
+        {
+          "@id": "edam:format_2195"
+        }
+      ],
+      "sc:name": "Ontology data"
+    },
+    {
+      "@id": "_:N5ea4391d3acd46c58b7b674e9adbcdef",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1276"

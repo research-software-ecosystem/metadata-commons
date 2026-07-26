@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,10 +36,17 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1101/2024.05.29.24307783",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/polygenic_score_catalog",
       "@type": "sc:SoftwareApplication",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_3337"
+        },
         {
           "@id": "edam:topic_4045"
         },
@@ -51,9 +58,6 @@
         },
         {
           "@id": "edam:topic_0769"
-        },
-        {
-          "@id": "edam:topic_3337"
         }
       ],
       "sc:citation": {
@@ -62,12 +66,6 @@
       "sc:description": "The PGS Catalog is an open database of polygenic scores with associated metadata, and the PGS Catalog Calculator is a Nextflow pipeline for calculating these scores. These resources facilitate FAIR research and democratize access to polygenic score applications.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3557"
-        },
-        {
-          "@id": "edam:operation_3435"
-        },
-        {
           "@id": "edam:operation_3436"
         },
         {
@@ -75,14 +73,16 @@
         },
         {
           "@id": "edam:operation_3196"
+        },
+        {
+          "@id": "edam:operation_3557"
+        },
+        {
+          "@id": "edam:operation_3435"
         }
       ],
       "sc:name": "PGS Catalog Calculator",
       "sc:url": "http://www.PGSCatalog.org"
-    },
-    {
-      "@id": "https://doi.org/10.1101/2024.05.29.24307783",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

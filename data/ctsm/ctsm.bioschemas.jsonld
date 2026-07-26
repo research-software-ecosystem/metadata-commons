@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,12 +39,12 @@
       "@id": "https://bio.tools/ctsm",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nc6f0300055a744bd8bd142519c8c30e2"
+        "@id": "_:N4077228a1d0845b6916907412bf803e2"
       },
       "bsc:output": {
-        "@id": "_:Na972461152384375b1a0f9da1e68bac3"
+        "@id": "_:N03818c2bcf44477fa07dc255808cbdcd"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3306"
@@ -61,20 +61,20 @@
       "sc:url": "http://www.cesm.ucar.edu/models/cesm2.0/land"
     },
     {
-      "@id": "_:Na972461152384375b1a0f9da1e68bac3",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3869"
-      },
-      "sc:name": "Simulation"
-    },
-    {
-      "@id": "_:Nc6f0300055a744bd8bd142519c8c30e2",
+      "@id": "_:N4077228a1d0845b6916907412bf803e2",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3736"
       },
       "sc:name": "Ecological data"
+    },
+    {
+      "@id": "_:N03818c2bcf44477fa07dc255808cbdcd",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3869"
+      },
+      "sc:name": "Simulation"
     }
   ]
 }

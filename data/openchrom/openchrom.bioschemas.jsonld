@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,24 +36,20 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1186/1471-2105-11-405",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/openchrom",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nf882f1c248d244abbfe6971cdd828d23"
+        "@id": "_:Ne1142eade7a542c68afd89b5f54e341a"
       },
       "bsc:output": [
         {
-          "@id": "_:N559f23f89be641b7803e4cb930e8bea7"
+          "@id": "_:Nd7a965757f484d529c83e05250413bc2"
         },
         {
-          "@id": "_:N83136c065cfb46e18ac15f2b8091ee4e"
+          "@id": "_:N7aea5affeb374a4c8aef7d3d734fe36b"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Desktop application",
       "sc:applicationSubCategory": [
         {
@@ -64,22 +60,16 @@
         }
       ],
       "sc:citation": [
+        "pubmed:20673335",
         {
           "@id": "https://doi.org/10.1186/1471-2105-11-405"
-        },
-        "pubmed:20673335"
+        }
       ],
       "sc:contributor": {
         "@id": "https://orcid.org/0000-0001-6114-0304"
       },
       "sc:description": "Open source tool for mass spectrometry and chromatography.",
       "sc:featureList": [
-        {
-          "@id": "edam:operation_3215"
-        },
-        {
-          "@id": "edam:operation_3214"
-        },
         {
           "@id": "edam:operation_3203"
         },
@@ -88,77 +78,61 @@
         },
         {
           "@id": "edam:operation_3694"
+        },
+        {
+          "@id": "edam:operation_3215"
+        },
+        {
+          "@id": "edam:operation_3214"
         }
       ],
       "sc:license": "EPL-1.0",
       "sc:name": "OpenChrom",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": [
         {
-          "@id": "https://lablicate.com/marketplace/extensions/handbook"
+          "@id": "https://github.com/OpenChrom/openchrom/wiki/faq"
         },
         {
-          "@id": "https://github.com/OpenChrom/openchrom/wiki/faq"
+          "@id": "https://lablicate.com/marketplace/extensions/handbook"
         }
       ],
       "sc:url": "https://www.openchrom.net/"
     },
     {
-      "@id": "_:Nf882f1c248d244abbfe6971cdd828d23",
+      "@id": "_:Ne1142eade7a542c68afd89b5f54e341a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0943"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_3244"
+          "@id": "edam:format_3752"
+        },
+        {
+          "@id": "edam:format_3650"
         },
         {
           "@id": "edam:format_3712"
         },
         {
-          "@id": "edam:format_3650"
-        },
-        {
           "@id": "edam:format_1637"
-        },
-        {
-          "@id": "edam:format_3654"
-        },
-        {
-          "@id": "edam:format_3752"
-        }
-      ],
-      "sc:name": "Mass spectrometry spectra"
-    },
-    {
-      "@id": "_:N559f23f89be641b7803e4cb930e8bea7",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0944"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3752"
-        },
-        {
-          "@id": "edam:format_3620"
         },
         {
           "@id": "edam:format_3244"
         },
         {
-          "@id": "edam:format_3650"
+          "@id": "edam:format_3654"
         }
       ],
-      "sc:name": "Peptide mass fingerprint"
+      "sc:name": "Mass spectrometry spectra"
     },
     {
-      "@id": "_:N83136c065cfb46e18ac15f2b8091ee4e",
+      "@id": "_:Nd7a965757f484d529c83e05250413bc2",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2968"
@@ -169,8 +143,34 @@
       "sc:name": "Image"
     },
     {
+      "@id": "_:N7aea5affeb374a4c8aef7d3d734fe36b",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0944"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3752"
+        },
+        {
+          "@id": "edam:format_3650"
+        },
+        {
+          "@id": "edam:format_3244"
+        },
+        {
+          "@id": "edam:format_3620"
+        }
+      ],
+      "sc:name": "Peptide mass fingerprint"
+    },
+    {
       "@id": "https://orcid.org/0000-0001-6114-0304",
       "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.1186/1471-2105-11-405",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,10 +36,6 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1021/acs.analchem.7b02795",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/nmrml_converter",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
@@ -47,36 +43,36 @@
         "Daniel Jacob"
       ],
       "bsc:input": {
-        "@id": "_:N5d6278da1cfb47c6927cbbb64fea0bf5"
+        "@id": "_:Nbef04508a6634e9b9dcdbcdc27ba05c3"
       },
       "bsc:output": {
-        "@id": "_:N00afe3f7a6114aad9bd7372acc9bf044"
+        "@id": "_:N9c13fc9c5d0344d78092b8696b6316d7"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Library",
       "sc:applicationSubCategory": [
         {
           "@id": "edam:topic_3370"
         },
         {
-          "@id": "edam:topic_3172"
-        },
-        {
           "@id": "edam:topic_3366"
         },
         {
-          "@id": "edam:topic_0089"
+          "@id": "edam:topic_3172"
         },
         {
           "@id": "edam:topic_0593"
+        },
+        {
+          "@id": "edam:topic_0089"
         }
       ],
       "sc:author": "Daniel Jacob",
       "sc:citation": [
+        "pubmed:29035042",
         {
           "@id": "https://doi.org/10.1021/acs.analchem.7b02795"
-        },
-        "pubmed:29035042"
+        }
       ],
       "sc:description": "This tool is used to support the nmrML data standard for nuclear magnetic resonance raw data in metabolomics. It converts native Bruker, Jeol and Agilent vendor formats into the open access nmrML data standard that is used by an ever-so growing number of small molecule NMR repositories.",
       "sc:featureList": {
@@ -87,7 +83,15 @@
       "sc:url": "http://nmrml.org/"
     },
     {
-      "@id": "_:N00afe3f7a6114aad9bd7372acc9bf044",
+      "@id": "_:Nbef04508a6634e9b9dcdbcdc27ba05c3",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3488"
+      },
+      "sc:name": "NMR spectrum"
+    },
+    {
+      "@id": "_:N9c13fc9c5d0344d78092b8696b6316d7",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3488"
@@ -98,12 +102,8 @@
       "sc:name": "NMR spectrum"
     },
     {
-      "@id": "_:N5d6278da1cfb47c6927cbbb64fea0bf5",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3488"
-      },
-      "sc:name": "NMR spectrum"
+      "@id": "https://doi.org/10.1021/acs.analchem.7b02795",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

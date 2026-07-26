@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,25 +40,25 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Guidantonio Malagoli Tagliazucchi",
       "bsc:input": {
-        "@id": "_:N6a9470f7c33d4c3aaa53dd1b231cc359"
+        "@id": "_:N4d1838a96b0e426d84e01fad18940429"
       },
       "bsc:output": {
-        "@id": "_:Naa0e57a16b364a9aac264aa84778df2d"
+        "@id": "_:Nc17ac25f971946a4b12f5e416a1ca6a5"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3169"
       },
       "sc:citation": [
+        "pubmed:25633503",
         "pmcid:PMC4509590",
         {
           "@id": "https://doi.org/10.1038/nmeth.3252"
-        },
-        "pubmed:25633503"
+        }
       ],
       "sc:description": "Detection of cis-regulatory elements using svm implemented in LiblineaR.",
       "sc:featureList": {
@@ -67,8 +67,8 @@
       "sc:license": "GPL-3.0",
       "sc:name": "SVM2CRM",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -78,18 +78,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/SVM2CRM.html"
     },
     {
-      "@id": "_:Naa0e57a16b364a9aac264aa84778df2d",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1270"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3003"
-      },
-      "sc:name": "Feature table"
-    },
-    {
-      "@id": "_:N6a9470f7c33d4c3aaa53dd1b231cc359",
+      "@id": "_:N4d1838a96b0e426d84e01fad18940429",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3112"
@@ -98,6 +87,17 @@
         "@id": "edam:format_3003"
       },
       "sc:name": "Gene expression matrix"
+    },
+    {
+      "@id": "_:Nc17ac25f971946a4b12f5e416a1ca6a5",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1270"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3003"
+      },
+      "sc:name": "Feature table"
     },
     {
       "@id": "https://doi.org/10.1038/nmeth.3252",

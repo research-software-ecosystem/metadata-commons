@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,31 +40,31 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N9623fc30c5a340b6992343f6f5588b2d"
+          "@id": "_:N928ca4c547a74d6d93de42121d6e0d66"
         },
         {
-          "@id": "_:Nbce4a4d06e3b4e2e8a5966b49f0a87b4"
+          "@id": "_:Nfe80978e90b344b191477e4519a1c2d9"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Ne459991196f64ac0aca65d2473a3a95a"
+          "@id": "_:N4eed799588504dc180586a15c2938cdb"
         },
         {
-          "@id": "_:Nde99157f42dc411ca5b8b441310ce550"
+          "@id": "_:N247825280c04466a87d9638c04b934b6"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0121"
+          "@id": "edam:topic_0092"
         },
         {
-          "@id": "edam:topic_0092"
+          "@id": "edam:topic_0121"
         }
       ],
       "sc:description": "A toolset for deciphering and managing biological sequences.",
@@ -74,9 +74,9 @@
       "sc:license": "GPL-3.0-only",
       "sc:name": "DECIPHER",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://bioconductor.org/packages/DECIPHER"
@@ -85,29 +85,7 @@
       "sc:url": "https://bioconductor.org/packages/DECIPHER"
     },
     {
-      "@id": "_:Ne459991196f64ac0aca65d2473a3a95a",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2884"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3547"
-      },
-      "sc:name": "Plot"
-    },
-    {
-      "@id": "_:Nde99157f42dc411ca5b8b441310ce550",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2044"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3547"
-      },
-      "sc:name": "Sequence"
-    },
-    {
-      "@id": "_:N9623fc30c5a340b6992343f6f5588b2d",
+      "@id": "_:N928ca4c547a74d6d93de42121d6e0d66",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3494"
@@ -126,23 +104,45 @@
       "sc:name": "DNA sequence"
     },
     {
-      "@id": "_:Nbce4a4d06e3b4e2e8a5966b49f0a87b4",
+      "@id": "_:Nfe80978e90b344b191477e4519a1c2d9",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3495"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_1936"
-        },
-        {
           "@id": "edam:format_1929"
         },
         {
           "@id": "edam:format_1930"
+        },
+        {
+          "@id": "edam:format_1936"
         }
       ],
       "sc:name": "RNA sequence"
+    },
+    {
+      "@id": "_:N4eed799588504dc180586a15c2938cdb",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2884"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3547"
+      },
+      "sc:name": "Plot"
+    },
+    {
+      "@id": "_:N247825280c04466a87d9638c04b934b6",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2044"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3547"
+      },
+      "sc:name": "Sequence"
     }
   ]
 }

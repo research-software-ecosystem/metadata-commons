@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,10 +36,14 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1007/978-3-642-12683-3_28",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/idba",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Yu Peng",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0196"
@@ -59,10 +63,6 @@
         "@id": "https://i.cs.hku.hk/~alse/hkubrg/projects/idba/"
       },
       "sc:url": "https://i.cs.hku.hk/%7Ealse/idba"
-    },
-    {
-      "@id": "https://doi.org/10.1007/978-3-642-12683-3_28",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

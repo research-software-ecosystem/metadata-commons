@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,27 +36,31 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1101/2024.01.30.578060",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/sandpiper",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Nfb7cb0cfba474674946fde1c7fda8a62"
+          "@id": "_:N2f2d376d4e0b4352a393c27dcb7ef04b"
         },
         {
-          "@id": "_:Nc1f5811f035f4c38be34cb45125a6993"
+          "@id": "_:N5be659574a954a619262ba2b18f2a9b4"
         }
       ],
       "bsc:output": {
-        "@id": "_:N916332e7c1334a48b543c9f3a0872db9"
+        "@id": "_:N68d23cdba67a4f43bcdc6138a72b5432"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Database portal",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3174"
+          "@id": "edam:topic_3050"
         },
         {
-          "@id": "edam:topic_3050"
+          "@id": "edam:topic_3174"
         },
         {
           "@id": "edam:topic_3697"
@@ -77,14 +81,14 @@
       "sc:isAccessibleForFree": true,
       "sc:name": "Sandpiper",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:url": "https://sandpiper.qut.edu.au/"
     },
     {
-      "@id": "_:Nfb7cb0cfba474674946fde1c7fda8a62",
+      "@id": "_:N2f2d376d4e0b4352a393c27dcb7ef04b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2091"
@@ -92,7 +96,7 @@
       "sc:name": "Accession"
     },
     {
-      "@id": "_:Nc1f5811f035f4c38be34cb45125a6993",
+      "@id": "_:N5be659574a954a619262ba2b18f2a9b4",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3028"
@@ -100,16 +104,12 @@
       "sc:name": "Taxonomy"
     },
     {
-      "@id": "_:N916332e7c1334a48b543c9f3a0872db9",
+      "@id": "_:N68d23cdba67a4f43bcdc6138a72b5432",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2091"
       },
       "sc:name": "Accession"
-    },
-    {
-      "@id": "https://doi.org/10.1101/2024.01.30.578060",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

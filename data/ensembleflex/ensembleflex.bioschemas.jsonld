@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,78 +40,84 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N7baa3a80c7f34e339b1009f78d28d8ef"
+          "@id": "_:Nfab5d052718243d49452f80e55d2d268"
         },
         {
-          "@id": "_:Nb3f1d3116ebf46eb91e47a3786e00895"
+          "@id": "_:N07db9a6e026341ffabc6cbaf12968c90"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Nc580832a9fc249f1931fb45924213d25"
+          "@id": "_:Nb5b751b101d74cb8a002dd244de66ad7"
         },
         {
-          "@id": "_:N0685363d12c24294aa33b02f9a5de9c9"
+          "@id": "_:N7788d630fca24cb2ac580f49190bf731"
         },
         {
-          "@id": "_:Nfedb60352c6c4fe8a4b77d4f59eb7165"
+          "@id": "_:N63641cb4a2c34ac388490338dfced3db"
         },
         {
-          "@id": "_:Nc29671d464c141b5b1877dde9fd9fec7"
+          "@id": "_:N91b55131dbbe47ce9d802694a981f4d5"
         },
         {
-          "@id": "_:N3afa28b1693c4ca990a9126ddb0628dc"
+          "@id": "_:N4c0a9587a2fe48639cdd5363b3b8d597"
         },
         {
-          "@id": "_:Na6f8f34ee120445193516f342c25e15b"
+          "@id": "_:N1e547f2659814b9fa3ba71642192e028"
         },
         {
-          "@id": "_:N52e4246c810640c2abe063995ce05bc0"
+          "@id": "_:N7b75653ff8d741dfa39cb8f07a1ea981"
         },
         {
-          "@id": "_:Nc866a4dfed014e3ab6992bf25317a7b4"
+          "@id": "_:Nec5b7aad6ec046e789de47318ea91442"
         },
         {
-          "@id": "_:N0e20d1bb97a6403b9861b3b783e2b006"
+          "@id": "_:N7b1928045345400ea77a1b4762a39d6a"
         },
         {
-          "@id": "_:N4ccd6c5e8313458bb1354cadbc8f5200"
+          "@id": "_:N8266b92e8790497ca3547033f39e11ea"
         },
         {
-          "@id": "_:N4242d27343e94bdcb344c87ea8eab4d4"
+          "@id": "_:Nd0e386d0a0864c29a126e6deed0b78e5"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
+        "Command-line tool",
         "Desktop application",
         "Web application",
-        "Workflow",
-        "Command-line tool"
+        "Workflow"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0081"
-        },
-        {
-          "@id": "edam:topic_0154"
+          "@id": "edam:topic_3336"
         },
         {
           "@id": "edam:topic_2814"
         },
         {
-          "@id": "edam:topic_3336"
+          "@id": "edam:topic_0154"
         },
         {
           "@id": "edam:topic_1317"
+        },
+        {
+          "@id": "edam:topic_0081"
         }
       ],
       "sc:description": "EnsembleFlex: Protein Structure Ensemble Analysis made easy \n- \nEnsembleFlex is a tool designed to perform dual-scale flexibility analysis of protein structure ensembles, encompassing both backbone and side-chain dynamics, in an easy, streamlined and reproducible way. It offers a user-friendly, no-coding graphical interface as well as a code-based option. It  complements experimental ensemble data analysis with predictive methods based on elastic network models.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3960"
+          "@id": "edam:operation_0384"
         },
         {
           "@id": "edam:operation_3935"
+        },
+        {
+          "@id": "edam:operation_2476"
+        },
+        {
+          "@id": "edam:operation_3960"
         },
         {
           "@id": "edam:operation_2406"
@@ -120,141 +126,47 @@
           "@id": "edam:operation_2487"
         },
         {
-          "@id": "edam:operation_0384"
-        },
-        {
-          "@id": "edam:operation_0570"
-        },
-        {
           "@id": "edam:operation_2238"
-        },
-        {
-          "@id": "edam:operation_3890"
-        },
-        {
-          "@id": "edam:operation_2476"
         },
         {
           "@id": "edam:operation_0295"
         },
         {
+          "@id": "edam:operation_2480"
+        },
+        {
           "@id": "edam:operation_2844"
         },
         {
-          "@id": "edam:operation_2480"
+          "@id": "edam:operation_0570"
+        },
+        {
+          "@id": "edam:operation_3890"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "MIT",
       "sc:name": "EnsembleFlex",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": [
         {
           "@id": "https://github.com/chembl/EnsembleFlex"
         },
         {
-          "@id": "https://github.com/chembl/EnsembleFlex/blob/master/documentation/user_guide.md"
+          "@id": "https://gitlab.ebi.ac.uk/melanie/ensembleflex"
         },
         {
-          "@id": "https://gitlab.ebi.ac.uk/melanie/ensembleflex"
+          "@id": "https://github.com/chembl/EnsembleFlex/blob/master/documentation/user_guide.md"
         }
       ],
       "sc:url": "https://github.com/chembl/EnsembleFlex"
     },
     {
-      "@id": "_:Nc580832a9fc249f1931fb45924213d25",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0883"
-      },
-      "sc:name": "Structure"
-    },
-    {
-      "@id": "_:N0685363d12c24294aa33b02f9a5de9c9",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1542"
-      },
-      "sc:name": "Protein solvent accessibility"
-    },
-    {
-      "@id": "_:Nfedb60352c6c4fe8a4b77d4f59eb7165",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3905"
-      },
-      "sc:name": "Histogram"
-    },
-    {
-      "@id": "_:Nc29671d464c141b5b1877dde9fd9fec7",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1537"
-      },
-      "sc:name": "Protein structure report"
-    },
-    {
-      "@id": "_:N3afa28b1693c4ca990a9126ddb0628dc",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1566"
-      },
-      "sc:name": "Protein-ligand interaction report"
-    },
-    {
-      "@id": "_:Na6f8f34ee120445193516f342c25e15b",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2087"
-      },
-      "sc:name": "Molecular property"
-    },
-    {
-      "@id": "_:N52e4246c810640c2abe063995ce05bc0",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1636"
-      },
-      "sc:name": "Heat map"
-    },
-    {
-      "@id": "_:Nc866a4dfed014e3ab6992bf25317a7b4",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3842"
-      },
-      "sc:name": "Molecular simulation data"
-    },
-    {
-      "@id": "_:N0e20d1bb97a6403b9861b3b783e2b006",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0906"
-      },
-      "sc:name": "Protein interaction data"
-    },
-    {
-      "@id": "_:N4ccd6c5e8313458bb1354cadbc8f5200",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2884"
-      },
-      "sc:name": "Plot"
-    },
-    {
-      "@id": "_:N4242d27343e94bdcb344c87ea8eab4d4",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1481"
-      },
-      "sc:name": "Protein structure alignment"
-    },
-    {
-      "@id": "_:N7baa3a80c7f34e339b1009f78d28d8ef",
+      "@id": "_:Nfab5d052718243d49452f80e55d2d268",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1460"
@@ -265,7 +177,7 @@
       "sc:name": "Protein structure"
     },
     {
-      "@id": "_:Nb3f1d3116ebf46eb91e47a3786e00895",
+      "@id": "_:N07db9a6e026341ffabc6cbaf12968c90",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1461"
@@ -274,6 +186,94 @@
         "@id": "edam:format_1476"
       },
       "sc:name": "Protein-ligand complex"
+    },
+    {
+      "@id": "_:Nb5b751b101d74cb8a002dd244de66ad7",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1636"
+      },
+      "sc:name": "Heat map"
+    },
+    {
+      "@id": "_:N7788d630fca24cb2ac580f49190bf731",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3905"
+      },
+      "sc:name": "Histogram"
+    },
+    {
+      "@id": "_:N63641cb4a2c34ac388490338dfced3db",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2087"
+      },
+      "sc:name": "Molecular property"
+    },
+    {
+      "@id": "_:N91b55131dbbe47ce9d802694a981f4d5",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3842"
+      },
+      "sc:name": "Molecular simulation data"
+    },
+    {
+      "@id": "_:N4c0a9587a2fe48639cdd5363b3b8d597",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2884"
+      },
+      "sc:name": "Plot"
+    },
+    {
+      "@id": "_:N1e547f2659814b9fa3ba71642192e028",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0906"
+      },
+      "sc:name": "Protein interaction data"
+    },
+    {
+      "@id": "_:N7b75653ff8d741dfa39cb8f07a1ea981",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1542"
+      },
+      "sc:name": "Protein solvent accessibility"
+    },
+    {
+      "@id": "_:Nec5b7aad6ec046e789de47318ea91442",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1481"
+      },
+      "sc:name": "Protein structure alignment"
+    },
+    {
+      "@id": "_:N7b1928045345400ea77a1b4762a39d6a",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1537"
+      },
+      "sc:name": "Protein structure report"
+    },
+    {
+      "@id": "_:N8266b92e8790497ca3547033f39e11ea",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1566"
+      },
+      "sc:name": "Protein-ligand interaction report"
+    },
+    {
+      "@id": "_:Nd0e386d0a0864c29a126e6deed0b78e5",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0883"
+      },
+      "sc:name": "Structure"
     }
   ]
 }

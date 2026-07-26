@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,47 +40,47 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N6a3e3ea567bd47309140b8ca890eeb48"
+          "@id": "_:N2a3a2cf99c3b46379980ad0c2a041d2f"
         },
         {
-          "@id": "_:N20208852861843d8a5c21035944a8e42"
+          "@id": "_:Ncf9c1fea921a4032826d962af4fbdeb7"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N1f5828c783bc40c18afa89cad7f5d035"
+          "@id": "_:Nda39abecaaf24fc1a2df1b030e1ea1fc"
         },
         {
-          "@id": "_:N9e217b4a37c0455abcff31f90d20362f"
+          "@id": "_:N74a6c4cedabf4be5ab76269e3a5f06c5"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Desktop application",
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_3520"
-        },
         {
           "@id": "edam:topic_3572"
         },
         {
           "@id": "edam:topic_0092"
+        },
+        {
+          "@id": "edam:topic_3520"
         }
       ],
       "sc:description": "A tool for adjusting mass spectrometry peaks in PKL file. User can decide whether to shift all spectra or just a single one of the file.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3628"
+          "@id": "edam:operation_3203"
         },
         {
-          "@id": "edam:operation_3203"
+          "@id": "edam:operation_3628"
         }
       ],
       "sc:name": "adjustPKL",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://github.com/binfalse/adjustpkl"
@@ -88,7 +88,7 @@
       "sc:url": "http://blog.binfalse.de/software/adjustpkl/"
     },
     {
-      "@id": "_:N6a3e3ea567bd47309140b8ca890eeb48",
+      "@id": "_:N2a3a2cf99c3b46379980ad0c2a041d2f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2536"
@@ -99,7 +99,7 @@
       "sc:name": "Mass spectrometry data"
     },
     {
-      "@id": "_:N20208852861843d8a5c21035944a8e42",
+      "@id": "_:Ncf9c1fea921a4032826d962af4fbdeb7",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0944"
@@ -110,7 +110,7 @@
       "sc:name": "Peptide mass fingerprint"
     },
     {
-      "@id": "_:N1f5828c783bc40c18afa89cad7f5d035",
+      "@id": "_:Nda39abecaaf24fc1a2df1b030e1ea1fc",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2536"
@@ -121,7 +121,7 @@
       "sc:name": "Mass spectrometry data"
     },
     {
-      "@id": "_:N9e217b4a37c0455abcff31f90d20362f",
+      "@id": "_:N74a6c4cedabf4be5ab76269e3a5f06c5",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0944"

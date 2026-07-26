@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,37 +36,33 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btu136",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/mait",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N915bdc4ed91a49409429ca4d69a58760"
+        "@id": "_:Ne0a0fd088d0a490c81fda0d7ca4748bc"
       },
       "bsc:output": [
         {
-          "@id": "_:N0100692fe0db475d80a978302dc475d1"
+          "@id": "_:N53a45e167fbe449e80b03e41481bc891"
         },
         {
-          "@id": "_:Ne8ca63343a7945528fd6143b79d0c91b"
+          "@id": "_:N330e9b580c04477983b7e562405a9066"
         },
         {
-          "@id": "_:N4a6f1d07336e49e6851eeeca6d13ef08"
+          "@id": "_:N097d3ba33b924bb08ada75c60178413d"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3172"
+          "@id": "edam:topic_3361"
         },
         {
-          "@id": "edam:topic_3361"
+          "@id": "edam:topic_3172"
         }
       ],
       "sc:citation": {
@@ -84,9 +80,9 @@
       "sc:license": "GPL-2.0-only",
       "sc:name": "MAIT",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://bioconductor.org/packages/MAIT"
@@ -95,23 +91,34 @@
       "sc:url": "https://bioconductor.org/packages/MAIT"
     },
     {
-      "@id": "_:N0100692fe0db475d80a978302dc475d1",
+      "@id": "_:Ne0a0fd088d0a490c81fda0d7ca4748bc",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2536"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3650"
+      },
+      "sc:name": "Mass spectrometry data"
+    },
+    {
+      "@id": "_:N53a45e167fbe449e80b03e41481bc891",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1636"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_2330"
+          "@id": "edam:format_3547"
         },
         {
-          "@id": "edam:format_3547"
+          "@id": "edam:format_2330"
         }
       ],
       "sc:name": "Heat map"
     },
     {
-      "@id": "_:Ne8ca63343a7945528fd6143b79d0c91b",
+      "@id": "_:N330e9b580c04477983b7e562405a9066",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
@@ -127,31 +134,24 @@
       "sc:name": "Plot"
     },
     {
-      "@id": "_:N4a6f1d07336e49e6851eeeca6d13ef08",
+      "@id": "_:N097d3ba33b924bb08ada75c60178413d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_2330"
+          "@id": "edam:format_3547"
         },
         {
-          "@id": "edam:format_3547"
+          "@id": "edam:format_2330"
         }
       ],
       "sc:name": "Report"
     },
     {
-      "@id": "_:N915bdc4ed91a49409429ca4d69a58760",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2536"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3650"
-      },
-      "sc:name": "Mass spectrometry data"
+      "@id": "https://doi.org/10.1093/bioinformatics/btu136",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

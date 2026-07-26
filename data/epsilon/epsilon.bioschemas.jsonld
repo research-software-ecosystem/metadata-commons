@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -43,12 +43,12 @@
       "@id": "https://bio.tools/epsilon",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N9909b9ffb6d74da98420ded977b2d28d"
+        "@id": "_:N9112de02a8b34f409c0371eee2d91c98"
       },
       "bsc:output": {
-        "@id": "_:N71586fc81b4e4d40afaa4ca9680f784f"
+        "@id": "_:N7aecb3ec93434d5f98b04fbd882606aa"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Desktop application",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0602"
@@ -65,8 +65,8 @@
       },
       "sc:name": "EPSILON",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:provider": "ugent.be",
@@ -77,20 +77,20 @@
       "sc:url": "http://bioinformatics.intec.ugent.be/epsilon/index.html"
     },
     {
-      "@id": "_:N71586fc81b4e4d40afaa4ca9680f784f",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2600"
-      },
-      "sc:name": "Pathway or network"
-    },
-    {
-      "@id": "_:N9909b9ffb6d74da98420ded977b2d28d",
+      "@id": "_:N9112de02a8b34f409c0371eee2d91c98",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2603"
       },
       "sc:name": "Gene expression data"
+    },
+    {
+      "@id": "_:N7aecb3ec93434d5f98b04fbd882606aa",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2600"
+      },
+      "sc:name": "Pathway or network"
     }
   ]
 }

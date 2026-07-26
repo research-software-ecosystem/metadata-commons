@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,31 +36,27 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/nar/gkz420.",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/fidosnp",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N7bac179af83c44d5a516193ec43c1552"
+        "@id": "_:N1a68d6e56b9f4a758e8b0f339629c591"
       },
       "bsc:output": {
-        "@id": "_:Nf53c63466a404ce28e28ed923fce2f5b"
+        "@id": "_:Na5dbc0128947474f92c9f6ef85cca614"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web service",
-        "Web application"
+        "Web application",
+        "Web service"
       ],
       "sc:applicationSubCategory": {
         "@id": "edam:topic_2885"
       },
       "sc:citation": [
+        "pubmed:31114899",
         {
           "@id": "https://doi.org/10.1093/nar/gkz420."
-        },
-        "pubmed:31114899"
+        }
       ],
       "sc:description": "Fido-SNP: Predicting the impact of genetic variants in dog genome",
       "sc:featureList": [
@@ -75,22 +71,22 @@
       "sc:license": "CC-BY-NC-SA-4.0",
       "sc:name": "fidosnp",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:softwareHelp": [
         {
-          "@id": "http://snps.biofold.org/fido-snp/help.html"
+          "@id": "http://snps.biofold.org/fido-snp/method.html"
         },
         {
-          "@id": "http://snps.biofold.org/fido-snp/method.html"
+          "@id": "http://snps.biofold.org/fido-snp/help.html"
         }
       ],
       "sc:softwareVersion": "web-server",
       "sc:url": "http://snps.biofold.org/fido-snp/"
     },
     {
-      "@id": "_:N7bac179af83c44d5a516193ec43c1552",
+      "@id": "_:N1a68d6e56b9f4a758e8b0f339629c591",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3498"
@@ -101,7 +97,7 @@
       "sc:name": "Sequence variations"
     },
     {
-      "@id": "_:Nf53c63466a404ce28e28ed923fce2f5b",
+      "@id": "_:Na5dbc0128947474f92c9f6ef85cca614",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3498"
@@ -110,6 +106,10 @@
         "@id": "edam:format_3016"
       },
       "sc:name": "Sequence variations"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/gkz420.",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

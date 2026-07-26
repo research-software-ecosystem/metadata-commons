@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -41,40 +41,40 @@
       "biotools:primaryContact": "Johan Lundin",
       "bsc:input": [
         {
-          "@id": "_:N27d95986dd7a47a888c50dbe114e3e4b"
+          "@id": "_:Nf66f8e07f477409c8fa9558e552f224d"
         },
         {
-          "@id": "_:Nf8ebea982ed540438b24836112b9f0b3"
+          "@id": "_:Ncfbbee3403f04b628edd245f65c21409"
         }
       ],
       "bsc:output": {
-        "@id": "_:Ndcfed81ff4a24b40ab27f41ef6d7684f"
+        "@id": "_:Nff03d10bbab64d78a69293c1dc5aff2f"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3382"
+          "@id": "edam:topic_0092"
         },
         {
-          "@id": "edam:topic_0092"
+          "@id": "edam:topic_3382"
         }
       ],
       "sc:author": "Mikael Lundin",
       "sc:citation": [
+        "pubmed:21489183",
+        "pmcid:PMC3073206",
         {
           "@id": "https://doi.org/10.1186/1746-1596-6-s1-s13"
-        },
-        "pmcid:PMC3073206",
-        "pubmed:21489183"
+        }
       ],
       "sc:description": "Platform for virtual microscopy.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3553"
+          "@id": "edam:operation_3443"
         },
         {
-          "@id": "edam:operation_3443"
+          "@id": "edam:operation_3553"
         },
         {
           "@id": "edam:operation_3552"
@@ -82,9 +82,9 @@
       ],
       "sc:name": "WebMicroscope",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": "FIMM",
       "sc:softwareHelp": {
@@ -94,7 +94,7 @@
       "sc:url": "http://biomedbridges.webmicroscope.net"
     },
     {
-      "@id": "_:N27d95986dd7a47a888c50dbe114e3e4b",
+      "@id": "_:Nf66f8e07f477409c8fa9558e552f224d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2968"
@@ -105,7 +105,7 @@
       "sc:name": "Image"
     },
     {
-      "@id": "_:Nf8ebea982ed540438b24836112b9f0b3",
+      "@id": "_:Ncfbbee3403f04b628edd245f65c21409",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3546"
@@ -116,7 +116,7 @@
       "sc:name": "Image metadata"
     },
     {
-      "@id": "_:Ndcfed81ff4a24b40ab27f41ef6d7684f",
+      "@id": "_:Nff03d10bbab64d78a69293c1dc5aff2f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2968"

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,40 +40,40 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N457721fbede7451eb997bd465e576c74"
+          "@id": "_:N11a57933a5b54c62986873adb98789ca"
         },
         {
-          "@id": "_:Nf0db2aa2029c4c188ac000d2a26e4f68"
+          "@id": "_:N1ae16511fbda4e60a28385c0063f6239"
         }
       ],
       "bsc:output": {
-        "@id": "_:Nd53d0547a88147628b3ba59833f578c3"
+        "@id": "_:N82402e813c7d40b2af1b6fff71470461"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0128"
-        },
-        {
           "@id": "edam:topic_3299"
-        },
-        {
-          "@id": "edam:topic_0121"
         },
         {
           "@id": "edam:topic_0623"
         },
         {
           "@id": "edam:topic_0621"
+        },
+        {
+          "@id": "edam:topic_0128"
+        },
+        {
+          "@id": "edam:topic_0121"
         }
       ],
       "sc:citation": [
+        "pubmed:37549177",
+        "pmcid:PMC10434966",
         {
           "@id": "https://doi.org/10.1371/journal.pcbi.1011090"
-        },
-        "pubmed:37549177",
-        "pmcid:PMC10434966"
+        }
       ],
       "sc:description": "CompaCt performs automated integrative comparative analysis of large-scale (protein) interaction datasets, identifying groups of interactors (e.g., protein complexes) in parallel in multiple species, allowing systematic identification and comparison of conserved as well as taxon-specific components of protein complexes and other interactions.",
       "sc:featureList": [
@@ -81,30 +81,38 @@
           "@id": "edam:operation_3432"
         },
         {
-          "@id": "edam:operation_3478"
-        },
-        {
-          "@id": "edam:operation_2949"
-        },
-        {
           "@id": "edam:operation_3663"
         },
         {
+          "@id": "edam:operation_3478"
+        },
+        {
           "@id": "edam:operation_0390"
+        },
+        {
+          "@id": "edam:operation_2949"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "GPL-3.0",
       "sc:name": "CompaCt",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:url": "https://github.com/cmbi/compact-bio"
     },
     {
-      "@id": "_:N457721fbede7451eb997bd465e576c74",
+      "@id": "_:N11a57933a5b54c62986873adb98789ca",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2093"
+      },
+      "sc:name": "Data reference"
+    },
+    {
+      "@id": "_:N1ae16511fbda4e60a28385c0063f6239",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0906"
@@ -115,15 +123,7 @@
       "sc:name": "Protein interaction data"
     },
     {
-      "@id": "_:Nf0db2aa2029c4c188ac000d2a26e4f68",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2093"
-      },
-      "sc:name": "Data reference"
-    },
-    {
-      "@id": "_:Nd53d0547a88147628b3ba59833f578c3",
+      "@id": "_:N82402e813c7d40b2af1b6fff71470461",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1548"

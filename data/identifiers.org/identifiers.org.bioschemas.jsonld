@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,21 +36,25 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1101/117812",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/identifiers.org",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Camille Laibe",
       "bsc:input": {
-        "@id": "_:N5b954e367a164de09fc02516e5503af4"
+        "@id": "_:N84fcaa07a41b4c8e9e0919528a8cf4df"
       },
       "bsc:output": [
         {
-          "@id": "_:Nefd2d9f369484c4289388c30c9d6ea76"
+          "@id": "_:Na3e8c63777f84d87822e8deef3853c10"
         },
         {
-          "@id": "_:Nebfe5a4546ac4ed99b517f2d0f9ad898"
+          "@id": "_:N2d7c75abbda744929a92887cd5bf6ae2"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3345"
@@ -70,40 +74,24 @@
       ],
       "sc:name": "Identifiers.org",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": "EMBL-EBI",
       "sc:softwareHelp": [
         {
-          "@id": "http://www.ebi.ac.uk/about/terms-of-use"
+          "@id": "http://identifiers.org/help"
         },
         {
-          "@id": "http://identifiers.org/help"
+          "@id": "http://www.ebi.ac.uk/about/terms-of-use"
         }
       ],
       "sc:softwareVersion": "1",
       "sc:url": "http://identifiers.org/"
     },
     {
-      "@id": "_:Nefd2d9f369484c4289388c30c9d6ea76",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0957"
-      },
-      "sc:name": "Database metadata"
-    },
-    {
-      "@id": "_:Nebfe5a4546ac4ed99b517f2d0f9ad898",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2193"
-      },
-      "sc:name": "Database entry metadata"
-    },
-    {
-      "@id": "_:N5b954e367a164de09fc02516e5503af4",
+      "@id": "_:N84fcaa07a41b4c8e9e0919528a8cf4df",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1047"
@@ -111,8 +99,20 @@
       "sc:name": "URI"
     },
     {
-      "@id": "https://doi.org/10.1101/117812",
-      "@type": "sc:CreativeWork"
+      "@id": "_:Na3e8c63777f84d87822e8deef3853c10",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2193"
+      },
+      "sc:name": "Database entry metadata"
+    },
+    {
+      "@id": "_:N2d7c75abbda744929a92887cd5bf6ae2",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0957"
+      },
+      "sc:name": "Database metadata"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,25 +36,21 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1371/journal.pcbi.1005480",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/mageri",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Dmitriy M. Chudakov",
       "bsc:input": [
         {
-          "@id": "_:Na17327d700ed4f6595e860c30c313e9d"
+          "@id": "_:N2a87c170c74940fd9d9ffe110c5a0546"
         },
         {
-          "@id": "_:N6d997874154647988ac030b024858496"
+          "@id": "_:Nfed13e4ea5ff4f89af3caa88834fbe81"
         }
       ],
       "bsc:output": {
-        "@id": "_:N44e461da6d1846e1aed4e0112516e0bb"
+        "@id": "_:Neafc7a4423454bbc85f2368369c900da"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Script",
       "sc:applicationSubCategory": [
         {
@@ -68,19 +64,19 @@
         }
       ],
       "sc:citation": [
+        "pubmed:28475621",
+        "pmcid:PMC5419444",
         {
           "@id": "https://doi.org/10.1371/journal.pcbi.1005480"
-        },
-        "pubmed:28475621",
-        "pmcid:PMC5419444"
+        }
       ],
       "sc:description": "A software for analyzing UMI-tagged data for detecting ultra-rare variants.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0310"
+          "@id": "edam:operation_0292"
         },
         {
-          "@id": "edam:operation_0292"
+          "@id": "edam:operation_0310"
         },
         {
           "@id": "edam:operation_3227"
@@ -96,7 +92,7 @@
       "sc:url": "https://github.com/mikessh/mageri"
     },
     {
-      "@id": "_:Na17327d700ed4f6595e860c30c313e9d",
+      "@id": "_:N2a87c170c74940fd9d9ffe110c5a0546",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0848"
@@ -107,7 +103,7 @@
       "sc:name": "Raw sequence"
     },
     {
-      "@id": "_:N6d997874154647988ac030b024858496",
+      "@id": "_:Nfed13e4ea5ff4f89af3caa88834fbe81",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2337"
@@ -118,7 +114,7 @@
       "sc:name": "Resource metadata"
     },
     {
-      "@id": "_:N44e461da6d1846e1aed4e0112516e0bb",
+      "@id": "_:Neafc7a4423454bbc85f2368369c900da",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2955"
@@ -132,6 +128,10 @@
         }
       ],
       "sc:name": "Sequence report"
+    },
+    {
+      "@id": "https://doi.org/10.1371/journal.pcbi.1005480",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

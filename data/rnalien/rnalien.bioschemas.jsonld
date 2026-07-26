@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,15 +36,19 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/gkw558",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/rnalien",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "http://orcid.org/0000-0001-9564-7525"
       },
       "bsc:input": {
-        "@id": "_:Ne13d32b384794cb08400b7bfc8227199"
+        "@id": "_:N532b0e12cfb6487dbbf6df777549349d"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0099"
@@ -53,8 +57,8 @@
         "@id": "http://orcid.org/0000-0001-9564-7525"
       },
       "sc:citation": [
-        "pmcid:PMC5041467",
         "pubmed:27330139",
+        "pmcid:PMC5041467",
         {
           "@id": "https://doi.org/10.1093/nar/gkw558"
         }
@@ -62,10 +66,10 @@
       "sc:description": "RNAlien is a tool for automatic construction of RNA family models from a single sequence. Results include a covariance model, structural alignment and consensus secondary structure.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_2441"
+          "@id": "edam:operation_0504"
         },
         {
-          "@id": "edam:operation_0504"
+          "@id": "edam:operation_2441"
         },
         {
           "@id": "edam:operation_0338"
@@ -82,7 +86,7 @@
       "sc:url": "https://github.com/eggzilla/RNAlien"
     },
     {
-      "@id": "_:Ne13d32b384794cb08400b7bfc8227199",
+      "@id": "_:N532b0e12cfb6487dbbf6df777549349d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3495"
@@ -95,10 +99,6 @@
     {
       "@id": "http://orcid.org/0000-0001-9564-7525",
       "@type": "sc:Person"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gkw558",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

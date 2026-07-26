@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,62 +36,58 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btv494",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/msa",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N3ec0356404f947a3ab3ae8a5d7b48cc4"
+          "@id": "_:Nbb1f58a0a5d7418989f1ca973f2be0f5"
         },
         {
-          "@id": "_:N867472a0a5924d52af873855d7718e11"
+          "@id": "_:Ndfbdf08fb77348819d3ce6a9fe235dc3"
         },
         {
-          "@id": "_:N25ba13f098694c9c992bbd20a0c32cc4"
+          "@id": "_:N66408a2867d34370be7b2ac3cf12bf06"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Nf4691ee57d17494591d3dd74a7921106"
+          "@id": "_:N614727452b35406395c322969cc46123"
         },
         {
-          "@id": "_:Nc4f64f5f69974159933bda8b4dc89251"
+          "@id": "_:Ne3127001258c409bba50b8b4434a0d0b"
         },
         {
-          "@id": "_:Nf7334d06b2e04a8b8656f368bd9d12cf"
+          "@id": "_:N3305b77be9c74a629f99a2f33e89ca59"
         },
         {
-          "@id": "_:Na3aff368baac4db4a470d04f3cfb9857"
+          "@id": "_:N999724e515e04a94864e45567d535abd"
         },
         {
-          "@id": "_:Nff68bc10b9f74978a39808a9d4ea382f"
+          "@id": "_:N97325dd29c4b4af7bdef16e41932bf51"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3168"
+          "@id": "edam:topic_3293"
+        },
+        {
+          "@id": "edam:topic_0080"
         },
         {
           "@id": "edam:topic_0160"
         },
         {
-          "@id": "edam:topic_3293"
-        },
-        {
-          "@id": "edam:topic_0080"
+          "@id": "edam:topic_3168"
         }
       ],
       "sc:author": [
-        "Enrico Bonatesta",
         "Christoph Kainrath",
+        "Enrico Bonatesta",
         "Ulrich Bodenhofer"
       ],
       "sc:citation": {
@@ -100,18 +96,18 @@
       "sc:description": "The 'msa' package provides a unified R/Bioconductor interface to the multiple sequence alignment algorithms ClustalW, ClustalOmega, and Muscle. All three algorithms are integrated in the package, therefore, they do not depend on any external software tools and are available for all major platforms. The multiple sequence alignment algorithms are complemented by a function for pretty-printing multiple sequence alignments using the LaTeX package TeXshade.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0492"
+          "@id": "edam:operation_0564"
         },
         {
-          "@id": "edam:operation_0564"
+          "@id": "edam:operation_0492"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "GPL-2.0-or-later",
       "sc:name": "msa",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -121,29 +117,79 @@
       "sc:url": "https://bioconductor.org/packages/msa"
     },
     {
-      "@id": "_:Nf4691ee57d17494591d3dd74a7921106",
+      "@id": "_:Nbb1f58a0a5d7418989f1ca973f2be0f5",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_0867"
+        "@id": "edam:data_0863"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_3508"
+          "@id": "edam:format_1982"
         },
         {
-          "@id": "edam:format_1982"
+          "@id": "edam:format_1984"
+        }
+      ],
+      "sc:name": "Sequence alignment"
+    },
+    {
+      "@id": "_:Ndfbdf08fb77348819d3ce6a9fe235dc3",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2977"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_1927"
+        },
+        {
+          "@id": "edam:format_1929"
+        },
+        {
+          "@id": "edam:format_1935"
+        },
+        {
+          "@id": "edam:format_1936"
         },
         {
           "@id": "edam:format_1997"
         },
         {
-          "@id": "edam:format_1929"
+          "@id": "edam:format_1948"
         }
       ],
-      "sc:name": "Sequence alignment report"
+      "sc:name": "Nucleic acid sequence"
     },
     {
-      "@id": "_:Nc4f64f5f69974159933bda8b4dc89251",
+      "@id": "_:N66408a2867d34370be7b2ac3cf12bf06",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2976"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_1927"
+        },
+        {
+          "@id": "edam:format_1929"
+        },
+        {
+          "@id": "edam:format_1935"
+        },
+        {
+          "@id": "edam:format_1936"
+        },
+        {
+          "@id": "edam:format_1997"
+        },
+        {
+          "@id": "edam:format_1948"
+        }
+      ],
+      "sc:name": "Protein sequence"
+    },
+    {
+      "@id": "_:N614727452b35406395c322969cc46123",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1270"
@@ -154,18 +200,7 @@
       "sc:name": "Feature table"
     },
     {
-      "@id": "_:Nf7334d06b2e04a8b8656f368bd9d12cf",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0850"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1929"
-      },
-      "sc:name": "Sequence set"
-    },
-    {
-      "@id": "_:Na3aff368baac4db4a470d04f3cfb9857",
+      "@id": "_:Ne3127001258c409bba50b8b4434a0d0b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0863"
@@ -176,7 +211,7 @@
       "sc:name": "Sequence alignment"
     },
     {
-      "@id": "_:Nff68bc10b9f74978a39808a9d4ea382f",
+      "@id": "_:N3305b77be9c74a629f99a2f33e89ca59",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1711"
@@ -187,76 +222,41 @@
       "sc:name": "Sequence alignment image"
     },
     {
-      "@id": "_:N3ec0356404f947a3ab3ae8a5d7b48cc4",
+      "@id": "_:N999724e515e04a94864e45567d535abd",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_0863"
+        "@id": "edam:data_0850"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "Sequence set"
+    },
+    {
+      "@id": "_:N97325dd29c4b4af7bdef16e41932bf51",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0867"
       },
       "sc:encodingFormat": [
-        {
-          "@id": "edam:format_1984"
-        },
         {
           "@id": "edam:format_1982"
-        }
-      ],
-      "sc:name": "Sequence alignment"
-    },
-    {
-      "@id": "_:N867472a0a5924d52af873855d7718e11",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2977"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_1935"
-        },
-        {
-          "@id": "edam:format_1948"
-        },
-        {
-          "@id": "edam:format_1997"
-        },
-        {
-          "@id": "edam:format_1936"
         },
         {
           "@id": "edam:format_1929"
         },
         {
-          "@id": "edam:format_1927"
-        }
-      ],
-      "sc:name": "Nucleic acid sequence"
-    },
-    {
-      "@id": "_:N25ba13f098694c9c992bbd20a0c32cc4",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2976"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_1935"
-        },
-        {
-          "@id": "edam:format_1948"
-        },
-        {
-          "@id": "edam:format_1927"
+          "@id": "edam:format_3508"
         },
         {
           "@id": "edam:format_1997"
-        },
-        {
-          "@id": "edam:format_1936"
-        },
-        {
-          "@id": "edam:format_1929"
         }
       ],
-      "sc:name": "Protein sequence"
+      "sc:name": "Sequence alignment report"
+    },
+    {
+      "@id": "https://doi.org/10.1093/bioinformatics/btv494",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

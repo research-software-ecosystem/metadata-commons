@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,33 +40,33 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Wessel N. van Wieringen",
       "bsc:input": {
-        "@id": "_:Neac97d1183ac4d2c965c147e24ddbf52"
+        "@id": "_:Nfdad317e8bd0477490062397fc600ef2"
       },
       "bsc:output": {
-        "@id": "_:Nb394bd06847342e2b30965aca545bb5b"
+        "@id": "_:N66bb47c3560d4877bc32ece489f52d79"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0203"
+          "@id": "edam:topic_0092"
         },
         {
-          "@id": "edam:topic_0092"
+          "@id": "edam:topic_0203"
         },
         {
           "@id": "edam:topic_3518"
         }
       ],
       "sc:citation": [
+        "pubmed:25633503",
         "pmcid:PMC4509590",
         {
           "@id": "https://doi.org/10.1038/nmeth.3252"
-        },
-        "pubmed:25633503"
+        }
       ],
       "sc:description": "Facilitates the joint analysis of high-throughput data from multiple molecular levels. Contains functions for manipulation of objects, various analysis types, and some visualization.",
       "sc:featureList": {
@@ -75,8 +75,8 @@
       "sc:license": "GPL-2.0",
       "sc:name": "sigaR",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -86,7 +86,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/sigaR.html"
     },
     {
-      "@id": "_:Neac97d1183ac4d2c965c147e24ddbf52",
+      "@id": "_:Nfdad317e8bd0477490062397fc600ef2",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3111"
@@ -97,7 +97,7 @@
       "sc:name": "Processed microarray data"
     },
     {
-      "@id": "_:Nb394bd06847342e2b30965aca545bb5b",
+      "@id": "_:N66bb47c3560d4877bc32ece489f52d79",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,25 +36,29 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1016/j.eswa.2020.113387",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/slides_viewer",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N88c2c0966d674015912956628d84e121"
+        "@id": "_:Nbf2eab34d9a9403b89e8a48d48489b27"
       },
       "bsc:output": {
-        "@id": "_:Nff38a9c7fc8e4cd0bd4769a685affdd0"
+        "@id": "_:N6d02a6e512d94238b5c0ac70fd010186"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3372"
+          "@id": "edam:topic_0091"
         },
         {
           "@id": "edam:topic_3474"
         },
         {
-          "@id": "edam:topic_0091"
+          "@id": "edam:topic_3372"
         }
       ],
       "sc:citation": {
@@ -78,7 +82,7 @@
       "sc:url": "http://telemed.uca.es:443/"
     },
     {
-      "@id": "_:Nff38a9c7fc8e4cd0bd4769a685affdd0",
+      "@id": "_:Nbf2eab34d9a9403b89e8a48d48489b27",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2968"
@@ -89,7 +93,7 @@
       "sc:name": "Image"
     },
     {
-      "@id": "_:N88c2c0966d674015912956628d84e121",
+      "@id": "_:N6d02a6e512d94238b5c0ac70fd010186",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2968"
@@ -98,10 +102,6 @@
         "@id": "edam:format_3547"
       },
       "sc:name": "Image"
-    },
-    {
-      "@id": "https://doi.org/10.1016/j.eswa.2020.113387",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

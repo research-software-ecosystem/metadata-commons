@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,12 +39,12 @@
       "@id": "https://bio.tools/hiv-trace",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N9d233574d9ed48509e272b1ccc8f01a3"
+        "@id": "_:Nc93e4b11021245a5b6bf5c78f600953a"
       },
       "bsc:output": {
-        "@id": "_:Nb83d7b4c9e1d4647952e3232103ee059"
+        "@id": "_:N82805f84c07147f9886278351a49a616"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:applicationSubCategory": [
         {
           "@id": "edam:topic_0194"
@@ -56,13 +56,13 @@
       "sc:description": "HIV-TRACE is an application that identifies potential transmission clusters within a supplied FASTA file.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0292"
+          "@id": "edam:operation_3432"
         },
         {
           "@id": "edam:operation_0324"
         },
         {
-          "@id": "edam:operation_3432"
+          "@id": "edam:operation_0292"
         }
       ],
       "sc:isAccessibleForFree": true,
@@ -72,7 +72,7 @@
       "sc:url": "https://github.com/veg/hivtrace"
     },
     {
-      "@id": "_:N9d233574d9ed48509e272b1ccc8f01a3",
+      "@id": "_:Nc93e4b11021245a5b6bf5c78f600953a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3495"
@@ -83,7 +83,7 @@
       "sc:name": "RNA sequence"
     },
     {
-      "@id": "_:Nb83d7b4c9e1d4647952e3232103ee059",
+      "@id": "_:N82805f84c07147f9886278351a49a616",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2042"

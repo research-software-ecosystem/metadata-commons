@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,12 +36,16 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1021/pr501246w",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/metaproteomeanalyzer",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N6adfbc5b44204f55be6e5780b4274bc7"
+        "@id": "_:N1450bab6442c48aab14c1f70662f022c"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Desktop application",
       "sc:applicationSubCategory": [
         {
@@ -72,24 +76,20 @@
       "sc:url": "https://code.google.com/p/meta-proteome-analyzer/"
     },
     {
-      "@id": "_:N6adfbc5b44204f55be6e5780b4274bc7",
+      "@id": "_:N1450bab6442c48aab14c1f70662f022c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0006"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_3651"
+          "@id": "edam:format_1929"
         },
         {
-          "@id": "edam:format_1929"
+          "@id": "edam:format_3651"
         }
       ],
       "sc:name": "Data"
-    },
-    {
-      "@id": "https://doi.org/10.1021/pr501246w",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

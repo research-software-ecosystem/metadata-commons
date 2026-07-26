@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,12 +40,12 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "David Sehnal",
       "bsc:input": {
-        "@id": "_:Ne574c840fc7d4f9ea2e38466fb79e0b5"
+        "@id": "_:N3a6a71f344d2483c963f4ae64c8fd4e6"
       },
       "bsc:output": {
-        "@id": "_:Nd9a760d05ce54625b6d4907940e58646"
+        "@id": "_:Nd7c3f8fa48b84460ad4f5df51341693f"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web service",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0092"
@@ -65,8 +65,8 @@
       "sc:license": "Freeware",
       "sc:name": "DensityServer",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -76,20 +76,20 @@
       "sc:url": "https://density.litemol.org"
     },
     {
-      "@id": "_:Nd9a760d05ce54625b6d4907940e58646",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1710"
-      },
-      "sc:name": "Structure image"
-    },
-    {
-      "@id": "_:Ne574c840fc7d4f9ea2e38466fb79e0b5",
+      "@id": "_:N3a6a71f344d2483c963f4ae64c8fd4e6",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3786"
       },
       "sc:name": "Query script"
+    },
+    {
+      "@id": "_:Nd7c3f8fa48b84460ad4f5df51341693f",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1710"
+      },
+      "sc:name": "Structure image"
     },
     {
       "@id": "https://doi.org/10.1038/nmeth.4499",

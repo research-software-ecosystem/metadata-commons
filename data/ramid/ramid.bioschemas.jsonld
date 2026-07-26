@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,31 +36,27 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1007/978-1-0716-0159-4_12",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/Ramid",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N1426d698618c4d0bbd00ba85b4ccb032"
+          "@id": "_:N2d660536fc584620a286f543fd32c940"
         },
         {
-          "@id": "_:Nc09d0662851143f4973434b73bb4da70"
+          "@id": "_:N9d4d8e882ec14c0a99453262b5d8a36f"
         }
       ],
       "bsc:output": {
-        "@id": "_:N06ddea048e9344e2a714fd6f2034d1f4"
+        "@id": "_:Ne2f01f12753b424c98c641ccd0a8039f"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3172"
+          "@id": "edam:topic_3955"
         },
         {
-          "@id": "edam:topic_3955"
+          "@id": "edam:topic_3172"
         }
       ],
       "sc:citation": [
@@ -83,18 +79,7 @@
       "sc:url": "https://github.com/seliv55/ramidcor"
     },
     {
-      "@id": "_:N1426d698618c4d0bbd00ba85b4ccb032",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0943"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3650"
-      },
-      "sc:name": "Mass spectrum"
-    },
-    {
-      "@id": "_:Nc09d0662851143f4973434b73bb4da70",
+      "@id": "_:N2d660536fc584620a286f543fd32c940",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2536"
@@ -105,7 +90,18 @@
       "sc:name": "Mass spectrometry data"
     },
     {
-      "@id": "_:N06ddea048e9344e2a714fd6f2034d1f4",
+      "@id": "_:N9d4d8e882ec14c0a99453262b5d8a36f",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0943"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3650"
+      },
+      "sc:name": "Mass spectrum"
+    },
+    {
+      "@id": "_:Ne2f01f12753b424c98c641ccd0a8039f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0943"
@@ -114,6 +110,10 @@
         "@id": "edam:format_3835"
       },
       "sc:name": "Mass spectrum"
+    },
+    {
+      "@id": "https://doi.org/10.1007/978-1-0716-0159-4_12",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

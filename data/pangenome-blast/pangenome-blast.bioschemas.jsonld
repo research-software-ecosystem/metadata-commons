@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,10 +36,6 @@
   },
   "@graph": [
     {
-      "@id": "https://orcid.org/0000-0003-0744-7078",
-      "@type": "sc:Person"
-    },
-    {
       "@id": "https://doi.org/10.1093/bioinformatics/btab077",
       "@type": "sc:CreativeWork"
     },
@@ -48,59 +44,59 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N579bab2a97f642f79855df695cc628ef"
+          "@id": "_:N1dd2e4b738f24b23bd6db19a5501bd21"
         },
         {
-          "@id": "_:N6c3e219711cc4c80b27c283417076473"
+          "@id": "_:Nbafd4647800c4cb7b2dfba797c791535"
         },
         {
-          "@id": "_:Nda26da647d954107828ec3d02280f88b"
+          "@id": "_:N9a93fbb220be42bfaea0f0fc0cc304bc"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Nc6948aa6de904797bbc16853206a6db7"
+          "@id": "_:N70901df11e8d495aa59abd55d9bd442a"
         },
         {
-          "@id": "_:N87fc73ee40a845a788cfd5971ca6daf4"
+          "@id": "_:Nb6c2c8ac6b4b46d3be97826afb14e57d"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0080"
+          "@id": "edam:topic_0797"
         },
         {
-          "@id": "edam:topic_0797"
+          "@id": "edam:topic_0080"
         }
       ],
       "sc:author": {
         "@id": "https://orcid.org/0000-0003-0744-7078"
       },
       "sc:citation": [
+        "pubmed:33532821",
+        "pmcid:PMC8388040",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btab077"
-        },
-        "pmcid:PMC8388040",
-        "pubmed:33532821"
+        }
       ],
       "sc:description": "PLAST is a heuristical method to search for highest scoring local alignments between a DNA sequence query and a graphical pangenome. It takes as input a plain DNA sequence and a pangenome which may either be a set of (multiple) FASTA or FASTQ files or a sequence graph constructed by the tool Bifrost. It then outputs statistically meaningful (gapped) alignments in the style of the NCBI BLAST standard output format. Alignments are calculated based on a \"seed-and-extend approach\" while traversing the sequence graph. Biologically meaningful alignments are filtered by using an alignment statistic explicitly developed for sequence-to-graph alignments involving graphical pangenomes.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0495"
+          "@id": "edam:operation_0227"
         },
         {
-          "@id": "edam:operation_0227"
+          "@id": "edam:operation_0495"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "GPL-3.0",
       "sc:name": "PLAST",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": [
         "Bielefeld University",
@@ -113,45 +109,7 @@
       "sc:url": "https://github.com/tischulz1/plast"
     },
     {
-      "@id": "_:Nc6948aa6de904797bbc16853206a6db7",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0850"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2333"
-        },
-        {
-          "@id": "edam:format_3975"
-        }
-      ],
-      "sc:name": "Sequence set"
-    },
-    {
-      "@id": "_:N87fc73ee40a845a788cfd5971ca6daf4",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1383"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1333"
-      },
-      "sc:name": "Nucleic acid sequence alignment"
-    },
-    {
-      "@id": "_:N579bab2a97f642f79855df695cc628ef",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3494"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1211"
-      },
-      "sc:name": "DNA sequence"
-    },
-    {
-      "@id": "_:N6c3e219711cc4c80b27c283417076473",
+      "@id": "_:N1dd2e4b738f24b23bd6db19a5501bd21",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0850"
@@ -167,7 +125,18 @@
       "sc:name": "Sequence set"
     },
     {
-      "@id": "_:Nda26da647d954107828ec3d02280f88b",
+      "@id": "_:Nbafd4647800c4cb7b2dfba797c791535",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3494"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1211"
+      },
+      "sc:name": "DNA sequence"
+    },
+    {
+      "@id": "_:N9a93fbb220be42bfaea0f0fc0cc304bc",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1234"
@@ -181,6 +150,37 @@
         }
       ],
       "sc:name": "Sequence set (nucleic acid)"
+    },
+    {
+      "@id": "_:N70901df11e8d495aa59abd55d9bd442a",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0850"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2333"
+        },
+        {
+          "@id": "edam:format_3975"
+        }
+      ],
+      "sc:name": "Sequence set"
+    },
+    {
+      "@id": "_:Nb6c2c8ac6b4b46d3be97826afb14e57d",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1383"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1333"
+      },
+      "sc:name": "Nucleic acid sequence alignment"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-0744-7078",
+      "@type": "sc:Person"
     }
   ]
 }

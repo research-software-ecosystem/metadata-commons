@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,11 +36,11 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/nar/gks494",
+      "@id": "https://doi.org/10.1093/nar/gkv403",
       "@type": "sc:CreativeWork"
     },
     {
-      "@id": "https://doi.org/10.1093/nar/gkv403",
+      "@id": "https://doi.org/10.1093/nar/gks494",
       "@type": "sc:CreativeWork"
     },
     {
@@ -48,28 +48,28 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Ioannis S Vlachos",
       "bsc:input": {
-        "@id": "_:N412ce9483b8a4cdfa8d6ac12638a7272"
+        "@id": "_:N59f6611e32b040df9e3d9e755fceff7e"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web service",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0204"
       },
       "sc:citation": [
         "pubmed:22649059",
+        "pmcid:PMC3394305",
+        {
+          "@id": "https://doi.org/10.1093/nar/gks494"
+        },
+        "pubmed:25977294",
+        "pmcid:PMC4489228",
         {
           "@id": "https://doi.org/10.1093/nar/gkv403"
         },
         "pubmed:19435746",
         {
-          "@id": "https://doi.org/10.1093/nar/gks494"
-        },
-        "pmcid:PMC4489228",
-        "pubmed:25977294",
-        {
           "@id": "https://doi.org/10.1093/bioinformatics/btp299"
-        },
-        "pmcid:PMC3394305"
+        }
       ],
       "sc:description": "Dedicated to the assessment of miRNA regulatory roles and the identification of controlled pathways. It support all analyses for KEGG molecular pathways, as well as multiple slices of Gene Ontology (GO) in seven species. A unique feature of DIANA-miRPath v3.0 is its redesigned Reverse Search module, which enables users to identify and visualize miRNAs significantly controlling selected pathways or belonging to specific GO categories based on in silico or experimental data.",
       "sc:featureList": {
@@ -77,8 +77,8 @@
       },
       "sc:name": "DIANA-mirPath",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -87,7 +87,7 @@
       "sc:url": "http://www.microrna.gr/miRPathv3"
     },
     {
-      "@id": "_:N412ce9483b8a4cdfa8d6ac12638a7272",
+      "@id": "_:N59f6611e32b040df9e3d9e755fceff7e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0842"

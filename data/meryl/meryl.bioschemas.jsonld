@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,32 +36,28 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1186/s13059-020-02134-9",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/meryl",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Ne53f64ca68da452c9b91367a23ea8c59"
+        "@id": "_:N265e880b932e468a887ed5d23737dc38"
       },
       "bsc:output": {
-        "@id": "_:Na688b74129464a67985d208deefa99ec"
+        "@id": "_:N3990304ec1a54984b96a055a64264404"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3673"
+          "@id": "edam:topic_0622"
         },
         {
           "@id": "edam:topic_0080"
         },
         {
-          "@id": "edam:topic_0622"
+          "@id": "edam:topic_3168"
         },
         {
-          "@id": "edam:topic_3168"
+          "@id": "edam:topic_3673"
         }
       ],
       "sc:citation": [
@@ -82,7 +78,7 @@
       "sc:url": "https://github.com/marbl/meryl"
     },
     {
-      "@id": "_:Ne53f64ca68da452c9b91367a23ea8c59",
+      "@id": "_:N265e880b932e468a887ed5d23737dc38",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0924"
@@ -98,7 +94,7 @@
       "sc:name": "Sequence trace"
     },
     {
-      "@id": "_:Na688b74129464a67985d208deefa99ec",
+      "@id": "_:N3990304ec1a54984b96a055a64264404",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3917"
@@ -107,6 +103,10 @@
         "@id": "edam:format_3665"
       },
       "sc:name": "Count matrix"
+    },
+    {
+      "@id": "https://doi.org/10.1186/s13059-020-02134-9",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

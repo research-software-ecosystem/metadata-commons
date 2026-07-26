@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,22 +36,18 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1021/acs.jcim.6b00109",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/bioassayr",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nd33691639ba9492fa7350a91fe94e233"
+        "@id": "_:N6e68d53ee1fc4b1497c7100fa0f4420b"
       },
       "bsc:output": {
-        "@id": "_:N26fe81c853ef40a0b940ec5025bea0e5"
+        "@id": "_:N4af4cdce68c34b2e93a343c3cbb5baf0"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
         {
@@ -72,8 +68,8 @@
       "sc:name": "bioassayR",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://bioconductor.org/packages/bioassayR"
@@ -82,7 +78,7 @@
       "sc:url": "https://bioconductor.org/packages/bioassayR"
     },
     {
-      "@id": "_:Nd33691639ba9492fa7350a91fe94e233",
+      "@id": "_:N6e68d53ee1fc4b1497c7100fa0f4420b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1566"
@@ -93,7 +89,7 @@
       "sc:name": "Protein-ligand interaction report"
     },
     {
-      "@id": "_:N26fe81c853ef40a0b940ec5025bea0e5",
+      "@id": "_:N4af4cdce68c34b2e93a343c3cbb5baf0",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1566"
@@ -102,6 +98,10 @@
         "@id": "edam:format_2054"
       },
       "sc:name": "Protein-ligand interaction report"
+    },
+    {
+      "@id": "https://doi.org/10.1021/acs.jcim.6b00109",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

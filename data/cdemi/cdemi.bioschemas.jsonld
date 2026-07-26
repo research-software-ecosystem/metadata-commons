@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,99 +36,71 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1016/j.csbj.2023.03.044",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/cdemi",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nb192bae9e6f6458c93e76da43f81a2bb"
+        "@id": "_:N359e6a3529b248019a6054038ade44f8"
       },
       "bsc:output": [
         {
-          "@id": "_:N29335888ca8c4ebeb1c1bd890a58a89f"
+          "@id": "_:N24fede044363426ea16203d9bc10d4a6"
         },
         {
-          "@id": "_:N1d156c56525343f191e08d321712a09e"
+          "@id": "_:N8bdb85203e93480cac2f5f8ac91d692c"
         },
         {
-          "@id": "_:N6159fa61dd814e55a3e1e7b5ae06144d"
+          "@id": "_:N9d948b09912b4729afc1fafdb8955a53"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0602"
-        },
-        {
-          "@id": "edam:topic_0154"
-        },
-        {
           "@id": "edam:topic_3407"
+        },
+        {
+          "@id": "edam:topic_3172"
         },
         {
           "@id": "edam:topic_3697"
         },
         {
-          "@id": "edam:topic_3172"
+          "@id": "edam:topic_0602"
+        },
+        {
+          "@id": "edam:topic_0154"
         }
       ],
       "sc:citation": [
         "pubmed:37090432",
+        "pmcid:PMC10113763",
         {
           "@id": "https://doi.org/10.1016/j.csbj.2023.03.044"
-        },
-        "pmcid:PMC10113763"
+        }
       ],
       "sc:description": "Characterizing differences in microbial composition and function in microbiome data.",
       "sc:featureList": [
-        {
-          "@id": "edam:operation_3929"
-        },
         {
           "@id": "edam:operation_3501"
         },
         {
           "@id": "edam:operation_3660"
+        },
+        {
+          "@id": "edam:operation_3929"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:name": "CDEMI",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:url": "http://rdblab.cn/cdemi/"
     },
     {
-      "@id": "_:N29335888ca8c4ebeb1c1bd890a58a89f",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1636"
-      },
-      "sc:name": "Heat map"
-    },
-    {
-      "@id": "_:N1d156c56525343f191e08d321712a09e",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3953"
-      },
-      "sc:name": "Pathway overrepresentation data"
-    },
-    {
-      "@id": "_:N6159fa61dd814e55a3e1e7b5ae06144d",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3768"
-      },
-      "sc:name": "Clustered expression profiles"
-    },
-    {
-      "@id": "_:Nb192bae9e6f6458c93e76da43f81a2bb",
+      "@id": "_:N359e6a3529b248019a6054038ade44f8",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2603"
@@ -137,6 +109,34 @@
         "@id": "edam:format_3752"
       },
       "sc:name": "Expression data"
+    },
+    {
+      "@id": "_:N24fede044363426ea16203d9bc10d4a6",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3768"
+      },
+      "sc:name": "Clustered expression profiles"
+    },
+    {
+      "@id": "_:N8bdb85203e93480cac2f5f8ac91d692c",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1636"
+      },
+      "sc:name": "Heat map"
+    },
+    {
+      "@id": "_:N9d948b09912b4729afc1fafdb8955a53",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3953"
+      },
+      "sc:name": "Pathway overrepresentation data"
+    },
+    {
+      "@id": "https://doi.org/10.1016/j.csbj.2023.03.044",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

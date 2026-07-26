@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,21 +36,20 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1038/s41467-022-30755-0",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/liana",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nf5c249a3f14643ff8f4395238548290a"
+        "@id": "_:N13e48e1276aa491abd66d276d09f2c94"
       },
       "bsc:output": {
-        "@id": "_:N206ce85455c24265a4d03d2f6774d015"
+        "@id": "_:Ndb54a37530744ce79b7e223db5c74d7c"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Library",
       "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_2229"
+        },
         {
           "@id": "edam:topic_0203"
         },
@@ -59,22 +58,19 @@
         },
         {
           "@id": "edam:topic_4028"
-        },
-        {
-          "@id": "edam:topic_2229"
         }
       ],
       "sc:citation": [
-        {
-          "@id": "https://doi.org/10.1038/s41467-022-30755-0"
-        },
+        "pubmed:39223377",
         "pmcid:PMC11392821",
-        "pmcid:PMC9184522",
         {
           "@id": "https://doi.org/10.1038/s41556-024-01469-w"
         },
         "pubmed:35680885",
-        "pubmed:39223377"
+        "pmcid:PMC9184522",
+        {
+          "@id": "https://doi.org/10.1038/s41467-022-30755-0"
+        }
       ],
       "sc:description": "LIANA+ is a scalable framework for inference of cell‑cell communication (CCC) from single-cell and spatially resolved omics data. It integrates multiple ligand‑receptor inference methods and expert curated resources into a unified pipeline, supports consensus ranking across methods, and facilitates differential and contextual CCC analyses. LIANA+ accepts AnnData/MuData formats and interfaces with single‑cell ecosystems like scverse for flexible, interoperable workflows.",
       "sc:featureList": [
@@ -92,28 +88,20 @@
       "sc:name": "Liana+",
       "sc:softwareHelp": [
         {
-          "@id": "https://liana-py.readthedocs.io/en/latest/notebooks/index.html"
-        },
-        {
           "@id": "https://liana-py.readthedocs.io/en/latest/api.html"
         },
         {
           "@id": "https://liana-py.readthedocs.io/en/latest/installation.html"
+        },
+        {
+          "@id": "https://liana-py.readthedocs.io/en/latest/notebooks/index.html"
         }
       ],
       "sc:softwareVersion": "1.7.1",
       "sc:url": "https://liana-py.readthedocs.io/en/latest/"
     },
     {
-      "@id": "_:N206ce85455c24265a4d03d2f6774d015",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3768"
-      },
-      "sc:name": "Clustered expression profiles"
-    },
-    {
-      "@id": "_:Nf5c249a3f14643ff8f4395238548290a",
+      "@id": "_:N13e48e1276aa491abd66d276d09f2c94",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3112"
@@ -122,6 +110,18 @@
         "@id": "edam:format_3590"
       },
       "sc:name": "Gene expression matrix"
+    },
+    {
+      "@id": "_:Ndb54a37530744ce79b7e223db5c74d7c",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3768"
+      },
+      "sc:name": "Clustered expression profiles"
+    },
+    {
+      "@id": "https://doi.org/10.1038/s41467-022-30755-0",
+      "@type": "sc:CreativeWork"
     },
     {
       "@id": "https://doi.org/10.1038/s41556-024-01469-w",

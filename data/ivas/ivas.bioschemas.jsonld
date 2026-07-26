@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,35 +36,39 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1007/s13258-016-0466-7",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/ivas",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N5244672732b74905b64c5a847ab94b93"
+          "@id": "_:N350dfb1cca1c45378129f2550cbb6c1a"
         },
         {
-          "@id": "_:Ne90a1ec7c412481da3ebf3874d516011"
+          "@id": "_:N7ec12039a53b4ff9b1c0ef9d8234f515"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N2d38419e3db343e0adece0ecf73d6ac2"
+          "@id": "_:N619c31b81f3d447ea39554c8ab5aaf8d"
         },
         {
-          "@id": "_:Nb053b1299ec34b2681291a3a54fd1e77"
+          "@id": "_:N6d1a1fd43d934fd3b9dd1857ff2f6a79"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3170"
+          "@id": "edam:topic_3320"
         },
         {
-          "@id": "edam:topic_3320"
+          "@id": "edam:topic_3170"
         }
       ],
       "sc:citation": {
@@ -73,18 +77,18 @@
       "sc:description": "Identification of genetic variants affecting alternative splicing.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0337"
+          "@id": "edam:operation_2945"
         },
         {
-          "@id": "edam:operation_2945"
+          "@id": "edam:operation_0337"
         }
       ],
       "sc:license": "GPL-2.0-only",
       "sc:name": "IVAS",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://bioconductor.org/packages/IVAS"
@@ -93,40 +97,7 @@
       "sc:url": "https://bioconductor.org/packages/IVAS"
     },
     {
-      "@id": "_:N2d38419e3db343e0adece0ecf73d6ac2",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1669"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3603"
-      },
-      "sc:name": "P-value"
-    },
-    {
-      "@id": "_:Nb053b1299ec34b2681291a3a54fd1e77",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2884"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3603"
-      },
-      "sc:name": "Plot"
-    },
-    {
-      "@id": "_:N5244672732b74905b64c5a847ab94b93",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3495"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2306"
-      },
-      "sc:name": "RNA sequence"
-    },
-    {
-      "@id": "_:Ne90a1ec7c412481da3ebf3874d516011",
+      "@id": "_:N350dfb1cca1c45378129f2550cbb6c1a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1270"
@@ -137,8 +108,37 @@
       "sc:name": "Feature table"
     },
     {
-      "@id": "https://doi.org/10.1007/s13258-016-0466-7",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N7ec12039a53b4ff9b1c0ef9d8234f515",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3495"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2306"
+      },
+      "sc:name": "RNA sequence"
+    },
+    {
+      "@id": "_:N619c31b81f3d447ea39554c8ab5aaf8d",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1669"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3603"
+      },
+      "sc:name": "P-value"
+    },
+    {
+      "@id": "_:N6d1a1fd43d934fd3b9dd1857ff2f6a79",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2884"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3603"
+      },
+      "sc:name": "Plot"
     }
   ]
 }

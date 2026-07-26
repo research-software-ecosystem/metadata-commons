@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -42,17 +42,17 @@
         "@id": "http://orcid.org/0000-0002-2528-8077"
       },
       "bsc:input": {
-        "@id": "_:N7c58d1adfa404a50bd0f7a22049cdc94"
+        "@id": "_:N27b2e54eb85d4e98bf329059af94cace"
       },
       "bsc:output": [
         {
-          "@id": "_:Nc0a6faaf461e4ff4b901a089f8583cff"
+          "@id": "_:N85175d8200f345ccb033ae2b1cca9178"
         },
         {
-          "@id": "_:Nd95cf94dcfa149dc9bc94550539a2fbb"
+          "@id": "_:N853725ce25b747a084cc5ad7cbf4ead3"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
@@ -62,34 +62,34 @@
           "@id": "edam:topic_3295"
         },
         {
-          "@id": "edam:topic_0160"
+          "@id": "edam:topic_3518"
         },
         {
-          "@id": "edam:topic_3518"
+          "@id": "edam:topic_0160"
         }
       ],
       "sc:citation": [
+        "pubmed:24884391",
+        "pmcid:PMC4046028",
         {
           "@id": "https://doi.org/10.1186/1471-2105-15-141"
-        },
-        "pubmed:24884391",
-        "pmcid:PMC4046028"
+        }
       ],
       "sc:description": "This tool compares n>=2 unique samples regarding their methylation profile in either single CpG locus or region based analysis, defining regions of interest as genomic ranges with sufficient probes located in close proximity to each other. Probes in one region are optionally annotated to the same functional classes and differential methylation is evaluated by comparing the methylation values within each region between individual samples.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0256"
+          "@id": "edam:operation_3204"
         },
         {
-          "@id": "edam:operation_3204"
+          "@id": "edam:operation_0256"
         }
       ],
       "sc:license": "GPL-2.0",
       "sc:name": "DMRforPairs",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/DMRforPairs.html"
@@ -98,51 +98,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/DMRforPairs.html"
     },
     {
-      "@id": "_:Nc0a6faaf461e4ff4b901a089f8583cff",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1255"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3508"
-        },
-        {
-          "@id": "edam:format_3475"
-        },
-        {
-          "@id": "edam:format_3603"
-        },
-        {
-          "@id": "edam:format_2331"
-        }
-      ],
-      "sc:name": "Sequence features"
-    },
-    {
-      "@id": "_:Nd95cf94dcfa149dc9bc94550539a2fbb",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2884"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3508"
-        },
-        {
-          "@id": "edam:format_3475"
-        },
-        {
-          "@id": "edam:format_3603"
-        },
-        {
-          "@id": "edam:format_2331"
-        }
-      ],
-      "sc:name": "Plot"
-    },
-    {
-      "@id": "_:N7c58d1adfa404a50bd0f7a22049cdc94",
+      "@id": "_:N27b2e54eb85d4e98bf329059af94cace",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1276"
@@ -153,12 +109,56 @@
       "sc:name": "Nucleic acid features"
     },
     {
-      "@id": "https://doi.org/10.1186/1471-2105-15-141",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N85175d8200f345ccb033ae2b1cca9178",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2884"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2331"
+        },
+        {
+          "@id": "edam:format_3508"
+        },
+        {
+          "@id": "edam:format_3475"
+        },
+        {
+          "@id": "edam:format_3603"
+        }
+      ],
+      "sc:name": "Plot"
+    },
+    {
+      "@id": "_:N853725ce25b747a084cc5ad7cbf4ead3",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1255"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2331"
+        },
+        {
+          "@id": "edam:format_3508"
+        },
+        {
+          "@id": "edam:format_3475"
+        },
+        {
+          "@id": "edam:format_3603"
+        }
+      ],
+      "sc:name": "Sequence features"
     },
     {
       "@id": "http://orcid.org/0000-0002-2528-8077",
       "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.1186/1471-2105-15-141",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

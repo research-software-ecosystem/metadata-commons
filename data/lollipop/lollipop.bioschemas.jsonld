@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,19 +36,15 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1101/2022.11.02.22281825",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/lollipop",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nee587fa3315a4f01a07494f24b0d14d1"
+        "@id": "_:N83ff8890431a4c3394491297e785c78d"
       },
       "bsc:output": {
-        "@id": "_:Ncc8651840a4b42f790e1d659878d94a1"
+        "@id": "_:Nfbd3fa1a99e84f0091f0a9b40021578f"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0199"
@@ -59,18 +55,18 @@
       "sc:description": "Tool for Deconvolution for Wastewater Genomics - The LolliPop package comprises a python module and an optional set of command-line tools using it to build curves of viral variants over time  within environmental sample. It runs a  kernel-based deconvolution and leverages the time series nature of the samples.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3225"
+          "@id": "edam:operation_0554"
         },
         {
-          "@id": "edam:operation_0554"
+          "@id": "edam:operation_3225"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "GPL-3.0",
       "sc:name": "LolliPop",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "https://github.com/cbg-ethz/LolliPop#readme"
@@ -78,7 +74,15 @@
       "sc:url": "https://github.com/cbg-ethz/LolliPop"
     },
     {
-      "@id": "_:Ncc8651840a4b42f790e1d659878d94a1",
+      "@id": "_:N83ff8890431a4c3394491297e785c78d",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1383"
+      },
+      "sc:name": "Nucleic acid sequence alignment"
+    },
+    {
+      "@id": "_:Nfbd3fa1a99e84f0091f0a9b40021578f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2523"
@@ -86,12 +90,8 @@
       "sc:name": "Phylogenetic data"
     },
     {
-      "@id": "_:Nee587fa3315a4f01a07494f24b0d14d1",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1383"
-      },
-      "sc:name": "Nucleic acid sequence alignment"
+      "@id": "https://doi.org/10.1101/2022.11.02.22281825",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

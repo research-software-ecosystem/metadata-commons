@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,37 +40,37 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Ne07cd434fe5544ce8381733d7a3a646b"
+          "@id": "_:N4537062b173d4ff3897bb1fdf146886b"
         },
         {
-          "@id": "_:Nbb99767611ab4440a57c260d5cc77aa9"
+          "@id": "_:N20a47ee860154794a6b4755b18d3c031"
         },
         {
-          "@id": "_:N16b12989a79e43ce8de3f3a90d0a4177"
+          "@id": "_:N2ace9bdb0dbc47fca6ca54b7da930cd9"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Nbecdfc866f8a478abef0e66a3c308d09"
+          "@id": "_:Nfe8c40aa8ed14cc88926964a1ed5cf05"
         },
         {
-          "@id": "_:N18fd247e8f394639be9877245b0e6250"
+          "@id": "_:N1e4d793abd1244d9a9fd960ee27f1a91"
         },
         {
-          "@id": "_:N491f8c61c6524814b75b083d7edb0312"
+          "@id": "_:Ne33c87f34ec947debdb1034d0cf24949"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_3521"
+        },
         {
           "@id": "edam:topic_0121"
         },
         {
           "@id": "edam:topic_3520"
-        },
-        {
-          "@id": "edam:topic_3521"
         }
       ],
       "sc:citation": "pubmed:10861983",
@@ -82,8 +82,8 @@
       "sc:license": "GPL-3.0",
       "sc:name": "esimsa",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "http://www.ms-utils.org/esimsa.html"
@@ -91,18 +91,7 @@
       "sc:url": "http://www.ms-utils.org/esimsa.html"
     },
     {
-      "@id": "_:Nbecdfc866f8a478abef0e66a3c308d09",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0844"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Molecular mass"
-    },
-    {
-      "@id": "_:N18fd247e8f394639be9877245b0e6250",
+      "@id": "_:N4537062b173d4ff3897bb1fdf146886b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2536"
@@ -113,18 +102,7 @@
       "sc:name": "Mass spectrometry data"
     },
     {
-      "@id": "_:N491f8c61c6524814b75b083d7edb0312",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0944"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Peptide mass fingerprint"
-    },
-    {
-      "@id": "_:Ne07cd434fe5544ce8381733d7a3a646b",
+      "@id": "_:N20a47ee860154794a6b4755b18d3c031",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0943"
@@ -135,7 +113,18 @@
       "sc:name": "Mass spectrometry spectra"
     },
     {
-      "@id": "_:Nbb99767611ab4440a57c260d5cc77aa9",
+      "@id": "_:N2ace9bdb0dbc47fca6ca54b7da930cd9",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0844"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Molecular mass"
+    },
+    {
+      "@id": "_:Nfe8c40aa8ed14cc88926964a1ed5cf05",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2536"
@@ -146,7 +135,7 @@
       "sc:name": "Mass spectrometry data"
     },
     {
-      "@id": "_:N16b12989a79e43ce8de3f3a90d0a4177",
+      "@id": "_:N1e4d793abd1244d9a9fd960ee27f1a91",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0844"
@@ -155,6 +144,17 @@
         "@id": "edam:format_2330"
       },
       "sc:name": "Molecular mass"
+    },
+    {
+      "@id": "_:Ne33c87f34ec947debdb1034d0cf24949",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0944"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Peptide mass fingerprint"
     }
   ]
 }

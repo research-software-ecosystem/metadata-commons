@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,18 +36,6 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1016/j.compbiolchem.2024.108140",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://orcid.org/0000-0002-9451-7822",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://orcid.org/0000-0001-7039-7996",
-      "@type": "sc:Person"
-    },
-    {
       "@id": "https://bio.tools/etenlnc",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
@@ -55,33 +43,33 @@
       },
       "bsc:input": [
         {
-          "@id": "_:Nd238c553d47d4400aacd6ce02b01fda0"
+          "@id": "_:N8a891f7ad9fb479ea756d8a8c130399b"
         },
         {
-          "@id": "_:Nc54bfef4ac554f9a896a03d891f7a89d"
+          "@id": "_:N868db34504be4d3781160620a65e5ad8"
         },
         {
-          "@id": "_:N26580d86382349c398ebe7bd4c4b560e"
+          "@id": "_:N899c434be19a404b85f263f759dd082b"
         },
         {
-          "@id": "_:N83a046aa391c43b0aafbf7eccfdaf4e1"
+          "@id": "_:N004d59ec4e7d4eb3b777e856a683e25b"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N2c8d1bb26e48485ba6cc3d0229c3d676"
+          "@id": "_:N84c5792c436f4406a6d231b815db6129"
         },
         {
-          "@id": "_:Nd74091ec1db846e9a511b291393c346c"
+          "@id": "_:N3820bb438ac94f1d8b6b10e855571fc4"
         },
         {
-          "@id": "_:N94c53eec383b4e388b3fa35b16de37cc"
+          "@id": "_:Nb2c695ec4bc24ecdacf1a4ccd1a8d507"
         },
         {
-          "@id": "_:N8c9fc7ef12a34c57896e4030ff9c10a5"
+          "@id": "_:Nc1e5abe37fa84290bfd13ce52a580815"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0659"
@@ -90,36 +78,30 @@
         "@id": "https://orcid.org/0000-0002-9451-7822"
       },
       "sc:citation": [
+        "pubmed:38996755",
         {
           "@id": "https://doi.org/10.1016/j.compbiolchem.2024.108140"
-        },
-        "pubmed:38996755"
+        }
       ],
       "sc:description": "ETENLNC (End-To-End-Novel-NonCoding) is a lncRNA identification and analysis framework",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0415"
-        },
-        {
           "@id": "edam:operation_3223"
         },
         {
-          "@id": "edam:operation_3258"
+          "@id": "edam:operation_2437"
+        },
+        {
+          "@id": "edam:operation_0531"
+        },
+        {
+          "@id": "edam:operation_0415"
+        },
+        {
+          "@id": "edam:operation_0389"
         },
         {
           "@id": "edam:operation_0278"
-        },
-        {
-          "@id": "edam:operation_3219"
-        },
-        {
-          "@id": "edam:operation_3472"
-        },
-        {
-          "@id": "edam:operation_3218"
-        },
-        {
-          "@id": "edam:operation_2437"
         },
         {
           "@id": "edam:operation_3800"
@@ -128,18 +110,24 @@
           "@id": "edam:operation_3901"
         },
         {
-          "@id": "edam:operation_0531"
+          "@id": "edam:operation_3219"
         },
         {
-          "@id": "edam:operation_0389"
+          "@id": "edam:operation_3218"
+        },
+        {
+          "@id": "edam:operation_3258"
+        },
+        {
+          "@id": "edam:operation_3472"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "GPL-3.0",
       "sc:name": "ETENLNC",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -149,70 +137,7 @@
       "sc:url": "https://github.com/EvolOMICS-TU/ETENLNC"
     },
     {
-      "@id": "_:N2c8d1bb26e48485ba6cc3d0229c3d676",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3112"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3752"
-      },
-      "sc:name": "Gene expression matrix"
-    },
-    {
-      "@id": "_:Nd74091ec1db846e9a511b291393c346c",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0906"
-      },
-      "sc:name": "Protein interaction data"
-    },
-    {
-      "@id": "_:N94c53eec383b4e388b3fa35b16de37cc",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2887"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1929"
-      },
-      "sc:name": "Nucleic acid sequence record"
-    },
-    {
-      "@id": "_:N8c9fc7ef12a34c57896e4030ff9c10a5",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1636"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3508"
-      },
-      "sc:name": "Heat map"
-    },
-    {
-      "@id": "_:Nd238c553d47d4400aacd6ce02b01fda0",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2603"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1930"
-      },
-      "sc:name": "Expression data"
-    },
-    {
-      "@id": "_:Nc54bfef4ac554f9a896a03d891f7a89d",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2977"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1929"
-      },
-      "sc:name": "Nucleic acid sequence"
-    },
-    {
-      "@id": "_:N26580d86382349c398ebe7bd4c4b560e",
+      "@id": "_:N8a891f7ad9fb479ea756d8a8c130399b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3002"
@@ -228,7 +153,18 @@
       "sc:name": "Annotation track"
     },
     {
-      "@id": "_:N83a046aa391c43b0aafbf7eccfdaf4e1",
+      "@id": "_:N868db34504be4d3781160620a65e5ad8",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2603"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1930"
+      },
+      "sc:name": "Expression data"
+    },
+    {
+      "@id": "_:N899c434be19a404b85f263f759dd082b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1288"
@@ -237,6 +173,70 @@
         "@id": "edam:format_1929"
       },
       "sc:name": "Genome map"
+    },
+    {
+      "@id": "_:N004d59ec4e7d4eb3b777e856a683e25b",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2977"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "Nucleic acid sequence"
+    },
+    {
+      "@id": "_:N84c5792c436f4406a6d231b815db6129",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0906"
+      },
+      "sc:name": "Protein interaction data"
+    },
+    {
+      "@id": "_:N3820bb438ac94f1d8b6b10e855571fc4",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3112"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3752"
+      },
+      "sc:name": "Gene expression matrix"
+    },
+    {
+      "@id": "_:Nb2c695ec4bc24ecdacf1a4ccd1a8d507",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1636"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3508"
+      },
+      "sc:name": "Heat map"
+    },
+    {
+      "@id": "_:Nc1e5abe37fa84290bfd13ce52a580815",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2887"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "Nucleic acid sequence record"
+    },
+    {
+      "@id": "https://doi.org/10.1016/j.compbiolchem.2024.108140",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-7039-7996",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-9451-7822",
+      "@type": "sc:Person"
     }
   ]
 }

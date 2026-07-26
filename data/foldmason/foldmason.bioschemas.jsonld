@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -43,12 +43,12 @@
       "@id": "https://bio.tools/foldmason",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N8f56b155836a4135bfe43c71b3c88631"
+        "@id": "_:Naa5b2099eed84b98bbc4550eb5523272"
       },
       "bsc:output": {
-        "@id": "_:N62b4a29eae554a5c942fa20e9a9b597e"
+        "@id": "_:Nfb61e2d12588422e8d48005a9c58aa61"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Web application"
@@ -64,26 +64,26 @@
       "sc:license": "GPL-3.0",
       "sc:name": "FoldMason",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:url": "https://github.com/steineggerlab/foldmason"
     },
     {
-      "@id": "_:N62b4a29eae554a5c942fa20e9a9b597e",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1481"
-      },
-      "sc:name": "Protein structure alignment"
-    },
-    {
-      "@id": "_:N8f56b155836a4135bfe43c71b3c88631",
+      "@id": "_:Naa5b2099eed84b98bbc4550eb5523272",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1460"
       },
       "sc:name": "Protein structure"
+    },
+    {
+      "@id": "_:Nfb61e2d12588422e8d48005a9c58aa61",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1481"
+      },
+      "sc:name": "Protein structure alignment"
     }
   ]
 }

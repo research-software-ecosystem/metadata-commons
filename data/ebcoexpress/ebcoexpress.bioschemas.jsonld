@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -43,33 +43,33 @@
       "@id": "https://bio.tools/ebcoexpress",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nbed636f6e4de428790d13e5a02293726"
+        "@id": "_:Nac4a0083221d4434973cb444e8df52a0"
       },
       "bsc:output": [
         {
-          "@id": "_:Ne618b7100ff8450bb569d3ac7783d873"
+          "@id": "_:N9413ebf5e79d4636826b20247491d10f"
         },
         {
-          "@id": "_:N3b143f5a7c0c4af5aef83e243311da47"
+          "@id": "_:N44803417afd94d90ae4113a0f6200e71"
         },
         {
-          "@id": "_:N8f9ef23ab01041e5906b37b63afe741f"
+          "@id": "_:N3f88da584ff1424083b02e9927a0da04"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_2269"
+          "@id": "edam:topic_0203"
         },
         {
           "@id": "edam:topic_0602"
         },
         {
-          "@id": "edam:topic_0203"
+          "@id": "edam:topic_2269"
         }
       ],
       "sc:citation": {
@@ -82,9 +82,9 @@
       "sc:license": "GPL-2.0-or-later",
       "sc:name": "EBcoexpress",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://bioconductor.org/packages/EBcoexpress"
@@ -93,7 +93,42 @@
       "sc:url": "https://bioconductor.org/packages/EBcoexpress"
     },
     {
-      "@id": "_:Ne618b7100ff8450bb569d3ac7783d873",
+      "@id": "_:Nac4a0083221d4434973cb444e8df52a0",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0928"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2058"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Gene expression profile"
+    },
+    {
+      "@id": "_:N9413ebf5e79d4636826b20247491d10f",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2082"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_3033"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Matrix"
+    },
+    {
+      "@id": "_:N44803417afd94d90ae4113a0f6200e71",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2600"
@@ -112,58 +147,23 @@
       "sc:name": "Pathway or network"
     },
     {
-      "@id": "_:N3b143f5a7c0c4af5aef83e243311da47",
+      "@id": "_:N3f88da584ff1424083b02e9927a0da04",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_3033"
+          "@id": "edam:format_3547"
         },
         {
-          "@id": "edam:format_3547"
+          "@id": "edam:format_3033"
         },
         {
           "@id": "edam:format_2330"
         }
       ],
       "sc:name": "Plot"
-    },
-    {
-      "@id": "_:N8f9ef23ab01041e5906b37b63afe741f",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2082"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_3033"
-        },
-        {
-          "@id": "edam:format_3547"
-        }
-      ],
-      "sc:name": "Matrix"
-    },
-    {
-      "@id": "_:Nbed636f6e4de428790d13e5a02293726",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0928"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2058"
-        },
-        {
-          "@id": "edam:format_2330"
-        }
-      ],
-      "sc:name": "Gene expression profile"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -41,13 +41,13 @@
       "biotools:primaryContact": "Raphael Dumas",
       "bsc:input": [
         {
-          "@id": "_:N6741d0b94b6d419380270eb1a54bbce8"
+          "@id": "_:N16fbc22bb8d84a1fb03ec04de21dcef2"
         },
         {
-          "@id": "_:Nbb430b79991f4c678eb05ed9537cc80b"
+          "@id": "_:N0a15a68daadb4bb995e8e9bd168da377"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Library",
       "sc:description": "Computations of joint angles and displacements, moments and forces (lower / upper limb)",
       "sc:featureList": {
@@ -56,28 +56,28 @@
       "sc:isAccessibleForFree": true,
       "sc:name": "3D Kinematics and Inverse Dynamics",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareVersion": "2.2",
       "sc:url": "https://www.mathworks.com/matlabcentral/fileexchange/58021-3d-kinematics-and-inverse-dynamics"
     },
     {
-      "@id": "_:N6741d0b94b6d419380270eb1a54bbce8",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1522"
-      },
-      "sc:name": "Protein sequence hydropathy plot"
-    },
-    {
-      "@id": "_:Nbb430b79991f4c678eb05ed9537cc80b",
+      "@id": "_:N16fbc22bb8d84a1fb03ec04de21dcef2",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1520"
       },
       "sc:name": "Peptide hydrophobic moment"
+    },
+    {
+      "@id": "_:N0a15a68daadb4bb995e8e9bd168da377",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1522"
+      },
+      "sc:name": "Protein sequence hydropathy plot"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,33 +36,29 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1186/s12859-018-2336-6",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/kma",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Necd3e75d5916441aa6b6c3a2a478c0b7"
+        "@id": "_:N26983608de034136a420628a587e46c2"
       },
       "bsc:output": [
         {
-          "@id": "_:N0f5daee5c23f4279ae3e9c261ad245b9"
+          "@id": "_:N636c235df7c145f1a110eaac9f361572"
         },
         {
-          "@id": "_:Nd64e1b9f98714ab890be62ae6e3ddcb6"
+          "@id": "_:N68e52b8a4c5a45b2a40e01dd1d9a8969"
         },
         {
-          "@id": "_:Nf7b14bcbeeed4edfb442b16b3454ff5c"
+          "@id": "_:N5dfde22d35314bba967c20638d3d1099"
         },
         {
-          "@id": "_:Nd067f1e94c5646c7b21bef09f40bf9df"
+          "@id": "_:Ne90f9d084327488fbc42fc4d1c78fe53"
         },
         {
-          "@id": "_:N4d1e078718754e42a4d82ab4c1836929"
+          "@id": "_:N1895782c4d8e48db8e0513aa487422dd"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0080"
@@ -82,9 +78,9 @@
       "sc:license": "Apache-2.0",
       "sc:name": "KMA",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://bitbucket.org/genomicepidemiology/kma/src/master/README.md"
@@ -93,7 +89,7 @@
       "sc:url": "https://bitbucket.org/genomicepidemiology/kma/src/master/"
     },
     {
-      "@id": "_:Necd3e75d5916441aa6b6c3a2a478c0b7",
+      "@id": "_:N26983608de034136a420628a587e46c2",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3494"
@@ -109,18 +105,7 @@
       "sc:name": "DNA sequence"
     },
     {
-      "@id": "_:N0f5daee5c23f4279ae3e9c261ad245b9",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2019"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1915"
-      },
-      "sc:name": "Map data"
-    },
-    {
-      "@id": "_:Nd64e1b9f98714ab890be62ae6e3ddcb6",
+      "@id": "_:N636c235df7c145f1a110eaac9f361572",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3917"
@@ -131,7 +116,29 @@
       "sc:name": "Count matrix"
     },
     {
-      "@id": "_:Nf7b14bcbeeed4edfb442b16b3454ff5c",
+      "@id": "_:N68e52b8a4c5a45b2a40e01dd1d9a8969",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2019"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1915"
+      },
+      "sc:name": "Map data"
+    },
+    {
+      "@id": "_:N5dfde22d35314bba967c20638d3d1099",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1383"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1984"
+      },
+      "sc:name": "Nucleic acid sequence alignment"
+    },
+    {
+      "@id": "_:Ne90f9d084327488fbc42fc4d1c78fe53",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
@@ -142,7 +149,7 @@
       "sc:name": "Sequence"
     },
     {
-      "@id": "_:Nd067f1e94c5646c7b21bef09f40bf9df",
+      "@id": "_:N1895782c4d8e48db8e0513aa487422dd",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0858"
@@ -153,15 +160,8 @@
       "sc:name": "Sequence signature matches"
     },
     {
-      "@id": "_:N4d1e078718754e42a4d82ab4c1836929",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1383"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1984"
-      },
-      "sc:name": "Nucleic acid sequence alignment"
+      "@id": "https://doi.org/10.1186/s12859-018-2336-6",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

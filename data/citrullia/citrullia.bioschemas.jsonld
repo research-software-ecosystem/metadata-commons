@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,6 +36,10 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1074/mcp.RA119.001700",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://orcid.org/0000-0002-2450-1833",
       "@type": "sc:Person"
     },
@@ -47,44 +51,44 @@
       },
       "bsc:input": [
         {
-          "@id": "_:N2d9871a18342459998d15d48b0931cc8"
+          "@id": "_:N2871de41f00d4a33901c5be0a40f244f"
         },
         {
-          "@id": "_:N87ba361211a945e289f6eb47de977e2f"
+          "@id": "_:N63c9d447b1d64dba8ddd1a4ef0051cd7"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N164ffdf3f0904c9c9232016e9f9754d5"
+          "@id": "_:N089acac04f9c4acf8ae13e60e202229c"
         },
         {
-          "@id": "_:Nfd40d5eea8114d81b479fc54f70c1e21"
+          "@id": "_:N076fc0a8dd48478693cf838703c14905"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Desktop application",
       "sc:applicationSubCategory": [
         {
           "@id": "edam:topic_0601"
         },
         {
-          "@id": "edam:topic_0154"
+          "@id": "edam:topic_0121"
         },
         {
           "@id": "edam:topic_3520"
         },
         {
-          "@id": "edam:topic_0121"
+          "@id": "edam:topic_0154"
         }
       ],
       "sc:author": [
-        "Pernille Fjordside Iversen",
         "Mads Kierkegaard",
-        "Christian Engelbrecht Mikkelsen"
+        "Christian Engelbrecht Mikkelsen",
+        "Pernille Fjordside Iversen"
       ],
       "sc:citation": [
-        "pmcid:PMC6944236",
         "pubmed:31754044",
+        "pmcid:PMC6944236",
         {
           "@id": "https://doi.org/10.1074/mcp.RA119.001700"
         }
@@ -95,10 +99,10 @@
       "sc:description": "Citrullia is a program for fast and easy semi-automatic (manual) validation of citrullinated peptides.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0417"
+          "@id": "edam:operation_3645"
         },
         {
-          "@id": "edam:operation_3645"
+          "@id": "edam:operation_0417"
         }
       ],
       "sc:isAccessibleForFree": true,
@@ -107,16 +111,24 @@
       "sc:operatingSystem": "Windows",
       "sc:softwareHelp": [
         {
-          "@id": "https://github.com/Citrullia-SDU/Citrullia/blob/master/Documentation/Manual%20-%20Quick.pdf"
+          "@id": "https://github.com/Citrullia-SDU/Citrullia/blob/master/Documentation/Manual.pdf"
         },
         {
-          "@id": "https://github.com/Citrullia-SDU/Citrullia/blob/master/Documentation/Manual.pdf"
+          "@id": "https://github.com/Citrullia-SDU/Citrullia/blob/master/Documentation/Manual%20-%20Quick.pdf"
         }
       ],
       "sc:url": "https://github.com/Citrullia-SDU/Citrullia"
     },
     {
-      "@id": "_:N2d9871a18342459998d15d48b0931cc8",
+      "@id": "_:N2871de41f00d4a33901c5be0a40f244f",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2536"
+      },
+      "sc:name": "Mass spectrometry data"
+    },
+    {
+      "@id": "_:N63c9d447b1d64dba8ddd1a4ef0051cd7",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
@@ -127,26 +139,7 @@
       "sc:name": "Sequence"
     },
     {
-      "@id": "_:N87ba361211a945e289f6eb47de977e2f",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2536"
-      },
-      "sc:name": "Mass spectrometry data"
-    },
-    {
-      "@id": "_:N164ffdf3f0904c9c9232016e9f9754d5",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0943"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3591"
-      },
-      "sc:name": "Mass spectrum"
-    },
-    {
-      "@id": "_:Nfd40d5eea8114d81b479fc54f70c1e21",
+      "@id": "_:N089acac04f9c4acf8ae13e60e202229c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3756"
@@ -157,8 +150,15 @@
       "sc:name": "Localisation score"
     },
     {
-      "@id": "https://doi.org/10.1074/mcp.RA119.001700",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N076fc0a8dd48478693cf838703c14905",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0943"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3591"
+      },
+      "sc:name": "Mass spectrum"
     },
     {
       "@id": "https://orcid.org/0000-0002-7838-6180",

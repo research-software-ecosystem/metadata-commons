@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,40 +36,36 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btt475",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/fmcsr",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N26404932c83440c3a04a96d5b1d2e612"
+        "@id": "_:N460290becaf84adc880dc1b091e6f3d8"
       },
       "bsc:output": [
         {
-          "@id": "_:N2ebb2b40f3e944ac97de0635e65c461f"
+          "@id": "_:Ne001147638e24f0c8c4cd8f636194356"
         },
         {
-          "@id": "_:N803613f882034179aba48768dea60d8f"
+          "@id": "_:N047f8f6cdf0c474081dd5f2a78caec9b"
         },
         {
-          "@id": "_:N2e2dad6ae5ea4541857894f35ddb01bb"
+          "@id": "_:Nc286bb862a694c5b86d50723efb2fd7c"
         },
         {
-          "@id": "_:N3fb46fd263d44741ba9e5c289fba10d4"
+          "@id": "_:Nc8cbfbb5132d4585983e52e26f13340b"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0154"
+          "@id": "edam:topic_0092"
         },
         {
-          "@id": "edam:topic_0092"
+          "@id": "edam:topic_0154"
         }
       ],
       "sc:citation": {
@@ -87,8 +83,8 @@
       "sc:license": "Artistic-2.0",
       "sc:name": "fmcsR",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -98,7 +94,18 @@
       "sc:url": "https://bioconductor.org/packages/fmcsR"
     },
     {
-      "@id": "_:N2ebb2b40f3e944ac97de0635e65c461f",
+      "@id": "_:N460290becaf84adc880dc1b091e6f3d8",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1463"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2033"
+      },
+      "sc:name": "Small molecule structure"
+    },
+    {
+      "@id": "_:Ne001147638e24f0c8c4cd8f636194356",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1712"
@@ -114,63 +121,56 @@
       "sc:name": "Chemical structure image"
     },
     {
-      "@id": "_:N803613f882034179aba48768dea60d8f",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2856"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_3547"
-        }
-      ],
-      "sc:name": "Structural distance matrix"
-    },
-    {
-      "@id": "_:N2e2dad6ae5ea4541857894f35ddb01bb",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2884"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_3547"
-        }
-      ],
-      "sc:name": "Plot"
-    },
-    {
-      "@id": "_:N3fb46fd263d44741ba9e5c289fba10d4",
+      "@id": "_:N047f8f6cdf0c474081dd5f2a78caec9b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2080"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_2330"
+          "@id": "edam:format_3547"
         },
         {
-          "@id": "edam:format_3547"
+          "@id": "edam:format_2330"
         }
       ],
       "sc:name": "Database search results"
     },
     {
-      "@id": "_:N26404932c83440c3a04a96d5b1d2e612",
+      "@id": "_:Nc286bb862a694c5b86d50723efb2fd7c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_1463"
+        "@id": "edam:data_2884"
       },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2033"
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Plot"
+    },
+    {
+      "@id": "_:Nc8cbfbb5132d4585983e52e26f13340b",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2856"
       },
-      "sc:name": "Small molecule structure"
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Structural distance matrix"
+    },
+    {
+      "@id": "https://doi.org/10.1093/bioinformatics/btt475",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

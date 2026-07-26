@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,41 +36,37 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1186/1758-2946-3-33",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/openbabel",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nc95ecf8d17214e89b801f66d8a9d5c2b"
+        "@id": "_:N18116f5efc1a40d6b7b8ef92da9f7c04"
       },
       "bsc:output": [
         {
-          "@id": "_:Na00caac45f3045b5a195ee713919fc54"
+          "@id": "_:N9e780d1c998547b8b231fd154b15363f"
         },
         {
-          "@id": "_:N6f948ab1b04546bfb848733835181d1d"
+          "@id": "_:Nb98c4df24ddf4fd6979f525746cc334d"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_0081"
-        },
         {
           "@id": "edam:topic_2258"
         },
         {
           "@id": "edam:topic_3314"
+        },
+        {
+          "@id": "edam:topic_0081"
         }
       ],
       "sc:citation": [
+        "pubmed:21982300",
+        "pmcid:PMC3198950",
         {
           "@id": "https://doi.org/10.1186/1758-2946-3-33"
-        },
-        "pmcid:PMC3198950",
-        "pubmed:21982300"
+        }
       ],
       "sc:description": "Open Babel is a chemical toolbox designed to speak the many languages of chemical data.",
       "sc:featureList": {
@@ -80,17 +76,17 @@
       "sc:name": "openbabel",
       "sc:softwareHelp": [
         {
-          "@id": "https://openbabel.org/docs/index.html"
+          "@id": "https://github.com/openbabel/openbabel/wiki"
         },
         {
-          "@id": "https://github.com/openbabel/openbabel/wiki"
+          "@id": "https://openbabel.org/docs/index.html"
         }
       ],
       "sc:softwareVersion": "openbabel-3-2-0",
       "sc:url": "http://openbabel.org/"
     },
     {
-      "@id": "_:Na00caac45f3045b5a195ee713919fc54",
+      "@id": "_:N18116f5efc1a40d6b7b8ef92da9f7c04",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0883"
@@ -98,7 +94,7 @@
       "sc:name": "Structure"
     },
     {
-      "@id": "_:N6f948ab1b04546bfb848733835181d1d",
+      "@id": "_:N9e780d1c998547b8b231fd154b15363f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1463"
@@ -106,12 +102,16 @@
       "sc:name": "Small molecule structure"
     },
     {
-      "@id": "_:Nc95ecf8d17214e89b801f66d8a9d5c2b",
+      "@id": "_:Nb98c4df24ddf4fd6979f525746cc334d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0883"
       },
       "sc:name": "Structure"
+    },
+    {
+      "@id": "https://doi.org/10.1186/1758-2946-3-33",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

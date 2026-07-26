@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,41 +40,37 @@
       "@type": "sc:CreativeWork"
     },
     {
-      "@id": "http://orcid.org/0000-0001-8231-3323",
-      "@type": "sc:Person"
-    },
-    {
       "@id": "https://bio.tools/antarna",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
-        "Robert Kleinkauf",
         {
           "@id": "http://orcid.org/0000-0001-8231-3323"
-        }
+        },
+        "Robert Kleinkauf"
       ],
       "bsc:input": {
-        "@id": "_:N51e9f9b284db488098c89159d68634e1"
+        "@id": "_:N8ff36359060a4c92b98c130a82184f40"
       },
       "bsc:output": {
-        "@id": "_:N40efaf2209994a59ad8062bb01e401d8"
+        "@id": "_:Nad8c1ee3f0694da992bf7a7f238a60a6"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0080"
       },
       "sc:author": [
-        "Robert Kleinkauf",
         {
           "@id": "http://orcid.org/0000-0001-8231-3323"
-        }
+        },
+        "Robert Kleinkauf"
       ],
       "sc:citation": [
+        "pubmed:26023105",
+        "pmcid:PMC4576691",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btv319"
-        },
-        "pubmed:26023105",
-        "pmcid:PMC4576691"
+        }
       ],
       "sc:description": "Multi-objective sequence design by inverse folding.",
       "sc:featureList": {
@@ -83,8 +79,8 @@
       "sc:isAccessibleForFree": true,
       "sc:name": "AntaRNA",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:provider": [
@@ -98,7 +94,18 @@
       "sc:url": "http://rna.informatik.uni-freiburg.de/AntaRNA/"
     },
     {
-      "@id": "_:N40efaf2209994a59ad8062bb01e401d8",
+      "@id": "_:N8ff36359060a4c92b98c130a82184f40",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0880"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1457"
+      },
+      "sc:name": "RNA secondary structure"
+    },
+    {
+      "@id": "_:Nad8c1ee3f0694da992bf7a7f238a60a6",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
@@ -109,15 +116,8 @@
       "sc:name": "Sequence"
     },
     {
-      "@id": "_:N51e9f9b284db488098c89159d68634e1",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0880"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1457"
-      },
-      "sc:name": "RNA secondary structure"
+      "@id": "http://orcid.org/0000-0001-8231-3323",
+      "@type": "sc:Person"
     }
   ]
 }

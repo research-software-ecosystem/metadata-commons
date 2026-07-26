@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,33 +36,41 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1186/s40537-025-01086-w",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://orcid.org/0000-0002-9527-8093",
       "@type": "sc:Person"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-8234-010X",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-5567-4278",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.1186/s40537-025-01086-w",
+      "@type": "sc:CreativeWork"
     },
     {
       "@id": "https://bio.tools/ml_model_for_mr_series_categorisation",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nc1c24001a37b4fb9b5f6c05463d649ac"
+        "@id": "_:N350eb59c6dc7485fa52a23724b20973e"
       },
       "bsc:output": {
-        "@id": "_:N626aaeadf359458e8246265e2c69bd8d"
+        "@id": "_:N749969e5d7f34404ba2bd1379879f357"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Library",
       "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_3316"
+        },
         {
           "@id": "edam:topic_3077"
         },
         {
           "@id": "edam:topic_3071"
-        },
-        {
-          "@id": "edam:topic_3316"
         }
       ],
       "sc:author": {
@@ -73,10 +81,10 @@
       },
       "sc:contributor": [
         {
-          "@id": "https://orcid.org/0000-0002-8234-010X"
+          "@id": "https://orcid.org/0000-0002-5567-4278"
         },
         {
-          "@id": "https://orcid.org/0000-0002-5567-4278"
+          "@id": "https://orcid.org/0000-0002-8234-010X"
         }
       ],
       "sc:description": "A tool based on artificial intelligence that is able to perform a categorisation of MRI series by using standardized DICOM tags. The categorisation includes the type of sequence (e.g. spin echo, gradient echo), the weighting (e.g. T1W, T2W, DCE, ...), the presence of fat suppression and the detection of non-relevant / junk series (e.g. localizers, calibrations, screenshots...).",
@@ -87,27 +95,27 @@
       "sc:license": "CC-BY-NC-ND-4.0",
       "sc:name": "ML model for MR series categorisation (EUCAIM-SW-011_T-01-01-011)",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": "GIBI230 - HULAFE",
       "sc:softwareHelp": [
+        {
+          "@id": "https://drive.eucaim.cancerimage.eu/s/8r3CzyQXrd7ERFp"
+        },
         {
           "@id": "https://www.youtube.com/watch?v=gudDCiuJIf8&list=PL3Q1XjQpjfg_GEmwPDrQeESh6nqCMnYyR&index=11"
         },
         {
           "@id": "https://drive.eucaim.cancerimage.eu/s/rpm56rD5FfXAHyb"
-        },
-        {
-          "@id": "https://drive.eucaim.cancerimage.eu/s/8r3CzyQXrd7ERFp"
         }
       ],
       "sc:softwareVersion": "1.1.0",
       "sc:url": "https://harbor.eucaim.cancerimage.eu/harbor/projects/4/repositories/ml_model_for_mr_series_categorisation/info-tab"
     },
     {
-      "@id": "_:Nc1c24001a37b4fb9b5f6c05463d649ac",
+      "@id": "_:N350eb59c6dc7485fa52a23724b20973e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2968"
@@ -118,7 +126,7 @@
       "sc:name": "Image"
     },
     {
-      "@id": "_:N626aaeadf359458e8246265e2c69bd8d",
+      "@id": "_:N749969e5d7f34404ba2bd1379879f357",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"
@@ -127,14 +135,6 @@
         "@id": "edam:format_3464"
       },
       "sc:name": "Report"
-    },
-    {
-      "@id": "https://orcid.org/0000-0002-5567-4278",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://orcid.org/0000-0002-8234-010X",
-      "@type": "sc:Person"
     }
   ]
 }

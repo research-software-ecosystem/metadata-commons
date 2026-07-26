@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -42,36 +42,36 @@
     {
       "@id": "https://bio.tools/BiocPkgTools",
       "@type": "sc:SoftwareApplication",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Library",
       "sc:applicationSubCategory": [
         {
           "@id": "edam:topic_0091"
         },
         {
-          "@id": "edam:topic_0218"
+          "@id": "edam:topic_3473"
         },
         {
-          "@id": "edam:topic_3473"
+          "@id": "edam:topic_0218"
         }
       ],
       "sc:author": [
-        "Shian Su",
+        "Marcel Ramos",
         "Sean Davis",
-        "Marcel Ramos"
+        "Shian Su"
       ],
       "sc:citation": {
         "@id": "https://doi.org/10.18129/B9.bioc.BiocPkgTools"
       },
       "sc:contributor": [
-        "Martin Morgan",
-        "Marcel Ramos",
-        "Lori Shepherd",
-        "Shian Su",
+        "Charlotte Soneson",
         "Felix G.M. Ernst",
         "Jennifer Wokaty",
-        "Vince Carey",
-        "Charlotte Soneson"
+        "Lori Shepherd",
+        "Marcel Ramos",
+        "Martin Morgan",
+        "Shian Su",
+        "Vince Carey"
       ],
       "sc:description": "Bioconductor has a rich ecosystem of metadata around packages, usage, and build status. This package is a simple collection of functions to access that metadata from R. The goal is to expose metadata for data mining and value-added functionality such as package searching, text mining, and analytics on packages.",
       "sc:featureList": [
@@ -86,8 +86,8 @@
       "sc:license": "MIT",
       "sc:name": "BiocPkgTools",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {

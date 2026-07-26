@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,30 +40,34 @@
       "@type": "sc:CreativeWork"
     },
     {
+      "@id": "https://doi.org/%7B10.1371/journal.pone.0005337%7D",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/messina",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nfd25f2280abd42949fc152bc90c70792"
+        "@id": "_:Nf723db2685aa47268be0d6ab10302284"
       },
       "bsc:output": [
         {
-          "@id": "_:N3a68df2e70f74519bbe463dbe709607c"
+          "@id": "_:N292388fe1ddf42908c956ca90832cee3"
         },
         {
-          "@id": "_:N7390daf53b0d4b9f988144fd71f53beb"
+          "@id": "_:Ne63b365e30f44e3b81757c7136c9b950"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3344"
+          "@id": "edam:topic_3360"
         },
         {
-          "@id": "edam:topic_3360"
+          "@id": "edam:topic_3344"
         },
         {
           "@id": "edam:topic_0203"
@@ -72,10 +76,10 @@
       "sc:author": "Mark Pinese",
       "sc:citation": [
         {
-          "@id": "https://doi.org/10.1371/journal.pone.0005337%7D"
+          "@id": "https://doi.org/%7B10.1371/journal.pone.0005337%7D"
         },
         {
-          "@id": "https://doi.org/%7B10.1371/journal.pone.0005337%7D"
+          "@id": "https://doi.org/10.1371/journal.pone.0005337%7D"
         }
       ],
       "sc:description": "Messina is a collection of algorithms for constructing optimally robust single-gene classifiers, and for identifying differential expression in the presence of outliers or unknown sample subgroups.  The methods have application in identifying lead features to develop into clinical tests (both diagnostic and prognostic), and in identifying differential expression when a fraction of samples show unusual patterns of expression.",
@@ -84,18 +88,18 @@
           "@id": "edam:operation_2990"
         },
         {
-          "@id": "edam:operation_3503"
+          "@id": "edam:operation_3223"
         },
         {
-          "@id": "edam:operation_3223"
+          "@id": "edam:operation_3503"
         }
       ],
       "sc:license": "EPL-1.0",
       "sc:name": "messina",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://bioconductor.org/packages/messina"
@@ -104,7 +108,7 @@
       "sc:url": "https://bioconductor.org/packages/messina"
     },
     {
-      "@id": "_:Nfd25f2280abd42949fc152bc90c70792",
+      "@id": "_:Nf723db2685aa47268be0d6ab10302284",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0928"
@@ -115,23 +119,7 @@
       "sc:name": "Gene expression profile"
     },
     {
-      "@id": "_:N3a68df2e70f74519bbe463dbe709607c",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2048"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3547"
-        },
-        {
-          "@id": "edam:format_2330"
-        }
-      ],
-      "sc:name": "Report"
-    },
-    {
-      "@id": "_:N7390daf53b0d4b9f988144fd71f53beb",
+      "@id": "_:N292388fe1ddf42908c956ca90832cee3",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
@@ -147,8 +135,20 @@
       "sc:name": "Plot"
     },
     {
-      "@id": "https://doi.org/%7B10.1371/journal.pone.0005337%7D",
-      "@type": "sc:CreativeWork"
+      "@id": "_:Ne63b365e30f44e3b81757c7136c9b950",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2048"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Report"
     }
   ]
 }

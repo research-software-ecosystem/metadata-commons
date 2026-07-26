@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,16 +40,16 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N0516f8f140d4482bb9c19895a95f009e"
+          "@id": "_:Na760b952b2724215ba048b5edff8d863"
         },
         {
-          "@id": "_:Ncf1e7bed6bd24d4189eb83515eae10c1"
+          "@id": "_:N2a74e492cdcc4d949e5a673839f8efde"
         }
       ],
       "bsc:output": {
-        "@id": "_:Na130ad5a88b342cd8e101de8e2b97b27"
+        "@id": "_:Nea7bed71bb404080903e3422e41895c0"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3308"
@@ -69,7 +69,18 @@
       "sc:url": "https://github.com/DanFaria/GOEnrichment"
     },
     {
-      "@id": "_:N0516f8f140d4482bb9c19895a95f009e",
+      "@id": "_:Na760b952b2724215ba048b5edff8d863",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2603"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Expression data"
+    },
+    {
+      "@id": "_:N2a74e492cdcc4d949e5a673839f8efde",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0582"
@@ -85,28 +96,17 @@
       "sc:name": "Ontology"
     },
     {
-      "@id": "_:Ncf1e7bed6bd24d4189eb83515eae10c1",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2603"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Expression data"
-    },
-    {
-      "@id": "_:Na130ad5a88b342cd8e101de8e2b97b27",
+      "@id": "_:Nea7bed71bb404080903e3422e41895c0",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3754"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_3603"
+          "@id": "edam:format_2330"
         },
         {
-          "@id": "edam:format_2330"
+          "@id": "edam:format_3603"
         }
       ],
       "sc:name": "GO-term enrichment data"

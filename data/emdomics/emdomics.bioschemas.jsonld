@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -43,20 +43,20 @@
       "@id": "https://bio.tools/emdomics",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N0a765d8ba39f4df1aba9219f6f64c16f"
+        "@id": "_:N185cabd113924d179c60ad94036ab2cb"
       },
       "bsc:output": [
         {
-          "@id": "_:N2bf605a787db4be1bf73412b187639d9"
+          "@id": "_:N1e4342e4c8a34099ac26f3c7eb74033c"
         },
         {
-          "@id": "_:Nc0ea686023ac43129c72a6616077b390"
+          "@id": "_:Ne485f55b149844038e9640877bc9455d"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
         {
@@ -66,17 +66,17 @@
           "@id": "edam:topic_3518"
         },
         {
-          "@id": "edam:topic_2269"
+          "@id": "edam:topic_3168"
         },
         {
-          "@id": "edam:topic_3168"
+          "@id": "edam:topic_2269"
         }
       ],
       "sc:author": [
-        "Sadhika Malladi",
-        "Sheida Nabavi",
+        "Andrew Beck",
         "Daniel Schmolze",
-        "Andrew Beck"
+        "Sadhika Malladi",
+        "Sheida Nabavi"
       ],
       "sc:citation": {
         "@id": "https://doi.org/10.18129/B9.bioc.EMDomics"
@@ -88,8 +88,8 @@
       "sc:license": "MIT",
       "sc:name": "EMDomics",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -99,39 +99,23 @@
       "sc:url": "https://bioconductor.org/packages/EMDomics"
     },
     {
-      "@id": "_:N0a765d8ba39f4df1aba9219f6f64c16f",
+      "@id": "_:N185cabd113924d179c60ad94036ab2cb",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0928"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_2330"
+          "@id": "edam:format_2058"
         },
         {
-          "@id": "edam:format_2058"
+          "@id": "edam:format_2330"
         }
       ],
       "sc:name": "Gene expression profile"
     },
     {
-      "@id": "_:N2bf605a787db4be1bf73412b187639d9",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1772"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_3547"
-        }
-      ],
-      "sc:name": "Score"
-    },
-    {
-      "@id": "_:Nc0ea686023ac43129c72a6616077b390",
+      "@id": "_:N1e4342e4c8a34099ac26f3c7eb74033c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
@@ -145,6 +129,22 @@
         }
       ],
       "sc:name": "Plot"
+    },
+    {
+      "@id": "_:Ne485f55b149844038e9640877bc9455d",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1772"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Score"
     }
   ]
 }

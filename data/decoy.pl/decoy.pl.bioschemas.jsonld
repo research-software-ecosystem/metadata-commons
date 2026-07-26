@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,15 +36,19 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1038/nmeth785",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/decoy.pl",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N0aa1ab53330b44d4a7c96d9c36a7b315"
+        "@id": "_:Nb0bf064c4029472cb557711c87fba36e"
       },
       "bsc:output": {
-        "@id": "_:N3f7b142140a540a9a43c4b0aaf2ea1b0"
+        "@id": "_:N2b3b9079b85d4d57a16cdc46d7023bf2"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
@@ -66,8 +70,8 @@
       },
       "sc:name": "decoy.pl",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "http://www.matrixscience.com/help/decoy_help.html#MANUAL"
@@ -75,7 +79,7 @@
       "sc:url": "http://www.matrixscience.com/help/decoy_help.html"
     },
     {
-      "@id": "_:N0aa1ab53330b44d4a7c96d9c36a7b315",
+      "@id": "_:Nb0bf064c4029472cb557711c87fba36e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2976"
@@ -86,7 +90,7 @@
       "sc:name": "Protein sequence"
     },
     {
-      "@id": "_:N3f7b142140a540a9a43c4b0aaf2ea1b0",
+      "@id": "_:N2b3b9079b85d4d57a16cdc46d7023bf2",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2976"
@@ -95,10 +99,6 @@
         "@id": "edam:format_2546"
       },
       "sc:name": "Protein sequence"
-    },
-    {
-      "@id": "https://doi.org/10.1038/nmeth785",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -44,83 +44,83 @@
       ],
       "bsc:input": [
         {
-          "@id": "_:N8ef9afb8cf1243f2b798282c596fb136"
+          "@id": "_:N9ec45dcbd34c4a3d8007ec4ddcf9e753"
         },
         {
-          "@id": "_:N78b77ec2966b430f97f4987b623581c9"
+          "@id": "_:N871752d7ae404814b9b70b2074514963"
         },
         {
-          "@id": "_:Nd577d96d9f7c4052b8cfd1cc90928d3e"
+          "@id": "_:N667953ffd9df47d1bbcd096f3f0b72b5"
         },
         {
-          "@id": "_:N638dbeb2824740c9b8c1598c1837a2d3"
+          "@id": "_:N8e5d3bba5cfa4e65a14364cabe2cbfd8"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Ne9fbb568537e43049d709c3710f0da21"
+          "@id": "_:Nf2de0dbd409e4cceb553d28ef4193c0e"
         },
         {
-          "@id": "_:N272fc4f793b843a6bfdf08b9b7786c7f"
+          "@id": "_:N478b981afbcb4817a48964f9c7724570"
         },
         {
-          "@id": "_:Na4086048c69e4e248b3418be21df91a3"
+          "@id": "_:N7b00c15385b94bab9ed4a3174dffc792"
         },
         {
-          "@id": "_:N79815e176377498c8a868f7250faa36a"
+          "@id": "_:N391e085f6bcb44e98669e2555cc6be1c"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
-        "Web service",
-        "Web API"
+        "Web API",
+        "Web service"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_2275"
-        },
-        {
-          "@id": "edam:topic_0081"
-        },
-        {
-          "@id": "edam:topic_0123"
-        },
-        {
           "@id": "edam:topic_0091"
+        },
+        {
+          "@id": "edam:topic_3336"
+        },
+        {
+          "@id": "edam:topic_2275"
         },
         {
           "@id": "edam:topic_3534"
         },
         {
-          "@id": "edam:topic_3336"
+          "@id": "edam:topic_0123"
+        },
+        {
+          "@id": "edam:topic_0081"
         }
       ],
       "sc:citation": [
+        "pubmed:37130052",
         {
           "@id": "https://doi.org/10.1021/acs.jcim.3c00336"
-        },
-        "pubmed:37130052"
+        }
       ],
       "sc:description": "DoGSite3 was developed for predicting robust and reliable small molecule binding sites and computing their geometrical and chemical descriptors. It is based on the grid-based DoGSite algorithm for predicting pockets and their sub-pockets. The new tool is largely rotation- and translation-invariant due to a normalization procedure before binding site prediction. Known ligands in the structure can be used to bias the grid by sufficiently buried ligand fragments. The output encompasses novel chemical binding site descriptors considering solvent accessibility. Compared to its predecessor, it shows increased robustness through comprehensive parameter optimization. DoGSite3 runs finish within seconds.",
       "sc:featureList": [
+        {
+          "@id": "edam:operation_3897"
+        },
         {
           "@id": "edam:operation_0477"
         },
         {
           "@id": "edam:operation_2406"
-        },
-        {
-          "@id": "edam:operation_3897"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "Other",
       "sc:name": "DoGSite3",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": "University of Hamburg, ZBH - Center for Bioinformatics",
       "sc:softwareHelp": {
@@ -129,7 +129,7 @@
       "sc:url": "https://www.zbh.uni-hamburg.de/en/forschung/amd/software/dogsite3.html"
     },
     {
-      "@id": "_:N8ef9afb8cf1243f2b798282c596fb136",
+      "@id": "_:N9ec45dcbd34c4a3d8007ec4ddcf9e753",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3021"
@@ -137,23 +137,34 @@
       "sc:name": "UniProt accession"
     },
     {
-      "@id": "_:N78b77ec2966b430f97f4987b623581c9",
+      "@id": "_:N871752d7ae404814b9b70b2074514963",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1460"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1476"
+      },
+      "sc:name": "Protein structure"
+    },
+    {
+      "@id": "_:N667953ffd9df47d1bbcd096f3f0b72b5",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1461"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_3814"
+          "@id": "edam:format_1476"
         },
         {
-          "@id": "edam:format_1476"
+          "@id": "edam:format_3814"
         }
       ],
       "sc:name": "Protein-ligand complex"
     },
     {
-      "@id": "_:Nd577d96d9f7c4052b8cfd1cc90928d3e",
+      "@id": "_:N8e5d3bba5cfa4e65a14364cabe2cbfd8",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1463"
@@ -164,18 +175,7 @@
       "sc:name": "Small molecule structure"
     },
     {
-      "@id": "_:N638dbeb2824740c9b8c1598c1837a2d3",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1460"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1476"
-      },
-      "sc:name": "Protein structure"
-    },
-    {
-      "@id": "_:Ne9fbb568537e43049d709c3710f0da21",
+      "@id": "_:Nf2de0dbd409e4cceb553d28ef4193c0e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2019"
@@ -183,18 +183,7 @@
       "sc:name": "Map data"
     },
     {
-      "@id": "_:N272fc4f793b843a6bfdf08b9b7786c7f",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1460"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1476"
-      },
-      "sc:name": "Protein structure"
-    },
-    {
-      "@id": "_:Na4086048c69e4e248b3418be21df91a3",
+      "@id": "_:N478b981afbcb4817a48964f9c7724570",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1277"
@@ -205,7 +194,18 @@
       "sc:name": "Protein features"
     },
     {
-      "@id": "_:N79815e176377498c8a868f7250faa36a",
+      "@id": "_:N7b00c15385b94bab9ed4a3174dffc792",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1460"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1476"
+      },
+      "sc:name": "Protein structure"
+    },
+    {
+      "@id": "_:N391e085f6bcb44e98669e2555cc6be1c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1537"

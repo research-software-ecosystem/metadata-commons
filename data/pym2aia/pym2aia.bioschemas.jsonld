@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -44,28 +44,28 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N40676dfcca404690be174d8aaddd6956"
+          "@id": "_:N254972b0a24940ffa277b4ac60012df8"
         },
         {
-          "@id": "_:N2bedf6e6c2524331b4a2781023c0a060"
+          "@id": "_:Nc50f6a7be21244b482a83fe962ca656e"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N73db5d3192de44f2aecaf111eaebde9f"
+          "@id": "_:N469e4cc1628949cd8fdba0d78e35cba2"
         },
         {
-          "@id": "_:N37fd78c64ad8434f997c2b32b72a8904"
+          "@id": "_:N7b559995930f48b496cfeff0199301d9"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Library",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0092"
+          "@id": "edam:topic_0091"
         },
         {
-          "@id": "edam:topic_0091"
+          "@id": "edam:topic_0092"
         },
         {
           "@id": "edam:topic_3172"
@@ -86,8 +86,8 @@
       "sc:name": "pyM2aia",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://data.jtfc.de/pym2aia/sphinx-build/html/index.html"
@@ -95,7 +95,18 @@
       "sc:url": "https://m2aia.de/pym2aia.html"
     },
     {
-      "@id": "_:N73db5d3192de44f2aecaf111eaebde9f",
+      "@id": "_:N254972b0a24940ffa277b4ac60012df8",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2536"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3839"
+      },
+      "sc:name": "Mass spectrometry data"
+    },
+    {
+      "@id": "_:Nc50f6a7be21244b482a83fe962ca656e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2536"
@@ -106,7 +117,7 @@
       "sc:name": "Mass spectrometry data"
     },
     {
-      "@id": "_:N37fd78c64ad8434f997c2b32b72a8904",
+      "@id": "_:N469e4cc1628949cd8fdba0d78e35cba2",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2536"
@@ -117,18 +128,7 @@
       "sc:name": "Mass spectrometry data"
     },
     {
-      "@id": "_:N40676dfcca404690be174d8aaddd6956",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2536"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3839"
-      },
-      "sc:name": "Mass spectrometry data"
-    },
-    {
-      "@id": "_:N2bedf6e6c2524331b4a2781023c0a060",
+      "@id": "_:N7b559995930f48b496cfeff0199301d9",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2536"

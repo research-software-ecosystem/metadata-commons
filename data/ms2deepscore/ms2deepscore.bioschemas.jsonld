@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,6 +36,10 @@
   },
   "@graph": [
     {
+      "@id": "https://orcid.org/0000-0002-3535-9406",
+      "@type": "sc:Person"
+    },
+    {
       "@id": "https://doi.org/10.1101/2021.04.18.440324",
       "@type": "sc:CreativeWork"
     },
@@ -47,28 +51,25 @@
       },
       "bsc:input": [
         {
-          "@id": "_:N6d8fa31df4ff4d21a133469833fcb646"
+          "@id": "_:N8d7d3352484f46e48528b120a24dfb02"
         },
         {
-          "@id": "_:Nf18a6c3ac38e4978b675f15e63d3b63d"
+          "@id": "_:N788330018c854e3cbfdcafd7acaa89f5"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N5e12a63f1f9045968dbc783c07ac9475"
+          "@id": "_:N6c8f9201fab74f27a9fbf4f0a1a7b290"
         },
         {
-          "@id": "_:N2bd2fb18cf184594a153dbc3d8d7d32b"
+          "@id": "_:N5ad97e9ad7794aeb927a934d51ee474c"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Library",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0154"
-        },
-        {
-          "@id": "edam:topic_3520"
+          "@id": "edam:topic_3343"
         },
         {
           "@id": "edam:topic_3474"
@@ -77,7 +78,10 @@
           "@id": "edam:topic_3172"
         },
         {
-          "@id": "edam:topic_3343"
+          "@id": "edam:topic_3520"
+        },
+        {
+          "@id": "edam:topic_0154"
         }
       ],
       "sc:citation": {
@@ -86,13 +90,13 @@
       "sc:description": "MS2DeepScore is a deep learning similarity measure for mass fragmentation spectrum comparisons. MS2DeepScore provides a Siamese neural network that is trained to predict molecular structural similarities (Tanimoto scores) from pairs of mass spectrometry spectra.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3803"
+          "@id": "edam:operation_2426"
         },
         {
           "@id": "edam:operation_2424"
         },
         {
-          "@id": "edam:operation_2426"
+          "@id": "edam:operation_3803"
         },
         {
           "@id": "edam:operation_3801"
@@ -103,7 +107,45 @@
       "sc:url": "https://github.com/matchms/ms2deepscore"
     },
     {
-      "@id": "_:N5e12a63f1f9045968dbc783c07ac9475",
+      "@id": "_:N8d7d3352484f46e48528b120a24dfb02",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2536"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3651"
+        },
+        {
+          "@id": "edam:format_4039"
+        }
+      ],
+      "sc:name": "Mass spectrometry data"
+    },
+    {
+      "@id": "_:N788330018c854e3cbfdcafd7acaa89f5",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0943"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3464"
+        },
+        {
+          "@id": "edam:format_3651"
+        },
+        {
+          "@id": "edam:format_4039"
+        },
+        {
+          "@id": "edam:format_3244"
+        }
+      ],
+      "sc:name": "Mass spectrum"
+    },
+    {
+      "@id": "_:N6c8f9201fab74f27a9fbf4f0a1a7b290",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0950"
@@ -114,7 +156,7 @@
       "sc:name": "Mathematical model"
     },
     {
-      "@id": "_:N2bd2fb18cf184594a153dbc3d8d7d32b",
+      "@id": "_:N5ad97e9ad7794aeb927a934d51ee474c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1772"
@@ -128,48 +170,6 @@
         }
       ],
       "sc:name": "Score"
-    },
-    {
-      "@id": "_:N6d8fa31df4ff4d21a133469833fcb646",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2536"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_4039"
-        },
-        {
-          "@id": "edam:format_3651"
-        }
-      ],
-      "sc:name": "Mass spectrometry data"
-    },
-    {
-      "@id": "_:Nf18a6c3ac38e4978b675f15e63d3b63d",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0943"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3651"
-        },
-        {
-          "@id": "edam:format_3244"
-        },
-        {
-          "@id": "edam:format_3464"
-        },
-        {
-          "@id": "edam:format_4039"
-        }
-      ],
-      "sc:name": "Mass spectrum"
-    },
-    {
-      "@id": "https://orcid.org/0000-0002-3535-9406",
-      "@type": "sc:Person"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,12 +40,12 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Vojtech Spiwok",
       "bsc:input": {
-        "@id": "_:Nab43a66fbfbb4645817a60826428b2ae"
+        "@id": "_:N244427b9bdbf4201a14ec811e812a812"
       },
       "bsc:output": {
-        "@id": "_:Ne0556accd26b43e186092fafa4a3231a"
+        "@id": "_:N80896a1e59994797bc495e8b59e1355f"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Plug-in",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3892"
@@ -58,29 +58,29 @@
       "sc:license": "GPL-3.0",
       "sc:name": "metadynminer",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": [
         {
-          "@id": "https://cran.r-project.org/web/packages/metadynminer/metadynminer.pdf"
+          "@id": "http://www.metadynamics.cz/metadynminer/"
         },
         {
-          "@id": "http://www.metadynamics.cz/metadynminer/"
+          "@id": "https://cran.r-project.org/web/packages/metadynminer/metadynminer.pdf"
         }
       ],
       "sc:softwareVersion": [
-        "v0.1.4",
+        "v0.1.0",
+        "v0.1.1",
         "v0.1.2",
         "v0.1.3",
-        "v0.1.0",
-        "v0.1.1"
+        "v0.1.4"
       ],
       "sc:url": "http://www.metadynamics.cz/metadynminer/"
     },
     {
-      "@id": "_:Nab43a66fbfbb4645817a60826428b2ae",
+      "@id": "_:N244427b9bdbf4201a14ec811e812a812",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3870"
@@ -91,7 +91,7 @@
       "sc:name": "Trajectory data"
     },
     {
-      "@id": "_:Ne0556accd26b43e186092fafa4a3231a",
+      "@id": "_:N80896a1e59994797bc495e8b59e1355f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2968"

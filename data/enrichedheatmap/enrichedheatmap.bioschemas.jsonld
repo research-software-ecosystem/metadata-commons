@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,26 +36,30 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1186/s12864-018-4625-x",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/enrichedheatmap",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Nf0d8dc2d92d840fa86dfd51ba45e7563"
+          "@id": "_:N93c24ca46d5d4ff8bbdd257afc7ccf9e"
         },
         {
-          "@id": "_:N33d08aea34204300a8d5d9b6bfa2f254"
+          "@id": "_:N6eb8cd57c1ca48c8800436b956d0050f"
         },
         {
-          "@id": "_:Nca4d64119672427c8421e8e9efe451ed"
+          "@id": "_:Ndfba8519c75a4364bc6df63897f7d758"
         }
       ],
       "bsc:output": {
-        "@id": "_:N217491c830f5484babdb86e8149ac58b"
+        "@id": "_:N9fd8552b4006478e8d9b6b4394647341"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
         {
@@ -76,8 +80,8 @@
       "sc:license": "MIT",
       "sc:name": "EnrichedHeatmap",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -87,18 +91,7 @@
       "sc:url": "https://bioconductor.org/packages/EnrichedHeatmap"
     },
     {
-      "@id": "_:Nf0d8dc2d92d840fa86dfd51ba45e7563",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1276"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Nucleic acid features"
-    },
-    {
-      "@id": "_:N33d08aea34204300a8d5d9b6bfa2f254",
+      "@id": "_:N93c24ca46d5d4ff8bbdd257afc7ccf9e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2603"
@@ -109,7 +102,18 @@
       "sc:name": "Gene expression data"
     },
     {
-      "@id": "_:Nca4d64119672427c8421e8e9efe451ed",
+      "@id": "_:N6eb8cd57c1ca48c8800436b956d0050f",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1276"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Nucleic acid features"
+    },
+    {
+      "@id": "_:Ndfba8519c75a4364bc6df63897f7d758",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1017"
@@ -120,7 +124,7 @@
       "sc:name": "Sequence range"
     },
     {
-      "@id": "_:N217491c830f5484babdb86e8149ac58b",
+      "@id": "_:N9fd8552b4006478e8d9b6b4394647341",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1636"
@@ -129,10 +133,6 @@
         "@id": "edam:format_3547"
       },
       "sc:name": "Heat map"
-    },
-    {
-      "@id": "https://doi.org/10.1186/s12864-018-4625-x",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

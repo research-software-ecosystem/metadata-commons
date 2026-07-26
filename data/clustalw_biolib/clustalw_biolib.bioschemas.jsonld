@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,27 +36,31 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/btm404",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/clustalw_biolib",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N3c73da89839b43489ec6ca02e751c7f3"
+        "@id": "_:Nb807c88f472844818151a15827e7ef8a"
       },
       "bsc:output": {
-        "@id": "_:N21c51a0af6e94725ba252bb604628507"
+        "@id": "_:Nf7cb1b239396411aa93f639d331c2ec9"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web API",
+        "Bioinformatics portal",
         "Command-line tool",
-        "Web application",
-        "Bioinformatics portal"
+        "Web API",
+        "Web application"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0080"
+          "@id": "edam:topic_3293"
         },
         {
-          "@id": "edam:topic_3293"
+          "@id": "edam:topic_0080"
         }
       ],
       "sc:citation": [
@@ -73,9 +77,9 @@
       "sc:license": "LGPL-3.0",
       "sc:name": "ClustalW (BioLib)",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://www.clustal.org/clustal2/"
@@ -84,7 +88,7 @@
       "sc:url": "https://biolib.com/bio-utils/clustalw/"
     },
     {
-      "@id": "_:N3c73da89839b43489ec6ca02e751c7f3",
+      "@id": "_:Nb807c88f472844818151a15827e7ef8a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
@@ -95,7 +99,7 @@
       "sc:name": "Sequence"
     },
     {
-      "@id": "_:N21c51a0af6e94725ba252bb604628507",
+      "@id": "_:Nf7cb1b239396411aa93f639d331c2ec9",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0863"
@@ -105,20 +109,16 @@
           "@id": "edam:format_1982"
         },
         {
-          "@id": "edam:format_1949"
+          "@id": "edam:format_1929"
         },
         {
           "@id": "edam:format_1997"
         },
         {
-          "@id": "edam:format_1929"
+          "@id": "edam:format_1949"
         }
       ],
       "sc:name": "Sequence alignment"
-    },
-    {
-      "@id": "https://doi.org/10.1093/bioinformatics/btm404",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,34 +36,26 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1038/s41597-019-0177-4",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://orcid.org/0000-0003-0513-0288",
-      "@type": "sc:Person"
-    },
-    {
       "@id": "https://bio.tools/bioexcel_building_blocks_tutorials_structural_dna_helical_parameters_from_md_trajectory",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "https://orcid.org/0000-0002-8291-8071"
       },
       "bsc:input": {
-        "@id": "_:N25ec32e074ba4d4bbceec9987a38c751"
+        "@id": "_:N82f68311def841fabc9119fb304e3b0c"
       },
       "bsc:output": [
         {
-          "@id": "_:N03025bd426854690811d9a9431b16e3d"
+          "@id": "_:N09a9c450fb0c4146b404abf6fb29535f"
         },
         {
-          "@id": "_:N793d98f7cac44b39bb4d266e8a4ee2bf"
+          "@id": "_:Nadea39e9a7644ced8b0719cd552cfb7d"
         },
         {
-          "@id": "_:N5083fe8bc3964020aa976bde4b7e5423"
+          "@id": "_:N0435f7057e1b457bbc2e74a710f4a654"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Workflow",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0097"
@@ -82,28 +74,28 @@
         {
           "@id": "https://doi.org/10.1038/s41597-019-0177-4"
         },
+        "pubmed:38900779",
+        "pmcid:PMC11189206",
         {
           "@id": "https://doi.org/10.1371/journal.pcbi.1012173"
-        },
-        "pubmed:38900779",
-        "pmcid:PMC11189206"
+        }
       ],
       "sc:description": "This tutorial aims to illustrate the process of extracting structural and dynamical properties from a DNA MD trajectory helical parameters, step by step, using the BioExcel Building Blocks library (biobb). The particular example used is the Drew Dickerson Dodecamer sequence -CGCGAATTCGCG- (PDB code 1BNA). The trajectory used is a 500ns-long MD simulation taken from the BigNASim database (NAFlex_DDD_II entry).",
       "sc:featureList": [
         {
-          "@id": "edam:operation_2481"
+          "@id": "edam:operation_0262"
         },
         {
-          "@id": "edam:operation_0262"
+          "@id": "edam:operation_2481"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "Apache-2.0",
       "sc:name": "BioExcel Building Blocks tutorials: Structural DNA helical parameters from MD trajectory",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": "BioExcel Center of Excellence for Computational Biomolecular Research",
       "sc:softwareHelp": {
@@ -113,40 +105,7 @@
       "sc:url": "https://mmb.irbbarcelona.org/biobb/workflows/#structural-dna-helical-parameters"
     },
     {
-      "@id": "_:N03025bd426854690811d9a9431b16e3d",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0912"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1637"
-      },
-      "sc:name": "Nucleic acid property"
-    },
-    {
-      "@id": "_:N793d98f7cac44b39bb4d266e8a4ee2bf",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2968"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3603"
-      },
-      "sc:name": "Image"
-    },
-    {
-      "@id": "_:N5083fe8bc3964020aa976bde4b7e5423",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3905"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1637"
-      },
-      "sc:name": "Histogram"
-    },
-    {
-      "@id": "_:N25ec32e074ba4d4bbceec9987a38c751",
+      "@id": "_:N82f68311def841fabc9119fb304e3b0c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3870"
@@ -162,12 +121,53 @@
       "sc:name": "Trajectory data"
     },
     {
-      "@id": "https://orcid.org/0000-0002-8291-8071",
-      "@type": "sc:Person"
+      "@id": "_:N09a9c450fb0c4146b404abf6fb29535f",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3905"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1637"
+      },
+      "sc:name": "Histogram"
+    },
+    {
+      "@id": "_:Nadea39e9a7644ced8b0719cd552cfb7d",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2968"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3603"
+      },
+      "sc:name": "Image"
+    },
+    {
+      "@id": "_:N0435f7057e1b457bbc2e74a710f4a654",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0912"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1637"
+      },
+      "sc:name": "Nucleic acid property"
     },
     {
       "@id": "https://doi.org/10.1371/journal.pcbi.1012173",
       "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-0513-0288",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.1038/s41597-019-0177-4",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-8291-8071",
+      "@type": "sc:Person"
     }
   ]
 }

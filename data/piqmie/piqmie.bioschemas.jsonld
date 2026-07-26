@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,7 +36,7 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.5281/zenodo.594144",
+      "@id": "https://doi.org/10.1371/journal.pone.0170762",
       "@type": "sc:CreativeWork"
     },
     {
@@ -44,64 +44,68 @@
       "@type": "sc:CreativeWork"
     },
     {
-      "@id": "https://doi.org/10.1371/journal.pone.0170762",
+      "@id": "https://doi.org/10.5281/zenodo.594144",
       "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "http://orcid.org/0000-0003-1711-7961",
+      "@type": "sc:Person"
     },
     {
       "@id": "https://bio.tools/piqmie",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
-        "Roland Kanaar",
         {
           "@id": "http://orcid.org/0000-0003-1711-7961"
-        }
+        },
+        "Roland Kanaar"
       ],
       "bsc:input": [
         {
-          "@id": "_:Nf2c96c7f86e14e8886ad3467ce6feb16"
+          "@id": "_:Nebf8aa8b7cf3422a938be8cfe2acf8f1"
         },
         {
-          "@id": "_:N8b5e5a631e95478c9287f6f06e566fdd"
+          "@id": "_:N5b2021bbf66e4b25a99afb93e522bfe1"
         }
       ],
       "bsc:output": {
-        "@id": "_:Nad7c3ab0f6884d3ea3118ee15cfbd0b9"
+        "@id": "_:Nd6933c9f0c37459f9d794622458840d1"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_0121"
-        },
         {
           "@id": "edam:topic_0092"
         },
         {
           "@id": "edam:topic_3489"
+        },
+        {
+          "@id": "edam:topic_0121"
         }
       ],
       "sc:citation": [
         "pubmed:24861615",
-        {
-          "@id": "https://doi.org/10.5281/zenodo.594144"
-        },
+        "pmcid:PMC4086067",
         {
           "@id": "https://doi.org/10.1093/nar/gku478"
         },
-        "pmcid:PMC5325209",
         "pubmed:28234898",
+        "pmcid:PMC5325209",
         {
           "@id": "https://doi.org/10.1371/journal.pone.0170762"
         },
-        "pmcid:PMC4086067"
+        {
+          "@id": "https://doi.org/10.5281/zenodo.594144"
+        }
       ],
       "sc:description": "Proteomics Identifications & Quantitations Data Management & Integration Service (PIQMIe) is a web server for semi-quantitative proteomics data management and analysis.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3741"
+          "@id": "edam:operation_2409"
         },
         {
-          "@id": "edam:operation_2409"
+          "@id": "edam:operation_3741"
         },
         {
           "@id": "edam:operation_3630"
@@ -118,7 +122,7 @@
       "sc:url": "https://www.research-software.nl/software/piqmie"
     },
     {
-      "@id": "_:Nf2c96c7f86e14e8886ad3467ce6feb16",
+      "@id": "_:Nebf8aa8b7cf3422a938be8cfe2acf8f1",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2536"
@@ -129,7 +133,7 @@
       "sc:name": "Mass spectrometry data"
     },
     {
-      "@id": "_:N8b5e5a631e95478c9287f6f06e566fdd",
+      "@id": "_:N5b2021bbf66e4b25a99afb93e522bfe1",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2976"
@@ -140,7 +144,7 @@
       "sc:name": "Protein sequence"
     },
     {
-      "@id": "_:Nad7c3ab0f6884d3ea3118ee15cfbd0b9",
+      "@id": "_:Nd6933c9f0c37459f9d794622458840d1",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2536"
@@ -149,10 +153,6 @@
         "@id": "edam:format_3621"
       },
       "sc:name": "Mass spectrometry data"
-    },
-    {
-      "@id": "http://orcid.org/0000-0003-1711-7961",
-      "@type": "sc:Person"
     }
   ]
 }

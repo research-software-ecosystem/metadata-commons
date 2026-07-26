@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -51,31 +51,28 @@
       },
       "bsc:input": [
         {
-          "@id": "_:N4ee44147d6054aa99010a487701f6ad1"
+          "@id": "_:N73523b1fbcea49ad844d239298880e23"
         },
         {
-          "@id": "_:N6e715bf16d79444d83975872104f5d5a"
+          "@id": "_:N2dc68ed1dca04ba3bae699add878e038"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Nfd96cfb3b3894b70908d7c9254a78dc0"
+          "@id": "_:N7b2f7e488024479880b9d8b804eca8ad"
         },
         {
-          "@id": "_:N8726b41ff2934b2eac4ad353d8a4740d"
+          "@id": "_:N9bf9c101fea1415c9f1b79a439feaf8c"
         },
         {
-          "@id": "_:Nc32766e94dc340868c7b8e3c786f2153"
+          "@id": "_:N863d31de1e7b4d29a9904b916bcdf3da"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Workflow",
       "sc:applicationSubCategory": [
         {
           "@id": "edam:topic_2229"
-        },
-        {
-          "@id": "edam:topic_3308"
         },
         {
           "@id": "edam:topic_2640"
@@ -85,6 +82,9 @@
         },
         {
           "@id": "edam:topic_3170"
+        },
+        {
+          "@id": "edam:topic_3308"
         }
       ],
       "sc:citation": {
@@ -106,12 +106,12 @@
       "sc:license": "Other",
       "sc:name": "Beyondcell",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:provider": [
-        "CNIO",
-        "BU_CNIO"
+        "BU_CNIO",
+        "CNIO"
       ],
       "sc:softwareHelp": [
         {
@@ -125,42 +125,7 @@
       "sc:url": "https://github.com/cnio-bu/beyondcell"
     },
     {
-      "@id": "_:Nfd96cfb3b3894b70908d7c9254a78dc0",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1621"
-      },
-      "sc:name": "Pharmacogenomic test report"
-    },
-    {
-      "@id": "_:N8726b41ff2934b2eac4ad353d8a4740d",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0951"
-      },
-      "sc:name": "Statistical estimate score"
-    },
-    {
-      "@id": "_:Nc32766e94dc340868c7b8e3c786f2153",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3768"
-      },
-      "sc:name": "Clustered expression profiles"
-    },
-    {
-      "@id": "_:N4ee44147d6054aa99010a487701f6ad1",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0928"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1915"
-      },
-      "sc:name": "Gene expression profile"
-    },
-    {
-      "@id": "_:N6e715bf16d79444d83975872104f5d5a",
+      "@id": "_:N73523b1fbcea49ad844d239298880e23",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3112"
@@ -174,6 +139,41 @@
         }
       ],
       "sc:name": "Gene expression matrix"
+    },
+    {
+      "@id": "_:N2dc68ed1dca04ba3bae699add878e038",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0928"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1915"
+      },
+      "sc:name": "Gene expression profile"
+    },
+    {
+      "@id": "_:N7b2f7e488024479880b9d8b804eca8ad",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3768"
+      },
+      "sc:name": "Clustered expression profiles"
+    },
+    {
+      "@id": "_:N9bf9c101fea1415c9f1b79a439feaf8c",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1621"
+      },
+      "sc:name": "Pharmacogenomic test report"
+    },
+    {
+      "@id": "_:N863d31de1e7b4d29a9904b916bcdf3da",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0951"
+      },
+      "sc:name": "Statistical estimate score"
     }
   ]
 }

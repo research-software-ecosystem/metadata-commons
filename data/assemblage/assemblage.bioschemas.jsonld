@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,12 +39,12 @@
       "@id": "https://bio.tools/assemblage",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N3a730dca90f34632867dba72ec88b9da"
+        "@id": "_:Nb624fcfce2ad4e1ba029fe8fb07d7b4f"
       },
       "bsc:output": {
-        "@id": "_:N9a948c3559554e729d3409ece2a3ae60"
+        "@id": "_:N0336e3fe4af344378b5294154c0bdc2b"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0196"
@@ -65,26 +65,7 @@
       "sc:url": "https://github.com/alipirani88/assemblage"
     },
     {
-      "@id": "_:N9a948c3559554e729d3409ece2a3ae60",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3494"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2305"
-        },
-        {
-          "@id": "edam:format_1936"
-        },
-        {
-          "@id": "edam:format_1929"
-        }
-      ],
-      "sc:name": "DNA sequence"
-    },
-    {
-      "@id": "_:N3a730dca90f34632867dba72ec88b9da",
+      "@id": "_:Nb624fcfce2ad4e1ba029fe8fb07d7b4f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3494"
@@ -92,6 +73,25 @@
       "sc:encodingFormat": {
         "@id": "edam:format_1931"
       },
+      "sc:name": "DNA sequence"
+    },
+    {
+      "@id": "_:N0336e3fe4af344378b5294154c0bdc2b",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3494"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_1929"
+        },
+        {
+          "@id": "edam:format_2305"
+        },
+        {
+          "@id": "edam:format_1936"
+        }
+      ],
       "sc:name": "DNA sequence"
     }
   ]

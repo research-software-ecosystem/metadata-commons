@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,7 +36,11 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1111/tpj.70138",
+      "@id": "https://orcid.org/0000-0002-8915-8626",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.48550/arXiv.2303.02509",
       "@type": "sc:CreativeWork"
     },
     {
@@ -47,62 +51,62 @@
       },
       "bsc:input": [
         {
-          "@id": "_:Ncd39033d16864bbfbb981c028c88db03"
+          "@id": "_:N4584363649f041238f783c8006e31821"
         },
         {
-          "@id": "_:Nc2e0446c6df34c7984507e7a9ef902f1"
+          "@id": "_:N04d1f00c9b1c4ce3a61c9343df4ad129"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N69c0cc76cf3145cd907f39f166a5f67b"
+          "@id": "_:N889607c6718e4f338518c57d207c8af1"
         },
         {
-          "@id": "_:N271331e7cf0542e1ac8ad5aa3f17a2ad"
+          "@id": "_:N79228a8bf264490b81554ef82bd51d59"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Script",
         "Command-line tool",
+        "Script",
         "Web service"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0622"
+          "@id": "edam:topic_2229"
         },
         {
-          "@id": "edam:topic_0078"
+          "@id": "edam:topic_0622"
         },
         {
           "@id": "edam:topic_0780"
         },
         {
-          "@id": "edam:topic_2229"
+          "@id": "edam:topic_0078"
         }
       ],
       "sc:author": [
         {
-          "@id": "https://orcid.org/0000-0002-8915-8626"
+          "@id": "https://orcid.org/0000-0002-5876-4391"
         },
         {
-          "@id": "https://orcid.org/0000-0002-5876-4391"
+          "@id": "https://orcid.org/0000-0002-8915-8626"
         }
       ],
       "sc:citation": [
-        {
-          "@id": "https://doi.org/10.48550/arXiv.2303.02509"
-        },
+        "pubmed:25438865",
         "pmcid:PMC4329603",
+        {
+          "@id": "https://doi.org/10.1111/tpj.12734"
+        },
+        "pubmed:40464854",
+        "pmcid:PMC12136025",
         {
           "@id": "https://doi.org/10.1111/tpj.70138"
         },
         {
-          "@id": "https://doi.org/10.1111/tpj.12734"
-        },
-        "pmcid:PMC12136025",
-        "pubmed:25438865",
-        "pubmed:40464854"
+          "@id": "https://doi.org/10.48550/arXiv.2303.02509"
+        }
       ],
       "sc:contributor": {
         "@id": "https://orcid.org/0000-0002-8915-8626"
@@ -110,21 +114,21 @@
       "sc:description": "ASAFind is a software that predicts the intracellular location of proteins in cells with four membrane-bound complex plastids of red algal origin. \nThese plastids evolved via eukaryote-eukaryote endosymbiosis and for example can be found in diatoms and cryptophytes. ASAFind uses protein sequence data and external predictions of signal peptides (by the tools SignalP and TargetP), and predicts plastid proteins, and proteins that are targeted to the periplastidic compartment from these data; optionally, a graphical output can generated.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_2489"
-        },
-        {
           "@id": "edam:operation_0422"
         },
         {
           "@id": "edam:operation_0239"
+        },
+        {
+          "@id": "edam:operation_2489"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "CC-BY-SA-4.0",
       "sc:name": "ASAFind",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "https://asafind.jcu.cz/download-page/"
@@ -133,7 +137,15 @@
       "sc:url": "https://asafind.jcu.cz/"
     },
     {
-      "@id": "_:Ncd39033d16864bbfbb981c028c88db03",
+      "@id": "_:N4584363649f041238f783c8006e31821",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1270"
+      },
+      "sc:name": "Feature table"
+    },
+    {
+      "@id": "_:N04d1f00c9b1c4ce3a61c9343df4ad129",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2886"
@@ -144,23 +156,7 @@
       "sc:name": "Protein sequence record"
     },
     {
-      "@id": "_:Nc2e0446c6df34c7984507e7a9ef902f1",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1270"
-      },
-      "sc:name": "Feature table"
-    },
-    {
-      "@id": "_:N69c0cc76cf3145cd907f39f166a5f67b",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1277"
-      },
-      "sc:name": "Protein features"
-    },
-    {
-      "@id": "_:N271331e7cf0542e1ac8ad5aa3f17a2ad",
+      "@id": "_:N889607c6718e4f338518c57d207c8af1",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
@@ -168,16 +164,20 @@
       "sc:name": "Plot"
     },
     {
+      "@id": "_:N79228a8bf264490b81554ef82bd51d59",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1277"
+      },
+      "sc:name": "Protein features"
+    },
+    {
+      "@id": "https://doi.org/10.1111/tpj.70138",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://orcid.org/0000-0002-5876-4391",
       "@type": "sc:Person"
-    },
-    {
-      "@id": "https://orcid.org/0000-0002-8915-8626",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://doi.org/10.48550/arXiv.2303.02509",
-      "@type": "sc:CreativeWork"
     },
     {
       "@id": "https://doi.org/10.1111/tpj.12734",

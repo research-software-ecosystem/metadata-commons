@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -44,21 +44,21 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N6c7c861a275d45c3a733e3cf4d9ed194"
+          "@id": "_:Nbdc08d359aec43a492d6f5a285be76bf"
         },
         {
-          "@id": "_:N9e328da86b8a44ccbb9813534ed00b4a"
+          "@id": "_:Ndc266baf8a9a4375b28c79d92a153bf0"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Ne5dcf61e2f344ff68ef07efebf76e773"
+          "@id": "_:N479ea9503d594a2a868e4dcef6a28031"
         },
         {
-          "@id": "_:Nfc25f54c5e7d482f901c9604d7d57ee7"
+          "@id": "_:N5792c0288b6e4da1aadf6402fd3eb2fc"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
@@ -86,8 +86,8 @@
       "sc:license": "GPL-3.0-only",
       "sc:name": "GenomicInteractions",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -97,7 +97,7 @@
       "sc:url": "https://bioconductor.org/packages/GenomicInteractions"
     },
     {
-      "@id": "_:N6c7c861a275d45c3a733e3cf4d9ed194",
+      "@id": "_:Nbdc08d359aec43a492d6f5a285be76bf",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1270"
@@ -108,7 +108,7 @@
       "sc:name": "Feature table"
     },
     {
-      "@id": "_:N9e328da86b8a44ccbb9813534ed00b4a",
+      "@id": "_:Ndc266baf8a9a4375b28c79d92a153bf0",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1017"
@@ -119,23 +119,7 @@
       "sc:name": "Sequence range"
     },
     {
-      "@id": "_:Ne5dcf61e2f344ff68ef07efebf76e773",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2884"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3547"
-        },
-        {
-          "@id": "edam:format_2330"
-        }
-      ],
-      "sc:name": "Plot"
-    },
-    {
-      "@id": "_:Nfc25f54c5e7d482f901c9604d7d57ee7",
+      "@id": "_:N479ea9503d594a2a868e4dcef6a28031",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1276"
@@ -149,6 +133,22 @@
         }
       ],
       "sc:name": "Nucleic acid features"
+    },
+    {
+      "@id": "_:N5792c0288b6e4da1aadf6402fd3eb2fc",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2884"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Plot"
     }
   ]
 }

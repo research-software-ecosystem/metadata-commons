@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,56 +36,52 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1385/mb:22:3:301",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/lutefisk",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Nd5bea4854f6f40c5aa412012b22e78d7"
+          "@id": "_:Ne8f22b4d30a244ab941647153ce4ddb4"
         },
         {
-          "@id": "_:Nf1d4413144174c78aff37172f5ab02eb"
+          "@id": "_:N459cff155a0348359c336e2cee5d8756"
         }
       ],
       "bsc:output": {
-        "@id": "_:N417aa87755204b548542e5d886c20627"
+        "@id": "_:N2e24578fca914308b4b439b59e707ea2"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Desktop application",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3520"
+          "@id": "edam:topic_0121"
         },
         {
-          "@id": "edam:topic_0121"
+          "@id": "edam:topic_3520"
         }
       ],
       "sc:citation": [
+        "pubmed:12448884",
         {
           "@id": "https://doi.org/10.1385/mb:22:3:301"
-        },
-        "pubmed:12448884"
+        }
       ],
       "sc:description": "\"De novo\" peptide sequencing from MS/MS data.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3644"
+          "@id": "edam:operation_3631"
         },
         {
           "@id": "edam:operation_3648"
         },
         {
-          "@id": "edam:operation_3631"
+          "@id": "edam:operation_3644"
         }
       ],
       "sc:name": "lutefisk",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://www.hairyfatguy.com/lutefisk/docs/"
@@ -93,7 +89,26 @@
       "sc:url": "http://www.hairyfatguy.com/lutefisk"
     },
     {
-      "@id": "_:Nd5bea4854f6f40c5aa412012b22e78d7",
+      "@id": "_:Ne8f22b4d30a244ab941647153ce4ddb4",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0943"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3475"
+        },
+        {
+          "@id": "edam:format_2330"
+        },
+        {
+          "@id": "edam:format_3652"
+        }
+      ],
+      "sc:name": "Mass spectrometry spectra"
+    },
+    {
+      "@id": "_:N459cff155a0348359c336e2cee5d8756",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0850"
@@ -104,26 +119,7 @@
       "sc:name": "Sequence set"
     },
     {
-      "@id": "_:Nf1d4413144174c78aff37172f5ab02eb",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0943"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_3652"
-        },
-        {
-          "@id": "edam:format_3475"
-        }
-      ],
-      "sc:name": "Mass spectrometry spectra"
-    },
-    {
-      "@id": "_:N417aa87755204b548542e5d886c20627",
+      "@id": "_:N2e24578fca914308b4b439b59e707ea2",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0850"
@@ -132,6 +128,10 @@
         "@id": "edam:format_1919"
       },
       "sc:name": "Sequence set"
+    },
+    {
+      "@id": "https://doi.org/10.1385/mb:22:3:301",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

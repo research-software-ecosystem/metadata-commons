@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,31 +36,35 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1038/s41592-018-0001-7",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/ngmlr",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Philipp Rescheneder",
       "bsc:input": [
         {
-          "@id": "_:Nb31706a3f0764029978aeb8bf8571f5e"
+          "@id": "_:N99a9a9f5731a4f9cb1b8ab47bbe46dfc"
         },
         {
-          "@id": "_:N9ff9314b98ca4e6eaad1d89d72bb4aaa"
+          "@id": "_:N10c8cf6f2fdd487eb5b1fe6b1030f359"
         }
       ],
       "bsc:output": {
-        "@id": "_:N6bc9432de04440d2b94b09f719030ccd"
+        "@id": "_:Nfe646299ea514d259f1662409ceea10b"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3168"
+          "@id": "edam:topic_3175"
         },
         {
           "@id": "edam:topic_0102"
         },
         {
-          "@id": "edam:topic_3175"
+          "@id": "edam:topic_3168"
         }
       ],
       "sc:citation": [
@@ -73,21 +77,21 @@
       "sc:description": "An algorithm to map third generation long-read sequencing data (PacBio and Oxford Nanopore) to a reference genome with a focus on reads that span structural variation.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0292"
+          "@id": "edam:operation_2520"
         },
         {
           "@id": "edam:operation_3197"
         },
         {
-          "@id": "edam:operation_2520"
+          "@id": "edam:operation_0292"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "MIT",
       "sc:name": "NGMLR",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -96,18 +100,7 @@
       "sc:url": "https://github.com/philres/ngmlr"
     },
     {
-      "@id": "_:N6bc9432de04440d2b94b09f719030ccd",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1383"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2573"
-      },
-      "sc:name": "Sequence alignment (nucleic acid)"
-    },
-    {
-      "@id": "_:Nb31706a3f0764029978aeb8bf8571f5e",
+      "@id": "_:N99a9a9f5731a4f9cb1b8ab47bbe46dfc",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3497"
@@ -118,7 +111,7 @@
       "sc:name": "DNA sequence (raw)"
     },
     {
-      "@id": "_:N9ff9314b98ca4e6eaad1d89d72bb4aaa",
+      "@id": "_:N10c8cf6f2fdd487eb5b1fe6b1030f359",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2093"
@@ -129,8 +122,15 @@
       "sc:name": "Data reference"
     },
     {
-      "@id": "https://doi.org/10.1038/s41592-018-0001-7",
-      "@type": "sc:CreativeWork"
+      "@id": "_:Nfe646299ea514d259f1662409ceea10b",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1383"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2573"
+      },
+      "sc:name": "Sequence alignment (nucleic acid)"
     }
   ]
 }

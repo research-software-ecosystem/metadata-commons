@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -43,17 +43,17 @@
       "@id": "https://bio.tools/bbcanalyzer",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nd4c26233ae684c6f9af4ce7cd75d9332"
+        "@id": "_:N980d37d30c754a1e85d77557fe607363"
       },
       "bsc:output": [
         {
-          "@id": "_:N22a3d2c09b404b5aaa5ca65aac6cce0d"
+          "@id": "_:N44216b7559524cfc8e716f9cb556529e"
         },
         {
-          "@id": "_:N39ef2dd9834d4e09a8290a82ed33ca0a"
+          "@id": "_:N298b3eb6264c48aca0e276642ec91958"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
@@ -81,9 +81,9 @@
       "sc:license": "LGPL-3.0-only",
       "sc:name": "BBCAnalyzer",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://bioconductor.org/packages/BBCAnalyzer"
@@ -92,7 +92,7 @@
       "sc:url": "https://bioconductor.org/packages/BBCAnalyzer"
     },
     {
-      "@id": "_:Nd4c26233ae684c6f9af4ce7cd75d9332",
+      "@id": "_:N980d37d30c754a1e85d77557fe607363",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1383"
@@ -103,23 +103,7 @@
       "sc:name": "Sequence alignment (nucleic acid)"
     },
     {
-      "@id": "_:N22a3d2c09b404b5aaa5ca65aac6cce0d",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2166"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2921"
-        },
-        {
-          "@id": "edam:format_1921"
-        }
-      ],
-      "sc:name": "Sequence composition plot"
-    },
-    {
-      "@id": "_:N39ef2dd9834d4e09a8290a82ed33ca0a",
+      "@id": "_:N44216b7559524cfc8e716f9cb556529e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1383"
@@ -133,6 +117,22 @@
         }
       ],
       "sc:name": "Sequence alignment (nucleic acid)"
+    },
+    {
+      "@id": "_:N298b3eb6264c48aca0e276642ec91958",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2166"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_1921"
+        },
+        {
+          "@id": "edam:format_2921"
+        }
+      ],
+      "sc:name": "Sequence composition plot"
     }
   ]
 }

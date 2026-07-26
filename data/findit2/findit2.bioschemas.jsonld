@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -38,20 +38,20 @@
     {
       "@id": "https://bio.tools/findit2",
       "@type": "sc:SoftwareApplication",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Library",
       "sc:applicationSubCategory": [
         {
           "@id": "edam:topic_3169"
         },
         {
-          "@id": "edam:topic_3170"
-        },
-        {
           "@id": "edam:topic_3940"
         },
         {
           "@id": "edam:topic_0204"
+        },
+        {
+          "@id": "edam:topic_3170"
         },
         {
           "@id": "edam:topic_0749"
@@ -64,21 +64,21 @@
       "sc:description": "This package implements functions to find influential TF and target based on different input type. It have five module: Multi-peak multi-gene annotaion(mmPeakAnno module), Calculate regulation potential(calcRP module), Find influential Target based on ChIP-Seq and RNA-Seq data(Find influential Target module), Find influential TF based on different input(Find influential TF module), Calculate peak-gene or peak-peak correlation(peakGeneCor module). And there are also some other useful function like integrate different source information, calculate jaccard similarity for your TF.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3215"
+          "@id": "edam:operation_3223"
         },
         {
           "@id": "edam:operation_3222"
         },
         {
-          "@id": "edam:operation_3223"
+          "@id": "edam:operation_3215"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "Artistic-2.0",
       "sc:name": "FindIT2",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {

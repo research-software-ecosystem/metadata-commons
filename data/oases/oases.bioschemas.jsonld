@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,45 +36,49 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/bts094",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/oases",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
-        "Marcel Schulz",
-        "Daniel Zerbino"
+        "Daniel Zerbino",
+        "Marcel Schulz"
       ],
       "bsc:input": [
         {
-          "@id": "_:Ne756b8a5137c4cad939273ea89420f16"
+          "@id": "_:N7f4720e1196f45459694822087c33294"
         },
         {
-          "@id": "_:N3de6fe4f50204904ba87cb7f2f4072fc"
+          "@id": "_:Nabcc536ba13f4f97b26432c2e6a2d7fa"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Nf15a002341854d2dbc8260d7e292bc83"
+          "@id": "_:Nd93722d7326f490b8be21981d004c738"
         },
         {
-          "@id": "_:N9e9bf76766ba4b9185b00d6612df315d"
+          "@id": "_:Ncbcd4bf82cdb44619b4300047608ed1c"
         },
         {
-          "@id": "_:N9b74a658eb6749cda857016c24656c14"
+          "@id": "_:Na5b4d3476c284d758a494e33b8aef233"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Workflow",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0196"
+          "@id": "edam:topic_3170"
         },
         {
-          "@id": "edam:topic_3673"
+          "@id": "edam:topic_0196"
         },
         {
           "@id": "edam:topic_3308"
         },
         {
-          "@id": "edam:topic_3170"
+          "@id": "edam:topic_3673"
         }
       ],
       "sc:citation": [
@@ -87,18 +91,18 @@
       "sc:description": "De novo transcriptome assembler designed to produce transcripts from short read sequencing technologies. It uploads a preliminary assembly produced by Velvet, and clusters the contigs into small groups, called loci. It then exploits the paired-end read and long read information, when available, to construct transcript isoforms.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3258"
+          "@id": "edam:operation_3436"
         },
         {
-          "@id": "edam:operation_3436"
+          "@id": "edam:operation_3258"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "GPL-3.0",
       "sc:name": "Oases",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "https://github.com/dzerbino/oases/blob/master/README.md"
@@ -106,7 +110,7 @@
       "sc:url": "https://github.com/dzerbino/oases"
     },
     {
-      "@id": "_:Ne756b8a5137c4cad939273ea89420f16",
+      "@id": "_:N7f4720e1196f45459694822087c33294",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0925"
@@ -114,7 +118,7 @@
       "sc:name": "Sequence assembly"
     },
     {
-      "@id": "_:N3de6fe4f50204904ba87cb7f2f4072fc",
+      "@id": "_:Nabcc536ba13f4f97b26432c2e6a2d7fa",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0925"
@@ -122,23 +126,7 @@
       "sc:name": "Sequence assembly"
     },
     {
-      "@id": "_:Nf15a002341854d2dbc8260d7e292bc83",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0925"
-      },
-      "sc:name": "Sequence assembly"
-    },
-    {
-      "@id": "_:N9e9bf76766ba4b9185b00d6612df315d",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3181"
-      },
-      "sc:name": "Sequence assembly report"
-    },
-    {
-      "@id": "_:N9b74a658eb6749cda857016c24656c14",
+      "@id": "_:Nd93722d7326f490b8be21981d004c738",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3495"
@@ -146,8 +134,20 @@
       "sc:name": "RNA sequence"
     },
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/bts094",
-      "@type": "sc:CreativeWork"
+      "@id": "_:Ncbcd4bf82cdb44619b4300047608ed1c",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3181"
+      },
+      "sc:name": "Sequence assembly report"
+    },
+    {
+      "@id": "_:Na5b4d3476c284d758a494e33b8aef233",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0925"
+      },
+      "sc:name": "Sequence assembly"
     }
   ]
 }

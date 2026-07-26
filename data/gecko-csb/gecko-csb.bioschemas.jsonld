@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -41,19 +41,19 @@
       "biotools:primaryContact": "Esteban Pérez-Wohlfeil",
       "bsc:input": [
         {
-          "@id": "_:Ne7636a903ae74c27bd160c0989ad086b"
+          "@id": "_:N662a7c4842cf4c23bc4de83ca00b91a3"
         },
         {
-          "@id": "_:Nc27e6ac33b864120a41fb841344c26f1"
+          "@id": "_:Ne0bcf9ac9faa4cafbaa8b8447f9627d2"
         },
         {
-          "@id": "_:Nd85186343c8e4efb93a473d6ce2db4dc"
+          "@id": "_:Nb688a2a2f3364757a850d8a3ed34bf0a"
         }
       ],
       "bsc:output": {
-        "@id": "_:Ne9b986d255ed4adc8ccbc24dd54ad4db"
+        "@id": "_:Nfe6700fcdfc341cbb3d0f8520d7e8f21"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Web application"
@@ -71,8 +71,8 @@
       "sc:name": "GECKO-CSB",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:provider": "uma.es",
       "sc:softwareHelp": {
@@ -82,7 +82,29 @@
       "sc:url": "http://bitlab-es.com/gecko/template.php#GECKO-CSB"
     },
     {
-      "@id": "_:Ne9b986d255ed4adc8ccbc24dd54ad4db",
+      "@id": "_:N662a7c4842cf4c23bc4de83ca00b91a3",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3494"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "DNA sequence"
+    },
+    {
+      "@id": "_:Ne0bcf9ac9faa4cafbaa8b8447f9627d2",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3494"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "DNA sequence"
+    },
+    {
+      "@id": "_:Nb688a2a2f3364757a850d8a3ed34bf0a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1381"
@@ -93,29 +115,7 @@
       "sc:name": "Sequence alignment (pair)"
     },
     {
-      "@id": "_:Ne7636a903ae74c27bd160c0989ad086b",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3494"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1929"
-      },
-      "sc:name": "DNA sequence"
-    },
-    {
-      "@id": "_:Nc27e6ac33b864120a41fb841344c26f1",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3494"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1929"
-      },
-      "sc:name": "DNA sequence"
-    },
-    {
-      "@id": "_:Nd85186343c8e4efb93a473d6ce2db4dc",
+      "@id": "_:Nfe6700fcdfc341cbb3d0f8520d7e8f21",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1381"

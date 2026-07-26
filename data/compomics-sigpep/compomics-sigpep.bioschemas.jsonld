@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,21 +39,21 @@
       "@id": "https://bio.tools/compomics-sigpep",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N28b8558a17714195a35785c1b21b0dbc"
+        "@id": "_:Nf2275e39510d4dfd9dfbe030df865367"
       },
       "bsc:output": {
-        "@id": "_:Na77445761edd4d14b8be2c12e67b41c1"
+        "@id": "_:N66984c096cf741e08e9ba3f6357b9ace"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Workbench",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0121"
       },
       "sc:citation": [
+        "pubmed:22577015",
         {
           "@id": "https://doi.org/10.1002/pmic.201100566"
-        },
-        "pubmed:22577015"
+        }
       ],
       "sc:description": "Predicting peptide signatures for targeted proteomics.",
       "sc:featureList": {
@@ -62,8 +62,8 @@
       "sc:license": "Apache-2.0",
       "sc:name": "Compomics-sigpep",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:provider": "ugent.be",
@@ -74,20 +74,20 @@
       "sc:url": "https://github.com/compomics/compomics-sigpep"
     },
     {
-      "@id": "_:Na77445761edd4d14b8be2c12e67b41c1",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1355"
-      },
-      "sc:name": "Protein signature"
-    },
-    {
-      "@id": "_:N28b8558a17714195a35785c1b21b0dbc",
+      "@id": "_:Nf2275e39510d4dfd9dfbe030df865367",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2536"
       },
       "sc:name": "Mass spectrometry data"
+    },
+    {
+      "@id": "_:N66984c096cf741e08e9ba3f6357b9ace",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1355"
+      },
+      "sc:name": "Protein signature"
     },
     {
       "@id": "https://doi.org/10.1002/pmic.201100566",

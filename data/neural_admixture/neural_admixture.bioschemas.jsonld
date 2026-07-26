@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,21 +36,14 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1101/2021.06.27.450081",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/neural_admixture",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N09d1c2a3e10e43548c74b23ad890241f"
+        "@id": "_:Nff13fcd2d7044b678fbe14cc5084e99c"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Library",
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_3474"
-        },
         {
           "@id": "edam:topic_3337"
         },
@@ -58,10 +51,13 @@
           "@id": "edam:topic_2885"
         },
         {
-          "@id": "edam:topic_0102"
+          "@id": "edam:topic_0625"
         },
         {
-          "@id": "edam:topic_0625"
+          "@id": "edam:topic_3474"
+        },
+        {
+          "@id": "edam:topic_0102"
         }
       ],
       "sc:citation": {
@@ -73,40 +69,44 @@
           "@id": "edam:operation_3432"
         },
         {
-          "@id": "edam:operation_0484"
+          "@id": "edam:operation_3196"
         },
         {
-          "@id": "edam:operation_3196"
+          "@id": "edam:operation_0484"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "Other",
       "sc:name": "Neural ADMIXTURE",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:url": "https://github.com/ai-sandbox/neural-admixture"
     },
     {
-      "@id": "_:N09d1c2a3e10e43548c74b23ad890241f",
+      "@id": "_:Nff13fcd2d7044b678fbe14cc5084e99c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_3016"
+          "@id": "edam:format_3003"
         },
         {
           "@id": "edam:format_3590"
         },
         {
-          "@id": "edam:format_3003"
+          "@id": "edam:format_3016"
         }
       ],
       "sc:name": "Sequence"
+    },
+    {
+      "@id": "https://doi.org/10.1101/2021.06.27.450081",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,25 +40,25 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N501d956f63bb47ad820ad2b4f09f3e6a"
+          "@id": "_:N433e81d62a504e0fbddc08c0f3aaabbf"
         },
         {
-          "@id": "_:N7fa540913fba4591983679c7fa952f4f"
+          "@id": "_:Neac1d4b3c62e4d0ebce9baf434f160b6"
         },
         {
-          "@id": "_:Nd766922508054716b37762e05baa4df2"
+          "@id": "_:N371ee07f7f9d47599c918c284e28fb5f"
         },
         {
-          "@id": "_:Ne7e89f0343bd4825bc7ce7caedf7fb55"
+          "@id": "_:N008bfd7f808a4acba69c4c861cf1106a"
         },
         {
-          "@id": "_:Ne7c7cd228160421cbd635b80216000ce"
+          "@id": "_:N338e2d08361c4e83ab4aca98d64c6dae"
         }
       ],
       "bsc:output": {
-        "@id": "_:Nb3060ba52d0b410e8822b57de4938f35"
+        "@id": "_:N6f74d5823551477799d5c665dee0e23e"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
@@ -90,8 +90,8 @@
       "sc:name": "customProDB",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://bioconductor.org/packages/customProDB"
@@ -100,62 +100,7 @@
       "sc:url": "https://bioconductor.org/packages/customProDB"
     },
     {
-      "@id": "_:Nb3060ba52d0b410e8822b57de4938f35",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2886"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1929"
-      },
-      "sc:name": "Protein sequence record"
-    },
-    {
-      "@id": "_:N501d956f63bb47ad820ad2b4f09f3e6a",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0863"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_1929"
-        },
-        {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_2572"
-        },
-        {
-          "@id": "edam:format_3016"
-        }
-      ],
-      "sc:name": "Sequence alignment"
-    },
-    {
-      "@id": "_:N7fa540913fba4591983679c7fa952f4f",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3498"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2572"
-        },
-        {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_1929"
-        },
-        {
-          "@id": "edam:format_3016"
-        }
-      ],
-      "sc:name": "Sequence variations"
-    },
-    {
-      "@id": "_:Nd766922508054716b37762e05baa4df2",
+      "@id": "_:N433e81d62a504e0fbddc08c0f3aaabbf",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3002"
@@ -165,10 +110,10 @@
           "@id": "edam:format_2572"
         },
         {
-          "@id": "edam:format_2330"
+          "@id": "edam:format_1929"
         },
         {
-          "@id": "edam:format_1929"
+          "@id": "edam:format_2330"
         },
         {
           "@id": "edam:format_3016"
@@ -177,29 +122,73 @@
       "sc:name": "Annotation track"
     },
     {
-      "@id": "_:Ne7e89f0343bd4825bc7ce7caedf7fb55",
+      "@id": "_:Neac1d4b3c62e4d0ebce9baf434f160b6",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3264"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_2330"
+          "@id": "edam:format_2572"
         },
         {
           "@id": "edam:format_1929"
         },
         {
-          "@id": "edam:format_3016"
+          "@id": "edam:format_2330"
         },
         {
-          "@id": "edam:format_2572"
+          "@id": "edam:format_3016"
         }
       ],
       "sc:name": "COSMIC ID"
     },
     {
-      "@id": "_:Ne7c7cd228160421cbd635b80216000ce",
+      "@id": "_:N371ee07f7f9d47599c918c284e28fb5f",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0863"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2572"
+        },
+        {
+          "@id": "edam:format_1929"
+        },
+        {
+          "@id": "edam:format_2330"
+        },
+        {
+          "@id": "edam:format_3016"
+        }
+      ],
+      "sc:name": "Sequence alignment"
+    },
+    {
+      "@id": "_:N008bfd7f808a4acba69c4c861cf1106a",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3498"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2572"
+        },
+        {
+          "@id": "edam:format_1929"
+        },
+        {
+          "@id": "edam:format_2330"
+        },
+        {
+          "@id": "edam:format_3016"
+        }
+      ],
+      "sc:name": "Sequence variations"
+    },
+    {
+      "@id": "_:N338e2d08361c4e83ab4aca98d64c6dae",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1106"
@@ -209,16 +198,27 @@
           "@id": "edam:format_2572"
         },
         {
-          "@id": "edam:format_2330"
+          "@id": "edam:format_1929"
         },
         {
-          "@id": "edam:format_1929"
+          "@id": "edam:format_2330"
         },
         {
           "@id": "edam:format_3016"
         }
       ],
       "sc:name": "dbSNP ID"
+    },
+    {
+      "@id": "_:N6f74d5823551477799d5c665dee0e23e",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2886"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "Protein sequence record"
     },
     {
       "@id": "https://doi.org/10.1093/bioinformatics/btt543",

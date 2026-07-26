@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,20 +39,20 @@
       "@id": "https://bio.tools/grenits",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Na3d64862b2424c87a33b7638f21835db"
+        "@id": "_:N3ceb1ef6a1f94100a55e62e74b8d3e87"
       },
       "bsc:output": [
         {
-          "@id": "_:N6111c323916048c0916a33072f4ca9f2"
+          "@id": "_:N9c1333869fd4488d8c0366f411d8d6ec"
         },
         {
-          "@id": "_:N5983dcd31232411294ad8b8bcc3a2222"
+          "@id": "_:N21f170f134a1420996a5c11097761c6d"
         },
         {
-          "@id": "_:N201ccc0a94f146939c64a4e5ac881163"
+          "@id": "_:N5424820eaec24bac8b55c1a9670dc625"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
@@ -80,9 +80,9 @@
       "sc:license": "GPL-2.0-or-later",
       "sc:name": "GRENITS",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://bioconductor.org/packages/GRENITS"
@@ -91,7 +91,50 @@
       "sc:url": "https://bioconductor.org/packages/GRENITS"
     },
     {
-      "@id": "_:N6111c323916048c0916a33072f4ca9f2",
+      "@id": "_:N3ceb1ef6a1f94100a55e62e74b8d3e87",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0928"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Gene expression profile"
+    },
+    {
+      "@id": "_:N9c1333869fd4488d8c0366f411d8d6ec",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2884"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3508"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Plot"
+    },
+    {
+      "@id": "_:N21f170f134a1420996a5c11097761c6d",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2048"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3508"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Report"
+    },
+    {
+      "@id": "_:N5424820eaec24bac8b55c1a9670dc625",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1772"
@@ -105,49 +148,6 @@
         }
       ],
       "sc:name": "Score"
-    },
-    {
-      "@id": "_:N5983dcd31232411294ad8b8bcc3a2222",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2884"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_3508"
-        }
-      ],
-      "sc:name": "Plot"
-    },
-    {
-      "@id": "_:N201ccc0a94f146939c64a4e5ac881163",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2048"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_3508"
-        }
-      ],
-      "sc:name": "Report"
-    },
-    {
-      "@id": "_:Na3d64862b2424c87a33b7638f21835db",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0928"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Gene expression profile"
     },
     {
       "@id": "https://doi.org/10.18129/B9.bioc.GRENITS",

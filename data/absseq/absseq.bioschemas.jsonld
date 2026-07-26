@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,37 +39,37 @@
       "@id": "https://bio.tools/absseq",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nf9c9a872d596432eb444c8ee15311958"
+        "@id": "_:N72f4dad27e774d14b92f24ccdc40d01d"
       },
       "bsc:output": [
         {
-          "@id": "_:N3c0d1ab5acd148d8b06eaaa818f664f7"
+          "@id": "_:N1b40b7a4aebf4b5eb254e755360f3864"
         },
         {
-          "@id": "_:Nbf7c6d03982944ce8ce4e7b72ab3efc2"
+          "@id": "_:Nd5048f6a48ad4eb28e9e92b83c8be2fc"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
-        "Plug-in",
-        "Library"
+        "Library",
+        "Plug-in"
       ],
       "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_0203"
+        },
         {
           "@id": "edam:topic_3170"
         },
         {
           "@id": "edam:topic_2269"
-        },
-        {
-          "@id": "edam:topic_0203"
         }
       ],
       "sc:description": "Inferring differential expression genes by absolute counts difference between two groups, utilizing Negative binomial distribution and moderating fold-change according to heterogeneity of dispersion across expression level.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_2238"
+          "@id": "edam:operation_3223"
         },
         {
           "@id": "edam:operation_2495"
@@ -78,7 +78,7 @@
           "@id": "edam:operation_2426"
         },
         {
-          "@id": "edam:operation_3223"
+          "@id": "edam:operation_2238"
         },
         {
           "@id": "edam:operation_0337"
@@ -87,9 +87,9 @@
       "sc:license": "GPL-3.0-or-later",
       "sc:name": "ABSSeq",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://bioconductor.org/packages/ABSSeq"
@@ -98,7 +98,18 @@
       "sc:url": "https://bioconductor.org/packages/ABSSeq"
     },
     {
-      "@id": "_:N3c0d1ab5acd148d8b06eaaa818f664f7",
+      "@id": "_:N72f4dad27e774d14b92f24ccdc40d01d",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2603"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2032"
+      },
+      "sc:name": "Gene expression data"
+    },
+    {
+      "@id": "_:N1b40b7a4aebf4b5eb254e755360f3864",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0950"
@@ -109,7 +120,7 @@
       "sc:name": "Mathematical model"
     },
     {
-      "@id": "_:Nbf7c6d03982944ce8ce4e7b72ab3efc2",
+      "@id": "_:Nd5048f6a48ad4eb28e9e92b83c8be2fc",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
@@ -118,17 +129,6 @@
         "@id": "edam:format_3617"
       },
       "sc:name": "Plot"
-    },
-    {
-      "@id": "_:Nf9c9a872d596432eb444c8ee15311958",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2603"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2032"
-      },
-      "sc:name": "Gene expression data"
     }
   ]
 }

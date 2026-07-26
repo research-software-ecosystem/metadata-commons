@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,9 +36,13 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1371/JOURNAL.PCBI.1007230",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/FAMoS",
       "@type": "sc:SoftwareApplication",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Library",
       "sc:applicationSubCategory": [
         {
@@ -52,8 +56,8 @@
         }
       ],
       "sc:citation": [
-        "pmcid:PMC6697322",
         "pubmed:31419221",
+        "pmcid:PMC6697322",
         {
           "@id": "https://doi.org/10.1371/JOURNAL.PCBI.1007230"
         }
@@ -61,10 +65,10 @@
       "sc:description": "A Flexible and dynamic Algorithm for Model Selection to analyse complex systems dynamics | Most biological systems are difficult to analyse due to a multitude of interacting components and the concomitant lack of information about the essential dynamics. Finding appropriate models that provide a systematic description of such biological systems and that help to identify their relevant factors and processes can be challenging given the sheer number of possibilities. Model selection algorithms that evaluate the performance of a multitude of different models against experimental data provide a useful tool to identify appropriate model structures",
       "sc:featureList": [
         {
-          "@id": "edam:operation_2426"
+          "@id": "edam:operation_3891"
         },
         {
-          "@id": "edam:operation_3891"
+          "@id": "edam:operation_2426"
         }
       ],
       "sc:license": "MIT",
@@ -73,10 +77,6 @@
         "@id": "https://cran.r-project.org/web/packages/FAMoS/FAMoS.pdf"
       },
       "sc:url": "https://cran.r-project.org/web/packages/FAMoS/index.html"
-    },
-    {
-      "@id": "https://doi.org/10.1371/JOURNAL.PCBI.1007230",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

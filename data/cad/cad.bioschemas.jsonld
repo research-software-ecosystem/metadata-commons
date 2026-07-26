@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -42,14 +42,14 @@
     {
       "@id": "https://bio.tools/cad",
       "@type": "sc:SoftwareApplication",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Database portal",
         "Web application"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0154"
+          "@id": "edam:topic_2830"
         },
         {
           "@id": "edam:topic_3474"
@@ -58,10 +58,10 @@
           "@id": "edam:topic_2640"
         },
         {
-          "@id": "edam:topic_2830"
+          "@id": "edam:topic_3379"
         },
         {
-          "@id": "edam:topic_3379"
+          "@id": "edam:topic_0154"
         }
       ],
       "sc:citation": [
@@ -74,10 +74,10 @@
       "sc:description": "Cancer Antigens Database (CAD) designed to facilitate users to perform a complete exploration of cancer antigens online.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3695"
+          "@id": "edam:operation_0416"
         },
         {
-          "@id": "edam:operation_0416"
+          "@id": "edam:operation_3695"
         },
         {
           "@id": "edam:operation_0252"
@@ -87,8 +87,8 @@
       "sc:name": "CAD",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://cad.bio-it.cn/#/FAQ"

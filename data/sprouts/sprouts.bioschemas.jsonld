@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,21 +36,17 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1515/bams-2014-0015",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/SPROUTS",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N5ee4967bc6e04b0ca1aaab431ea4ee19"
+          "@id": "_:N847f1b64fd644579b8b829d6e9c214e3"
         },
         {
-          "@id": "_:N22c537b9ea2d4dc2be2079118cfbc16a"
+          "@id": "_:Ne555457cff004428bed3d457e8aa8741"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0199"
       },
@@ -66,7 +62,15 @@
       "sc:url": "http://sprouts.rpbs.univ-paris-diderot.fr/"
     },
     {
-      "@id": "_:N5ee4967bc6e04b0ca1aaab431ea4ee19",
+      "@id": "_:N847f1b64fd644579b8b829d6e9c214e3",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2209"
+      },
+      "sc:name": "Mutation ID"
+    },
+    {
+      "@id": "_:Ne555457cff004428bed3d457e8aa8741",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1127"
@@ -77,12 +81,8 @@
       "sc:name": "PDB ID"
     },
     {
-      "@id": "_:N22c537b9ea2d4dc2be2079118cfbc16a",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2209"
-      },
-      "sc:name": "Mutation ID"
+      "@id": "https://doi.org/10.1515/bams-2014-0015",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

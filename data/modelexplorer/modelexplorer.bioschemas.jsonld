@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,17 +36,21 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1186/s12859-019-2615-x",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/ModelExplorer",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Eivind Almaas",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Desktop application",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0625"
+          "@id": "edam:topic_3407"
         },
         {
-          "@id": "edam:topic_3407"
+          "@id": "edam:topic_0625"
         },
         {
           "@id": "edam:topic_0602"
@@ -67,24 +71,20 @@
       "sc:license": "CC-BY-4.0",
       "sc:name": "ModelExplorer",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": [
         {
-          "@id": "http://almaaslab.nt.ntnu.no/downloads/ModelExplorer2.0_win64.zip"
+          "@id": "http://almaaslab.nt.ntnu.no/downloads/ModelExplorer2.0_Linux.zip"
         },
         {
-          "@id": "http://almaaslab.nt.ntnu.no/downloads/ModelExplorer2.0_Linux.zip"
+          "@id": "http://almaaslab.nt.ntnu.no/downloads/ModelExplorer2.0_win64.zip"
         }
       ],
       "sc:softwareVersion": "2.0",
       "sc:url": "https://almaaslab.nt.ntnu.no/index.php/resources/metabolic-modeling/"
-    },
-    {
-      "@id": "https://doi.org/10.1186/s12859-019-2615-x",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,38 +36,34 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btr011",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/jellyfish",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
-        "Guillaume Marçais",
-        "Carl Kingsford"
+        "Carl Kingsford",
+        "Guillaume Marçais"
       ],
       "bsc:input": {
-        "@id": "_:N7d0f1d809f8047139e1d743210bde851"
+        "@id": "_:N4cf796417fd9414ab5dc96650f3f4b5d"
       },
       "bsc:output": {
-        "@id": "_:N5f7280398d9f4b41b1f6d500e42c63ca"
+        "@id": "_:N5117985dfbd3463a9fcadc002c81f35f"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0080"
+          "@id": "edam:topic_0622"
         },
         {
-          "@id": "edam:topic_0622"
+          "@id": "edam:topic_0080"
         }
       ],
       "sc:citation": [
+        "pubmed:21217122",
+        "pmcid:PMC3051319",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btr011"
-        },
-        "pubmed:21217122",
-        "pmcid:PMC3051319"
+        }
       ],
       "sc:description": "A command-line algorithm for counting k-mers in DNA sequence.",
       "sc:featureList": {
@@ -77,8 +73,8 @@
       "sc:license": "GPL-3.0",
       "sc:name": "Jellyfish",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:softwareHelp": [
         {
@@ -92,18 +88,7 @@
       "sc:url": "http://www.genome.umd.edu/jellyfish.html"
     },
     {
-      "@id": "_:N5f7280398d9f4b41b1f6d500e42c63ca",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3917"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3665"
-      },
-      "sc:name": "Count matrix"
-    },
-    {
-      "@id": "_:N7d0f1d809f8047139e1d743210bde851",
+      "@id": "_:N4cf796417fd9414ab5dc96650f3f4b5d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0924"
@@ -117,6 +102,21 @@
         }
       ],
       "sc:name": "Sequence trace"
+    },
+    {
+      "@id": "_:N5117985dfbd3463a9fcadc002c81f35f",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3917"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3665"
+      },
+      "sc:name": "Count matrix"
+    },
+    {
+      "@id": "https://doi.org/10.1093/bioinformatics/btr011",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

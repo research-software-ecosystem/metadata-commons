@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -38,11 +38,8 @@
     {
       "@id": "https://bio.tools/corec",
       "@type": "sc:SoftwareApplication",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_3512"
-        },
         {
           "@id": "edam:topic_3169"
         },
@@ -51,6 +48,9 @@
         },
         {
           "@id": "edam:topic_0204"
+        },
+        {
+          "@id": "edam:topic_3512"
         },
         {
           "@id": "edam:topic_0749"
@@ -66,13 +66,13 @@
       "sc:description": "CoRec is a method for rapid profiling of cell-specific transcription factor-cofactor complexes. This GitHub repository provides code and related resources for implementing and analyzing CoRec data.",
       "sc:featureList": [
         {
+          "@id": "edam:operation_3432"
+        },
+        {
           "@id": "edam:operation_0314"
         },
         {
           "@id": "edam:operation_0438"
-        },
-        {
-          "@id": "edam:operation_3432"
         }
       ],
       "sc:name": "CoRec",

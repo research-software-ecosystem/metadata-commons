@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -43,12 +43,12 @@
       "@id": "https://bio.tools/masspec",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Naa0d0aa9b3ac4847aa0b28bc91955b22"
+        "@id": "_:N067508208bab46969d8c149e3bbe53c0"
       },
       "bsc:output": {
-        "@id": "_:N146fc4c525fe4e64a64ff4653a36054f"
+        "@id": "_:N013f34fc9c854792b6ca07c4a4f6ac4f"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0121"
@@ -67,18 +67,7 @@
       "sc:url": "https://doi.org/10.1016/0010-4825(70)90013-2"
     },
     {
-      "@id": "_:N146fc4c525fe4e64a64ff4653a36054f",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2976"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Protein sequence"
-    },
-    {
-      "@id": "_:Naa0d0aa9b3ac4847aa0b28bc91955b22",
+      "@id": "_:N067508208bab46969d8c149e3bbe53c0",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0943"
@@ -87,6 +76,17 @@
         "@id": "edam:format_2330"
       },
       "sc:name": "Mass spectrum"
+    },
+    {
+      "@id": "_:N013f34fc9c854792b6ca07c4a4f6ac4f",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2976"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Protein sequence"
     }
   ]
 }

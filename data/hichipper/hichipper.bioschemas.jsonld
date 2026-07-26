@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -44,30 +44,30 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Caleb Lareau",
       "bsc:input": {
-        "@id": "_:Naa856e81b7834ac7b0350aad3ac47e4e"
+        "@id": "_:Nc6712e190a0745fdbd4c6584f06a285e"
       },
       "bsc:output": [
         {
-          "@id": "_:N0d0532099b5b498eb8b4e333799ac535"
+          "@id": "_:N1becd748339d4a42b12ba6f6c2e8ce92"
         },
         {
-          "@id": "_:N7904a8309706498a9ebf170d47f473bd"
+          "@id": "_:Naaf6f5afc91f47ba92fdff132bf140e1"
         },
         {
-          "@id": "_:N269db0db6f36476a85b889fc241bb8d3"
+          "@id": "_:N33b8a9ee7db04a509afd0390d53c1555"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
           "@id": "edam:topic_3656"
         },
         {
-          "@id": "edam:topic_0097"
+          "@id": "edam:topic_0607"
         },
         {
-          "@id": "edam:topic_0607"
+          "@id": "edam:topic_0097"
         }
       ],
       "sc:citation": {
@@ -76,21 +76,21 @@
       "sc:description": "A Python package for HiChIP data processing and quality control pipeline.",
       "sc:featureList": [
         {
+          "@id": "edam:operation_0279"
+        },
+        {
           "@id": "edam:operation_0570"
         },
         {
           "@id": "edam:operation_2428"
-        },
-        {
-          "@id": "edam:operation_0279"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "MIT",
       "sc:name": "hichipper",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "http://hichipper.readthedocs.io/en/latest/"
@@ -98,7 +98,18 @@
       "sc:url": "http://aryee.mgh.harvard.edu/hichipper/"
     },
     {
-      "@id": "_:N0d0532099b5b498eb8b4e333799ac535",
+      "@id": "_:Nc6712e190a0745fdbd4c6584f06a285e",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2977"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3750"
+      },
+      "sc:name": "Nucleic acid sequence"
+    },
+    {
+      "@id": "_:N1becd748339d4a42b12ba6f6c2e8ce92",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0889"
@@ -106,7 +117,7 @@
       "sc:name": "Structural profile"
     },
     {
-      "@id": "_:N7904a8309706498a9ebf170d47f473bd",
+      "@id": "_:Naaf6f5afc91f47ba92fdff132bf140e1",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2968"
@@ -117,7 +128,7 @@
       "sc:name": "Image"
     },
     {
-      "@id": "_:N269db0db6f36476a85b889fc241bb8d3",
+      "@id": "_:N33b8a9ee7db04a509afd0390d53c1555",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"
@@ -126,17 +137,6 @@
         "@id": "edam:format_2331"
       },
       "sc:name": "Report"
-    },
-    {
-      "@id": "_:Naa856e81b7834ac7b0350aad3ac47e4e",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2977"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3750"
-      },
-      "sc:name": "Nucleic acid sequence"
     }
   ]
 }

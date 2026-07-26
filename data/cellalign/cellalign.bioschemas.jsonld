@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -45,44 +45,44 @@
       "biotools:primaryContact": "Ayelet Alpert",
       "bsc:input": [
         {
-          "@id": "_:N9512ac8819b14fd9859152be17f860e9"
+          "@id": "_:N75805ea2f4ed441d974ceb2dc4514fb5"
         },
         {
-          "@id": "_:N871b262bda6c4a24add6d1f127955ab8"
+          "@id": "_:N261f7befb26a4511b1770e427b7a31a5"
         }
       ],
       "bsc:output": {
-        "@id": "_:N983423e6b05e4d198a80b4c3c3710984"
+        "@id": "_:Nfdcdb0f2b74049e18a25a0f5bf68eae9"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Plug-in",
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_0203"
-        },
         {
           "@id": "edam:topic_2229"
         },
         {
           "@id": "edam:topic_3064"
+        },
+        {
+          "@id": "edam:topic_0203"
         }
       ],
       "sc:citation": [
+        "pubmed:29529018",
         {
           "@id": "https://doi.org/10.1038/nmeth.4628"
-        },
-        "pubmed:29529018"
+        }
       ],
       "sc:description": "A method for comparing expression dynamics within and between single-cell differentiation trajectories.",
       "sc:featureList": [
+        {
+          "@id": "edam:operation_3223"
+        },
         {
           "@id": "edam:operation_0314"
         },
         {
           "@id": "edam:operation_3439"
-        },
-        {
-          "@id": "edam:operation_3223"
         }
       ],
       "sc:isAccessibleForFree": true,
@@ -95,18 +95,7 @@
       "sc:url": "https://github.com/shenorrLab/cellAlign"
     },
     {
-      "@id": "_:N983423e6b05e4d198a80b4c3c3710984",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0867"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2032"
-      },
-      "sc:name": "Sequence alignment report"
-    },
-    {
-      "@id": "_:N9512ac8819b14fd9859152be17f860e9",
+      "@id": "_:N75805ea2f4ed441d974ceb2dc4514fb5",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3112"
@@ -117,7 +106,7 @@
       "sc:name": "Gene expression matrix"
     },
     {
-      "@id": "_:N871b262bda6c4a24add6d1f127955ab8",
+      "@id": "_:N261f7befb26a4511b1770e427b7a31a5",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2337"
@@ -126,6 +115,17 @@
         "@id": "edam:format_3326"
       },
       "sc:name": "Resource metadata"
+    },
+    {
+      "@id": "_:Nfdcdb0f2b74049e18a25a0f5bf68eae9",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0867"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2032"
+      },
+      "sc:name": "Sequence alignment report"
     }
   ]
 }

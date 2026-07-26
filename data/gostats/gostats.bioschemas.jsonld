@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,24 +40,24 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Ned67c9e89e084657995bfeda1582fa0d"
+          "@id": "_:N4cf053d9762c42bd831c8c93494ff889"
         },
         {
-          "@id": "_:N4d694dba527640648ea91eaf1e751ab7"
+          "@id": "_:N36f3ced5a4c0478c92ad9490857bb524"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N367b4ba047194dc5bb1e55ddbf8b87e2"
+          "@id": "_:Ne7e0027d73aa4b0fb0fea833e03be460"
         },
         {
-          "@id": "_:N93441414a542481c9c3b8e884a2e8a49"
+          "@id": "_:N70183d7954f34af59ec566de90cc75eb"
         },
         {
-          "@id": "_:Nb8d15acfd7234494af91e8e287f80341"
+          "@id": "_:Nf3fdca7c69454e8da26be8f3e00b1f04"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
@@ -72,9 +72,9 @@
       ],
       "sc:author": "Robert Gentleman",
       "sc:contributor": [
+        "Dennis Ndubi",
         "Robert Castelo",
         "Seth Falcon",
-        "Dennis Ndubi",
         "Sonali Kumari"
       ],
       "sc:description": "A set of tools for interacting with GO and microarray data. A variety of basic manipulation tools for graphs, hypothesis testing and other simple calculations.",
@@ -84,8 +84,8 @@
       "sc:license": "Artistic-2.0",
       "sc:name": "GOstats",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -95,23 +95,7 @@
       "sc:url": "https://bioconductor.org/packages/GOstats"
     },
     {
-      "@id": "_:Ned67c9e89e084657995bfeda1582fa0d",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0582"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2195"
-        },
-        {
-          "@id": "edam:format_2330"
-        }
-      ],
-      "sc:name": "Ontology"
-    },
-    {
-      "@id": "_:N4d694dba527640648ea91eaf1e751ab7",
+      "@id": "_:N4cf053d9762c42bd831c8c93494ff889",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2603"
@@ -127,7 +111,23 @@
       "sc:name": "Gene expression data"
     },
     {
-      "@id": "_:N367b4ba047194dc5bb1e55ddbf8b87e2",
+      "@id": "_:N36f3ced5a4c0478c92ad9490857bb524",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0582"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2195"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Ontology"
+    },
+    {
+      "@id": "_:Ne7e0027d73aa4b0fb0fea833e03be460",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
@@ -146,26 +146,7 @@
       "sc:name": "Plot"
     },
     {
-      "@id": "_:N93441414a542481c9c3b8e884a2e8a49",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1772"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2331"
-        },
-        {
-          "@id": "edam:format_3547"
-        },
-        {
-          "@id": "edam:format_2330"
-        }
-      ],
-      "sc:name": "Score"
-    },
-    {
-      "@id": "_:Nb8d15acfd7234494af91e8e287f80341",
+      "@id": "_:N70183d7954f34af59ec566de90cc75eb",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"
@@ -182,6 +163,25 @@
         }
       ],
       "sc:name": "Report"
+    },
+    {
+      "@id": "_:Nf3fdca7c69454e8da26be8f3e00b1f04",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1772"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2331"
+        },
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Score"
     }
   ]
 }

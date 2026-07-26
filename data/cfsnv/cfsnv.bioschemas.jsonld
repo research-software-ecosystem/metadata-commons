@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,26 +36,22 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1038/s41596-023-00807-w",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/cfsnv",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N2b662367f88f407a8b39851416ad34c6"
+        "@id": "_:N0ce1052b2d624ed383528831803d9ec3"
       },
       "bsc:output": {
-        "@id": "_:N832fabf2ec0d4229a17ba83982ab9ce5"
+        "@id": "_:Nb55ef397faf84b6785cb930f127a39a0"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Library",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3676"
+          "@id": "edam:topic_0091"
         },
         {
-          "@id": "edam:topic_2640"
+          "@id": "edam:topic_3676"
         },
         {
           "@id": "edam:topic_0199"
@@ -64,15 +60,15 @@
           "@id": "edam:topic_3474"
         },
         {
-          "@id": "edam:topic_0091"
+          "@id": "edam:topic_2640"
         }
       ],
       "sc:citation": [
         "pubmed:36849599",
+        "pmcid:PMC10411976",
         {
           "@id": "https://doi.org/10.1038/s41596-023-00807-w"
-        },
-        "pmcid:PMC10411976"
+        }
       ],
       "sc:description": "Software tool for the sensitive detection of somatic mutations from cell-free DNA.",
       "sc:featureList": {
@@ -81,22 +77,14 @@
       "sc:isAccessibleForFree": true,
       "sc:name": "cfSNV",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:url": "https://github.com/jasminezhoulab/cfSNV"
     },
     {
-      "@id": "_:N832fabf2ec0d4229a17ba83982ab9ce5",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2534"
-      },
-      "sc:name": "Sequence attribute"
-    },
-    {
-      "@id": "_:N2b662367f88f407a8b39851416ad34c6",
+      "@id": "_:N0ce1052b2d624ed383528831803d9ec3",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3494"
@@ -110,6 +98,18 @@
         }
       ],
       "sc:name": "DNA sequence"
+    },
+    {
+      "@id": "_:Nb55ef397faf84b6785cb930f127a39a0",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2534"
+      },
+      "sc:name": "Sequence attribute"
+    },
+    {
+      "@id": "https://doi.org/10.1038/s41596-023-00807-w",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,32 +36,36 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1038/nmeth.3252",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/envisionquery",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
-        "Roger Day",
-        "Alex Lisovich"
+        "Alex Lisovich",
+        "Roger Day"
       ],
       "bsc:input": [
         {
-          "@id": "_:N1c06d73fee174861b7f63441b0c8e236"
+          "@id": "_:Nedb52cbe2f2e4e4aab0ee116a776fa92"
         },
         {
-          "@id": "_:Na4a7308ab505472db38ca5c00154d28d"
+          "@id": "_:Nd203a3e100db4da4a0baf4d592a5c1c8"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N1b5ec50b824c4ca282342a6aecaf60ad"
+          "@id": "_:Nd432c807436244679b374f45bb7163aa"
         },
         {
-          "@id": "_:Nb272322454d9454f84cbb7fb07ce8607"
+          "@id": "_:N55c34ed2ec5546c48984591d2a2a7c0d"
         },
         {
-          "@id": "_:Nd4533b4b607b4ad6b1b30aa64f2aa2f1"
+          "@id": "_:Ndedc2198f3d24307b75f6fe95d131878"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
@@ -88,8 +92,8 @@
       "sc:license": "GPL-2.0",
       "sc:name": "ENVISIONQuery",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -99,23 +103,55 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/ENVISIONQuery.html"
     },
     {
-      "@id": "_:N1b5ec50b824c4ca282342a6aecaf60ad",
+      "@id": "_:Nedb52cbe2f2e4e4aab0ee116a776fa92",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0842"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2330"
+        },
+        {
+          "@id": "edam:format_2332"
+        }
+      ],
+      "sc:name": "Identifier"
+    },
+    {
+      "@id": "_:Nd203a3e100db4da4a0baf4d592a5c1c8",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2291"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2330"
+        },
+        {
+          "@id": "edam:format_2332"
+        }
+      ],
+      "sc:name": "UniProt ID"
+    },
+    {
+      "@id": "_:Nd432c807436244679b374f45bb7163aa",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2080"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_2332"
+          "@id": "edam:format_2330"
         },
         {
-          "@id": "edam:format_2330"
+          "@id": "edam:format_2332"
         }
       ],
       "sc:name": "Database search results"
     },
     {
-      "@id": "_:Nb272322454d9454f84cbb7fb07ce8607",
+      "@id": "_:N55c34ed2ec5546c48984591d2a2a7c0d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0842"
@@ -131,7 +167,7 @@
       "sc:name": "Identifier"
     },
     {
-      "@id": "_:Nd4533b4b607b4ad6b1b30aa64f2aa2f1",
+      "@id": "_:Ndedc2198f3d24307b75f6fe95d131878",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2291"
@@ -145,42 +181,6 @@
         }
       ],
       "sc:name": "UniProt ID"
-    },
-    {
-      "@id": "_:N1c06d73fee174861b7f63441b0c8e236",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0842"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2332"
-        },
-        {
-          "@id": "edam:format_2330"
-        }
-      ],
-      "sc:name": "Identifier"
-    },
-    {
-      "@id": "_:Na4a7308ab505472db38ca5c00154d28d",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2291"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_2332"
-        }
-      ],
-      "sc:name": "UniProt ID"
-    },
-    {
-      "@id": "https://doi.org/10.1038/nmeth.3252",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

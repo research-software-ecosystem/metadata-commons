@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,17 +40,17 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Institute for Research in Biomedicine Barcelona",
       "bsc:input": {
-        "@id": "_:N38dd32e7862743f189caab7e6ff987bc"
+        "@id": "_:Nbf90a5a2360e40bbb6bf599a59248b88"
       },
       "bsc:output": [
         {
-          "@id": "_:Nb03ead8d51ba4d94b332a7eb9a0126da"
+          "@id": "_:N5407f7024b2a40e9818adadda301aeba"
         },
         {
-          "@id": "_:Nd7d4c367f199400ba06b4bb73d669bd6"
+          "@id": "_:N4462aca4fbfd407b8752b20d1fd50b76"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
@@ -61,10 +61,10 @@
         }
       ],
       "sc:citation": [
+        "pubmed:26626512",
         {
           "@id": "https://doi.org/10.1021/ct050285b"
-        },
-        "pubmed:26626512"
+        }
       ],
       "sc:description": "Allows the user to compress Molecular Dynamics (MD) trajectories using Principal Component Analysis (PCA) algorithms. This technique offers a good compression ratio at the expense of losing some precision in the trajectory.",
       "sc:featureList": {
@@ -73,8 +73,8 @@
       "sc:isAccessibleForFree": true,
       "sc:name": "PCASuite",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -83,7 +83,7 @@
       "sc:url": "http://mmb.pcb.ub.edu/software/pcasuite/"
     },
     {
-      "@id": "_:N38dd32e7862743f189caab7e6ff987bc",
+      "@id": "_:Nbf90a5a2360e40bbb6bf599a59248b88",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0883"
@@ -91,7 +91,7 @@
       "sc:name": "Structure"
     },
     {
-      "@id": "_:Nb03ead8d51ba4d94b332a7eb9a0126da",
+      "@id": "_:N5407f7024b2a40e9818adadda301aeba",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"
@@ -99,7 +99,7 @@
       "sc:name": "Report"
     },
     {
-      "@id": "_:Nd7d4c367f199400ba06b4bb73d669bd6",
+      "@id": "_:N4462aca4fbfd407b8752b20d1fd50b76",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0883"

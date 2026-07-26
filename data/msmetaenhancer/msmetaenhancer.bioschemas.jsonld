@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,49 +40,49 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N5b72d8e38dd547099d2b8e86920847b1"
+          "@id": "_:Nff1c7f3634ae43b6bcab817c9e3a8592"
         },
         {
-          "@id": "_:N914686033d95477f9be139a939d96825"
+          "@id": "_:N8e6043bad32c41eb82e93fc25b5fbd3d"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Nc19596bc90e548b3b743a6d5af2e84c4"
+          "@id": "_:N911a3e0d61fb482abf659c6b2857ab3f"
         },
         {
-          "@id": "_:Nb510a0c611a147d8949e28464ab097c1"
+          "@id": "_:N470f5de7d5a24502a78ec825ef027276"
         },
         {
-          "@id": "_:N514614ca21834d448122c4631148cd79"
+          "@id": "_:N7148d24dfbe448a0a1238b248fa67460"
         },
         {
-          "@id": "_:N0d438f9cc0d9414c9e60a9ffca65cf47"
+          "@id": "_:N3c504dcefe144483a6ffa2cf7db4e880"
         },
         {
-          "@id": "_:N3b1050073b16491b8cd1b2696616b433"
+          "@id": "_:Na12783c62be74752aefafba7ad64701d"
         },
         {
-          "@id": "_:Ne8ae2844f3ae467894cf8d1d21aa39bd"
+          "@id": "_:N0c07fbb64e2546ffa24626ea8143f7a8"
         },
         {
-          "@id": "_:N1cd59574a01a4eaeae7db0c233166130"
+          "@id": "_:N51b08fc185744299ae74055e2db19fc9"
         },
         {
-          "@id": "_:Na5e379e2a5e5461dac21d4747fa1ff90"
+          "@id": "_:Nd2fc1105573740e38d05b65f4ba458f1"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web service",
       "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_3343"
+        },
         {
           "@id": "edam:topic_0219"
         },
         {
           "@id": "edam:topic_3172"
-        },
-        {
-          "@id": "edam:topic_3343"
         }
       ],
       "sc:citation": {
@@ -104,40 +104,40 @@
         "@id": "https://msmetaenhancer.readthedocs.io/"
       },
       "sc:softwareVersion": [
-        "v0.3.0",
+        "v0.2.0",
         "v0.2.1",
         "v0.2.2",
         "v0.2.3",
-        "v0.2.0",
         "v0.2.4",
-        "v0.2.5"
+        "v0.2.5",
+        "v0.3.0"
       ],
       "sc:url": "https://github.com/RECETOX/MSMetaEnhancer"
     },
     {
-      "@id": "_:N5b72d8e38dd547099d2b8e86920847b1",
+      "@id": "_:Nff1c7f3634ae43b6bcab817c9e3a8592",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1086"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_2330"
+          "@id": "edam:format_1197"
         },
         {
-          "@id": "edam:format_1197"
+          "@id": "edam:format_1199"
         },
         {
           "@id": "edam:format_1196"
         },
         {
-          "@id": "edam:format_1199"
+          "@id": "edam:format_2330"
         }
       ],
       "sc:name": "Compound identifier"
     },
     {
-      "@id": "_:N914686033d95477f9be139a939d96825",
+      "@id": "_:N8e6043bad32c41eb82e93fc25b5fbd3d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0943"
@@ -147,22 +147,95 @@
           "@id": "edam:format_3752"
         },
         {
-          "@id": "edam:format_3620"
+          "@id": "edam:format_3464"
+        },
+        {
+          "@id": "edam:format_3651"
         },
         {
           "@id": "edam:format_3475"
+        },
+        {
+          "@id": "edam:format_3620"
+        }
+      ],
+      "sc:name": "Mass spectrum"
+    },
+    {
+      "@id": "_:N911a3e0d61fb482abf659c6b2857ab3f",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1002"
+      },
+      "sc:name": "CAS number"
+    },
+    {
+      "@id": "_:N470f5de7d5a24502a78ec825ef027276",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1174"
+      },
+      "sc:name": "ChEBI ID"
+    },
+    {
+      "@id": "_:N7148d24dfbe448a0a1238b248fa67460",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0998"
+      },
+      "sc:name": "Chemical name (IUPAC)"
+    },
+    {
+      "@id": "_:N3c504dcefe144483a6ffa2cf7db4e880",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1048"
+      },
+      "sc:name": "Database ID"
+    },
+    {
+      "@id": "_:Na12783c62be74752aefafba7ad64701d",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2639"
+      },
+      "sc:name": "PubChem ID"
+    },
+    {
+      "@id": "_:N0c07fbb64e2546ffa24626ea8143f7a8",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3113"
+      },
+      "sc:name": "Sample annotation"
+    },
+    {
+      "@id": "_:N51b08fc185744299ae74055e2db19fc9",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0943"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3752"
         },
         {
           "@id": "edam:format_3464"
         },
         {
           "@id": "edam:format_3651"
+        },
+        {
+          "@id": "edam:format_3475"
+        },
+        {
+          "@id": "edam:format_3620"
         }
       ],
       "sc:name": "Mass spectrum"
     },
     {
-      "@id": "_:Nc19596bc90e548b3b743a6d5af2e84c4",
+      "@id": "_:Nd2fc1105573740e38d05b65f4ba458f1",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3035"
@@ -176,79 +249,6 @@
         }
       ],
       "sc:name": "Structure identifier"
-    },
-    {
-      "@id": "_:Nb510a0c611a147d8949e28464ab097c1",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1174"
-      },
-      "sc:name": "ChEBI ID"
-    },
-    {
-      "@id": "_:N514614ca21834d448122c4631148cd79",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0998"
-      },
-      "sc:name": "Chemical name (IUPAC)"
-    },
-    {
-      "@id": "_:N0d438f9cc0d9414c9e60a9ffca65cf47",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0943"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3651"
-        },
-        {
-          "@id": "edam:format_3475"
-        },
-        {
-          "@id": "edam:format_3464"
-        },
-        {
-          "@id": "edam:format_3752"
-        },
-        {
-          "@id": "edam:format_3620"
-        }
-      ],
-      "sc:name": "Mass spectrum"
-    },
-    {
-      "@id": "_:N3b1050073b16491b8cd1b2696616b433",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1048"
-      },
-      "sc:name": "Database ID"
-    },
-    {
-      "@id": "_:Ne8ae2844f3ae467894cf8d1d21aa39bd",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3113"
-      },
-      "sc:name": "Sample annotation"
-    },
-    {
-      "@id": "_:N1cd59574a01a4eaeae7db0c233166130",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2639"
-      },
-      "sc:name": "PubChem ID"
-    },
-    {
-      "@id": "_:Na5e379e2a5e5461dac21d4747fa1ff90",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1002"
-      },
-      "sc:name": "CAS number"
     },
     {
       "@id": "https://doi.org/10.21105/joss.04494",

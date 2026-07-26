@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,20 +36,20 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/nar/gkaa1076",
+      "@id": "https://doi.org/10.1093/nar/gkx677",
       "@type": "sc:CreativeWork"
     },
     {
       "@id": "https://bio.tools/evlncrnas",
       "@type": "sc:SoftwareApplication",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Bioinformatics portal",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0625"
+          "@id": "edam:topic_0091"
         },
         {
-          "@id": "edam:topic_0091"
+          "@id": "edam:topic_3306"
         },
         {
           "@id": "edam:topic_0659"
@@ -58,28 +58,28 @@
           "@id": "edam:topic_0203"
         },
         {
-          "@id": "edam:topic_3306"
+          "@id": "edam:topic_0625"
         }
       ],
       "sc:citation": [
-        {
-          "@id": "https://doi.org/10.1093/nar/gkaa1076"
-        },
-        "pmcid:PMC7778902",
-        "pmcid:PMC5753334",
-        "pubmed:33221906",
         "pubmed:28985416",
+        "pmcid:PMC5753334",
         {
           "@id": "https://doi.org/10.1093/nar/gkx677"
+        },
+        "pubmed:33221906",
+        "pmcid:PMC7778902",
+        {
+          "@id": "https://doi.org/10.1093/nar/gkaa1076"
         }
       ],
       "sc:description": "EVlncRNAs is a comprehensive, manually curated, high-quality and freely accessible resource of integrated sequence, structure, functional, and phenotypic information of experimentally validated long noncoding RNAs from all species.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_2428"
+          "@id": "edam:operation_3925"
         },
         {
-          "@id": "edam:operation_3925"
+          "@id": "edam:operation_2428"
         },
         {
           "@id": "edam:operation_0463"
@@ -90,7 +90,7 @@
       "sc:url": "https://www.sdklab-biophysics-dzu.net/EVLncRNAs2/"
     },
     {
-      "@id": "https://doi.org/10.1093/nar/gkx677",
+      "@id": "https://doi.org/10.1093/nar/gkaa1076",
       "@type": "sc:CreativeWork"
     }
   ]

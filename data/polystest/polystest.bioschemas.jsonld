@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,39 +36,43 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1074/mcp.RA119.001777",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/PolySTest",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N102ea5763f9d4f0c87cd1897843fab30"
+        "@id": "_:Na1de612b936f4b4882fc8a5063f10363"
       },
       "bsc:output": [
         {
-          "@id": "_:Na90d6f2e87e04e3387aabe91c4127fd0"
+          "@id": "_:N2a92057942d7489f95d489e17ea00560"
         },
         {
-          "@id": "_:N2b494edd86564128a4579f9d91ff5834"
+          "@id": "_:N25c1a8896c9044dea57676c9dfce89fd"
         },
         {
-          "@id": "_:Ncb37b013ba4d4d11bb3f1e23c2cc00d6"
+          "@id": "_:N656bbf3dd92743189743808fe32743d8"
         },
         {
-          "@id": "_:Ne13030d446a944a6aed8baa902615842"
+          "@id": "_:Ne4c3951057dc45b8aa7c74fd48120d9f"
         },
         {
-          "@id": "_:N1dd7324f2cf640cb9e5b95603c6aac70"
+          "@id": "_:N4dffb35b728a43b4b8a4f04837d5094d"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
           "@id": "edam:topic_0121"
         },
         {
-          "@id": "edam:topic_2269"
+          "@id": "edam:topic_3520"
         },
         {
-          "@id": "edam:topic_3520"
+          "@id": "edam:topic_2269"
         }
       ],
       "sc:author": "Veit Schwämmle",
@@ -88,8 +92,8 @@
       "sc:license": "GPL-2.0-only",
       "sc:name": "PolySTest",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "https://bioconductor.org/packages/PolySTest"
@@ -98,18 +102,23 @@
       "sc:url": "https://bioconductor.org/packages/PolySTest"
     },
     {
-      "@id": "_:Na90d6f2e87e04e3387aabe91c4127fd0",
+      "@id": "_:Na1de612b936f4b4882fc8a5063f10363",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_1636"
+        "@id": "edam:data_2603"
       },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3604"
-      },
-      "sc:name": "Heat map"
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3752"
+        },
+        {
+          "@id": "edam:format_3751"
+        }
+      ],
+      "sc:name": "Expression data"
     },
     {
-      "@id": "_:N2b494edd86564128a4579f9d91ff5834",
+      "@id": "_:N2a92057942d7489f95d489e17ea00560",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0928"
@@ -120,18 +129,18 @@
       "sc:name": "Gene expression profile"
     },
     {
-      "@id": "_:Ncb37b013ba4d4d11bb3f1e23c2cc00d6",
+      "@id": "_:N25c1a8896c9044dea57676c9dfce89fd",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_1669"
+        "@id": "edam:data_1636"
       },
       "sc:encodingFormat": {
-        "@id": "edam:format_3752"
+        "@id": "edam:format_3604"
       },
-      "sc:name": "P-value"
+      "sc:name": "Heat map"
     },
     {
-      "@id": "_:Ne13030d446a944a6aed8baa902615842",
+      "@id": "_:N656bbf3dd92743189743808fe32743d8",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3905"
@@ -142,7 +151,18 @@
       "sc:name": "Histogram"
     },
     {
-      "@id": "_:N1dd7324f2cf640cb9e5b95603c6aac70",
+      "@id": "_:Ne4c3951057dc45b8aa7c74fd48120d9f",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1669"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3752"
+      },
+      "sc:name": "P-value"
+    },
+    {
+      "@id": "_:N4dffb35b728a43b4b8a4f04837d5094d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3932"
@@ -151,26 +171,6 @@
         "@id": "edam:format_3752"
       },
       "sc:name": "Q-value"
-    },
-    {
-      "@id": "_:N102ea5763f9d4f0c87cd1897843fab30",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2603"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3751"
-        },
-        {
-          "@id": "edam:format_3752"
-        }
-      ],
-      "sc:name": "Expression data"
-    },
-    {
-      "@id": "https://doi.org/10.1074/mcp.RA119.001777",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,8 +36,8 @@
   },
   "@graph": [
     {
-      "@id": "http://orcid.org/0000-0002-1854-1193",
-      "@type": "sc:Person"
+      "@id": "https://doi.org/10.1016/bs.mie.2015.01.014",
+      "@type": "sc:CreativeWork"
     },
     {
       "@id": "https://bio.tools/rnaprobr",
@@ -45,17 +45,17 @@
       "biotools:primaryContact": {
         "@id": "http://orcid.org/0000-0002-1854-1193"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3168"
+          "@id": "edam:topic_0099"
         },
         {
-          "@id": "edam:topic_0099"
+          "@id": "edam:topic_3168"
         }
       ],
       "sc:citation": [
@@ -71,8 +71,8 @@
       "sc:license": "GPL-2.0",
       "sc:name": "RNAprobR",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -82,8 +82,8 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/RNAprobR.html"
     },
     {
-      "@id": "https://doi.org/10.1016/bs.mie.2015.01.014",
-      "@type": "sc:CreativeWork"
+      "@id": "http://orcid.org/0000-0002-1854-1193",
+      "@type": "sc:Person"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -42,9 +42,12 @@
     {
       "@id": "https://bio.tools/detr-db",
       "@type": "sc:SoftwareApplication",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Database portal",
       "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_3810"
+        },
         {
           "@id": "edam:topic_3297"
         },
@@ -53,9 +56,6 @@
         },
         {
           "@id": "edam:topic_0637"
-        },
-        {
-          "@id": "edam:topic_3810"
         }
       ],
       "sc:citation": {
@@ -64,13 +64,13 @@
       "sc:description": "DetR DB is a database of ionizing radiation resistance determinants contains  a comprehensive catalog of radioresistant microbes and their molecular and genetic determinants of enhanced ionizing radiation tolerance. The database provides search tools including taxonomy, common gene name, and BLAST. DetR DB will be a useful tool for research community by facilitating the extraction of the necessary information to help further analysis of radiation-resistant mechanisms.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3461"
-        },
-        {
           "@id": "edam:operation_2421"
         },
         {
           "@id": "edam:operation_3431"
+        },
+        {
+          "@id": "edam:operation_3461"
         }
       ],
       "sc:name": "DetR DB",

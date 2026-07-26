@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,32 +36,36 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1007/11564096_50",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/protomata",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "GenOuest",
       "bsc:input": [
         {
-          "@id": "_:N8458b3c9640c4269865bf650b935ebe4"
+          "@id": "_:Nc07aaca7308441e886ed34433e8e693e"
         },
         {
-          "@id": "_:Nbd4988788b86474d9c6e64ec56bba138"
+          "@id": "_:Nbf165a5face141eaaefe3c0b693b4ee3"
         },
         {
-          "@id": "_:Nb226e1dbd8274a49832e9c7b511a3059"
+          "@id": "_:N868f313f84f04acc983d2808d57848bc"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N63987d97d0364b5db3bdb788227ad732"
+          "@id": "_:Na4efb35fb05145b1846e7e8f4cbebb54"
         },
         {
-          "@id": "_:Nc0c9156856804aff969d025706783a76"
+          "@id": "_:N9be8c2911c454466afa58fa4a766ead3"
         },
         {
-          "@id": "_:N148e57b06bec476797cf3f3f51da0cfd"
+          "@id": "_:Naa559845949645798a4ebe26749f94a8"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Web application"
@@ -75,18 +79,18 @@
       "sc:description": "Motif search and discovery in protein sequences.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0239"
+          "@id": "edam:operation_0238"
         },
         {
-          "@id": "edam:operation_0238"
+          "@id": "edam:operation_0239"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "CECILL-2.0",
       "sc:name": "Protomata",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:provider": "GenOuest",
@@ -97,7 +101,40 @@
       "sc:url": "http://tools.genouest.org/tools/protomata/"
     },
     {
-      "@id": "_:N63987d97d0364b5db3bdb788227ad732",
+      "@id": "_:Nc07aaca7308441e886ed34433e8e693e",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2976"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "Protein sequence"
+    },
+    {
+      "@id": "_:Nbf165a5face141eaaefe3c0b693b4ee3",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2976"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "Protein sequence"
+    },
+    {
+      "@id": "_:N868f313f84f04acc983d2808d57848bc",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2071"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2068"
+      },
+      "sc:name": "Sequence motif (protein)"
+    },
+    {
+      "@id": "_:Na4efb35fb05145b1846e7e8f4cbebb54",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1384"
@@ -108,7 +145,7 @@
       "sc:name": "Sequence alignment (protein)"
     },
     {
-      "@id": "_:Nc0c9156856804aff969d025706783a76",
+      "@id": "_:N9be8c2911c454466afa58fa4a766ead3",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2071"
@@ -119,7 +156,7 @@
       "sc:name": "Sequence motif (protein)"
     },
     {
-      "@id": "_:N148e57b06bec476797cf3f3f51da0cfd",
+      "@id": "_:Naa559845949645798a4ebe26749f94a8",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0858"
@@ -128,43 +165,6 @@
         "@id": "edam:format_2330"
       },
       "sc:name": "Sequence signature matches"
-    },
-    {
-      "@id": "_:N8458b3c9640c4269865bf650b935ebe4",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2976"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1929"
-      },
-      "sc:name": "Protein sequence"
-    },
-    {
-      "@id": "_:Nbd4988788b86474d9c6e64ec56bba138",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2071"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2068"
-      },
-      "sc:name": "Sequence motif (protein)"
-    },
-    {
-      "@id": "_:Nb226e1dbd8274a49832e9c7b511a3059",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2976"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1929"
-      },
-      "sc:name": "Protein sequence"
-    },
-    {
-      "@id": "https://doi.org/10.1007/11564096_50",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

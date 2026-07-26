@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,41 +40,41 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N9ef199fb88144482a47a28bdbdc21ae9"
+          "@id": "_:Ndf5846bd7443496ab8cb2267265bfae3"
         },
         {
-          "@id": "_:N7a2ca0080a764ea78841c5a700073f1b"
+          "@id": "_:N25a04c3947944bec9e35d6a3ff14decd"
         },
         {
-          "@id": "_:Neb2526f675774c089a38ea96fb0ae011"
+          "@id": "_:N863aac9b15b44afb84d004175db75a0f"
         },
         {
-          "@id": "_:Ndc4db399a54246feafa23d43c4a35330"
+          "@id": "_:N271c02178c1645faac42089b4e83d9ae"
         }
       ],
       "bsc:output": {
-        "@id": "_:Ne9a198212e1c41769e53b2a5b0cbd3c2"
+        "@id": "_:N15627f89e78649ac960e68aec5f7215e"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3520"
+          "@id": "edam:topic_0089"
         },
         {
           "@id": "edam:topic_0121"
         },
         {
-          "@id": "edam:topic_0089"
+          "@id": "edam:topic_3520"
         }
       ],
       "sc:description": "Sorts protein identifications under GOA slim terms.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3672"
+          "@id": "edam:operation_3502"
         },
         {
-          "@id": "edam:operation_3502"
+          "@id": "edam:operation_3672"
         },
         {
           "@id": "edam:operation_2436"
@@ -83,8 +83,8 @@
       "sc:license": "GPL-3.0",
       "sc:name": "goa_gubbar",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "http://www.ms-utils.org/goa_gubbar/index.html"
@@ -92,7 +92,7 @@
       "sc:url": "http://www.ms-utils.org/goa_gubbar/index.html"
     },
     {
-      "@id": "_:N9ef199fb88144482a47a28bdbdc21ae9",
+      "@id": "_:Ndf5846bd7443496ab8cb2267265bfae3",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1864"
@@ -103,18 +103,7 @@
       "sc:name": "Map set data"
     },
     {
-      "@id": "_:N7a2ca0080a764ea78841c5a700073f1b",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0945"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Peptide identification"
-    },
-    {
-      "@id": "_:Neb2526f675774c089a38ea96fb0ae011",
+      "@id": "_:N25a04c3947944bec9e35d6a3ff14decd",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0582"
@@ -125,7 +114,7 @@
       "sc:name": "Ontology"
     },
     {
-      "@id": "_:Ndc4db399a54246feafa23d43c4a35330",
+      "@id": "_:N863aac9b15b44afb84d004175db75a0f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0582"
@@ -136,7 +125,18 @@
       "sc:name": "Ontology"
     },
     {
-      "@id": "_:Ne9a198212e1c41769e53b2a5b0cbd3c2",
+      "@id": "_:N271c02178c1645faac42089b4e83d9ae",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0945"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Peptide identification"
+    },
+    {
+      "@id": "_:N15627f89e78649ac960e68aec5f7215e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3754"

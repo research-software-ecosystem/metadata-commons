@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,39 +36,43 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1038/nmeth.3255",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/DIA-Umpire",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Chih-Chiang Tsou",
       "bsc:input": [
         {
-          "@id": "_:Nfec6384a72424f1d9fecb4ef715a4000"
+          "@id": "_:Nf82465fd319345f59c666dfc1f4bcb6e"
         },
         {
-          "@id": "_:Nbe6ebed523c5431180868c3d3865ca52"
+          "@id": "_:Nc78c0ece224a4a6a99279ca799e7b74f"
         },
         {
-          "@id": "_:Nf2ffd678061a4569bcb1ab5d6154afc2"
+          "@id": "_:N7dbe6ba6a2b1496e981b2f371efcb56b"
         },
         {
-          "@id": "_:N8fc75b2774504005bccc85ead411fb52"
+          "@id": "_:Nfe0f503d924545c195909158b935a6e9"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Nd5931887989342f882e7769fbc326dc1"
+          "@id": "_:N51bd93eff6c34482baa97a414ece97e1"
         },
         {
-          "@id": "_:N0e292a725e4142088b23a13852231cc1"
+          "@id": "_:Ne17fff4a0eef4329b1112df00ed6501a"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3520"
+          "@id": "edam:topic_0121"
         },
         {
-          "@id": "edam:topic_0121"
+          "@id": "edam:topic_3520"
         }
       ],
       "sc:citation": [
@@ -81,10 +85,16 @@
       "sc:description": "DIA-Umpire is an open source Java program for computational analysis of data independent acquisition (DIA) mass spectrometry-based proteomics data. It enables untargeted peptide and protein identification and quantitation using DIA data, and also incorporates targeted extraction to reduce the number of cases of missing quantitation.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3860"
+          "@id": "edam:operation_3631"
         },
         {
           "@id": "edam:operation_3630"
+        },
+        {
+          "@id": "edam:operation_3801"
+        },
+        {
+          "@id": "edam:operation_3649"
         },
         {
           "@id": "edam:operation_3627"
@@ -96,22 +106,16 @@
           "@id": "edam:operation_3633"
         },
         {
-          "@id": "edam:operation_3649"
-        },
-        {
-          "@id": "edam:operation_3801"
-        },
-        {
-          "@id": "edam:operation_3631"
+          "@id": "edam:operation_3860"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "Apache-2.0",
       "sc:name": "DIA-Umpire",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://sourceforge.net/projects/diaumpire/files/Manual/"
@@ -120,23 +124,7 @@
       "sc:url": "https://sourceforge.net/projects/diaumpire/"
     },
     {
-      "@id": "_:Nfec6384a72424f1d9fecb4ef715a4000",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0943"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3654"
-        },
-        {
-          "@id": "edam:format_3651"
-        }
-      ],
-      "sc:name": "Mass spectrometry spectra"
-    },
-    {
-      "@id": "_:Nbe6ebed523c5431180868c3d3865ca52",
+      "@id": "_:Nf82465fd319345f59c666dfc1f4bcb6e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2603"
@@ -152,7 +140,23 @@
       "sc:name": "Expression data"
     },
     {
-      "@id": "_:Nf2ffd678061a4569bcb1ab5d6154afc2",
+      "@id": "_:Nc78c0ece224a4a6a99279ca799e7b74f",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0943"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3651"
+        },
+        {
+          "@id": "edam:format_3654"
+        }
+      ],
+      "sc:name": "Mass spectrometry spectra"
+    },
+    {
+      "@id": "_:N7dbe6ba6a2b1496e981b2f371efcb56b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0850"
@@ -163,7 +167,7 @@
       "sc:name": "Sequence set"
     },
     {
-      "@id": "_:N8fc75b2774504005bccc85ead411fb52",
+      "@id": "_:Nfe0f503d924545c195909158b935a6e9",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0943"
@@ -174,7 +178,7 @@
       "sc:name": "Mass spectrometry spectra"
     },
     {
-      "@id": "_:Nd5931887989342f882e7769fbc326dc1",
+      "@id": "_:N51bd93eff6c34482baa97a414ece97e1",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2603"
@@ -185,7 +189,7 @@
       "sc:name": "Expression data"
     },
     {
-      "@id": "_:N0e292a725e4142088b23a13852231cc1",
+      "@id": "_:Ne17fff4a0eef4329b1112df00ed6501a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0943"
@@ -194,10 +198,6 @@
         "@id": "edam:format_3651"
       },
       "sc:name": "Mass spectrometry spectra"
-    },
-    {
-      "@id": "https://doi.org/10.1038/nmeth.3255",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

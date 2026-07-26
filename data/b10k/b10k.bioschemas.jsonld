@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,12 +39,12 @@
       "@id": "https://bio.tools/b10k",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nb1984c238aae4dd694cbd4103acd501f"
+        "@id": "_:N52be0ca77a1245958977021ba109db0e"
       },
       "bsc:output": {
-        "@id": "_:N1b8be76dddf242e2bd98f71c27a2c54a"
+        "@id": "_:N5aa5a4bf22aa4168a48605b838a1516b"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Database portal",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3050"
@@ -58,20 +58,20 @@
       "sc:url": "https://b10k.com/"
     },
     {
-      "@id": "_:N1b8be76dddf242e2bd98f71c27a2c54a",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1868"
-      },
-      "sc:name": "Taxon"
-    },
-    {
-      "@id": "_:Nb1984c238aae4dd694cbd4103acd501f",
+      "@id": "_:N52be0ca77a1245958977021ba109db0e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3494"
       },
       "sc:name": "DNA sequence"
+    },
+    {
+      "@id": "_:N5aa5a4bf22aa4168a48605b838a1516b",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1868"
+      },
+      "sc:name": "Taxon"
     }
   ]
 }

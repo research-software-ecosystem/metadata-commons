@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,18 +36,22 @@
   },
   "@graph": [
     {
+      "@id": "https://orcid.org/0000-0002-9383-1107",
+      "@type": "sc:Person"
+    },
+    {
       "@id": "https://bio.tools/glycombocli",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "https://orcid.org/0000-0001-5944-6179"
       },
       "bsc:input": {
-        "@id": "_:N2da7d7d2196a49999dc1dc5fa655cd21"
+        "@id": "_:Nd91cd561da5a4ef99a0bac943c1d136b"
       },
       "bsc:output": {
-        "@id": "_:N74525e2c48ce4e9bb780ba532b229090"
+        "@id": "_:N36af967fe8174d1e81524024930bd197"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
@@ -63,10 +67,10 @@
       "sc:description": "GlyComboCLI is an open source command line interface for combinatorial glycan composition determination to identify glycans in MS acquisitions of glycan-containing samples in text or mzML formats. This application enables rapid extraction of precursor m/z values from mzML files, a vendor-neutral format that ensures cross-platform compatibility.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3214"
+          "@id": "edam:operation_0236"
         },
         {
-          "@id": "edam:operation_0236"
+          "@id": "edam:operation_3214"
         }
       ],
       "sc:isAccessibleForFree": true,
@@ -83,7 +87,7 @@
       "sc:url": "https://github.com/Protea-Glycosciences/GlyComboCLI"
     },
     {
-      "@id": "_:N2da7d7d2196a49999dc1dc5fa655cd21",
+      "@id": "_:Nd91cd561da5a4ef99a0bac943c1d136b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0943"
@@ -94,7 +98,7 @@
       "sc:name": "Mass spectrum"
     },
     {
-      "@id": "_:N74525e2c48ce4e9bb780ba532b229090",
+      "@id": "_:N36af967fe8174d1e81524024930bd197",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2900"
@@ -106,10 +110,6 @@
     },
     {
       "@id": "https://orcid.org/0000-0001-5944-6179",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://orcid.org/0000-0002-9383-1107",
       "@type": "sc:Person"
     }
   ]

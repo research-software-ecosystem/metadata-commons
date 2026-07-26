@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,48 +36,44 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1021/acs.jproteome.6b00632",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/xtandempipeline",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N566b4b4ca39a4e1b9b0b8172a6749ccf"
+          "@id": "_:Ned9ef9cd83c444e983060e175500f481"
         },
         {
-          "@id": "_:Ndabca99ec4d74ffeb82bcc8530f3e82f"
+          "@id": "_:N0d924e715c1643e89e3e7c2f06a1673e"
         },
         {
-          "@id": "_:Na562b0d0bffa40978779c03ad36666fb"
+          "@id": "_:N01139c9f90954199870052a4ffe15d29"
         },
         {
-          "@id": "_:N303244f07577449995dffb2dddec8f71"
+          "@id": "_:Nb96b4f4264cc40b6b896306920562849"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Ne77579882db94c6f8d2cd84cd8a36afc"
+          "@id": "_:N6f87369509f84de0b455e351417960cd"
         },
         {
-          "@id": "_:N30468c62366c419e945ab92928f1caac"
+          "@id": "_:N3e278f6c41dc44c79777f3cdcd3b6727"
         },
         {
-          "@id": "_:Ne6263642361f4d119b438519c7ee001e"
+          "@id": "_:N90d9fbb9b8494876bbb04ad61f6f4ca5"
         },
         {
-          "@id": "_:Naa1c05d9d23d48c6b9360fff117257c7"
+          "@id": "_:N84fedfe9ed104eec8b1a578824336404"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Desktop application",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3520"
+          "@id": "edam:topic_0121"
         },
         {
-          "@id": "edam:topic_0121"
+          "@id": "edam:topic_3520"
         }
       ],
       "sc:citation": {
@@ -89,16 +85,16 @@
           "@id": "edam:operation_3694"
         },
         {
-          "@id": "edam:operation_3645"
-        },
-        {
           "@id": "edam:operation_3647"
         },
         {
-          "@id": "edam:operation_3631"
+          "@id": "edam:operation_3645"
         },
         {
           "@id": "edam:operation_3646"
+        },
+        {
+          "@id": "edam:operation_3631"
         },
         {
           "@id": "edam:operation_2424"
@@ -107,20 +103,20 @@
           "@id": "edam:operation_2409"
         },
         {
-          "@id": "edam:operation_3649"
-        },
-        {
           "@id": "edam:operation_3695"
         },
         {
           "@id": "edam:operation_3767"
+        },
+        {
+          "@id": "edam:operation_3649"
         }
       ],
       "sc:name": "XTandemPipeline",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://pappso.inra.fr/bioinfo/xtandempipeline/documentation.php"
@@ -128,63 +124,63 @@
       "sc:url": "http://pappso.inra.fr/bioinfo/xtandempipeline/"
     },
     {
-      "@id": "_:N566b4b4ca39a4e1b9b0b8172a6749ccf",
+      "@id": "_:Ned9ef9cd83c444e983060e175500f481",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0943"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_3653"
-        },
-        {
-          "@id": "edam:format_3834"
-        },
-        {
           "@id": "edam:format_3651"
-        },
-        {
-          "@id": "edam:format_3244"
         },
         {
           "@id": "edam:format_3652"
         },
         {
+          "@id": "edam:format_3834"
+        },
+        {
+          "@id": "edam:format_3244"
+        },
+        {
           "@id": "edam:format_3654"
+        },
+        {
+          "@id": "edam:format_3653"
         }
       ],
       "sc:name": "Mass spectrometry spectra"
     },
     {
-      "@id": "_:Ndabca99ec4d74ffeb82bcc8530f3e82f",
+      "@id": "_:N0d924e715c1643e89e3e7c2f06a1673e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0943"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_3244"
+          "@id": "edam:format_3651"
         },
         {
           "@id": "edam:format_3652"
+        },
+        {
+          "@id": "edam:format_3834"
+        },
+        {
+          "@id": "edam:format_3244"
         },
         {
           "@id": "edam:format_3654"
         },
         {
           "@id": "edam:format_3653"
-        },
-        {
-          "@id": "edam:format_3834"
-        },
-        {
-          "@id": "edam:format_3651"
         }
       ],
       "sc:name": "Mass spectrometry spectra"
     },
     {
-      "@id": "_:Na562b0d0bffa40978779c03ad36666fb",
+      "@id": "_:N01139c9f90954199870052a4ffe15d29",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1233"
@@ -195,20 +191,20 @@
       "sc:name": "Sequence set (protein)"
     },
     {
-      "@id": "_:N303244f07577449995dffb2dddec8f71",
+      "@id": "_:Nb96b4f4264cc40b6b896306920562849",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0945"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_3711"
+          "@id": "edam:format_3713"
         },
         {
           "@id": "edam:format_3758"
         },
         {
-          "@id": "edam:format_3713"
+          "@id": "edam:format_3711"
         },
         {
           "@id": "edam:format_3655"
@@ -217,7 +213,34 @@
       "sc:name": "Peptide identification"
     },
     {
-      "@id": "_:Ne77579882db94c6f8d2cd84cd8a36afc",
+      "@id": "_:N6f87369509f84de0b455e351417960cd",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3483"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3603"
+        },
+        {
+          "@id": "edam:format_3604"
+        }
+      ],
+      "sc:name": "Spectrum"
+    },
+    {
+      "@id": "_:N3e278f6c41dc44c79777f3cdcd3b6727",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0945"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3711"
+      },
+      "sc:name": "Peptide identification"
+    },
+    {
+      "@id": "_:N90d9fbb9b8494876bbb04ad61f6f4ca5",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0945"
@@ -233,34 +256,7 @@
       "sc:name": "Peptide identification"
     },
     {
-      "@id": "_:N30468c62366c419e945ab92928f1caac",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3483"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3604"
-        },
-        {
-          "@id": "edam:format_3603"
-        }
-      ],
-      "sc:name": "Spectrum"
-    },
-    {
-      "@id": "_:Ne6263642361f4d119b438519c7ee001e",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0945"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3711"
-      },
-      "sc:name": "Peptide identification"
-    },
-    {
-      "@id": "_:Naa1c05d9d23d48c6b9360fff117257c7",
+      "@id": "_:N84fedfe9ed104eec8b1a578824336404",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0850"
@@ -269,6 +265,10 @@
         "@id": "edam:format_1929"
       },
       "sc:name": "Sequence set"
+    },
+    {
+      "@id": "https://doi.org/10.1021/acs.jproteome.6b00632",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

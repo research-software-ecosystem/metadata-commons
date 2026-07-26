@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,6 +36,10 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1038/nmeth.3252",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/elbow",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
@@ -43,33 +47,33 @@
         "Xiangli Zhang"
       ],
       "bsc:input": {
-        "@id": "_:N4951e02f29aa47a9828e65e2600ae38d"
+        "@id": "_:N75db7bc82c1740f1bde912571caa876d"
       },
       "bsc:output": [
         {
-          "@id": "_:N20e3a0c5adaf4630936755e7b3ac3949"
+          "@id": "_:N07c589e9e5ad42dabc25557811d65100"
         },
         {
-          "@id": "_:N3ff6f4fcd47840158b7db5a5b42ac47d"
+          "@id": "_:Naea0d0e6c6c349508341b287f69fbd6a"
         },
         {
-          "@id": "_:Nfaceac59b21749bcbd877dd6f37286bf"
+          "@id": "_:Nc010e98e974247158c0be5d726bf1dfa"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
         {
           "@id": "edam:topic_0203"
         },
         {
-          "@id": "edam:topic_3170"
+          "@id": "edam:topic_3518"
         },
         {
-          "@id": "edam:topic_3518"
+          "@id": "edam:topic_3170"
         },
         {
           "@id": "edam:topic_2269"
@@ -88,8 +92,8 @@
       },
       "sc:name": "ELBOW",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -99,55 +103,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/ELBOW.html"
     },
     {
-      "@id": "_:N20e3a0c5adaf4630936755e7b3ac3949",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1669"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_3547"
-        }
-      ],
-      "sc:name": "P-value"
-    },
-    {
-      "@id": "_:N3ff6f4fcd47840158b7db5a5b42ac47d",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2884"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_3547"
-        }
-      ],
-      "sc:name": "Plot"
-    },
-    {
-      "@id": "_:Nfaceac59b21749bcbd877dd6f37286bf",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1772"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_3547"
-        }
-      ],
-      "sc:name": "Score"
-    },
-    {
-      "@id": "_:N4951e02f29aa47a9828e65e2600ae38d",
+      "@id": "_:N75db7bc82c1740f1bde912571caa876d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0928"
@@ -158,8 +114,52 @@
       "sc:name": "Gene expression profile"
     },
     {
-      "@id": "https://doi.org/10.1038/nmeth.3252",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N07c589e9e5ad42dabc25557811d65100",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1669"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "P-value"
+    },
+    {
+      "@id": "_:Naea0d0e6c6c349508341b287f69fbd6a",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2884"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Plot"
+    },
+    {
+      "@id": "_:Nc010e98e974247158c0be5d726bf1dfa",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1772"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Score"
     }
   ]
 }

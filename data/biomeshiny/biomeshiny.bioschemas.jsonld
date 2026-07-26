@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,12 +39,12 @@
       "@id": "https://bio.tools/BiomeShiny",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N9994cc8ee9f5417980ffd6444fac0b22"
+        "@id": "_:Nb35a963883cd4101962e60f18f286ff1"
       },
       "bsc:output": {
-        "@id": "_:N885dadf437864550bcf0f82396f53a7c"
+        "@id": "_:N610014083ee240d2ac2092a7af391833"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3174"
@@ -55,8 +55,8 @@
       },
       "sc:name": "Biome-Shiny",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -66,15 +66,7 @@
       "sc:url": "https://github.com/BioData-PT/Biome-Shiny"
     },
     {
-      "@id": "_:N885dadf437864550bcf0f82396f53a7c",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2884"
-      },
-      "sc:name": "Plot"
-    },
-    {
-      "@id": "_:N9994cc8ee9f5417980ffd6444fac0b22",
+      "@id": "_:Nb35a963883cd4101962e60f18f286ff1",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2080"
@@ -83,6 +75,14 @@
         "@id": "edam:format_3746"
       },
       "sc:name": "Database search results"
+    },
+    {
+      "@id": "_:N610014083ee240d2ac2092a7af391833",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2884"
+      },
+      "sc:name": "Plot"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,35 +36,43 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1016/j.cell.2018.05.057",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-8006-0315",
+      "@type": "sc:Person"
+    },
+    {
       "@id": "https://bio.tools/scope-scrna",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N80bf650db6c34a1e947a8bd7a7721b50"
+        "@id": "_:N6af5f353ee42440ba2ed15b29b41ba1d"
       },
       "bsc:output": {
-        "@id": "_:N533cf078b1ab4c0ab81492f1d76745a5"
+        "@id": "_:Ne1db9582279d46fa806417a3e1b2feb9"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3308"
+          "@id": "edam:topic_3170"
         },
         {
-          "@id": "edam:topic_3170"
+          "@id": "edam:topic_3308"
         }
       ],
       "sc:author": [
-        "Lukasz Kreft",
         "Maxime De Waegeneer",
-        "Kristofer Davie"
+        "Kristofer Davie",
+        "Lukasz Kreft"
       ],
       "sc:citation": [
+        "pubmed:29909982",
         "pmcid:PMC6086935",
         {
           "@id": "https://doi.org/10.1016/j.cell.2018.05.057"
-        },
-        "pubmed:29909982"
+        }
       ],
       "sc:contributor": {
         "@id": "https://orcid.org/0000-0002-8006-0315"
@@ -87,15 +95,7 @@
       "sc:url": "http://scope.aertslab.org/"
     },
     {
-      "@id": "_:N533cf078b1ab4c0ab81492f1d76745a5",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0006"
-      },
-      "sc:name": "Data"
-    },
-    {
-      "@id": "_:N80bf650db6c34a1e947a8bd7a7721b50",
+      "@id": "_:N6af5f353ee42440ba2ed15b29b41ba1d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2082"
@@ -106,12 +106,12 @@
       "sc:name": "Matrix"
     },
     {
-      "@id": "https://doi.org/10.1016/j.cell.2018.05.057",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://orcid.org/0000-0002-8006-0315",
-      "@type": "sc:Person"
+      "@id": "_:Ne1db9582279d46fa806417a3e1b2feb9",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0006"
+      },
+      "sc:name": "Data"
     }
   ]
 }

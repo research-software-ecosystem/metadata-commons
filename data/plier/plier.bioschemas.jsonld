@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -43,25 +43,25 @@
       "@id": "https://bio.tools/plier",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N5d31c95079bb48cebe4f08ca35ff68eb"
+        "@id": "_:N308ddbaf55254868a2198ab4647a2727"
       },
       "bsc:output": {
-        "@id": "_:Naa5ce854a3d849fcb217a10f46c94ea6"
+        "@id": "_:Na5cfcb935ad348f7970897ba5de98382"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0121"
+          "@id": "edam:topic_3572"
         },
         {
           "@id": "edam:topic_3518"
         },
         {
-          "@id": "edam:topic_3572"
+          "@id": "edam:topic_0121"
         }
       ],
       "sc:citation": {
@@ -70,18 +70,18 @@
       "sc:description": "The PLIER (Probe Logarithmic Error Intensity Estimate) method produces an improved signal by accounting for experimentally observed patterns in probe behavior and handling error at the appropriately at low and high signal values.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3215"
+          "@id": "edam:operation_3695"
         },
         {
-          "@id": "edam:operation_3695"
+          "@id": "edam:operation_3215"
         }
       ],
       "sc:license": "GPL-2.0-or-later",
       "sc:name": "plier",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://bioconductor.org/packages/plier"
@@ -90,18 +90,7 @@
       "sc:url": "https://bioconductor.org/packages/plier"
     },
     {
-      "@id": "_:Naa5ce854a3d849fcb217a10f46c94ea6",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3111"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3475"
-      },
-      "sc:name": "Processed microarray data"
-    },
-    {
-      "@id": "_:N5d31c95079bb48cebe4f08ca35ff68eb",
+      "@id": "_:N308ddbaf55254868a2198ab4647a2727",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3110"
@@ -111,13 +100,24 @@
           "@id": "edam:format_1639"
         },
         {
-          "@id": "edam:format_1637"
+          "@id": "edam:format_1638"
         },
         {
-          "@id": "edam:format_1638"
+          "@id": "edam:format_1637"
         }
       ],
       "sc:name": "Raw microarray data"
+    },
+    {
+      "@id": "_:Na5cfcb935ad348f7970897ba5de98382",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3111"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3475"
+      },
+      "sc:name": "Processed microarray data"
     }
   ]
 }

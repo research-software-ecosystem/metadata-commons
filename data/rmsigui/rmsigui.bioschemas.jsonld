@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,38 +36,42 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.7717/peerj-cs.585",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/rmsigui",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N59ff36a1c7e3439e995111a0056780be"
+          "@id": "_:Nad2523627bfa493a9a5457a8aeb5e97b"
         },
         {
-          "@id": "_:N444355b08c5c461fa676bb154ccdc616"
+          "@id": "_:N97544fd0067c45f8ae2c444c24544060"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Na92853e02fd04e8bb7edc0f02d9d55ea"
+          "@id": "_:N7fe2c39b6c8a45928bec24315d15153a"
         },
         {
-          "@id": "_:N893fe33eee0a428fa67159a7339855ab"
+          "@id": "_:N76f746380ab247a1947b0e56939eb41a"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Web application"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3520"
+          "@id": "edam:topic_3382"
         },
         {
           "@id": "edam:topic_3172"
         },
         {
-          "@id": "edam:topic_3382"
+          "@id": "edam:topic_3520"
         },
         {
           "@id": "edam:topic_0154"
@@ -86,24 +90,24 @@
           "@id": "edam:operation_3443"
         },
         {
-          "@id": "edam:operation_0337"
+          "@id": "edam:operation_3435"
         },
         {
-          "@id": "edam:operation_3435"
+          "@id": "edam:operation_0337"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "GPL-3.0",
       "sc:name": "RmsiGUI",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:url": "https://bitbucket.org/lababi/rmsigui/"
     },
     {
-      "@id": "_:N59ff36a1c7e3439e995111a0056780be",
+      "@id": "_:Nad2523627bfa493a9a5457a8aeb5e97b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2536"
@@ -114,7 +118,7 @@
       "sc:name": "Mass spectrometry data"
     },
     {
-      "@id": "_:N444355b08c5c461fa676bb154ccdc616",
+      "@id": "_:N97544fd0067c45f8ae2c444c24544060",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2536"
@@ -125,26 +129,7 @@
       "sc:name": "Mass spectrometry data"
     },
     {
-      "@id": "_:Na92853e02fd04e8bb7edc0f02d9d55ea",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2968"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3603"
-        },
-        {
-          "@id": "edam:format_3579"
-        },
-        {
-          "@id": "edam:format_3591"
-        }
-      ],
-      "sc:name": "Image"
-    },
-    {
-      "@id": "_:N893fe33eee0a428fa67159a7339855ab",
+      "@id": "_:N7fe2c39b6c8a45928bec24315d15153a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"
@@ -160,8 +145,23 @@
       "sc:name": "Report"
     },
     {
-      "@id": "https://doi.org/10.7717/peerj-cs.585",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N76f746380ab247a1947b0e56939eb41a",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2968"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3579"
+        },
+        {
+          "@id": "edam:format_3603"
+        },
+        {
+          "@id": "edam:format_3591"
+        }
+      ],
+      "sc:name": "Image"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,84 +40,73 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Nbe22b271f3314816930c2b74d48bdcde"
+          "@id": "_:N9ef94d327131437fbc41841d9a58e502"
         },
         {
-          "@id": "_:N5090f017e1254b6ab4a0c879aab428a2"
+          "@id": "_:N0e94bc247ca5469c9db93fa9198d601c"
         },
         {
-          "@id": "_:Na5e0f955bb924754b6df686ba0ebb7db"
+          "@id": "_:N3ddb00cbe1854905b0a3a1243a40911e"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N7427d499285347d9bafd6c54890aa069"
+          "@id": "_:Nac0b6d03762547e199b4581da31a7121"
         },
         {
-          "@id": "_:Nd08c8480b93c487d9ce11aa348645ba0"
+          "@id": "_:Nfd32f2cecc3a4647b946550bc2543818"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web application",
-        "Library"
+        "Library",
+        "Web application"
       ],
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3308"
       },
       "sc:citation": [
+        "pubmed:29361178",
         "pmcid:PMC5888655",
         {
           "@id": "https://doi.org/10.1093/nar/gky007"
-        },
-        "pubmed:29361178"
+        }
       ],
       "sc:description": "Clustering tool for single-cell RNA sequencing data that uses Locality Sensitive Hashing algorithm.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0313"
-        },
-        {
           "@id": "edam:operation_2935"
         },
         {
-          "@id": "edam:operation_3435"
+          "@id": "edam:operation_2495"
         },
         {
-          "@id": "edam:operation_2495"
+          "@id": "edam:operation_0313"
+        },
+        {
+          "@id": "edam:operation_3435"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "GPL-3.0",
       "sc:name": "dropClust",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": [
         {
-          "@id": "https://debsinha.shinyapps.io/dropClust/"
+          "@id": "https://github.com/debsin/dropClust"
         },
         {
-          "@id": "https://github.com/debsin/dropClust"
+          "@id": "https://debsinha.shinyapps.io/dropClust/"
         }
       ],
       "sc:url": "https://debsinha.shinyapps.io/dropClust/"
     },
     {
-      "@id": "_:Nbe22b271f3314816930c2b74d48bdcde",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0842"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3475"
-      },
-      "sc:name": "Identifier"
-    },
-    {
-      "@id": "_:N5090f017e1254b6ab4a0c879aab428a2",
+      "@id": "_:N9ef94d327131437fbc41841d9a58e502",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3112"
@@ -128,7 +117,7 @@
       "sc:name": "Gene expression matrix"
     },
     {
-      "@id": "_:Na5e0f955bb924754b6df686ba0ebb7db",
+      "@id": "_:N0e94bc247ca5469c9db93fa9198d601c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0842"
@@ -139,7 +128,18 @@
       "sc:name": "Identifier"
     },
     {
-      "@id": "_:N7427d499285347d9bafd6c54890aa069",
+      "@id": "_:N3ddb00cbe1854905b0a3a1243a40911e",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0842"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3475"
+      },
+      "sc:name": "Identifier"
+    },
+    {
+      "@id": "_:Nac0b6d03762547e199b4581da31a7121",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2968"
@@ -147,7 +147,7 @@
       "sc:name": "Image"
     },
     {
-      "@id": "_:Nd08c8480b93c487d9ce11aa348645ba0",
+      "@id": "_:Nfd32f2cecc3a4647b946550bc2543818",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"

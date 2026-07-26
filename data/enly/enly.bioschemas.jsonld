@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,31 +36,27 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.7150/jgen.7298",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/enly",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Marco Fondi",
       "bsc:input": {
-        "@id": "_:N50a068731bc346139d29341c74c998b8"
+        "@id": "_:Naa2ddd3b2afe420bbc592a95891669df"
       },
       "bsc:output": {
-        "@id": "_:N494caa577aac41a3b597133f364aba02"
+        "@id": "_:N454471fc232d4bdb9deafabec71edc5a"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0622"
       },
       "sc:author": "Marco Fondi",
       "sc:citation": [
+        "pubmed:25031660",
+        "pmcid:PMC4091449",
         {
           "@id": "https://doi.org/10.7150/jgen.7298"
-        },
-        "pubmed:25031660",
-        "pmcid:PMC4091449"
+        }
       ],
       "sc:description": "Simple tool based on the iterative mapping of sequence reads at contig edges, capable to extend the genomic contigs deriving from high-throughput sequencing, especially those deriving by Newbler-like assemblies. Testing it on a set of de novo draft genomes led to the closure of up to 20% of the gaps originally present. It is cross-platform and most of the steps of its pipeline are parallelizable, making easy and fast to improve a draft genome resulting from a de novo assembly.",
       "sc:featureList": {
@@ -79,7 +75,7 @@
       "sc:url": "http://enly.sourceforge.net/"
     },
     {
-      "@id": "_:N50a068731bc346139d29341c74c998b8",
+      "@id": "_:Naa2ddd3b2afe420bbc592a95891669df",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3497"
@@ -90,12 +86,16 @@
       "sc:name": "DNA sequence (raw)"
     },
     {
-      "@id": "_:N494caa577aac41a3b597133f364aba02",
+      "@id": "_:N454471fc232d4bdb9deafabec71edc5a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3497"
       },
       "sc:name": "DNA sequence (raw)"
+    },
+    {
+      "@id": "https://doi.org/10.7150/jgen.7298",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

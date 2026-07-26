@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,24 +36,20 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1186/s12864-018-5322-5",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/BASILIScan",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "M. Barski",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Desktop application",
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_0121"
-        },
         {
           "@id": "edam:topic_0593"
         },
         {
           "@id": "edam:topic_3538"
+        },
+        {
+          "@id": "edam:topic_0121"
         }
       ],
       "sc:citation": [
@@ -76,22 +72,26 @@
       "sc:license": "Unlicense",
       "sc:name": "BASILIScan",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": [
         {
-          "@id": "https://basilisc.com/faqs/"
+          "@id": "https://basilisc.com/tutorial/"
         },
         {
-          "@id": "https://basilisc.com/tutorial/"
+          "@id": "https://basilisc.com/faqs/"
         },
         {
           "@id": "https://basilisc.com/readme/"
         }
       ],
       "sc:url": "https://basilisc.com/"
+    },
+    {
+      "@id": "https://doi.org/10.1186/s12864-018-5322-5",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

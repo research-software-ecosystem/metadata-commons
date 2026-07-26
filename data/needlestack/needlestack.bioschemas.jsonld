@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,25 +36,29 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1101/639377",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/needlestack",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
         "Nicolas Alcala",
-        "Aurelie Gabriel",
+        "Tiffany Delhomme",
         "Matthieu Foll",
-        "Tiffany Delhomme"
+        "Aurelie Gabriel"
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
           "@id": "edam:topic_3512"
         },
         {
-          "@id": "edam:topic_3168"
+          "@id": "edam:topic_0199"
         },
         {
-          "@id": "edam:topic_0199"
+          "@id": "edam:topic_3168"
         }
       ],
       "sc:citation": {
@@ -66,10 +70,10 @@
           "@id": "edam:operation_3196"
         },
         {
-          "@id": "edam:operation_3227"
+          "@id": "edam:operation_3659"
         },
         {
-          "@id": "edam:operation_3659"
+          "@id": "edam:operation_3227"
         }
       ],
       "sc:isAccessibleForFree": true,
@@ -77,17 +81,13 @@
       "sc:name": "needlestack",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://github.com/IARCbioinfo/needlestack/blob/master/README.md"
       },
       "sc:url": "https://github.com/IARCbioinfo/needlestack"
-    },
-    {
-      "@id": "https://doi.org/10.1101/639377",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

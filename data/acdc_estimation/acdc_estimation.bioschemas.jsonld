@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,15 +40,15 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Markus Lux",
       "bsc:input": {
-        "@id": "_:N92ec3b83a6714d569cdb5e446895f9ce"
+        "@id": "_:N6a57aa2ea37f4546904fccc3dcfceb23"
       },
       "bsc:output": {
-        "@id": "_:Nf61836b41afe4ee6bde54a78dc521882"
+        "@id": "_:N420dcd9654a44d0693f28e892285b612"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web application",
-        "Command-line tool"
+        "Command-line tool",
+        "Web application"
       ],
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0091"
@@ -76,18 +76,7 @@
       "sc:url": "https://bibiserv.cebitec.uni-bielefeld.de/acdc/"
     },
     {
-      "@id": "_:Nf61836b41afe4ee6bde54a78dc521882",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2048"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2331"
-      },
-      "sc:name": "Report"
-    },
-    {
-      "@id": "_:N92ec3b83a6714d569cdb5e446895f9ce",
+      "@id": "_:N6a57aa2ea37f4546904fccc3dcfceb23",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0925"
@@ -96,6 +85,17 @@
         "@id": "edam:format_1929"
       },
       "sc:name": "Sequence assembly"
+    },
+    {
+      "@id": "_:N420dcd9654a44d0693f28e892285b612",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2048"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2331"
+      },
+      "sc:name": "Report"
     },
     {
       "@id": "https://doi.org/10.1186/s12859-016-1397-7",

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,24 +36,20 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1089/106652702761034172",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/jali",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N00893c5380154dec9f4179f16aff42bf"
+          "@id": "_:N5279044feaa3408ea966f4798c38c523"
         },
         {
-          "@id": "_:Ne945b9130c5b4a4b8f858335978cd11c"
+          "@id": "_:N705fd6c7a7924f658b092939b45c37e2"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web API",
         "Command-line tool",
+        "Web API",
         "Web application"
       ],
       "sc:applicationSubCategory": {
@@ -73,14 +69,14 @@
       "sc:isAccessibleForFree": true,
       "sc:name": "JAli",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": [
+        "BiBiServ",
         "Bielefeld University",
-        "CeBiTec",
-        "BiBiServ"
+        "CeBiTec"
       ],
       "sc:softwareHelp": {
         "@id": "http://bibiserv.cebitec.uni-bielefeld.de/jali?id=jali_view_manual"
@@ -89,7 +85,7 @@
       "sc:url": "http://bibiserv.cebitec.uni-bielefeld.de/jali"
     },
     {
-      "@id": "_:N00893c5380154dec9f4179f16aff42bf",
+      "@id": "_:N5279044feaa3408ea966f4798c38c523",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3154"
@@ -100,7 +96,7 @@
       "sc:name": "Protein alignment"
     },
     {
-      "@id": "_:Ne945b9130c5b4a4b8f858335978cd11c",
+      "@id": "_:N705fd6c7a7924f658b092939b45c37e2",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2976"
@@ -109,6 +105,10 @@
         "@id": "edam:format_1929"
       },
       "sc:name": "Protein sequence"
+    },
+    {
+      "@id": "https://doi.org/10.1089/106652702761034172",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

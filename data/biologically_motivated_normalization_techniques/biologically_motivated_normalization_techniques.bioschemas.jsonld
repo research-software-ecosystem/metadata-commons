@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,19 +36,15 @@
   },
   "@graph": [
     {
-      "@id": "https://orcid.org/0000-0001-5242-6060",
-      "@type": "sc:Person"
-    },
-    {
       "@id": "https://bio.tools/biologically_motivated_normalization_techniques",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nf226125a13084baab2c85393893fc933"
+        "@id": "_:Nb276aef02906432aad30500f298fcb20"
       },
       "bsc:output": {
-        "@id": "_:N337912045cfc44a99948e6e0cea7bcf8"
+        "@id": "_:N5b79d6356f674a90b7afbfa5f8c93e28"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Workflow",
       "sc:applicationSubCategory": [
         {
@@ -69,8 +65,8 @@
       "sc:name": "Biologically motivated normalization techniques",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://cbml-gitlab.ics.forth.gr/adovrou/biointensitynorm/-/tree/eucaim?ref_type=heads"
@@ -79,7 +75,7 @@
       "sc:url": "https://cbml-gitlab.ics.forth.gr/adovrou/biointensitynorm/-/tree/eucaim?ref_type=heads"
     },
     {
-      "@id": "_:N337912045cfc44a99948e6e0cea7bcf8",
+      "@id": "_:Nb276aef02906432aad30500f298fcb20",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2968"
@@ -90,7 +86,7 @@
       "sc:name": "Image"
     },
     {
-      "@id": "_:Nf226125a13084baab2c85393893fc933",
+      "@id": "_:N5b79d6356f674a90b7afbfa5f8c93e28",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2968"
@@ -99,6 +95,10 @@
         "@id": "edam:format_3548"
       },
       "sc:name": "Image"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-5242-6060",
+      "@type": "sc:Person"
     }
   ]
 }

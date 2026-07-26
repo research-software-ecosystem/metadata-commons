@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,12 +39,12 @@
       "@id": "https://bio.tools/speclust",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N46d2be5c7d3b4106a2cce95a0989ceed"
+        "@id": "_:Nf019ef771fbe4aa98d8bb5b8a5909a06"
       },
       "bsc:output": {
-        "@id": "_:N7776b8b07a30449ba880b007175e4326"
+        "@id": "_:N8af0ca651de44e7a8ddb32c923e7894a"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0154"
@@ -61,8 +61,8 @@
       },
       "sc:name": "SPECLUST",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:provider": "bils.se",
@@ -73,20 +73,20 @@
       "sc:url": "http://co.bmc.lu.se/speclust/"
     },
     {
-      "@id": "_:N7776b8b07a30449ba880b007175e4326",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2979"
-      },
-      "sc:name": "Peptide property"
-    },
-    {
-      "@id": "_:N46d2be5c7d3b4106a2cce95a0989ceed",
+      "@id": "_:Nf019ef771fbe4aa98d8bb5b8a5909a06",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2536"
       },
       "sc:name": "Mass spectrometry data"
+    },
+    {
+      "@id": "_:N8af0ca651de44e7a8ddb32c923e7894a",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2979"
+      },
+      "sc:name": "Peptide property"
     },
     {
       "@id": "https://doi.org/10.1021/pr050354v",

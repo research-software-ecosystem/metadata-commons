@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,12 +39,12 @@
       "@id": "https://bio.tools/candida.app",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N52838c77573a41b1a2ae3c51f7b4a484"
+        "@id": "_:N948f38ed6af84579a5411653c0e5c736"
       },
       "bsc:output": {
-        "@id": "_:N10ca40c8de4541e898b932327b4242b8"
+        "@id": "_:Nb73c4019544d4f85aa1c22d124b8db97"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3324"
@@ -52,22 +52,22 @@
       "sc:description": "Analyze Candida auris genomes online",
       "sc:featureList": [
         {
+          "@id": "edam:operation_3482"
+        },
+        {
           "@id": "edam:operation_3180"
         },
         {
           "@id": "edam:operation_0338"
-        },
-        {
-          "@id": "edam:operation_3482"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "Not licensed",
       "sc:name": "Candida.app",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://candida.app/about"
@@ -75,15 +75,7 @@
       "sc:url": "https://candida.app"
     },
     {
-      "@id": "_:N10ca40c8de4541e898b932327b4242b8",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2711"
-      },
-      "sc:name": "Genome report"
-    },
-    {
-      "@id": "_:N52838c77573a41b1a2ae3c51f7b4a484",
+      "@id": "_:N948f38ed6af84579a5411653c0e5c736",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0925"
@@ -92,6 +84,14 @@
         "@id": "edam:format_1929"
       },
       "sc:name": "Sequence assembly"
+    },
+    {
+      "@id": "_:Nb73c4019544d4f85aa1c22d124b8db97",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2711"
+      },
+      "sc:name": "Genome report"
     }
   ]
 }

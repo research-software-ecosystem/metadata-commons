@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,12 +39,12 @@
       "@id": "https://bio.tools/chebi",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Ne651d48c2def4d648bf8ff46917197b6"
+        "@id": "_:Nf9d68cd902a44f52b5ed21f9485802bf"
       },
       "bsc:output": {
-        "@id": "_:N0f325b6d56944fa1b8d24afff3e7a1ff"
+        "@id": "_:Na875f7273bd942f99d3559c72f40f072"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Database portal",
       "sc:applicationSubCategory": [
         {
@@ -61,26 +61,34 @@
       },
       "sc:name": "ChEBI",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:provider": "EMBL-EBI Databases",
       "sc:softwareHelp": [
         {
+          "@id": "https://www.ebi.ac.uk/training/online/course/chebi-online-chemical-dictionary-small-molecules"
+        },
+        {
           "@id": "https://www.ebi.ac.uk/training/online/course/chebi-quick-tour"
         },
         {
           "@id": "https://docs.google.com/document/d/1_w-DwBdCCOh1gMeeP6yqGzcnkpbHYOa3AGSODe5epcg/edit"
-        },
-        {
-          "@id": "https://www.ebi.ac.uk/training/online/course/chebi-online-chemical-dictionary-small-molecules"
         }
       ],
       "sc:url": "http://www.ebi.ac.uk/chebi/"
     },
     {
-      "@id": "_:N0f325b6d56944fa1b8d24afff3e7a1ff",
+      "@id": "_:Nf9d68cd902a44f52b5ed21f9485802bf",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1174"
+      },
+      "sc:name": "ChEBI ID"
+    },
+    {
+      "@id": "_:Na875f7273bd942f99d3559c72f40f072",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0962"
@@ -89,14 +97,6 @@
         "@id": "edam:format_2331"
       },
       "sc:name": "Small molecule report"
-    },
-    {
-      "@id": "_:Ne651d48c2def4d648bf8ff46917197b6",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1174"
-      },
-      "sc:name": "ChEBI ID"
     }
   ]
 }

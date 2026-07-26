@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -44,28 +44,28 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Ensembl Genomes webteam",
       "bsc:input": {
-        "@id": "_:N5ec2078594d5477f8131384412e2c5e5"
+        "@id": "_:N1efacd957ce943e3ba188ccc31d6c54a"
       },
       "bsc:output": [
         {
-          "@id": "_:Na31f3daf73e8427a93ce4660435e7972"
+          "@id": "_:Nb7a1bef7fcad444eb31adee6e9714d53"
         },
         {
-          "@id": "_:N19112ddb11e8495abee3bed67f31abfa"
+          "@id": "_:Na031cc860fca448e917ea3b3f70f6652"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0080"
       },
       "sc:author": "Ensembl team",
       "sc:citation": [
+        "pubmed:26687719",
+        "pmcid:PMC4702834",
         {
           "@id": "https://doi.org/10.1093/nar/gkv1157"
-        },
-        "pubmed:26687719",
-        "pmcid:PMC4702834"
+        }
       ],
       "sc:description": "Searches Ensembl Metazoa sequences using Exonerate.",
       "sc:featureList": {
@@ -73,8 +73,8 @@
       },
       "sc:name": "Ensembl Genomes Metazoa Blast",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:provider": "EMBL-EBI",
@@ -90,23 +90,7 @@
       "sc:url": "http://metazoa.ensembl.org/Multi/blastview"
     },
     {
-      "@id": "_:Na31f3daf73e8427a93ce4660435e7972",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0863"
-      },
-      "sc:name": "Sequence alignment"
-    },
-    {
-      "@id": "_:N19112ddb11e8495abee3bed67f31abfa",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0857"
-      },
-      "sc:name": "Sequence search results"
-    },
-    {
-      "@id": "_:N5ec2078594d5477f8131384412e2c5e5",
+      "@id": "_:N1efacd957ce943e3ba188ccc31d6c54a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
@@ -115,6 +99,22 @@
         "@id": "edam:format_1929"
       },
       "sc:name": "Sequence"
+    },
+    {
+      "@id": "_:Nb7a1bef7fcad444eb31adee6e9714d53",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0863"
+      },
+      "sc:name": "Sequence alignment"
+    },
+    {
+      "@id": "_:Na031cc860fca448e917ea3b3f70f6652",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0857"
+      },
+      "sc:name": "Sequence search results"
     }
   ]
 }

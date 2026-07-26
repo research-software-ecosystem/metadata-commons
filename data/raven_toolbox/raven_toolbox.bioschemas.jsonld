@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,6 +36,10 @@
   },
   "@graph": [
     {
+      "@id": "http://orcid.org/0000-0001-7475-0136",
+      "@type": "sc:Person"
+    },
+    {
       "@id": "https://bio.tools/raven_toolbox",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
@@ -43,40 +47,40 @@
       },
       "bsc:input": [
         {
-          "@id": "_:Nec35ab07e30f4b6fa6bc3c7ee899264a"
+          "@id": "_:N1565c6f059724e69bb9300cfe571a647"
         },
         {
-          "@id": "_:N94b23659d440468aa93db47cf7cd401e"
+          "@id": "_:Na1e8331a8c5e4053bd06925b3ebb3251"
         },
         {
-          "@id": "_:N406a65a54ebe4747861ae0eaeb542cef"
+          "@id": "_:Nfb5b783c5c5142da9bfeba338428a58a"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Ne15ee39e20ef4b41be95150ab065035a"
+          "@id": "_:N40844ad6478049898df8e7fbd19305a3"
         },
         {
-          "@id": "_:N6b5a24d9b76841d591980f2a069645ec"
+          "@id": "_:N78c9991fcaf34ae7bc58c7383398f4af"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Script",
-        "Command-line tool"
+        "Command-line tool",
+        "Script"
       ],
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_2259"
-        },
-        {
-          "@id": "edam:topic_0602"
-        },
         {
           "@id": "edam:topic_3398"
         },
         {
           "@id": "edam:topic_3307"
+        },
+        {
+          "@id": "edam:topic_0602"
+        },
+        {
+          "@id": "edam:topic_2259"
         }
       ],
       "sc:citation": {
@@ -85,22 +89,22 @@
       "sc:description": "The RAVEN (Reconstruction, Analysis and Visualization of Metabolic Networks) Toolbox 2 is a software suite for Matlab that allows for semi-automated reconstruction of genome-scale models (GEMs). It makes use of published models and/or KEGG, MetaCyc databases, coupled with extensive gap-filling and quality control features. The software suite also contains methods for visualizing simulation results and omics data, as well as a range of methods for performing simulations and analyzing the results. The software is a useful tool for system-wide data analysis in a metabolic context and for streamlined reconstruction of metabolic networks based on protein homology.",
       "sc:featureList": [
         {
+          "@id": "edam:operation_3660"
+        },
+        {
           "@id": "edam:operation_2497"
         },
         {
           "@id": "edam:operation_3439"
-        },
-        {
-          "@id": "edam:operation_3660"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "GPL-3.0",
       "sc:name": "RAVEN Toolbox",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://github.com/SysBioChalmers/RAVEN/wiki"
@@ -109,64 +113,7 @@
       "sc:url": "https://github.com/SysBioChalmers/RAVEN"
     },
     {
-      "@id": "_:Ne15ee39e20ef4b41be95150ab065035a",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2600"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3620"
-        },
-        {
-          "@id": "edam:format_3750"
-        },
-        {
-          "@id": "edam:format_2585"
-        }
-      ],
-      "sc:name": "Pathway or network"
-    },
-    {
-      "@id": "_:N6b5a24d9b76841d591980f2a069645ec",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3722"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1957"
-      },
-      "sc:name": "Physiology parameter"
-    },
-    {
-      "@id": "_:Nec35ab07e30f4b6fa6bc3c7ee899264a",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2600"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2585"
-        },
-        {
-          "@id": "edam:format_3620"
-        }
-      ],
-      "sc:name": "Pathway or network"
-    },
-    {
-      "@id": "_:N94b23659d440468aa93db47cf7cd401e",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2976"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1208"
-      },
-      "sc:name": "Protein sequence"
-    },
-    {
-      "@id": "_:N406a65a54ebe4747861ae0eaeb542cef",
+      "@id": "_:N1565c6f059724e69bb9300cfe571a647",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3112"
@@ -177,12 +124,65 @@
       "sc:name": "Gene expression matrix"
     },
     {
-      "@id": "https://doi.org/10.1101/321067",
-      "@type": "sc:CreativeWork"
+      "@id": "_:Na1e8331a8c5e4053bd06925b3ebb3251",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2600"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2585"
+        },
+        {
+          "@id": "edam:format_3620"
+        }
+      ],
+      "sc:name": "Pathway or network"
     },
     {
-      "@id": "http://orcid.org/0000-0001-7475-0136",
-      "@type": "sc:Person"
+      "@id": "_:Nfb5b783c5c5142da9bfeba338428a58a",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2976"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1208"
+      },
+      "sc:name": "Protein sequence"
+    },
+    {
+      "@id": "_:N40844ad6478049898df8e7fbd19305a3",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2600"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2585"
+        },
+        {
+          "@id": "edam:format_3750"
+        },
+        {
+          "@id": "edam:format_3620"
+        }
+      ],
+      "sc:name": "Pathway or network"
+    },
+    {
+      "@id": "_:N78c9991fcaf34ae7bc58c7383398f4af",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3722"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1957"
+      },
+      "sc:name": "Physiology parameter"
+    },
+    {
+      "@id": "https://doi.org/10.1101/321067",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

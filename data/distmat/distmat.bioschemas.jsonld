@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,60 +40,60 @@
       "@type": "sc:CreativeWork"
     },
     {
-      "@id": "https://doi.org/10.1016/S0168-9525(00)02024-2",
+      "@id": "https://doi.org/10.1017/CBO9781139151399",
       "@type": "sc:CreativeWork"
     },
     {
       "@id": "https://bio.tools/distmat",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nb60467b213f94d36b526d2891f926d33"
+        "@id": "_:N8631ed653da7490e81aa78dcc1c97f4f"
       },
       "bsc:output": {
-        "@id": "_:Nca24c2b5815b42beb6eb3e5a5e5f70a4"
+        "@id": "_:N9b6d8b8c9f824d328e8c6309f8ee8849"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0080"
       },
       "sc:citation": [
         {
-          "@id": "https://doi.org/10.1017/CBO9781139151399"
+          "@id": "https://doi.org/10.1016/S0168-9525(00)02024-2"
         },
         {
-          "@id": "https://doi.org/10.1016/S0168-9525(00)02024-2"
+          "@id": "https://doi.org/10.1017/CBO9781139151399"
         },
         {
           "@id": "https://doi.org/10.1017/CBO9781139151405"
         }
       ],
       "sc:contributor": [
-        "UK MRC",
         "UK BBSRC",
-        "EMBOSS Contributors",
-        "Wellcome Trust"
+        "UK MRC",
+        "Wellcome Trust",
+        "EMBOSS Contributors"
       ],
       "sc:description": "Create a distance matrix from a multiple sequence alignment.",
       "sc:featureList": {
         "@id": "edam:operation_0289"
       },
       "sc:funder": [
-        "UK MRC",
         "UK BBSRC",
+        "UK MRC",
         "Wellcome Trust"
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "GPL-3.0",
       "sc:name": "distmat",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:provider": [
-        "EMBOSS",
-        "EMBL-EBI"
+        "EMBL-EBI",
+        "EMBOSS"
       ],
       "sc:softwareHelp": [
         {
@@ -110,7 +110,7 @@
       "sc:url": "http://emboss.open-bio.org/rel/rel6/apps/distmat.html"
     },
     {
-      "@id": "_:Nb60467b213f94d36b526d2891f926d33",
+      "@id": "_:N8631ed653da7490e81aa78dcc1c97f4f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0863"
@@ -118,7 +118,7 @@
       "sc:name": "Sequence alignment"
     },
     {
-      "@id": "_:Nca24c2b5815b42beb6eb3e5a5e5f70a4",
+      "@id": "_:N9b6d8b8c9f824d328e8c6309f8ee8849",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0870"
@@ -126,7 +126,7 @@
       "sc:name": "Sequence distance matrix"
     },
     {
-      "@id": "https://doi.org/10.1017/CBO9781139151399",
+      "@id": "https://doi.org/10.1016/S0168-9525(00)02024-2",
       "@type": "sc:CreativeWork"
     }
   ]

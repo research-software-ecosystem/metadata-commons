@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,72 +36,48 @@
   },
   "@graph": [
     {
-      "@id": "https://orcid.org/0000-0003-1157-1899",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nargab/lqae082",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://orcid.org/0000-0003-0332-8338",
       "@type": "sc:Person"
-    },
-    {
-      "@id": "https://orcid.org/0000-0001-7470-4324",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://orcid.org/0000-0002-5935-5258",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://orcid.org/0000-0001-6431-3442",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://doi.org/10.1016/j.jmb.2024.168900",
-      "@type": "sc:CreativeWork"
     },
     {
       "@id": "https://bio.tools/constava",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
         {
-          "@id": "https://orcid.org/0000-0003-0332-8338"
+          "@id": "https://orcid.org/0000-0001-7470-4324"
         },
         {
-          "@id": "https://orcid.org/0000-0001-7470-4324"
+          "@id": "https://orcid.org/0000-0003-0332-8338"
         },
         {
           "@id": "https://orcid.org/0000-0001-6431-3442"
         }
       ],
       "bsc:input": {
-        "@id": "_:N11faf2702b914ac7b4954552795d8f93"
+        "@id": "_:Nd25fde2023b34293be0721ea2a3d9855"
       },
       "bsc:output": {
-        "@id": "_:Nba9d34678a45470bbf83de37de44927c"
+        "@id": "_:N010792129858431ea99ad716ab93525b"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0130"
       },
       "sc:citation": [
         {
-          "@id": "https://doi.org/10.1093/nargab/lqae082"
+          "@id": "https://doi.org/10.1016/j.jmb.2024.168900"
         },
         {
-          "@id": "https://doi.org/10.1016/j.jmb.2024.168900"
+          "@id": "https://doi.org/10.1093/nargab/lqae082"
         }
       ],
       "sc:contributor": [
         {
-          "@id": "https://orcid.org/0000-0002-5935-5258"
+          "@id": "https://orcid.org/0000-0003-1157-1899"
         },
         {
-          "@id": "https://orcid.org/0000-0003-1157-1899"
+          "@id": "https://orcid.org/0000-0002-5935-5258"
         },
         {
           "@id": "https://orcid.org/0000-0002-4313-3845"
@@ -121,15 +97,7 @@
       "sc:url": "https://pypi.org/project/constava/"
     },
     {
-      "@id": "_:Nba9d34678a45470bbf83de37de44927c",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2016"
-      },
-      "sc:name": "Amino acid property"
-    },
-    {
-      "@id": "_:N11faf2702b914ac7b4954552795d8f93",
+      "@id": "_:Nd25fde2023b34293be0721ea2a3d9855",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2991"
@@ -137,7 +105,39 @@
       "sc:name": "Protein geometry data"
     },
     {
+      "@id": "_:N010792129858431ea99ad716ab93525b",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2016"
+      },
+      "sc:name": "Amino acid property"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-7470-4324",
+      "@type": "sc:Person"
+    },
+    {
       "@id": "https://orcid.org/0000-0002-4313-3845",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.1016/j.jmb.2024.168900",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-5935-5258",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nargab/lqae082",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-1157-1899",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-6431-3442",
       "@type": "sc:Person"
     }
   ]

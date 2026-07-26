@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,48 +36,44 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1021/acs.analchem.0c02281",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/metidfyr",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N9192e70faa9546ee933adbcbb63e6aaa"
+          "@id": "_:Ne06ee00cc074416bb09d64b6259fd65c"
         },
         {
-          "@id": "_:Nab70f8f2790c478d899b823826ac0c4d"
+          "@id": "_:N66f3f0c2df754b2284d6d8578e0f0a54"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Na841e7f1e7f846c2a213eea520e225d7"
+          "@id": "_:N0a64162244cf43349f8aa991e1611b96"
         },
         {
-          "@id": "_:Nd84d0477b76a4b499969009812b77170"
+          "@id": "_:N42dc85f8ac3e4ada9adcc0aa30aa31c1"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Script",
-        "Command-line tool"
+        "Command-line tool",
+        "Script"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0154"
-        },
-        {
           "@id": "edam:topic_3370"
-        },
-        {
-          "@id": "edam:topic_3520"
         },
         {
           "@id": "edam:topic_3375"
         },
         {
           "@id": "edam:topic_3172"
+        },
+        {
+          "@id": "edam:topic_3520"
+        },
+        {
+          "@id": "edam:topic_0154"
         }
       ],
       "sc:citation": {
@@ -100,7 +96,7 @@
       "sc:url": "https://github.com/agnesbrnb/MetIDfyR"
     },
     {
-      "@id": "_:N9192e70faa9546ee933adbcbb63e6aaa",
+      "@id": "_:Ne06ee00cc074416bb09d64b6259fd65c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0846"
@@ -108,7 +104,7 @@
       "sc:name": "Chemical formula"
     },
     {
-      "@id": "_:Nab70f8f2790c478d899b823826ac0c4d",
+      "@id": "_:N66f3f0c2df754b2284d6d8578e0f0a54",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2536"
@@ -119,7 +115,7 @@
       "sc:name": "Mass spectrometry data"
     },
     {
-      "@id": "_:Na841e7f1e7f846c2a213eea520e225d7",
+      "@id": "_:N0a64162244cf43349f8aa991e1611b96",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
@@ -130,7 +126,7 @@
       "sc:name": "Plot"
     },
     {
-      "@id": "_:Nd84d0477b76a4b499969009812b77170",
+      "@id": "_:N42dc85f8ac3e4ada9adcc0aa30aa31c1",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"
@@ -139,6 +135,10 @@
         "@id": "edam:format_3475"
       },
       "sc:name": "Report"
+    },
+    {
+      "@id": "https://doi.org/10.1021/acs.analchem.0c02281",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

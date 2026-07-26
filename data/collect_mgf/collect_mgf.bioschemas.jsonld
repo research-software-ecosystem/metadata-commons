@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,12 +39,12 @@
       "@id": "https://bio.tools/collect_mgf",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nd5cceee4e34b4602abac41642c59cbdc"
+        "@id": "_:N344f89c8f22b437d8354ac8ba2a683df"
       },
       "bsc:output": {
-        "@id": "_:N8513997dba034acd9e076912190d5811"
+        "@id": "_:N1545ec45566f48ce8a249f3c92a6b8df"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
@@ -57,20 +57,20 @@
       "sc:description": "Collects MGF files and dd_results from an XMass setup_QDD.tcl experiment to a single MGF file.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_1812"
+          "@id": "edam:operation_3436"
         },
         {
           "@id": "edam:operation_0335"
         },
         {
-          "@id": "edam:operation_3436"
+          "@id": "edam:operation_1812"
         }
       ],
       "sc:license": "GPL-3.0",
       "sc:name": "collect_mgf",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -79,7 +79,7 @@
       "sc:url": "http://www.ms-utils.org/collect_mgf.c"
     },
     {
-      "@id": "_:Nd5cceee4e34b4602abac41642c59cbdc",
+      "@id": "_:N344f89c8f22b437d8354ac8ba2a683df",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0943"
@@ -90,7 +90,7 @@
       "sc:name": "Mass spectrometry spectra"
     },
     {
-      "@id": "_:N8513997dba034acd9e076912190d5811",
+      "@id": "_:N1545ec45566f48ce8a249f3c92a6b8df",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0943"

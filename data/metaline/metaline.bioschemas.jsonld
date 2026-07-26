@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,82 +40,82 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N918e348d1c5b4fda88988146dfd91a51"
+          "@id": "_:N0d4c6c7343464115a661bebb8b426bad"
         },
         {
-          "@id": "_:Nf99bd2dc377a4872a938d474f0543090"
+          "@id": "_:N62d9d70ea80c4f9d8c5cab61df9acc59"
         },
         {
-          "@id": "_:N1515d681af874b809bed2d518882ce38"
+          "@id": "_:N936a5436100b4e1fb9ee98a4bf96b15b"
         },
         {
-          "@id": "_:N15737793c1634e1f8d8ab18b5fd8afba"
+          "@id": "_:Nb7070ee236d6485085eef2bbdcf8eb29"
         },
         {
-          "@id": "_:N4f36e1143d594e56bfa3bcdb320ad8ed"
+          "@id": "_:N00f08e2dc735432eb9039b69ec3c4695"
         },
         {
-          "@id": "_:N3972939691a9486b92fb588dc9ea25db"
+          "@id": "_:N5ac3ef4ae3a04f56a1c866d986faf4ef"
         },
         {
-          "@id": "_:N54b99fcb450e4111ac82cc804193ac16"
+          "@id": "_:Nb2e712ceb3cd4eec89ac66186d38a41a"
         },
         {
-          "@id": "_:Ne8d6aa4c44714e018e623fb9c7f6f5ba"
+          "@id": "_:N01fa436b4e274e06950011d80a7af033"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N36c9f7583cc34d5683faea000b1404e2"
+          "@id": "_:N154c166487144356b03b50364a420725"
         },
         {
-          "@id": "_:Neccd70ace9354f29bc1cad4e1e64769d"
+          "@id": "_:Nef2ded0756934841a0e0862454ec8a86"
         },
         {
-          "@id": "_:N7a906bc66a9e453db147d2e5256a57b8"
+          "@id": "_:Nfc7a6f424cd1462d905283ffa5eb92bf"
         },
         {
-          "@id": "_:N8e0391857cd6478681a46ca05657e2ed"
+          "@id": "_:Nd1ec435fec264c298ad490344e3b8370"
         },
         {
-          "@id": "_:Na8163e1e822c4340935d042a012d8509"
+          "@id": "_:N02984395ba2846dcb8832b7ff2ddc4f2"
         },
         {
-          "@id": "_:N624969cb50db404d9c4b7ad3665d31ae"
+          "@id": "_:N7108ebc9e1a24a0992f93738c60aeeb2"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Workflow",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0637"
+          "@id": "edam:topic_3174"
         },
         {
           "@id": "edam:topic_3301"
         },
         {
-          "@id": "edam:topic_3174"
+          "@id": "edam:topic_0637"
         }
       ],
       "sc:description": "metagenomics Taxonomic Assignation pipeline in Snakemake",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3218"
-        },
-        {
-          "@id": "edam:operation_0496"
-        },
-        {
-          "@id": "edam:operation_3434"
+          "@id": "edam:operation_3460"
         },
         {
           "@id": "edam:operation_3211"
         },
         {
-          "@id": "edam:operation_3192"
+          "@id": "edam:operation_3218"
         },
         {
-          "@id": "edam:operation_3460"
+          "@id": "edam:operation_3434"
+        },
+        {
+          "@id": "edam:operation_0496"
+        },
+        {
+          "@id": "edam:operation_3192"
         },
         {
           "@id": "edam:operation_0337"
@@ -126,7 +126,7 @@
       "sc:url": "https://github.com/Dfupa/meTAline"
     },
     {
-      "@id": "_:N918e348d1c5b4fda88988146dfd91a51",
+      "@id": "_:N0d4c6c7343464115a661bebb8b426bad",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3028"
@@ -137,7 +137,18 @@
       "sc:name": "Taxonomy"
     },
     {
-      "@id": "_:Nf99bd2dc377a4872a938d474f0543090",
+      "@id": "_:N62d9d70ea80c4f9d8c5cab61df9acc59",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0863"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2573"
+      },
+      "sc:name": "Sequence alignment"
+    },
+    {
+      "@id": "_:N936a5436100b4e1fb9ee98a4bf96b15b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0849"
@@ -148,7 +159,7 @@
       "sc:name": "Sequence record"
     },
     {
-      "@id": "_:N1515d681af874b809bed2d518882ce38",
+      "@id": "_:Nb7070ee236d6485085eef2bbdcf8eb29",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0863"
@@ -159,7 +170,7 @@
       "sc:name": "Sequence alignment"
     },
     {
-      "@id": "_:N15737793c1634e1f8d8ab18b5fd8afba",
+      "@id": "_:N00f08e2dc735432eb9039b69ec3c4695",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0863"
@@ -170,7 +181,7 @@
       "sc:name": "Sequence alignment"
     },
     {
-      "@id": "_:N4f36e1143d594e56bfa3bcdb320ad8ed",
+      "@id": "_:N5ac3ef4ae3a04f56a1c866d986faf4ef",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0849"
@@ -181,7 +192,18 @@
       "sc:name": "Sequence record"
     },
     {
-      "@id": "_:N3972939691a9486b92fb588dc9ea25db",
+      "@id": "_:Nb2e712ceb3cd4eec89ac66186d38a41a",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0849"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1930"
+      },
+      "sc:name": "Sequence record"
+    },
+    {
+      "@id": "_:N01fa436b4e274e06950011d80a7af033",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3028"
@@ -192,40 +214,7 @@
       "sc:name": "Taxonomy"
     },
     {
-      "@id": "_:N54b99fcb450e4111ac82cc804193ac16",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0863"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2573"
-      },
-      "sc:name": "Sequence alignment"
-    },
-    {
-      "@id": "_:Ne8d6aa4c44714e018e623fb9c7f6f5ba",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0849"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1930"
-      },
-      "sc:name": "Sequence record"
-    },
-    {
-      "@id": "_:N36c9f7583cc34d5683faea000b1404e2",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0863"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2573"
-      },
-      "sc:name": "Sequence alignment"
-    },
-    {
-      "@id": "_:Neccd70ace9354f29bc1cad4e1e64769d",
+      "@id": "_:N154c166487144356b03b50364a420725",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
@@ -236,29 +225,18 @@
       "sc:name": "Plot"
     },
     {
-      "@id": "_:N7a906bc66a9e453db147d2e5256a57b8",
+      "@id": "_:Nef2ded0756934841a0e0862454ec8a86",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2884"
+        "@id": "edam:data_0863"
       },
       "sc:encodingFormat": {
-        "@id": "edam:format_2331"
+        "@id": "edam:format_2573"
       },
-      "sc:name": "Plot"
+      "sc:name": "Sequence alignment"
     },
     {
-      "@id": "_:N8e0391857cd6478681a46ca05657e2ed",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0849"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1930"
-      },
-      "sc:name": "Sequence record"
-    },
-    {
-      "@id": "_:Na8163e1e822c4340935d042a012d8509",
+      "@id": "_:Nfc7a6f424cd1462d905283ffa5eb92bf",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3028"
@@ -269,7 +247,7 @@
       "sc:name": "Taxonomy"
     },
     {
-      "@id": "_:N624969cb50db404d9c4b7ad3665d31ae",
+      "@id": "_:Nd1ec435fec264c298ad490344e3b8370",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0863"
@@ -278,6 +256,28 @@
         "@id": "edam:format_2572"
       },
       "sc:name": "Sequence alignment"
+    },
+    {
+      "@id": "_:N02984395ba2846dcb8832b7ff2ddc4f2",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0849"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1930"
+      },
+      "sc:name": "Sequence record"
+    },
+    {
+      "@id": "_:N7108ebc9e1a24a0992f93738c60aeeb2",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2884"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2331"
+      },
+      "sc:name": "Plot"
     }
   ]
 }

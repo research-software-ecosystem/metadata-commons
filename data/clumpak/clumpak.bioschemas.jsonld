@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -42,17 +42,17 @@
     {
       "@id": "https://bio.tools/clumpak",
       "@type": "sc:SoftwareApplication",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3056"
       },
       "sc:citation": [
+        "pubmed:25684545",
         "pmcid:PMC4534335",
         {
           "@id": "https://doi.org/10.1111/1755-0998.12387"
-        },
-        "pubmed:25684545"
+        }
       ],
       "sc:description": "Clustering Markov Packager Across K- was developed in order to aid users analyse the results of STRUCTURE-like programs. The main pipeline offers a full pipeline for the summation and graphical representation of the results previously obtained by the user using a STRUCTURE-like program.",
       "sc:featureList": {
@@ -61,8 +61,8 @@
       "sc:license": "Not licensed",
       "sc:name": "CLUMPAK",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {

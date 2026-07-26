@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -44,48 +44,48 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N0a42a854ae554346823e4c42495bccb6"
+          "@id": "_:Nbf78176b2fb04f4d8c37c2141a87bd37"
         },
         {
-          "@id": "_:Nead26c904f4a4ee3b3ae7513876ca0d7"
+          "@id": "_:Ne46c6e34beca4061946bbe7d6b264487"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N2e61884bdaae487596552bcb68a2f848"
+          "@id": "_:N377a3aa6ed3b46a9b314bb972039a463"
         },
         {
-          "@id": "_:Nec1017d4e7fc430997814ac935d001e5"
+          "@id": "_:N65b9e957019645e08852f268f11fa5c0"
         },
         {
-          "@id": "_:Nbd4bd9aa09874402bee674d616cb060a"
+          "@id": "_:N7894fdf7378e47b9b869483ad8c5a5f3"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Database portal",
       "sc:applicationSubCategory": [
         {
           "@id": "edam:topic_3810"
         },
         {
-          "@id": "edam:topic_3170"
+          "@id": "edam:topic_0780"
         },
         {
           "@id": "edam:topic_3320"
         },
         {
-          "@id": "edam:topic_0749"
+          "@id": "edam:topic_3170"
         },
         {
-          "@id": "edam:topic_0780"
+          "@id": "edam:topic_0749"
         }
       ],
       "sc:citation": [
+        "pubmed:37106367",
         "pmcid:PMC10134664",
         {
           "@id": "https://doi.org/10.1186/S12870-023-04234-7"
-        },
-        "pubmed:37106367"
+        }
       ],
       "sc:description": "Comprehensive database of plant alternative splicing events in response to stress.",
       "sc:featureList": [
@@ -93,18 +93,18 @@
           "@id": "edam:operation_0264"
         },
         {
-          "@id": "edam:operation_0314"
+          "@id": "edam:operation_3431"
         },
         {
-          "@id": "edam:operation_3431"
+          "@id": "edam:operation_0314"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:name": "PlaASDB",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://zzdlab.com/PlaASDB/ASDB/help.php"
@@ -112,7 +112,7 @@
       "sc:url": "http://zzdlab.com/PlaASDB/ASDB/index.html"
     },
     {
-      "@id": "_:N0a42a854ae554346823e4c42495bccb6",
+      "@id": "_:Nbf78176b2fb04f4d8c37c2141a87bd37",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2295"
@@ -120,7 +120,7 @@
       "sc:name": "Gene ID"
     },
     {
-      "@id": "_:Nead26c904f4a4ee3b3ae7513876ca0d7",
+      "@id": "_:Ne46c6e34beca4061946bbe7d6b264487",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2299"
@@ -128,15 +128,7 @@
       "sc:name": "Gene name"
     },
     {
-      "@id": "_:N2e61884bdaae487596552bcb68a2f848",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0897"
-      },
-      "sc:name": "Protein property"
-    },
-    {
-      "@id": "_:Nec1017d4e7fc430997814ac935d001e5",
+      "@id": "_:N377a3aa6ed3b46a9b314bb972039a463",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1176"
@@ -144,12 +136,20 @@
       "sc:name": "GO concept ID"
     },
     {
-      "@id": "_:Nbd4bd9aa09874402bee674d616cb060a",
+      "@id": "_:N65b9e957019645e08852f268f11fa5c0",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0928"
       },
       "sc:name": "Gene expression profile"
+    },
+    {
+      "@id": "_:N7894fdf7378e47b9b869483ad8c5a5f3",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0897"
+      },
+      "sc:name": "Protein property"
     }
   ]
 }

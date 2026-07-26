@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -41,40 +41,49 @@
       "biotools:primaryContact": "URGI support",
       "bsc:input": [
         {
-          "@id": "_:N93c9c238d6a945f6a273c26db2672238"
+          "@id": "_:N9145330f7b734edc935b89be12764fb5"
         },
         {
-          "@id": "_:Nca9679c60c4d4c198d9e6bb51cb530d5"
+          "@id": "_:Nf4d111531dfe4bfdbe028b4d2c8e583f"
         },
         {
-          "@id": "_:N18ebf8e9e72b41358a774778899072d7"
+          "@id": "_:N838393e843574ca296f4f7a5dcc919f1"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Ne2da1880a66a408ba154c7113a6b565e"
+          "@id": "_:N79c82c91af534ecabac0dd59289f7b4e"
         },
         {
-          "@id": "_:N1a56256f1428429387a6c486da141f60"
+          "@id": "_:Nf0dfe754acea48d0909109e2a328c288"
         },
         {
-          "@id": "_:N884649e2474948c1a399314faebd5d23"
+          "@id": "_:Nbe8f973c10eb469fb36d55b12a757823"
         },
         {
-          "@id": "_:N97c370a08115492a8093a0f9ef1223f8"
+          "@id": "_:N1994093e739441b0826d1c32209d7169"
         },
         {
-          "@id": "_:N74642f3ce6314ef0bec15472e9cc5f3f"
+          "@id": "_:Nac7c78b765ac49b28ea42f44f93dae24"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web service",
-        "Web API",
         "Database portal",
-        "Web application"
+        "Web API",
+        "Web application",
+        "Web service"
       ],
       "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_3810"
+        },
+        {
+          "@id": "edam:topic_0091"
+        },
+        {
+          "@id": "edam:topic_3071"
+        },
         {
           "@id": "edam:topic_0610"
         },
@@ -82,37 +91,28 @@
           "@id": "edam:topic_0625"
         },
         {
-          "@id": "edam:topic_3071"
-        },
-        {
-          "@id": "edam:topic_0091"
-        },
-        {
           "@id": "edam:topic_0780"
-        },
-        {
-          "@id": "edam:topic_3810"
         }
       ],
       "sc:description": "FAIDARE: FAIR Data-finder for Agronomic Research. \nThe purpose of this portal is to facilitate the discoverability of public data on plant biology from a federation of established data repositories.\n\nIt is based on the Breeding API (BrAPI) specifications and facilitates the access to genotype and phenotype datasets for crop and forest plants through an easy to use web interface. It also provides a standard interface that can be accessed programatically through web services.\n\nIt is an extension of the generic DataDiscovery portal, a web portal that allows finding any type of data across several databases through a lightweight keyword based search. FAIDARE offers more detailed search and data retrieval capabilities and it takes advantage of the growing adoption of the BrAPI.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3559"
-        },
-        {
-          "@id": "edam:operation_3908"
-        },
-        {
           "@id": "edam:operation_2422"
         },
         {
-          "@id": "edam:operation_3625"
+          "@id": "edam:operation_2421"
         },
         {
           "@id": "edam:operation_0227"
         },
         {
-          "@id": "edam:operation_2421"
+          "@id": "edam:operation_3908"
+        },
+        {
+          "@id": "edam:operation_3559"
+        },
+        {
+          "@id": "edam:operation_3625"
         }
       ],
       "sc:isAccessibleForFree": true,
@@ -121,13 +121,7 @@
       "sc:operatingSystem": "Linux",
       "sc:softwareHelp": [
         {
-          "@id": "https://forgemia.inra.fr/urgi-is/faidare/blob/master/README.md"
-        },
-        {
-          "@id": "https://urgi.versailles.inrae.fr/faidare/legal"
-        },
-        {
-          "@id": "https://urgi.versailles.inrae.fr/faidare/help"
+          "@id": "https://urgi.versailles.inrae.fr/faidare/swagger-ui.html"
         },
         {
           "@id": "https://forgemia.inra.fr/urgi-is/faidare/blob/master/CONTRIBUTING.md"
@@ -136,13 +130,43 @@
           "@id": "https://urgi.versailles.inrae.fr/faidare/join"
         },
         {
-          "@id": "https://urgi.versailles.inrae.fr/faidare/swagger-ui.html"
+          "@id": "https://urgi.versailles.inrae.fr/faidare/help"
+        },
+        {
+          "@id": "https://forgemia.inra.fr/urgi-is/faidare/blob/master/README.md"
+        },
+        {
+          "@id": "https://urgi.versailles.inrae.fr/faidare/legal"
         }
       ],
       "sc:url": "https://urgi.versailles.inrae.fr/faidare/"
     },
     {
-      "@id": "_:Ne2da1880a66a408ba154c7113a6b565e",
+      "@id": "_:N9145330f7b734edc935b89be12764fb5",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0842"
+      },
+      "sc:name": "Identifier"
+    },
+    {
+      "@id": "_:Nf4d111531dfe4bfdbe028b4d2c8e583f",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0968"
+      },
+      "sc:name": "Keyword"
+    },
+    {
+      "@id": "_:N838393e843574ca296f4f7a5dcc919f1",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2353"
+      },
+      "sc:name": "Ontology data"
+    },
+    {
+      "@id": "_:N79c82c91af534ecabac0dd59289f7b4e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1188"
@@ -150,7 +174,31 @@
       "sc:name": "DOI"
     },
     {
-      "@id": "_:N1a56256f1428429387a6c486da141f60",
+      "@id": "_:Nf0dfe754acea48d0909109e2a328c288",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2093"
+      },
+      "sc:name": "Data reference"
+    },
+    {
+      "@id": "_:Nbe8f973c10eb469fb36d55b12a757823",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3720"
+      },
+      "sc:name": "Geographic location"
+    },
+    {
+      "@id": "_:N1994093e739441b0826d1c32209d7169",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0842"
+      },
+      "sc:name": "Identifier"
+    },
+    {
+      "@id": "_:Nac7c78b765ac49b28ea42f44f93dae24",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2080"
@@ -164,54 +212,6 @@
         }
       ],
       "sc:name": "Database search results"
-    },
-    {
-      "@id": "_:N884649e2474948c1a399314faebd5d23",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3720"
-      },
-      "sc:name": "Geographic location"
-    },
-    {
-      "@id": "_:N97c370a08115492a8093a0f9ef1223f8",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2093"
-      },
-      "sc:name": "Data reference"
-    },
-    {
-      "@id": "_:N74642f3ce6314ef0bec15472e9cc5f3f",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0842"
-      },
-      "sc:name": "Identifier"
-    },
-    {
-      "@id": "_:N93c9c238d6a945f6a273c26db2672238",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0842"
-      },
-      "sc:name": "Identifier"
-    },
-    {
-      "@id": "_:Nca9679c60c4d4c198d9e6bb51cb530d5",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0968"
-      },
-      "sc:name": "Keyword"
-    },
-    {
-      "@id": "_:N18ebf8e9e72b41358a774778899072d7",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2353"
-      },
-      "sc:name": "Ontology data"
     }
   ]
 }

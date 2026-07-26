@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,48 +36,44 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/BIOINFORMATICS/BTAD455",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/ipapy2",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Nbc6a9f4bf9e54f15baed524407eeb14e"
+          "@id": "_:N98a6845387f046a8bf993ab25efe5bf5"
         },
         {
-          "@id": "_:N304eb240f02545a0ab241b6e2be4a9b8"
+          "@id": "_:Ne64255992cb94f329d984de3067f18b4"
         },
         {
-          "@id": "_:N3ac292e426f1443cbe5c911ed6161e7b"
+          "@id": "_:N8dd16779269040b1a24c4f345b13bcfe"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N16e72960d76a458289706aaedb7446a1"
+          "@id": "_:N1871612b54024d71a5e2dd4bf990ebc1"
         },
         {
-          "@id": "_:Na583cb17d7014535b2a57d5016914e63"
+          "@id": "_:N810fcf20cc3942c282d96d579abcbc3d"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Library",
         "Workflow"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0769"
+          "@id": "edam:topic_3370"
         },
         {
           "@id": "edam:topic_3172"
         },
         {
-          "@id": "edam:topic_3370"
+          "@id": "edam:topic_3520"
         },
         {
-          "@id": "edam:topic_3520"
+          "@id": "edam:topic_0769"
         }
       ],
       "sc:citation": [
@@ -96,10 +92,10 @@
           "@id": "edam:operation_0533"
         },
         {
-          "@id": "edam:operation_3801"
+          "@id": "edam:operation_3803"
         },
         {
-          "@id": "edam:operation_3803"
+          "@id": "edam:operation_3801"
         }
       ],
       "sc:isAccessibleForFree": true,
@@ -116,40 +112,7 @@
       "sc:url": "https://github.com/francescodc87/ipaPy2"
     },
     {
-      "@id": "_:N16e72960d76a458289706aaedb7446a1",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0951"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3751"
-      },
-      "sc:name": "Statistical estimate score"
-    },
-    {
-      "@id": "_:Na583cb17d7014535b2a57d5016914e63",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1086"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3751"
-      },
-      "sc:name": "Compound identifier"
-    },
-    {
-      "@id": "_:Nbc6a9f4bf9e54f15baed524407eeb14e",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2600"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Pathway or network"
-    },
-    {
-      "@id": "_:N304eb240f02545a0ab241b6e2be4a9b8",
+      "@id": "_:N98a6845387f046a8bf993ab25efe5bf5",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3917"
@@ -160,7 +123,7 @@
       "sc:name": "Count matrix"
     },
     {
-      "@id": "_:N3ac292e426f1443cbe5c911ed6161e7b",
+      "@id": "_:Ne64255992cb94f329d984de3067f18b4",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0943"
@@ -169,6 +132,43 @@
         "@id": "edam:format_3751"
       },
       "sc:name": "Mass spectrum"
+    },
+    {
+      "@id": "_:N8dd16779269040b1a24c4f345b13bcfe",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2600"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Pathway or network"
+    },
+    {
+      "@id": "_:N1871612b54024d71a5e2dd4bf990ebc1",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1086"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3751"
+      },
+      "sc:name": "Compound identifier"
+    },
+    {
+      "@id": "_:N810fcf20cc3942c282d96d579abcbc3d",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0951"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3751"
+      },
+      "sc:name": "Statistical estimate score"
+    },
+    {
+      "@id": "https://doi.org/10.1093/BIOINFORMATICS/BTAD455",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

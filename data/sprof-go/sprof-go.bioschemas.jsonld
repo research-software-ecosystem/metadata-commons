@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,36 +36,32 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/bib/bbad117",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/sprof-go",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nc2b1fca8ba1444bd81f5811764d36ad0"
+        "@id": "_:N876022bcb0e14f45a5703f47f7613d1d"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0078"
+          "@id": "edam:topic_1775"
         },
         {
           "@id": "edam:topic_0089"
         },
         {
-          "@id": "edam:topic_1775"
+          "@id": "edam:topic_0078"
         },
         {
           "@id": "edam:topic_0154"
         }
       ],
       "sc:citation": [
+        "pubmed:36964722",
         {
           "@id": "https://doi.org/10.1093/bib/bbad117"
-        },
-        "pubmed:36964722"
+        }
       ],
       "sc:description": "Protein function prediction from sequence through pretrained language model and homology-based label diffusion.",
       "sc:featureList": [
@@ -73,24 +69,24 @@
           "@id": "edam:operation_0303"
         },
         {
-          "@id": "edam:operation_0447"
+          "@id": "edam:operation_1777"
         },
         {
-          "@id": "edam:operation_1777"
+          "@id": "edam:operation_0447"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "MIT",
       "sc:name": "SPROF-GO",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:url": "http://bio-web1.nscc-gz.cn/app/sprof-go"
     },
     {
-      "@id": "_:Nc2b1fca8ba1444bd81f5811764d36ad0",
+      "@id": "_:N876022bcb0e14f45a5703f47f7613d1d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2976"
@@ -99,6 +95,10 @@
         "@id": "edam:format_1929"
       },
       "sc:name": "Protein sequence"
+    },
+    {
+      "@id": "https://doi.org/10.1093/bib/bbad117",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

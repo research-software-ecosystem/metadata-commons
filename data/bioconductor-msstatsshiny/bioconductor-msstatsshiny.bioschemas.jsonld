@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,29 +36,25 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.18129/B9.bioc.MSstatsShiny",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/bioconductor-msstatsshiny",
       "@type": "sc:SoftwareApplication",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:author": [
         "Anthony Wu",
-        "Mateusz Staniak",
-        "Deril Raju",
-        "Olga Vitek",
-        "Dhaval Mohandas",
-        "Devon Kohler",
-        "Eduard Sabido",
         "Cristina Pasi",
-        "Ting Huang",
+        "Deril Raju",
+        "Devon Kohler",
+        "Dhaval Mohandas",
+        "Eduard Sabido",
+        "Maanasa Kaza",
+        "Mateusz Staniak",
         "Meena Choi",
-        "Maanasa Kaza"
+        "Olga Vitek",
+        "Ting Huang"
       ],
       "sc:citation": {
         "@id": "https://doi.org/10.18129/B9.bioc.MSstatsShiny"
@@ -67,15 +63,19 @@
       "sc:license": "Artistic-2.0",
       "sc:name": "MSstatsShiny",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://bioconductor.org/packages/MSstatsShiny"
       },
       "sc:softwareVersion": "1.14.0",
       "sc:url": "https://bioconductor.org/packages/MSstatsShiny"
+    },
+    {
+      "@id": "https://doi.org/10.18129/B9.bioc.MSstatsShiny",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

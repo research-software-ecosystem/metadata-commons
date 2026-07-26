@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,40 +40,40 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Nick Furnham",
       "bsc:input": {
-        "@id": "_:N5619ba9d10114104ae9eacf11f0e2e90"
+        "@id": "_:Nfc46382e89bc41488481b6601a022924"
       },
       "bsc:output": [
         {
-          "@id": "_:N22c92bf42f8a40df9f3fce29ab457ca8"
+          "@id": "_:N967b139a8b70496190a9213225fe467c"
         },
         {
-          "@id": "_:N2b9fe28df751413eb0a22c4aec800c4a"
+          "@id": "_:Nf3ed400e0f2b48108cea449fbd117cfc"
         },
         {
-          "@id": "_:Nfb341277611d41c39201b5c10f83613a"
+          "@id": "_:N85ce0edc859a43ccbef550b60ae05c22"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_2814"
+          "@id": "edam:topic_1775"
         },
         {
-          "@id": "edam:topic_1775"
+          "@id": "edam:topic_2814"
         }
       ],
       "sc:author": [
-        "Thornton Group",
         "James Torrance",
-        "Nick Furnham"
+        "Nick Furnham",
+        "Thornton Group"
       ],
       "sc:citation": [
+        "pubmed:14681376",
+        "pmcid:PMC308762",
         {
           "@id": "https://doi.org/10.1093/nar/gkh028"
-        },
-        "pmcid:PMC308762",
-        "pubmed:14681376"
+        }
       ],
       "sc:contributor": "Craig Porter",
       "sc:description": "Search a protein structure for likely catalytic sites.",
@@ -84,41 +84,17 @@
       "sc:provider": "EMBL-EBI",
       "sc:softwareHelp": [
         {
-          "@id": "http://www.ebi.ac.uk/about/terms-of-use"
+          "@id": "http://www.ebi.ac.uk/thornton-srv/databases/CSS_NEW/help.php"
         },
         {
-          "@id": "http://www.ebi.ac.uk/thornton-srv/databases/CSS_NEW/help.php"
+          "@id": "http://www.ebi.ac.uk/about/terms-of-use"
         }
       ],
       "sc:softwareVersion": "1",
       "sc:url": "http://www.ebi.ac.uk/thornton-srv/databases/CSS_NEW"
     },
     {
-      "@id": "_:N22c92bf42f8a40df9f3fce29ab457ca8",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1277"
-      },
-      "sc:name": "Protein features"
-    },
-    {
-      "@id": "_:N2b9fe28df751413eb0a22c4aec800c4a",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1537"
-      },
-      "sc:name": "Protein structure report"
-    },
-    {
-      "@id": "_:Nfb341277611d41c39201b5c10f83613a",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2992"
-      },
-      "sc:name": "Protein structure image"
-    },
-    {
-      "@id": "_:N5619ba9d10114104ae9eacf11f0e2e90",
+      "@id": "_:Nfc46382e89bc41488481b6601a022924",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1460"
@@ -127,6 +103,30 @@
         "@id": "edam:format_1476"
       },
       "sc:name": "Protein structure"
+    },
+    {
+      "@id": "_:N967b139a8b70496190a9213225fe467c",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1277"
+      },
+      "sc:name": "Protein features"
+    },
+    {
+      "@id": "_:Nf3ed400e0f2b48108cea449fbd117cfc",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2992"
+      },
+      "sc:name": "Protein structure image"
+    },
+    {
+      "@id": "_:N85ce0edc859a43ccbef550b60ae05c22",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1537"
+      },
+      "sc:name": "Protein structure report"
     },
     {
       "@id": "https://doi.org/10.1093/nar/gkh028",

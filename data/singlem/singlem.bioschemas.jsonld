@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,19 +36,15 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1101/2024.01.30.578060",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/singlem",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N30249c36808a4cb985a4e4921d219ead"
+        "@id": "_:Nfa81751cbb4745cdb2f237c4441fc33a"
       },
       "bsc:output": {
-        "@id": "_:N373a74fd4caa40ffbc5b06f6ed239f2a"
+        "@id": "_:Nc09a16614b83422e852e00e70f613675"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3174"
@@ -70,7 +66,7 @@
       "sc:url": "https://wwood.github.io/singlem/"
     },
     {
-      "@id": "_:N30249c36808a4cb985a4e4921d219ead",
+      "@id": "_:Nfa81751cbb4745cdb2f237c4441fc33a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3494"
@@ -86,7 +82,7 @@
       "sc:name": "DNA sequence"
     },
     {
-      "@id": "_:N373a74fd4caa40ffbc5b06f6ed239f2a",
+      "@id": "_:Nc09a16614b83422e852e00e70f613675",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3028"
@@ -95,6 +91,10 @@
         "@id": "edam:format_3752"
       },
       "sc:name": "Taxonomy"
+    },
+    {
+      "@id": "https://doi.org/10.1101/2024.01.30.578060",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

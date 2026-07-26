@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,38 +39,38 @@
       "@id": "https://bio.tools/enmix",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nb3fcc80d591642bea11bd1a266cef5df"
+        "@id": "_:N18b9886cea534feda9720239851d9e3d"
       },
       "bsc:output": [
         {
-          "@id": "_:N78dac3c2ce034a23bbc5ee36d7bbd7b6"
+          "@id": "_:N90b96c6d5ca54f42bb97f06ea20a3ba4"
         },
         {
-          "@id": "_:Na9971b6f20b849f8bc43fe750172ef78"
+          "@id": "_:N92aebcdf145640a8b685eac0f13c6e0a"
         },
         {
-          "@id": "_:N42b86c1db51d43e1a56dd7b85eaa42e1"
+          "@id": "_:N196b31e061bb4f2d9288512a879279a4"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3295"
+          "@id": "edam:topic_3572"
         },
         {
-          "@id": "edam:topic_3572"
+          "@id": "edam:topic_3295"
         },
         {
           "@id": "edam:topic_3518"
         }
       ],
       "sc:author": [
-        "Zongli Xu",
-        "Liang Niu"
+        "Liang Niu",
+        "Zongli Xu"
       ],
       "sc:contributor": "Jack Taylor",
       "sc:description": "Tools for quanlity control, analysis and visulization of Illumina DNA methylation array data.",
@@ -85,18 +85,18 @@
       "sc:license": "Artistic-2.0",
       "sc:name": "ENmix",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://bioconductor.org/packages/ENmix"
       },
-      "sc:softwareVersion": "1.48.1",
+      "sc:softwareVersion": "1.48.2",
       "sc:url": "https://bioconductor.org/packages/ENmix"
     },
     {
-      "@id": "_:Nb3fcc80d591642bea11bd1a266cef5df",
+      "@id": "_:N18b9886cea534feda9720239851d9e3d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3117"
@@ -112,23 +112,7 @@
       "sc:name": "Microarray hybridisation data"
     },
     {
-      "@id": "_:N78dac3c2ce034a23bbc5ee36d7bbd7b6",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2048"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3547"
-        },
-        {
-          "@id": "edam:format_2330"
-        }
-      ],
-      "sc:name": "Report"
-    },
-    {
-      "@id": "_:Na9971b6f20b849f8bc43fe750172ef78",
+      "@id": "_:N90b96c6d5ca54f42bb97f06ea20a3ba4",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3117"
@@ -144,7 +128,7 @@
       "sc:name": "Microarray hybridisation data"
     },
     {
-      "@id": "_:N42b86c1db51d43e1a56dd7b85eaa42e1",
+      "@id": "_:N92aebcdf145640a8b685eac0f13c6e0a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
@@ -158,6 +142,22 @@
         }
       ],
       "sc:name": "Plot"
+    },
+    {
+      "@id": "_:N196b31e061bb4f2d9288512a879279a4",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2048"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Report"
     }
   ]
 }

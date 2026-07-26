@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -38,16 +38,16 @@
     {
       "@id": "https://bio.tools/mr-link-2",
       "@type": "sc:SoftwareApplication",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_0625"
+        },
         {
           "@id": "edam:topic_0102"
         },
         {
           "@id": "edam:topic_3172"
-        },
-        {
-          "@id": "edam:topic_0625"
         },
         {
           "@id": "edam:topic_0602"
@@ -62,9 +62,6 @@
       "sc:description": "MR-link2 is a tool that estimates causal effects and pleiotropy in Mendelian randomization analyses, addressing limitations in traditional methods. It utilizes summary statistics and linkage disequilibrium (LD) information to improve accuracy and power in identifying causal relationships from observational data.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3659"
-        },
-        {
           "@id": "edam:operation_3196"
         },
         {
@@ -72,6 +69,9 @@
         },
         {
           "@id": "edam:operation_3799"
+        },
+        {
+          "@id": "edam:operation_3659"
         }
       ],
       "sc:name": "MR-link2",

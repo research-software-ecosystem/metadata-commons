@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,19 +39,19 @@
       "@id": "https://bio.tools/multinichenet",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nc376332372424d929e0c2cff001d5945"
+        "@id": "_:N1bdd4f29d02540a2b912785ef812f17a"
       },
       "bsc:output": {
-        "@id": "_:N5dbeccd9f09b4b7a9c674f1b87834037"
+        "@id": "_:Nb0ed3e735f574292b02796e1c1d3fd12"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Library",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3308"
+          "@id": "edam:topic_0602"
         },
         {
-          "@id": "edam:topic_0602"
+          "@id": "edam:topic_3308"
         }
       ],
       "sc:citation": {
@@ -60,21 +60,21 @@
       "sc:description": "a flexible framework for differential cell-cell communication analysis from multi-sample multi-condition single-cell transcriptomics data",
       "sc:featureList": [
         {
-          "@id": "edam:operation_2428"
+          "@id": "edam:operation_3927"
         },
         {
           "@id": "edam:operation_2423"
         },
         {
-          "@id": "edam:operation_3927"
+          "@id": "edam:operation_2428"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "GPL-3.0",
       "sc:name": "MultiNicheNet",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -84,20 +84,20 @@
       "sc:url": "https://github.com/saeyslab/multinichenetr"
     },
     {
-      "@id": "_:N5dbeccd9f09b4b7a9c674f1b87834037",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2526"
-      },
-      "sc:name": "Text data"
-    },
-    {
-      "@id": "_:Nc376332372424d929e0c2cff001d5945",
+      "@id": "_:N1bdd4f29d02540a2b912785ef812f17a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3112"
       },
       "sc:name": "Gene expression matrix"
+    },
+    {
+      "@id": "_:Nb0ed3e735f574292b02796e1c1d3fd12",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2526"
+      },
+      "sc:name": "Text data"
     },
     {
       "@id": "https://doi.org/10.1101/2023.06.13.544751",

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,29 +36,33 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1186/1756-0381-3-1",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/hypergeny",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N828505bac6ae40d0bf042f03b3eb55ba"
+        "@id": "_:Nf10ae74a7dbe4d3a8b0abd1da86f3695"
       },
       "bsc:output": {
-        "@id": "_:Na380e200ace14eb4ba975cb2a4b10ceb"
+        "@id": "_:N1b84d5fc8f4546949ee439062a0429ac"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web application",
         "Command-line tool",
-        "Desktop application"
+        "Desktop application",
+        "Web application"
       ],
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3299"
       },
       "sc:citation": [
         "pubmed:20175922",
+        "pmcid:PMC2844399",
         {
           "@id": "https://doi.org/10.1186/1756-0381-3-1"
-        },
-        "pmcid:PMC2844399"
+        }
       ],
       "sc:description": "HYPERbolic phyloGENY viewer allows hyperbolic visualisation of very large tree structures.",
       "sc:featureList": {
@@ -66,8 +70,8 @@
       },
       "sc:name": "HyperGeny",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:provider": "ugent.be",
@@ -78,7 +82,7 @@
       "sc:url": "http://bioinformatics.psb.ugent.be/software/details/HyperGeny"
     },
     {
-      "@id": "_:N828505bac6ae40d0bf042f03b3eb55ba",
+      "@id": "_:Nf10ae74a7dbe4d3a8b0abd1da86f3695",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0850"
@@ -86,16 +90,12 @@
       "sc:name": "Sequence set"
     },
     {
-      "@id": "_:Na380e200ace14eb4ba975cb2a4b10ceb",
+      "@id": "_:N1b84d5fc8f4546949ee439062a0429ac",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0872"
       },
       "sc:name": "Phylogenetic tree"
-    },
-    {
-      "@id": "https://doi.org/10.1186/1756-0381-3-1",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,37 +36,36 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1371/journal.pone.0118684",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/psychoprot",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N5ff350de3c1a4f568ea54845b6822eec"
+          "@id": "_:N760b4592eda24fc8aac2004632fa60a6"
         },
         {
-          "@id": "_:Nc7954f3599da4993bb3ed31d0ead66d1"
+          "@id": "_:N9abe2544cb48467f8aa8ffb8d4717ebb"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Nf39fc691d93d4b18a241812a82856454"
+          "@id": "_:N1b478088c6134f98b5c4a648ae0895ff"
         },
         {
-          "@id": "_:N4a7d388b985e43ceb0fa04ab4f2f6b28"
+          "@id": "_:N02e897a8bab44bbfb202c4ebd2fccdb3"
         },
         {
-          "@id": "_:N45ebb9bc360c49c4a8686b62f515dd0e"
+          "@id": "_:Nbfc3b7bc25304cd1961917c0c6ae6405"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web application",
-        "Web API"
+        "Web API",
+        "Web application"
       ],
       "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_3306"
+        },
         {
           "@id": "edam:topic_0080"
         },
@@ -74,26 +73,23 @@
           "@id": "edam:topic_1317"
         },
         {
-          "@id": "edam:topic_3306"
-        },
-        {
           "@id": "edam:topic_0081"
         }
       ],
       "sc:citation": [
         "pubmed:25706742",
+        "pmcid:PMC4338278",
         {
           "@id": "https://doi.org/10.1371/journal.pone.0118684"
-        },
-        "pmcid:PMC4338278"
+        }
       ],
       "sc:description": "Finds which amino acid descriptors explain the amino acid variability observed throughout an alignment or upon deep-sequencing of mutational libraries.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0292"
+          "@id": "edam:operation_3465"
         },
         {
-          "@id": "edam:operation_3465"
+          "@id": "edam:operation_0292"
         },
         {
           "@id": "edam:operation_2403"
@@ -107,18 +103,7 @@
       "sc:url": "http://psychoprot.epfl.ch"
     },
     {
-      "@id": "_:N5ff350de3c1a4f568ea54845b6822eec",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0863"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Sequence alignment"
-    },
-    {
-      "@id": "_:Nc7954f3599da4993bb3ed31d0ead66d1",
+      "@id": "_:N760b4592eda24fc8aac2004632fa60a6",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3154"
@@ -129,15 +114,18 @@
       "sc:name": "Protein alignment"
     },
     {
-      "@id": "_:Nf39fc691d93d4b18a241812a82856454",
+      "@id": "_:N9abe2544cb48467f8aa8ffb8d4717ebb",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2087"
+        "@id": "edam:data_0863"
       },
-      "sc:name": "Molecular property"
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Sequence alignment"
     },
     {
-      "@id": "_:N4a7d388b985e43ceb0fa04ab4f2f6b28",
+      "@id": "_:N1b478088c6134f98b5c4a648ae0895ff",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0950"
@@ -145,12 +133,24 @@
       "sc:name": "Mathematical model"
     },
     {
-      "@id": "_:N45ebb9bc360c49c4a8686b62f515dd0e",
+      "@id": "_:N02e897a8bab44bbfb202c4ebd2fccdb3",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2087"
+      },
+      "sc:name": "Molecular property"
+    },
+    {
+      "@id": "_:Nbfc3b7bc25304cd1961917c0c6ae6405",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
       },
       "sc:name": "Plot"
+    },
+    {
+      "@id": "https://doi.org/10.1371/journal.pone.0118684",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -45,24 +45,24 @@
         "Sita Saunders"
       ],
       "bsc:input": {
-        "@id": "_:N4e5b268cb4f54a6c87ca2fa4a7923bc7"
+        "@id": "_:Nce672343790a47bab0f9517ddd3e0e08"
       },
       "bsc:output": [
         {
-          "@id": "_:N29809f994ca743128be21c92aa083547"
+          "@id": "_:Naa3a2e0f943c4939bb4ffffff2765368"
         },
         {
-          "@id": "_:N6477af678898409889fdcd74a686d1c1"
+          "@id": "_:N643c0c1f274b4f81acc2733dc1ee06a8"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0080"
+          "@id": "edam:topic_0099"
         },
         {
-          "@id": "edam:topic_0099"
+          "@id": "edam:topic_0080"
         }
       ],
       "sc:author": [
@@ -72,16 +72,16 @@
         "Sita Saunders"
       ],
       "sc:citation": [
-        "pmcid:PMC3783184",
         "pubmed:23863837",
+        "pmcid:PMC3783184",
         {
           "@id": "https://doi.org/10.1093/nar/gkt606"
         },
+        "pubmed:25161238",
+        "pmcid:PMC4147912",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btu459"
-        },
-        "pubmed:25161238",
-        "pmcid:PMC4147912"
+        }
       ],
       "sc:description": "Prediction of CRISPR RNA by repeat conservation.",
       "sc:featureList": {
@@ -90,8 +90,8 @@
       "sc:isAccessibleForFree": true,
       "sc:name": "CRISPRmap web server",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:provider": [
@@ -105,7 +105,7 @@
       "sc:url": "http://rna.informatik.uni-freiburg.de/CRISPRmap/"
     },
     {
-      "@id": "_:N4e5b268cb4f54a6c87ca2fa4a7923bc7",
+      "@id": "_:Nce672343790a47bab0f9517ddd3e0e08",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3495"
@@ -116,7 +116,32 @@
       "sc:name": "RNA sequence"
     },
     {
-      "@id": "_:N29809f994ca743128be21c92aa083547",
+      "@id": "_:Naa3a2e0f943c4939bb4ffffff2765368",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2968"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3466"
+        },
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_3579"
+        },
+        {
+          "@id": "edam:format_3508"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Image"
+    },
+    {
+      "@id": "_:N643c0c1f274b4f81acc2733dc1ee06a8",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0872"
@@ -127,32 +152,7 @@
       "sc:name": "Phylogenetic tree"
     },
     {
-      "@id": "_:N6477af678898409889fdcd74a686d1c1",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2968"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_3466"
-        },
-        {
-          "@id": "edam:format_3508"
-        },
-        {
-          "@id": "edam:format_3579"
-        },
-        {
-          "@id": "edam:format_3547"
-        }
-      ],
-      "sc:name": "Image"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gkt606",
+      "@id": "https://doi.org/10.1093/bioinformatics/btu459",
       "@type": "sc:CreativeWork"
     },
     {
@@ -160,7 +160,7 @@
       "@type": "sc:Person"
     },
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btu459",
+      "@id": "https://doi.org/10.1093/nar/gkt606",
       "@type": "sc:CreativeWork"
     }
   ]

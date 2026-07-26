@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,17 +39,17 @@
       "@id": "https://bio.tools/metams",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N9be02e3d96ff4cf6af88910fa5898f77"
+        "@id": "_:Nd839f851ac384324b1da5ecab2333d2f"
       },
       "bsc:output": [
         {
-          "@id": "_:N8bc38eb4e65648e396c6b10f2f368473"
+          "@id": "_:N8816a38f15dc49899a1ee77c961af715"
         },
         {
-          "@id": "_:Na2c485eafa4e4a099e2f8dbbe586e7ee"
+          "@id": "_:Nd94cb7eaa037475b9c9575b35b55c1b6"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
@@ -62,12 +62,12 @@
         "Ron Wehrens"
       ],
       "sc:contributor": [
-        "Julien Saint-Vanne",
-        "Nir Shahaf",
-        "Yann Guitton",
+        "Elisabete Carvalho",
         "Georg Weingart",
+        "Julien Saint-Vanne",
         "Matthias Scholz",
-        "Elisabete Carvalho"
+        "Nir Shahaf",
+        "Yann Guitton"
       ],
       "sc:description": "MS-based metabolomics data processing and compound annotation pipeline.",
       "sc:featureList": {
@@ -76,8 +76,8 @@
       "sc:license": "GPL-2.0-or-later",
       "sc:name": "metaMS",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -87,7 +87,18 @@
       "sc:url": "https://bioconductor.org/packages/metaMS"
     },
     {
-      "@id": "_:N8bc38eb4e65648e396c6b10f2f368473",
+      "@id": "_:Nd839f851ac384324b1da5ecab2333d2f",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0943"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2333"
+      },
+      "sc:name": "Mass spectrum"
+    },
+    {
+      "@id": "_:N8816a38f15dc49899a1ee77c961af715",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2603"
@@ -98,24 +109,13 @@
       "sc:name": "Expression data"
     },
     {
-      "@id": "_:Na2c485eafa4e4a099e2f8dbbe586e7ee",
+      "@id": "_:Nd94cb7eaa037475b9c9575b35b55c1b6",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0943"
       },
       "sc:encodingFormat": {
         "@id": "edam:format_4039"
-      },
-      "sc:name": "Mass spectrum"
-    },
-    {
-      "@id": "_:N9be02e3d96ff4cf6af88910fa5898f77",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0943"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2333"
       },
       "sc:name": "Mass spectrum"
     }

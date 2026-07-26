@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,31 +40,31 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Mark Davies",
       "bsc:input": {
-        "@id": "_:N70c45471490844a4a9103276f0891406"
+        "@id": "_:Nc188d703d0074171b727116911e8577b"
       },
       "bsc:output": {
-        "@id": "_:N5eba51833e7d483ba6761b1f33592b5c"
+        "@id": "_:N248b1e2638d847f2a86f7db1cfa3cc47"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_0080"
-        },
         {
           "@id": "edam:topic_2258"
         },
         {
           "@id": "edam:topic_0621"
+        },
+        {
+          "@id": "edam:topic_0080"
         }
       ],
       "sc:author": "ChEMBL Team",
       "sc:citation": [
+        "pubmed:21948594",
+        "pmcid:PMC3245175",
         {
           "@id": "https://doi.org/10.1093/nar/gkr777"
-        },
-        "pmcid:PMC3245175",
-        "pubmed:21948594"
+        }
       ],
       "sc:description": "BLAST search against protein targets stored in Malaria Data database.",
       "sc:featureList": {
@@ -72,24 +72,24 @@
       },
       "sc:name": "Malaria Data BLAST Search",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:provider": "EMBL-EBI",
       "sc:softwareHelp": [
         {
-          "@id": "http://www.ebi.ac.uk/about/terms-of-use"
+          "@id": "https://www.ebi.ac.uk/chembl/malaria/target"
         },
         {
-          "@id": "https://www.ebi.ac.uk/chembl/malaria/target"
+          "@id": "http://www.ebi.ac.uk/about/terms-of-use"
         }
       ],
       "sc:softwareVersion": "1",
       "sc:url": "https://www.ebi.ac.uk/chembl/malaria/target"
     },
     {
-      "@id": "_:N70c45471490844a4a9103276f0891406",
+      "@id": "_:Nc188d703d0074171b727116911e8577b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2976"
@@ -100,7 +100,7 @@
       "sc:name": "Protein sequence"
     },
     {
-      "@id": "_:N5eba51833e7d483ba6761b1f33592b5c",
+      "@id": "_:N248b1e2638d847f2a86f7db1cfa3cc47",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0857"

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -44,23 +44,23 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N362691a80bc74679aa0c967daaa5cf00"
+          "@id": "_:N7a2bfa0f442645bba762896c0ada10a9"
         },
         {
-          "@id": "_:N4801c56047814c1fb7c4bc6891b707fa"
+          "@id": "_:N953d07c0aaa6411c867bc53b2d106d18"
         }
       ],
       "bsc:output": {
-        "@id": "_:N47a0707b877e42a383bb4af20a52f59f"
+        "@id": "_:N262b94c3da9f45bcb335b8c3a401b36f"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3301"
+          "@id": "edam:topic_0622"
         },
         {
-          "@id": "edam:topic_0622"
+          "@id": "edam:topic_3301"
         }
       ],
       "sc:author": {
@@ -74,8 +74,8 @@
       "sc:license": "GPL-2.0",
       "sc:name": "ABRicate",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "https://github.com/tseemann/abricate/blob/master/README.md"
@@ -84,7 +84,26 @@
       "sc:url": "https://github.com/tseemann/abricate"
     },
     {
-      "@id": "_:N362691a80bc74679aa0c967daaa5cf00",
+      "@id": "_:N7a2bfa0f442645bba762896c0ada10a9",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3494"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_1927"
+        },
+        {
+          "@id": "edam:format_1929"
+        },
+        {
+          "@id": "edam:format_1936"
+        }
+      ],
+      "sc:name": "DNA sequence"
+    },
+    {
+      "@id": "_:N953d07c0aaa6411c867bc53b2d106d18",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1234"
@@ -95,26 +114,7 @@
       "sc:name": "Sequence set (nucleic acid)"
     },
     {
-      "@id": "_:N4801c56047814c1fb7c4bc6891b707fa",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3494"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_1927"
-        },
-        {
-          "@id": "edam:format_1936"
-        },
-        {
-          "@id": "edam:format_1929"
-        }
-      ],
-      "sc:name": "DNA sequence"
-    },
-    {
-      "@id": "_:N47a0707b877e42a383bb4af20a52f59f",
+      "@id": "_:N262b94c3da9f45bcb335b8c3a401b36f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0916"

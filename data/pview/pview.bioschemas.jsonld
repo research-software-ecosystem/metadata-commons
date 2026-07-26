@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,29 +40,29 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N1ebf8e8506eb465280681658b738aa47"
+          "@id": "_:Nc61c0937b84040f6a03e6dbf9716a70d"
         },
         {
-          "@id": "_:Nf75d9f6669794cd2a9aaea64539fbb7f"
+          "@id": "_:N4aed8cc00c9d4542b59ae5c5158e1430"
         },
         {
-          "@id": "_:Ncd3d1b8409c34be0b211f2f757993637"
+          "@id": "_:N0045c180118c4a5ca5dbb472e2db18c6"
         }
       ],
       "bsc:output": {
-        "@id": "_:N603be32699f6414b845c86204b9b7f1e"
+        "@id": "_:Nae93bcb87f514f8cba37f6e0fa576ce4"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Desktop application",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0121"
+          "@id": "edam:topic_0092"
         },
         {
           "@id": "edam:topic_2814"
         },
         {
-          "@id": "edam:topic_0092"
+          "@id": "edam:topic_0121"
         },
         {
           "@id": "edam:topic_3520"
@@ -78,49 +78,49 @@
       "sc:description": "Software tool for the analysis and visualization of high resolution LC-MS/MS Data",
       "sc:featureList": [
         {
+          "@id": "edam:operation_3628"
+        },
+        {
           "@id": "edam:operation_3629"
         },
         {
           "@id": "edam:operation_3705"
         },
         {
-          "@id": "edam:operation_3630"
-        },
-        {
-          "@id": "edam:operation_3715"
-        },
-        {
-          "@id": "edam:operation_3649"
+          "@id": "edam:operation_3632"
         },
         {
           "@id": "edam:operation_3634"
         },
         {
-          "@id": "edam:operation_3637"
-        },
-        {
-          "@id": "edam:operation_3632"
-        },
-        {
-          "@id": "edam:operation_3631"
+          "@id": "edam:operation_3715"
         },
         {
           "@id": "edam:operation_3646"
         },
         {
+          "@id": "edam:operation_3631"
+        },
+        {
+          "@id": "edam:operation_3630"
+        },
+        {
           "@id": "edam:operation_3638"
+        },
+        {
+          "@id": "edam:operation_3637"
         },
         {
           "@id": "edam:operation_3435"
         },
         {
-          "@id": "edam:operation_3628"
+          "@id": "edam:operation_3649"
         }
       ],
       "sc:name": "PVIEW",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -129,18 +129,18 @@
       "sc:url": "http://compbio.cs.princeton.edu/pview/"
     },
     {
-      "@id": "_:N603be32699f6414b845c86204b9b7f1e",
+      "@id": "_:Nc61c0937b84040f6a03e6dbf9716a70d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2603"
+        "@id": "edam:data_0943"
       },
       "sc:encodingFormat": {
-        "@id": "edam:format_2330"
+        "@id": "edam:format_3654"
       },
-      "sc:name": "Expression data"
+      "sc:name": "Mass spectrometry spectra"
     },
     {
-      "@id": "_:N1ebf8e8506eb465280681658b738aa47",
+      "@id": "_:N4aed8cc00c9d4542b59ae5c5158e1430",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0945"
@@ -151,7 +151,7 @@
       "sc:name": "Peptide identification"
     },
     {
-      "@id": "_:Nf75d9f6669794cd2a9aaea64539fbb7f",
+      "@id": "_:N0045c180118c4a5ca5dbb472e2db18c6",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0849"
@@ -162,15 +162,15 @@
       "sc:name": "Sequence record"
     },
     {
-      "@id": "_:Ncd3d1b8409c34be0b211f2f757993637",
+      "@id": "_:Nae93bcb87f514f8cba37f6e0fa576ce4",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_0943"
+        "@id": "edam:data_2603"
       },
       "sc:encodingFormat": {
-        "@id": "edam:format_3654"
+        "@id": "edam:format_2330"
       },
-      "sc:name": "Mass spectrometry spectra"
+      "sc:name": "Expression data"
     },
     {
       "@id": "https://doi.org/10.1073/pnas.0904100106",

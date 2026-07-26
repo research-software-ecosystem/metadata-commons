@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -38,29 +38,29 @@
     {
       "@id": "https://bio.tools/cssq",
       "@type": "sc:SoftwareApplication",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Library",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0769"
-        },
-        {
-          "@id": "edam:topic_0749"
-        },
-        {
           "@id": "edam:topic_3169"
+        },
+        {
+          "@id": "edam:topic_3173"
         },
         {
           "@id": "edam:topic_3170"
         },
         {
-          "@id": "edam:topic_3173"
+          "@id": "edam:topic_0749"
+        },
+        {
+          "@id": "edam:topic_0769"
         }
       ],
       "sc:author": [
         "Ashwath Kumar",
-        "Yajun Mei",
         "Michael Y Hu",
+        "Yajun Mei",
         "Yuhong Fan"
       ],
       "sc:citation": {
@@ -69,10 +69,10 @@
       "sc:description": "This package is desgined to perform statistical analysis to identify statistically significant differentially bound regions between multiple groups of ChIP-seq dataset.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3799"
+          "@id": "edam:operation_3677"
         },
         {
-          "@id": "edam:operation_3677"
+          "@id": "edam:operation_3799"
         },
         {
           "@id": "edam:operation_3435"
@@ -82,8 +82,8 @@
       "sc:license": "Artistic-2.0",
       "sc:name": "CSSQ",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,10 +36,6 @@
   },
   "@graph": [
     {
-      "@id": "https://orcid.org/0000-0003-3645-1455",
-      "@type": "sc:Person"
-    },
-    {
       "@id": "https://doi.org/10.1093/nar/gkz437",
       "@type": "sc:CreativeWork"
     },
@@ -50,17 +46,11 @@
         "@id": "https://orcid.org/0000-0003-3645-1455"
       },
       "bsc:input": {
-        "@id": "_:N4faa338b0260467f865e71e079e91584"
+        "@id": "_:N014fac44302b47c99a1d73b2bb301d51"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web service",
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_3063"
-        },
-        {
-          "@id": "edam:topic_3325"
-        },
         {
           "@id": "edam:topic_1775"
         },
@@ -69,6 +59,12 @@
         },
         {
           "@id": "edam:topic_0622"
+        },
+        {
+          "@id": "edam:topic_3063"
+        },
+        {
+          "@id": "edam:topic_3325"
         }
       ],
       "sc:author": "Alexandre Renaux",
@@ -82,10 +78,10 @@
       "sc:description": "ORVAL is the first web bioinformatics platform for the exploration of predicted candidate disease-causing variant combinations, aiming to aid in uncovering the causes of oligogenic diseases (i.e. diseases caused by variants in a small number of genes). This tool integrates innovative machine learning methods for combinatorial variant pathogenicity prediction, further external annotations and interactive and exploratory visualisation techniques.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3083"
+          "@id": "edam:operation_3439"
         },
         {
-          "@id": "edam:operation_3439"
+          "@id": "edam:operation_3083"
         },
         {
           "@id": "edam:operation_0331"
@@ -95,9 +91,9 @@
       "sc:license": "CC-BY-4.0",
       "sc:name": "Oligogenic resource for variant analysis (ORVAL)",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": "Interuniversity Institute of Bioinformatics in Brussels",
       "sc:softwareHelp": [
@@ -112,7 +108,7 @@
       "sc:url": "https://orval.ibsquare.be"
     },
     {
-      "@id": "_:N4faa338b0260467f865e71e079e91584",
+      "@id": "_:N014fac44302b47c99a1d73b2bb301d51",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3498"
@@ -121,6 +117,10 @@
         "@id": "edam:format_3016"
       },
       "sc:name": "Sequence variations"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-3645-1455",
+      "@type": "sc:Person"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,33 +36,33 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btad311",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://orcid.org/0000-0002-5248-8197",
       "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.1093/bioinformatics/btad311",
+      "@type": "sc:CreativeWork"
     },
     {
       "@id": "https://bio.tools/chopper",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N07d7509cdfed409fa3930ff74051fb52"
+          "@id": "_:Nac4dafb7db304555b59fdd16b5be8ac9"
         },
         {
-          "@id": "_:Nd1f972b0d445407187e3a1c01dcfac01"
+          "@id": "_:N85b8b0658d4c4059a8d3beabf78d0fc3"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N4069a4699c7f47938119c054e206db31"
+          "@id": "_:Nc1e517eee1dd4ba693b6fad0724f720c"
         },
         {
-          "@id": "_:N9d474ff542b04189b9a2812bb795e3a2"
+          "@id": "_:N45991c10573145cbb922b3b7ee4c92c1"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
@@ -81,9 +81,6 @@
       "sc:description": "Rust implementation of NanoFilt+NanoLyse, both originally written in Python. This tool, intended for long read sequencing such as PacBio or ONT, filters and trims a fastq file.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_2940"
-        },
-        {
           "@id": "edam:operation_3695"
         },
         {
@@ -91,6 +88,9 @@
         },
         {
           "@id": "edam:operation_2943"
+        },
+        {
+          "@id": "edam:operation_2940"
         }
       ],
       "sc:isAccessibleForFree": true,
@@ -104,7 +104,7 @@
       "sc:url": "https://github.com/wdecoster/chopper"
     },
     {
-      "@id": "_:N07d7509cdfed409fa3930ff74051fb52",
+      "@id": "_:Nac4dafb7db304555b59fdd16b5be8ac9",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1234"
@@ -115,7 +115,7 @@
       "sc:name": "Sequence set (nucleic acid)"
     },
     {
-      "@id": "_:Nd1f972b0d445407187e3a1c01dcfac01",
+      "@id": "_:N85b8b0658d4c4059a8d3beabf78d0fc3",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1234"
@@ -126,7 +126,7 @@
       "sc:name": "Sequence set (nucleic acid)"
     },
     {
-      "@id": "_:N4069a4699c7f47938119c054e206db31",
+      "@id": "_:Nc1e517eee1dd4ba693b6fad0724f720c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1234"
@@ -137,7 +137,7 @@
       "sc:name": "Sequence set (nucleic acid)"
     },
     {
-      "@id": "_:N9d474ff542b04189b9a2812bb795e3a2",
+      "@id": "_:N45991c10573145cbb922b3b7ee4c92c1",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"

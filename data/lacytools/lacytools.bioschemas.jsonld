@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,23 +39,23 @@
       "@id": "https://bio.tools/lacytools",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nad23f48cf250468aa4bb14ea56521159"
+        "@id": "_:N3ace9d39225145a0b2f47f32a336c206"
       },
       "bsc:output": [
         {
-          "@id": "_:Nb5b6e59990964e91a9d7cf28b1c26289"
+          "@id": "_:N5d623f1f45864f78835d2de0751bbba2"
         },
         {
-          "@id": "_:Neb378fa7f4b842bda0cc12761c995898"
+          "@id": "_:Ne73e7a53da7240208864c86ee99218db"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3292"
+          "@id": "edam:topic_3370"
         },
         {
-          "@id": "edam:topic_3370"
+          "@id": "edam:topic_3292"
         }
       ],
       "sc:description": "LaCyTools is an open-source software for LC-MS data analysis, including retention time and m/z calibration, peak integration, and quality control.",
@@ -72,7 +72,18 @@
       "sc:url": "https://github.com/Tarskin/LaCyTools"
     },
     {
-      "@id": "_:Nb5b6e59990964e91a9d7cf28b1c26289",
+      "@id": "_:N3ace9d39225145a0b2f47f32a336c206",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2536"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3654"
+      },
+      "sc:name": "Mass spectrometry data"
+    },
+    {
+      "@id": "_:N5d623f1f45864f78835d2de0751bbba2",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2603"
@@ -83,7 +94,7 @@
       "sc:name": "Expression data"
     },
     {
-      "@id": "_:Neb378fa7f4b842bda0cc12761c995898",
+      "@id": "_:Ne73e7a53da7240208864c86ee99218db",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
@@ -92,17 +103,6 @@
         "@id": "edam:format_3603"
       },
       "sc:name": "Plot"
-    },
-    {
-      "@id": "_:Nad23f48cf250468aa4bb14ea56521159",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2536"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3654"
-      },
-      "sc:name": "Mass spectrometry data"
     }
   ]
 }

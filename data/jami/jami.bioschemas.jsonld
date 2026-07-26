@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,28 +36,32 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/bty221",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/jami",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
         "Markus List",
         "Marcel H Schulz"
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0602"
+          "@id": "edam:topic_0659"
         },
         {
           "@id": "edam:topic_0622"
         },
         {
-          "@id": "edam:topic_0659"
+          "@id": "edam:topic_0602"
         }
       ],
       "sc:citation": [
-        "pmcid:PMC6129307",
         "pubmed:29659721",
+        "pmcid:PMC6129307",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/bty221"
         }
@@ -68,17 +72,13 @@
       },
       "sc:name": "JAMI",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "http://jami.readthedocs.io/en/latest/index.html"
       },
       "sc:url": "https://github.com/SchulzLab/JAMI"
-    },
-    {
-      "@id": "https://doi.org/10.1093/bioinformatics/bty221",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

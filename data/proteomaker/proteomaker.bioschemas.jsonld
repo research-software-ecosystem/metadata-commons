@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,59 +39,70 @@
       "@id": "https://bio.tools/proteomaker",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Ne2c67b8c629d4eec97d40e1ae3824ed6"
+        "@id": "_:N922cb9d555a8480886df46c1fbc54eee"
       },
       "bsc:output": [
         {
-          "@id": "_:N2c566f1b1c7f4cccb5541223f5329c76"
+          "@id": "_:N58cb034dd691461a8400408cd4a6a59e"
         },
         {
-          "@id": "_:Nce09e37dd6444de78e2017ce794494fc"
+          "@id": "_:Neae9865820124ae49e1d7ede3640c8f9"
         },
         {
-          "@id": "_:Ncc53d92600194d129b2f6b09c3bd42e6"
+          "@id": "_:N4f023ab8193545089e90328e8e74fea8"
         },
         {
-          "@id": "_:N09f60780e6b84f378ef30239e760291d"
+          "@id": "_:N6aa2a9ed534943699758cc5ba3bd53fe"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web application",
-        "Library"
+        "Library",
+        "Web application"
       ],
       "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_0121"
+        },
         {
           "@id": "edam:topic_3520"
         },
         {
           "@id": "edam:topic_3524"
-        },
-        {
-          "@id": "edam:topic_0121"
         }
       ],
       "sc:description": "ProteoMaker is a platform for the generation of an in-silico bottom-up proteomics data set with a ground truth on the level of proteoforms.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_2238"
+          "@id": "edam:operation_3566"
         },
         {
-          "@id": "edam:operation_3566"
+          "@id": "edam:operation_2238"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "MIT",
       "sc:name": "ProteoMaker",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:url": "https://github.com/computproteomics/ProteoMaker"
     },
     {
-      "@id": "_:N2c566f1b1c7f4cccb5541223f5329c76",
+      "@id": "_:N922cb9d555a8480886df46c1fbc54eee",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2976"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "Protein sequence"
+    },
+    {
+      "@id": "_:N58cb034dd691461a8400408cd4a6a59e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3112"
@@ -102,18 +113,7 @@
       "sc:name": "Gene expression matrix"
     },
     {
-      "@id": "_:Nce09e37dd6444de78e2017ce794494fc",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0951"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3752"
-      },
-      "sc:name": "Statistical estimate score"
-    },
-    {
-      "@id": "_:Ncc53d92600194d129b2f6b09c3bd42e6",
+      "@id": "_:Neae9865820124ae49e1d7ede3640c8f9",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1238"
@@ -124,7 +124,7 @@
       "sc:name": "Proteolytic digest"
     },
     {
-      "@id": "_:N09f60780e6b84f378ef30239e760291d",
+      "@id": "_:N4f023ab8193545089e90328e8e74fea8",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3914"
@@ -135,15 +135,15 @@
       "sc:name": "Quality control report"
     },
     {
-      "@id": "_:Ne2c67b8c629d4eec97d40e1ae3824ed6",
+      "@id": "_:N6aa2a9ed534943699758cc5ba3bd53fe",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2976"
+        "@id": "edam:data_0951"
       },
       "sc:encodingFormat": {
-        "@id": "edam:format_1929"
+        "@id": "edam:format_3752"
       },
-      "sc:name": "Protein sequence"
+      "sc:name": "Statistical estimate score"
     }
   ]
 }

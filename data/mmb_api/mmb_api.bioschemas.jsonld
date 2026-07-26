@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -41,40 +41,40 @@
       "biotools:primaryContact": "Josep Ll. Gelpi",
       "bsc:input": [
         {
-          "@id": "_:Naf0dc6262009472ca918eaf77534168a"
+          "@id": "_:N43e6ec92e2f644d7b5f99c37cc761a1d"
         },
         {
-          "@id": "_:N7da8559cfed34799aab1dd927384b9eb"
+          "@id": "_:N43f493b622ad43aaafb7f510c4d8d9d5"
         },
         {
-          "@id": "_:Nf50cc9767b0e4be4986265437d7bc13b"
+          "@id": "_:N7ae37690a9e541689ed42018110ff4dc"
         },
         {
-          "@id": "_:N2c539b21a0524377a12dc99b7c1c46ab"
+          "@id": "_:N590233159a9847a3bac251aea2f5bbaa"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N407e7a24fe164c339fe347366f8626b8"
+          "@id": "_:N8754c0c01c724c8d86424aa5a0f1cddd"
         },
         {
-          "@id": "_:N940e005beafd4a449fb5bf8a048c4365"
+          "@id": "_:Nff1c6ecddd454739a44529bffacd3bb8"
         },
         {
-          "@id": "_:Nd5521c125b974fe4ba6ebb5c87bce986"
+          "@id": "_:Nf0bc3c6c73744e849aa59a2aa77702d1"
         },
         {
-          "@id": "_:N541e138a0f8c490dbb8c052fc34a2839"
+          "@id": "_:Nf64b4ffe82444f37805c0fe7ef97da15"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web API",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0081"
+          "@id": "edam:topic_0080"
         },
         {
-          "@id": "edam:topic_0080"
+          "@id": "edam:topic_0081"
         }
       ],
       "sc:description": "REST API to access MMB-IRB data repo (PDB, Uniprot, Protein Variants, NA Features)",
@@ -91,29 +91,7 @@
       "sc:url": "http://mmb.irbbarcelona.org/api"
     },
     {
-      "@id": "_:Naf0dc6262009472ca918eaf77534168a",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1127"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1964"
-      },
-      "sc:name": "PDB ID"
-    },
-    {
-      "@id": "_:N7da8559cfed34799aab1dd927384b9eb",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1005"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1964"
-      },
-      "sc:name": "HET group name"
-    },
-    {
-      "@id": "_:Nf50cc9767b0e4be4986265437d7bc13b",
+      "@id": "_:N43e6ec92e2f644d7b5f99c37cc761a1d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1011"
@@ -124,7 +102,29 @@
       "sc:name": "EC number"
     },
     {
-      "@id": "_:N2c539b21a0524377a12dc99b7c1c46ab",
+      "@id": "_:N43f493b622ad43aaafb7f510c4d8d9d5",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1005"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1964"
+      },
+      "sc:name": "HET group name"
+    },
+    {
+      "@id": "_:N7ae37690a9e541689ed42018110ff4dc",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1127"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1964"
+      },
+      "sc:name": "PDB ID"
+    },
+    {
+      "@id": "_:N590233159a9847a3bac251aea2f5bbaa",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3021"
@@ -135,18 +135,7 @@
       "sc:name": "UniProt accession"
     },
     {
-      "@id": "_:N407e7a24fe164c339fe347366f8626b8",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2886"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3464"
-      },
-      "sc:name": "Protein sequence record"
-    },
-    {
-      "@id": "_:N940e005beafd4a449fb5bf8a048c4365",
+      "@id": "_:N8754c0c01c724c8d86424aa5a0f1cddd",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2974"
@@ -157,7 +146,29 @@
       "sc:name": "Protein sequence (raw)"
     },
     {
-      "@id": "_:Nd5521c125b974fe4ba6ebb5c87bce986",
+      "@id": "_:Nff1c6ecddd454739a44529bffacd3bb8",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2886"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3464"
+      },
+      "sc:name": "Protein sequence record"
+    },
+    {
+      "@id": "_:Nf0bc3c6c73744e849aa59a2aa77702d1",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1463"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1705"
+      },
+      "sc:name": "Small molecule structure"
+    },
+    {
+      "@id": "_:Nf64b4ffe82444f37805c0fe7ef97da15",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0883"
@@ -167,24 +178,13 @@
           "@id": "edam:format_3464"
         },
         {
-          "@id": "edam:format_1477"
+          "@id": "edam:format_1476"
         },
         {
-          "@id": "edam:format_1476"
+          "@id": "edam:format_1477"
         }
       ],
       "sc:name": "Structure"
-    },
-    {
-      "@id": "_:N541e138a0f8c490dbb8c052fc34a2839",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1463"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1705"
-      },
-      "sc:name": "Small molecule structure"
     }
   ]
 }

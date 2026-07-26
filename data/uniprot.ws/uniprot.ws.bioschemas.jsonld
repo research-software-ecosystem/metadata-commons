@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,15 +36,19 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.18129/B9.bioc.UniProt.ws",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/uniprot.ws",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N84cc5360a814469e9fbff2e044709b7d"
+        "@id": "_:Nc8d6f66e0e78414db02422e4db991686"
       },
       "bsc:output": {
-        "@id": "_:N5cb74fc5ab5d418ebc617842c14945d3"
+        "@id": "_:N522e1ed02458467e9302e862ce2bca2d"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
@@ -63,19 +67,19 @@
           "@id": "edam:operation_2422"
         },
         {
-          "@id": "edam:operation_0224"
+          "@id": "edam:operation_2421"
         },
         {
-          "@id": "edam:operation_2421"
+          "@id": "edam:operation_0224"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "Artistic-2.0",
       "sc:name": "UniProt.ws",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://bioconductor.org/packages/UniProt.ws"
@@ -84,7 +88,7 @@
       "sc:url": "https://bioconductor.org/packages/UniProt.ws"
     },
     {
-      "@id": "_:N84cc5360a814469e9fbff2e044709b7d",
+      "@id": "_:Nc8d6f66e0e78414db02422e4db991686",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0842"
@@ -95,7 +99,7 @@
       "sc:name": "Identifier"
     },
     {
-      "@id": "_:N5cb74fc5ab5d418ebc617842c14945d3",
+      "@id": "_:N522e1ed02458467e9302e862ce2bca2d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2976"
@@ -104,10 +108,6 @@
         "@id": "edam:format_1963"
       },
       "sc:name": "Protein sequence"
-    },
-    {
-      "@id": "https://doi.org/10.18129/B9.bioc.UniProt.ws",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

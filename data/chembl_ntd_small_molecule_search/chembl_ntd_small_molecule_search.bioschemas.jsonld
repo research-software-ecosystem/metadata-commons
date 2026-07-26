@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,12 +40,12 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Mark Davies",
       "bsc:input": {
-        "@id": "_:N16180a97ee29423bbd0e153d6d33f9e0"
+        "@id": "_:N5e6c17f23955400d9b560a7f575e679d"
       },
       "bsc:output": {
-        "@id": "_:Na005d99e3c2e442d915bc8023ca45038"
+        "@id": "_:N1657302a3a1a4bc0a760e0a6248a856d"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
@@ -58,10 +58,10 @@
       "sc:author": "ChEMBL Team",
       "sc:citation": [
         "pubmed:27899562",
+        "pmcid:PMC5210557",
         {
           "@id": "https://doi.org/10.1093/nar/gkw1074"
-        },
-        "pmcid:PMC5210557"
+        }
       ],
       "sc:description": "Search against small molecules stored in ChEMBL NTD database.",
       "sc:featureList": {
@@ -69,8 +69,8 @@
       },
       "sc:name": "ChEMBL NTD Small Molecule Search",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:provider": "EMBL-EBI",
@@ -86,20 +86,20 @@
       "sc:url": "https://www.ebi.ac.uk/chemblntd/compound/structure_home"
     },
     {
-      "@id": "_:Na005d99e3c2e442d915bc8023ca45038",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0962"
-      },
-      "sc:name": "Small molecule report"
-    },
-    {
-      "@id": "_:N16180a97ee29423bbd0e153d6d33f9e0",
+      "@id": "_:N5e6c17f23955400d9b560a7f575e679d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3490"
       },
       "sc:name": "Chemical structure sketch"
+    },
+    {
+      "@id": "_:N1657302a3a1a4bc0a760e0a6248a856d",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0962"
+      },
+      "sc:name": "Small molecule report"
     },
     {
       "@id": "https://doi.org/10.1093/nar/gkw1074",

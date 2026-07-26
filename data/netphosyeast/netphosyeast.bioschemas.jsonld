@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -47,17 +47,17 @@
       "@id": "https://bio.tools/netphosyeast",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nc112d8d9a8c3499f961452d543d3b0cc"
+        "@id": "_:N0520535a342e44728e725702982830ba"
       },
       "bsc:output": [
         {
-          "@id": "_:N77db35fc88e147c997ac0d774ae4e98e"
+          "@id": "_:N2fa4fe2ed0f94a85b1b38bb72e584de1"
         },
         {
-          "@id": "_:N8f2b501a31a54f8abe84e05419f8c3c5"
+          "@id": "_:Nb112778f7ce34a0c9ff17cf52565c560"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0601"
@@ -79,8 +79,8 @@
       "sc:license": "Other",
       "sc:name": "NetPhosYeast",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:provider": "CBS",
@@ -91,7 +91,18 @@
       "sc:url": "http://www.cbs.dtu.dk/services/NetPhosYeast/"
     },
     {
-      "@id": "_:N77db35fc88e147c997ac0d774ae4e98e",
+      "@id": "_:N0520535a342e44728e725702982830ba",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2044"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "Sequence"
+    },
+    {
+      "@id": "_:N2fa4fe2ed0f94a85b1b38bb72e584de1",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"
@@ -102,7 +113,7 @@
       "sc:name": "Report"
     },
     {
-      "@id": "_:N8f2b501a31a54f8abe84e05419f8c3c5",
+      "@id": "_:Nb112778f7ce34a0c9ff17cf52565c560",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2955"
@@ -111,17 +122,6 @@
         "@id": "edam:format_2333"
       },
       "sc:name": "Sequence report"
-    },
-    {
-      "@id": "_:Nc112d8d9a8c3499f961452d543d3b0cc",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2044"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1929"
-      },
-      "sc:name": "Sequence"
     }
   ]
 }

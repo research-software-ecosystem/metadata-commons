@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,33 +36,37 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1039/C5MB00663E",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/reactomepa",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Naf48497b4e664597998ce4b0e12ec9ad"
+        "@id": "_:N470a1522d78346c2875a8387e79b7ff6"
       },
       "bsc:output": [
         {
-          "@id": "_:Nec4d5bea14a14fab8523ca3ae9970861"
+          "@id": "_:N2ec97a6984a8453f90f3eae0ba653472"
         },
         {
-          "@id": "_:N0998813d3b89427fb6d4ec5c177300d3"
+          "@id": "_:N5a1125a3c4df435bb65c8168144d98e6"
         },
         {
-          "@id": "_:N76cd423d3408477d9e542a9ad31774eb"
+          "@id": "_:N66a1cf896a1846249982d2f875dffe58"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0602"
+          "@id": "edam:topic_0092"
         },
         {
-          "@id": "edam:topic_0092"
+          "@id": "edam:topic_0602"
         }
       ],
       "sc:author": "Guangchuang Yu",
@@ -77,8 +81,8 @@
       "sc:license": "GPL-2.0-only",
       "sc:name": "ReactomePA",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -88,40 +92,7 @@
       "sc:url": "https://bioconductor.org/packages/ReactomePA"
     },
     {
-      "@id": "_:Nec4d5bea14a14fab8523ca3ae9970861",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2600"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3547"
-      },
-      "sc:name": "Pathway or network"
-    },
-    {
-      "@id": "_:N0998813d3b89427fb6d4ec5c177300d3",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0862"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3547"
-      },
-      "sc:name": "Dotplot"
-    },
-    {
-      "@id": "_:N76cd423d3408477d9e542a9ad31774eb",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1669"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3547"
-      },
-      "sc:name": "P-value"
-    },
-    {
-      "@id": "_:Naf48497b4e664597998ce4b0e12ec9ad",
+      "@id": "_:N470a1522d78346c2875a8387e79b7ff6",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1027"
@@ -132,8 +103,37 @@
       "sc:name": "Gene ID (NCBI)"
     },
     {
-      "@id": "https://doi.org/10.1039/C5MB00663E",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N2ec97a6984a8453f90f3eae0ba653472",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0862"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3547"
+      },
+      "sc:name": "Dotplot"
+    },
+    {
+      "@id": "_:N5a1125a3c4df435bb65c8168144d98e6",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1669"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3547"
+      },
+      "sc:name": "P-value"
+    },
+    {
+      "@id": "_:N66a1cf896a1846249982d2f875dffe58",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2600"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3547"
+      },
+      "sc:name": "Pathway or network"
     }
   ]
 }

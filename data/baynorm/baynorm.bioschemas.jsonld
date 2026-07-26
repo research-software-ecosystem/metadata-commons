@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,32 +39,32 @@
       "@id": "https://bio.tools/baynorm",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N4f4f9abd78df441f9ab3d958e1317f0e"
+        "@id": "_:Ncc5d9a4d451349058f6ce0609bf87bfd"
       },
       "bsc:output": {
-        "@id": "_:N36034e5a838c479f894cb25099d37019"
+        "@id": "_:N23ea7daef5484c5387f3293323f8b6b0"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Library",
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_3308"
-        },
         {
           "@id": "edam:topic_3170"
         },
         {
           "@id": "edam:topic_2269"
+        },
+        {
+          "@id": "edam:topic_3308"
         }
       ],
       "sc:author": [
-        "Samuel Marguerat",
         "Claire Stefanelli",
-        "Wenhao Tang",
+        "Fran",
         "Malika Saint",
-        "Vahid Shahrezaei",
         "Philipp Thomas",
-        "Fran"
+        "Samuel Marguerat",
+        "Vahid Shahrezaei",
+        "Wenhao Tang"
       ],
       "sc:citation": {
         "@id": "https://doi.org/10.18129/B9.bioc.bayNorm"
@@ -72,22 +72,22 @@
       "sc:description": "bayNorm is used for normalizing single-cell RNA-seq data.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3658"
-        },
-        {
           "@id": "edam:operation_3557"
         },
         {
           "@id": "edam:operation_3435"
+        },
+        {
+          "@id": "edam:operation_3658"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "GPL-2.0-or-later",
       "sc:name": "bayNorm",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://bioconductor.org/packages/bayNorm"
@@ -96,7 +96,7 @@
       "sc:url": "https://bioconductor.org/packages/bayNorm"
     },
     {
-      "@id": "_:N4f4f9abd78df441f9ab3d958e1317f0e",
+      "@id": "_:Ncc5d9a4d451349058f6ce0609bf87bfd",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3112"
@@ -107,7 +107,7 @@
       "sc:name": "Gene expression matrix"
     },
     {
-      "@id": "_:N36034e5a838c479f894cb25099d37019",
+      "@id": "_:N23ea7daef5484c5387f3293323f8b6b0",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3112"

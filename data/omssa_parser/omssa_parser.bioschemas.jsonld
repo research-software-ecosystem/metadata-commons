@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,20 +39,20 @@
       "@id": "https://bio.tools/omssa_parser",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nc98205895027428f9b882dcd403ae323"
+        "@id": "_:Na61531d36c464533a6979a15e8eb09b5"
       },
       "bsc:output": [
         {
-          "@id": "_:N5f661b5521a6434583d995fca5f5a8a7"
+          "@id": "_:Nfbdd677b89bc48bc8b982c6f52005818"
         },
         {
-          "@id": "_:N21b46b1a14384a6491527b686b17e7df"
+          "@id": "_:N68d92b2c7c8842afad28aea30aa7e1ed"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Desktop application",
-        "Command-line tool"
+        "Command-line tool",
+        "Desktop application"
       ],
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0121"
@@ -69,8 +69,8 @@
       },
       "sc:name": "OMSSA Parser",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:provider": "ugent.be",
@@ -81,7 +81,7 @@
       "sc:url": "http://compomics.github.io/projects/omssa-parser.html"
     },
     {
-      "@id": "_:N5f661b5521a6434583d995fca5f5a8a7",
+      "@id": "_:Na61531d36c464533a6979a15e8eb09b5",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2536"
@@ -89,7 +89,7 @@
       "sc:name": "Mass spectrometry data"
     },
     {
-      "@id": "_:N21b46b1a14384a6491527b686b17e7df",
+      "@id": "_:Nfbdd677b89bc48bc8b982c6f52005818",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2968"
@@ -97,7 +97,7 @@
       "sc:name": "Image"
     },
     {
-      "@id": "_:Nc98205895027428f9b882dcd403ae323",
+      "@id": "_:N68d92b2c7c8842afad28aea30aa7e1ed",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2536"

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,39 +36,43 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1016/j.csbj.2023.09.013",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/libgenie",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nb19ef9756d7f4f37a1686f083edbfff1"
+        "@id": "_:Nf1636ba69dfe4ea0b22bef2760182116"
       },
       "bsc:output": {
-        "@id": "_:Nd5ef2447070e4b0ea5440463ef6d1bb9"
+        "@id": "_:N93149bac2ddb4138bfe91789fce81d8c"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:citation": [
+        "pubmed:37736300",
         "pmcid:PMC10510078",
         {
           "@id": "https://doi.org/10.1016/j.csbj.2023.09.013"
-        },
-        "pubmed:37736300"
+        }
       ],
       "sc:description": "bioinformatic pipeline for the design of information-enriched enzyme libraries",
       "sc:featureList": [
-        {
-          "@id": "edam:operation_3504"
-        },
         {
           "@id": "edam:operation_3225"
         },
         {
           "@id": "edam:operation_0331"
+        },
+        {
+          "@id": "edam:operation_3504"
         }
       ],
       "sc:name": "LibGENiE",
       "sc:url": "https://libgenie.ch/"
     },
     {
-      "@id": "_:Nb19ef9756d7f4f37a1686f083edbfff1",
+      "@id": "_:Nf1636ba69dfe4ea0b22bef2760182116",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2976"
@@ -76,16 +80,12 @@
       "sc:name": "Protein sequence"
     },
     {
-      "@id": "_:Nd5ef2447070e4b0ea5440463ef6d1bb9",
+      "@id": "_:N93149bac2ddb4138bfe91789fce81d8c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2526"
       },
       "sc:name": "Text data"
-    },
-    {
-      "@id": "https://doi.org/10.1016/j.csbj.2023.09.013",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -44,24 +44,24 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N8b5e2fdd6573474dbc95a16fc4023195"
+          "@id": "_:Nb6a525d42f8e45af8bfcea585006a998"
         },
         {
-          "@id": "_:N7239762f502242bfaef4d419ae284fa9"
+          "@id": "_:Nbd9db00857094fb5a5fee4b1117d98e5"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Nb3fc10c3a6c8422eaee301d1a7a70523"
+          "@id": "_:N1ad3992c14884e29826677ba33421ca0"
         },
         {
-          "@id": "_:N25287b6af94b4dedaf0517fc86a7c58d"
+          "@id": "_:Nfca3c7b0923d452c84f9d48effb1bbb6"
         },
         {
-          "@id": "_:Nb3370b523c8c4f7dacac53ff0193801f"
+          "@id": "_:N7e2c251b561a45a3b689b45fdcd5ec22"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Database portal",
         "Web application",
@@ -80,10 +80,10 @@
       ],
       "sc:citation": [
         "pubmed:23023984",
+        "pmcid:PMC3516146",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/bts577"
-        },
-        "pmcid:PMC3516146"
+        }
       ],
       "sc:description": "MedicMine integrates many types of data for Medicago truncatula. You can run flexible queries, export results and analyse lists of genes.",
       "sc:featureList": [
@@ -94,32 +94,48 @@
           "@id": "edam:operation_2436"
         },
         {
-          "@id": "edam:operation_0337"
+          "@id": "edam:operation_0224"
         },
         {
-          "@id": "edam:operation_0224"
+          "@id": "edam:operation_0337"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "LGPL-2.1",
       "sc:name": "MedicMine",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:softwareHelp": [
         {
-          "@id": "https://flymine.readthedocs.io/en/latest/"
+          "@id": "http://intermine.readthedocs.org/en/latest/web-services/"
         },
         {
-          "@id": "http://intermine.readthedocs.org/en/latest/web-services/"
+          "@id": "https://flymine.readthedocs.io/en/latest/"
         }
       ],
       "sc:softwareVersion": "1.3.0",
       "sc:url": "http://medicmine.jcvi.org/medicmine"
     },
     {
-      "@id": "_:Nb3fc10c3a6c8422eaee301d1a7a70523",
+      "@id": "_:Nb6a525d42f8e45af8bfcea585006a998",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2353"
+      },
+      "sc:name": "Ontology data"
+    },
+    {
+      "@id": "_:Nbd9db00857094fb5a5fee4b1117d98e5",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1255"
+      },
+      "sc:name": "Sequence features"
+    },
+    {
+      "@id": "_:N1ad3992c14884e29826677ba33421ca0",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3753"
@@ -127,15 +143,7 @@
       "sc:name": "Over-representation data"
     },
     {
-      "@id": "_:N25287b6af94b4dedaf0517fc86a7c58d",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1255"
-      },
-      "sc:name": "Sequence features"
-    },
-    {
-      "@id": "_:Nb3370b523c8c4f7dacac53ff0193801f",
+      "@id": "_:Nfca3c7b0923d452c84f9d48effb1bbb6",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3786"
@@ -143,20 +151,12 @@
       "sc:name": "Query script"
     },
     {
-      "@id": "_:N8b5e2fdd6573474dbc95a16fc4023195",
+      "@id": "_:N7e2c251b561a45a3b689b45fdcd5ec22",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1255"
       },
       "sc:name": "Sequence features"
-    },
-    {
-      "@id": "_:N7239762f502242bfaef4d419ae284fa9",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2353"
-      },
-      "sc:name": "Ontology data"
     }
   ]
 }

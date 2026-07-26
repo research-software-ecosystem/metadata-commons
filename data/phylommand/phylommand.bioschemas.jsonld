@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -43,15 +43,15 @@
       "@id": "https://bio.tools/phylommand",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N8271ade9278e422a9fa27e2f71bc2c8b"
+        "@id": "_:N3d0332edd8fe41859da6581cd9edf0d9"
       },
       "bsc:output": {
-        "@id": "_:Ncb3ec875c9d34350bb63b276d3270fb6"
+        "@id": "_:N0c6eef174308469c9defa3d9e3304edd"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Script",
-        "Command-line tool"
+        "Command-line tool",
+        "Script"
       ],
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0084"
@@ -62,10 +62,10 @@
       "sc:description": "Four programs to create, manipulate, and/or analyze phylogenetic trees or pairwise alignments.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0326"
+          "@id": "edam:operation_0324"
         },
         {
-          "@id": "edam:operation_0324"
+          "@id": "edam:operation_0326"
         },
         {
           "@id": "edam:operation_0323"
@@ -74,24 +74,24 @@
       "sc:license": "GPL-3.0",
       "sc:name": "Phylommand",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:url": "https://github.com/mr-y/phylommand"
     },
     {
-      "@id": "_:N8271ade9278e422a9fa27e2f71bc2c8b",
+      "@id": "_:N3d0332edd8fe41859da6581cd9edf0d9",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2523"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_1423"
+          "@id": "edam:format_1912"
         },
         {
-          "@id": "edam:format_1912"
+          "@id": "edam:format_1423"
         },
         {
           "@id": "edam:format_1910"
@@ -100,7 +100,7 @@
       "sc:name": "Phylogenetic data"
     },
     {
-      "@id": "_:Ncb3ec875c9d34350bb63b276d3270fb6",
+      "@id": "_:N0c6eef174308469c9defa3d9e3304edd",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2523"

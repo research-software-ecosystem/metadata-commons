@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -37,14 +37,14 @@
   "@id": "https://bio.tools/restfulse",
   "@type": "sc:SoftwareApplication",
   "biotools:primaryContact": "Shweta Gopaulakrishnan",
-  "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+  "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
   "sc:additionalType": "Library",
   "sc:applicationSubCategory": [
     {
-      "@id": "edam:topic_3308"
+      "@id": "edam:topic_3168"
     },
     {
-      "@id": "edam:topic_3168"
+      "@id": "edam:topic_3308"
     }
   ],
   "sc:description": "This package provides functions and classes to interface with remote data stores by operating on SummarizedExperiment-like objects.",
@@ -55,8 +55,8 @@
   "sc:license": "Artistic-2.0",
   "sc:name": "restfulSE",
   "sc:operatingSystem": [
-    "Mac",
     "Linux",
+    "Mac",
     "Windows"
   ],
   "sc:softwareHelp": {

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,14 +39,11 @@
       "@id": "https://bio.tools/xrrpred",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N7d3d08b502c6401fba7eb258625208ca"
+        "@id": "_:N6291895f9d6f470a8e333c1d142e1cad"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_2828"
-        },
         {
           "@id": "edam:topic_0611"
         },
@@ -55,6 +52,9 @@
         },
         {
           "@id": "edam:topic_0154"
+        },
+        {
+          "@id": "edam:topic_2828"
         }
       ],
       "sc:citation": [
@@ -66,13 +66,13 @@
       "sc:description": "Accurate Predictor of Crystal Structure Quality from Protein Sequence.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0474"
+          "@id": "edam:operation_0478"
         },
         {
           "@id": "edam:operation_0410"
         },
         {
-          "@id": "edam:operation_0478"
+          "@id": "edam:operation_0474"
         },
         {
           "@id": "edam:operation_4009"
@@ -85,8 +85,8 @@
       "sc:license": "Not licensed",
       "sc:name": "XRRpred",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -95,7 +95,7 @@
       "sc:url": "http://biomine.cs.vcu.edu/servers/XRRPred/"
     },
     {
-      "@id": "_:N7d3d08b502c6401fba7eb258625208ca",
+      "@id": "_:N6291895f9d6f470a8e333c1d142e1cad",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2976"

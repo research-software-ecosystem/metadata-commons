@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,12 +39,12 @@
       "@id": "https://bio.tools/slow5-dorado",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Na962bba129df41f7837fa875abd7e245"
+        "@id": "_:N18aebe5f9e5a4c1faa71a83ba1246c08"
       },
       "bsc:output": {
-        "@id": "_:N8a7373109f194bb9845399f0d90c8575"
+        "@id": "_:N99b986070b29487487d643a761344afb"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
@@ -65,7 +65,15 @@
       "sc:url": "https://github.com/hiruna72/slow5-dorado"
     },
     {
-      "@id": "_:N8a7373109f194bb9845399f0d90c8575",
+      "@id": "_:N18aebe5f9e5a4c1faa71a83ba1246c08",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0924"
+      },
+      "sc:name": "Sequence trace"
+    },
+    {
+      "@id": "_:N99b986070b29487487d643a761344afb",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1383"
@@ -74,14 +82,6 @@
         "@id": "edam:format_2572"
       },
       "sc:name": "Nucleic acid sequence alignment"
-    },
-    {
-      "@id": "_:Na962bba129df41f7837fa875abd7e245",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0924"
-      },
-      "sc:name": "Sequence trace"
     }
   ]
 }

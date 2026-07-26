@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,30 +36,34 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1038/nmeth.3252",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/gaucho",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
-        "Christopher Wardell",
-        "Alex Murison"
+        "Alex Murison",
+        "Christopher Wardell"
       ],
       "bsc:input": {
-        "@id": "_:N4e49ec7998cc441d860e263b2d3e5b69"
+        "@id": "_:Naf2f92d8b1544a1d9aa1171b11be8ef5"
       },
       "bsc:output": [
         {
-          "@id": "_:Ncf5ab0c291194946b2121ef383f590f4"
+          "@id": "_:N680d620101b74c17995a8e2a66c7fa95"
         },
         {
-          "@id": "_:N759aa2d15531477d94b105002428e49a"
+          "@id": "_:Nf3668df9918f41a787dee8685b178f98"
         },
         {
-          "@id": "_:N37ca2490e0a64348b865595bde47d48b"
+          "@id": "_:Nac0c855eb80e4d4ba8f95abeca011941"
         },
         {
-          "@id": "_:N035ec6a750fe4dc9880418ac9f55f311"
+          "@id": "_:Nd4a38a21aeab4d0c80ab0a9f979cfcee"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
@@ -69,10 +73,10 @@
           "@id": "edam:topic_0199"
         },
         {
-          "@id": "edam:topic_3293"
+          "@id": "edam:topic_2640"
         },
         {
-          "@id": "edam:topic_2640"
+          "@id": "edam:topic_3293"
         }
       ],
       "sc:citation": [
@@ -85,18 +89,18 @@
       "sc:description": "Use genetic algorithms to determine the relationship between clones in heterogenous populations such as cancer sequencing samples.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3731"
+          "@id": "edam:operation_0323"
         },
         {
-          "@id": "edam:operation_0323"
+          "@id": "edam:operation_3731"
         }
       ],
       "sc:license": "GPL-3.0",
       "sc:name": "gaucho",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/gaucho.html"
@@ -105,55 +109,18 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/gaucho.html"
     },
     {
-      "@id": "_:Ncf5ab0c291194946b2121ef383f590f4",
+      "@id": "_:Naf2f92d8b1544a1d9aa1171b11be8ef5",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2523"
+        "@id": "edam:data_3113"
       },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_3603"
-        }
-      ],
-      "sc:name": "Phylogenetic data"
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Sample annotation"
     },
     {
-      "@id": "_:N759aa2d15531477d94b105002428e49a",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1636"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3603"
-        },
-        {
-          "@id": "edam:format_2330"
-        }
-      ],
-      "sc:name": "Heat map"
-    },
-    {
-      "@id": "_:N37ca2490e0a64348b865595bde47d48b",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2884"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_3603"
-        }
-      ],
-      "sc:name": "Plot"
-    },
-    {
-      "@id": "_:N035ec6a750fe4dc9880418ac9f55f311",
+      "@id": "_:N680d620101b74c17995a8e2a66c7fa95",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0920"
@@ -169,19 +136,52 @@
       "sc:name": "Genotype/phenotype report"
     },
     {
-      "@id": "_:N4e49ec7998cc441d860e263b2d3e5b69",
+      "@id": "_:Nf3668df9918f41a787dee8685b178f98",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_3113"
+        "@id": "edam:data_1636"
       },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Sample annotation"
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3603"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Heat map"
     },
     {
-      "@id": "https://doi.org/10.1038/nmeth.3252",
-      "@type": "sc:CreativeWork"
+      "@id": "_:Nac0c855eb80e4d4ba8f95abeca011941",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2523"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3603"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Phylogenetic data"
+    },
+    {
+      "@id": "_:Nd4a38a21aeab4d0c80ab0a9f979cfcee",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2884"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3603"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Plot"
     }
   ]
 }

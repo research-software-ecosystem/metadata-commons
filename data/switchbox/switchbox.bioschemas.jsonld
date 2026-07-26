@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -43,12 +43,12 @@
       "@id": "https://bio.tools/switchbox",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N58220a97cbc94f0a9c60d0ab63c2d4ed"
+        "@id": "_:N02783ff69aa941d293f642091b33db6d"
       },
       "bsc:output": {
-        "@id": "_:N73869e8a79984ae3a1df1c9d0c7e477b"
+        "@id": "_:N01b53c8357364005964336d589dffc90"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
@@ -76,8 +76,8 @@
       "sc:license": "GPL-2.0-only",
       "sc:name": "switchBox",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -87,18 +87,7 @@
       "sc:url": "https://bioconductor.org/packages/switchBox"
     },
     {
-      "@id": "_:N73869e8a79984ae3a1df1c9d0c7e477b",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1772"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3033"
-      },
-      "sc:name": "Score"
-    },
-    {
-      "@id": "_:N58220a97cbc94f0a9c60d0ab63c2d4ed",
+      "@id": "_:N02783ff69aa941d293f642091b33db6d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2603"
@@ -107,6 +96,17 @@
         "@id": "edam:format_3033"
       },
       "sc:name": "Gene expression data"
+    },
+    {
+      "@id": "_:N01b53c8357364005964336d589dffc90",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1772"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3033"
+      },
+      "sc:name": "Score"
     },
     {
       "@id": "https://doi.org/10.1093/bioinformatics/btu622",

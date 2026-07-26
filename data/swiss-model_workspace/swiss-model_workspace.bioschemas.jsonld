@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -51,32 +51,32 @@
       },
       "bsc:input": [
         {
-          "@id": "_:N9136aff01b38479b876ba4da6465036f"
+          "@id": "_:N0c5970d120df462987005621bcf62fe2"
         },
         {
-          "@id": "_:Ncbc2e93cd31d48e987838523ef102bf3"
+          "@id": "_:N19d273d7d29a4902a19b2e4b80b4c6e2"
         },
         {
-          "@id": "_:Nfb2cecbec54d425a9af0c4fc5a50fb59"
+          "@id": "_:N495896ae7fe4454e937d9026c2e76b0f"
         },
         {
-          "@id": "_:Nff9292e42b0f49aeba59179a20647a36"
+          "@id": "_:N0ce9c497527544ea93f3cd739cb89b5f"
         },
         {
-          "@id": "_:N284f88c2443b422fbc724650b1d5d6b6"
+          "@id": "_:Nf1d06a29d5a944b3934f386843e867b2"
         }
       ],
       "bsc:output": {
-        "@id": "_:Nf49e57f9691648efb6b4ba02f9cec831"
+        "@id": "_:Nd5901b0790f44cf7a2e2872b48f345a4"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_2275"
+          "@id": "edam:topic_3306"
         },
         {
-          "@id": "edam:topic_3306"
+          "@id": "edam:topic_2275"
         },
         {
           "@id": "edam:topic_0081"
@@ -86,11 +86,11 @@
         }
       ],
       "sc:citation": [
+        "pubmed:29788355",
+        "pmcid:PMC6030848",
         {
           "@id": "https://doi.org/10.1093/nar/gky427"
-        },
-        "pmcid:PMC6030848",
-        "pubmed:29788355"
+        }
       ],
       "sc:description": "SWISS-MODEL is a fully automated protein structure homology-modelling server, accessible via the ExPASy web server, or from the program DeepView (Swiss Pdb-Viewer). The purpose of this server is to make protein modelling accessible to all life science researchers worldwide.",
       "sc:featureList": {
@@ -99,9 +99,9 @@
       "sc:license": "CC-BY-SA-4.0",
       "sc:name": "SWISS-MODEL Workspace",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": "SIB Swiss Institute of Bioinformatics",
       "sc:softwareHelp": {
@@ -110,15 +110,7 @@
       "sc:url": "https://swissmodel.expasy.org/"
     },
     {
-      "@id": "_:N9136aff01b38479b876ba4da6465036f",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3021"
-      },
-      "sc:name": "UniProt accession"
-    },
-    {
-      "@id": "_:Ncbc2e93cd31d48e987838523ef102bf3",
+      "@id": "_:N0c5970d120df462987005621bcf62fe2",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2974"
@@ -126,7 +118,34 @@
       "sc:name": "Protein sequence (raw)"
     },
     {
-      "@id": "_:Nfb2cecbec54d425a9af0c4fc5a50fb59",
+      "@id": "_:N19d273d7d29a4902a19b2e4b80b4c6e2",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2291"
+      },
+      "sc:name": "UniProt ID"
+    },
+    {
+      "@id": "_:N495896ae7fe4454e937d9026c2e76b0f",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3021"
+      },
+      "sc:name": "UniProt accession"
+    },
+    {
+      "@id": "_:N0ce9c497527544ea93f3cd739cb89b5f",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2974"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "Protein sequence (raw)"
+    },
+    {
+      "@id": "_:Nf1d06a29d5a944b3934f386843e867b2",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1384"
@@ -137,36 +156,17 @@
       "sc:name": "Sequence alignment (protein)"
     },
     {
-      "@id": "_:Nff9292e42b0f49aeba59179a20647a36",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2291"
-      },
-      "sc:name": "UniProt ID"
-    },
-    {
-      "@id": "_:N284f88c2443b422fbc724650b1d5d6b6",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2974"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1929"
-      },
-      "sc:name": "Protein sequence (raw)"
-    },
-    {
-      "@id": "_:Nf49e57f9691648efb6b4ba02f9cec831",
+      "@id": "_:Nd5901b0790f44cf7a2e2872b48f345a4",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1460"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_1477"
+          "@id": "edam:format_1476"
         },
         {
-          "@id": "edam:format_1476"
+          "@id": "edam:format_1477"
         }
       ],
       "sc:name": "Protein structure"

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,19 +36,23 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1186/1471-2229-14-99",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/grape_database",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "http://orcid.org/0000-0002-9571-0747"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Database portal",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0622"
       },
       "sc:citation": [
-        "pmcid:PMC4108029",
         "pubmed:24739459",
+        "pmcid:PMC4108029",
         {
           "@id": "https://doi.org/10.1186/1471-2229-14-99"
         }
@@ -59,8 +63,8 @@
       },
       "sc:name": "Grape Database",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:provider": "ELIXIR-ITA-PADOVA",
@@ -72,10 +76,6 @@
     {
       "@id": "http://orcid.org/0000-0002-9571-0747",
       "@type": "sc:Person"
-    },
-    {
-      "@id": "https://doi.org/10.1186/1471-2229-14-99",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,26 +40,26 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N5f029be250d04002847ebd80ba3c5110"
+          "@id": "_:N01fc94d910b3459e8fdb398b36ca8e4e"
         },
         {
-          "@id": "_:Nf9868ef633834db8a737f7959dca5a0b"
+          "@id": "_:Nc4ece5a06e084a87b790803e5b1465b9"
         }
       ],
       "bsc:output": {
-        "@id": "_:N0aeb627f0db0458788fcdbb9d5f42299"
+        "@id": "_:N1a84243bafed448dbd0b6d47b899c3a5"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Database portal",
       "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_0623"
+        },
         {
           "@id": "edam:topic_3512"
         },
         {
           "@id": "edam:topic_0080"
-        },
-        {
-          "@id": "edam:topic_0623"
         }
       ],
       "sc:description": "Each entry is a set of transcript (expressed sequence tag) sequences that appear to come from the same transcription locus (gene or expressed pseudogene), together with information on protein similarities, gene expression, cDNA clone reagents, and genomic location.",
@@ -68,9 +68,9 @@
       },
       "sc:name": "UniGene gene-oriented nucleotide sequence clusters",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://www.ncbi.nlm.nih.gov/UniGene/help.cgi"
@@ -78,15 +78,7 @@
       "sc:url": "http://www.ncbi.nlm.nih.gov/sites/entrez?db=UniGene"
     },
     {
-      "@id": "_:N5f029be250d04002847ebd80ba3c5110",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2594"
-      },
-      "sc:name": "UniGene taxon"
-    },
-    {
-      "@id": "_:Nf9868ef633834db8a737f7959dca5a0b",
+      "@id": "_:N01fc94d910b3459e8fdb398b36ca8e4e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1104"
@@ -94,7 +86,15 @@
       "sc:name": "Sequence cluster ID (UniGene)"
     },
     {
-      "@id": "_:N0aeb627f0db0458788fcdbb9d5f42299",
+      "@id": "_:Nc4ece5a06e084a87b790803e5b1465b9",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2594"
+      },
+      "sc:name": "UniGene taxon"
+    },
+    {
+      "@id": "_:N1a84243bafed448dbd0b6d47b899c3a5",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3134"

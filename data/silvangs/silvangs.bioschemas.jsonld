@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -44,41 +44,40 @@
       "@type": "sc:CreativeWork"
     },
     {
-      "@id": "https://doi.org/10.1093/nar/gkt1209",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/silvangs",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "SILVA Team",
       "bsc:input": {
-        "@id": "_:N18fbd793c6514ca792528bed6f5ec866"
+        "@id": "_:N8b4443eef32f4c08ac533b914da07aa3"
       },
       "bsc:output": [
         {
-          "@id": "_:N700e0ed1c4bf4dccadc368e991d165dc"
+          "@id": "_:Nd809efbf57f64f24a51e29df2741a9f7"
         },
         {
-          "@id": "_:Na65da6d855954b069afafbddffa5fbd6"
+          "@id": "_:N7d785c3f5c874ccfa4b1d058107d05b6"
         },
         {
-          "@id": "_:Nb9059927b7cf4aa68f45f3591ecd48e8"
+          "@id": "_:N5971395ac85549f7905ebfb8608bdd50"
         },
         {
-          "@id": "_:Nc8bb957ce86746b6a167d567bcd54af7"
+          "@id": "_:N501181d17ad546bca6760b2db8a0d1ce"
         },
         {
-          "@id": "_:N34db135a18e04f95bf791a0c40c93b78"
+          "@id": "_:N782f9285cba44abeaaf89c4c3da3a2b2"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3174"
+          "@id": "edam:topic_3050"
         },
         {
-          "@id": "edam:topic_3050"
+          "@id": "edam:topic_0659"
+        },
+        {
+          "@id": "edam:topic_3174"
         },
         {
           "@id": "edam:topic_3697"
@@ -88,30 +87,36 @@
         },
         {
           "@id": "edam:topic_0637"
-        },
-        {
-          "@id": "edam:topic_0659"
         }
       ],
       "sc:citation": [
-        {
-          "@id": "https://doi.org/10.1093/nar/gkt1209"
-        },
+        "pubmed:22556368",
+        "pmcid:PMC3389763",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/bts252"
         },
-        "pmcid:PMC3965112",
+        "pubmed:23193283",
+        "pmcid:PMC3531112",
         {
           "@id": "https://doi.org/10.1093/nar/gks1219"
         },
-        "pubmed:23193283",
-        "pmcid:PMC3531112",
-        "pubmed:22556368",
         "pubmed:24293649",
-        "pmcid:PMC3389763"
+        "pmcid:PMC3965112",
+        {
+          "@id": "https://doi.org/10.1093/nar/gkt1209"
+        }
       ],
       "sc:description": "SILVAngs is a data analysis service for ribosomal RNA gene (rDNA) amplicon reads from high-throughput sequencing (next-generation sequencing (NGS)) approaches based on an automatic software pipeline. It uses the SILVA rDNA databases, taxonomies, and alignments as a reference. It facilitates the classification of rDNA reads and provides a wealth of results (tables, graphs and sequence files) for download.",
       "sc:featureList": [
+        {
+          "@id": "edam:operation_2478"
+        },
+        {
+          "@id": "edam:operation_0292"
+        },
+        {
+          "@id": "edam:operation_0291"
+        },
         {
           "@id": "edam:operation_2238"
         },
@@ -119,19 +124,10 @@
           "@id": "edam:operation_3460"
         },
         {
-          "@id": "edam:operation_0337"
-        },
-        {
           "@id": "edam:operation_2428"
         },
         {
-          "@id": "edam:operation_0291"
-        },
-        {
-          "@id": "edam:operation_2478"
-        },
-        {
-          "@id": "edam:operation_0292"
+          "@id": "edam:operation_0337"
         }
       ],
       "sc:isAccessibleForFree": true,
@@ -139,10 +135,10 @@
       "sc:provider": "Leibniz Institute DSMZ-German Collection of Microorganisms and Cell Cultures",
       "sc:softwareHelp": [
         {
-          "@id": "https://www.arb-silva.de/footer/sngs-termsofuse"
+          "@id": "https://www.arb-silva.de/documentation/silvangs/userfaq/"
         },
         {
-          "@id": "https://www.arb-silva.de/documentation/silvangs/userfaq/"
+          "@id": "https://www.arb-silva.de/footer/sngs-termsofuse"
         },
         {
           "@id": "https://www.arb-silva.de/fileadmin/silva_databases/sngs/SILVAngs_User_Guide.pdf"
@@ -152,7 +148,18 @@
       "sc:url": "https://ngs.arb-silva.de"
     },
     {
-      "@id": "_:N700e0ed1c4bf4dccadc368e991d165dc",
+      "@id": "_:N8b4443eef32f4c08ac533b914da07aa3",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2977"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "Nucleic acid sequence"
+    },
+    {
+      "@id": "_:Nd809efbf57f64f24a51e29df2741a9f7",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
@@ -160,18 +167,7 @@
       "sc:name": "Plot"
     },
     {
-      "@id": "_:Na65da6d855954b069afafbddffa5fbd6",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2048"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3508"
-      },
-      "sc:name": "Report"
-    },
-    {
-      "@id": "_:Nb9059927b7cf4aa68f45f3591ecd48e8",
+      "@id": "_:N7d785c3f5c874ccfa4b1d058107d05b6",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2082"
@@ -182,7 +178,34 @@
       "sc:name": "Matrix"
     },
     {
-      "@id": "_:Nc8bb957ce86746b6a167d567bcd54af7",
+      "@id": "_:N5971395ac85549f7905ebfb8608bdd50",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2977"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3830"
+        },
+        {
+          "@id": "edam:format_1984"
+        }
+      ],
+      "sc:name": "Nucleic acid sequence"
+    },
+    {
+      "@id": "_:N501181d17ad546bca6760b2db8a0d1ce",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2048"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3508"
+      },
+      "sc:name": "Report"
+    },
+    {
+      "@id": "_:N782f9285cba44abeaaf89c4c3da3a2b2",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1246"
@@ -193,31 +216,8 @@
       "sc:name": "Sequence cluster (nucleic acid)"
     },
     {
-      "@id": "_:N34db135a18e04f95bf791a0c40c93b78",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2977"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_1984"
-        },
-        {
-          "@id": "edam:format_3830"
-        }
-      ],
-      "sc:name": "Nucleic acid sequence"
-    },
-    {
-      "@id": "_:N18fbd793c6514ca792528bed6f5ec866",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2977"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1929"
-      },
-      "sc:name": "Nucleic acid sequence"
+      "@id": "https://doi.org/10.1093/nar/gkt1209",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

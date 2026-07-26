@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -44,12 +44,12 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Chris Morris",
       "bsc:output": {
-        "@id": "_:N2a089f35de734e138187b981de6c697f"
+        "@id": "_:N42dd28f6745442e98716d539f5472810"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web application",
-        "Web API"
+        "Web API",
+        "Web application"
       ],
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0607"
@@ -68,29 +68,38 @@
       },
       "sc:name": "PiMS LIMS",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:provider": "STFC",
       "sc:softwareHelp": [
         {
-          "@id": "http://pims.structuralbiology.eu/docs/community%20model%20pimsacademicuseronly%20FINAL.docx"
+          "@id": "http://pims.structuralbiology.eu:8080/pims/help/HelpGettingStarted.jsp"
         },
         {
-          "@id": "http://pims.structuralbiology.eu:8080/pims/help/HelpGettingStarted.jsp"
+          "@id": "http://pims.structuralbiology.eu/docs/community%20model%20pimsacademicuseronly%20FINAL.docx"
         }
       ],
       "sc:softwareVersion": "1",
       "sc:url": "https://www.limswiki.org/index.php/PiMS"
     },
     {
-      "@id": "_:N2a089f35de734e138187b981de6c697f",
+      "@id": "_:N42dd28f6745442e98716d539f5472810",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2531"
       },
       "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2331"
+        },
+        {
+          "@id": "edam:format_3556"
+        },
+        {
+          "@id": "edam:format_3261"
+        },
         {
           "@id": "edam:format_3475"
         },
@@ -98,16 +107,7 @@
           "@id": "edam:format_3506"
         },
         {
-          "@id": "edam:format_3261"
-        },
-        {
-          "@id": "edam:format_2331"
-        },
-        {
           "@id": "edam:format_3468"
-        },
-        {
-          "@id": "edam:format_3556"
         }
       ],
       "sc:name": "Experiment report"

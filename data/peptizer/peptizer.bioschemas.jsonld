@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -43,12 +43,12 @@
       "@id": "https://bio.tools/peptizer",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N204e236a4e1149bb92a85f640885edd6"
+        "@id": "_:N19f93eccc08d46db91462196129d81bf"
       },
       "bsc:output": {
-        "@id": "_:N3bb52370dae1453bbab3541884b805a0"
+        "@id": "_:N289c8649c9064e9d9b3391d8c71a2845"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Desktop application"
@@ -57,10 +57,10 @@
         "@id": "edam:topic_0121"
       },
       "sc:citation": [
+        "pubmed:18667410",
         {
           "@id": "https://doi.org/10.1074/mcp.M800082-MCP200"
-        },
-        "pubmed:18667410"
+        }
       ],
       "sc:description": "Automating manual validation of MS/MS search results.",
       "sc:featureList": {
@@ -68,23 +68,23 @@
       },
       "sc:name": "Peptizer",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:provider": "ugent.be",
       "sc:softwareHelp": [
         {
-          "@id": "https://github.com/compomics/peptizer/blob/master/manual/peptizer_manual.pdf"
+          "@id": "https://github.com/compomics/peptizer"
         },
         {
-          "@id": "https://github.com/compomics/peptizer"
+          "@id": "https://github.com/compomics/peptizer/blob/master/manual/peptizer_manual.pdf"
         }
       ],
       "sc:softwareVersion": "1.8.4",
       "sc:url": "https://github.com/compomics/peptizer"
     },
     {
-      "@id": "_:N204e236a4e1149bb92a85f640885edd6",
+      "@id": "_:N19f93eccc08d46db91462196129d81bf",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2536"
@@ -92,7 +92,7 @@
       "sc:name": "Mass spectrometry data"
     },
     {
-      "@id": "_:N3bb52370dae1453bbab3541884b805a0",
+      "@id": "_:N289c8649c9064e9d9b3391d8c71a2845",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2536"

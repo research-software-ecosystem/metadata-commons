@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -43,9 +43,9 @@
       "@id": "https://bio.tools/tvbot",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Ne280c5ba8da54e018b5c8252068663a2"
+        "@id": "_:N3d0012a323c14b8aa4114add1538f2cb"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
@@ -55,23 +55,23 @@
           "@id": "edam:topic_0621"
         },
         {
-          "@id": "edam:topic_0769"
+          "@id": "edam:topic_3293"
         },
         {
-          "@id": "edam:topic_3293"
+          "@id": "edam:topic_0769"
         }
       ],
       "sc:citation": [
+        "pubmed:37144476",
         "pmcid:PMC10320113",
         {
           "@id": "https://doi.org/10.1093/NAR/GKAD359"
-        },
-        "pubmed:37144476"
+        }
       ],
       "sc:description": "Web application for visualizing, modifying and annotating phylogenetic trees.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0326"
+          "@id": "edam:operation_1812"
         },
         {
           "@id": "edam:operation_0323"
@@ -80,7 +80,7 @@
           "@id": "edam:operation_0558"
         },
         {
-          "@id": "edam:operation_1812"
+          "@id": "edam:operation_0326"
         },
         {
           "@id": "edam:operation_0567"
@@ -89,27 +89,27 @@
       "sc:isAccessibleForFree": true,
       "sc:name": "tvBOT",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:url": "https://www.chiplot.online/tvbot.html"
     },
     {
-      "@id": "_:Ne280c5ba8da54e018b5c8252068663a2",
+      "@id": "_:N3d0012a323c14b8aa4114add1538f2cb",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0872"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_3159"
-        },
-        {
           "@id": "edam:format_1912"
         },
         {
           "@id": "edam:format_1910"
+        },
+        {
+          "@id": "edam:format_3159"
         }
       ],
       "sc:name": "Phylogenetic tree"

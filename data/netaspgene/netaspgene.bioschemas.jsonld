@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,31 +39,31 @@
       "@id": "https://bio.tools/netaspgene",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nf6f018be7bf14b04831ccddcfff25742"
+        "@id": "_:Nf2780b9934354b26a10f5ce852a57a61"
       },
       "bsc:output": [
         {
-          "@id": "_:Nc277a069b0814e72b3b542db68199b8c"
+          "@id": "_:Na00734f69ef24c43bd642272a329d667"
         },
         {
-          "@id": "_:N6a45635cddcd4ac596ef2abcc8dd84c9"
+          "@id": "_:N694970a8d3384c3187cf39623a9e08bc"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0080"
+          "@id": "edam:topic_3512"
         },
         {
-          "@id": "edam:topic_3512"
+          "@id": "edam:topic_0080"
         }
       ],
       "sc:citation": [
+        "pubmed:18948220",
         {
           "@id": "https://doi.org/10.1016/j.fgb.2008.09.010"
-        },
-        "pubmed:18948220"
+        }
       ],
       "sc:description": "Predictions of splice sites in Aspergillus fumigatus and other Aspergillus species DNA sequences.",
       "sc:featureList": {
@@ -73,9 +73,9 @@
       "sc:license": "Other",
       "sc:name": "NetAspGene",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": "CBS",
       "sc:softwareHelp": {
@@ -85,18 +85,18 @@
       "sc:url": "http://cbs.dtu.dk/services/NetAspGene/"
     },
     {
-      "@id": "_:Nc277a069b0814e72b3b542db68199b8c",
+      "@id": "_:Nf2780b9934354b26a10f5ce852a57a61",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2955"
+        "@id": "edam:data_2044"
       },
       "sc:encodingFormat": {
-        "@id": "edam:format_2333"
+        "@id": "edam:format_1929"
       },
-      "sc:name": "Sequence report"
+      "sc:name": "Sequence"
     },
     {
-      "@id": "_:N6a45635cddcd4ac596ef2abcc8dd84c9",
+      "@id": "_:Na00734f69ef24c43bd642272a329d667",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1277"
@@ -107,15 +107,15 @@
       "sc:name": "Protein features"
     },
     {
-      "@id": "_:Nf6f018be7bf14b04831ccddcfff25742",
+      "@id": "_:N694970a8d3384c3187cf39623a9e08bc",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2044"
+        "@id": "edam:data_2955"
       },
       "sc:encodingFormat": {
-        "@id": "edam:format_1929"
+        "@id": "edam:format_2333"
       },
-      "sc:name": "Sequence"
+      "sc:name": "Sequence report"
     },
     {
       "@id": "https://doi.org/10.1016/j.fgb.2008.09.010",

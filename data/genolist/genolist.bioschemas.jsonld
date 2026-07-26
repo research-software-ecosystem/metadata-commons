@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,35 +36,31 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/nar/gkm1042",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/genolist",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N112b032886e6480ca330fc89df34e875"
+          "@id": "_:N6192180ffdcf4a9c904596bedb61e068"
         },
         {
-          "@id": "_:N34accda5d14f46e3b34b14062ca43bae"
+          "@id": "_:N71a04056fa7e4863b670445dc83f3eba"
         },
         {
-          "@id": "_:N149e30b9ddb64c5b8345fa0d7e2f0552"
+          "@id": "_:Nbeced130717d4301ab441eb48d97f8fd"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N71ce8a76c7214f4c9426378f88a3482c"
+          "@id": "_:N7577b922a00e46b7bddf36565a5ec259"
         },
         {
-          "@id": "_:N27a8c9898dbf4ab4a72bf84b1c4333ea"
+          "@id": "_:N67393ecbeddc4cd3a73002bbb33ac079"
         },
         {
-          "@id": "_:N61b3670c714f4102955e314629269a5e"
+          "@id": "_:Ne100a455150741b4a26f13eb0bfa0e0b"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Database portal",
       "sc:applicationSubCategory": [
         {
@@ -75,11 +71,11 @@
         }
       ],
       "sc:citation": [
+        "pubmed:18032431",
         "pmcid:PMC2238853",
         {
           "@id": "https://doi.org/10.1093/nar/gkm1042"
-        },
-        "pubmed:18032431"
+        }
       ],
       "sc:description": "An integrated environment for the analysis of microbial genomes.",
       "sc:featureList": {
@@ -87,9 +83,9 @@
       },
       "sc:name": "GenoList comparative analysis of microbial genomes",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://genodb.pasteur.fr/cgi-bin/WebObjects/GenoList"
@@ -97,7 +93,31 @@
       "sc:url": "http://genolist.pasteur.fr/GenoList"
     },
     {
-      "@id": "_:N71ce8a76c7214f4c9426378f88a3482c",
+      "@id": "_:N6192180ffdcf4a9c904596bedb61e068",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2739"
+      },
+      "sc:name": "Gene ID (Genolist)"
+    },
+    {
+      "@id": "_:N71a04056fa7e4863b670445dc83f3eba",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1026"
+      },
+      "sc:name": "Gene symbol"
+    },
+    {
+      "@id": "_:Nbeced130717d4301ab441eb48d97f8fd",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1868"
+      },
+      "sc:name": "Taxon"
+    },
+    {
+      "@id": "_:N7577b922a00e46b7bddf36565a5ec259",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0916"
@@ -108,7 +128,7 @@
       "sc:name": "Gene report"
     },
     {
-      "@id": "_:N27a8c9898dbf4ab4a72bf84b1c4333ea",
+      "@id": "_:N67393ecbeddc4cd3a73002bbb33ac079",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0916"
@@ -119,7 +139,7 @@
       "sc:name": "Gene report"
     },
     {
-      "@id": "_:N61b3670c714f4102955e314629269a5e",
+      "@id": "_:Ne100a455150741b4a26f13eb0bfa0e0b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3028"
@@ -130,28 +150,8 @@
       "sc:name": "Taxonomy"
     },
     {
-      "@id": "_:N112b032886e6480ca330fc89df34e875",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2739"
-      },
-      "sc:name": "Gene ID (Genolist)"
-    },
-    {
-      "@id": "_:N34accda5d14f46e3b34b14062ca43bae",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1026"
-      },
-      "sc:name": "Gene symbol"
-    },
-    {
-      "@id": "_:N149e30b9ddb64c5b8345fa0d7e2f0552",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1868"
-      },
-      "sc:name": "Taxon"
+      "@id": "https://doi.org/10.1093/nar/gkm1042",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

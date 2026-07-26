@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,37 +36,37 @@
   },
   "@graph": [
     {
-      "@id": "https://orcid.org/0000-0001-6125-9460",
-      "@type": "sc:Person"
-    },
-    {
       "@id": "https://bio.tools/rCASC",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Raffaele A Calogero",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0622"
       },
       "sc:author": [
-        "Luca Alessandri",
         {
           "@id": "https://orcid.org/0000-0001-6125-9460"
-        }
+        },
+        "Luca Alessandri"
       ],
       "sc:description": "rCASC, Cluster Analysis of Single Cells, is part of the reproducible-bioinformatics.org project and provides single cell analysis functionalities within the reproducible rules described by Sandve et al. [PLoS Comp Biol. 2013]. rCASC is designed to provide a complete workflow for cell-subpopulation discovery.",
       "sc:isAccessibleForFree": true,
       "sc:license": "GPL-3.0",
       "sc:name": "rCASC",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "https://kendomaniac.github.io/rCASC/articles/rCASC_vignette.html"
       },
       "sc:softwareVersion": "2.0.1",
       "sc:url": "https://github.com/kendomaniac/rCASC"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-6125-9460",
+      "@type": "sc:Person"
     }
   ]
 }

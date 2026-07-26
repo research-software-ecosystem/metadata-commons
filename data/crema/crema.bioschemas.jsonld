@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,17 +39,14 @@
       "@id": "https://bio.tools/crema",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N27167dcebef24138aff6d25940ea8582"
+        "@id": "_:Nb534827ba9c846d98f9867c388335c3d"
       },
       "bsc:output": {
-        "@id": "_:Nd2ca5d764bc14da1ad2b6f2e6eef6c37"
+        "@id": "_:Nc53f9dd8011e4470bd3d021dd15e4b4b"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web service",
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_0749"
-        },
         {
           "@id": "edam:topic_3169"
         },
@@ -61,10 +58,16 @@
         },
         {
           "@id": "edam:topic_0204"
+        },
+        {
+          "@id": "edam:topic_0749"
         }
       ],
       "sc:description": "CREMA is an online tool which automatically infers regulatory networks from chromatin accessibility (ATAC/DNase-seq) or enhancer mark (ChIP-seq) data. CREMA directly processes raw data of a set of samples (FASTQ files), identifies cis-regulatory elements (CREs) , infers key transcription factors driving the observed chromatin state changes across the experimental conditions, and makes detailed predictions regarding their regulatory roles.",
       "sc:featureList": [
+        {
+          "@id": "edam:operation_3903"
+        },
         {
           "@id": "edam:operation_2437"
         },
@@ -72,13 +75,10 @@
           "@id": "edam:operation_3222"
         },
         {
-          "@id": "edam:operation_0441"
-        },
-        {
-          "@id": "edam:operation_3903"
-        },
-        {
           "@id": "edam:operation_0438"
+        },
+        {
+          "@id": "edam:operation_0441"
         }
       ],
       "sc:isAccessibleForFree": true,
@@ -90,7 +90,7 @@
       "sc:url": "https://crema.unibas.ch"
     },
     {
-      "@id": "_:N27167dcebef24138aff6d25940ea8582",
+      "@id": "_:Nb534827ba9c846d98f9867c388335c3d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
@@ -101,7 +101,7 @@
       "sc:name": "Sequence"
     },
     {
-      "@id": "_:Nd2ca5d764bc14da1ad2b6f2e6eef6c37",
+      "@id": "_:Nc53f9dd8011e4470bd3d021dd15e4b4b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0006"

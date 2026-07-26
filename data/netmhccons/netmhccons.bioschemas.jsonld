@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,27 +36,31 @@
   },
   "@graph": [
     {
+      "@id": "http://orcid.org/0000-0001-7885-4311",
+      "@type": "sc:Person"
+    },
+    {
       "@id": "https://bio.tools/netmhccons",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "http://orcid.org/0000-0001-7885-4311"
       },
       "bsc:input": {
-        "@id": "_:N55d33857baae465c8c0d7e1dd50af139"
+        "@id": "_:N23c6bdbe06ef418487faae54729af866"
       },
       "bsc:output": {
-        "@id": "_:Nda66e1b69cc24bbc8712009f6e7ef77c"
+        "@id": "_:N1c2704060ca04c05907afc0b2a638218"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3534"
       },
       "sc:citation": [
+        "pubmed:22009319",
         {
           "@id": "https://doi.org/10.1007/s00251-011-0579-8"
-        },
-        "pubmed:22009319"
+        }
       ],
       "sc:description": "Predict binding of peptides to any known MHC class I molecule.",
       "sc:featureList": [
@@ -71,9 +75,9 @@
       "sc:license": "Other",
       "sc:name": "NetMHCcons",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": "CBS",
       "sc:softwareHelp": {
@@ -83,7 +87,7 @@
       "sc:url": "http://www.cbs.dtu.dk/services/NetMHCcons/"
     },
     {
-      "@id": "_:N55d33857baae465c8c0d7e1dd50af139",
+      "@id": "_:N23c6bdbe06ef418487faae54729af866",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
@@ -94,7 +98,7 @@
       "sc:name": "Sequence"
     },
     {
-      "@id": "_:Nda66e1b69cc24bbc8712009f6e7ef77c",
+      "@id": "_:N1c2704060ca04c05907afc0b2a638218",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1277"
@@ -107,10 +111,6 @@
     {
       "@id": "https://doi.org/10.1007/s00251-011-0579-8",
       "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "http://orcid.org/0000-0001-7885-4311",
-      "@type": "sc:Person"
     }
   ]
 }

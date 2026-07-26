@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,18 +36,26 @@
   },
   "@graph": [
     {
+      "@id": "https://orcid.org/0000-0001-5352-069X",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-1777-9084",
+      "@type": "sc:Person"
+    },
+    {
       "@id": "https://bio.tools/nanortax",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "https://orcid.org/0000-0003-1777-9084"
       },
       "bsc:input": {
-        "@id": "_:Ncb82af2bb0f644478cb77312c212d3b0"
+        "@id": "_:N28a0af92f22f459186928c06b8194fb5"
       },
       "bsc:output": {
-        "@id": "_:N95d8f3ccb4c748f7bbf43c0a8049dc35"
+        "@id": "_:Nc1cedc2a66c046da91ad5c6d01594dc3"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Web application"
@@ -61,10 +69,10 @@
         }
       ],
       "sc:author": [
-        "Laura Ciuffreda",
         {
           "@id": "https://orcid.org/0000-0003-1777-9084"
-        }
+        },
+        "Laura Ciuffreda"
       ],
       "sc:contributor": [
         {
@@ -78,13 +86,13 @@
           "@id": "edam:operation_3744"
         },
         {
+          "@id": "edam:operation_2478"
+        },
+        {
           "@id": "edam:operation_3731"
         },
         {
           "@id": "edam:operation_3460"
-        },
-        {
-          "@id": "edam:operation_2478"
         }
       ],
       "sc:isAccessibleForFree": true,
@@ -97,7 +105,7 @@
       "sc:url": "https://github.com/genomicsITER/NanoRtax"
     },
     {
-      "@id": "_:Ncb82af2bb0f644478cb77312c212d3b0",
+      "@id": "_:N28a0af92f22f459186928c06b8194fb5",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1234"
@@ -105,7 +113,7 @@
       "sc:name": "Sequence set (nucleic acid)"
     },
     {
-      "@id": "_:N95d8f3ccb4c748f7bbf43c0a8049dc35",
+      "@id": "_:Nc1cedc2a66c046da91ad5c6d01594dc3",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3028"
@@ -114,14 +122,6 @@
         "@id": "edam:format_3752"
       },
       "sc:name": "Taxonomy"
-    },
-    {
-      "@id": "https://orcid.org/0000-0003-1777-9084",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://orcid.org/0000-0001-5352-069X",
-      "@type": "sc:Person"
     }
   ]
 }

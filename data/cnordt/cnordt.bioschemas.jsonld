@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,22 +39,22 @@
       "@id": "https://bio.tools/cnordt",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N1adc307c6baa45a7935fae6eee73764d"
+        "@id": "_:N505d92c190e948168d68605085eb3bdc"
       },
       "bsc:output": {
-        "@id": "_:Nf0914114d63345539b033b049d0eb34d"
+        "@id": "_:N8318e41baf9b4de2a5870be8d8d732ab"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_2259"
+          "@id": "edam:topic_0602"
         },
         {
-          "@id": "edam:topic_0602"
+          "@id": "edam:topic_2259"
         }
       ],
       "sc:citation": {
@@ -63,18 +63,18 @@
       "sc:description": "This add-on to the package CellNOptR handles time-course data, as opposed to steady state data in CellNOptR. It scales the simulation step to allow comparison and model fitting for time-course data. Future versions will optimize delays and strengths for each edge.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_2425"
+          "@id": "edam:operation_2426"
         },
         {
-          "@id": "edam:operation_2426"
+          "@id": "edam:operation_2425"
         }
       ],
       "sc:license": "GPL-2.0-only",
       "sc:name": "CNORdt",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://bioconductor.org/packages/CNORdt"
@@ -83,7 +83,7 @@
       "sc:url": "https://bioconductor.org/packages/CNORdt"
     },
     {
-      "@id": "_:N1adc307c6baa45a7935fae6eee73764d",
+      "@id": "_:N505d92c190e948168d68605085eb3bdc",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2600"
@@ -102,20 +102,20 @@
       "sc:name": "Pathway or network"
     },
     {
-      "@id": "_:Nf0914114d63345539b033b049d0eb34d",
+      "@id": "_:N8318e41baf9b4de2a5870be8d8d732ab",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2984"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_3508"
+          "@id": "edam:format_3617"
         },
         {
           "@id": "edam:format_2331"
         },
         {
-          "@id": "edam:format_3617"
+          "@id": "edam:format_3508"
         },
         {
           "@id": "edam:format_3619"

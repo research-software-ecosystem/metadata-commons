@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,32 +36,28 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1371/journal.pone.0157022",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/sartools",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
-        "Marie-Agnès Dillies",
+        "Hugo Varet",
         "Jean-Yves Coppée",
-        "Hugo Varet"
+        "Marie-Agnès Dillies"
       ],
       "bsc:input": {
-        "@id": "_:N5eb360c809d94b55bc6210cd74024bae"
+        "@id": "_:N87d87c0030b649289dc64642868612c1"
       },
       "bsc:output": [
         {
-          "@id": "_:Naed28387d2c94e1c86aff44c5c238159"
+          "@id": "_:N80f8c692b3d147c38301251049b26ce3"
         },
         {
-          "@id": "_:Ndeef2c882d5844278a82363908793868"
+          "@id": "_:N5779f728ff7f420aba0ae3c17b077dfb"
         },
         {
-          "@id": "_:Nbcff0bfb42d24b30bcd994d24b7226e8"
+          "@id": "_:N801d598d3e50457cabddabaa90cfb20f"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
@@ -72,27 +68,27 @@
         }
       ],
       "sc:author": [
-        "Marie-Agnès Dillies",
-        "Hugo Varet"
+        "Hugo Varet",
+        "Marie-Agnès Dillies"
       ],
       "sc:citation": [
         "pubmed:27280887",
+        "pmcid:PMC4900645",
         {
           "@id": "https://doi.org/10.1371/journal.pone.0157022"
-        },
-        "pmcid:PMC4900645"
+        }
       ],
       "sc:contributor": "France Génomique",
       "sc:description": "R package dedicated to the differential analysis of RNA-seq data. It provides tools to generate descriptive and diagnostic graphs, to run the differential analysis with one of the well known DESeq2 or edgeR packages and to export the results into easily readable tab-delimited files. It also facilitates the generation of a HTML report which displays all the figures produced, explains the statistical methods and gives the results of the differential analysis.",
       "sc:featureList": [
         {
+          "@id": "edam:operation_3223"
+        },
+        {
           "@id": "edam:operation_3563"
         },
         {
           "@id": "edam:operation_3435"
-        },
-        {
-          "@id": "edam:operation_3223"
         }
       ],
       "sc:funder": "France Génomique",
@@ -100,9 +96,9 @@
       "sc:license": "GPL-2.0",
       "sc:name": "SARTools",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": [
         "Bioinformatics and Biostatistics Hub",
@@ -120,7 +116,26 @@
       "sc:url": "https://github.com/PF2-pasteur-fr/SARTools"
     },
     {
-      "@id": "_:Naed28387d2c94e1c86aff44c5c238159",
+      "@id": "_:N87d87c0030b649289dc64642868612c1",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2603"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3475"
+      },
+      "sc:name": "Gene expression data"
+    },
+    {
+      "@id": "_:N80f8c692b3d147c38301251049b26ce3",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2884"
+      },
+      "sc:name": "Plot"
+    },
+    {
+      "@id": "_:N5779f728ff7f420aba0ae3c17b077dfb",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2531"
@@ -131,15 +146,7 @@
       "sc:name": "Experiment report"
     },
     {
-      "@id": "_:Ndeef2c882d5844278a82363908793868",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2884"
-      },
-      "sc:name": "Plot"
-    },
-    {
-      "@id": "_:Nbcff0bfb42d24b30bcd994d24b7226e8",
+      "@id": "_:N801d598d3e50457cabddabaa90cfb20f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2531"
@@ -150,15 +157,8 @@
       "sc:name": "Experiment report"
     },
     {
-      "@id": "_:N5eb360c809d94b55bc6210cd74024bae",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2603"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3475"
-      },
-      "sc:name": "Gene expression data"
+      "@id": "https://doi.org/10.1371/journal.pone.0157022",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

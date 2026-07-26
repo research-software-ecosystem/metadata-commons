@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,26 +40,26 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Ndb499b0d788a4e33bf2312a04dafe703"
+          "@id": "_:N1ecd3e9d4f8b4bf890157257ff09fcaa"
         },
         {
-          "@id": "_:Nbe1171f146584cb49d07abbc7f4ba4f7"
+          "@id": "_:Nf412c1c6db8f4189bc9f61adfa64f0b1"
         },
         {
-          "@id": "_:N0651705019f949c59369d85c479b580a"
+          "@id": "_:N1603cf9526c7427cad8aa1f6a03ebeb9"
         }
       ],
       "bsc:output": {
-        "@id": "_:N5c054cc4a3c84b7d987f9aa5af3c19b2"
+        "@id": "_:N74ba91127fad4729a36854a3a48905f1"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3520"
+          "@id": "edam:topic_0121"
         },
         {
-          "@id": "edam:topic_0121"
+          "@id": "edam:topic_3520"
         }
       ],
       "sc:description": "Converter from MS-GFDB output to pepXML.",
@@ -74,9 +74,9 @@
       "sc:license": "GPL-3.0",
       "sc:name": "msgfdb2pepxml",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://ms-utils.org/msgfdb2pepxml/index.html"
@@ -84,7 +84,7 @@
       "sc:url": "http://ms-utils.org/msgfdb2pepxml/index.html"
     },
     {
-      "@id": "_:Ndb499b0d788a4e33bf2312a04dafe703",
+      "@id": "_:N1ecd3e9d4f8b4bf890157257ff09fcaa",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0943"
@@ -95,18 +95,7 @@
       "sc:name": "Mass spectrometry spectra"
     },
     {
-      "@id": "_:Nbe1171f146584cb49d07abbc7f4ba4f7",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1233"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1929"
-      },
-      "sc:name": "Sequence set (protein)"
-    },
-    {
-      "@id": "_:N0651705019f949c59369d85c479b580a",
+      "@id": "_:Nf412c1c6db8f4189bc9f61adfa64f0b1",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0945"
@@ -117,7 +106,18 @@
       "sc:name": "Peptide identification"
     },
     {
-      "@id": "_:N5c054cc4a3c84b7d987f9aa5af3c19b2",
+      "@id": "_:N1603cf9526c7427cad8aa1f6a03ebeb9",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1233"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "Sequence set (protein)"
+    },
+    {
+      "@id": "_:N74ba91127fad4729a36854a3a48905f1",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0945"

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -43,22 +43,22 @@
       "@id": "https://bio.tools/unitrap",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N4a5d8adaefa34d0a9ecfbd97a2d67af6"
+        "@id": "_:N081f1bfdf3b2484ab6203268c747112b"
       },
       "bsc:output": {
-        "@id": "_:Ncbf420f36bac42f5a4046cfd0167dc55"
+        "@id": "_:N3b80d058704f4a16b3a0e9259267f764"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Database portal",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0114"
       },
       "sc:citation": [
+        "pubmed:17942430",
+        "pmcid:PMC2238955",
         {
           "@id": "https://doi.org/10.1093/nar/gkm825"
-        },
-        "pmcid:PMC2238955",
-        "pubmed:17942430"
+        }
       ],
       "sc:description": "Tools for the biologist enabling optimized use of gene trap clones.",
       "sc:featureList": {
@@ -66,8 +66,8 @@
       },
       "sc:name": "UniTrap gene trap clones",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -76,7 +76,7 @@
       "sc:url": "http://unitrap.crg.es/about.php"
     },
     {
-      "@id": "_:N4a5d8adaefa34d0a9ecfbd97a2d67af6",
+      "@id": "_:N081f1bfdf3b2484ab6203268c747112b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1033"
@@ -84,7 +84,7 @@
       "sc:name": "Ensembl gene ID"
     },
     {
-      "@id": "_:Ncbf420f36bac42f5a4046cfd0167dc55",
+      "@id": "_:N3b80d058704f4a16b3a0e9259267f764",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0916"

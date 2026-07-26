@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,6 +36,10 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/gkq967",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/ena_sequence_search",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
@@ -43,12 +47,12 @@
         "Support"
       ],
       "bsc:input": {
-        "@id": "_:N5077c9a7fcc34a30b39cbb3c4740d49c"
+        "@id": "_:Ne2a5f4eed13149cdab7491159cec46b9"
       },
       "bsc:output": {
-        "@id": "_:Ne92c34e2bf134cb78d80710c3945aa70"
+        "@id": "_:Nb3203eefd5944c62883e7cc40069e9bd"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0080"
@@ -67,24 +71,24 @@
       },
       "sc:name": "ENA sequence search",
       "sc:operatingSystem": [
-        "Windows",
         "Linux",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:provider": "EMBL-EBI",
       "sc:softwareHelp": [
         {
-          "@id": "http://www.ebi.ac.uk/about/terms-of-use"
+          "@id": "http://www.ebi.ac.uk/ena/search/"
         },
         {
-          "@id": "http://www.ebi.ac.uk/ena/search/"
+          "@id": "http://www.ebi.ac.uk/about/terms-of-use"
         }
       ],
       "sc:softwareVersion": "1",
       "sc:url": "http://www.ebi.ac.uk/ena/data/sequence/search"
     },
     {
-      "@id": "_:N5077c9a7fcc34a30b39cbb3c4740d49c",
+      "@id": "_:Ne2a5f4eed13149cdab7491159cec46b9",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
@@ -92,16 +96,12 @@
       "sc:name": "Sequence"
     },
     {
-      "@id": "_:Ne92c34e2bf134cb78d80710c3945aa70",
+      "@id": "_:Nb3203eefd5944c62883e7cc40069e9bd",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0857"
       },
       "sc:name": "Sequence search results"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gkq967",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

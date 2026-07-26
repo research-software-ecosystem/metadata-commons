@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,12 +39,12 @@
       "@id": "https://bio.tools/methyldackel",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N26431c8315c34ab288b685db533ac76a"
+        "@id": "_:N02767b36ba8f4b4495fc136774addb38"
       },
       "bsc:output": {
-        "@id": "_:N5e511da1f0dc44f483b03510bb6525bb"
+        "@id": "_:N2ed04f54fe4041569deecfa61ef62a2a"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3173"
@@ -62,25 +62,14 @@
       "sc:license": "MIT",
       "sc:name": "MethylDackel",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:softwareVersion": "0.5.3",
       "sc:url": "https://github.com/dpryan79/MethylDackel"
     },
     {
-      "@id": "_:N5e511da1f0dc44f483b03510bb6525bb",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2854"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3583"
-      },
-      "sc:name": "Position-specific scoring matrix"
-    },
-    {
-      "@id": "_:N26431c8315c34ab288b685db533ac76a",
+      "@id": "_:N02767b36ba8f4b4495fc136774addb38",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1383"
@@ -89,6 +78,17 @@
         "@id": "edam:format_2572"
       },
       "sc:name": "Nucleic acid sequence alignment"
+    },
+    {
+      "@id": "_:N2ed04f54fe4041569deecfa61ef62a2a",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2854"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3583"
+      },
+      "sc:name": "Position-specific scoring matrix"
     }
   ]
 }

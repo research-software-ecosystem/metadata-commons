@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -42,12 +42,9 @@
     {
       "@id": "https://bio.tools/MetaDEGalaxy",
       "@type": "sc:SoftwareApplication",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_0769"
-        },
         {
           "@id": "edam:topic_3837"
         },
@@ -55,10 +52,13 @@
           "@id": "edam:topic_3174"
         },
         {
+          "@id": "edam:topic_3697"
+        },
+        {
           "@id": "edam:topic_3170"
         },
         {
-          "@id": "edam:topic_3697"
+          "@id": "edam:topic_0769"
         }
       ],
       "sc:citation": [
@@ -71,13 +71,13 @@
       "sc:description": "Galaxy workflow for differential abundance analysis of 16s metagenomic data.\n\nYou are over your disk quota. Tool execution is on hold until your disk usage drops below your allocated quota.\n\nThis history is empty. You can load your own data or get data from an external source",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3435"
-        },
-        {
           "@id": "edam:operation_3219"
         },
         {
           "@id": "edam:operation_0232"
+        },
+        {
+          "@id": "edam:operation_3435"
         }
       ],
       "sc:name": "MetaDEGalaxy",

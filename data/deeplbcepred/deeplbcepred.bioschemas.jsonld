@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,19 +39,19 @@
       "@id": "https://bio.tools/deeplbcepred",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N80887fca93f041f382f240b0d9d4024b"
+        "@id": "_:N84ffccba8b5b4246ba851f33c7fdcb94"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_2830"
+        },
         {
           "@id": "edam:topic_3474"
         },
         {
           "@id": "edam:topic_3966"
-        },
-        {
-          "@id": "edam:topic_2830"
         }
       ],
       "sc:citation": [
@@ -64,26 +64,26 @@
       "sc:description": "A Bi-LSTM and multi-scale CNN-based deep learning method for predicting linear B-cell epitopes.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0224"
-        },
-        {
           "@id": "edam:operation_0416"
         },
         {
           "@id": "edam:operation_0335"
+        },
+        {
+          "@id": "edam:operation_0224"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:name": "DeepLBCEPred",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:url": "http://www.biolscience.cn/DeepLBCEPred/"
     },
     {
-      "@id": "_:N80887fca93f041f382f240b0d9d4024b",
+      "@id": "_:N84ffccba8b5b4246ba851f33c7fdcb94",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2976"

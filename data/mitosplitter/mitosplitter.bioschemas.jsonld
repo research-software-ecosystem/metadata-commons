@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -43,57 +43,57 @@
       "@id": "https://bio.tools/mitosplitter",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nc4db77f5f4124db7b91f1f67c8deca8e"
+        "@id": "_:N41404084abb64b488010837b6f6097e3"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0625"
-        },
-        {
-          "@id": "edam:topic_0622"
+          "@id": "edam:topic_2229"
         },
         {
           "@id": "edam:topic_3676"
         },
         {
-          "@id": "edam:topic_2229"
+          "@id": "edam:topic_0622"
+        },
+        {
+          "@id": "edam:topic_0625"
         },
         {
           "@id": "edam:topic_3170"
         }
       ],
       "sc:citation": [
+        "pubmed:37725654",
         "pmcid:PMC10523499",
         {
           "@id": "https://doi.org/10.1073/pnas.2307722120"
-        },
-        "pubmed:37725654"
+        }
       ],
       "sc:description": "A mitochondrial variants-based method for efficient demultiplexing of pooled single-cell RNA-seq.",
       "sc:featureList": [
-        {
-          "@id": "edam:operation_3227"
-        },
         {
           "@id": "edam:operation_3933"
         },
         {
           "@id": "edam:operation_3196"
+        },
+        {
+          "@id": "edam:operation_3227"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:name": "mitoSplitter",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:url": "https://github.com/lnscan/mitoSplitter"
     },
     {
-      "@id": "_:Nc4db77f5f4124db7b91f1f67c8deca8e",
+      "@id": "_:N41404084abb64b488010837b6f6097e3",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1493"

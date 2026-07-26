@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,28 +40,28 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N2805123b937c41998379d04732c5ea1d"
+          "@id": "_:N4e224a56acb5438c896ff7ab1888e1fb"
         },
         {
-          "@id": "_:Nfc69581e7f024527a310b98b4acb1ad4"
+          "@id": "_:N414cf7849c3f409c99edbf43960d9fd2"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N30ec340420ea4f169b5da75a588ea6f9"
+          "@id": "_:Nb0b3094792334531aa212592314a0ee6"
         },
         {
-          "@id": "_:N9c9266215ff04d64b9773e33d56a291c"
+          "@id": "_:N7d16690448d9453692ecf9b318550ff2"
         },
         {
-          "@id": "_:N23f438b2684441f2a7ae097e91f30241"
+          "@id": "_:N4b52d98c56ed42b0bb8a7f3294f18dea"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web service",
         "Database portal",
-        "Web application"
+        "Web application",
+        "Web service"
       ],
       "sc:applicationSubCategory": [
         {
@@ -76,10 +76,10 @@
       ],
       "sc:citation": [
         "pubmed:23023984",
+        "pmcid:PMC3516146",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/bts577"
-        },
-        "pmcid:PMC3516146"
+        }
       ],
       "sc:description": "Multi-organism mine integrates data from legume species: string bean, soybean, peanut and barrel medic",
       "sc:featureList": [
@@ -90,18 +90,18 @@
           "@id": "edam:operation_2436"
         },
         {
-          "@id": "edam:operation_0337"
+          "@id": "edam:operation_0224"
         },
         {
-          "@id": "edam:operation_0224"
+          "@id": "edam:operation_0337"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "LGPL-2.1",
       "sc:name": "LegumeMine",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:softwareHelp": [
         {
@@ -115,15 +115,7 @@
       "sc:url": "https://mines.legumeinfo.org/legumemine"
     },
     {
-      "@id": "_:N2805123b937c41998379d04732c5ea1d",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1255"
-      },
-      "sc:name": "Sequence features"
-    },
-    {
-      "@id": "_:Nfc69581e7f024527a310b98b4acb1ad4",
+      "@id": "_:N4e224a56acb5438c896ff7ab1888e1fb",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2353"
@@ -131,15 +123,15 @@
       "sc:name": "Ontology data"
     },
     {
-      "@id": "_:N30ec340420ea4f169b5da75a588ea6f9",
+      "@id": "_:N414cf7849c3f409c99edbf43960d9fd2",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_3786"
+        "@id": "edam:data_1255"
       },
-      "sc:name": "Query script"
+      "sc:name": "Sequence features"
     },
     {
-      "@id": "_:N9c9266215ff04d64b9773e33d56a291c",
+      "@id": "_:Nb0b3094792334531aa212592314a0ee6",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3753"
@@ -147,7 +139,15 @@
       "sc:name": "Over-representation data"
     },
     {
-      "@id": "_:N23f438b2684441f2a7ae097e91f30241",
+      "@id": "_:N7d16690448d9453692ecf9b318550ff2",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3786"
+      },
+      "sc:name": "Query script"
+    },
+    {
+      "@id": "_:N4b52d98c56ed42b0bb8a7f3294f18dea",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1255"

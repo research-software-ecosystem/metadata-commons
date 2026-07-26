@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,21 +36,25 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/glycob/9.10.1009",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/dictyoglyc",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Ramneek Gupta",
       "bsc:input": {
-        "@id": "_:N1ca08ac3b7684f83bc7a4a381c2c7638"
+        "@id": "_:N5bfb6c1ebe834fdfbdcb489a60915e2e"
       },
       "bsc:output": [
         {
-          "@id": "_:Nfc8e6520d65e4a18a1106ec917dab68d"
+          "@id": "_:Nc51e158b26a8416b97f0acbd58000bd5"
         },
         {
-          "@id": "_:N8027bb30870f4837848cecd5957fd95f"
+          "@id": "_:Nf6eca3eb97d640ab9bc2f3161bd4340c"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
@@ -61,10 +65,10 @@
         }
       ],
       "sc:citation": [
+        "pubmed:10521537",
         {
           "@id": "https://doi.org/10.1093/glycob/9.10.1009"
-        },
-        "pubmed:10521537"
+        }
       ],
       "sc:description": "Neural network predictions for GlcNAc O-glycosylation sites in Dictyostelium discoideum proteins.",
       "sc:featureList": {
@@ -82,7 +86,7 @@
       "sc:url": "http://cbs.dtu.dk/services/DictyOGlyc/"
     },
     {
-      "@id": "_:N1ca08ac3b7684f83bc7a4a381c2c7638",
+      "@id": "_:N5bfb6c1ebe834fdfbdcb489a60915e2e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
@@ -93,7 +97,7 @@
       "sc:name": "Sequence"
     },
     {
-      "@id": "_:Nfc8e6520d65e4a18a1106ec917dab68d",
+      "@id": "_:Nc51e158b26a8416b97f0acbd58000bd5",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1277"
@@ -104,7 +108,7 @@
       "sc:name": "Protein features"
     },
     {
-      "@id": "_:N8027bb30870f4837848cecd5957fd95f",
+      "@id": "_:Nf6eca3eb97d640ab9bc2f3161bd4340c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2955"
@@ -113,10 +117,6 @@
         "@id": "edam:format_2333"
       },
       "sc:name": "Sequence report"
-    },
-    {
-      "@id": "https://doi.org/10.1093/glycob/9.10.1009",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

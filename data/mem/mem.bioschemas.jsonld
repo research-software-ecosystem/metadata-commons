@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,6 +36,10 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1186/gb-2009-10-12-r139",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/mem",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
@@ -45,18 +49,21 @@
       ],
       "bsc:input": [
         {
-          "@id": "_:Nd23a49929bd04e55a474025c8bea69fe"
+          "@id": "_:N477ccf2a3c4b40c885299f4f5e4b166c"
         },
         {
-          "@id": "_:N6995ed965a594b679b6f183eee718e96"
+          "@id": "_:N0209365e77384fdd8e6aa1306f0259c5"
         }
       ],
       "bsc:output": {
-        "@id": "_:Nc0112c1a5ceb4cc69b2aaddd8be3d10a"
+        "@id": "_:N15f62b072cbf4698a159745b56d76650"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Database portal",
       "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_3473"
+        },
         {
           "@id": "edam:topic_0659"
         },
@@ -67,40 +74,37 @@
           "@id": "edam:topic_3518"
         },
         {
-          "@id": "edam:topic_3473"
-        },
-        {
           "@id": "edam:topic_0602"
         }
       ],
       "sc:citation": [
+        "pubmed:19961599",
+        "pmcid:PMC2812946",
         {
           "@id": "https://doi.org/10.1186/gb-2009-10-12-r139"
-        },
-        "pmcid:PMC2812946",
-        "pubmed:19961599"
+        }
       ],
       "sc:description": "MEM (Multi-Experiment Matrix) provides gene expression similarity searches, visualisation and analyses across many datasets from ArrayExpress and GEO. MEM uses rank aggregation to merge information from different datasets into a single global ordering with simultaneous statistical significance estimation. Each dataset can be also accessed through ExpressView gene clustering and visualisation, and DiffExp for differential expressed genes search.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0315"
+          "@id": "edam:operation_3436"
         },
         {
           "@id": "edam:operation_3561"
         },
         {
-          "@id": "edam:operation_0314"
+          "@id": "edam:operation_0315"
         },
         {
-          "@id": "edam:operation_3436"
+          "@id": "edam:operation_0314"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "Freeware",
       "sc:name": "Multi Experiment Matrix (MEM)",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -109,18 +113,7 @@
       "sc:url": "http://biit.cs.ut.ee/mem/"
     },
     {
-      "@id": "_:Nd23a49929bd04e55a474025c8bea69fe",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1025"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Gene identifier"
-    },
-    {
-      "@id": "_:N6995ed965a594b679b6f183eee718e96",
+      "@id": "_:N477ccf2a3c4b40c885299f4f5e4b166c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0928"
@@ -131,24 +124,31 @@
       "sc:name": "Gene expression profile"
     },
     {
-      "@id": "_:Nc0112c1a5ceb4cc69b2aaddd8be3d10a",
+      "@id": "_:N0209365e77384fdd8e6aa1306f0259c5",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1025"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Gene identifier"
+    },
+    {
+      "@id": "_:N15f62b072cbf4698a159745b56d76650",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3768"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_2330"
+          "@id": "edam:format_3326"
         },
         {
-          "@id": "edam:format_3326"
+          "@id": "edam:format_2330"
         }
       ],
       "sc:name": "Clustered gene expression profiles"
-    },
-    {
-      "@id": "https://doi.org/10.1186/gb-2009-10-12-r139",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,24 +40,24 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N9ac6ead91122447882ea36c1f6da7311"
+          "@id": "_:Nf2ee7064c7994775a4791afa67cb9d7e"
         },
         {
-          "@id": "_:Naaccd544263043a791053c2b22719ca1"
+          "@id": "_:N10746bcdac974a3396cead1f05c1aac8"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N068f9a4feb8743769e567981b287295b"
+          "@id": "_:N38157d592c2f4cf4a994ea5aade3bc10"
         },
         {
-          "@id": "_:N3b8475def9994d60b7613d163f412093"
+          "@id": "_:N336d0be6e1f54b0da43906b403e33b5d"
         },
         {
-          "@id": "_:N8dc10da88a214a21b56e49a9843a7315"
+          "@id": "_:N4c344b55575d497987e48715e7ef5558"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Database portal",
         "Web application",
@@ -75,8 +75,8 @@
         }
       ],
       "sc:citation": [
-        "pmcid:PMC3516146",
         "pubmed:23023984",
+        "pmcid:PMC3516146",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/bts577"
         }
@@ -90,40 +90,32 @@
           "@id": "edam:operation_2436"
         },
         {
-          "@id": "edam:operation_0337"
+          "@id": "edam:operation_0224"
         },
         {
-          "@id": "edam:operation_0224"
+          "@id": "edam:operation_0337"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "LGPL-2.1",
       "sc:name": "YeastMine",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:softwareHelp": [
         {
-          "@id": "https://flymine.readthedocs.io/en/latest/"
+          "@id": "http://intermine.readthedocs.org/en/latest/web-services/"
         },
         {
-          "@id": "http://intermine.readthedocs.org/en/latest/web-services/"
+          "@id": "https://flymine.readthedocs.io/en/latest/"
         }
       ],
       "sc:softwareVersion": "Data Updated on: Nov-19-2019",
       "sc:url": "https://yeastmine.yeastgenome.org/yeastmine"
     },
     {
-      "@id": "_:N9ac6ead91122447882ea36c1f6da7311",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1255"
-      },
-      "sc:name": "Sequence features"
-    },
-    {
-      "@id": "_:Naaccd544263043a791053c2b22719ca1",
+      "@id": "_:Nf2ee7064c7994775a4791afa67cb9d7e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2353"
@@ -131,15 +123,15 @@
       "sc:name": "Ontology data"
     },
     {
-      "@id": "_:N068f9a4feb8743769e567981b287295b",
+      "@id": "_:N10746bcdac974a3396cead1f05c1aac8",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_3786"
+        "@id": "edam:data_1255"
       },
-      "sc:name": "Query script"
+      "sc:name": "Sequence features"
     },
     {
-      "@id": "_:N3b8475def9994d60b7613d163f412093",
+      "@id": "_:N38157d592c2f4cf4a994ea5aade3bc10",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3753"
@@ -147,7 +139,15 @@
       "sc:name": "Over-representation data"
     },
     {
-      "@id": "_:N8dc10da88a214a21b56e49a9843a7315",
+      "@id": "_:N336d0be6e1f54b0da43906b403e33b5d",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3786"
+      },
+      "sc:name": "Query script"
+    },
+    {
+      "@id": "_:N4c344b55575d497987e48715e7ef5558",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1255"

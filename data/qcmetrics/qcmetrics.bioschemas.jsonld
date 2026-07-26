@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,38 +36,31 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.18129/B9.bioc.qcmetrics",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/qcmetrics",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N2880c66bc20241c592e314118cc0baf8"
+        "@id": "_:N69e75e0e6151460da7c99d8d1affd7a1"
       },
       "bsc:output": {
-        "@id": "_:N69fb0744cb934841bc60cb9ec96e5429"
+        "@id": "_:N889185c4bd92421d9d4b70ccad121735"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0092"
-        },
-        {
-          "@id": "edam:topic_3393"
-        },
-        {
           "@id": "edam:topic_0091"
         },
         {
-          "@id": "edam:topic_3520"
+          "@id": "edam:topic_3572"
         },
         {
-          "@id": "edam:topic_3572"
+          "@id": "edam:topic_0092"
+        },
+        {
+          "@id": "edam:topic_3053"
         },
         {
           "@id": "edam:topic_0622"
@@ -76,7 +69,10 @@
           "@id": "edam:topic_0121"
         },
         {
-          "@id": "edam:topic_3053"
+          "@id": "edam:topic_3520"
+        },
+        {
+          "@id": "edam:topic_3393"
         }
       ],
       "sc:author": "Laurent Gatto",
@@ -86,21 +82,21 @@
       "sc:description": "The package provides a framework for generic quality control of data. It permits to create, manage and visualise individual or sets of quality control metrics and generate quality control reports in various formats.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_2428"
+          "@id": "edam:operation_2409"
         },
         {
           "@id": "edam:operation_3435"
         },
         {
-          "@id": "edam:operation_2409"
+          "@id": "edam:operation_2428"
         }
       ],
       "sc:license": "GPL-2.0-only",
       "sc:name": "qcmetrics",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://bioconductor.org/packages/qcmetrics"
@@ -109,23 +105,7 @@
       "sc:url": "https://bioconductor.org/packages/qcmetrics"
     },
     {
-      "@id": "_:N69fb0744cb934841bc60cb9ec96e5429",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2048"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3508"
-        },
-        {
-          "@id": "edam:format_2331"
-        }
-      ],
-      "sc:name": "Report"
-    },
-    {
-      "@id": "_:N2880c66bc20241c592e314118cc0baf8",
+      "@id": "_:N69e75e0e6151460da7c99d8d1affd7a1",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3108"
@@ -134,6 +114,26 @@
         "@id": "edam:format_3033"
       },
       "sc:name": "Experimental measurement"
+    },
+    {
+      "@id": "_:N889185c4bd92421d9d4b70ccad121735",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2048"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2331"
+        },
+        {
+          "@id": "edam:format_3508"
+        }
+      ],
+      "sc:name": "Report"
+    },
+    {
+      "@id": "https://doi.org/10.18129/B9.bioc.qcmetrics",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

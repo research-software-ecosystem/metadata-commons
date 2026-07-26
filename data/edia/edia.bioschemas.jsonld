@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,80 +40,80 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N0e5ee7cf3fc94820862d4e47b881ec77"
+          "@id": "_:N127e0c0b2b164f2f82074e5b528b18d6"
         },
         {
-          "@id": "_:N5cc3a02a0ad24a12bd4393b55b2511b0"
+          "@id": "_:Nfa5def92a173486f8ab173a7ee29e647"
         },
         {
-          "@id": "_:Nc6021de3eb794eec81767a373ca22d4f"
+          "@id": "_:N75d5b92e20504f4782376e2834e581b8"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N5c532f5186d34217a150731055eb7e96"
+          "@id": "_:Nadddbeb7cb6d4885abc94209b045176a"
         },
         {
-          "@id": "_:Na5feff1165894f45a80aa78624ef9531"
+          "@id": "_:N0b1ea35243f44e6aae12f10e82906803"
         },
         {
-          "@id": "_:N2eab538801e8402a9d485e1be2045e80"
+          "@id": "_:N7b77dc8a6a9b4a789bd03be6bfa40778"
         },
         {
-          "@id": "_:Nf6fbc4f2ef234317be472ab0de5efe05"
+          "@id": "_:N115f4eb5a0084f8eb3389f8d5bce2d9a"
         },
         {
-          "@id": "_:N4b465fb6867c47d9ae19943944c093be"
+          "@id": "_:N3be901ec3e9741dd92c8edc814496cd7"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web API",
         "Command-line tool",
+        "Web API",
         "Web service"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0081"
-        },
-        {
-          "@id": "edam:topic_2828"
-        },
-        {
           "@id": "edam:topic_0091"
+        },
+        {
+          "@id": "edam:topic_3336"
         },
         {
           "@id": "edam:topic_2275"
         },
         {
-          "@id": "edam:topic_3336"
+          "@id": "edam:topic_0081"
+        },
+        {
+          "@id": "edam:topic_2828"
         }
       ],
       "sc:citation": [
+        "pubmed:28981269",
         {
           "@id": "https://doi.org/10.1021/acs.jcim.7b00391"
-        },
-        "pubmed:28981269"
+        }
       ],
       "sc:description": "The electron density score for individual atoms (EDIA) quantifies the electron density fit of each atom in a crystallographically resolved structure. Multiple EDIA values can be combined using the power mean to compute the EDIAm, i.e., the electron density score for a group of several atoms. It enables users to score a set of atoms, such as a ligand, a residue, or an active site.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0570"
+          "@id": "edam:operation_3695"
         },
         {
           "@id": "edam:operation_0321"
         },
         {
-          "@id": "edam:operation_3695"
+          "@id": "edam:operation_0570"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "Other",
       "sc:name": "EDIAscorer",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": "University of Hamburg, ZBH - Center for Bioinformatics",
       "sc:softwareHelp": {
@@ -122,7 +122,7 @@
       "sc:url": "https://www.zbh.uni-hamburg.de/en/forschung/amd/software/ediascorer.html"
     },
     {
-      "@id": "_:N0e5ee7cf3fc94820862d4e47b881ec77",
+      "@id": "_:N127e0c0b2b164f2f82074e5b528b18d6",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1460"
@@ -133,23 +133,23 @@
       "sc:name": "Protein structure"
     },
     {
-      "@id": "_:N5cc3a02a0ad24a12bd4393b55b2511b0",
+      "@id": "_:Nfa5def92a173486f8ab173a7ee29e647",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1461"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_3814"
+          "@id": "edam:format_1476"
         },
         {
-          "@id": "edam:format_1476"
+          "@id": "edam:format_3814"
         }
       ],
       "sc:name": "Protein-ligand complex"
     },
     {
-      "@id": "_:Nc6021de3eb794eec81767a373ca22d4f",
+      "@id": "_:N75d5b92e20504f4782376e2834e581b8",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1463"
@@ -160,29 +160,15 @@
       "sc:name": "Small molecule structure"
     },
     {
-      "@id": "_:N5c532f5186d34217a150731055eb7e96",
+      "@id": "_:Nadddbeb7cb6d4885abc94209b045176a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_1461"
+        "@id": "edam:data_2019"
       },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1476"
-      },
-      "sc:name": "Protein-ligand complex"
+      "sc:name": "Map data"
     },
     {
-      "@id": "_:Na5feff1165894f45a80aa78624ef9531",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1537"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Protein structure report"
-    },
-    {
-      "@id": "_:N2eab538801e8402a9d485e1be2045e80",
+      "@id": "_:N0b1ea35243f44e6aae12f10e82906803",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1772"
@@ -190,7 +176,7 @@
       "sc:name": "Score"
     },
     {
-      "@id": "_:Nf6fbc4f2ef234317be472ab0de5efe05",
+      "@id": "_:N7b77dc8a6a9b4a789bd03be6bfa40778",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1460"
@@ -201,12 +187,26 @@
       "sc:name": "Protein structure"
     },
     {
-      "@id": "_:N4b465fb6867c47d9ae19943944c093be",
+      "@id": "_:N115f4eb5a0084f8eb3389f8d5bce2d9a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2019"
+        "@id": "edam:data_1537"
       },
-      "sc:name": "Map data"
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Protein structure report"
+    },
+    {
+      "@id": "_:N3be901ec3e9741dd92c8edc814496cd7",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1461"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1476"
+      },
+      "sc:name": "Protein-ligand complex"
     },
     {
       "@id": "https://doi.org/10.1021/acs.jcim.7b00391",

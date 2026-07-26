@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -44,16 +44,16 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N3ca79a89919247708d68f2b8e5ae65a0"
+          "@id": "_:N716c7a89d95c4115bcd6aa99939452a8"
         },
         {
-          "@id": "_:N9d45b669c2a44ff19a6810c8207e241f"
+          "@id": "_:N5059422a25cc453b8374a0b33c80f4fb"
         }
       ],
       "bsc:output": {
-        "@id": "_:N426c09151361413e9d411660a0e3ccab"
+        "@id": "_:N7c7726e24db64528ab56758eabd02dc6"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3307"
@@ -70,7 +70,29 @@
       "sc:url": "https://compare.tartaglialab.com"
     },
     {
-      "@id": "_:N426c09151361413e9d411660a0e3ccab",
+      "@id": "_:N716c7a89d95c4115bcd6aa99939452a8",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2872"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "ID list"
+    },
+    {
+      "@id": "_:N5059422a25cc453b8374a0b33c80f4fb",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2872"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "ID list"
+    },
+    {
+      "@id": "_:N7c7726e24db64528ab56758eabd02dc6",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"
@@ -79,28 +101,6 @@
         "@id": "edam:format_2330"
       },
       "sc:name": "Report"
-    },
-    {
-      "@id": "_:N3ca79a89919247708d68f2b8e5ae65a0",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2872"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "ID list"
-    },
-    {
-      "@id": "_:N9d45b669c2a44ff19a6810c8207e241f",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2872"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "ID list"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -41,31 +41,31 @@
       "biotools:primaryContact": "Markus Boenn",
       "bsc:input": [
         {
-          "@id": "_:N11cdfd747ab04f98a3602c7c77dc5ef3"
+          "@id": "_:N1291f674b34749b69cfa629d070a3b13"
         },
         {
-          "@id": "_:N25b2d8fc6cc84fd0ae971430324115e1"
+          "@id": "_:Nb91df22fba144c65b3e2f007e7a09106"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N07b1ae2eae354986bc8393cee852e136"
+          "@id": "_:N876d7a03f9dd42b6ba2e28c62d187b86"
         },
         {
-          "@id": "_:Nba308725b36f4327b5d160e7b0c82492"
+          "@id": "_:N28e0b7ed56fa450182ace1a196786f51"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0203"
+          "@id": "edam:topic_3572"
         },
         {
-          "@id": "edam:topic_3572"
+          "@id": "edam:topic_0203"
         }
       ],
       "sc:citation": [
@@ -82,8 +82,8 @@
       "sc:license": "GPL-2.0",
       "sc:name": "geecc",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -93,7 +93,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/geecc.html"
     },
     {
-      "@id": "_:N11cdfd747ab04f98a3602c7c77dc5ef3",
+      "@id": "_:N1291f674b34749b69cfa629d070a3b13",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0928"
@@ -104,7 +104,7 @@
       "sc:name": "Gene expression profile"
     },
     {
-      "@id": "_:N25b2d8fc6cc84fd0ae971430324115e1",
+      "@id": "_:Nb91df22fba144c65b3e2f007e7a09106",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2353"
@@ -115,17 +115,17 @@
       "sc:name": "Ontology data"
     },
     {
-      "@id": "_:N07b1ae2eae354986bc8393cee852e136",
+      "@id": "_:N876d7a03f9dd42b6ba2e28c62d187b86",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1636"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_3508"
+          "@id": "edam:format_3579"
         },
         {
-          "@id": "edam:format_3579"
+          "@id": "edam:format_3508"
         },
         {
           "@id": "edam:format_3604"
@@ -134,7 +134,7 @@
       "sc:name": "Heat map"
     },
     {
-      "@id": "_:Nba308725b36f4327b5d160e7b0c82492",
+      "@id": "_:N28e0b7ed56fa450182ace1a196786f51",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3509"
@@ -144,10 +144,10 @@
           "@id": "edam:format_3579"
         },
         {
-          "@id": "edam:format_3604"
+          "@id": "edam:format_3508"
         },
         {
-          "@id": "edam:format_3508"
+          "@id": "edam:format_3604"
         }
       ],
       "sc:name": "Ontology mapping"

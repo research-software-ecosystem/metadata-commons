@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,13 +36,9 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btac398",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/markermag",
       "@type": "sc:SoftwareApplication",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
@@ -52,10 +48,10 @@
           "@id": "edam:topic_0102"
         },
         {
-          "@id": "edam:topic_3293"
+          "@id": "edam:topic_3174"
         },
         {
-          "@id": "edam:topic_3174"
+          "@id": "edam:topic_3293"
         }
       ],
       "sc:citation": [
@@ -67,24 +63,28 @@
       "sc:description": "Linking metagenome-assembled genomes (MAGs) with 16S rRNA marker genes using paired-end short reads.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0310"
+          "@id": "edam:operation_3233"
         },
         {
           "@id": "edam:operation_3198"
         },
         {
-          "@id": "edam:operation_3233"
+          "@id": "edam:operation_0310"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "AGPL-3.0",
       "sc:name": "MarkerMAG",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:url": "https://github.com/songweizhi/MarkerMAG"
+    },
+    {
+      "@id": "https://doi.org/10.1093/bioinformatics/btac398",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

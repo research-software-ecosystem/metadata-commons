@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -38,14 +38,14 @@
     {
       "@id": "https://bio.tools/camelia",
       "@type": "sc:SoftwareApplication",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Script",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3295"
+          "@id": "edam:topic_0654"
         },
         {
-          "@id": "edam:topic_0654"
+          "@id": "edam:topic_3295"
         }
       ],
       "sc:citation": [
@@ -57,6 +57,9 @@
       "sc:description": "CaMelia (CAtboost-based method for predicting MEthyLatIon stAtes) is a computational imputation method based on the CatBoost gradient boosting model for predicting single-cell methylation states to address the sparsity of the data. CaMelia imputed the missing methylation states in a cell by borrowing information of the same locus in other cells, based on the locally paired similarity of methylation patterns around the target locus between cells or between cell and bulk data.",
       "sc:featureList": [
         {
+          "@id": "edam:operation_3937"
+        },
+        {
           "@id": "edam:operation_3557"
         },
         {
@@ -64,9 +67,6 @@
         },
         {
           "@id": "edam:operation_0491"
-        },
-        {
-          "@id": "edam:operation_3937"
         }
       ],
       "sc:license": "MIT",

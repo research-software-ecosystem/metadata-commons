@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,6 +36,10 @@
   },
   "@graph": [
     {
+      "@id": "https://orcid.org/0000-0002-0274-5669",
+      "@type": "sc:Person"
+    },
+    {
       "@id": "https://doi.org/10.1002/humu.21047",
       "@type": "sc:CreativeWork"
     },
@@ -49,25 +53,25 @@
         "Rita Casadio"
       ],
       "bsc:input": {
-        "@id": "_:Na2503d62cd0b47e1afc76f92f1309261"
+        "@id": "_:Ndce52fcf0ed944c5accd8fe2694f43e0"
       },
       "bsc:output": {
-        "@id": "_:N6109219a99bb498398676a9a42d0bc32"
+        "@id": "_:N4c2812738dd3464592f2142976666541"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_3510"
-        },
-        {
-          "@id": "edam:topic_3325"
-        },
         {
           "@id": "edam:topic_3473"
         },
         {
           "@id": "edam:topic_0199"
+        },
+        {
+          "@id": "edam:topic_3510"
+        },
+        {
+          "@id": "edam:topic_3325"
         }
       ],
       "sc:citation": [
@@ -82,17 +86,17 @@
           "@id": "edam:operation_2422"
         },
         {
-          "@id": "edam:operation_3225"
+          "@id": "edam:operation_2414"
         },
         {
-          "@id": "edam:operation_2414"
+          "@id": "edam:operation_3225"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:name": "SNPs and GO",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:provider": "ELIXIR-ITA-BOLOGNA",
@@ -103,7 +107,7 @@
       "sc:url": "http://snps-and-go.biocomp.unibo.it/snps-and-go/index.html"
     },
     {
-      "@id": "_:Na2503d62cd0b47e1afc76f92f1309261",
+      "@id": "_:Ndce52fcf0ed944c5accd8fe2694f43e0",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3021"
@@ -114,7 +118,7 @@
       "sc:name": "UniProt accession"
     },
     {
-      "@id": "_:N6109219a99bb498398676a9a42d0bc32",
+      "@id": "_:N4c2812738dd3464592f2142976666541",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0896"
@@ -123,10 +127,6 @@
         "@id": "edam:format_2330"
       },
       "sc:name": "Protein report"
-    },
-    {
-      "@id": "https://orcid.org/0000-0002-0274-5669",
-      "@type": "sc:Person"
     }
   ]
 }

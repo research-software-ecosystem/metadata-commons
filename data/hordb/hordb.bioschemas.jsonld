@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -44,71 +44,71 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Nfb1ed61c7f0d4dd9ad3fa1bc5d77e6e6"
+          "@id": "_:N025298b54bc4422290deb2e5dda3da17"
         },
         {
-          "@id": "_:N1a054935ed59450fbdaec516cb3b54d8"
+          "@id": "_:N6bd1b3e3f3684d9eb0842f35d516783b"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Database portal",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0749"
+          "@id": "edam:topic_3300"
         },
         {
           "@id": "edam:topic_0780"
         },
         {
-          "@id": "edam:topic_3500"
-        },
-        {
-          "@id": "edam:topic_3300"
-        },
-        {
           "@id": "edam:topic_0154"
+        },
+        {
+          "@id": "edam:topic_0749"
+        },
+        {
+          "@id": "edam:topic_3500"
         }
       ],
       "sc:citation": [
         "pubmed:35469024",
+        "pmcid:PMC9039076",
         {
           "@id": "https://doi.org/10.1038/s41597-022-01287-5"
-        },
-        "pmcid:PMC9039076"
+        }
       ],
       "sc:description": "HORDB a comprehensive database of peptide hormones.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0418"
+          "@id": "edam:operation_3646"
         },
         {
-          "@id": "edam:operation_3646"
+          "@id": "edam:operation_0418"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:name": "HORDB",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:url": "http://hordb.cpu-bioinfor.org"
     },
     {
-      "@id": "_:Nfb1ed61c7f0d4dd9ad3fa1bc5d77e6e6",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2044"
-      },
-      "sc:name": "Sequence"
-    },
-    {
-      "@id": "_:N1a054935ed59450fbdaec516cb3b54d8",
+      "@id": "_:N025298b54bc4422290deb2e5dda3da17",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2099"
       },
       "sc:name": "Name"
+    },
+    {
+      "@id": "_:N6bd1b3e3f3684d9eb0842f35d516783b",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2044"
+      },
+      "sc:name": "Sequence"
     }
   ]
 }

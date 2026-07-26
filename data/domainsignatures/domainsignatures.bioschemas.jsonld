@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -45,21 +45,21 @@
       "biotools:primaryContact": "Florian Hahne",
       "bsc:input": [
         {
-          "@id": "_:N0dbc9d8219644e3fae713ef1eb8f37d1"
+          "@id": "_:N1a55d950dd0642dc8216f20634204239"
         },
         {
-          "@id": "_:Nc366c6c1e5ad4d73925d2d92d7df34b4"
+          "@id": "_:N964d6b8e1a8f405692382ab294146b0f"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N903c16a0a3b14a66865fec6db2289d9d"
+          "@id": "_:N3b5f8c937d5347718efdbdf09b765b5a"
         },
         {
-          "@id": "_:N19559da9af8f48f997003ee4f4916f63"
+          "@id": "_:N1aa3f392b17a47f5aecbf47ab1f1db05"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
@@ -73,27 +73,27 @@
         }
       ],
       "sc:citation": [
+        "pubmed:18177498",
+        "pmcid:PMC2245903",
         {
           "@id": "https://doi.org/10.1186/1471-2105-9-3"
-        },
-        "pmcid:PMC2245903",
-        "pubmed:18177498"
+        }
       ],
       "sc:description": "Find significantly enriched gene classifications in a list of functionally undescribed genes based on their InterPro domain structure.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_2997"
+          "@id": "edam:operation_2436"
         },
         {
-          "@id": "edam:operation_2436"
+          "@id": "edam:operation_2997"
         }
       ],
       "sc:license": "Artistic-2.0",
       "sc:name": "domainsignatures",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/domainsignatures.html"
@@ -102,7 +102,29 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/domainsignatures.html"
     },
     {
-      "@id": "_:N903c16a0a3b14a66865fec6db2289d9d",
+      "@id": "_:N1a55d950dd0642dc8216f20634204239",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1904"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Locus ID (EntrezGene)"
+    },
+    {
+      "@id": "_:N964d6b8e1a8f405692382ab294146b0f",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1355"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Protein signature"
+    },
+    {
+      "@id": "_:N3b5f8c937d5347718efdbdf09b765b5a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1669"
@@ -118,7 +140,7 @@
       "sc:name": "P-value"
     },
     {
-      "@id": "_:N19559da9af8f48f997003ee4f4916f63",
+      "@id": "_:N1aa3f392b17a47f5aecbf47ab1f1db05",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
@@ -132,28 +154,6 @@
         }
       ],
       "sc:name": "Plot"
-    },
-    {
-      "@id": "_:N0dbc9d8219644e3fae713ef1eb8f37d1",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1904"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Locus ID (EntrezGene)"
-    },
-    {
-      "@id": "_:Nc366c6c1e5ad4d73925d2d92d7df34b4",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1355"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Protein signature"
     }
   ]
 }

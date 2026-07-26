@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,26 +36,30 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/gkm964",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/dbd",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Sarah A. Teichmann",
       "bsc:input": {
-        "@id": "_:Na4a1430aa2d942a3a8231a5cd7d36585"
+        "@id": "_:N09a53f09f0b74f92b8189b681e0e8a8d"
       },
       "bsc:output": {
-        "@id": "_:N94fb17542c0941b681db6f5d627bf185"
+        "@id": "_:Ne9367c6d1e3a4295b2984856285c4135"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Database portal",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0749"
       },
       "sc:citation": [
         "pubmed:18073188",
+        "pmcid:PMC2238844",
         {
           "@id": "https://doi.org/10.1093/nar/gkm964"
-        },
-        "pmcid:PMC2238844"
+        }
       ],
       "sc:description": "Predicted transcription factors in completely sequenced genomes.",
       "sc:featureList": {
@@ -63,8 +67,8 @@
       },
       "sc:name": "Transcription factor prediction database (DBD)",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -73,7 +77,15 @@
       "sc:url": "http://www.transcriptionfactor.org/index.cgi"
     },
     {
-      "@id": "_:N94fb17542c0941b681db6f5d627bf185",
+      "@id": "_:N09a53f09f0b74f92b8189b681e0e8a8d",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2716"
+      },
+      "sc:name": "DBD ID"
+    },
+    {
+      "@id": "_:Ne9367c6d1e3a4295b2984856285c4135",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0896"
@@ -82,18 +94,6 @@
         "@id": "edam:format_2331"
       },
       "sc:name": "Protein report"
-    },
-    {
-      "@id": "_:Na4a1430aa2d942a3a8231a5cd7d36585",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2716"
-      },
-      "sc:name": "DBD ID"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gkm964",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

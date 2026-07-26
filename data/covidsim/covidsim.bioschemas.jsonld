@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,10 +36,14 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1101/2020.03.20.20039776",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/covidsim",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Nick Wilson",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
@@ -58,16 +62,12 @@
       "sc:description": "CovidSim is a web application for a SEIR simulation model for the COVID-19 pandemic and is applied to a hypothetical European country of 10 million population.",
       "sc:name": "CovidSim",
       "sc:softwareVersion": [
-        "1.1",
         "1.0",
-        "2.1",
-        "2.0"
+        "1.1",
+        "2.0",
+        "2.1"
       ],
       "sc:url": "http://covidsim.eu/"
-    },
-    {
-      "@id": "https://doi.org/10.1101/2020.03.20.20039776",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,16 +40,16 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Nf425faa0c8d548a498d39722877ebda8"
+          "@id": "_:N80d4241a44b8450fba69b58981c6c956"
         },
         {
-          "@id": "_:N76a58e2b9bf94c0a8a5deb8d5718afb9"
+          "@id": "_:N7f55f98c5526499b8e9a2b84d3ced559"
         }
       ],
       "bsc:output": {
-        "@id": "_:Nf6390e2828754ae4aff8765f11fb6172"
+        "@id": "_:N6c90af816e1c451297868cb675472af8"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0121"
@@ -63,18 +63,18 @@
       "sc:description": "An automated software for identification of bioactive endogenous peptides",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3644"
+          "@id": "edam:operation_3631"
         },
         {
-          "@id": "edam:operation_3631"
+          "@id": "edam:operation_3644"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "GPL-3.0",
       "sc:name": "PPIP",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "https://shawn-xu.github.io/PPIP/"
@@ -82,18 +82,7 @@
       "sc:url": "https://github.com/Shawn-Xu/PPIP"
     },
     {
-      "@id": "_:Nf425faa0c8d548a498d39722877ebda8",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0943"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3245"
-      },
-      "sc:name": "Mass spectrometry spectra"
-    },
-    {
-      "@id": "_:N76a58e2b9bf94c0a8a5deb8d5718afb9",
+      "@id": "_:N80d4241a44b8450fba69b58981c6c956",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2603"
@@ -104,7 +93,18 @@
       "sc:name": "Expression data"
     },
     {
-      "@id": "_:Nf6390e2828754ae4aff8765f11fb6172",
+      "@id": "_:N7f55f98c5526499b8e9a2b84d3ced559",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0943"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3245"
+      },
+      "sc:name": "Mass spectrometry spectra"
+    },
+    {
+      "@id": "_:N6c90af816e1c451297868cb675472af8",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2974"

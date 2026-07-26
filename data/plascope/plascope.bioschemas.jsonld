@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,10 +40,6 @@
       "@type": "sc:CreativeWork"
     },
     {
-      "@id": "https://orcid.org/0000-0001-9092-8336",
-      "@type": "sc:Person"
-    },
-    {
       "@id": "https://bio.tools/PlaScope",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
@@ -51,21 +47,21 @@
       },
       "bsc:input": [
         {
-          "@id": "_:Nb295b9fa23ee4204a13d77ee882ec384"
+          "@id": "_:N46bcadeece6a49fbb77122295bc1d713"
         },
         {
-          "@id": "_:Ned4ab07b048a4bfa9fcc6a474dccf30e"
+          "@id": "_:N496b6dbd6e6f4e0b81d6791285f59f19"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Nc8ae6a9e10144e0485cad0b1cbbb1435"
+          "@id": "_:N4d491c599ec34f8292bc6df3c2e967b5"
         },
         {
-          "@id": "_:N1d6db3ed2c2d4cc5b6edf6e3c87587dc"
+          "@id": "_:N2e0cd525cf5841068f946a19532465ba"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
@@ -79,11 +75,11 @@
         "@id": "https://orcid.org/0000-0001-9092-8336"
       },
       "sc:citation": [
+        "pubmed:30265232",
+        "pmcid:PMC6202455",
         {
           "@id": "https://doi.org/10.1099/mgen.0.000211"
-        },
-        "pmcid:PMC6202455",
-        "pubmed:30265232"
+        }
       ],
       "sc:contributor": "Mathieu Dubois",
       "sc:description": "PlaScope is a targeted approach to assess the plasmidome of bacteria.",
@@ -99,8 +95,8 @@
       "sc:license": "GPL-3.0",
       "sc:name": "PlaScope",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "https://github.com/labgem/PlaScope/blob/master/README.md"
@@ -109,29 +105,7 @@
       "sc:url": "https://github.com/labgem/PlaScope"
     },
     {
-      "@id": "_:Nc8ae6a9e10144e0485cad0b1cbbb1435",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1354"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2069"
-      },
-      "sc:name": "Sequence profile"
-    },
-    {
-      "@id": "_:N1d6db3ed2c2d4cc5b6edf6e3c87587dc",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1354"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2069"
-      },
-      "sc:name": "Sequence profile"
-    },
-    {
-      "@id": "_:Nb295b9fa23ee4204a13d77ee882ec384",
+      "@id": "_:N46bcadeece6a49fbb77122295bc1d713",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0925"
@@ -142,7 +116,7 @@
       "sc:name": "Sequence assembly"
     },
     {
-      "@id": "_:Ned4ab07b048a4bfa9fcc6a474dccf30e",
+      "@id": "_:N496b6dbd6e6f4e0b81d6791285f59f19",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0924"
@@ -151,6 +125,32 @@
         "@id": "edam:format_1931"
       },
       "sc:name": "Sequence trace"
+    },
+    {
+      "@id": "_:N4d491c599ec34f8292bc6df3c2e967b5",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1354"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2069"
+      },
+      "sc:name": "Sequence profile"
+    },
+    {
+      "@id": "_:N2e0cd525cf5841068f946a19532465ba",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1354"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2069"
+      },
+      "sc:name": "Sequence profile"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-9092-8336",
+      "@type": "sc:Person"
     }
   ]
 }

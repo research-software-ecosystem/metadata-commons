@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,20 +36,24 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.18129/B9.bioc.mygene",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/mygene",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N7a76826f584f43688f2fafd4391562ba"
+        "@id": "_:N26a6bf03fdeb46d7a5231814bf4ee77c"
       },
       "bsc:output": [
         {
-          "@id": "_:N8b20d5ddf38d45b4895cddc8040651b4"
+          "@id": "_:N84a6067140354f73a131ca1ce8ec5ae3"
         },
         {
-          "@id": "_:Nfc261383526b4cdb87a25600faac09be"
+          "@id": "_:Naa64b00ce77c4b639a75ed91ca707452"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
@@ -63,17 +67,17 @@
       "sc:description": "MyGene.Info_ provides simple-to-use REST web services to query/retrieve gene annotation data. It's designed with simplicity and performance emphasized. *mygene*, is an easy-to-use R wrapper to access MyGene.Info_ services.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3282"
+          "@id": "edam:operation_2422"
         },
         {
-          "@id": "edam:operation_2422"
+          "@id": "edam:operation_3282"
         }
       ],
       "sc:license": "Artistic-2.0",
       "sc:name": "mygene",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -83,7 +87,7 @@
       "sc:url": "https://bioconductor.org/packages/mygene"
     },
     {
-      "@id": "_:N7a76826f584f43688f2fafd4391562ba",
+      "@id": "_:N26a6bf03fdeb46d7a5231814bf4ee77c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1026"
@@ -94,18 +98,7 @@
       "sc:name": "Gene symbol"
     },
     {
-      "@id": "_:N8b20d5ddf38d45b4895cddc8040651b4",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1027"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3033"
-      },
-      "sc:name": "Gene ID (NCBI)"
-    },
-    {
-      "@id": "_:Nfc261383526b4cdb87a25600faac09be",
+      "@id": "_:N84a6067140354f73a131ca1ce8ec5ae3",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1033"
@@ -116,8 +109,15 @@
       "sc:name": "Ensembl gene ID"
     },
     {
-      "@id": "https://doi.org/10.18129/B9.bioc.mygene",
-      "@type": "sc:CreativeWork"
+      "@id": "_:Naa64b00ce77c4b639a75ed91ca707452",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1027"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3033"
+      },
+      "sc:name": "Gene ID (NCBI)"
     }
   ]
 }

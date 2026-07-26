@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,35 +40,31 @@
       "@type": "sc:Person"
     },
     {
-      "@id": "https://doi.org/10.1074/mcp.M115.055897",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/msqrob",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
-        "Lieven Clement",
         {
           "@id": "http://orcid.org/0000-0002-8285-7766"
-        }
+        },
+        "Lieven Clement"
       ],
       "bsc:input": [
         {
-          "@id": "_:N07aae07714b5438bba4fce1e1e4a1cc1"
+          "@id": "_:N472b6328d3bb4528b02f488158aa62d7"
         },
         {
-          "@id": "_:Ne8aec2f448f549e3a70bf5a3b64245ec"
+          "@id": "_:N241c2536e96349c4bb419ada3512ffd1"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Nb5aa5294c7df4afba626d995852fceeb"
+          "@id": "_:N8d552111f4404e5aac9436525224aa4b"
         },
         {
-          "@id": "_:Ne09084a48c3e4b24a33cebe78588c8cb"
+          "@id": "_:N06cd0333e06047a4b54ebe87fe65538b"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Desktop application",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0121"
@@ -77,25 +73,25 @@
         "@id": "http://orcid.org/0000-0002-8285-7766"
       },
       "sc:citation": [
+        "pubmed:26566788",
+        "pmcid:PMC4739679",
         {
           "@id": "https://doi.org/10.1074/mcp.M115.055897"
-        },
-        "pmcid:PMC4739679",
-        "pubmed:26566788"
+        }
       ],
       "sc:description": "Allows a user to do quantitative protein-level statistical inference on label-free LC-MS proteomics data. Fold changes, p values and false discovery rates are estimated.The app allows for an easy-to-use graphical user interface starting from MaxQuant search results that requires no programming skills.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3658"
-        },
-        {
-          "@id": "edam:operation_3435"
+          "@id": "edam:operation_3741"
         },
         {
           "@id": "edam:operation_3659"
         },
         {
-          "@id": "edam:operation_3741"
+          "@id": "edam:operation_3435"
+        },
+        {
+          "@id": "edam:operation_3658"
         },
         {
           "@id": "edam:operation_3664"
@@ -106,9 +102,9 @@
       "sc:license": "GPL-3.0",
       "sc:name": "MSqRob",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://github.com/statOmics/MSqRob"
@@ -116,23 +112,23 @@
       "sc:url": "https://github.com/ludgergoeminne/MSqRob"
     },
     {
-      "@id": "_:N07aae07714b5438bba4fce1e1e4a1cc1",
+      "@id": "_:N472b6328d3bb4528b02f488158aa62d7",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2531"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_3468"
+          "@id": "edam:format_2330"
         },
         {
-          "@id": "edam:format_2330"
+          "@id": "edam:format_3468"
         }
       ],
       "sc:name": "Experiment report"
     },
     {
-      "@id": "_:Ne8aec2f448f549e3a70bf5a3b64245ec",
+      "@id": "_:N241c2536e96349c4bb419ada3512ffd1",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0857"
@@ -143,7 +139,7 @@
       "sc:name": "Sequence search results"
     },
     {
-      "@id": "_:Nb5aa5294c7df4afba626d995852fceeb",
+      "@id": "_:N8d552111f4404e5aac9436525224aa4b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
@@ -151,7 +147,7 @@
       "sc:name": "Plot"
     },
     {
-      "@id": "_:Ne09084a48c3e4b24a33cebe78588c8cb",
+      "@id": "_:N06cd0333e06047a4b54ebe87fe65538b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"
@@ -165,6 +161,10 @@
         }
       ],
       "sc:name": "Report"
+    },
+    {
+      "@id": "https://doi.org/10.1074/mcp.M115.055897",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

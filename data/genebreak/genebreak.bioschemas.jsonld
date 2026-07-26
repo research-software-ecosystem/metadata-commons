@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -44,31 +44,31 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N875933296de84c41b1e5952a43de8e93"
+          "@id": "_:Nb27bbe5364264e45b5aaae2cc0198f74"
         },
         {
-          "@id": "_:Na7cf70b703be4aff8d00bb597522cdd6"
+          "@id": "_:Nbfa805c18e9b4280acf968da433f7301"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N639d470ef198457a9987710156d6f0e7"
+          "@id": "_:N1827bbefe4b64f97b51768fc2beadc70"
         },
         {
-          "@id": "_:N2a9b17607a3e494e878d8733f9f1a45a"
+          "@id": "_:N866311b20cfa4a8480d4ee086e325a4f"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0157"
+          "@id": "edam:topic_3175"
         },
         {
-          "@id": "edam:topic_3175"
+          "@id": "edam:topic_0157"
         }
       ],
       "sc:citation": {
@@ -81,8 +81,8 @@
       "sc:license": "GPL-2.0-only",
       "sc:name": "GeneBreak",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -92,18 +92,7 @@
       "sc:url": "https://bioconductor.org/packages/GeneBreak"
     },
     {
-      "@id": "_:N875933296de84c41b1e5952a43de8e93",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2012"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Sequence coordinates"
-    },
-    {
-      "@id": "_:Na7cf70b703be4aff8d00bb597522cdd6",
+      "@id": "_:Nb27bbe5364264e45b5aaae2cc0198f74",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0916"
@@ -114,23 +103,18 @@
       "sc:name": "Gene report"
     },
     {
-      "@id": "_:N639d470ef198457a9987710156d6f0e7",
+      "@id": "_:Nbfa805c18e9b4280acf968da433f7301",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2884"
+        "@id": "edam:data_2012"
       },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_3547"
-        }
-      ],
-      "sc:name": "Plot"
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Sequence coordinates"
     },
     {
-      "@id": "_:N2a9b17607a3e494e878d8733f9f1a45a",
+      "@id": "_:N1827bbefe4b64f97b51768fc2beadc70",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1276"
@@ -144,6 +128,22 @@
         }
       ],
       "sc:name": "Nucleic acid features"
+    },
+    {
+      "@id": "_:N866311b20cfa4a8480d4ee086e325a4f",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2884"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Plot"
     }
   ]
 }

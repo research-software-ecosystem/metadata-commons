@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,10 +40,6 @@
       "@type": "sc:CreativeWork"
     },
     {
-      "@id": "https://orcid.org/0000-0003-3024-1449",
-      "@type": "sc:Person"
-    },
-    {
       "@id": "https://bio.tools/dentist",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
@@ -51,21 +47,21 @@
       },
       "bsc:input": [
         {
-          "@id": "_:Ne31c2b6701ff46eba3bb2d5021394ee2"
+          "@id": "_:N87b5baa4ee784ca4b666355ff1347629"
         },
         {
-          "@id": "_:N59b3ead6dc464af19f69520933648831"
+          "@id": "_:N45a9169f00c349ffa2fa03dd762101dc"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N50a535bbc9ec469f87675d3cda760917"
+          "@id": "_:Nea53261fa89c49359f4bc3bc433a1b27"
         },
         {
-          "@id": "_:N6380cf810a3841d2a7ccc9d4ac235e96"
+          "@id": "_:N691089974a91457eb8435a761801d1ea"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
@@ -95,15 +91,15 @@
       "sc:name": "DENTIST",
       "sc:operatingSystem": "Linux",
       "sc:softwareVersion": [
-        "1.0.1",
         "1.0.0",
+        "1.0.1",
         "1.0.2",
         "2.0.0"
       ],
       "sc:url": "https://a-ludi.github.io/dentist/"
     },
     {
-      "@id": "_:N50a535bbc9ec469f87675d3cda760917",
+      "@id": "_:N87b5baa4ee784ca4b666355ff1347629",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0925"
@@ -114,7 +110,29 @@
       "sc:name": "Sequence assembly"
     },
     {
-      "@id": "_:N6380cf810a3841d2a7ccc9d4ac235e96",
+      "@id": "_:N45a9169f00c349ffa2fa03dd762101dc",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1234"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "Sequence set (nucleic acid)"
+    },
+    {
+      "@id": "_:Nea53261fa89c49359f4bc3bc433a1b27",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0925"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "Sequence assembly"
+    },
+    {
+      "@id": "_:N691089974a91457eb8435a761801d1ea",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2955"
@@ -130,26 +148,8 @@
       "sc:name": "Sequence report"
     },
     {
-      "@id": "_:Ne31c2b6701ff46eba3bb2d5021394ee2",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1234"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1929"
-      },
-      "sc:name": "Sequence set (nucleic acid)"
-    },
-    {
-      "@id": "_:N59b3ead6dc464af19f69520933648831",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0925"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1929"
-      },
-      "sc:name": "Sequence assembly"
+      "@id": "https://orcid.org/0000-0003-3024-1449",
+      "@type": "sc:Person"
     },
     {
       "@id": "https://orcid.org/0000-0001-8839-411X",

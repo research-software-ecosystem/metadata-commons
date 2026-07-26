@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,25 +39,25 @@
       "@id": "https://bio.tools/redemption",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Rudiyanto Gunawan",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Library",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_2259"
+          "@id": "edam:topic_0091"
         },
         {
           "@id": "edam:topic_3170"
         },
         {
-          "@id": "edam:topic_0091"
+          "@id": "edam:topic_2259"
         }
       ],
       "sc:citation": [
+        "pubmed:26076722",
         "pmcid:PMC4595898",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btv365"
-        },
-        "pubmed:26076722"
+        }
       ],
       "sc:description": "This is a MATLAB toolbox for the identification of parameters and parameter ensembles of ODE models from time-series data. The toolbox is based on incremental parameter estimation (IPE) and integrated flux parameter estimation (IFPE) methods .",
       "sc:featureList": {
@@ -65,8 +65,8 @@
       },
       "sc:name": "REDEMPTION",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {

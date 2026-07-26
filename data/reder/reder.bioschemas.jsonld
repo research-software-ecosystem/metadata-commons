@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,15 +36,19 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1186/gb-2012-13-4-r29",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/reder",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N5e7a900936c94726bc0c9dbb22204225"
+        "@id": "_:N7abce184de2c4311988a9fffb947040c"
       },
       "bsc:output": {
-        "@id": "_:Ne9be4b8410b74f8eb891b0c70dbc52a6"
+        "@id": "_:N82b16d84c1be435cbb1aaa041324b9df"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
@@ -57,8 +61,8 @@
         "@id": "https://doi.org/10.1186/gb-2012-13-4-r29"
       },
       "sc:contributor": [
-        "Xin Wang",
-        "Florian Markowetz"
+        "Florian Markowetz",
+        "Xin Wang"
       ],
       "sc:description": "RedeR combines an R package with a stand-alone Java application for interactive visualization and manipulation of nested networks. Graph, node, and edge attributes can be configured using either graphical or command-line methods, following igraph syntax rules.",
       "sc:featureList": [
@@ -72,9 +76,9 @@
       "sc:license": "GPL-3.0-only",
       "sc:name": "RedeR",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://bioconductor.org/packages/RedeR"
@@ -83,43 +87,39 @@
       "sc:url": "https://bioconductor.org/packages/RedeR"
     },
     {
-      "@id": "_:N5e7a900936c94726bc0c9dbb22204225",
+      "@id": "_:N7abce184de2c4311988a9fffb947040c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2600"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_3166"
+          "@id": "edam:format_2013"
         },
         {
-          "@id": "edam:format_2013"
+          "@id": "edam:format_3166"
         }
       ],
       "sc:name": "Pathway or network"
     },
     {
-      "@id": "_:Ne9be4b8410b74f8eb891b0c70dbc52a6",
+      "@id": "_:N82b16d84c1be435cbb1aaa041324b9df",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2600"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_3166"
+          "@id": "edam:format_2013"
         },
         {
-          "@id": "edam:format_2013"
+          "@id": "edam:format_3166"
         },
         {
           "@id": "edam:format_3547"
         }
       ],
       "sc:name": "Pathway or network"
-    },
-    {
-      "@id": "https://doi.org/10.1186/gb-2012-13-4-r29",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

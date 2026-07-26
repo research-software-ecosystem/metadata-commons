@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,18 +36,14 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1016/j.jmgm.2014.06.003",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/ayla",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Dr. William Harvey",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Desktop application",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0166"
+          "@id": "edam:topic_3292"
         },
         {
           "@id": "edam:topic_0176"
@@ -56,7 +52,7 @@
           "@id": "edam:topic_0130"
         },
         {
-          "@id": "edam:topic_3292"
+          "@id": "edam:topic_0166"
         }
       ],
       "sc:citation": [
@@ -71,14 +67,18 @@
       },
       "sc:name": "Ayla",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://github.com/harveywi/Ayla-Visual-Analytics#ayla-visual-analytics"
       },
       "sc:url": "http://www.aylasoftware.org/"
+    },
+    {
+      "@id": "https://doi.org/10.1016/j.jmgm.2014.06.003",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

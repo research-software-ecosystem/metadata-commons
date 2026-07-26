@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -44,40 +44,40 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N55adcd0fd39d4b73b7f4c4c4e661e334"
+          "@id": "_:N7d987ff6400941b8ab998c235835f645"
         },
         {
-          "@id": "_:N161aa9e7a33c48c5bbe771ef051ae113"
+          "@id": "_:N3006ab39734a40a983ca4e29c36210c6"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N3428a758fe0440c0a003ea2e0b577f05"
+          "@id": "_:N1a1e775b453a4fd6b92eeaf95194d589"
         },
         {
-          "@id": "_:N039b35274568421bb63adff0dac63736"
+          "@id": "_:N939e7b3eb65f4f4a8a08027834d22004"
         },
         {
-          "@id": "_:N7c9bd59fbaec4b25b30dbfd1ded831d9"
+          "@id": "_:N8e83b106e63e46ca99d916db8cf67354"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_0121"
-        },
         {
           "@id": "edam:topic_0092"
         },
         {
-          "@id": "edam:topic_2269"
+          "@id": "edam:topic_0128"
+        },
+        {
+          "@id": "edam:topic_0121"
         },
         {
           "@id": "edam:topic_3520"
         },
         {
-          "@id": "edam:topic_0128"
+          "@id": "edam:topic_2269"
         }
       ],
       "sc:citation": {
@@ -86,16 +86,28 @@
       "sc:description": "ComplexBrowser is a R based software for supervised analysis of changes in protein complex abundance and subunit co-expression in proteomic datasets. It uses information contained in CORUM and EBI Complex Portal databases to provide the user with visualizations helping with biological interpretation of obtained results. ComplexBrowser also incorporates a normalization and quality control steps.",
       "sc:featureList": [
         {
+          "@id": "edam:operation_2938"
+        },
+        {
+          "@id": "edam:operation_2495"
+        },
+        {
+          "@id": "edam:operation_3463"
+        },
+        {
+          "@id": "edam:operation_0571"
+        },
+        {
           "@id": "edam:operation_0531"
         },
         {
-          "@id": "edam:operation_2940"
+          "@id": "edam:operation_3282"
         },
         {
-          "@id": "edam:operation_0224"
+          "@id": "edam:operation_3083"
         },
         {
-          "@id": "edam:operation_2938"
+          "@id": "edam:operation_2939"
         },
         {
           "@id": "edam:operation_0276"
@@ -104,13 +116,13 @@
           "@id": "edam:operation_3799"
         },
         {
-          "@id": "edam:operation_3463"
+          "@id": "edam:operation_0224"
         },
         {
-          "@id": "edam:operation_2428"
+          "@id": "edam:operation_3659"
         },
         {
-          "@id": "edam:operation_3282"
+          "@id": "edam:operation_2940"
         },
         {
           "@id": "edam:operation_3435"
@@ -119,25 +131,13 @@
           "@id": "edam:operation_2238"
         },
         {
-          "@id": "edam:operation_2495"
-        },
-        {
-          "@id": "edam:operation_3083"
-        },
-        {
-          "@id": "edam:operation_3659"
-        },
-        {
-          "@id": "edam:operation_2939"
-        },
-        {
-          "@id": "edam:operation_0571"
+          "@id": "edam:operation_2428"
         }
       ],
       "sc:name": "ComplexBrowser",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -147,23 +147,23 @@
       "sc:url": "https://computproteomics.bmb.sdu.dk/app_direct/ComplexBrowser/"
     },
     {
-      "@id": "_:N55adcd0fd39d4b73b7f4c4c4e661e334",
+      "@id": "_:N7d987ff6400941b8ab998c235835f645",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2603"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_2330"
+          "@id": "edam:format_3752"
         },
         {
-          "@id": "edam:format_3752"
+          "@id": "edam:format_2330"
         }
       ],
       "sc:name": "Expression data"
     },
     {
-      "@id": "_:N161aa9e7a33c48c5bbe771ef051ae113",
+      "@id": "_:N3006ab39734a40a983ca4e29c36210c6",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0906"
@@ -174,18 +174,7 @@
       "sc:name": "Protein interaction data"
     },
     {
-      "@id": "_:N3428a758fe0440c0a003ea2e0b577f05",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0896"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3752"
-      },
-      "sc:name": "Protein report"
-    },
-    {
-      "@id": "_:N039b35274568421bb63adff0dac63736",
+      "@id": "_:N1a1e775b453a4fd6b92eeaf95194d589",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
@@ -201,7 +190,18 @@
       "sc:name": "Plot"
     },
     {
-      "@id": "_:N7c9bd59fbaec4b25b30dbfd1ded831d9",
+      "@id": "_:N939e7b3eb65f4f4a8a08027834d22004",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0896"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3752"
+      },
+      "sc:name": "Protein report"
+    },
+    {
+      "@id": "_:N8e83b106e63e46ca99d916db8cf67354",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"

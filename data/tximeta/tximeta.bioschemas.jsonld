@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -42,7 +42,7 @@
     {
       "@id": "https://bio.tools/tximeta",
       "@type": "sc:SoftwareApplication",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:applicationSubCategory": [
         {
           "@id": "edam:topic_3170"
@@ -55,36 +55,36 @@
         }
       ],
       "sc:author": [
-        "Michael Love",
-        "Rob Patro",
         "Charlotte Soneson",
-        "Peter Hickey"
+        "Michael Love",
+        "Peter Hickey",
+        "Rob Patro"
       ],
       "sc:citation": {
         "@id": "https://doi.org/10.1371/journal.pcbi.1007664"
       },
       "sc:contributor": [
+        "CZI",
+        "Charlotte Soneson",
         "NIH NHGRI",
         "Peter Hickey",
-        "CZI",
-        "Rob Patro",
-        "Charlotte Soneson"
+        "Rob Patro"
       ],
       "sc:description": "Transcript quantification import from Salmon and other quantifiers with automatic attachment of transcript ranges and release information, and other associated metadata. De novo transcriptomes can be linked to the appropriate sources with linkedTxomes and shared for computational reproducibility.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3800"
+          "@id": "edam:operation_0524"
         },
         {
           "@id": "edam:operation_3630"
         },
         {
-          "@id": "edam:operation_0524"
+          "@id": "edam:operation_3800"
         }
       ],
       "sc:funder": [
-        "NIH NHGRI",
-        "CZI"
+        "CZI",
+        "NIH NHGRI"
       ],
       "sc:license": "GPL-2.0-only",
       "sc:name": "tximeta",

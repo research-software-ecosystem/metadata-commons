@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,74 +36,58 @@
   },
   "@graph": [
     {
-      "@id": "http://orcid.org/0000-0001-9556-2978",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "http://orcid.org/0000-0003-3393-3010",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "http://orcid.org/0000-0001-9472-2589",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://doi.org/10.1101/472167",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/MolMeDB",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "http://orcid.org/0000-0001-9472-2589"
       },
       "bsc:input": {
-        "@id": "_:N703a3a26d3664f048dca068731b582be"
+        "@id": "_:N6b087d38ad384935a2c68722d58489bd"
       },
       "bsc:output": {
-        "@id": "_:N3a8ca8bd612844878f559cb836792ee6"
+        "@id": "_:Nf979f37690fb4d28b464d70e5a7dd542"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Database portal",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0202"
+          "@id": "edam:topic_3292"
         },
         {
-          "@id": "edam:topic_3292"
+          "@id": "edam:topic_3332"
         },
         {
           "@id": "edam:topic_3068"
         },
         {
-          "@id": "edam:topic_3332"
+          "@id": "edam:topic_0202"
         }
       ],
       "sc:author": [
-        "Jakub Juračka",
         {
           "@id": "http://orcid.org/0000-0003-3393-3010"
-        }
+        },
+        "Jakub Juračka"
       ],
       "sc:citation": {
         "@id": "https://doi.org/10.1101/472167"
       },
       "sc:contributor": [
         {
-          "@id": "http://orcid.org/0000-0001-9472-2589"
+          "@id": "http://orcid.org/0000-0001-9556-2978"
         },
         {
-          "@id": "http://orcid.org/0000-0001-9556-2978"
+          "@id": "http://orcid.org/0000-0001-9472-2589"
         },
         "Michaela Melíková"
       ],
       "sc:description": "MolMeDB is an open chemistry database about interactions of molecules with membranes.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3431"
+          "@id": "edam:operation_2422"
         },
         {
-          "@id": "edam:operation_2422"
+          "@id": "edam:operation_3431"
         }
       ],
       "sc:funder": "Czech Grant Agency",
@@ -121,7 +105,18 @@
       "sc:url": "http://molmedb.upol.cz"
     },
     {
-      "@id": "_:N3a8ca8bd612844878f559cb836792ee6",
+      "@id": "_:N6b087d38ad384935a2c68722d58489bd",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0990"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1964"
+      },
+      "sc:name": "Compound name"
+    },
+    {
+      "@id": "_:Nf979f37690fb4d28b464d70e5a7dd542",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2531"
@@ -132,15 +127,20 @@
       "sc:name": "Experiment report"
     },
     {
-      "@id": "_:N703a3a26d3664f048dca068731b582be",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0990"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1964"
-      },
-      "sc:name": "Compound name"
+      "@id": "http://orcid.org/0000-0001-9556-2978",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "http://orcid.org/0000-0003-3393-3010",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.1101/472167",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "http://orcid.org/0000-0001-9472-2589",
+      "@type": "sc:Person"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -38,28 +38,28 @@
     {
       "@id": "https://bio.tools/hgd_db",
       "@type": "sc:SoftwareApplication",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Database portal",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3500"
-        },
-        {
           "@id": "edam:topic_0203"
-        },
-        {
-          "@id": "edam:topic_0089"
         },
         {
           "@id": "edam:topic_0102"
         },
         {
+          "@id": "edam:topic_0089"
+        },
+        {
           "@id": "edam:topic_0780"
+        },
+        {
+          "@id": "edam:topic_3500"
         }
       ],
       "sc:citation": [
-        "pmcid:PMC9825607",
         "pubmed:36318261",
+        "pmcid:PMC9825607",
         {
           "@id": "https://doi.org/10.1093/nar/gkac970"
         }
@@ -70,24 +70,24 @@
           "@id": "edam:operation_2422"
         },
         {
-          "@id": "edam:operation_3947"
-        },
-        {
           "@id": "edam:operation_3672"
         },
         {
-          "@id": "edam:operation_3625"
+          "@id": "edam:operation_3663"
         },
         {
-          "@id": "edam:operation_3663"
+          "@id": "edam:operation_3947"
+        },
+        {
+          "@id": "edam:operation_3625"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "CC-BY-3.0",
       "sc:name": "HGD",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:url": "https://ngdc.cncb.ac.cn/hgd"

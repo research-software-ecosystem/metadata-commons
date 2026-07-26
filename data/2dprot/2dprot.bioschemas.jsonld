@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,12 +39,12 @@
       "@id": "https://bio.tools/2DProt",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N5d18b838ca724b85b7731931f979a6ac"
+        "@id": "_:N41079856b8244b5dbe5635ffcad4ebde"
       },
       "bsc:output": {
-        "@id": "_:N52c861a62dd74e2897af8aa08396cbba"
+        "@id": "_:Ndb6e451697df4bfa8bdfe4306bfcc17d"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Database portal",
         "Web API"
@@ -60,25 +60,14 @@
       "sc:license": "Freeware",
       "sc:name": "2DProts",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:url": "https://2dprots.ncbr.muni.cz/"
     },
     {
-      "@id": "_:N52c861a62dd74e2897af8aa08396cbba",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2992"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3547"
-      },
-      "sc:name": "Protein structure image"
-    },
-    {
-      "@id": "_:N5d18b838ca724b85b7731931f979a6ac",
+      "@id": "_:N41079856b8244b5dbe5635ffcad4ebde",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1460"
@@ -87,6 +76,17 @@
         "@id": "edam:format_1475"
       },
       "sc:name": "Protein structure"
+    },
+    {
+      "@id": "_:Ndb6e451697df4bfa8bdfe4306bfcc17d",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2992"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3547"
+      },
+      "sc:name": "Protein structure image"
     }
   ]
 }

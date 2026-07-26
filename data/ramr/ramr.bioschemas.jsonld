@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,31 +36,27 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btab586",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/ramr",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N925a4ac4bb0c43bdaf1185135700b190"
+        "@id": "_:N3051268654ee4c11b026a021ef6af930"
       },
       "bsc:output": {
-        "@id": "_:N20655b5cdca04ec09773a5a3cd10c17f"
+        "@id": "_:Nf774382d3d754411819eca1bb2c6fefa"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3168"
+          "@id": "edam:topic_0654"
         },
         {
           "@id": "edam:topic_3295"
         },
         {
-          "@id": "edam:topic_0654"
+          "@id": "edam:topic_3518"
         },
         {
-          "@id": "edam:topic_3518"
+          "@id": "edam:topic_3168"
         }
       ],
       "sc:author": "Oleksii Nikolaienko",
@@ -73,10 +69,10 @@
           "@id": "edam:operation_3501"
         },
         {
-          "@id": "edam:operation_3435"
+          "@id": "edam:operation_3204"
         },
         {
-          "@id": "edam:operation_3204"
+          "@id": "edam:operation_3435"
         }
       ],
       "sc:isAccessibleForFree": true,
@@ -89,7 +85,18 @@
       "sc:url": "https://bioconductor.org/packages/ramr"
     },
     {
-      "@id": "_:N20655b5cdca04ec09773a5a3cd10c17f",
+      "@id": "_:N3051268654ee4c11b026a021ef6af930",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2082"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2058"
+      },
+      "sc:name": "Matrix"
+    },
+    {
+      "@id": "_:Nf774382d3d754411819eca1bb2c6fefa",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2012"
@@ -100,15 +107,8 @@
       "sc:name": "Sequence coordinates"
     },
     {
-      "@id": "_:N925a4ac4bb0c43bdaf1185135700b190",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2082"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2058"
-      },
-      "sc:name": "Matrix"
+      "@id": "https://doi.org/10.1093/bioinformatics/btab586",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

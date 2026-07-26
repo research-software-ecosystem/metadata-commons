@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -38,13 +38,13 @@
     {
       "@id": "https://bio.tools/PowerShell",
       "@type": "sc:SoftwareApplication",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3520"
+          "@id": "edam:topic_0121"
         },
         {
-          "@id": "edam:topic_0121"
+          "@id": "edam:topic_3520"
         },
         {
           "@id": "edam:topic_0154"
@@ -59,13 +59,13 @@
       "sc:description": "Using the Object-Oriented PowerShell for Simple Proteomics Data Analysis | Scripting languages such as Python and Bash are appreciated for solving simple, everyday tasks in bioinformatics",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3631"
-        },
-        {
           "@id": "edam:operation_0335"
         },
         {
           "@id": "edam:operation_1812"
+        },
+        {
+          "@id": "edam:operation_3631"
         }
       ],
       "sc:name": "PowerShell",

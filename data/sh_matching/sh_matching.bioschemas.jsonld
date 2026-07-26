@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,12 +39,12 @@
       "@id": "https://bio.tools/sh_matching",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N18eac25dc79e499d94c299c89246ee6d"
+        "@id": "_:N96e45e62446b4ad1b5857fae40c7b807"
       },
       "bsc:output": {
-        "@id": "_:N3f07da523c3f402aad1876a75b678762"
+        "@id": "_:Naa6c1586736d42ea94fe74bdd3751b24"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3050"
@@ -61,7 +61,18 @@
       "sc:url": "https://github.com/TU-NHM/sh_matching_pub"
     },
     {
-      "@id": "_:N3f07da523c3f402aad1876a75b678762",
+      "@id": "_:N96e45e62446b4ad1b5857fae40c7b807",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2887"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "Nucleic acid sequence record"
+    },
+    {
+      "@id": "_:Naa6c1586736d42ea94fe74bdd3751b24",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1872"
@@ -75,17 +86,6 @@
         }
       ],
       "sc:name": "Taxonomic classification"
-    },
-    {
-      "@id": "_:N18eac25dc79e499d94c299c89246ee6d",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2887"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1929"
-      },
-      "sc:name": "Nucleic acid sequence record"
     }
   ]
 }

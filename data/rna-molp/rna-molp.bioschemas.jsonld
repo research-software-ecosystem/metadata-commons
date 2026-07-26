@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,18 +36,22 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/gkx429",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/rna-molp",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Jérôme Waldispühl",
       "bsc:input": [
         {
-          "@id": "_:N9fc2d3a1497a4a45a9154779397a2dc1"
+          "@id": "_:Nc10a8b5ee1e0426fbac12b776fd15ee3"
         },
         {
-          "@id": "_:N7838929354c64e41a85c63c4ba9765f2"
+          "@id": "_:Nfd3097dba1c14e27990489ffd711dcea"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
@@ -61,8 +65,8 @@
         }
       ],
       "sc:citation": [
-        "pmcid:PMC5793723",
         "pubmed:28525607",
+        "pmcid:PMC5793723",
         {
           "@id": "https://doi.org/10.1093/nar/gkx429"
         }
@@ -70,13 +74,13 @@
       "sc:description": "Predicting RNA hybrid 2D–3D structures from sequence data only. Optionally, it can be used for (i) local 3D motif prediction or (ii) the refinement of user-defined secondary structures. Importantly, our web server automatically generates a script for the MC-Sym software, which can be immediately used to quickly predict all-atom RNA 3D models.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0278"
+          "@id": "edam:operation_0267"
         },
         {
           "@id": "edam:operation_0502"
         },
         {
-          "@id": "edam:operation_0267"
+          "@id": "edam:operation_0278"
         }
       ],
       "sc:name": "RNA-MolP",
@@ -86,18 +90,7 @@
       "sc:url": "http://rnamoip.cs.mcgill.ca/"
     },
     {
-      "@id": "_:N9fc2d3a1497a4a45a9154779397a2dc1",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0850"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1929"
-      },
-      "sc:name": "Sequence set"
-    },
-    {
-      "@id": "_:N7838929354c64e41a85c63c4ba9765f2",
+      "@id": "_:Nc10a8b5ee1e0426fbac12b776fd15ee3",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3496"
@@ -108,8 +101,15 @@
       "sc:name": "RNA sequence (raw)"
     },
     {
-      "@id": "https://doi.org/10.1093/nar/gkx429",
-      "@type": "sc:CreativeWork"
+      "@id": "_:Nfd3097dba1c14e27990489ffd711dcea",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0850"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "Sequence set"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,22 +36,6 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/nar/gky537",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://orcid.org/0000-0001-6407-527X",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://orcid.org/0000-0002-2063-5383",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://orcid.org/0000-0002-6166-8640",
-      "@type": "sc:Person"
-    },
-    {
       "@id": "https://bio.tools/carveme",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
@@ -59,58 +43,58 @@
       },
       "bsc:input": [
         {
-          "@id": "_:N283e502f15b4468cb73b901f84f52434"
+          "@id": "_:N73e57569ebb94e76b6650b880012efe5"
         },
         {
-          "@id": "_:N779002b42e2a4fb4967218d9ce77be39"
+          "@id": "_:N64208466736d4a2e837d09f968d8b442"
         },
         {
-          "@id": "_:N9debe38047d5488ea8c12bd3bda72b0e"
+          "@id": "_:N276333d89a6e47e0b393f11bebc1ad2e"
         },
         {
-          "@id": "_:N97fddb5f3af4419a9e18bfaab769fe17"
+          "@id": "_:Nd04080661db048e8bd34c1c99dd9040f"
         },
         {
-          "@id": "_:Ndd3ef12828ac4da89649846d76c52509"
+          "@id": "_:Ndb54e2f01ee148aebd638b352a0851c2"
         },
         {
-          "@id": "_:N0b73aab5f7034dfab35ff95de9d42092"
+          "@id": "_:N0e28aa4c282e4fada2a2e872ec25d669"
         },
         {
-          "@id": "_:N0b7e5be6d7ca4278ab16605ac771bada"
+          "@id": "_:N483b6f9ab68a4449a363347b6b164723"
         },
         {
-          "@id": "_:Ned1c8f2bd4514b339dccf893a393920a"
+          "@id": "_:N5d8610974fa2469f8b69168e256f0dc9"
         },
         {
-          "@id": "_:Nc84bed00823d4224a002c8143e244b96"
+          "@id": "_:Nd31a5c46fe9642159c2b112ebadd47a6"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Nf7ce55e16d904dac9e9f39bbb135586c"
+          "@id": "_:N67ebe151835545b4921cc8a3560fa65f"
         },
         {
-          "@id": "_:Ne7ed358011364c44ab11f526164db201"
+          "@id": "_:N0de44e2e889a4bb79b1bd50782e0ede2"
         },
         {
-          "@id": "_:N5e38a91700ac480aa047c37c095b1436"
+          "@id": "_:N86d9dd3634024b2daacabbada7c11f7b"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
           "@id": "edam:topic_3307"
         },
         {
-          "@id": "edam:topic_2259"
+          "@id": "edam:topic_0602"
         },
         {
           "@id": "edam:topic_3391"
         },
         {
-          "@id": "edam:topic_0602"
+          "@id": "edam:topic_2259"
         }
       ],
       "sc:author": {
@@ -118,39 +102,39 @@
       },
       "sc:citation": [
         "pubmed:30192979",
-        {
-          "@id": "https://doi.org/10.1038/s41559-022-01939-0"
-        },
-        "pubmed:36471121",
+        "pmcid:PMC6125623",
         {
           "@id": "https://doi.org/10.1093/nar/gky537"
         },
-        "pmcid:PMC6125623"
+        "pubmed:36471121",
+        {
+          "@id": "https://doi.org/10.1038/s41559-022-01939-0"
+        }
       ],
       "sc:contributor": [
+        {
+          "@id": "https://orcid.org/0000-0002-6166-8640"
+        },
         {
           "@id": "https://orcid.org/0000-0001-6407-527X"
         },
         {
           "@id": "https://orcid.org/0000-0002-7875-0261"
-        },
-        {
-          "@id": "https://orcid.org/0000-0002-6166-8640"
         }
       ],
       "sc:description": "CarveMe is a python-based automated tool used for top-down genome-scale metabolic model reconstruction. It can predict an organism's uptake and secretion capabilities without requiring gap-filling, although gap-filling is also supported. Additionally, CarveMe allows the generation of microbial community models by merging single species models. The tool offers advanced features such as manual adjustment of blasting options, an orthology-based search using eggNOG-mapper (kegg-bigg branch), the ability to provide a custom media library for gap-filling, and the generation of models compatible with various SBML formats. Furthermore, CarveMe supports ensemble modeling, which helps explore how different alternative solutions can lead to diverse network structures and predict various phenotypes. During the model carving process, users can select from provided templates or create their own customized universe model to suit their specific needs.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3217"
+          "@id": "edam:operation_3663"
         },
         {
           "@id": "edam:operation_3660"
         },
         {
-          "@id": "edam:operation_3436"
+          "@id": "edam:operation_3217"
         },
         {
-          "@id": "edam:operation_3663"
+          "@id": "edam:operation_3436"
         }
       ],
       "sc:funder": "European Union's Horizon 2020",
@@ -158,13 +142,13 @@
       "sc:license": "Apache-2.0",
       "sc:name": "CarveMe",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:provider": [
-        "NTNU",
-        "European Molecular Biology Laboratory (EMBL)"
+        "European Molecular Biology Laboratory (EMBL)",
+        "NTNU"
       ],
       "sc:softwareHelp": [
         {
@@ -178,50 +162,25 @@
         }
       ],
       "sc:softwareVersion": [
-        "1.4.0 - 1.4.1",
         "1.0.0",
-        "1.5.0 - 1.5.2",
         "1.1.0",
         "1.2.0",
-        "1.3.0"
+        "1.3.0",
+        "1.4.0 - 1.4.1",
+        "1.5.0 - 1.5.2"
       ],
       "sc:url": "https://github.com/cdanielmachado/carveme"
     },
     {
-      "@id": "_:N283e502f15b4468cb73b901f84f52434",
+      "@id": "_:N73e57569ebb94e76b6650b880012efe5",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2984"
+        "@id": "edam:data_2787"
       },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2332"
-      },
-      "sc:name": "Pathway or network report"
+      "sc:name": "NCBI genome accession"
     },
     {
-      "@id": "_:N779002b42e2a4fb4967218d9ce77be39",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2976"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1929"
-      },
-      "sc:name": "Protein sequence"
-    },
-    {
-      "@id": "_:N9debe38047d5488ea8c12bd3bda72b0e",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2976"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1929"
-      },
-      "sc:name": "Protein sequence"
-    },
-    {
-      "@id": "_:N97fddb5f3af4419a9e18bfaab769fe17",
+      "@id": "_:N64208466736d4a2e837d09f968d8b442",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3494"
@@ -232,7 +191,18 @@
       "sc:name": "DNA sequence"
     },
     {
-      "@id": "_:Ndd3ef12828ac4da89649846d76c52509",
+      "@id": "_:N276333d89a6e47e0b393f11bebc1ad2e",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2976"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "Protein sequence"
+    },
+    {
+      "@id": "_:Nd04080661db048e8bd34c1c99dd9040f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2787"
@@ -240,42 +210,23 @@
       "sc:name": "NCBI genome accession"
     },
     {
-      "@id": "_:N0b73aab5f7034dfab35ff95de9d42092",
+      "@id": "_:Ndb54e2f01ee148aebd638b352a0851c2",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3724"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_2330"
+          "@id": "edam:format_3475"
         },
         {
-          "@id": "edam:format_3475"
+          "@id": "edam:format_2330"
         }
       ],
       "sc:name": "Cultivation parameter"
     },
     {
-      "@id": "_:N0b7e5be6d7ca4278ab16605ac771bada",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2984"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2332"
-      },
-      "sc:name": "Pathway or network report"
-    },
-    {
-      "@id": "_:Ned1c8f2bd4514b339dccf893a393920a",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2787"
-      },
-      "sc:name": "NCBI genome accession"
-    },
-    {
-      "@id": "_:Nc84bed00823d4224a002c8143e244b96",
+      "@id": "_:N0e28aa4c282e4fada2a2e872ec25d669",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3494"
@@ -286,7 +237,40 @@
       "sc:name": "DNA sequence"
     },
     {
-      "@id": "_:Nf7ce55e16d904dac9e9f39bbb135586c",
+      "@id": "_:N483b6f9ab68a4449a363347b6b164723",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2984"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2332"
+      },
+      "sc:name": "Pathway or network report"
+    },
+    {
+      "@id": "_:N5d8610974fa2469f8b69168e256f0dc9",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2976"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "Protein sequence"
+    },
+    {
+      "@id": "_:Nd31a5c46fe9642159c2b112ebadd47a6",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2984"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2332"
+      },
+      "sc:name": "Pathway or network report"
+    },
+    {
+      "@id": "_:N67ebe151835545b4921cc8a3560fa65f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2984"
@@ -302,23 +286,23 @@
       "sc:name": "Pathway or network report"
     },
     {
-      "@id": "_:Ne7ed358011364c44ab11f526164db201",
+      "@id": "_:N0de44e2e889a4bb79b1bd50782e0ede2",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2984"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_2332"
+          "@id": "edam:format_2585"
         },
         {
-          "@id": "edam:format_2585"
+          "@id": "edam:format_2332"
         }
       ],
       "sc:name": "Pathway or network report"
     },
     {
-      "@id": "_:N5e38a91700ac480aa047c37c095b1436",
+      "@id": "_:N86d9dd3634024b2daacabbada7c11f7b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2984"
@@ -329,12 +313,28 @@
       "sc:name": "Pathway or network report"
     },
     {
-      "@id": "https://doi.org/10.1038/s41559-022-01939-0",
+      "@id": "https://orcid.org/0000-0001-6407-527X",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-2063-5383",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/gky537",
       "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-6166-8640",
+      "@type": "sc:Person"
     },
     {
       "@id": "https://orcid.org/0000-0002-7875-0261",
       "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.1038/s41559-022-01939-0",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,12 +39,12 @@
       "@id": "https://bio.tools/toxcodan-genome",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N333c8036df1742df9b0d795e23de6072"
+        "@id": "_:N8456c94ef0474736ae776508e5ee9c2d"
       },
       "bsc:output": {
-        "@id": "_:N41e4673538474b7ba29cb5ea62c009fe"
+        "@id": "_:N2d0cca7d6ee545389d10aaac9aa04b23"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0622"
@@ -69,18 +69,7 @@
       "sc:url": "https://github.com/pedronachtigall/ToxCodAn-Genome"
     },
     {
-      "@id": "_:N41e4673538474b7ba29cb5ea62c009fe",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3002"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2306"
-      },
-      "sc:name": "Annotation track"
-    },
-    {
-      "@id": "_:N333c8036df1742df9b0d795e23de6072",
+      "@id": "_:N8456c94ef0474736ae776508e5ee9c2d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3494"
@@ -89,6 +78,17 @@
         "@id": "edam:format_1929"
       },
       "sc:name": "DNA sequence"
+    },
+    {
+      "@id": "_:N2d0cca7d6ee545389d10aaac9aa04b23",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3002"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2306"
+      },
+      "sc:name": "Annotation track"
     },
     {
       "@id": "http://orcid.org/0000-0002-3196-0173",

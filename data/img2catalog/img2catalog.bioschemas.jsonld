@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,9 +36,13 @@
   },
   "@graph": [
     {
+      "@id": "https://orcid.org/0009-0001-5727-6732",
+      "@type": "sc:Person"
+    },
+    {
       "@id": "https://bio.tools/img2catalog",
       "@type": "sc:SoftwareApplication",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_4012"
@@ -59,8 +63,8 @@
       "sc:license": "MIT",
       "sc:name": "img2catalog",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -68,10 +72,6 @@
       },
       "sc:softwareVersion": "1.0.1",
       "sc:url": "https://github.com/Health-RI/img2catalog"
-    },
-    {
-      "@id": "https://orcid.org/0009-0001-5727-6732",
-      "@type": "sc:Person"
     }
   ]
 }

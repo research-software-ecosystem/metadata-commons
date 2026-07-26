@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,24 +40,24 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N7b61005234394dfd89436d1e587e3c9f"
+          "@id": "_:N3683b92add714ac5984ad06617e4a1fc"
         },
         {
-          "@id": "_:N092cc3068d144a48a242aff763ff8109"
+          "@id": "_:N4f51f12f314647859af22023f4765892"
         },
         {
-          "@id": "_:N5ccf2f9d5eb24678be25a3c382d64ea5"
+          "@id": "_:Nb6bc3cf56dd843538670a2f9730cd4c9"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N591e40831d3a407db956191854381466"
+          "@id": "_:N45efb27aca964fcf86ddd256200ab1a5"
         },
         {
-          "@id": "_:N1556e4ef8e57488bacbefe09473114fd"
+          "@id": "_:N7f41703c274e49eb88eb3127f973ce82"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
@@ -71,10 +71,7 @@
       "sc:description": "OpenSWATH is a proteomics software that allows analysis of LC-MS/MS DIA (data independent acquisition) and implemented as part of OpenMS.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3215"
-        },
-        {
-          "@id": "edam:operation_3649"
+          "@id": "edam:operation_0335"
         },
         {
           "@id": "edam:operation_3203"
@@ -83,15 +80,18 @@
           "@id": "edam:operation_3628"
         },
         {
-          "@id": "edam:operation_0335"
+          "@id": "edam:operation_3215"
+        },
+        {
+          "@id": "edam:operation_3649"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "BSD-3-Clause",
       "sc:name": "OpenSWATH",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -101,17 +101,33 @@
       "sc:url": "http://www.openswath.org"
     },
     {
-      "@id": "_:N591e40831d3a407db956191854381466",
+      "@id": "_:N3683b92add714ac5984ad06617e4a1fc",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3108"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3245"
+        },
+        {
+          "@id": "edam:format_3710"
+        }
+      ],
+      "sc:name": "Experimental measurement"
+    },
+    {
+      "@id": "_:N4f51f12f314647859af22023f4765892",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2536"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_3244"
+          "@id": "edam:format_3621"
         },
         {
-          "@id": "edam:format_3621"
+          "@id": "edam:format_3244"
         },
         {
           "@id": "edam:format_3654"
@@ -120,45 +136,7 @@
       "sc:name": "Mass spectrometry data"
     },
     {
-      "@id": "_:N1556e4ef8e57488bacbefe09473114fd",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0944"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3475"
-        },
-        {
-          "@id": "edam:format_3621"
-        },
-        {
-          "@id": "edam:format_3833"
-        }
-      ],
-      "sc:name": "Peptide mass fingerprint"
-    },
-    {
-      "@id": "_:N7b61005234394dfd89436d1e587e3c9f",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2536"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3244"
-        },
-        {
-          "@id": "edam:format_3621"
-        },
-        {
-          "@id": "edam:format_3654"
-        }
-      ],
-      "sc:name": "Mass spectrometry data"
-    },
-    {
-      "@id": "_:N092cc3068d144a48a242aff763ff8109",
+      "@id": "_:Nb6bc3cf56dd843538670a2f9730cd4c9",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0943"
@@ -174,20 +152,42 @@
       "sc:name": "Mass spectrometry spectra"
     },
     {
-      "@id": "_:N5ccf2f9d5eb24678be25a3c382d64ea5",
+      "@id": "_:N45efb27aca964fcf86ddd256200ab1a5",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_3108"
+        "@id": "edam:data_2536"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_3245"
+          "@id": "edam:format_3621"
         },
         {
-          "@id": "edam:format_3710"
+          "@id": "edam:format_3244"
+        },
+        {
+          "@id": "edam:format_3654"
         }
       ],
-      "sc:name": "Experimental measurement"
+      "sc:name": "Mass spectrometry data"
+    },
+    {
+      "@id": "_:N7f41703c274e49eb88eb3127f973ce82",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0944"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3621"
+        },
+        {
+          "@id": "edam:format_3475"
+        },
+        {
+          "@id": "edam:format_3833"
+        }
+      ],
+      "sc:name": "Peptide mass fingerprint"
     }
   ]
 }

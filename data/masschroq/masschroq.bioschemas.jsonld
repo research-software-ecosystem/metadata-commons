@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -43,12 +43,12 @@
       "@id": "https://bio.tools/masschroq",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N0bbe44199bd34e52a9425d0075a77b2f"
+        "@id": "_:N0b9be6d3147942e1bfcf7d55c42a4c6a"
       },
       "bsc:output": {
-        "@id": "_:Nd61ae6c1623447549ec6bbbefe43b3cf"
+        "@id": "_:N51165dae9c054d509799daa03bf119e0"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Desktop application",
       "sc:applicationSubCategory": [
         {
@@ -67,22 +67,19 @@
       "sc:description": "XIC extraction and quantitation from LC-MS data.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3634"
-        },
-        {
-          "@id": "edam:operation_3638"
-        },
-        {
-          "@id": "edam:operation_3635"
-        },
-        {
-          "@id": "edam:operation_3704"
+          "@id": "edam:operation_3203"
         },
         {
           "@id": "edam:operation_3628"
         },
         {
-          "@id": "edam:operation_3630"
+          "@id": "edam:operation_3704"
+        },
+        {
+          "@id": "edam:operation_3634"
+        },
+        {
+          "@id": "edam:operation_3635"
         },
         {
           "@id": "edam:operation_3636"
@@ -91,7 +88,10 @@
           "@id": "edam:operation_3215"
         },
         {
-          "@id": "edam:operation_3203"
+          "@id": "edam:operation_3630"
+        },
+        {
+          "@id": "edam:operation_3638"
         }
       ],
       "sc:name": "MassChroQ",
@@ -105,7 +105,7 @@
       "sc:url": "http://pappso.inra.fr/bioinfo/masschroq/"
     },
     {
-      "@id": "_:N0bbe44199bd34e52a9425d0075a77b2f",
+      "@id": "_:N0b9be6d3147942e1bfcf7d55c42a4c6a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0945"
@@ -115,10 +115,10 @@
           "@id": "edam:format_3752"
         },
         {
-          "@id": "edam:format_3244"
+          "@id": "edam:format_3475"
         },
         {
-          "@id": "edam:format_3475"
+          "@id": "edam:format_3244"
         },
         {
           "@id": "edam:format_3654"
@@ -127,20 +127,20 @@
       "sc:name": "Peptide identification"
     },
     {
-      "@id": "_:Nd61ae6c1623447549ec6bbbefe43b3cf",
+      "@id": "_:N51165dae9c054d509799daa03bf119e0",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2603"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_3654"
+          "@id": "edam:format_3475"
         },
         {
           "@id": "edam:format_3244"
         },
         {
-          "@id": "edam:format_3475"
+          "@id": "edam:format_3654"
         }
       ],
       "sc:name": "Expression data"

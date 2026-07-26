@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -42,9 +42,12 @@
     {
       "@id": "https://bio.tools/rnacode",
       "@type": "sc:SoftwareApplication",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_0659"
+        },
         {
           "@id": "edam:topic_3512"
         },
@@ -52,26 +55,26 @@
           "@id": "edam:topic_0121"
         },
         {
-          "@id": "edam:topic_0637"
-        },
-        {
-          "@id": "edam:topic_0659"
-        },
-        {
           "@id": "edam:topic_0154"
+        },
+        {
+          "@id": "edam:topic_0637"
         }
       ],
       "sc:citation": [
+        "pubmed:37615674",
+        "pmcid:PMC10757073",
         {
           "@id": "https://doi.org/10.1515/jib-2022-0046"
-        },
-        "pubmed:37615674",
-        "pmcid:PMC10757073"
+        }
       ],
       "sc:description": "Web application for convenient identification of evolutionary conserved protein coding regions.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0363"
+          "@id": "edam:operation_0436"
+        },
+        {
+          "@id": "edam:operation_0495"
         },
         {
           "@id": "edam:operation_0492"
@@ -80,18 +83,15 @@
           "@id": "edam:operation_3631"
         },
         {
-          "@id": "edam:operation_0436"
-        },
-        {
-          "@id": "edam:operation_0495"
+          "@id": "edam:operation_0363"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "MIT",
       "sc:name": "RNAcode",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {

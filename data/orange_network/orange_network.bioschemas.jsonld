@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -41,21 +41,21 @@
       "biotools:primaryContact": "Blaž Zupan",
       "bsc:input": [
         {
-          "@id": "_:N37fdd59105fd4443ad3b2f21e6cb7541"
+          "@id": "_:N8bd6ca42ecb84ebe964875689191b2a2"
         },
         {
-          "@id": "_:N1f36dfb42b0d4bf6b4cbe80ca93bf6f2"
+          "@id": "_:N43634e91b78c4b288a25049339ed0e95"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N205197cf45b942eb84cb1666cbb5aa3c"
+          "@id": "_:N31f53b9f3bd441168c22fb32a284465a"
         },
         {
-          "@id": "_:N52d678fb91a1444d948f744fcf3818c9"
+          "@id": "_:N54836c72677a49569c5af3920f939965"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Desktop application"
@@ -65,10 +65,10 @@
           "@id": "edam:topic_3473"
         },
         {
-          "@id": "edam:topic_3474"
+          "@id": "edam:topic_0092"
         },
         {
-          "@id": "edam:topic_0092"
+          "@id": "edam:topic_3474"
         }
       ],
       "sc:author": "Jernej Kernc",
@@ -85,13 +85,13 @@
       "sc:license": "GPL-3.0",
       "sc:name": "Orange Network",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": [
-        "Laboratory for Bioinformatics, University of Ljubljana",
-        "ELIXIR-SI-hackathon"
+        "ELIXIR-SI-hackathon",
+        "Laboratory for Bioinformatics, University of Ljubljana"
       ],
       "sc:softwareHelp": {
         "@id": "http://orange-network.readthedocs.org"
@@ -100,7 +100,15 @@
       "sc:url": "http://orange.biolab.si"
     },
     {
-      "@id": "_:N37fdd59105fd4443ad3b2f21e6cb7541",
+      "@id": "_:N8bd6ca42ecb84ebe964875689191b2a2",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2353"
+      },
+      "sc:name": "Ontology data"
+    },
+    {
+      "@id": "_:N43634e91b78c4b288a25049339ed0e95",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2082"
@@ -111,7 +119,7 @@
       "sc:name": "Matrix"
     },
     {
-      "@id": "_:N1f36dfb42b0d4bf6b4cbe80ca93bf6f2",
+      "@id": "_:N31f53b9f3bd441168c22fb32a284465a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2353"
@@ -119,15 +127,7 @@
       "sc:name": "Ontology data"
     },
     {
-      "@id": "_:N205197cf45b942eb84cb1666cbb5aa3c",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2353"
-      },
-      "sc:name": "Ontology data"
-    },
-    {
-      "@id": "_:N52d678fb91a1444d948f744fcf3818c9",
+      "@id": "_:N54836c72677a49569c5af3920f939965",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2082"

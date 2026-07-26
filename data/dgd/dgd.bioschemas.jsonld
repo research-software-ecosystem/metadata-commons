@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,30 +36,26 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1371/journal.pone.0050653",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/dgd",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "GenOuest platform",
       "bsc:input": {
-        "@id": "_:N39dfe760b9f344c7a16f8fe88e9ed898"
+        "@id": "_:Nc63f50b93a384a6dae5816622618daa4"
       },
       "bsc:output": {
-        "@id": "_:Ndd5e0b5b79c34a2bb373e78e007234e0"
+        "@id": "_:N6ab35447c65f46fb99d02d72d37f6388"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Database portal",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0080"
       },
       "sc:citation": [
         "pubmed:23209799",
+        "pmcid:PMC3508997",
         {
           "@id": "https://doi.org/10.1371/journal.pone.0050653"
-        },
-        "pmcid:PMC3508997"
+        }
       ],
       "sc:description": "Provides a list of groups of co-located and duplicated genes.",
       "sc:featureList": {
@@ -68,8 +64,8 @@
       "sc:isAccessibleForFree": true,
       "sc:name": "DGD",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:provider": "GenOuest",
@@ -79,7 +75,7 @@
       "sc:url": "http://dgd.genouest.org/"
     },
     {
-      "@id": "_:N39dfe760b9f344c7a16f8fe88e9ed898",
+      "@id": "_:Nc63f50b93a384a6dae5816622618daa4",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2012"
@@ -87,12 +83,16 @@
       "sc:name": "Sequence coordinates"
     },
     {
-      "@id": "_:Ndd5e0b5b79c34a2bb373e78e007234e0",
+      "@id": "_:N6ab35447c65f46fb99d02d72d37f6388",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3002"
       },
       "sc:name": "Annotation track"
+    },
+    {
+      "@id": "https://doi.org/10.1371/journal.pone.0050653",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,9 +39,9 @@
       "@id": "https://bio.tools/lep-map3",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Ncc138c5b11854d18b96959ba38b8a323"
+        "@id": "_:Nc75e496ed7b14268b057d4583d6160a3"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0102"
@@ -60,8 +60,8 @@
       "sc:name": "Lep-MAP3",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://sourceforge.net/p/lep-map3/wiki/LM3%20Home/"
@@ -69,17 +69,17 @@
       "sc:url": "https://sourceforge.net/projects/lep-map3/"
     },
     {
-      "@id": "_:Ncc138c5b11854d18b96959ba38b8a323",
+      "@id": "_:Nc75e496ed7b14268b057d4583d6160a3",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3494"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_3016"
+          "@id": "edam:format_2572"
         },
         {
-          "@id": "edam:format_2572"
+          "@id": "edam:format_3016"
         }
       ],
       "sc:name": "DNA sequence"

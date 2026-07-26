@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,20 +36,16 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1101/622852",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/ThermoRawFileParser",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Computational Omics and Systems Biology Group",
       "bsc:input": {
-        "@id": "_:N191715e5c48d4b6cbadcf6d8b15707ff"
+        "@id": "_:N4c10adf310a74df687db814aa267160d"
       },
       "bsc:output": {
-        "@id": "_:Ne18283489b9b461f8f1d16679e9d4a6c"
+        "@id": "_:N5cb62b4884844794ab9c5cf68d87ac3d"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
@@ -68,21 +64,21 @@
       "sc:description": "Open-source, crossplatform tool that converts Thermo RAW files into open file formats such as MGF and to the HUPO-PSI standard file format mzML",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3215"
-        },
-        {
           "@id": "edam:operation_3434"
         },
         {
           "@id": "edam:operation_3695"
+        },
+        {
+          "@id": "edam:operation_3215"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "Apache-2.0",
       "sc:name": "ThermoRawFileParser",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "https://github.com/compomics/ThermoRawFileParser/blob/master/README.md"
@@ -90,23 +86,7 @@
       "sc:url": "https://github.com/compomics/ThermoRawFileParser"
     },
     {
-      "@id": "_:Ne18283489b9b461f8f1d16679e9d4a6c",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0943"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3244"
-        },
-        {
-          "@id": "edam:format_3651"
-        }
-      ],
-      "sc:name": "Mass spectrum"
-    },
-    {
-      "@id": "_:N191715e5c48d4b6cbadcf6d8b15707ff",
+      "@id": "_:N4c10adf310a74df687db814aa267160d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0943"
@@ -115,6 +95,26 @@
         "@id": "edam:format_3712"
       },
       "sc:name": "Mass spectrum"
+    },
+    {
+      "@id": "_:N5cb62b4884844794ab9c5cf68d87ac3d",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0943"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3651"
+        },
+        {
+          "@id": "edam:format_3244"
+        }
+      ],
+      "sc:name": "Mass spectrum"
+    },
+    {
+      "@id": "https://doi.org/10.1101/622852",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

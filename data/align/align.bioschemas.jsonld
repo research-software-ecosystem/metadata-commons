@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,6 +36,14 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.2174/157016306780136754",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "http://orcid.org/0000-0003-4525-7793",
+      "@type": "sc:Person"
+    },
+    {
       "@id": "https://bio.tools/align",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
@@ -43,30 +51,30 @@
       },
       "bsc:input": [
         {
-          "@id": "_:N57d02913f5284995b990d5ea712d186e"
+          "@id": "_:N28612021fc8a4b8791139d910e91b27d"
         },
         {
-          "@id": "_:N0078827c60984572a834399fef852020"
+          "@id": "_:N90aff774c40643248ed62292ed15b86f"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Nd04fc4a72783400ab534f3f8a5113f5a"
+          "@id": "_:Nb620d359a05f408cbea8067a5723581f"
         },
         {
-          "@id": "_:N18b78922468a438cb55cbb757dd84ea5"
+          "@id": "_:N23f3ab4a472c4fcb87605a1b4dca0033"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0080"
       },
       "sc:citation": [
+        "pubmed:17311562",
         {
           "@id": "https://doi.org/10.2174/157016306780136754"
-        },
-        "pubmed:17311562"
+        }
       ],
       "sc:description": "Pairwise alignment tool.",
       "sc:featureList": [
@@ -82,9 +90,9 @@
       ],
       "sc:name": "ALIGN",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": [
         "ELIXIR-ITA-PADOVA",
@@ -97,7 +105,23 @@
       "sc:url": "http://protein.bio.unipd.it/align2"
     },
     {
-      "@id": "_:N57d02913f5284995b990d5ea712d186e",
+      "@id": "_:N28612021fc8a4b8791139d910e91b27d",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2976"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_1929"
+        },
+        {
+          "@id": "edam:format_1984"
+        }
+      ],
+      "sc:name": "Protein sequence"
+    },
+    {
+      "@id": "_:N90aff774c40643248ed62292ed15b86f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1460"
@@ -108,34 +132,7 @@
       "sc:name": "Protein structure"
     },
     {
-      "@id": "_:N0078827c60984572a834399fef852020",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2976"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_1984"
-        },
-        {
-          "@id": "edam:format_1929"
-        }
-      ],
-      "sc:name": "Protein sequence"
-    },
-    {
-      "@id": "_:Nd04fc4a72783400ab534f3f8a5113f5a",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0869"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1984"
-      },
-      "sc:name": "Sequence-profile alignment"
-    },
-    {
-      "@id": "_:N18b78922468a438cb55cbb757dd84ea5",
+      "@id": "_:Nb620d359a05f408cbea8067a5723581f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1384"
@@ -146,12 +143,15 @@
       "sc:name": "Sequence alignment (protein)"
     },
     {
-      "@id": "https://doi.org/10.2174/157016306780136754",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "http://orcid.org/0000-0003-4525-7793",
-      "@type": "sc:Person"
+      "@id": "_:N23f3ab4a472c4fcb87605a1b4dca0033",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0869"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1984"
+      },
+      "sc:name": "Sequence-profile alignment"
     }
   ]
 }

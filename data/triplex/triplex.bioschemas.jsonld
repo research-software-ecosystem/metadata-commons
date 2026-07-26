@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,18 +36,17 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btt299",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/triplex",
       "@type": "sc:SoftwareApplication",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
       ],
       "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_3332"
+        },
         {
           "@id": "edam:topic_0092"
         },
@@ -56,9 +55,6 @@
         },
         {
           "@id": "edam:topic_0097"
-        },
-        {
-          "@id": "edam:topic_3332"
         }
       ],
       "sc:citation": {
@@ -67,20 +63,20 @@
       "sc:description": "This package provides functions for identification and visualization of potential intramolecular triplex patterns in DNA sequence. The main functionality is to detect the positions of subsequences capable of folding into an intramolecular triplex (H-DNA) in a much larger sequence. The potential H-DNA (triplexes) should be made of as many cannonical nucleotide triplets as possible. The package includes visualization showing the exact base-pairing in 1D, 2D or 3D.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0570"
-        },
-        {
           "@id": "edam:operation_0262"
         },
         {
           "@id": "edam:operation_2481"
+        },
+        {
+          "@id": "edam:operation_0570"
         }
       ],
       "sc:license": "BSD-2-Clause",
       "sc:name": "triplex",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -88,6 +84,10 @@
       },
       "sc:softwareVersion": "1.52.0",
       "sc:url": "https://bioconductor.org/packages/triplex"
+    },
+    {
+      "@id": "https://doi.org/10.1093/bioinformatics/btt299",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

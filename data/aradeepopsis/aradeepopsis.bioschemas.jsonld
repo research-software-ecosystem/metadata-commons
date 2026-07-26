@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,10 +36,6 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1105/tpc.20.00318",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://doi.org/10.1101/2020.04.01.018192",
       "@type": "sc:CreativeWork"
     },
@@ -47,27 +43,24 @@
       "@id": "https://bio.tools/aradeepopsis",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N083c0889a16644b3b5acade645780d83"
+        "@id": "_:N4d47274892834d6ca4bb40f19b135f7a"
       },
       "bsc:output": [
         {
-          "@id": "_:N1db081238bf74cc0b575a94d79f154a2"
+          "@id": "_:N50f7e2ab715448eda2d006a0c266c768"
         },
         {
-          "@id": "_:Nd07d28052e7d416594bcbc1761e7f0bb"
+          "@id": "_:N85c13b2f06054e84b79ddead86aeec67"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Workflow"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0780"
-        },
-        {
-          "@id": "edam:topic_0769"
+          "@id": "edam:topic_0625"
         },
         {
           "@id": "edam:topic_3382"
@@ -76,15 +69,18 @@
           "@id": "edam:topic_3298"
         },
         {
-          "@id": "edam:topic_0625"
+          "@id": "edam:topic_0780"
+        },
+        {
+          "@id": "edam:topic_0769"
         }
       ],
       "sc:citation": [
+        "pubmed:33037149",
         "pmcid:PMC7721323",
         {
           "@id": "https://doi.org/10.1105/tpc.20.00318"
         },
-        "pubmed:33037149",
         {
           "@id": "https://doi.org/10.1101/2020.04.01.018192"
         }
@@ -95,13 +91,13 @@
           "@id": "edam:operation_3443"
         },
         {
-          "@id": "edam:operation_0337"
-        },
-        {
           "@id": "edam:operation_3799"
         },
         {
           "@id": "edam:operation_2428"
+        },
+        {
+          "@id": "edam:operation_0337"
         }
       ],
       "sc:isAccessibleForFree": true,
@@ -111,17 +107,17 @@
         "@id": "https://github.com/Gregor-Mendel-Institute/aradeepopsis#readme"
       },
       "sc:softwareVersion": [
-        "1.2.1",
-        "1.3.1",
-        "1.3",
-        "1.2",
+        "1.0",
         "1.1",
-        "1.0"
+        "1.2",
+        "1.2.1",
+        "1.3",
+        "1.3.1"
       ],
       "sc:url": "https://github.com/Gregor-Mendel-Institute/aradeepopsis"
     },
     {
-      "@id": "_:N083c0889a16644b3b5acade645780d83",
+      "@id": "_:N4d47274892834d6ca4bb40f19b135f7a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2968"
@@ -137,7 +133,7 @@
       "sc:name": "Image"
     },
     {
-      "@id": "_:N1db081238bf74cc0b575a94d79f154a2",
+      "@id": "_:N50f7e2ab715448eda2d006a0c266c768",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
@@ -145,7 +141,7 @@
       "sc:name": "Plot"
     },
     {
-      "@id": "_:Nd07d28052e7d416594bcbc1761e7f0bb",
+      "@id": "_:N85c13b2f06054e84b79ddead86aeec67",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"
@@ -154,6 +150,10 @@
         "@id": "edam:format_3752"
       },
       "sc:name": "Report"
+    },
+    {
+      "@id": "https://doi.org/10.1105/tpc.20.00318",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

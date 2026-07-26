@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,21 +36,33 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/btq033",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.7490/f1000research.1114334.1",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/gkw343",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/bedtools_coveragebed_counts",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Galaxy Support Team",
       "bsc:input": [
         {
-          "@id": "_:N4388c8e77b174bf1b63558c97608c49a"
+          "@id": "_:N100da774625f4b18bb4fc54f6c148403"
         },
         {
-          "@id": "_:N812ad7783cea40789b8cabc4830b5339"
+          "@id": "_:N85df3812c5224fc0b699b83cf5fd408a"
         }
       ],
       "bsc:output": {
-        "@id": "_:N2e3759aa00054c2fa0eb48cccec06591"
+        "@id": "_:Nc27b881eb38844a7a88bfe2e44656504"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3168"
@@ -72,9 +84,9 @@
       },
       "sc:name": "bedtools_coveragebed_counts",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://quinlanlab.org/tutorials/bedtools/bedtools.html"
@@ -83,7 +95,7 @@
       "sc:url": "https://github.com/arq5x/bedtools3"
     },
     {
-      "@id": "_:N4388c8e77b174bf1b63558c97608c49a",
+      "@id": "_:N100da774625f4b18bb4fc54f6c148403",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3002"
@@ -94,23 +106,23 @@
       "sc:name": "Annotation track"
     },
     {
-      "@id": "_:N812ad7783cea40789b8cabc4830b5339",
+      "@id": "_:N85df3812c5224fc0b699b83cf5fd408a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0006"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_3003"
+          "@id": "edam:format_2572"
         },
         {
-          "@id": "edam:format_2572"
+          "@id": "edam:format_3003"
         }
       ],
       "sc:name": "Data"
     },
     {
-      "@id": "_:N2e3759aa00054c2fa0eb48cccec06591",
+      "@id": "_:Nc27b881eb38844a7a88bfe2e44656504",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3002"
@@ -119,18 +131,6 @@
         "@id": "edam:format_3003"
       },
       "sc:name": "Annotation track"
-    },
-    {
-      "@id": "https://doi.org/10.1093/bioinformatics/btq033",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gkw343",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.7490/f1000research.1114334.1",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,19 +36,15 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btr182",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/cyclus3d",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N4d8437dc5db74a64a2504278806cae76"
+        "@id": "_:N75f4bb067e0842cbbca65822f4f7a97d"
       },
       "bsc:output": {
-        "@id": "_:Nb3249c64b66642469cb4143eb4111e44"
+        "@id": "_:N2de0564b54b447e39e6fcfee8502a602"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Desktop application",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0602"
@@ -65,8 +61,8 @@
       },
       "sc:name": "CyClus3D",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:provider": "ugent.be",
@@ -77,7 +73,7 @@
       "sc:url": "http://bioinformatics.psb.ugent.be/software/details/CyClus3D"
     },
     {
-      "@id": "_:N4d8437dc5db74a64a2504278806cae76",
+      "@id": "_:N75f4bb067e0842cbbca65822f4f7a97d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2600"
@@ -88,12 +84,16 @@
       "sc:name": "Pathway or network"
     },
     {
-      "@id": "_:Nb3249c64b66642469cb4143eb4111e44",
+      "@id": "_:N2de0564b54b447e39e6fcfee8502a602",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2968"
       },
       "sc:name": "Image"
+    },
+    {
+      "@id": "https://doi.org/10.1093/bioinformatics/btr182",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

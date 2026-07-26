@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,60 +40,68 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Na159b9cae037403db6e787529e52614e"
+          "@id": "_:N49368e81478647f9b6e3673a5a726354"
         },
         {
-          "@id": "_:Nad5b0935f93b49d2b4b23ae73e6f21bc"
+          "@id": "_:Nd4f7bfe3280f495aadc669657882628b"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3474"
-        },
-        {
-          "@id": "edam:topic_3966"
-        },
-        {
           "@id": "edam:topic_2830"
+        },
+        {
+          "@id": "edam:topic_3324"
+        },
+        {
+          "@id": "edam:topic_3474"
         },
         {
           "@id": "edam:topic_3379"
         },
         {
-          "@id": "edam:topic_3324"
+          "@id": "edam:topic_3966"
         }
       ],
       "sc:citation": [
+        "pubmed:35381451",
         {
           "@id": "https://doi.org/10.1016/j.compbiomed.2022.105401"
-        },
-        "pubmed:35381451"
+        }
       ],
       "sc:description": "A web-based deep learning server to identify potential vaccine candidates.",
       "sc:featureList": [
+        {
+          "@id": "edam:operation_0416"
+        },
         {
           "@id": "edam:operation_0252"
         },
         {
           "@id": "edam:operation_3461"
-        },
-        {
-          "@id": "edam:operation_0416"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:name": "Vaxi-DL",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:url": "https://vac.kamalrawal.in/vaxidl/"
     },
     {
-      "@id": "_:Na159b9cae037403db6e787529e52614e",
+      "@id": "_:N49368e81478647f9b6e3673a5a726354",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2291"
+      },
+      "sc:name": "UniProt ID"
+    },
+    {
+      "@id": "_:Nd4f7bfe3280f495aadc669657882628b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
@@ -102,14 +110,6 @@
         "@id": "edam:format_1929"
       },
       "sc:name": "Sequence"
-    },
-    {
-      "@id": "_:Nad5b0935f93b49d2b4b23ae73e6f21bc",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2291"
-      },
-      "sc:name": "UniProt ID"
     },
     {
       "@id": "https://doi.org/10.1016/j.compbiomed.2022.105401",

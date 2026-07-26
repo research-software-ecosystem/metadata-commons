@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,20 +36,24 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/gku1118",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/validatordb",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
         "David Sehnal",
-        "Primacy Contact",
-        "Lukáš Pravda"
+        "Lukáš Pravda",
+        "Primacy Contact"
       ],
       "bsc:input": {
-        "@id": "_:N99601a8b1b814cd98ca2bafdfce1748c"
+        "@id": "_:N2b5b0d928e994f5fbec695bd05d337b0"
       },
       "bsc:output": {
-        "@id": "_:N5947ae5614c144dcb52c04f79feca26b"
+        "@id": "_:Naa60b5453df948989cfaa6a5cf3ab45e"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Database portal",
       "sc:applicationSubCategory": [
         {
@@ -62,16 +66,16 @@
       "sc:author": "David Sehnal",
       "sc:citation": [
         "pubmed:25392418",
+        "pmcid:PMC4383933",
         {
           "@id": "https://doi.org/10.1093/nar/gku1118"
-        },
-        "pmcid:PMC4383933"
+        }
       ],
       "sc:contributor": [
-        "Radka Svobodová Vařeková",
-        "Deepti Jaiswal",
         "Crina-Maria Ionescu",
-        "Lukáš Pravda"
+        "Deepti Jaiswal",
+        "Lukáš Pravda",
+        "Radka Svobodová Vařeková"
       ],
       "sc:description": "Database of validation results for ligands and non-standard residues in the Protein Data Bank.",
       "sc:featureList": {
@@ -80,9 +84,9 @@
       "sc:isAccessibleForFree": true,
       "sc:name": "ValidatorDB",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": [
         "ELIXIR-CZ",
@@ -90,27 +94,16 @@
       ],
       "sc:softwareHelp": [
         {
-          "@id": "http://webchem.ncbr.muni.cz/Wiki/ValidatorDB:UserManual"
+          "@id": "http://nar.oxfordjournals.org/citmgr?gca=nar%3B43%2FD1%2FD369"
         },
         {
-          "@id": "http://nar.oxfordjournals.org/citmgr?gca=nar%3B43%2FD1%2FD369"
+          "@id": "http://webchem.ncbr.muni.cz/Wiki/ValidatorDB:UserManual"
         }
       ],
       "sc:url": "http://webchem.ncbr.muni.cz/Platform/ValidatorDB"
     },
     {
-      "@id": "_:N5947ae5614c144dcb52c04f79feca26b",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1539"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Protein structural quality report"
-    },
-    {
-      "@id": "_:N99601a8b1b814cd98ca2bafdfce1748c",
+      "@id": "_:N2b5b0d928e994f5fbec695bd05d337b0",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1127"
@@ -121,8 +114,15 @@
       "sc:name": "PDB ID"
     },
     {
-      "@id": "https://doi.org/10.1093/nar/gku1118",
-      "@type": "sc:CreativeWork"
+      "@id": "_:Naa60b5453df948989cfaa6a5cf3ab45e",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1539"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Protein structural quality report"
     }
   ]
 }

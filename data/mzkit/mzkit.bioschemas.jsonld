@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,37 +40,37 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N83c706e2dc9c47ccb7e6b07ff87f7884"
+          "@id": "_:N57dd8c3fb7af4ae4b08f54046211dad8"
         },
         {
-          "@id": "_:N042da49f215c434db533574c1dc1618c"
+          "@id": "_:N3701916d0296445fa3d3eca6d13aa571"
         },
         {
-          "@id": "_:Na1daf8f236a642af8a812f67840c9f7c"
+          "@id": "_:N9b8962e7da8246fa8fcc291a7a239366"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N8371382f66dc4d9a96291228272cab5c"
+          "@id": "_:N984157feaac4477f818d5d2a984e9e02"
         },
         {
-          "@id": "_:N7c4e6c958212481ba1573f0127fd30b0"
+          "@id": "_:Nfcae7ea036d544e095f4740283dba5e3"
         },
         {
-          "@id": "_:N3dc9e944551647a095c8a7cb7a15f60d"
+          "@id": "_:N58ee93487375406abef2f3308f601008"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Desktop application",
       "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_3370"
+        },
         {
           "@id": "edam:topic_3382"
         },
         {
           "@id": "edam:topic_3172"
-        },
-        {
-          "@id": "edam:topic_3370"
         }
       ],
       "sc:citation": {
@@ -79,16 +79,16 @@
       "sc:description": "Mzkit is an open source raw data file toolkit for mass spectrometry data visualization and analysis, provides by the BioNovoGene. The features of mzkit inlcudes: raw data file content viewer(XIC/TIC/Mass spectrum plot), MS-imaging, ms-spectrum tree analysis, build molecule network, formula de-novo search and de-novo annotation.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3694"
-        },
-        {
           "@id": "edam:operation_3432"
         },
         {
-          "@id": "edam:operation_3214"
+          "@id": "edam:operation_3694"
         },
         {
           "@id": "edam:operation_3928"
+        },
+        {
+          "@id": "edam:operation_3214"
         }
       ],
       "sc:isAccessibleForFree": true,
@@ -99,90 +99,79 @@
         "@id": "https://mzkit.org/"
       },
       "sc:softwareVersion": [
-        "v1.0.0.2-beta",
-        "v1.0.0.1-beta"
+        "v1.0.0.1-beta",
+        "v1.0.0.2-beta"
       ],
       "sc:url": "https://mzkit.org/"
     },
     {
-      "@id": "_:N83c706e2dc9c47ccb7e6b07ff87f7884",
+      "@id": "_:N57dd8c3fb7af4ae4b08f54046211dad8",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2536"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_3654"
+          "@id": "edam:format_3839"
         },
         {
-          "@id": "edam:format_3839"
+          "@id": "edam:format_3682"
         },
         {
           "@id": "edam:format_3244"
         },
         {
-          "@id": "edam:format_3682"
+          "@id": "edam:format_3654"
         }
       ],
       "sc:name": "Mass spectrometry data"
     },
     {
-      "@id": "_:N042da49f215c434db533574c1dc1618c",
+      "@id": "_:N3701916d0296445fa3d3eca6d13aa571",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2536"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_3244"
+          "@id": "edam:format_3839"
         },
         {
           "@id": "edam:format_3682"
         },
         {
-          "@id": "edam:format_3654"
+          "@id": "edam:format_3244"
         },
         {
-          "@id": "edam:format_3839"
+          "@id": "edam:format_3654"
         }
       ],
       "sc:name": "Mass spectrometry data"
     },
     {
-      "@id": "_:Na1daf8f236a642af8a812f67840c9f7c",
+      "@id": "_:N9b8962e7da8246fa8fcc291a7a239366",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2536"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_3654"
+          "@id": "edam:format_3839"
         },
         {
-          "@id": "edam:format_3839"
+          "@id": "edam:format_3682"
         },
         {
           "@id": "edam:format_3244"
         },
         {
-          "@id": "edam:format_3682"
+          "@id": "edam:format_3654"
         }
       ],
       "sc:name": "Mass spectrometry data"
     },
     {
-      "@id": "_:N8371382f66dc4d9a96291228272cab5c",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2600"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2013"
-      },
-      "sc:name": "Pathway or network"
-    },
-    {
-      "@id": "_:N7c4e6c958212481ba1573f0127fd30b0",
+      "@id": "_:N984157feaac4477f818d5d2a984e9e02",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2968"
@@ -198,17 +187,28 @@
       "sc:name": "Image"
     },
     {
-      "@id": "_:N3dc9e944551647a095c8a7cb7a15f60d",
+      "@id": "_:Nfcae7ea036d544e095f4740283dba5e3",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2600"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2013"
+      },
+      "sc:name": "Pathway or network"
+    },
+    {
+      "@id": "_:N58ee93487375406abef2f3308f601008",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_3603"
+          "@id": "edam:format_3579"
         },
         {
-          "@id": "edam:format_3579"
+          "@id": "edam:format_3603"
         }
       ],
       "sc:name": "Plot"

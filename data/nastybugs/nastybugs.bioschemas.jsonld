@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,20 +36,16 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.12688/f1000research.12781.1",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/nastybugs",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
-        "Steve Tsang",
-        "Greg Fedewa"
+        "Greg Fedewa",
+        "Steve Tsang"
       ],
       "bsc:input": {
-        "@id": "_:N47ce3e9ada424c3997cad424358d3d1d"
+        "@id": "_:N5fa51d6e99a54cd08966094a8d64df7a"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3301"
@@ -69,7 +65,7 @@
       "sc:url": "https://github.com/NCBI-Hackathons/MetagenomicAntibioticResistance"
     },
     {
-      "@id": "_:N47ce3e9ada424c3997cad424358d3d1d",
+      "@id": "_:N5fa51d6e99a54cd08966094a8d64df7a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
@@ -78,6 +74,10 @@
         "@id": "edam:format_1930"
       },
       "sc:name": "Sequence"
+    },
+    {
+      "@id": "https://doi.org/10.12688/f1000research.12781.1",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

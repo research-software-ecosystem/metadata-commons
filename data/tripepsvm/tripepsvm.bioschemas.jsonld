@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,17 +39,17 @@
       "@id": "https://bio.tools/tripepsvm",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Ne0aa7ea24c27464ead1836fd2cc47ba7"
+        "@id": "_:Nddde8eeee66548649d27bed594c2f51f"
       },
       "bsc:output": [
         {
-          "@id": "_:Na8741def9390409086e43cb348cef1ad"
+          "@id": "_:Nd7540db2d99c4a4e9906cf6821a846ea"
         },
         {
-          "@id": "_:N4730f2194a2f46858835f822549cd46f"
+          "@id": "_:N3076ef28cfc34cd1a48250c4384d51d6"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0128"
@@ -61,32 +61,13 @@
       "sc:isAccessibleForFree": true,
       "sc:name": "TriPepSVM",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:url": "https://github.com/marsicoLab/TriPepSVM"
     },
     {
-      "@id": "_:Na8741def9390409086e43cb348cef1ad",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0989"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Protein identifier"
-    },
-    {
-      "@id": "_:N4730f2194a2f46858835f822549cd46f",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1772"
-      },
-      "sc:name": "Score"
-    },
-    {
-      "@id": "_:Ne0aa7ea24c27464ead1836fd2cc47ba7",
+      "@id": "_:Nddde8eeee66548649d27bed594c2f51f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
@@ -95,6 +76,25 @@
         "@id": "edam:format_1929"
       },
       "sc:name": "Sequence"
+    },
+    {
+      "@id": "_:Nd7540db2d99c4a4e9906cf6821a846ea",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1772"
+      },
+      "sc:name": "Score"
+    },
+    {
+      "@id": "_:N3076ef28cfc34cd1a48250c4384d51d6",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0989"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Protein identifier"
     }
   ]
 }

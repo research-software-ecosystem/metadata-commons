@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,28 +36,32 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.18129/B9.bioc.AIMS",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/aims",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N15a3bcd9773a40aa9af0ef2614a960a7"
+        "@id": "_:N857d70353e51416fb85eb5d61ae07bc2"
       },
       "bsc:output": {
-        "@id": "_:N37ec1b8246594f08ba24f9aa8fbfa378"
+        "@id": "_:N05db77464d364d378076ae778c8c5efb"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_2269"
-        },
         {
           "@id": "edam:topic_0203"
         },
         {
           "@id": "edam:topic_2640"
+        },
+        {
+          "@id": "edam:topic_2269"
         }
       ],
       "sc:citation": {
@@ -70,8 +74,8 @@
       "sc:license": "Artistic-2.0",
       "sc:name": "AIMS",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -81,18 +85,7 @@
       "sc:url": "https://bioconductor.org/packages/AIMS"
     },
     {
-      "@id": "_:N37ec1b8246594f08ba24f9aa8fbfa378",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1622"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Disease report"
-    },
-    {
-      "@id": "_:N15a3bcd9773a40aa9af0ef2614a960a7",
+      "@id": "_:N857d70353e51416fb85eb5d61ae07bc2",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0928"
@@ -103,8 +96,15 @@
       "sc:name": "Gene expression profile"
     },
     {
-      "@id": "https://doi.org/10.18129/B9.bioc.AIMS",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N05db77464d364d378076ae778c8c5efb",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1622"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Disease report"
     }
   ]
 }

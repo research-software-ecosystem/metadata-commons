@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,19 +36,15 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1186/s12859-016-1241-0",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/systempiper",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N6545eb33cc2f4ddebd4b586d32043fff"
+        "@id": "_:Nf90f0f1684f24e5e99993430aa816cd8"
       },
       "bsc:output": {
-        "@id": "_:Nbb9ff731b7964c5a92c79213f094d91d"
+        "@id": "_:N828f1a8908a44358954a5b8e5f946853"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
@@ -76,9 +72,9 @@
       "sc:license": "Artistic-2.0",
       "sc:name": "systemPipeR",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://bioconductor.org/packages/systemPipeR"
@@ -87,7 +83,29 @@
       "sc:url": "https://bioconductor.org/packages/systemPipeR"
     },
     {
-      "@id": "_:Nbb9ff731b7964c5a92c79213f094d91d",
+      "@id": "_:Nf90f0f1684f24e5e99993430aa816cd8",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0849"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2572"
+        },
+        {
+          "@id": "edam:format_3020"
+        },
+        {
+          "@id": "edam:format_1930"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Sequence record"
+    },
+    {
+      "@id": "_:N828f1a8908a44358954a5b8e5f946853",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1383"
@@ -103,26 +121,8 @@
       "sc:name": "Sequence alignment (nucleic acid)"
     },
     {
-      "@id": "_:N6545eb33cc2f4ddebd4b586d32043fff",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0849"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_1930"
-        },
-        {
-          "@id": "edam:format_3020"
-        },
-        {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_2572"
-        }
-      ],
-      "sc:name": "Sequence record"
+      "@id": "https://doi.org/10.1186/s12859-016-1241-0",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

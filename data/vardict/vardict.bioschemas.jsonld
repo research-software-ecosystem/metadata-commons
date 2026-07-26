@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,21 +36,25 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/gkw227",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/vardict",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nc6517a08b07844ceb9aaa13736411b90"
+        "@id": "_:N81223765f7e144969a4d65f9de1e8b36"
       },
       "bsc:output": {
-        "@id": "_:Nf58e2cbc9ded495da902e97e48dfb722"
+        "@id": "_:Naf3dd2764372451ebe29bb62d746ff48"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:citation": [
+        "pubmed:27060149",
+        "pmcid:PMC4914105",
         {
           "@id": "https://doi.org/10.1093/nar/gkw227"
-        },
-        "pmcid:PMC4914105",
-        "pubmed:27060149"
+        }
       ],
       "sc:description": "VarDict is an ultra sensitive variant caller for both single and paired sample variant calling from BAM files. VarDict implements several novel features such as amplicon bias aware variant calling from targeted sequencing experiments, rescue of long indels by realigning bwa soft clipped reads and better scalability than many Java based variant callers.",
       "sc:featureList": {
@@ -60,7 +64,7 @@
       "sc:url": "https://github.com/AstraZeneca-NGS/VarDict"
     },
     {
-      "@id": "_:Nc6517a08b07844ceb9aaa13736411b90",
+      "@id": "_:N81223765f7e144969a4d65f9de1e8b36",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0863"
@@ -71,7 +75,7 @@
       "sc:name": "Sequence alignment"
     },
     {
-      "@id": "_:Nf58e2cbc9ded495da902e97e48dfb722",
+      "@id": "_:Naf3dd2764372451ebe29bb62d746ff48",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3498"
@@ -80,10 +84,6 @@
         "@id": "edam:format_3016"
       },
       "sc:name": "Sequence variations"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gkw227",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

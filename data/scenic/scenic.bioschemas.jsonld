@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -47,19 +47,19 @@
       "@id": "https://bio.tools/scenic",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N800c19443b9440e78b8ee5b49d42de51"
+        "@id": "_:N01cb98f582a8493594087ed0952c4f19"
       },
       "bsc:output": {
-        "@id": "_:Nc6e634644af94b9a8e1bc52a4dbcf558"
+        "@id": "_:N3532d633a1194a9797b96c0909b40f35"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Plug-in",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0602"
+          "@id": "edam:topic_0203"
         },
         {
-          "@id": "edam:topic_0203"
+          "@id": "edam:topic_0602"
         },
         {
           "@id": "edam:topic_3170"
@@ -79,10 +79,10 @@
       "sc:description": "This package implements the GENIE3 algorithm for inferring gene regulatory networks from expression data.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_1781"
+          "@id": "edam:operation_2495"
         },
         {
-          "@id": "edam:operation_2495"
+          "@id": "edam:operation_1781"
         },
         {
           "@id": "edam:operation_3680"
@@ -92,8 +92,8 @@
       "sc:license": "GPL-2.0-or-later",
       "sc:name": "SCENIC",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -103,18 +103,7 @@
       "sc:url": "https://bioconductor.org/packages/GENIE3"
     },
     {
-      "@id": "_:Nc6e634644af94b9a8e1bc52a4dbcf558",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2048"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2032"
-      },
-      "sc:name": "Report"
-    },
-    {
-      "@id": "_:N800c19443b9440e78b8ee5b49d42de51",
+      "@id": "_:N01cb98f582a8493594087ed0952c4f19",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3112"
@@ -123,6 +112,17 @@
         "@id": "edam:format_2330"
       },
       "sc:name": "Gene expression matrix"
+    },
+    {
+      "@id": "_:N3532d633a1194a9797b96c0909b40f35",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2048"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2032"
+      },
+      "sc:name": "Report"
     }
   ]
 }

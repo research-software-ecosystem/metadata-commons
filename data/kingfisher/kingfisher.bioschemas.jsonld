@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,30 +39,30 @@
       "@id": "https://bio.tools/kingfisher",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N6aff679f98cd426394c20c28ec7da7a2"
+        "@id": "_:Ncf9ee70b29be4e4b867697e44ce44db6"
       },
       "bsc:output": {
-        "@id": "_:Ne35977ec890e4c298702ac08ac556a68"
+        "@id": "_:N37013621a5d7459784d04578452a75f7"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0077"
       },
       "sc:description": "Easier download/extract of FASTA/Q read data and metadata from the ENA, NCBI, AWS or GCP.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0349"
+          "@id": "edam:operation_2422"
         },
         {
-          "@id": "edam:operation_2422"
+          "@id": "edam:operation_0349"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "GPL-3.0",
       "sc:name": "Kingfisher",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "https://wwood.github.io/kingfisher-download/"
@@ -70,7 +70,15 @@
       "sc:url": "https://github.com/wwood/kingfisher-download"
     },
     {
-      "@id": "_:Ne35977ec890e4c298702ac08ac556a68",
+      "@id": "_:Ncf9ee70b29be4e4b867697e44ce44db6",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2091"
+      },
+      "sc:name": "Accession"
+    },
+    {
+      "@id": "_:N37013621a5d7459784d04578452a75f7",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2977"
@@ -87,14 +95,6 @@
         }
       ],
       "sc:name": "Nucleic acid sequence"
-    },
-    {
-      "@id": "_:N6aff679f98cd426394c20c28ec7da7a2",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2091"
-      },
-      "sc:name": "Accession"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,11 +39,17 @@
       "@id": "https://bio.tools/thex",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N4c6a8aa31dc94faa809a3ce761e6a884"
+        "@id": "_:N4c1bebe015d44b06813d5016758cf6d1"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_3315"
+        },
+        {
+          "@id": "edam:topic_0621"
+        },
         {
           "@id": "edam:topic_0194"
         },
@@ -52,12 +58,6 @@
         },
         {
           "@id": "edam:topic_0769"
-        },
-        {
-          "@id": "edam:topic_3315"
-        },
-        {
-          "@id": "edam:topic_0621"
         }
       ],
       "sc:citation": {
@@ -66,16 +66,16 @@
       "sc:description": "Tree House Explorer (THEx) is a novel genome browser for exploring phylogenetic and genomic data in one succinct place.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0567"
-        },
-        {
-          "@id": "edam:operation_0325"
+          "@id": "edam:operation_3208"
         },
         {
           "@id": "edam:operation_0323"
         },
         {
-          "@id": "edam:operation_3208"
+          "@id": "edam:operation_0325"
+        },
+        {
+          "@id": "edam:operation_0567"
         },
         {
           "@id": "edam:operation_3216"
@@ -85,14 +85,14 @@
       "sc:license": "MIT",
       "sc:name": "THEx",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:url": "https://github.com/harris-2374/THEx"
     },
     {
-      "@id": "_:N4c6a8aa31dc94faa809a3ce761e6a884",
+      "@id": "_:N4c1bebe015d44b06813d5016758cf6d1",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"

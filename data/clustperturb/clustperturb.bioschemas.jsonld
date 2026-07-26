@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -42,13 +42,13 @@
     {
       "@id": "https://bio.tools/clustperturb",
       "@type": "sc:SoftwareApplication",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0121"
+          "@id": "edam:topic_0602"
         },
         {
-          "@id": "edam:topic_0602"
+          "@id": "edam:topic_0121"
         },
         {
           "@id": "edam:topic_3168"
@@ -60,13 +60,13 @@
       "sc:description": "On the robustness of graph-based clustering to random network alterations.\n\nclust.perturb is an R package designed to test the robustness of graph-based clusters by randomly rewiring a portion of the underlying network and reclustering. Robust clusters “stick together” even after network rewiring, while non-robust clusters do not. Robustness is quantified using maximum Jaccard index.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3928"
-        },
-        {
           "@id": "edam:operation_3432"
         },
         {
           "@id": "edam:operation_3925"
+        },
+        {
+          "@id": "edam:operation_3928"
         }
       ],
       "sc:license": "MIT",

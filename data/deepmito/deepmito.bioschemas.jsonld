@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,23 +36,15 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btz512",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1186/s12859-020-03617-z",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/DeepMito",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N9b59338c54f84773bde052e35c2c65f8"
+        "@id": "_:N14b436c89cbb4075947df1cc329cacd3"
       },
       "bsc:output": {
-        "@id": "_:Nc7c2efb280634aa9b513dfe736aa8651"
+        "@id": "_:N3aa8936500254e4cb966745439684f26"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Web application"
@@ -61,12 +53,12 @@
         "@id": "edam:topic_0140"
       },
       "sc:citation": [
-        "pubmed:32938368",
+        "pubmed:31218353",
         "pmcid:PMC6956790",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btz512"
         },
-        "pubmed:31218353",
+        "pubmed:32938368",
         "pmcid:PMC7493403",
         {
           "@id": "https://doi.org/10.1186/s12859-020-03617-z"
@@ -75,19 +67,19 @@
       "sc:description": "Predictor of protein sub-mitochondrial localization based on deep learning",
       "sc:featureList": [
         {
-          "@id": "edam:operation_2489"
+          "@id": "edam:operation_3672"
         },
         {
-          "@id": "edam:operation_3672"
+          "@id": "edam:operation_2489"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "GPL-3.0",
       "sc:name": "DeepMito",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://github.com/BolognaBiocomp/deepmito"
@@ -96,7 +88,18 @@
       "sc:url": "http://busca.biocomp.unibo.it/deepmito"
     },
     {
-      "@id": "_:Nc7c2efb280634aa9b513dfe736aa8651",
+      "@id": "_:N14b436c89cbb4075947df1cc329cacd3",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2974"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2200"
+      },
+      "sc:name": "Protein sequence (raw)"
+    },
+    {
+      "@id": "_:N3aa8936500254e4cb966745439684f26",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2955"
@@ -107,15 +110,12 @@
       "sc:name": "Sequence report"
     },
     {
-      "@id": "_:N9b59338c54f84773bde052e35c2c65f8",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2974"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2200"
-      },
-      "sc:name": "Protein sequence (raw)"
+      "@id": "https://doi.org/10.1186/s12859-020-03617-z",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1093/bioinformatics/btz512",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

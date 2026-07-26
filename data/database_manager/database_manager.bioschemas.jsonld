@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,43 +40,43 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Nabbed85d83f84731abafcc39708d7db7"
+          "@id": "_:N64b00931ad9f421eb633a4f08115b67b"
         },
         {
-          "@id": "_:N7b71628f869d414d92cb24499bec8261"
+          "@id": "_:Ncd8c59fab73d40b08e4fa480fac4a17c"
         },
         {
-          "@id": "_:N408f9821079d4f449ab2ffa7e58c7ffe"
+          "@id": "_:Na14aca75fcf84d1d8c4a518f83b7e1e2"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N3d0c78fd924f4c17ab842a98ff6c0505"
+          "@id": "_:Ne6b9682cab8a4e11b17f7357224b03a8"
         },
         {
-          "@id": "_:Nfd5c2a3c055143909be78883b7fa926c"
+          "@id": "_:Nbd83028feae9493fae47223462674471"
         },
         {
-          "@id": "_:N014ad383f17a4262ade404f73d99bed3"
+          "@id": "_:N755b3a721aeb4a198e6fc3810852e7dc"
         },
         {
-          "@id": "_:N1308c74fbbd94a4a93d1a934a0e662c2"
+          "@id": "_:Nacfd40192378423b86df8a498791b2a6"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Desktop application",
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_3520"
-        },
         {
           "@id": "edam:topic_3489"
         },
         {
-          "@id": "edam:topic_0080"
+          "@id": "edam:topic_0121"
         },
         {
-          "@id": "edam:topic_0121"
+          "@id": "edam:topic_3520"
+        },
+        {
+          "@id": "edam:topic_0080"
         },
         {
           "@id": "edam:topic_3041"
@@ -93,9 +93,9 @@
       ],
       "sc:name": "Database Manager",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://pappso.inra.fr/bioinfo/pdm/"
@@ -103,18 +103,7 @@
       "sc:url": "http://pappso.inra.fr/bioinfo/pdm/"
     },
     {
-      "@id": "_:Nabbed85d83f84731abafcc39708d7db7",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0957"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1929"
-      },
-      "sc:name": "Database metadata"
-    },
-    {
-      "@id": "_:N7b71628f869d414d92cb24499bec8261",
+      "@id": "_:N64b00931ad9f421eb633a4f08115b67b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3494"
@@ -125,7 +114,7 @@
       "sc:name": "DNA sequence"
     },
     {
-      "@id": "_:N408f9821079d4f449ab2ffa7e58c7ffe",
+      "@id": "_:Ncd8c59fab73d40b08e4fa480fac4a17c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3494"
@@ -136,7 +125,7 @@
       "sc:name": "DNA sequence"
     },
     {
-      "@id": "_:N3d0c78fd924f4c17ab842a98ff6c0505",
+      "@id": "_:Na14aca75fcf84d1d8c4a518f83b7e1e2",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0957"
@@ -147,7 +136,7 @@
       "sc:name": "Database metadata"
     },
     {
-      "@id": "_:Nfd5c2a3c055143909be78883b7fa926c",
+      "@id": "_:Ne6b9682cab8a4e11b17f7357224b03a8",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0581"
@@ -158,18 +147,18 @@
       "sc:name": "Database"
     },
     {
-      "@id": "_:N014ad383f17a4262ade404f73d99bed3",
+      "@id": "_:Nbd83028feae9493fae47223462674471",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_1057"
+        "@id": "edam:data_0957"
       },
       "sc:encodingFormat": {
         "@id": "edam:format_1929"
       },
-      "sc:name": "Sequence database name"
+      "sc:name": "Database metadata"
     },
     {
-      "@id": "_:N1308c74fbbd94a4a93d1a934a0e662c2",
+      "@id": "_:N755b3a721aeb4a198e6fc3810852e7dc",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1674"
@@ -178,6 +167,17 @@
         "@id": "edam:format_1929"
       },
       "sc:name": "Sequence database cross-references"
+    },
+    {
+      "@id": "_:Nacfd40192378423b86df8a498791b2a6",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1057"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "Sequence database name"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,16 +36,20 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/gkv1157",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/ensembl_genomes_fungi_id_history_converter",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Ensembl Genomes webteam",
       "bsc:input": {
-        "@id": "_:Nc9b05ee9cda3427e8bc91d308329648e"
+        "@id": "_:Nc196ecf7266c49dc892173de1d14bf66"
       },
       "bsc:output": {
-        "@id": "_:N90082da9f0de40f4a19be83571fe924b"
+        "@id": "_:N6478017e36524089b607b0cdf4ebe9b3"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3345"
@@ -64,8 +68,8 @@
       },
       "sc:name": "Ensembl Genomes Fungi ID history converter",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:provider": "EMBL-EBI",
@@ -81,7 +85,7 @@
       "sc:url": "http://fungi.ensembl.org/tools.html"
     },
     {
-      "@id": "_:Nc9b05ee9cda3427e8bc91d308329648e",
+      "@id": "_:Nc196ecf7266c49dc892173de1d14bf66",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2610"
@@ -89,16 +93,12 @@
       "sc:name": "Ensembl ID"
     },
     {
-      "@id": "_:N90082da9f0de40f4a19be83571fe924b",
+      "@id": "_:N6478017e36524089b607b0cdf4ebe9b3",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2610"
       },
       "sc:name": "Ensembl ID"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gkv1157",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

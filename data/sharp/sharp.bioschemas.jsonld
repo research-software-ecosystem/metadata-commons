@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,30 +36,26 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1101/GR.254557.119",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/sharp",
       "@type": "sc:SoftwareApplication",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3170"
+          "@id": "edam:topic_2229"
         },
         {
           "@id": "edam:topic_3474"
         },
         {
-          "@id": "edam:topic_2229"
+          "@id": "edam:topic_3170"
         },
         {
           "@id": "edam:topic_3308"
         }
       ],
       "sc:citation": [
-        "pmcid:PMC7050522",
         "pubmed:31992615",
+        "pmcid:PMC7050522",
         {
           "@id": "https://doi.org/10.1101/GR.254557.119"
         }
@@ -70,14 +66,18 @@
           "@id": "edam:operation_3432"
         },
         {
-          "@id": "edam:operation_3891"
+          "@id": "edam:operation_3935"
         },
         {
-          "@id": "edam:operation_3935"
+          "@id": "edam:operation_3891"
         }
       ],
       "sc:name": "SHARP",
       "sc:url": "https://github.com/shibiaowan/SHARP"
+    },
+    {
+      "@id": "https://doi.org/10.1101/GR.254557.119",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

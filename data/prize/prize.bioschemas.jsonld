@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,33 +40,33 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Daryanaz Dargahi",
       "bsc:input": {
-        "@id": "_:Nf673d34589b24892be499886bc2fd7b7"
+        "@id": "_:N5cabde58520b418ba1560ac62d6d314f"
       },
       "bsc:output": [
         {
-          "@id": "_:Nbaf4dc5d1223499d9ecc46744daffb8d"
+          "@id": "_:N960fd4ea822242bcb9e66abae4355cad"
         },
         {
-          "@id": "_:Nd6eed4a37a6c4c6480bfd505b4043d73"
+          "@id": "_:N83692d9454654600ad609410f58c4c66"
         },
         {
-          "@id": "_:Na96beb3efdd24df4b1c1842b11da291e"
+          "@id": "_:Ndda2597cf2cf490792f3ef7bef6a4455"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_2229"
+        },
         {
           "@id": "edam:topic_0203"
         },
         {
           "@id": "edam:topic_3170"
-        },
-        {
-          "@id": "edam:topic_2229"
         }
       ],
       "sc:citation": [
@@ -83,8 +83,8 @@
       "sc:license": "Artistic-2.0",
       "sc:name": "Prize",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -94,7 +94,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/Prize.html"
     },
     {
-      "@id": "_:Nf673d34589b24892be499886bc2fd7b7",
+      "@id": "_:N5cabde58520b418ba1560ac62d6d314f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2082"
@@ -110,52 +110,52 @@
       "sc:name": "Matrix"
     },
     {
-      "@id": "_:Nbaf4dc5d1223499d9ecc46744daffb8d",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2884"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3033"
-        },
-        {
-          "@id": "edam:format_3547"
-        }
-      ],
-      "sc:name": "Plot"
-    },
-    {
-      "@id": "_:Nd6eed4a37a6c4c6480bfd505b4043d73",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1772"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3033"
-        },
-        {
-          "@id": "edam:format_3547"
-        }
-      ],
-      "sc:name": "Score"
-    },
-    {
-      "@id": "_:Na96beb3efdd24df4b1c1842b11da291e",
+      "@id": "_:N960fd4ea822242bcb9e66abae4355cad",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1669"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_3033"
+          "@id": "edam:format_3547"
         },
         {
-          "@id": "edam:format_3547"
+          "@id": "edam:format_3033"
         }
       ],
       "sc:name": "P-value"
+    },
+    {
+      "@id": "_:N83692d9454654600ad609410f58c4c66",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2884"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_3033"
+        }
+      ],
+      "sc:name": "Plot"
+    },
+    {
+      "@id": "_:Ndda2597cf2cf490792f3ef7bef6a4455",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1772"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_3033"
+        }
+      ],
+      "sc:name": "Score"
     },
     {
       "@id": "https://doi.org/10.1038/nmeth.3252",

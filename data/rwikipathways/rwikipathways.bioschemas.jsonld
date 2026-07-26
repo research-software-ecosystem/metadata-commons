@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,14 +39,17 @@
       "@id": "https://bio.tools/rwikipathways",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Naac109b616d04ed29250e4ff7ff6c6f2"
+        "@id": "_:N0aa0c3b041ab4ecdb7ea9bbcd4bf0754"
       },
       "bsc:output": {
-        "@id": "_:N6ff02564f43d4bbca92db994e047ca3d"
+        "@id": "_:N35da15685e984c48ad773adf49ae4091"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Library",
       "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_0091"
+        },
         {
           "@id": "edam:topic_3172"
         },
@@ -54,16 +57,13 @@
           "@id": "edam:topic_0602"
         },
         {
-          "@id": "edam:topic_0091"
-        },
-        {
-          "@id": "edam:topic_3308"
+          "@id": "edam:topic_0121"
         },
         {
           "@id": "edam:topic_3325"
         },
         {
-          "@id": "edam:topic_0121"
+          "@id": "edam:topic_3308"
         }
       ],
       "sc:author": [
@@ -78,9 +78,9 @@
       "sc:license": "MIT",
       "sc:name": "rWikiPathways",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://bioconductor.org/packages/rWikiPathways"
@@ -89,7 +89,15 @@
       "sc:url": "https://bioconductor.org/packages/rWikiPathways"
     },
     {
-      "@id": "_:N6ff02564f43d4bbca92db994e047ca3d",
+      "@id": "_:N0aa0c3b041ab4ecdb7ea9bbcd4bf0754",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3952"
+      },
+      "sc:name": "Pathway ID (WikiPathways)"
+    },
+    {
+      "@id": "_:N35da15685e984c48ad773adf49ae4091",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2600"
@@ -98,14 +106,6 @@
         "@id": "edam:format_3657"
       },
       "sc:name": "Pathway or network"
-    },
-    {
-      "@id": "_:Naac109b616d04ed29250e4ff7ff6c6f2",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3952"
-      },
-      "sc:name": "Pathway ID (WikiPathways)"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,18 +36,22 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1186/s12859-016-1051-4",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/gtrellis",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Na8309c6bd0ed4aae82aad5afdf8da551"
+        "@id": "_:Ndedc2fcd7b9e49698cda1282276b3dab"
       },
       "bsc:output": {
-        "@id": "_:Nb8de1b924e064ce6aef69a30e5c48e5d"
+        "@id": "_:N11df201b38064344a7730183f3f04dd3"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
         {
@@ -67,17 +71,17 @@
       "sc:description": "Genome level Trellis graph visualizes genomic data conditioned by genomic categories (e.g. chromosomes). For each genomic category, multiple dimensional data which are represented as tracks describe different features from different aspects. This package provides high flexibility to arrange genomic categories and to add self-defined graphics in the plot.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3208"
+          "@id": "edam:operation_0362"
         },
         {
-          "@id": "edam:operation_0362"
+          "@id": "edam:operation_3208"
         }
       ],
       "sc:license": "MIT",
       "sc:name": "gtrellis",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -87,7 +91,7 @@
       "sc:url": "https://bioconductor.org/packages/gtrellis"
     },
     {
-      "@id": "_:Na8309c6bd0ed4aae82aad5afdf8da551",
+      "@id": "_:Ndedc2fcd7b9e49698cda1282276b3dab",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1017"
@@ -98,7 +102,7 @@
       "sc:name": "Sequence range"
     },
     {
-      "@id": "_:Nb8de1b924e064ce6aef69a30e5c48e5d",
+      "@id": "_:N11df201b38064344a7730183f3f04dd3",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3002"
@@ -107,10 +111,6 @@
         "@id": "edam:format_2919"
       },
       "sc:name": "Annotation track"
-    },
-    {
-      "@id": "https://doi.org/10.1186/s12859-016-1051-4",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

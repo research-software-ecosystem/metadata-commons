@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -41,21 +41,21 @@
       "biotools:primaryContact": "Ira Cook",
       "bsc:input": [
         {
-          "@id": "_:N161032d7b6924827b728ae7beedf858e"
+          "@id": "_:Ne9f1e4fcc5bf443f99b88d1e28660a27"
         },
         {
-          "@id": "_:Ndab846e9dbeb443fb73ccf873f480863"
+          "@id": "_:N5d117136dec34fd79eaec4734ebc9919"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N8ad4a8e992e94f4c8e6e674f918925e2"
+          "@id": "_:Nd2e01fbb982849279f958b8180c633ba"
         },
         {
-          "@id": "_:N4f1b371aa157463293c36bcfa4d66ed2"
+          "@id": "_:N0eb602aca35d47a9b02c034f4807f582"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0121"
@@ -63,10 +63,10 @@
       "sc:description": "Protk is a suite of tools for proteomics. It aims to present a simple and consistent command-line interface across otherwise disparate third party tools.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3631"
+          "@id": "edam:operation_2409"
         },
         {
-          "@id": "edam:operation_2409"
+          "@id": "edam:operation_3631"
         },
         {
           "@id": "edam:operation_3630"
@@ -75,8 +75,8 @@
       "sc:license": "MIT",
       "sc:name": "protk",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "https://github.com/iracooke/protk"
@@ -84,37 +84,18 @@
       "sc:url": "https://github.com/iracooke/protk"
     },
     {
-      "@id": "_:N8ad4a8e992e94f4c8e6e674f918925e2",
+      "@id": "_:Ne9f1e4fcc5bf443f99b88d1e28660a27",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0945"
       },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3655"
-        },
-        {
-          "@id": "edam:format_3247"
-        },
-        {
-          "@id": "edam:format_3475"
-        }
-      ],
+      "sc:encodingFormat": {
+        "@id": "edam:format_3655"
+      },
       "sc:name": "Peptide identification"
     },
     {
-      "@id": "_:N4f1b371aa157463293c36bcfa4d66ed2",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2603"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3475"
-      },
-      "sc:name": "Gene expression data"
-    },
-    {
-      "@id": "_:N161032d7b6924827b728ae7beedf858e",
+      "@id": "_:N5d117136dec34fd79eaec4734ebc9919",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1233"
@@ -125,14 +106,33 @@
       "sc:name": "Sequence set (protein)"
     },
     {
-      "@id": "_:Ndab846e9dbeb443fb73ccf873f480863",
+      "@id": "_:Nd2e01fbb982849279f958b8180c633ba",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2603"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3475"
+      },
+      "sc:name": "Gene expression data"
+    },
+    {
+      "@id": "_:N0eb602aca35d47a9b02c034f4807f582",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0945"
       },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3655"
-      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3475"
+        },
+        {
+          "@id": "edam:format_3247"
+        },
+        {
+          "@id": "edam:format_3655"
+        }
+      ],
       "sc:name": "Peptide identification"
     }
   ]

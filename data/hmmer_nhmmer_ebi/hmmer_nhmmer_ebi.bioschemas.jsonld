@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,38 +39,38 @@
       "@id": "https://bio.tools/hmmer_nhmmer_ebi",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nf74edd6d1c6a41c9bd3dee2ce76a90e2"
+        "@id": "_:Nc1762dc38e544deb9ce6131c6c627821"
       },
       "bsc:output": {
-        "@id": "_:Ncda0249193534532991c656bf5cf2253"
+        "@id": "_:Ne6570e9c15d349d2b340896954a55471"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web application",
         "Web API",
+        "Web application",
         "Web service"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0080"
+          "@id": "edam:topic_0622"
         },
         {
-          "@id": "edam:topic_0622"
+          "@id": "edam:topic_0080"
         }
       ],
       "sc:description": "HMMER3 nhmmer is used to search one or more nucleotide sequences against a nucleotide sequence database.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0346"
+          "@id": "edam:operation_0292"
         },
         {
-          "@id": "edam:operation_0292"
+          "@id": "edam:operation_0346"
         }
       ],
       "sc:name": "HMMER nhmmer (EBI)",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": [
@@ -85,7 +85,7 @@
       "sc:url": "https://www.ebi.ac.uk/jdispatcher/sss/hmmer3_nhmmer"
     },
     {
-      "@id": "_:Nf74edd6d1c6a41c9bd3dee2ce76a90e2",
+      "@id": "_:Nc1762dc38e544deb9ce6131c6c627821",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
@@ -93,7 +93,7 @@
       "sc:name": "Sequence"
     },
     {
-      "@id": "_:Ncda0249193534532991c656bf5cf2253",
+      "@id": "_:Ne6570e9c15d349d2b340896954a55471",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0857"

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -38,20 +38,20 @@
     {
       "@id": "https://bio.tools/antibody_registry",
       "@type": "sc:SoftwareApplication",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Database portal",
         "Web application"
       ],
       "sc:applicationSubCategory": [
         {
+          "@id": "edam:topic_3297"
+        },
+        {
           "@id": "edam:topic_2830"
         },
         {
           "@id": "edam:topic_3068"
-        },
-        {
-          "@id": "edam:topic_3297"
         }
       ],
       "sc:citation": [
@@ -64,21 +64,21 @@
       "sc:description": "The Antibody Registry is a public, open database that enables citation of antibodies by providing a persistent record for any antibody-based reagent used in a publication.",
       "sc:featureList": [
         {
+          "@id": "edam:operation_3432"
+        },
+        {
           "@id": "edam:operation_0224"
         },
         {
           "@id": "edam:operation_2428"
-        },
-        {
-          "@id": "edam:operation_3432"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "Apache-2.0",
       "sc:name": "Antibody Registry (RRID:SCR_006397)",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:url": "https://antibodyregistry.org"

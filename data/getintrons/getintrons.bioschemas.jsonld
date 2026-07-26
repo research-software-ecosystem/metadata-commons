@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -41,35 +41,35 @@
       "biotools:primaryContact": "Galaxy Support Team",
       "bsc:input": [
         {
-          "@id": "_:N7057a5ba977849f49b405b91a1fe278e"
+          "@id": "_:N04f45fcc927e4f31be425a83f16c4f2a"
         },
         {
-          "@id": "_:N430cc47c514044fa882b1461639a528c"
+          "@id": "_:N67b922085dff4afa81341f951bb3bdc1"
         },
         {
-          "@id": "_:N65f321a8def54e17a7ceade345bc9aa5"
+          "@id": "_:N5375512141824583a576c6d542aea205"
         },
         {
-          "@id": "_:Ne471430147b64c3f9f8dbaf090b00e20"
+          "@id": "_:N2f651a89a5a442ac8864c9fbb2e2a05e"
         },
         {
-          "@id": "_:Ndd5b1a8b937949ac97a2bc313bc8f31c"
+          "@id": "_:Nd767d375bf6144ba9569d23d3f44794e"
         },
         {
-          "@id": "_:N69fcca09537544ecaaa2f7b0e58f078d"
+          "@id": "_:Nb615e68b18054f76bef60a4a33142848"
         }
       ],
       "bsc:output": {
-        "@id": "_:Na5ca3faf78444f39a4bdcc74434eb577"
+        "@id": "_:N90b5735579234b2e94bcfae6ca2f9dd8"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3512"
       },
       "sc:citation": [
-        "pmcid:PMC4987906",
         "pubmed:27137889",
+        "pmcid:PMC4987906",
         {
           "@id": "https://doi.org/10.1093/nar/gkw343"
         },
@@ -83,9 +83,9 @@
       },
       "sc:name": "getintrons",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://galaxy.pasteur.fr/root?tool_id=toolshed.pasteur.fr%2Frepos%2Ffmareuil%2Furgi_tools%2FgetIntrons%2F1.0.0"
@@ -94,40 +94,7 @@
       "sc:url": "https://urgi.versailles.inra.fr/Tools/REPET"
     },
     {
-      "@id": "_:N7057a5ba977849f49b405b91a1fe278e",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0006"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Data"
-    },
-    {
-      "@id": "_:N430cc47c514044fa882b1461639a528c",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0006"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2305"
-      },
-      "sc:name": "Data"
-    },
-    {
-      "@id": "_:N65f321a8def54e17a7ceade345bc9aa5",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0924"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2573"
-      },
-      "sc:name": "Sequence trace"
-    },
-    {
-      "@id": "_:Ne471430147b64c3f9f8dbaf090b00e20",
+      "@id": "_:N04f45fcc927e4f31be425a83f16c4f2a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3002"
@@ -138,7 +105,29 @@
       "sc:name": "Annotation track"
     },
     {
-      "@id": "_:Ndd5b1a8b937949ac97a2bc313bc8f31c",
+      "@id": "_:N67b922085dff4afa81341f951bb3bdc1",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0006"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2305"
+      },
+      "sc:name": "Data"
+    },
+    {
+      "@id": "_:N5375512141824583a576c6d542aea205",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0006"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1975"
+      },
+      "sc:name": "Data"
+    },
+    {
+      "@id": "_:N2f651a89a5a442ac8864c9fbb2e2a05e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0006"
@@ -149,7 +138,29 @@
       "sc:name": "Data"
     },
     {
-      "@id": "_:N69fcca09537544ecaaa2f7b0e58f078d",
+      "@id": "_:Nd767d375bf6144ba9569d23d3f44794e",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0006"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Data"
+    },
+    {
+      "@id": "_:Nb615e68b18054f76bef60a4a33142848",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0924"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2573"
+      },
+      "sc:name": "Sequence trace"
+    },
+    {
+      "@id": "_:N90b5735579234b2e94bcfae6ca2f9dd8",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0006"
@@ -158,24 +169,13 @@
         "@id": "edam:format_1975"
       },
       "sc:name": "Data"
-    },
-    {
-      "@id": "_:Na5ca3faf78444f39a4bdcc74434eb577",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0006"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1975"
-      },
-      "sc:name": "Data"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gkw343",
-      "@type": "sc:CreativeWork"
     },
     {
       "@id": "https://doi.org/10.7490/f1000research.1114334.1",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/gkw343",
       "@type": "sc:CreativeWork"
     }
   ]

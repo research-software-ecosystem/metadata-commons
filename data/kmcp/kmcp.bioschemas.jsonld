@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,12 +39,12 @@
       "@id": "https://bio.tools/kmcp",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N4b718a0d9df043378bda29659100c57e"
+        "@id": "_:N1bc2b67ec7a44fcb8a60c5ffc3a46491"
       },
       "bsc:output": {
-        "@id": "_:Naa08fecb3e7e4a82a2c7a11cee8d3543"
+        "@id": "_:Nb0a1631d2acb41ff841792a4925d0b84"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:description": "A novel k-mer-based metagenomic profiling tool that utilizes genome coverage information by splitting the reference genomes into chunks and stores k-mers in a modified and optimized Compact Bit-Sliced Signature Index for fast alignment-free sequence searching. KMCP combines k-mer similarity and genome coverage information to reduce the false positive rate of k-mer-based taxonomic classification and profiling methods.",
       "sc:featureList": {
         "@id": "edam:operation_3460"
@@ -53,18 +53,7 @@
       "sc:url": "https://bioinf.shenwei.me/kmcp/"
     },
     {
-      "@id": "_:Naa08fecb3e7e4a82a2c7a11cee8d3543",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3028"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3751"
-      },
-      "sc:name": "Taxonomy"
-    },
-    {
-      "@id": "_:N4b718a0d9df043378bda29659100c57e",
+      "@id": "_:N1bc2b67ec7a44fcb8a60c5ffc3a46491",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3494"
@@ -73,6 +62,17 @@
         "@id": "edam:format_1930"
       },
       "sc:name": "DNA sequence"
+    },
+    {
+      "@id": "_:Nb0a1631d2acb41ff841792a4925d0b84",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3028"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3751"
+      },
+      "sc:name": "Taxonomy"
     }
   ]
 }

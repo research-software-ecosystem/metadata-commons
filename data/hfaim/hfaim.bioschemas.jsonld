@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,28 +36,24 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1080/15548627.2016.1147668",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/hfaim",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Oren Tzfadia",
       "bsc:input": {
-        "@id": "_:N7fb9adb497f543c58a6db8a9017af8bd"
+        "@id": "_:Nb979950baf4a49eba4170e92c35859b1"
       },
       "bsc:output": [
         {
-          "@id": "_:N68ecd712bf94448492d3155f883fba49"
+          "@id": "_:N9d4398ea453d48f191b94d3a401b7fd6"
         },
         {
-          "@id": "_:N20681e3b2cff4c0fb68b50d05db8e465"
+          "@id": "_:N97c6ecbf5df24c87993f4249f45b861e"
         },
         {
-          "@id": "_:N025dbc09531a4080ae53fdd7bbeb593c"
+          "@id": "_:N58bcae5744b34ee194c2a949b6847170"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Web application"
@@ -67,26 +63,26 @@
       },
       "sc:author": "Oren Tzfadia",
       "sc:citation": [
+        "pubmed:27071037",
+        "pmcid:PMC4854547",
         {
           "@id": "https://doi.org/10.1080/15548627.2016.1147668"
-        },
-        "pmcid:PMC4854547",
-        "pubmed:27071037"
+        }
       ],
       "sc:description": "A reliable bioinformatics approach for in silico genome-wide identification of autophagy-associated atg8-interacting motifs in various organisms.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0240"
+          "@id": "edam:operation_3092"
         },
         {
-          "@id": "edam:operation_3092"
+          "@id": "edam:operation_0240"
         }
       ],
       "sc:name": "hfAIM",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": "PSB",
       "sc:softwareHelp": {
@@ -96,7 +92,18 @@
       "sc:url": "http://bioinformatics.psb.ugent.be/hfAIM/"
     },
     {
-      "@id": "_:N68ecd712bf94448492d3155f883fba49",
+      "@id": "_:Nb979950baf4a49eba4170e92c35859b1",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2886"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "Protein sequence record"
+    },
+    {
+      "@id": "_:N9d4398ea453d48f191b94d3a401b7fd6",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3479"
@@ -104,7 +111,15 @@
       "sc:name": "Gene order"
     },
     {
-      "@id": "_:N20681e3b2cff4c0fb68b50d05db8e465",
+      "@id": "_:N97c6ecbf5df24c87993f4249f45b861e",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1361"
+      },
+      "sc:name": "Position frequency matrix"
+    },
+    {
+      "@id": "_:N58bcae5744b34ee194c2a949b6847170",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1384"
@@ -120,23 +135,8 @@
       "sc:name": "Sequence alignment (protein)"
     },
     {
-      "@id": "_:N025dbc09531a4080ae53fdd7bbeb593c",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1361"
-      },
-      "sc:name": "Position frequency matrix"
-    },
-    {
-      "@id": "_:N7fb9adb497f543c58a6db8a9017af8bd",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2886"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1929"
-      },
-      "sc:name": "Protein sequence record"
+      "@id": "https://doi.org/10.1080/15548627.2016.1147668",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

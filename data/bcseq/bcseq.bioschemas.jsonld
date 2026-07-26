@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -42,40 +42,40 @@
     {
       "@id": "https://bio.tools/bcseq",
       "@type": "sc:SoftwareApplication",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Library",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0204"
+          "@id": "edam:topic_3343"
         },
         {
-          "@id": "edam:topic_3168"
+          "@id": "edam:topic_0204"
         },
         {
           "@id": "edam:topic_0102"
         },
         {
-          "@id": "edam:topic_3343"
+          "@id": "edam:topic_3168"
         }
       ],
       "sc:author": [
-        "Jichun Xie",
-        "Kouros Owzar",
+        "Jeremy Gresham",
         "Jiaxing Lin",
-        "Jeremy Gresham"
+        "Jichun Xie",
+        "Kouros Owzar"
       ],
       "sc:citation": {
         "@id": "https://doi.org/10.1093/bioinformatics/bty402"
       },
       "sc:contributor": [
-        "Joshua Granek",
+        "Andrew Allen",
         "Cliburn Chan",
-        "So Young Kim",
-        "Tongrong Wang",
-        "Jeffrey S. Damrauer",
-        "Scott Floyd",
         "James Alvarez",
-        "Andrew Allen"
+        "Jeffrey S. Damrauer",
+        "Joshua Granek",
+        "Scott Floyd",
+        "So Young Kim",
+        "Tongrong Wang"
       ],
       "sc:description": "This Rcpp-based package implements a highly efficient data structure and algorithm for performing alignment of short reads from CRISPR or shRNA screens to reference barcode library. Sequencing error are considered and matching qualities are evaluated based on Phred scores. A Bayes' classifier is employed to predict the originating barcode of a read. The package supports provision of user-defined probability models for evaluating matching qualities. The package also supports multi-threading.",
       "sc:featureList": {
@@ -85,9 +85,9 @@
       "sc:license": "GPL-2.0-or-later",
       "sc:name": "bcSeq",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://bioconductor.org/packages/bcSeq"

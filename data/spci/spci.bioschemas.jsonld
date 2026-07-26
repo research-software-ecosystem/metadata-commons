@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,16 +36,8 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1002/minf.201300029",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://doi.org/10.1021/acs.jcim.6b00371",
       "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://orcid.org/0000-0001-5088-8149",
-      "@type": "sc:Person"
     },
     {
       "@id": "https://bio.tools/SPCI",
@@ -54,19 +46,19 @@
         "@id": "https://orcid.org/0000-0001-5088-8149"
       },
       "bsc:input": {
-        "@id": "_:Nb8afac4cb4c44eebac19b9bfbdd8aaf9"
+        "@id": "_:Nc9135ffce2a04d7291474aa7999dd0f2"
       },
       "bsc:output": {
-        "@id": "_:N89e1bc59b9eb4504b416b653e1c7fb2b"
+        "@id": "_:Nb4a67e0ebd464135b489fa11ab8a2a51"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0154"
+          "@id": "edam:topic_3314"
         },
         {
-          "@id": "edam:topic_3314"
+          "@id": "edam:topic_0154"
         }
       ],
       "sc:citation": [
@@ -100,15 +92,7 @@
       "sc:url": "http://qsar4u.com/pages/sirms_qsar.php"
     },
     {
-      "@id": "_:N89e1bc59b9eb4504b416b653e1c7fb2b",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1696"
-      },
-      "sc:name": "Drug report"
-    },
-    {
-      "@id": "_:Nb8afac4cb4c44eebac19b9bfbdd8aaf9",
+      "@id": "_:Nc9135ffce2a04d7291474aa7999dd0f2",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2851"
@@ -117,6 +101,22 @@
         "@id": "edam:format_3814"
       },
       "sc:name": "Drug structure"
+    },
+    {
+      "@id": "_:Nb4a67e0ebd464135b489fa11ab8a2a51",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1696"
+      },
+      "sc:name": "Drug report"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-5088-8149",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.1002/minf.201300029",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

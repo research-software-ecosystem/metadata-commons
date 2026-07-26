@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,19 +36,15 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/nar/gkag372",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/alphafind_v2",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N45f05be673254e1792b5b7caf7f21bf6"
+        "@id": "_:Nf174ab418bc74186801b956b0170a9e3"
       },
       "bsc:output": {
-        "@id": "_:N014b53c35d984d609ab7e1f458731319"
+        "@id": "_:Nf7151d11513f42afbfff7c5b3728bb5d"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0078"
@@ -71,7 +67,15 @@
       "sc:url": "https://alphafind.ics.muni.cz/"
     },
     {
-      "@id": "_:N014b53c35d984d609ab7e1f458731319",
+      "@id": "_:Nf174ab418bc74186801b956b0170a9e3",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1460"
+      },
+      "sc:name": "Protein structure"
+    },
+    {
+      "@id": "_:Nf7151d11513f42afbfff7c5b3728bb5d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0888"
@@ -79,12 +83,8 @@
       "sc:name": "Structure similarity score"
     },
     {
-      "@id": "_:N45f05be673254e1792b5b7caf7f21bf6",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1460"
-      },
-      "sc:name": "Protein structure"
+      "@id": "https://doi.org/10.1093/nar/gkag372",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -44,45 +44,45 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Ncae68b5316f64e9face39824d0d13db7"
+          "@id": "_:N8ada0a4ddcb54ceeb4b29b340d764398"
         },
         {
-          "@id": "_:N6fcd14b0fc924f63b389be30a41e2e2a"
+          "@id": "_:Ncbd454be09034fd7840194da0fbb6e5a"
         },
         {
-          "@id": "_:Na31fda0526554eb7bed0f8c437bda039"
+          "@id": "_:Nee7f7a52d5a641d5a7fd66eff83c3986"
         },
         {
-          "@id": "_:N2bc3f1f3320e40c3baecb13cbf304e09"
+          "@id": "_:N95a0c76dd70a4344bba43356b641c37e"
         },
         {
-          "@id": "_:N9349ce31924745c69da90fee7030163a"
+          "@id": "_:N210c4ee77e244cf5854d04c875c952b2"
         },
         {
-          "@id": "_:N06ebb8f041ef450785ff114497b87a06"
+          "@id": "_:N26aad37469814c9493df2e6c1493a43b"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N833965be6524407fa33ec5e46f375d65"
+          "@id": "_:Nbcbada6e12c745038d144ccb4c536144"
         },
         {
-          "@id": "_:Nc0322d35471f4bb8a7ec6eb7a3969c27"
+          "@id": "_:Nc12eb4393ddb45c2ba1e1648d33dc125"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web API",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3325"
+          "@id": "edam:topic_3345"
         },
         {
-          "@id": "edam:topic_3345"
+          "@id": "edam:topic_3325"
         }
       ],
       "sc:citation": [
-        "pmcid:PMC2824678",
         "pubmed:20047655",
+        "pmcid:PMC2824678",
         {
           "@id": "https://doi.org/10.1186/1471-2105-11-5"
         }
@@ -93,9 +93,9 @@
       },
       "sc:name": "BridgeDb API",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://www.bridgedb.org/"
@@ -103,7 +103,7 @@
       "sc:url": "http://www.bridgedb.org/"
     },
     {
-      "@id": "_:N833965be6524407fa33ec5e46f375d65",
+      "@id": "_:N8ada0a4ddcb54ceeb4b29b340d764398",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0006"
@@ -111,15 +111,7 @@
       "sc:name": "Data"
     },
     {
-      "@id": "_:Nc0322d35471f4bb8a7ec6eb7a3969c27",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0006"
-      },
-      "sc:name": "Data"
-    },
-    {
-      "@id": "_:Ncae68b5316f64e9face39824d0d13db7",
+      "@id": "_:Ncbd454be09034fd7840194da0fbb6e5a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0842"
@@ -127,7 +119,31 @@
       "sc:name": "Identifier"
     },
     {
-      "@id": "_:N6fcd14b0fc924f63b389be30a41e2e2a",
+      "@id": "_:Nee7f7a52d5a641d5a7fd66eff83c3986",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0842"
+      },
+      "sc:name": "Identifier"
+    },
+    {
+      "@id": "_:N95a0c76dd70a4344bba43356b641c37e",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0842"
+      },
+      "sc:name": "Identifier"
+    },
+    {
+      "@id": "_:N210c4ee77e244cf5854d04c875c952b2",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0842"
+      },
+      "sc:name": "Identifier"
+    },
+    {
+      "@id": "_:N26aad37469814c9493df2e6c1493a43b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1045"
@@ -135,15 +151,7 @@
       "sc:name": "Species name"
     },
     {
-      "@id": "_:Na31fda0526554eb7bed0f8c437bda039",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0842"
-      },
-      "sc:name": "Identifier"
-    },
-    {
-      "@id": "_:N2bc3f1f3320e40c3baecb13cbf304e09",
+      "@id": "_:Nbcbada6e12c745038d144ccb4c536144",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0006"
@@ -151,20 +159,12 @@
       "sc:name": "Data"
     },
     {
-      "@id": "_:N9349ce31924745c69da90fee7030163a",
+      "@id": "_:Nc12eb4393ddb45c2ba1e1648d33dc125",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_0842"
+        "@id": "edam:data_0006"
       },
-      "sc:name": "Identifier"
-    },
-    {
-      "@id": "_:N06ebb8f041ef450785ff114497b87a06",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0842"
-      },
-      "sc:name": "Identifier"
+      "sc:name": "Data"
     }
   ]
 }

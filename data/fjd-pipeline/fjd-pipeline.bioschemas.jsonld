@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,8 +36,8 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1038/s41525-021-00278-6",
-      "@type": "sc:CreativeWork"
+      "@id": "https://orcid.org/0000-0003-4099-9421",
+      "@type": "sc:Person"
     },
     {
       "@id": "https://bio.tools/fjd-pipeline",
@@ -46,12 +46,12 @@
         "@id": "https://orcid.org/0000-0003-4099-9421"
       },
       "bsc:input": {
-        "@id": "_:Nc9c8b2c1bb244931910c46fbbcb88d2b"
+        "@id": "_:N6890c8ecc9a5410cab5c6096efaf14dc"
       },
       "bsc:output": {
-        "@id": "_:Nc53680f5a0224f8fbed4ece99af0f89c"
+        "@id": "_:N597077aeee714287b69d47ac44fff8ca"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
@@ -62,22 +62,22 @@
         }
       ],
       "sc:citation": [
+        "pubmed:35087072",
+        "pmcid:PMC8795168",
         {
           "@id": "https://doi.org/10.1038/s41525-021-00278-6"
-        },
-        "pmcid:PMC8795168",
-        "pubmed:35087072"
+        }
       ],
       "sc:description": "Pipeline for Single Nucleotide Variants (SNVs) and Copy Number Variation (CNVs) variant calling. This tool is no longer maintained. See the new version: PARROT-FJD.",
       "sc:featureList": [
+        {
+          "@id": "edam:operation_3961"
+        },
         {
           "@id": "edam:operation_0362"
         },
         {
           "@id": "edam:operation_3227"
-        },
-        {
-          "@id": "edam:operation_3961"
         }
       ],
       "sc:isAccessibleForFree": true,
@@ -90,18 +90,7 @@
       "sc:url": "https://github.com/TBLabFJD/VariantCallingFJD"
     },
     {
-      "@id": "_:Nc53680f5a0224f8fbed4ece99af0f89c",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3498"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3016"
-      },
-      "sc:name": "Sequence variations"
-    },
-    {
-      "@id": "_:Nc9c8b2c1bb244931910c46fbbcb88d2b",
+      "@id": "_:N6890c8ecc9a5410cab5c6096efaf14dc",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1193"
@@ -112,8 +101,19 @@
       "sc:name": "Tool name (FASTA)"
     },
     {
-      "@id": "https://orcid.org/0000-0003-4099-9421",
-      "@type": "sc:Person"
+      "@id": "_:N597077aeee714287b69d47ac44fff8ca",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3498"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3016"
+      },
+      "sc:name": "Sequence variations"
+    },
+    {
+      "@id": "https://doi.org/10.1038/s41525-021-00278-6",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

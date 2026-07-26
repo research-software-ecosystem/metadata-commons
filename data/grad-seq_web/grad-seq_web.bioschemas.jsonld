@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -44,40 +44,40 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N7f425ef2be10456585e6e4f3eadd778e"
+          "@id": "_:Ne25de2c898994c19bc78c265ec18e719"
         },
         {
-          "@id": "_:N8b23492d299c4f978eacad0c7e607333"
+          "@id": "_:Nf9eac95ea3714fa4b2299bcba34c7d89"
         },
         {
-          "@id": "_:Nfd14a3736ed34f008e05ca30f806fb7a"
+          "@id": "_:Nbb8147af49884fa6ae3ef77372e605be"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_3957"
-        },
-        {
-          "@id": "edam:topic_0602"
-        },
-        {
-          "@id": "edam:topic_3512"
-        },
         {
           "@id": "edam:topic_0659"
         },
         {
           "@id": "edam:topic_0203"
+        },
+        {
+          "@id": "edam:topic_3512"
+        },
+        {
+          "@id": "edam:topic_0602"
+        },
+        {
+          "@id": "edam:topic_3957"
         }
       ],
       "sc:citation": [
+        "pubmed:37223738",
         "pmcid:PMC10117718",
         {
           "@id": "https://doi.org/10.1093/femsml/uqac027"
-        },
-        "pubmed:37223738"
+        }
       ],
       "sc:description": "Grad-seq analysis of Enterococcus faecalis and Enterococcus faecium provides a global view of RNA and protein complexes in these two opportunistic pathogens.",
       "sc:featureList": [
@@ -91,14 +91,22 @@
       "sc:isAccessibleForFree": true,
       "sc:name": "Grad-seq",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:url": "https://resources.helmholtz-hiri.de/gradseqef/"
     },
     {
-      "@id": "_:N7f425ef2be10456585e6e4f3eadd778e",
+      "@id": "_:Ne25de2c898994c19bc78c265ec18e719",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1176"
+      },
+      "sc:name": "GO concept ID"
+    },
+    {
+      "@id": "_:Nf9eac95ea3714fa4b2299bcba34c7d89",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2299"
@@ -106,20 +114,12 @@
       "sc:name": "Gene name"
     },
     {
-      "@id": "_:N8b23492d299c4f978eacad0c7e607333",
+      "@id": "_:Nbb8147af49884fa6ae3ef77372e605be",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0842"
       },
       "sc:name": "Identifier"
-    },
-    {
-      "@id": "_:Nfd14a3736ed34f008e05ca30f806fb7a",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1176"
-      },
-      "sc:name": "GO concept ID"
     }
   ]
 }

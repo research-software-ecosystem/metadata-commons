@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,30 +36,26 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/bti551",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/bingo",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Steven Maere",
       "bsc:input": [
         {
-          "@id": "_:N4ba9ac3d7ce44b0bad524ee0cc9c9af9"
+          "@id": "_:Nd1cb8b615da14424b0eb967d91f7ae5b"
         },
         {
-          "@id": "_:N1a42ab4261d840a5bd4ca7493395f667"
+          "@id": "_:Nebae36eb40424d07ae0e8b5a666c30f6"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N9de87fb4933a4f3da8ae441d44829812"
+          "@id": "_:Nbeecb1291ca1471198d19f2507644b6d"
         },
         {
-          "@id": "_:N23cfe2ff53fc446e9f70e81d7b5f7736"
+          "@id": "_:N3cfed957736a4a719f8231b2e20d1d18"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Desktop application",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0085"
@@ -76,8 +72,8 @@
       },
       "sc:name": "BiNGO",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:provider": "PSB",
@@ -88,15 +84,7 @@
       "sc:url": "http://www.psb.ugent.be/cbd/papers/BiNGO/Home.html"
     },
     {
-      "@id": "_:N4ba9ac3d7ce44b0bad524ee0cc9c9af9",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2338"
-      },
-      "sc:name": "Ontology identifier"
-    },
-    {
-      "@id": "_:N1a42ab4261d840a5bd4ca7493395f667",
+      "@id": "_:Nd1cb8b615da14424b0eb967d91f7ae5b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1025"
@@ -104,7 +92,15 @@
       "sc:name": "Gene identifier"
     },
     {
-      "@id": "_:N9de87fb4933a4f3da8ae441d44829812",
+      "@id": "_:Nebae36eb40424d07ae0e8b5a666c30f6",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2338"
+      },
+      "sc:name": "Ontology identifier"
+    },
+    {
+      "@id": "_:Nbeecb1291ca1471198d19f2507644b6d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1669"
@@ -112,7 +108,7 @@
       "sc:name": "P-value"
     },
     {
-      "@id": "_:N23cfe2ff53fc446e9f70e81d7b5f7736",
+      "@id": "_:N3cfed957736a4a719f8231b2e20d1d18",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2338"
@@ -121,6 +117,10 @@
         "@id": "edam:format_1964"
       },
       "sc:name": "Ontology identifier"
+    },
+    {
+      "@id": "https://doi.org/10.1093/bioinformatics/bti551",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

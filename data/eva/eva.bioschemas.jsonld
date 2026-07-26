@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -44,22 +44,22 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Help desk",
       "bsc:input": {
-        "@id": "_:N4c1a102d46a84fbeaa58d55a202ca032"
+        "@id": "_:Nf7e1e0aca51d4d3e9a954170501ec4b1"
       },
       "bsc:output": {
-        "@id": "_:N2ff46c5d8f3445ad9fad556cb64d173c"
+        "@id": "_:Ncf813ca3dae14b24a580ef277c0b4fcf"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Database portal",
       "sc:applicationSubCategory": [
         {
           "@id": "edam:topic_0199"
         },
         {
-          "@id": "edam:topic_0622"
+          "@id": "edam:topic_3053"
         },
         {
-          "@id": "edam:topic_3053"
+          "@id": "edam:topic_0622"
         }
       ],
       "sc:citation": {
@@ -68,16 +68,19 @@
       "sc:description": "The European Variation Archive (EVA) accepts submission of, and provides access to, all types of genetic variants from any species, observed in germline or somatic sources, ranging from SNVs to large structural variants. All of our data is open access via direct query through web and/or programmatic interfaces.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3431"
-        },
-        {
-          "@id": "edam:operation_2478"
+          "@id": "edam:operation_3436"
         },
         {
           "@id": "edam:operation_2422"
         },
         {
-          "@id": "edam:operation_3436"
+          "@id": "edam:operation_3431"
+        },
+        {
+          "@id": "edam:operation_2403"
+        },
+        {
+          "@id": "edam:operation_3195"
         },
         {
           "@id": "edam:operation_0337"
@@ -86,17 +89,14 @@
           "@id": "edam:operation_3197"
         },
         {
-          "@id": "edam:operation_2403"
-        },
-        {
-          "@id": "edam:operation_3195"
+          "@id": "edam:operation_2478"
         }
       ],
       "sc:name": "European Variation Archive (EVA)",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": "ebi.ac.uk",
       "sc:softwareHelp": {
@@ -105,26 +105,7 @@
       "sc:url": "https://www.ebi.ac.uk/eva/"
     },
     {
-      "@id": "_:N2ff46c5d8f3445ad9fad556cb64d173c",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2044"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3016"
-        },
-        {
-          "@id": "edam:format_3464"
-        },
-        {
-          "@id": "edam:format_2331"
-        }
-      ],
-      "sc:name": "Sequence"
-    },
-    {
-      "@id": "_:N4c1a102d46a84fbeaa58d55a202ca032",
+      "@id": "_:Nf7e1e0aca51d4d3e9a954170501ec4b1",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3498"
@@ -133,6 +114,25 @@
         "@id": "edam:format_3016"
       },
       "sc:name": "Sequence variations"
+    },
+    {
+      "@id": "_:Ncf813ca3dae14b24a580ef277c0b4fcf",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2044"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2331"
+        },
+        {
+          "@id": "edam:format_3464"
+        },
+        {
+          "@id": "edam:format_3016"
+        }
+      ],
+      "sc:name": "Sequence"
     }
   ]
 }

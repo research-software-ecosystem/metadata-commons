@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -44,19 +44,19 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N68013d50c7b34f74a2cce7930819e449"
+          "@id": "_:N1fc7a4b6741940b090fbe81bc58ee27e"
         },
         {
-          "@id": "_:N2cd22da7a3a84aac98afae4174813ce0"
+          "@id": "_:N7d7aecbbe9604d1492426b142ea8418c"
         },
         {
-          "@id": "_:N13122943d45b4711b2e65ec61ab1e1d3"
+          "@id": "_:N3128cacfb45a4655ac290737954a7bd0"
         }
       ],
       "bsc:output": {
-        "@id": "_:N586186b2a6414f6abda2d882fea81959"
+        "@id": "_:N20f762ecc3514de5b65e1b74b047887e"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Desktop application",
       "sc:applicationSubCategory": [
         {
@@ -75,22 +75,10 @@
       "sc:description": "Tool for processing and analyzing ICPL LC-MALDI data.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3649"
-        },
-        {
-          "@id": "edam:operation_2421"
-        },
-        {
           "@id": "edam:operation_3203"
         },
         {
-          "@id": "edam:operation_3767"
-        },
-        {
-          "@id": "edam:operation_3799"
-        },
-        {
-          "@id": "edam:operation_3635"
+          "@id": "edam:operation_2421"
         },
         {
           "@id": "edam:operation_3629"
@@ -99,13 +87,25 @@
           "@id": "edam:operation_3705"
         },
         {
+          "@id": "edam:operation_3635"
+        },
+        {
+          "@id": "edam:operation_3767"
+        },
+        {
           "@id": "edam:operation_3630"
+        },
+        {
+          "@id": "edam:operation_3799"
+        },
+        {
+          "@id": "edam:operation_3649"
         }
       ],
       "sc:name": "ICPLQuant",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -114,18 +114,7 @@
       "sc:url": "https://www.biochem.mpg.de/en/rg/lottspeich/technologies/ICPLQuant"
     },
     {
-      "@id": "_:N68013d50c7b34f74a2cce7930819e449",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0945"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3713"
-      },
-      "sc:name": "Peptide identification"
-    },
-    {
-      "@id": "_:N2cd22da7a3a84aac98afae4174813ce0",
+      "@id": "_:N1fc7a4b6741940b090fbe81bc58ee27e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0943"
@@ -141,7 +130,18 @@
       "sc:name": "Mass spectrometry spectra"
     },
     {
-      "@id": "_:N13122943d45b4711b2e65ec61ab1e1d3",
+      "@id": "_:N7d7aecbbe9604d1492426b142ea8418c",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0945"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3713"
+      },
+      "sc:name": "Peptide identification"
+    },
+    {
+      "@id": "_:N3128cacfb45a4655ac290737954a7bd0",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0944"
@@ -157,7 +157,7 @@
       "sc:name": "Peptide mass fingerprint"
     },
     {
-      "@id": "_:N586186b2a6414f6abda2d882fea81959",
+      "@id": "_:N20f762ecc3514de5b65e1b74b047887e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2603"

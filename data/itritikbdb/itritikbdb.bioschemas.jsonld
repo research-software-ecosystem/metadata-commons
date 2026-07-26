@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,13 +36,9 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.3390/ijms23137455",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/itritikbdb",
       "@type": "sc:SoftwareApplication",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Database portal",
       "sc:applicationSubCategory": [
         {
@@ -71,23 +67,27 @@
       "sc:description": "A Functional Annotation Resource for Deciphering the Complete Interaction Networks in Wheat-Karnal Bunt Pathosystem.",
       "sc:featureList": [
         {
+          "@id": "edam:operation_3925"
+        },
+        {
           "@id": "edam:operation_2492"
         },
         {
           "@id": "edam:operation_2489"
-        },
-        {
-          "@id": "edam:operation_3925"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:name": "iTritiKBdb",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:url": "http://bioinfo.usu.edu/tritikbdb/"
+    },
+    {
+      "@id": "https://doi.org/10.3390/ijms23137455",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

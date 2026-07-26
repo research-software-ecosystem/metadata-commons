@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,57 +36,53 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btq293",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/svdetect_bam_preprocessing_pairs",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Galaxy Support Team",
       "bsc:input": {
-        "@id": "_:Ndc244d539a7f42bba856307ba35ee70f"
+        "@id": "_:N12e12ef78e96470bb88b34e020a53341"
       },
       "bsc:output": [
         {
-          "@id": "_:N404810e33dec4c808c9ba5960f3a548f"
+          "@id": "_:Ncaf203c2a6e3431a946cd1fe4413a5e2"
         },
         {
-          "@id": "_:N6cb69d3c216644e4be39a89dfc5c5435"
+          "@id": "_:Nc0564392f9184196b41818148e7ecf98"
         },
         {
-          "@id": "_:N8ee71237c543479e89f47b8882be9ba3"
+          "@id": "_:N66cf3c28361d441fa2af241610c371c0"
         },
         {
-          "@id": "_:N1ea9a63592974930bf0f8d27b4110202"
+          "@id": "_:Nfa10ae821a24416db0090ee9e9d72b4b"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
           "@id": "edam:topic_2533"
         },
         {
-          "@id": "edam:topic_0160"
+          "@id": "edam:topic_0080"
         },
         {
-          "@id": "edam:topic_0080"
+          "@id": "edam:topic_0160"
         }
       ],
       "sc:citation": [
-        "pmcid:PMC4987906",
-        "pubmed:27137889",
-        {
-          "@id": "https://doi.org/10.1093/nar/gkw343"
-        },
         "pubmed:20639544",
+        "pmcid:PMC2905550",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btq293"
         },
+        "pubmed:27137889",
+        "pmcid:PMC4987906",
+        {
+          "@id": "https://doi.org/10.1093/nar/gkw343"
+        },
         {
           "@id": "https://doi.org/10.7490/f1000research.1114334.1"
-        },
-        "pmcid:PMC2905550"
+        }
       ],
       "sc:description": "BAM preprocessing to get abnormal pairs.",
       "sc:featureList": {
@@ -94,8 +90,8 @@
       },
       "sc:name": "svdetect_bam_preprocessing_pairs",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -105,51 +101,7 @@
       "sc:url": "http://svdetect.sourceforge.net/Site/Home.html"
     },
     {
-      "@id": "_:N404810e33dec4c808c9ba5960f3a548f",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0924"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2573"
-      },
-      "sc:name": "Sequence trace"
-    },
-    {
-      "@id": "_:N6cb69d3c216644e4be39a89dfc5c5435",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0924"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2572"
-      },
-      "sc:name": "Sequence trace"
-    },
-    {
-      "@id": "_:N8ee71237c543479e89f47b8882be9ba3",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0006"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Data"
-    },
-    {
-      "@id": "_:N1ea9a63592974930bf0f8d27b4110202",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0924"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2572"
-      },
-      "sc:name": "Sequence trace"
-    },
-    {
-      "@id": "_:Ndc244d539a7f42bba856307ba35ee70f",
+      "@id": "_:N12e12ef78e96470bb88b34e020a53341",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0006"
@@ -165,11 +117,59 @@
       "sc:name": "Data"
     },
     {
-      "@id": "https://doi.org/10.1093/nar/gkw343",
-      "@type": "sc:CreativeWork"
+      "@id": "_:Ncaf203c2a6e3431a946cd1fe4413a5e2",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0006"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Data"
+    },
+    {
+      "@id": "_:Nc0564392f9184196b41818148e7ecf98",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0924"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2572"
+      },
+      "sc:name": "Sequence trace"
+    },
+    {
+      "@id": "_:N66cf3c28361d441fa2af241610c371c0",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0924"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2572"
+      },
+      "sc:name": "Sequence trace"
+    },
+    {
+      "@id": "_:Nfa10ae821a24416db0090ee9e9d72b4b",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0924"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2573"
+      },
+      "sc:name": "Sequence trace"
     },
     {
       "@id": "https://doi.org/10.7490/f1000research.1114334.1",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1093/bioinformatics/btq293",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/gkw343",
       "@type": "sc:CreativeWork"
     }
   ]

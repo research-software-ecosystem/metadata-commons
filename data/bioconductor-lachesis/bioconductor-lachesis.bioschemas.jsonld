@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -42,15 +42,15 @@
     {
       "@id": "https://bio.tools/bioconductor-lachesis",
       "@type": "sc:SoftwareApplication",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:author": [
         "Anand Mayakonda",
-        "Verena Körber",
-        "Maximilia Eggle"
+        "Maximilia Eggle",
+        "Verena Körber"
       ],
       "sc:citation": {
         "@id": "https://doi.org/10.1038/s41588-023-01332-y"
@@ -59,8 +59,8 @@
       "sc:license": "GPL-3.0-or-later",
       "sc:name": "LACHESIS",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,32 +36,28 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/bts577",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/LupinMine",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Nd1ef3843be094e4fb5a7885f3376640f"
+          "@id": "_:N06927074d98a4a1db9042e4ee468f6a8"
         },
         {
-          "@id": "_:N99bb842da11b4424a71a4013d38e7b3c"
+          "@id": "_:N8ab9fbeaab8a4a249bcada04c50c0847"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Nbd513940fcb6472b82b738715ce4995b"
+          "@id": "_:N518f8b531ad947d894076bdc275f781a"
         },
         {
-          "@id": "_:N1e219a59df1f4c20846c5c72777739a0"
+          "@id": "_:N7b3db556062544658c2f2ac6ef2e08c6"
         },
         {
-          "@id": "_:Nd9cfa4d54dba4a7499f2bf3ef1541b5a"
+          "@id": "_:N0adef2723d884e1e84aa353dc51025c0"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Database portal",
         "Web application",
@@ -79,8 +75,8 @@
         }
       ],
       "sc:citation": [
-        "pmcid:PMC3516146",
         "pubmed:23023984",
+        "pmcid:PMC3516146",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/bts577"
         }
@@ -94,32 +90,32 @@
           "@id": "edam:operation_2436"
         },
         {
-          "@id": "edam:operation_0337"
+          "@id": "edam:operation_0224"
         },
         {
-          "@id": "edam:operation_0224"
+          "@id": "edam:operation_0337"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "LGPL-2.1",
       "sc:name": "LupinMine",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:softwareHelp": [
         {
-          "@id": "https://flymine.readthedocs.io/en/latest/"
+          "@id": "http://intermine.readthedocs.org/en/latest/web-services/"
         },
         {
-          "@id": "http://intermine.readthedocs.org/en/latest/web-services/"
+          "@id": "https://flymine.readthedocs.io/en/latest/"
         }
       ],
       "sc:softwareVersion": "2",
       "sc:url": "https://mines.legumeinfo.org/lupinmine"
     },
     {
-      "@id": "_:Nd1ef3843be094e4fb5a7885f3376640f",
+      "@id": "_:N06927074d98a4a1db9042e4ee468f6a8",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2353"
@@ -127,7 +123,7 @@
       "sc:name": "Ontology data"
     },
     {
-      "@id": "_:N99bb842da11b4424a71a4013d38e7b3c",
+      "@id": "_:N8ab9fbeaab8a4a249bcada04c50c0847",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1255"
@@ -135,7 +131,7 @@
       "sc:name": "Sequence features"
     },
     {
-      "@id": "_:Nbd513940fcb6472b82b738715ce4995b",
+      "@id": "_:N518f8b531ad947d894076bdc275f781a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3753"
@@ -143,7 +139,7 @@
       "sc:name": "Over-representation data"
     },
     {
-      "@id": "_:N1e219a59df1f4c20846c5c72777739a0",
+      "@id": "_:N7b3db556062544658c2f2ac6ef2e08c6",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3786"
@@ -151,12 +147,16 @@
       "sc:name": "Query script"
     },
     {
-      "@id": "_:Nd9cfa4d54dba4a7499f2bf3ef1541b5a",
+      "@id": "_:N0adef2723d884e1e84aa353dc51025c0",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1255"
       },
       "sc:name": "Sequence features"
+    },
+    {
+      "@id": "https://doi.org/10.1093/bioinformatics/bts577",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

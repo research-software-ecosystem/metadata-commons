@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,27 +40,27 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Na738cfb691674ba7942d2897e1d81c1b"
+          "@id": "_:Nc881fbe207bf4a1cb64138f4e5f0961c"
         },
         {
-          "@id": "_:N9112e9c4c4244734ab79cf166d9ac43b"
+          "@id": "_:Nc6d20f5310fb48e3b9c6d8a237d1478f"
         },
         {
-          "@id": "_:Nab060410188843c381d96fb532835f0c"
+          "@id": "_:N01bda437b9f84ae7843e8f8333ee2a35"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N15752abd627c47259feb135fb7f38fa4"
+          "@id": "_:N8f106f6f6d1842e98e47aee2f7252e6b"
         },
         {
-          "@id": "_:Ne72dbb6efa2a4d9f8e6e7c97df7d499b"
+          "@id": "_:N44eae744fca94baabdb756ee341c63aa"
         },
         {
-          "@id": "_:N725eeb33f02340eeae286f788fbdef23"
+          "@id": "_:Nfdc307b7064b44298af5afcd1660997a"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Workflow",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0622"
@@ -78,10 +78,7 @@
           "@id": "edam:operation_3196"
         },
         {
-          "@id": "edam:operation_3192"
-        },
-        {
-          "@id": "edam:operation_2478"
+          "@id": "edam:operation_3218"
         },
         {
           "@id": "edam:operation_3227"
@@ -90,13 +87,16 @@
           "@id": "edam:operation_3211"
         },
         {
-          "@id": "edam:operation_3218"
+          "@id": "edam:operation_0368"
+        },
+        {
+          "@id": "edam:operation_2478"
         },
         {
           "@id": "edam:operation_3198"
         },
         {
-          "@id": "edam:operation_0368"
+          "@id": "edam:operation_3192"
         }
       ],
       "sc:license": "GPL-3.0",
@@ -112,29 +112,7 @@
       "sc:url": "https://github.com/NBISweden/GenErode"
     },
     {
-      "@id": "_:N15752abd627c47259feb135fb7f38fa4",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3494"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3003"
-      },
-      "sc:name": "DNA sequence"
-    },
-    {
-      "@id": "_:Ne72dbb6efa2a4d9f8e6e7c97df7d499b",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3498"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3016"
-      },
-      "sc:name": "Sequence variations"
-    },
-    {
-      "@id": "_:N725eeb33f02340eeae286f788fbdef23",
+      "@id": "_:Nc881fbe207bf4a1cb64138f4e5f0961c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3494"
@@ -145,18 +123,18 @@
       "sc:name": "DNA sequence"
     },
     {
-      "@id": "_:Na738cfb691674ba7942d2897e1d81c1b",
+      "@id": "_:Nc6d20f5310fb48e3b9c6d8a237d1478f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3494"
       },
       "sc:encodingFormat": {
-        "@id": "edam:format_2572"
+        "@id": "edam:format_1929"
       },
       "sc:name": "DNA sequence"
     },
     {
-      "@id": "_:N9112e9c4c4244734ab79cf166d9ac43b",
+      "@id": "_:N01bda437b9f84ae7843e8f8333ee2a35",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3494"
@@ -167,13 +145,35 @@
       "sc:name": "DNA sequence"
     },
     {
-      "@id": "_:Nab060410188843c381d96fb532835f0c",
+      "@id": "_:N8f106f6f6d1842e98e47aee2f7252e6b",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3498"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3016"
+      },
+      "sc:name": "Sequence variations"
+    },
+    {
+      "@id": "_:N44eae744fca94baabdb756ee341c63aa",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3494"
       },
       "sc:encodingFormat": {
-        "@id": "edam:format_1929"
+        "@id": "edam:format_3003"
+      },
+      "sc:name": "DNA sequence"
+    },
+    {
+      "@id": "_:Nfdc307b7064b44298af5afcd1660997a",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3494"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2572"
       },
       "sc:name": "DNA sequence"
     },

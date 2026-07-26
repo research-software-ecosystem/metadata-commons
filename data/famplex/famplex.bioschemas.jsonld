@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,28 +36,32 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1186/s12859-018-2211-5",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/famplex",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Peter K. Sorger",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Database portal",
       "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_3473"
+        },
         {
           "@id": "edam:topic_0218"
         },
         {
           "@id": "edam:topic_0623"
-        },
-        {
-          "@id": "edam:topic_3473"
         }
       ],
       "sc:citation": [
+        "pubmed:29954318",
         "pmcid:PMC6022344",
         {
           "@id": "https://doi.org/10.1186/s12859-018-2211-5"
-        },
-        "pubmed:29954318"
+        }
       ],
       "sc:description": "It is an effective resource for improving named entity recognition, grounding, and relationship resolution in automated reading of biomedical text.",
       "sc:featureList": {
@@ -67,17 +71,13 @@
       "sc:name": "FamPlex",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://github.com/sorgerlab/famplex/blob/master/README.md"
       },
       "sc:url": "https://github.com/sorgerlab/famplex"
-    },
-    {
-      "@id": "https://doi.org/10.1186/s12859-018-2211-5",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

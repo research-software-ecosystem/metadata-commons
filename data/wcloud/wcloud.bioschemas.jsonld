@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,12 +39,12 @@
       "@id": "https://bio.tools/wcloud",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N7630aad421ff47c68dcdaff73be3b8d6"
+        "@id": "_:Nde11c8bae0614451bb6873791b0a6419"
       },
       "bsc:output": {
-        "@id": "_:Ndf9b8b5c07c54f81a0f7c3819c188b30"
+        "@id": "_:N498da085d5e14d8693ea38687bd9cdf5"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:description": "Converts a file from textual format into a word cloud image",
       "sc:featureList": {
@@ -52,25 +52,14 @@
       },
       "sc:name": "wcloud",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:url": "https://github.com/isaackd/wcloud"
     },
     {
-      "@id": "_:Ndf9b8b5c07c54f81a0f7c3819c188b30",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2968"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3603"
-      },
-      "sc:name": "Image"
-    },
-    {
-      "@id": "_:N7630aad421ff47c68dcdaff73be3b8d6",
+      "@id": "_:Nde11c8bae0614451bb6873791b0a6419",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2526"
@@ -79,6 +68,17 @@
         "@id": "edam:format_2330"
       },
       "sc:name": "Text data"
+    },
+    {
+      "@id": "_:N498da085d5e14d8693ea38687bd9cdf5",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2968"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3603"
+      },
+      "sc:name": "Image"
     }
   ]
 }

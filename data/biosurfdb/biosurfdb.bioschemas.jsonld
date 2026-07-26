@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,12 +36,8 @@
   },
   "@graph": [
     {
-      "@id": "http://orcid.org/0000-0003-4638-2879",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://orcid.org/0000-0001-6425-2176",
-      "@type": "sc:Person"
+      "@id": "https://doi.org/10.1093/database/bav033",
+      "@type": "sc:CreativeWork"
     },
     {
       "@id": "https://bio.tools/biosurfdb",
@@ -51,10 +47,10 @@
           "@id": "http://orcid.org/0000-0003-4638-2879"
         },
         {
-          "@id": "http://orcid.org/0000-0003-0642-3162"
+          "@id": "http://orcid.org/0000-0002-4632-2086"
         },
         {
-          "@id": "http://orcid.org/0000-0002-4632-2086"
+          "@id": "http://orcid.org/0000-0003-0642-3162"
         },
         {
           "@id": "https://orcid.org/0000-0001-6425-2176"
@@ -62,33 +58,33 @@
       ],
       "bsc:input": [
         {
-          "@id": "_:Nf827e0752e564025af886e3281827649"
+          "@id": "_:N9166a81f01f4481a80eb68e8f81c2928"
         },
         {
-          "@id": "_:Nfa1dc55b5d6a45e0a073f7581c33d8cf"
+          "@id": "_:N0b7e78e3ede1494cb3ac89245e62cf7b"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N0ea4def874c64133a0b8e40191e6a418"
+          "@id": "_:Ndf2b5a961ea442fb99809fb804d7e972"
         },
         {
-          "@id": "_:Na33da35109fb47aaa44b8f31e1800426"
+          "@id": "_:Nfee871278e644b4395edbb8ec14805b7"
         },
         {
-          "@id": "_:N36ba9e6d93714c0cbb464665f3652174"
+          "@id": "_:N5240989ff3764153ba00877017e80e39"
         },
         {
-          "@id": "_:Naea77e0297aa43bb83c589e93644c3d4"
+          "@id": "_:Ndbde086bbe4545d8a2dd5f98d4f4e39b"
         },
         {
-          "@id": "_:Nc715609280bd4ad89db40cf04e697bb5"
+          "@id": "_:N3af74fb5b0e4455d97bdd2da95a2a740"
         },
         {
-          "@id": "_:N23fca912079d40a9b9d0ecfcb8d96991"
+          "@id": "_:Nad5b05339f244deeb4bfc049fe25d399"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Database portal",
       "sc:applicationSubCategory": [
         {
@@ -107,10 +103,10 @@
       "sc:description": "BioSurfDB is a online database for biodegradation and biosurfactants.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0349"
+          "@id": "edam:operation_0495"
         },
         {
-          "@id": "edam:operation_0495"
+          "@id": "edam:operation_0349"
         }
       ],
       "sc:isAccessibleForFree": true,
@@ -118,7 +114,7 @@
       "sc:url": "https://www.biosurfdb.org"
     },
     {
-      "@id": "_:N0ea4def874c64133a0b8e40191e6a418",
+      "@id": "_:N9166a81f01f4481a80eb68e8f81c2928",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3494"
@@ -126,55 +122,7 @@
       "sc:name": "DNA sequence"
     },
     {
-      "@id": "_:Na33da35109fb47aaa44b8f31e1800426",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1026"
-      },
-      "sc:name": "Gene symbol"
-    },
-    {
-      "@id": "_:N36ba9e6d93714c0cbb464665f3652174",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1383"
-      },
-      "sc:name": "Nucleic acid sequence alignment"
-    },
-    {
-      "@id": "_:Naea77e0297aa43bb83c589e93644c3d4",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1027"
-      },
-      "sc:name": "Gene ID (NCBI)"
-    },
-    {
-      "@id": "_:Nc715609280bd4ad89db40cf04e697bb5",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2299"
-      },
-      "sc:name": "Gene name"
-    },
-    {
-      "@id": "_:N23fca912079d40a9b9d0ecfcb8d96991",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1385"
-      },
-      "sc:name": "Hybrid sequence alignment"
-    },
-    {
-      "@id": "_:Nf827e0752e564025af886e3281827649",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3494"
-      },
-      "sc:name": "DNA sequence"
-    },
-    {
-      "@id": "_:Nfa1dc55b5d6a45e0a073f7581c33d8cf",
+      "@id": "_:N0b7e78e3ede1494cb3ac89245e62cf7b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2886"
@@ -182,11 +130,63 @@
       "sc:name": "Protein sequence record"
     },
     {
-      "@id": "https://doi.org/10.1093/database/bav033",
-      "@type": "sc:CreativeWork"
+      "@id": "_:Ndf2b5a961ea442fb99809fb804d7e972",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1385"
+      },
+      "sc:name": "Hybrid sequence alignment"
+    },
+    {
+      "@id": "_:Nfee871278e644b4395edbb8ec14805b7",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1383"
+      },
+      "sc:name": "Nucleic acid sequence alignment"
+    },
+    {
+      "@id": "_:N5240989ff3764153ba00877017e80e39",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3494"
+      },
+      "sc:name": "DNA sequence"
+    },
+    {
+      "@id": "_:Ndbde086bbe4545d8a2dd5f98d4f4e39b",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1027"
+      },
+      "sc:name": "Gene ID (NCBI)"
+    },
+    {
+      "@id": "_:N3af74fb5b0e4455d97bdd2da95a2a740",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2299"
+      },
+      "sc:name": "Gene name"
+    },
+    {
+      "@id": "_:Nad5b05339f244deeb4bfc049fe25d399",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1026"
+      },
+      "sc:name": "Gene symbol"
+    },
+    {
+      "@id": "http://orcid.org/0000-0003-4638-2879",
+      "@type": "sc:Person"
     },
     {
       "@id": "http://orcid.org/0000-0003-0642-3162",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-6425-2176",
       "@type": "sc:Person"
     },
     {

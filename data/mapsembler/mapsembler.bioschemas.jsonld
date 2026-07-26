@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,30 +36,26 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1186/1471-2105-13-48",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/mapsembler",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Pierre Peterlongo",
       "bsc:input": [
         {
-          "@id": "_:Nb8ba24948400417a80c7c4b040a85e47"
+          "@id": "_:N9ca080f137bf478488d65ff95ef8ba27"
         },
         {
-          "@id": "_:N873b3e03013c42d39c3769a73bf3e80d"
+          "@id": "_:N6c37d58483b44fabb6a64508defe68d7"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Ne86a57eb081f4a2db5a6c6dffe803cef"
+          "@id": "_:N44d4ec30b871422b81f87fc16ac747b2"
         },
         {
-          "@id": "_:Nb6277c7e1e8c453c8c26b4ca5c9635ab"
+          "@id": "_:Nd6cb0b99e94041d09fbab0e2e751aa8c"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0196"
@@ -87,18 +83,7 @@
       "sc:url": "https://colibread.inria.fr/mapsembler2/"
     },
     {
-      "@id": "_:Ne86a57eb081f4a2db5a6c6dffe803cef",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2600"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Pathway or network"
-    },
-    {
-      "@id": "_:Nb6277c7e1e8c453c8c26b4ca5c9635ab",
+      "@id": "_:N9ca080f137bf478488d65ff95ef8ba27",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2977"
@@ -109,7 +94,7 @@
       "sc:name": "Nucleic acid sequence"
     },
     {
-      "@id": "_:Nb8ba24948400417a80c7c4b040a85e47",
+      "@id": "_:N6c37d58483b44fabb6a64508defe68d7",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2975"
@@ -120,7 +105,7 @@
       "sc:name": "Nucleic acid sequence (raw)"
     },
     {
-      "@id": "_:N873b3e03013c42d39c3769a73bf3e80d",
+      "@id": "_:N44d4ec30b871422b81f87fc16ac747b2",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2977"
@@ -129,6 +114,21 @@
         "@id": "edam:format_1929"
       },
       "sc:name": "Nucleic acid sequence"
+    },
+    {
+      "@id": "_:Nd6cb0b99e94041d09fbab0e2e751aa8c",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2600"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Pathway or network"
+    },
+    {
+      "@id": "https://doi.org/10.1186/1471-2105-13-48",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

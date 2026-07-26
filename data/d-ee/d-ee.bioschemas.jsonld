@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,19 +39,19 @@
       "@id": "https://bio.tools/d-ee",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N9b2f1ea010634b48b009e149795dfa96"
+        "@id": "_:Ndb119b8077074a76b1ad255027251e9c"
       },
       "bsc:output": {
-        "@id": "_:N35c4ea04a22049d79c6e6327aeeb8e3f"
+        "@id": "_:Nb3a16ca63ae14037b85ae34d911db557"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3307"
+          "@id": "edam:topic_0091"
         },
         {
-          "@id": "edam:topic_0091"
+          "@id": "edam:topic_3307"
         },
         {
           "@id": "edam:topic_0080"
@@ -65,25 +65,14 @@
       "sc:license": "GPL-3.0",
       "sc:name": "D-EE",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:softwareVersion": "1.0",
       "sc:url": "https://github.com/ShaokunAn/D-EE"
     },
     {
-      "@id": "_:N35c4ea04a22049d79c6e6327aeeb8e3f",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2012"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3752"
-      },
-      "sc:name": "Sequence coordinates"
-    },
-    {
-      "@id": "_:N9b2f1ea010634b48b009e149795dfa96",
+      "@id": "_:Ndb119b8077074a76b1ad255027251e9c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3112"
@@ -92,6 +81,17 @@
         "@id": "edam:format_3752"
       },
       "sc:name": "Gene expression matrix"
+    },
+    {
+      "@id": "_:Nb3a16ca63ae14037b85ae34d911db557",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2012"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3752"
+      },
+      "sc:name": "Sequence coordinates"
     }
   ]
 }

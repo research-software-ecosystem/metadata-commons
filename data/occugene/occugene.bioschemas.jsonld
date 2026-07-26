@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -44,16 +44,16 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N7f080f2f4c454cb787d326fb57ef569e"
+          "@id": "_:Nb34a822dd2e34b5592b5aa9a33b0c7ce"
         },
         {
-          "@id": "_:N21ce5327912f47efa814e627d54487f9"
+          "@id": "_:N2e913a55b1dc403194ea4610964bda09"
         }
       ],
       "bsc:output": {
-        "@id": "_:N3856676087a74b3aa2f56452ca82d667"
+        "@id": "_:N9060f488dab847d2a2dc82a79c8eec58"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
@@ -72,18 +72,18 @@
       "sc:description": "Statistical tools for building random mutagenesis libraries for prokaryotes. The package has functions for handling the occupancy distribution for a multinomial and for estimating the number of essential genes in random transposon mutagenesis libraries.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3659"
+          "@id": "edam:operation_0436"
         },
         {
-          "@id": "edam:operation_0436"
+          "@id": "edam:operation_3659"
         }
       ],
       "sc:license": "GPL-2.0-or-later",
       "sc:name": "occugene",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://bioconductor.org/packages/occugene"
@@ -92,18 +92,7 @@
       "sc:url": "https://bioconductor.org/packages/occugene"
     },
     {
-      "@id": "_:N7f080f2f4c454cb787d326fb57ef569e",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2012"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3033"
-      },
-      "sc:name": "Sequence coordinates"
-    },
-    {
-      "@id": "_:N21ce5327912f47efa814e627d54487f9",
+      "@id": "_:Nb34a822dd2e34b5592b5aa9a33b0c7ce",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1383"
@@ -114,7 +103,18 @@
       "sc:name": "Sequence alignment (nucleic acid)"
     },
     {
-      "@id": "_:N3856676087a74b3aa2f56452ca82d667",
+      "@id": "_:N2e913a55b1dc403194ea4610964bda09",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2012"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3033"
+      },
+      "sc:name": "Sequence coordinates"
+    },
+    {
+      "@id": "_:N9060f488dab847d2a2dc82a79c8eec58",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2794"

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,38 +36,42 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/24.17.3439",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/netgene2",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N593b29993b824bd5862171a1b8d79f61"
+        "@id": "_:N31b734be01e14a9c8f7cc896c917c513"
       },
       "bsc:output": [
         {
-          "@id": "_:Nc58029e95aa74652b8ee5d220df6b6a7"
+          "@id": "_:N609f4ec820d74ee5978b3fef9b8b5c15"
         },
         {
-          "@id": "_:N392dae810bd648c2913468645ff492c6"
+          "@id": "_:N1f9515dd24d64bef918e9b28dd44270d"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Web application"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0160"
+          "@id": "edam:topic_3512"
         },
         {
-          "@id": "edam:topic_3512"
+          "@id": "edam:topic_0160"
         }
       ],
       "sc:citation": [
+        "pubmed:8811101",
         "pmcid:PMC146109",
         {
           "@id": "https://doi.org/10.1093/nar/24.17.3439"
-        },
-        "pubmed:8811101"
+        }
       ],
       "sc:description": "Neural network predictions of splice sites in human, C. elegans and A. thaliana DNA.",
       "sc:featureList": {
@@ -77,9 +81,9 @@
       "sc:license": "Other",
       "sc:name": "NetGene2",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": "CBS",
       "sc:softwareHelp": {
@@ -89,7 +93,7 @@
       "sc:url": "http://cbs.dtu.dk/services/NetGene2/"
     },
     {
-      "@id": "_:N593b29993b824bd5862171a1b8d79f61",
+      "@id": "_:N31b734be01e14a9c8f7cc896c917c513",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
@@ -100,7 +104,7 @@
       "sc:name": "Sequence"
     },
     {
-      "@id": "_:Nc58029e95aa74652b8ee5d220df6b6a7",
+      "@id": "_:N609f4ec820d74ee5978b3fef9b8b5c15",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1277"
@@ -111,7 +115,7 @@
       "sc:name": "Protein features"
     },
     {
-      "@id": "_:N392dae810bd648c2913468645ff492c6",
+      "@id": "_:N1f9515dd24d64bef918e9b28dd44270d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2955"
@@ -120,10 +124,6 @@
         "@id": "edam:format_2333"
       },
       "sc:name": "Sequence report"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/24.17.3439",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

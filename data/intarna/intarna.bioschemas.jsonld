@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,32 +39,32 @@
       "@id": "https://bio.tools/intarna",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
-        "Patrick Wright",
         {
           "@id": "http://orcid.org/0000-0001-8231-3323"
-        }
+        },
+        "Patrick Wright"
       ],
       "bsc:input": {
-        "@id": "_:Ne25b96ca556b4564aa3e1af542be5bb0"
+        "@id": "_:N7f8ddc729c7e42418316dbe09ae116ec"
       },
       "bsc:output": [
         {
-          "@id": "_:N2caa31352b6044d49fefce72a418e0f6"
+          "@id": "_:Nd698dd8ed6fc47bfb2798ecdf670c37b"
         },
         {
-          "@id": "_:N03a4b021e11f466081b4290607693ca7"
+          "@id": "_:Ncc7913e930e64322b328a7d3828a26a9"
         },
         {
-          "@id": "_:N7ea9d15ecfd64bf2aec6787752257188"
+          "@id": "_:N26094f3ea3c34206bc62e4ec0db60977"
         },
         {
-          "@id": "_:N377861a1cb5e45089e237dd362221ece"
+          "@id": "_:Nfeb47d025db04b47ab3e44abb7f4c4b5"
         },
         {
-          "@id": "_:N8b9e0f6c435044fea2f3ad588a04779f"
+          "@id": "_:Nf25d6cb4b28d488b85b5f0e7e82a125a"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0080"
@@ -72,10 +72,10 @@
       "sc:author": "Patrick Wright",
       "sc:citation": [
         "pubmed:24838564",
+        "pmcid:PMC4086077",
         {
           "@id": "https://doi.org/10.1093/nar/gku359"
-        },
-        "pmcid:PMC4086077"
+        }
       ],
       "sc:description": "sRNA target prediction.",
       "sc:featureList": {
@@ -84,8 +84,8 @@
       "sc:isAccessibleForFree": true,
       "sc:name": "IntaRNA - RNA-RNA interaction",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:provider": [
@@ -99,83 +99,7 @@
       "sc:url": "http://rna.informatik.uni-freiburg.de/IntaRNA/"
     },
     {
-      "@id": "_:N2caa31352b6044d49fefce72a418e0f6",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1270"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Feature table"
-    },
-    {
-      "@id": "_:N03a4b021e11f466081b4290607693ca7",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1270"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3508"
-        },
-        {
-          "@id": "edam:format_2331"
-        }
-      ],
-      "sc:name": "Feature table"
-    },
-    {
-      "@id": "_:N7ea9d15ecfd64bf2aec6787752257188",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2968"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3547"
-        },
-        {
-          "@id": "edam:format_3466"
-        },
-        {
-          "@id": "edam:format_3508"
-        }
-      ],
-      "sc:name": "Image"
-    },
-    {
-      "@id": "_:N377861a1cb5e45089e237dd362221ece",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2968"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3547"
-        },
-        {
-          "@id": "edam:format_3466"
-        },
-        {
-          "@id": "edam:format_3508"
-        }
-      ],
-      "sc:name": "Image"
-    },
-    {
-      "@id": "_:N8b9e0f6c435044fea2f3ad588a04779f",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1270"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Feature table"
-    },
-    {
-      "@id": "_:Ne25b96ca556b4564aa3e1af542be5bb0",
+      "@id": "_:N7f8ddc729c7e42418316dbe09ae116ec",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3495"
@@ -184,6 +108,82 @@
         "@id": "edam:format_1929"
       },
       "sc:name": "RNA sequence"
+    },
+    {
+      "@id": "_:Nd698dd8ed6fc47bfb2798ecdf670c37b",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1270"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2331"
+        },
+        {
+          "@id": "edam:format_3508"
+        }
+      ],
+      "sc:name": "Feature table"
+    },
+    {
+      "@id": "_:Ncc7913e930e64322b328a7d3828a26a9",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1270"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Feature table"
+    },
+    {
+      "@id": "_:N26094f3ea3c34206bc62e4ec0db60977",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1270"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Feature table"
+    },
+    {
+      "@id": "_:Nfeb47d025db04b47ab3e44abb7f4c4b5",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2968"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3466"
+        },
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_3508"
+        }
+      ],
+      "sc:name": "Image"
+    },
+    {
+      "@id": "_:Nf25d6cb4b28d488b85b5f0e7e82a125a",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2968"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3466"
+        },
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_3508"
+        }
+      ],
+      "sc:name": "Image"
     },
     {
       "@id": "http://orcid.org/0000-0001-8231-3323",

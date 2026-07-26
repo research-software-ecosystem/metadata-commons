@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,10 +36,6 @@
   },
   "@graph": [
     {
-      "@id": "https://orcid.org/0000-0002-5881-7377",
-      "@type": "sc:Person"
-    },
-    {
       "@id": "https://bio.tools/plasmidid",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
@@ -47,27 +43,27 @@
       },
       "bsc:input": [
         {
-          "@id": "_:N6d574a60f90d41d387a8f12dc1a08d06"
+          "@id": "_:Nf2fa908a755e480a9f4039928b96dcff"
         },
         {
-          "@id": "_:Nb479b7834b7443b2bb5f654f37e54b78"
+          "@id": "_:N0caf38be73f247ed98478cfae94e3e65"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N6a7fb4e1ce064be9976b94e2be79110b"
+          "@id": "_:N076aedd2e8944913aa964454bff58b71"
         },
         {
-          "@id": "_:N070e664a8be741ae9fb1521b35dbda25"
+          "@id": "_:N4acedcdc3f3a4c92b46549e8fdc665fc"
         },
         {
-          "@id": "_:Nee87666a1a214bb180fbce1ec9b81f14"
+          "@id": "_:Na29690a7e9224d82a170e314f0b7101f"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Workflow",
-        "Command-line tool"
+        "Command-line tool",
+        "Workflow"
       ],
       "sc:applicationSubCategory": [
         {
@@ -86,6 +82,12 @@
           "@id": "edam:operation_0524"
         },
         {
+          "@id": "edam:operation_2429"
+        },
+        {
+          "@id": "edam:operation_0578"
+        },
+        {
           "@id": "edam:operation_3184"
         },
         {
@@ -93,12 +95,6 @@
         },
         {
           "@id": "edam:operation_3472"
-        },
-        {
-          "@id": "edam:operation_0578"
-        },
-        {
-          "@id": "edam:operation_2429"
         }
       ],
       "sc:isAccessibleForFree": true,
@@ -109,52 +105,14 @@
         "@id": "https://github.com/BU-ISCIII/plasmidID/wiki"
       },
       "sc:softwareVersion": [
+        "1.6.4",
         "1.6.5",
-        "1.6.6",
-        "1.6.4"
+        "1.6.6"
       ],
       "sc:url": "https://github.com/BU-ISCIII/plasmidID"
     },
     {
-      "@id": "_:N6a7fb4e1ce064be9976b94e2be79110b",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2969"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3603"
-      },
-      "sc:name": "Sequence image"
-    },
-    {
-      "@id": "_:N070e664a8be741ae9fb1521b35dbda25",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2084"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3475"
-        },
-        {
-          "@id": "edam:format_2331"
-        }
-      ],
-      "sc:name": "Nucleic acid report"
-    },
-    {
-      "@id": "_:Nee87666a1a214bb180fbce1ec9b81f14",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1383"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2572"
-      },
-      "sc:name": "Nucleic acid sequence alignment"
-    },
-    {
-      "@id": "_:N6d574a60f90d41d387a8f12dc1a08d06",
+      "@id": "_:Nf2fa908a755e480a9f4039928b96dcff",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3494"
@@ -170,7 +128,7 @@
       "sc:name": "DNA sequence"
     },
     {
-      "@id": "_:Nb479b7834b7443b2bb5f654f37e54b78",
+      "@id": "_:N0caf38be73f247ed98478cfae94e3e65",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1234"
@@ -181,7 +139,49 @@
       "sc:name": "Sequence set (nucleic acid)"
     },
     {
+      "@id": "_:N076aedd2e8944913aa964454bff58b71",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2084"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2331"
+        },
+        {
+          "@id": "edam:format_3475"
+        }
+      ],
+      "sc:name": "Nucleic acid report"
+    },
+    {
+      "@id": "_:N4acedcdc3f3a4c92b46549e8fdc665fc",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1383"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2572"
+      },
+      "sc:name": "Nucleic acid sequence alignment"
+    },
+    {
+      "@id": "_:Na29690a7e9224d82a170e314f0b7101f",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2969"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3603"
+      },
+      "sc:name": "Sequence image"
+    },
+    {
       "@id": "https://orcid.org/0000-0002-0740-6324",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-5881-7377",
       "@type": "sc:Person"
     }
   ]

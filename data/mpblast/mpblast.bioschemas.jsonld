@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,12 +40,12 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Ian Korf",
       "bsc:input": {
-        "@id": "_:Nd08c5d54e6944042a5aa6496ae324330"
+        "@id": "_:Na0e1266cb86443dc8a4a1ef1c3e5c650"
       },
       "bsc:output": {
-        "@id": "_:N1f5c1e26116d43078a1da1fdafa93747"
+        "@id": "_:N97a33f00114b4ead8c8a40e522150643"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
@@ -59,16 +59,16 @@
       "sc:description": "Software that increases the throughput of batch BLASTN searches by multiplexing (concatenating) query sequences and thereby reducing the number of actual database searches performed.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0346"
+          "@id": "edam:operation_0292"
         },
         {
-          "@id": "edam:operation_0292"
+          "@id": "edam:operation_0346"
         }
       ],
       "sc:name": "MPBLAST",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -77,20 +77,20 @@
       "sc:url": "http://korflab.ucdavis.edu/software.html"
     },
     {
-      "@id": "_:N1f5c1e26116d43078a1da1fdafa93747",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0857"
-      },
-      "sc:name": "Sequence search results"
-    },
-    {
-      "@id": "_:Nd08c5d54e6944042a5aa6496ae324330",
+      "@id": "_:Na0e1266cb86443dc8a4a1ef1c3e5c650",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
       },
       "sc:name": "Sequence"
+    },
+    {
+      "@id": "_:N97a33f00114b4ead8c8a40e522150643",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0857"
+      },
+      "sc:name": "Sequence search results"
     }
   ]
 }

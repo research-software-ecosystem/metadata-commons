@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,24 +36,28 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1038/nmeth.1974",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/1000genomes_data_slicer",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Ensembl Genomes webteam",
       "bsc:input": {
-        "@id": "_:N13555805c79246c0a143df38e188de2d"
+        "@id": "_:N37a812f3f8004c9887df2190f2c70de0"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0080"
       },
       "sc:author": "Ensembl Genomes team",
       "sc:citation": [
+        "pubmed:22543379",
+        "pmcid:PMC3340611",
         {
           "@id": "https://doi.org/10.1038/nmeth.1974"
-        },
-        "pubmed:22543379",
-        "pmcid:PMC3340611"
+        }
       ],
       "sc:description": "Get a subset of data from a BAM or VCF file.",
       "sc:featureList": {
@@ -61,24 +65,24 @@
       },
       "sc:name": "1000Genomes data slicer",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:provider": "EMBL-EBI",
       "sc:softwareHelp": [
         {
-          "@id": "http://www.ebi.ac.uk/about/terms-of-use"
+          "@id": "http://browser.1000genomes.org/tools.html"
         },
         {
-          "@id": "http://browser.1000genomes.org/tools.html"
+          "@id": "http://www.ebi.ac.uk/about/terms-of-use"
         }
       ],
       "sc:softwareVersion": "1",
       "sc:url": "http://browser.1000genomes.org/tools.html"
     },
     {
-      "@id": "_:N13555805c79246c0a143df38e188de2d",
+      "@id": "_:N37a812f3f8004c9887df2190f2c70de0",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2012"
@@ -92,10 +96,6 @@
         }
       ],
       "sc:name": "Sequence coordinates"
-    },
-    {
-      "@id": "https://doi.org/10.1038/nmeth.1974",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

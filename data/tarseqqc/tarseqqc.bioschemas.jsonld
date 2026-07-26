@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,36 +36,40 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1002/humu.23204",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/tarseqqc",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Gabriela Merino",
       "bsc:input": [
         {
-          "@id": "_:N497f1d012f6d49b089d8caa62da16be2"
+          "@id": "_:N590b8bdcaa6d4fa6826f2fa529e5451c"
         },
         {
-          "@id": "_:N00f9208136924b4e89f1205b583183a0"
+          "@id": "_:Nd280f2a5883a42b1ab44620bee535e50"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N655ea5d518204fc286c650f0e6ff6e0e"
+          "@id": "_:Na6ff7647be104d8a943f43089f6c8148"
         },
         {
-          "@id": "_:Nb41172364f84445987f1733138e7577e"
+          "@id": "_:N57f570e2b9184b189bcbef89d93190d9"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3168"
+          "@id": "edam:topic_3303"
         },
         {
-          "@id": "edam:topic_3303"
+          "@id": "edam:topic_3168"
         }
       ],
       "sc:citation": [
@@ -86,9 +90,9 @@
       "sc:license": "GPL-2.0",
       "sc:name": "TarSeqQC",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://bioconductor.org/packages/release/bioc/html/TarSeqQC.html"
@@ -97,29 +101,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/TarSeqQC.html"
     },
     {
-      "@id": "_:N655ea5d518204fc286c650f0e6ff6e0e",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2884"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3620"
-      },
-      "sc:name": "Plot"
-    },
-    {
-      "@id": "_:Nb41172364f84445987f1733138e7577e",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2048"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3620"
-      },
-      "sc:name": "Report"
-    },
-    {
-      "@id": "_:N497f1d012f6d49b089d8caa62da16be2",
+      "@id": "_:N590b8bdcaa6d4fa6826f2fa529e5451c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0863"
@@ -138,17 +120,17 @@
       "sc:name": "Sequence alignment"
     },
     {
-      "@id": "_:N00f9208136924b4e89f1205b583183a0",
+      "@id": "_:Nd280f2a5883a42b1ab44620bee535e50",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0849"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_3003"
+          "@id": "edam:format_2572"
         },
         {
-          "@id": "edam:format_2572"
+          "@id": "edam:format_3003"
         },
         {
           "@id": "edam:format_1929"
@@ -157,8 +139,26 @@
       "sc:name": "Sequence record"
     },
     {
-      "@id": "https://doi.org/10.1002/humu.23204",
-      "@type": "sc:CreativeWork"
+      "@id": "_:Na6ff7647be104d8a943f43089f6c8148",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2884"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3620"
+      },
+      "sc:name": "Plot"
+    },
+    {
+      "@id": "_:N57f570e2b9184b189bcbef89d93190d9",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2048"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3620"
+      },
+      "sc:name": "Report"
     }
   ]
 }

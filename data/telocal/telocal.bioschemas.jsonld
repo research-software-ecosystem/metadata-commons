@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,12 +39,12 @@
       "@id": "https://bio.tools/telocal",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N87f9bc96076c435f892ed0cc07dff0ec"
+        "@id": "_:N03839248e5fa49f499f6f3b414d934c3"
       },
       "bsc:output": {
-        "@id": "_:N86fc718fa1b24fa9bbdc7b14539194e8"
+        "@id": "_:N89139257a04c43eb8db9f1bea28eb192"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0798"
@@ -57,25 +57,14 @@
       "sc:license": "GPL-3.0",
       "sc:name": "TElocal",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:url": "http://hammelllab.labsites.cshl.edu/software/#TElocal"
     },
     {
-      "@id": "_:N86fc718fa1b24fa9bbdc7b14539194e8",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1916"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2572"
-      },
-      "sc:name": "Alignment"
-    },
-    {
-      "@id": "_:N87f9bc96076c435f892ed0cc07dff0ec",
+      "@id": "_:N03839248e5fa49f499f6f3b414d934c3",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
@@ -84,6 +73,17 @@
         "@id": "edam:format_2182"
       },
       "sc:name": "Sequence"
+    },
+    {
+      "@id": "_:N89139257a04c43eb8db9f1bea28eb192",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1916"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2572"
+      },
+      "sc:name": "Alignment"
     }
   ]
 }

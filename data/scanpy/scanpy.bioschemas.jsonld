@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,16 +36,20 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1186/s13059-017-1382-0",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/scanpy",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "F. Alexander Wolf",
       "bsc:input": {
-        "@id": "_:N33d3359f83784aa0bc9f18c756e7eb60"
+        "@id": "_:N69fede5e91714e52af58e899915f5bdb"
       },
       "bsc:output": {
-        "@id": "_:N3aa48bf12377479bb54e8b8ae50cc89d"
+        "@id": "_:N3d9c4ce38feb4035a0f5f009fa7aa71a"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Library",
       "sc:applicationSubCategory": [
         {
@@ -71,20 +75,20 @@
       "sc:description": "Scalable toolkit for analyzing single-cell gene expression data. It includes preprocessing, visualization, clustering, pseudotime and trajectory inference and differential expression testing. The Python-based implementation efficiently deals with datasets of more than one million cells.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_2939"
-        },
-        {
           "@id": "edam:operation_3223"
         },
         {
           "@id": "edam:operation_0313"
+        },
+        {
+          "@id": "edam:operation_2939"
         }
       ],
       "sc:license": "BSD-3-Clause",
       "sc:name": "SCANPY",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "https://scanpy.readthedocs.io/en/latest/"
@@ -92,18 +96,7 @@
       "sc:url": "https://github.com/theislab/Scanpy"
     },
     {
-      "@id": "_:N3aa48bf12377479bb54e8b8ae50cc89d",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3768"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3590"
-      },
-      "sc:name": "Clustered expression profiles"
-    },
-    {
-      "@id": "_:N33d3359f83784aa0bc9f18c756e7eb60",
+      "@id": "_:N69fede5e91714e52af58e899915f5bdb",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3112"
@@ -114,8 +107,15 @@
       "sc:name": "Gene expression matrix"
     },
     {
-      "@id": "https://doi.org/10.1186/s13059-017-1382-0",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N3d9c4ce38feb4035a0f5f009fa7aa71a",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3768"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3590"
+      },
+      "sc:name": "Clustered expression profiles"
     }
   ]
 }

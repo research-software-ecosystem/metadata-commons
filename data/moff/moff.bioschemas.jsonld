@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,16 +36,20 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1038/nmeth.4075",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/moff",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Lennart Martens",
       "bsc:input": {
-        "@id": "_:N0afa986667fc4f83a52975114d67982f"
+        "@id": "_:Nff2fa8c2056049f8936fd9d2fc2e76a1"
       },
       "bsc:output": {
-        "@id": "_:Nc195387edede421e9df68f73af18ca47"
+        "@id": "_:Nb9179da1580441eb8e290efb2a278e17"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0121"
@@ -62,8 +66,8 @@
       },
       "sc:name": "MoFF",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:provider": "ugent.be",
@@ -74,7 +78,7 @@
       "sc:url": "https://github.com/compomics/moFF"
     },
     {
-      "@id": "_:N0afa986667fc4f83a52975114d67982f",
+      "@id": "_:Nff2fa8c2056049f8936fd9d2fc2e76a1",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2536"
@@ -82,16 +86,12 @@
       "sc:name": "Mass spectrometry data"
     },
     {
-      "@id": "_:Nc195387edede421e9df68f73af18ca47",
+      "@id": "_:Nb9179da1580441eb8e290efb2a278e17",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2071"
       },
       "sc:name": "Sequence motif (protein)"
-    },
-    {
-      "@id": "https://doi.org/10.1038/nmeth.4075",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

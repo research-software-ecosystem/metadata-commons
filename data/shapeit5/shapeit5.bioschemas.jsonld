@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,26 +36,18 @@
   },
   "@graph": [
     {
-      "@id": "https://orcid.org/0000-0002-3906-8446",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://doi.org/10.1038/s41588-023-01415-w",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/shapeit5",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "https://orcid.org/0000-0002-3906-8446"
       },
       "bsc:input": {
-        "@id": "_:N580af478ec1648268f36ea214d0a1605"
+        "@id": "_:N9f54b5c74926401599eb032beffa9970"
       },
       "bsc:output": {
-        "@id": "_:Neff8e654c9b5493ca816283c9576f3b6"
+        "@id": "_:Na8a8fc10651c4f86bb82f12f7f812c29"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3056"
@@ -82,7 +74,7 @@
       "sc:url": "https://odelaneau.github.io/shapeit5/"
     },
     {
-      "@id": "_:Neff8e654c9b5493ca816283c9576f3b6",
+      "@id": "_:N9f54b5c74926401599eb032beffa9970",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3498"
@@ -98,7 +90,7 @@
       "sc:name": "Sequence variations"
     },
     {
-      "@id": "_:N580af478ec1648268f36ea214d0a1605",
+      "@id": "_:Na8a8fc10651c4f86bb82f12f7f812c29",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3498"
@@ -112,6 +104,14 @@
         }
       ],
       "sc:name": "Sequence variations"
+    },
+    {
+      "@id": "https://doi.org/10.1038/s41588-023-01415-w",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-3906-8446",
+      "@type": "sc:Person"
     }
   ]
 }

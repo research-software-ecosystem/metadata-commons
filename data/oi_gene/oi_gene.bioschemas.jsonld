@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,30 +36,26 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1016/j.ajhg.2012.02.026",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/oi_gene",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Raymond Dalgleish",
       "bsc:input": {
-        "@id": "_:N839cbe66038b4ad4b72d2681f700cf6d"
+        "@id": "_:N05728c34f3de46a4a4cc4af7734a087e"
       },
       "bsc:output": {
-        "@id": "_:Nce61236a91c145ccb43edbba0ef0cb19"
+        "@id": "_:Nc61fdb2fd06447818c62fb94c33e2c1a"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Database portal",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0634"
       },
       "sc:citation": [
+        "pubmed:22482805",
+        "pmcid:PMC3322236",
         {
           "@id": "https://doi.org/10.1016/j.ajhg.2012.02.026"
-        },
-        "pmcid:PMC3322236",
-        "pubmed:22482805"
+        }
       ],
       "sc:description": "All published accounts of variants resulting in osteogenesis imperfecta. Such variants occur in the COL1A1, COL1A2, CRTAP and LEPRE1 genes.",
       "sc:featureList": {
@@ -67,8 +63,8 @@
       },
       "sc:name": "Osteogenesis imperfecta collagen mutation",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -77,7 +73,15 @@
       "sc:url": "https://oi.gene.le.ac.uk"
     },
     {
-      "@id": "_:Nce61236a91c145ccb43edbba0ef0cb19",
+      "@id": "_:N05728c34f3de46a4a4cc4af7734a087e",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0957"
+      },
+      "sc:name": "Database metadata"
+    },
+    {
+      "@id": "_:Nc61fdb2fd06447818c62fb94c33e2c1a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3498"
@@ -88,12 +92,8 @@
       "sc:name": "Sequence variations"
     },
     {
-      "@id": "_:N839cbe66038b4ad4b72d2681f700cf6d",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0957"
-      },
-      "sc:name": "Database metadata"
+      "@id": "https://doi.org/10.1016/j.ajhg.2012.02.026",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

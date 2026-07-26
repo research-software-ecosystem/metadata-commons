@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -43,17 +43,17 @@
       "@id": "https://bio.tools/FEDRO",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Simona E. Rombo",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Desktop application",
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_0780"
-        },
         {
           "@id": "edam:topic_0203"
         },
         {
           "@id": "edam:topic_3512"
+        },
+        {
+          "@id": "edam:topic_0780"
         }
       ],
       "sc:citation": [
@@ -66,20 +66,20 @@
       "sc:description": "Software tool for the automatic discovery of candidate ORFs in plants with c →u RNA editing.",
       "sc:featureList": [
         {
+          "@id": "edam:operation_0436"
+        },
+        {
           "@id": "edam:operation_3096"
         },
         {
           "@id": "edam:operation_3557"
-        },
-        {
-          "@id": "edam:operation_0436"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:name": "FEDRO",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:url": "http://math.unipa.it/rombo/FEDRO"

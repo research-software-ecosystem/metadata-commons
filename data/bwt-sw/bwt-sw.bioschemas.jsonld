@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,33 +36,37 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/btn032",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/bwt-sw",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "GitHub Issues",
       "bsc:input": {
-        "@id": "_:N65429b90c1aa4eab806a1dd555089be5"
+        "@id": "_:N430272ef8a634e2aa711489f430c0adc"
       },
       "bsc:output": {
-        "@id": "_:N8435a28836ab4522b847695fa1ec40ad"
+        "@id": "_:N0e3c3481735e4350a6b8f35d039e678a"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_3168"
-        },
         {
           "@id": "edam:topic_0654"
         },
         {
           "@id": "edam:topic_0102"
+        },
+        {
+          "@id": "edam:topic_3168"
         }
       ],
       "sc:citation": [
+        "pubmed:18227115",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btn032"
-        },
-        "pubmed:18227115"
+        }
       ],
       "sc:description": "BWT-SW is a local alignment tool for searching nucleotide sequences. It performs the same function as BLASTn, the BLAST program for finding regions of local similarity between nucleotide sequences. While BLAST is an approximation of the Smith-Waterman local alignment algorithm and may miss significant alignments, BWT-SW finds all local alignments.",
       "sc:featureList": [
@@ -75,14 +79,14 @@
       ],
       "sc:name": "BWT-SW",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:url": "https://github.com/mruffalo/bwt-sw"
     },
     {
-      "@id": "_:N65429b90c1aa4eab806a1dd555089be5",
+      "@id": "_:N430272ef8a634e2aa711489f430c0adc",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
@@ -90,16 +94,12 @@
       "sc:name": "Sequence"
     },
     {
-      "@id": "_:N8435a28836ab4522b847695fa1ec40ad",
+      "@id": "_:N0e3c3481735e4350a6b8f35d039e678a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0857"
       },
       "sc:name": "Sequence search results"
-    },
-    {
-      "@id": "https://doi.org/10.1093/bioinformatics/btn032",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

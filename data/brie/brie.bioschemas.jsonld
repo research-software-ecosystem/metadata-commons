@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,26 +40,26 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Yuanhua Huang",
       "bsc:input": {
-        "@id": "_:Nc644c5aac3a2492595fce41984affebf"
+        "@id": "_:N548667fc6fb34d4da8630103f58ef21e"
       },
       "bsc:output": {
-        "@id": "_:N77b285e7178546419058dff92b5b7779"
+        "@id": "_:N757508d6376f40e78b90cf72493d5ae7"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3320"
       },
       "sc:citation": [
         "pubmed:28655331",
-        {
-          "@id": "https://doi.org/10.1007/978-1-4939-9057-3_12"
-        },
         "pmcid:PMC5488362",
         {
           "@id": "https://doi.org/10.1186/s13059-017-1248-5"
         },
-        "pubmed:30758827"
+        "pubmed:30758827",
+        {
+          "@id": "https://doi.org/10.1007/978-1-4939-9057-3_12"
+        }
       ],
       "sc:description": "Bayesian method for estimating splicing isoform proportions from single cell RNA-seq data.",
       "sc:featureList": [
@@ -74,9 +74,9 @@
       "sc:license": "Apache-2.0",
       "sc:name": "BRIE",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": [
         {
@@ -89,7 +89,7 @@
       "sc:url": "https://brie.readthedocs.io/en/latest/index.html"
     },
     {
-      "@id": "_:Nc644c5aac3a2492595fce41984affebf",
+      "@id": "_:N548667fc6fb34d4da8630103f58ef21e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1383"
@@ -100,7 +100,7 @@
       "sc:name": "Sequence alignment (nucleic acid)"
     },
     {
-      "@id": "_:N77b285e7178546419058dff92b5b7779",
+      "@id": "_:N757508d6376f40e78b90cf72493d5ae7",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2084"
@@ -111,11 +111,11 @@
       "sc:name": "Nucleic acid report"
     },
     {
-      "@id": "https://doi.org/10.1007/978-1-4939-9057-3_12",
+      "@id": "https://doi.org/10.1186/s13059-017-1248-5",
       "@type": "sc:CreativeWork"
     },
     {
-      "@id": "https://doi.org/10.1186/s13059-017-1248-5",
+      "@id": "https://doi.org/10.1007/978-1-4939-9057-3_12",
       "@type": "sc:CreativeWork"
     }
   ]

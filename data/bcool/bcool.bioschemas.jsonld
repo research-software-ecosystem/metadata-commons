@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,25 +36,21 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/BIOINFORMATICS/BTZ548",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/Bcool",
       "@type": "sc:SoftwareApplication",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_3168"
-        },
-        {
-          "@id": "edam:topic_0081"
-        },
         {
           "@id": "edam:topic_0102"
         },
         {
           "@id": "edam:topic_0196"
+        },
+        {
+          "@id": "edam:topic_3168"
+        },
+        {
+          "@id": "edam:topic_0081"
         }
       ],
       "sc:citation": [
@@ -66,12 +62,6 @@
       "sc:description": "self-correction of short reads via mapping on de Bruijn graphs.\n\nde Bruijn graph cOrrectiOn from graph aLignment.\n\nBcool clone and compile Bcalm2 Bgreat2 Btrim and Ntcard",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3472"
-        },
-        {
-          "@id": "edam:operation_3195"
-        },
-        {
           "@id": "edam:operation_0524"
         },
         {
@@ -79,11 +69,21 @@
         },
         {
           "@id": "edam:operation_3192"
+        },
+        {
+          "@id": "edam:operation_3195"
+        },
+        {
+          "@id": "edam:operation_3472"
         }
       ],
       "sc:license": "AGPL-3.0",
       "sc:name": "BCOOL",
       "sc:url": "http://github.com/Malfoy/BCOOL"
+    },
+    {
+      "@id": "https://doi.org/10.1093/BIOINFORMATICS/BTZ548",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

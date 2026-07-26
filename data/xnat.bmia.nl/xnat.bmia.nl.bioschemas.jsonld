@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -41,21 +41,21 @@
       "biotools:primaryContact": "Stefan Klein",
       "bsc:input": [
         {
-          "@id": "_:Nd0736915b38b453894bc475f471fae68"
+          "@id": "_:Na7b9544a3a8648b3922c38893114f713"
         },
         {
-          "@id": "_:N4067111c954e4bb08b4b870cc150da99"
+          "@id": "_:N8ef36cb9162e43dda0781df1ceb87b50"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N73e1694679e04835b5d51696427d19e1"
+          "@id": "_:N1472fb4351384873b83ba156c3b57e3f"
         },
         {
-          "@id": "_:Nf96404e5b7af412e8fe94796862cc720"
+          "@id": "_:Nc2989029acbf428eb5392b325259c026"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web API",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3384"
@@ -63,17 +63,17 @@
       "sc:description": "Imaging platform for multi-centre clinical studies, hosted by Health-RI. The platform is based on the open source XNAT software and the RSNA CTP software.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3443"
+          "@id": "edam:operation_3431"
         },
         {
-          "@id": "edam:operation_3431"
+          "@id": "edam:operation_3443"
         }
       ],
       "sc:name": "Health-RI XNAT",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": "Health-RI",
       "sc:softwareHelp": {
@@ -83,7 +83,7 @@
       "sc:url": "https://xnat.health-ri.nl"
     },
     {
-      "@id": "_:Nd0736915b38b453894bc475f471fae68",
+      "@id": "_:Na7b9544a3a8648b3922c38893114f713",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2968"
@@ -93,81 +93,53 @@
           "@id": "edam:format_3548"
         },
         {
-          "@id": "edam:format_3549"
-        },
-        {
-          "@id": "edam:format_3468"
+          "@id": "edam:format_2330"
         },
         {
           "@id": "edam:format_3550"
         },
         {
+          "@id": "edam:format_3549"
+        },
+        {
           "@id": "edam:format_3551"
         },
         {
-          "@id": "edam:format_2330"
+          "@id": "edam:format_3468"
         }
       ],
       "sc:name": "Image"
     },
     {
-      "@id": "_:N4067111c954e4bb08b4b870cc150da99",
+      "@id": "_:N8ef36cb9162e43dda0781df1ceb87b50",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3546"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_2330"
-        },
-        {
           "@id": "edam:format_3548"
-        },
-        {
-          "@id": "edam:format_3549"
-        },
-        {
-          "@id": "edam:format_3468"
-        },
-        {
-          "@id": "edam:format_3550"
-        },
-        {
-          "@id": "edam:format_3551"
-        }
-      ],
-      "sc:name": "Image metadata"
-    },
-    {
-      "@id": "_:N73e1694679e04835b5d51696427d19e1",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3546"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3549"
-        },
-        {
-          "@id": "edam:format_3468"
-        },
-        {
-          "@id": "edam:format_3550"
-        },
-        {
-          "@id": "edam:format_3551"
         },
         {
           "@id": "edam:format_2330"
         },
         {
-          "@id": "edam:format_3548"
+          "@id": "edam:format_3550"
+        },
+        {
+          "@id": "edam:format_3549"
+        },
+        {
+          "@id": "edam:format_3551"
+        },
+        {
+          "@id": "edam:format_3468"
         }
       ],
       "sc:name": "Image metadata"
     },
     {
-      "@id": "_:Nf96404e5b7af412e8fe94796862cc720",
+      "@id": "_:N1472fb4351384873b83ba156c3b57e3f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2968"
@@ -177,22 +149,50 @@
           "@id": "edam:format_3548"
         },
         {
-          "@id": "edam:format_3549"
-        },
-        {
-          "@id": "edam:format_3468"
+          "@id": "edam:format_2330"
         },
         {
           "@id": "edam:format_3550"
         },
         {
+          "@id": "edam:format_3549"
+        },
+        {
           "@id": "edam:format_3551"
         },
         {
-          "@id": "edam:format_2330"
+          "@id": "edam:format_3468"
         }
       ],
       "sc:name": "Image"
+    },
+    {
+      "@id": "_:Nc2989029acbf428eb5392b325259c026",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3546"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3548"
+        },
+        {
+          "@id": "edam:format_2330"
+        },
+        {
+          "@id": "edam:format_3550"
+        },
+        {
+          "@id": "edam:format_3549"
+        },
+        {
+          "@id": "edam:format_3551"
+        },
+        {
+          "@id": "edam:format_3468"
+        }
+      ],
+      "sc:name": "Image metadata"
     }
   ]
 }

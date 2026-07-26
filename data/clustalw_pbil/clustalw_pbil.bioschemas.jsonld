@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,12 +40,12 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Gilbert Deleage",
       "bsc:input": {
-        "@id": "_:N11b4e9769d6e496ab13df0b607d16895"
+        "@id": "_:N3d26a000572c4d80afa3fa60882d7109"
       },
       "bsc:output": {
-        "@id": "_:N2e717ab52e8d42ecb374e412fb0e86dc"
+        "@id": "_:Ne3d081f5a9fa47909299a90b45b3e644"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0080"
@@ -56,9 +56,9 @@
       },
       "sc:name": "ClustalW (PBIL)",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://npsa-prabi.ibcp.fr/cgi-bin/npsa_automat.pl?page=/NPSAHLP/npsahlp_bseq.html"
@@ -66,18 +66,7 @@
       "sc:url": "http://npsa-pbil.ibcp.fr/cgi-bin/npsa_automat.pl?page=npsa_clustalw.html"
     },
     {
-      "@id": "_:N2e717ab52e8d42ecb374e412fb0e86dc",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0863"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1929"
-      },
-      "sc:name": "Sequence alignment"
-    },
-    {
-      "@id": "_:N11b4e9769d6e496ab13df0b607d16895",
+      "@id": "_:N3d26a000572c4d80afa3fa60882d7109",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
@@ -86,6 +75,17 @@
         "@id": "edam:format_1929"
       },
       "sc:name": "Sequence"
+    },
+    {
+      "@id": "_:Ne3d081f5a9fa47909299a90b45b3e644",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0863"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "Sequence alignment"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,25 +39,25 @@
       "@id": "https://bio.tools/monocle",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N0410bb6f7b0e4551a88606b6a3f2529a"
+        "@id": "_:N4bccd6019c09432ca6bae26cce7a24d2"
       },
       "bsc:output": {
-        "@id": "_:Nf207a85bdc5a47158f9872b3f49eaf1d"
+        "@id": "_:Nd45baee3cf1b428fabe1e9d31dc49a8e"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3519"
+          "@id": "edam:topic_2229"
         },
         {
           "@id": "edam:topic_0203"
         },
         {
-          "@id": "edam:topic_2229"
+          "@id": "edam:topic_3519"
         },
         {
           "@id": "edam:topic_3170"
@@ -66,18 +66,18 @@
       "sc:description": "Monocle performs differential expression and time-series analysis for single-cell expression experiments. It orders individual cells according to progress through a biological process, without knowing ahead of time which genes define progress through that process. Monocle also performs differential expression analysis, clustering, visualization, and other useful tasks on single cell expression data.  It is designed to work with RNA-Seq and qPCR data, but could be used with other types as well.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3439"
+          "@id": "edam:operation_3562"
         },
         {
-          "@id": "edam:operation_3562"
+          "@id": "edam:operation_3439"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "Artistic-2.0",
       "sc:name": "monocle",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -87,18 +87,7 @@
       "sc:url": "https://bioconductor.org/packages/monocle"
     },
     {
-      "@id": "_:Nf207a85bdc5a47158f9872b3f49eaf1d",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1713"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2032"
-      },
-      "sc:name": "Fate map"
-    },
-    {
-      "@id": "_:N0410bb6f7b0e4551a88606b6a3f2529a",
+      "@id": "_:N4bccd6019c09432ca6bae26cce7a24d2",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2603"
@@ -107,6 +96,17 @@
         "@id": "edam:format_1213"
       },
       "sc:name": "Gene expression data"
+    },
+    {
+      "@id": "_:Nd45baee3cf1b428fabe1e9d31dc49a8e",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1713"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2032"
+      },
+      "sc:name": "Fate map"
     }
   ]
 }

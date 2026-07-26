@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,19 +36,15 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btq233",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/tapir",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N31a6aeddb4934b53ae17653877b36817"
+        "@id": "_:N3aee340fd504449f9fa192be7b7e9f0d"
       },
       "bsc:output": {
-        "@id": "_:N0ca47bdab8754a77b84e360a35778a3f"
+        "@id": "_:Na7596eb4ecb34cb481de8c196452b550"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0160"
@@ -65,8 +61,8 @@
       },
       "sc:name": "TAPIR",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:provider": "PSB",
@@ -77,15 +73,7 @@
       "sc:url": "http://bioinformatics.psb.ugent.be/webtools/tapir/"
     },
     {
-      "@id": "_:N0ca47bdab8754a77b84e360a35778a3f",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1276"
-      },
-      "sc:name": "Nucleic acid features"
-    },
-    {
-      "@id": "_:N31a6aeddb4934b53ae17653877b36817",
+      "@id": "_:N3aee340fd504449f9fa192be7b7e9f0d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1234"
@@ -94,6 +82,18 @@
         "@id": "edam:format_1929"
       },
       "sc:name": "Sequence set (nucleic acid)"
+    },
+    {
+      "@id": "_:Na7596eb4ecb34cb481de8c196452b550",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1276"
+      },
+      "sc:name": "Nucleic acid features"
+    },
+    {
+      "@id": "https://doi.org/10.1093/bioinformatics/btq233",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

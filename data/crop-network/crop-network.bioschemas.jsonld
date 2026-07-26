@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,13 +36,9 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/BIOINFORMATICS/BTZ688",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/crop-network",
       "@type": "sc:SoftwareApplication",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Desktop application",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0602"
@@ -56,10 +52,10 @@
       "sc:description": "Coordinated Panel Visualization for Biological Networks Analysis | CroP – Coordinated Panels Visualization | The Computational Design and Visualization Lab focuses on multidisciplinary research bringing together Computer Science, Graphic Design and New Media Art | CroP is a visualization tool aimed at highlighting patterns of data in networks integrated with temporal data and analyzing their behaviors over time through dynamic visualization models in a coordinated multiple views layout",
       "sc:featureList": [
         {
-          "@id": "edam:operation_2497"
+          "@id": "edam:operation_1812"
         },
         {
-          "@id": "edam:operation_1812"
+          "@id": "edam:operation_2497"
         }
       ],
       "sc:name": "CroP",
@@ -67,6 +63,10 @@
         "@id": "https://cdv.dei.uc.pt/wp-content/uploads/2018/11/CroP-Manual.pdf"
       },
       "sc:url": "https://cdv.dei.uc.pt/crop/"
+    },
+    {
+      "@id": "https://doi.org/10.1093/BIOINFORMATICS/BTZ688",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

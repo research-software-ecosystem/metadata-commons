@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,12 +40,12 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Pierre Lindenbaum",
       "bsc:input": {
-        "@id": "_:N5739774fa54642a4849028797633e416"
+        "@id": "_:Nceffd30df8c64363b389474caa383323"
       },
       "bsc:output": {
-        "@id": "_:N0b34ccdba52c46609614c7ef7525a237"
+        "@id": "_:N21bf406dff104650abdaa22ba75d26c2"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0080"
@@ -62,29 +62,29 @@
       "sc:license": "MIT",
       "sc:name": "VCFFilterJS",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:provider": [
-        "univ-nantes.fr",
-        "Institut du Thorax, Nantes, France"
+        "Institut du Thorax, Nantes, France",
+        "univ-nantes.fr"
       ],
       "sc:softwareHelp": [
+        {
+          "@id": "https://github.com/lindenb/jvarkit/wiki/Citing"
+        },
         {
           "@id": "https://github.com/lindenb/jvarkit/wiki/VCFFilterJS"
         },
         {
           "@id": "https://opensource.org/licenses/MIT"
-        },
-        {
-          "@id": "https://github.com/lindenb/jvarkit/wiki/Citing"
         }
       ],
       "sc:softwareVersion": "1.0",
       "sc:url": "https://github.com/lindenb/jvarkit/wiki/VCFFilterJS"
     },
     {
-      "@id": "_:N0b34ccdba52c46609614c7ef7525a237",
+      "@id": "_:Nceffd30df8c64363b389474caa383323",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1050"
@@ -95,7 +95,7 @@
       "sc:name": "File name"
     },
     {
-      "@id": "_:N5739774fa54642a4849028797633e416",
+      "@id": "_:N21bf406dff104650abdaa22ba75d26c2",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1050"

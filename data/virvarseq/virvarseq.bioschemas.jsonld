@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,28 +36,24 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btu587",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/virvarseq",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N65a7c97704a44f7eba88c95de4eecf79"
+        "@id": "_:N84d69dcb83414c04ae4569758f43c013"
       },
       "bsc:output": {
-        "@id": "_:Nd20fb64bea174ed1b2907ff2a8a4eda2"
+        "@id": "_:Nf90d8243cd4a48abb10898f32720ac82"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0080"
       },
       "sc:citation": [
+        "pubmed:25178459",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btu587"
-        },
-        "pubmed:25178459"
+        }
       ],
       "sc:description": "A low-frequency virus variant detection pipeline for Illumina sequencing using adaptive base-calling accuracy filtering.",
       "sc:featureList": {
@@ -65,8 +61,8 @@
       },
       "sc:name": "VirVarSeq",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:provider": "ugent.be",
       "sc:softwareHelp": {
@@ -76,15 +72,7 @@
       "sc:url": "https://sourceforge.net/projects/virtools/"
     },
     {
-      "@id": "_:Nd20fb64bea174ed1b2907ff2a8a4eda2",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0850"
-      },
-      "sc:name": "Sequence set"
-    },
-    {
-      "@id": "_:N65a7c97704a44f7eba88c95de4eecf79",
+      "@id": "_:N84d69dcb83414c04ae4569758f43c013",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3494"
@@ -93,6 +81,18 @@
         "@id": "edam:format_2545"
       },
       "sc:name": "DNA sequence"
+    },
+    {
+      "@id": "_:Nf90d8243cd4a48abb10898f32720ac82",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0850"
+      },
+      "sc:name": "Sequence set"
+    },
+    {
+      "@id": "https://doi.org/10.1093/bioinformatics/btu587",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

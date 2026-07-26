@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,22 +39,22 @@
       "@id": "https://bio.tools/biobakery_workflows",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Ne0450f3da0f5458d9921733dacfc040f"
+        "@id": "_:N98a8716d610f4e8cba72f4b7f32613c9"
       },
       "bsc:output": {
-        "@id": "_:N2dcdfc703e1f484d8ae373aec98e3daf"
+        "@id": "_:Nd4fd3f07ec0841e68d13a54fe94cdc39"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Workflow",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0622"
       },
       "sc:citation": [
+        "pubmed:29194469",
+        "pmcid:PMC6030947",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btx754"
-        },
-        "pubmed:29194469",
-        "pmcid:PMC6030947"
+        }
       ],
       "sc:description": "bioBakery workflows is a collection of workflows for common microbial community analyses using standardized tools and parameters, performing quality control and generating summary statistics.",
       "sc:featureList": {
@@ -71,18 +71,7 @@
       "sc:url": "http://huttenhower.sph.harvard.edu/biobakery_workflows"
     },
     {
-      "@id": "_:N2dcdfc703e1f484d8ae373aec98e3daf",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2084"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Nucleic acid report"
-    },
-    {
-      "@id": "_:Ne0450f3da0f5458d9921733dacfc040f",
+      "@id": "_:N98a8716d610f4e8cba72f4b7f32613c9",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2977"
@@ -91,6 +80,17 @@
         "@id": "edam:format_1930"
       },
       "sc:name": "Nucleic acid sequence"
+    },
+    {
+      "@id": "_:Nd4fd3f07ec0841e68d13a54fe94cdc39",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2084"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Nucleic acid report"
     },
     {
       "@id": "https://doi.org/10.1093/bioinformatics/btx754",

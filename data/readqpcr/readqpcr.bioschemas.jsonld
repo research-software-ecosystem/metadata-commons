@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -38,10 +38,10 @@
     {
       "@id": "https://bio.tools/readqpcr",
       "@type": "sc:SoftwareApplication",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3519"
@@ -49,22 +49,22 @@
       "sc:citation": {
         "@id": "https://doi.org/10.1186/1471-2164-13-296"
       },
-      "sc:description": "The package provides functions to read raw RT-qPCR data of different platforms.",
+      "sc:description": "Functions for the selection of optimal reference genes and the normalisation of real-time quantitative PCR data.",
       "sc:featureList": {
         "@id": "edam:operation_1812"
       },
       "sc:license": "LGPL-3.0-only",
       "sc:name": "ReadqPCR",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
-        "@id": "https://bioconductor.org/packages/ReadqPCR"
+        "@id": "https://bioconductor.org/packages/NormqPCR"
       },
       "sc:softwareVersion": "1.58.0",
-      "sc:url": "https://bioconductor.org/packages/ReadqPCR"
+      "sc:url": "https://bioconductor.org/packages/NormqPCR"
     },
     {
       "@id": "https://doi.org/10.1186/1471-2164-13-296",

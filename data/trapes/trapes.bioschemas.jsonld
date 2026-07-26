@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,12 +40,12 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Shaked Afik",
       "bsc:input": {
-        "@id": "_:N08fa094dd71547e8ab44f834fb46c1c9"
+        "@id": "_:N0707cee53f584ebb8d004a1ff7dcbd6b"
       },
       "bsc:output": {
-        "@id": "_:N316ced75855544f9b6a150ea26cd0e56"
+        "@id": "_:N8b3b9d1d645a4aa4b89ea33e2cdfa8a3"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
@@ -72,18 +72,7 @@
       "sc:url": "https://github.com/YosefLab/TRAPeS"
     },
     {
-      "@id": "_:N316ced75855544f9b6a150ea26cd0e56",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2955"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Sequence report"
-    },
-    {
-      "@id": "_:N08fa094dd71547e8ab44f834fb46c1c9",
+      "@id": "_:N0707cee53f584ebb8d004a1ff7dcbd6b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1383"
@@ -92,6 +81,17 @@
         "@id": "edam:format_2572"
       },
       "sc:name": "Sequence alignment (nucleic acid)"
+    },
+    {
+      "@id": "_:N8b3b9d1d645a4aa4b89ea33e2cdfa8a3",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2955"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Sequence report"
     },
     {
       "@id": "https://doi.org/10.1093/nar/gkx615",

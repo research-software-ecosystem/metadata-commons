@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,8 +36,8 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1111/nph.19283",
-      "@type": "sc:CreativeWork"
+      "@id": "https://orcid.org/0000-0002-0831-486X",
+      "@type": "sc:Person"
     },
     {
       "@id": "https://bio.tools/globalamfungi",
@@ -46,25 +46,25 @@
         "@id": "https://orcid.org/0000-0002-0831-486X"
       },
       "bsc:input": {
-        "@id": "_:N6e204d20b91d457cab0bb475cadac08b"
+        "@id": "_:N355c018bc05e410fa0b64aa608fe8749"
       },
       "bsc:output": {
-        "@id": "_:Ncb139929ad2142c0a2ac01e68242b76c"
+        "@id": "_:N905b6d6830e54c52ba3882f474f3f968"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Database portal",
         "Web application"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3697"
-        },
-        {
           "@id": "edam:topic_3810"
         },
         {
           "@id": "edam:topic_3050"
+        },
+        {
+          "@id": "edam:topic_3697"
         }
       ],
       "sc:author": {
@@ -97,7 +97,7 @@
       "sc:url": "https://globalamfungi.com/"
     },
     {
-      "@id": "_:N6e204d20b91d457cab0bb475cadac08b",
+      "@id": "_:N355c018bc05e410fa0b64aa608fe8749",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2977"
@@ -108,7 +108,7 @@
       "sc:name": "Nucleic acid sequence"
     },
     {
-      "@id": "_:Ncb139929ad2142c0a2ac01e68242b76c",
+      "@id": "_:N905b6d6830e54c52ba3882f474f3f968",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0857"
@@ -119,8 +119,8 @@
       "sc:name": "Sequence search results"
     },
     {
-      "@id": "https://orcid.org/0000-0002-0831-486X",
-      "@type": "sc:Person"
+      "@id": "https://doi.org/10.1111/nph.19283",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

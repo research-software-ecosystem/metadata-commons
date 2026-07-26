@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,20 +36,16 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1135/cccc20081261",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/begdb",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Jan Řezáč",
       "bsc:input": {
-        "@id": "_:N8025fe4e97764f87a86220d1796d40d1"
+        "@id": "_:N0225a1010d7d424290a39da97d6976bd"
       },
       "bsc:output": {
-        "@id": "_:N8add826d0fd34a0b97737360a44e4575"
+        "@id": "_:N57bcb50192b6472c897212a5b2ad0b68"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Database portal",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3332"
@@ -66,8 +62,8 @@
       "sc:name": "BEGDB",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:provider": "ELIXIR-CZ",
       "sc:softwareHelp": {
@@ -76,7 +72,7 @@
       "sc:url": "http://www.begdb.org/"
     },
     {
-      "@id": "_:N8025fe4e97764f87a86220d1796d40d1",
+      "@id": "_:N0225a1010d7d424290a39da97d6976bd",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0960"
@@ -84,12 +80,16 @@
       "sc:name": "User metadata"
     },
     {
-      "@id": "_:N8add826d0fd34a0b97737360a44e4575",
+      "@id": "_:N57bcb50192b6472c897212a5b2ad0b68",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2531"
       },
       "sc:name": "Experiment report"
+    },
+    {
+      "@id": "https://doi.org/10.1135/cccc20081261",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

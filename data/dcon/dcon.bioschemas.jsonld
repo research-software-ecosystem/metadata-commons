@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,16 +36,20 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/17.10.957",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/dcon",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Piero Fariselli",
       "bsc:input": {
-        "@id": "_:Nbc0e2ce9473c420db7b2f75b3c262148"
+        "@id": "_:N13b189262b474f16a27082d6a99e18d7"
       },
       "bsc:output": {
-        "@id": "_:Nd631ece9cc1b4f59bbd3fbee91ed5239"
+        "@id": "_:N4e7a05a24563477fa10f66b6c052d4a7"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Web application"
@@ -70,9 +74,9 @@
       },
       "sc:name": "DCON",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": "ELIXIR-ITA-BOLOGNA",
       "sc:softwareHelp": {
@@ -82,18 +86,7 @@
       "sc:url": "http://gpcr.biocomp.unibo.it/cgi/predictors/cys-cys/pred_dconcgi.cgi"
     },
     {
-      "@id": "_:Nd631ece9cc1b4f59bbd3fbee91ed5239",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2048"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2331"
-      },
-      "sc:name": "Report"
-    },
-    {
-      "@id": "_:Nbc0e2ce9473c420db7b2f75b3c262148",
+      "@id": "_:N13b189262b474f16a27082d6a99e18d7",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0897"
@@ -104,8 +97,15 @@
       "sc:name": "Protein property"
     },
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/17.10.957",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N4e7a05a24563477fa10f66b6c052d4a7",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2048"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2331"
+      },
+      "sc:name": "Report"
     }
   ]
 }

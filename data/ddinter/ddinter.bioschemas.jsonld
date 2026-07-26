@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,17 +36,18 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/NAR/GKAB880",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/ddinter",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Na27322e4672c4d1d8fff7148c104a560"
+        "@id": "_:N8865e731426d433088c01f0ae725738f"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_0202"
-        },
         {
           "@id": "edam:topic_3400"
         },
@@ -54,10 +55,13 @@
           "@id": "edam:topic_3375"
         },
         {
-          "@id": "edam:topic_3378"
+          "@id": "edam:topic_3407"
         },
         {
-          "@id": "edam:topic_3407"
+          "@id": "edam:topic_0202"
+        },
+        {
+          "@id": "edam:topic_3378"
         }
       ],
       "sc:citation": [
@@ -74,23 +78,19 @@
       "sc:isAccessibleForFree": true,
       "sc:name": "DDInter",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:url": "http://ddinter.scbdd.com/"
     },
     {
-      "@id": "_:Na27322e4672c4d1d8fff7148c104a560",
+      "@id": "_:N8865e731426d433088c01f0ae725738f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2899"
       },
       "sc:name": "Drug name"
-    },
-    {
-      "@id": "https://doi.org/10.1093/NAR/GKAB880",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

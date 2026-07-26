@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,10 +36,6 @@
   },
   "@graph": [
     {
-      "@id": "https://orcid.org/0000-0003-4525-7793",
-      "@type": "sc:Person"
-    },
-    {
       "@id": "https://doi.org/10.1093/nar/gkab1082",
       "@type": "sc:CreativeWork"
     },
@@ -51,27 +47,27 @@
       },
       "bsc:input": [
         {
-          "@id": "_:N22a9378914cc4803b62b5d1c2100e765"
+          "@id": "_:N6978dea608194747a1cd9ef48b3d49de"
         },
         {
-          "@id": "_:N39a9bc7cab2148b9bdd1d5dd197edc73"
+          "@id": "_:N3feddbfc8b3f4c9b9331e08e60722866"
         },
         {
-          "@id": "_:Ne6485e499c5c44128183565ed3ca81ca"
+          "@id": "_:N1a8bc16f09664b11abd2b4d8dfe50846"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Nae45d37db6f5460d861e06d85d52cfe2"
+          "@id": "_:Nf4dedfd7291241e3956f4cfef298c1b5"
         },
         {
-          "@id": "_:Nd6a519f1389a446ab0e611e11a034e84"
+          "@id": "_:Nf75487f40a2241f4a918391e287d0e00"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web API",
         "Database portal",
+        "Web API",
         "Web application"
       ],
       "sc:applicationSubCategory": {
@@ -96,9 +92,9 @@
       "sc:license": "CC-BY-NC-1.0",
       "sc:name": "Database of protein disorder (DisProt)",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": "University of Padua, Department of Biomedical Sciences, BioComputing UP lab",
       "sc:softwareHelp": {
@@ -108,23 +104,31 @@
       "sc:url": "https://disprot.org/"
     },
     {
-      "@id": "_:Nae45d37db6f5460d861e06d85d52cfe2",
+      "@id": "_:N6978dea608194747a1cd9ef48b3d49de",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_1537"
+        "@id": "edam:data_2723"
       },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2331"
-        },
-        {
-          "@id": "edam:format_3464"
-        }
-      ],
-      "sc:name": "Protein structure report"
+      "sc:name": "Protein ID (DisProt)"
     },
     {
-      "@id": "_:Nd6a519f1389a446ab0e611e11a034e84",
+      "@id": "_:N3feddbfc8b3f4c9b9331e08e60722866",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1009"
+      },
+      "sc:name": "Protein name"
+    },
+    {
+      "@id": "_:N1a8bc16f09664b11abd2b4d8dfe50846",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3021"
+      },
+      "sc:name": "UniProt accession"
+    },
+    {
+      "@id": "_:Nf4dedfd7291241e3956f4cfef298c1b5",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1277"
@@ -140,28 +144,24 @@
       "sc:name": "Protein features"
     },
     {
-      "@id": "_:N22a9378914cc4803b62b5d1c2100e765",
+      "@id": "_:Nf75487f40a2241f4a918391e287d0e00",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_3021"
+        "@id": "edam:data_1537"
       },
-      "sc:name": "UniProt accession"
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2331"
+        },
+        {
+          "@id": "edam:format_3464"
+        }
+      ],
+      "sc:name": "Protein structure report"
     },
     {
-      "@id": "_:N39a9bc7cab2148b9bdd1d5dd197edc73",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2723"
-      },
-      "sc:name": "Protein ID (DisProt)"
-    },
-    {
-      "@id": "_:Ne6485e499c5c44128183565ed3ca81ca",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1009"
-      },
-      "sc:name": "Protein name"
+      "@id": "https://orcid.org/0000-0003-4525-7793",
+      "@type": "sc:Person"
     }
   ]
 }

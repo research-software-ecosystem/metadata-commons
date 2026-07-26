@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -41,53 +41,53 @@
       "biotools:primaryContact": "Christopher Fields",
       "bsc:input": [
         {
-          "@id": "_:N0f7caed36d124fd8bcae42c88b067313"
+          "@id": "_:Nb9539f53ee974e12965cdd0f46a7586c"
         },
         {
-          "@id": "_:Nda2bc7b17fa243adb52b1dc3bdcd0e69"
+          "@id": "_:Ned6f9f76f7fd483d8ba3aea0f4870e6f"
         },
         {
-          "@id": "_:Nbb2cffde427f4e1a9cae825d84785a17"
+          "@id": "_:N019eaea1194242f98fb82456cd2792c5"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N7d460ba0839447e79b9d4dafc8b19fd4"
+          "@id": "_:N9a11c4e05a1b4f89948d1498c94e50ff"
         },
         {
-          "@id": "_:Nb85016cef5774df59929825e2ed08fe5"
+          "@id": "_:N48782c179e604e36a28498d4d3ba1a72"
         },
         {
-          "@id": "_:Nf9427b7594844f17879926d305d770bf"
+          "@id": "_:Nb092f7d52532499a882e73f5b6a6ee59"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Workflow",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3697"
       },
       "sc:author": [
-        "Katie Lennard",
-        "Lindsay Clark",
+        "Gerrit Botha",
         "Jessica Holmes",
-        "Gerrit Botha"
+        "Katie Lennard",
+        "Lindsay Clark"
       ],
       "sc:contributor": [
-        "Jessica Holmes",
         "Gerrit Botha",
+        "Jessica Holmes",
         "Katie Lennard",
         "Lindsay Clark"
       ],
       "sc:description": "Targeted Amplicon Diversity Analysis - a DADA2-focused Nextflow workflow for any targeted amplicon region.  Microbiome, amplicon analysis, 16S, 18S, ITS, COI, PacBio, Shoreline, Loop",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3192"
-        },
-        {
           "@id": "edam:operation_3237"
         },
         {
           "@id": "edam:operation_3798"
+        },
+        {
+          "@id": "edam:operation_3192"
         }
       ],
       "sc:isAccessibleForFree": true,
@@ -100,29 +100,7 @@
       "sc:url": "https://github.com/HPCBio/TADA"
     },
     {
-      "@id": "_:N0f7caed36d124fd8bcae42c88b067313",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1234"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1929"
-      },
-      "sc:name": "Sequence set (nucleic acid)"
-    },
-    {
-      "@id": "_:Nda2bc7b17fa243adb52b1dc3bdcd0e69",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1240"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1957"
-      },
-      "sc:name": "PCR primers"
-    },
-    {
-      "@id": "_:Nbb2cffde427f4e1a9cae825d84785a17",
+      "@id": "_:Nb9539f53ee974e12965cdd0f46a7586c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3494"
@@ -133,7 +111,29 @@
       "sc:name": "DNA sequence"
     },
     {
-      "@id": "_:N7d460ba0839447e79b9d4dafc8b19fd4",
+      "@id": "_:Ned6f9f76f7fd483d8ba3aea0f4870e6f",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1240"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1957"
+      },
+      "sc:name": "PCR primers"
+    },
+    {
+      "@id": "_:N019eaea1194242f98fb82456cd2792c5",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1234"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "Sequence set (nucleic acid)"
+    },
+    {
+      "@id": "_:N9a11c4e05a1b4f89948d1498c94e50ff",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3707"
@@ -141,18 +141,7 @@
       "sc:name": "Biodiversity data"
     },
     {
-      "@id": "_:Nb85016cef5774df59929825e2ed08fe5",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1383"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1929"
-      },
-      "sc:name": "Nucleic acid sequence alignment"
-    },
-    {
-      "@id": "_:Nf9427b7594844f17879926d305d770bf",
+      "@id": "_:N48782c179e604e36a28498d4d3ba1a72",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3917"
@@ -161,6 +150,17 @@
         "@id": "edam:format_3475"
       },
       "sc:name": "Count matrix"
+    },
+    {
+      "@id": "_:Nb092f7d52532499a882e73f5b6a6ee59",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1383"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "Nucleic acid sequence alignment"
     }
   ]
 }

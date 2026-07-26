@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,10 +36,6 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/nar/gkac240",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://doi.org/10.1093/nar/gkae241",
       "@type": "sc:CreativeWork"
     },
@@ -52,12 +48,12 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Job Dispatcher",
       "bsc:input": {
-        "@id": "_:Nb5ba0e0be09b4d0e8a7d44ee1b1c3d8b"
+        "@id": "_:Nb1d34cd4b4264da19842abffe4b96761"
       },
       "bsc:output": {
-        "@id": "_:Nd6036895764d4980af296d38bcb9995e"
+        "@id": "_:Na551feca88544da8bbe2c8075d1bcef4"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Web application",
         "Web service"
@@ -67,35 +63,35 @@
       },
       "sc:author": "Cedric Notredame",
       "sc:citation": [
-        "pmcid:PMC11223882",
-        "pubmed:10964570",
+        "pubmed:35412617",
         "pmcid:PMC9252731",
         {
           "@id": "https://doi.org/10.1093/nar/gkac240"
         },
-        {
-          "@id": "https://doi.org/10.1006/jmbi.2000.4042"
-        },
+        "pubmed:38597606",
+        "pmcid:PMC11223882",
         {
           "@id": "https://doi.org/10.1093/nar/gkae241"
         },
-        "pubmed:35412617",
-        "pubmed:38597606"
+        "pubmed:10964570",
+        {
+          "@id": "https://doi.org/10.1006/jmbi.2000.4042"
+        }
       ],
       "sc:description": "Multiple sequence alignment that combines several alignment methods.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_2403"
+          "@id": "edam:operation_0492"
         },
         {
-          "@id": "edam:operation_0492"
+          "@id": "edam:operation_2403"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:name": "T-Coffee (EBI)",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:provider": [
@@ -104,20 +100,20 @@
       ],
       "sc:softwareHelp": [
         {
-          "@id": "http://www.ebi.ac.uk/about/terms-of-use"
-        },
-        {
           "@id": "https://tcoffee.org/Projects/tcoffee/index.html"
         },
         {
           "@id": "https://www.ebi.ac.uk/jdispatcher/help"
+        },
+        {
+          "@id": "http://www.ebi.ac.uk/about/terms-of-use"
         }
       ],
       "sc:softwareVersion": "1",
       "sc:url": "https://www.ebi.ac.uk/jdispatcher/msa/tcoffee/"
     },
     {
-      "@id": "_:Nb5ba0e0be09b4d0e8a7d44ee1b1c3d8b",
+      "@id": "_:Nb1d34cd4b4264da19842abffe4b96761",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
@@ -125,12 +121,16 @@
       "sc:name": "Sequence"
     },
     {
-      "@id": "_:Nd6036895764d4980af296d38bcb9995e",
+      "@id": "_:Na551feca88544da8bbe2c8075d1bcef4",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0863"
       },
       "sc:name": "Sequence alignment"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/gkac240",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,10 +40,6 @@
       "@type": "sc:Person"
     },
     {
-      "@id": "https://orcid.org/0009-0003-9805-8998",
-      "@type": "sc:Person"
-    },
-    {
       "@id": "https://bio.tools/oligopipe",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
@@ -51,49 +47,49 @@
       },
       "bsc:input": [
         {
-          "@id": "_:N0acc02a90e7944fb8e4724cc3737100e"
+          "@id": "_:Na762ddc9fa74477da2368b3e297b61cf"
         },
         {
-          "@id": "_:N15ffc21efe974d9481a051f5c3b6dee5"
+          "@id": "_:N702d6e27e8ac40c58ff86c7d6a375a99"
         },
         {
-          "@id": "_:N6b7142f38dbc46f1bf80262d808ed824"
+          "@id": "_:N1d4cf13e63064b359f4620d17fa0cca3"
         },
         {
-          "@id": "_:N30a12697970b44809c0ec3ce36e4743d"
+          "@id": "_:N7e4e4662d88f47458b35076d0ebc3b57"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Nc44a4ba8b6ab49df93cf32b9c5ae19cd"
+          "@id": "_:N760e0513cb6141e091dfbe9de39ff8e8"
         },
         {
-          "@id": "_:N66c03800c4194f63b2187847d5855ec1"
+          "@id": "_:N54f036f87f704231a0a8ca8d3c5ff15b"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3063"
-        },
-        {
-          "@id": "edam:topic_3325"
-        },
-        {
           "@id": "edam:topic_0199"
-        },
-        {
-          "@id": "edam:topic_0634"
         },
         {
           "@id": "edam:topic_0622"
         },
         {
           "@id": "edam:topic_0625"
+        },
+        {
+          "@id": "edam:topic_3063"
+        },
+        {
+          "@id": "edam:topic_0634"
+        },
+        {
+          "@id": "edam:topic_3325"
         }
       ],
       "sc:author": {
@@ -112,65 +108,22 @@
       "sc:license": "MIT",
       "sc:name": "oligopipe - Python package for Oligogenic Variant Analysis pipelines",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:provider": "Interuniversity Institute of Bioinformatics in Brussels",
       "sc:softwareHelp": [
         {
-          "@id": "https://pypi.org/project/oligopipe/"
+          "@id": "https://oligogenic.github.io/oligopipe-docs/"
         },
         {
-          "@id": "https://oligogenic.github.io/oligopipe-docs/"
+          "@id": "https://pypi.org/project/oligopipe/"
         }
       ],
       "sc:url": "https://pypi.org/project/oligopipe/"
     },
     {
-      "@id": "_:N0acc02a90e7944fb8e4724cc3737100e",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3498"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3475"
-        },
-        {
-          "@id": "edam:format_3016"
-        }
-      ],
-      "sc:name": "Sequence variations"
-    },
-    {
-      "@id": "_:N15ffc21efe974d9481a051f5c3b6dee5",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3275"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1964"
-      },
-      "sc:name": "Phenotype name"
-    },
-    {
-      "@id": "_:N6b7142f38dbc46f1bf80262d808ed824",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3498"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3475"
-        },
-        {
-          "@id": "edam:format_3016"
-        }
-      ],
-      "sc:name": "Sequence variations"
-    },
-    {
-      "@id": "_:N30a12697970b44809c0ec3ce36e4743d",
+      "@id": "_:Na762ddc9fa74477da2368b3e297b61cf",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1026"
@@ -181,7 +134,50 @@
       "sc:name": "Gene symbol"
     },
     {
-      "@id": "_:Nc44a4ba8b6ab49df93cf32b9c5ae19cd",
+      "@id": "_:N702d6e27e8ac40c58ff86c7d6a375a99",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3275"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1964"
+      },
+      "sc:name": "Phenotype name"
+    },
+    {
+      "@id": "_:N1d4cf13e63064b359f4620d17fa0cca3",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3498"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3475"
+        },
+        {
+          "@id": "edam:format_3016"
+        }
+      ],
+      "sc:name": "Sequence variations"
+    },
+    {
+      "@id": "_:N7e4e4662d88f47458b35076d0ebc3b57",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3498"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3475"
+        },
+        {
+          "@id": "edam:format_3016"
+        }
+      ],
+      "sc:name": "Sequence variations"
+    },
+    {
+      "@id": "_:N760e0513cb6141e091dfbe9de39ff8e8",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1772"
@@ -192,7 +188,7 @@
       "sc:name": "Score"
     },
     {
-      "@id": "_:N66c03800c4194f63b2187847d5855ec1",
+      "@id": "_:N54f036f87f704231a0a8ca8d3c5ff15b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1772"
@@ -201,6 +197,10 @@
         "@id": "edam:format_3464"
       },
       "sc:name": "Score"
+    },
+    {
+      "@id": "https://orcid.org/0009-0003-9805-8998",
+      "@type": "sc:Person"
     }
   ]
 }

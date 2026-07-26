@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -42,17 +42,17 @@
     {
       "@id": "https://bio.tools/chipbase",
       "@type": "sc:SoftwareApplication",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Database portal",
         "Web application"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3512"
+          "@id": "edam:topic_3169"
         },
         {
-          "@id": "edam:topic_3169"
+          "@id": "edam:topic_3173"
         },
         {
           "@id": "edam:topic_0659"
@@ -61,7 +61,7 @@
           "@id": "edam:topic_0203"
         },
         {
-          "@id": "edam:topic_3173"
+          "@id": "edam:topic_3512"
         }
       ],
       "sc:citation": [
@@ -74,10 +74,10 @@
       "sc:description": "The encyclopedia of transcriptional regulations of non-coding RNAs and protein-coding genes.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_1781"
+          "@id": "edam:operation_0314"
         },
         {
-          "@id": "edam:operation_0314"
+          "@id": "edam:operation_1781"
         },
         {
           "@id": "edam:operation_2437"
@@ -88,8 +88,8 @@
       "sc:name": "ChIPBase",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:softwareVersion": "3.0",
       "sc:url": "https://rnasysu.com/chipbase3/"

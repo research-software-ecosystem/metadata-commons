@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,10 +36,6 @@
   },
   "@graph": [
     {
-      "@id": "https://orcid.org/0000-0001-5903-617X",
-      "@type": "sc:Person"
-    },
-    {
       "@id": "https://bio.tools/microSysMics",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
@@ -51,20 +47,20 @@
         }
       ],
       "bsc:input": {
-        "@id": "_:N2b4296249ee343f68edceda5bcabe27b"
+        "@id": "_:N3abbff8a78844b578b5964f9b8570a55"
       },
       "bsc:output": [
         {
-          "@id": "_:N52d106b2efc74d718dbc32663f8afb11"
+          "@id": "_:N8453c3e672e34d44b35dafc36faa84ac"
         },
         {
-          "@id": "_:N65d1e322e9a949748d880ef6c376e35b"
+          "@id": "_:Ne9f4334ac30e4542a53ea68b0472e6ab"
         },
         {
-          "@id": "_:N5fe25c3b202f44ebb68262e1d8162338"
+          "@id": "_:Ne82522a997064a4b919b51ef1ca0d6a4"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Workflow",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3697"
@@ -73,21 +69,21 @@
       "sc:description": "This workflow provides an automated microbiome data analysis, starting with sequenced taxonomic markers (such as 16SrRNA) and using the standard QIIME2 toolbox to produce an abundance table and preliminary diversity, phylogeny and taxonomy analysis.",
       "sc:featureList": [
         {
+          "@id": "edam:operation_0544"
+        },
+        {
           "@id": "edam:operation_0291"
         },
         {
           "@id": "edam:operation_3460"
-        },
-        {
-          "@id": "edam:operation_0544"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "Other",
       "sc:name": "microSysMics",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:provider": [
         "BiRD bioinformatics facility",
@@ -97,45 +93,7 @@
       "sc:url": "https://gitlab.univ-nantes.fr/bird_pipeline_registry/microSysMics"
     },
     {
-      "@id": "_:N52d106b2efc74d718dbc32663f8afb11",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3272"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1910"
-      },
-      "sc:name": "Species tree"
-    },
-    {
-      "@id": "_:N65d1e322e9a949748d880ef6c376e35b",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1872"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2331"
-        },
-        {
-          "@id": "edam:format_3752"
-        }
-      ],
-      "sc:name": "Taxonomic classification"
-    },
-    {
-      "@id": "_:N5fe25c3b202f44ebb68262e1d8162338",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3707"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3752"
-      },
-      "sc:name": "Biodiversity data"
-    },
-    {
-      "@id": "_:N2b4296249ee343f68edceda5bcabe27b",
+      "@id": "_:N3abbff8a78844b578b5964f9b8570a55",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3494"
@@ -146,7 +104,49 @@
       "sc:name": "DNA sequence"
     },
     {
+      "@id": "_:N8453c3e672e34d44b35dafc36faa84ac",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3707"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3752"
+      },
+      "sc:name": "Biodiversity data"
+    },
+    {
+      "@id": "_:Ne9f4334ac30e4542a53ea68b0472e6ab",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3272"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1910"
+      },
+      "sc:name": "Species tree"
+    },
+    {
+      "@id": "_:Ne82522a997064a4b919b51ef1ca0d6a4",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1872"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3752"
+        },
+        {
+          "@id": "edam:format_2331"
+        }
+      ],
+      "sc:name": "Taxonomic classification"
+    },
+    {
       "@id": "https://orcid.org/0000-0002-8689-2083",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-5903-617X",
       "@type": "sc:Person"
     }
   ]

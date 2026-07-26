@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,20 +40,32 @@
       "@type": "sc:Person"
     },
     {
+      "@id": "https://orcid.org/0000-0003-1791-2359",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-8144-4639",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-7821-9684",
+      "@type": "sc:Person"
+    },
+    {
       "@id": "https://bio.tools/ciliquant",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Ne3b066bd23b8468f9da73d746ace4353"
+          "@id": "_:N04bf5c01c57a42508fdf35790842e115"
         },
         {
-          "@id": "_:Nb5fe36c5325640bca83f20d9610b63a2"
+          "@id": "_:N078743257e8a496a97e81dba610e814c"
         }
       ],
       "bsc:output": {
-        "@id": "_:N2347295dad654ad2a0030d3c1159f5e4"
+        "@id": "_:N0022ce9868af47fb9480045da8963fad"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
@@ -68,19 +80,19 @@
       },
       "sc:contributor": [
         {
-          "@id": "https://orcid.org/0000-0001-8144-4639"
-        },
-        {
           "@id": "https://orcid.org/0000-0001-7772-4259"
         },
         {
           "@id": "https://orcid.org/0000-0002-4610-4599"
         },
         {
-          "@id": "https://orcid.org/0000-0001-7821-9684"
+          "@id": "https://orcid.org/0000-0001-8144-4639"
         },
         {
           "@id": "https://orcid.org/0000-0001-6274-0184"
+        },
+        {
+          "@id": "https://orcid.org/0000-0001-7821-9684"
         }
       ],
       "sc:description": "This tool separates junction reads based on their linear or circular origin. Only non-ambiguous junction reads are used to compare the relative linear and circular transcript abundance.\nTogether with the circ fraction (circ/(circ+lin)), a 95% confidence interval is provided.",
@@ -96,9 +108,9 @@
       "sc:license": "BSD-3-Clause",
       "sc:name": "CiLiQuant",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://github.com/OncoRNALab/CiLiQuant"
@@ -106,18 +118,7 @@
       "sc:url": "https://github.com/OncoRNALab/CiLiQuant"
     },
     {
-      "@id": "_:Ne3b066bd23b8468f9da73d746ace4353",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3210"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3003"
-      },
-      "sc:name": "Genome index"
-    },
-    {
-      "@id": "_:Nb5fe36c5325640bca83f20d9610b63a2",
+      "@id": "_:N04bf5c01c57a42508fdf35790842e115",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3112"
@@ -128,7 +129,18 @@
       "sc:name": "Gene expression matrix"
     },
     {
-      "@id": "_:N2347295dad654ad2a0030d3c1159f5e4",
+      "@id": "_:N078743257e8a496a97e81dba610e814c",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3210"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3003"
+      },
+      "sc:name": "Genome index"
+    },
+    {
+      "@id": "_:N0022ce9868af47fb9480045da8963fad",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1270"
@@ -137,18 +149,6 @@
     },
     {
       "@id": "https://orcid.org/0000-0001-7772-4259",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://orcid.org/0000-0001-7821-9684",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://orcid.org/0000-0003-1791-2359",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://orcid.org/0000-0001-8144-4639",
       "@type": "sc:Person"
     },
     {

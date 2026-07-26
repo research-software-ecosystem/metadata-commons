@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -38,28 +38,28 @@
     {
       "@id": "https://bio.tools/cagee",
       "@type": "sc:SoftwareApplication",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_3293"
-        },
         {
           "@id": "edam:topic_0203"
         },
         {
-          "@id": "edam:topic_3170"
+          "@id": "edam:topic_3293"
         },
         {
           "@id": "edam:topic_0194"
+        },
+        {
+          "@id": "edam:topic_3170"
         }
       ],
       "sc:citation": [
         "pubmed:37158385",
+        "pmcid:PMC10195155",
         {
           "@id": "https://doi.org/10.1093/molbev/msad106"
-        },
-        "pmcid:PMC10195155"
+        }
       ],
       "sc:description": "Computational analysis of gene expression evolution.",
       "sc:featureList": [
@@ -67,18 +67,18 @@
           "@id": "edam:operation_2495"
         },
         {
-          "@id": "edam:operation_3947"
+          "@id": "edam:operation_0323"
         },
         {
-          "@id": "edam:operation_0323"
+          "@id": "edam:operation_3947"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "ECL-2.0",
       "sc:name": "CAGEE",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:url": "https://github.com/hahnlab/CAGEE/"

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,25 +36,33 @@
   },
   "@graph": [
     {
+      "@id": "https://orcid.org/0000-0001-9441-9539",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-7575-2085",
+      "@type": "sc:Person"
+    },
+    {
       "@id": "https://bio.tools/mQC",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "https://orcid.org/0000-0002-7575-2085"
       },
       "bsc:input": {
-        "@id": "_:N0b7fbfbdea574bbfa0628c94c877ca90"
+        "@id": "_:N6e23cfa1f07e4f0bb5d6c00dd6d7d149"
       },
       "bsc:output": {
-        "@id": "_:N5e281b1d5f364344b619bc06c02148be"
+        "@id": "_:N0bcbdbe15b484ae99a7efed995468d4c"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3308"
+          "@id": "edam:topic_3572"
         },
         {
-          "@id": "edam:topic_3572"
+          "@id": "edam:topic_3308"
         }
       ],
       "sc:author": {
@@ -72,18 +80,18 @@
           "@id": "edam:operation_3563"
         },
         {
-          "@id": "edam:operation_3218"
+          "@id": "edam:operation_0447"
         },
         {
-          "@id": "edam:operation_0447"
+          "@id": "edam:operation_3218"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "GPL-3.0",
       "sc:name": "mQC",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "https://github.com/Biobix/mQC/blob/master/README.md"
@@ -92,18 +100,7 @@
       "sc:url": "https://github.com/Biobix/mQC"
     },
     {
-      "@id": "_:N5e281b1d5f364344b619bc06c02148be",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2048"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2331"
-      },
-      "sc:name": "Report"
-    },
-    {
-      "@id": "_:N0b7fbfbdea574bbfa0628c94c877ca90",
+      "@id": "_:N6e23cfa1f07e4f0bb5d6c00dd6d7d149",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1383"
@@ -114,16 +111,19 @@
       "sc:name": "Sequence alignment (nucleic acid)"
     },
     {
+      "@id": "_:N0bcbdbe15b484ae99a7efed995468d4c",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2048"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2331"
+      },
+      "sc:name": "Report"
+    },
+    {
       "@id": "https://doi.org/10.1016/j.cmpb.2018.10.018",
       "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://orcid.org/0000-0002-7575-2085",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://orcid.org/0000-0001-9441-9539",
-      "@type": "sc:Person"
     }
   ]
 }

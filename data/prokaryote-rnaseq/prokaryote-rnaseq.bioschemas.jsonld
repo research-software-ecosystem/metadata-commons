@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,19 +36,23 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/gkw343",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/prokaryote-rnaseq",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
-        "Alexander Raknes",
-        "Erik Hjerde"
+        "Erik Hjerde",
+        "Alexander Raknes"
       ],
       "bsc:input": {
-        "@id": "_:N0e3c511af9d242f2b22079267238296e"
+        "@id": "_:N3b4d420fd9ab4a43bf169592c9830316"
       },
       "bsc:output": {
-        "@id": "_:N11ae4c1101d34cfb8e6bcca4687344de"
+        "@id": "_:N9438459e073e47f1a9ce491f1a016d9f"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Workflow",
       "sc:applicationSubCategory": [
         {
@@ -68,8 +72,8 @@
       },
       "sc:name": "Prokaryote RNA sequence analysis workflow",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:provider": "ELIXIR-NO",
@@ -77,7 +81,7 @@
       "sc:url": "https://galaxy-uit.bioinfo.no/u/ehj000/p/prokaryote-rnaseq-dataset"
     },
     {
-      "@id": "_:N0e3c511af9d242f2b22079267238296e",
+      "@id": "_:N3b4d420fd9ab4a43bf169592c9830316",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
@@ -88,7 +92,7 @@
       "sc:name": "Sequence"
     },
     {
-      "@id": "_:N11ae4c1101d34cfb8e6bcca4687344de",
+      "@id": "_:N9438459e073e47f1a9ce491f1a016d9f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2603"
@@ -97,10 +101,6 @@
         "@id": "edam:format_2330"
       },
       "sc:name": "Gene expression data"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gkw343",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,34 +36,30 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.5281/zenodo.10531254",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/coverm",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N3a2d032c938747f699f1d40b01e206f5"
+          "@id": "_:N4f4591514fa74243a2c45fb9443ccf24"
         },
         {
-          "@id": "_:N005577adbda24ee087d59fbbc3395004"
+          "@id": "_:N1c0fdadc5d814578aa91bb82d155b4cf"
         },
         {
-          "@id": "_:N9b3a97a3da8f4b76b23511dc17a2fa34"
+          "@id": "_:Nfa003f417b6b48c68960f4ee51a771d9"
         }
       ],
       "bsc:output": {
-        "@id": "_:Ncf3640abde524d5abaa991a36c7167bb"
+        "@id": "_:Nbb725b42a58d46738a9583b0c4cc289d"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0080"
+          "@id": "edam:topic_3174"
         },
         {
-          "@id": "edam:topic_3174"
+          "@id": "edam:topic_0080"
         }
       ],
       "sc:citation": {
@@ -77,8 +73,8 @@
       "sc:license": "GPL-3.0",
       "sc:name": "CoverM",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "https://github.com/wwood/CoverM/blob/main/README.md"
@@ -87,29 +83,7 @@
       "sc:url": "https://github.com/wwood/CoverM"
     },
     {
-      "@id": "_:N3a2d032c938747f699f1d40b01e206f5",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3494"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1930"
-      },
-      "sc:name": "DNA sequence"
-    },
-    {
-      "@id": "_:N005577adbda24ee087d59fbbc3395004",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1383"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2572"
-      },
-      "sc:name": "Nucleic acid sequence alignment"
-    },
-    {
-      "@id": "_:N9b3a97a3da8f4b76b23511dc17a2fa34",
+      "@id": "_:N4f4591514fa74243a2c45fb9443ccf24",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3494"
@@ -120,12 +94,38 @@
       "sc:name": "DNA sequence"
     },
     {
-      "@id": "_:Ncf3640abde524d5abaa991a36c7167bb",
+      "@id": "_:N1c0fdadc5d814578aa91bb82d155b4cf",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3494"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1930"
+      },
+      "sc:name": "DNA sequence"
+    },
+    {
+      "@id": "_:Nfa003f417b6b48c68960f4ee51a771d9",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1383"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2572"
+      },
+      "sc:name": "Nucleic acid sequence alignment"
+    },
+    {
+      "@id": "_:Nbb725b42a58d46738a9583b0c4cc289d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0951"
       },
       "sc:name": "Statistical estimate score"
+    },
+    {
+      "@id": "https://doi.org/10.5281/zenodo.10531254",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

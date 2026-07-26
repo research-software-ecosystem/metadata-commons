@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,39 +36,35 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1038/s41592-024-02552-8",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/fastoma",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N89a047c0e1e44761a51c0e8230b9d2a6"
+          "@id": "_:N5e37f3d27f0140b589a4b1acfb3731a9"
         },
         {
-          "@id": "_:N3b0451571df445f79cadb56b1ca8a0dc"
+          "@id": "_:N16e7efbc905841b69375c6061d86aa03"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Nab7d2fea38574c15a8db92e09a4944c5"
+          "@id": "_:N204cc234149946b392e01cbc0896b448"
         },
         {
-          "@id": "_:N3531f2ed21164e08a3f5d437e8f62ec0"
+          "@id": "_:Ne621d78a84f146beb868a16025a4c33f"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0797"
       },
       "sc:citation": [
+        "pubmed:39753922",
         "pmcid:PMC11810774",
         {
           "@id": "https://doi.org/10.1038/s41592-024-02552-8"
-        },
-        "pubmed:39753922"
+        }
       ],
       "sc:description": "FastOMA is a scalable software package to infer orthology relationship.",
       "sc:featureList": [
@@ -79,21 +75,21 @@
           "@id": "edam:operation_0540"
         },
         {
-          "@id": "edam:operation_0291"
-        },
-        {
           "@id": "edam:operation_3947"
         },
         {
           "@id": "edam:operation_2479"
+        },
+        {
+          "@id": "edam:operation_0291"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "MPL-2.0",
       "sc:name": "FastOMA",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "https://github.com/DessimozLab/FastOMA/blob/main/README.md"
@@ -102,7 +98,7 @@
       "sc:url": "https://github.com/dessimozlab/FastOMA"
     },
     {
-      "@id": "_:N89a047c0e1e44761a51c0e8230b9d2a6",
+      "@id": "_:N5e37f3d27f0140b589a4b1acfb3731a9",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2886"
@@ -113,7 +109,7 @@
       "sc:name": "Protein sequence record"
     },
     {
-      "@id": "_:N3b0451571df445f79cadb56b1ca8a0dc",
+      "@id": "_:N16e7efbc905841b69375c6061d86aa03",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3028"
@@ -124,7 +120,7 @@
       "sc:name": "Taxonomy"
     },
     {
-      "@id": "_:Nab7d2fea38574c15a8db92e09a4944c5",
+      "@id": "_:N204cc234149946b392e01cbc0896b448",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1245"
@@ -132,7 +128,7 @@
       "sc:name": "Sequence cluster (protein)"
     },
     {
-      "@id": "_:N3531f2ed21164e08a3f5d437e8f62ec0",
+      "@id": "_:Ne621d78a84f146beb868a16025a4c33f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3148"
@@ -141,6 +137,10 @@
         "@id": "edam:format_3850"
       },
       "sc:name": "Gene family report"
+    },
+    {
+      "@id": "https://doi.org/10.1038/s41592-024-02552-8",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

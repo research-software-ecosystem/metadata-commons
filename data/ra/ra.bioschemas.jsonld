@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,19 +39,19 @@
       "@id": "https://bio.tools/ra",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Na6714a2dbfb441d28f1e19c4b554ac88"
+        "@id": "_:N5bf0dd78fad940928f94c44930c5e813"
       },
       "bsc:output": {
-        "@id": "_:N74b6e851c51a4b37bbafa113254014ce"
+        "@id": "_:N36b9b79f731d41d995ab4c1ed9b65984"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Suite",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0196"
+          "@id": "edam:topic_0622"
         },
         {
-          "@id": "edam:topic_0622"
+          "@id": "edam:topic_0196"
         }
       ],
       "sc:description": "Assembler for raw de novo genome assembly of long uncorrected reads.",
@@ -65,23 +65,7 @@
       "sc:url": "https://github.com/lbcb-sci/ra"
     },
     {
-      "@id": "_:N74b6e851c51a4b37bbafa113254014ce",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0925"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_1929"
-        },
-        {
-          "@id": "edam:format_1930"
-        }
-      ],
-      "sc:name": "Sequence assembly"
-    },
-    {
-      "@id": "_:Na6714a2dbfb441d28f1e19c4b554ac88",
+      "@id": "_:N5bf0dd78fad940928f94c44930c5e813",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2977"
@@ -95,6 +79,22 @@
         }
       ],
       "sc:name": "Nucleic acid sequence"
+    },
+    {
+      "@id": "_:N36b9b79f731d41d995ab4c1ed9b65984",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0925"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_1929"
+        },
+        {
+          "@id": "edam:format_1930"
+        }
+      ],
+      "sc:name": "Sequence assembly"
     }
   ]
 }

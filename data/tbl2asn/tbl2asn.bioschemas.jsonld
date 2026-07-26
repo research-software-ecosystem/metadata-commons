@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,16 +40,16 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Ned04559c690444a89ab8f7ba0faa432d"
+          "@id": "_:N3d363f1d67da464283ed09f4934f4af1"
         },
         {
-          "@id": "_:Nf647f15f9976447b9c3ee70bd008236f"
+          "@id": "_:N16ab022406cd469eae686a8cfc186b63"
         }
       ],
       "bsc:output": {
-        "@id": "_:Nbf8bc1e7beb64ecabb70a8e0901fff97"
+        "@id": "_:N5aecce44c7cf42d099f8b701c5359ddf"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Workflow",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0219"
@@ -61,9 +61,9 @@
       "sc:isAccessibleForFree": true,
       "sc:name": "tbl2asn",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://ftp.ncbi.nih.gov/toolbox/ncbi_tools/converters/by_program/tbl2asn/DOCUMENTATION/"
@@ -71,18 +71,7 @@
       "sc:url": "https://www.ncbi.nlm.nih.gov/genbank/tbl2asn2/"
     },
     {
-      "@id": "_:Ned04559c690444a89ab8f7ba0faa432d",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2977"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1929"
-      },
-      "sc:name": "Nucleic acid sequence"
-    },
-    {
-      "@id": "_:Nf647f15f9976447b9c3ee70bd008236f",
+      "@id": "_:N3d363f1d67da464283ed09f4934f4af1",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1270"
@@ -93,7 +82,18 @@
       "sc:name": "Feature table"
     },
     {
-      "@id": "_:Nbf8bc1e7beb64ecabb70a8e0901fff97",
+      "@id": "_:N16ab022406cd469eae686a8cfc186b63",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2977"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "Nucleic acid sequence"
+    },
+    {
+      "@id": "_:N5aecce44c7cf42d099f8b701c5359ddf",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2887"

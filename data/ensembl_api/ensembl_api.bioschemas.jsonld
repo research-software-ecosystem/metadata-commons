@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,37 +40,37 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N56ade86fdbde411b95a8ebbc78971788"
+          "@id": "_:Nb47da6ca73f741cf819e90dbde39555d"
         },
         {
-          "@id": "_:N298e9fe0b2934ac8b489f1605c747886"
+          "@id": "_:Nb10a76a593434cccaa8156eba08f6267"
         },
         {
-          "@id": "_:Nd22d32995a8448dca41c5b606b952710"
+          "@id": "_:Na5b8214437424ac59a2bab399a3831b3"
         },
         {
-          "@id": "_:N48742d954d24418898ec5a7c4b4ea365"
+          "@id": "_:N48d9103a58904fb88e83e8f6c9fc6b30"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N3ad357a213424a5d945072a7d4ff7af1"
+          "@id": "_:N0ca95047b9764a7c9010947460e7b45b"
         },
         {
-          "@id": "_:Nda54740bf2d64dd0abcc1466e151bcaf"
+          "@id": "_:Nb7f8d5a3ce4a4286866243e0f9cfa614"
         },
         {
-          "@id": "_:N680481ab6ea6447b88f205c206e6dc29"
+          "@id": "_:Naa9a1b351622465984b55d4356afb8ec"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web API",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3307"
+          "@id": "edam:topic_0091"
         },
         {
-          "@id": "edam:topic_0091"
+          "@id": "edam:topic_3307"
         }
       ],
       "sc:description": "Test: convert json OpenAPI to json Biotools",
@@ -84,38 +84,14 @@
       ],
       "sc:name": "Ensembl APl",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:url": "https://bigcat-um.github.io/EnsemblOpenAPI/"
     },
     {
-      "@id": "_:N56ade86fdbde411b95a8ebbc78971788",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0842"
-      },
-      "sc:name": "Identifier"
-    },
-    {
-      "@id": "_:N298e9fe0b2934ac8b489f1605c747886",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1045"
-      },
-      "sc:name": "Species name"
-    },
-    {
-      "@id": "_:Nd22d32995a8448dca41c5b606b952710",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0842"
-      },
-      "sc:name": "Identifier"
-    },
-    {
-      "@id": "_:N48742d954d24418898ec5a7c4b4ea365",
+      "@id": "_:Nb47da6ca73f741cf819e90dbde39555d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1026"
@@ -123,23 +99,47 @@
       "sc:name": "Gene symbol"
     },
     {
-      "@id": "_:N3ad357a213424a5d945072a7d4ff7af1",
+      "@id": "_:Nb10a76a593434cccaa8156eba08f6267",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1045"
+      },
+      "sc:name": "Species name"
+    },
+    {
+      "@id": "_:Na5b8214437424ac59a2bab399a3831b3",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0842"
+      },
+      "sc:name": "Identifier"
+    },
+    {
+      "@id": "_:N48d9103a58904fb88e83e8f6c9fc6b30",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0842"
+      },
+      "sc:name": "Identifier"
+    },
+    {
+      "@id": "_:N0ca95047b9764a7c9010947460e7b45b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0006"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_2332"
+          "@id": "edam:format_3464"
         },
         {
-          "@id": "edam:format_3464"
+          "@id": "edam:format_2332"
         }
       ],
       "sc:name": "Data"
     },
     {
-      "@id": "_:Nda54740bf2d64dd0abcc1466e151bcaf",
+      "@id": "_:Nb7f8d5a3ce4a4286866243e0f9cfa614",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0006"
@@ -155,17 +155,17 @@
       "sc:name": "Data"
     },
     {
-      "@id": "_:N680481ab6ea6447b88f205c206e6dc29",
+      "@id": "_:Naa9a1b351622465984b55d4356afb8ec",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0006"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_2332"
+          "@id": "edam:format_3464"
         },
         {
-          "@id": "edam:format_3464"
+          "@id": "edam:format_2332"
         }
       ],
       "sc:name": "Data"

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,37 +36,33 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/nar/gkac936",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/ianimal",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N76155558baf546b08d69096bfc559306"
+          "@id": "_:N4fdb4d616df64673bc5a73cd04f5564a"
         },
         {
-          "@id": "_:N2d0f19b104194fbe8a73dd36ac4fcc29"
+          "@id": "_:N89a598a141424a2b8c74b5a42311f01d"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Database portal",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3170"
+          "@id": "edam:topic_3169"
         },
         {
           "@id": "edam:topic_3173"
         },
         {
-          "@id": "edam:topic_3673"
-        },
-        {
-          "@id": "edam:topic_3169"
-        },
-        {
           "@id": "edam:topic_3298"
+        },
+        {
+          "@id": "edam:topic_3170"
+        },
+        {
+          "@id": "edam:topic_3673"
         }
       ],
       "sc:citation": [
@@ -79,26 +75,34 @@
       "sc:description": "A cross-species omics knowledgebase for animals.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0224"
+          "@id": "edam:operation_1781"
         },
         {
           "@id": "edam:operation_3196"
         },
         {
-          "@id": "edam:operation_1781"
+          "@id": "edam:operation_0224"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:name": "IAnimal",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:url": "https://ianimal.pro/"
     },
     {
-      "@id": "_:N76155558baf546b08d69096bfc559306",
+      "@id": "_:N4fdb4d616df64673bc5a73cd04f5564a",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1176"
+      },
+      "sc:name": "GO concept ID"
+    },
+    {
+      "@id": "_:N89a598a141424a2b8c74b5a42311f01d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0842"
@@ -106,12 +110,8 @@
       "sc:name": "Identifier"
     },
     {
-      "@id": "_:N2d0f19b104194fbe8a73dd36ac4fcc29",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1176"
-      },
-      "sc:name": "GO concept ID"
+      "@id": "https://doi.org/10.1093/nar/gkac936",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

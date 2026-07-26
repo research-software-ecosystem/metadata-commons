@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,30 +39,30 @@
       "@id": "https://bio.tools/magneto",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Ne14d00fa246b4749b5bb817273b49c04"
+        "@id": "_:Nbf25ce8c3a834ff88888faef9d2245f3"
       },
       "bsc:output": [
         {
-          "@id": "_:Ned65ad19bc6c4fb5926821cd66dd3ae1"
+          "@id": "_:N44b517e765a349ab936fa0812da25e26"
         },
         {
-          "@id": "_:Nc8cd977c12374c49a0454f0a573c8bf0"
+          "@id": "_:N9ba9284b12a5427180296f37286e1c91"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_3174"
-        },
-        {
-          "@id": "edam:topic_0196"
-        },
         {
           "@id": "edam:topic_3050"
         },
         {
+          "@id": "edam:topic_3174"
+        },
+        {
           "@id": "edam:topic_3697"
+        },
+        {
+          "@id": "edam:topic_0196"
         },
         {
           "@id": "edam:topic_0769"
@@ -87,18 +87,18 @@
           "@id": "edam:operation_3219"
         },
         {
-          "@id": "edam:operation_3192"
+          "@id": "edam:operation_0310"
         },
         {
-          "@id": "edam:operation_0310"
+          "@id": "edam:operation_3192"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "GPL-3.0",
       "sc:name": "MAGNETO",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -108,29 +108,7 @@
       "sc:url": "https://gitlab.univ-nantes.fr/bird_pipeline_registry/magneto"
     },
     {
-      "@id": "_:Ned65ad19bc6c4fb5926821cd66dd3ae1",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1872"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3475"
-      },
-      "sc:name": "Taxonomic classification"
-    },
-    {
-      "@id": "_:Nc8cd977c12374c49a0454f0a573c8bf0",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0916"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3475"
-      },
-      "sc:name": "Gene report"
-    },
-    {
-      "@id": "_:Ne14d00fa246b4749b5bb817273b49c04",
+      "@id": "_:Nbf25ce8c3a834ff88888faef9d2245f3",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3494"
@@ -144,6 +122,28 @@
         }
       ],
       "sc:name": "DNA sequence"
+    },
+    {
+      "@id": "_:N44b517e765a349ab936fa0812da25e26",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0916"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3475"
+      },
+      "sc:name": "Gene report"
+    },
+    {
+      "@id": "_:N9ba9284b12a5427180296f37286e1c91",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1872"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3475"
+      },
+      "sc:name": "Taxonomic classification"
     },
     {
       "@id": "https://doi.org/10.1128/msystems.00432-22",

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,38 +36,38 @@
   },
   "@id": "https://bio.tools/haplodx",
   "@type": "sc:SoftwareApplication",
-  "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+  "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
   "sc:additionalType": "Library",
   "sc:applicationSubCategory": [
     {
-      "@id": "edam:topic_0077"
-    },
-    {
-      "@id": "edam:topic_3474"
-    },
-    {
-      "@id": "edam:topic_3517"
-    },
-    {
       "@id": "edam:topic_3071"
-    },
-    {
-      "@id": "edam:topic_0080"
-    },
-    {
-      "@id": "edam:topic_0622"
-    },
-    {
-      "@id": "edam:topic_3053"
-    },
-    {
-      "@id": "edam:topic_2885"
     },
     {
       "@id": "edam:topic_2533"
     },
     {
+      "@id": "edam:topic_2885"
+    },
+    {
       "@id": "edam:topic_3678"
+    },
+    {
+      "@id": "edam:topic_3517"
+    },
+    {
+      "@id": "edam:topic_3053"
+    },
+    {
+      "@id": "edam:topic_0622"
+    },
+    {
+      "@id": "edam:topic_3474"
+    },
+    {
+      "@id": "edam:topic_0077"
+    },
+    {
+      "@id": "edam:topic_0080"
     }
   ],
   "sc:description": "The HaploDX library provides a collection of functions to generate simulated population-specific genomic data in VCF format. The library includes parameters and functions to control mutation rates, linkage disequilibrium strength and block lengths, and number of individuals. To generate genomic data, the HaploDX framework offers a pipeline of functions that can be used to simulate: (1) the allele frequency spectra of different populations; (2) the Hardy-Weinberg principle for genotypes and haplotypes; (3) linkage disequilibrium across different populations.",
@@ -83,8 +83,8 @@
   "sc:license": "GPL-3.0",
   "sc:name": "HaploDX",
   "sc:operatingSystem": [
-    "Mac",
     "Linux",
+    "Mac",
     "Windows"
   ],
   "sc:softwareHelp": {

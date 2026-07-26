@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,12 +39,12 @@
       "@id": "https://bio.tools/qcactus",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N28559503d4b64394928a0ac391b0bec6"
+        "@id": "_:N227c031c303949d9a89224bf0ef67e02"
       },
       "bsc:output": {
-        "@id": "_:Na76c15f30ac24dffb02bec1c58623c61"
+        "@id": "_:N1587e4ca5224459eb2c04a8945aab348"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0121"
       },
@@ -57,15 +57,7 @@
       "sc:url": "https://github.com/csmc-vaneykjlab/qcactus"
     },
     {
-      "@id": "_:Na76c15f30ac24dffb02bec1c58623c61",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2884"
-      },
-      "sc:name": "Plot"
-    },
-    {
-      "@id": "_:N28559503d4b64394928a0ac391b0bec6",
+      "@id": "_:N227c031c303949d9a89224bf0ef67e02",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2536"
@@ -74,6 +66,14 @@
         "@id": "edam:format_3712"
       },
       "sc:name": "Mass spectrometry data"
+    },
+    {
+      "@id": "_:N1587e4ca5224459eb2c04a8945aab348",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2884"
+      },
+      "sc:name": "Plot"
     }
   ]
 }

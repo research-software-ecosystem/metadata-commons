@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,19 +36,15 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.3390/bioengineering8050059",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/seqfu",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N9b3c156695444faa8219d07cd4a223c3"
+        "@id": "_:N14ba2d21520144bb882d4d08a3227869"
       },
       "bsc:output": {
-        "@id": "_:Nba4de5e2c6314e79b18e723357f6e8bf"
+        "@id": "_:N134079f75ecf4a68931b652a460ab2d9"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
@@ -74,24 +70,32 @@
         "@id": "https://telatin.github.io/seqfu2/"
       },
       "sc:softwareVersion": [
-        "1.19.0",
-        "1.20.0",
+        "1.10.0",
+        "1.11.0",
         "1.12.0",
         "1.13.0",
-        "1.15.0",
-        "1.21.0",
-        "1.17.0",
-        "1.22.0",
-        "1.11.0",
-        "1.16.0",
-        "1.10.0",
         "1.14.0",
+        "1.15.0",
+        "1.16.0",
+        "1.17.0",
+        "1.19.0",
+        "1.20.0",
+        "1.21.0",
+        "1.22.0",
         "1.22.3"
       ],
       "sc:url": "https://telatin.github.io/seqfu2/"
     },
     {
-      "@id": "_:Nba4de5e2c6314e79b18e723357f6e8bf",
+      "@id": "_:N14ba2d21520144bb882d4d08a3227869",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2044"
+      },
+      "sc:name": "Sequence"
+    },
+    {
+      "@id": "_:N134079f75ecf4a68931b652a460ab2d9",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2977"
@@ -99,12 +103,8 @@
       "sc:name": "Nucleic acid sequence"
     },
     {
-      "@id": "_:N9b3c156695444faa8219d07cd4a223c3",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2044"
-      },
-      "sc:name": "Sequence"
+      "@id": "https://doi.org/10.3390/bioengineering8050059",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

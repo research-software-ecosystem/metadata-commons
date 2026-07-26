@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,12 +39,12 @@
       "@id": "https://bio.tools/gtftogenepred",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N20715d9ac72b435ab518abb13d57d332"
+        "@id": "_:Nbf37616b1e0249c09254675b81ff3f67"
       },
       "bsc:output": {
-        "@id": "_:N613063f0cda04dffbc3739f1b868b7a4"
+        "@id": "_:N68038dd01fce430db993e1ff52c0af50"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:description": "convert a GTF file to a genePred",
       "sc:featureList": {
         "@id": "edam:operation_3267"
@@ -54,24 +54,24 @@
       "sc:url": "https://github.com/ENCODE-DCC/kentUtils/blob/master/src/hg/utils/gtfToGenePred/gtfToGenePred.c"
     },
     {
-      "@id": "_:N613063f0cda04dffbc3739f1b868b7a4",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3002"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3011"
-      },
-      "sc:name": "Annotation track"
-    },
-    {
-      "@id": "_:N20715d9ac72b435ab518abb13d57d332",
+      "@id": "_:Nbf37616b1e0249c09254675b81ff3f67",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3002"
       },
       "sc:encodingFormat": {
         "@id": "edam:format_2306"
+      },
+      "sc:name": "Annotation track"
+    },
+    {
+      "@id": "_:N68038dd01fce430db993e1ff52c0af50",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3002"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3011"
       },
       "sc:name": "Annotation track"
     }

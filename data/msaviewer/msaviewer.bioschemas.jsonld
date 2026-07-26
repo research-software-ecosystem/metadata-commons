@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,26 +36,30 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/btw474",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/msaviewer",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N50694ea40bd3446a94f23c981f688efe"
+        "@id": "_:Ndc86fd59ae5d44c68d75c8d38c8b608d"
       },
       "bsc:output": [
         {
-          "@id": "_:Na8d0f910607e48e5953d88b9d548bf0c"
+          "@id": "_:N91c50572e44b471085d8a8075536544e"
         },
         {
-          "@id": "_:N92e62ae026ae4cfab637169747db3167"
+          "@id": "_:Nf9c1599921694a84bfc902c992df850e"
         },
         {
-          "@id": "_:N1d5f80975011442dbf220512a55f8a7f"
+          "@id": "_:Nf27ca60df1114a23a763d601a3f1c553"
         },
         {
-          "@id": "_:N50299eb445b345499207df7c65c8d662"
+          "@id": "_:N403bcdaa3acc43afbf47df6e1a1efbc6"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Library",
       "sc:applicationSubCategory": [
         {
@@ -67,18 +71,18 @@
       ],
       "sc:author": "Sebastian Wilzbach",
       "sc:citation": [
-        "pmcid:PMC5181560",
         "pubmed:27412096",
+        "pmcid:PMC5181560",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btw474"
         }
       ],
       "sc:contributor": [
         "Google Summer of Code (GSoC) 2014",
+        "Benedikt Rauscher",
         "Guy Yachdav",
         "Ian Sillitoe",
-        "Tatyana Goldberg",
-        "Benedikt Rauscher"
+        "Tatyana Goldberg"
       ],
       "sc:description": "Large MSAs visualization interactively on the web.",
       "sc:featureList": {
@@ -89,65 +93,43 @@
       "sc:license": "Apache-2.0",
       "sc:name": "MSAViewer",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:provider": [
-        "Technische Universität München",
-        "BioJS"
+        "BioJS",
+        "Technische Universität München"
       ],
       "sc:softwareHelp": [
         {
-          "@id": "https://github.com/wilzbach/msa/blob/master/LICENSE"
+          "@id": "http://msa.biojs.net"
         },
         {
-          "@id": "http://msa.biojs.net"
+          "@id": "https://github.com/wilzbach/msa/blob/master/LICENSE"
         }
       ],
       "sc:softwareVersion": "1.0.0",
       "sc:url": "http://msa.biojs.net"
     },
     {
-      "@id": "_:N50694ea40bd3446a94f23c981f688efe",
+      "@id": "_:Ndc86fd59ae5d44c68d75c8d38c8b608d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0863"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_1984"
+          "@id": "edam:format_1982"
         },
         {
-          "@id": "edam:format_1982"
+          "@id": "edam:format_1984"
         }
       ],
       "sc:name": "Sequence alignment"
     },
     {
-      "@id": "_:Na8d0f910607e48e5953d88b9d548bf0c",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1711"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3547"
-      },
-      "sc:name": "Sequence alignment image"
-    },
-    {
-      "@id": "_:N92e62ae026ae4cfab637169747db3167",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0863"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1984"
-      },
-      "sc:name": "Sequence alignment"
-    },
-    {
-      "@id": "_:N1d5f80975011442dbf220512a55f8a7f",
+      "@id": "_:N91c50572e44b471085d8a8075536544e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1270"
@@ -158,7 +140,29 @@
       "sc:name": "Feature table"
     },
     {
-      "@id": "_:N50299eb445b345499207df7c65c8d662",
+      "@id": "_:Nf9c1599921694a84bfc902c992df850e",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0863"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1984"
+      },
+      "sc:name": "Sequence alignment"
+    },
+    {
+      "@id": "_:Nf27ca60df1114a23a763d601a3f1c553",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1711"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3547"
+      },
+      "sc:name": "Sequence alignment image"
+    },
+    {
+      "@id": "_:N403bcdaa3acc43afbf47df6e1a1efbc6",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0850"
@@ -167,10 +171,6 @@
         "@id": "edam:format_1929"
       },
       "sc:name": "Sequence set"
-    },
-    {
-      "@id": "https://doi.org/10.1093/bioinformatics/btw474",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

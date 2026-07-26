@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,26 +40,26 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N95d9367fd4434c4db287840a28ccc1fe"
+          "@id": "_:N35858bcdbc634cea9053030ac4ef4f93"
         },
         {
-          "@id": "_:N29e7f3061708415dbbc90cc2abe7425b"
+          "@id": "_:Ne5d90927cd2740c8a049194abb5351a5"
         }
       ],
       "bsc:output": {
-        "@id": "_:N14a272a6a2e04ab284812b170f8c2b8f"
+        "@id": "_:N8dcefcbeba8442d0ae0c42b963aa5848"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Database portal",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3172"
       },
       "sc:citation": [
         "pubmed:23109552",
+        "pmcid:PMC3531110",
         {
           "@id": "https://doi.org/10.1093/nar/gks1004"
-        },
-        "pmcid:PMC3531110"
+        }
       ],
       "sc:description": "Database for Metabolomics experiments and derived information.",
       "sc:featureList": [
@@ -73,31 +73,23 @@
       "sc:isAccessibleForFree": true,
       "sc:name": "MetaboLights",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:provider": "EMBL-EBI Databases",
       "sc:softwareHelp": [
         {
-          "@id": "https://ebi-metabolights.github.io/guides/"
+          "@id": "https://www.ebi.ac.uk/metabolights/help"
         },
         {
-          "@id": "https://www.ebi.ac.uk/metabolights/help"
+          "@id": "https://ebi-metabolights.github.io/guides/"
         }
       ],
       "sc:url": "http://www.ebi.ac.uk/metabolights/"
     },
     {
-      "@id": "_:N95d9367fd4434c4db287840a28ccc1fe",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2091"
-      },
-      "sc:name": "Accession"
-    },
-    {
-      "@id": "_:N29e7f3061708415dbbc90cc2abe7425b",
+      "@id": "_:N35858bcdbc634cea9053030ac4ef4f93",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2536"
@@ -108,7 +100,15 @@
       "sc:name": "Mass spectrometry data"
     },
     {
-      "@id": "_:N14a272a6a2e04ab284812b170f8c2b8f",
+      "@id": "_:Ne5d90927cd2740c8a049194abb5351a5",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2091"
+      },
+      "sc:name": "Accession"
+    },
+    {
+      "@id": "_:N8dcefcbeba8442d0ae0c42b963aa5848",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2536"

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -45,21 +45,21 @@
       "biotools:primaryContact": "Dr Liam J. McGuffin",
       "bsc:input": [
         {
-          "@id": "_:N7f349b54f10e4dbab7a7e4a0045860b0"
+          "@id": "_:N7a4aaeebdb3c4ef2b56bc1bdbc393540"
         },
         {
-          "@id": "_:N46eb2e6567754c9c96c31b6651cc8c8b"
+          "@id": "_:N1ddeefb0fdd94253b6a33a9af3ca423c"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Nead1411b69e148e1bb87f8c023feab22"
+          "@id": "_:Nf6979ad233884e66ba11a5586d6b1845"
         },
         {
-          "@id": "_:Ne1a482c44a88417ebe166677bda0c23c"
+          "@id": "_:Na6b263fffa1149eebae8d04e5748668c"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0602"
@@ -77,10 +77,10 @@
           "@id": "edam:operation_0322"
         },
         {
-          "@id": "edam:operation_0337"
+          "@id": "edam:operation_0302"
         },
         {
-          "@id": "edam:operation_0302"
+          "@id": "edam:operation_0337"
         }
       ],
       "sc:name": "reFOLD",
@@ -90,7 +90,7 @@
       "sc:url": "http://www.reading.ac.uk/bioinf/ReFOLD/"
     },
     {
-      "@id": "_:N7f349b54f10e4dbab7a7e4a0045860b0",
+      "@id": "_:N7a4aaeebdb3c4ef2b56bc1bdbc393540",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0950"
@@ -101,7 +101,7 @@
       "sc:name": "Mathematical model"
     },
     {
-      "@id": "_:N46eb2e6567754c9c96c31b6651cc8c8b",
+      "@id": "_:N1ddeefb0fdd94253b6a33a9af3ca423c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2974"
@@ -112,7 +112,15 @@
       "sc:name": "Protein sequence (raw)"
     },
     {
-      "@id": "_:Nead1411b69e148e1bb87f8c023feab22",
+      "@id": "_:Nf6979ad233884e66ba11a5586d6b1845",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0950"
+      },
+      "sc:name": "Mathematical model"
+    },
+    {
+      "@id": "_:Na6b263fffa1149eebae8d04e5748668c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"
@@ -121,14 +129,6 @@
         "@id": "edam:format_2330"
       },
       "sc:name": "Report"
-    },
-    {
-      "@id": "_:Ne1a482c44a88417ebe166677bda0c23c",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0950"
-      },
-      "sc:name": "Mathematical model"
     }
   ]
 }

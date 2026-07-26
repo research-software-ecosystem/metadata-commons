@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -43,60 +43,60 @@
       "@id": "https://bio.tools/singlecanalyzer",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N875a22ece5174b4f93d12bb2d103d12b"
+        "@id": "_:Ne5c8eee370e7477f971024f50d93ec35"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_3170"
-        },
         {
           "@id": "edam:topic_3934"
         },
         {
-          "@id": "edam:topic_0769"
+          "@id": "edam:topic_3170"
         },
         {
           "@id": "edam:topic_3308"
+        },
+        {
+          "@id": "edam:topic_0769"
         }
       ],
       "sc:citation": [
+        "pubmed:36304292",
+        "pmcid:PMC9580930",
         {
           "@id": "https://doi.org/10.3389/fbinf.2022.793309"
-        },
-        "pmcid:PMC9580930",
-        "pubmed:36304292"
+        }
       ],
       "sc:description": "Interactive Analysis of Single Cell RNA-Seq Data on the Cloud.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3891"
-        },
-        {
-          "@id": "edam:operation_3192"
+          "@id": "edam:operation_3933"
         },
         {
           "@id": "edam:operation_3935"
         },
         {
-          "@id": "edam:operation_3933"
+          "@id": "edam:operation_3891"
         },
         {
           "@id": "edam:operation_2436"
+        },
+        {
+          "@id": "edam:operation_3192"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:name": "SingleCAnalyzer",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:url": "https://singleCAnalyzer.eu"
     },
     {
-      "@id": "_:N875a22ece5174b4f93d12bb2d103d12b",
+      "@id": "_:Ne5c8eee370e7477f971024f50d93ec35",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"

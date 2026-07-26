@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,20 +36,24 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1021/acs.jproteome.6b00274",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/proxl",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N169b501110f84a39b4f7b63dde6bcd73"
+        "@id": "_:N820a5c2ebee54b3e8bc9d023c929e81c"
       },
       "bsc:output": [
         {
-          "@id": "_:N583a20658f5b4e07894d9f07fb1d1f4d"
+          "@id": "_:Nd43dd1e5eb134ca489f55c3369fdb733"
         },
         {
-          "@id": "_:N2d6026fe5aa24278a9161e57d330aef8"
+          "@id": "_:N6065953e473643fd9df7a234f7b4ca73"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
@@ -60,8 +64,8 @@
         }
       ],
       "sc:citation": [
-        "pmcid:PMC4977572",
         "pubmed:27302480",
+        "pmcid:PMC4977572",
         {
           "@id": "https://doi.org/10.1021/acs.jproteome.6b00274"
         }
@@ -82,9 +86,9 @@
       "sc:license": "Apache-2.0",
       "sc:name": "ProXL",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://proxl-web-app.readthedocs.io/en/latest/"
@@ -92,29 +96,7 @@
       "sc:url": "https://github.com/yeastrc/proxl-web-app"
     },
     {
-      "@id": "_:N583a20658f5b4e07894d9f07fb1d1f4d",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1460"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3604"
-      },
-      "sc:name": "Protein structure"
-    },
-    {
-      "@id": "_:N2d6026fe5aa24278a9161e57d330aef8",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1277"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3604"
-      },
-      "sc:name": "Protein features"
-    },
-    {
-      "@id": "_:N169b501110f84a39b4f7b63dde6bcd73",
+      "@id": "_:N820a5c2ebee54b3e8bc9d023c929e81c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0906"
@@ -125,8 +107,26 @@
       "sc:name": "Protein interaction data"
     },
     {
-      "@id": "https://doi.org/10.1021/acs.jproteome.6b00274",
-      "@type": "sc:CreativeWork"
+      "@id": "_:Nd43dd1e5eb134ca489f55c3369fdb733",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1277"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3604"
+      },
+      "sc:name": "Protein features"
+    },
+    {
+      "@id": "_:N6065953e473643fd9df7a234f7b4ca73",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1460"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3604"
+      },
+      "sc:name": "Protein structure"
     }
   ]
 }

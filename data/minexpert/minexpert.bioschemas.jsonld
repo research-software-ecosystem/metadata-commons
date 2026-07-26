@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -43,32 +43,32 @@
       "@id": "https://bio.tools/mineXpert",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N845f3d8048524141a2e9380dff0f503d"
+        "@id": "_:N85cf0dff9c1d4a93afd06d594b7cfba5"
       },
       "bsc:output": {
-        "@id": "_:N89ce82b662b84e6ea1787bc5a4fefcc1"
+        "@id": "_:Nac051cd79c4049ffb97c741a6b49ae85"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Script",
-        "Desktop application"
+        "Desktop application",
+        "Script"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3292"
+          "@id": "edam:topic_3370"
         },
         {
-          "@id": "edam:topic_3370"
+          "@id": "edam:topic_3292"
         },
         {
           "@id": "edam:topic_3332"
         }
       ],
       "sc:citation": [
+        "pubmed:30950277",
         {
           "@id": "https://doi.org/10.1021/acs.jproteome.9b00099"
-        },
-        "pubmed:30950277"
+        }
       ],
       "sc:description": "mineXpert is a graphical user interface software piece that allows the user to:\n- load mass spectrometry data files [ (x,y) text files or mzML standard format ] \n- visualize the TIC chromatogram and the intensity=(mz, dt) colormap in case of ion mobility mass spectrometry\n- integrate the mass data in many different ways and display them, effectively permitting the exploration of the mass data in their full depth\n- many other features",
       "sc:featureList": [
@@ -76,18 +76,18 @@
           "@id": "edam:operation_3203"
         },
         {
-          "@id": "edam:operation_3694"
+          "@id": "edam:operation_3632"
         },
         {
-          "@id": "edam:operation_3632"
+          "@id": "edam:operation_3694"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "GPL-3.0",
       "sc:name": "mineXpert",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -96,20 +96,20 @@
       "sc:url": "http://msxpertsuite.org"
     },
     {
-      "@id": "_:N89ce82b662b84e6ea1787bc5a4fefcc1",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2884"
-      },
-      "sc:name": "Plot"
-    },
-    {
-      "@id": "_:N845f3d8048524141a2e9380dff0f503d",
+      "@id": "_:N85cf0dff9c1d4a93afd06d594b7cfba5",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2536"
       },
       "sc:name": "Mass spectrometry data"
+    },
+    {
+      "@id": "_:Nac051cd79c4049ffb97c741a6b49ae85",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2884"
+      },
+      "sc:name": "Plot"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -43,17 +43,17 @@
       "@id": "https://bio.tools/intermap3d",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nc564bbe106914a758de00c962ac15d04"
+        "@id": "_:N96492daa4a1b4a5a81f9ea9a2826c080"
       },
       "bsc:output": [
         {
-          "@id": "_:Na48c22d857334b33ad7277822bda1444"
+          "@id": "_:N61666a3f0c274fd0be804324a2f70b17"
         },
         {
-          "@id": "_:N40a184eb97164b6b9463f297251079e0"
+          "@id": "_:Nd90ff724f1164ca6abd279fd2356fa60"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
@@ -77,9 +77,9 @@
       "sc:license": "Other",
       "sc:name": "InterMap3D",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": "CBS",
       "sc:softwareHelp": {
@@ -89,7 +89,18 @@
       "sc:url": "http://cbs.dtu.dk/services/InterMap3D/"
     },
     {
-      "@id": "_:Na48c22d857334b33ad7277822bda1444",
+      "@id": "_:N96492daa4a1b4a5a81f9ea9a2826c080",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2044"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "Sequence"
+    },
+    {
+      "@id": "_:N61666a3f0c274fd0be804324a2f70b17",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1277"
@@ -100,7 +111,7 @@
       "sc:name": "Protein features"
     },
     {
-      "@id": "_:N40a184eb97164b6b9463f297251079e0",
+      "@id": "_:Nd90ff724f1164ca6abd279fd2356fa60",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1537"
@@ -109,17 +120,6 @@
         "@id": "edam:format_2333"
       },
       "sc:name": "Protein structure report"
-    },
-    {
-      "@id": "_:Nc564bbe106914a758de00c962ac15d04",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2044"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1929"
-      },
-      "sc:name": "Sequence"
     }
   ]
 }

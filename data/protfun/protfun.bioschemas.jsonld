@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,19 +36,15 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1016/S0022-2836(02)00379-0",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/protfun",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N6de53e93543a40df9381358a0f8c2709"
+        "@id": "_:N0d9f5bda1109446ebb55c337c151ac0f"
       },
       "bsc:output": {
-        "@id": "_:N7a5571752de54063a517b045b758e7e9"
+        "@id": "_:N759ece5b079b4eedb6bd1ff55c663a60"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Web application",
         "Web service"
@@ -70,8 +66,8 @@
       "sc:license": "Other",
       "sc:name": "ProtFun",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:provider": "CBS",
@@ -82,7 +78,18 @@
       "sc:url": "http://cbs.dtu.dk/services/ProtFun/"
     },
     {
-      "@id": "_:N7a5571752de54063a517b045b758e7e9",
+      "@id": "_:N0d9f5bda1109446ebb55c337c151ac0f",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2044"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "Sequence"
+    },
+    {
+      "@id": "_:N759ece5b079b4eedb6bd1ff55c663a60",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1277"
@@ -93,15 +100,8 @@
       "sc:name": "Protein features"
     },
     {
-      "@id": "_:N6de53e93543a40df9381358a0f8c2709",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2044"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1929"
-      },
-      "sc:name": "Sequence"
+      "@id": "https://doi.org/10.1016/S0022-2836(02)00379-0",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

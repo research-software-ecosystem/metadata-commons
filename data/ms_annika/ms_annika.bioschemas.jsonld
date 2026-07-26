@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,6 +36,10 @@
   },
   "@graph": [
     {
+      "@id": "https://orcid.org/0000-0002-5332-5701",
+      "@type": "sc:Person"
+    },
+    {
       "@id": "https://doi.org/10.1021/acs.jproteome.0c01000",
       "@type": "sc:CreativeWork"
     },
@@ -44,12 +48,12 @@
       "@type": "sc:CreativeWork"
     },
     {
-      "@id": "https://orcid.org/0009-0005-1051-179X",
-      "@type": "sc:Person"
-    },
-    {
       "@id": "https://doi.org/10.1021/acs.jproteome.3c00325",
       "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://orcid.org/0009-0005-1051-179X",
+      "@type": "sc:Person"
     },
     {
       "@id": "https://bio.tools/ms_annika",
@@ -59,32 +63,32 @@
       },
       "bsc:input": [
         {
-          "@id": "_:N30a6f86f850743cfbd2abc43df1a9153"
+          "@id": "_:N5b0e9c18f8614529895f87b1654f9432"
         },
         {
-          "@id": "_:Na1de0b9a8bf24c97b8d2b54ace92595e"
+          "@id": "_:Nac37a9c896f046748ab7e7f9d9ad26c9"
         }
       ],
       "bsc:output": {
-        "@id": "_:N057e6e8998e1469ea3d0111c263bd644"
+        "@id": "_:Na11d1fd3e1684a26b9a00213d4d0da47"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Plug-in",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0128"
+          "@id": "edam:topic_0091"
         },
         {
           "@id": "edam:topic_0130"
         },
         {
-          "@id": "edam:topic_0121"
-        },
-        {
           "@id": "edam:topic_0736"
         },
         {
-          "@id": "edam:topic_0091"
+          "@id": "edam:topic_0128"
+        },
+        {
+          "@id": "edam:topic_0121"
         }
       ],
       "sc:author": {
@@ -92,37 +96,37 @@
       },
       "sc:citation": [
         "pubmed:33852321",
+        "pmcid:PMC8155564",
+        {
+          "@id": "https://doi.org/10.1021/acs.jproteome.0c01000"
+        },
+        "pubmed:37566781",
+        "pmcid:PMC10476269",
+        {
+          "@id": "https://doi.org/10.1021/acs.jproteome.3c00325"
+        },
         "pubmed:39702463",
         "pmcid:PMC11659399",
         {
           "@id": "https://doi.org/10.1038/s42004-024-01386-x"
-        },
-        {
-          "@id": "https://doi.org/10.1021/acs.jproteome.3c00325"
-        },
-        "pmcid:PMC8155564",
-        "pubmed:37566781",
-        "pmcid:PMC10476269",
-        {
-          "@id": "https://doi.org/10.1021/acs.jproteome.0c01000"
         }
       ],
       "sc:description": "MS Annika is a crosslink search engine based on MS Amanda, aimed at identifying crosslinks of cleavable and non-cleavable crosslinkers from MS2 and MS3 spectra. It can deal with a wide variety of cross-linkers and provides robust and transparent FDR control based on a target-decoy approach. MS Annika is available free of charge as a plug-in for Proteome Discoverer.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3649"
+          "@id": "edam:operation_3645"
         },
         {
-          "@id": "edam:operation_3631"
+          "@id": "edam:operation_3755"
         },
         {
           "@id": "edam:operation_3646"
         },
         {
-          "@id": "edam:operation_3645"
+          "@id": "edam:operation_3631"
         },
         {
-          "@id": "edam:operation_3755"
+          "@id": "edam:operation_3649"
         }
       ],
       "sc:isAccessibleForFree": true,
@@ -131,30 +135,46 @@
       "sc:operatingSystem": "Windows",
       "sc:softwareHelp": [
         {
-          "@id": "https://hgb-bin-proteomics.github.io/MSAnnika/"
-        },
-        {
           "@id": "https://github.com/hgb-bin-proteomics/MSAnnika/raw/master/tutorial/MS_Annika_3.0_Tutorial.pdf"
         },
         {
-          "@id": "https://github.com/hgb-bin-proteomics/MSAnnika/raw/master/MS_Annika_3.0_UserManual.pdf"
+          "@id": "https://www.youtube.com/watch?v=L1lVt35PYv4"
         },
         {
-          "@id": "https://www.youtube.com/watch?v=L1lVt35PYv4"
+          "@id": "https://hgb-bin-proteomics.github.io/MSAnnika/"
+        },
+        {
+          "@id": "https://github.com/hgb-bin-proteomics/MSAnnika/raw/master/MS_Annika_3.0_UserManual.pdf"
         }
       ],
       "sc:softwareVersion": [
-        "Proteome Discoverer 2.5: MS Annika 2.0 v1.1.3",
-        "Proteome Discoverer 3.1: MS Annika 3.0 v3.0.7",
-        "Proteome Discoverer 3.0: MS Annika 2.0 v1.1.4fix",
-        "Proteome Discoverer 3.2: MS Annika 3.0 v3.0.7",
         "Proteome Discoverer 2.3: MS Annika v1.0.0",
-        "Proteome Discoverer 2.4: MS Annika v1.0.0"
+        "Proteome Discoverer 2.4: MS Annika v1.0.0",
+        "Proteome Discoverer 2.5: MS Annika 2.0 v1.1.3",
+        "Proteome Discoverer 3.0: MS Annika 2.0 v1.1.4fix",
+        "Proteome Discoverer 3.1: MS Annika 3.0 v3.0.7",
+        "Proteome Discoverer 3.2: MS Annika 3.0 v3.0.7"
       ],
       "sc:url": "https://github.com/hgb-bin-proteomics/MSAnnika"
     },
     {
-      "@id": "_:N30a6f86f850743cfbd2abc43df1a9153",
+      "@id": "_:N5b0e9c18f8614529895f87b1654f9432",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0943"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3651"
+        },
+        {
+          "@id": "edam:format_3712"
+        }
+      ],
+      "sc:name": "Mass spectrum"
+    },
+    {
+      "@id": "_:Nac37a9c896f046748ab7e7f9d9ad26c9",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2886"
@@ -165,23 +185,7 @@
       "sc:name": "Protein sequence record"
     },
     {
-      "@id": "_:Na1de0b9a8bf24c97b8d2b54ace92595e",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0943"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3712"
-        },
-        {
-          "@id": "edam:format_3651"
-        }
-      ],
-      "sc:name": "Mass spectrum"
-    },
-    {
-      "@id": "_:N057e6e8998e1469ea3d0111c263bd644",
+      "@id": "_:Na11d1fd3e1684a26b9a00213d4d0da47",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0857"
@@ -190,10 +194,6 @@
         "@id": "edam:format_2330"
       },
       "sc:name": "Sequence search results"
-    },
-    {
-      "@id": "https://orcid.org/0000-0002-5332-5701",
-      "@type": "sc:Person"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,48 +40,48 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N193a8e0c2951484fabbf0c3f870a5358"
+          "@id": "_:N97dded76f57041dc81bca78a12c0a0f2"
         },
         {
-          "@id": "_:N5bd861863d7644b88cf92996372716c1"
+          "@id": "_:Na3c7af3ca5314b5abae86064c1366457"
         }
       ],
       "bsc:output": {
-        "@id": "_:N78ecbf2b8da8438396a878368f5ffba0"
+        "@id": "_:Nfe420a938ade4c97b42ba4ad4555dc30"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Desktop application",
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_3520"
-        },
         {
           "@id": "edam:topic_3382"
         },
         {
           "@id": "edam:topic_0121"
+        },
+        {
+          "@id": "edam:topic_3520"
         }
       ],
       "sc:citation": "pubmed:17545182",
       "sc:description": "VIPER is primarily intended for processing deisotoped data from high mass measurement accuracy instruments (e.g. FT, TOF, or Orbitrap) and comparing the features found to a list of expected peptides (aka mass and time (MT) tags), as practiced by the AMT tag approach. The software allows one to display the data as a two-dimensional plot of spectrum number (i.e. elution time) vs. mass. It can read MS data from several file formats: .PEK, .CSV (Decon2LS format), .mzXML, and .mzData.",
       "sc:featureList": [
         {
+          "@id": "edam:operation_3203"
+        },
+        {
           "@id": "edam:operation_3628"
-        },
-        {
-          "@id": "edam:operation_3694"
-        },
-        {
-          "@id": "edam:operation_3627"
         },
         {
           "@id": "edam:operation_3432"
         },
         {
-          "@id": "edam:operation_3203"
+          "@id": "edam:operation_3695"
         },
         {
-          "@id": "edam:operation_3695"
+          "@id": "edam:operation_3627"
+        },
+        {
+          "@id": "edam:operation_3694"
         }
       ],
       "sc:license": "Apache-2.0",
@@ -89,18 +89,7 @@
       "sc:url": "https://omics.pnl.gov/software/viper"
     },
     {
-      "@id": "_:N193a8e0c2951484fabbf0c3f870a5358",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0944"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3752"
-      },
-      "sc:name": "Peptide mass fingerprint"
-    },
-    {
-      "@id": "_:N5bd861863d7644b88cf92996372716c1",
+      "@id": "_:N97dded76f57041dc81bca78a12c0a0f2",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0943"
@@ -116,7 +105,18 @@
       "sc:name": "Mass spectrometry spectra"
     },
     {
-      "@id": "_:N78ecbf2b8da8438396a878368f5ffba0",
+      "@id": "_:Na3c7af3ca5314b5abae86064c1366457",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0944"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3752"
+      },
+      "sc:name": "Peptide mass fingerprint"
+    },
+    {
+      "@id": "_:Nfe420a938ade4c97b42ba4ad4555dc30",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"

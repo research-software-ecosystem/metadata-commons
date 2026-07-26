@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -44,46 +44,46 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Ned26576f2646468dabf87afe608ef3b1"
+          "@id": "_:N4b89597054e448e5a127890a5fda6f7c"
         },
         {
-          "@id": "_:N5e33c2dfdd5f46e98b07c5afc7325823"
+          "@id": "_:N1451a211031049309467420dcb0208a0"
         },
         {
-          "@id": "_:N872b78d452524408a0bae56ee3b12207"
+          "@id": "_:Nb43537e8b32449db93f19facbd27e6e3"
         },
         {
-          "@id": "_:N65a082124fd44963b49cba1822eb9f32"
+          "@id": "_:N25efcc54bccf437f8ae193972e1111ba"
         },
         {
-          "@id": "_:N232972c5035b4e798b780891ee402673"
+          "@id": "_:Nbb9377774d744feaafbbb80f10002256"
         },
         {
-          "@id": "_:N2b7e781806e0437d80a14397a8da6637"
+          "@id": "_:N0fcd74c589ff4768a0efc3160a57a624"
         }
       ],
       "bsc:output": {
-        "@id": "_:N721113efb9804626bbadf58713a04294"
+        "@id": "_:N01787653a46c42efa4269092bfaa8417"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Database portal"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3301"
+          "@id": "edam:topic_3050"
         },
         {
-          "@id": "edam:topic_3050"
+          "@id": "edam:topic_3301"
         },
         {
           "@id": "edam:topic_0637"
         }
       ],
       "sc:citation": [
-        "pmcid:PMC7723251",
         "pubmed:32701423",
+        "pmcid:PMC7723251",
         {
           "@id": "https://doi.org/10.1099/ijsem.0.004332"
         }
@@ -105,31 +105,7 @@
       "sc:url": "https://lpsn.dsmz.de/"
     },
     {
-      "@id": "_:Ned26576f2646468dabf87afe608ef3b1",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1872"
-      },
-      "sc:name": "Taxonomic classification"
-    },
-    {
-      "@id": "_:N5e33c2dfdd5f46e98b07c5afc7325823",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1045"
-      },
-      "sc:name": "Species name"
-    },
-    {
-      "@id": "_:N872b78d452524408a0bae56ee3b12207",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1868"
-      },
-      "sc:name": "Taxon"
-    },
-    {
-      "@id": "_:N65a082124fd44963b49cba1822eb9f32",
+      "@id": "_:N4b89597054e448e5a127890a5fda6f7c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2732"
@@ -137,15 +113,7 @@
       "sc:name": "Family name"
     },
     {
-      "@id": "_:N232972c5035b4e798b780891ee402673",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2912"
-      },
-      "sc:name": "Strain accession"
-    },
-    {
-      "@id": "_:N2b7e781806e0437d80a14397a8da6637",
+      "@id": "_:N1451a211031049309467420dcb0208a0",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1870"
@@ -153,20 +121,52 @@
       "sc:name": "Genus name"
     },
     {
-      "@id": "_:N721113efb9804626bbadf58713a04294",
+      "@id": "_:Nb43537e8b32449db93f19facbd27e6e3",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1045"
+      },
+      "sc:name": "Species name"
+    },
+    {
+      "@id": "_:N25efcc54bccf437f8ae193972e1111ba",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2912"
+      },
+      "sc:name": "Strain accession"
+    },
+    {
+      "@id": "_:Nbb9377774d744feaafbbb80f10002256",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1868"
+      },
+      "sc:name": "Taxon"
+    },
+    {
+      "@id": "_:N0fcd74c589ff4768a0efc3160a57a624",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1872"
+      },
+      "sc:name": "Taxonomic classification"
+    },
+    {
+      "@id": "_:N01787653a46c42efa4269092bfaa8417",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1872"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_2332"
-        },
-        {
           "@id": "edam:format_2331"
         },
         {
           "@id": "edam:format_3464"
+        },
+        {
+          "@id": "edam:format_2332"
         }
       ],
       "sc:name": "Taxonomic classification"

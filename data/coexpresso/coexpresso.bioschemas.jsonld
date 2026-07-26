@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -41,32 +41,32 @@
       "biotools:primaryContact": "Veit Schwämmle",
       "bsc:input": [
         {
-          "@id": "_:N78a37f400af24ab1b96a4d0b93150024"
+          "@id": "_:N12e23e3b29e74b6da45b469d094e8372"
         },
         {
-          "@id": "_:N065a06be1f9a48dc9d9895bd83807b2c"
+          "@id": "_:N2ec2d7bf22354517aba30c8a1c3dc90d"
         }
       ],
       "bsc:output": {
-        "@id": "_:Neb897d6bd92c46aeaaa8ca5095a3e273"
+        "@id": "_:N5bcb2d2f3875432ea9e69995df87eccc"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
           "@id": "edam:topic_0092"
         },
         {
-          "@id": "edam:topic_2269"
+          "@id": "edam:topic_0128"
+        },
+        {
+          "@id": "edam:topic_0121"
         },
         {
           "@id": "edam:topic_3520"
         },
         {
-          "@id": "edam:topic_0128"
-        },
-        {
-          "@id": "edam:topic_0121"
+          "@id": "edam:topic_2269"
         }
       ],
       "sc:citation": [
@@ -79,22 +79,13 @@
       "sc:description": "CoExpresso is a tool to investigate the behavior of protein subunits in known complexes by comparing their\nabundance profiles across up to 140 cell types available in ProteomicsDB. Thorough assessment of different\nrandomization methods and statistical scoring algorithms allows determining the significance of concurrent profiles\nwithin a complex, therefore providing insights into the conservation of their composition across human cell types as\nwell as the identification of intrinsic structures in complex behavior to determine which proteins orchestrate complex\nfunction.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0276"
-        },
-        {
           "@id": "edam:operation_2935"
-        },
-        {
-          "@id": "edam:operation_3463"
-        },
-        {
-          "@id": "edam:operation_2238"
         },
         {
           "@id": "edam:operation_2495"
         },
         {
-          "@id": "edam:operation_3083"
+          "@id": "edam:operation_3463"
         },
         {
           "@id": "edam:operation_0571"
@@ -103,16 +94,25 @@
           "@id": "edam:operation_0531"
         },
         {
+          "@id": "edam:operation_3083"
+        },
+        {
+          "@id": "edam:operation_0276"
+        },
+        {
           "@id": "edam:operation_0224"
+        },
+        {
+          "@id": "edam:operation_2238"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "Apache-2.0",
       "sc:name": "CoExpresso",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://bitbucket.org/veitveit/coexpresso/"
@@ -120,18 +120,18 @@
       "sc:url": "http://computproteomics.bmb.sdu.dk/Apps/CoExpresso/"
     },
     {
-      "@id": "_:Neb897d6bd92c46aeaaa8ca5095a3e273",
+      "@id": "_:N12e23e3b29e74b6da45b469d094e8372",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2884"
+        "@id": "edam:data_2295"
       },
       "sc:encodingFormat": {
-        "@id": "edam:format_3508"
+        "@id": "edam:format_1963"
       },
-      "sc:name": "Plot"
+      "sc:name": "Gene ID"
     },
     {
-      "@id": "_:N78a37f400af24ab1b96a4d0b93150024",
+      "@id": "_:N2ec2d7bf22354517aba30c8a1c3dc90d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3021"
@@ -142,15 +142,15 @@
       "sc:name": "UniProt accession"
     },
     {
-      "@id": "_:N065a06be1f9a48dc9d9895bd83807b2c",
+      "@id": "_:N5bcb2d2f3875432ea9e69995df87eccc",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2295"
+        "@id": "edam:data_2884"
       },
       "sc:encodingFormat": {
-        "@id": "edam:format_1963"
+        "@id": "edam:format_3508"
       },
-      "sc:name": "Gene ID"
+      "sc:name": "Plot"
     },
     {
       "@id": "https://doi.org/10.1186/s12859-018-2573-8",

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,19 +36,15 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1021/ac048788h",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/pepnovo",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N012b55d57da34bd2a458629affaea0ba"
+        "@id": "_:N557ede18a64948be8f5835f571cbf7c2"
       },
       "bsc:output": {
-        "@id": "_:Nefc04fee2c41426f81fb5fc746a74cab"
+        "@id": "_:Na8016b94a8364b5ba54f5665632b533e"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
@@ -67,19 +63,19 @@
       "sc:description": "\"De novo\" sequencing using probabilistic network modeling.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3644"
-        },
-        {
           "@id": "edam:operation_3631"
         },
         {
           "@id": "edam:operation_2238"
+        },
+        {
+          "@id": "edam:operation_3644"
         }
       ],
       "sc:name": "PepNovo",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -88,7 +84,29 @@
       "sc:url": "http://proteomics.ucsd.edu/ProteoSAFe/"
     },
     {
-      "@id": "_:Nefc04fee2c41426f81fb5fc746a74cab",
+      "@id": "_:N557ede18a64948be8f5835f571cbf7c2",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0943"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3651"
+        },
+        {
+          "@id": "edam:format_3652"
+        },
+        {
+          "@id": "edam:format_3654"
+        },
+        {
+          "@id": "edam:format_3653"
+        }
+      ],
+      "sc:name": "Mass spectrometry spectra"
+    },
+    {
+      "@id": "_:Na8016b94a8364b5ba54f5665632b533e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0945"
@@ -99,26 +117,8 @@
       "sc:name": "Peptide identification"
     },
     {
-      "@id": "_:N012b55d57da34bd2a458629affaea0ba",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0943"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3651"
-        },
-        {
-          "@id": "edam:format_3654"
-        },
-        {
-          "@id": "edam:format_3652"
-        },
-        {
-          "@id": "edam:format_3653"
-        }
-      ],
-      "sc:name": "Mass spectrometry spectra"
+      "@id": "https://doi.org/10.1021/ac048788h",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

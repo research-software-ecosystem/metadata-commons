@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -38,7 +38,7 @@
     {
       "@id": "https://bio.tools/xheinz",
       "@type": "sc:SoftwareApplication",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0602"
@@ -46,8 +46,8 @@
       "sc:author": [
         "Daniela Beisser",
         "Hayssam Soueidan",
-        "Mohammed El-Kebir",
         "Marcus Dittrich",
+        "Mohammed El-Kebir",
         "Thomas Hume",
         "Tobias Müller"
       ],
@@ -55,11 +55,11 @@
         "@id": "https://doi.org/10.1093/bioinformatics/btv316"
       },
       "sc:contributor": [
-        "Lodewyk F. A. Wessels",
-        "Gunnar W. Klau",
         "Guillaume Blin",
-        "Macha Nikolski",
-        "Jaap Heringa"
+        "Gunnar W. Klau",
+        "Jaap Heringa",
+        "Lodewyk F. A. Wessels",
+        "Macha Nikolski"
       ],
       "sc:description": "Software solver that searches for active subnetwork modules that are conserved between two species. It uses a branch-and-cut algorithm that finds provably optimal or near-optimal solutions. Active subnetwork modules are sets of genes, one for each species, which: - induce a connected subnetwork in a species-specific interaction network, - show overall differential behavior, and - contain a large number of orthologous genes.",
       "sc:featureList": {
@@ -69,17 +69,17 @@
       "sc:license": "MIT",
       "sc:name": "xHeinz",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:provider": [
         "Bordeaux University, CBiB, France",
-        "Univ. Bordeaux, CNRS/LaBRI, 33405 Talence, France,",
-        "The Netherlands Cancer Institute, Amsterdam",
         "The Netherlands",
+        "The Netherlands Cancer Institute, Amsterdam",
+        "Univ. Bordeaux, CNRS/LaBRI, 33405 Talence, France,",
         "University Duisburg-Essen",
-        "u-bordeaux.fr",
-        "Würzburg University, Germany"
+        "Würzburg University, Germany",
+        "u-bordeaux.fr"
       ],
       "sc:softwareHelp": [
         {

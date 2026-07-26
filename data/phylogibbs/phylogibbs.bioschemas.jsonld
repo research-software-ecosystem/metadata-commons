@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,15 +36,16 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1371/journal.pcbi.0010067",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/phylogibbs",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Mikhail Pachkov",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_0080"
-        },
         {
           "@id": "edam:topic_3169"
         },
@@ -58,10 +59,13 @@
           "@id": "edam:topic_0602"
         },
         {
-          "@id": "edam:topic_3168"
+          "@id": "edam:topic_0084"
         },
         {
-          "@id": "edam:topic_0084"
+          "@id": "edam:topic_0080"
+        },
+        {
+          "@id": "edam:topic_3168"
         },
         {
           "@id": "edam:topic_2259"
@@ -80,6 +84,9 @@
       "sc:description": "Phylogibbs is an algorithm for discovering regulatory sites in a collection of DNA sequences, including multiple alignments of orthologous sequences from related organisms.The algorithm uses a Gibbs sampling strategy, takes the phylogenetic relationships of the input sequences rigorously into account, and assigns realistic posterior probabilities to reported sites using a novel annealing+tracking strategy.",
       "sc:featureList": [
         {
+          "@id": "edam:operation_0547"
+        },
+        {
           "@id": "edam:operation_0292"
         },
         {
@@ -87,25 +94,18 @@
         },
         {
           "@id": "edam:operation_0346"
-        },
-        {
-          "@id": "edam:operation_0547"
         }
       ],
       "sc:name": "Phylogibbs",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://www.phylogibbs.unibas.ch/cgi-bin/phylogibbs.pl?part=documentation&page=phylogibbs"
       },
       "sc:url": "http://www.phylogibbs.unibas.ch"
-    },
-    {
-      "@id": "https://doi.org/10.1371/journal.pcbi.0010067",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

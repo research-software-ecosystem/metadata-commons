@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,27 +36,23 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.18129/B9.bioc.sva",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/sva",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nea76bc7bc37647d49a1717b9364c107b"
+        "@id": "_:N15ed7e059623435e836f33e80fada7f9"
       },
       "bsc:output": [
         {
-          "@id": "_:N0139d3eef03a4d6cb09ab2d5ced03ab3"
+          "@id": "_:N074fc14e200d4319bfda44f79bfda0b2"
         },
         {
-          "@id": "_:N47a789593c1b49328c1a96267b8fde66"
+          "@id": "_:Nd75d634cea0d4c0d9f8bbeb8ab17ef7d"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3572"
@@ -72,8 +68,8 @@
       "sc:name": "sva",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://bioconductor.org/packages/sva"
@@ -82,7 +78,18 @@
       "sc:url": "https://bioconductor.org/packages/sva"
     },
     {
-      "@id": "_:N0139d3eef03a4d6cb09ab2d5ced03ab3",
+      "@id": "_:N15ed7e059623435e836f33e80fada7f9",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3108"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3033"
+      },
+      "sc:name": "Experimental measurement"
+    },
+    {
+      "@id": "_:N074fc14e200d4319bfda44f79bfda0b2",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1669"
@@ -93,7 +100,7 @@
       "sc:name": "P-value"
     },
     {
-      "@id": "_:N47a789593c1b49328c1a96267b8fde66",
+      "@id": "_:Nd75d634cea0d4c0d9f8bbeb8ab17ef7d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
@@ -104,15 +111,8 @@
       "sc:name": "Plot"
     },
     {
-      "@id": "_:Nea76bc7bc37647d49a1717b9364c107b",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3108"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3033"
-      },
-      "sc:name": "Experimental measurement"
+      "@id": "https://doi.org/10.18129/B9.bioc.sva",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

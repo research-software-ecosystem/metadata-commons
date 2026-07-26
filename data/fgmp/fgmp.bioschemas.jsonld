@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -44,12 +44,12 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Ousmane Cissé",
       "bsc:input": {
-        "@id": "_:N53fd3cfddd9d4b5093403d62239abe6b"
+        "@id": "_:N0328d0fa3e02405cb4340a781de4f8cc"
       },
       "bsc:output": {
-        "@id": "_:N9cad4b8228cd49c3b37cc3a623263c8d"
+        "@id": "_:N1c97d1f15dc842e3b1f58b5d2a593be9"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
@@ -75,27 +75,27 @@
       "sc:license": "MIT",
       "sc:name": "FGMP",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:softwareVersion": "1.0.0",
       "sc:url": "http://github.com/stajichlab/FGMP"
     },
     {
-      "@id": "_:N9cad4b8228cd49c3b37cc3a623263c8d",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3181"
-      },
-      "sc:name": "Sequence assembly report"
-    },
-    {
-      "@id": "_:N53fd3cfddd9d4b5093403d62239abe6b",
+      "@id": "_:N0328d0fa3e02405cb4340a781de4f8cc",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0925"
       },
       "sc:name": "Sequence assembly"
+    },
+    {
+      "@id": "_:N1c97d1f15dc842e3b1f58b5d2a593be9",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3181"
+      },
+      "sc:name": "Sequence assembly report"
     }
   ]
 }

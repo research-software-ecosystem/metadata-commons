@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,24 +40,24 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N3cbeeec13b6345bd8a9891269e2217dd"
+          "@id": "_:N702d252de3b04c58a37ba7926cae13dd"
         },
         {
-          "@id": "_:N52d201822acc4c0eb9750a46bca2ac1d"
+          "@id": "_:Na7af7f82bb1e403a91abf2934d7b3e72"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N38fcc12d43a446f49931700b50a19280"
+          "@id": "_:N1512418f1b074527bfc79294d38453a1"
         },
         {
-          "@id": "_:N3e880a3ac4ba4690aff43228acd32620"
+          "@id": "_:N0f6d8af57b944d259f464c2e971bd195"
         },
         {
-          "@id": "_:Na6b08fc59fa94531bd142ed06aa1ebda"
+          "@id": "_:Nc83669b95eb14d488ad23bf5c7019754"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Database portal",
         "Web application",
@@ -76,10 +76,10 @@
       ],
       "sc:citation": [
         "pubmed:23023984",
+        "pmcid:PMC3516146",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/bts577"
-        },
-        "pmcid:PMC3516146"
+        }
       ],
       "sc:description": "An integrated web resource of data & tools to mine Planarian biology",
       "sc:featureList": [
@@ -90,18 +90,18 @@
           "@id": "edam:operation_2436"
         },
         {
-          "@id": "edam:operation_0337"
+          "@id": "edam:operation_0224"
         },
         {
-          "@id": "edam:operation_0224"
+          "@id": "edam:operation_0337"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "LGPL-2.1",
       "sc:name": "PlanMine",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:softwareHelp": [
         {
@@ -115,15 +115,23 @@
       "sc:url": "http://planmine.mpi-cbg.de/planmine"
     },
     {
-      "@id": "_:N38fcc12d43a446f49931700b50a19280",
+      "@id": "_:N702d252de3b04c58a37ba7926cae13dd",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_3786"
+        "@id": "edam:data_2353"
       },
-      "sc:name": "Query script"
+      "sc:name": "Ontology data"
     },
     {
-      "@id": "_:N3e880a3ac4ba4690aff43228acd32620",
+      "@id": "_:Na7af7f82bb1e403a91abf2934d7b3e72",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1255"
+      },
+      "sc:name": "Sequence features"
+    },
+    {
+      "@id": "_:N1512418f1b074527bfc79294d38453a1",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3753"
@@ -131,28 +139,20 @@
       "sc:name": "Over-representation data"
     },
     {
-      "@id": "_:Na6b08fc59fa94531bd142ed06aa1ebda",
+      "@id": "_:N0f6d8af57b944d259f464c2e971bd195",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3786"
+      },
+      "sc:name": "Query script"
+    },
+    {
+      "@id": "_:Nc83669b95eb14d488ad23bf5c7019754",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1255"
       },
       "sc:name": "Sequence features"
-    },
-    {
-      "@id": "_:N3cbeeec13b6345bd8a9891269e2217dd",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1255"
-      },
-      "sc:name": "Sequence features"
-    },
-    {
-      "@id": "_:N52d201822acc4c0eb9750a46bca2ac1d",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2353"
-      },
-      "sc:name": "Ontology data"
     },
     {
       "@id": "https://doi.org/10.1093/bioinformatics/bts577",

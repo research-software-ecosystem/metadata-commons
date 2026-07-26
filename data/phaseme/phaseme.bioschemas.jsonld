@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,21 +40,21 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N6ec7766ab9634bb2aef8411d75fa7de6"
+          "@id": "_:N7f3273e03ac74f48ba2f6a9414f076fd"
         },
         {
-          "@id": "_:N18738db85bb945379969d0fee6edd266"
+          "@id": "_:Nf78b22fa10f749e48873af0af297a746"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N11fb256916f54451a7097c3499f6768f"
+          "@id": "_:N6b4d4e06108b4317b70e5b6fb8897f1f"
         },
         {
-          "@id": "_:Nc392ff5d6a834a3ab41de64c96e625a0"
+          "@id": "_:Ne1d25de3e72949328d42b30c15410243"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Desktop application"
@@ -82,7 +82,7 @@
       "sc:url": "https://github.com/smajidian/phaseme"
     },
     {
-      "@id": "_:N6ec7766ab9634bb2aef8411d75fa7de6",
+      "@id": "_:N7f3273e03ac74f48ba2f6a9414f076fd",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0006"
@@ -93,7 +93,7 @@
       "sc:name": "Data"
     },
     {
-      "@id": "_:N18738db85bb945379969d0fee6edd266",
+      "@id": "_:Nf78b22fa10f749e48873af0af297a746",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0006"
@@ -104,7 +104,18 @@
       "sc:name": "Data"
     },
     {
-      "@id": "_:N11fb256916f54451a7097c3499f6768f",
+      "@id": "_:N6b4d4e06108b4317b70e5b6fb8897f1f",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0006"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3016"
+      },
+      "sc:name": "Data"
+    },
+    {
+      "@id": "_:Ne1d25de3e72949328d42b30c15410243",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2526"
@@ -113,17 +124,6 @@
         "@id": "edam:format_2330"
       },
       "sc:name": "Text data"
-    },
-    {
-      "@id": "_:Nc392ff5d6a834a3ab41de64c96e625a0",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0006"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3016"
-      },
-      "sc:name": "Data"
     }
   ]
 }

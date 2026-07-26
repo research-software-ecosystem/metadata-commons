@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,13 +40,13 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N737c951378144ecbb799389a47c05f89"
+          "@id": "_:N7065393e6a8f4b81a512ec04d767b405"
         },
         {
-          "@id": "_:Nc11266ec2ef64268857121ccf767e49d"
+          "@id": "_:N3e32a6cf633e4a8f84be8d81727976a4"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:applicationSubCategory": [
         {
           "@id": "edam:topic_0203"
@@ -63,7 +63,15 @@
       "sc:url": "https://github.com/EVidenceModeler/EVidenceModeler.github.io"
     },
     {
-      "@id": "_:N737c951378144ecbb799389a47c05f89",
+      "@id": "_:N7065393e6a8f4b81a512ec04d767b405",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2042"
+      },
+      "sc:name": "Evidence"
+    },
+    {
+      "@id": "_:N3e32a6cf633e4a8f84be8d81727976a4",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0916"
@@ -72,14 +80,6 @@
         "@id": "edam:format_1209"
       },
       "sc:name": "Gene report"
-    },
-    {
-      "@id": "_:Nc11266ec2ef64268857121ccf767e49d",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2042"
-      },
-      "sc:name": "Evidence"
     }
   ]
 }

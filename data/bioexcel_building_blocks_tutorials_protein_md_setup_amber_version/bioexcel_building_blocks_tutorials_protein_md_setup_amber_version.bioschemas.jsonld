@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,7 +36,7 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1038/s41597-019-0177-4",
+      "@id": "https://doi.org/10.1371/journal.pcbi.1012173",
       "@type": "sc:CreativeWork"
     },
     {
@@ -46,22 +46,19 @@
         "@id": "https://orcid.org/0000-0002-8291-8071"
       },
       "bsc:input": {
-        "@id": "_:Nbd19d514c34445b1bcab00797b1dc8bb"
+        "@id": "_:N6246a40a5ee246889774a512ce8de7d6"
       },
       "bsc:output": [
         {
-          "@id": "_:Ne2abb9d43ce74ed88b7f9bede8f5abef"
+          "@id": "_:N8134e0107c2841028061fca55560fc3d"
         },
         {
-          "@id": "_:N7f820b19db8c49918c2b45790ea614d7"
+          "@id": "_:N0464f8cba21c4bc88773de537e5b7356"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Workflow",
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_2814"
-        },
         {
           "@id": "edam:topic_0092"
         },
@@ -69,36 +66,39 @@
           "@id": "edam:topic_0176"
         },
         {
+          "@id": "edam:topic_2814"
+        },
+        {
           "@id": "edam:topic_0081"
         }
       ],
       "sc:author": [
         {
-          "@id": "https://orcid.org/0000-0003-0513-0288"
+          "@id": "https://orcid.org/0000-0002-8291-8071"
         },
         {
-          "@id": "https://orcid.org/0000-0002-8291-8071"
+          "@id": "https://orcid.org/0000-0003-0513-0288"
         }
       ],
       "sc:citation": [
-        {
-          "@id": "https://doi.org/10.1371/journal.pcbi.1012173"
-        },
+        "pubmed:31506435",
+        "pmcid:PMC6736963",
         {
           "@id": "https://doi.org/10.1038/s41597-019-0177-4"
         },
         "pubmed:38900779",
         "pmcid:PMC11189206",
-        "pubmed:31506435",
-        "pmcid:PMC6736963"
+        {
+          "@id": "https://doi.org/10.1371/journal.pcbi.1012173"
+        }
       ],
       "sc:description": "This tutorial aims to illustrate the process of setting up a simulation system containing a protein, step by step, using the BioExcel Building Blocks library (biobb) wrapping the AmberTools utility from the AMBER package. The particular example used is the Lysozyme protein (PDB code 1AKI).",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0477"
+          "@id": "edam:operation_2476"
         },
         {
-          "@id": "edam:operation_2476"
+          "@id": "edam:operation_0477"
         },
         {
           "@id": "edam:operation_2406"
@@ -114,8 +114,8 @@
       "sc:license": "Apache-2.0",
       "sc:name": "BioExcel Building Blocks tutorials: Protein MD Setup (Amber Version)",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:provider": "BioExcel Center of Excellence for Computational Biomolecular Research",
@@ -126,34 +126,7 @@
       "sc:url": "https://mmb.irbbarcelona.org/biobb/workflows/#amber-protein-md-setup"
     },
     {
-      "@id": "_:Ne2abb9d43ce74ed88b7f9bede8f5abef",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3872"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3881"
-      },
-      "sc:name": "Topology data"
-    },
-    {
-      "@id": "_:N7f820b19db8c49918c2b45790ea614d7",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3870"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3878"
-        },
-        {
-          "@id": "edam:format_3650"
-        }
-      ],
-      "sc:name": "Trajectory data"
-    },
-    {
-      "@id": "_:Nbd19d514c34445b1bcab00797b1dc8bb",
+      "@id": "_:N6246a40a5ee246889774a512ce8de7d6",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1460"
@@ -164,16 +137,43 @@
       "sc:name": "Protein structure"
     },
     {
+      "@id": "_:N8134e0107c2841028061fca55560fc3d",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3872"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3881"
+      },
+      "sc:name": "Topology data"
+    },
+    {
+      "@id": "_:N0464f8cba21c4bc88773de537e5b7356",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3870"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3650"
+        },
+        {
+          "@id": "edam:format_3878"
+        }
+      ],
+      "sc:name": "Trajectory data"
+    },
+    {
+      "@id": "https://doi.org/10.1038/s41597-019-0177-4",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://orcid.org/0000-0003-0513-0288",
       "@type": "sc:Person"
     },
     {
       "@id": "https://orcid.org/0000-0002-8291-8071",
       "@type": "sc:Person"
-    },
-    {
-      "@id": "https://doi.org/10.1371/journal.pcbi.1012173",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

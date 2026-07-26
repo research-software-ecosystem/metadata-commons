@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,27 +36,23 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1101/2023.03.09.531669.",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/nextdenovo",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Nextomics",
       "bsc:input": {
-        "@id": "_:N2e1dbf00a86c40938451648575364aab"
+        "@id": "_:Nec6dac08a4744f2fbade955401643a2f"
       },
       "bsc:output": {
-        "@id": "_:N5dbb2f5d3fe340e4a42063e6878715c4"
+        "@id": "_:Nd109a1b6c0084695b62c898504e0730d"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3168"
+          "@id": "edam:topic_0196"
         },
         {
-          "@id": "edam:topic_0196"
+          "@id": "edam:topic_3168"
         }
       ],
       "sc:citation": {
@@ -81,7 +77,7 @@
       "sc:url": "https://github.com/Nextomics/NextDenovo"
     },
     {
-      "@id": "_:N2e1dbf00a86c40938451648575364aab",
+      "@id": "_:Nec6dac08a4744f2fbade955401643a2f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0924"
@@ -97,20 +93,24 @@
       "sc:name": "Sequence trace"
     },
     {
-      "@id": "_:N5dbb2f5d3fe340e4a42063e6878715c4",
+      "@id": "_:Nd109a1b6c0084695b62c898504e0730d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0925"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_2561"
+          "@id": "edam:format_1929"
         },
         {
-          "@id": "edam:format_1929"
+          "@id": "edam:format_2561"
         }
       ],
       "sc:name": "Sequence assembly"
+    },
+    {
+      "@id": "https://doi.org/10.1101/2023.03.09.531669.",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

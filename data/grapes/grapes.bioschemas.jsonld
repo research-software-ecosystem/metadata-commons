@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,19 +39,19 @@
       "@id": "https://bio.tools/grapes",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N8f84dacc6dd4472884bb56e5e41c0805"
+        "@id": "_:N58a7708debed4bee981b1b2bd0962f52"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_0140"
-        },
         {
           "@id": "edam:topic_2229"
         },
         {
           "@id": "edam:topic_0621"
+        },
+        {
+          "@id": "edam:topic_0140"
         }
       ],
       "sc:citation": [
@@ -64,10 +64,10 @@
       "sc:description": "The Granule Protein Enrichment Server for prediction of biological condensate constituents.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3092"
+          "@id": "edam:operation_3454"
         },
         {
-          "@id": "edam:operation_3454"
+          "@id": "edam:operation_3092"
         },
         {
           "@id": "edam:operation_0310"
@@ -76,14 +76,14 @@
       "sc:isAccessibleForFree": true,
       "sc:name": "GraPES",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:url": "https://grapes.msl.ubc.ca/"
     },
     {
-      "@id": "_:N8f84dacc6dd4472884bb56e5e41c0805",
+      "@id": "_:N58a7708debed4bee981b1b2bd0962f52",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2976"

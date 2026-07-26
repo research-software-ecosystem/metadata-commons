@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,7 +36,27 @@
   },
   "@graph": [
     {
+      "@id": "https://orcid.org/0000-0003-4101-2502",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.1038/s41587-020-0439-x",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-2827-9261",
+      "@type": "sc:Person"
+    },
+    {
       "@id": "https://orcid.org/0000-0003-1678-7410",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-5599-5565",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-1541-042X",
       "@type": "sc:Person"
     },
     {
@@ -44,42 +64,42 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
         {
-          "@id": "https://orcid.org/0000-0003-1678-7410"
-        },
-        {
-          "@id": "https://orcid.org/0000-0002-5599-5565"
+          "@id": "https://orcid.org/0000-0002-1541-042X"
         },
         {
           "@id": "https://orcid.org/0000-0003-2827-9261"
         },
         {
-          "@id": "https://orcid.org/0000-0002-1541-042X"
+          "@id": "https://orcid.org/0000-0003-4101-2502"
         },
         {
-          "@id": "https://orcid.org/0000-0003-4101-2502"
+          "@id": "https://orcid.org/0000-0003-1678-7410"
+        },
+        {
+          "@id": "https://orcid.org/0000-0002-5599-5565"
         },
         "Tristan Kast"
       ],
       "bsc:input": {
-        "@id": "_:N7a699840fa17437f9a2d7a034061df68"
+        "@id": "_:N435f1464f46f418fae01220a639f2eb4"
       },
       "bsc:output": {
-        "@id": "_:N2372135ac6fc461fa0e74a6faa099b8d"
+        "@id": "_:N9c549480213e4d63a30abb4e9ca39332"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Workflow",
-        "Command-line tool"
+        "Command-line tool",
+        "Workflow"
       ],
       "sc:applicationSubCategory": [
         {
           "@id": "edam:topic_0203"
         },
         {
-          "@id": "edam:topic_0749"
+          "@id": "edam:topic_3168"
         },
         {
-          "@id": "edam:topic_3168"
+          "@id": "edam:topic_0749"
         },
         {
           "@id": "edam:topic_0769"
@@ -89,16 +109,16 @@
         {
           "@id": "https://orcid.org/0000-0003-1678-7410"
         },
-        "Tristan Kast",
         {
           "@id": "https://orcid.org/0000-0002-5599-5565"
-        }
+        },
+        "Tristan Kast"
       ],
       "sc:citation": [
+        "pubmed:32055031",
         {
           "@id": "https://doi.org/10.1038/s41587-020-0439-x"
-        },
-        "pubmed:32055031"
+        }
       ],
       "sc:description": "nf-core/cageseq is a bioinformatics analysis pipeline used for CAGE-seq sequencing data.",
       "sc:featureList": {
@@ -110,23 +130,23 @@
       "sc:operatingSystem": "Linux",
       "sc:softwareHelp": [
         {
+          "@id": "https://nf-co.re/cageseq"
+        },
+        {
           "@id": "https://github.com/nf-core/cageseq/blob/master/LICENSE"
         },
         {
           "@id": "https://nf-co.re/cageseq/usage"
-        },
-        {
-          "@id": "https://nf-co.re/cageseq"
         }
       ],
       "sc:softwareVersion": [
-        "1.0.1",
-        "1.0.0"
+        "1.0.0",
+        "1.0.1"
       ],
       "sc:url": "https://nf-co.re/cageseq"
     },
     {
-      "@id": "_:N7a699840fa17437f9a2d7a034061df68",
+      "@id": "_:N435f1464f46f418fae01220a639f2eb4",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3494"
@@ -137,7 +157,7 @@
       "sc:name": "DNA sequence"
     },
     {
-      "@id": "_:N2372135ac6fc461fa0e74a6faa099b8d",
+      "@id": "_:N9c549480213e4d63a30abb4e9ca39332",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1383"
@@ -151,26 +171,6 @@
         }
       ],
       "sc:name": "Nucleic acid sequence alignment"
-    },
-    {
-      "@id": "https://orcid.org/0000-0002-1541-042X",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://orcid.org/0000-0003-4101-2502",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://orcid.org/0000-0003-2827-9261",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://doi.org/10.1038/s41587-020-0439-x",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://orcid.org/0000-0002-5599-5565",
-      "@type": "sc:Person"
     }
   ]
 }

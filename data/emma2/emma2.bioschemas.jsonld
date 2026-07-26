@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,12 +39,12 @@
       "@id": "https://bio.tools/emma2",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N5d367a0ff8ba4a92aae8992e9878dadb"
+        "@id": "_:N3cf4efac211a446cbbcc48ba471515f4"
       },
       "bsc:output": {
-        "@id": "_:N2935243b017e49fd9cd8aeb4745bd59b"
+        "@id": "_:N84a4bbe3993849b4a1d6e83f5c41363a"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Workbench",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3308"
@@ -62,22 +62,22 @@
           "@id": "edam:operation_0571"
         },
         {
+          "@id": "edam:operation_2495"
+        },
+        {
           "@id": "edam:operation_0313"
         },
         {
           "@id": "edam:operation_2238"
-        },
-        {
-          "@id": "edam:operation_2495"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "LGPL-2.1",
       "sc:name": "EMMA2",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": [
         "Bielefeld University",
@@ -86,28 +86,17 @@
       ],
       "sc:softwareHelp": [
         {
-          "@id": "https://wiki.cebitec.uni-bielefeld.de/brf-software/index.php/EMMAWiki/WebDocumentation"
+          "@id": "https://wiki.cebitec.uni-bielefeld.de/brf-software/index.php/EMMA_2_Publications"
         },
         {
-          "@id": "https://wiki.cebitec.uni-bielefeld.de/brf-software/index.php/EMMA_2_Publications"
+          "@id": "https://wiki.cebitec.uni-bielefeld.de/brf-software/index.php/EMMAWiki/WebDocumentation"
         }
       ],
       "sc:softwareVersion": "2.8.2",
       "sc:url": "http://emma.cebitec.uni-bielefeld.de"
     },
     {
-      "@id": "_:N2935243b017e49fd9cd8aeb4745bd59b",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2048"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3161"
-      },
-      "sc:name": "Report"
-    },
-    {
-      "@id": "_:N5d367a0ff8ba4a92aae8992e9878dadb",
+      "@id": "_:N3cf4efac211a446cbbcc48ba471515f4",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3117"
@@ -116,6 +105,17 @@
         "@id": "edam:format_2058"
       },
       "sc:name": "Microarray hybridisation data"
+    },
+    {
+      "@id": "_:N84a4bbe3993849b4a1d6e83f5c41363a",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2048"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3161"
+      },
+      "sc:name": "Report"
     },
     {
       "@id": "https://doi.org/10.1186/1471-2105-10-50",

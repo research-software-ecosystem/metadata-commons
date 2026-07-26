@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,18 +36,6 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1080/07391102.2018.1546230",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://orcid.org/0000-0002-0380-0092",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://orcid.org/0000-0002-4250-0762",
-      "@type": "sc:Person"
-    },
-    {
       "@id": "https://bio.tools/TEF",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
@@ -62,21 +50,21 @@
         }
       ],
       "bsc:input": {
-        "@id": "_:Nfd67ca9d194b45c29618047ed38ffef1"
+        "@id": "_:Nf994da034cfa495694fb558a33c970aa"
       },
       "bsc:output": {
-        "@id": "_:N8cac773d4c824c4984ed46dc49c05893"
+        "@id": "_:N51334ca5a5674838810124c717dd5051"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0736"
       },
       "sc:citation": [
+        "pubmed:30585105",
         {
           "@id": "https://doi.org/10.1080/07391102.2018.1546230"
-        },
-        "pubmed:30585105"
+        }
       ],
       "sc:description": "Graph-based computational method for decomposing protein structures into closed loops.",
       "sc:featureList": {
@@ -92,18 +80,7 @@
       "sc:url": "https://mobyle.rpbs.univ-paris-diderot.fr/cgi-bin/portal.py#forms::TEF"
     },
     {
-      "@id": "_:N8cac773d4c824c4984ed46dc49c05893",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0897"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1957"
-      },
-      "sc:name": "Protein property"
-    },
-    {
-      "@id": "_:Nfd67ca9d194b45c29618047ed38ffef1",
+      "@id": "_:Nf994da034cfa495694fb558a33c970aa",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1460"
@@ -114,7 +91,30 @@
       "sc:name": "Protein structure"
     },
     {
+      "@id": "_:N51334ca5a5674838810124c717dd5051",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0897"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1957"
+      },
+      "sc:name": "Protein property"
+    },
+    {
       "@id": "https://orcid.org/0000-0002-7373-0181",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.1080/07391102.2018.1546230",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-4250-0762",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-0380-0092",
       "@type": "sc:Person"
     }
   ]

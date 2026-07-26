@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,30 +39,30 @@
       "@id": "https://bio.tools/consensusclusterplus",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N403c432e3bd943c8afbf28e1b1c53c58"
+        "@id": "_:Nce97600b3be84614999f16e8b2c52b41"
       },
       "bsc:output": [
         {
-          "@id": "_:Ned1a8c072ddd419e94a8f0f88e39be66"
+          "@id": "_:N656f09e80b634ae1b11f96240ea2dd19"
         },
         {
-          "@id": "_:Nd3a417ea51b041f4bd4f14e886bc5035"
+          "@id": "_:N6510c01c0e574059bdfa0b2881e51b2d"
         },
         {
-          "@id": "_:N1c2e19a33aa34fc9aad0c5151127bdec"
+          "@id": "_:N1bfbb9a29b77479caaadd4652a37ad6b"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0092"
+          "@id": "edam:topic_3473"
         },
         {
-          "@id": "edam:topic_3473"
+          "@id": "edam:topic_0092"
         }
       ],
       "sc:description": "algorithm for determining cluster count and membership by stability evidence in unsupervised analysis",
@@ -72,9 +72,9 @@
       "sc:license": "GPL-2.0-only",
       "sc:name": "ConsensusClusterPlus",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://bioconductor.org/packages/ConsensusClusterPlus"
@@ -83,26 +83,18 @@
       "sc:url": "https://bioconductor.org/packages/ConsensusClusterPlus"
     },
     {
-      "@id": "_:Ned1a8c072ddd419e94a8f0f88e39be66",
+      "@id": "_:Nce97600b3be84614999f16e8b2c52b41",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2048"
+        "@id": "edam:data_3108"
       },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3508"
-        },
-        {
-          "@id": "edam:format_3475"
-        },
-        {
-          "@id": "edam:format_3603"
-        }
-      ],
-      "sc:name": "Report"
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Experimental measurement"
     },
     {
-      "@id": "_:Nd3a417ea51b041f4bd4f14e886bc5035",
+      "@id": "_:N656f09e80b634ae1b11f96240ea2dd19",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1636"
@@ -121,7 +113,7 @@
       "sc:name": "Heat map"
     },
     {
-      "@id": "_:N1c2e19a33aa34fc9aad0c5151127bdec",
+      "@id": "_:N6510c01c0e574059bdfa0b2881e51b2d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
@@ -140,15 +132,23 @@
       "sc:name": "Plot"
     },
     {
-      "@id": "_:N403c432e3bd943c8afbf28e1b1c53c58",
+      "@id": "_:N1bfbb9a29b77479caaadd4652a37ad6b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_3108"
+        "@id": "edam:data_2048"
       },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Experimental measurement"
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3508"
+        },
+        {
+          "@id": "edam:format_3475"
+        },
+        {
+          "@id": "edam:format_3603"
+        }
+      ],
+      "sc:name": "Report"
     }
   ]
 }

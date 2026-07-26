@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -44,12 +44,12 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Andrew Yates",
       "bsc:input": {
-        "@id": "_:N56815b364caf4ec48bfcc4478a7827bf"
+        "@id": "_:N0302d35701174f668ca5c8cc91d55f0e"
       },
       "bsc:output": {
-        "@id": "_:Nf451def31d384d9fa83dd69485efecf2"
+        "@id": "_:N338a6bf999f649a7b8844fb245e22d27"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0080"
@@ -63,24 +63,32 @@
       },
       "sc:name": "Ensembl Sequence Search BLAST",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:provider": "EMBL-EBI",
       "sc:softwareHelp": [
         {
-          "@id": "http://www.ebi.ac.uk/about/terms-of-use"
+          "@id": "http://www.ensembl.org/Multi/blastview"
         },
         {
-          "@id": "http://www.ensembl.org/Multi/blastview"
+          "@id": "http://www.ebi.ac.uk/about/terms-of-use"
         }
       ],
       "sc:softwareVersion": "1",
       "sc:url": "http://www.ensembl.org/Multi/blastview"
     },
     {
-      "@id": "_:Nf451def31d384d9fa83dd69485efecf2",
+      "@id": "_:N0302d35701174f668ca5c8cc91d55f0e",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2044"
+      },
+      "sc:name": "Sequence"
+    },
+    {
+      "@id": "_:N338a6bf999f649a7b8844fb245e22d27",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0857"
@@ -89,14 +97,6 @@
         "@id": "edam:format_2331"
       },
       "sc:name": "Sequence search results"
-    },
-    {
-      "@id": "_:N56815b364caf4ec48bfcc4478a7827bf",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2044"
-      },
-      "sc:name": "Sequence"
     }
   ]
 }

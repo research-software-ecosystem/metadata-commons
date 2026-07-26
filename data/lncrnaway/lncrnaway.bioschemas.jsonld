@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -44,24 +44,24 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Na32a6a585d1547579bd22d5c1f3289d9"
+          "@id": "_:Na259738afd6f468783ccc1b968f157fb"
         },
         {
-          "@id": "_:N12df78b323d44fb58705315d01690da3"
+          "@id": "_:N76426b4df3bd44fba43579dfd91db13d"
         },
         {
-          "@id": "_:Nf4f97e6da0b24a06850e43d8c96a415f"
+          "@id": "_:N8b4b3a5e05654313ac4d7d94471e58a0"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N25d77e95d3fe4125a7b92d6bf94d6f6f"
+          "@id": "_:N34a18866ac284538bfe02010a6edc2d9"
         },
         {
-          "@id": "_:Nebb77c9d730448048014f52b027f68c4"
+          "@id": "_:Na284c5a435aa471cb89c117f0ac4545e"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0085"
@@ -81,14 +81,14 @@
       "sc:isAccessibleForFree": true,
       "sc:name": "LncRNAway",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:url": "https://www.lncrnaway.com"
     },
     {
-      "@id": "_:Na32a6a585d1547579bd22d5c1f3289d9",
+      "@id": "_:Na259738afd6f468783ccc1b968f157fb",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1033"
@@ -96,7 +96,15 @@
       "sc:name": "Ensembl gene ID"
     },
     {
-      "@id": "_:N12df78b323d44fb58705315d01690da3",
+      "@id": "_:N76426b4df3bd44fba43579dfd91db13d",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1026"
+      },
+      "sc:name": "Gene symbol"
+    },
+    {
+      "@id": "_:N8b4b3a5e05654313ac4d7d94471e58a0",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3495"
@@ -107,36 +115,28 @@
       "sc:name": "RNA sequence"
     },
     {
-      "@id": "_:Nf4f97e6da0b24a06850e43d8c96a415f",
+      "@id": "_:N34a18866ac284538bfe02010a6edc2d9",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_1026"
+        "@id": "edam:data_0972"
       },
-      "sc:name": "Gene symbol"
+      "sc:name": "Text mining report"
     },
     {
-      "@id": "_:N25d77e95d3fe4125a7b92d6bf94d6f6f",
+      "@id": "_:Na284c5a435aa471cb89c117f0ac4545e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3495"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_2330"
+          "@id": "edam:format_3508"
         },
         {
-          "@id": "edam:format_3508"
+          "@id": "edam:format_2330"
         }
       ],
       "sc:name": "RNA sequence"
-    },
-    {
-      "@id": "_:Nebb77c9d730448048014f52b027f68c4",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0972"
-      },
-      "sc:name": "Text mining report"
     }
   ]
 }

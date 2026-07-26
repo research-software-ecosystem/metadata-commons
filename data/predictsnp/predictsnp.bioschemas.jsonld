@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,29 +40,29 @@
       "@type": "sc:Person"
     },
     {
-      "@id": "https://doi.org/10.1371/journal.pcbi.1003440",
-      "@type": "sc:CreativeWork"
+      "@id": "https://orcid.org/0000-0002-7848-8216",
+      "@type": "sc:Person"
     },
     {
-      "@id": "https://orcid.org/0000-0003-3139-3700",
-      "@type": "sc:Person"
+      "@id": "https://doi.org/10.1371/journal.pcbi.1003440",
+      "@type": "sc:CreativeWork"
     },
     {
       "@id": "https://bio.tools/predictsnp",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "PredictSNP team",
       "bsc:input": {
-        "@id": "_:N215478f689784f7a897ab72000dc2fb9"
+        "@id": "_:Nd46dd828cdb24f14a1390521322450d0"
       },
       "bsc:output": [
         {
-          "@id": "_:Nd1502055d8c94575b1d9f7d2720b9dab"
+          "@id": "_:N780033e3b5b54d5881757b6ea549610d"
         },
         {
-          "@id": "_:N3ae13559edac4bb0b44527ed9234db2b"
+          "@id": "_:N5cbcdccb0468403bbabafaa16c92d948"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Web application"
@@ -72,9 +72,6 @@
           "@id": "edam:topic_2885"
         },
         {
-          "@id": "edam:topic_3325"
-        },
-        {
           "@id": "edam:topic_3053"
         },
         {
@@ -82,66 +79,69 @@
         },
         {
           "@id": "edam:topic_0078"
+        },
+        {
+          "@id": "edam:topic_3325"
         }
       ],
       "sc:author": [
         {
           "@id": "https://orcid.org/0000-0001-9989-2720"
         },
-        "Antonin Pavelka",
-        "Ondrej Salanda",
         {
           "@id": "https://orcid.org/0000-0003-3139-3700"
-        }
+        },
+        "Antonin Pavelka",
+        "Ondrej Salanda"
       ],
       "sc:citation": [
-        "pmcid:PMC3894168",
         "pubmed:24453961",
+        "pmcid:PMC3894168",
         {
           "@id": "https://doi.org/10.1371/journal.pcbi.1003440"
         }
       ],
       "sc:contributor": [
-        "European Social Fund",
-        "Grant Agency of the Czech Republic",
-        "Eric D. Wieben",
-        {
-          "@id": "https://orcid.org/0000-0001-8718-7493"
-        },
-        "Brno University of Technology",
         {
           "@id": "https://orcid.org/0000-0002-7848-8216"
         },
         {
           "@id": "https://orcid.org/0000-0001-9677-5078"
         },
-        "Ministry of Education of the Czech Republic",
-        "European Regional Development Fund"
+        {
+          "@id": "https://orcid.org/0000-0001-8718-7493"
+        },
+        "Brno University of Technology",
+        "Eric D. Wieben",
+        "European Regional Development Fund",
+        "European Social Fund",
+        "Grant Agency of the Czech Republic",
+        "Ministry of Education of the Czech Republic"
       ],
       "sc:description": "A consensus classifier that combines six of the top performing tools for the prediction of the effects of mutation on protein function. The obtained results are provided together with annotations extracted from the Protein Mutant Database and the UniProt database.",
       "sc:featureList": {
         "@id": "edam:operation_0331"
       },
       "sc:funder": [
-        "Grant Agency of the Czech Republic",
         "Brno University of Technology",
-        "Ministry of Education of the Czech Republic",
+        "European Regional Development Fund",
         "European Social Fund",
-        "European Regional Development Fund"
+        "Grant Agency of the Czech Republic",
+        "Ministry of Education of the Czech Republic"
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "Proprietary",
       "sc:name": "PredictSNP",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:provider": [
-        "Loschmidt Laboratories",
-        "ELIXIR-CZ",
         "Brno University of Technology, Brno, Czech Republic",
+        "ELIXIR-CZ",
         "International Centre for Clinical Research, Brno, Czech Republic",
+        "Loschmidt Laboratories",
         "Masaryk University, Brno, Czech Republic",
         "Mayo Clinic, Rochester, New York, United States of America"
       ],
@@ -152,7 +152,18 @@
       "sc:url": "https://loschmidt.chemi.muni.cz/predictsnp1"
     },
     {
-      "@id": "_:Nd1502055d8c94575b1d9f7d2720b9dab",
+      "@id": "_:Nd46dd828cdb24f14a1390521322450d0",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2974"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "Protein sequence (raw)"
+    },
+    {
+      "@id": "_:N780033e3b5b54d5881757b6ea549610d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2291"
@@ -160,7 +171,7 @@
       "sc:name": "UniProt ID"
     },
     {
-      "@id": "_:N3ae13559edac4bb0b44527ed9234db2b",
+      "@id": "_:N5cbcdccb0468403bbabafaa16c92d948",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1277"
@@ -176,26 +187,15 @@
       "sc:name": "Protein features"
     },
     {
-      "@id": "_:N215478f689784f7a897ab72000dc2fb9",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2974"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1929"
-      },
-      "sc:name": "Protein sequence (raw)"
-    },
-    {
-      "@id": "https://orcid.org/0000-0001-9989-2720",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://orcid.org/0000-0002-7848-8216",
+      "@id": "https://orcid.org/0000-0003-3139-3700",
       "@type": "sc:Person"
     },
     {
       "@id": "https://orcid.org/0000-0001-9677-5078",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-9989-2720",
       "@type": "sc:Person"
     }
   ]

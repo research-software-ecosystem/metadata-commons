@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -47,29 +47,29 @@
       },
       "bsc:input": [
         {
-          "@id": "_:N35615a8f70f34785907b0d77489ca28f"
+          "@id": "_:N25384b5638c446a38741234bc9bfd78c"
         },
         {
-          "@id": "_:N7c4ff19035ad4b569579a4eb700ff2aa"
+          "@id": "_:N05ae2a929e204527b4e88987137c99f5"
         },
         {
-          "@id": "_:N32a468b159984ca4b780f38114635aa1"
+          "@id": "_:N4bbba03cb835423994e371674f9abb0a"
         },
         {
-          "@id": "_:Na4059861faf34f418f9c69d3c44537be"
+          "@id": "_:N76bc26b870fd4e64baee1328f540f6bd"
         }
       ],
       "bsc:output": {
-        "@id": "_:Ncf2d3d18565c4e549c71cce22b93e54b"
+        "@id": "_:N5a0197cd681c484d9d33b07eaa05ab50"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Database portal",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0128"
+          "@id": "edam:topic_0602"
         },
         {
-          "@id": "edam:topic_0602"
+          "@id": "edam:topic_0128"
         },
         {
           "@id": "edam:topic_0099"
@@ -79,11 +79,11 @@
         "@id": "http://orcid.org/0000-0001-6358-8380"
       },
       "sc:citation": [
+        "pubmed:30445601",
         "pmcid:PMC6324028",
         {
           "@id": "https://doi.org/10.1093/nar/gky967"
-        },
-        "pubmed:30445601"
+        }
       ],
       "sc:contributor": {
         "@id": "https://orcid.org/0000-0003-0607-5663"
@@ -101,31 +101,7 @@
       "sc:url": "https://rnact.tartaglialab.com"
     },
     {
-      "@id": "_:N35615a8f70f34785907b0d77489ca28f",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2725"
-      },
-      "sc:name": "Ensembl transcript ID"
-    },
-    {
-      "@id": "_:N7c4ff19035ad4b569579a4eb700ff2aa",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1026"
-      },
-      "sc:name": "Gene symbol"
-    },
-    {
-      "@id": "_:N32a468b159984ca4b780f38114635aa1",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3021"
-      },
-      "sc:name": "UniProt accession"
-    },
-    {
-      "@id": "_:Na4059861faf34f418f9c69d3c44537be",
+      "@id": "_:N25384b5638c446a38741234bc9bfd78c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1033"
@@ -133,7 +109,31 @@
       "sc:name": "Ensembl gene ID"
     },
     {
-      "@id": "_:Ncf2d3d18565c4e549c71cce22b93e54b",
+      "@id": "_:N05ae2a929e204527b4e88987137c99f5",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2725"
+      },
+      "sc:name": "Ensembl transcript ID"
+    },
+    {
+      "@id": "_:N4bbba03cb835423994e371674f9abb0a",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1026"
+      },
+      "sc:name": "Gene symbol"
+    },
+    {
+      "@id": "_:N76bc26b870fd4e64baee1328f540f6bd",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3021"
+      },
+      "sc:name": "UniProt accession"
+    },
+    {
+      "@id": "_:N5a0197cd681c484d9d33b07eaa05ab50",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1772"

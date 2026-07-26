@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -43,27 +43,27 @@
       "@id": "https://bio.tools/yeast_gene_order_browser",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N4227c7948acd44d094acbcbc6c552101"
+        "@id": "_:N7332d58d1d2f413fbef3743daac3e572"
       },
       "bsc:output": {
-        "@id": "_:N305765763ed1421fb29abe2bd3bef3ea"
+        "@id": "_:N070850d28ea843cb932721602eb9de60"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Database portal",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0621"
+          "@id": "edam:topic_0102"
         },
         {
-          "@id": "edam:topic_0102"
+          "@id": "edam:topic_0621"
         }
       ],
       "sc:citation": [
+        "pubmed:16169922",
+        "pmcid:PMC1240090",
         {
           "@id": "https://doi.org/10.1101/gr.3672305"
-        },
-        "pubmed:16169922",
-        "pmcid:PMC1240090"
+        }
       ],
       "sc:description": "Tool for visualising the syntenic context of any gene from several yeast genomes.",
       "sc:featureList": {
@@ -71,8 +71,8 @@
       },
       "sc:name": "Yeast gene order browser",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -81,7 +81,7 @@
       "sc:url": "http://ygob.ucd.ie/"
     },
     {
-      "@id": "_:N4227c7948acd44d094acbcbc6c552101",
+      "@id": "_:N7332d58d1d2f413fbef3743daac3e572",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1026"
@@ -89,7 +89,7 @@
       "sc:name": "Gene symbol"
     },
     {
-      "@id": "_:N305765763ed1421fb29abe2bd3bef3ea",
+      "@id": "_:N070850d28ea843cb932721602eb9de60",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0916"

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,43 +36,51 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/gkae241",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/gkac240",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/cpgplot-ebi",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Job Dispatcher",
       "bsc:input": {
-        "@id": "_:Nf3c53c96783d4c9d96b66ce3b757c913"
+        "@id": "_:N17469409e20742c9a65c0510e69e341d"
       },
       "bsc:output": {
-        "@id": "_:N685eb662cd7a4e65b5eef63aa05421da"
+        "@id": "_:Ne944762f80fd417fb6cafadae7a6e4b3"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Web application",
         "Web service"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0157"
+          "@id": "edam:topic_3512"
         },
         {
-          "@id": "edam:topic_3512"
+          "@id": "edam:topic_0157"
         }
       ],
       "sc:author": "EMBOSS",
       "sc:citation": [
-        "pubmed:38597606",
-        "pmcid:PMC11223882",
+        {
+          "@id": "https://doi.org/10.1016/S0168-9525(00)02024-2"
+        },
+        "pubmed:35412617",
         "pmcid:PMC9252731",
         {
           "@id": "https://doi.org/10.1093/nar/gkac240"
         },
+        "pubmed:38597606",
+        "pmcid:PMC11223882",
         {
           "@id": "https://doi.org/10.1093/nar/gkae241"
-        },
-        {
-          "@id": "https://doi.org/10.1016/S0168-9525(00)02024-2"
-        },
-        "pubmed:35412617"
+        }
       ],
       "sc:description": "Identification of potential CpG islands.",
       "sc:featureList": {
@@ -80,17 +88,17 @@
       },
       "sc:name": "cpgplot (EBI)",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:provider": "EMBL-EBI",
       "sc:softwareHelp": [
         {
-          "@id": "https://www.ebi.ac.uk/jdispatcher/help"
+          "@id": "https://emboss.sourceforge.net/"
         },
         {
-          "@id": "https://emboss.sourceforge.net/"
+          "@id": "https://www.ebi.ac.uk/jdispatcher/help"
         },
         {
           "@id": "http://www.ebi.ac.uk/about/terms-of-use"
@@ -100,7 +108,7 @@
       "sc:url": "http://www.ebi.ac.uk/jdispatcher/seqstats/emboss_cpgplot/"
     },
     {
-      "@id": "_:Nf3c53c96783d4c9d96b66ce3b757c913",
+      "@id": "_:N17469409e20742c9a65c0510e69e341d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2977"
@@ -108,20 +116,12 @@
       "sc:name": "Nucleic acid sequence"
     },
     {
-      "@id": "_:N685eb662cd7a4e65b5eef63aa05421da",
+      "@id": "_:Ne944762f80fd417fb6cafadae7a6e4b3",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1276"
       },
       "sc:name": "Nucleic acid features"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gkac240",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gkae241",
-      "@type": "sc:CreativeWork"
     },
     {
       "@id": "https://doi.org/10.1016/S0168-9525(00)02024-2",

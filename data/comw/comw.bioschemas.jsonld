@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,20 +39,20 @@
       "@id": "https://bio.tools/CoMW",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
-        "Muhammad Zohaib Anwar",
-        "Carsten Suhr Jacobsen"
+        "Carsten Suhr Jacobsen",
+        "Muhammad Zohaib Anwar"
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Script",
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_3308"
-        },
         {
           "@id": "edam:topic_3512"
         },
         {
           "@id": "edam:topic_0196"
+        },
+        {
+          "@id": "edam:topic_3308"
         }
       ],
       "sc:citation": {
@@ -61,21 +61,21 @@
       "sc:description": "Comparative Metatranscriptomics Workflow is a standardized and validated workflow to functionally classify quality filtered mRNA reads from metatranscriptomic or total RNA studies generated using NGS short reads.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3799"
-        },
-        {
           "@id": "edam:operation_0524"
         },
         {
           "@id": "edam:operation_2495"
+        },
+        {
+          "@id": "edam:operation_3799"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "GPL-3.0",
       "sc:name": "CoMW",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {

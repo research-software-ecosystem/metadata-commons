@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,24 +40,24 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Ne738955a7dee46d6a31295706828bf59"
+          "@id": "_:Naadac8efdd3240b8be6172c4658813b4"
         },
         {
-          "@id": "_:Nc8c252381ef8447f890ff71e511e1fc5"
+          "@id": "_:N8d4208c9fac64d41a76082d266a27cb6"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N3f65de49ce2348f2925b3c08f3dd3bfc"
+          "@id": "_:N9715ce55b783476689ab85aa7fda7514"
         },
         {
-          "@id": "_:N57685aa4e1b14c389c02ad652162a208"
+          "@id": "_:N822073d075db473db8032b2da14cb90d"
         },
         {
-          "@id": "_:Nd4a57e3ed5174fd1998569020faad82a"
+          "@id": "_:Na14c9be8314944ffa9d7313e01a10515"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Bioinformatics portal",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0157"
@@ -68,13 +68,13 @@
       "sc:description": "Command-line application for tandem repeats profiling from error-prone long-read sequencing data.",
       "sc:featureList": [
         {
+          "@id": "edam:operation_2945"
+        },
+        {
           "@id": "edam:operation_2429"
         },
         {
           "@id": "edam:operation_0337"
-        },
-        {
-          "@id": "edam:operation_2945"
         }
       ],
       "sc:isAccessibleForFree": true,
@@ -88,40 +88,18 @@
       "sc:url": "https://github.com/davidebolo1993/TRiCoLOR"
     },
     {
-      "@id": "_:N3f65de49ce2348f2925b3c08f3dd3bfc",
+      "@id": "_:Naadac8efdd3240b8be6172c4658813b4",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_3498"
+        "@id": "edam:data_2977"
       },
       "sc:encodingFormat": {
-        "@id": "edam:format_2331"
+        "@id": "edam:format_1929"
       },
-      "sc:name": "Sequence variations"
+      "sc:name": "Nucleic acid sequence"
     },
     {
-      "@id": "_:N57685aa4e1b14c389c02ad652162a208",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2012"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3003"
-      },
-      "sc:name": "Sequence coordinates"
-    },
-    {
-      "@id": "_:Nd4a57e3ed5174fd1998569020faad82a",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1255"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3016"
-      },
-      "sc:name": "Sequence features"
-    },
-    {
-      "@id": "_:Ne738955a7dee46d6a31295706828bf59",
+      "@id": "_:N8d4208c9fac64d41a76082d266a27cb6",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1383"
@@ -132,15 +110,37 @@
       "sc:name": "Nucleic acid sequence alignment"
     },
     {
-      "@id": "_:Nc8c252381ef8447f890ff71e511e1fc5",
+      "@id": "_:N9715ce55b783476689ab85aa7fda7514",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2977"
+        "@id": "edam:data_2012"
       },
       "sc:encodingFormat": {
-        "@id": "edam:format_1929"
+        "@id": "edam:format_3003"
       },
-      "sc:name": "Nucleic acid sequence"
+      "sc:name": "Sequence coordinates"
+    },
+    {
+      "@id": "_:N822073d075db473db8032b2da14cb90d",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1255"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3016"
+      },
+      "sc:name": "Sequence features"
+    },
+    {
+      "@id": "_:Na14c9be8314944ffa9d7313e01a10515",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3498"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2331"
+      },
+      "sc:name": "Sequence variations"
     },
     {
       "@id": "https://orcid.org/0000-0002-8735-8093",

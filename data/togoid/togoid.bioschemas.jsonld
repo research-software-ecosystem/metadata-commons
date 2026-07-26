@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,36 +36,40 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/btac491",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/togoid",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N8d6e5572849b4c2cbd384572d4820195"
+          "@id": "_:N8d873ba55b594052a4a0699bb8782dcf"
         },
         {
-          "@id": "_:N1d4348d547444c4696dcde63fbfd35b3"
+          "@id": "_:N5a227d4bd3c34ca7a4793b7d2423c828"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Web application"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0089"
+          "@id": "edam:topic_0203"
         },
         {
           "@id": "edam:topic_3068"
+        },
+        {
+          "@id": "edam:topic_0089"
         },
         {
           "@id": "edam:topic_0736"
         },
         {
           "@id": "edam:topic_3277"
-        },
-        {
-          "@id": "edam:topic_0203"
         }
       ],
       "sc:citation": [
@@ -95,21 +99,13 @@
       "sc:name": "TogoID",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:url": "https://togoid.dbcls.jp/"
     },
     {
-      "@id": "_:N8d6e5572849b4c2cbd384572d4820195",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2291"
-      },
-      "sc:name": "UniProt ID"
-    },
-    {
-      "@id": "_:N1d4348d547444c4696dcde63fbfd35b3",
+      "@id": "_:N8d873ba55b594052a4a0699bb8782dcf",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2610"
@@ -117,8 +113,12 @@
       "sc:name": "Ensembl ID"
     },
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btac491",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N5a227d4bd3c34ca7a4793b7d2423c828",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2291"
+      },
+      "sc:name": "UniProt ID"
     }
   ]
 }

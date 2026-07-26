@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,14 +36,18 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/bty010",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/mapexr",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
-        "Ryan N Gutenkunst",
+        "Erik S Knudsen",
         "Brian K Mannakee",
-        "Erik S Knudsen"
+        "Ryan N Gutenkunst"
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Library",
       "sc:applicationSubCategory": [
         {
@@ -57,11 +61,11 @@
         }
       ],
       "sc:citation": [
+        "pubmed:29325072",
+        "pmcid:PMC5946891",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/bty010"
-        },
-        "pubmed:29325072",
-        "pmcid:PMC5946891"
+        }
       ],
       "sc:description": "The algorithm is a post-variant-calling filter for variants that uses BLASTN to determine the fraction of reads supporting a variant call that align best to the site of the variant.",
       "sc:featureList": {
@@ -70,18 +74,14 @@
       "sc:license": "MIT",
       "sc:name": "mapexr",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://github.com/bmannakee/mapexr"
       },
       "sc:url": "https://github.com/bmannakee/mapexr"
-    },
-    {
-      "@id": "https://doi.org/10.1093/bioinformatics/bty010",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,26 +36,22 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1016/S0764-4469(99)80021-3",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/genatlas",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N88c32b26d48f49ecbe66f0bd5c760cf1"
+        "@id": "_:N4c8926e5f84d469ebc774408df2c7a6e"
       },
       "bsc:output": {
-        "@id": "_:N3344df2a5ea54b56a7e4a3a037f8a343"
+        "@id": "_:Na3b95b291eab4a259ce43f468dc15748"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Database portal",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0634"
+          "@id": "edam:topic_2815"
         },
         {
-          "@id": "edam:topic_2815"
+          "@id": "edam:topic_0634"
         }
       ],
       "sc:citation": {
@@ -67,8 +63,8 @@
       },
       "sc:name": "GenAtlas human gene database",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:provider": "UNIVERSITE PARIS DESCARTES",
@@ -78,7 +74,7 @@
       "sc:url": "http://www.dsi.univ-paris5.fr/genatlas/"
     },
     {
-      "@id": "_:N88c32b26d48f49ecbe66f0bd5c760cf1",
+      "@id": "_:N4c8926e5f84d469ebc774408df2c7a6e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1026"
@@ -86,7 +82,7 @@
       "sc:name": "Gene symbol"
     },
     {
-      "@id": "_:N3344df2a5ea54b56a7e4a3a037f8a343",
+      "@id": "_:Na3b95b291eab4a259ce43f468dc15748",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0916"
@@ -95,6 +91,10 @@
         "@id": "edam:format_2331"
       },
       "sc:name": "Gene report"
+    },
+    {
+      "@id": "https://doi.org/10.1016/S0764-4469(99)80021-3",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -43,22 +43,22 @@
       "@id": "https://bio.tools/topcons",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N65cbbed822c244f5bdacc657489be824"
+        "@id": "_:Nacc5c00c1a9b4059834c072fa773c0cc"
       },
       "bsc:output": {
-        "@id": "_:N4ea3ac11549d4b26b4b8d73b40588ede"
+        "@id": "_:N123bf50703d0422f866c1b622766ff37"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0080"
       },
       "sc:citation": [
+        "pubmed:25969446",
+        "pmcid:PMC4489233",
         {
           "@id": "https://doi.org/10.1093/nar/gkv485"
-        },
-        "pubmed:25969446",
-        "pmcid:PMC4489233"
+        }
       ],
       "sc:description": "Consensus prediction of membrane protein topology.",
       "sc:featureList": {
@@ -66,9 +66,9 @@
       },
       "sc:name": "TOPCONS",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": "bils.se",
       "sc:softwareHelp": {
@@ -78,7 +78,7 @@
       "sc:url": "http://topcons.cbr.su.se/"
     },
     {
-      "@id": "_:N65cbbed822c244f5bdacc657489be824",
+      "@id": "_:Nacc5c00c1a9b4059834c072fa773c0cc",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2976"
@@ -86,7 +86,7 @@
       "sc:name": "Protein sequence"
     },
     {
-      "@id": "_:N4ea3ac11549d4b26b4b8d73b40588ede",
+      "@id": "_:N123bf50703d0422f866c1b622766ff37",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1277"

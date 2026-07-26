@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,21 +40,21 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Na94e90e02f5f4127b084c517a875f35d"
+          "@id": "_:Nbc6ad0ec2ce94429bfebe5d4e5eabe5a"
         },
         {
-          "@id": "_:N79184d91b14f45a6869a9a8c887ba275"
+          "@id": "_:Nb2afcd2b9a7341f69b5aa2ec7720b35e"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N4e5cb193a5c8416aa537a96613793a82"
+          "@id": "_:N89364927ae6845b09379a38ee43f12b6"
         },
         {
-          "@id": "_:Nb3fbf6a9778044b1b8db7d0467d49624"
+          "@id": "_:Naea9b29d89f846a19ab60e2aea7b2622"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
@@ -68,16 +68,16 @@
       "sc:description": "A tool to process MASCOT results.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3359"
+          "@id": "edam:operation_0335"
         },
         {
-          "@id": "edam:operation_0335"
+          "@id": "edam:operation_3359"
         }
       ],
       "sc:name": "mres2x",
       "sc:operatingSystem": [
-        "Mac",
-        "Linux"
+        "Linux",
+        "Mac"
       ],
       "sc:softwareHelp": {
         "@id": "https://sourceforge.net/p/protms/wiki/Home/"
@@ -85,7 +85,7 @@
       "sc:url": "https://sourceforge.net/projects/protms/files/mres2x/"
     },
     {
-      "@id": "_:N4e5cb193a5c8416aa537a96613793a82",
+      "@id": "_:Nbc6ad0ec2ce94429bfebe5d4e5eabe5a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2536"
@@ -96,7 +96,18 @@
       "sc:name": "Mass spectrometry data"
     },
     {
-      "@id": "_:Nb3fbf6a9778044b1b8db7d0467d49624",
+      "@id": "_:Nb2afcd2b9a7341f69b5aa2ec7720b35e",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2536"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3713"
+      },
+      "sc:name": "Mass spectrometry data"
+    },
+    {
+      "@id": "_:N89364927ae6845b09379a38ee43f12b6",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2536"
@@ -112,18 +123,7 @@
       "sc:name": "Mass spectrometry data"
     },
     {
-      "@id": "_:Na94e90e02f5f4127b084c517a875f35d",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2536"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3713"
-      },
-      "sc:name": "Mass spectrometry data"
-    },
-    {
-      "@id": "_:N79184d91b14f45a6869a9a8c887ba275",
+      "@id": "_:Naea9b29d89f846a19ab60e2aea7b2622",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2536"

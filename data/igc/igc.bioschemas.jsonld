@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,29 +39,29 @@
       "@id": "https://bio.tools/igc",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nedac8693580a467386c3d0b4d9643c91"
+        "@id": "_:N4d56a0319fd5405aabed9b8e580a2374"
       },
       "bsc:output": {
-        "@id": "_:Nf06ce83e16024760a94fb4080fafc534"
+        "@id": "_:N1ec22ed8308344e9bce8f176b65200db"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_2640"
+          "@id": "edam:topic_0203"
         },
         {
-          "@id": "edam:topic_0203"
+          "@id": "edam:topic_2640"
         }
       ],
       "sc:author": [
+        "Eric Y. Chuang",
         "Liang-Bo Wang",
         "Tzu-Pin Lu",
-        "Yi-Pin Lai",
-        "Eric Y. Chuang"
+        "Yi-Pin Lai"
       ],
       "sc:description": "This package is intended to identify differentially expressed genes driven by Copy Number Alterations from samples with both gene expression and CNA data.",
       "sc:featureList": {
@@ -70,8 +70,8 @@
       "sc:license": "GPL-2.0-only",
       "sc:name": "iGC",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -81,18 +81,7 @@
       "sc:url": "https://bioconductor.org/packages/iGC"
     },
     {
-      "@id": "_:Nf06ce83e16024760a94fb4080fafc534",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1669"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "P-value"
-    },
-    {
-      "@id": "_:Nedac8693580a467386c3d0b4d9643c91",
+      "@id": "_:N4d56a0319fd5405aabed9b8e580a2374",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2603"
@@ -101,6 +90,17 @@
         "@id": "edam:format_2058"
       },
       "sc:name": "Gene expression data"
+    },
+    {
+      "@id": "_:N1ec22ed8308344e9bce8f176b65200db",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1669"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "P-value"
     }
   ]
 }

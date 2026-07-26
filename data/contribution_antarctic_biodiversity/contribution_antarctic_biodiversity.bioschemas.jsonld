@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,13 +36,14 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.3897/BDJ.12.E119633",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/contribution_antarctic_biodiversity",
       "@type": "sc:SoftwareApplication",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_3277"
-        },
         {
           "@id": "edam:topic_3050"
         },
@@ -51,6 +52,9 @@
         },
         {
           "@id": "edam:topic_0780"
+        },
+        {
+          "@id": "edam:topic_3277"
         }
       ],
       "sc:citation": [
@@ -63,10 +67,6 @@
       "sc:description": "The Antarctic Biodiversity Portal provides distributional data on copepods collected from desalination unit filters at the Mario Zucchelli Research Station, contributing to Antarctic biodiversity research and data integration.",
       "sc:name": "Antarctic Biodiversity Portal",
       "sc:url": "http://biodiversity.aq"
-    },
-    {
-      "@id": "https://doi.org/10.3897/BDJ.12.E119633",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

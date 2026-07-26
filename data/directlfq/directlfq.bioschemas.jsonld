@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,31 +36,35 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1016/j.mcpro.2023.100581",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/directlfq",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N4326ac5cc3784bbab5c1eaa4f6d833b5"
+        "@id": "_:N821d685151a142d182de4839a4cfe8cc"
       },
       "bsc:output": {
-        "@id": "_:N2c1d0617b3bb464cbb66be02199e0c8e"
+        "@id": "_:N41c0a30ac8114b71a77fc3f998524cb6"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Desktop application"
+        "Desktop application",
+        "Library"
       ],
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_3520"
-        },
-        {
-          "@id": "edam:topic_0080"
-        },
         {
           "@id": "edam:topic_3292"
         },
         {
           "@id": "edam:topic_0121"
+        },
+        {
+          "@id": "edam:topic_3520"
+        },
+        {
+          "@id": "edam:topic_0080"
         },
         {
           "@id": "edam:topic_0154"
@@ -76,13 +80,13 @@
       "sc:description": "directLFQ is an open-source Python package for quantifying protein intensities based on peptide intensities or fragment-ion intensities measured with from Mass Spectrometry-based proteomics.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3694"
-        },
-        {
           "@id": "edam:operation_0335"
         },
         {
           "@id": "edam:operation_3634"
+        },
+        {
+          "@id": "edam:operation_3694"
         },
         {
           "@id": "edam:operation_3435"
@@ -95,14 +99,14 @@
       "sc:license": "Apache-2.0",
       "sc:name": "directLFQ",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:url": "https://github.com/MannLabs/directlfq"
     },
     {
-      "@id": "_:N4326ac5cc3784bbab5c1eaa4f6d833b5",
+      "@id": "_:N821d685151a142d182de4839a4cfe8cc",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2536"
@@ -113,7 +117,7 @@
       "sc:name": "Mass spectrometry data"
     },
     {
-      "@id": "_:N2c1d0617b3bb464cbb66be02199e0c8e",
+      "@id": "_:N41c0a30ac8114b71a77fc3f998524cb6",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0945"
@@ -122,10 +126,6 @@
         "@id": "edam:format_3475"
       },
       "sc:name": "Peptide identification"
-    },
-    {
-      "@id": "https://doi.org/10.1016/j.mcpro.2023.100581",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

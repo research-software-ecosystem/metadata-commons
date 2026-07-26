@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -41,16 +41,16 @@
       "biotools:primaryContact": "Galaxy Support Team",
       "bsc:input": [
         {
-          "@id": "_:Nb52d019771ca455d8b2eb33347458eb1"
+          "@id": "_:N2d6c2686aad24c7289cc1be14f383edf"
         },
         {
-          "@id": "_:N68a19869149244eb9ebcedf53e303ff7"
+          "@id": "_:Nf69f575a86074b9989cbe144cfb41d68"
         }
       ],
       "bsc:output": {
-        "@id": "_:N791651dfb9f74beda19078a393a183dd"
+        "@id": "_:Nfc23f1922fde44c2b94d811f75579197"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
@@ -61,14 +61,14 @@
         }
       ],
       "sc:citation": [
+        "pubmed:27137889",
+        "pmcid:PMC4987906",
         {
           "@id": "https://doi.org/10.1093/nar/gkw343"
         },
-        "pubmed:27137889",
         {
           "@id": "https://doi.org/10.7490/f1000research.1114334.1"
-        },
-        "pmcid:PMC4987906"
+        }
       ],
       "sc:description": "Plot the number of identical reads and give the most represented.",
       "sc:featureList": {
@@ -76,8 +76,8 @@
       },
       "sc:name": "getreaddistribution",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -87,7 +87,7 @@
       "sc:url": "https://urgi.versailles.inra.fr/Tools/REPET"
     },
     {
-      "@id": "_:Nb52d019771ca455d8b2eb33347458eb1",
+      "@id": "_:N2d6c2686aad24c7289cc1be14f383edf",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0006"
@@ -98,7 +98,7 @@
       "sc:name": "Data"
     },
     {
-      "@id": "_:N68a19869149244eb9ebcedf53e303ff7",
+      "@id": "_:Nf69f575a86074b9989cbe144cfb41d68",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0863"
@@ -109,7 +109,7 @@
       "sc:name": "Sequence alignment"
     },
     {
-      "@id": "_:N791651dfb9f74beda19078a393a183dd",
+      "@id": "_:Nfc23f1922fde44c2b94d811f75579197",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0006"
@@ -120,11 +120,11 @@
       "sc:name": "Data"
     },
     {
-      "@id": "https://doi.org/10.1093/nar/gkw343",
+      "@id": "https://doi.org/10.7490/f1000research.1114334.1",
       "@type": "sc:CreativeWork"
     },
     {
-      "@id": "https://doi.org/10.7490/f1000research.1114334.1",
+      "@id": "https://doi.org/10.1093/nar/gkw343",
       "@type": "sc:CreativeWork"
     }
   ]

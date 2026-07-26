@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,6 +36,10 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.64898/2026.03.24.714002",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/pathotypr",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
@@ -43,52 +47,46 @@
       },
       "bsc:input": [
         {
-          "@id": "_:Nf1912fce0b314bfe864e2137372aa5d1"
+          "@id": "_:Ndf559e5cf85a4805a006546df55126c0"
         },
         {
-          "@id": "_:Ncc9c17b0e8e4431db1efcbc141466d90"
+          "@id": "_:Ne17525a933ec4c7a90316bd6c8586600"
         },
         {
-          "@id": "_:N119a061210ae4605914f7b897a257ab4"
+          "@id": "_:N2fc9cf5dd63b43ea9123121f38b8d22c"
         },
         {
-          "@id": "_:Nf22d7f40aeb147b49e13c71208e1d5b7"
+          "@id": "_:N069aa91dc9d44a7b99c17d921775feb2"
         },
         {
-          "@id": "_:Nbb3ac0963b454b20aaa2fdd230255dc5"
+          "@id": "_:Ne617342bab064e61a586e29b769ade6f"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Nc3ea22a0d92e47bba89d6f9be1146572"
+          "@id": "_:Nc90365bc8cc947e9b855b19c846e3782"
         },
         {
-          "@id": "_:N6adaec988edc4bbd89b1fe09b215d1b2"
+          "@id": "_:Nf647b887a3a4423792a1f892d3299519"
         },
         {
-          "@id": "_:N1bc9053f7c9a4d0884fdc5ae1457e3f7"
+          "@id": "_:Nfacabccee5a44fc8a7ab4018e4393d9f"
         },
         {
-          "@id": "_:Nc05449bbe49e48d0b43b3cef9f52b74b"
+          "@id": "_:N7454b8927a284dd4bc40184b5c95fac3"
         },
         {
-          "@id": "_:Nce4c47084d85457db7220c915c266420"
+          "@id": "_:Nd57a533832594961b2204278c4e436eb"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Desktop application",
-        "Command-line tool"
+        "Command-line tool",
+        "Desktop application"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3301"
-        },
-        {
-          "@id": "edam:topic_3168"
-        },
-        {
-          "@id": "edam:topic_3305"
+          "@id": "edam:topic_0622"
         },
         {
           "@id": "edam:topic_0625"
@@ -97,7 +95,13 @@
           "@id": "edam:topic_3474"
         },
         {
-          "@id": "edam:topic_0622"
+          "@id": "edam:topic_3301"
+        },
+        {
+          "@id": "edam:topic_3305"
+        },
+        {
+          "@id": "edam:topic_3168"
         }
       ],
       "sc:author": {
@@ -122,8 +126,8 @@
       "sc:license": "AGPL-3.0",
       "sc:name": "pathotypr",
       "sc:provider": [
-        "PathoGenOmics Lab",
-        "I2SysBio (CSIC - Universitat de València)"
+        "I2SysBio (CSIC - Universitat de València)",
+        "PathoGenOmics Lab"
       ],
       "sc:softwareHelp": {
         "@id": "https://github.com/PathoGenOmics-Lab/pathotypr/tree/main/docs"
@@ -132,7 +136,40 @@
       "sc:url": "https://github.com/PathoGenOmics-Lab/pathotypr"
     },
     {
-      "@id": "_:Nf1912fce0b314bfe864e2137372aa5d1",
+      "@id": "_:Ndf559e5cf85a4805a006546df55126c0",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2044"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "Sequence"
+    },
+    {
+      "@id": "_:Ne17525a933ec4c7a90316bd6c8586600",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2044"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "Sequence"
+    },
+    {
+      "@id": "_:N2fc9cf5dd63b43ea9123121f38b8d22c",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2044"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "Sequence"
+    },
+    {
+      "@id": "_:N069aa91dc9d44a7b99c17d921775feb2",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
@@ -143,18 +180,7 @@
       "sc:name": "Sequence"
     },
     {
-      "@id": "_:Ncc9c17b0e8e4431db1efcbc141466d90",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2044"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1929"
-      },
-      "sc:name": "Sequence"
-    },
-    {
-      "@id": "_:N119a061210ae4605914f7b897a257ab4",
+      "@id": "_:Ne617342bab064e61a586e29b769ade6f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
@@ -165,29 +191,7 @@
       "sc:name": "Sequence"
     },
     {
-      "@id": "_:Nf22d7f40aeb147b49e13c71208e1d5b7",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2044"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1929"
-      },
-      "sc:name": "Sequence"
-    },
-    {
-      "@id": "_:Nbb3ac0963b454b20aaa2fdd230255dc5",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2044"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1929"
-      },
-      "sc:name": "Sequence"
-    },
-    {
-      "@id": "_:Nc3ea22a0d92e47bba89d6f9be1146572",
+      "@id": "_:Nc90365bc8cc947e9b855b19c846e3782",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0920"
@@ -198,7 +202,7 @@
       "sc:name": "Genotype/phenotype report"
     },
     {
-      "@id": "_:N6adaec988edc4bbd89b1fe09b215d1b2",
+      "@id": "_:Nf647b887a3a4423792a1f892d3299519",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0920"
@@ -209,7 +213,7 @@
       "sc:name": "Genotype/phenotype report"
     },
     {
-      "@id": "_:N1bc9053f7c9a4d0884fdc5ae1457e3f7",
+      "@id": "_:Nfacabccee5a44fc8a7ab4018e4393d9f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0920"
@@ -220,7 +224,7 @@
       "sc:name": "Genotype/phenotype report"
     },
     {
-      "@id": "_:Nc05449bbe49e48d0b43b3cef9f52b74b",
+      "@id": "_:N7454b8927a284dd4bc40184b5c95fac3",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0920"
@@ -231,7 +235,7 @@
       "sc:name": "Genotype/phenotype report"
     },
     {
-      "@id": "_:Nce4c47084d85457db7220c915c266420",
+      "@id": "_:Nd57a533832594961b2204278c4e436eb",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0920"
@@ -240,18 +244,14 @@
         "@id": "edam:format_3475"
       },
       "sc:name": "Genotype/phenotype report"
-    },
-    {
-      "@id": "https://orcid.org/0000-0003-0752-0538",
-      "@type": "sc:Person"
     },
     {
       "@id": "https://orcid.org/0000-0003-0727-5974",
       "@type": "sc:Person"
     },
     {
-      "@id": "https://doi.org/10.64898/2026.03.24.714002",
-      "@type": "sc:CreativeWork"
+      "@id": "https://orcid.org/0000-0003-0752-0538",
+      "@type": "sc:Person"
     }
   ]
 }

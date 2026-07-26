@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,28 +39,28 @@
       "@id": "https://bio.tools/asset",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N75f234dd22d1440c9256a6aeae20e0b2"
+        "@id": "_:Nc530875ea18f48619e33edbfb3ad9feb"
       },
       "bsc:output": {
-        "@id": "_:N95ca8a8b90794c0eb9d1bc09eea86e96"
+        "@id": "_:N177d49a9814a47c39ec5353639bbf487"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_2269"
+          "@id": "edam:topic_2885"
         },
         {
-          "@id": "edam:topic_2885"
+          "@id": "edam:topic_2269"
         }
       ],
       "sc:author": [
-        "Samsiddhi Bhattacharjee",
-        "Nilanjan Chatterjee",
         "Guanghao Qi",
+        "Nilanjan Chatterjee",
+        "Samsiddhi Bhattacharjee",
         "William Wheeler"
       ],
       "sc:citation": {
@@ -78,8 +78,8 @@
       "sc:license": "GPL-2.0-only",
       "sc:name": "ASSET",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -89,18 +89,7 @@
       "sc:url": "https://bioconductor.org/packages/ASSET"
     },
     {
-      "@id": "_:N95ca8a8b90794c0eb9d1bc09eea86e96",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1669"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "P-value"
-    },
-    {
-      "@id": "_:N75f234dd22d1440c9256a6aeae20e0b2",
+      "@id": "_:Nc530875ea18f48619e33edbfb3ad9feb",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0920"
@@ -109,6 +98,17 @@
         "@id": "edam:format_2330"
       },
       "sc:name": "Genotype/phenotype report"
+    },
+    {
+      "@id": "_:N177d49a9814a47c39ec5353639bbf487",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1669"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "P-value"
     },
     {
       "@id": "https://doi.org/10.18129/B9.bioc.ASSET",

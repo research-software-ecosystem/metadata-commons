@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -44,38 +44,38 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Nf508e481edcb403aab102c5793debb3e"
+          "@id": "_:Nf996f2211b6b4201907fd5c9f6e86d13"
         },
         {
-          "@id": "_:N914bc3491d3344549234e50d6da52fec"
+          "@id": "_:N591b33d58ca34b25b49951247dd8b620"
         },
         {
-          "@id": "_:N8dfb3f277e1d4369b57fc5b846b85f72"
+          "@id": "_:N15bbe4b907734ab4898992ddb4616681"
         },
         {
-          "@id": "_:N4d2147ce5aab46e6865550ffa1d8e955"
+          "@id": "_:N0176cfc2086c4261a2e9478c7d4fe8f6"
         }
       ],
       "bsc:output": {
-        "@id": "_:N306fc0f2984c4838b42073c1998221cb"
+        "@id": "_:Nc5a4c3a47a6b48daa185516e4d05866e"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3489"
+          "@id": "edam:topic_3473"
         },
         {
-          "@id": "edam:topic_3473"
+          "@id": "edam:topic_3489"
         }
       ],
       "sc:author": [
-        "Valerie Obenchain",
         "Marc Carlson",
-        "Martin Morgan"
+        "Martin Morgan",
+        "Valerie Obenchain"
       ],
       "sc:citation": {
         "@id": "https://doi.org/10.18129/B9.bioc.OrganismDbi"
@@ -87,21 +87,21 @@
           "@id": "edam:operation_2422"
         },
         {
-          "@id": "edam:operation_0361"
+          "@id": "edam:operation_3561"
         },
         {
           "@id": "edam:operation_2421"
         },
         {
-          "@id": "edam:operation_3561"
+          "@id": "edam:operation_0361"
         }
       ],
       "sc:license": "Artistic-2.0",
       "sc:name": "OrganismDbi",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://bioconductor.org/packages/OrganismDbi"
@@ -110,23 +110,23 @@
       "sc:url": "https://bioconductor.org/packages/OrganismDbi"
     },
     {
-      "@id": "_:Nf508e481edcb403aab102c5793debb3e",
+      "@id": "_:Nf996f2211b6b4201907fd5c9f6e86d13",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_0989"
+        "@id": "edam:data_1056"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_2330"
+          "@id": "edam:format_3033"
         },
         {
-          "@id": "edam:format_3033"
+          "@id": "edam:format_2330"
         }
       ],
-      "sc:name": "Protein identifier"
+      "sc:name": "Database name"
     },
     {
-      "@id": "_:N914bc3491d3344549234e50d6da52fec",
+      "@id": "_:N591b33d58ca34b25b49951247dd8b620",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1025"
@@ -142,39 +142,39 @@
       "sc:name": "Gene identifier"
     },
     {
-      "@id": "_:N8dfb3f277e1d4369b57fc5b846b85f72",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1056"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_3033"
-        }
-      ],
-      "sc:name": "Database name"
-    },
-    {
-      "@id": "_:N4d2147ce5aab46e6865550ffa1d8e955",
+      "@id": "_:N15bbe4b907734ab4898992ddb4616681",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2909"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_2330"
+          "@id": "edam:format_3033"
         },
         {
-          "@id": "edam:format_3033"
+          "@id": "edam:format_2330"
         }
       ],
       "sc:name": "Organism name"
     },
     {
-      "@id": "_:N306fc0f2984c4838b42073c1998221cb",
+      "@id": "_:N0176cfc2086c4261a2e9478c7d4fe8f6",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0989"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3033"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Protein identifier"
+    },
+    {
+      "@id": "_:Nc5a4c3a47a6b48daa185516e4d05866e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2080"

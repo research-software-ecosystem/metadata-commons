@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,19 +36,15 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1016/j.sbi.2006.04.003",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/sisyphus",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N49460f4f102a4a25881eda2b25e411bd"
+        "@id": "_:N332ae377adac4da5b06cc15eb8ef4891"
       },
       "bsc:output": {
-        "@id": "_:Ne9f69abb129741738e250ebdd1225ea0"
+        "@id": "_:N155c700d4293413293630c421f22c844"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Database portal",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0078"
@@ -66,8 +62,8 @@
       "sc:name": "SISYPHUS database of protein structure alignments",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://www.spice-3d.org/sisyphus/help.jsp"
@@ -75,7 +71,7 @@
       "sc:url": "http://sisyphus.mrc-cpe.cam.ac.uk"
     },
     {
-      "@id": "_:N49460f4f102a4a25881eda2b25e411bd",
+      "@id": "_:N332ae377adac4da5b06cc15eb8ef4891",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2793"
@@ -83,7 +79,7 @@
       "sc:name": "SISYPHUS ID"
     },
     {
-      "@id": "_:Ne9f69abb129741738e250ebdd1225ea0",
+      "@id": "_:N155c700d4293413293630c421f22c844",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1481"
@@ -92,6 +88,10 @@
         "@id": "edam:format_2332"
       },
       "sc:name": "Structure alignment (protein)"
+    },
+    {
+      "@id": "https://doi.org/10.1016/j.sbi.2006.04.003",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

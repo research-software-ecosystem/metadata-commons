@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -47,21 +47,21 @@
       },
       "bsc:input": [
         {
-          "@id": "_:Nde5f36056fc94871bf3a676616d5ee5a"
+          "@id": "_:N9f9c60b055e147a3b6efd61e33f3bea0"
         },
         {
-          "@id": "_:N7e10e376823947c08b8c11e261a24fe8"
+          "@id": "_:Nc7b5b0683eb14b3b9347cf740f9df802"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N86ba40dd4f24455ba9e860dba0e9d01b"
+          "@id": "_:N5c248812d7244aff8ba236e68514bbdc"
         },
         {
-          "@id": "_:N944332eddbf1496f8e7553f13727dab7"
+          "@id": "_:N976fb3e19e604530be654121bda1337a"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
@@ -83,7 +83,7 @@
       "sc:description": "ImaGEO is a web tool for gene expression Meta-Analysis that implements a complete and comprehensive meta-analysis workflow starting from Gene Expression Omnibus (GEO) dataset identifiers. The application integrates GEO datasets, applies different meta-analysis techniques and provides functional analysis results in an easy-to-use environment. ImaGEO is a powerful and useful resource that allows researchers to integrate and perform meta-analysis of GEO datasets to lead robust findings for biomarker discovery studies.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3435"
+          "@id": "edam:operation_3436"
         },
         {
           "@id": "edam:operation_3223"
@@ -92,61 +92,61 @@
           "@id": "edam:operation_0531"
         },
         {
-          "@id": "edam:operation_3436"
+          "@id": "edam:operation_3435"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "GPL-2.0",
       "sc:name": "ImaGEO",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:url": "https://imageo.genyo.es"
     },
     {
-      "@id": "_:N86ba40dd4f24455ba9e860dba0e9d01b",
+      "@id": "_:N9f9c60b055e147a3b6efd61e33f3bea0",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_3112"
+        "@id": "edam:data_1147"
       },
-      "sc:name": "Gene expression matrix"
+      "sc:name": "GEO accession number"
     },
     {
-      "@id": "_:N944332eddbf1496f8e7553f13727dab7",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1636"
-      },
-      "sc:name": "Heat map"
-    },
-    {
-      "@id": "_:Nde5f36056fc94871bf3a676616d5ee5a",
+      "@id": "_:Nc7b5b0683eb14b3b9347cf740f9df802",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3112"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_1964"
-        },
-        {
           "@id": "edam:format_3752"
         },
         {
           "@id": "edam:format_3475"
+        },
+        {
+          "@id": "edam:format_1964"
         }
       ],
       "sc:name": "Gene expression matrix"
     },
     {
-      "@id": "_:N7e10e376823947c08b8c11e261a24fe8",
+      "@id": "_:N5c248812d7244aff8ba236e68514bbdc",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_1147"
+        "@id": "edam:data_3112"
       },
-      "sc:name": "GEO accession number"
+      "sc:name": "Gene expression matrix"
+    },
+    {
+      "@id": "_:N976fb3e19e604530be654121bda1337a",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1636"
+      },
+      "sc:name": "Heat map"
     },
     {
       "@id": "https://orcid.org/0000-0002-6173-7255",

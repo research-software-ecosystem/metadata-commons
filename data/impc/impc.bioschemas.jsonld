@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,25 +36,21 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/nar/gkt977",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/impc",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Terry Meehan",
       "bsc:input": {
-        "@id": "_:N7e5244526a9146d79ef0874b22410f94"
+        "@id": "_:N1860b410fa9f41b084238b0ce69312d8"
       },
       "bsc:output": [
         {
-          "@id": "_:Neb8e3beb6b204fd68c3db40356097575"
+          "@id": "_:N80ab072bd61d40e5820dd0006f5af3d1"
         },
         {
-          "@id": "_:Nc72439c6c6c844d5bc38a16b2d657ac4"
+          "@id": "_:N6842161bf9934420a8fd2984a808febb"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0625"
@@ -72,8 +68,8 @@
       },
       "sc:name": "IMPC",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -83,15 +79,15 @@
       "sc:url": "http://www.mousephenotype.org"
     },
     {
-      "@id": "_:Neb8e3beb6b204fd68c3db40356097575",
+      "@id": "_:N1860b410fa9f41b084238b0ce69312d8",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2968"
+        "@id": "edam:data_0968"
       },
-      "sc:name": "Image"
+      "sc:name": "Keyword"
     },
     {
-      "@id": "_:Nc72439c6c6c844d5bc38a16b2d657ac4",
+      "@id": "_:N80ab072bd61d40e5820dd0006f5af3d1",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0916"
@@ -99,12 +95,16 @@
       "sc:name": "Gene report"
     },
     {
-      "@id": "_:N7e5244526a9146d79ef0874b22410f94",
+      "@id": "_:N6842161bf9934420a8fd2984a808febb",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_0968"
+        "@id": "edam:data_2968"
       },
-      "sc:name": "Keyword"
+      "sc:name": "Image"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/gkt977",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

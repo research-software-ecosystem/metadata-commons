@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,12 +36,9 @@
   },
   "@id": "https://bio.tools/cnaseg",
   "@type": "sc:SoftwareApplication",
-  "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+  "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
   "sc:additionalType": "Command-line tool",
   "sc:applicationSubCategory": [
-    {
-      "@id": "edam:topic_3277"
-    },
     {
       "@id": "edam:topic_2640"
     },
@@ -50,6 +47,9 @@
     },
     {
       "@id": "edam:topic_3168"
+    },
+    {
+      "@id": "edam:topic_3277"
     }
   ],
   "sc:description": "CNAseg is a novel framework for the identification of CNA events that uses flowcell-to-flowcell variability to estimate the false positive rate and the depth of coverage to finalize copy number calls. HMMseg uses the Skellam distribution to compare read depth in tumour and control samples, which allows the use of smaller window sizes for copy number estimation and leads to greater sensitivity in pinpointing breakpoints for small CNAs.",
@@ -58,8 +58,8 @@
   },
   "sc:name": "CNAseg",
   "sc:operatingSystem": [
-    "Mac",
     "Linux",
+    "Mac",
     "Windows"
   ],
   "sc:softwareHelp": {

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,28 +36,32 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1101/762302",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/kraken2",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N9c9e0d691a0d4cac947eb08fce46d107"
+        "@id": "_:N51593fab7dc84566be4cfd1cca0c3a70"
       },
       "bsc:output": {
-        "@id": "_:N78f276ea458847c99d45ee12e396d94c"
+        "@id": "_:N04e916a7b829497989a0f79277e86064"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_3301"
-        },
         {
           "@id": "edam:topic_3174"
         },
         {
-          "@id": "edam:topic_0637"
+          "@id": "edam:topic_3697"
         },
         {
-          "@id": "edam:topic_3697"
+          "@id": "edam:topic_3301"
+        },
+        {
+          "@id": "edam:topic_0637"
         }
       ],
       "sc:citation": {
@@ -82,23 +86,23 @@
       "sc:url": "https://github.com/DerrickWood/kraken2"
     },
     {
-      "@id": "_:N9c9e0d691a0d4cac947eb08fce46d107",
+      "@id": "_:N51593fab7dc84566be4cfd1cca0c3a70",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3494"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_1930"
+          "@id": "edam:format_1929"
         },
         {
-          "@id": "edam:format_1929"
+          "@id": "edam:format_1930"
         }
       ],
       "sc:name": "DNA sequence"
     },
     {
-      "@id": "_:N78f276ea458847c99d45ee12e396d94c",
+      "@id": "_:N04e916a7b829497989a0f79277e86064",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3028"
@@ -107,10 +111,6 @@
         "@id": "edam:format_3475"
       },
       "sc:name": "Taxonomy"
-    },
-    {
-      "@id": "https://doi.org/10.1101/762302",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

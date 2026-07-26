@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,71 +36,67 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/nar/gkr1067",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/glimmermg",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "David R. Kelley",
       "bsc:input": [
         {
-          "@id": "_:Nba7aa294938247ca902e002d65064cd9"
+          "@id": "_:Nd7777e31913f454cbf4f670cfcfcb61c"
         },
         {
-          "@id": "_:N69e2ee803ae14a60a85232d86c8d16dd"
+          "@id": "_:N1e527ebe60c64463af5efb981d984785"
         },
         {
-          "@id": "_:N71ce5d35b54649f294b578ac04884474"
+          "@id": "_:Nf705f44653514769905424244d1fb89f"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N12d401284e044815a82b229d6c107f8f"
+          "@id": "_:N3ea620137b384756b4d16a0b717f9297"
         },
         {
-          "@id": "_:N41280226b3f24d5eaed47e5f853bdb68"
+          "@id": "_:N2cd2feaa89f442a0b41d0ef479c58adb"
         },
         {
-          "@id": "_:N1b4ee4869847475a89cde9f255d3c5c1"
+          "@id": "_:N7db7439f4c0a426b92550b94ce9e53d8"
         },
         {
-          "@id": "_:N0af0b2a99ecd4c36a61367f19440dbcb"
+          "@id": "_:N5af304652bb54931803aede25e3259c0"
         },
         {
-          "@id": "_:Nede5bad885434b578c95f5eaf6d750cd"
+          "@id": "_:N3ba48127283e4de38ed79f0b00516d27"
         },
         {
-          "@id": "_:N4f33792aadee45148943d352ac89f9bf"
+          "@id": "_:N362e312d031840899f26194e06588eff"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Script",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3174"
+          "@id": "edam:topic_3837"
         },
         {
-          "@id": "edam:topic_3837"
+          "@id": "edam:topic_3174"
         }
       ],
       "sc:citation": [
+        "pubmed:22102569",
         "pmcid:PMC3245904",
         {
           "@id": "https://doi.org/10.1093/nar/gkr1067"
-        },
-        "pubmed:22102569"
+        }
       ],
       "sc:description": "Glimmer-MG is a system for finding genes in environmental shotgun DNA\nsequences. Glimmer-MG (Gene Locator and Interpolated Markov ModelER -\nMetaGenomics) uses interpolated Markov models (IMMs) to identify the\ncoding regions and distinguish them from noncoding DNA. Licensed under Artistic License.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_2454"
+          "@id": "edam:operation_2422"
         },
         {
           "@id": "edam:operation_3937"
         },
         {
-          "@id": "edam:operation_2422"
+          "@id": "edam:operation_2454"
         }
       ],
       "sc:license": "Other",
@@ -111,40 +107,31 @@
       "sc:url": "https://github.com/davek44/Glimmer-MG"
     },
     {
-      "@id": "_:N12d401284e044815a82b229d6c107f8f",
+      "@id": "_:Nd7777e31913f454cbf4f670cfcfcb61c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_0914"
+        "@id": "edam:data_0916"
       },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Codon usage data"
+      "sc:name": "Gene report"
     },
     {
-      "@id": "_:N41280226b3f24d5eaed47e5f853bdb68",
+      "@id": "_:N1e527ebe60c64463af5efb981d984785",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_1249"
+        "@id": "edam:data_0916"
       },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Sequence length"
+      "sc:name": "Gene report"
     },
     {
-      "@id": "_:N1b4ee4869847475a89cde9f255d3c5c1",
+      "@id": "_:Nf705f44653514769905424244d1fb89f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_0912"
+        "@id": "edam:data_3494"
       },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Nucleic acid property"
+      "sc:name": "DNA sequence"
     },
     {
-      "@id": "_:N0af0b2a99ecd4c36a61367f19440dbcb",
+      "@id": "_:N3ea620137b384756b4d16a0b717f9297",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2976"
@@ -155,15 +142,7 @@
       "sc:name": "Protein sequence"
     },
     {
-      "@id": "_:Nede5bad885434b578c95f5eaf6d750cd",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0916"
-      },
-      "sc:name": "Gene report"
-    },
-    {
-      "@id": "_:N4f33792aadee45148943d352ac89f9bf",
+      "@id": "_:N2cd2feaa89f442a0b41d0ef479c58adb",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1353"
@@ -171,15 +150,40 @@
       "sc:name": "Sequence motif"
     },
     {
-      "@id": "_:Nba7aa294938247ca902e002d65064cd9",
+      "@id": "_:N7db7439f4c0a426b92550b94ce9e53d8",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_3494"
+        "@id": "edam:data_0914"
       },
-      "sc:name": "DNA sequence"
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Codon usage data"
     },
     {
-      "@id": "_:N69e2ee803ae14a60a85232d86c8d16dd",
+      "@id": "_:N5af304652bb54931803aede25e3259c0",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0912"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Nucleic acid property"
+    },
+    {
+      "@id": "_:N3ba48127283e4de38ed79f0b00516d27",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1249"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Sequence length"
+    },
+    {
+      "@id": "_:N362e312d031840899f26194e06588eff",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0916"
@@ -187,12 +191,8 @@
       "sc:name": "Gene report"
     },
     {
-      "@id": "_:N71ce5d35b54649f294b578ac04884474",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0916"
-      },
-      "sc:name": "Gene report"
+      "@id": "https://doi.org/10.1093/nar/gkr1067",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

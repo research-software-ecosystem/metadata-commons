@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,12 +36,12 @@
   },
   "@graph": [
     {
-      "@id": "https://orcid.org/0000-0003-3251-026X",
-      "@type": "sc:Person"
-    },
-    {
       "@id": "https://doi.org/10.1186/s12859-024-05858-8",
       "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-3251-026X",
+      "@type": "sc:Person"
     },
     {
       "@id": "https://bio.tools/pychelator",
@@ -51,16 +51,16 @@
       },
       "bsc:input": [
         {
-          "@id": "_:Nf607248447b44667a81c840aaf683f1b"
+          "@id": "_:N8b10f534135b426aaaa79b64c294287c"
         },
         {
-          "@id": "_:N1f0ef36203ff459688c00d21d042557d"
+          "@id": "_:N4ce2297c1fde40c38dfea5aa80ec9254"
         }
       ],
       "bsc:output": {
-        "@id": "_:Nb7c34535d02b421e9ef9d1c1fd6e5a36"
+        "@id": "_:N8aba4bb1ab9f451699c12f8c2eba5d73"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Script",
         "Web application"
@@ -89,7 +89,29 @@
       "sc:url": "https://amrutelab.github.io/PyChelator/"
     },
     {
-      "@id": "_:Nb7c34535d02b421e9ef9d1c1fd6e5a36",
+      "@id": "_:N8b10f534135b426aaaa79b64c294287c",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2140"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2331"
+      },
+      "sc:name": "Concentration"
+    },
+    {
+      "@id": "_:N4ce2297c1fde40c38dfea5aa80ec9254",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3108"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2331"
+      },
+      "sc:name": "Experimental measurement"
+    },
+    {
+      "@id": "_:N8aba4bb1ab9f451699c12f8c2eba5d73",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"
@@ -103,28 +125,6 @@
         }
       ],
       "sc:name": "Report"
-    },
-    {
-      "@id": "_:Nf607248447b44667a81c840aaf683f1b",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3108"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2331"
-      },
-      "sc:name": "Experimental measurement"
-    },
-    {
-      "@id": "_:N1f0ef36203ff459688c00d21d042557d",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2140"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2331"
-      },
-      "sc:name": "Concentration"
     }
   ]
 }

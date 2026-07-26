@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,19 +36,15 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1186/S12859-021-04243-Z",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/transat",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N2c161b6daea346f4a8bce1c740ddc0e3"
+        "@id": "_:Nb3567a3ca5f14cd89a72084c9a164a32"
       },
       "bsc:output": {
-        "@id": "_:N147528a8b145495790747682b67adb81"
+        "@id": "_:N13e104eeedd04061ba98b6c8f5eca808"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
@@ -58,7 +54,7 @@
           "@id": "edam:topic_2885"
         },
         {
-          "@id": "edam:topic_0102"
+          "@id": "edam:topic_0203"
         },
         {
           "@id": "edam:topic_3512"
@@ -67,26 +63,26 @@
           "@id": "edam:topic_0622"
         },
         {
-          "@id": "edam:topic_0203"
+          "@id": "edam:topic_0102"
         }
       ],
       "sc:citation": [
+        "pubmed:34182919",
+        "pmcid:PMC8240296",
         {
           "@id": "https://doi.org/10.1186/S12859-021-04243-Z"
-        },
-        "pmcid:PMC8240296",
-        "pubmed:34182919"
+        }
       ],
       "sc:description": "TransAT is a package within the R programming language for converting RefSeq ID to Ensembl ID and mapping the genomic position, followed by providing variant allele frequencies and gene annotations.",
       "sc:featureList": [
+        {
+          "@id": "edam:operation_2422"
+        },
         {
           "@id": "edam:operation_3196"
         },
         {
           "@id": "edam:operation_3661"
-        },
-        {
-          "@id": "edam:operation_2422"
         },
         {
           "@id": "edam:operation_3227"
@@ -96,9 +92,9 @@
       "sc:license": "Not licensed",
       "sc:name": "TransAT",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://github.com/ShihChingYu/TransAT"
@@ -106,7 +102,7 @@
       "sc:url": "https://github.com/ShihChingYu/TransAT"
     },
     {
-      "@id": "_:N2c161b6daea346f4a8bce1c740ddc0e3",
+      "@id": "_:Nb3567a3ca5f14cd89a72084c9a164a32",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
@@ -117,12 +113,16 @@
       "sc:name": "Sequence"
     },
     {
-      "@id": "_:N147528a8b145495790747682b67adb81",
+      "@id": "_:N13e104eeedd04061ba98b6c8f5eca808",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2725"
       },
       "sc:name": "Ensembl transcript ID"
+    },
+    {
+      "@id": "https://doi.org/10.1186/S12859-021-04243-Z",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

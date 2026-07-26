@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,52 +36,48 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/molbev/msp259",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/seaview",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Manolo Gouy",
       "bsc:input": [
         {
-          "@id": "_:N95c2d00a4e1e4cda85d42db37f86e8c4"
+          "@id": "_:N4d532024ccc6460f9da4c65b605c9a9d"
         },
         {
-          "@id": "_:N232339c60bf740ba83479e2c4c533063"
+          "@id": "_:Na61379a01ee145bb986db6ce99d6b6f9"
         },
         {
-          "@id": "_:N0b127521411b4f189f359c855d5f4fb9"
+          "@id": "_:N471b697968e341bf8b640c81f876f428"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N58582148b2134694bb57a3fd4fbff323"
+          "@id": "_:Nbdff7fc49db742178d2108f8a4a887d5"
         },
         {
-          "@id": "_:N7f4ed07ee0b24d348fde400520fd32a3"
+          "@id": "_:Nbe0a65a176ff40daba5df54127d38862"
         },
         {
-          "@id": "_:Nbce3ae01605f468c97fbf8c78a2b6725"
+          "@id": "_:N6bede2d8d96842c98a6f9a783a2ea4a8"
         },
         {
-          "@id": "_:N2c4258a9afa649fab00cb00ea71e18bf"
+          "@id": "_:N9ae24c8a620742a28bfda7b89a62d635"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Desktop application"
       ],
       "sc:applicationSubCategory": [
         {
+          "@id": "edam:topic_0092"
+        },
+        {
           "@id": "edam:topic_0084"
         },
         {
           "@id": "edam:topic_0080"
-        },
-        {
-          "@id": "edam:topic_0092"
         }
       ],
       "sc:citation": [
@@ -99,7 +95,7 @@
           "@id": "edam:operation_0326"
         },
         {
-          "@id": "edam:operation_0564"
+          "@id": "edam:operation_0540"
         },
         {
           "@id": "edam:operation_0567"
@@ -108,13 +104,13 @@
           "@id": "edam:operation_3081"
         },
         {
-          "@id": "edam:operation_0540"
+          "@id": "edam:operation_0564"
         }
       ],
       "sc:name": "SeaView",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:provider": "IFB ELIXIR-FR",
@@ -125,15 +121,7 @@
       "sc:url": "http://doua.prabi.fr/software/seaview"
     },
     {
-      "@id": "_:N58582148b2134694bb57a3fd4fbff323",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1707"
-      },
-      "sc:name": "Phylogenetic tree image"
-    },
-    {
-      "@id": "_:N7f4ed07ee0b24d348fde400520fd32a3",
+      "@id": "_:N4d532024ccc6460f9da4c65b605c9a9d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0872"
@@ -141,31 +129,7 @@
       "sc:name": "Phylogenetic tree"
     },
     {
-      "@id": "_:Nbce3ae01605f468c97fbf8c78a2b6725",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0863"
-      },
-      "sc:name": "Sequence alignment"
-    },
-    {
-      "@id": "_:N2c4258a9afa649fab00cb00ea71e18bf",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1711"
-      },
-      "sc:name": "Sequence alignment image"
-    },
-    {
-      "@id": "_:N95c2d00a4e1e4cda85d42db37f86e8c4",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0863"
-      },
-      "sc:name": "Sequence alignment"
-    },
-    {
-      "@id": "_:N232339c60bf740ba83479e2c4c533063",
+      "@id": "_:Na61379a01ee145bb986db6ce99d6b6f9",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
@@ -173,12 +137,48 @@
       "sc:name": "Sequence"
     },
     {
-      "@id": "_:N0b127521411b4f189f359c855d5f4fb9",
+      "@id": "_:N471b697968e341bf8b640c81f876f428",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0863"
+      },
+      "sc:name": "Sequence alignment"
+    },
+    {
+      "@id": "_:Nbdff7fc49db742178d2108f8a4a887d5",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0872"
       },
       "sc:name": "Phylogenetic tree"
+    },
+    {
+      "@id": "_:Nbe0a65a176ff40daba5df54127d38862",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1707"
+      },
+      "sc:name": "Phylogenetic tree image"
+    },
+    {
+      "@id": "_:N6bede2d8d96842c98a6f9a783a2ea4a8",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0863"
+      },
+      "sc:name": "Sequence alignment"
+    },
+    {
+      "@id": "_:N9ae24c8a620742a28bfda7b89a62d635",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1711"
+      },
+      "sc:name": "Sequence alignment image"
+    },
+    {
+      "@id": "https://doi.org/10.1093/molbev/msp259",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

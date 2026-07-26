@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,42 +36,50 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/gkw343",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.7490/f1000research.1114334.1",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/genbank_convertor",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Galaxy Support Team",
       "bsc:input": [
         {
-          "@id": "_:N56e7b2935cf6491ca8bc93d3cd2ee574"
+          "@id": "_:N7f8c5ffd0dcd4159ab7e43106dfbc8cb"
         },
         {
-          "@id": "_:N2a018934051e49528e509ca1d6147487"
+          "@id": "_:N6dc32f6827914c6394b4ca780dd29ac6"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Nd2220df3263f4421bb46571948c35854"
+          "@id": "_:N57d7c03b2e6d464791e5e0c1d3e89216"
         },
         {
-          "@id": "_:Nbbb74bd1572e468bbc51954ffed08630"
+          "@id": "_:N1a333a89851a4823997f1cc16ad10e15"
         },
         {
-          "@id": "_:Needa261fe3134d5d88102281d5d149a8"
+          "@id": "_:N24ffee11b6584fd1aa72c651d4745335"
         },
         {
-          "@id": "_:N1a0d5814e76f45c3a6dbee4168d96570"
+          "@id": "_:N47d30742860e4a30bf088fde8515b09f"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0080"
+          "@id": "edam:topic_3053"
         },
         {
           "@id": "edam:topic_0078"
         },
         {
-          "@id": "edam:topic_3053"
+          "@id": "edam:topic_0080"
         }
       ],
       "sc:citation": [
@@ -91,7 +99,7 @@
       "sc:url": "https://bioweb.pasteur.fr/packages/pack@pf1-tools@0.1"
     },
     {
-      "@id": "_:N56e7b2935cf6491ca8bc93d3cd2ee574",
+      "@id": "_:N7f8c5ffd0dcd4159ab7e43106dfbc8cb",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0006"
@@ -102,7 +110,7 @@
       "sc:name": "Data"
     },
     {
-      "@id": "_:N2a018934051e49528e509ca1d6147487",
+      "@id": "_:N6dc32f6827914c6394b4ca780dd29ac6",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0006"
@@ -113,7 +121,7 @@
       "sc:name": "Data"
     },
     {
-      "@id": "_:Nd2220df3263f4421bb46571948c35854",
+      "@id": "_:N57d7c03b2e6d464791e5e0c1d3e89216",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0006"
@@ -124,29 +132,7 @@
       "sc:name": "Data"
     },
     {
-      "@id": "_:Nbbb74bd1572e468bbc51954ffed08630",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0863"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1929"
-      },
-      "sc:name": "Sequence alignment"
-    },
-    {
-      "@id": "_:Needa261fe3134d5d88102281d5d149a8",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0863"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1929"
-      },
-      "sc:name": "Sequence alignment"
-    },
-    {
-      "@id": "_:N1a0d5814e76f45c3a6dbee4168d96570",
+      "@id": "_:N1a333a89851a4823997f1cc16ad10e15",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0006"
@@ -157,12 +143,26 @@
       "sc:name": "Data"
     },
     {
-      "@id": "https://doi.org/10.1093/nar/gkw343",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N24ffee11b6584fd1aa72c651d4745335",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0863"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "Sequence alignment"
     },
     {
-      "@id": "https://doi.org/10.7490/f1000research.1114334.1",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N47d30742860e4a30bf088fde8515b09f",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0863"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "Sequence alignment"
     }
   ]
 }

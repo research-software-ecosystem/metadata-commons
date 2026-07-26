@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,31 +40,35 @@
       "@type": "sc:CreativeWork"
     },
     {
+      "@id": "https://doi.org/10.7490/f1000research.1114334.1",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/fastaextract",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Galaxy Support Team",
       "bsc:input": [
         {
-          "@id": "_:Nd1b48bcaa0014ea18da49f96b6f2ecf9"
+          "@id": "_:Ndef5157ab686492ca2c6ab6abbdd823e"
         },
         {
-          "@id": "_:N7ee6fa9121b84a2a8d23e2ffd83b5814"
+          "@id": "_:Nfeaae64cbb0748c7914ef9cfda855cbd"
         }
       ],
       "bsc:output": {
-        "@id": "_:Nd730c752407c4e15b7287866f308646e"
+        "@id": "_:Naac2e073fd3f43fc8dd1caa436a32545"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
           "@id": "edam:topic_3071"
         },
         {
-          "@id": "edam:topic_0080"
+          "@id": "edam:topic_0077"
         },
         {
-          "@id": "edam:topic_0077"
+          "@id": "edam:topic_0080"
         }
       ],
       "sc:citation": [
@@ -86,9 +90,9 @@
       ],
       "sc:name": "fastaextract",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://galaxy.pasteur.fr/root?tool_id=toolshed.pasteur.fr%2Frepos%2Fscreno%2Fpasteur_fasta_facilities%2Fmultifasta_sequence_extractor%2F0.99"
@@ -97,29 +101,7 @@
       "sc:url": "https://github.com/C3BI-pasteur-fr/fastaextract"
     },
     {
-      "@id": "_:Nd730c752407c4e15b7287866f308646e",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0863"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1929"
-      },
-      "sc:name": "Sequence alignment"
-    },
-    {
-      "@id": "_:Nd1b48bcaa0014ea18da49f96b6f2ecf9",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0863"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1929"
-      },
-      "sc:name": "Sequence alignment"
-    },
-    {
-      "@id": "_:N7ee6fa9121b84a2a8d23e2ffd83b5814",
+      "@id": "_:Ndef5157ab686492ca2c6ab6abbdd823e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0006"
@@ -130,8 +112,26 @@
       "sc:name": "Data"
     },
     {
-      "@id": "https://doi.org/10.7490/f1000research.1114334.1",
-      "@type": "sc:CreativeWork"
+      "@id": "_:Nfeaae64cbb0748c7914ef9cfda855cbd",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0863"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "Sequence alignment"
+    },
+    {
+      "@id": "_:Naac2e073fd3f43fc8dd1caa436a32545",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0863"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "Sequence alignment"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,19 +36,23 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/btac216",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/mitovisualize",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N27113ef7361a4c52a1add24d9eae3162"
+        "@id": "_:Nf2eb18ed5aa04df1b9940c30d449d13b"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0097"
+          "@id": "edam:topic_0654"
         },
         {
-          "@id": "edam:topic_0654"
+          "@id": "edam:topic_0097"
         },
         {
           "@id": "edam:topic_0099"
@@ -66,18 +70,18 @@
           "@id": "edam:operation_3197"
         },
         {
-          "@id": "edam:operation_0570"
+          "@id": "edam:operation_0502"
         },
         {
-          "@id": "edam:operation_0502"
+          "@id": "edam:operation_0570"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "Not licensed",
       "sc:name": "MitoVisualize",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -86,16 +90,12 @@
       "sc:url": "https://www.mitovisualize.org/"
     },
     {
-      "@id": "_:N27113ef7361a4c52a1add24d9eae3162",
+      "@id": "_:Nf2eb18ed5aa04df1b9940c30d449d13b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2299"
       },
       "sc:name": "Gene name"
-    },
-    {
-      "@id": "https://doi.org/10.1093/bioinformatics/btac216",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

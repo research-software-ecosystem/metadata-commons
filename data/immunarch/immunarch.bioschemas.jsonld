@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -43,17 +43,17 @@
       "@id": "https://bio.tools/immunarch",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N9d6be6cbc9b1476db6484a6e803b8c90"
+        "@id": "_:N6fcd02b95a7c4475ae52e2242052e5cc"
       },
       "bsc:output": [
         {
-          "@id": "_:Nfd90f8424dd74be6ad889aec5962a6ca"
+          "@id": "_:N37b73efc955b4b19a6ff236b67a862e0"
         },
         {
-          "@id": "_:N236b5b54854c4731bd9efbdd24f3dd8a"
+          "@id": "_:N52d324671e854d508984497724850a46"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Library",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_2830"
@@ -69,45 +69,45 @@
       "sc:license": "Apache-2.0",
       "sc:name": "immunarch",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": [
         {
-          "@id": "https://immunarch.com/articles/web_only/v4_overlap.html"
-        },
-        {
-          "@id": "https://immunarch.com/articles/web_only/v6_diversity.html"
+          "@id": "https://immunarch.com/articles/web_only/v8_tracking.html"
         },
         {
           "@id": "https://immunarch.com/articles/v2_data.html"
         },
         {
-          "@id": "https://immunarch.com/articles/web_only/v7_fixvis.html"
-        },
-        {
-          "@id": "https://immunarch.com/articles/web_only/v8_tracking.html"
-        },
-        {
           "@id": "https://immunarch.com/articles/web_only/v9_kmers.html"
+        },
+        {
+          "@id": "https://immunarch.com/articles/web_only/v6_diversity.html"
+        },
+        {
+          "@id": "https://immunarch.com/articles/web_only/v4_overlap.html"
+        },
+        {
+          "@id": "https://immunarch.com/articles/web_only/v7_fixvis.html"
         }
       ],
       "sc:url": "https://immunarch.com"
     },
     {
-      "@id": "_:Nfd90f8424dd74be6ad889aec5962a6ca",
+      "@id": "_:N6fcd02b95a7c4475ae52e2242052e5cc",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2048"
+        "@id": "edam:data_1383"
       },
       "sc:encodingFormat": {
-        "@id": "edam:format_2330"
+        "@id": "edam:format_3033"
       },
-      "sc:name": "Report"
+      "sc:name": "Sequence alignment (nucleic acid)"
     },
     {
-      "@id": "_:N236b5b54854c4731bd9efbdd24f3dd8a",
+      "@id": "_:N37b73efc955b4b19a6ff236b67a862e0",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
@@ -118,15 +118,15 @@
       "sc:name": "Plot"
     },
     {
-      "@id": "_:N9d6be6cbc9b1476db6484a6e803b8c90",
+      "@id": "_:N52d324671e854d508984497724850a46",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_1383"
+        "@id": "edam:data_2048"
       },
       "sc:encodingFormat": {
-        "@id": "edam:format_3033"
+        "@id": "edam:format_2330"
       },
-      "sc:name": "Sequence alignment (nucleic acid)"
+      "sc:name": "Report"
     }
   ]
 }

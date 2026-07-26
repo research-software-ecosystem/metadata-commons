@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,33 +36,37 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/gkaf018",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/edger",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N22f892209f8f4158b903880521ab7e81"
+        "@id": "_:N29b69bc49c2a4b9b9415f849fd5e0063"
       },
       "bsc:output": [
         {
-          "@id": "_:N4be1f92018724449805308b86eb8e1fb"
+          "@id": "_:Ne4b2f2a3bcd5497c811e7c6d378c42f5"
         },
         {
-          "@id": "_:Ncbdee8d8b75c401297f48d96beafec41"
+          "@id": "_:Nb49c649e681846c0a168e9f9b14ff8bc"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
       ],
       "sc:applicationSubCategory": [
         {
+          "@id": "edam:topic_3169"
+        },
+        {
           "@id": "edam:topic_3053"
         },
         {
           "@id": "edam:topic_3170"
-        },
-        {
-          "@id": "edam:topic_3169"
         }
       ],
       "sc:citation": {
@@ -75,9 +79,9 @@
       "sc:license": "GPL-2.0-only",
       "sc:name": "edgeR",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://bioconductor.org/packages/edgeR"
@@ -86,23 +90,34 @@
       "sc:url": "https://bioconductor.org/packages/edgeR"
     },
     {
-      "@id": "_:N4be1f92018724449805308b86eb8e1fb",
+      "@id": "_:N29b69bc49c2a4b9b9415f849fd5e0063",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2044"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1919"
+      },
+      "sc:name": "Sequence"
+    },
+    {
+      "@id": "_:Ne4b2f2a3bcd5497c811e7c6d378c42f5",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1669"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_2330"
+          "@id": "edam:format_3547"
         },
         {
-          "@id": "edam:format_3547"
+          "@id": "edam:format_2330"
         }
       ],
       "sc:name": "P-value"
     },
     {
-      "@id": "_:Ncbdee8d8b75c401297f48d96beafec41",
+      "@id": "_:Nb49c649e681846c0a168e9f9b14ff8bc",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
@@ -116,21 +131,6 @@
         }
       ],
       "sc:name": "Plot"
-    },
-    {
-      "@id": "_:N22f892209f8f4158b903880521ab7e81",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2044"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1919"
-      },
-      "sc:name": "Sequence"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gkaf018",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

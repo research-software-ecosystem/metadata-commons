@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,33 +40,33 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Ne88a0ae1f5cd4723820a413a10cee5d7"
+          "@id": "_:Ndccc33815d624fb2a4d8f4ed05cb3510"
         },
         {
-          "@id": "_:N8c374a9dbb5e48a0bc9b1073ebe108a7"
+          "@id": "_:N9905ff6e5b604294ad59db20efdc194f"
         },
         {
-          "@id": "_:N2539947ade0e400a8e4e72343d17fde2"
+          "@id": "_:N19741d724d3f49d6834c870c706c8e3f"
         },
         {
-          "@id": "_:N4d5bb5a182de475e95ad36f1093a7a2e"
+          "@id": "_:N5250a3e4ddfa4ae3a22f44a7a8a4dc50"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N3a7dfacc5bd5450084a6be4c651618eb"
+          "@id": "_:Ndc10e2b89cd24e8e936107d98cf94ebc"
         },
         {
-          "@id": "_:Nfbd3242b170c4f24a7e0b643b945d464"
+          "@id": "_:N3f231609074d44588d38558646136e56"
         },
         {
-          "@id": "_:Ne016d3643b744040a0b0bbf7b8735250"
+          "@id": "_:Nacb943f4b82b4689b7fd27702610c1a5"
         },
         {
-          "@id": "_:N1127268d8a044c4b843598d8f3f4d0da"
+          "@id": "_:Nd1d800b5dd5f44bd984228f6c9732090"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
@@ -85,10 +85,10 @@
       "sc:description": "OmicCircos is an R application and package for generating high-quality circular plots for omics data.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3208"
+          "@id": "edam:operation_0362"
         },
         {
-          "@id": "edam:operation_0362"
+          "@id": "edam:operation_3208"
         },
         {
           "@id": "edam:operation_0337"
@@ -97,9 +97,9 @@
       "sc:license": "GPL-2.0-only",
       "sc:name": "OmicCircos",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://bioconductor.org/packages/OmicCircos"
@@ -108,87 +108,7 @@
       "sc:url": "https://bioconductor.org/packages/OmicCircos"
     },
     {
-      "@id": "_:N3a7dfacc5bd5450084a6be4c651618eb",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2048"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3547"
-        },
-        {
-          "@id": "edam:format_2330"
-        }
-      ],
-      "sc:name": "Report"
-    },
-    {
-      "@id": "_:Nfbd3242b170c4f24a7e0b643b945d464",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1636"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3547"
-        },
-        {
-          "@id": "edam:format_2330"
-        }
-      ],
-      "sc:name": "Heat map"
-    },
-    {
-      "@id": "_:Ne016d3643b744040a0b0bbf7b8735250",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2884"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3547"
-        },
-        {
-          "@id": "edam:format_2330"
-        }
-      ],
-      "sc:name": "Plot"
-    },
-    {
-      "@id": "_:N1127268d8a044c4b843598d8f3f4d0da",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1772"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_3547"
-        }
-      ],
-      "sc:name": "Score"
-    },
-    {
-      "@id": "_:Ne88a0ae1f5cd4723820a413a10cee5d7",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2082"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3033"
-        },
-        {
-          "@id": "edam:format_2060"
-        }
-      ],
-      "sc:name": "Matrix"
-    },
-    {
-      "@id": "_:N8c374a9dbb5e48a0bc9b1073ebe108a7",
+      "@id": "_:Ndccc33815d624fb2a4d8f4ed05cb3510",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2019"
@@ -204,7 +124,39 @@
       "sc:name": "Map data"
     },
     {
-      "@id": "_:N2539947ade0e400a8e4e72343d17fde2",
+      "@id": "_:N9905ff6e5b604294ad59db20efdc194f",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2082"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2060"
+        },
+        {
+          "@id": "edam:format_3033"
+        }
+      ],
+      "sc:name": "Matrix"
+    },
+    {
+      "@id": "_:N19741d724d3f49d6834c870c706c8e3f",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1383"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2060"
+        },
+        {
+          "@id": "edam:format_3033"
+        }
+      ],
+      "sc:name": "Sequence alignment (nucleic acid)"
+    },
+    {
+      "@id": "_:N5250a3e4ddfa4ae3a22f44a7a8a4dc50",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2012"
@@ -220,20 +172,68 @@
       "sc:name": "Sequence coordinates"
     },
     {
-      "@id": "_:N4d5bb5a182de475e95ad36f1093a7a2e",
+      "@id": "_:Ndc10e2b89cd24e8e936107d98cf94ebc",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_1383"
+        "@id": "edam:data_1636"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_2060"
+          "@id": "edam:format_3547"
         },
         {
-          "@id": "edam:format_3033"
+          "@id": "edam:format_2330"
         }
       ],
-      "sc:name": "Sequence alignment (nucleic acid)"
+      "sc:name": "Heat map"
+    },
+    {
+      "@id": "_:N3f231609074d44588d38558646136e56",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2884"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Plot"
+    },
+    {
+      "@id": "_:Nacb943f4b82b4689b7fd27702610c1a5",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2048"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Report"
+    },
+    {
+      "@id": "_:Nd1d800b5dd5f44bd984228f6c9732090",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1772"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Score"
     },
     {
       "@id": "https://doi.org/10.18129/B9.bioc.OmicCircos",

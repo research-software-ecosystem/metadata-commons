@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,26 +36,18 @@
   },
   "@graph": [
     {
-      "@id": "https://orcid.org/0000-0002-1887-0157",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://orcid.org/0000-0003-3298-2072",
-      "@type": "sc:Person"
-    },
-    {
       "@id": "https://bio.tools/auto-prostate-sequence-classifier",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "https://orcid.org/0000-0002-1887-0157"
       },
       "bsc:input": {
-        "@id": "_:N920fe49a0755482381180515c7aaa83f"
+        "@id": "_:N8ba106bf634d4d95bde68edd309c1293"
       },
       "bsc:output": {
-        "@id": "_:Nb5180133bdbf4ab88378621ca2efcf8f"
+        "@id": "_:N5c1e07ae10a34b5b9d4aa691adb3abc5"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Web API"
@@ -67,11 +59,11 @@
         "@id": "https://orcid.org/0000-0002-1887-0157"
       },
       "sc:citation": [
+        "pubmed:40146375",
+        "pmcid:PMC12187622",
         {
           "@id": "https://doi.org/10.1186/s13244-025-01938-2"
-        },
-        "pubmed:40146375",
-        "pmcid:PMC12187622"
+        }
       ],
       "sc:contributor": {
         "@id": "https://orcid.org/0000-0003-3298-2072"
@@ -91,7 +83,7 @@
       "sc:url": "https://harbor.eucaim.cancerimage.eu/harbor/projects/4/repositories/champ-autoproseq"
     },
     {
-      "@id": "_:N920fe49a0755482381180515c7aaa83f",
+      "@id": "_:N8ba106bf634d4d95bde68edd309c1293",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3424"
@@ -102,7 +94,7 @@
       "sc:name": "Raw image"
     },
     {
-      "@id": "_:Nb5180133bdbf4ab88378621ca2efcf8f",
+      "@id": "_:N5c1e07ae10a34b5b9d4aa691adb3abc5",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0968"
@@ -111,6 +103,14 @@
         "@id": "edam:format_3752"
       },
       "sc:name": "Keyword"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-1887-0157",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-3298-2072",
+      "@type": "sc:Person"
     },
     {
       "@id": "https://doi.org/10.1186/s13244-025-01938-2",

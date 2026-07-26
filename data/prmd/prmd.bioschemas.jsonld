@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,21 +36,25 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/gkad851",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/prmd",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N0c22d6d425ae4883b66b8517177c86e2"
+          "@id": "_:Nd17acbb86329402e88744293d709d653"
         },
         {
-          "@id": "_:N429148145b1c400ab2a87fc6efe99a26"
+          "@id": "_:Nf4d4ac35b0c14474a7cbede78d28429d"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Database portal",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0749"
+          "@id": "edam:topic_3810"
         },
         {
           "@id": "edam:topic_0634"
@@ -59,10 +63,10 @@
           "@id": "edam:topic_0780"
         },
         {
-          "@id": "edam:topic_3810"
+          "@id": "edam:topic_0099"
         },
         {
-          "@id": "edam:topic_0099"
+          "@id": "edam:topic_0749"
         }
       ],
       "sc:citation": [
@@ -89,22 +93,14 @@
       ],
       "sc:name": "PRMD",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:url": "http://bioinformatics.sc.cn/PRMD"
     },
     {
-      "@id": "_:N0c22d6d425ae4883b66b8517177c86e2",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1026"
-      },
-      "sc:name": "Gene symbol"
-    },
-    {
-      "@id": "_:N429148145b1c400ab2a87fc6efe99a26",
+      "@id": "_:Nd17acbb86329402e88744293d709d653",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2610"
@@ -112,8 +108,12 @@
       "sc:name": "Ensembl ID"
     },
     {
-      "@id": "https://doi.org/10.1093/nar/gkad851",
-      "@type": "sc:CreativeWork"
+      "@id": "_:Nf4d4ac35b0c14474a7cbede78d28429d",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1026"
+      },
+      "sc:name": "Gene symbol"
     }
   ]
 }

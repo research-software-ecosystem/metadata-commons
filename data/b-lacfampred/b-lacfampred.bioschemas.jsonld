@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -44,76 +44,65 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Nd3d361a1be4744fc8c54af2492efe1f2"
+          "@id": "_:Nde5b7ed5810b4e96ba3df83ff73d15f6"
         },
         {
-          "@id": "_:N28de5e70c8a34957a42e2ad412bd2761"
+          "@id": "_:N210f1d4b89ae4bd08a02f8be944a9542"
         }
       ],
       "bsc:output": {
-        "@id": "_:Nedd454b2bdaa4bffb0181f1e4ddc5f61"
+        "@id": "_:N231a1cf938694557913a30c0fae25a3e"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
           "@id": "edam:topic_3810"
         },
         {
-          "@id": "edam:topic_0160"
+          "@id": "edam:topic_0821"
+        },
+        {
+          "@id": "edam:topic_0623"
         },
         {
           "@id": "edam:topic_0121"
         },
         {
-          "@id": "edam:topic_0821"
-        },
-        {
-          "@id": "edam:topic_0623"
+          "@id": "edam:topic_0160"
         }
       ],
       "sc:citation": [
+        "pubmed:36713195",
+        "pmcid:PMC9878453",
         {
           "@id": "https://doi.org/10.3389/fmicb.2022.1039687"
-        },
-        "pubmed:36713195",
-        "pmcid:PMC9878453"
+        }
       ],
       "sc:description": "An online tool for prediction and classification of β-lactamase class, subclass, and family.",
       "sc:featureList": [
+        {
+          "@id": "edam:operation_3482"
+        },
         {
           "@id": "edam:operation_2422"
         },
         {
           "@id": "edam:operation_3092"
-        },
-        {
-          "@id": "edam:operation_3482"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "GPL-3.0",
       "sc:name": "B-LacFamPred",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:url": "http://proteininformatics.org/mkumar/blacfampred"
     },
     {
-      "@id": "_:Nd3d361a1be4744fc8c54af2492efe1f2",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2976"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1929"
-      },
-      "sc:name": "Protein sequence"
-    },
-    {
-      "@id": "_:N28de5e70c8a34957a42e2ad412bd2761",
+      "@id": "_:Nde5b7ed5810b4e96ba3df83ff73d15f6",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2977"
@@ -124,7 +113,18 @@
       "sc:name": "Nucleic acid sequence"
     },
     {
-      "@id": "_:Nedd454b2bdaa4bffb0181f1e4ddc5f61",
+      "@id": "_:N210f1d4b89ae4bd08a02f8be944a9542",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2976"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "Protein sequence"
+    },
+    {
+      "@id": "_:N231a1cf938694557913a30c0fae25a3e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0865"

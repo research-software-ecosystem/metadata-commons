@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,12 +39,12 @@
       "@id": "https://bio.tools/n50",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N9eb8e92a01c640a88f879575ef8fbe59"
+        "@id": "_:N026c6118a83a427a924b039bca37cb0a"
       },
       "bsc:output": {
-        "@id": "_:Nb2f60708538f4502853c664173d36e39"
+        "@id": "_:N73a94d5e565840439c2ed7d5418ecb7d"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:description": "A script to calculate N50 from one or multiple FASTA/FASTQ files available via BioConda",
       "sc:featureList": {
         "@id": "edam:operation_2238"
@@ -54,7 +54,23 @@
       "sc:url": "https://metacpan.org/release/Proch-N50"
     },
     {
-      "@id": "_:Nb2f60708538f4502853c664173d36e39",
+      "@id": "_:N026c6118a83a427a924b039bca37cb0a",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3494"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_2546"
+        },
+        {
+          "@id": "edam:format_2545"
+        }
+      ],
+      "sc:name": "DNA sequence"
+    },
+    {
+      "@id": "_:N73a94d5e565840439c2ed7d5418ecb7d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3914"
@@ -71,22 +87,6 @@
         }
       ],
       "sc:name": "Quality control report"
-    },
-    {
-      "@id": "_:N9eb8e92a01c640a88f879575ef8fbe59",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3494"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2546"
-        },
-        {
-          "@id": "edam:format_2545"
-        }
-      ],
-      "sc:name": "DNA sequence"
     }
   ]
 }

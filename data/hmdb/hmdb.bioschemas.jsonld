@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -41,38 +41,38 @@
       "biotools:primaryContact": "Contact Form",
       "bsc:input": [
         {
-          "@id": "_:Ne2a7558972f34221b81b3c0200e5aef8"
+          "@id": "_:N98a89515b209464ca4037debf99a9f00"
         },
         {
-          "@id": "_:N055fe494921b4869b425c9c77c20deb1"
+          "@id": "_:N2657e434ead44036abcea86af7c28a13"
         },
         {
-          "@id": "_:Ncd79eef89f9f4bd0b1f4bc2a51ea1e89"
+          "@id": "_:Naf3f73de9096494787d18ee27e7b7a60"
         },
         {
-          "@id": "_:Na4b98b01f9fc4081a401c25f34c9840e"
+          "@id": "_:Nd3064f0b51c440a59f326d892273a17a"
         }
       ],
       "bsc:output": {
-        "@id": "_:N46ab609169e04534b78ec82d195ce19d"
+        "@id": "_:Na5fb3a5a59f8471b83bcd3aee2dfe14c"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Database portal",
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_0621"
-        },
         {
           "@id": "edam:topic_3172"
         },
         {
-          "@id": "edam:topic_3421"
+          "@id": "edam:topic_0621"
         },
         {
           "@id": "edam:topic_0593"
         },
         {
           "@id": "edam:topic_0154"
+        },
+        {
+          "@id": "edam:topic_3421"
         }
       ],
       "sc:citation": [
@@ -86,13 +86,13 @@
           "@id": "edam:operation_3431"
         },
         {
-          "@id": "edam:operation_0360"
+          "@id": "edam:operation_2421"
         },
         {
           "@id": "edam:operation_0224"
         },
         {
-          "@id": "edam:operation_2421"
+          "@id": "edam:operation_0360"
         },
         {
           "@id": "edam:operation_0339"
@@ -101,22 +101,22 @@
       "sc:isAccessibleForFree": true,
       "sc:name": "HMDB",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": [
         {
-          "@id": "http://www.hmdb.ca/help"
+          "@id": "https://hmdb.ca/simple/api"
         },
         {
-          "@id": "https://hmdb.ca/simple/api"
+          "@id": "http://www.hmdb.ca/help"
         }
       ],
       "sc:url": "http://www.hmdb.ca/"
     },
     {
-      "@id": "_:Ne2a7558972f34221b81b3c0200e5aef8",
+      "@id": "_:N98a89515b209464ca4037debf99a9f00",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2050"
@@ -127,7 +127,29 @@
       "sc:name": "Molecular property (general)"
     },
     {
-      "@id": "_:N055fe494921b4869b425c9c77c20deb1",
+      "@id": "_:N2657e434ead44036abcea86af7c28a13",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0982"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Molecule identifier"
+    },
+    {
+      "@id": "_:Naf3f73de9096494787d18ee27e7b7a60",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0982"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Molecule identifier"
+    },
+    {
+      "@id": "_:Nd3064f0b51c440a59f326d892273a17a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3035"
@@ -138,29 +160,7 @@
       "sc:name": "Structure identifier"
     },
     {
-      "@id": "_:Ncd79eef89f9f4bd0b1f4bc2a51ea1e89",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0982"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Molecule identifier"
-    },
-    {
-      "@id": "_:Na4b98b01f9fc4081a401c25f34c9840e",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0982"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Molecule identifier"
-    },
-    {
-      "@id": "_:N46ab609169e04534b78ec82d195ce19d",
+      "@id": "_:Na5fb3a5a59f8471b83bcd3aee2dfe14c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0982"

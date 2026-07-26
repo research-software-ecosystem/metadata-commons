@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,50 +36,46 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1186/1471-2105-9-273",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/amypdb",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N35bdaea1ef604c589955d7d6fd9d1048"
+          "@id": "_:N618dc48cd6c440bfb84a4e4ea420302e"
         },
         {
-          "@id": "_:N7d5f73b0a32e42a89b57b2fc27243c36"
+          "@id": "_:Nd3abff6ca81d4919958fe11b56628238"
         }
       ],
       "bsc:output": {
-        "@id": "_:N017232ea503e425bb0731aa07be215da"
+        "@id": "_:Ne703726b800345dcbfd146727358ee96"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Database portal",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0123"
       },
       "sc:citation": [
+        "pubmed:18544157",
         "pmcid:PMC2442844",
         {
           "@id": "https://doi.org/10.1186/1471-2105-9-273"
-        },
-        "pubmed:18544157"
+        }
       ],
       "sc:description": "An online database dedicated to amyloid precursor families and to their amino acid sequence signatures.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0224"
+          "@id": "edam:operation_2423"
         },
         {
-          "@id": "edam:operation_2423"
+          "@id": "edam:operation_0224"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:name": "AMYPdb",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://amypdb.genouest.org/e107_plugins/amypdb_project/help.php"
@@ -87,18 +83,7 @@
       "sc:url": "http://amypdb.genouest.org"
     },
     {
-      "@id": "_:N35bdaea1ef604c589955d7d6fd9d1048",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1093"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Sequence accession"
-    },
-    {
-      "@id": "_:N7d5f73b0a32e42a89b57b2fc27243c36",
+      "@id": "_:N618dc48cd6c440bfb84a4e4ea420302e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2976"
@@ -109,7 +94,18 @@
       "sc:name": "Protein sequence"
     },
     {
-      "@id": "_:N017232ea503e425bb0731aa07be215da",
+      "@id": "_:Nd3abff6ca81d4919958fe11b56628238",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1093"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Sequence accession"
+    },
+    {
+      "@id": "_:Ne703726b800345dcbfd146727358ee96",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1233"
@@ -118,6 +114,10 @@
         "@id": "edam:format_1332"
       },
       "sc:name": "Sequence set (protein)"
+    },
+    {
+      "@id": "https://doi.org/10.1186/1471-2105-9-273",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,7 +36,7 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btp394",
+      "@id": "https://doi.org/10.1093/nar/gkw343",
       "@type": "sc:CreativeWork"
     },
     {
@@ -45,29 +45,29 @@
       "biotools:primaryContact": "Galaxy Support Team",
       "bsc:input": [
         {
-          "@id": "_:N79fa734bae994d0da3b0712528e020a5"
+          "@id": "_:N3861e8dc5d1d4b039f6e349205cbd108"
         },
         {
-          "@id": "_:N0f74c160443a435b9bdf1ad4fe72e792"
+          "@id": "_:Nb5c11136351849778b564d263c8c2a45"
         }
       ],
       "bsc:output": {
-        "@id": "_:Nd2f080447bc8411198e5f1effc79acd0"
+        "@id": "_:N6b952a0ee4084f34ac21b8314b571074"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3168"
       },
       "sc:citation": [
         {
+          "@id": "https://doi.org/10.1093/bioinformatics/btp394"
+        },
+        {
           "@id": "https://doi.org/10.1093/nar/gkw343"
         },
         {
           "@id": "https://doi.org/10.7490/f1000research.1114334.1"
-        },
-        {
-          "@id": "https://doi.org/10.1093/bioinformatics/btp394"
         }
       ],
       "sc:description": "Convert Pindel to VCF and index.",
@@ -77,8 +77,8 @@
       "sc:name": "pindel2vcf",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://galaxy.pasteur.fr/root?tool_id=toolshed.pasteur.fr%2Frepos%2Ffmareuil%2Fpindel2vcf%2Fpindel2vcf%2F0.2.5a3"
@@ -87,7 +87,7 @@
       "sc:url": "https://galaxy.pasteur.fr/tool_runner?tool_id=toolshed.pasteur.fr/repos/fmareuil/pindel2vcf/pindel2vcf/0.2.5a3"
     },
     {
-      "@id": "_:N79fa734bae994d0da3b0712528e020a5",
+      "@id": "_:N3861e8dc5d1d4b039f6e349205cbd108",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0006"
@@ -98,7 +98,7 @@
       "sc:name": "Data"
     },
     {
-      "@id": "_:N0f74c160443a435b9bdf1ad4fe72e792",
+      "@id": "_:Nb5c11136351849778b564d263c8c2a45",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0863"
@@ -109,7 +109,7 @@
       "sc:name": "Sequence alignment"
     },
     {
-      "@id": "_:Nd2f080447bc8411198e5f1effc79acd0",
+      "@id": "_:N6b952a0ee4084f34ac21b8314b571074",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3498"
@@ -120,11 +120,11 @@
       "sc:name": "Sequence variations"
     },
     {
-      "@id": "https://doi.org/10.1093/nar/gkw343",
+      "@id": "https://doi.org/10.7490/f1000research.1114334.1",
       "@type": "sc:CreativeWork"
     },
     {
-      "@id": "https://doi.org/10.7490/f1000research.1114334.1",
+      "@id": "https://doi.org/10.1093/bioinformatics/btp394",
       "@type": "sc:CreativeWork"
     }
   ]

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,28 +40,28 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Ne9ffa1b0b2a543b999052577d0710b93"
+          "@id": "_:Nb478ac9f068e47d6a4c7a37ad8ad1006"
         },
         {
-          "@id": "_:N54d409d51a2940988822a8881f1d26f1"
+          "@id": "_:N7a1aef8bdfe541a4846985e43c3e15a6"
         },
         {
-          "@id": "_:Ne817f6e39792481a96b6770ec642cb5b"
+          "@id": "_:Nbbf6f48a7f71406dbb2509127bf296f7"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Nacff3427f4fe41eb89869711362da417"
+          "@id": "_:Nf9e338d1b9c7459990a30f6dda353301"
         },
         {
-          "@id": "_:N015ac5b5da2845da964035fc68678c88"
+          "@id": "_:N0e1982464f5243a59e0b5d7b0e813ff6"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
+        "Command-line tool",
         "Library",
-        "Workflow",
-        "Command-line tool"
+        "Workflow"
       ],
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0091"
@@ -84,23 +84,7 @@
       "sc:url": "https://github.com/sandmanns/clevRvis"
     },
     {
-      "@id": "_:Nacff3427f4fe41eb89869711362da417",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0872"
-      },
-      "sc:name": "Phylogenetic tree"
-    },
-    {
-      "@id": "_:N015ac5b5da2845da964035fc68678c88",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2884"
-      },
-      "sc:name": "Plot"
-    },
-    {
-      "@id": "_:Ne9ffa1b0b2a543b999052577d0710b93",
+      "@id": "_:Nb478ac9f068e47d6a4c7a37ad8ad1006",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2523"
@@ -111,7 +95,18 @@
       "sc:name": "Phylogenetic data"
     },
     {
-      "@id": "_:N54d409d51a2940988822a8881f1d26f1",
+      "@id": "_:N7a1aef8bdfe541a4846985e43c3e15a6",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2523"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3468"
+      },
+      "sc:name": "Phylogenetic data"
+    },
+    {
+      "@id": "_:Nbbf6f48a7f71406dbb2509127bf296f7",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2523"
@@ -122,15 +117,20 @@
       "sc:name": "Phylogenetic data"
     },
     {
-      "@id": "_:Ne817f6e39792481a96b6770ec642cb5b",
+      "@id": "_:Nf9e338d1b9c7459990a30f6dda353301",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2523"
+        "@id": "edam:data_0872"
       },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3468"
+      "sc:name": "Phylogenetic tree"
+    },
+    {
+      "@id": "_:N0e1982464f5243a59e0b5d7b0e813ff6",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2884"
       },
-      "sc:name": "Phylogenetic data"
+      "sc:name": "Plot"
     }
   ]
 }

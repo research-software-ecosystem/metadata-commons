@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,16 +40,16 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N8b45ff7ac1784760ba403f788f5b48c8"
+          "@id": "_:Nac09a528c29a4a7aa0333428e746b1a0"
         },
         {
-          "@id": "_:Nc26715ea750f4d399316e499c727b761"
+          "@id": "_:N72e3589b94f0459caf1d45b1b1d47f62"
         }
       ],
       "bsc:output": {
-        "@id": "_:Need3b763d080412eb05463feea9f3862"
+        "@id": "_:N4c5d7defa3ef46f2b52d6723c786d2de"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Suite",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0780"
@@ -66,18 +66,7 @@
       "sc:url": "https://github.com/PGSB-HMGU/plant.annot"
     },
     {
-      "@id": "_:N8b45ff7ac1784760ba403f788f5b48c8",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2603"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1930"
-      },
-      "sc:name": "Expression data"
-    },
-    {
-      "@id": "_:Nc26715ea750f4d399316e499c727b761",
+      "@id": "_:Nac09a528c29a4a7aa0333428e746b1a0",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3494"
@@ -88,7 +77,18 @@
       "sc:name": "DNA sequence"
     },
     {
-      "@id": "_:Need3b763d080412eb05463feea9f3862",
+      "@id": "_:N72e3589b94f0459caf1d45b1b1d47f62",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2603"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1930"
+      },
+      "sc:name": "Expression data"
+    },
+    {
+      "@id": "_:N4c5d7defa3ef46f2b52d6723c786d2de",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1270"

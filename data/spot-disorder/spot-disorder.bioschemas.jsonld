@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,20 +36,24 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/btw678",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/spot-disorder",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Nbbcaae08a8dd44deb2b38a45eea34c23"
+          "@id": "_:Na84567a78168497fb6153c1528bc7716"
         },
         {
-          "@id": "_:N9d753a4729de4dc3a1f7936ec92872e9"
+          "@id": "_:N8cd6fe6879eb47eca1ef4a7160111b78"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web application",
-        "Command-line tool"
+        "Command-line tool",
+        "Web application"
       ],
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3538"
@@ -74,7 +78,7 @@
       "sc:url": "http://sparks-lab.org/server/spot-disorder/"
     },
     {
-      "@id": "_:Nbbcaae08a8dd44deb2b38a45eea34c23",
+      "@id": "_:Na84567a78168497fb6153c1528bc7716",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1277"
@@ -82,7 +86,7 @@
       "sc:name": "Protein features"
     },
     {
-      "@id": "_:N9d753a4729de4dc3a1f7936ec92872e9",
+      "@id": "_:N8cd6fe6879eb47eca1ef4a7160111b78",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2976"
@@ -91,10 +95,6 @@
         "@id": "edam:format_1929"
       },
       "sc:name": "Protein sequence"
-    },
-    {
-      "@id": "https://doi.org/10.1093/bioinformatics/btw678",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

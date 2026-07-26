@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -44,22 +44,22 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Aly Azeem Khan",
       "bsc:input": {
-        "@id": "_:N8a292e2ab636453eb934c81b42ab8d21"
+        "@id": "_:N0c7b86ad190f42d1b7296497828e624e"
       },
       "bsc:output": {
-        "@id": "_:N6c0cf23c670944e69a1d330d9431e48f"
+        "@id": "_:N3500a5676cba4b4fb859973d12893e1d"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_0196"
-        },
         {
           "@id": "edam:topic_2830"
         },
         {
           "@id": "edam:topic_3170"
+        },
+        {
+          "@id": "edam:topic_0196"
         }
       ],
       "sc:citation": {
@@ -73,8 +73,8 @@
       "sc:license": "MIT",
       "sc:name": "BASIC",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -83,18 +83,7 @@
       "sc:url": "http://ttic.uchicago.edu/~aakhan/BASIC/"
     },
     {
-      "@id": "_:N6c0cf23c670944e69a1d330d9431e48f",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2044"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Sequence"
-    },
-    {
-      "@id": "_:N8a292e2ab636453eb934c81b42ab8d21",
+      "@id": "_:N0c7b86ad190f42d1b7296497828e624e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3495"
@@ -103,6 +92,17 @@
         "@id": "edam:format_1929"
       },
       "sc:name": "RNA sequence"
+    },
+    {
+      "@id": "_:N3500a5676cba4b4fb859973d12893e1d",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2044"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Sequence"
     }
   ]
 }

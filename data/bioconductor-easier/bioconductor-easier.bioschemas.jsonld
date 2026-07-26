@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,23 +36,19 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1016/j.patter.2021.100293",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/bioconductor-easier",
       "@type": "sc:SoftwareApplication",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
       ],
       "sc:author": [
+        "Arsenij Ustjanzew",
         "Federica Eduati",
-        "Francesca Finotello",
         "Federico Marini",
-        "Oscar Lapuente-Santana",
-        "Arsenij Ustjanzew"
+        "Francesca Finotello",
+        "Oscar Lapuente-Santana"
       ],
       "sc:citation": {
         "@id": "https://doi.org/10.1016/j.patter.2021.100293"
@@ -61,15 +57,19 @@
       "sc:license": "MIT",
       "sc:name": "easier",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://bioconductor.org/packages/easier"
       },
       "sc:softwareVersion": "1.18.0",
       "sc:url": "https://bioconductor.org/packages/easier"
+    },
+    {
+      "@id": "https://doi.org/10.1016/j.patter.2021.100293",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,34 +36,34 @@
   },
   "@id": "https://bio.tools/survcomp",
   "@type": "sc:SoftwareApplication",
-  "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+  "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
   "sc:additionalType": [
     "Command-line tool",
     "Library"
   ],
   "sc:applicationSubCategory": [
     {
-      "@id": "edam:topic_0634"
-    },
-    {
-      "@id": "edam:topic_2269"
+      "@id": "edam:topic_3303"
     },
     {
       "@id": "edam:topic_3518"
     },
     {
-      "@id": "edam:topic_3303"
+      "@id": "edam:topic_0634"
+    },
+    {
+      "@id": "edam:topic_2269"
     }
   ],
   "sc:author": [
+    "Benjamin Haibe-Kains",
     "Catharina Olsen",
-    "Samuel Branders",
+    "Christos Sotiriou",
     "Gianluca Bontempi",
     "John Quackenbush",
-    "Zhaleh Safikhani",
-    "Benjamin Haibe-Kains",
     "Markus Schroeder",
-    "Christos Sotiriou"
+    "Samuel Branders",
+    "Zhaleh Safikhani"
   ],
   "sc:description": "Assessment and Comparison for Performance of Risk Prediction (Survival) Models.",
   "sc:featureList": {
@@ -72,8 +72,8 @@
   "sc:license": "Artistic-2.0",
   "sc:name": "survcomp",
   "sc:operatingSystem": [
-    "Mac",
     "Linux",
+    "Mac",
     "Windows"
   ],
   "sc:softwareHelp": {

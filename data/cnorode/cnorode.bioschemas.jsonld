@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,39 +39,39 @@
       "@id": "https://bio.tools/cnorode",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nec6a560a4c0342639ab24b2a47f1acfd"
+        "@id": "_:Ne58a8295920f41fa8f637467fe9a344b"
       },
       "bsc:output": {
-        "@id": "_:N7fbda94dcd094ac4b806750bcfc7135e"
+        "@id": "_:N3ea1f03bef6144df82c6d8be640e2fe3"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_2259"
+          "@id": "edam:topic_0602"
         },
         {
-          "@id": "edam:topic_0602"
+          "@id": "edam:topic_2259"
         }
       ],
       "sc:description": "Logic based ordinary differential equation (ODE) add-on to CellNOptR.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_2425"
+          "@id": "edam:operation_2426"
         },
         {
-          "@id": "edam:operation_2426"
+          "@id": "edam:operation_2425"
         }
       ],
       "sc:license": "GPL-2.0-only",
       "sc:name": "CNORode",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://bioconductor.org/packages/CNORode"
@@ -80,29 +80,7 @@
       "sc:url": "https://bioconductor.org/packages/CNORode"
     },
     {
-      "@id": "_:N7fbda94dcd094ac4b806750bcfc7135e",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2984"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2331"
-        },
-        {
-          "@id": "edam:format_3617"
-        },
-        {
-          "@id": "edam:format_3619"
-        },
-        {
-          "@id": "edam:format_3508"
-        }
-      ],
-      "sc:name": "Pathway or network report"
-    },
-    {
-      "@id": "_:Nec6a560a4c0342639ab24b2a47f1acfd",
+      "@id": "_:Ne58a8295920f41fa8f637467fe9a344b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2600"
@@ -119,6 +97,28 @@
         }
       ],
       "sc:name": "Pathway or network"
+    },
+    {
+      "@id": "_:N3ea1f03bef6144df82c6d8be640e2fe3",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2984"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3617"
+        },
+        {
+          "@id": "edam:format_2331"
+        },
+        {
+          "@id": "edam:format_3508"
+        },
+        {
+          "@id": "edam:format_3619"
+        }
+      ],
+      "sc:name": "Pathway or network report"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,16 +36,12 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btu780",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/ghostz",
       "@type": "sc:SoftwareApplication",
       "bsc:output": {
-        "@id": "_:N9203b3bb4ebd4d169ffb4ed9bed3db4a"
+        "@id": "_:Nf21d7ab1ec27415bbef9abb4608d4900"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
@@ -72,8 +68,8 @@
       "sc:name": "GHOSTZ",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://www.bi.cs.titech.ac.jp/ghostz/"
@@ -81,12 +77,16 @@
       "sc:url": "http://www.bi.cs.titech.ac.jp/ghostz/"
     },
     {
-      "@id": "_:N9203b3bb4ebd4d169ffb4ed9bed3db4a",
+      "@id": "_:Nf21d7ab1ec27415bbef9abb4608d4900",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0857"
       },
       "sc:name": "Sequence search results"
+    },
+    {
+      "@id": "https://doi.org/10.1093/bioinformatics/btu780",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

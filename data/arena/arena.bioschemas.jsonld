@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,19 +39,19 @@
       "@id": "https://bio.tools/arena",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nc59144cfbce54f6fa80b3d3aecf359e7"
+        "@id": "_:N4a9ddbe9bbdc4fb19cba3f13610fdfed"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_0082"
-        },
         {
           "@id": "edam:topic_0097"
         },
         {
           "@id": "edam:topic_0099"
+        },
+        {
+          "@id": "edam:topic_0082"
         }
       ],
       "sc:citation": [
@@ -63,27 +63,27 @@
       "sc:description": "Arena is a stand-alone program used for the full-atomic reconstruction of RNA structures from coarse-grained models.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0295"
-        },
-        {
           "@id": "edam:operation_0321"
         },
         {
           "@id": "edam:operation_2441"
+        },
+        {
+          "@id": "edam:operation_0295"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "CC-BY-4.0",
       "sc:name": "Arena",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:url": "https://zhanggroup.org/Arena/"
     },
     {
-      "@id": "_:Nc59144cfbce54f6fa80b3d3aecf359e7",
+      "@id": "_:N4a9ddbe9bbdc4fb19cba3f13610fdfed",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1465"

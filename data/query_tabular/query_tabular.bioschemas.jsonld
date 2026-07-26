@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -43,42 +43,42 @@
       "@id": "https://bio.tools/Query_Tabular",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N0022b7f72c56417dbc1f4829752e4a54"
+        "@id": "_:N1a4248af7f5942818ead4b7ec6f024d3"
       },
       "bsc:output": {
-        "@id": "_:N65b5ee1359ea4c4491e0a164de2a2d36"
+        "@id": "_:Nb6e9d23adf2a4378b1461edab5660e5a"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0769"
+          "@id": "edam:topic_0091"
         },
         {
-          "@id": "edam:topic_0091"
+          "@id": "edam:topic_0769"
         }
       ],
       "sc:author": "James E. Johnson",
       "sc:citation": [
+        "pubmed:30519459",
+        "pmcid:PMC6248266",
         {
           "@id": "https://doi.org/10.12688/f1000research.16450.2"
-        },
-        "pubmed:30519459",
-        "pmcid:PMC6248266"
+        }
       ],
       "sc:description": "Query Tabular is a Galaxy-based tool which manipulates tabular files.  Query Tabular automatically creates a SQLite database directly from a tabular file within a Galaxy workflow.  The SQLite database can be saved to the Galaxy history, and further process to generate tabular outputs containing desired information and formatting.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0224"
+          "@id": "edam:operation_2409"
         },
         {
           "@id": "edam:operation_3695"
         },
         {
-          "@id": "edam:operation_2409"
+          "@id": "edam:operation_1812"
         },
         {
-          "@id": "edam:operation_1812"
+          "@id": "edam:operation_0224"
         }
       ],
       "sc:license": "CC-BY-4.0",
@@ -86,7 +86,7 @@
       "sc:url": "https://github.com/galaxyproject/tools-iuc/tree/master/tools/query_tabular"
     },
     {
-      "@id": "_:N0022b7f72c56417dbc1f4829752e4a54",
+      "@id": "_:N1a4248af7f5942818ead4b7ec6f024d3",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3671"
@@ -97,7 +97,7 @@
       "sc:name": "Text"
     },
     {
-      "@id": "_:N65b5ee1359ea4c4491e0a164de2a2d36",
+      "@id": "_:Nb6e9d23adf2a4378b1461edab5660e5a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3671"

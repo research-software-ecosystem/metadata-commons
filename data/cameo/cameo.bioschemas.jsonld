@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,10 +36,6 @@
   },
   "@graph": [
     {
-      "@id": "https://orcid.org/0000-0003-2715-335X",
-      "@type": "sc:Person"
-    },
-    {
       "@id": "https://doi.org/10.1093/database/bat031",
       "@type": "sc:CreativeWork"
     },
@@ -48,43 +44,51 @@
       "@type": "sc:CreativeWork"
     },
     {
+      "@id": "https://doi.org/10.1002/prot.25431",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-2715-335X",
+      "@type": "sc:Person"
+    },
+    {
       "@id": "https://bio.tools/cameo",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "https://orcid.org/0000-0003-2715-335X"
       },
       "bsc:input": {
-        "@id": "_:N7739e24b5a8e4ee7b82774d20dc7f411"
+        "@id": "_:Nea2c882bd33b43a3b73a1f5ab142fd4a"
       },
       "bsc:output": {
-        "@id": "_:N7765ea5f85af4fc5941644bfbd4ec08e"
+        "@id": "_:N5741465bbf784b7fbe31ab042cdc9288"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0081"
+          "@id": "edam:topic_0078"
         },
         {
-          "@id": "edam:topic_0078"
+          "@id": "edam:topic_0081"
         }
       ],
       "sc:citation": [
-        {
-          "@id": "https://doi.org/10.1002/prot.25815"
-        },
-        "pmcid:PMC8196401",
-        "pmcid:PMC3889916",
         "pubmed:29178137",
+        "pmcid:PMC5820194",
         {
           "@id": "https://doi.org/10.1002/prot.25431"
         },
-        "pmcid:PMC5820194",
+        "pubmed:31571280",
+        "pmcid:PMC8196401",
         {
-          "@id": "https://doi.org/10.1093/database/bat031"
+          "@id": "https://doi.org/10.1002/prot.25815"
         },
         "pubmed:23624946",
-        "pubmed:31571280"
+        "pmcid:PMC3889916",
+        {
+          "@id": "https://doi.org/10.1093/database/bat031"
+        }
       ],
       "sc:description": "Continuously evaluates the accuracy and reliability of protein structure prediction methods in a fully automated manner. CAMEO currently assesses predictions in two categories (3D protein structure modeling and protein structure model quality predictions). The project is open to everyone and has been used by several method developer groups to benchmark and monitor their servers and new developments.",
       "sc:featureList": {
@@ -92,9 +96,9 @@
       },
       "sc:name": "CAMEO",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": "SIB Swiss Institute of Bioinformatics",
       "sc:softwareHelp": {
@@ -103,18 +107,7 @@
       "sc:url": "https://cameo3d.org/"
     },
     {
-      "@id": "_:N7765ea5f85af4fc5941644bfbd4ec08e",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1539"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1999"
-      },
-      "sc:name": "Protein structural quality report"
-    },
-    {
-      "@id": "_:N7739e24b5a8e4ee7b82774d20dc7f411",
+      "@id": "_:Nea2c882bd33b43a3b73a1f5ab142fd4a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1460"
@@ -125,8 +118,15 @@
       "sc:name": "Protein structure"
     },
     {
-      "@id": "https://doi.org/10.1002/prot.25431",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N5741465bbf784b7fbe31ab042cdc9288",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1539"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1999"
+      },
+      "sc:name": "Protein structural quality report"
     }
   ]
 }

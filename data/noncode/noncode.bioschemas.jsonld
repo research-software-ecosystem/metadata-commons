@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -43,9 +43,12 @@
       "@id": "https://bio.tools/noncode",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Runsheng Chen",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Database portal",
       "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_0654"
+        },
         {
           "@id": "edam:topic_0659"
         },
@@ -54,9 +57,6 @@
         },
         {
           "@id": "edam:topic_0099"
-        },
-        {
-          "@id": "edam:topic_0654"
         }
       ],
       "sc:citation": [
@@ -69,22 +69,22 @@
       "sc:description": "Database of all kinds of noncoding RNAs (except tRNAs and rRNAs). It also provides an efficient search option, allowing recovery of sequence, related publications and other information.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_2421"
-        },
-        {
           "@id": "edam:operation_2422"
         },
         {
-          "@id": "edam:operation_3092"
+          "@id": "edam:operation_2421"
         },
         {
           "@id": "edam:operation_0314"
+        },
+        {
+          "@id": "edam:operation_3092"
         }
       ],
       "sc:name": "NONCODE",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {

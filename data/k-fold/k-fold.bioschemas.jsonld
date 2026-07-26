@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,27 +36,31 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/btl610",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/k-fold",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
-        "Emidio Capriotti",
-        "Rita Casadio"
+        "Rita Casadio",
+        "Emidio Capriotti"
       ],
       "bsc:input": [
         {
-          "@id": "_:N9da3328e32374662a30e728486feb98c"
+          "@id": "_:Nee78a8f9ddd34de4b72f6db81647502b"
         },
         {
-          "@id": "_:N630ec6f8ff0645028709802531a6cf4e"
+          "@id": "_:N1d4fa4ad431c4cafa390d7b4a33801fe"
         },
         {
-          "@id": "_:Nd280d3b2974e42beaa5414c399ccaf89"
+          "@id": "_:N844473a1a57d4c51b5f8d2656e664097"
         }
       ],
       "bsc:output": {
-        "@id": "_:N7507c99c8eff431683135f6e3c2f6beb"
+        "@id": "_:Nd91e875860b646d5b844d3030dbd6922"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0130"
@@ -73,9 +77,9 @@
       },
       "sc:name": "K-Fold",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": "ELIXIR-ITA-BOLOGNA",
       "sc:softwareHelp": {
@@ -85,18 +89,23 @@
       "sc:url": "http://folding.biofold.org/k-fold/"
     },
     {
-      "@id": "_:N7507c99c8eff431683135f6e3c2f6beb",
+      "@id": "_:Nee78a8f9ddd34de4b72f6db81647502b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_0951"
+        "@id": "edam:data_1127"
       },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Statistical estimate score"
+      "sc:name": "PDB ID"
     },
     {
-      "@id": "_:N9da3328e32374662a30e728486feb98c",
+      "@id": "_:N1d4fa4ad431c4cafa390d7b4a33801fe",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1008"
+      },
+      "sc:name": "Polypeptide chain ID"
+    },
+    {
+      "@id": "_:N844473a1a57d4c51b5f8d2656e664097",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1460"
@@ -107,24 +116,15 @@
       "sc:name": "Protein structure"
     },
     {
-      "@id": "_:N630ec6f8ff0645028709802531a6cf4e",
+      "@id": "_:Nd91e875860b646d5b844d3030dbd6922",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_1008"
+        "@id": "edam:data_0951"
       },
-      "sc:name": "Polypeptide chain ID"
-    },
-    {
-      "@id": "_:Nd280d3b2974e42beaa5414c399ccaf89",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1127"
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
       },
-      "sc:name": "PDB ID"
-    },
-    {
-      "@id": "https://doi.org/10.1093/bioinformatics/btl610",
-      "@type": "sc:CreativeWork"
+      "sc:name": "Statistical estimate score"
     }
   ]
 }

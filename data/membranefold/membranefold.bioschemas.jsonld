@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,26 +39,26 @@
       "@id": "https://bio.tools/membranefold",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N507d1ebb4ad74c61812d8b78655de7ba"
+        "@id": "_:N27235757461e4a00b4571ced8432885f"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Script",
         "Command-line tool",
+        "Script",
         "Web application"
       ],
       "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_2814"
-        },
-        {
-          "@id": "edam:topic_0082"
-        },
         {
           "@id": "edam:topic_3070"
         },
         {
           "@id": "edam:topic_0820"
+        },
+        {
+          "@id": "edam:topic_2814"
+        },
+        {
+          "@id": "edam:topic_0082"
         }
       ],
       "sc:citation": {
@@ -70,34 +70,34 @@
           "@id": "edam:operation_0474"
         },
         {
-          "@id": "edam:operation_2241"
+          "@id": "edam:operation_0269"
         },
         {
-          "@id": "edam:operation_0269"
+          "@id": "edam:operation_2241"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "Other",
       "sc:name": "MembraneFold",
       "sc:operatingSystem": [
-        "Windows",
         "Linux",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:url": "https://ku.biolib.com/MembraneFold/"
     },
     {
-      "@id": "_:N507d1ebb4ad74c61812d8b78655de7ba",
+      "@id": "_:N27235757461e4a00b4571ced8432885f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_1476"
+          "@id": "edam:format_1929"
         },
         {
-          "@id": "edam:format_1929"
+          "@id": "edam:format_1476"
         }
       ],
       "sc:name": "Sequence"

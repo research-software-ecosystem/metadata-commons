@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,22 +39,22 @@
       "@id": "https://bio.tools/thaf",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N30f2149e94db4e2688340770b2239ddb"
+        "@id": "_:N1a2e99b115c7458a9e923c05c4e58809"
       },
       "bsc:output": {
-        "@id": "_:N20675592b1fe4537b32352ab5a1d39fe"
+        "@id": "_:N3bc298df0d8f4cc7ab04618eec3a4fba"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3308"
+          "@id": "edam:topic_0091"
         },
         {
           "@id": "edam:topic_3170"
         },
         {
-          "@id": "edam:topic_0091"
+          "@id": "edam:topic_3308"
         }
       ],
       "sc:description": "thaf is a command-line tool to extract transcript sequences from a genome FASTA file based on GFF3 annotation files. It can also generate transcript-to-gene mapping files compatible with tools such as Salmon.",
@@ -65,9 +65,9 @@
       "sc:license": "BSD-3-Clause",
       "sc:name": "thaf",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://crates.io/crates/thaf"
@@ -76,7 +76,7 @@
       "sc:url": "https://crates.io/crates/thaf"
     },
     {
-      "@id": "_:N30f2149e94db4e2688340770b2239ddb",
+      "@id": "_:N1a2e99b115c7458a9e923c05c4e58809",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3494"
@@ -84,7 +84,7 @@
       "sc:name": "DNA sequence"
     },
     {
-      "@id": "_:N20675592b1fe4537b32352ab5a1d39fe",
+      "@id": "_:N3bc298df0d8f4cc7ab04618eec3a4fba",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1234"

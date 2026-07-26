@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,37 +36,33 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.18129/B9.bioc.mapscape",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/mapscape",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N6ac2b70ab2ce40c892e6bfa0378d0318"
+          "@id": "_:Ncc85c3e43b1e461182e21f224a8664cf"
         },
         {
-          "@id": "_:Naefd04b32a8048958d7d53f1010ff6e4"
+          "@id": "_:Nf022c452dfb74d5d92262efda3d20d12"
         },
         {
-          "@id": "_:N60da5fbaf3954d9ba6a66790b004edd0"
+          "@id": "_:N653ffd64bc1e4487b95cc08a9f4ce1dd"
         },
         {
-          "@id": "_:N546d3b35d1be477686347b1b783a1764"
+          "@id": "_:Nb5babc0d8aa44829adcec6387d38e4ed"
         }
       ],
       "bsc:output": {
-        "@id": "_:N0868cbfa3b594aa9a1e4dbcef9b06074"
+        "@id": "_:Ndd8f07c0bb5d4032acfc8e822df4ec7c"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Plug-in",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0092"
+          "@id": "edam:topic_2229"
         },
         {
-          "@id": "edam:topic_2229"
+          "@id": "edam:topic_0092"
         },
         {
           "@id": "edam:topic_2640"
@@ -79,22 +75,22 @@
       "sc:description": "MapScape integrates clonal prevalence, clonal hierarchy, anatomic and mutational information to provide interactive visualization of spatial clonal evolution. There are four inputs to MapScape: (i) the clonal phylogeny, (ii) clonal prevalences, (iii) an image reference, which may be a medical image or drawing and (iv) pixel locations for each sample on the referenced image. Optionally, MapScape can accept a data table of mutations for each clone and their variant allele frequencies in each sample. The output of MapScape consists of a cropped anatomical image surrounded by two representations of each tumour sample. The first, a cellular aggregate, visually displays the prevalence of each clone. The second shows a skeleton of the clonal phylogeny while highlighting only those clones present in the sample. Together, these representations enable the analyst to visualize the distribution of clones throughout anatomic space.",
       "sc:featureList": [
         {
+          "@id": "edam:operation_2426"
+        },
+        {
           "@id": "edam:operation_2497"
         },
         {
           "@id": "edam:operation_3083"
-        },
-        {
-          "@id": "edam:operation_2426"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "GPL-3.0-only",
       "sc:name": "MapScape",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://bioconductor.org/packages/mapscape"
@@ -103,23 +99,7 @@
       "sc:url": "https://bioconductor.org/packages/mapscape"
     },
     {
-      "@id": "_:N0868cbfa3b594aa9a1e4dbcef9b06074",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2884"
-      },
-      "sc:name": "Plot"
-    },
-    {
-      "@id": "_:N6ac2b70ab2ce40c892e6bfa0378d0318",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3424"
-      },
-      "sc:name": "Raw image"
-    },
-    {
-      "@id": "_:Naefd04b32a8048958d7d53f1010ff6e4",
+      "@id": "_:Ncc85c3e43b1e461182e21f224a8664cf",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0920"
@@ -127,7 +107,7 @@
       "sc:name": "Genotype/phenotype report"
     },
     {
-      "@id": "_:N60da5fbaf3954d9ba6a66790b004edd0",
+      "@id": "_:Nf022c452dfb74d5d92262efda3d20d12",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3546"
@@ -135,12 +115,32 @@
       "sc:name": "Image metadata"
     },
     {
-      "@id": "_:N546d3b35d1be477686347b1b783a1764",
+      "@id": "_:N653ffd64bc1e4487b95cc08a9f4ce1dd",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2523"
       },
       "sc:name": "Phylogenetic data"
+    },
+    {
+      "@id": "_:Nb5babc0d8aa44829adcec6387d38e4ed",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3424"
+      },
+      "sc:name": "Raw image"
+    },
+    {
+      "@id": "_:Ndd8f07c0bb5d4032acfc8e822df4ec7c",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2884"
+      },
+      "sc:name": "Plot"
+    },
+    {
+      "@id": "https://doi.org/10.18129/B9.bioc.mapscape",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

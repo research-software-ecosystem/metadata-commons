@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,18 +36,22 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1007/978-3-540-30219-3_2",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/roci",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nb03fc91cccac4d82907dfed9bedb594e"
+        "@id": "_:N7f53baa2b6dd418eb9ebfd01efdac2e1"
       },
       "bsc:output": {
-        "@id": "_:Ne085d06e4c7a4904a4105f7e371abc83"
+        "@id": "_:Nac00a7cdd21e434bbadb6a984133b989"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Web application",
-        "Web API"
+        "Web API",
+        "Web application"
       ],
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0797"
@@ -63,14 +67,14 @@
       "sc:isAccessibleForFree": true,
       "sc:name": "Roci",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:provider": [
+        "BiBiServ",
         "Bielefeld University",
-        "CeBiTec",
-        "BiBiServ"
+        "CeBiTec"
       ],
       "sc:softwareHelp": {
         "@id": "https://bibiserv.cebitec.uni-bielefeld.de/roci?id=roci_manual"
@@ -79,15 +83,7 @@
       "sc:url": "https://bibiserv.cebitec.uni-bielefeld.de/roci"
     },
     {
-      "@id": "_:Ne085d06e4c7a4904a4105f7e371abc83",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2523"
-      },
-      "sc:name": "Phylogenetic data"
-    },
-    {
-      "@id": "_:Nb03fc91cccac4d82907dfed9bedb594e",
+      "@id": "_:N7f53baa2b6dd418eb9ebfd01efdac2e1",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0872"
@@ -95,8 +91,12 @@
       "sc:name": "Phylogenetic tree"
     },
     {
-      "@id": "https://doi.org/10.1007/978-3-540-30219-3_2",
-      "@type": "sc:CreativeWork"
+      "@id": "_:Nac00a7cdd21e434bbadb6a984133b989",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2523"
+      },
+      "sc:name": "Phylogenetic data"
     }
   ]
 }

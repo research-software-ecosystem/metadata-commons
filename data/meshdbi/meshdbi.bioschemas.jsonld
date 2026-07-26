@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,20 +36,24 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1186/s12859-015-0453-z",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/meshdbi",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Nca3f025242b44b3591f6df7159bf6eb0"
+          "@id": "_:Nebef5946616c484187c6c3b3da9d69e4"
         },
         {
-          "@id": "_:Na111f79bfff04db188eff2d8d86f6f82"
+          "@id": "_:N885bd6d9771f444bb319ee6b03f239ae"
         }
       ],
       "bsc:output": {
-        "@id": "_:Nc11e5622b78c41539f510a60241712fb"
+        "@id": "_:Na1b9a13766d247989dd165e612c510dd"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
@@ -72,8 +76,8 @@
       "sc:license": "Artistic-2.0",
       "sc:name": "MeSHDbi",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -83,29 +87,7 @@
       "sc:url": "https://bioconductor.org/packages/MeSHDbi"
     },
     {
-      "@id": "_:Nc11e5622b78c41539f510a60241712fb",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0582"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2195"
-      },
-      "sc:name": "Ontology"
-    },
-    {
-      "@id": "_:Nca3f025242b44b3591f6df7159bf6eb0",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_3509"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2195"
-      },
-      "sc:name": "Ontology mapping"
-    },
-    {
-      "@id": "_:Na111f79bfff04db188eff2d8d86f6f82",
+      "@id": "_:Nebef5946616c484187c6c3b3da9d69e4",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0967"
@@ -116,8 +98,26 @@
       "sc:name": "Ontology concept data"
     },
     {
-      "@id": "https://doi.org/10.1186/s12859-015-0453-z",
-      "@type": "sc:CreativeWork"
+      "@id": "_:N885bd6d9771f444bb319ee6b03f239ae",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3509"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2195"
+      },
+      "sc:name": "Ontology mapping"
+    },
+    {
+      "@id": "_:Na1b9a13766d247989dd165e612c510dd",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0582"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2195"
+      },
+      "sc:name": "Ontology"
     }
   ]
 }

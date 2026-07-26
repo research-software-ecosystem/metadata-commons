@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,15 +36,19 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1002/MP.14249",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/egs_brachy",
       "@type": "sc:SoftwareApplication",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3382"
+          "@id": "edam:topic_3071"
         },
         {
-          "@id": "edam:topic_3071"
+          "@id": "edam:topic_3382"
         },
         {
           "@id": "edam:topic_3318"
@@ -59,19 +63,15 @@
       "sc:description": "egs_brachy is an egs++ application for rapid brachytherapy calculations for both photon and electron sources.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3435"
+          "@id": "edam:operation_3431"
         },
         {
-          "@id": "edam:operation_3431"
+          "@id": "edam:operation_3435"
         }
       ],
       "sc:license": "AGPL-3.0",
       "sc:name": "egs_brachy",
       "sc:url": "https://github.com/clrp-code/egs_brachy/"
-    },
-    {
-      "@id": "https://doi.org/10.1002/MP.14249",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

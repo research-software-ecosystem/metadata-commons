@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -43,12 +43,12 @@
       "@id": "https://bio.tools/ms-spectre",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N03d27b91781f4c7a876dac7f174d9caa"
+        "@id": "_:N1bb57e1346884787b71e6db96367e1cd"
       },
       "bsc:output": {
-        "@id": "_:N0d8bc1e43e1148d69aebe40b055e3ad3"
+        "@id": "_:Naea9e5a9b3f44dfe855e391bfab14f28"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Desktop application",
       "sc:applicationSubCategory": [
         {
@@ -59,13 +59,19 @@
         }
       ],
       "sc:citation": [
+        "pubmed:19757411",
         {
           "@id": "https://doi.org/10.1002/jms.1667"
-        },
-        "pubmed:19757411"
+        }
       ],
       "sc:description": "Quantitiave analysis of multiple LC-MS(/MS) analyses in mzXML.",
       "sc:featureList": [
+        {
+          "@id": "edam:operation_3704"
+        },
+        {
+          "@id": "edam:operation_3634"
+        },
         {
           "@id": "edam:operation_3694"
         },
@@ -73,16 +79,10 @@
           "@id": "edam:operation_3744"
         },
         {
-          "@id": "edam:operation_3731"
-        },
-        {
           "@id": "edam:operation_3215"
         },
         {
-          "@id": "edam:operation_3704"
-        },
-        {
-          "@id": "edam:operation_3634"
+          "@id": "edam:operation_3731"
         }
       ],
       "sc:name": "MS-Spectre",
@@ -93,7 +93,7 @@
       "sc:url": "http://sourceforge.net/projects/ms-spectre"
     },
     {
-      "@id": "_:N03d27b91781f4c7a876dac7f174d9caa",
+      "@id": "_:N1bb57e1346884787b71e6db96367e1cd",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0943"
@@ -109,7 +109,7 @@
       "sc:name": "Mass spectrometry spectra"
     },
     {
-      "@id": "_:N0d8bc1e43e1148d69aebe40b055e3ad3",
+      "@id": "_:Naea9e5a9b3f44dfe855e391bfab14f28",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0944"

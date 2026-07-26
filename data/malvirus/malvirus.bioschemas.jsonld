@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,44 +36,52 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1101/2020.05.05.076992",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1186/s12859-022-04668-0",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/malvirus",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N39cd9584df7f41bcafa7d9564b34e621"
+          "@id": "_:N954845b2116647e188101e5ee242df1a"
         },
         {
-          "@id": "_:Nc2cc79092c624251b2aa5612e7dba9d5"
+          "@id": "_:Nfeecd9179a36433dba32528f36706354"
         },
         {
-          "@id": "_:N47a83f6e66824bd7bde74d0794e4caf7"
+          "@id": "_:Nf235d44f96304292a886c59a7a58e3b1"
         }
       ],
       "bsc:output": {
-        "@id": "_:N7790f46da8e54c66a3006a8ae632cabb"
+        "@id": "_:N531fbadf4d15468b8368b4cd3b7d7bed"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Desktop application",
         "Web application"
       ],
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0781"
+          "@id": "edam:topic_3796"
         },
         {
-          "@id": "edam:topic_3796"
+          "@id": "edam:topic_0781"
         }
       ],
       "sc:citation": [
         "pubmed:35439933",
-        {
-          "@id": "https://doi.org/10.1101/2020.05.05.076992"
-        },
+        "pmcid:PMC9017741",
         {
           "@id": "https://doi.org/10.1186/s12859-022-04668-0"
         },
-        "pmcid:PMC9017741"
+        {
+          "@id": "https://doi.org/10.1101/2020.05.05.076992"
+        }
       ],
       "sc:description": "MALVIRUS is a fast and accurate tool for genotyping haploid individuals that does not require to assemble the read nor mapping them to a reference genome. It is tailored to work with virological data and can genotype an individual directly from sequencing data in minutes.\n\nMALVIRUS is divided into two logically distinct steps: the creation of a variant catalog from a set of assemblies and the genotype calling. The first step is based on mafft and snp-sites, whereas the second step is based on KMC and MALVA.\n\nThe variant catalog can be built once and reused for genotyping multiple individuals.\n\nPlease see the website for additional details.\n\nMALVIRUS is distributed as a Docker image and is publicly available on GitHub and Docker Hub under the terms of the GNU General Public License version 3 or later. MALVIRUS was mainly developed and tested under Ubuntu GNU/Linux version 18.04 but works wherever Docker is available.",
       "sc:featureList": {
@@ -83,9 +91,9 @@
       "sc:license": "GPL-3.0",
       "sc:name": "MALVIRUS",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://algolab.github.io/MALVIRUS/USAGE"
@@ -94,7 +102,7 @@
       "sc:url": "https://algolab.github.io/MALVIRUS"
     },
     {
-      "@id": "_:N39cd9584df7f41bcafa7d9564b34e621",
+      "@id": "_:N954845b2116647e188101e5ee242df1a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3002"
@@ -105,7 +113,7 @@
       "sc:name": "Annotation track"
     },
     {
-      "@id": "_:Nc2cc79092c624251b2aa5612e7dba9d5",
+      "@id": "_:Nfeecd9179a36433dba32528f36706354",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3494"
@@ -116,7 +124,7 @@
       "sc:name": "DNA sequence"
     },
     {
-      "@id": "_:N47a83f6e66824bd7bde74d0794e4caf7",
+      "@id": "_:Nf235d44f96304292a886c59a7a58e3b1",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3494"
@@ -127,7 +135,7 @@
       "sc:name": "DNA sequence"
     },
     {
-      "@id": "_:N7790f46da8e54c66a3006a8ae632cabb",
+      "@id": "_:N531fbadf4d15468b8368b4cd3b7d7bed",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3498"
@@ -136,14 +144,6 @@
         "@id": "edam:format_3016"
       },
       "sc:name": "Sequence variations"
-    },
-    {
-      "@id": "https://doi.org/10.1101/2020.05.05.076992",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1186/s12859-022-04668-0",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

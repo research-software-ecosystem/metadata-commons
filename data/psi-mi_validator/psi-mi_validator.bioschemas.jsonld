@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,16 +36,20 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1002/pmic.200900189",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/psi-mi_validator",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Marine Dumousseau",
       "bsc:input": {
-        "@id": "_:N95a94a3627134d5aaa75ae0c659956eb"
+        "@id": "_:Ne7eedf995e254bb2a0911292f1b7ca7c"
       },
       "bsc:output": {
-        "@id": "_:N2e2c943a53c74ca996cbbf3773f5af66"
+        "@id": "_:N6b908ef0e0064b72805505f53158076c"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3071"
@@ -63,24 +67,40 @@
       },
       "sc:name": "PSI-MI Validator",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": "EMBL-EBI",
       "sc:softwareHelp": [
         {
-          "@id": "http://www.ebi.ac.uk/about/terms-of-use"
+          "@id": "http://www.ebi.ac.uk/intact/validator/start.xhtml"
         },
         {
-          "@id": "http://www.ebi.ac.uk/intact/validator/start.xhtml"
+          "@id": "http://www.ebi.ac.uk/about/terms-of-use"
         }
       ],
       "sc:softwareVersion": "1",
       "sc:url": "http://www.ebi.ac.uk/intact/validator/start.xhtml"
     },
     {
-      "@id": "_:N2e2c943a53c74ca996cbbf3773f5af66",
+      "@id": "_:Ne7eedf995e254bb2a0911292f1b7ca7c",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0906"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3158"
+        },
+        {
+          "@id": "edam:format_3243"
+        }
+      ],
+      "sc:name": "Protein interaction data"
+    },
+    {
+      "@id": "_:N6b908ef0e0064b72805505f53158076c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"
@@ -89,26 +109,6 @@
         "@id": "edam:format_2331"
       },
       "sc:name": "Report"
-    },
-    {
-      "@id": "_:N95a94a3627134d5aaa75ae0c659956eb",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0906"
-      },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3243"
-        },
-        {
-          "@id": "edam:format_3158"
-        }
-      ],
-      "sc:name": "Protein interaction data"
-    },
-    {
-      "@id": "https://doi.org/10.1002/pmic.200900189",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

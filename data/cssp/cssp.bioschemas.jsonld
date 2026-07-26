@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,54 +36,50 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btt200",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/cssp",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Chandler Zuo",
       "bsc:input": [
         {
-          "@id": "_:Nafa5b9993cd54c05a27f3850ae42b65f"
+          "@id": "_:N5713bdc226c1450ab913d0233c2eb855"
         },
         {
-          "@id": "_:N9490f67170f04efb89ae5d87fc7c28de"
+          "@id": "_:N15231f9bbb954371b73847414e9f13c2"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N13ea0c74315d416fbdcd734cd69686ce"
+          "@id": "_:N8aee49203c2d43cea24d61993017cd7a"
         },
         {
-          "@id": "_:N5c91b53760ad4d268417aa2e81aaf748"
+          "@id": "_:N9f8a197c4ae3448c922636befde0508a"
         },
         {
-          "@id": "_:Nb85ca6796400416c9d469c7481e08f13"
+          "@id": "_:N78b53f3290dd407f9842cb14c0d4c7e8"
         },
         {
-          "@id": "_:Na76290ac9afa49a28f39e1c6be5d214d"
+          "@id": "_:N882b803cb9f741929c34937e06dd08a9"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
       ],
       "sc:applicationSubCategory": [
         {
+          "@id": "edam:topic_3169"
+        },
+        {
           "@id": "edam:topic_3572"
         },
         {
           "@id": "edam:topic_2269"
-        },
-        {
-          "@id": "edam:topic_3169"
         }
       ],
       "sc:citation": [
-        "pmcid:PMC3957067",
         "pubmed:23665773",
+        "pmcid:PMC3957067",
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btt200"
         }
@@ -100,8 +96,8 @@
       "sc:license": "GPL-2.0",
       "sc:name": "CSSP",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -111,23 +107,29 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/CSSP.html"
     },
     {
-      "@id": "_:N13ea0c74315d416fbdcd734cd69686ce",
+      "@id": "_:N5713bdc226c1450ab913d0233c2eb855",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2048"
+        "@id": "edam:data_1772"
       },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_2330"
-        },
-        {
-          "@id": "edam:format_3547"
-        }
-      ],
-      "sc:name": "Report"
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Score"
     },
     {
-      "@id": "_:N5c91b53760ad4d268417aa2e81aaf748",
+      "@id": "_:N15231f9bbb954371b73847414e9f13c2",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0867"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_2330"
+      },
+      "sc:name": "Sequence alignment report"
+    },
+    {
+      "@id": "_:N8aee49203c2d43cea24d61993017cd7a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0950"
@@ -143,58 +145,56 @@
       "sc:name": "Mathematical model"
     },
     {
-      "@id": "_:Nb85ca6796400416c9d469c7481e08f13",
+      "@id": "_:N9f8a197c4ae3448c922636befde0508a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1669"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_2330"
+          "@id": "edam:format_3547"
         },
         {
-          "@id": "edam:format_3547"
+          "@id": "edam:format_2330"
         }
       ],
       "sc:name": "P-value"
     },
     {
-      "@id": "_:Na76290ac9afa49a28f39e1c6be5d214d",
+      "@id": "_:N78b53f3290dd407f9842cb14c0d4c7e8",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_2330"
+          "@id": "edam:format_3547"
         },
         {
-          "@id": "edam:format_3547"
+          "@id": "edam:format_2330"
         }
       ],
       "sc:name": "Plot"
     },
     {
-      "@id": "_:Nafa5b9993cd54c05a27f3850ae42b65f",
+      "@id": "_:N882b803cb9f741929c34937e06dd08a9",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_1772"
+        "@id": "edam:data_2048"
       },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Score"
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3547"
+        },
+        {
+          "@id": "edam:format_2330"
+        }
+      ],
+      "sc:name": "Report"
     },
     {
-      "@id": "_:N9490f67170f04efb89ae5d87fc7c28de",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0867"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_2330"
-      },
-      "sc:name": "Sequence alignment report"
+      "@id": "https://doi.org/10.1093/bioinformatics/btt200",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

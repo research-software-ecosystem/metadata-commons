@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,22 +40,22 @@
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Colleen Davis",
       "bsc:input": {
-        "@id": "_:N5bdf9840f77f4422bcc43a1bb69a0d74"
+        "@id": "_:N2f7756d6089d4226aedbf87e6502f61e"
       },
       "bsc:output": {
-        "@id": "_:N0c7b275f47314cd3bcca24f4a32c73b2"
+        "@id": "_:N99a2b78a10144c989b764987d54e32ed"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Database portal",
       "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_2885"
+        },
         {
           "@id": "edam:topic_0625"
         },
         {
           "@id": "edam:topic_0602"
-        },
-        {
-          "@id": "edam:topic_2885"
         }
       ],
       "sc:description": "Database for identifying, genotyping, and modelling the associations between single nucleotide polymorphisms (SNPs) in candidate genes and pathways that underlie inflammatory responses in humans.",
@@ -64,8 +64,8 @@
       },
       "sc:name": "SeattleSNPs variation discovery resource",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -74,7 +74,15 @@
       "sc:url": "http://pga.gs.washington.edu/"
     },
     {
-      "@id": "_:N0c7b275f47314cd3bcca24f4a32c73b2",
+      "@id": "_:N2f7756d6089d4226aedbf87e6502f61e",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1026"
+      },
+      "sc:name": "Gene symbol"
+    },
+    {
+      "@id": "_:N99a2b78a10144c989b764987d54e32ed",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0916"
@@ -83,14 +91,6 @@
         "@id": "edam:format_2331"
       },
       "sc:name": "Gene report"
-    },
-    {
-      "@id": "_:N5bdf9840f77f4422bcc43a1bb69a0d74",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1026"
-      },
-      "sc:name": "Gene symbol"
     }
   ]
 }

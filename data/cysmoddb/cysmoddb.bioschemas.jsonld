@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -44,40 +44,40 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Nc9a2288067164ffa85b71370e39e512f"
+          "@id": "_:N363cede0ade546f7b0b5bf55fa9d34c6"
         },
         {
-          "@id": "_:Nde5b65de37954223a563d202737388d5"
+          "@id": "_:Nee162153a9ac4d609e3d66b56223128a"
         },
         {
-          "@id": "_:N780b4cec9c91492a8da9d2c86812e862"
+          "@id": "_:N878b91b1334d4a54847873d48b742292"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Database portal",
       "sc:applicationSubCategory": [
         {
+          "@id": "edam:topic_3534"
+        },
+        {
           "@id": "edam:topic_0128"
-        },
-        {
-          "@id": "edam:topic_0080"
-        },
-        {
-          "@id": "edam:topic_0121"
         },
         {
           "@id": "edam:topic_0601"
         },
         {
-          "@id": "edam:topic_3534"
+          "@id": "edam:topic_0121"
+        },
+        {
+          "@id": "edam:topic_0080"
         }
       ],
       "sc:citation": [
+        "pubmed:36305460",
         "pmcid:PMC9677505",
         {
           "@id": "https://doi.org/10.1093/bib/bbac460"
-        },
-        "pubmed:36305460"
+        }
       ],
       "sc:description": "A comprehensive platform with the integration of manually curated resources and analysis tools for cysteine posttranslational modifications.",
       "sc:featureList": [
@@ -94,22 +94,22 @@
       "sc:isAccessibleForFree": true,
       "sc:name": "CysModDB",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:url": "https://cysmoddb.bioinfogo.org/"
     },
     {
-      "@id": "_:Nc9a2288067164ffa85b71370e39e512f",
+      "@id": "_:N363cede0ade546f7b0b5bf55fa9d34c6",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2291"
+        "@id": "edam:data_2299"
       },
-      "sc:name": "UniProt ID"
+      "sc:name": "Gene name"
     },
     {
-      "@id": "_:Nde5b65de37954223a563d202737388d5",
+      "@id": "_:Nee162153a9ac4d609e3d66b56223128a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1009"
@@ -117,12 +117,12 @@
       "sc:name": "Protein name"
     },
     {
-      "@id": "_:N780b4cec9c91492a8da9d2c86812e862",
+      "@id": "_:N878b91b1334d4a54847873d48b742292",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2299"
+        "@id": "edam:data_2291"
       },
-      "sc:name": "Gene name"
+      "sc:name": "UniProt ID"
     }
   ]
 }

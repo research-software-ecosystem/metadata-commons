@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,45 +36,37 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btp352",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gkw343",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/sam_to_bam",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Galaxy Support Team",
       "bsc:input": [
         {
-          "@id": "_:Neb38cc9869824a8081726fe0550ff8e7"
+          "@id": "_:N37702963d06e4e4caf230061ee99e845"
         },
         {
-          "@id": "_:N6bf5095ad6f043bb8947e674547707b6"
+          "@id": "_:N1e5269f52f90482c9423a8ed4489d271"
         },
         {
-          "@id": "_:N4599fbce2f724524a532c7e37366604e"
+          "@id": "_:N7f16ea718ce44ee197f56901d3cd21a9"
         }
       ],
       "bsc:output": {
-        "@id": "_:Nc029bc79ab884cbfba0455e17f45630d"
+        "@id": "_:N1e7095ae8e1e45339b118bd0b922e168"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_3168"
       },
       "sc:citation": [
         {
+          "@id": "https://doi.org/10.1093/bioinformatics/btp352"
+        },
+        {
           "@id": "https://doi.org/10.1093/nar/gkw343"
         },
         {
           "@id": "https://doi.org/10.7490/f1000research.1114334.1"
-        },
-        {
-          "@id": "https://doi.org/10.1093/bioinformatics/btp352"
         }
       ],
       "sc:description": "Converts SAM format to BAM format.",
@@ -84,8 +76,8 @@
       "sc:name": "sam_to_bam",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "http://www.htslib.org/doc/samtools.html"
@@ -94,7 +86,7 @@
       "sc:url": "http://www.htslib.org/"
     },
     {
-      "@id": "_:Neb38cc9869824a8081726fe0550ff8e7",
+      "@id": "_:N37702963d06e4e4caf230061ee99e845",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0863"
@@ -105,7 +97,7 @@
       "sc:name": "Sequence alignment"
     },
     {
-      "@id": "_:N6bf5095ad6f043bb8947e674547707b6",
+      "@id": "_:N1e5269f52f90482c9423a8ed4489d271",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0924"
@@ -116,7 +108,7 @@
       "sc:name": "Sequence trace"
     },
     {
-      "@id": "_:N4599fbce2f724524a532c7e37366604e",
+      "@id": "_:N7f16ea718ce44ee197f56901d3cd21a9",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0924"
@@ -127,7 +119,7 @@
       "sc:name": "Sequence trace"
     },
     {
-      "@id": "_:Nc029bc79ab884cbfba0455e17f45630d",
+      "@id": "_:N1e7095ae8e1e45339b118bd0b922e168",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0924"
@@ -138,7 +130,15 @@
       "sc:name": "Sequence trace"
     },
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/btp352",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://doi.org/10.7490/f1000research.1114334.1",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/gkw343",
       "@type": "sc:CreativeWork"
     }
   ]

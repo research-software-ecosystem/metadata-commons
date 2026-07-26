@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,16 +40,16 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N32c6986f6ffe4303b6184d69ad9926a4"
+          "@id": "_:N996c30451cea40a9a5de082f277f6b5b"
         },
         {
-          "@id": "_:N10421af8fda14760903f049caed4705f"
+          "@id": "_:Na70d973520164331b4afd47671049afc"
         }
       ],
       "bsc:output": {
-        "@id": "_:Nb03e38ff651f4f0993602801f4ea270c"
+        "@id": "_:N2748df09da0b4a20b5fadcc1c957dc58"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0781"
@@ -67,7 +67,15 @@
       "sc:url": "https://github.com/aineniamh/snipit"
     },
     {
-      "@id": "_:N32c6986f6ffe4303b6184d69ad9926a4",
+      "@id": "_:N996c30451cea40a9a5de082f277f6b5b",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1384"
+      },
+      "sc:name": "Protein sequence alignment"
+    },
+    {
+      "@id": "_:Na70d973520164331b4afd47671049afc",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1383"
@@ -78,15 +86,7 @@
       "sc:name": "Nucleic acid sequence alignment"
     },
     {
-      "@id": "_:N10421af8fda14760903f049caed4705f",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1384"
-      },
-      "sc:name": "Protein sequence alignment"
-    },
-    {
-      "@id": "_:Nb03e38ff651f4f0993602801f4ea270c",
+      "@id": "_:N2748df09da0b4a20b5fadcc1c957dc58",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,42 +36,38 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1021/acsbiomedchemau.1c00048",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/radicalsam.org",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N02eba5b3a28243ea8b6d72f8a79b68e6"
+          "@id": "_:N8b2155156c0a4a6b96b3c01573ee1410"
         },
         {
-          "@id": "_:N1b32a62a94a240e0a73888b1e8f3b4cf"
+          "@id": "_:Ne3917613afa94c5e8f1f06ec2310f57e"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0821"
+          "@id": "edam:topic_3314"
         },
         {
           "@id": "edam:topic_3407"
         },
         {
-          "@id": "edam:topic_0602"
+          "@id": "edam:topic_0821"
         },
         {
-          "@id": "edam:topic_3314"
+          "@id": "edam:topic_0602"
         }
       ],
       "sc:citation": [
+        "pubmed:36119373",
+        "pmcid:PMC9477430",
         {
           "@id": "https://doi.org/10.1021/acsbiomedchemau.1c00048"
-        },
-        "pmcid:PMC9477430",
-        "pubmed:36119373"
+        }
       ],
       "sc:description": "A Resource to Interpret Sequence-Function Space and Discover New Radical SAM Enzyme Chemistry.",
       "sc:featureList": {
@@ -81,13 +77,21 @@
       "sc:name": "RadicalSAM.org",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:url": "http://RadicalSAM.org"
     },
     {
-      "@id": "_:N02eba5b3a28243ea8b6d72f8a79b68e6",
+      "@id": "_:N8b2155156c0a4a6b96b3c01573ee1410",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2044"
+      },
+      "sc:name": "Sequence"
+    },
+    {
+      "@id": "_:Ne3917613afa94c5e8f1f06ec2310f57e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2291"
@@ -95,12 +99,8 @@
       "sc:name": "UniProt ID"
     },
     {
-      "@id": "_:N1b32a62a94a240e0a73888b1e8f3b4cf",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2044"
-      },
-      "sc:name": "Sequence"
+      "@id": "https://doi.org/10.1021/acsbiomedchemau.1c00048",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,14 +36,6 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1016/S0168-9525(00)02024-2",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1017/CBO9781139151399",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://doi.org/10.1017/CBO9781139151405",
       "@type": "sc:CreativeWork"
     },
@@ -52,22 +44,22 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N9b6bd650a8ff449ca9fed4f3e4babfe4"
+          "@id": "_:Nd391a05d78df49a7b8f9722befcfaf13"
         },
         {
-          "@id": "_:Ncbd75f4b3d15487cbf01d4e66740a35e"
+          "@id": "_:Na3461ad06a9042a79f04dc0b5b257ef4"
         },
         {
-          "@id": "_:N52eff744a4dd4c27954aa8ba52710670"
+          "@id": "_:N7fb63904c4304f6fb24d4e3ba8538f19"
         },
         {
-          "@id": "_:Na1237e5f05234569802dda3ebcd83b96"
+          "@id": "_:N20be13ecddec461693226345e8df6c13"
         }
       ],
       "bsc:output": {
-        "@id": "_:Ne20cfeceff504a78bf49b0eacfc7480a"
+        "@id": "_:Nda395dba091247af8d2bb57831df6bbd"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_0157"
@@ -77,34 +69,34 @@
           "@id": "https://doi.org/10.1016/S0168-9525(00)02024-2"
         },
         {
-          "@id": "https://doi.org/10.1017/CBO9781139151405"
+          "@id": "https://doi.org/10.1017/CBO9781139151399"
         },
         {
-          "@id": "https://doi.org/10.1017/CBO9781139151399"
+          "@id": "https://doi.org/10.1017/CBO9781139151405"
         }
       ],
       "sc:contributor": [
-        "UK MRC",
         "UK BBSRC",
-        "EMBOSS Contributors",
-        "Wellcome Trust"
+        "UK MRC",
+        "Wellcome Trust",
+        "EMBOSS Contributors"
       ],
       "sc:description": "Search protein sequences by digest fragment molecular weight.",
       "sc:featureList": {
         "@id": "edam:operation_0338"
       },
       "sc:funder": [
-        "UK MRC",
         "UK BBSRC",
+        "UK MRC",
         "Wellcome Trust"
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "GPL-3.0",
       "sc:name": "emowse",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:provider": [
         "EMBL-EBI",
@@ -112,44 +104,20 @@
       ],
       "sc:softwareHelp": [
         {
-          "@id": "http://emboss.open-bio.org/html/dev/ch01s01.html"
+          "@id": "http://emboss.open-bio.org/html/use/pr02s04.html"
         },
         {
           "@id": "http://emboss.open-bio.org/rel/rel6/apps/emowse.html"
         },
         {
-          "@id": "http://emboss.open-bio.org/html/use/pr02s04.html"
+          "@id": "http://emboss.open-bio.org/html/dev/ch01s01.html"
         }
       ],
       "sc:softwareVersion": "r6",
       "sc:url": "http://emboss.open-bio.org/rel/rel6/apps/emowse.html"
     },
     {
-      "@id": "_:Ne20cfeceff504a78bf49b0eacfc7480a",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1262"
-      },
-      "sc:name": "Peptide molecular weight hits"
-    },
-    {
-      "@id": "_:N9b6bd650a8ff449ca9fed4f3e4babfe4",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_2886"
-      },
-      "sc:name": "Protein sequence record"
-    },
-    {
-      "@id": "_:Ncbd75f4b3d15487cbf01d4e66740a35e",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1519"
-      },
-      "sc:name": "Peptide molecular weights"
-    },
-    {
-      "@id": "_:N52eff744a4dd4c27954aa8ba52710670",
+      "@id": "_:Nd391a05d78df49a7b8f9722befcfaf13",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1505"
@@ -157,12 +125,44 @@
       "sc:name": "Amino acid index (molecular weight)"
     },
     {
-      "@id": "_:Na1237e5f05234569802dda3ebcd83b96",
+      "@id": "_:Na3461ad06a9042a79f04dc0b5b257ef4",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1519"
       },
       "sc:name": "Peptide molecular weights"
+    },
+    {
+      "@id": "_:N7fb63904c4304f6fb24d4e3ba8538f19",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1519"
+      },
+      "sc:name": "Peptide molecular weights"
+    },
+    {
+      "@id": "_:N20be13ecddec461693226345e8df6c13",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2886"
+      },
+      "sc:name": "Protein sequence record"
+    },
+    {
+      "@id": "_:Nda395dba091247af8d2bb57831df6bbd",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1262"
+      },
+      "sc:name": "Peptide molecular weight hits"
+    },
+    {
+      "@id": "https://doi.org/10.1017/CBO9781139151399",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1016/S0168-9525(00)02024-2",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

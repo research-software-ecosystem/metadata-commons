@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -39,12 +39,12 @@
       "@id": "https://bio.tools/netgo_3.0",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N9a386529ec874abab83db5b50f18bcce"
+        "@id": "_:N192fab1705cc470aacae6c1bdab2e9d2"
       },
       "bsc:output": {
-        "@id": "_:Nc22d8653e61d422c912bd3c2444f8a7a"
+        "@id": "_:N26fa929038cd4fb0b2fee709768c4978"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web service",
       "sc:applicationSubCategory": [
         {
@@ -54,42 +54,42 @@
           "@id": "edam:topic_3474"
         },
         {
-          "@id": "edam:topic_0080"
+          "@id": "edam:topic_0078"
         },
         {
-          "@id": "edam:topic_0078"
+          "@id": "edam:topic_0080"
         }
       ],
       "sc:citation": [
+        "pubmed:37075830",
         "pmcid:PMC10626176",
         {
           "@id": "https://doi.org/10.1016/j.gpb.2023.04.001"
-        },
-        "pubmed:37075830"
+        }
       ],
       "sc:description": "Protein language model to improve large-scale functional annotations.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_3659"
+          "@id": "edam:operation_0303"
         },
         {
           "@id": "edam:operation_1777"
         },
         {
-          "@id": "edam:operation_0303"
+          "@id": "edam:operation_3659"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:name": "NetGO 3.0",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:url": "https://dmiip.sjtu.edu.cn/ng3.0"
     },
     {
-      "@id": "_:N9a386529ec874abab83db5b50f18bcce",
+      "@id": "_:N192fab1705cc470aacae6c1bdab2e9d2",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2976"
@@ -100,7 +100,7 @@
       "sc:name": "Protein sequence"
     },
     {
-      "@id": "_:Nc22d8653e61d422c912bd3c2444f8a7a",
+      "@id": "_:N26fa929038cd4fb0b2fee709768c4978",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2534"

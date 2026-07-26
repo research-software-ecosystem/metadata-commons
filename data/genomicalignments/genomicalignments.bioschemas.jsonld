@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,25 +36,29 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1371/journal.pcbi.1003118",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/genomicalignments",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N2e2d860d3e314eb198f39b8e59ca5865"
+          "@id": "_:Naaaf6e406cf34a0f8a502ad8de2ddaa4"
         },
         {
-          "@id": "_:Nac69a8b174f64482a169e3412fff13fe"
+          "@id": "_:N4a09c5a3e00449e39e12c01678aed358"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Nddff0fa5fd2c42f8b02f7f4edc3bb32b"
+          "@id": "_:N2f9179cbc7a6483bb0ca49d7524903a7"
         },
         {
-          "@id": "_:N6b2c6d110c124555adc312e50d734128"
+          "@id": "_:Na3fcb4c3820a4880b90f95c432be2761"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
@@ -63,50 +67,55 @@
         "@id": "edam:topic_0080"
       },
       "sc:author": [
-        "Michael Lawrence",
-        "Patrick Aboyoun",
-        "Hervé Pagès"
+        "Hervé Pagès",
+        "Martin Morgan",
+        "Valerie Obenchain"
       ],
       "sc:citation": {
         "@id": "https://doi.org/10.1371/journal.pcbi.1003118"
       },
-      "sc:description": "Provides efficient low-level and highly reusable S4 classes for storing, manipulating and aggregating over annotated ranges of integers. Implements an algebra of range operations, including efficient algorithms for finding overlaps and nearest neighbors. Defines efficient list-like classes for storing, transforming and aggregating large grouped data, i.e., collections of atomic vectors and DataFrames.",
+      "sc:contributor": [
+        "Fedor Bezrukov",
+        "Halimat C. Atanda",
+        "Robert Castelo"
+      ],
+      "sc:description": "Provides efficient containers for storing and manipulating short genomic alignments (typically obtained by aligning short reads to a reference genome). This includes read counting, computing the coverage, junction detection, and working with the nucleotide content of the alignments.",
       "sc:featureList": [
         {
           "@id": "edam:operation_2478"
         },
         {
-          "@id": "edam:operation_3230"
+          "@id": "edam:operation_3563"
         },
         {
-          "@id": "edam:operation_3563"
+          "@id": "edam:operation_3230"
         }
       ],
       "sc:license": "Artistic-2.0",
       "sc:name": "GenomicAlignments",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
-        "@id": "https://bioconductor.org/packages/IRanges"
+        "@id": "https://bioconductor.org/packages/GenomicAlignments"
       },
-      "sc:softwareVersion": "2.46.0",
-      "sc:url": "https://bioconductor.org/packages/IRanges"
+      "sc:softwareVersion": "1.48.0",
+      "sc:url": "https://bioconductor.org/packages/GenomicAlignments"
     },
     {
-      "@id": "_:N2e2d860d3e314eb198f39b8e59ca5865",
+      "@id": "_:Naaaf6e406cf34a0f8a502ad8de2ddaa4",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1270"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_2306"
+          "@id": "edam:format_2572"
         },
         {
-          "@id": "edam:format_2572"
+          "@id": "edam:format_2306"
         },
         {
           "@id": "edam:format_2573"
@@ -115,17 +124,17 @@
       "sc:name": "Feature table"
     },
     {
-      "@id": "_:Nac69a8b174f64482a169e3412fff13fe",
+      "@id": "_:N4a09c5a3e00449e39e12c01678aed358",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1383"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_2306"
+          "@id": "edam:format_2572"
         },
         {
-          "@id": "edam:format_2572"
+          "@id": "edam:format_2306"
         },
         {
           "@id": "edam:format_2573"
@@ -134,40 +143,36 @@
       "sc:name": "Sequence alignment (nucleic acid)"
     },
     {
-      "@id": "_:Nddff0fa5fd2c42f8b02f7f4edc3bb32b",
+      "@id": "_:N2f9179cbc7a6483bb0ca49d7524903a7",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1383"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_2330"
+          "@id": "edam:format_1921"
         },
         {
-          "@id": "edam:format_1921"
+          "@id": "edam:format_2330"
         }
       ],
       "sc:name": "Sequence alignment (nucleic acid)"
     },
     {
-      "@id": "_:N6b2c6d110c124555adc312e50d734128",
+      "@id": "_:Na3fcb4c3820a4880b90f95c432be2761",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0867"
       },
       "sc:encodingFormat": [
         {
-          "@id": "edam:format_2330"
+          "@id": "edam:format_1921"
         },
         {
-          "@id": "edam:format_1921"
+          "@id": "edam:format_2330"
         }
       ],
       "sc:name": "Sequence alignment report"
-    },
-    {
-      "@id": "https://doi.org/10.1371/journal.pcbi.1003118",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

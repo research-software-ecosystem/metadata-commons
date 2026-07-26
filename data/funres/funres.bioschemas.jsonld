@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,43 +36,39 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/bib/bbaa283",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/funres",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Antonio del Sol",
       "bsc:input": {
-        "@id": "_:N6eb2063fba80472b96be5e2b8fc9769c"
+        "@id": "_:Na7d764fe7043463abd5d648b50559396"
       },
       "bsc:output": [
         {
-          "@id": "_:Nd39954c92be4475fa41d75d7dfef496e"
+          "@id": "_:Nde1e3c6540bc435f878e71340f7d102f"
         },
         {
-          "@id": "_:N8343b26b82c3442c9093a0051688bd18"
+          "@id": "_:N266871a64e3849569c8d4e28b3f390b9"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Script",
       "sc:applicationSubCategory": {
         "@id": "edam:topic_2229"
       },
       "sc:citation": [
         "pubmed:33179736",
+        "pmcid:PMC8293827",
         {
           "@id": "https://doi.org/10.1093/bib/bbaa283"
-        },
-        "pmcid:PMC8293827"
+        }
       ],
       "sc:description": "Resolving tissue-specific functional cell states based on a cell–cell communication network model",
       "sc:featureList": [
         {
-          "@id": "edam:operation_2423"
+          "@id": "edam:operation_2426"
         },
         {
-          "@id": "edam:operation_2426"
+          "@id": "edam:operation_2423"
         }
       ],
       "sc:name": "FunRes",
@@ -83,7 +79,7 @@
       "sc:url": "https://git-r3lab.uni.lu/kartikeya.singh/funres"
     },
     {
-      "@id": "_:N6eb2063fba80472b96be5e2b8fc9769c",
+      "@id": "_:Na7d764fe7043463abd5d648b50559396",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3112"
@@ -94,7 +90,7 @@
       "sc:name": "Gene expression matrix"
     },
     {
-      "@id": "_:Nd39954c92be4475fa41d75d7dfef496e",
+      "@id": "_:Nde1e3c6540bc435f878e71340f7d102f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3779"
@@ -105,7 +101,7 @@
       "sc:name": "Annotated text"
     },
     {
-      "@id": "_:N8343b26b82c3442c9093a0051688bd18",
+      "@id": "_:N266871a64e3849569c8d4e28b3f390b9",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1636"
@@ -114,6 +110,10 @@
         "@id": "edam:format_3591"
       },
       "sc:name": "Heat map"
+    },
+    {
+      "@id": "https://doi.org/10.1093/bib/bbaa283",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

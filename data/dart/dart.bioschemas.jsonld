@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,9 +36,17 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1186/1471-2105-12-403",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1186/s13059-015-0630-4",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/dart",
       "@type": "sc:SoftwareApplication",
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
@@ -61,8 +69,8 @@
       "sc:license": "GPL-2.0-only",
       "sc:name": "DART",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -70,14 +78,6 @@
       },
       "sc:softwareVersion": "1.60.0",
       "sc:url": "https://bioconductor.org/packages/DART"
-    },
-    {
-      "@id": "https://doi.org/10.1186/s13059-015-0630-4",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1186/1471-2105-12-403",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

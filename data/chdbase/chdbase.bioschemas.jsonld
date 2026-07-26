@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -44,53 +44,53 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N72f568f0654e41e2a03d2e97ab638ac0"
+          "@id": "_:N6d01aa75e361430cb22b39ecfba56c4f"
         },
         {
-          "@id": "_:N54b1508418ab4a7190feeb3d62bad4ca"
+          "@id": "_:N5336af483eff4a85a1e5ecdf934e1d9c"
         },
         {
-          "@id": "_:N47b5d39bd78e4a51be0db14fd0520560"
+          "@id": "_:Ndbe129575aec46b09584f5af94fbf56b"
         },
         {
-          "@id": "_:Nadbc24f0c3324816bc8df18d8ae4e716"
+          "@id": "_:N8140e7ab9891491682f1b56da807cc15"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_0602"
-        },
-        {
           "@id": "edam:topic_3335"
-        },
-        {
-          "@id": "edam:topic_0634"
         },
         {
           "@id": "edam:topic_0625"
         },
         {
           "@id": "edam:topic_0102"
+        },
+        {
+          "@id": "edam:topic_0602"
+        },
+        {
+          "@id": "edam:topic_0634"
         }
       ],
       "sc:citation": [
+        "pubmed:35961607",
         {
           "@id": "https://doi.org/10.1016/j.gpb.2022.08.001"
-        },
-        "pubmed:35961607"
+        }
       ],
       "sc:description": "A Comprehensive Knowledgebase for Congenital Heart Disease-related Genes and Clinical Manifestations.",
       "sc:featureList": [
+        {
+          "@id": "edam:operation_2422"
+        },
         {
           "@id": "edam:operation_0314"
         },
         {
           "@id": "edam:operation_1812"
-        },
-        {
-          "@id": "edam:operation_2422"
         }
       ],
       "sc:isAccessibleForFree": true,
@@ -103,7 +103,7 @@
       "sc:url": "http://chddb.fwgenetics.org/"
     },
     {
-      "@id": "_:N72f568f0654e41e2a03d2e97ab638ac0",
+      "@id": "_:N6d01aa75e361430cb22b39ecfba56c4f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1033"
@@ -111,15 +111,7 @@
       "sc:name": "Ensembl gene ID"
     },
     {
-      "@id": "_:N54b1508418ab4a7190feeb3d62bad4ca",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_1106"
-      },
-      "sc:name": "dbSNP ID"
-    },
-    {
-      "@id": "_:N47b5d39bd78e4a51be0db14fd0520560",
+      "@id": "_:N5336af483eff4a85a1e5ecdf934e1d9c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1026"
@@ -127,12 +119,20 @@
       "sc:name": "Gene symbol"
     },
     {
-      "@id": "_:Nadbc24f0c3324816bc8df18d8ae4e716",
+      "@id": "_:Ndbe129575aec46b09584f5af94fbf56b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1904"
       },
       "sc:name": "Locus ID (EntrezGene)"
+    },
+    {
+      "@id": "_:N8140e7ab9891491682f1b56da807cc15",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1106"
+      },
+      "sc:name": "dbSNP ID"
     }
   ]
 }

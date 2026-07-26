@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -40,29 +40,29 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N6ec2cfbe9a854f579ee056934b0d57b9"
+          "@id": "_:N9d84e2dda575492aa3d84a66b8b1627e"
         },
         {
-          "@id": "_:Nfdbda0c7d3b44f4f89e10ec86324bfa6"
+          "@id": "_:N3d1cb9b586fd448db7f0fa83cb927ef0"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
-          "@id": "edam:topic_3673"
-        },
-        {
-          "@id": "edam:topic_3293"
+          "@id": "edam:topic_2885"
         },
         {
           "@id": "edam:topic_0622"
         },
         {
+          "@id": "edam:topic_3293"
+        },
+        {
           "@id": "edam:topic_3305"
         },
         {
-          "@id": "edam:topic_2885"
+          "@id": "edam:topic_3673"
         },
         {
           "@id": "edam:topic_0769"
@@ -78,9 +78,6 @@
       "sc:description": "An R Shiny Application for annotating outbreak phylogenetic trees.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_0567"
-        },
-        {
           "@id": "edam:operation_0323"
         },
         {
@@ -88,20 +85,34 @@
         },
         {
           "@id": "edam:operation_0326"
+        },
+        {
+          "@id": "edam:operation_0567"
         }
       ],
       "sc:isAccessibleForFree": true,
       "sc:license": "MIT",
       "sc:name": "tinselR",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:url": "https://jennahamlin.github.io/tinselR/"
     },
     {
-      "@id": "_:N6ec2cfbe9a854f579ee056934b0d57b9",
+      "@id": "_:N9d84e2dda575492aa3d84a66b8b1627e",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0872"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1910"
+      },
+      "sc:name": "Phylogenetic tree"
+    },
+    {
+      "@id": "_:N3d1cb9b586fd448db7f0fa83cb927ef0",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1442"
@@ -115,17 +126,6 @@
         }
       ],
       "sc:name": "Phylogenetic tree distances"
-    },
-    {
-      "@id": "_:Nfdbda0c7d3b44f4f89e10ec86324bfa6",
-      "@type": "bsct:FormalParameter",
-      "sc:additionalType": {
-        "@id": "edam:data_0872"
-      },
-      "sc:encodingFormat": {
-        "@id": "edam:format_1910"
-      },
-      "sc:name": "Phylogenetic tree"
     },
     {
       "@id": "https://doi.org/10.1128/MRA.00227-21",

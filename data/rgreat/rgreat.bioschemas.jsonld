@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,24 +36,20 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btac745",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/rgreat",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N28c2191c0a2742c9bc22790a82a434df"
+        "@id": "_:N85bcf2eabe654d2ba9189e226917a676"
       },
       "bsc:output": [
         {
-          "@id": "_:N749bbf289c944b3bbfb7a24bc843049f"
+          "@id": "_:N5c3144dff23e4841b38e49d5034a9838"
         },
         {
-          "@id": "_:N816d74383cf0449da2744200aa1b9b1a"
+          "@id": "_:N63a4150e2f964eed9ea1e25d539d9af7"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
@@ -72,9 +68,9 @@
       "sc:license": "MIT",
       "sc:name": "rGREAT",
       "sc:operatingSystem": [
-        "Windows",
+        "Linux",
         "Mac",
-        "Linux"
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://bioconductor.org/packages/rGREAT"
@@ -83,29 +79,18 @@
       "sc:url": "https://bioconductor.org/packages/rGREAT"
     },
     {
-      "@id": "_:N749bbf289c944b3bbfb7a24bc843049f",
+      "@id": "_:N85bcf2eabe654d2ba9189e226917a676",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_2884"
+        "@id": "edam:data_3002"
       },
-      "sc:encodingFormat": [
-        {
-          "@id": "edam:format_3604"
-        },
-        {
-          "@id": "edam:format_3508"
-        },
-        {
-          "@id": "edam:format_3696"
-        },
-        {
-          "@id": "edam:format_3603"
-        }
-      ],
-      "sc:name": "Plot"
+      "sc:encodingFormat": {
+        "@id": "edam:format_3003"
+      },
+      "sc:name": "Annotation track"
     },
     {
-      "@id": "_:N816d74383cf0449da2744200aa1b9b1a",
+      "@id": "_:N5c3144dff23e4841b38e49d5034a9838",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1669"
@@ -118,24 +103,39 @@
           "@id": "edam:format_3696"
         },
         {
-          "@id": "edam:format_3603"
+          "@id": "edam:format_3604"
         },
         {
-          "@id": "edam:format_3604"
+          "@id": "edam:format_3603"
         }
       ],
       "sc:name": "P-value"
     },
     {
-      "@id": "_:N28c2191c0a2742c9bc22790a82a434df",
+      "@id": "_:N63a4150e2f964eed9ea1e25d539d9af7",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_3002"
+        "@id": "edam:data_2884"
       },
-      "sc:encodingFormat": {
-        "@id": "edam:format_3003"
-      },
-      "sc:name": "Annotation track"
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_3508"
+        },
+        {
+          "@id": "edam:format_3696"
+        },
+        {
+          "@id": "edam:format_3604"
+        },
+        {
+          "@id": "edam:format_3603"
+        }
+      ],
+      "sc:name": "Plot"
+    },
+    {
+      "@id": "https://doi.org/10.1093/bioinformatics/btac745",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

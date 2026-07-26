@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,32 +36,28 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1016/0020-7381(83)85053-0",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/isotope_calculator",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nff4df7e5a9cf49ab848268f019fa6550"
+        "@id": "_:N91efc1c4a32b477c8c3b778b8bc41744"
       },
       "bsc:output": {
-        "@id": "_:N060c2ca7191140579bb87240d063146c"
+        "@id": "_:Nafa2339a46c44b9ba2a12fdf15bacdf8"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
       "sc:applicationSubCategory": [
         {
           "@id": "edam:topic_0121"
         },
         {
+          "@id": "edam:topic_3520"
+        },
+        {
           "@id": "edam:topic_0154"
         },
         {
           "@id": "edam:topic_2269"
-        },
-        {
-          "@id": "edam:topic_3520"
         }
       ],
       "sc:citation": {
@@ -73,10 +69,10 @@
           "@id": "edam:operation_3632"
         },
         {
-          "@id": "edam:operation_2238"
+          "@id": "edam:operation_3435"
         },
         {
-          "@id": "edam:operation_3435"
+          "@id": "edam:operation_2238"
         }
       ],
       "sc:name": "Isotope calculator",
@@ -87,7 +83,7 @@
       "sc:url": "http://www.kombyonyx.com/isotopes/"
     },
     {
-      "@id": "_:Nff4df7e5a9cf49ab848268f019fa6550",
+      "@id": "_:N91efc1c4a32b477c8c3b778b8bc41744",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0846"
@@ -103,7 +99,7 @@
       "sc:name": "Chemical formula"
     },
     {
-      "@id": "_:N060c2ca7191140579bb87240d063146c",
+      "@id": "_:Nafa2339a46c44b9ba2a12fdf15bacdf8",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"
@@ -112,6 +108,10 @@
         "@id": "edam:format_3752"
       },
       "sc:name": "Report"
+    },
+    {
+      "@id": "https://doi.org/10.1016/0020-7381(83)85053-0",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

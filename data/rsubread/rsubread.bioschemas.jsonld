@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,32 +36,28 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/nar/gkz114",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/rsubread",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N50b82389849a4bc298414b46a3f9bc6b"
+        "@id": "_:Nd60096a942b34068962b011b7b0c2e08"
       },
       "bsc:output": {
-        "@id": "_:Ne7a4b86d93db460faf4c2ee887200bed"
+        "@id": "_:N9b4b827e884d4548ab76b3d9de924a99"
       },
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
-        "Library",
-        "Command-line tool"
+        "Command-line tool",
+        "Library"
       ],
       "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_0204"
+        },
         {
           "@id": "edam:topic_3053"
         },
         {
           "@id": "edam:topic_3168"
-        },
-        {
-          "@id": "edam:topic_0204"
         }
       ],
       "sc:citation": {
@@ -75,8 +71,8 @@
       "sc:name": "Rsubread",
       "sc:operatingSystem": [
         "Linux",
-        "Windows",
-        "Mac"
+        "Mac",
+        "Windows"
       ],
       "sc:softwareHelp": {
         "@id": "https://bioconductor.org/packages/Rsubread"
@@ -85,7 +81,7 @@
       "sc:url": "https://bioconductor.org/packages/Rsubread"
     },
     {
-      "@id": "_:N50b82389849a4bc298414b46a3f9bc6b",
+      "@id": "_:Nd60096a942b34068962b011b7b0c2e08",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1383"
@@ -101,7 +97,7 @@
       "sc:name": "Sequence alignment (nucleic acid)"
     },
     {
-      "@id": "_:Ne7a4b86d93db460faf4c2ee887200bed",
+      "@id": "_:N9b4b827e884d4548ab76b3d9de924a99",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0863"
@@ -110,6 +106,10 @@
         "@id": "edam:format_2572"
       },
       "sc:name": "Sequence alignment"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/gkz114",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

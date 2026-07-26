@@ -9,7 +9,7 @@
     "dcam": "http://purl.org/dc/dcam/",
     "dcat": "http://www.w3.org/ns/dcat#",
     "dcmitype": "http://purl.org/dc/dcmitype/",
-    "dcterms": "http://purl.org/dc/terms/",
+    "dct": "http://purl.org/dc/terms/",
     "doap": "http://usefulinc.com/ns/doap#",
     "edam": "http://edamontology.org/",
     "foaf": "http://xmlns.com/foaf/0.1/",
@@ -36,24 +36,20 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.18129/B9.bioc.genomes",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/genomes",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Ne72edfd7f17e478bb9721f03814958fb"
+        "@id": "_:N6ec0d169728941d2a071f34588712a87"
       },
       "bsc:output": [
         {
-          "@id": "_:Nce0e59d00fa744eea032779161decbbd"
+          "@id": "_:N198e40b8bb5a4a4e8d3e9cdd4e8a296b"
         },
         {
-          "@id": "_:N104b5e90f4d144578ec18106215ff212"
+          "@id": "_:N292a1e3b57a14ce2aec700a891e7a408"
         }
       ],
-      "dcterms:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
         "Command-line tool",
         "Library"
@@ -71,8 +67,8 @@
       "sc:license": "GPL-3.0-only",
       "sc:name": "genomes",
       "sc:operatingSystem": [
-        "Mac",
         "Linux",
+        "Mac",
         "Windows"
       ],
       "sc:softwareHelp": {
@@ -82,18 +78,18 @@
       "sc:url": "https://bioconductor.org/packages/genomes"
     },
     {
-      "@id": "_:Nce0e59d00fa744eea032779161decbbd",
+      "@id": "_:N6ec0d169728941d2a071f34588712a87",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_3181"
+        "@id": "edam:data_1050"
       },
       "sc:encodingFormat": {
         "@id": "edam:format_2330"
       },
-      "sc:name": "Sequence assembly report"
+      "sc:name": "File name"
     },
     {
-      "@id": "_:N104b5e90f4d144578ec18106215ff212",
+      "@id": "_:N198e40b8bb5a4a4e8d3e9cdd4e8a296b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2711"
@@ -104,15 +100,19 @@
       "sc:name": "Genome report"
     },
     {
-      "@id": "_:Ne72edfd7f17e478bb9721f03814958fb",
+      "@id": "_:N292a1e3b57a14ce2aec700a891e7a408",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
-        "@id": "edam:data_1050"
+        "@id": "edam:data_3181"
       },
       "sc:encodingFormat": {
         "@id": "edam:format_2330"
       },
-      "sc:name": "File name"
+      "sc:name": "Sequence assembly report"
+    },
+    {
+      "@id": "https://doi.org/10.18129/B9.bioc.genomes",
+      "@type": "sc:CreativeWork"
     }
   ]
 }
