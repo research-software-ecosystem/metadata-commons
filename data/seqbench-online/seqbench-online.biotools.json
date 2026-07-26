@@ -3,7 +3,7 @@
     "biotoolsCURIE": "biotools:seqbench-online",
     "biotoolsID": "seqbench-online",
     "cost": "Free of charge",
-    "description": "SeqBench is a free collection of browser-based tools for working with DNA, RNA and protein sequences, including reverse complement, translation, ORF finding, GC content, primer melting temperature, restriction site analysis, codon optimization, pairwise alignment and plasmid visualization. All computation runs client-side in the browser, so input sequences are never uploaded to a server.",
+    "description": "SeqBench is a browser-based toolkit for DNA, RNA and protein sequence analysis: primer design, restriction digest and cloning simulation, CRISPR guide design, codon optimization, pairwise alignment and plasmid annotation. Supports batch FASTA processing and multi-tool workflow pipelines, and every tool is also exposed as a REST API and MCP server for scripted or agent-driven use. All computation runs client-side in the browser, so input sequences are never uploaded to a server.",
     "editPermission": {
         "type": "private"
     },
@@ -11,8 +11,20 @@
         {
             "operation": [
                 {
+                    "term": "Codon usage table generation",
+                    "uri": "http://edamontology.org/operation_0284"
+                },
+                {
                     "term": "DNA translation",
                     "uri": "http://edamontology.org/operation_0371"
+                },
+                {
+                    "term": "Genome annotation",
+                    "uri": "http://edamontology.org/operation_0362"
+                },
+                {
+                    "term": "Nucleic acid thermodynamic property calculation",
+                    "uri": "http://edamontology.org/operation_0455"
                 },
                 {
                     "term": "PCR primer design",
@@ -34,8 +46,24 @@
         }
     ],
     "homepage": "https://seqbench.com",
-    "lastUpdate": "2026-06-14T12:04:19.216242Z",
+    "lastUpdate": "2026-07-09T13:25:04.341747Z",
     "license": "Freeware",
+    "link": [
+        {
+            "note": "MCP (Model Context Protocol) server endpoint exposing all tools for agent-driven / scripted use.",
+            "type": [
+                "Service"
+            ],
+            "url": "https://seqbench.com/api/mcp"
+        },
+        {
+            "note": "REST API base URL. Every tool is available as an endpoint (POST /api/v1/tool-name), plus batch and workflow endpoints for scripted/programmatic use.",
+            "type": [
+                "Service"
+            ],
+            "url": "https://seqbench.com/api/v1"
+        }
+    ],
     "maturity": "Emerging",
     "name": "SeqBench",
     "owner": "SeqBench",

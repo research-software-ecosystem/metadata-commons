@@ -65,12 +65,12 @@
     },
     "function": [
         {
-            "cmd": "python scripts/batch_runner.py --plugin eucaim_catalogue --out faireva_out",
+            "cmd": "fair-eva-cli batch -p eucaim_legacy",
             "input": [
                 {
                     "data": {
-                        "term": "URL",
-                        "uri": "http://edamontology.org/data_1052"
+                        "term": "Database ID",
+                        "uri": "http://edamontology.org/data_1048"
                     }
                 }
             ],
@@ -98,7 +98,7 @@
     "language": [
         "Python"
     ],
-    "lastUpdate": "2025-12-04T10:57:20.901575Z",
+    "lastUpdate": "2026-07-16T12:49:00.960818Z",
     "license": "Apache-2.0",
     "link": [
         {
@@ -107,6 +107,13 @@
                 "Repository"
             ],
             "url": "https://github.com/IFCA-Advanced-Computing/FAIR_eva"
+        },
+        {
+            "note": "Repository for FAIR-EVA for eucaim plugin. Currently not public.",
+            "type": [
+                "Repository"
+            ],
+            "url": "https://gitlab.ifca.es/eucaim/fair_eucaim"
         }
     ],
     "maturity": "Mature",
@@ -135,6 +142,7 @@
         "EUCAIM_0.4.2",
         "EUCAIM_plugin_0.3",
         "EUCAIM_plugin_0.3.1",
-        "EUCAIM_plugin_0.4.0"
+        "EUCAIM_plugin_0.4.0",
+        "v0.6.1"
     ]
 }
