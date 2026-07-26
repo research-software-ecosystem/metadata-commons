@@ -1,0 +1,46 @@
+about:
+  description: 'bioformats2raw converts image file formats supported by Bio-Formats
+    into
+
+    a Zarr structure compatible with the OME-NGFF specification.
+
+    '
+  dev_url: https://github.com/glencoesoftware/bioformats2raw
+  doc_url: https://github.com/glencoesoftware/bioformats2raw/blob/v0.12.1/README.md
+  home: https://github.com/glencoesoftware/bioformats2raw
+  license: GPL-2.0-only
+  license_file: LICENSE.txt
+  summary: Bio-Formats image file format to OME-NGFF format converter
+build:
+  noarch: generic
+  number: 0
+  run_exports:
+  - null
+  script:
+  - mkdir -p "$PREFIX/share/$PKG_NAME-$PKG_VERSION-$PKG_BUILDNUM/bin" "$PREFIX/bin"
+  - cp -R lib "$PREFIX/share/$PKG_NAME-$PKG_VERSION-$PKG_BUILDNUM/"
+  - install -m 755 bin/bioformats2raw "$PREFIX/share/$PKG_NAME-$PKG_VERSION-$PKG_BUILDNUM/bin/bioformats2raw"
+  - ln -s "../share/$PKG_NAME-$PKG_VERSION-$PKG_BUILDNUM/bin/bioformats2raw" "$PREFIX/bin/bioformats2raw"
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+  recipe-maintainers:
+  - Darlokt
+  - Tom-TBT
+package:
+  name: bioformats2raw
+  version: 0.12.1
+requirements:
+  run:
+  - openjdk >=11,<26
+source:
+  sha256: 51fbbf04a83c2042b707fce016ad0c8260d37194ff8fe7d986d53f4ebee116a6
+  url: https://github.com/glencoesoftware/bioformats2raw/releases/download/v0.12.1/bioformats2raw-0.12.1.zip
+test:
+  commands:
+  - bioformats2raw --version 2>&1 | grep -F "Version = 0.12.1"
+  - bioformats2raw --help
+  - bioformats2raw "test&sizeX=16&sizeY=16.fake" output.zarr --resolutions 1
+  - test -d output.zarr
+  - rm -rf output.zarr

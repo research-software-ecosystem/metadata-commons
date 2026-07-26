@@ -1,0 +1,33 @@
+about:
+  dev_url: https://github.com/wwood/sracat-rs
+  home: https://github.com/wwood/sracat-rs
+  license: MIT
+  license_family: MIT
+  license_file:
+  - LICENSE.txt
+  - THIRDPARTY.yml
+  summary: Flexible streaming extraction of reads from NCBI .SRA files.
+build:
+  number: 0
+  run_exports:
+  - null
+package:
+  name: sracat-rs
+  version: 0.2.1
+requirements:
+  build:
+  - null
+  - null
+  - null
+  - cargo-bundle-licenses
+  - cmake
+  - make
+  - ncbi-vdb >=3.0.0,<4.0.0
+  host:
+  - ncbi-vdb >=3.0.0,<4.0.0
+source:
+  sha256: 732d97b6b42e8ac51e0d481485bd507f507c8e1f9d8e5003ea96f18f5810e8da
+  url: https://github.com/wwood/sracat-rs/archive/v0.2.1.tar.gz
+test:
+  commands:
+  - sracat-rs -h

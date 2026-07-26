@@ -1,0 +1,30 @@
+about:
+  home: https://github.com/benngaihk/gxfkit
+  license: MIT
+  license_file:
+  - LICENSE
+  - THIRDPARTY.yml
+  summary: Fast Rust reimplementation of AGAT GFF/GTF operations
+build:
+  number: 0
+  run_exports:
+  - null
+extra:
+  recipe-maintainers:
+  - benngaihk
+package:
+  name: gxfkit
+  version: 0.0.2
+requirements:
+  build:
+  - null
+  - null
+  - null
+  - cargo-bundle-licenses
+source:
+  sha256: b60a0c96f4d70abea6a0a77f26e2fe8092aa4ab913936bb502f2561689c27020
+  url: https://github.com/benngaihk/gxfkit/archive/refs/tags/v0.0.2.tar.gz
+test:
+  commands:
+  - gxfkit version
+  - gxfkit gff2gtf --help
