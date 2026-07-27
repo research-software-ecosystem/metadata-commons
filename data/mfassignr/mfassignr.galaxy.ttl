@@ -1,4 +1,4 @@
-@prefix bioconda: <https://bioconda.github.io/recipes/> .
+@prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
@@ -16,10 +16,13 @@ galaxytool:MFAssignR a schema1:SoftwareApplication ;
         edam:operation_3629 ;
     schema1:identifier biotools:mfassignr,
         bioconda:r-mfassignr ;
-    schema1:isPartOf "workflowhub:1351?version=1",
-        "workflowhub:1591?version=1" ;
+    schema1:isPartOf <https://workflowhub.eu>,
+        <https://workflowhub.eu/workflows/1351?version=1>,
+        <https://workflowhub.eu/workflows/1591?version=1> ;
     schema1:keywords "Metabolomics" ;
     schema1:name "MFAssignR" ;
     schema1:softwareVersion "1.1.2" ;
     schema1:url "https://github.com/RECETOX/MFAssignR" .
+
+<https://workflowhub.eu> a schema1:WebSite .
 

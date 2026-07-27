@@ -1,4 +1,4 @@
-@prefix bioconda: <https://bioconda.github.io/recipes/> .
+@prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
@@ -22,12 +22,21 @@ galaxytool:bbtools a schema1:SoftwareApplication ;
         edam:topic_0182 ;
     schema1:identifier biotools:bbmap,
         bioconda:bbmap ;
-    schema1:isPartOf "https://usegalaxy.eu/published/workflow?id=d967194ca51ff11e",
-        "https://usegalaxy.org.au/published/workflow?id=25f65a29ce3c3ee0",
-        "workflowhub:407?version=1",
-        "workflowhub:519?version=1" ;
+    schema1:isPartOf <https://usegalaxy.eu>,
+        <https://usegalaxy.eu/published/workflow?id=d967194ca51ff11e>,
+        <https://usegalaxy.org.au>,
+        <https://usegalaxy.org.au/published/workflow?id=25f65a29ce3c3ee0>,
+        <https://workflowhub.eu>,
+        <https://workflowhub.eu/workflows/407?version=1>,
+        <https://workflowhub.eu/workflows/519?version=1> ;
     schema1:keywords "Sequence Analysis" ;
     schema1:name "bbtools" ;
     schema1:softwareVersion "39.08" ;
     schema1:url "https://jgi.doe.gov/data-and-tools/bbtools/" .
+
+<https://usegalaxy.eu> a schema1:WebSite .
+
+<https://usegalaxy.org.au> a schema1:WebSite .
+
+<https://workflowhub.eu> a schema1:WebSite .
 

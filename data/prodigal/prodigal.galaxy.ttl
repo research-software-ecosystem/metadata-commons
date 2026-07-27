@@ -1,4 +1,4 @@
-@prefix bioconda: <https://bioconda.github.io/recipes/> .
+@prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
@@ -13,15 +13,23 @@ galaxytool:prodigal a schema1:SoftwareApplication ;
         edam:topic_0222 ;
     schema1:identifier biotools:prodigal,
         bioconda:prodigal ;
-    schema1:isPartOf "https://usegalaxy.eu/published/workflow?id=2ee0eb74e839b476",
-        "https://usegalaxy.eu/published/workflow?id=62392daea25a3980",
-        "https://usegalaxy.eu/published/workflow?id=6dbbf39e07a5212e",
-        "https://usegalaxy.eu/published/workflow?id=b9c938d1af08124b",
-        "https://usegalaxy.org/published/workflow?id=d3c400275889ce4b",
-        "workflowhub:1663?version=1",
-        "workflowhub:2024?version=4" ;
+    schema1:isPartOf <https://usegalaxy.eu>,
+        <https://usegalaxy.eu/published/workflow?id=2ee0eb74e839b476>,
+        <https://usegalaxy.eu/published/workflow?id=62392daea25a3980>,
+        <https://usegalaxy.eu/published/workflow?id=6dbbf39e07a5212e>,
+        <https://usegalaxy.eu/published/workflow?id=b9c938d1af08124b>,
+        <https://usegalaxy.org>,
+        <https://usegalaxy.org/published/workflow?id=d3c400275889ce4b>,
+        <https://workflowhub.eu>,
+        <https://workflowhub.eu/workflows/1663?version=1> ;
     schema1:keywords "Genome annotation" ;
     schema1:name "prodigal" ;
-    schema1:softwareVersion "2.6.3" ;
+    schema1:softwareVersion "@VERSION@" ;
     schema1:url "https://github.com/hyattpd/Prodigal" .
+
+<https://usegalaxy.eu> a schema1:WebSite .
+
+<https://usegalaxy.org> a schema1:WebSite .
+
+<https://workflowhub.eu> a schema1:WebSite .
 

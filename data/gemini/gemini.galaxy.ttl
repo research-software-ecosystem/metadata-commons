@@ -1,4 +1,4 @@
-@prefix bioconda: <https://bioconda.github.io/recipes/> .
+@prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
@@ -13,12 +13,18 @@ galaxytool:gemini a schema1:SoftwareApplication ;
         edam:topic_0080 ;
     schema1:identifier biotools:gemini,
         bioconda:glimmer ;
-    schema1:isPartOf "https://usegalaxy.eu/published/workflow?id=3dcf09e75d707573",
-        "https://usegalaxy.eu/published/workflow?id=a644e6b450dabca8",
-        "workflowhub:1656?version=1",
-        "workflowhub:358?version=1" ;
+    schema1:isPartOf <https://usegalaxy.eu>,
+        <https://usegalaxy.eu/published/workflow?id=3dcf09e75d707573>,
+        <https://usegalaxy.eu/published/workflow?id=a644e6b450dabca8>,
+        <https://workflowhub.eu>,
+        <https://workflowhub.eu/workflows/1656?version=1>,
+        <https://workflowhub.eu/workflows/358?version=1> ;
     schema1:keywords "Sequence Analysis" ;
     schema1:name "gemini" ;
     schema1:softwareVersion "3.02" ;
     schema1:url "https://ccb.jhu.edu/software/glimmer/" .
+
+<https://usegalaxy.eu> a schema1:WebSite .
+
+<https://workflowhub.eu> a schema1:WebSite .
 

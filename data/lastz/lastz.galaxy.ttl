@@ -1,4 +1,4 @@
-@prefix bioconda: <https://bioconda.github.io/recipes/> .
+@prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
@@ -13,12 +13,24 @@ galaxytool:lastz a schema1:SoftwareApplication ;
         edam:topic_0182 ;
     schema1:identifier biotools:lastz,
         bioconda:lastz ;
-    schema1:isPartOf "https://usegalaxy.eu/published/workflow?id=0e492839192d26e0",
-        "https://usegalaxy.org.au/published/workflow?id=b808cd1c0090b068",
-        "https://usegalaxy.org/published/workflow?id=23212ae74fc2d2b5",
-        "workflowhub:1638?version=1" ;
+    schema1:isPartOf <https://usegalaxy.eu>,
+        <https://usegalaxy.eu/published/workflow?id=0e492839192d26e0>,
+        <https://usegalaxy.org>,
+        <https://usegalaxy.org.au>,
+        <https://usegalaxy.org.au/published/workflow?id=b808cd1c0090b068>,
+        <https://usegalaxy.org/published/workflow?id=23212ae74fc2d2b5>,
+        <https://workflowhub.eu>,
+        <https://workflowhub.eu/workflows/1638?version=1> ;
     schema1:keywords "Next Gen Mappers" ;
     schema1:name "lastz" ;
     schema1:softwareVersion "1.04.52" ;
     schema1:url "https://github.com/lastz/lastz" .
+
+<https://usegalaxy.eu> a schema1:WebSite .
+
+<https://usegalaxy.org> a schema1:WebSite .
+
+<https://usegalaxy.org.au> a schema1:WebSite .
+
+<https://workflowhub.eu> a schema1:WebSite .
 

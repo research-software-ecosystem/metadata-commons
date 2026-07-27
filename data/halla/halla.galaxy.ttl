@@ -1,4 +1,4 @@
-@prefix bioconda: <https://bioconda.github.io/recipes/> .
+@prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
@@ -18,6 +18,6 @@ galaxytool:halla a schema1:SoftwareApplication ;
         bioconda:halla ;
     schema1:keywords "Metagenomics" ;
     schema1:name "halla" ;
-    schema1:softwareVersion "0.8.40" ;
+    schema1:softwareVersion "@TOOL_VERSION@+galaxy@VERSION_SUFFIX@" ;
     schema1:url "https://github.com/biobakery/halla" .
 

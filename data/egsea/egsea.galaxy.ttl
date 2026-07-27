@@ -1,4 +1,4 @@
-@prefix bioconda: <https://bioconda.github.io/recipes/> .
+@prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
@@ -10,12 +10,15 @@ galaxytool:egsea a schema1:SoftwareApplication ;
     schema1:featureList edam:operation_3224 ;
     schema1:identifier biotools:egsea,
         bioconda:bioconductor-egsea ;
-    schema1:isPartOf "https://usegalaxy.eu/published/workflow?id=12bf85cdc8102bb5",
-        "https://usegalaxy.eu/published/workflow?id=63c91ea322cd2819",
-        "https://usegalaxy.eu/published/workflow?id=732fa536cdc70c96",
-        "https://usegalaxy.eu/published/workflow?id=8b1e2fe9f4a07de0",
-        "https://usegalaxy.org.au/published/workflow?id=9f6e62f465589ca3",
-        "workflowhub:1699?version=1" ;
+    schema1:isPartOf <https://usegalaxy.eu>,
+        <https://usegalaxy.eu/published/workflow?id=12bf85cdc8102bb5>,
+        <https://usegalaxy.eu/published/workflow?id=63c91ea322cd2819>,
+        <https://usegalaxy.eu/published/workflow?id=732fa536cdc70c96>,
+        <https://usegalaxy.eu/published/workflow?id=8b1e2fe9f4a07de0>,
+        <https://usegalaxy.org.au>,
+        <https://usegalaxy.org.au/published/workflow?id=9f6e62f465589ca3>,
+        <https://workflowhub.eu>,
+        <https://workflowhub.eu/workflows/1699?version=1> ;
     schema1:keywords "RNA",
         "Single Cell",
         "Statistics",
@@ -23,4 +26,10 @@ galaxytool:egsea a schema1:SoftwareApplication ;
     schema1:name "egsea" ;
     schema1:softwareVersion "1.20.0" ;
     schema1:url "https://bioconductor.org/packages/release/bioc/html/EGSEA.html" .
+
+<https://usegalaxy.eu> a schema1:WebSite .
+
+<https://usegalaxy.org.au> a schema1:WebSite .
+
+<https://workflowhub.eu> a schema1:WebSite .
 

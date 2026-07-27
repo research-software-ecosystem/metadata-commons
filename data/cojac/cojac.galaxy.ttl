@@ -1,4 +1,4 @@
-@prefix bioconda: <https://bioconda.github.io/recipes/> .
+@prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
@@ -9,10 +9,13 @@ galaxytool:cojac a schema1:SoftwareApplication ;
     schema1:description "co-occurrence of mutations on amplicons" ;
     schema1:identifier biotools:cojac,
         bioconda:cojac ;
-    schema1:isPartOf "https://usegalaxy.eu/published/workflow?id=d88145e7475e0b7b" ;
+    schema1:isPartOf <https://usegalaxy.eu>,
+        <https://usegalaxy.eu/published/workflow?id=d88145e7475e0b7b> ;
     schema1:keywords "Metagenomics",
         "Sequence Analysis" ;
     schema1:name "cojac" ;
     schema1:softwareVersion "0.9.3" ;
     schema1:url "https://github.com/cbg-ethz/cojac" .
+
+<https://usegalaxy.eu> a schema1:WebSite .
 

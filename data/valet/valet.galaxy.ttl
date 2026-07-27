@@ -1,4 +1,4 @@
-@prefix bioconda: <https://bioconda.github.io/recipes/> .
+@prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
@@ -16,9 +16,13 @@ galaxytool:valet a schema1:SoftwareApplication ;
         edam:topic_0196 ;
     schema1:identifier biotools:valet,
         bioconda:valet ;
-    schema1:isPartOf "https://usegalaxy.eu/published/workflow?id=1524b189069b42a5",
-        "https://usegalaxy.eu/published/workflow?id=579ff83177c5ee09" ;
+    schema1:isPartOf <https://usegalaxy.eu>,
+        <https://usegalaxy.eu/published/workflow?id=1524b189069b42a5>,
+        <https://usegalaxy.eu/published/workflow?id=579ff83177c5ee09> ;
     schema1:keywords "Metagenomics" ;
     schema1:name "valet" ;
+    schema1:softwareVersion "@WRAPPER_VERSION@.0" ;
     schema1:url "https://github.com/marbl/VALET" .
+
+<https://usegalaxy.eu> a schema1:WebSite .
 

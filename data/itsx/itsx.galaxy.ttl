@@ -1,4 +1,4 @@
-@prefix bioconda: <https://bioconda.github.io/recipes/> .
+@prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
@@ -12,9 +12,14 @@ galaxytool:itsx a schema1:SoftwareApplication ;
         edam:topic_3072 ;
     schema1:identifier biotools:ITSx,
         bioconda:itsx ;
-    schema1:isPartOf "https://usegalaxy.eu/published/workflow?id=4eb9dfe91fc2dc67" ;
+    schema1:isPartOf <https://usegalaxy.eu>,
+        <https://usegalaxy.eu/published/workflow?id=4eb9dfe91fc2dc67>,
+        <https://usegalaxy.eu/published/workflow?id=6e3f8dd5fdfbcfbe>,
+        <https://usegalaxy.eu/published/workflow?id=9cce01219994b52e> ;
     schema1:keywords "Metagenomics" ;
     schema1:name "itsx" ;
     schema1:softwareVersion "1.1.3" ;
     schema1:url "https://microbiology.se/software/itsx/" .
+
+<https://usegalaxy.eu> a schema1:WebSite .
 

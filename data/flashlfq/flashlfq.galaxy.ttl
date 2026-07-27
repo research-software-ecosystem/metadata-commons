@@ -1,4 +1,4 @@
-@prefix bioconda: <https://bioconda.github.io/recipes/> .
+@prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
@@ -11,13 +11,19 @@ galaxytool:flashlfq a schema1:SoftwareApplication ;
     schema1:featureList edam:operation_3634 ;
     schema1:identifier biotools:flashlfq,
         bioconda:flashlfq ;
-    schema1:isPartOf "https://usegalaxy.eu/published/workflow?id=ba3a5d59b3879764",
-        "https://usegalaxy.eu/published/workflow?id=cd675ab32d3e7833",
-        "https://usegalaxy.eu/published/workflow?id=d0e062aee910086a",
-        "https://usegalaxy.eu/published/workflow?id=fc42cc9467c6ee8d",
-        "workflowhub:1450?version=1" ;
+    schema1:isPartOf <https://usegalaxy.eu>,
+        <https://usegalaxy.eu/published/workflow?id=ba3a5d59b3879764>,
+        <https://usegalaxy.eu/published/workflow?id=cd675ab32d3e7833>,
+        <https://usegalaxy.eu/published/workflow?id=d0e062aee910086a>,
+        <https://usegalaxy.eu/published/workflow?id=fc42cc9467c6ee8d>,
+        <https://workflowhub.eu>,
+        <https://workflowhub.eu/workflows/1450?version=1> ;
     schema1:keywords "Proteomics" ;
     schema1:name "flashlfq" ;
     schema1:softwareVersion "1.0.3.1" ;
     schema1:url "https://github.com/smith-chem-wisc/FlashLFQ" .
+
+<https://usegalaxy.eu> a schema1:WebSite .
+
+<https://workflowhub.eu> a schema1:WebSite .
 

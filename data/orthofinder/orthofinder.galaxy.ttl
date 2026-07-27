@@ -1,4 +1,4 @@
-@prefix bioconda: <https://bioconda.github.io/recipes/> .
+@prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
@@ -16,11 +16,19 @@ galaxytool:orthofinder a schema1:SoftwareApplication ;
         edam:operation_3209 ;
     schema1:identifier biotools:OrthoFinder,
         bioconda:orthofinder ;
-    schema1:isPartOf "https://usegalaxy.eu/published/workflow?id=d8492b49aed84d4f",
-        "https://usegalaxy.eu/published/workflow?id=e5becc6d66b2568c" ;
+    schema1:isPartOf <https://usegalaxy.eu>,
+        <https://usegalaxy.eu/published/workflow?id=d8492b49aed84d4f>,
+        <https://usegalaxy.eu/published/workflow?id=e0c709127e9a42ae>,
+        <https://usegalaxy.eu/published/workflow?id=e5becc6d66b2568c>,
+        <https://usegalaxy.org>,
+        <https://usegalaxy.org/published/workflow?id=84b447be2f1c5870> ;
     schema1:keywords "Phylogenetics",
         "Sequence Analysis" ;
     schema1:name "orthofinder" ;
     schema1:softwareVersion "2.5.5" ;
     schema1:url "https://github.com/davidemms/OrthoFinder" .
+
+<https://usegalaxy.eu> a schema1:WebSite .
+
+<https://usegalaxy.org> a schema1:WebSite .
 

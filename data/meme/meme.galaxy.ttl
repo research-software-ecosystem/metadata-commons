@@ -1,4 +1,4 @@
-@prefix bioconda: <https://bioconda.github.io/recipes/> .
+@prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
@@ -17,10 +17,13 @@ galaxytool:meme a schema1:SoftwareApplication ;
         edam:operation_0438 ;
     schema1:identifier biotools:streme,
         bioconda:meme ;
-    schema1:isPartOf "https://usegalaxy.org/published/workflow?id=2049d38325423cfe",
-        "https://usegalaxy.org/published/workflow?id=ecb279a9114140ab" ;
+    schema1:isPartOf <https://usegalaxy.org>,
+        <https://usegalaxy.org/published/workflow?id=2049d38325423cfe>,
+        <https://usegalaxy.org/published/workflow?id=ecb279a9114140ab> ;
     schema1:keywords "ChIP-seq" ;
     schema1:name "meme" ;
     schema1:softwareVersion "5.5.8" ;
     schema1:url "http://meme-suite.org/" .
+
+<https://usegalaxy.org> a schema1:WebSite .
 

@@ -1,4 +1,4 @@
-@prefix bioconda: <https://bioconda.github.io/recipes/> .
+@prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
@@ -13,12 +13,21 @@ galaxytool:phyloseq a schema1:SoftwareApplication ;
     schema1:featureList edam:operation_0337 ;
     schema1:identifier biotools:phyloseq,
         bioconda:bioconductor-phyloseq ;
-    schema1:isPartOf "https://usegalaxy.eu/published/workflow?id=466bdd8ba7b67264",
-        "https://usegalaxy.eu/published/workflow?id=e3918808605cf8cd",
-        "https://usegalaxy.org/published/workflow?id=4faff660f6defa10",
-        "workflowhub:1395?version=2" ;
+    schema1:isPartOf <https://usegalaxy.eu>,
+        <https://usegalaxy.eu/published/workflow?id=466bdd8ba7b67264>,
+        <https://usegalaxy.eu/published/workflow?id=e3918808605cf8cd>,
+        <https://usegalaxy.org>,
+        <https://usegalaxy.org/published/workflow?id=4faff660f6defa10>,
+        <https://workflowhub.eu>,
+        <https://workflowhub.eu/workflows/1395?version=2> ;
     schema1:keywords "Metagenomics" ;
     schema1:name "phyloseq" ;
     schema1:softwareVersion "1.54.0" ;
     schema1:url "https://www.bioconductor.org/packages/release/bioc/html/phyloseq.html" .
+
+<https://usegalaxy.eu> a schema1:WebSite .
+
+<https://usegalaxy.org> a schema1:WebSite .
+
+<https://workflowhub.eu> a schema1:WebSite .
 

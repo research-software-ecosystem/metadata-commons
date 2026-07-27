@@ -1,4 +1,4 @@
-@prefix bioconda: <https://bioconda.github.io/recipes/> .
+@prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
@@ -16,5 +16,5 @@ galaxytool:gubbins a schema1:SoftwareApplication ;
         bioconda:gubbins ;
     schema1:keywords "Sequence Analysis" ;
     schema1:name "gubbins" ;
-    schema1:softwareVersion "3.2.1" .
+    schema1:softwareVersion "@TOOL_VERSION@+galaxy@VERSION_SUFFIX@" .
 

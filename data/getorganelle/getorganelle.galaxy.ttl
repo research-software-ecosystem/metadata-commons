@@ -1,4 +1,4 @@
-@prefix bioconda: <https://bioconda.github.io/recipes/> .
+@prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
@@ -22,9 +22,12 @@ galaxytool:getorganelle a schema1:SoftwareApplication ;
         edam:topic_0102 ;
     schema1:identifier biotools:getorganelle,
         bioconda:getorganelle ;
-    schema1:isPartOf "https://usegalaxy.org.au/published/workflow?id=f2541030f6d70b59" ;
+    schema1:isPartOf <https://usegalaxy.org.au>,
+        <https://usegalaxy.org.au/published/workflow?id=f2541030f6d70b59> ;
     schema1:keywords "Assembly" ;
     schema1:name "getorganelle" ;
     schema1:softwareVersion "1.7.7.1" ;
     schema1:url "https://github.com/Kinggerm/GetOrganelle" .
+
+<https://usegalaxy.org.au> a schema1:WebSite .
 

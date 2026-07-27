@@ -1,4 +1,4 @@
-@prefix bioconda: <https://bioconda.github.io/recipes/> .
+@prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
@@ -15,9 +15,12 @@ galaxytool:nextdenovo a schema1:SoftwareApplication ;
         edam:operation_3440 ;
     schema1:identifier biotools:nextdenovo,
         bioconda:nextdenovo ;
-    schema1:isPartOf "workflowhub:789?version=1" ;
+    schema1:isPartOf <https://workflowhub.eu>,
+        <https://workflowhub.eu/workflows/789?version=1> ;
     schema1:keywords "Assembly" ;
     schema1:name "nextdenovo" ;
     schema1:softwareVersion "2.5.0" ;
     schema1:url "https://github.com/Nextomics/NextDenovo" .
+
+<https://workflowhub.eu> a schema1:WebSite .
 

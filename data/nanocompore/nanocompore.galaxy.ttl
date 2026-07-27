@@ -1,4 +1,4 @@
-@prefix bioconda: <https://bioconda.github.io/recipes/> .
+@prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
@@ -16,10 +16,13 @@ galaxytool:nanocompore a schema1:SoftwareApplication ;
         edam:operation_3472 ;
     schema1:identifier biotools:Nanocompore,
         bioconda:nanocompore ;
-    schema1:isPartOf "https://usegalaxy.eu/published/workflow?id=778923dd04996e07",
-        "https://usegalaxy.eu/published/workflow?id=77db45ad90b4033d" ;
+    schema1:isPartOf <https://usegalaxy.eu>,
+        <https://usegalaxy.eu/published/workflow?id=778923dd04996e07>,
+        <https://usegalaxy.eu/published/workflow?id=77db45ad90b4033d> ;
     schema1:keywords "Sequence Analysis" ;
     schema1:name "nanocompore" ;
     schema1:softwareVersion "1.0.0rc3.post2" ;
     schema1:url "https://nanocompore.rna.rocks/" .
+
+<https://usegalaxy.eu> a schema1:WebSite .
 

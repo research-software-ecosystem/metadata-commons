@@ -1,4 +1,4 @@
-@prefix bioconda: <https://bioconda.github.io/recipes/> .
+@prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
@@ -13,6 +13,6 @@ galaxytool:structure a schema1:SoftwareApplication ;
     schema1:keywords "Phylogenetics",
         "Variant Analysis" ;
     schema1:name "structure" ;
-    schema1:softwareVersion "2.3.4" ;
+    schema1:softwareVersion "@TOOL_VERSION@+galaxy@VERSION_SUFFIX@" ;
     schema1:url "https://web.stanford.edu/group/pritchardlab/structure.html" .
 

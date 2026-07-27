@@ -1,4 +1,4 @@
-@prefix bioconda: <https://bioconda.github.io/recipes/> .
+@prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
@@ -13,12 +13,19 @@ galaxytool:agat a schema1:SoftwareApplication ;
         edam:topic_0222 ;
     schema1:identifier biotools:agat,
         bioconda:agat ;
-    schema1:isPartOf "https://usegalaxy.org/published/workflow?id=951575e9a352301c",
-        "workflowhub:1096?version=2" ;
+    schema1:isPartOf <https://usegalaxy.org>,
+        <https://usegalaxy.org/published/workflow?id=84b447be2f1c5870>,
+        <https://usegalaxy.org/published/workflow?id=951575e9a352301c>,
+        <https://workflowhub.eu>,
+        <https://workflowhub.eu/workflows/1096?version=2> ;
     schema1:keywords "Convert Formats",
         "Fasta Manipulation",
         "Statistics" ;
     schema1:name "agat" ;
     schema1:softwareVersion "1.7.0" ;
     schema1:url "https://github.com/NBISweden/AGAT" .
+
+<https://usegalaxy.org> a schema1:WebSite .
+
+<https://workflowhub.eu> a schema1:WebSite .
 

@@ -1,4 +1,4 @@
-@prefix bioconda: <https://bioconda.github.io/recipes/> .
+@prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
@@ -16,9 +16,12 @@ galaxytool:orfipy a schema1:SoftwareApplication ;
         edam:operation_3258 ;
     schema1:identifier biotools:orfipy,
         bioconda:orfipy ;
-    schema1:isPartOf "https://usegalaxy.eu/published/workflow?id=30dc526dcfa500df" ;
+    schema1:isPartOf <https://usegalaxy.eu>,
+        <https://usegalaxy.eu/published/workflow?id=30dc526dcfa500df> ;
     schema1:keywords "Sequence Analysis" ;
     schema1:name "orfipy" ;
     schema1:softwareVersion "0.0.4" ;
     schema1:url "https://github.com/urmi-21/orfipy" .
+
+<https://usegalaxy.eu> a schema1:WebSite .
 

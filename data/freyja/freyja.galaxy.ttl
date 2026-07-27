@@ -1,4 +1,4 @@
-@prefix bioconda: <https://bioconda.github.io/recipes/> .
+@prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
@@ -10,11 +10,14 @@ galaxytool:freyja a schema1:SoftwareApplication ;
     schema1:featureList edam:operation_3800 ;
     schema1:identifier biotools:freyja,
         bioconda:freyja ;
-    schema1:isPartOf "https://usegalaxy.eu/published/workflow?id=4a764275d4bf9f31",
-        "https://usegalaxy.eu/published/workflow?id=d88145e7475e0b7b" ;
+    schema1:isPartOf <https://usegalaxy.eu>,
+        <https://usegalaxy.eu/published/workflow?id=4a764275d4bf9f31>,
+        <https://usegalaxy.eu/published/workflow?id=d88145e7475e0b7b> ;
     schema1:keywords "Metagenomics",
         "Sequence Analysis" ;
     schema1:name "freyja" ;
     schema1:softwareVersion "2.0.1" ;
     schema1:url "https://github.com/andersen-lab/Freyja" .
+
+<https://usegalaxy.eu> a schema1:WebSite .
 

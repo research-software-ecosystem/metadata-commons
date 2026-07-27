@@ -1,4 +1,4 @@
-@prefix bioconda: <https://bioconda.github.io/recipes/> .
+@prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
@@ -9,9 +9,12 @@ galaxytool:cnvkit a schema1:SoftwareApplication ;
     schema1:featureList edam:operation_3227 ;
     schema1:identifier biotools:cnvkit,
         bioconda:cnvkit ;
-    schema1:isPartOf "https://usegalaxy.eu/published/workflow?id=07b440eec3ac7c2e" ;
+    schema1:isPartOf <https://usegalaxy.eu>,
+        <https://usegalaxy.eu/published/workflow?id=07b440eec3ac7c2e> ;
     schema1:keywords "Variant Analysis" ;
     schema1:name "cnvkit" ;
     schema1:softwareVersion "0.9.12" ;
     schema1:url "https://github.com/etal/cnvkit" .
+
+<https://usegalaxy.eu> a schema1:WebSite .
 

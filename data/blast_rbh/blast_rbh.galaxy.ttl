@@ -1,4 +1,4 @@
-@prefix bioconda: <https://bioconda.github.io/recipes/> .
+@prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
@@ -12,10 +12,13 @@ galaxytool:blast_rbh a schema1:SoftwareApplication ;
         edam:topic_0640 ;
     schema1:identifier biotools:blast_rbh,
         bioconda:biopython ;
-    schema1:isPartOf "https://usegalaxy.eu/published/workflow?id=7f6950394a8c9c4a" ;
+    schema1:isPartOf <https://usegalaxy.eu>,
+        <https://usegalaxy.eu/published/workflow?id=7f6950394a8c9c4a> ;
     schema1:keywords "Fasta Manipulation",
         "Sequence Analysis" ;
     schema1:name "blast_rbh" ;
     schema1:softwareVersion "0.3.0" ;
     schema1:url "https://github.com/peterjc/galaxy_blast/tree/master/tools/blast_rbh" .
+
+<https://usegalaxy.eu> a schema1:WebSite .
 

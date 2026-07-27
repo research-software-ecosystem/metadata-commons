@@ -1,4 +1,4 @@
-@prefix bioconda: <https://bioconda.github.io/recipes/> .
+@prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
@@ -16,10 +16,13 @@ galaxytool:virannot a schema1:SoftwareApplication ;
         edam:topic_0221 ;
     schema1:identifier biotools:virannot,
         bioconda:biopython ;
-    schema1:isPartOf "https://usegalaxy.eu/published/workflow?id=17f73aba442315e6",
-        "https://usegalaxy.eu/published/workflow?id=86465932556bc96c" ;
+    schema1:isPartOf <https://usegalaxy.eu>,
+        <https://usegalaxy.eu/published/workflow?id=17f73aba442315e6>,
+        <https://usegalaxy.eu/published/workflow?id=86465932556bc96c> ;
     schema1:keywords "Metagenomics" ;
     schema1:name "virannot" ;
     schema1:softwareVersion "1.2.0" ;
     schema1:url "https://github.com/marieBvr/virAnnot" .
+
+<https://usegalaxy.eu> a schema1:WebSite .
 

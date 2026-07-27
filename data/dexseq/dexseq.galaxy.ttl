@@ -1,4 +1,4 @@
-@prefix bioconda: <https://bioconda.github.io/recipes/> .
+@prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
@@ -11,7 +11,8 @@ galaxytool:dexseq a schema1:SoftwareApplication ;
         edam:operation_3501 ;
     schema1:identifier biotools:dexseq,
         bioconda:bioconductor-dexseq ;
-    schema1:isPartOf "https://usegalaxy.org/published/workflow?id=82681bd5f059e39a" ;
+    schema1:isPartOf <https://usegalaxy.org>,
+        <https://usegalaxy.org/published/workflow?id=82681bd5f059e39a> ;
     schema1:keywords "RNA",
         "Single Cell",
         "Statistics",
@@ -19,4 +20,6 @@ galaxytool:dexseq a schema1:SoftwareApplication ;
     schema1:name "dexseq" ;
     schema1:softwareVersion "1.48.0" ;
     schema1:url "https://www.bioconductor.org/packages/release/bioc/html/DEXSeq.html" .
+
+<https://usegalaxy.org> a schema1:WebSite .
 

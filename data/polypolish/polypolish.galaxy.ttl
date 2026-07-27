@@ -1,4 +1,4 @@
-@prefix bioconda: <https://bioconda.github.io/recipes/> .
+@prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
@@ -19,10 +19,16 @@ galaxytool:polypolish a schema1:SoftwareApplication ;
         edam:operation_3440 ;
     schema1:identifier biotools:Polypolish,
         bioconda:polypolish ;
-    schema1:isPartOf "https://usegalaxy.eu/published/workflow?id=2c992e509aa5dd9d",
-        "workflowhub:1613?version=2" ;
+    schema1:isPartOf <https://usegalaxy.eu>,
+        <https://usegalaxy.eu/published/workflow?id=2c992e509aa5dd9d>,
+        <https://workflowhub.eu>,
+        <https://workflowhub.eu/workflows/1613?version=2> ;
     schema1:keywords "Sequence Analysis" ;
     schema1:name "polypolish" ;
     schema1:softwareVersion "0.6.1" ;
     schema1:url "https://github.com/rrwick/Polypolish" .
+
+<https://usegalaxy.eu> a schema1:WebSite .
+
+<https://workflowhub.eu> a schema1:WebSite .
 

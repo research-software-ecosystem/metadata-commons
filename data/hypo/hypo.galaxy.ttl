@@ -1,4 +1,4 @@
-@prefix bioconda: <https://bioconda.github.io/recipes/> .
+@prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
@@ -15,11 +15,17 @@ galaxytool:hypo a schema1:SoftwareApplication ;
         edam:operation_3440 ;
     schema1:identifier biotools:HyPo,
         bioconda:hypo ;
-    schema1:isPartOf "https://usegalaxy.eu/published/workflow?id=83a1b8949d87e3da",
-        "workflowhub:788?version=1",
-        "workflowhub:789?version=1" ;
+    schema1:isPartOf <https://usegalaxy.eu>,
+        <https://usegalaxy.eu/published/workflow?id=83a1b8949d87e3da>,
+        <https://workflowhub.eu>,
+        <https://workflowhub.eu/workflows/788?version=1>,
+        <https://workflowhub.eu/workflows/789?version=1> ;
     schema1:keywords "Assembly" ;
     schema1:name "hypo" ;
     schema1:softwareVersion "1.0.3" ;
     schema1:url "https://github.com/kensung-lab/hypo" .
+
+<https://usegalaxy.eu> a schema1:WebSite .
+
+<https://workflowhub.eu> a schema1:WebSite .
 

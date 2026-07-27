@@ -1,4 +1,4 @@
-@prefix bioconda: <https://bioconda.github.io/recipes/> .
+@prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
@@ -12,10 +12,13 @@ galaxytool:trinity a schema1:SoftwareApplication ;
     schema1:featureList edam:operation_3258 ;
     schema1:identifier biotools:trinity,
         bioconda:trinity ;
-    schema1:isPartOf "workflowhub:1716?version=1" ;
+    schema1:isPartOf <https://workflowhub.eu>,
+        <https://workflowhub.eu/workflows/1716?version=1> ;
     schema1:keywords "RNA",
         "Transcriptomics" ;
     schema1:name "trinity" ;
     schema1:softwareVersion "2.15.1" ;
     schema1:url "https://github.com/trinityrnaseq/trinityrnaseq" .
+
+<https://workflowhub.eu> a schema1:WebSite .
 

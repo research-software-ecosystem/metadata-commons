@@ -1,4 +1,4 @@
-@prefix bioconda: <https://bioconda.github.io/recipes/> .
+@prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
@@ -16,9 +16,12 @@ galaxytool:recetox-aplcms a schema1:SoftwareApplication ;
         edam:topic_0083 ;
     schema1:identifier biotools:recetox-aplcms,
         bioconda:r-recetox-aplcms ;
-    schema1:isPartOf "https://usegalaxy.eu/published/workflow?id=3086366b744e8da9" ;
+    schema1:isPartOf <https://usegalaxy.eu>,
+        <https://usegalaxy.eu/published/workflow?id=3086366b744e8da9> ;
     schema1:keywords "Metabolomics" ;
     schema1:name "recetox-aplcms" ;
     schema1:softwareVersion "0.13.4" ;
     schema1:url "https://github.com/RECETOX/recetox-aplcms" .
+
+<https://usegalaxy.eu> a schema1:WebSite .
 

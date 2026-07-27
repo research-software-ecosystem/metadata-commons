@@ -1,4 +1,4 @@
-@prefix bioconda: <https://bioconda.github.io/recipes/> .
+@prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
@@ -12,24 +12,37 @@ galaxytool:diamond a schema1:SoftwareApplication ;
     schema1:featureList edam:operation_0258 ;
     schema1:identifier biotools:diamond,
         bioconda:diamond ;
-    schema1:isPartOf "https://usegalaxy.eu/published/workflow?id=2ee0eb74e839b476",
-        "https://usegalaxy.eu/published/workflow?id=559f079f6510aa24",
-        "https://usegalaxy.eu/published/workflow?id=86900be4282d4b1d",
-        "https://usegalaxy.eu/published/workflow?id=9b9e1e28f3683f92",
-        "https://usegalaxy.eu/published/workflow?id=a2c46deea34d9d80",
-        "https://usegalaxy.eu/published/workflow?id=bc32937d505135ab",
-        "https://usegalaxy.eu/published/workflow?id=bebcbd6f0ffa55c5",
-        "https://usegalaxy.eu/published/workflow?id=ff4d5beb6ce1809d",
-        "https://usegalaxy.org.au/published/workflow?id=0a3fb089674de144",
-        "https://usegalaxy.org.au/published/workflow?id=a07809974079a317",
-        "https://usegalaxy.org/published/workflow?id=b0f85c802c1ea7f8",
-        "https://usegalaxy.org/published/workflow?id=e0c33057ac2670ba",
-        "workflowhub:1103?version=3",
-        "workflowhub:1104?version=2",
-        "workflowhub:1518?version=1",
-        "workflowhub:1641?version=1" ;
+    schema1:isPartOf <https://usegalaxy.eu>,
+        <https://usegalaxy.eu/published/workflow?id=2ee0eb74e839b476>,
+        <https://usegalaxy.eu/published/workflow?id=559f079f6510aa24>,
+        <https://usegalaxy.eu/published/workflow?id=86900be4282d4b1d>,
+        <https://usegalaxy.eu/published/workflow?id=9b9e1e28f3683f92>,
+        <https://usegalaxy.eu/published/workflow?id=a2c46deea34d9d80>,
+        <https://usegalaxy.eu/published/workflow?id=bc32937d505135ab>,
+        <https://usegalaxy.eu/published/workflow?id=bebcbd6f0ffa55c5>,
+        <https://usegalaxy.eu/published/workflow?id=d50599dc83e92de5>,
+        <https://usegalaxy.eu/published/workflow?id=ff4d5beb6ce1809d>,
+        <https://usegalaxy.org>,
+        <https://usegalaxy.org.au>,
+        <https://usegalaxy.org.au/published/workflow?id=0a3fb089674de144>,
+        <https://usegalaxy.org.au/published/workflow?id=a07809974079a317>,
+        <https://usegalaxy.org/published/workflow?id=b0f85c802c1ea7f8>,
+        <https://usegalaxy.org/published/workflow?id=e0c33057ac2670ba>,
+        <https://workflowhub.eu>,
+        <https://workflowhub.eu/workflows/1103?version=3>,
+        <https://workflowhub.eu/workflows/1104?version=2>,
+        <https://workflowhub.eu/workflows/1518?version=1>,
+        <https://workflowhub.eu/workflows/1641?version=1> ;
     schema1:keywords "Sequence Analysis" ;
     schema1:name "diamond" ;
-    schema1:softwareVersion "2.1.25" ;
+    schema1:softwareVersion "2.2.2" ;
     schema1:url "https://github.com/bbuchfink/diamond" .
+
+<https://usegalaxy.eu> a schema1:WebSite .
+
+<https://usegalaxy.org> a schema1:WebSite .
+
+<https://usegalaxy.org.au> a schema1:WebSite .
+
+<https://workflowhub.eu> a schema1:WebSite .
 

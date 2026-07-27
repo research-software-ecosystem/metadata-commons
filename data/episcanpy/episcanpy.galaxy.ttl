@@ -1,4 +1,4 @@
-@prefix bioconda: <https://bioconda.github.io/recipes/> .
+@prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
@@ -13,11 +13,14 @@ galaxytool:episcanpy a schema1:SoftwareApplication ;
         edam:operation_3557 ;
     schema1:identifier biotools:episcanpy,
         bioconda:episcanpy ;
-    schema1:isPartOf "workflowhub:1502?version=2",
-        "workflowhub:1506?version=2" ;
+    schema1:isPartOf <https://workflowhub.eu>,
+        <https://workflowhub.eu/workflows/1502?version=2>,
+        <https://workflowhub.eu/workflows/1506?version=2> ;
     schema1:keywords "Epigenetics",
         "Single Cell" ;
     schema1:name "episcanpy" ;
     schema1:softwareVersion "0.3.2" ;
     schema1:url "https://github.com/colomemaria/epiScanpy" .
+
+<https://workflowhub.eu> a schema1:WebSite .
 

@@ -1,4 +1,4 @@
-@prefix bioconda: <https://bioconda.github.io/recipes/> .
+@prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
@@ -14,11 +14,17 @@ galaxytool:gtdb_to_taxdump a schema1:SoftwareApplication ;
         edam:topic_0102 ;
     schema1:identifier biotools:gtdb_to_taxdump,
         bioconda:gtdb_to_taxdump ;
-    schema1:isPartOf "https://usegalaxy.eu/published/workflow?id=cf0159c14418525e",
-        "https://usegalaxy.eu/published/workflow?id=e4dabaf57668dbd1",
-        "workflowhub:2099?version=1" ;
+    schema1:isPartOf <https://usegalaxy.eu>,
+        <https://usegalaxy.eu/published/workflow?id=cf0159c14418525e>,
+        <https://usegalaxy.eu/published/workflow?id=e4dabaf57668dbd1>,
+        <https://workflowhub.eu>,
+        <https://workflowhub.eu/workflows/2099?version=3> ;
     schema1:keywords "Metagenomics" ;
     schema1:name "gtdb_to_taxdump" ;
     schema1:softwareVersion "0.1.9" ;
     schema1:url "https://github.com/nick-youngblut/gtdb_to_taxdump" .
+
+<https://usegalaxy.eu> a schema1:WebSite .
+
+<https://workflowhub.eu> a schema1:WebSite .
 

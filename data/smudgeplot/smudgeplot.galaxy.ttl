@@ -1,4 +1,4 @@
-@prefix bioconda: <https://bioconda.github.io/recipes/> .
+@prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
@@ -16,14 +16,20 @@ galaxytool:smudgeplot a schema1:SoftwareApplication ;
         edam:operation_3472 ;
     schema1:identifier biotools:smudgeplots,
         bioconda:smudgeplot ;
-    schema1:isPartOf "https://usegalaxy.eu/published/workflow?id=bc32937d505135ab",
-        "workflowhub:1103?version=3",
-        "workflowhub:1104?version=2",
-        "workflowhub:1641?version=1",
-        "workflowhub:603?version=2",
-        "workflowhub:698?version=1" ;
+    schema1:isPartOf <https://usegalaxy.eu>,
+        <https://usegalaxy.eu/published/workflow?id=bc32937d505135ab>,
+        <https://workflowhub.eu>,
+        <https://workflowhub.eu/workflows/1103?version=3>,
+        <https://workflowhub.eu/workflows/1104?version=2>,
+        <https://workflowhub.eu/workflows/1641?version=1>,
+        <https://workflowhub.eu/workflows/603?version=2>,
+        <https://workflowhub.eu/workflows/698?version=1> ;
     schema1:keywords "Assembly" ;
     schema1:name "smudgeplot" ;
     schema1:softwareVersion "0.2.5" ;
     schema1:url "https://github.com/KamilSJaron/smudgeplot" .
+
+<https://usegalaxy.eu> a schema1:WebSite .
+
+<https://workflowhub.eu> a schema1:WebSite .
 

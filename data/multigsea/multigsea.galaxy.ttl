@@ -1,4 +1,4 @@
-@prefix bioconda: <https://bioconda.github.io/recipes/> .
+@prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
@@ -16,7 +16,8 @@ galaxytool:multigsea a schema1:SoftwareApplication ;
         edam:operation_3928 ;
     schema1:identifier biotools:multiGSEA,
         bioconda:bioconductor-multigsea ;
-    schema1:isPartOf "workflowhub:1388?version=1" ;
+    schema1:isPartOf <https://workflowhub.eu>,
+        <https://workflowhub.eu/workflows/1388?version=1> ;
     schema1:keywords "Proteomics",
         "Single Cell",
         "Statistics",
@@ -24,4 +25,6 @@ galaxytool:multigsea a schema1:SoftwareApplication ;
     schema1:name "multigsea" ;
     schema1:softwareVersion "1.12.0" ;
     schema1:url "https://bioconductor.org/packages/devel/bioc/html/multiGSEA.html" .
+
+<https://workflowhub.eu> a schema1:WebSite .
 

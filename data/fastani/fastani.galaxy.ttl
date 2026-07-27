@@ -1,4 +1,4 @@
-@prefix bioconda: <https://bioconda.github.io/recipes/> .
+@prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
@@ -12,10 +12,13 @@ galaxytool:fastani a schema1:SoftwareApplication ;
         edam:operation_3182 ;
     schema1:identifier biotools:fastani,
         bioconda:fastani ;
-    schema1:isPartOf "https://usegalaxy.eu/published/workflow?id=2a1dc58e51d5f01a",
-        "https://usegalaxy.eu/published/workflow?id=bf48b0eb15e8ff75" ;
+    schema1:isPartOf <https://usegalaxy.eu>,
+        <https://usegalaxy.eu/published/workflow?id=2a1dc58e51d5f01a>,
+        <https://usegalaxy.eu/published/workflow?id=bf48b0eb15e8ff75> ;
     schema1:keywords "Sequence Analysis" ;
     schema1:name "fastani" ;
     schema1:softwareVersion "1.3" ;
     schema1:url "https://github.com/ParBLiSS/FastANI" .
+
+<https://usegalaxy.eu> a schema1:WebSite .
 

@@ -1,4 +1,4 @@
-@prefix bioconda: <https://bioconda.github.io/recipes/> .
+@prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
@@ -11,11 +11,13 @@ galaxytool:sylph a schema1:SoftwareApplication ;
         edam:operation_3460 ;
     schema1:identifier biotools:sylph,
         bioconda:sylph ;
-    schema1:isPartOf "https://usegalaxy.eu/published/workflow?id=7491883694fff308",
-        "https://usegalaxy.eu/published/workflow?id=cb2df493f5e334f7",
-        "workflowhub:2068?version=2" ;
+    schema1:isPartOf <https://usegalaxy.eu>,
+        <https://usegalaxy.eu/published/workflow?id=7491883694fff308>,
+        <https://usegalaxy.eu/published/workflow?id=cb2df493f5e334f7> ;
     schema1:keywords "Metagenomics" ;
     schema1:name "sylph" ;
     schema1:softwareVersion "0.8.1" ;
     schema1:url "https://github.com/bluenote-1577/sylph" .
+
+<https://usegalaxy.eu> a schema1:WebSite .
 

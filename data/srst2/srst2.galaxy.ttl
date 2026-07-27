@@ -1,4 +1,4 @@
-@prefix bioconda: <https://bioconda.github.io/recipes/> .
+@prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
@@ -12,9 +12,12 @@ galaxytool:srst2 a schema1:SoftwareApplication ;
     schema1:featureList edam:operation_3840 ;
     schema1:identifier biotools:srst2,
         bioconda:samtools ;
-    schema1:isPartOf "workflowhub:407?version=1" ;
+    schema1:isPartOf <https://workflowhub.eu>,
+        <https://workflowhub.eu/workflows/407?version=1> ;
     schema1:keywords "Metagenomics" ;
     schema1:name "srst2" ;
     schema1:softwareVersion "0.2.0" ;
     schema1:url "http://katholt.github.io/srst2/" .
+
+<https://workflowhub.eu> a schema1:WebSite .
 

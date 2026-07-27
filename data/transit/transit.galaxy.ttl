@@ -1,4 +1,4 @@
-@prefix bioconda: <https://bioconda.github.io/recipes/> .
+@prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
@@ -13,10 +13,16 @@ galaxytool:transit a schema1:SoftwareApplication ;
     schema1:featureList edam:operation_0427 ;
     schema1:identifier biotools:transit,
         bioconda:transit ;
-    schema1:isPartOf "https://usegalaxy.eu/published/workflow?id=2a123e08436a89f1",
-        "workflowhub:1530?version=1" ;
+    schema1:isPartOf <https://usegalaxy.eu>,
+        <https://usegalaxy.eu/published/workflow?id=2a123e08436a89f1>,
+        <https://workflowhub.eu>,
+        <https://workflowhub.eu/workflows/1530?version=1> ;
     schema1:keywords "Genome annotation" ;
     schema1:name "transit" ;
     schema1:softwareVersion "3.2.3" ;
     schema1:url "https://github.com/mad-lab/transit/" .
+
+<https://usegalaxy.eu> a schema1:WebSite .
+
+<https://workflowhub.eu> a schema1:WebSite .
 

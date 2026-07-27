@@ -1,4 +1,4 @@
-@prefix bioconda: <https://bioconda.github.io/recipes/> .
+@prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
@@ -12,9 +12,12 @@ galaxytool:msmetaenhancer a schema1:SoftwareApplication ;
         edam:operation_3435 ;
     schema1:identifier biotools:msmetaenhancer,
         bioconda:msmetaenhancer ;
-    schema1:isPartOf "workflowhub:888?version=2" ;
+    schema1:isPartOf <https://workflowhub.eu>,
+        <https://workflowhub.eu/workflows/888?version=2> ;
     schema1:keywords "Metabolomics" ;
     schema1:name "msmetaenhancer" ;
     schema1:softwareVersion "0.5.1" ;
     schema1:url "https://github.com/RECETOX/MSMetaEnhancer" .
+
+<https://workflowhub.eu> a schema1:WebSite .
 

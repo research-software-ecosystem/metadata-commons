@@ -1,4 +1,4 @@
-@prefix bioconda: <https://bioconda.github.io/recipes/> .
+@prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
@@ -16,9 +16,12 @@ galaxytool:vcontact2 a schema1:SoftwareApplication ;
         edam:topic_0222 ;
     schema1:identifier biotools:vConTACT,
         bioconda:python ;
-    schema1:isPartOf "https://usegalaxy.eu/published/workflow?id=62392daea25a3980" ;
+    schema1:isPartOf <https://usegalaxy.eu>,
+        <https://usegalaxy.eu/published/workflow?id=62392daea25a3980> ;
     schema1:keywords "Metagenomics" ;
     schema1:name "vcontact2" ;
     schema1:softwareVersion "0.11.3" ;
     schema1:url "https://bitbucket.org/MAVERICLab/vcontact2/src/master/" .
+
+<https://usegalaxy.eu> a schema1:WebSite .
 

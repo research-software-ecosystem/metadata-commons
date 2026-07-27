@@ -11,11 +11,18 @@ galaxytool:cellprofiler a schema1:SoftwareApplication ;
     schema1:featureList edam:operation_3443,
         edam:operation_3799 ;
     schema1:identifier biotools:CellProfiler ;
-    schema1:isPartOf "https://usegalaxy.eu/published/workflow?id=3dbee72d7c550b0c",
-        "workflowhub:115?version=1",
-        "workflowhub:1503?version=1",
-        "workflowhub:1505?version=1",
-        "workflowhub:41?version=2" ;
+    schema1:isPartOf <https://usegalaxy.eu>,
+        <https://usegalaxy.eu/published/workflow?id=3dbee72d7c550b0c>,
+        <https://workflowhub.eu>,
+        <https://workflowhub.eu/workflows/115?version=1>,
+        <https://workflowhub.eu/workflows/1503?version=1>,
+        <https://workflowhub.eu/workflows/1505?version=1>,
+        <https://workflowhub.eu/workflows/41?version=2> ;
     schema1:keywords "Imaging" ;
-    schema1:name "cellprofiler" .
+    schema1:name "cellprofiler" ;
+    schema1:softwareVersion "3.1.9+galaxy@VERSION_SUFFIX@" .
+
+<https://usegalaxy.eu> a schema1:WebSite .
+
+<https://workflowhub.eu> a schema1:WebSite .
 

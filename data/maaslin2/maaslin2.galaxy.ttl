@@ -1,4 +1,4 @@
-@prefix bioconda: <https://bioconda.github.io/recipes/> .
+@prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
@@ -13,12 +13,15 @@ galaxytool:maaslin2 a schema1:SoftwareApplication ;
         edam:operation_3435 ;
     schema1:identifier biotools:maaslin2,
         bioconda:bioconductor-maaslin2 ;
-    schema1:isPartOf "https://usegalaxy.eu/published/workflow?id=466bdd8ba7b67264",
-        "https://usegalaxy.eu/published/workflow?id=4ddf2ec5c460d622",
-        "https://usegalaxy.eu/published/workflow?id=e1296dbcf34499b0",
-        "https://usegalaxy.eu/published/workflow?id=e69b555faa6bb962" ;
+    schema1:isPartOf <https://usegalaxy.eu>,
+        <https://usegalaxy.eu/published/workflow?id=466bdd8ba7b67264>,
+        <https://usegalaxy.eu/published/workflow?id=4ddf2ec5c460d622>,
+        <https://usegalaxy.eu/published/workflow?id=e1296dbcf34499b0>,
+        <https://usegalaxy.eu/published/workflow?id=e69b555faa6bb962> ;
     schema1:keywords "Metagenomics" ;
     schema1:name "maaslin2" ;
     schema1:softwareVersion "1.18.0" ;
     schema1:url "http://huttenhower.sph.harvard.edu/maaslin" .
+
+<https://usegalaxy.eu> a schema1:WebSite .
 
