@@ -34,55 +34,44 @@
     "wgs": "https://www.w3.org/2003/01/geo/wgs84_pos#",
     "xsd": "http://www.w3.org/2001/XMLSchema#"
   },
-  "@graph": [
+  "@id": "https://bio.tools/a4preproc",
+  "@type": "sc:SoftwareApplication",
+  "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+  "sc:additionalType": [
+    "Command-line tool",
+    "Library"
+  ],
+  "sc:applicationSubCategory": [
     {
-      "@id": "https://doi.org/10.18129/B9.bioc.a4Preproc",
-      "@type": "sc:CreativeWork"
+      "@id": "edam:topic_3518"
     },
     {
-      "@id": "https://bio.tools/a4preproc",
-      "@type": "sc:SoftwareApplication",
-      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
-      "sc:additionalType": [
-        "Command-line tool",
-        "Library"
-      ],
-      "sc:applicationSubCategory": [
-        {
-          "@id": "edam:topic_3518"
-        },
-        {
-          "@id": "edam:topic_0089"
-        }
-      ],
-      "sc:author": [
-        "Tobias Verbeke",
-        "Willem Talloen"
-      ],
-      "sc:citation": {
-        "@id": "https://doi.org/10.18129/B9.bioc.a4Preproc"
-      },
-      "sc:description": "Utility functions to pre-process data for the Automated Affymetrix Array Analysis set of packages.",
-      "sc:featureList": [
-        {
-          "@id": "edam:operation_0226"
-        },
-        {
-          "@id": "edam:operation_2238"
-        }
-      ],
-      "sc:license": "GPL-3.0-only",
-      "sc:name": "a4Preproc",
-      "sc:operatingSystem": [
-        "Linux",
-        "Mac",
-        "Windows"
-      ],
-      "sc:softwareHelp": {
-        "@id": "https://bioconductor.org/packages/a4Preproc"
-      },
-      "sc:softwareVersion": "1.60.0",
-      "sc:url": "https://bioconductor.org/packages/a4Preproc"
+      "@id": "edam:topic_0089"
     }
-  ]
+  ],
+  "sc:author": [
+    "Tobias Verbeke",
+    "Willem Talloen"
+  ],
+  "sc:description": "Utility functions to pre-process data for the Automated Affymetrix Array Analysis set of packages.",
+  "sc:featureList": [
+    {
+      "@id": "edam:operation_0226"
+    },
+    {
+      "@id": "edam:operation_2238"
+    }
+  ],
+  "sc:license": "GPL-3.0-only",
+  "sc:name": "a4Preproc",
+  "sc:operatingSystem": [
+    "Linux",
+    "Mac",
+    "Windows"
+  ],
+  "sc:softwareHelp": {
+    "@id": "https://bioconductor.org/packages/a4Preproc"
+  },
+  "sc:softwareVersion": "1.60.0",
+  "sc:url": "https://bioconductor.org/packages/a4Preproc"
 }

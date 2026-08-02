@@ -36,16 +36,24 @@
   },
   "@graph": [
     {
+      "@id": "http://orcid.org/0000-0002-3794-4262",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/gks1195",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/mirpursuit",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "http://orcid.org/0000-0002-3794-4262"
       },
       "bsc:input": {
-        "@id": "_:N1788ad06644d4757b26d07d9a67bd484"
+        "@id": "_:N167e2aecfd1a468cb51ea373b2b61076"
       },
       "bsc:output": {
-        "@id": "_:N1108ed63e6ad49eaa0ed7702af1be0b7"
+        "@id": "_:Nae4250b76d8e444ebe08a19fb1465980"
       },
       "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Workflow",
@@ -85,7 +93,7 @@
       "sc:url": "https://github.com/forestbiotech-lab/miRPursuit"
     },
     {
-      "@id": "_:N1788ad06644d4757b26d07d9a67bd484",
+      "@id": "_:N167e2aecfd1a468cb51ea373b2b61076",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3496"
@@ -101,7 +109,7 @@
       "sc:name": "RNA sequence (raw)"
     },
     {
-      "@id": "_:N1108ed63e6ad49eaa0ed7702af1be0b7",
+      "@id": "_:Nae4250b76d8e444ebe08a19fb1465980",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"
@@ -112,16 +120,8 @@
       "sc:name": "Report"
     },
     {
-      "@id": "https://doi.org/10.1093/nar/gks1195",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://doi.org/10.1002/1873-3468.12746",
       "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "http://orcid.org/0000-0002-3794-4262",
-      "@type": "sc:Person"
     }
   ]
 }

@@ -36,16 +36,20 @@
   },
   "@graph": [
     {
+      "@id": "https://orcid.org/0000-0002-3417-7504",
+      "@type": "sc:Organization"
+    },
+    {
       "@id": "https://bio.tools/PopDel",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "https://orcid.org/0000-0002-3417-7504"
       },
       "bsc:input": {
-        "@id": "_:Nd45e57f64a5849d3acaac756de931f4b"
+        "@id": "_:Nfa5c282732a545b5a1a976eb0e67261a"
       },
       "bsc:output": {
-        "@id": "_:Ne12e3775a1fa4fd4bc5f42a24b967960"
+        "@id": "_:N7d098119f63a45a9bacfb907e1a40a1c"
       },
       "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
@@ -81,7 +85,7 @@
       "sc:url": "https://github.com/kehrlab/PopDel"
     },
     {
-      "@id": "_:Nd45e57f64a5849d3acaac756de931f4b",
+      "@id": "_:Nfa5c282732a545b5a1a976eb0e67261a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1383"
@@ -92,7 +96,7 @@
       "sc:name": "Sequence alignment (nucleic acid)"
     },
     {
-      "@id": "_:Ne12e3775a1fa4fd4bc5f42a24b967960",
+      "@id": "_:N7d098119f63a45a9bacfb907e1a40a1c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3498"
@@ -101,10 +105,6 @@
         "@id": "edam:format_3016"
       },
       "sc:name": "Sequence variations"
-    },
-    {
-      "@id": "https://orcid.org/0000-0002-3417-7504",
-      "@type": "sc:Organization"
     }
   ]
 }

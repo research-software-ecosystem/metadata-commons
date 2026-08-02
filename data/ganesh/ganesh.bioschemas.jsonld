@@ -36,16 +36,24 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/btm562",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "http://orcid.org/0000-0003-4327-3730",
+      "@type": "sc:Person"
+    },
+    {
       "@id": "https://bio.tools/ganesh",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "http://orcid.org/0000-0003-4327-3730"
       },
       "bsc:input": {
-        "@id": "_:Nab27ae0ef5a841fd97f1809bb4472a3f"
+        "@id": "_:Ndd01dee31b664ac5beac83e2ed97084a"
       },
       "bsc:output": {
-        "@id": "_:Ne038632958584b64a98f66aebf5fae62"
+        "@id": "_:N8b495abfc8eb48869c801c540a17c788"
       },
       "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
@@ -76,7 +84,7 @@
       "sc:url": "http://bioinformatics.psb.ugent.be/software/details/GaneSh"
     },
     {
-      "@id": "_:Nab27ae0ef5a841fd97f1809bb4472a3f",
+      "@id": "_:Ndd01dee31b664ac5beac83e2ed97084a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2603"
@@ -87,20 +95,12 @@
       "sc:name": "Gene expression data"
     },
     {
-      "@id": "_:Ne038632958584b64a98f66aebf5fae62",
+      "@id": "_:N8b495abfc8eb48869c801c540a17c788",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1246"
       },
       "sc:name": "Sequence cluster (nucleic acid)"
-    },
-    {
-      "@id": "https://doi.org/10.1093/bioinformatics/btm562",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "http://orcid.org/0000-0003-4327-3730",
-      "@type": "sc:Person"
     }
   ]
 }

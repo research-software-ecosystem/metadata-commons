@@ -36,20 +36,28 @@
   },
   "@graph": [
     {
+      "@id": "http://orcid.org/0000-0002-9412-9643",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.1038/nmeth.1701",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/signalp",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "http://orcid.org/0000-0002-9412-9643"
       },
       "bsc:input": {
-        "@id": "_:N4ddfe47ed47c4840a7bd3830c4deb1f6"
+        "@id": "_:N004596da2d7c4b87a13389bff5facd77"
       },
       "bsc:output": [
         {
-          "@id": "_:N96a285bcb85b4734b5368ec15426ecb5"
+          "@id": "_:N9c1b260dc2b6484dbedf3dd33fd498be"
         },
         {
-          "@id": "_:Na200665964684bda9f24e8426d3595f4"
+          "@id": "_:Nf8b702e08ce34f378529718032a7f0eb"
         }
       ],
       "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -94,7 +102,7 @@
       "sc:url": "http://cbs.dtu.dk/services/SignalP/"
     },
     {
-      "@id": "_:N4ddfe47ed47c4840a7bd3830c4deb1f6",
+      "@id": "_:N004596da2d7c4b87a13389bff5facd77",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
@@ -105,7 +113,7 @@
       "sc:name": "Sequence"
     },
     {
-      "@id": "_:N96a285bcb85b4734b5368ec15426ecb5",
+      "@id": "_:N9c1b260dc2b6484dbedf3dd33fd498be",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2955"
@@ -113,7 +121,7 @@
       "sc:name": "Sequence report"
     },
     {
-      "@id": "_:Na200665964684bda9f24e8426d3595f4",
+      "@id": "_:Nf8b702e08ce34f378529718032a7f0eb",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1277"
@@ -122,14 +130,6 @@
         "@id": "edam:format_2305"
       },
       "sc:name": "Protein features"
-    },
-    {
-      "@id": "https://doi.org/10.1038/nmeth.1701",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "http://orcid.org/0000-0002-9412-9643",
-      "@type": "sc:Person"
     }
   ]
 }

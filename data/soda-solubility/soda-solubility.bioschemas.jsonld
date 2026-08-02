@@ -36,16 +36,24 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/gkx412",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "http://orcid.org/0000-0003-4525-7793",
+      "@type": "sc:Person"
+    },
+    {
       "@id": "https://bio.tools/soda-solubility",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "http://orcid.org/0000-0003-4525-7793"
       },
       "bsc:input": {
-        "@id": "_:Nc9726c14496a4ac69ed6958c5567a003"
+        "@id": "_:N7b518cfa756f4d31af04612cc4111f54"
       },
       "bsc:output": {
-        "@id": "_:Nf91c6b0d72d54e2eb3244c3e94445097"
+        "@id": "_:Nb44f3f43401a4b389495042effdea3e4"
       },
       "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
@@ -93,7 +101,7 @@
       "sc:url": "http://protein.bio.unipd.it/soda/"
     },
     {
-      "@id": "_:Nc9726c14496a4ac69ed6958c5567a003",
+      "@id": "_:N7b518cfa756f4d31af04612cc4111f54",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2976"
@@ -104,7 +112,7 @@
       "sc:name": "Protein sequence"
     },
     {
-      "@id": "_:Nf91c6b0d72d54e2eb3244c3e94445097",
+      "@id": "_:Nb44f3f43401a4b389495042effdea3e4",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1277"
@@ -121,14 +129,6 @@
         }
       ],
       "sc:name": "Protein features"
-    },
-    {
-      "@id": "http://orcid.org/0000-0003-4525-7793",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gkx412",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -44,18 +44,18 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Naaaf6e406cf34a0f8a502ad8de2ddaa4"
+          "@id": "_:N03ed90971f9f4780b72ab4501ae637ca"
         },
         {
-          "@id": "_:N4a09c5a3e00449e39e12c01678aed358"
+          "@id": "_:N7185dc617fb947a6a9975425e2182b0e"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N2f9179cbc7a6483bb0ca49d7524903a7"
+          "@id": "_:N9a68d0dab31e47f79443cfa7a82c9a24"
         },
         {
-          "@id": "_:Na3fcb4c3820a4880b90f95c432be2761"
+          "@id": "_:Nf904709895d648f69bfea05b08f7773f"
         }
       ],
       "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -67,19 +67,29 @@
         "@id": "edam:topic_0080"
       },
       "sc:author": [
-        "Hervé Pagès",
-        "Martin Morgan",
-        "Valerie Obenchain"
+        "D. Sarkar",
+        "H. Pagès",
+        "M. Carlson",
+        "M. Lawrence",
+        "M. Morgan",
+        "P. Aboyoun",
+        "S. Falcon",
+        "V. Obenchain"
       ],
       "sc:citation": {
         "@id": "https://doi.org/10.1371/journal.pcbi.1003118"
       },
       "sc:contributor": [
-        "Fedor Bezrukov",
-        "Halimat C. Atanda",
-        "Robert Castelo"
+        "D. Tenenbaum",
+        "D. Van Twisk",
+        "J. MacDonald",
+        "L. Shepherd",
+        "M. Ramos",
+        "P. Shannon",
+        "S. Arora",
+        "S. Saini"
       ],
-      "sc:description": "Provides efficient containers for storing and manipulating short genomic alignments (typically obtained by aligning short reads to a reference genome). This includes read counting, computing the coverage, junction detection, and working with the nucleotide content of the alignments.",
+      "sc:description": "Extract the genomic locations of genes, transcripts, exons, introns, and CDS, for the gene models stored in a TxDb object. A TxDb object is a small database that contains the gene models of a given organism/assembly. Bioconductor provides a small collection of TxDb objects in the form of ready-to-install TxDb packages for the most commonly studied organisms. Additionally, the user can easily make a TxDb object (or package) for the organism/assembly of their choice by using the tools from the txdbmaker package.",
       "sc:featureList": [
         {
           "@id": "edam:operation_2478"
@@ -99,13 +109,13 @@
         "Windows"
       ],
       "sc:softwareHelp": {
-        "@id": "https://bioconductor.org/packages/GenomicAlignments"
+        "@id": "https://bioconductor.org/packages/GenomicFeatures"
       },
-      "sc:softwareVersion": "1.48.0",
-      "sc:url": "https://bioconductor.org/packages/GenomicAlignments"
+      "sc:softwareVersion": "1.64.0",
+      "sc:url": "https://bioconductor.org/packages/GenomicFeatures"
     },
     {
-      "@id": "_:Naaaf6e406cf34a0f8a502ad8de2ddaa4",
+      "@id": "_:N03ed90971f9f4780b72ab4501ae637ca",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1270"
@@ -124,7 +134,7 @@
       "sc:name": "Feature table"
     },
     {
-      "@id": "_:N4a09c5a3e00449e39e12c01678aed358",
+      "@id": "_:N7185dc617fb947a6a9975425e2182b0e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1383"
@@ -143,7 +153,7 @@
       "sc:name": "Sequence alignment (nucleic acid)"
     },
     {
-      "@id": "_:N2f9179cbc7a6483bb0ca49d7524903a7",
+      "@id": "_:N9a68d0dab31e47f79443cfa7a82c9a24",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1383"
@@ -159,7 +169,7 @@
       "sc:name": "Sequence alignment (nucleic acid)"
     },
     {
-      "@id": "_:Na3fcb4c3820a4880b90f95c432be2761",
+      "@id": "_:Nf904709895d648f69bfea05b08f7773f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0867"

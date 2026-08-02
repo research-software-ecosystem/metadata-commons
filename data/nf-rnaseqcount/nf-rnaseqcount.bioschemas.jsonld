@@ -36,16 +36,20 @@
   },
   "@graph": [
     {
+      "@id": "https://orcid.org/0000-0001-8280-8940",
+      "@type": "sc:Person"
+    },
+    {
       "@id": "https://bio.tools/nf-rnaseqcount",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "https://orcid.org/0000-0001-8280-8940"
       },
       "bsc:input": {
-        "@id": "_:Nff5a1cfd5de247ceb7376e4762b09fe2"
+        "@id": "_:N80d510f3eaac47d6957c72015fac5752"
       },
       "bsc:output": {
-        "@id": "_:N43589a0912bf4b01a132baf779cb72c9"
+        "@id": "_:N6d01b5f020064dd0a77bb0da7499c6de"
       },
       "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
@@ -86,7 +90,7 @@
       "sc:url": "https://github.com/phelelani/nf-rnaSeqCount"
     },
     {
-      "@id": "_:Nff5a1cfd5de247ceb7376e4762b09fe2",
+      "@id": "_:N80d510f3eaac47d6957c72015fac5752",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2603"
@@ -97,7 +101,7 @@
       "sc:name": "Expression data"
     },
     {
-      "@id": "_:N43589a0912bf4b01a132baf779cb72c9",
+      "@id": "_:N6d01b5f020064dd0a77bb0da7499c6de",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3112"
@@ -106,10 +110,6 @@
         "@id": "edam:format_3752"
       },
       "sc:name": "Gene expression matrix"
-    },
-    {
-      "@id": "https://orcid.org/0000-0001-8280-8940",
-      "@type": "sc:Person"
     }
   ]
 }

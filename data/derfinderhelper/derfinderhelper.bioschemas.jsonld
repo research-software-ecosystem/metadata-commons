@@ -40,17 +40,21 @@
       "@type": "sc:CreativeWork"
     },
     {
-      "@id": "https://doi.org/10.18129/B9.bioc.derfinderPlot",
+      "@id": "https://doi.org/10.18129/B9.bioc.regionReport",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.12688/f1000research.6379.2",
       "@type": "sc:CreativeWork"
     },
     {
       "@id": "https://bio.tools/derfinderhelper",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nbccedb15ee0441328b47c6e44e64faa3"
+        "@id": "_:Nface4d62f38d43b992a4ea2a3a6bacab"
       },
       "bsc:output": {
-        "@id": "_:N4b182c0a37bc4b779904b45c6d3b142f"
+        "@id": "_:Nbf58b6c1723343eab39f2255957813e3"
       },
       "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
@@ -70,10 +74,13 @@
           "@id": "https://doi.org/10.1093/nar/gkw852"
         },
         {
-          "@id": "https://doi.org/10.18129/B9.bioc.derfinderPlot"
+          "@id": "https://doi.org/10.12688/f1000research.6379.2"
+        },
+        {
+          "@id": "https://doi.org/10.18129/B9.bioc.regionReport"
         }
       ],
-      "sc:description": "This package provides plotting functions for results from the derfinder package. This helps separate the graphical dependencies required for making these plots from the core functionality of derfinder.",
+      "sc:description": "Generate HTML or PDF reports to explore a set of regions such as the results from annotation-agnostic expression analysis of RNA-seq data at base-pair resolution performed by derfinder. You can also create reports for DESeq2 or edgeR results.",
       "sc:featureList": {
         "@id": "edam:operation_2238"
       },
@@ -85,13 +92,13 @@
         "Windows"
       ],
       "sc:softwareHelp": {
-        "@id": "https://bioconductor.org/packages/derfinderPlot"
+        "@id": "https://bioconductor.org/packages/regionReport"
       },
       "sc:softwareVersion": "1.46.0",
-      "sc:url": "https://bioconductor.org/packages/derfinderPlot"
+      "sc:url": "https://bioconductor.org/packages/regionReport"
     },
     {
-      "@id": "_:Nbccedb15ee0441328b47c6e44e64faa3",
+      "@id": "_:Nface4d62f38d43b992a4ea2a3a6bacab",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2082"
@@ -102,7 +109,7 @@
       "sc:name": "Matrix"
     },
     {
-      "@id": "_:N4b182c0a37bc4b779904b45c6d3b142f",
+      "@id": "_:Nbf58b6c1723343eab39f2255957813e3",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0951"

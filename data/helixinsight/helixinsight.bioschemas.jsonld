@@ -36,20 +36,28 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.5281/zenodo.21189571",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.5281/zenodo.21105027",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/HelixInsight",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nfa0bce8bd2714ffcb6aff435334940ac"
+        "@id": "_:Nd33da9bdc6474594a9c16c005d1aa6fe"
       },
       "bsc:output": [
         {
-          "@id": "_:N31b8f03f850c4d1881af32ffd550aeee"
+          "@id": "_:N4b95b716e5c04937b479502d185a4b66"
         },
         {
-          "@id": "_:Nde020a12888748959b12dd3d974b1bb6"
+          "@id": "_:N56546f609d834bd38529c8f9037e06e4"
         },
         {
-          "@id": "_:N2736f75349ab469cb9675cc37b25e9cf"
+          "@id": "_:N583a62b7027242348fb7bf1c0de619c0"
         }
       ],
       "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -72,7 +80,15 @@
         }
       ],
       "sc:author": "Helena Bioinformatics",
-      "sc:description": "AI-powered variant interpretation platform for clinical genetics laboratories. Automates ACMG/AMP 2015 classification using Bayesian point-based framework (Tavtigian et al. 2018) with BayesDel ClinGen SVI-calibrated thresholds (Pejaver et al. 2022). Integrates 8 reference databases (gnomAD v4.1, ClinVar, dbNSFP 4.9c, SpliceAI, gnomAD Constraint, HPO, ClinGen, Ensembl VEP) for comprehensive variant annotation. Supports HPO-based phenotype matching with semantic similarity scoring, automated biomedical literature mining across 2M+ PubMed publications, and structured clinical report generation. Delivers full clinical interpretation of whole genome sequencing (WGS) in under 15 minutes. EU-hosted on dedicated infrastructure in Helsinki, Finland (GDPR-compliant).",
+      "sc:citation": [
+        {
+          "@id": "https://doi.org/10.5281/zenodo.21105027"
+        },
+        {
+          "@id": "https://doi.org/10.5281/zenodo.21189571"
+        }
+      ],
+      "sc:description": "Deterministic, rule-based variant interpretation platform for clinical genetics laboratories. Automates ACMG/AMP 2015 classification using a Bayesian point-based framework (Tavtigian et al. 2018) with BayesDel ClinGen SVI-calibrated thresholds (Pejaver et al. 2022). Integrates 8 reference databases (gnomAD v4.1, ClinVar, dbNSFP 4.9c, SpliceAI, gnomAD Constraint, HPO, ClinGen, Ensembl VEP). Analyzes nuclear and mtDNA variants, structural and copy-number variants (SV/CNV), with trio/family and cohort analysis. Supports HPO-based phenotype matching, biomedical literature mining across 2M+ PubMed publications, and structured clinical report generation. AI assists in evidence synthesis but does not make classification decisions. EU-hosted on dedicated infrastructure in Helsinki, Finland (GDPR-compliant).",
       "sc:featureList": [
         {
           "@id": "edam:operation_3225"
@@ -89,30 +105,36 @@
       ],
       "sc:isAccessibleForFree": false,
       "sc:license": "Proprietary",
-      "sc:name": "Helix Insight",
+      "sc:name": "Folklore",
       "sc:operatingSystem": "Linux",
       "sc:softwareHelp": [
         {
-          "@id": "https://helixinsight.bio/privacy"
+          "@id": "https://folklore.helena.bio/methodology"
         },
         {
-          "@id": "https://helixinsight.bio/docs/getting-started"
+          "@id": "https://folklore.helena.bio/docs"
         },
         {
-          "@id": "https://helixinsight.bio/docs"
+          "@id": "https://folklore.helena.bio/methodology/family-analysis"
         },
         {
-          "@id": "https://helixinsight.bio/how-it-works"
+          "@id": "https://folklore.helena.bio/methodology/mtdna"
         },
         {
-          "@id": "https://helixinsight.bio/terms"
+          "@id": "https://folklore.helena.bio/screening-methodology"
+        },
+        {
+          "@id": "https://folklore.helena.bio/how-it-works"
+        },
+        {
+          "@id": "https://folklore.helena.bio/methodology/sv"
         }
       ],
-      "sc:softwareVersion": "3.5",
-      "sc:url": "https://helixinsight.bio"
+      "sc:softwareVersion": "3.39.1",
+      "sc:url": "https://folklore.helena.bio"
     },
     {
-      "@id": "_:Nfa0bce8bd2714ffcb6aff435334940ac",
+      "@id": "_:Nd33da9bdc6474594a9c16c005d1aa6fe",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3498"
@@ -123,7 +145,7 @@
       "sc:name": "Sequence variations"
     },
     {
-      "@id": "_:N31b8f03f850c4d1881af32ffd550aeee",
+      "@id": "_:N4b95b716e5c04937b479502d185a4b66",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1622"
@@ -131,7 +153,7 @@
       "sc:name": "Disease report"
     },
     {
-      "@id": "_:Nde020a12888748959b12dd3d974b1bb6",
+      "@id": "_:N56546f609d834bd38529c8f9037e06e4",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0920"
@@ -139,7 +161,7 @@
       "sc:name": "Genotype/phenotype report"
     },
     {
-      "@id": "_:N2736f75349ab469cb9675cc37b25e9cf",
+      "@id": "_:N583a62b7027242348fb7bf1c0de619c0",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2955"

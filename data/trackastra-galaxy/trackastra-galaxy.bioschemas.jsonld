@@ -34,27 +34,172 @@
     "wgs": "https://www.w3.org/2003/01/geo/wgs84_pos#",
     "xsd": "http://www.w3.org/2001/XMLSchema#"
   },
-  "@id": "https://bio.tools/trackastra-galaxy",
-  "@type": "sc:SoftwareApplication",
-  "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
-  "sc:additionalType": "Command-line tool",
-  "sc:applicationSubCategory": {
-    "@id": "edam:topic_3385"
-  },
-  "sc:description": "Trackastra is a deep learning-based tool for tracking cell instances in time-lapse microscopy images. It combines:\n\nCellpose: For automatic cell segmentation. This is an optional step when no segmentation is yet available.\nTrackastra: For transformer-based cell tracking across time.\nome-zarr: For reading the input OME-Zarr.\nCellTrackingChallenge: For storing the tracking result in CTC format, which is supported, e.g., in napari, TrackMate or Mastodon (Fiji).",
-  "sc:featureList": {
-    "@id": "edam:operation_3553"
-  },
-  "sc:isAccessibleForFree": true,
-  "sc:license": "MIT",
-  "sc:name": "trackastra-galaxy",
-  "sc:operatingSystem": "Linux",
-  "sc:softwareHelp": {
-    "@id": "https://github.com/bioinfbrad/trackastra-galaxy"
-  },
-  "sc:softwareVersion": [
-    "1.0.0",
-    "1.0.1"
-  ],
-  "sc:url": "https://github.com/bioinfbrad/trackastra-galaxy"
+  "@graph": [
+    {
+      "@id": "https://doi.org/10.1007/978-3-031-73116-7_27",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://bio.tools/trackastra-galaxy",
+      "@type": "sc:SoftwareApplication",
+      "bsc:input": [
+        {
+          "@id": "_:N9f25dcffab734766bf1b2ebdc7c5308f"
+        },
+        {
+          "@id": "_:Nb335ab15c4ec4104b205180a9250eb1f"
+        },
+        {
+          "@id": "_:N638b2f59a4554167b0e903db7f760058"
+        },
+        {
+          "@id": "_:N439fe003a6a6469f96117d4afa578d5e"
+        }
+      ],
+      "bsc:output": [
+        {
+          "@id": "_:Nc7a7c8f3a0414aebb0985d6d84083565"
+        },
+        {
+          "@id": "_:N52e49e8805064bd9a5fc5d5db58dfe1e"
+        },
+        {
+          "@id": "_:N36c60d896a10442cae00b3cb2a51544f"
+        },
+        {
+          "@id": "_:Nef134a06f6804eaa96209da57814b4e8"
+        },
+        {
+          "@id": "_:Nc37ff5ac27df4b5797a0f65f599b9981"
+        },
+        {
+          "@id": "_:N1feed2c03fcc43c6ac6fc352e366fefd"
+        }
+      ],
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "sc:additionalType": "Command-line tool",
+      "sc:applicationSubCategory": {
+        "@id": "edam:topic_3385"
+      },
+      "sc:citation": {
+        "@id": "https://doi.org/10.1007/978-3-031-73116-7_27"
+      },
+      "sc:description": "Trackastra is a transformer-based cell-tracking tool for live-cell microscopy. It links already segmented cell instances across time by predicting associations between detections. It supports greedy tracking with or without cell divisions, optional ILP-based linking, pretrained tracking models, and export of tracked masks and lineage information in Cell Tracking Challenge format.",
+      "sc:featureList": [
+        {
+          "@id": "edam:operation_3443"
+        },
+        {
+          "@id": "edam:operation_3553"
+        }
+      ],
+      "sc:isAccessibleForFree": true,
+      "sc:license": "BSD-3-Clause",
+      "sc:name": "trackastra",
+      "sc:operatingSystem": "Linux",
+      "sc:softwareHelp": {
+        "@id": "https://github.com/weigertlab/trackastra"
+      },
+      "sc:softwareVersion": "0.5.3",
+      "sc:url": "https://github.com/bioinfbrad/trackastra-galaxy"
+    },
+    {
+      "@id": "_:N9f25dcffab734766bf1b2ebdc7c5308f",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2968"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3591"
+      },
+      "sc:name": "Image"
+    },
+    {
+      "@id": "_:Nb335ab15c4ec4104b205180a9250eb1f",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2968"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3591"
+      },
+      "sc:name": "Image"
+    },
+    {
+      "@id": "_:N638b2f59a4554167b0e903db7f760058",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2968"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3591"
+      },
+      "sc:name": "Image"
+    },
+    {
+      "@id": "_:N439fe003a6a6469f96117d4afa578d5e",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2968"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3591"
+      },
+      "sc:name": "Image"
+    },
+    {
+      "@id": "_:Nc7a7c8f3a0414aebb0985d6d84083565",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3449"
+      },
+      "sc:name": "Cell migration track image"
+    },
+    {
+      "@id": "_:N52e49e8805064bd9a5fc5d5db58dfe1e",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2048"
+      },
+      "sc:name": "Report"
+    },
+    {
+      "@id": "_:N36c60d896a10442cae00b3cb2a51544f",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2048"
+      },
+      "sc:name": "Report"
+    },
+    {
+      "@id": "_:Nef134a06f6804eaa96209da57814b4e8",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2048"
+      },
+      "sc:name": "Report"
+    },
+    {
+      "@id": "_:Nc37ff5ac27df4b5797a0f65f599b9981",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3449"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3591"
+      },
+      "sc:name": "Cell migration track image"
+    },
+    {
+      "@id": "_:N1feed2c03fcc43c6ac6fc352e366fefd",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2048"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3475"
+      },
+      "sc:name": "Report"
+    }
+  ]
 }

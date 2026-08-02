@@ -36,16 +36,24 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/btw656",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-7359-0633",
+      "@type": "sc:Person"
+    },
+    {
       "@id": "https://bio.tools/schloro",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "https://orcid.org/0000-0002-7359-0633"
       },
       "bsc:input": {
-        "@id": "_:Nf5b0ea6507cb4d83804872aca5855388"
+        "@id": "_:N59cd1ddecad94e83b635dea81bf758f4"
       },
       "bsc:output": {
-        "@id": "_:Ne6eb0e038d1a41aab8cb05b52c06b4eb"
+        "@id": "_:N891eff337bc4479abbac8fe66f06a208"
       },
       "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
@@ -94,7 +102,7 @@
       "sc:url": "https://busca.biocomp.unibo.it/schloro"
     },
     {
-      "@id": "_:Nf5b0ea6507cb4d83804872aca5855388",
+      "@id": "_:N59cd1ddecad94e83b635dea81bf758f4",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2974"
@@ -105,7 +113,7 @@
       "sc:name": "Protein sequence (raw)"
     },
     {
-      "@id": "_:Ne6eb0e038d1a41aab8cb05b52c06b4eb",
+      "@id": "_:N891eff337bc4479abbac8fe66f06a208",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2955"
@@ -114,14 +122,6 @@
         "@id": "edam:format_2331"
       },
       "sc:name": "Sequence report"
-    },
-    {
-      "@id": "https://doi.org/10.1093/bioinformatics/btw656",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://orcid.org/0000-0002-7359-0633",
-      "@type": "sc:Person"
     }
   ]
 }

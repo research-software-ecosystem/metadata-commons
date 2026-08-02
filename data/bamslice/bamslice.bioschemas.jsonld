@@ -36,16 +36,20 @@
   },
   "@graph": [
     {
+      "@id": "https://orcid.org/0000-0001-7390-1094",
+      "@type": "sc:Person"
+    },
+    {
       "@id": "https://bio.tools/bamslice",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "https://orcid.org/0000-0001-7390-1094"
       },
       "bsc:input": {
-        "@id": "_:Na95dd70093684400ae76c3415c5c0950"
+        "@id": "_:N764662878f5f4783bf7cfd87981e1ecd"
       },
       "bsc:output": {
-        "@id": "_:N10cdf36ae9c4470db76963d4f1d8a387"
+        "@id": "_:N4611d43914e0491ebe2332ecb8a4d1a9"
       },
       "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
@@ -68,7 +72,7 @@
       "sc:url": "https://github.com/nebiolabs/bamslice"
     },
     {
-      "@id": "_:Na95dd70093684400ae76c3415c5c0950",
+      "@id": "_:N764662878f5f4783bf7cfd87981e1ecd",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0863"
@@ -79,7 +83,7 @@
       "sc:name": "Sequence alignment"
     },
     {
-      "@id": "_:N10cdf36ae9c4470db76963d4f1d8a387",
+      "@id": "_:N4611d43914e0491ebe2332ecb8a4d1a9",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
@@ -88,10 +92,6 @@
         "@id": "edam:format_1930"
       },
       "sc:name": "Sequence"
-    },
-    {
-      "@id": "https://orcid.org/0000-0001-7390-1094",
-      "@type": "sc:Person"
     }
   ]
 }

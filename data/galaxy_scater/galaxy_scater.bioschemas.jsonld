@@ -36,21 +36,13 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1101/724047",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://orcid.org/0000-0002-5003-1425",
-      "@type": "sc:Person"
-    },
-    {
       "@id": "https://bio.tools/Galaxy_scater",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "https://orcid.org/0000-0002-5003-1425"
       },
       "bsc:input": {
-        "@id": "_:N08c8c734b8cb4429b866e2e225758135"
+        "@id": "_:Nb3c085c9f142495da7918a167767c90a"
       },
       "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
@@ -75,12 +67,20 @@
       "sc:url": "https://github.com/galaxyproject/tools-iuc/tree/master/tools/scater"
     },
     {
-      "@id": "_:N08c8c734b8cb4429b866e2e225758135",
+      "@id": "_:Nb3c085c9f142495da7918a167767c90a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3112"
       },
       "sc:name": "Gene expression matrix"
+    },
+    {
+      "@id": "https://doi.org/10.1101/724047",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-5003-1425",
+      "@type": "sc:Person"
     }
   ]
 }
