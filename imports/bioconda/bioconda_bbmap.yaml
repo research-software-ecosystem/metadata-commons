@@ -31,7 +31,7 @@ extra:
     '
 package:
   name: bbmap
-  version: '39.91'
+  version: '40.0'
 requirements:
   build:
   - null
@@ -46,8 +46,8 @@ requirements:
   - openjdk >=11.0.1
   - samtools
 source:
-  sha256: 5df58d65d0cc27d6cd84d8dea33bbfe0b1cef860952cf57eeac30c6b20997801
-  url: https://github.com/bbushnell/BBTools/archive/refs/tags/v39.91.tar.gz
+  sha256: e467da2b3445a970ebe7c20e74a5c713f78335995483939ae8db363764373dff
+  url: https://github.com/bbushnell/BBTools/archive/refs/tags/v40.00.tar.gz
 test:
   commands:
   - bbmap.sh -V 2>&1 | grep "BBMap" > /dev/null

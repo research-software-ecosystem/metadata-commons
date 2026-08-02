@@ -46,18 +46,15 @@ about:
   summary: Biobb_analysis is the Biobb module collection to perform analysis of molecular
     dynamics simulations.
 build:
-  number: 0
+  noarch: python
+  number: 1
   run_exports:
   - null
   script: ' -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv'
-  skip: true
-  string: gmx2026_2
 extra:
   recipe-maintainers:
   - gbayarri
   - RubenChM
-  skip-lints:
-  - should_be_noarch_generic
 package:
   name: biobb_analysis
   version: 5.3.0
@@ -70,10 +67,8 @@ requirements:
   run:
   - python >=3.10,<3.13
   - biobb_common ==5.3.1
-  - gromacs ==2026.0 nompi_h26635d9_101
-  - gromacs ==2026.0 nompi_h4854829_101
-  run_constrained:
-  - ambertools >=23.0,<23.6
+  - gromacs >=2026.0
+  - ambertools >=23.0
 source:
   sha256: 68e52e77d0f36a13f510ac40d90cb3dbaac38c32392f51ce39b36a8ce55431fa
   url: https://pypi.io/packages/source/b/biobb_analysis/biobb_analysis-5.3.0.tar.gz

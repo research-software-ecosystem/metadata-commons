@@ -10,12 +10,12 @@ about:
   license_family: GPL3
   license_file: LICENSE
   license_url: https://github.com/SwiftSeal/resistify/blob/main/LICENSE
-  summary: A resistance gene annotation tool.
+  summary: A plant resistance gene annotation tool.
 build:
   entry_points:
   - resistify = resistify.main:main
   noarch: python
-  number: 0
+  number: 1
   run_exports:
   - null
   script: ' -m pip install . --no-deps --no-build-isolation --no-cache-dir -vvv'
@@ -41,6 +41,7 @@ requirements:
   - tqdm
   - tiktoken
   - protobuf
+  - hmmer
 source:
   sha256: f96888bba3befe6d74942b7bfb178ccf6e6240c50605884d1790ecac2f049646
   url: https://github.com/SwiftSeal/resistify/archive/refs/tags/v2.4.0.tar.gz
