@@ -1,6 +1,7 @@
 {
   "@context": {
     "bioconda": "https://github.com/bioconda/bioconda-recipes/tree/master/recipes/",
+    "bioschemas": "http://bioschemas.org/",
     "biotools": "https://bio.tools/",
     "brick": "https://brickschema.org/schema/Brick#",
     "csvw": "http://www.w3.org/ns/csvw#",
@@ -37,12 +38,12 @@
   },
   "@graph": [
     {
-      "@id": "https://usegalaxy.eu",
-      "@type": "schema1:WebSite"
-    },
-    {
       "@id": "galaxytool:metaeuk",
       "@type": "schema1:SoftwareApplication",
+      "bioschemas:output": [
+        "fasta",
+        "gff"
+      ],
       "schema1:applicationSubCategory": [
         {
           "@id": "edam:topic_3174"
@@ -51,7 +52,13 @@
           "@id": "edam:topic_0623"
         }
       ],
+      "schema1:codeRepository": "https://github.com/soedinglab/metaeuk",
+      "schema1:dateCreated": "2020-08-04",
       "schema1:description": "MetaEuk is a modular toolkit designed for large-scale gene discovery andannotation in eukaryotic metagenomic contigs. Metaeuk combines the fast andsensitive homology search capabilities of MMseqs2 with a dynamic programmingprocedure to recover optimal exons sets. It reduces redundancies in multiplediscoveries of the same gene and resolves conflicting gene predictions onthe same strand. ",
+      "schema1:encodingFormat": [
+        "fasta",
+        "gff"
+      ],
       "schema1:featureList": {
         "@id": "edam:operation_3663"
       },
@@ -77,7 +84,11 @@
       ],
       "schema1:name": "metaeuk",
       "schema1:softwareVersion": "@TOOL_VERSION@",
-      "schema1:url": "https://github.com/soedinglab/metaeuk"
+      "schema1:url": "https://github.com/galaxyproject/tools-iuc/tree/main/tools/metaeuk"
+    },
+    {
+      "@id": "https://usegalaxy.eu",
+      "@type": "schema1:WebSite"
     }
   ]
 }

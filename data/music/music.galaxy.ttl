@@ -1,10 +1,21 @@
 @prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
+@prefix bioschemas: <http://bioschemas.org/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
 @prefix schema1: <http://schema.org/> .
 
 galaxytool:music a schema1:SoftwareApplication ;
+    bioschemas:output "@RDATATYPE@",
+        "pdf",
+        "tabular",
+        "txt" ;
+    schema1:codeRepository "https://github.com/xuranw/MuSiC" ;
+    schema1:dateCreated "2021-09-12" ;
     schema1:description "Multi-subject Single Cell deconvolution (MuSiC)" ;
+    schema1:encodingFormat "@RDATATYPE@",
+        "pdf",
+        "tabular",
+        "txt" ;
     schema1:identifier biotools:music_deconvolution,
         bioconda:music-deconvolution ;
     schema1:isPartOf <https://usegalaxy.eu>,
@@ -25,7 +36,7 @@ galaxytool:music a schema1:SoftwareApplication ;
         "Transcriptomics" ;
     schema1:name "music" ;
     schema1:softwareVersion "0.1.1" ;
-    schema1:url "https://github.com/xuranw/MuSiC" .
+    schema1:url "https://github.com/bgruening/galaxytools/tree/master/tools/music_deconvolution" .
 
 <https://usegalaxy.eu> a schema1:WebSite .
 

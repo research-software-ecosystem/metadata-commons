@@ -1,6 +1,7 @@
 {
   "@context": {
     "bioconda": "https://github.com/bioconda/bioconda-recipes/tree/master/recipes/",
+    "bioschemas": "http://bioschemas.org/",
     "biotools": "https://bio.tools/",
     "brick": "https://brickschema.org/schema/Brick#",
     "csvw": "http://www.w3.org/ns/csvw#",
@@ -37,20 +38,16 @@
   },
   "@graph": [
     {
-      "@id": "https://usegalaxy.eu",
-      "@type": "schema1:WebSite"
-    },
-    {
-      "@id": "https://workflowhub.eu",
-      "@type": "schema1:WebSite"
-    },
-    {
       "@id": "galaxytool:vcfanno",
       "@type": "schema1:SoftwareApplication",
+      "bioschemas:output": "vcf",
       "schema1:applicationSubCategory": {
         "@id": "edam:topic_0199"
       },
+      "schema1:codeRepository": "https://github.com/brentp/vcfanno",
+      "schema1:dateCreated": "2021-01-17",
       "schema1:description": "Annotate VCF files",
+      "schema1:encodingFormat": "vcf",
       "schema1:featureList": {
         "@id": "edam:operation_3661"
       },
@@ -91,7 +88,15 @@
       "schema1:keywords": "Variant Analysis",
       "schema1:name": "vcfanno",
       "schema1:softwareVersion": "0.3.9",
-      "schema1:url": "https://github.com/brentp/vcfanno"
+      "schema1:url": "https://github.com/galaxyproject/tools-iuc/tree/main/tools/vcfanno"
+    },
+    {
+      "@id": "https://usegalaxy.eu",
+      "@type": "schema1:WebSite"
+    },
+    {
+      "@id": "https://workflowhub.eu",
+      "@type": "schema1:WebSite"
     }
   ]
 }

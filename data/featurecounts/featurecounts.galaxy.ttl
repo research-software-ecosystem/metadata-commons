@@ -1,12 +1,19 @@
 @prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
+@prefix bioschemas: <http://bioschemas.org/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
 @prefix schema1: <http://schema.org/> .
 
 galaxytool:featurecounts a schema1:SoftwareApplication ;
+    bioschemas:output "bam",
+        "tabular" ;
     schema1:applicationSubCategory edam:topic_3170 ;
+    schema1:codeRepository "https://subread.sourceforge.net/" ;
+    schema1:dateCreated "2016-02-09" ;
     schema1:description "featureCounts counts the number of reads aligned to defined masked regions in a reference genome" ;
+    schema1:encodingFormat "bam",
+        "tabular" ;
     schema1:featureList edam:operation_3793,
         edam:operation_3800 ;
     schema1:identifier biotools:featurecounts,
@@ -42,6 +49,7 @@ galaxytool:featurecounts a schema1:SoftwareApplication ;
         <https://usegalaxy.eu/published/workflow?id=36bb8bb4d95ca2ed>,
         <https://usegalaxy.eu/published/workflow?id=39876e9c04aad543>,
         <https://usegalaxy.eu/published/workflow?id=3d5b39e454df584b>,
+        <https://usegalaxy.eu/published/workflow?id=430e6484673e67cc>,
         <https://usegalaxy.eu/published/workflow?id=4376df687c5819e3>,
         <https://usegalaxy.eu/published/workflow?id=443ea80b36d862f5>,
         <https://usegalaxy.eu/published/workflow?id=4566262dd0acc8ab>,
@@ -115,6 +123,7 @@ galaxytool:featurecounts a schema1:SoftwareApplication ;
         <https://usegalaxy.eu/published/workflow?id=c5e6047b3b256b06>,
         <https://usegalaxy.eu/published/workflow?id=c64b219b4031fabd>,
         <https://usegalaxy.eu/published/workflow?id=c6b22fc33b569c8f>,
+        <https://usegalaxy.eu/published/workflow?id=c7d866a0f1728c7c>,
         <https://usegalaxy.eu/published/workflow?id=c885eaabae612d6d>,
         <https://usegalaxy.eu/published/workflow?id=ca9d3233b0912765>,
         <https://usegalaxy.eu/published/workflow?id=cae527ce845e770e>,
@@ -186,6 +195,7 @@ galaxytool:featurecounts a schema1:SoftwareApplication ;
         <https://usegalaxy.org.au/published/workflow?id=14184bc2580a131f>,
         <https://usegalaxy.org.au/published/workflow?id=1521528553aa02d8>,
         <https://usegalaxy.org.au/published/workflow?id=16f4846b4d6bc155>,
+        <https://usegalaxy.org.au/published/workflow?id=185eded77b60bad3>,
         <https://usegalaxy.org.au/published/workflow?id=19315e6573c58239>,
         <https://usegalaxy.org.au/published/workflow?id=1ab66d382630afa7>,
         <https://usegalaxy.org.au/published/workflow?id=1ad81f95ace878ea>,
@@ -371,6 +381,7 @@ galaxytool:featurecounts a schema1:SoftwareApplication ;
         <https://usegalaxy.org.au/published/workflow?id=c8026a57bba90063>,
         <https://usegalaxy.org.au/published/workflow?id=c8d18e2c03dca796>,
         <https://usegalaxy.org.au/published/workflow?id=c9be40ba99ce7908>,
+        <https://usegalaxy.org.au/published/workflow?id=c9f640567f5184a9>,
         <https://usegalaxy.org.au/published/workflow?id=cb960edf95d2dc35>,
         <https://usegalaxy.org.au/published/workflow?id=ccfae75390038ced>,
         <https://usegalaxy.org.au/published/workflow?id=cddedfb5ee154d25>,
@@ -447,6 +458,7 @@ galaxytool:featurecounts a schema1:SoftwareApplication ;
         <https://usegalaxy.org/published/workflow?id=5336b9d26a083983>,
         <https://usegalaxy.org/published/workflow?id=544ce8ff6c9f6d4c>,
         <https://usegalaxy.org/published/workflow?id=5497e8630ebfeb42>,
+        <https://usegalaxy.org/published/workflow?id=55e4c355761b7b73>,
         <https://usegalaxy.org/published/workflow?id=5944c5effd56b0d6>,
         <https://usegalaxy.org/published/workflow?id=5a272f266a1fa4ac>,
         <https://usegalaxy.org/published/workflow?id=63d590e8567f7157>,
@@ -501,6 +513,7 @@ galaxytool:featurecounts a schema1:SoftwareApplication ;
         <https://usegalaxy.org/published/workflow?id=e5a01f746bc9e9b5>,
         <https://usegalaxy.org/published/workflow?id=eb01b539d17580c3>,
         <https://usegalaxy.org/published/workflow?id=eb4b32fcf4a9f64a>,
+        <https://usegalaxy.org/published/workflow?id=ec9871ea3c670224>,
         <https://usegalaxy.org/published/workflow?id=f961fc46d4fddecc>,
         <https://usegalaxy.org/published/workflow?id=fb789920b057fe8d>,
         <https://usegalaxy.org/published/workflow?id=fb903de4aa4d5090>,
@@ -520,7 +533,7 @@ galaxytool:featurecounts a schema1:SoftwareApplication ;
         "Transcriptomics" ;
     schema1:name "featurecounts" ;
     schema1:softwareVersion "@TOOL_VERSION@+galaxy@VERSION_SUFFIX@" ;
-    schema1:url "https://subread.sourceforge.net/" .
+    schema1:url "https://github.com/galaxyproject/tools-iuc/tree/main/tools/featurecounts" .
 
 <https://usegalaxy.eu> a schema1:WebSite .
 

@@ -1,6 +1,7 @@
 {
   "@context": {
     "bioconda": "https://github.com/bioconda/bioconda-recipes/tree/master/recipes/",
+    "bioschemas": "http://bioschemas.org/",
     "biotools": "https://bio.tools/",
     "brick": "https://brickschema.org/schema/Brick#",
     "csvw": "http://www.w3.org/ns/csvw#",
@@ -37,6 +38,7 @@
   },
   "@id": "galaxytool:exomedepth",
   "@type": "schema1:SoftwareApplication",
+  "bioschemas:output": "tabular",
   "schema1:applicationSubCategory": [
     {
       "@id": "edam:topic_3676"
@@ -60,7 +62,10 @@
       "@id": "edam:topic_3325"
     }
   ],
+  "schema1:codeRepository": "https://cran.r-project.org/package=ExomeDepth",
+  "schema1:dateCreated": "2019-11-08",
   "schema1:description": "ExomeDepth: Calls copy number variants (CNVs) from targeted sequence data",
+  "schema1:encodingFormat": "tabular",
   "schema1:featureList": [
     {
       "@id": "edam:operation_2403"
@@ -92,5 +97,5 @@
   ],
   "schema1:name": "exomedepth",
   "schema1:softwareVersion": "1.1.0",
-  "schema1:url": "https://cran.r-project.org/package=ExomeDepth"
+  "schema1:url": "https://github.com/galaxyproject/tools-iuc/tree/main/tools/exomedepth"
 }

@@ -1,6 +1,7 @@
 {
   "@context": {
     "bioconda": "https://github.com/bioconda/bioconda-recipes/tree/master/recipes/",
+    "bioschemas": "http://bioschemas.org/",
     "biotools": "https://bio.tools/",
     "brick": "https://brickschema.org/schema/Brick#",
     "csvw": "http://www.w3.org/ns/csvw#",
@@ -43,6 +44,11 @@
     {
       "@id": "galaxytool:orfipy",
       "@type": "schema1:SoftwareApplication",
+      "bioschemas:output": [
+        "bed6",
+        "bed12",
+        "fasta"
+      ],
       "schema1:applicationSubCategory": [
         {
           "@id": "edam:topic_3316"
@@ -57,7 +63,14 @@
           "@id": "edam:topic_0154"
         }
       ],
+      "schema1:codeRepository": "https://github.com/urmi-21/orfipy",
+      "schema1:dateCreated": "2022-04-07",
       "schema1:description": "Galaxy wrapper for ORFIPY",
+      "schema1:encodingFormat": [
+        "bed6",
+        "bed12",
+        "fasta"
+      ],
       "schema1:featureList": [
         {
           "@id": "edam:operation_0436"
@@ -91,7 +104,7 @@
       "schema1:keywords": "Sequence Analysis",
       "schema1:name": "orfipy",
       "schema1:softwareVersion": "0.0.4",
-      "schema1:url": "https://github.com/urmi-21/orfipy"
+      "schema1:url": "https://github.com/galaxyproject/tools-iuc/tree/main/tools/orfipy"
     }
   ]
 }

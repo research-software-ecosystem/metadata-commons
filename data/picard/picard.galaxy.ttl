@@ -1,12 +1,31 @@
 @prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
+@prefix bioschemas: <http://bioschemas.org/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
 @prefix schema1: <http://schema.org/> .
 
 galaxytool:picard a schema1:SoftwareApplication ;
+    bioschemas:output "bam",
+        "fasta",
+        "fastqsanger",
+        "pdf",
+        "picard_interval_list",
+        "tabular",
+        "txt",
+        "unsorted.bam" ;
     schema1:applicationSubCategory edam:topic_3168 ;
+    schema1:codeRepository "http://broadinstitute.github.io/picard/" ;
+    schema1:dateCreated "2017-01-11" ;
     schema1:description "Picard SAM/BAM manipulation tools." ;
+    schema1:encodingFormat "bam",
+        "fasta",
+        "fastqsanger",
+        "pdf",
+        "picard_interval_list",
+        "tabular",
+        "txt",
+        "unsorted.bam" ;
     schema1:identifier biotools:picard_samtofastq,
         bioconda:picard ;
     schema1:isPartOf <https://usegalaxy.eu>,
@@ -36,6 +55,7 @@ galaxytool:picard a schema1:SoftwareApplication ;
         <https://usegalaxy.eu/published/workflow?id=291c36e1b18e9deb>,
         <https://usegalaxy.eu/published/workflow?id=2a13eb981d6ee36e>,
         <https://usegalaxy.eu/published/workflow?id=2a39dbc8fc6dd5d3>,
+        <https://usegalaxy.eu/published/workflow?id=2b892adf8f04473d>,
         <https://usegalaxy.eu/published/workflow?id=2c5cae1389c11881>,
         <https://usegalaxy.eu/published/workflow?id=2f1ee01aeee2b9f0>,
         <https://usegalaxy.eu/published/workflow?id=2f51a82838722bec>,
@@ -92,6 +112,7 @@ galaxytool:picard a schema1:SoftwareApplication ;
         <https://usegalaxy.eu/published/workflow?id=93a7047396080fda>,
         <https://usegalaxy.eu/published/workflow?id=93e32219d412c1f1>,
         <https://usegalaxy.eu/published/workflow?id=94b9287365ea4d0d>,
+        <https://usegalaxy.eu/published/workflow?id=97fc3ee3a9fd0466>,
         <https://usegalaxy.eu/published/workflow?id=985044b4b2c51425>,
         <https://usegalaxy.eu/published/workflow?id=99022559adf01c4a>,
         <https://usegalaxy.eu/published/workflow?id=99799eec4497f977>,
@@ -177,6 +198,7 @@ galaxytool:picard a schema1:SoftwareApplication ;
         <https://usegalaxy.org.au/published/workflow?id=3e7fcfd23872ad0d>,
         <https://usegalaxy.org.au/published/workflow?id=3f39cf407c185724>,
         <https://usegalaxy.org.au/published/workflow?id=41bd0340dcde60ec>,
+        <https://usegalaxy.org.au/published/workflow?id=4317a5e19d357154>,
         <https://usegalaxy.org.au/published/workflow?id=49b5c35b9723fa62>,
         <https://usegalaxy.org.au/published/workflow?id=51b745f8c964e5c6>,
         <https://usegalaxy.org.au/published/workflow?id=52056336f24eccf6>,
@@ -272,6 +294,7 @@ galaxytool:picard a schema1:SoftwareApplication ;
         <https://usegalaxy.org/published/workflow?id=17f3d7e52777d2e8>,
         <https://usegalaxy.org/published/workflow?id=18899840e49d89c3>,
         <https://usegalaxy.org/published/workflow?id=195f7acb16c5a2e2>,
+        <https://usegalaxy.org/published/workflow?id=19804053b3f4d01c>,
         <https://usegalaxy.org/published/workflow?id=1b4ac2bc54435ae4>,
         <https://usegalaxy.org/published/workflow?id=1b5ccfc61163527a>,
         <https://usegalaxy.org/published/workflow?id=1ba0239e55ac0d07>,
@@ -530,6 +553,7 @@ galaxytool:picard a schema1:SoftwareApplication ;
         <https://usegalaxy.org/published/workflow?id=98a4b90f7fc2bfce>,
         <https://usegalaxy.org/published/workflow?id=99bc7ba3faa7ed55>,
         <https://usegalaxy.org/published/workflow?id=99ee567c092fb34c>,
+        <https://usegalaxy.org/published/workflow?id=9a2edec61dd2b962>,
         <https://usegalaxy.org/published/workflow?id=9b32025036bdacb9>,
         <https://usegalaxy.org/published/workflow?id=9b81d47a468d6f99>,
         <https://usegalaxy.org/published/workflow?id=9c0bbf9e1c90cd66>,
@@ -760,6 +784,7 @@ galaxytool:picard a schema1:SoftwareApplication ;
         <https://workflowhub.eu/workflows/102?version=1>,
         <https://workflowhub.eu/workflows/112?version=6>,
         <https://workflowhub.eu/workflows/113?version=4>,
+        <https://workflowhub.eu/workflows/1190?version=3>,
         <https://workflowhub.eu/workflows/1540?version=1>,
         <https://workflowhub.eu/workflows/1562?version=1>,
         <https://workflowhub.eu/workflows/1568?version=2>,
@@ -775,11 +800,12 @@ galaxytool:picard a schema1:SoftwareApplication ;
         <https://workflowhub.eu/workflows/357?version=1>,
         <https://workflowhub.eu/workflows/35?version=1>,
         <https://workflowhub.eu/workflows/38?version=1>,
-        <https://workflowhub.eu/workflows/395?version=20> ;
+        <https://workflowhub.eu/workflows/395?version=20>,
+        <https://workflowhub.eu/workflows/399?version=22> ;
     schema1:keywords "SAM" ;
     schema1:name "picard" ;
     schema1:softwareVersion "3.1.1" ;
-    schema1:url "http://broadinstitute.github.io/picard/" .
+    schema1:url "https://github.com/galaxyproject/tools-iuc/tree/main/tools/picard" .
 
 <https://usegalaxy.eu> a schema1:WebSite .
 

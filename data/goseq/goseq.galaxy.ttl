@@ -1,12 +1,21 @@
 @prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
+@prefix bioschemas: <http://bioschemas.org/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
 @prefix schema1: <http://schema.org/> .
 
 galaxytool:goseq a schema1:SoftwareApplication ;
+    bioschemas:output "pdf",
+        "rdata",
+        "tabular" ;
     schema1:applicationSubCategory edam:topic_3170 ;
+    schema1:codeRepository "https://bioconductor.org/packages/release/bioc/html/goseq.html" ;
+    schema1:dateCreated "2016-11-12" ;
     schema1:description "goseq does selection-unbiased testing for category enrichment amongst differentially expressed (DE) genes for RNA-seq data" ;
+    schema1:encodingFormat "pdf",
+        "rdata",
+        "tabular" ;
     schema1:featureList edam:operation_3672 ;
     schema1:identifier biotools:goseq,
         bioconda:bioconductor-goseq ;
@@ -46,7 +55,7 @@ galaxytool:goseq a schema1:SoftwareApplication ;
         "Statistics" ;
     schema1:name "goseq" ;
     schema1:softwareVersion "@TOOL_VERSION@+galaxy@VERSION_SUFFIX@" ;
-    schema1:url "https://bioconductor.org/packages/release/bioc/html/goseq.html" .
+    schema1:url "https://github.com/galaxyproject/tools-iuc/tree/main/tools/goseq" .
 
 <https://usegalaxy.eu> a schema1:WebSite .
 

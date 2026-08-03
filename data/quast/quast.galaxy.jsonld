@@ -1,6 +1,7 @@
 {
   "@context": {
     "bioconda": "https://github.com/bioconda/bioconda-recipes/tree/master/recipes/",
+    "bioschemas": "http://bioschemas.org/",
     "biotools": "https://bio.tools/",
     "brick": "https://brickschema.org/schema/Brick#",
     "csvw": "http://www.w3.org/ns/csvw#",
@@ -37,8 +38,31 @@
   },
   "@graph": [
     {
+      "@id": "https://usegalaxy.org",
+      "@type": "schema1:WebSite"
+    },
+    {
+      "@id": "https://usegalaxy.org.au",
+      "@type": "schema1:WebSite"
+    },
+    {
+      "@id": "https://workflowhub.eu",
+      "@type": "schema1:WebSite"
+    },
+    {
+      "@id": "https://usegalaxy.eu",
+      "@type": "schema1:WebSite"
+    },
+    {
       "@id": "galaxytool:quast",
       "@type": "schema1:SoftwareApplication",
+      "bioschemas:output": [
+        "tabular",
+        "html",
+        "pdf",
+        "txt",
+        "png"
+      ],
       "schema1:applicationSubCategory": [
         {
           "@id": "edam:data_0925"
@@ -50,7 +74,16 @@
           "@id": "edam:topic_0196"
         }
       ],
+      "schema1:codeRepository": "http://quast.bioinf.spbau.ru/",
+      "schema1:dateCreated": "2016-09-07",
       "schema1:description": "Quast (Quality ASsessment Tool) evaluates genome assemblies.",
+      "schema1:encodingFormat": [
+        "tabular",
+        "html",
+        "pdf",
+        "txt",
+        "png"
+      ],
       "schema1:featureList": [
         {
           "@id": "edam:operation_0337"
@@ -79,6 +112,9 @@
         },
         {
           "@id": "workflowhub:1602?version=2"
+        },
+        {
+          "@id": "workflowhub:2024?version=5"
         },
         {
           "@id": "workflowhub:2011?version=1"
@@ -372,10 +408,16 @@
           "@id": "https://usegalaxy.eu/published/workflow?id=1524b189069b42a5"
         },
         {
-          "@id": "https://usegalaxy.org/published/workflow?id=c7f42286e0f15205"
+          "@id": "https://usegalaxy.org/published/workflow?id=97b5e2bc469d2d68"
         },
         {
           "@id": "https://usegalaxy.org"
+        },
+        {
+          "@id": "https://usegalaxy.org/published/workflow?id=9928c3afe47239a3"
+        },
+        {
+          "@id": "https://usegalaxy.org/published/workflow?id=c7f42286e0f15205"
         },
         {
           "@id": "https://usegalaxy.org/published/workflow?id=84233173d92fa506"
@@ -537,6 +579,9 @@
           "@id": "https://usegalaxy.org.au"
         },
         {
+          "@id": "https://usegalaxy.org.au/published/workflow?id=f00593ec2de66996"
+        },
+        {
           "@id": "https://usegalaxy.org.au/published/workflow?id=41331c03339e2b19"
         },
         {
@@ -657,23 +702,7 @@
       "schema1:keywords": "Assembly",
       "schema1:name": "quast",
       "schema1:softwareVersion": "5.3.0",
-      "schema1:url": "http://quast.bioinf.spbau.ru/"
-    },
-    {
-      "@id": "https://usegalaxy.org.au",
-      "@type": "schema1:WebSite"
-    },
-    {
-      "@id": "https://usegalaxy.eu",
-      "@type": "schema1:WebSite"
-    },
-    {
-      "@id": "https://usegalaxy.org",
-      "@type": "schema1:WebSite"
-    },
-    {
-      "@id": "https://workflowhub.eu",
-      "@type": "schema1:WebSite"
+      "schema1:url": "https://github.com/galaxyproject/tools-iuc/tree/main/tools/quast"
     }
   ]
 }

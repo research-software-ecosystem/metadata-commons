@@ -1,6 +1,7 @@
 {
   "@context": {
     "bioconda": "https://github.com/bioconda/bioconda-recipes/tree/master/recipes/",
+    "bioschemas": "http://bioschemas.org/",
     "biotools": "https://bio.tools/",
     "brick": "https://brickschema.org/schema/Brick#",
     "csvw": "http://www.w3.org/ns/csvw#",
@@ -37,6 +38,10 @@
   },
   "@graph": [
     {
+      "@id": "https://usegalaxy.org",
+      "@type": "schema1:WebSite"
+    },
+    {
       "@id": "https://usegalaxy.org.au",
       "@type": "schema1:WebSite"
     },
@@ -49,12 +54,13 @@
       "@type": "schema1:WebSite"
     },
     {
-      "@id": "https://usegalaxy.org",
-      "@type": "schema1:WebSite"
-    },
-    {
       "@id": "galaxytool:staramr",
       "@type": "schema1:SoftwareApplication",
+      "bioschemas:output": [
+        "tabular",
+        "txt",
+        "xlsx"
+      ],
       "schema1:applicationSubCategory": [
         {
           "@id": "edam:topic_3301"
@@ -66,7 +72,14 @@
           "@id": "edam:topic_3324"
         }
       ],
+      "schema1:codeRepository": "https://github.com/phac-nml/staramr",
+      "schema1:dateCreated": "2024-09-19",
       "schema1:description": "Scan genome contigs against the ResFinder, PlasmidFinder, and PointFinder antimicrobial resistance databases.",
+      "schema1:encodingFormat": [
+        "tabular",
+        "txt",
+        "xlsx"
+      ],
       "schema1:featureList": {
         "@id": "edam:operation_3482"
       },
@@ -84,6 +97,9 @@
         },
         {
           "@id": "https://workflowhub.eu"
+        },
+        {
+          "@id": "workflowhub:2024?version=5"
         },
         {
           "@id": "workflowhub:1477?version=1"
@@ -272,7 +288,7 @@
       "schema1:keywords": "Sequence Analysis",
       "schema1:name": "staramr",
       "schema1:softwareVersion": "@TOOL_VERSION@+galaxy@VERSION_SUFFIX@",
-      "schema1:url": "https://github.com/phac-nml/staramr"
+      "schema1:url": "https://github.com/galaxyproject/tools-iuc/tree/main/tools/staramr"
     }
   ]
 }

@@ -1,13 +1,20 @@
 @prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
+@prefix bioschemas: <http://bioschemas.org/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
 @prefix schema1: <http://schema.org/> .
 
 galaxytool:antismash a schema1:SoftwareApplication ;
+    bioschemas:output "html",
+        "txt" ;
     schema1:applicationSubCategory edam:topic_0602,
         edam:topic_0623 ;
+    schema1:codeRepository "https://antismash.secondarymetabolites.org" ;
+    schema1:dateCreated "2015-02-28" ;
     schema1:description "Antismash allows the genome-wide identification, annotation and analysis of secondary metabolite biosynthesis gene clusters" ;
+    schema1:encodingFormat "html",
+        "txt" ;
     schema1:featureList edam:operation_0291,
         edam:operation_2454,
         edam:operation_3742,
@@ -43,7 +50,7 @@ galaxytool:antismash a schema1:SoftwareApplication ;
     schema1:keywords "Sequence Analysis" ;
     schema1:name "antismash" ;
     schema1:softwareVersion "6.1.1" ;
-    schema1:url "https://antismash.secondarymetabolites.org" .
+    schema1:url "https://github.com/galaxyproject/tools-iuc/tree/master/tools/antismash" .
 
 <https://usegalaxy.eu> a schema1:WebSite .
 

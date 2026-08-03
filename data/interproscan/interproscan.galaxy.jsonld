@@ -1,6 +1,7 @@
 {
   "@context": {
     "bioconda": "https://github.com/bioconda/bioconda-recipes/tree/master/recipes/",
+    "bioschemas": "http://bioschemas.org/",
     "biotools": "https://bio.tools/",
     "brick": "https://brickschema.org/schema/Brick#",
     "csvw": "http://www.w3.org/ns/csvw#",
@@ -37,8 +38,18 @@
   },
   "@graph": [
     {
+      "@id": "https://usegalaxy.org",
+      "@type": "schema1:WebSite"
+    },
+    {
       "@id": "galaxytool:interproscan",
       "@type": "schema1:SoftwareApplication",
+      "bioschemas:output": [
+        "tabular",
+        "xml",
+        "gff3",
+        "json"
+      ],
       "schema1:applicationSubCategory": [
         {
           "@id": "edam:topic_0623"
@@ -50,7 +61,15 @@
           "@id": "edam:topic_0080"
         }
       ],
+      "schema1:codeRepository": "http://www.ebi.ac.uk/Tools/pfa/iprscan5/",
+      "schema1:dateCreated": "2021-11-15",
       "schema1:description": "Interproscan queries the interpro database and provides annotations.",
+      "schema1:encodingFormat": [
+        "tabular",
+        "xml",
+        "gff3",
+        "json"
+      ],
       "schema1:featureList": [
         {
           "@id": "edam:operation_0239"
@@ -72,13 +91,10 @@
       ],
       "schema1:isPartOf": [
         {
-          "@id": "workflowhub:2118?version=1"
+          "@id": "workflowhub:1262?version=1"
         },
         {
           "@id": "https://workflowhub.eu"
-        },
-        {
-          "@id": "workflowhub:1262?version=1"
         },
         {
           "@id": "workflowhub:1663?version=1"
@@ -171,13 +187,10 @@
           "@id": "https://usegalaxy.org/published/workflow?id=c451e4dca9981ed0"
         },
         {
-          "@id": "https://usegalaxy.org.au/published/workflow?id=4269abdcfe7adde2"
+          "@id": "https://usegalaxy.org.au/published/workflow?id=7559224fc32dce3a"
         },
         {
           "@id": "https://usegalaxy.org.au"
-        },
-        {
-          "@id": "https://usegalaxy.org.au/published/workflow?id=7559224fc32dce3a"
         },
         {
           "@id": "https://usegalaxy.org.au/published/workflow?id=876163677f1cccc4"
@@ -192,18 +205,14 @@
       "schema1:keywords": "Sequence Analysis",
       "schema1:name": "interproscan",
       "schema1:softwareVersion": "5.59-91.0",
-      "schema1:url": "http://www.ebi.ac.uk/Tools/pfa/iprscan5/"
+      "schema1:url": "https://github.com/galaxyproject/tools-iuc/tree/main/tools/interproscan"
+    },
+    {
+      "@id": "https://usegalaxy.cz",
+      "@type": "schema1:WebSite"
     },
     {
       "@id": "https://usegalaxy.org.au",
-      "@type": "schema1:WebSite"
-    },
-    {
-      "@id": "https://usegalaxy.eu",
-      "@type": "schema1:WebSite"
-    },
-    {
-      "@id": "https://usegalaxy.org",
       "@type": "schema1:WebSite"
     },
     {
@@ -211,7 +220,7 @@
       "@type": "schema1:WebSite"
     },
     {
-      "@id": "https://usegalaxy.cz",
+      "@id": "https://usegalaxy.eu",
       "@type": "schema1:WebSite"
     }
   ]

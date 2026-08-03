@@ -1,6 +1,7 @@
 {
   "@context": {
     "bioconda": "https://github.com/bioconda/bioconda-recipes/tree/master/recipes/",
+    "bioschemas": "http://bioschemas.org/",
     "biotools": "https://bio.tools/",
     "brick": "https://brickschema.org/schema/Brick#",
     "csvw": "http://www.w3.org/ns/csvw#",
@@ -37,7 +38,19 @@
   },
   "@id": "galaxytool:nonpareil",
   "@type": "schema1:SoftwareApplication",
+  "bioschemas:output": [
+    "tabular",
+    "txt",
+    "json"
+  ],
+  "schema1:codeRepository": "http://nonpareil.readthedocs.io",
+  "schema1:dateCreated": "2017-11-03",
   "schema1:description": "Estimate average coverage in metagenomic datasets",
+  "schema1:encodingFormat": [
+    "tabular",
+    "txt",
+    "json"
+  ],
   "schema1:featureList": {
     "@id": "edam:operation_0004"
   },
@@ -52,5 +65,5 @@
   "schema1:keywords": "Metagenomics",
   "schema1:name": "nonpareil",
   "schema1:softwareVersion": "3.5.5",
-  "schema1:url": "http://nonpareil.readthedocs.io"
+  "schema1:url": "https://github.com/galaxyproject/tools-iuc/tree/main/tools/nonpareil"
 }

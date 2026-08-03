@@ -1,11 +1,18 @@
 @prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
+@prefix bioschemas: <http://bioschemas.org/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
 @prefix schema1: <http://schema.org/> .
 
 galaxytool:ramclustr a schema1:SoftwareApplication ;
+    bioschemas:output "csv",
+        "tabular" ;
     schema1:applicationSubCategory edam:topic_3172 ;
+    schema1:codeRepository "https://rdrr.io/cran/RAMClustR/" ;
+    schema1:dateCreated "2020-11-05" ;
+    schema1:encodingFormat "csv",
+        "tabular" ;
     schema1:featureList edam:operation_3432,
         edam:operation_3435,
         edam:operation_3465,
@@ -23,7 +30,7 @@ galaxytool:ramclustr a schema1:SoftwareApplication ;
     schema1:keywords "Metabolomics" ;
     schema1:name "ramclustr" ;
     schema1:softwareVersion "1.3.1" ;
-    schema1:url "https://rdrr.io/cran/RAMClustR/" .
+    schema1:url "https://github.com/RECETOX/galaxytools/tree/master/tools/ramclustr" .
 
 <https://usegalaxy.cz> a schema1:WebSite .
 

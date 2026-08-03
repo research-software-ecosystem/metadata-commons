@@ -1,11 +1,18 @@
 @prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
+@prefix bioschemas: <http://bioschemas.org/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
 @prefix schema1: <http://schema.org/> .
 
 galaxytool:annotatemyids a schema1:SoftwareApplication ;
+    bioschemas:output "tabular",
+        "txt" ;
+    schema1:codeRepository "https://github.com/galaxyproject/tools-iuc/tree/master/tools/annotatemyids" ;
+    schema1:dateCreated "2017-11-18" ;
     schema1:description "annotateMyIDs: get annotation for a set of IDs using the Bioconductor annotation packages" ;
+    schema1:encodingFormat "tabular",
+        "txt" ;
     schema1:featureList edam:data_2018,
         edam:operation_0226 ;
     schema1:identifier biotools:annotatemyids,
@@ -42,7 +49,7 @@ galaxytool:annotatemyids a schema1:SoftwareApplication ;
     schema1:keywords "Genome annotation" ;
     schema1:name "annotatemyids" ;
     schema1:softwareVersion "@TOOL_VERSION@+galaxy@VERSION_SUFFIX@" ;
-    schema1:url "https://github.com/galaxyproject/tools-iuc/tree/master/tools/annotatemyids" .
+    schema1:url "https://github.com/galaxyproject/tools-iuc/tree/main/tools/annotatemyids" .
 
 <https://usegalaxy.eu> a schema1:WebSite .
 

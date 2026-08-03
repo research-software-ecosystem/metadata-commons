@@ -1,22 +1,34 @@
+@prefix bioschemas: <http://bioschemas.org/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
 @prefix schema1: <http://schema.org/> .
 
 galaxytool:omark a schema1:SoftwareApplication ;
+    bioschemas:output "omq",
+        "pdf",
+        "png",
+        "sum",
+        "txt",
+        "ump" ;
     schema1:applicationSubCategory edam:operation_2403,
         edam:topic_0080,
         edam:topic_0121,
         edam:topic_2269 ;
+    schema1:codeRepository "https://github.com/DessimozLab/OMArk" ;
+    schema1:dateCreated "2023-11-15" ;
     schema1:description "Proteome quality assessment software" ;
+    schema1:encodingFormat "omq",
+        "pdf",
+        "png",
+        "sum",
+        "txt",
+        "ump" ;
     schema1:featureList edam:operation_3180,
         edam:operation_3741 ;
     schema1:identifier biotools:omark ;
     schema1:isPartOf <https://usegalaxy.eu>,
         <https://usegalaxy.eu/published/workflow?id=31bc2a44fb89aa89>,
-        <https://usegalaxy.eu/published/workflow?id=327beb1edda305ff>,
-        <https://usegalaxy.eu/published/workflow?id=3d604dad4f1f5b3d>,
-        <https://usegalaxy.eu/published/workflow?id=4077e77b6af919c4>,
         <https://usegalaxy.eu/published/workflow?id=6550f72070b24082>,
         <https://usegalaxy.eu/published/workflow?id=8976041ef89e4548>,
         <https://usegalaxy.org>,
@@ -36,7 +48,7 @@ galaxytool:omark a schema1:SoftwareApplication ;
     schema1:keywords "Sequence Analysis" ;
     schema1:name "omark" ;
     schema1:softwareVersion "0.3.1" ;
-    schema1:url "https://github.com/DessimozLab/OMArk" .
+    schema1:url "https://github.com/galaxyproject/tools-iuc/tree/main/tools/omark" .
 
 <https://usegalaxy.eu> a schema1:WebSite .
 

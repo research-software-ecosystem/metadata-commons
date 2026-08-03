@@ -1,15 +1,26 @@
 @prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
+@prefix bioschemas: <http://bioschemas.org/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
 @prefix schema1: <http://schema.org/> .
 
 galaxytool:raceid a schema1:SoftwareApplication ;
+    bioschemas:output "pdf",
+        "rds",
+        "tabular",
+        "txt" ;
     schema1:applicationSubCategory edam:topic_0203,
         edam:topic_0602,
         edam:topic_2229,
         edam:topic_3170 ;
+    schema1:codeRepository "https://github.com/dgrun/RaceID3_StemID2_package/" ;
+    schema1:dateCreated "2018-03-03" ;
     schema1:description "RaceID3, StemID2, FateID - scRNA analysis" ;
+    schema1:encodingFormat "pdf",
+        "rds",
+        "tabular",
+        "txt" ;
     schema1:featureList edam:operation_0313,
         edam:operation_2476,
         edam:operation_2495,
@@ -26,7 +37,7 @@ galaxytool:raceid a schema1:SoftwareApplication ;
         "Transcriptomics" ;
     schema1:name "raceid" ;
     schema1:softwareVersion "0.4.2" ;
-    schema1:url "https://github.com/dgrun/RaceID3_StemID2_package/" .
+    schema1:url "https://github.com/galaxyproject/tools-iuc/tree/main/tools/raceid" .
 
 <https://usegalaxy.eu> a schema1:WebSite .
 

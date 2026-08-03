@@ -1,14 +1,21 @@
 @prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
+@prefix bioschemas: <http://bioschemas.org/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
 @prefix schema1: <http://schema.org/> .
 
 galaxytool:edger a schema1:SoftwareApplication ;
+    bioschemas:output "html",
+        "txt" ;
     schema1:applicationSubCategory edam:topic_3053,
         edam:topic_3169,
         edam:topic_3170 ;
+    schema1:codeRepository "http://bioconductor.org/packages/release/bioc/html/edgeR.html" ;
+    schema1:dateCreated "2017-09-11" ;
     schema1:description "Perform RNA-Seq differential expression analysis using edgeR pipeline" ;
+    schema1:encodingFormat "html",
+        "txt" ;
     schema1:featureList edam:operation_3742 ;
     schema1:identifier biotools:edger,
         bioconda:bioconductor-edger ;
@@ -41,7 +48,7 @@ galaxytool:edger a schema1:SoftwareApplication ;
         "Transcriptomics" ;
     schema1:name "edger" ;
     schema1:softwareVersion "@TOOL_VERSION@+galaxy@VERSION_SUFFIX@" ;
-    schema1:url "http://bioconductor.org/packages/release/bioc/html/edgeR.html" .
+    schema1:url "https://github.com/galaxyproject/tools-iuc/tree/main/tools/edger" .
 
 <https://usegalaxy.eu> a schema1:WebSite .
 

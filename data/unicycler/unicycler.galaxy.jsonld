@@ -1,6 +1,7 @@
 {
   "@context": {
     "bioconda": "https://github.com/bioconda/bioconda-recipes/tree/master/recipes/",
+    "bioschemas": "http://bioschemas.org/",
     "biotools": "https://bio.tools/",
     "brick": "https://brickschema.org/schema/Brick#",
     "csvw": "http://www.w3.org/ns/csvw#",
@@ -37,7 +38,7 @@
   },
   "@graph": [
     {
-      "@id": "https://usegalaxy.org.au",
+      "@id": "https://usegalaxy.org",
       "@type": "schema1:WebSite"
     },
     {
@@ -45,20 +46,13 @@
       "@type": "schema1:WebSite"
     },
     {
-      "@id": "https://usegalaxy.eu",
-      "@type": "schema1:WebSite"
-    },
-    {
-      "@id": "https://usegalaxy.org",
-      "@type": "schema1:WebSite"
-    },
-    {
-      "@id": "https://workflowhub.eu",
-      "@type": "schema1:WebSite"
-    },
-    {
       "@id": "galaxytool:unicycler",
       "@type": "schema1:SoftwareApplication",
+      "bioschemas:output": [
+        "gfa1",
+        "fasta",
+        "bam"
+      ],
       "schema1:applicationSubCategory": [
         {
           "@id": "edam:topic_3301"
@@ -79,7 +73,14 @@
           "@id": "edam:topic_0196"
         }
       ],
+      "schema1:codeRepository": "https://github.com/rrwick/Unicycler",
+      "schema1:dateCreated": "2017-05-08",
       "schema1:description": "Unicycler is a hybrid assembly pipeline for bacterial genomes.",
+      "schema1:encodingFormat": [
+        "gfa1",
+        "fasta",
+        "bam"
+      ],
       "schema1:featureList": [
         {
           "@id": "edam:operation_0525"
@@ -299,7 +300,19 @@
       "schema1:keywords": "Assembly",
       "schema1:name": "unicycler",
       "schema1:softwareVersion": "@TOOL_VERSION@+galaxy@VERSION_SUFFIX@",
-      "schema1:url": "https://github.com/rrwick/Unicycler"
+      "schema1:url": "https://github.com/galaxyproject/tools-iuc/tree/main/tools/unicycler"
+    },
+    {
+      "@id": "https://usegalaxy.org.au",
+      "@type": "schema1:WebSite"
+    },
+    {
+      "@id": "https://workflowhub.eu",
+      "@type": "schema1:WebSite"
+    },
+    {
+      "@id": "https://usegalaxy.eu",
+      "@type": "schema1:WebSite"
     }
   ]
 }

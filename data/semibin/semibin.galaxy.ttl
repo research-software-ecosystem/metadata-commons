@@ -1,17 +1,24 @@
 @prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
+@prefix bioschemas: <http://bioschemas.org/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
 @prefix schema1: <http://schema.org/> .
 
 galaxytool:semibin a schema1:SoftwareApplication ;
+    bioschemas:output "csv",
+        "fasta" ;
     schema1:applicationSubCategory edam:data_0925,
         edam:operation_0310,
         edam:topic_0196,
         edam:topic_3174,
         edam:topic_3474,
         edam:topic_3697 ;
+    schema1:codeRepository "https://semibin.readthedocs.io/en/latest/" ;
+    schema1:dateCreated "2022-10-14" ;
     schema1:description "SemiBin: Semi-supervised Metagenomic Binning Using Siamese Neural Networks" ;
+    schema1:encodingFormat "csv",
+        "fasta" ;
     schema1:featureList edam:data_0925,
         edam:operation_0310,
         edam:operation_3798,
@@ -32,7 +39,7 @@ galaxytool:semibin a schema1:SoftwareApplication ;
     schema1:keywords "Metagenomics" ;
     schema1:name "semibin" ;
     schema1:softwareVersion "2.1.0" ;
-    schema1:url "https://semibin.readthedocs.io/en/latest/" .
+    schema1:url "https://github.com/galaxyproject/tools-iuc/tree/main/tools/semibin" .
 
 <https://usegalaxy.eu> a schema1:WebSite .
 

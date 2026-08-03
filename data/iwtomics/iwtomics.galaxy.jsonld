@@ -1,6 +1,7 @@
 {
   "@context": {
     "bioconda": "https://github.com/bioconda/bioconda-recipes/tree/master/recipes/",
+    "bioschemas": "http://bioschemas.org/",
     "biotools": "https://bio.tools/",
     "brick": "https://brickschema.org/schema/Brick#",
     "csvw": "http://www.w3.org/ns/csvw#",
@@ -37,12 +38,30 @@
   },
   "@graph": [
     {
+      "@id": "https://workflowhub.eu",
+      "@type": "schema1:WebSite"
+    },
+    {
       "@id": "galaxytool:iwtomics",
       "@type": "schema1:SoftwareApplication",
+      "bioschemas:output": [
+        "rdata",
+        "tabular",
+        "pdf",
+        "txt"
+      ],
       "schema1:applicationSubCategory": {
         "@id": "edam:topic_2269"
       },
+      "schema1:codeRepository": "https://bioconductor.org/packages/release/bioc/html/IWTomics.html",
+      "schema1:dateCreated": "2017-06-08",
       "schema1:description": "Interval-Wise Testing for Omics Data",
+      "schema1:encodingFormat": [
+        "rdata",
+        "tabular",
+        "pdf",
+        "txt"
+      ],
       "schema1:featureList": [
         {
           "@id": "edam:operation_3742"
@@ -79,11 +98,7 @@
       "schema1:keywords": "Statistics",
       "schema1:name": "iwtomics",
       "schema1:softwareVersion": "1.0.0",
-      "schema1:url": "https://bioconductor.org/packages/release/bioc/html/IWTomics.html"
-    },
-    {
-      "@id": "https://workflowhub.eu",
-      "@type": "schema1:WebSite"
+      "schema1:url": "https://github.com/galaxyproject/tools-iuc/tree/main/tools/iwtomics"
     }
   ]
 }

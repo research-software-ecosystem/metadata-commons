@@ -1,12 +1,23 @@
 @prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
+@prefix bioschemas: <http://bioschemas.org/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
 @prefix schema1: <http://schema.org/> .
 
 galaxytool:matchms a schema1:SoftwareApplication ;
+    bioschemas:output "json",
+        "msp",
+        "tabular",
+        "xml" ;
     schema1:applicationSubCategory edam:topic_3172 ;
+    schema1:codeRepository "https://github.com/matchms/matchms" ;
+    schema1:dateCreated "2020-11-16" ;
     schema1:description "Searching, filtering and converting mass spectral libraries." ;
+    schema1:encodingFormat "json",
+        "msp",
+        "tabular",
+        "xml" ;
     schema1:featureList edam:operation_0336,
         edam:operation_3801 ;
     schema1:identifier biotools:matchms,
@@ -25,7 +36,7 @@ galaxytool:matchms a schema1:SoftwareApplication ;
     schema1:keywords "Metabolomics" ;
     schema1:name "matchms" ;
     schema1:softwareVersion "0.33.1" ;
-    schema1:url "https://github.com/matchms/matchms" .
+    schema1:url "https://github.com/RECETOX/galaxytools/tree/master/tools/matchms" .
 
 <https://usegalaxy.cz> a schema1:WebSite .
 

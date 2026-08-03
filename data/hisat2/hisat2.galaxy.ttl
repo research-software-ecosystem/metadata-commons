@@ -1,11 +1,22 @@
 @prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
+@prefix bioschemas: <http://bioschemas.org/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
 @prefix schema1: <http://schema.org/> .
 
 galaxytool:hisat2 a schema1:SoftwareApplication ;
+    bioschemas:output "bam",
+        "fastqsanger",
+        "tabular",
+        "txt" ;
+    schema1:codeRepository "http://ccb.jhu.edu/software/hisat2/" ;
+    schema1:dateCreated "2015-09-29" ;
     schema1:description "HISAT2 is a fast and sensitive spliced alignment program." ;
+    schema1:encodingFormat "bam",
+        "fastqsanger",
+        "tabular",
+        "txt" ;
     schema1:featureList edam:data_0863,
         edam:operation_0292,
         edam:topic_0182 ;
@@ -486,7 +497,7 @@ galaxytool:hisat2 a schema1:SoftwareApplication ;
     schema1:keywords "Assembly" ;
     schema1:name "hisat2" ;
     schema1:softwareVersion "2.2.2" ;
-    schema1:url "http://ccb.jhu.edu/software/hisat2/" .
+    schema1:url "https://github.com/galaxyproject/tools-iuc/tree/main/tools/hisat2" .
 
 <https://usegalaxy.eu> a schema1:WebSite .
 

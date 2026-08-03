@@ -1,6 +1,7 @@
 {
   "@context": {
     "bioconda": "https://github.com/bioconda/bioconda-recipes/tree/master/recipes/",
+    "bioschemas": "http://bioschemas.org/",
     "biotools": "https://bio.tools/",
     "brick": "https://brickschema.org/schema/Brick#",
     "csvw": "http://www.w3.org/ns/csvw#",
@@ -37,20 +38,14 @@
   },
   "@graph": [
     {
-      "@id": "https://usegalaxy.org.au",
-      "@type": "schema1:WebSite"
-    },
-    {
-      "@id": "https://usegalaxy.org",
-      "@type": "schema1:WebSite"
-    },
-    {
-      "@id": "https://usegalaxy.eu",
-      "@type": "schema1:WebSite"
-    },
-    {
       "@id": "galaxytool:baredsc",
       "@type": "schema1:SoftwareApplication",
+      "bioschemas:output": [
+        "npz",
+        "txt",
+        "tabular",
+        "png"
+      ],
       "schema1:applicationSubCategory": [
         {
           "@id": "edam:topic_3170"
@@ -68,7 +63,15 @@
           "@id": "edam:topic_2269"
         }
       ],
+      "schema1:codeRepository": "https://github.com/lldelisle/baredSC",
+      "schema1:dateCreated": "2023-09-06",
       "schema1:description": "baredSC is a tool that uses a Monte-Carlo Markov Chain to estimate a confidence interval on the probability density function (PDF) of expression of one or two genes from single-cell RNA-seq data.",
+      "schema1:encodingFormat": [
+        "npz",
+        "txt",
+        "tabular",
+        "png"
+      ],
       "schema1:featureList": [
         {
           "@id": "edam:operation_2422"
@@ -241,10 +244,22 @@
       ],
       "schema1:name": "baredsc",
       "schema1:softwareVersion": "1.1.3",
-      "schema1:url": "https://github.com/lldelisle/baredSC"
+      "schema1:url": "https://github.com/galaxyproject/tools-iuc/tree/main/tools/baredsc"
+    },
+    {
+      "@id": "https://usegalaxy.org",
+      "@type": "schema1:WebSite"
+    },
+    {
+      "@id": "https://usegalaxy.org.au",
+      "@type": "schema1:WebSite"
     },
     {
       "@id": "https://workflowhub.eu",
+      "@type": "schema1:WebSite"
+    },
+    {
+      "@id": "https://usegalaxy.eu",
       "@type": "schema1:WebSite"
     }
   ]

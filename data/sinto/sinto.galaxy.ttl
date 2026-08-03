@@ -1,13 +1,20 @@
 @prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
+@prefix bioschemas: <http://bioschemas.org/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
 @prefix schema1: <http://schema.org/> .
 
 galaxytool:sinto a schema1:SoftwareApplication ;
+    bioschemas:output "bed",
+        "fastqsanger.gz" ;
     schema1:applicationSubCategory edam:topic_0091,
         edam:topic_2229 ;
+    schema1:codeRepository "https://github.com/timoast/sinto" ;
+    schema1:dateCreated "2023-04-12" ;
     schema1:description "Sinto single-cell analysis tools" ;
+    schema1:encodingFormat "bed",
+        "fastqsanger.gz" ;
     schema1:identifier biotools:sinto,
         bioconda:sinto ;
     schema1:isPartOf <https://workflowhub.eu>,
@@ -16,7 +23,7 @@ galaxytool:sinto a schema1:SoftwareApplication ;
         "Single Cell" ;
     schema1:name "sinto" ;
     schema1:softwareVersion "0.10.1" ;
-    schema1:url "https://github.com/timoast/sinto" .
+    schema1:url "https://github.com/galaxyproject/tools-iuc/tree/main/tools/sinto" .
 
 <https://workflowhub.eu> a schema1:WebSite .
 

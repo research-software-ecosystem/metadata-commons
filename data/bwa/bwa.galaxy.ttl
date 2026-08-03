@@ -1,13 +1,18 @@
 @prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
+@prefix bioschemas: <http://bioschemas.org/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
 @prefix schema1: <http://schema.org/> .
 
 galaxytool:bwa a schema1:SoftwareApplication ;
+    bioschemas:output "bam" ;
     schema1:applicationSubCategory edam:operation_2429,
         edam:topic_0102 ;
+    schema1:codeRepository "http://bio-bwa.sourceforge.net/" ;
+    schema1:dateCreated "2017-11-21" ;
     schema1:description "Wrapper for bwa mem, aln, sampe, and samse" ;
+    schema1:encodingFormat "bam" ;
     schema1:featureList edam:data_0863,
         edam:operation_0292,
         edam:operation_3198,
@@ -80,6 +85,7 @@ galaxytool:bwa a schema1:SoftwareApplication ;
         <https://usegalaxy.eu/published/workflow?id=865f470be3c18b08>,
         <https://usegalaxy.eu/published/workflow?id=88064e2231165fd2>,
         <https://usegalaxy.eu/published/workflow?id=906a64781295b08c>,
+        <https://usegalaxy.eu/published/workflow?id=97fc3ee3a9fd0466>,
         <https://usegalaxy.eu/published/workflow?id=98bfad0c684011e9>,
         <https://usegalaxy.eu/published/workflow?id=99022559adf01c4a>,
         <https://usegalaxy.eu/published/workflow?id=99799eec4497f977>,
@@ -170,6 +176,7 @@ galaxytool:bwa a schema1:SoftwareApplication ;
         <https://usegalaxy.org.au/published/workflow?id=3d5deed70ac9bde4>,
         <https://usegalaxy.org.au/published/workflow?id=3e6f755ee62f7301>,
         <https://usegalaxy.org.au/published/workflow?id=3f39cf407c185724>,
+        <https://usegalaxy.org.au/published/workflow?id=4317a5e19d357154>,
         <https://usegalaxy.org.au/published/workflow?id=434127690544d0e9>,
         <https://usegalaxy.org.au/published/workflow?id=4cbc70a37a9da088>,
         <https://usegalaxy.org.au/published/workflow?id=51b745f8c964e5c6>,
@@ -218,6 +225,7 @@ galaxytool:bwa a schema1:SoftwareApplication ;
         <https://usegalaxy.org.au/published/workflow?id=d35d05be576e8b13>,
         <https://usegalaxy.org.au/published/workflow?id=d8a4a8bc4fa2f9ee>,
         <https://usegalaxy.org.au/published/workflow?id=e439a0e17a90d24c>,
+        <https://usegalaxy.org.au/published/workflow?id=f00593ec2de66996>,
         <https://usegalaxy.org.au/published/workflow?id=f52fb12383c8a214>,
         <https://usegalaxy.org.au/published/workflow?id=fca05a51c9c91df4>,
         <https://usegalaxy.org.au/published/workflow?id=fe5542c99cdc57ce>,
@@ -434,6 +442,7 @@ galaxytool:bwa a schema1:SoftwareApplication ;
         <https://usegalaxy.org/published/workflow?id=985d2366a583866b>,
         <https://usegalaxy.org/published/workflow?id=98b2ac8fc75781f8>,
         <https://usegalaxy.org/published/workflow?id=99bc7ba3faa7ed55>,
+        <https://usegalaxy.org/published/workflow?id=9a2edec61dd2b962>,
         <https://usegalaxy.org/published/workflow?id=9b32025036bdacb9>,
         <https://usegalaxy.org/published/workflow?id=9b4323b68f609e06>,
         <https://usegalaxy.org/published/workflow?id=9b81d47a468d6f99>,
@@ -586,6 +595,7 @@ galaxytool:bwa a schema1:SoftwareApplication ;
         <https://workflowhub.eu>,
         <https://workflowhub.eu/workflows/110?version=12>,
         <https://workflowhub.eu/workflows/113?version=4>,
+        <https://workflowhub.eu/workflows/1190?version=3>,
         <https://workflowhub.eu/workflows/1260?version=3>,
         <https://workflowhub.eu/workflows/1506?version=2>,
         <https://workflowhub.eu/workflows/1540?version=1>,
@@ -623,7 +633,7 @@ galaxytool:bwa a schema1:SoftwareApplication ;
     schema1:keywords "Next Gen Mappers" ;
     schema1:name "bwa" ;
     schema1:softwareVersion "0.7.19" ;
-    schema1:url "http://bio-bwa.sourceforge.net/" .
+    schema1:url "https://github.com/galaxyproject/tools-iuc/tree/main/tools/bwa" .
 
 <https://usegalaxy.eu> a schema1:WebSite .
 

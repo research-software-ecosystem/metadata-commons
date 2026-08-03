@@ -1,12 +1,31 @@
 @prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
+@prefix bioschemas: <http://bioschemas.org/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
 @prefix schema1: <http://schema.org/> .
 
 galaxytool:bedtools a schema1:SoftwareApplication ;
+    bioschemas:output "bam",
+        "bed",
+        "bedgraph",
+        "fasta",
+        "html",
+        "tabular",
+        "txt",
+        "unsorted.bam" ;
     schema1:applicationSubCategory edam:topic_0622 ;
+    schema1:codeRepository "https://github.com/arq5x/bedtools2" ;
+    schema1:dateCreated "2014-09-13" ;
     schema1:description "bedtools is a powerful toolset for genome arithmetic" ;
+    schema1:encodingFormat "bam",
+        "bed",
+        "bedgraph",
+        "fasta",
+        "html",
+        "tabular",
+        "txt",
+        "unsorted.bam" ;
     schema1:featureList edam:operation_2429,
         edam:topic_0102 ;
     schema1:identifier biotools:bedtools,
@@ -51,6 +70,7 @@ galaxytool:bedtools a schema1:SoftwareApplication ;
         <https://usegalaxy.eu/published/workflow?id=2a13eb981d6ee36e>,
         <https://usegalaxy.eu/published/workflow?id=2a33d4fcb806e942>,
         <https://usegalaxy.eu/published/workflow?id=2b00b6498a2b4779>,
+        <https://usegalaxy.eu/published/workflow?id=2b892adf8f04473d>,
         <https://usegalaxy.eu/published/workflow?id=2c5cae1389c11881>,
         <https://usegalaxy.eu/published/workflow?id=2d9d4445a1871230>,
         <https://usegalaxy.eu/published/workflow?id=2e6561d8dadc9e17>,
@@ -391,6 +411,7 @@ galaxytool:bedtools a schema1:SoftwareApplication ;
         <https://usegalaxy.org/published/workflow?id=172ee5e5bef33d2e>,
         <https://usegalaxy.org/published/workflow?id=17a7ff756d37a437>,
         <https://usegalaxy.org/published/workflow?id=17f3d7e52777d2e8>,
+        <https://usegalaxy.org/published/workflow?id=19804053b3f4d01c>,
         <https://usegalaxy.org/published/workflow?id=199d1df1df160ad1>,
         <https://usegalaxy.org/published/workflow?id=19ce6cf93298e268>,
         <https://usegalaxy.org/published/workflow?id=1adebcadc46074b9>,
@@ -942,6 +963,7 @@ galaxytool:bedtools a schema1:SoftwareApplication ;
         <https://usegalaxy.org/published/workflow?id=fff1a5c7475b3eeb>,
         <https://workflowhub.eu>,
         <https://workflowhub.eu/workflows/1054?version=1>,
+        <https://workflowhub.eu/workflows/1060?version=2>,
         <https://workflowhub.eu/workflows/1103?version=3>,
         <https://workflowhub.eu/workflows/1104?version=2>,
         <https://workflowhub.eu/workflows/111?version=5>,
@@ -964,13 +986,14 @@ galaxytool:bedtools a schema1:SoftwareApplication ;
         <https://workflowhub.eu/workflows/2195?version=1>,
         <https://workflowhub.eu/workflows/356?version=1>,
         <https://workflowhub.eu/workflows/395?version=20>,
+        <https://workflowhub.eu/workflows/399?version=22>,
         <https://workflowhub.eu/workflows/561?version=14>,
         <https://workflowhub.eu/workflows/878?version=3> ;
     schema1:keywords "Genomic Interval Operations",
         "Text Manipulation" ;
     schema1:name "bedtools" ;
     schema1:softwareVersion "2.31.1" ;
-    schema1:url "https://github.com/arq5x/bedtools2" .
+    schema1:url "https://github.com/galaxyproject/tools-iuc/tree/main/tools/bedtools" .
 
 <https://usegalaxy.eu> a schema1:WebSite .
 

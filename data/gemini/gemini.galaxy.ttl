@@ -1,13 +1,26 @@
 @prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
+@prefix bioschemas: <http://bioschemas.org/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
 @prefix schema1: <http://schema.org/> .
 
 galaxytool:gemini a schema1:SoftwareApplication ;
+    bioschemas:output "data",
+        "fasta",
+        "gff",
+        "tabular",
+        "txt" ;
     schema1:applicationSubCategory edam:operation_2403,
         edam:topic_0080 ;
+    schema1:codeRepository "https://ccb.jhu.edu/software/glimmer/" ;
+    schema1:dateCreated "2017-11-28" ;
     schema1:description "Glimmer makes gene predictions." ;
+    schema1:encodingFormat "data",
+        "fasta",
+        "gff",
+        "tabular",
+        "txt" ;
     schema1:featureList edam:operation_2403,
         edam:operation_3197,
         edam:topic_0080 ;
@@ -22,7 +35,7 @@ galaxytool:gemini a schema1:SoftwareApplication ;
     schema1:keywords "Sequence Analysis" ;
     schema1:name "gemini" ;
     schema1:softwareVersion "3.02" ;
-    schema1:url "https://ccb.jhu.edu/software/glimmer/" .
+    schema1:url "https://github.com/galaxyproject/tools-iuc/tree/main/tools/glimmer" .
 
 <https://usegalaxy.eu> a schema1:WebSite .
 

@@ -1,6 +1,7 @@
 {
   "@context": {
     "bioconda": "https://github.com/bioconda/bioconda-recipes/tree/master/recipes/",
+    "bioschemas": "http://bioschemas.org/",
     "biotools": "https://bio.tools/",
     "brick": "https://brickschema.org/schema/Brick#",
     "csvw": "http://www.w3.org/ns/csvw#",
@@ -37,16 +38,12 @@
   },
   "@graph": [
     {
-      "@id": "https://usegalaxy.org",
-      "@type": "schema1:WebSite"
-    },
-    {
-      "@id": "https://workflowhub.eu",
-      "@type": "schema1:WebSite"
-    },
-    {
       "@id": "galaxytool:vapor",
       "@type": "schema1:SoftwareApplication",
+      "bioschemas:output": [
+        "tabular",
+        "fasta"
+      ],
       "schema1:applicationSubCategory": [
         {
           "@id": "edam:topic_3673"
@@ -67,7 +64,13 @@
           "@id": "edam:topic_0196"
         }
       ],
+      "schema1:codeRepository": "https://github.com/wm75/vaporup",
+      "schema1:dateCreated": "2022-08-24",
       "schema1:description": "Classify Influenza samples from raw short read sequence data",
+      "schema1:encodingFormat": [
+        "tabular",
+        "fasta"
+      ],
       "schema1:featureList": [
         {
           "@id": "edam:operation_2422"
@@ -134,10 +137,18 @@
       "schema1:keywords": "Sequence Analysis",
       "schema1:name": "vapor",
       "schema1:softwareVersion": "@TOOL_VERSION@+galaxy@VERSION_SUFFIX@",
-      "schema1:url": "https://github.com/wm75/vaporup"
+      "schema1:url": "https://github.com/galaxyproject/tools-iuc/tree/main/tools/vapor"
     },
     {
       "@id": "https://usegalaxy.eu",
+      "@type": "schema1:WebSite"
+    },
+    {
+      "@id": "https://workflowhub.eu",
+      "@type": "schema1:WebSite"
+    },
+    {
+      "@id": "https://usegalaxy.org",
       "@type": "schema1:WebSite"
     }
   ]

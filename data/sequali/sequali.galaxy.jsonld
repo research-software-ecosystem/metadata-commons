@@ -1,6 +1,7 @@
 {
   "@context": {
     "bioconda": "https://github.com/bioconda/bioconda-recipes/tree/master/recipes/",
+    "bioschemas": "http://bioschemas.org/",
     "biotools": "https://bio.tools/",
     "brick": "https://brickschema.org/schema/Brick#",
     "csvw": "http://www.w3.org/ns/csvw#",
@@ -37,6 +38,10 @@
   },
   "@id": "galaxytool:sequali",
   "@type": "schema1:SoftwareApplication",
+  "bioschemas:output": [
+    "html",
+    "json"
+  ],
   "schema1:applicationSubCategory": [
     {
       "@id": "edam:topic_3572"
@@ -48,7 +53,13 @@
       "@id": "edam:topic_0080"
     }
   ],
+  "schema1:codeRepository": "https://sequali.readthedocs.io/",
+  "schema1:dateCreated": "2025-03-19",
   "schema1:description": "Fast sequencing data quality metrics for short and long reads",
+  "schema1:encodingFormat": [
+    "html",
+    "json"
+  ],
   "schema1:featureList": [
     {
       "@id": "edam:operation_3218"
@@ -68,5 +79,5 @@
   "schema1:keywords": "Fastq Manipulation",
   "schema1:name": "sequali",
   "schema1:softwareVersion": "@TOOL_VERSION@+galaxy@VERSION_SUFFIX@",
-  "schema1:url": "https://sequali.readthedocs.io/"
+  "schema1:url": "https://github.com/galaxyproject/tools-iuc/tree/main/tools/sequali"
 }

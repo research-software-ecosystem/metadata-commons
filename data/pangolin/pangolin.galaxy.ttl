@@ -1,12 +1,19 @@
 @prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
+@prefix bioschemas: <http://bioschemas.org/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
 @prefix schema1: <http://schema.org/> .
 
 galaxytool:pangolin a schema1:SoftwareApplication ;
+    bioschemas:output "fasta",
+        "tabular" ;
     schema1:applicationSubCategory edam:topic_0781 ;
+    schema1:codeRepository "https://github.com/cov-lineages/pangolin" ;
+    schema1:dateCreated "2021-03-06" ;
     schema1:description "Pangolin assigns SARS-CoV-2 genome sequences their most likely lineages under the Pango nomenclature system." ;
+    schema1:encodingFormat "fasta",
+        "tabular" ;
     schema1:featureList edam:operation_0499,
         edam:operation_3225 ;
     schema1:identifier biotools:pangolin_cov-lineages,
@@ -42,7 +49,7 @@ galaxytool:pangolin a schema1:SoftwareApplication ;
     schema1:keywords "Sequence Analysis" ;
     schema1:name "pangolin" ;
     schema1:softwareVersion "@TOOL_VERSION@" ;
-    schema1:url "https://github.com/cov-lineages/pangolin" .
+    schema1:url "https://github.com/galaxyproject/tools-iuc/tree/main/tools/pangolin" .
 
 <https://usegalaxy.eu> a schema1:WebSite .
 

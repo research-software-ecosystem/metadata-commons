@@ -1,6 +1,7 @@
 {
   "@context": {
     "bioconda": "https://github.com/bioconda/bioconda-recipes/tree/master/recipes/",
+    "bioschemas": "http://bioschemas.org/",
     "biotools": "https://bio.tools/",
     "brick": "https://brickschema.org/schema/Brick#",
     "csvw": "http://www.w3.org/ns/csvw#",
@@ -37,6 +38,7 @@
   },
   "@id": "galaxytool:effectivet3",
   "@type": "schema1:SoftwareApplication",
+  "bioschemas:output": "tabular",
   "schema1:applicationSubCategory": [
     {
       "@id": "edam:operation_2403"
@@ -45,7 +47,10 @@
       "@id": "edam:topic_0080"
     }
   ],
+  "schema1:codeRepository": "http://effectors.org",
+  "schema1:dateCreated": "2013-04-30",
   "schema1:description": "Find bacterial type III effectors in protein sequences",
+  "schema1:encodingFormat": "tabular",
   "schema1:featureList": [
     {
       "@id": "edam:operation_2995"
@@ -65,5 +70,5 @@
   "schema1:keywords": "Sequence Analysis",
   "schema1:name": "effectivet3",
   "schema1:softwareVersion": "0.0.21",
-  "schema1:url": "http://effectors.org"
+  "schema1:url": "https://github.com/peterjc/pico_galaxy/tree/master/tools/effectiveT3"
 }

@@ -1,17 +1,90 @@
 @prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
+@prefix bioschemas: <http://bioschemas.org/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
 @prefix schema1: <http://schema.org/> .
 
 galaxytool:mothur a schema1:SoftwareApplication ;
+    bioschemas:output "fasta",
+        "fastq",
+        "mothur.accnos",
+        "mothur.align",
+        "mothur.align.check",
+        "mothur.align.report",
+        "mothur.axes",
+        "mothur.cons.taxonomy",
+        "mothur.count_table",
+        "mothur.design",
+        "mothur.filter",
+        "mothur.freq",
+        "mothur.groups",
+        "mothur.list",
+        "mothur.lower.dist",
+        "mothur.names",
+        "mothur.otu.corr",
+        "mothur.pair.dist",
+        "mothur.quan",
+        "mothur.rabund",
+        "mothur.relabund",
+        "mothur.sabund",
+        "mothur.seq.taxonomy",
+        "mothur.sff.flow",
+        "mothur.shared",
+        "mothur.summary",
+        "mothur.tax.summary",
+        "mothur.tre",
+        "qual",
+        "qual454",
+        "sff",
+        "svg",
+        "tabular",
+        "txt",
+        "xml" ;
     schema1:applicationSubCategory edam:data_3028,
         edam:operation_2403,
         edam:topic_0080,
         edam:topic_0084,
         edam:topic_0637,
         edam:topic_3697 ;
+    schema1:codeRepository "https://www.mothur.org" ;
+    schema1:dateCreated "2016-06-24" ;
     schema1:description "Mothur wrappers" ;
+    schema1:encodingFormat "fasta",
+        "fastq",
+        "mothur.accnos",
+        "mothur.align",
+        "mothur.align.check",
+        "mothur.align.report",
+        "mothur.axes",
+        "mothur.cons.taxonomy",
+        "mothur.count_table",
+        "mothur.design",
+        "mothur.filter",
+        "mothur.freq",
+        "mothur.groups",
+        "mothur.list",
+        "mothur.lower.dist",
+        "mothur.names",
+        "mothur.otu.corr",
+        "mothur.pair.dist",
+        "mothur.quan",
+        "mothur.rabund",
+        "mothur.relabund",
+        "mothur.sabund",
+        "mothur.seq.taxonomy",
+        "mothur.sff.flow",
+        "mothur.shared",
+        "mothur.summary",
+        "mothur.tax.summary",
+        "mothur.tre",
+        "qual",
+        "qual454",
+        "sff",
+        "svg",
+        "tabular",
+        "txt",
+        "xml" ;
     schema1:featureList edam:data_1872,
         edam:operation_0291,
         edam:operation_0324,
@@ -97,7 +170,7 @@ galaxytool:mothur a schema1:SoftwareApplication ;
     schema1:keywords "Metagenomics" ;
     schema1:name "mothur" ;
     schema1:softwareVersion "1.39.5.0" ;
-    schema1:url "https://www.mothur.org" .
+    schema1:url "https://github.com/galaxyproject/tools-iuc/tree/main/tools/mothur" .
 
 <https://usegalaxy.eu> a schema1:WebSite .
 

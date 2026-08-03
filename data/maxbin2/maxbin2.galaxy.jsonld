@@ -1,6 +1,7 @@
 {
   "@context": {
     "bioconda": "https://github.com/bioconda/bioconda-recipes/tree/master/recipes/",
+    "bioschemas": "http://bioschemas.org/",
     "biotools": "https://bio.tools/",
     "brick": "https://brickschema.org/schema/Brick#",
     "csvw": "http://www.w3.org/ns/csvw#",
@@ -37,10 +38,6 @@
   },
   "@graph": [
     {
-      "@id": "https://usegalaxy.org",
-      "@type": "schema1:WebSite"
-    },
-    {
       "@id": "https://workflowhub.eu",
       "@type": "schema1:WebSite"
     },
@@ -49,8 +46,18 @@
       "@type": "schema1:WebSite"
     },
     {
+      "@id": "https://usegalaxy.org",
+      "@type": "schema1:WebSite"
+    },
+    {
       "@id": "galaxytool:maxbin2",
       "@type": "schema1:SoftwareApplication",
+      "bioschemas:output": [
+        "fasta",
+        "tabular",
+        "txt",
+        "pdf"
+      ],
       "schema1:applicationSubCategory": [
         {
           "@id": "edam:topic_3174"
@@ -68,7 +75,15 @@
           "@id": "edam:topic_3301"
         }
       ],
+      "schema1:codeRepository": "https://downloads.jbei.org/data/microbial_communities/MaxBin/MaxBin.html",
+      "schema1:dateCreated": "2019-10-24",
       "schema1:description": "clusters metagenomic contigs into bins",
+      "schema1:encodingFormat": [
+        "fasta",
+        "tabular",
+        "txt",
+        "pdf"
+      ],
       "schema1:featureList": [
         {
           "@id": "edam:data_0925"
@@ -153,7 +168,7 @@
       "schema1:keywords": "Metagenomics",
       "schema1:name": "maxbin2",
       "schema1:softwareVersion": "@MAXBIN_VERSION@",
-      "schema1:url": "https://downloads.jbei.org/data/microbial_communities/MaxBin/MaxBin.html"
+      "schema1:url": "https://github.com/galaxyproject/tools-iuc/tree/main/tools/maxbin2"
     }
   ]
 }

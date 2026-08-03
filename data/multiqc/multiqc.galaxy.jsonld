@@ -1,6 +1,7 @@
 {
   "@context": {
     "bioconda": "https://github.com/bioconda/bioconda-recipes/tree/master/recipes/",
+    "bioschemas": "http://bioschemas.org/",
     "biotools": "https://bio.tools/",
     "brick": "https://brickschema.org/schema/Brick#",
     "csvw": "http://www.w3.org/ns/csvw#",
@@ -39,6 +40,10 @@
     {
       "@id": "galaxytool:multiqc",
       "@type": "schema1:SoftwareApplication",
+      "bioschemas:output": [
+        "html",
+        "tabular"
+      ],
       "schema1:applicationSubCategory": [
         {
           "@id": "edam:topic_3168"
@@ -56,7 +61,13 @@
           "@id": "edam:topic_0622"
         }
       ],
+      "schema1:codeRepository": "http://multiqc.info/",
+      "schema1:dateCreated": "2017-09-21",
       "schema1:description": "MultiQC aggregates results from bioinformatics analyses across many samples into a single report",
+      "schema1:encodingFormat": [
+        "html",
+        "tabular"
+      ],
       "schema1:featureList": [
         {
           "@id": "edam:operation_2428"
@@ -81,9 +92,6 @@
           "@id": "https://workflowhub.eu"
         },
         {
-          "@id": "workflowhub:2115?version=2"
-        },
-        {
           "@id": "workflowhub:612?version=26"
         },
         {
@@ -94,6 +102,9 @@
         },
         {
           "@id": "workflowhub:2099?version=3"
+        },
+        {
+          "@id": "workflowhub:2068?version=3"
         },
         {
           "@id": "workflowhub:602?version=2"
@@ -117,6 +128,9 @@
           "@id": "workflowhub:1715?version=3"
         },
         {
+          "@id": "workflowhub:2027?version=5"
+        },
+        {
           "@id": "workflowhub:2026?version=4"
         },
         {
@@ -127,6 +141,12 @@
         },
         {
           "@id": "workflowhub:642?version=25"
+        },
+        {
+          "@id": "workflowhub:397?version=19"
+        },
+        {
+          "@id": "workflowhub:398?version=20"
         },
         {
           "@id": "workflowhub:155?version=7"
@@ -231,7 +251,13 @@
           "@id": "workflowhub:641?version=33"
         },
         {
+          "@id": "workflowhub:1272?version=3"
+        },
+        {
           "@id": "workflowhub:1271?version=3"
+        },
+        {
+          "@id": "workflowhub:1190?version=3"
         },
         {
           "@id": "workflowhub:110?version=12"
@@ -262,6 +288,9 @@
         },
         {
           "@id": "workflowhub:395?version=20"
+        },
+        {
+          "@id": "workflowhub:399?version=22"
         },
         {
           "@id": "workflowhub:400?version=15"
@@ -372,10 +401,31 @@
           "@id": "https://usegalaxy.fr/published/workflow?id=776ef2fa51094ba6"
         },
         {
-          "@id": "https://usegalaxy.eu/published/workflow?id=c3d864aa07d08abe"
+          "@id": "https://usegalaxy.eu/published/workflow?id=eed913b17606476a"
         },
         {
           "@id": "https://usegalaxy.eu"
+        },
+        {
+          "@id": "https://usegalaxy.eu/published/workflow?id=c3d864aa07d08abe"
+        },
+        {
+          "@id": "https://usegalaxy.eu/published/workflow?id=846fa28b246c0a82"
+        },
+        {
+          "@id": "https://usegalaxy.eu/published/workflow?id=97fc3ee3a9fd0466"
+        },
+        {
+          "@id": "https://usegalaxy.eu/published/workflow?id=430e6484673e67cc"
+        },
+        {
+          "@id": "https://usegalaxy.eu/published/workflow?id=c7d866a0f1728c7c"
+        },
+        {
+          "@id": "https://usegalaxy.eu/published/workflow?id=9c4f1598621f8266"
+        },
+        {
+          "@id": "https://usegalaxy.eu/published/workflow?id=2b892adf8f04473d"
         },
         {
           "@id": "https://usegalaxy.eu/published/workflow?id=063f17b236f25aef"
@@ -1905,10 +1955,34 @@
           "@id": "https://usegalaxy.eu/published/workflow?id=c6b22fc33b569c8f"
         },
         {
-          "@id": "https://usegalaxy.org/published/workflow?id=b15de7255660938d"
+          "@id": "https://usegalaxy.org/published/workflow?id=55e4c355761b7b73"
         },
         {
           "@id": "https://usegalaxy.org"
+        },
+        {
+          "@id": "https://usegalaxy.org/published/workflow?id=97b5e2bc469d2d68"
+        },
+        {
+          "@id": "https://usegalaxy.org/published/workflow?id=02d3d00ddf34903b"
+        },
+        {
+          "@id": "https://usegalaxy.org/published/workflow?id=9a2edec61dd2b962"
+        },
+        {
+          "@id": "https://usegalaxy.org/published/workflow?id=ec9871ea3c670224"
+        },
+        {
+          "@id": "https://usegalaxy.org/published/workflow?id=625878d4624db739"
+        },
+        {
+          "@id": "https://usegalaxy.org/published/workflow?id=19804053b3f4d01c"
+        },
+        {
+          "@id": "https://usegalaxy.org/published/workflow?id=a7297c6a6210da26"
+        },
+        {
+          "@id": "https://usegalaxy.org/published/workflow?id=b15de7255660938d"
         },
         {
           "@id": "https://usegalaxy.org/published/workflow?id=0976b3aff91d8acb"
@@ -4176,10 +4250,28 @@
           "@id": "https://usegalaxy.org/published/workflow?id=c24cfddfc88a97a3"
         },
         {
-          "@id": "https://usegalaxy.org.au/published/workflow?id=269c4f4a9834c9c9"
+          "@id": "https://usegalaxy.org.au/published/workflow?id=bf3d37088e99a912"
         },
         {
           "@id": "https://usegalaxy.org.au"
+        },
+        {
+          "@id": "https://usegalaxy.org.au/published/workflow?id=4317a5e19d357154"
+        },
+        {
+          "@id": "https://usegalaxy.org.au/published/workflow?id=185eded77b60bad3"
+        },
+        {
+          "@id": "https://usegalaxy.org.au/published/workflow?id=c9f640567f5184a9"
+        },
+        {
+          "@id": "https://usegalaxy.org.au/published/workflow?id=c098398bf23764fe"
+        },
+        {
+          "@id": "https://usegalaxy.org.au/published/workflow?id=54fbf73416a9d14e"
+        },
+        {
+          "@id": "https://usegalaxy.org.au/published/workflow?id=269c4f4a9834c9c9"
         },
         {
           "@id": "https://usegalaxy.org.au/published/workflow?id=b309f321263f9ebf"
@@ -4390,9 +4482,6 @@
         },
         {
           "@id": "https://usegalaxy.org.au/published/workflow?id=d6712862f762f85e"
-        },
-        {
-          "@id": "https://usegalaxy.org.au/published/workflow?id=bf3d37088e99a912"
         },
         {
           "@id": "https://usegalaxy.org.au/published/workflow?id=636ef20bac33a42d"
@@ -5701,10 +5790,10 @@
       ],
       "schema1:name": "multiqc",
       "schema1:softwareVersion": "1.35",
-      "schema1:url": "http://multiqc.info/"
+      "schema1:url": "https://github.com/galaxyproject/tools-iuc/tree/main/tools/multiqc"
     },
     {
-      "@id": "https://usegalaxy.org.au",
+      "@id": "https://usegalaxy.org",
       "@type": "schema1:WebSite"
     },
     {
@@ -5712,15 +5801,15 @@
       "@type": "schema1:WebSite"
     },
     {
-      "@id": "https://usegalaxy.eu",
-      "@type": "schema1:WebSite"
-    },
-    {
-      "@id": "https://usegalaxy.org",
+      "@id": "https://usegalaxy.org.au",
       "@type": "schema1:WebSite"
     },
     {
       "@id": "https://workflowhub.eu",
+      "@type": "schema1:WebSite"
+    },
+    {
+      "@id": "https://usegalaxy.eu",
       "@type": "schema1:WebSite"
     }
   ]

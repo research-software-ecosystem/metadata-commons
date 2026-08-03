@@ -1,10 +1,16 @@
 @prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
+@prefix bioschemas: <http://bioschemas.org/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
 @prefix schema1: <http://schema.org/> .
 
 galaxytool:busco a schema1:SoftwareApplication ;
+    bioschemas:output "fasta",
+        "gff3",
+        "png",
+        "tabular",
+        "txt" ;
     schema1:applicationSubCategory edam:data_0925,
         edam:operation_0310,
         edam:operation_2403,
@@ -12,7 +18,14 @@ galaxytool:busco a schema1:SoftwareApplication ;
         edam:topic_0196,
         edam:topic_0622,
         edam:topic_3308 ;
+    schema1:codeRepository "https://gitlab.com/ezlab/busco/-/releases" ;
+    schema1:dateCreated "2017-01-12" ;
     schema1:description "BUSCO assess genome and annotation completeness" ;
+    schema1:encodingFormat "fasta",
+        "gff3",
+        "png",
+        "tabular",
+        "txt" ;
     schema1:featureList edam:operation_3180 ;
     schema1:identifier biotools:busco,
         bioconda:busco ;
@@ -67,17 +80,14 @@ galaxytool:busco a schema1:SoftwareApplication ;
         <https://usegalaxy.eu/published/workflow?id=3192f92ac4d389b8>,
         <https://usegalaxy.eu/published/workflow?id=31bc2a44fb89aa89>,
         <https://usegalaxy.eu/published/workflow?id=31f8c7c46207432f>,
-        <https://usegalaxy.eu/published/workflow?id=327beb1edda305ff>,
         <https://usegalaxy.eu/published/workflow?id=342a5df69951e3d7>,
         <https://usegalaxy.eu/published/workflow?id=379642036b6f5a66>,
         <https://usegalaxy.eu/published/workflow?id=399048afb4acef3d>,
         <https://usegalaxy.eu/published/workflow?id=3a3e2d50fe7a9ee3>,
         <https://usegalaxy.eu/published/workflow?id=3b57fc81001667b5>,
-        <https://usegalaxy.eu/published/workflow?id=3d604dad4f1f5b3d>,
         <https://usegalaxy.eu/published/workflow?id=3e255a5b7026d26e>,
         <https://usegalaxy.eu/published/workflow?id=3eb6663a66f8e69a>,
         <https://usegalaxy.eu/published/workflow?id=3f5414bb38b47fcf>,
-        <https://usegalaxy.eu/published/workflow?id=4077e77b6af919c4>,
         <https://usegalaxy.eu/published/workflow?id=416141b245073406>,
         <https://usegalaxy.eu/published/workflow?id=44c92c04f1d14631>,
         <https://usegalaxy.eu/published/workflow?id=45ae834d842302c3>,
@@ -361,6 +371,7 @@ galaxytool:busco a schema1:SoftwareApplication ;
         <https://usegalaxy.org.au/published/workflow?id=ea98be0f99aaceb9>,
         <https://usegalaxy.org.au/published/workflow?id=ec7efff3d3249177>,
         <https://usegalaxy.org.au/published/workflow?id=ecfb8a08e5a40e15>,
+        <https://usegalaxy.org.au/published/workflow?id=f00593ec2de66996>,
         <https://usegalaxy.org.au/published/workflow?id=f06370394b061e08>,
         <https://usegalaxy.org.au/published/workflow?id=f38f610e0d95915f>,
         <https://usegalaxy.org.au/published/workflow?id=f53d8ade897b3f46>,
@@ -563,7 +574,7 @@ galaxytool:busco a schema1:SoftwareApplication ;
         "Sequence Analysis" ;
     schema1:name "busco" ;
     schema1:softwareVersion "5.8.0" ;
-    schema1:url "https://gitlab.com/ezlab/busco/-/releases" .
+    schema1:url "https://github.com/galaxyproject/tools-iuc/tree/main/tools/busco" .
 
 <https://usegalaxy.cz> a schema1:WebSite .
 

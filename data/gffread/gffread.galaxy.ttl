@@ -1,14 +1,27 @@
 @prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
+@prefix bioschemas: <http://bioschemas.org/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
 @prefix schema1: <http://schema.org/> .
 
 galaxytool:gffread a schema1:SoftwareApplication ;
+    bioschemas:output "bed",
+        "fasta",
+        "gff3",
+        "gtf",
+        "txt" ;
     schema1:applicationSubCategory edam:operation_2403,
         edam:topic_0077,
         edam:topic_0080 ;
+    schema1:codeRepository "http://ccb.jhu.edu/software/stringtie/gff.shtml#gffread/" ;
+    schema1:dateCreated "2019-10-29" ;
     schema1:description "gffread filters and/or converts GFF3/GTF2 records" ;
+    schema1:encodingFormat "bed",
+        "fasta",
+        "gff3",
+        "gtf",
+        "txt" ;
     schema1:featureList edam:operation_0361,
         edam:topic_0221 ;
     schema1:identifier biotools:gffread,
@@ -22,9 +35,6 @@ galaxytool:gffread a schema1:SoftwareApplication ;
         <https://usegalaxy.eu/published/workflow?id=26ad77bc07a7e512>,
         <https://usegalaxy.eu/published/workflow?id=2f37c35ade97aa8d>,
         <https://usegalaxy.eu/published/workflow?id=31bc2a44fb89aa89>,
-        <https://usegalaxy.eu/published/workflow?id=327beb1edda305ff>,
-        <https://usegalaxy.eu/published/workflow?id=3d604dad4f1f5b3d>,
-        <https://usegalaxy.eu/published/workflow?id=4077e77b6af919c4>,
         <https://usegalaxy.eu/published/workflow?id=47a0407867a90f95>,
         <https://usegalaxy.eu/published/workflow?id=48fe9c4de045d414>,
         <https://usegalaxy.eu/published/workflow?id=5be158931abca947>,
@@ -95,7 +105,7 @@ galaxytool:gffread a schema1:SoftwareApplication ;
     schema1:keywords "Sequence Analysis" ;
     schema1:name "gffread" ;
     schema1:softwareVersion "@GALAXY_TOOL_VERSION@+galaxy@VERSION_SUFFIX@" ;
-    schema1:url "http://ccb.jhu.edu/software/stringtie/gff.shtml#gffread/" .
+    schema1:url "https://github.com/galaxyproject/tools-iuc/tree/main/tools/gffread" .
 
 <https://usegalaxy.eu> a schema1:WebSite .
 

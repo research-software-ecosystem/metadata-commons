@@ -1,15 +1,20 @@
 @prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
+@prefix bioschemas: <http://bioschemas.org/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
 @prefix schema1: <http://schema.org/> .
 
 galaxytool:export2graphlan a schema1:SoftwareApplication ;
+    bioschemas:output "txt" ;
     schema1:applicationSubCategory edam:data_3028,
         edam:topic_0637,
         edam:topic_3172,
         edam:topic_3360 ;
+    schema1:codeRepository "https://bitbucket.org/CibioCM/export2graphlan/overview" ;
+    schema1:dateCreated "2017-03-03" ;
     schema1:description "export2graphlan is a conversion software tool for producing both annotation and tree file for GraPhlAn" ;
+    schema1:encodingFormat "txt" ;
     schema1:featureList edam:operation_3434 ;
     schema1:identifier biotools:export2graphlan,
         bioconda:export2graphlan ;
@@ -46,7 +51,7 @@ galaxytool:export2graphlan a schema1:SoftwareApplication ;
     schema1:keywords "Metagenomics" ;
     schema1:name "export2graphlan" ;
     schema1:softwareVersion "@VERSION@+@GALAXY_VERSION@" ;
-    schema1:url "https://bitbucket.org/CibioCM/export2graphlan/overview" .
+    schema1:url "https://github.com/galaxyproject/tools-iuc/tree/main/tools/export2graphlan" .
 
 <https://usegalaxy.eu> a schema1:WebSite .
 

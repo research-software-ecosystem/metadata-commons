@@ -1,6 +1,7 @@
 {
   "@context": {
     "bioconda": "https://github.com/bioconda/bioconda-recipes/tree/master/recipes/",
+    "bioschemas": "http://bioschemas.org/",
     "biotools": "https://bio.tools/",
     "brick": "https://brickschema.org/schema/Brick#",
     "csvw": "http://www.w3.org/ns/csvw#",
@@ -43,6 +44,7 @@
     {
       "@id": "galaxytool:blastxml_to_top_descr",
       "@type": "schema1:SoftwareApplication",
+      "bioschemas:output": "tabular",
       "schema1:applicationSubCategory": [
         {
           "@id": "edam:operation_2403"
@@ -51,7 +53,10 @@
           "@id": "edam:topic_0080"
         }
       ],
+      "schema1:codeRepository": "https://github.com/peterjc/galaxy_blast/tree/master/tools/blastxml_to_top_descr",
+      "schema1:dateCreated": "2013-09-23",
       "schema1:description": "Make table of top BLAST match descriptions",
+      "schema1:encodingFormat": "tabular",
       "schema1:featureList": [
         {
           "@id": "edam:data_0863"

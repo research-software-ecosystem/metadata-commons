@@ -1,6 +1,7 @@
 {
   "@context": {
     "bioconda": "https://github.com/bioconda/bioconda-recipes/tree/master/recipes/",
+    "bioschemas": "http://bioschemas.org/",
     "biotools": "https://bio.tools/",
     "brick": "https://brickschema.org/schema/Brick#",
     "csvw": "http://www.w3.org/ns/csvw#",
@@ -37,9 +38,17 @@
   },
   "@graph": [
     {
+      "@id": "https://usegalaxy.eu",
+      "@type": "schema1:WebSite"
+    },
+    {
       "@id": "galaxytool:iphop",
       "@type": "schema1:SoftwareApplication",
+      "bioschemas:output": "csv",
+      "schema1:codeRepository": "https://bitbucket.org/srouxjgi/iphop/",
+      "schema1:dateCreated": "2024-10-14",
       "schema1:description": "Integrated Phage Host Prediction",
+      "schema1:encodingFormat": "csv",
       "schema1:featureList": {
         "@id": "edam:operation_3731"
       },
@@ -65,11 +74,7 @@
       "schema1:keywords": "Metagenomics",
       "schema1:name": "iphop",
       "schema1:softwareVersion": "@TOOL_VERSION@+galaxy@VERSION_SUFFIX@",
-      "schema1:url": "https://bitbucket.org/srouxjgi/iphop/"
-    },
-    {
-      "@id": "https://usegalaxy.eu",
-      "@type": "schema1:WebSite"
+      "schema1:url": "https://github.com/Helmholtz-UFZ/ufz-galaxy-tools/blob/main/tools/iphop/"
     }
   ]
 }

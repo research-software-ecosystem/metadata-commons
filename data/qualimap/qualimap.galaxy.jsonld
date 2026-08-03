@@ -1,6 +1,7 @@
 {
   "@context": {
     "bioconda": "https://github.com/bioconda/bioconda-recipes/tree/master/recipes/",
+    "bioschemas": "http://bioschemas.org/",
     "biotools": "https://bio.tools/",
     "brick": "https://brickschema.org/schema/Brick#",
     "csvw": "http://www.w3.org/ns/csvw#",
@@ -37,32 +38,22 @@
   },
   "@graph": [
     {
-      "@id": "https://usegalaxy.org.au",
-      "@type": "schema1:WebSite"
-    },
-    {
-      "@id": "https://usegalaxy.fr",
-      "@type": "schema1:WebSite"
-    },
-    {
-      "@id": "https://usegalaxy.eu",
-      "@type": "schema1:WebSite"
-    },
-    {
-      "@id": "https://usegalaxy.org",
-      "@type": "schema1:WebSite"
-    },
-    {
-      "@id": "https://workflowhub.eu",
-      "@type": "schema1:WebSite"
-    },
-    {
       "@id": "galaxytool:qualimap",
       "@type": "schema1:SoftwareApplication",
+      "bioschemas:output": [
+        "html",
+        "tsv"
+      ],
       "schema1:applicationSubCategory": {
         "@id": "edam:topic_3572"
       },
+      "schema1:codeRepository": "http://qualimap.bioinfo.cipf.es/",
+      "schema1:dateCreated": "2019-10-10",
       "schema1:description": "Qualimap 2 is a platform-independent application written in Java andR that facilitates the quality control of alignment sequencing data and itsderivatives like feature counts.",
+      "schema1:encodingFormat": [
+        "html",
+        "tsv"
+      ],
       "schema1:featureList": {
         "@id": "edam:operation_3218"
       },
@@ -80,6 +71,9 @@
         },
         {
           "@id": "https://workflowhub.eu"
+        },
+        {
+          "@id": "workflowhub:2027?version=5"
         },
         {
           "@id": "workflowhub:155?version=7"
@@ -469,13 +463,13 @@
           "@id": "https://usegalaxy.org/published/workflow?id=0a57740c68e85e21"
         },
         {
-          "@id": "https://usegalaxy.org.au/published/workflow?id=70651aca994f322b"
+          "@id": "https://usegalaxy.org.au/published/workflow?id=bf3d37088e99a912"
         },
         {
           "@id": "https://usegalaxy.org.au"
         },
         {
-          "@id": "https://usegalaxy.org.au/published/workflow?id=bf3d37088e99a912"
+          "@id": "https://usegalaxy.org.au/published/workflow?id=70651aca994f322b"
         },
         {
           "@id": "https://usegalaxy.org.au/published/workflow?id=203f9e69152fbb2a"
@@ -578,7 +572,27 @@
       ],
       "schema1:name": "qualimap",
       "schema1:softwareVersion": "2.3",
-      "schema1:url": "http://qualimap.bioinfo.cipf.es/"
+      "schema1:url": "https://github.com/galaxyproject/tools-iuc/tree/main/tools/qualimap"
+    },
+    {
+      "@id": "https://usegalaxy.org",
+      "@type": "schema1:WebSite"
+    },
+    {
+      "@id": "https://usegalaxy.fr",
+      "@type": "schema1:WebSite"
+    },
+    {
+      "@id": "https://usegalaxy.org.au",
+      "@type": "schema1:WebSite"
+    },
+    {
+      "@id": "https://workflowhub.eu",
+      "@type": "schema1:WebSite"
+    },
+    {
+      "@id": "https://usegalaxy.eu",
+      "@type": "schema1:WebSite"
     }
   ]
 }

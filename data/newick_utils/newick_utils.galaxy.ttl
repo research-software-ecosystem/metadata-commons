@@ -1,14 +1,19 @@
 @prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
+@prefix bioschemas: <http://bioschemas.org/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
 @prefix schema1: <http://schema.org/> .
 
 galaxytool:newick_utils a schema1:SoftwareApplication ;
+    bioschemas:output "svg" ;
     schema1:applicationSubCategory edam:topic_0084,
         edam:topic_0622,
         edam:topic_3316 ;
+    schema1:codeRepository "https://github.com/tjunier/newick_utils" ;
+    schema1:dateCreated "2018-10-01" ;
     schema1:description "Perform operations on Newick trees" ;
+    schema1:encodingFormat "svg" ;
     schema1:identifier biotools:newick_utilities,
         bioconda:newick_utils ;
     schema1:isPartOf <https://usegalaxy.eu>,
@@ -54,6 +59,7 @@ galaxytool:newick_utils a schema1:SoftwareApplication ;
         <https://usegalaxy.org/published/workflow?id=bc01b8b203ecc754>,
         <https://usegalaxy.org/published/workflow?id=d653eaefcf6b4697>,
         <https://workflowhub.eu>,
+        <https://workflowhub.eu/workflows/1060?version=2>,
         <https://workflowhub.eu/workflows/1418?version=1>,
         <https://workflowhub.eu/workflows/1465?version=1>,
         <https://workflowhub.eu/workflows/1487?version=2>,
@@ -62,7 +68,7 @@ galaxytool:newick_utils a schema1:SoftwareApplication ;
         "Visualization" ;
     schema1:name "newick_utils" ;
     schema1:softwareVersion "1.6" ;
-    schema1:url "https://github.com/tjunier/newick_utils" .
+    schema1:url "https://github.com/galaxyproject/tools-iuc/tree/main/tools/newick_utils" .
 
 <https://usegalaxy.eu> a schema1:WebSite .
 

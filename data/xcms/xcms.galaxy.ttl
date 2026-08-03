@@ -1,12 +1,35 @@
 @prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
+@prefix bioschemas: <http://bioschemas.org/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
 @prefix schema1: <http://schema.org/> .
 
 galaxytool:xcms a schema1:SoftwareApplication ;
+    bioschemas:output "html",
+        "pdf",
+        "png",
+        "rdata.msnbase.raw",
+        "rdata.xcms.fillpeaks",
+        "rdata.xcms.findchrompeaks",
+        "rdata.xcms.group",
+        "rdata.xcms.retcor",
+        "tabular",
+        "txt" ;
     schema1:applicationSubCategory edam:topic_0092,
         edam:topic_3172 ;
+    schema1:codeRepository "https://github.com/sneumann/xcms" ;
+    schema1:dateCreated "2023-05-24" ;
+    schema1:encodingFormat "html",
+        "pdf",
+        "png",
+        "rdata.msnbase.raw",
+        "rdata.xcms.fillpeaks",
+        "rdata.xcms.findchrompeaks",
+        "rdata.xcms.group",
+        "rdata.xcms.retcor",
+        "tabular",
+        "txt" ;
     schema1:featureList edam:operation_2428,
         edam:operation_3203,
         edam:operation_3215,
@@ -14,7 +37,7 @@ galaxytool:xcms a schema1:SoftwareApplication ;
         edam:operation_3634,
         edam:operation_3694,
         edam:operation_3695 ;
-    schema1:identifier biotools:XCMS,
+    schema1:identifier biotools:xcms,
         bioconda:bioconductor-xcms ;
     schema1:isPartOf <https://usegalaxy.cz>,
         <https://usegalaxy.cz/published/workflow?id=1082e5b455f8f814>,
@@ -80,7 +103,7 @@ galaxytool:xcms a schema1:SoftwareApplication ;
     schema1:keywords "Metabolomics" ;
     schema1:name "xcms" ;
     schema1:softwareVersion "3.12.0" ;
-    schema1:url "https://github.com/sneumann/xcms" .
+    schema1:url "https://github.com/workflow4metabolomics/tools-metabolomics/tree/master/tools/xcms" .
 
 <https://usegalaxy.cz> a schema1:WebSite .
 

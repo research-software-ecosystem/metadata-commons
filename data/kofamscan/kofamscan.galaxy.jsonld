@@ -1,6 +1,7 @@
 {
   "@context": {
     "bioconda": "https://github.com/bioconda/bioconda-recipes/tree/master/recipes/",
+    "bioschemas": "http://bioschemas.org/",
     "biotools": "https://bio.tools/",
     "brick": "https://brickschema.org/schema/Brick#",
     "csvw": "http://www.w3.org/ns/csvw#",
@@ -43,6 +44,10 @@
     {
       "@id": "galaxytool:kofamscan",
       "@type": "schema1:SoftwareApplication",
+      "bioschemas:output": [
+        "txt",
+        "zip"
+      ],
       "schema1:applicationSubCategory": [
         {
           "@id": "edam:topic_0622"
@@ -54,7 +59,13 @@
           "@id": "edam:topic_0081"
         }
       ],
+      "schema1:codeRepository": "https://github.com/takaram/kofam_scan",
+      "schema1:dateCreated": "2020-11-12",
       "schema1:description": "Gene function annotation tool based on KEGG Orthology and hidden Markov model",
+      "schema1:encodingFormat": [
+        "txt",
+        "zip"
+      ],
       "schema1:featureList": [
         {
           "@id": "edam:operation_2403"
@@ -103,7 +114,7 @@
       "schema1:keywords": "Sequence Analysis",
       "schema1:name": "kofamscan",
       "schema1:softwareVersion": "@TOOL_VERSION@+galaxy@VERSION_SUFFIX@",
-      "schema1:url": "https://github.com/takaram/kofam_scan"
+      "schema1:url": "https://github.com/galaxyproject/tools-iuc/tree/main/tools/kofamscan"
     }
   ]
 }

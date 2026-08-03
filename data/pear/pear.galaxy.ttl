@@ -1,14 +1,19 @@
 @prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
+@prefix bioschemas: <http://bioschemas.org/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
 @prefix schema1: <http://schema.org/> .
 
 galaxytool:pear a schema1:SoftwareApplication ;
+    bioschemas:output "auto" ;
     schema1:applicationSubCategory edam:data_0925,
         edam:operation_0310,
         edam:topic_0196 ;
+    schema1:codeRepository "https://cme.h-its.org/exelixis/web/software/pear/" ;
+    schema1:dateCreated "2015-02-11" ;
     schema1:description "PEAR evaluates all possible paired-end read overlaps" ;
+    schema1:encodingFormat "auto" ;
     schema1:featureList edam:operation_0232 ;
     schema1:identifier biotools:pear,
         bioconda:pear ;
@@ -25,7 +30,7 @@ galaxytool:pear a schema1:SoftwareApplication ;
     schema1:keywords "Fastq Manipulation" ;
     schema1:name "pear" ;
     schema1:softwareVersion "@TOOL_VERSION@.@VERSION_SUFFIX@" ;
-    schema1:url "https://cme.h-its.org/exelixis/web/software/pear/" .
+    schema1:url "https://github.com/galaxyproject/tools-iuc/tree/main/tools/pear" .
 
 <https://usegalaxy.eu> a schema1:WebSite .
 

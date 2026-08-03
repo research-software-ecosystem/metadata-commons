@@ -1,12 +1,23 @@
 @prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
+@prefix bioschemas: <http://bioschemas.org/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
 @prefix schema1: <http://schema.org/> .
 
 galaxytool:ivar a schema1:SoftwareApplication ;
+    bioschemas:output "bam",
+        "fasta",
+        "tabular",
+        "vcf" ;
     schema1:applicationSubCategory edam:topic_0781 ;
+    schema1:codeRepository "https://github.com/andersen-lab/ivar" ;
+    schema1:dateCreated "2020-03-21" ;
     schema1:description "iVar is a computational package that contains functions broadly useful for viral amplicon-based sequencing" ;
+    schema1:encodingFormat "bam",
+        "fasta",
+        "tabular",
+        "vcf" ;
     schema1:featureList edam:operation_3237 ;
     schema1:identifier biotools:andersen-lab_ivar,
         bioconda:ivar ;
@@ -152,7 +163,7 @@ galaxytool:ivar a schema1:SoftwareApplication ;
     schema1:keywords "Sequence Analysis" ;
     schema1:name "ivar" ;
     schema1:softwareVersion "1.4.4" ;
-    schema1:url "https://github.com/andersen-lab/ivar" .
+    schema1:url "https://github.com/galaxyproject/tools-iuc/tree/main/tools/ivar" .
 
 <https://usegalaxy.eu> a schema1:WebSite .
 

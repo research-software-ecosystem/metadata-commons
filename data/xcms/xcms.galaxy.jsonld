@@ -1,6 +1,7 @@
 {
   "@context": {
     "bioconda": "https://github.com/bioconda/bioconda-recipes/tree/master/recipes/",
+    "bioschemas": "http://bioschemas.org/",
     "biotools": "https://bio.tools/",
     "brick": "https://brickschema.org/schema/Brick#",
     "csvw": "http://www.w3.org/ns/csvw#",
@@ -37,8 +38,32 @@
   },
   "@graph": [
     {
+      "@id": "https://usegalaxy.org",
+      "@type": "schema1:WebSite"
+    },
+    {
+      "@id": "https://usegalaxy.fr",
+      "@type": "schema1:WebSite"
+    },
+    {
+      "@id": "https://usegalaxy.cz",
+      "@type": "schema1:WebSite"
+    },
+    {
       "@id": "galaxytool:xcms",
       "@type": "schema1:SoftwareApplication",
+      "bioschemas:output": [
+        "rdata.xcms.fillpeaks",
+        "rdata.xcms.group",
+        "pdf",
+        "rdata.xcms.findchrompeaks",
+        "rdata.xcms.retcor",
+        "html",
+        "txt",
+        "tabular",
+        "rdata.msnbase.raw",
+        "png"
+      ],
       "schema1:applicationSubCategory": [
         {
           "@id": "edam:topic_0092"
@@ -46,6 +71,20 @@
         {
           "@id": "edam:topic_3172"
         }
+      ],
+      "schema1:codeRepository": "https://github.com/sneumann/xcms",
+      "schema1:dateCreated": "2023-05-24",
+      "schema1:encodingFormat": [
+        "rdata.xcms.fillpeaks",
+        "rdata.xcms.group",
+        "pdf",
+        "rdata.xcms.findchrompeaks",
+        "rdata.xcms.retcor",
+        "html",
+        "txt",
+        "tabular",
+        "rdata.msnbase.raw",
+        "png"
       ],
       "schema1:featureList": [
         {
@@ -72,7 +111,7 @@
       ],
       "schema1:identifier": [
         {
-          "@id": "biotools:XCMS"
+          "@id": "biotools:xcms"
         },
         {
           "@id": "bioconda:bioconductor-xcms"
@@ -266,30 +305,18 @@
       "schema1:keywords": "Metabolomics",
       "schema1:name": "xcms",
       "schema1:softwareVersion": "3.12.0",
-      "schema1:url": "https://github.com/sneumann/xcms"
-    },
-    {
-      "@id": "https://usegalaxy.org.au",
-      "@type": "schema1:WebSite"
-    },
-    {
-      "@id": "https://usegalaxy.fr",
-      "@type": "schema1:WebSite"
-    },
-    {
-      "@id": "https://usegalaxy.eu",
-      "@type": "schema1:WebSite"
-    },
-    {
-      "@id": "https://usegalaxy.org",
-      "@type": "schema1:WebSite"
+      "schema1:url": "https://github.com/workflow4metabolomics/tools-metabolomics/tree/master/tools/xcms"
     },
     {
       "@id": "https://workflowhub.eu",
       "@type": "schema1:WebSite"
     },
     {
-      "@id": "https://usegalaxy.cz",
+      "@id": "https://usegalaxy.org.au",
+      "@type": "schema1:WebSite"
+    },
+    {
+      "@id": "https://usegalaxy.eu",
       "@type": "schema1:WebSite"
     }
   ]

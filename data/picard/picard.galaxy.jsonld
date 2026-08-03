@@ -1,6 +1,7 @@
 {
   "@context": {
     "bioconda": "https://github.com/bioconda/bioconda-recipes/tree/master/recipes/",
+    "bioschemas": "http://bioschemas.org/",
     "biotools": "https://bio.tools/",
     "brick": "https://brickschema.org/schema/Brick#",
     "csvw": "http://www.w3.org/ns/csvw#",
@@ -37,32 +38,34 @@
   },
   "@graph": [
     {
-      "@id": "https://usegalaxy.org.au",
-      "@type": "schema1:WebSite"
-    },
-    {
-      "@id": "https://usegalaxy.fr",
-      "@type": "schema1:WebSite"
-    },
-    {
-      "@id": "https://usegalaxy.eu",
-      "@type": "schema1:WebSite"
-    },
-    {
-      "@id": "https://usegalaxy.org",
-      "@type": "schema1:WebSite"
-    },
-    {
-      "@id": "https://workflowhub.eu",
-      "@type": "schema1:WebSite"
-    },
-    {
       "@id": "galaxytool:picard",
       "@type": "schema1:SoftwareApplication",
+      "bioschemas:output": [
+        "bam",
+        "picard_interval_list",
+        "tabular",
+        "pdf",
+        "txt",
+        "unsorted.bam",
+        "fasta",
+        "fastqsanger"
+      ],
       "schema1:applicationSubCategory": {
         "@id": "edam:topic_3168"
       },
+      "schema1:codeRepository": "http://broadinstitute.github.io/picard/",
+      "schema1:dateCreated": "2017-01-11",
       "schema1:description": "Picard SAM/BAM manipulation tools.",
+      "schema1:encodingFormat": [
+        "bam",
+        "picard_interval_list",
+        "tabular",
+        "pdf",
+        "txt",
+        "unsorted.bam",
+        "fasta",
+        "fastqsanger"
+      ],
       "schema1:identifier": [
         {
           "@id": "biotools:picard_samtofastq"
@@ -106,10 +109,16 @@
           "@id": "workflowhub:1540?version=1"
         },
         {
+          "@id": "workflowhub:1190?version=3"
+        },
+        {
           "@id": "workflowhub:102?version=1"
         },
         {
           "@id": "workflowhub:395?version=20"
+        },
+        {
+          "@id": "workflowhub:399?version=22"
         },
         {
           "@id": "workflowhub:220?version=2"
@@ -170,6 +179,12 @@
         },
         {
           "@id": "https://usegalaxy.eu"
+        },
+        {
+          "@id": "https://usegalaxy.eu/published/workflow?id=97fc3ee3a9fd0466"
+        },
+        {
+          "@id": "https://usegalaxy.eu/published/workflow?id=2b892adf8f04473d"
         },
         {
           "@id": "https://usegalaxy.eu/published/workflow?id=7f5fb5d8e2f79459"
@@ -559,10 +574,16 @@
           "@id": "https://usegalaxy.eu/published/workflow?id=c00fe92f9a579a15"
         },
         {
-          "@id": "https://usegalaxy.org/published/workflow?id=b15de7255660938d"
+          "@id": "https://usegalaxy.org/published/workflow?id=9a2edec61dd2b962"
         },
         {
           "@id": "https://usegalaxy.org"
+        },
+        {
+          "@id": "https://usegalaxy.org/published/workflow?id=19804053b3f4d01c"
+        },
+        {
+          "@id": "https://usegalaxy.org/published/workflow?id=b15de7255660938d"
         },
         {
           "@id": "https://usegalaxy.org/published/workflow?id=3bf9a7e5001f01bb"
@@ -2134,10 +2155,13 @@
           "@id": "https://usegalaxy.org/published/workflow?id=b6c0208e49cd2271"
         },
         {
-          "@id": "https://usegalaxy.org.au/published/workflow?id=269c4f4a9834c9c9"
+          "@id": "https://usegalaxy.org.au/published/workflow?id=4317a5e19d357154"
         },
         {
           "@id": "https://usegalaxy.org.au"
+        },
+        {
+          "@id": "https://usegalaxy.org.au/published/workflow?id=269c4f4a9834c9c9"
         },
         {
           "@id": "https://usegalaxy.org.au/published/workflow?id=c0892ddfbc897bee"
@@ -2377,7 +2401,27 @@
       "schema1:keywords": "SAM",
       "schema1:name": "picard",
       "schema1:softwareVersion": "3.1.1",
-      "schema1:url": "http://broadinstitute.github.io/picard/"
+      "schema1:url": "https://github.com/galaxyproject/tools-iuc/tree/main/tools/picard"
+    },
+    {
+      "@id": "https://usegalaxy.org",
+      "@type": "schema1:WebSite"
+    },
+    {
+      "@id": "https://usegalaxy.fr",
+      "@type": "schema1:WebSite"
+    },
+    {
+      "@id": "https://usegalaxy.org.au",
+      "@type": "schema1:WebSite"
+    },
+    {
+      "@id": "https://workflowhub.eu",
+      "@type": "schema1:WebSite"
+    },
+    {
+      "@id": "https://usegalaxy.eu",
+      "@type": "schema1:WebSite"
     }
   ]
 }

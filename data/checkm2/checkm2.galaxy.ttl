@@ -1,10 +1,12 @@
 @prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
+@prefix bioschemas: <http://bioschemas.org/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
 @prefix schema1: <http://schema.org/> .
 
 galaxytool:checkm2 a schema1:SoftwareApplication ;
+    bioschemas:output "tabular" ;
     schema1:applicationSubCategory edam:data_3028,
         edam:topic_0194,
         edam:topic_0622,
@@ -12,7 +14,10 @@ galaxytool:checkm2 a schema1:SoftwareApplication ;
         edam:topic_3174,
         edam:topic_3293,
         edam:topic_3572 ;
+    schema1:codeRepository "https://github.com/chklovski/CheckM2" ;
+    schema1:dateCreated "2024-11-08" ;
     schema1:description "Rapid assessment of genome bin quality using machine learning" ;
+    schema1:encodingFormat "tabular" ;
     schema1:featureList edam:operation_0236,
         edam:operation_2238,
         edam:operation_2428,
@@ -43,7 +48,7 @@ galaxytool:checkm2 a schema1:SoftwareApplication ;
     schema1:keywords "Metagenomics" ;
     schema1:name "checkm2" ;
     schema1:softwareVersion "@TOOL_VERSION@+galaxy@VERSION_SUFFIX@" ;
-    schema1:url "https://github.com/chklovski/CheckM2" .
+    schema1:url "https://github.com/galaxyproject/tools-iuc/tree/main/tools/checkm2" .
 
 <https://usegalaxy.eu> a schema1:WebSite .
 

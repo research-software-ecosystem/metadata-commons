@@ -1,12 +1,21 @@
 @prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
+@prefix bioschemas: <http://bioschemas.org/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
 @prefix schema1: <http://schema.org/> .
 
 galaxytool:fgsea a schema1:SoftwareApplication ;
+    bioschemas:output "pdf",
+        "rdata",
+        "tabular" ;
     schema1:applicationSubCategory edam:topic_3053 ;
+    schema1:codeRepository "https://bioconductor.org/packages/release/bioc/html/fgsea.html" ;
+    schema1:dateCreated "2018-10-20" ;
     schema1:description "Perform gene set testing using fgsea" ;
+    schema1:encodingFormat "pdf",
+        "rdata",
+        "tabular" ;
     schema1:featureList edam:operation_2436 ;
     schema1:identifier biotools:fgsea,
         bioconda:bioconductor-fgsea ;
@@ -34,7 +43,7 @@ galaxytool:fgsea a schema1:SoftwareApplication ;
         "Visualization" ;
     schema1:name "fgsea" ;
     schema1:softwareVersion "1.8.0" ;
-    schema1:url "https://bioconductor.org/packages/release/bioc/html/fgsea.html" .
+    schema1:url "https://github.com/galaxyproject/tools-iuc/tree/main/tools/fgsea" .
 
 <https://usegalaxy.eu> a schema1:WebSite .
 

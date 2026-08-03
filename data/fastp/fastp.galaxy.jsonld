@@ -1,6 +1,7 @@
 {
   "@context": {
     "bioconda": "https://github.com/bioconda/bioconda-recipes/tree/master/recipes/",
+    "bioschemas": "http://bioschemas.org/",
     "biotools": "https://bio.tools/",
     "brick": "https://brickschema.org/schema/Brick#",
     "csvw": "http://www.w3.org/ns/csvw#",
@@ -37,12 +38,16 @@
   },
   "@graph": [
     {
-      "@id": "https://usegalaxy.org.au",
+      "@id": "https://usegalaxy.org",
       "@type": "schema1:WebSite"
     },
     {
       "@id": "galaxytool:fastp",
       "@type": "schema1:SoftwareApplication",
+      "bioschemas:output": [
+        "html",
+        "json"
+      ],
       "schema1:applicationSubCategory": [
         {
           "@id": "edam:operation_2403"
@@ -54,7 +59,13 @@
           "@id": "edam:topic_0632"
         }
       ],
+      "schema1:codeRepository": "https://github.com/OpenGene/fastp",
+      "schema1:dateCreated": "2018-03-08",
       "schema1:description": "Fast all-in-one preprocessing for FASTQ files",
+      "schema1:encodingFormat": [
+        "html",
+        "json"
+      ],
       "schema1:featureList": [
         {
           "@id": "edam:operation_3218"
@@ -113,6 +124,12 @@
         },
         {
           "@id": "workflowhub:1881?version=2"
+        },
+        {
+          "@id": "workflowhub:397?version=19"
+        },
+        {
+          "@id": "workflowhub:398?version=20"
         },
         {
           "@id": "workflowhub:155?version=7"
@@ -178,7 +195,13 @@
           "@id": "workflowhub:1439?version=1"
         },
         {
+          "@id": "workflowhub:1272?version=3"
+        },
+        {
           "@id": "workflowhub:1103?version=3"
+        },
+        {
+          "@id": "workflowhub:1190?version=3"
         },
         {
           "@id": "workflowhub:110?version=12"
@@ -286,10 +309,31 @@
           "@id": "https://usegalaxy.fr/published/workflow?id=776ef2fa51094ba6"
         },
         {
-          "@id": "https://usegalaxy.eu/published/workflow?id=b02fe8dbe7e48193"
+          "@id": "https://usegalaxy.eu/published/workflow?id=eed913b17606476a"
         },
         {
           "@id": "https://usegalaxy.eu"
+        },
+        {
+          "@id": "https://usegalaxy.eu/published/workflow?id=846fa28b246c0a82"
+        },
+        {
+          "@id": "https://usegalaxy.eu/published/workflow?id=97fc3ee3a9fd0466"
+        },
+        {
+          "@id": "https://usegalaxy.eu/published/workflow?id=430e6484673e67cc"
+        },
+        {
+          "@id": "https://usegalaxy.eu/published/workflow?id=c7d866a0f1728c7c"
+        },
+        {
+          "@id": "https://usegalaxy.eu/published/workflow?id=9c4f1598621f8266"
+        },
+        {
+          "@id": "https://usegalaxy.eu/published/workflow?id=2b892adf8f04473d"
+        },
+        {
+          "@id": "https://usegalaxy.eu/published/workflow?id=b02fe8dbe7e48193"
         },
         {
           "@id": "https://usegalaxy.eu/published/workflow?id=7f5fb5d8e2f79459"
@@ -946,10 +990,34 @@
           "@id": "https://usegalaxy.eu/published/workflow?id=dd3193aaaf08e798"
         },
         {
-          "@id": "https://usegalaxy.org/published/workflow?id=b15de7255660938d"
+          "@id": "https://usegalaxy.org/published/workflow?id=55e4c355761b7b73"
         },
         {
           "@id": "https://usegalaxy.org"
+        },
+        {
+          "@id": "https://usegalaxy.org/published/workflow?id=97b5e2bc469d2d68"
+        },
+        {
+          "@id": "https://usegalaxy.org/published/workflow?id=02d3d00ddf34903b"
+        },
+        {
+          "@id": "https://usegalaxy.org/published/workflow?id=9a2edec61dd2b962"
+        },
+        {
+          "@id": "https://usegalaxy.org/published/workflow?id=ec9871ea3c670224"
+        },
+        {
+          "@id": "https://usegalaxy.org/published/workflow?id=625878d4624db739"
+        },
+        {
+          "@id": "https://usegalaxy.org/published/workflow?id=19804053b3f4d01c"
+        },
+        {
+          "@id": "https://usegalaxy.org/published/workflow?id=a7297c6a6210da26"
+        },
+        {
+          "@id": "https://usegalaxy.org/published/workflow?id=b15de7255660938d"
         },
         {
           "@id": "https://usegalaxy.org/published/workflow?id=4fd4918cfad24816"
@@ -1372,10 +1440,28 @@
           "@id": "https://usegalaxy.org/published/workflow?id=4458439388155d92"
         },
         {
-          "@id": "https://usegalaxy.org.au/published/workflow?id=269c4f4a9834c9c9"
+          "@id": "https://usegalaxy.org.au/published/workflow?id=bf3d37088e99a912"
         },
         {
           "@id": "https://usegalaxy.org.au"
+        },
+        {
+          "@id": "https://usegalaxy.org.au/published/workflow?id=4317a5e19d357154"
+        },
+        {
+          "@id": "https://usegalaxy.org.au/published/workflow?id=185eded77b60bad3"
+        },
+        {
+          "@id": "https://usegalaxy.org.au/published/workflow?id=c9f640567f5184a9"
+        },
+        {
+          "@id": "https://usegalaxy.org.au/published/workflow?id=c098398bf23764fe"
+        },
+        {
+          "@id": "https://usegalaxy.org.au/published/workflow?id=54fbf73416a9d14e"
+        },
+        {
+          "@id": "https://usegalaxy.org.au/published/workflow?id=269c4f4a9834c9c9"
         },
         {
           "@id": "https://usegalaxy.org.au/published/workflow?id=41331c03339e2b19"
@@ -1394,9 +1480,6 @@
         },
         {
           "@id": "https://usegalaxy.org.au/published/workflow?id=2120112358db8e01"
-        },
-        {
-          "@id": "https://usegalaxy.org.au/published/workflow?id=bf3d37088e99a912"
         },
         {
           "@id": "https://usegalaxy.org.au/published/workflow?id=20e8bf6f91bca632"
@@ -1669,22 +1752,22 @@
       "schema1:keywords": "Sequence Analysis",
       "schema1:name": "fastp",
       "schema1:softwareVersion": "1.3.6",
-      "schema1:url": "https://github.com/OpenGene/fastp"
+      "schema1:url": "https://github.com/galaxyproject/tools-iuc/tree/main/tools/fastp"
     },
     {
       "@id": "https://usegalaxy.fr",
       "@type": "schema1:WebSite"
     },
     {
-      "@id": "https://usegalaxy.eu",
-      "@type": "schema1:WebSite"
-    },
-    {
-      "@id": "https://usegalaxy.org",
+      "@id": "https://usegalaxy.org.au",
       "@type": "schema1:WebSite"
     },
     {
       "@id": "https://workflowhub.eu",
+      "@type": "schema1:WebSite"
+    },
+    {
+      "@id": "https://usegalaxy.eu",
       "@type": "schema1:WebSite"
     }
   ]

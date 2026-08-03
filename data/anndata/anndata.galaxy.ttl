@@ -1,10 +1,23 @@
 @prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
+@prefix bioschemas: <http://bioschemas.org/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
 @prefix schema1: <http://schema.org/> .
 
 galaxytool:anndata a schema1:SoftwareApplication ;
+    bioschemas:output "h5ad",
+        "loom",
+        "mtx",
+        "tabular",
+        "txt" ;
+    schema1:codeRepository "https://anndata.readthedocs.io" ;
+    schema1:dateCreated "2019-03-21" ;
     schema1:description "Import, Export, Inspect and Manipulate Anndata and Loom objects" ;
+    schema1:encodingFormat "h5ad",
+        "loom",
+        "mtx",
+        "tabular",
+        "txt" ;
     schema1:identifier biotools:anndata,
         bioconda:anndata ;
     schema1:isPartOf <https://usegalaxy.eu>,
@@ -13,6 +26,7 @@ galaxytool:anndata a schema1:SoftwareApplication ;
         <https://usegalaxy.eu/published/workflow?id=171d6fca2c3339e2>,
         <https://usegalaxy.eu/published/workflow?id=21315ffd2df2f159>,
         <https://usegalaxy.eu/published/workflow?id=2e77db54ec220cc2>,
+        <https://usegalaxy.eu/published/workflow?id=345a6ac6db0951cb>,
         <https://usegalaxy.eu/published/workflow?id=35c092316cdc27d1>,
         <https://usegalaxy.eu/published/workflow?id=37e51e215684bdcc>,
         <https://usegalaxy.eu/published/workflow?id=3adf77a0576af98c>,
@@ -87,6 +101,7 @@ galaxytool:anndata a schema1:SoftwareApplication ;
         <https://workflowhub.eu/workflows/1574?version=1>,
         <https://workflowhub.eu/workflows/1745?version=3>,
         <https://workflowhub.eu/workflows/2174?version=5>,
+        <https://workflowhub.eu/workflows/2220?version=1>,
         <https://workflowhub.eu/workflows/468?version=3>,
         <https://workflowhub.eu/workflows/512?version=2>,
         <https://workflowhub.eu/workflows/513?version=3>,
@@ -95,7 +110,7 @@ galaxytool:anndata a schema1:SoftwareApplication ;
         "Spatial Omics" ;
     schema1:name "anndata" ;
     schema1:softwareVersion "0.11.4" ;
-    schema1:url "https://anndata.readthedocs.io" .
+    schema1:url "https://github.com/galaxyproject/tools-iuc/tree/main/tools/anndata" .
 
 <https://usegalaxy.eu> a schema1:WebSite .
 

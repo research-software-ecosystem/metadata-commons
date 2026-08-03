@@ -1,13 +1,28 @@
 @prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
+@prefix bioschemas: <http://bioschemas.org/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
 @prefix schema1: <http://schema.org/> .
 
 galaxytool:infernal a schema1:SoftwareApplication ;
+    bioschemas:output "cm",
+        "stockholm",
+        "tabular",
+        "tar",
+        "text",
+        "txt" ;
     schema1:applicationSubCategory edam:topic_0122,
         edam:topic_0160 ;
+    schema1:codeRepository "http://infernal.janelia.org/" ;
+    schema1:dateCreated "2015-02-28" ;
     schema1:description "Infernal (\"INFERence of RNA ALignment\") is for searching DNA sequence databases for RNA structure and sequence similarities." ;
+    schema1:encodingFormat "cm",
+        "stockholm",
+        "tabular",
+        "tar",
+        "text",
+        "txt" ;
     schema1:featureList edam:operation_0415,
         edam:topic_3073 ;
     schema1:identifier biotools:infernal,
@@ -30,7 +45,7 @@ galaxytool:infernal a schema1:SoftwareApplication ;
     schema1:keywords "RNA" ;
     schema1:name "infernal" ;
     schema1:softwareVersion "1.1.5" ;
-    schema1:url "http://infernal.janelia.org/" .
+    schema1:url "https://github.com/bgruening/galaxytools/tree/master/tools/infernal" .
 
 <https://usegalaxy.eu> a schema1:WebSite .
 

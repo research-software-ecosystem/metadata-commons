@@ -1,6 +1,7 @@
 {
   "@context": {
     "bioconda": "https://github.com/bioconda/bioconda-recipes/tree/master/recipes/",
+    "bioschemas": "http://bioschemas.org/",
     "biotools": "https://bio.tools/",
     "brick": "https://brickschema.org/schema/Brick#",
     "csvw": "http://www.w3.org/ns/csvw#",
@@ -37,10 +38,6 @@
   },
   "@graph": [
     {
-      "@id": "https://usegalaxy.org",
-      "@type": "schema1:WebSite"
-    },
-    {
       "@id": "https://workflowhub.eu",
       "@type": "schema1:WebSite"
     },
@@ -51,10 +48,20 @@
     {
       "@id": "galaxytool:snipit",
       "@type": "schema1:SoftwareApplication",
+      "bioschemas:output": [
+        "png",
+        "csv"
+      ],
       "schema1:applicationSubCategory": {
         "@id": "edam:topic_0781"
       },
+      "schema1:codeRepository": "https://github.com/aineniamh/snipit",
+      "schema1:dateCreated": "2022-07-17",
       "schema1:description": "Summarise snps relative to a reference sequence",
+      "schema1:encodingFormat": [
+        "png",
+        "csv"
+      ],
       "schema1:featureList": {
         "@id": "edam:operation_0287"
       },
@@ -110,7 +117,11 @@
       ],
       "schema1:name": "snipit",
       "schema1:softwareVersion": "@TOOL_VERSION@+galaxy@VERSION_SUFFIX@",
-      "schema1:url": "https://github.com/aineniamh/snipit"
+      "schema1:url": "https://github.com/galaxyproject/tools-iuc/tree/main/tools/snipit"
+    },
+    {
+      "@id": "https://usegalaxy.org",
+      "@type": "schema1:WebSite"
     }
   ]
 }

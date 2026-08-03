@@ -1,15 +1,26 @@
 @prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
+@prefix bioschemas: <http://bioschemas.org/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
 @prefix schema1: <http://schema.org/> .
 
 galaxytool:nextclade a schema1:SoftwareApplication ;
+    bioschemas:output "csv",
+        "fasta",
+        "json",
+        "tabular" ;
     schema1:applicationSubCategory edam:operation_2403,
         edam:topic_0080,
         edam:topic_0622,
         edam:topic_3944 ;
+    schema1:codeRepository "https://github.com/nextstrain/nextclade" ;
+    schema1:dateCreated "2021-03-29" ;
     schema1:description "Identify differences between your sequences and a reference sequence used by Nextstrain" ;
+    schema1:encodingFormat "csv",
+        "fasta",
+        "json",
+        "tabular" ;
     schema1:featureList edam:operation_3204,
         edam:operation_3227 ;
     schema1:identifier biotools:nextclade,
@@ -45,7 +56,7 @@ galaxytool:nextclade a schema1:SoftwareApplication ;
     schema1:keywords "Sequence Analysis" ;
     schema1:name "nextclade" ;
     schema1:softwareVersion "2.7.0" ;
-    schema1:url "https://github.com/nextstrain/nextclade" .
+    schema1:url "https://github.com/galaxyproject/tools-iuc/tree/main/tools/nextclade" .
 
 <https://usegalaxy.eu> a schema1:WebSite .
 

@@ -1,15 +1,26 @@
 @prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
+@prefix bioschemas: <http://bioschemas.org/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
 @prefix schema1: <http://schema.org/> .
 
 galaxytool:ISEScan a schema1:SoftwareApplication ;
+    bioschemas:output "fasta",
+        "gff",
+        "tabular",
+        "txt" ;
     schema1:applicationSubCategory edam:operation_2403,
         edam:topic_0080,
         edam:topic_0199,
         edam:topic_0622 ;
+    schema1:codeRepository "https://github.com/xiezhq/ISEScan" ;
+    schema1:dateCreated "2022-09-01" ;
     schema1:description "\"ISEScan is a pipeline to identify IS (Insertion Sequence) elements in genome and metagenomebased on profile hidden Markov models constructed from manually curated IS elements.\"" ;
+    schema1:encodingFormat "fasta",
+        "gff",
+        "tabular",
+        "txt" ;
     schema1:featureList edam:operation_3228 ;
     schema1:identifier biotools:ISEScan,
         bioconda:isescan ;
@@ -41,6 +52,7 @@ galaxytool:ISEScan a schema1:SoftwareApplication ;
         <https://usegalaxy.org/published/workflow?id=649cdc14757e5755>,
         <https://usegalaxy.org/published/workflow?id=67ca17ab34b10772>,
         <https://usegalaxy.org/published/workflow?id=8cb8a588a0495cfa>,
+        <https://usegalaxy.org/published/workflow?id=97b5e2bc469d2d68>,
         <https://usegalaxy.org/published/workflow?id=993534c11310a207>,
         <https://usegalaxy.org/published/workflow?id=d2a5f6a5181aada5>,
         <https://workflowhub.eu>,
@@ -49,7 +61,7 @@ galaxytool:ISEScan a schema1:SoftwareApplication ;
     schema1:keywords "Sequence Analysis" ;
     schema1:name "ISEScan" ;
     schema1:softwareVersion "1.7.3" ;
-    schema1:url "https://github.com/xiezhq/ISEScan" .
+    schema1:url "https://github.com/galaxyproject/tools-iuc/tree/main/tools/isescan" .
 
 <https://usegalaxy.eu> a schema1:WebSite .
 

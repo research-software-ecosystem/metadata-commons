@@ -1,12 +1,19 @@
 @prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
+@prefix bioschemas: <http://bioschemas.org/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
 @prefix schema1: <http://schema.org/> .
 
 galaxytool:snipit a schema1:SoftwareApplication ;
+    bioschemas:output "csv",
+        "png" ;
     schema1:applicationSubCategory edam:topic_0781 ;
+    schema1:codeRepository "https://github.com/aineniamh/snipit" ;
+    schema1:dateCreated "2022-07-17" ;
     schema1:description "Summarise snps relative to a reference sequence" ;
+    schema1:encodingFormat "csv",
+        "png" ;
     schema1:featureList edam:operation_0287 ;
     schema1:identifier biotools:snipit,
         bioconda:snipit ;
@@ -26,7 +33,7 @@ galaxytool:snipit a schema1:SoftwareApplication ;
         "Variant Analysis" ;
     schema1:name "snipit" ;
     schema1:softwareVersion "@TOOL_VERSION@+galaxy@VERSION_SUFFIX@" ;
-    schema1:url "https://github.com/aineniamh/snipit" .
+    schema1:url "https://github.com/galaxyproject/tools-iuc/tree/main/tools/snipit" .
 
 <https://usegalaxy.eu> a schema1:WebSite .
 

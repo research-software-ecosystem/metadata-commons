@@ -1,13 +1,32 @@
 @prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
+@prefix bioschemas: <http://bioschemas.org/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
 @prefix schema1: <http://schema.org/> .
 
 galaxytool:humann a schema1:SoftwareApplication ;
+    bioschemas:output "biom1",
+        "fasta",
+        "pdf",
+        "png",
+        "sam",
+        "svg",
+        "tabular",
+        "txt" ;
     schema1:applicationSubCategory edam:topic_0194,
         edam:topic_3174 ;
+    schema1:codeRepository "http://huttenhower.sph.harvard.edu/humann" ;
+    schema1:dateCreated "2021-05-12" ;
     schema1:description "HUMAnN for functionally profiling metagenomes and metatranscriptomes at species-level resolution" ;
+    schema1:encodingFormat "biom1",
+        "fasta",
+        "pdf",
+        "png",
+        "sam",
+        "svg",
+        "tabular",
+        "txt" ;
     schema1:featureList edam:data_1872,
         edam:operation_0324,
         edam:operation_3221,
@@ -41,7 +60,7 @@ galaxytool:humann a schema1:SoftwareApplication ;
     schema1:keywords "Metagenomics" ;
     schema1:name "humann" ;
     schema1:softwareVersion "3.9" ;
-    schema1:url "http://huttenhower.sph.harvard.edu/humann" .
+    schema1:url "https://github.com/galaxyproject/tools-iuc/tree/main/tools/humann" .
 
 <https://usegalaxy.eu> a schema1:WebSite .
 

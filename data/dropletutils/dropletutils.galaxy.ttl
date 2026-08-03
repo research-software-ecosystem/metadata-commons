@@ -1,14 +1,25 @@
 @prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
+@prefix bioschemas: <http://bioschemas.org/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
 @prefix schema1: <http://schema.org/> .
 
 galaxytool:dropletutils a schema1:SoftwareApplication ;
+    bioschemas:output "h5",
+        "mtx",
+        "png",
+        "tsv" ;
     schema1:applicationSubCategory edam:topic_0203,
         edam:topic_3168,
         edam:topic_3308 ;
+    schema1:codeRepository "https://bioconductor.org/packages/devel/bioc/html/DropletUtils.html" ;
+    schema1:dateCreated "2019-06-04" ;
     schema1:description "DropletUtils - Utilities for handling droplet-based single-cell RNA-seq data" ;
+    schema1:encodingFormat "h5",
+        "mtx",
+        "png",
+        "tsv" ;
     schema1:identifier biotools:dropletutils,
         bioconda:bioconductor-dropletutils ;
     schema1:isPartOf <https://usegalaxy.eu>,
@@ -67,7 +78,7 @@ galaxytool:dropletutils a schema1:SoftwareApplication ;
         "Single Cell" ;
     schema1:name "dropletutils" ;
     schema1:softwareVersion "@TOOL_VERSION@+galaxy@VERSION_SUFFIX@" ;
-    schema1:url "https://bioconductor.org/packages/devel/bioc/html/DropletUtils.html" .
+    schema1:url "https://github.com/galaxyproject/tools-iuc/tree/main/tools/dropletutils" .
 
 <https://usegalaxy.eu> a schema1:WebSite .
 

@@ -1,6 +1,7 @@
 {
   "@context": {
     "bioconda": "https://github.com/bioconda/bioconda-recipes/tree/master/recipes/",
+    "bioschemas": "http://bioschemas.org/",
     "biotools": "https://bio.tools/",
     "brick": "https://brickschema.org/schema/Brick#",
     "csvw": "http://www.w3.org/ns/csvw#",
@@ -47,6 +48,10 @@
     {
       "@id": "galaxytool:taxonkit",
       "@type": "schema1:SoftwareApplication",
+      "bioschemas:output": [
+        "tabular",
+        "tsv"
+      ],
       "schema1:applicationSubCategory": [
         {
           "@id": "edam:data_3028"
@@ -61,7 +66,13 @@
           "@id": "edam:topic_0610"
         }
       ],
+      "schema1:codeRepository": "https://bioinf.shenwei.me/taxonkit/",
+      "schema1:dateCreated": "2024-07-26",
       "schema1:description": "TaxonKit - A Practical and Efficient NCBI Taxonomy Toolkit",
+      "schema1:encodingFormat": [
+        "tabular",
+        "tsv"
+      ],
       "schema1:featureList": {
         "@id": "edam:operation_2422"
       },
@@ -93,7 +104,7 @@
       "schema1:keywords": "Metagenomics",
       "schema1:name": "taxonkit",
       "schema1:softwareVersion": "0.20.0",
-      "schema1:url": "https://bioinf.shenwei.me/taxonkit/"
+      "schema1:url": "https://github.com/galaxyproject/tools-iuc/tree/main/tools/taxonkit"
     }
   ]
 }

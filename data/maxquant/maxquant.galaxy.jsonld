@@ -1,6 +1,7 @@
 {
   "@context": {
     "bioconda": "https://github.com/bioconda/bioconda-recipes/tree/master/recipes/",
+    "bioschemas": "http://bioschemas.org/",
     "biotools": "https://bio.tools/",
     "brick": "https://brickschema.org/schema/Brick#",
     "csvw": "http://www.w3.org/ns/csvw#",
@@ -37,7 +38,15 @@
   },
   "@graph": [
     {
+      "@id": "https://usegalaxy.org",
+      "@type": "schema1:WebSite"
+    },
+    {
       "@id": "https://usegalaxy.org.au",
+      "@type": "schema1:WebSite"
+    },
+    {
+      "@id": "https://workflowhub.eu",
       "@type": "schema1:WebSite"
     },
     {
@@ -58,6 +67,8 @@
           "@id": "edam:topic_2269"
         }
       ],
+      "schema1:codeRepository": "https://www.maxquant.org/",
+      "schema1:dateCreated": "2015-01-23",
       "schema1:description": "wrapper for MaxQuant",
       "schema1:featureList": [
         {
@@ -188,15 +199,7 @@
       "schema1:keywords": "Proteomics",
       "schema1:name": "maxquant",
       "schema1:softwareVersion": "2.0.3.0",
-      "schema1:url": "https://www.maxquant.org/"
-    },
-    {
-      "@id": "https://usegalaxy.org",
-      "@type": "schema1:WebSite"
-    },
-    {
-      "@id": "https://workflowhub.eu",
-      "@type": "schema1:WebSite"
+      "schema1:url": "https://github.com/galaxyproteomics/tools-galaxyp/tree/master/tools/maxquant"
     }
   ]
 }

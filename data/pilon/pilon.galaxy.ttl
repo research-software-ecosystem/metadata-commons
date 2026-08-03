@@ -1,12 +1,21 @@
 @prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
+@prefix bioschemas: <http://bioschemas.org/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
 @prefix schema1: <http://schema.org/> .
 
 galaxytool:pilon a schema1:SoftwareApplication ;
+    bioschemas:output "fasta",
+        "txt",
+        "vcf" ;
     schema1:applicationSubCategory edam:operation_3433 ;
+    schema1:codeRepository "https://github.com/broadinstitute/pilon/wiki" ;
+    schema1:dateCreated "2016-08-11" ;
     schema1:description "pilon is a tool for assembly improvement and variant analysis in bacteria" ;
+    schema1:encodingFormat "fasta",
+        "txt",
+        "vcf" ;
     schema1:featureList edam:data_0925,
         edam:operation_0310,
         edam:topic_0196 ;
@@ -24,6 +33,7 @@ galaxytool:pilon a schema1:SoftwareApplication ;
         <https://usegalaxy.org.au/published/workflow?id=7c343e5b55474d19>,
         <https://usegalaxy.org.au/published/workflow?id=8a40059343cf4b87>,
         <https://usegalaxy.org.au/published/workflow?id=b5403e4fff2961f9>,
+        <https://usegalaxy.org.au/published/workflow?id=f00593ec2de66996>,
         <https://usegalaxy.org/published/workflow?id=bff206b4625375bc>,
         <https://workflowhub.eu>,
         <https://workflowhub.eu/workflows/1617?version=1>,
@@ -31,7 +41,7 @@ galaxytool:pilon a schema1:SoftwareApplication ;
     schema1:keywords "Variant Analysis" ;
     schema1:name "pilon" ;
     schema1:softwareVersion "1.20.1" ;
-    schema1:url "https://github.com/broadinstitute/pilon/wiki" .
+    schema1:url "https://github.com/galaxyproject/tools-iuc/tree/main/tools/pilon" .
 
 <https://usegalaxy.eu> a schema1:WebSite .
 

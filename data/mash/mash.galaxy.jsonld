@@ -1,6 +1,7 @@
 {
   "@context": {
     "bioconda": "https://github.com/bioconda/bioconda-recipes/tree/master/recipes/",
+    "bioschemas": "http://bioschemas.org/",
     "biotools": "https://bio.tools/",
     "brick": "https://brickschema.org/schema/Brick#",
     "csvw": "http://www.w3.org/ns/csvw#",
@@ -37,6 +38,11 @@
   },
   "@id": "galaxytool:mash",
   "@type": "schema1:SoftwareApplication",
+  "bioschemas:output": [
+    "tsv",
+    "msh",
+    "tabular"
+  ],
   "schema1:applicationSubCategory": [
     {
       "@id": "edam:topic_0622"
@@ -57,7 +63,14 @@
       "@id": "edam:topic_2533"
     }
   ],
+  "schema1:codeRepository": "https://github.com/marbl/Mash",
+  "schema1:dateCreated": "2018-12-07",
   "schema1:description": "Fast genome and metagenome distance estimation using MinHash",
+  "schema1:encodingFormat": [
+    "tsv",
+    "msh",
+    "tabular"
+  ],
   "schema1:featureList": {
     "@id": "edam:operation_0289"
   },
@@ -72,5 +85,5 @@
   "schema1:keywords": "Metagenomics",
   "schema1:name": "mash",
   "schema1:softwareVersion": "2.3",
-  "schema1:url": "https://github.com/marbl/Mash"
+  "schema1:url": "https://github.com/galaxyproject/tools-iuc/tree/main/tools/mash"
 }

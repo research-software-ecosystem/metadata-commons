@@ -1,6 +1,7 @@
 {
   "@context": {
     "bioconda": "https://github.com/bioconda/bioconda-recipes/tree/master/recipes/",
+    "bioschemas": "http://bioschemas.org/",
     "biotools": "https://bio.tools/",
     "brick": "https://brickschema.org/schema/Brick#",
     "csvw": "http://www.w3.org/ns/csvw#",
@@ -37,12 +38,13 @@
   },
   "@graph": [
     {
-      "@id": "https://usegalaxy.org",
-      "@type": "schema1:WebSite"
-    },
-    {
       "@id": "galaxytool:kallisto",
       "@type": "schema1:SoftwareApplication",
+      "bioschemas:output": [
+        "tabular",
+        "h5",
+        "bam"
+      ],
       "schema1:applicationSubCategory": [
         {
           "@id": "edam:topic_3308"
@@ -54,7 +56,14 @@
           "@id": "edam:topic_0203"
         }
       ],
+      "schema1:codeRepository": "https://pachterlab.github.io/kallisto/",
+      "schema1:dateCreated": "2017-08-04",
       "schema1:description": "kallisto is a program for quantifying abundances of transcripts from RNA-Seqdata, or more generally of target sequences using high-throughput sequencingreads. It is based on the novel idea of pseudoalignment for rapidlydetermining the compatibility of reads with targets, without the need foralignment.",
+      "schema1:encodingFormat": [
+        "tabular",
+        "h5",
+        "bam"
+      ],
       "schema1:featureList": {
         "@id": "edam:operation_0314"
       },
@@ -95,10 +104,14 @@
       "schema1:keywords": "Transcriptomics",
       "schema1:name": "kallisto",
       "schema1:softwareVersion": "0.48.0",
-      "schema1:url": "https://pachterlab.github.io/kallisto/"
+      "schema1:url": "https://github.com/galaxyproject/tools-iuc/tree/main/tools/kallisto"
     },
     {
       "@id": "https://usegalaxy.eu",
+      "@type": "schema1:WebSite"
+    },
+    {
+      "@id": "https://usegalaxy.org",
       "@type": "schema1:WebSite"
     }
   ]

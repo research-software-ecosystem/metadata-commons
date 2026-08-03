@@ -1,14 +1,25 @@
 @prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
+@prefix bioschemas: <http://bioschemas.org/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
 @prefix schema1: <http://schema.org/> .
 
 galaxytool:interproscan a schema1:SoftwareApplication ;
+    bioschemas:output "gff3",
+        "json",
+        "tabular",
+        "xml" ;
     schema1:applicationSubCategory edam:operation_2403,
         edam:topic_0080,
         edam:topic_0623 ;
+    schema1:codeRepository "http://www.ebi.ac.uk/Tools/pfa/iprscan5/" ;
+    schema1:dateCreated "2021-11-15" ;
     schema1:description "Interproscan queries the interpro database and provides annotations." ;
+    schema1:encodingFormat "gff3",
+        "json",
+        "tabular",
+        "xml" ;
     schema1:featureList edam:operation_0239,
         edam:operation_3092,
         edam:topic_3074 ;
@@ -39,7 +50,6 @@ galaxytool:interproscan a schema1:SoftwareApplication ;
         <https://usegalaxy.org>,
         <https://usegalaxy.org.au>,
         <https://usegalaxy.org.au/published/workflow?id=35f39173f0ac9179>,
-        <https://usegalaxy.org.au/published/workflow?id=4269abdcfe7adde2>,
         <https://usegalaxy.org.au/published/workflow?id=7559224fc32dce3a>,
         <https://usegalaxy.org.au/published/workflow?id=876163677f1cccc4>,
         <https://usegalaxy.org.au/published/workflow?id=a9068ea858222e2b>,
@@ -50,13 +60,12 @@ galaxytool:interproscan a schema1:SoftwareApplication ;
         <https://workflowhub.eu/workflows/1521?version=1>,
         <https://workflowhub.eu/workflows/1525?version=1>,
         <https://workflowhub.eu/workflows/1663?version=1>,
-        <https://workflowhub.eu/workflows/2118?version=1>,
         <https://workflowhub.eu/workflows/754?version=1>,
         <https://workflowhub.eu/workflows/755?version=1> ;
     schema1:keywords "Sequence Analysis" ;
     schema1:name "interproscan" ;
     schema1:softwareVersion "5.59-91.0" ;
-    schema1:url "http://www.ebi.ac.uk/Tools/pfa/iprscan5/" .
+    schema1:url "https://github.com/galaxyproject/tools-iuc/tree/main/tools/interproscan" .
 
 <https://usegalaxy.cz> a schema1:WebSite .
 

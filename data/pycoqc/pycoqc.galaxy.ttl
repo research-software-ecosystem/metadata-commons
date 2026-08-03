@@ -1,15 +1,22 @@
 @prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
+@prefix bioschemas: <http://bioschemas.org/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
 @prefix schema1: <http://schema.org/> .
 
 galaxytool:pycoqc a schema1:SoftwareApplication ;
+    bioschemas:output "html",
+        "json" ;
     schema1:applicationSubCategory edam:operation_2403,
         edam:topic_0080,
         edam:topic_3168,
         edam:topic_3572 ;
+    schema1:codeRepository "https://github.com/tleonardi/pycoQC" ;
+    schema1:dateCreated "2021-03-02" ;
     schema1:description "QC metrics for ONT Basecalling" ;
+    schema1:encodingFormat "html",
+        "json" ;
     schema1:featureList edam:operation_2238,
         edam:operation_3218 ;
     schema1:identifier biotools:pycoqc,
@@ -33,7 +40,7 @@ galaxytool:pycoqc a schema1:SoftwareApplication ;
     schema1:keywords "Nanopore" ;
     schema1:name "pycoqc" ;
     schema1:softwareVersion "2.5.2" ;
-    schema1:url "https://github.com/tleonardi/pycoQC" .
+    schema1:url "https://github.com/galaxyproject/tools-iuc/tree/main/tools/pycoqc" .
 
 <https://usegalaxy.eu> a schema1:WebSite .
 

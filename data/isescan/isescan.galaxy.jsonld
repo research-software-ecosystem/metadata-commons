@@ -1,6 +1,7 @@
 {
   "@context": {
     "bioconda": "https://github.com/bioconda/bioconda-recipes/tree/master/recipes/",
+    "bioschemas": "http://bioschemas.org/",
     "biotools": "https://bio.tools/",
     "brick": "https://brickschema.org/schema/Brick#",
     "csvw": "http://www.w3.org/ns/csvw#",
@@ -37,8 +38,18 @@
   },
   "@graph": [
     {
+      "@id": "https://usegalaxy.org",
+      "@type": "schema1:WebSite"
+    },
+    {
       "@id": "galaxytool:ISEScan",
       "@type": "schema1:SoftwareApplication",
+      "bioschemas:output": [
+        "txt",
+        "tabular",
+        "gff",
+        "fasta"
+      ],
       "schema1:applicationSubCategory": [
         {
           "@id": "edam:topic_0622"
@@ -53,7 +64,15 @@
           "@id": "edam:topic_0199"
         }
       ],
+      "schema1:codeRepository": "https://github.com/xiezhq/ISEScan",
+      "schema1:dateCreated": "2022-09-01",
       "schema1:description": "\"ISEScan is a pipeline to identify IS (Insertion Sequence) elements in genome and metagenomebased on profile hidden Markov models constructed from manually curated IS elements.\"",
+      "schema1:encodingFormat": [
+        "txt",
+        "tabular",
+        "gff",
+        "fasta"
+      ],
       "schema1:featureList": {
         "@id": "edam:operation_3228"
       },
@@ -130,10 +149,13 @@
           "@id": "https://usegalaxy.eu/published/workflow?id=3081569659a45b9e"
         },
         {
-          "@id": "https://usegalaxy.org/published/workflow?id=67ca17ab34b10772"
+          "@id": "https://usegalaxy.org/published/workflow?id=97b5e2bc469d2d68"
         },
         {
           "@id": "https://usegalaxy.org"
+        },
+        {
+          "@id": "https://usegalaxy.org/published/workflow?id=67ca17ab34b10772"
         },
         {
           "@id": "https://usegalaxy.org/published/workflow?id=49da012e2839c046"
@@ -169,26 +191,22 @@
       "schema1:keywords": "Sequence Analysis",
       "schema1:name": "ISEScan",
       "schema1:softwareVersion": "1.7.3",
-      "schema1:url": "https://github.com/xiezhq/ISEScan"
-    },
-    {
-      "@id": "https://usegalaxy.org.au",
-      "@type": "schema1:WebSite"
+      "schema1:url": "https://github.com/galaxyproject/tools-iuc/tree/main/tools/isescan"
     },
     {
       "@id": "https://usegalaxy.fr",
       "@type": "schema1:WebSite"
     },
     {
-      "@id": "https://usegalaxy.eu",
-      "@type": "schema1:WebSite"
-    },
-    {
-      "@id": "https://usegalaxy.org",
+      "@id": "https://usegalaxy.org.au",
       "@type": "schema1:WebSite"
     },
     {
       "@id": "https://workflowhub.eu",
+      "@type": "schema1:WebSite"
+    },
+    {
+      "@id": "https://usegalaxy.eu",
       "@type": "schema1:WebSite"
     }
   ]

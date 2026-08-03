@@ -1,6 +1,7 @@
 {
   "@context": {
     "bioconda": "https://github.com/bioconda/bioconda-recipes/tree/master/recipes/",
+    "bioschemas": "http://bioschemas.org/",
     "biotools": "https://bio.tools/",
     "brick": "https://brickschema.org/schema/Brick#",
     "csvw": "http://www.w3.org/ns/csvw#",
@@ -37,6 +38,11 @@
   },
   "@id": "galaxytool:instrain",
   "@type": "schema1:SoftwareApplication",
+  "bioschemas:output": [
+    "tabular",
+    "pdf",
+    "zip"
+  ],
   "schema1:applicationSubCategory": [
     {
       "@id": "edam:operation_2429"
@@ -48,7 +54,14 @@
       "@id": "edam:topic_3174"
     }
   ],
+  "schema1:codeRepository": "https://instrain.readthedocs.io/",
+  "schema1:dateCreated": "2021-08-11",
   "schema1:description": "InStrain is a tool for analysis of co-occurring genome populations from metagenomes",
+  "schema1:encodingFormat": [
+    "tabular",
+    "pdf",
+    "zip"
+  ],
   "schema1:featureList": [
     {
       "@id": "edam:operation_0484"
@@ -68,5 +81,5 @@
   "schema1:keywords": "Metagenomics",
   "schema1:name": "instrain",
   "schema1:softwareVersion": "1.5.3",
-  "schema1:url": "https://instrain.readthedocs.io/"
+  "schema1:url": "https://github.com/galaxyproject/tools-iuc/tree/main/tools/instrain"
 }

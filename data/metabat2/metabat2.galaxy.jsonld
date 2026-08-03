@@ -1,6 +1,7 @@
 {
   "@context": {
     "bioconda": "https://github.com/bioconda/bioconda-recipes/tree/master/recipes/",
+    "bioschemas": "http://bioschemas.org/",
     "biotools": "https://bio.tools/",
     "brick": "https://brickschema.org/schema/Brick#",
     "csvw": "http://www.w3.org/ns/csvw#",
@@ -37,16 +38,21 @@
   },
   "@graph": [
     {
-      "@id": "https://usegalaxy.org",
+      "@id": "https://workflowhub.eu",
       "@type": "schema1:WebSite"
     },
     {
-      "@id": "https://workflowhub.eu",
+      "@id": "https://usegalaxy.eu",
       "@type": "schema1:WebSite"
     },
     {
       "@id": "galaxytool:metabat2",
       "@type": "schema1:SoftwareApplication",
+      "bioschemas:output": [
+        "tabular",
+        "fasta",
+        "txt"
+      ],
       "schema1:applicationSubCategory": [
         {
           "@id": "edam:topic_3174"
@@ -64,7 +70,14 @@
           "@id": "edam:topic_3837"
         }
       ],
+      "schema1:codeRepository": "https://bitbucket.org/berkeleylab/metabat/src/master/",
+      "schema1:dateCreated": "2022-01-28",
       "schema1:description": "MetaBAT2 (Metagenome Binning based on Abundance and Tetranucleotide frequency) is an automated metagenome binningsoftware that integrates empirical probabilistic distances of genome abundance and tetranucleotide frequency.",
+      "schema1:encodingFormat": [
+        "tabular",
+        "fasta",
+        "txt"
+      ],
       "schema1:featureList": [
         {
           "@id": "edam:operation_3798"
@@ -128,19 +141,22 @@
           "@id": "https://usegalaxy.eu/published/workflow?id=97312d273b6e8bd9"
         },
         {
-          "@id": "https://usegalaxy.org/published/workflow?id=9b589bc76208fb1e"
+          "@id": "https://usegalaxy.org/published/workflow?id=97b5e2bc469d2d68"
         },
         {
           "@id": "https://usegalaxy.org"
+        },
+        {
+          "@id": "https://usegalaxy.org/published/workflow?id=9b589bc76208fb1e"
         }
       ],
       "schema1:keywords": "Metagenomics",
       "schema1:name": "metabat2",
       "schema1:softwareVersion": "2.18.23",
-      "schema1:url": "https://bitbucket.org/berkeleylab/metabat/src/master/"
+      "schema1:url": "https://github.com/galaxyproject/tools-iuc/tree/main/tools/metabat2"
     },
     {
-      "@id": "https://usegalaxy.eu",
+      "@id": "https://usegalaxy.org",
       "@type": "schema1:WebSite"
     }
   ]

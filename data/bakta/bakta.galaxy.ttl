@@ -1,15 +1,30 @@
 @prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
+@prefix bioschemas: <http://bioschemas.org/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
 @prefix schema1: <http://schema.org/> .
 
 galaxytool:bakta a schema1:SoftwareApplication ;
+    bioschemas:output "fasta",
+        "gff3",
+        "json",
+        "svg",
+        "tabular",
+        "txt" ;
     schema1:applicationSubCategory edam:operation_2403,
         edam:topic_0080,
         edam:topic_0091,
         edam:topic_0622 ;
+    schema1:codeRepository "https://github.com/oschwengers/bakta" ;
+    schema1:dateCreated "2022-09-01" ;
     schema1:description "\"Bakta is a tool for the rapid & standardized annotation of bacterial genomes and plasmids from both isolates and MAGs.It provides dbxref-rich and sORF-including annotations in machine-readable JSON & bioinformatics standard file formats for automatic downstream analysis.\"" ;
+    schema1:encodingFormat "fasta",
+        "gff3",
+        "json",
+        "svg",
+        "tabular",
+        "txt" ;
     schema1:featureList edam:operation_0362,
         edam:topic_0222 ;
     schema1:identifier biotools:bakta,
@@ -60,6 +75,7 @@ galaxytool:bakta a schema1:SoftwareApplication ;
         <https://usegalaxy.org/published/workflow?id=80ac6adead9f97d8>,
         <https://usegalaxy.org/published/workflow?id=84233173d92fa506>,
         <https://usegalaxy.org/published/workflow?id=8cb8a588a0495cfa>,
+        <https://usegalaxy.org/published/workflow?id=9928c3afe47239a3>,
         <https://usegalaxy.org/published/workflow?id=993534c11310a207>,
         <https://usegalaxy.org/published/workflow?id=9c0fbd9f51a9857f>,
         <https://usegalaxy.org/published/workflow?id=d2a5f6a5181aada5>,
@@ -70,7 +86,7 @@ galaxytool:bakta a schema1:SoftwareApplication ;
     schema1:keywords "Sequence Analysis" ;
     schema1:name "bakta" ;
     schema1:softwareVersion "1.9.4" ;
-    schema1:url "https://github.com/oschwengers/bakta" .
+    schema1:url "https://github.com/galaxyproject/tools-iuc/tree/main/tools/bakta" .
 
 <https://usegalaxy.eu> a schema1:WebSite .
 

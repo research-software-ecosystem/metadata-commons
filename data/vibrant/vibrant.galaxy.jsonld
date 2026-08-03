@@ -1,6 +1,7 @@
 {
   "@context": {
     "bioconda": "https://github.com/bioconda/bioconda-recipes/tree/master/recipes/",
+    "bioschemas": "http://bioschemas.org/",
     "biotools": "https://bio.tools/",
     "brick": "https://brickschema.org/schema/Brick#",
     "csvw": "http://www.w3.org/ns/csvw#",
@@ -39,6 +40,12 @@
     {
       "@id": "galaxytool:vibrant",
       "@type": "schema1:SoftwareApplication",
+      "bioschemas:output": [
+        "txt",
+        "fasta",
+        "genbank",
+        "tabular"
+      ],
       "schema1:applicationSubCategory": [
         {
           "@id": "edam:topic_3174"
@@ -62,7 +69,15 @@
           "@id": "edam:topic_3407"
         }
       ],
+      "schema1:codeRepository": "https://github.com/AnantharamanLab/VIBRANT",
+      "schema1:dateCreated": "2024-09-11",
       "schema1:description": "Virus Identification By iteRative ANnoTation",
+      "schema1:encodingFormat": [
+        "txt",
+        "fasta",
+        "genbank",
+        "tabular"
+      ],
       "schema1:featureList": [
         {
           "@id": "edam:operation_3192"
@@ -99,7 +114,7 @@
       "schema1:keywords": "Metagenomics",
       "schema1:name": "vibrant",
       "schema1:softwareVersion": "@TOOL_VERSION@+galaxy@VERSION_SUFFIX@",
-      "schema1:url": "https://github.com/AnantharamanLab/VIBRANT"
+      "schema1:url": "https://github.com/Helmholtz-UFZ/ufz-galaxy-tools/blob/main/tools/vibrant"
     },
     {
       "@id": "https://usegalaxy.eu",

@@ -1,11 +1,18 @@
 @prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
+@prefix bioschemas: <http://bioschemas.org/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
 @prefix schema1: <http://schema.org/> .
 
 galaxytool:velocyto a schema1:SoftwareApplication ;
+    bioschemas:output "loom",
+        "txt" ;
+    schema1:codeRepository "http://velocyto.org/" ;
+    schema1:dateCreated "2021-04-30" ;
     schema1:description "Velocyto is a library for the analysis of RNA velocity." ;
+    schema1:encodingFormat "loom",
+        "txt" ;
     schema1:featureList edam:operation_2499,
         edam:operation_3680 ;
     schema1:identifier biotools:velocyto,
@@ -26,7 +33,7 @@ galaxytool:velocyto a schema1:SoftwareApplication ;
         "Transcriptomics" ;
     schema1:name "velocyto" ;
     schema1:softwareVersion "0.17.17" ;
-    schema1:url "http://velocyto.org/" .
+    schema1:url "https://github.com/galaxyproject/tools-iuc/tree/main/tools/velocyto" .
 
 <https://usegalaxy.eu> a schema1:WebSite .
 

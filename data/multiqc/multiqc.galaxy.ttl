@@ -1,16 +1,23 @@
 @prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
+@prefix bioschemas: <http://bioschemas.org/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
 @prefix schema1: <http://schema.org/> .
 
 galaxytool:multiqc a schema1:SoftwareApplication ;
+    bioschemas:output "html",
+        "tabular" ;
     schema1:applicationSubCategory edam:operation_2403,
         edam:topic_0080,
         edam:topic_0091,
         edam:topic_0622,
         edam:topic_3168 ;
+    schema1:codeRepository "http://multiqc.info/" ;
+    schema1:dateCreated "2017-09-21" ;
     schema1:description "MultiQC aggregates results from bioinformatics analyses across many samples into a single report" ;
+    schema1:encodingFormat "html",
+        "tabular" ;
     schema1:featureList edam:operation_2428,
         edam:operation_3218 ;
     schema1:identifier biotools:multiqc,
@@ -108,6 +115,7 @@ galaxytool:multiqc a schema1:SoftwareApplication ;
         <https://usegalaxy.eu/published/workflow?id=2a39dbc8fc6dd5d3>,
         <https://usegalaxy.eu/published/workflow?id=2aede5c6577b28f5>,
         <https://usegalaxy.eu/published/workflow?id=2b25eaebd3987612>,
+        <https://usegalaxy.eu/published/workflow?id=2b892adf8f04473d>,
         <https://usegalaxy.eu/published/workflow?id=2c3d05023c02113e>,
         <https://usegalaxy.eu/published/workflow?id=2c5cae1389c11881>,
         <https://usegalaxy.eu/published/workflow?id=2c79eee5ca5a3b09>,
@@ -157,6 +165,7 @@ galaxytool:multiqc a schema1:SoftwareApplication ;
         <https://usegalaxy.eu/published/workflow?id=4176b9d43325a8d8>,
         <https://usegalaxy.eu/published/workflow?id=429ae28a178cd07c>,
         <https://usegalaxy.eu/published/workflow?id=42c0da2e86318b37>,
+        <https://usegalaxy.eu/published/workflow?id=430e6484673e67cc>,
         <https://usegalaxy.eu/published/workflow?id=4376df687c5819e3>,
         <https://usegalaxy.eu/published/workflow?id=44a2b6c8ae54eb31>,
         <https://usegalaxy.eu/published/workflow?id=44c5999436da5f1e>,
@@ -293,6 +302,7 @@ galaxytool:multiqc a schema1:SoftwareApplication ;
         <https://usegalaxy.eu/published/workflow?id=82ef590b5821805d>,
         <https://usegalaxy.eu/published/workflow?id=83049910e2cd5128>,
         <https://usegalaxy.eu/published/workflow?id=830eb4faff21eb0c>,
+        <https://usegalaxy.eu/published/workflow?id=846fa28b246c0a82>,
         <https://usegalaxy.eu/published/workflow?id=847403b72dd346ff>,
         <https://usegalaxy.eu/published/workflow?id=86e2e2faa2e0bd46>,
         <https://usegalaxy.eu/published/workflow?id=873e6ac4699ed7f6>,
@@ -326,6 +336,7 @@ galaxytool:multiqc a schema1:SoftwareApplication ;
         <https://usegalaxy.eu/published/workflow?id=95cb04ffb473623b>,
         <https://usegalaxy.eu/published/workflow?id=95f420d8856bf725>,
         <https://usegalaxy.eu/published/workflow?id=96c61a584cb2e5e9>,
+        <https://usegalaxy.eu/published/workflow?id=97fc3ee3a9fd0466>,
         <https://usegalaxy.eu/published/workflow?id=985044b4b2c51425>,
         <https://usegalaxy.eu/published/workflow?id=9a1cd3589eded3de>,
         <https://usegalaxy.eu/published/workflow?id=9a1d17c12b139bda>,
@@ -335,6 +346,7 @@ galaxytool:multiqc a schema1:SoftwareApplication ;
         <https://usegalaxy.eu/published/workflow?id=9b9e1e28f3683f92>,
         <https://usegalaxy.eu/published/workflow?id=9c0b67496dfe52b2>,
         <https://usegalaxy.eu/published/workflow?id=9c24df68dc7d25a4>,
+        <https://usegalaxy.eu/published/workflow?id=9c4f1598621f8266>,
         <https://usegalaxy.eu/published/workflow?id=9c7a218993788493>,
         <https://usegalaxy.eu/published/workflow?id=9da26c5131603b9f>,
         <https://usegalaxy.eu/published/workflow?id=9e31c51911987687>,
@@ -416,6 +428,7 @@ galaxytool:multiqc a schema1:SoftwareApplication ;
         <https://usegalaxy.eu/published/workflow?id=c6b22fc33b569c8f>,
         <https://usegalaxy.eu/published/workflow?id=c6ca9e6fd28979f8>,
         <https://usegalaxy.eu/published/workflow?id=c7a8f7aabc219831>,
+        <https://usegalaxy.eu/published/workflow?id=c7d866a0f1728c7c>,
         <https://usegalaxy.eu/published/workflow?id=c7f34c67c9054234>,
         <https://usegalaxy.eu/published/workflow?id=c98a14fcf5998159>,
         <https://usegalaxy.eu/published/workflow?id=c9aff55e39e195e3>,
@@ -491,6 +504,7 @@ galaxytool:multiqc a schema1:SoftwareApplication ;
         <https://usegalaxy.eu/published/workflow?id=ecf48fa50af560a0>,
         <https://usegalaxy.eu/published/workflow?id=ed20bd120064bab0>,
         <https://usegalaxy.eu/published/workflow?id=ee6dc47660540ba6>,
+        <https://usegalaxy.eu/published/workflow?id=eed913b17606476a>,
         <https://usegalaxy.eu/published/workflow?id=ef1d11b79a2e1727>,
         <https://usegalaxy.eu/published/workflow?id=f14ebad1c3c20067>,
         <https://usegalaxy.eu/published/workflow?id=f1ca4289ee4f67bb>,
@@ -590,6 +604,7 @@ galaxytool:multiqc a schema1:SoftwareApplication ;
         <https://usegalaxy.org.au/published/workflow?id=16f4846b4d6bc155>,
         <https://usegalaxy.org.au/published/workflow?id=17303f96fb40897c>,
         <https://usegalaxy.org.au/published/workflow?id=178db14511c8f293>,
+        <https://usegalaxy.org.au/published/workflow?id=185eded77b60bad3>,
         <https://usegalaxy.org.au/published/workflow?id=18d48f1b26811372>,
         <https://usegalaxy.org.au/published/workflow?id=19315e6573c58239>,
         <https://usegalaxy.org.au/published/workflow?id=1a107e6611fb9c15>,
@@ -674,6 +689,7 @@ galaxytool:multiqc a schema1:SoftwareApplication ;
         <https://usegalaxy.org.au/published/workflow?id=41e005d4ebb5885a>,
         <https://usegalaxy.org.au/published/workflow?id=421adea2f259ec26>,
         <https://usegalaxy.org.au/published/workflow?id=4267bd1e4cfd1901>,
+        <https://usegalaxy.org.au/published/workflow?id=4317a5e19d357154>,
         <https://usegalaxy.org.au/published/workflow?id=43343fa1896f8278>,
         <https://usegalaxy.org.au/published/workflow?id=43f2dabbc1932e30>,
         <https://usegalaxy.org.au/published/workflow?id=447d8daefdefafee>,
@@ -708,6 +724,7 @@ galaxytool:multiqc a schema1:SoftwareApplication ;
         <https://usegalaxy.org.au/published/workflow?id=54097c956775cd41>,
         <https://usegalaxy.org.au/published/workflow?id=5442f0437ade82c4>,
         <https://usegalaxy.org.au/published/workflow?id=544cb12a16f283b8>,
+        <https://usegalaxy.org.au/published/workflow?id=54fbf73416a9d14e>,
         <https://usegalaxy.org.au/published/workflow?id=5550585ffc3d8d0e>,
         <https://usegalaxy.org.au/published/workflow?id=557601292ea0f6f3>,
         <https://usegalaxy.org.au/published/workflow?id=56599572e0364e2a>,
@@ -937,6 +954,7 @@ galaxytool:multiqc a schema1:SoftwareApplication ;
         <https://usegalaxy.org.au/published/workflow?id=bfff814f1a294ec7>,
         <https://usegalaxy.org.au/published/workflow?id=c07457c45610603a>,
         <https://usegalaxy.org.au/published/workflow?id=c0892ddfbc897bee>,
+        <https://usegalaxy.org.au/published/workflow?id=c098398bf23764fe>,
         <https://usegalaxy.org.au/published/workflow?id=c1a0a3888d9ee3ac>,
         <https://usegalaxy.org.au/published/workflow?id=c1ce3f2ae7c81c3e>,
         <https://usegalaxy.org.au/published/workflow?id=c296b3848708f6f1>,
@@ -959,6 +977,7 @@ galaxytool:multiqc a schema1:SoftwareApplication ;
         <https://usegalaxy.org.au/published/workflow?id=c9156ca3df2b595c>,
         <https://usegalaxy.org.au/published/workflow?id=c9be40ba99ce7908>,
         <https://usegalaxy.org.au/published/workflow?id=c9d04bf6207c0b32>,
+        <https://usegalaxy.org.au/published/workflow?id=c9f640567f5184a9>,
         <https://usegalaxy.org.au/published/workflow?id=ca7fc6e2adbf1f26>,
         <https://usegalaxy.org.au/published/workflow?id=cb960edf95d2dc35>,
         <https://usegalaxy.org.au/published/workflow?id=ccc6602623583bcc>,
@@ -1059,6 +1078,7 @@ galaxytool:multiqc a schema1:SoftwareApplication ;
         <https://usegalaxy.org/published/workflow?id=00bc4e99626da1ba>,
         <https://usegalaxy.org/published/workflow?id=019be65613876562>,
         <https://usegalaxy.org/published/workflow?id=028f1beead539975>,
+        <https://usegalaxy.org/published/workflow?id=02d3d00ddf34903b>,
         <https://usegalaxy.org/published/workflow?id=02e29499b946f3bb>,
         <https://usegalaxy.org/published/workflow?id=03ce6eb4d9ee4309>,
         <https://usegalaxy.org/published/workflow?id=044c5ce43f2e1829>,
@@ -1118,6 +1138,7 @@ galaxytool:multiqc a schema1:SoftwareApplication ;
         <https://usegalaxy.org/published/workflow?id=1829c91a30138721>,
         <https://usegalaxy.org/published/workflow?id=195ad8d4b9ad2597>,
         <https://usegalaxy.org/published/workflow?id=195f7acb16c5a2e2>,
+        <https://usegalaxy.org/published/workflow?id=19804053b3f4d01c>,
         <https://usegalaxy.org/published/workflow?id=19c1ba21e82d8615>,
         <https://usegalaxy.org/published/workflow?id=19ce6cf93298e268>,
         <https://usegalaxy.org/published/workflow?id=1a23d8c795846251>,
@@ -1290,6 +1311,7 @@ galaxytool:multiqc a schema1:SoftwareApplication ;
         <https://usegalaxy.org/published/workflow?id=5415e85a86898e41>,
         <https://usegalaxy.org/published/workflow?id=553125cd799e5982>,
         <https://usegalaxy.org/published/workflow?id=5532e6f775adb0d7>,
+        <https://usegalaxy.org/published/workflow?id=55e4c355761b7b73>,
         <https://usegalaxy.org/published/workflow?id=56427a9b9c3848bf>,
         <https://usegalaxy.org/published/workflow?id=570172fbcf865e1d>,
         <https://usegalaxy.org/published/workflow?id=574e42683dc3961b>,
@@ -1323,6 +1345,7 @@ galaxytool:multiqc a schema1:SoftwareApplication ;
         <https://usegalaxy.org/published/workflow?id=612452c925d723b7>,
         <https://usegalaxy.org/published/workflow?id=6229546fb8b0eba9>,
         <https://usegalaxy.org/published/workflow?id=62316da77b1bfa5a>,
+        <https://usegalaxy.org/published/workflow?id=625878d4624db739>,
         <https://usegalaxy.org/published/workflow?id=626260e3c3ee5c08>,
         <https://usegalaxy.org/published/workflow?id=62c842e67fca5ab7>,
         <https://usegalaxy.org/published/workflow?id=62ecc8078a396e9e>,
@@ -1499,6 +1522,7 @@ galaxytool:multiqc a schema1:SoftwareApplication ;
         <https://usegalaxy.org/published/workflow?id=96ae2544e22d34c5>,
         <https://usegalaxy.org/published/workflow?id=96cdba1fe599ada8>,
         <https://usegalaxy.org/published/workflow?id=9763787d7b102f39>,
+        <https://usegalaxy.org/published/workflow?id=97b5e2bc469d2d68>,
         <https://usegalaxy.org/published/workflow?id=97c20a819394e381>,
         <https://usegalaxy.org/published/workflow?id=97dcd7285ebd5817>,
         <https://usegalaxy.org/published/workflow?id=98a4b90f7fc2bfce>,
@@ -1507,6 +1531,7 @@ galaxytool:multiqc a schema1:SoftwareApplication ;
         <https://usegalaxy.org/published/workflow?id=995cc428eace3bc4>,
         <https://usegalaxy.org/published/workflow?id=9990b6e2facf6dca>,
         <https://usegalaxy.org/published/workflow?id=99ee567c092fb34c>,
+        <https://usegalaxy.org/published/workflow?id=9a2edec61dd2b962>,
         <https://usegalaxy.org/published/workflow?id=9adf8691809326e5>,
         <https://usegalaxy.org/published/workflow?id=9b384b774485b2f2>,
         <https://usegalaxy.org/published/workflow?id=9b5ae15bb9aaba48>,
@@ -1542,6 +1567,7 @@ galaxytool:multiqc a schema1:SoftwareApplication ;
         <https://usegalaxy.org/published/workflow?id=a63d3ee4a2a4a20b>,
         <https://usegalaxy.org/published/workflow?id=a6d6a2e8867fa566>,
         <https://usegalaxy.org/published/workflow?id=a71fcbc60caae8b6>,
+        <https://usegalaxy.org/published/workflow?id=a7297c6a6210da26>,
         <https://usegalaxy.org/published/workflow?id=a743746151101352>,
         <https://usegalaxy.org/published/workflow?id=a8a38b594183db2b>,
         <https://usegalaxy.org/published/workflow?id=a8aee61c2cbaf6ea>,
@@ -1760,6 +1786,7 @@ galaxytool:multiqc a schema1:SoftwareApplication ;
         <https://usegalaxy.org/published/workflow?id=ebe7f93204402a5a>,
         <https://usegalaxy.org/published/workflow?id=ec2f77224324f22e>,
         <https://usegalaxy.org/published/workflow?id=ec66767cab0022ee>,
+        <https://usegalaxy.org/published/workflow?id=ec9871ea3c670224>,
         <https://usegalaxy.org/published/workflow?id=edf9be785ab9eb65>,
         <https://usegalaxy.org/published/workflow?id=ee27581327d147da>,
         <https://usegalaxy.org/published/workflow?id=ee3b8d7ba29da11c>,
@@ -1818,7 +1845,9 @@ galaxytool:multiqc a schema1:SoftwareApplication ;
         <https://workflowhub.eu/workflows/111?version=5>,
         <https://workflowhub.eu/workflows/112?version=6>,
         <https://workflowhub.eu/workflows/113?version=4>,
+        <https://workflowhub.eu/workflows/1190?version=3>,
         <https://workflowhub.eu/workflows/1271?version=3>,
+        <https://workflowhub.eu/workflows/1272?version=3>,
         <https://workflowhub.eu/workflows/1444?version=2>,
         <https://workflowhub.eu/workflows/1466?version=2>,
         <https://workflowhub.eu/workflows/1473?version=1>,
@@ -1854,11 +1883,12 @@ galaxytool:multiqc a schema1:SoftwareApplication ;
         <https://workflowhub.eu/workflows/2011?version=1>,
         <https://workflowhub.eu/workflows/2025?version=4>,
         <https://workflowhub.eu/workflows/2026?version=4>,
+        <https://workflowhub.eu/workflows/2027?version=5>,
         <https://workflowhub.eu/workflows/2042?version=1>,
         <https://workflowhub.eu/workflows/2049?version=1>,
+        <https://workflowhub.eu/workflows/2068?version=3>,
         <https://workflowhub.eu/workflows/2099?version=3>,
         <https://workflowhub.eu/workflows/2112?version=2>,
-        <https://workflowhub.eu/workflows/2115?version=2>,
         <https://workflowhub.eu/workflows/2195?version=1>,
         <https://workflowhub.eu/workflows/222?version=1>,
         <https://workflowhub.eu/workflows/346?version=1>,
@@ -1871,6 +1901,9 @@ galaxytool:multiqc a schema1:SoftwareApplication ;
         <https://workflowhub.eu/workflows/37?version=1>,
         <https://workflowhub.eu/workflows/38?version=1>,
         <https://workflowhub.eu/workflows/395?version=20>,
+        <https://workflowhub.eu/workflows/397?version=19>,
+        <https://workflowhub.eu/workflows/398?version=20>,
+        <https://workflowhub.eu/workflows/399?version=22>,
         <https://workflowhub.eu/workflows/39?version=1>,
         <https://workflowhub.eu/workflows/400?version=15>,
         <https://workflowhub.eu/workflows/401?version=16>,
@@ -1893,7 +1926,7 @@ galaxytool:multiqc a schema1:SoftwareApplication ;
         "Visualization" ;
     schema1:name "multiqc" ;
     schema1:softwareVersion "1.35" ;
-    schema1:url "http://multiqc.info/" .
+    schema1:url "https://github.com/galaxyproject/tools-iuc/tree/main/tools/multiqc" .
 
 <https://usegalaxy.eu> a schema1:WebSite .
 

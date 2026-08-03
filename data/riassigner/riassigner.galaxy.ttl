@@ -1,12 +1,17 @@
 @prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
+@prefix bioschemas: <http://bioschemas.org/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
 @prefix schema1: <http://schema.org/> .
 
 galaxytool:riassigner a schema1:SoftwareApplication ;
+    bioschemas:output "tsv" ;
     schema1:applicationSubCategory edam:topic_3172,
         edam:topic_3343 ;
+    schema1:codeRepository "https://github.com/RECETOX/RIAssigner" ;
+    schema1:dateCreated "2021-08-19" ;
+    schema1:encodingFormat "tsv" ;
     schema1:featureList edam:operation_3435 ;
     schema1:identifier biotools:riassigner,
         bioconda:riassigner ;
@@ -21,7 +26,7 @@ galaxytool:riassigner a schema1:SoftwareApplication ;
     schema1:keywords "Metabolomics" ;
     schema1:name "riassigner" ;
     schema1:softwareVersion "0.6.1" ;
-    schema1:url "https://github.com/RECETOX/RIAssigner" .
+    schema1:url "https://github.com/RECETOX/galaxytools/tree/master/tools/riassigner" .
 
 <https://usegalaxy.cz> a schema1:WebSite .
 

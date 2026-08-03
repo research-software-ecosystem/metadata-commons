@@ -1,6 +1,7 @@
 {
   "@context": {
     "bioconda": "https://github.com/bioconda/bioconda-recipes/tree/master/recipes/",
+    "bioschemas": "http://bioschemas.org/",
     "biotools": "https://bio.tools/",
     "brick": "https://brickschema.org/schema/Brick#",
     "csvw": "http://www.w3.org/ns/csvw#",
@@ -37,8 +38,16 @@
   },
   "@graph": [
     {
+      "@id": "https://usegalaxy.org",
+      "@type": "schema1:WebSite"
+    },
+    {
       "@id": "galaxytool:bracken",
       "@type": "schema1:SoftwareApplication",
+      "bioschemas:output": [
+        "tabular",
+        "txt"
+      ],
       "schema1:applicationSubCategory": [
         {
           "@id": "edam:topic_3174"
@@ -47,7 +56,13 @@
           "@id": "edam:topic_3697"
         }
       ],
+      "schema1:codeRepository": "https://github.com/jenniferlu717/Bracken/releases",
+      "schema1:dateCreated": "2019-10-15",
       "schema1:description": "Bayesian Reestimation of Abundance with KrakEN",
+      "schema1:encodingFormat": [
+        "tabular",
+        "txt"
+      ],
       "schema1:featureList": {
         "@id": "edam:operation_2238"
       },
@@ -148,10 +163,13 @@
           "@id": "https://usegalaxy.eu/published/workflow?id=4f0daf8e9dd54127"
         },
         {
-          "@id": "https://usegalaxy.org/published/workflow?id=5308dc1278cef0b5"
+          "@id": "https://usegalaxy.org/published/workflow?id=97b5e2bc469d2d68"
         },
         {
           "@id": "https://usegalaxy.org"
+        },
+        {
+          "@id": "https://usegalaxy.org/published/workflow?id=5308dc1278cef0b5"
         },
         {
           "@id": "https://usegalaxy.org/published/workflow?id=074a0b1bc8273c16"
@@ -220,26 +238,22 @@
       ],
       "schema1:name": "bracken",
       "schema1:softwareVersion": "3.1",
-      "schema1:url": "https://github.com/jenniferlu717/Bracken/releases"
-    },
-    {
-      "@id": "https://usegalaxy.org.au",
-      "@type": "schema1:WebSite"
+      "schema1:url": "https://github.com/galaxyproject/tools-iuc/tree/main/tools/bracken"
     },
     {
       "@id": "https://usegalaxy.fr",
       "@type": "schema1:WebSite"
     },
     {
-      "@id": "https://usegalaxy.eu",
-      "@type": "schema1:WebSite"
-    },
-    {
-      "@id": "https://usegalaxy.org",
+      "@id": "https://usegalaxy.org.au",
       "@type": "schema1:WebSite"
     },
     {
       "@id": "https://workflowhub.eu",
+      "@type": "schema1:WebSite"
+    },
+    {
+      "@id": "https://usegalaxy.eu",
       "@type": "schema1:WebSite"
     }
   ]

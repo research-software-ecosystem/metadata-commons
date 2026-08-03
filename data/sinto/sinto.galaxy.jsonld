@@ -1,6 +1,7 @@
 {
   "@context": {
     "bioconda": "https://github.com/bioconda/bioconda-recipes/tree/master/recipes/",
+    "bioschemas": "http://bioschemas.org/",
     "biotools": "https://bio.tools/",
     "brick": "https://brickschema.org/schema/Brick#",
     "csvw": "http://www.w3.org/ns/csvw#",
@@ -37,8 +38,16 @@
   },
   "@graph": [
     {
+      "@id": "https://workflowhub.eu",
+      "@type": "schema1:WebSite"
+    },
+    {
       "@id": "galaxytool:sinto",
       "@type": "schema1:SoftwareApplication",
+      "bioschemas:output": [
+        "fastqsanger.gz",
+        "bed"
+      ],
       "schema1:applicationSubCategory": [
         {
           "@id": "edam:topic_0091"
@@ -47,7 +56,13 @@
           "@id": "edam:topic_2229"
         }
       ],
+      "schema1:codeRepository": "https://github.com/timoast/sinto",
+      "schema1:dateCreated": "2023-04-12",
       "schema1:description": "Sinto single-cell analysis tools",
+      "schema1:encodingFormat": [
+        "fastqsanger.gz",
+        "bed"
+      ],
       "schema1:identifier": [
         {
           "@id": "biotools:sinto"
@@ -70,11 +85,7 @@
       ],
       "schema1:name": "sinto",
       "schema1:softwareVersion": "0.10.1",
-      "schema1:url": "https://github.com/timoast/sinto"
-    },
-    {
-      "@id": "https://workflowhub.eu",
-      "@type": "schema1:WebSite"
+      "schema1:url": "https://github.com/galaxyproject/tools-iuc/tree/main/tools/sinto"
     }
   ]
 }

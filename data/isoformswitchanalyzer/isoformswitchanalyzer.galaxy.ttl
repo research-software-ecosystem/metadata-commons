@@ -1,13 +1,24 @@
 @prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
+@prefix bioschemas: <http://bioschemas.org/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
 @prefix schema1: <http://schema.org/> .
 
 galaxytool:isoformswitchanalyzer a schema1:SoftwareApplication ;
+    bioschemas:output "fasta",
+        "pdf",
+        "rdata",
+        "tabular" ;
     schema1:applicationSubCategory edam:topic_3307,
         edam:topic_3512 ;
+    schema1:codeRepository "https://bioconductor.org/packages/devel/bioc/html/IsoformSwitchAnalyzeR.html" ;
+    schema1:dateCreated "2022-12-17" ;
     schema1:description "Statistical identification of isoform switching from RNA-seq derived quantification of novel and/or annotated full-length isoforms." ;
+    schema1:encodingFormat "fasta",
+        "pdf",
+        "rdata",
+        "tabular" ;
     schema1:featureList edam:operation_2403,
         edam:operation_2451,
         edam:topic_0080,
@@ -29,7 +40,7 @@ galaxytool:isoformswitchanalyzer a schema1:SoftwareApplication ;
         "Transcriptomics" ;
     schema1:name "isoformswitchanalyzer" ;
     schema1:softwareVersion "1.20.0" ;
-    schema1:url "https://bioconductor.org/packages/devel/bioc/html/IsoformSwitchAnalyzeR.html" .
+    schema1:url "https://github.com/galaxyproject/tools-iuc/tree/main/tools/isoformswitchanalyzer" .
 
 <https://usegalaxy.eu> a schema1:WebSite .
 

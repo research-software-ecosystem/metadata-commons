@@ -1,14 +1,23 @@
 @prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
+@prefix bioschemas: <http://bioschemas.org/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
 @prefix schema1: <http://schema.org/> .
 
 galaxytool:gffcompare a schema1:SoftwareApplication ;
+    bioschemas:output "gtf",
+        "tabular",
+        "txt" ;
     schema1:applicationSubCategory edam:operation_2403,
         edam:topic_0077,
         edam:topic_0080 ;
+    schema1:codeRepository "https://github.com/gpertea/gffcompare/" ;
+    schema1:dateCreated "2017-03-27" ;
     schema1:description "Galaxy wrappers for Geo Pertea's GffCompare package." ;
+    schema1:encodingFormat "gtf",
+        "tabular",
+        "txt" ;
     schema1:featureList edam:operation_0361,
         edam:topic_0221 ;
     schema1:identifier biotools:gffcompare,
@@ -52,7 +61,7 @@ galaxytool:gffcompare a schema1:SoftwareApplication ;
     schema1:keywords "Transcriptomics" ;
     schema1:name "gffcompare" ;
     schema1:softwareVersion "0.12.10" ;
-    schema1:url "https://github.com/gpertea/gffcompare/" .
+    schema1:url "https://github.com/galaxyproject/tools-iuc/tree/main/tools/gffcompare" .
 
 <https://usegalaxy.eu> a schema1:WebSite .
 

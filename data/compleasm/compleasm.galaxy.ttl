@@ -1,10 +1,15 @@
 @prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
+@prefix bioschemas: <http://bioschemas.org/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
 @prefix schema1: <http://schema.org/> .
 
 galaxytool:compleasm a schema1:SoftwareApplication ;
+    bioschemas:output "fasta",
+        "gff3",
+        "tsv",
+        "txt" ;
     schema1:applicationSubCategory edam:data_0925,
         edam:operation_0310,
         edam:operation_2403,
@@ -12,7 +17,13 @@ galaxytool:compleasm a schema1:SoftwareApplication ;
         edam:topic_0196,
         edam:topic_0622,
         edam:topic_3308 ;
+    schema1:codeRepository "https://github.com/huangnengCSU/compleasm" ;
+    schema1:dateCreated "2023-12-04" ;
     schema1:description "Compleasm: a faster and more accurate reimplementation of BUSCO" ;
+    schema1:encodingFormat "fasta",
+        "gff3",
+        "tsv",
+        "txt" ;
     schema1:featureList edam:operation_3180 ;
     schema1:identifier biotools:compleasm,
         bioconda:compleasm ;
@@ -25,10 +36,7 @@ galaxytool:compleasm a schema1:SoftwareApplication ;
         <https://usegalaxy.eu/published/workflow?id=1d1ae39386b5c318>,
         <https://usegalaxy.eu/published/workflow?id=1da7ac8eaf891f39>,
         <https://usegalaxy.eu/published/workflow?id=1e7f4ba6261f979c>,
-        <https://usegalaxy.eu/published/workflow?id=327beb1edda305ff>,
-        <https://usegalaxy.eu/published/workflow?id=3d604dad4f1f5b3d>,
         <https://usegalaxy.eu/published/workflow?id=3e255a5b7026d26e>,
-        <https://usegalaxy.eu/published/workflow?id=4077e77b6af919c4>,
         <https://usegalaxy.eu/published/workflow?id=45ae834d842302c3>,
         <https://usegalaxy.eu/published/workflow?id=475ea16f943cc013>,
         <https://usegalaxy.eu/published/workflow?id=4bce3eded3a07cdf>,
@@ -164,7 +172,7 @@ galaxytool:compleasm a schema1:SoftwareApplication ;
     schema1:keywords "Sequence Analysis" ;
     schema1:name "compleasm" ;
     schema1:softwareVersion "0.2.8" ;
-    schema1:url "https://github.com/huangnengCSU/compleasm" .
+    schema1:url "https://github.com/galaxyproject/tools-iuc/tree/main/tools/compleasm" .
 
 <https://usegalaxy.eu> a schema1:WebSite .
 

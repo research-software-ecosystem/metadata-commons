@@ -1,15 +1,20 @@
 @prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
+@prefix bioschemas: <http://bioschemas.org/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
 @prefix schema1: <http://schema.org/> .
 
 galaxytool:miniasm a schema1:SoftwareApplication ;
+    bioschemas:output "tabular" ;
     schema1:applicationSubCategory edam:data_0925,
         edam:operation_0310,
         edam:topic_0196,
         edam:topic_0622 ;
+    schema1:codeRepository "https://github.com/lh3/miniasm" ;
+    schema1:dateCreated "2019-06-18" ;
     schema1:description "Miniasm - Ultrafast de novo assembly for long noisy reads (though having no consensus step)" ;
+    schema1:encodingFormat "tabular" ;
     schema1:featureList edam:operation_0524 ;
     schema1:identifier biotools:miniasm,
         bioconda:miniasm ;
@@ -29,7 +34,7 @@ galaxytool:miniasm a schema1:SoftwareApplication ;
     schema1:keywords "Assembly" ;
     schema1:name "miniasm" ;
     schema1:softwareVersion "@TOOL_VERSION@" ;
-    schema1:url "https://github.com/lh3/miniasm" .
+    schema1:url "https://github.com/galaxyproject/tools-iuc/tree/main/tools/miniasm" .
 
 <https://usegalaxy.eu> a schema1:WebSite .
 

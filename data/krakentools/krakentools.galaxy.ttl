@@ -1,14 +1,23 @@
 @prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
+@prefix bioschemas: <http://bioschemas.org/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
 @prefix schema1: <http://schema.org/> .
 
 galaxytool:krakentools a schema1:SoftwareApplication ;
+    bioschemas:output "fasta.gz",
+        "tabular",
+        "txt" ;
     schema1:applicationSubCategory edam:data_3028,
         edam:topic_0637,
         edam:topic_3174 ;
+    schema1:codeRepository "https://github.com/jenniferlu717/KrakenTools" ;
+    schema1:dateCreated "2023-01-13" ;
     schema1:description "KrakenTools is a suite of scripts to be used alongside the Kraken" ;
+    schema1:encodingFormat "fasta.gz",
+        "tabular",
+        "txt" ;
     schema1:featureList edam:operation_0337,
         edam:operation_3436 ;
     schema1:identifier biotools:krakentools,
@@ -72,11 +81,12 @@ galaxytool:krakentools a schema1:SoftwareApplication ;
         <https://workflowhub.eu/workflows/1439?version=1>,
         <https://workflowhub.eu/workflows/1470?version=2>,
         <https://workflowhub.eu/workflows/1483?version=1>,
-        <https://workflowhub.eu/workflows/1492?version=2> ;
+        <https://workflowhub.eu/workflows/1492?version=2>,
+        <https://workflowhub.eu/workflows/2024?version=5> ;
     schema1:keywords "Metagenomics" ;
     schema1:name "krakentools" ;
     schema1:softwareVersion "1.2.1" ;
-    schema1:url "https://github.com/jenniferlu717/KrakenTools" .
+    schema1:url "https://github.com/galaxyproject/tools-iuc/tree/main/tools/krakentools" .
 
 <https://usegalaxy.eu> a schema1:WebSite .
 

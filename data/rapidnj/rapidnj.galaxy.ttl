@@ -1,12 +1,17 @@
 @prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
+@prefix bioschemas: <http://bioschemas.org/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
 @prefix schema1: <http://schema.org/> .
 
 galaxytool:rapidnj a schema1:SoftwareApplication ;
+    bioschemas:output "nhx" ;
     schema1:applicationSubCategory edam:topic_0084 ;
+    schema1:codeRepository "https://birc.au.dk/software/rapidnj/" ;
+    schema1:dateCreated "2020-05-11" ;
     schema1:description "Galaxy wrapper for the RapidNJ tool" ;
+    schema1:encodingFormat "nhx" ;
     schema1:identifier biotools:rapidnj,
         bioconda:rapidnj ;
     schema1:isPartOf <https://usegalaxy.eu>,
@@ -22,7 +27,7 @@ galaxytool:rapidnj a schema1:SoftwareApplication ;
     schema1:keywords "Phylogenetics" ;
     schema1:name "rapidnj" ;
     schema1:softwareVersion "@VERSION@" ;
-    schema1:url "https://birc.au.dk/software/rapidnj/" .
+    schema1:url "https://github.com/galaxyproject/tools-iuc/tree/main/tools/rapidnj" .
 
 <https://usegalaxy.eu> a schema1:WebSite .
 

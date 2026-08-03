@@ -1,11 +1,18 @@
 @prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
+@prefix bioschemas: <http://bioschemas.org/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
 @prefix schema1: <http://schema.org/> .
 
 galaxytool:ncbi_datasets a schema1:SoftwareApplication ;
+    bioschemas:output "fasta",
+        "tabular" ;
+    schema1:codeRepository "https://github.com/ncbi/datasets" ;
+    schema1:dateCreated "2022-01-27" ;
     schema1:description "NCBI datasets downloads biological sequence data across all domains of life from NCBI." ;
+    schema1:encodingFormat "fasta",
+        "tabular" ;
     schema1:featureList edam:operation_0338,
         edam:operation_2409,
         edam:operation_2422,
@@ -21,7 +28,7 @@ galaxytool:ncbi_datasets a schema1:SoftwareApplication ;
     schema1:keywords "Data Source" ;
     schema1:name "ncbi_datasets" ;
     schema1:softwareVersion "18.32.0" ;
-    schema1:url "https://github.com/ncbi/datasets" .
+    schema1:url "https://github.com/galaxyproject/tools-iuc/tree/main/tools/ncbi_datasets" .
 
 <https://usegalaxy.eu> a schema1:WebSite .
 

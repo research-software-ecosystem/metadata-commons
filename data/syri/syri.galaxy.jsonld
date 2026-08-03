@@ -1,6 +1,7 @@
 {
   "@context": {
     "bioconda": "https://github.com/bioconda/bioconda-recipes/tree/master/recipes/",
+    "bioschemas": "http://bioschemas.org/",
     "biotools": "https://bio.tools/",
     "brick": "https://brickschema.org/schema/Brick#",
     "csvw": "http://www.w3.org/ns/csvw#",
@@ -37,8 +38,16 @@
   },
   "@graph": [
     {
+      "@id": "https://usegalaxy.fr",
+      "@type": "schema1:WebSite"
+    },
+    {
       "@id": "galaxytool:syri",
       "@type": "schema1:SoftwareApplication",
+      "bioschemas:output": [
+        "tabular",
+        "vcf"
+      ],
       "schema1:applicationSubCategory": [
         {
           "@id": "edam:topic_2885"
@@ -62,7 +71,13 @@
           "@id": "edam:topic_3168"
         }
       ],
+      "schema1:codeRepository": "https://github.com/schneebergerlab/syri",
+      "schema1:dateCreated": "2025-04-16",
       "schema1:description": "Synteny and Rearrangement Identifier",
+      "schema1:encodingFormat": [
+        "tabular",
+        "vcf"
+      ],
       "schema1:featureList": [
         {
           "@id": "edam:operation_0487"
@@ -108,11 +123,7 @@
       "schema1:keywords": "Sequence Analysis",
       "schema1:name": "syri",
       "schema1:softwareVersion": "1.7.1",
-      "schema1:url": "https://github.com/schneebergerlab/syri"
-    },
-    {
-      "@id": "https://usegalaxy.fr",
-      "@type": "schema1:WebSite"
+      "schema1:url": "https://github.com/galaxyproject/tools-iuc/tree/main/tools/syri"
     }
   ]
 }

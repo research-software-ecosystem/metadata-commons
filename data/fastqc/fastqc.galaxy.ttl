@@ -1,15 +1,22 @@
 @prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
+@prefix bioschemas: <http://bioschemas.org/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
 @prefix schema1: <http://schema.org/> .
 
 galaxytool:fastqc a schema1:SoftwareApplication ;
+    bioschemas:output "html",
+        "txt" ;
     schema1:applicationSubCategory edam:operation_2403,
         edam:topic_0080,
         edam:topic_3168,
         edam:topic_3572 ;
+    schema1:codeRepository "http://www.bioinformatics.babraham.ac.uk/projects/fastqc/" ;
+    schema1:dateCreated "2017-01-11" ;
     schema1:description "Read QC reports using FastQC" ;
+    schema1:encodingFormat "html",
+        "txt" ;
     schema1:featureList edam:operation_0236,
         edam:operation_2238,
         edam:operation_3218 ;
@@ -193,6 +200,7 @@ galaxytool:fastqc a schema1:SoftwareApplication ;
         <https://usegalaxy.eu/published/workflow?id=82ef590b5821805d>,
         <https://usegalaxy.eu/published/workflow?id=83049910e2cd5128>,
         <https://usegalaxy.eu/published/workflow?id=842e0ea7b1eb56af>,
+        <https://usegalaxy.eu/published/workflow?id=846fa28b246c0a82>,
         <https://usegalaxy.eu/published/workflow?id=8601a62dbca3082f>,
         <https://usegalaxy.eu/published/workflow?id=865f470be3c18b08>,
         <https://usegalaxy.eu/published/workflow?id=87231a6a7938cb95>,
@@ -789,6 +797,7 @@ galaxytool:fastqc a schema1:SoftwareApplication ;
         <https://usegalaxy.org/published/workflow?id=01585f1230125ba1>,
         <https://usegalaxy.org/published/workflow?id=02755c14619242da>,
         <https://usegalaxy.org/published/workflow?id=02c96a9c6bb708ac>,
+        <https://usegalaxy.org/published/workflow?id=02d3d00ddf34903b>,
         <https://usegalaxy.org/published/workflow?id=02d49c5f0d9aa010>,
         <https://usegalaxy.org/published/workflow?id=035c28a247976f2c>,
         <https://usegalaxy.org/published/workflow?id=037c3a9d872be3de>,
@@ -1136,6 +1145,7 @@ galaxytool:fastqc a schema1:SoftwareApplication ;
         <https://usegalaxy.org/published/workflow?id=958f78270fc8f55c>,
         <https://usegalaxy.org/published/workflow?id=96975e59d126d24c>,
         <https://usegalaxy.org/published/workflow?id=97064f2af2f30dc4>,
+        <https://usegalaxy.org/published/workflow?id=97b5e2bc469d2d68>,
         <https://usegalaxy.org/published/workflow?id=98286b6154e1b57f>,
         <https://usegalaxy.org/published/workflow?id=985d2366a583866b>,
         <https://usegalaxy.org/published/workflow?id=99bc7ba3faa7ed55>,
@@ -1401,6 +1411,7 @@ galaxytool:fastqc a schema1:SoftwareApplication ;
         <https://workflowhub.eu/workflows/1061?version=1>,
         <https://workflowhub.eu/workflows/1114?version=1>,
         <https://workflowhub.eu/workflows/1271?version=3>,
+        <https://workflowhub.eu/workflows/1272?version=3>,
         <https://workflowhub.eu/workflows/1439?version=1>,
         <https://workflowhub.eu/workflows/1444?version=2>,
         <https://workflowhub.eu/workflows/1466?version=2>,
@@ -1462,7 +1473,7 @@ galaxytool:fastqc a schema1:SoftwareApplication ;
     schema1:keywords "Fastq Manipulation" ;
     schema1:name "fastqc" ;
     schema1:softwareVersion "0.74" ;
-    schema1:url "http://www.bioinformatics.babraham.ac.uk/projects/fastqc/" .
+    schema1:url "https://github.com/galaxyproject/tools-iuc/tree/main/tools/fastqc" .
 
 <https://usegalaxy.eu> a schema1:WebSite .
 

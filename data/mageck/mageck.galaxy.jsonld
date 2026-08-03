@@ -1,6 +1,7 @@
 {
   "@context": {
     "bioconda": "https://github.com/bioconda/bioconda-recipes/tree/master/recipes/",
+    "bioschemas": "http://bioschemas.org/",
     "biotools": "https://bio.tools/",
     "brick": "https://brickschema.org/schema/Brick#",
     "csvw": "http://www.w3.org/ns/csvw#",
@@ -37,8 +38,17 @@
   },
   "@graph": [
     {
+      "@id": "https://workflowhub.eu",
+      "@type": "schema1:WebSite"
+    },
+    {
       "@id": "galaxytool:mageck",
       "@type": "schema1:SoftwareApplication",
+      "bioschemas:output": [
+        "tabular",
+        "pdf",
+        "txt"
+      ],
       "schema1:applicationSubCategory": [
         {
           "@id": "edam:topic_3053"
@@ -50,7 +60,14 @@
           "@id": "edam:topic_0622"
         }
       ],
+      "schema1:codeRepository": "https://sourceforge.net/projects/mageck/",
+      "schema1:dateCreated": "2017-11-08",
       "schema1:description": "Model-based Analysis of Genome-wide CRISPR-Cas9 Knockout (MAGeCK) is a computational tool to identifyimportant genes from the recent genome-scale CRISPR-Cas9 knockout screens technology.",
+      "schema1:encodingFormat": [
+        "tabular",
+        "pdf",
+        "txt"
+      ],
       "schema1:featureList": {
         "@id": "edam:operation_3197"
       },
@@ -73,11 +90,7 @@
       "schema1:keywords": "Genome editing",
       "schema1:name": "mageck",
       "schema1:softwareVersion": "0.5.9.2",
-      "schema1:url": "https://sourceforge.net/projects/mageck/"
-    },
-    {
-      "@id": "https://workflowhub.eu",
-      "@type": "schema1:WebSite"
+      "schema1:url": "https://github.com/galaxyproject/tools-iuc/tree/main/tools/mageck"
     }
   ]
 }

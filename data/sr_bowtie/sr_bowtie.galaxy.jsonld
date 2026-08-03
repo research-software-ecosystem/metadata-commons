@@ -1,6 +1,7 @@
 {
   "@context": {
     "bioconda": "https://github.com/bioconda/bioconda-recipes/tree/master/recipes/",
+    "bioschemas": "http://bioschemas.org/",
     "biotools": "https://bio.tools/",
     "brick": "https://brickschema.org/schema/Brick#",
     "csvw": "http://www.w3.org/ns/csvw#",
@@ -37,6 +38,7 @@
   },
   "@id": "galaxytool:sr_bowtie",
   "@type": "schema1:SoftwareApplication",
+  "bioschemas:output": "tabular",
   "schema1:applicationSubCategory": [
     {
       "@id": "edam:topic_3301"
@@ -45,7 +47,10 @@
       "@id": "edam:topic_3070"
     }
   ],
+  "schema1:codeRepository": "http://artbio.fr",
+  "schema1:dateCreated": "2017-09-02",
   "schema1:description": "bowtie wrapper tool to align small RNA sequencing reads",
+  "schema1:encodingFormat": "tabular",
   "schema1:identifier": [
     {
       "@id": "biotools:sr_bowtie"
@@ -60,5 +65,5 @@
   ],
   "schema1:name": "sr_bowtie",
   "schema1:softwareVersion": "2.3.1",
-  "schema1:url": "http://artbio.fr"
+  "schema1:url": "https://github.com/ARTbio/tools-artbio/tree/master/tools/sr_bowtie"
 }

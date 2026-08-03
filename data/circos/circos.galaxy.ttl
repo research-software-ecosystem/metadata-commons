@@ -1,11 +1,24 @@
 @prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
+@prefix bioschemas: <http://bioschemas.org/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
 @prefix schema1: <http://schema.org/> .
 
 galaxytool:circos a schema1:SoftwareApplication ;
+    bioschemas:output "bigwig",
+        "png",
+        "svg",
+        "tabular",
+        "tar.gz" ;
+    schema1:codeRepository "http://circos.ca/" ;
+    schema1:dateCreated "2017-08-07" ;
     schema1:description "Build Circos Plots in Galaxy" ;
+    schema1:encodingFormat "bigwig",
+        "png",
+        "svg",
+        "tabular",
+        "tar.gz" ;
     schema1:featureList edam:operation_0564 ;
     schema1:identifier biotools:galactic_circos,
         bioconda:circos ;
@@ -39,7 +52,7 @@ galaxytool:circos a schema1:SoftwareApplication ;
     schema1:keywords "Graphics" ;
     schema1:name "circos" ;
     schema1:softwareVersion "0.69.8" ;
-    schema1:url "http://circos.ca/" .
+    schema1:url "https://github.com/galaxyproject/tools-iuc/tree/main/tools/circos" .
 
 <https://usegalaxy.eu> a schema1:WebSite .
 

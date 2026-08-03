@@ -1,6 +1,7 @@
 {
   "@context": {
     "bioconda": "https://github.com/bioconda/bioconda-recipes/tree/master/recipes/",
+    "bioschemas": "http://bioschemas.org/",
     "biotools": "https://bio.tools/",
     "brick": "https://brickschema.org/schema/Brick#",
     "csvw": "http://www.w3.org/ns/csvw#",
@@ -43,7 +44,37 @@
     {
       "@id": "galaxytool:cnvkit",
       "@type": "schema1:SoftwareApplication",
+      "bioschemas:output": [
+        "bed",
+        "cns",
+        "cnn",
+        "cnr",
+        "pdf",
+        "png",
+        "txt",
+        "cdt",
+        "jtv",
+        "tabular",
+        "seg",
+        "vcf"
+      ],
+      "schema1:codeRepository": "https://github.com/etal/cnvkit",
+      "schema1:dateCreated": "2023-03-14",
       "schema1:description": "detecting copy number variants and alterations genome-wide from high-throughput sequencing",
+      "schema1:encodingFormat": [
+        "bed",
+        "cns",
+        "cnn",
+        "cnr",
+        "pdf",
+        "png",
+        "txt",
+        "cdt",
+        "jtv",
+        "tabular",
+        "seg",
+        "vcf"
+      ],
       "schema1:featureList": {
         "@id": "edam:operation_3227"
       },
@@ -66,7 +97,7 @@
       "schema1:keywords": "Variant Analysis",
       "schema1:name": "cnvkit",
       "schema1:softwareVersion": "0.9.12",
-      "schema1:url": "https://github.com/etal/cnvkit"
+      "schema1:url": "https://github.com/galaxyproject/tools-iuc/tree/main/tools/cnvkit"
     }
   ]
 }

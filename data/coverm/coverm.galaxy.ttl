@@ -1,14 +1,19 @@
 @prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
+@prefix bioschemas: <http://bioschemas.org/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
 @prefix schema1: <http://schema.org/> .
 
 galaxytool:coverm a schema1:SoftwareApplication ;
+    bioschemas:output "tabular" ;
     schema1:applicationSubCategory edam:operation_2403,
         edam:topic_0080,
         edam:topic_3174 ;
+    schema1:codeRepository "https://github.com/wwood/CoverM" ;
+    schema1:dateCreated "2022-04-26" ;
     schema1:description "CoverM genome and contig wrappers" ;
+    schema1:encodingFormat "tabular" ;
     schema1:featureList edam:operation_0495 ;
     schema1:identifier biotools:coverm,
         bioconda:coverm ;
@@ -25,11 +30,12 @@ galaxytool:coverm a schema1:SoftwareApplication ;
         <https://usegalaxy.eu/published/workflow?id=97312d273b6e8bd9>,
         <https://usegalaxy.eu/published/workflow?id=d57d41e306241396>,
         <https://workflowhub.eu>,
-        <https://workflowhub.eu/workflows/1390?version=2> ;
+        <https://workflowhub.eu/workflows/1390?version=2>,
+        <https://workflowhub.eu/workflows/2024?version=5> ;
     schema1:keywords "Sequence Analysis" ;
     schema1:name "coverm" ;
     schema1:softwareVersion "0.8.0" ;
-    schema1:url "https://github.com/wwood/CoverM" .
+    schema1:url "https://github.com/galaxyproject/tools-iuc/tree/main/tools/coverm" .
 
 <https://usegalaxy.eu> a schema1:WebSite .
 

@@ -1,6 +1,7 @@
 {
   "@context": {
     "bioconda": "https://github.com/bioconda/bioconda-recipes/tree/master/recipes/",
+    "bioschemas": "http://bioschemas.org/",
     "biotools": "https://bio.tools/",
     "brick": "https://brickschema.org/schema/Brick#",
     "csvw": "http://www.w3.org/ns/csvw#",
@@ -37,8 +38,20 @@
   },
   "@graph": [
     {
+      "@id": "https://usegalaxy.org",
+      "@type": "schema1:WebSite"
+    },
+    {
       "@id": "galaxytool:prokka",
       "@type": "schema1:SoftwareApplication",
+      "bioschemas:output": [
+        "gff3",
+        "genbank",
+        "fasta",
+        "asn1",
+        "txt",
+        "tabular"
+      ],
       "schema1:applicationSubCategory": [
         {
           "@id": "edam:topic_0622"
@@ -50,7 +63,17 @@
           "@id": "edam:topic_0781"
         }
       ],
+      "schema1:codeRepository": "http://github.com/tseemann/prokka",
+      "schema1:dateCreated": "2016-10-07",
       "schema1:description": "Rapid annotation of prokaryotic genomes",
+      "schema1:encodingFormat": [
+        "gff3",
+        "genbank",
+        "fasta",
+        "asn1",
+        "txt",
+        "tabular"
+      ],
       "schema1:featureList": [
         {
           "@id": "edam:operation_2454"
@@ -90,13 +113,10 @@
           "@id": "workflowhub:1497?version=1"
         },
         {
-          "@id": "https://usegalaxy.eu/published/workflow?id=6b79f4974f73593a"
+          "@id": "https://usegalaxy.eu/published/workflow?id=e0c709127e9a42ae"
         },
         {
           "@id": "https://usegalaxy.eu"
-        },
-        {
-          "@id": "https://usegalaxy.eu/published/workflow?id=e0c709127e9a42ae"
         },
         {
           "@id": "https://usegalaxy.eu/published/workflow?id=f15643eaf62f76a8"
@@ -225,10 +245,16 @@
           "@id": "https://usegalaxy.eu/published/workflow?id=12653a1e65a20304"
         },
         {
-          "@id": "https://usegalaxy.org/published/workflow?id=c7f42286e0f15205"
+          "@id": "https://usegalaxy.org/published/workflow?id=97b5e2bc469d2d68"
         },
         {
           "@id": "https://usegalaxy.org"
+        },
+        {
+          "@id": "https://usegalaxy.org/published/workflow?id=deb1ff7227cf1776"
+        },
+        {
+          "@id": "https://usegalaxy.org/published/workflow?id=c7f42286e0f15205"
         },
         {
           "@id": "https://usegalaxy.org/published/workflow?id=84233173d92fa506"
@@ -357,22 +383,18 @@
       "schema1:keywords": "Sequence Analysis",
       "schema1:name": "prokka",
       "schema1:softwareVersion": "@TOOL_VERSION@+galaxy@VERSION_SUFFIX@",
-      "schema1:url": "http://github.com/tseemann/prokka"
+      "schema1:url": "https://github.com/galaxyproject/tools-iuc/tree/main/tools/prokka"
     },
     {
       "@id": "https://usegalaxy.org.au",
       "@type": "schema1:WebSite"
     },
     {
-      "@id": "https://usegalaxy.eu",
-      "@type": "schema1:WebSite"
-    },
-    {
-      "@id": "https://usegalaxy.org",
-      "@type": "schema1:WebSite"
-    },
-    {
       "@id": "https://workflowhub.eu",
+      "@type": "schema1:WebSite"
+    },
+    {
+      "@id": "https://usegalaxy.eu",
       "@type": "schema1:WebSite"
     }
   ]

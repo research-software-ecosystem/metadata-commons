@@ -1,16 +1,21 @@
 @prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
+@prefix bioschemas: <http://bioschemas.org/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
 @prefix schema1: <http://schema.org/> .
 
 galaxytool:kraken2 a schema1:SoftwareApplication ;
+    bioschemas:output "tabular" ;
     schema1:applicationSubCategory edam:data_3028,
         edam:topic_0637,
         edam:topic_3174,
         edam:topic_3301,
         edam:topic_3697 ;
+    schema1:codeRepository "http://ccb.jhu.edu/software/kraken/" ;
+    schema1:dateCreated "2019-03-05" ;
     schema1:description "Kraken2 for taxonomic designation." ;
+    schema1:encodingFormat "tabular" ;
     schema1:featureList edam:data_1872,
         edam:operation_3460 ;
     schema1:identifier biotools:kraken2,
@@ -58,6 +63,7 @@ galaxytool:kraken2 a schema1:SoftwareApplication ;
         <https://usegalaxy.eu/published/workflow?id=5826e573b6f93762>,
         <https://usegalaxy.eu/published/workflow?id=628062a8cf93261f>,
         <https://usegalaxy.eu/published/workflow?id=6a5c39c1d38a10c2>,
+        <https://usegalaxy.eu/published/workflow?id=6b79f4974f73593a>,
         <https://usegalaxy.eu/published/workflow?id=6f878d8b43ef1521>,
         <https://usegalaxy.eu/published/workflow?id=7491883694fff308>,
         <https://usegalaxy.eu/published/workflow?id=7d84b0419296857d>,
@@ -169,6 +175,7 @@ galaxytool:kraken2 a schema1:SoftwareApplication ;
         <https://usegalaxy.org/published/workflow?id=7321c6ad5425d347>,
         <https://usegalaxy.org/published/workflow?id=7c9a55db0b0eb178>,
         <https://usegalaxy.org/published/workflow?id=8f5904693b5f74f4>,
+        <https://usegalaxy.org/published/workflow?id=97b5e2bc469d2d68>,
         <https://usegalaxy.org/published/workflow?id=9ba6da7dae465d3e>,
         <https://usegalaxy.org/published/workflow?id=9f68718f025bed30>,
         <https://usegalaxy.org/published/workflow?id=a63927dd19759714>,
@@ -221,7 +228,7 @@ galaxytool:kraken2 a schema1:SoftwareApplication ;
     schema1:keywords "Metagenomics" ;
     schema1:name "kraken2" ;
     schema1:softwareVersion "2.17.1" ;
-    schema1:url "http://ccb.jhu.edu/software/kraken/" .
+    schema1:url "https://github.com/galaxyproject/tools-iuc/tree/main/tool_collections/kraken2/kraken2" .
 
 <https://usegalaxy.eu> a schema1:WebSite .
 

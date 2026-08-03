@@ -1,14 +1,21 @@
 @prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
+@prefix bioschemas: <http://bioschemas.org/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
 @prefix schema1: <http://schema.org/> .
 
 galaxytool:raxml a schema1:SoftwareApplication ;
+    bioschemas:output "nhx",
+        "txt" ;
     schema1:applicationSubCategory edam:operation_2403,
         edam:topic_0080,
         edam:topic_3293 ;
+    schema1:codeRepository "http://www.exelixis-lab.org/web/software/raxml/" ;
+    schema1:dateCreated "2015-11-05" ;
     schema1:description "RAxML - A Maximum Likelihood based phylogenetic inference" ;
+    schema1:encodingFormat "nhx",
+        "txt" ;
     schema1:featureList edam:operation_2403,
         edam:topic_0080 ;
     schema1:identifier biotools:raxml,
@@ -24,7 +31,7 @@ galaxytool:raxml a schema1:SoftwareApplication ;
     schema1:keywords "Phylogenetics" ;
     schema1:name "raxml" ;
     schema1:softwareVersion "@TOOL_VERSION@+galaxy@VERSION_SUFFIX@" ;
-    schema1:url "http://www.exelixis-lab.org/web/software/raxml/" .
+    schema1:url "https://github.com/galaxyproject/tools-iuc/tree/main/tools/raxml" .
 
 <https://usegalaxy.eu> a schema1:WebSite .
 

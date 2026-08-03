@@ -1,16 +1,23 @@
 @prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
+@prefix bioschemas: <http://bioschemas.org/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
 @prefix schema1: <http://schema.org/> .
 
 galaxytool:metanovo a schema1:SoftwareApplication ;
+    bioschemas:output "csv",
+        "fasta" ;
     schema1:applicationSubCategory edam:topic_0121,
         edam:topic_0154,
         edam:topic_3174,
         edam:topic_3520,
         edam:topic_3697 ;
+    schema1:codeRepository "https://github.com/uct-cbio/proteomics-pipelines" ;
+    schema1:dateCreated "2022-03-29" ;
     schema1:description "Produce targeted databases for mass spectrometry analysis." ;
+    schema1:encodingFormat "csv",
+        "fasta" ;
     schema1:featureList edam:operation_2495,
         edam:operation_3643,
         edam:operation_3644,
@@ -35,7 +42,7 @@ galaxytool:metanovo a schema1:SoftwareApplication ;
     schema1:keywords "Proteomics" ;
     schema1:name "metanovo" ;
     schema1:softwareVersion "@TOOL_VERSION@+galaxy@VERSION_SUFFIX@" ;
-    schema1:url "https://github.com/uct-cbio/proteomics-pipelines" .
+    schema1:url "https://github.com/galaxyproteomics/tools-galaxyp/tree/master/tools/metanovo" .
 
 <https://usegalaxy.eu> a schema1:WebSite .
 

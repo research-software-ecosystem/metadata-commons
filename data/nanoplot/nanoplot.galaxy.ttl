@@ -1,12 +1,19 @@
 @prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
+@prefix bioschemas: <http://bioschemas.org/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
 @prefix schema1: <http://schema.org/> .
 
 galaxytool:nanoplot a schema1:SoftwareApplication ;
+    bioschemas:output "html",
+        "tabular" ;
     schema1:applicationSubCategory edam:topic_0622 ;
+    schema1:codeRepository "https://github.com/wdecoster/NanoPlot" ;
+    schema1:dateCreated "2018-09-24" ;
     schema1:description "Plotting tool for long read sequencing data and alignments" ;
+    schema1:encodingFormat "html",
+        "tabular" ;
     schema1:featureList edam:operation_2940,
         edam:operation_2943 ;
     schema1:identifier biotools:nanoplot,
@@ -139,7 +146,7 @@ galaxytool:nanoplot a schema1:SoftwareApplication ;
     schema1:keywords "Visualization" ;
     schema1:name "nanoplot" ;
     schema1:softwareVersion "@TOOL_VERSION@+galaxy@VERSION_SUFFIX@" ;
-    schema1:url "https://github.com/wdecoster/NanoPlot" .
+    schema1:url "https://github.com/galaxyproject/tools-iuc/tree/main/tools/nanoplot" .
 
 <https://usegalaxy.eu> a schema1:WebSite .
 

@@ -1,6 +1,7 @@
 {
   "@context": {
     "bioconda": "https://github.com/bioconda/bioconda-recipes/tree/master/recipes/",
+    "bioschemas": "http://bioschemas.org/",
     "biotools": "https://bio.tools/",
     "brick": "https://brickschema.org/schema/Brick#",
     "csvw": "http://www.w3.org/ns/csvw#",
@@ -37,7 +38,7 @@
   },
   "@graph": [
     {
-      "@id": "https://usegalaxy.org.au",
+      "@id": "https://usegalaxy.org",
       "@type": "schema1:WebSite"
     },
     {
@@ -45,8 +46,24 @@
       "@type": "schema1:WebSite"
     },
     {
+      "@id": "https://usegalaxy.org.au",
+      "@type": "schema1:WebSite"
+    },
+    {
+      "@id": "https://workflowhub.eu",
+      "@type": "schema1:WebSite"
+    },
+    {
+      "@id": "https://usegalaxy.eu",
+      "@type": "schema1:WebSite"
+    },
+    {
       "@id": "galaxytool:bowtie2",
       "@type": "schema1:SoftwareApplication",
+      "bioschemas:output": [
+        "bam",
+        "txt"
+      ],
       "schema1:applicationSubCategory": [
         {
           "@id": "edam:operation_2429"
@@ -58,7 +75,13 @@
           "@id": "edam:topic_0622"
         }
       ],
+      "schema1:codeRepository": "http://bowtie-bio.sourceforge.net/bowtie2",
+      "schema1:dateCreated": "2017-05-08",
       "schema1:description": "Bowtie2: Fast and sensitive read alignment",
+      "schema1:encodingFormat": [
+        "bam",
+        "txt"
+      ],
       "schema1:featureList": {
         "@id": "edam:operation_3198"
       },
@@ -105,6 +128,12 @@
           "@id": "workflowhub:2026?version=4"
         },
         {
+          "@id": "workflowhub:397?version=19"
+        },
+        {
+          "@id": "workflowhub:398?version=20"
+        },
+        {
           "@id": "workflowhub:112?version=6"
         },
         {
@@ -147,6 +176,9 @@
           "@id": "workflowhub:395?version=20"
         },
         {
+          "@id": "workflowhub:399?version=22"
+        },
+        {
           "@id": "workflowhub:412?version=1"
         },
         {
@@ -174,10 +206,19 @@
           "@id": "https://usegalaxy.fr/published/workflow?id=ca0bd0e42cb774f9"
         },
         {
-          "@id": "https://usegalaxy.eu/published/workflow?id=c3d864aa07d08abe"
+          "@id": "https://usegalaxy.eu/published/workflow?id=eed913b17606476a"
         },
         {
           "@id": "https://usegalaxy.eu"
+        },
+        {
+          "@id": "https://usegalaxy.eu/published/workflow?id=c3d864aa07d08abe"
+        },
+        {
+          "@id": "https://usegalaxy.eu/published/workflow?id=9c4f1598621f8266"
+        },
+        {
+          "@id": "https://usegalaxy.eu/published/workflow?id=2b892adf8f04473d"
         },
         {
           "@id": "https://usegalaxy.eu/published/workflow?id=b02fe8dbe7e48193"
@@ -720,10 +761,22 @@
           "@id": "https://usegalaxy.eu/published/workflow?id=c00fe92f9a579a15"
         },
         {
-          "@id": "https://usegalaxy.org/published/workflow?id=a0f7a130918e5105"
+          "@id": "https://usegalaxy.org/published/workflow?id=97b5e2bc469d2d68"
         },
         {
           "@id": "https://usegalaxy.org"
+        },
+        {
+          "@id": "https://usegalaxy.org/published/workflow?id=625878d4624db739"
+        },
+        {
+          "@id": "https://usegalaxy.org/published/workflow?id=19804053b3f4d01c"
+        },
+        {
+          "@id": "https://usegalaxy.org/published/workflow?id=a7297c6a6210da26"
+        },
+        {
+          "@id": "https://usegalaxy.org/published/workflow?id=a0f7a130918e5105"
         },
         {
           "@id": "https://usegalaxy.org/published/workflow?id=3bf9a7e5001f01bb"
@@ -2145,10 +2198,16 @@
           "@id": "https://usegalaxy.org/published/workflow?id=67c2ca24bc0be58e"
         },
         {
-          "@id": "https://usegalaxy.org.au/published/workflow?id=45ba7bdc9b9c5142"
+          "@id": "https://usegalaxy.org.au/published/workflow?id=c098398bf23764fe"
         },
         {
           "@id": "https://usegalaxy.org.au"
+        },
+        {
+          "@id": "https://usegalaxy.org.au/published/workflow?id=54fbf73416a9d14e"
+        },
+        {
+          "@id": "https://usegalaxy.org.au/published/workflow?id=45ba7bdc9b9c5142"
         },
         {
           "@id": "https://usegalaxy.org.au/published/workflow?id=f9864fc20528668f"
@@ -2358,19 +2417,7 @@
       "schema1:keywords": "Next Gen Mappers",
       "schema1:name": "bowtie2",
       "schema1:softwareVersion": "2.5.5",
-      "schema1:url": "http://bowtie-bio.sourceforge.net/bowtie2"
-    },
-    {
-      "@id": "https://usegalaxy.eu",
-      "@type": "schema1:WebSite"
-    },
-    {
-      "@id": "https://usegalaxy.org",
-      "@type": "schema1:WebSite"
-    },
-    {
-      "@id": "https://workflowhub.eu",
-      "@type": "schema1:WebSite"
+      "schema1:url": "https://github.com/galaxyproject/tools-iuc/tree/main/tools/bowtie2"
     }
   ]
 }

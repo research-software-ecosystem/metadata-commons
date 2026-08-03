@@ -1,6 +1,7 @@
 {
   "@context": {
     "bioconda": "https://github.com/bioconda/bioconda-recipes/tree/master/recipes/",
+    "bioschemas": "http://bioschemas.org/",
     "biotools": "https://bio.tools/",
     "brick": "https://brickschema.org/schema/Brick#",
     "csvw": "http://www.w3.org/ns/csvw#",
@@ -37,10 +38,26 @@
   },
   "@id": "galaxytool:fastoma",
   "@type": "schema1:SoftwareApplication",
+  "bioschemas:output": [
+    "xml",
+    "html",
+    "ipynb",
+    "tabular",
+    "newick"
+  ],
   "schema1:applicationSubCategory": {
     "@id": "edam:topic_0797"
   },
+  "schema1:codeRepository": "https://github.com/dessimozlab/FastOMA",
+  "schema1:dateCreated": "2025-12-26",
   "schema1:description": "FastOMA is a scalable tool for orthology inference among many genomes.",
+  "schema1:encodingFormat": [
+    "xml",
+    "html",
+    "ipynb",
+    "tabular",
+    "newick"
+  ],
   "schema1:featureList": [
     {
       "@id": "edam:operation_3947"
@@ -73,5 +90,5 @@
   ],
   "schema1:name": "fastoma",
   "schema1:softwareVersion": "0.5.1",
-  "schema1:url": "https://github.com/dessimozlab/FastOMA"
+  "schema1:url": "https://github.com/galaxyproject/tools-iuc/tree/main/tools/fastoma"
 }

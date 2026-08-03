@@ -1,14 +1,27 @@
 @prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
+@prefix bioschemas: <http://bioschemas.org/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
 @prefix schema1: <http://schema.org/> .
 
 galaxytool:velvet a schema1:SoftwareApplication ;
+    bioschemas:output "afg",
+        "fasta",
+        "tabular",
+        "txt",
+        "velvet" ;
     schema1:applicationSubCategory edam:data_0925,
         edam:operation_0310,
         edam:topic_0196 ;
+    schema1:codeRepository "https://www.ebi.ac.uk/~zerbino/velvet/" ;
+    schema1:dateCreated "2020-06-09" ;
     schema1:description "de novo genomic assembler specially designed for short read sequencing technologies" ;
+    schema1:encodingFormat "afg",
+        "fasta",
+        "tabular",
+        "txt",
+        "velvet" ;
     schema1:featureList edam:operation_0524 ;
     schema1:identifier biotools:velvet,
         bioconda:velvet ;
@@ -55,7 +68,7 @@ galaxytool:velvet a schema1:SoftwareApplication ;
     schema1:keywords "Assembly" ;
     schema1:name "velvet" ;
     schema1:softwareVersion "1.2.10.3" ;
-    schema1:url "https://www.ebi.ac.uk/~zerbino/velvet/" .
+    schema1:url "https://github.com/galaxyproject/tools-iuc/tree/main/tools/velvet" .
 
 <https://usegalaxy.eu> a schema1:WebSite .
 

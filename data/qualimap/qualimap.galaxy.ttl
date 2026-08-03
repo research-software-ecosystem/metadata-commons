@@ -1,12 +1,19 @@
 @prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
+@prefix bioschemas: <http://bioschemas.org/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
 @prefix schema1: <http://schema.org/> .
 
 galaxytool:qualimap a schema1:SoftwareApplication ;
+    bioschemas:output "html",
+        "tsv" ;
     schema1:applicationSubCategory edam:topic_3572 ;
+    schema1:codeRepository "http://qualimap.bioinfo.cipf.es/" ;
+    schema1:dateCreated "2019-10-10" ;
     schema1:description "Qualimap 2 is a platform-independent application written in Java andR that facilitates the quality control of alignment sequencing data and itsderivatives like feature counts." ;
+    schema1:encodingFormat "html",
+        "tsv" ;
     schema1:featureList edam:operation_3218 ;
     schema1:identifier biotools:qualimap,
         bioconda:qualimap ;
@@ -172,6 +179,7 @@ galaxytool:qualimap a schema1:SoftwareApplication ;
         <https://workflowhub.eu/workflows/155?version=7>,
         <https://workflowhub.eu/workflows/1647?version=2>,
         <https://workflowhub.eu/workflows/1876?version=2>,
+        <https://workflowhub.eu/workflows/2027?version=5>,
         <https://workflowhub.eu/workflows/439?version=4>,
         <https://workflowhub.eu/workflows/519?version=1>,
         <https://workflowhub.eu/workflows/628?version=1> ;
@@ -180,7 +188,7 @@ galaxytool:qualimap a schema1:SoftwareApplication ;
         "Transcriptomics" ;
     schema1:name "qualimap" ;
     schema1:softwareVersion "2.3" ;
-    schema1:url "http://qualimap.bioinfo.cipf.es/" .
+    schema1:url "https://github.com/galaxyproject/tools-iuc/tree/main/tools/qualimap" .
 
 <https://usegalaxy.eu> a schema1:WebSite .
 

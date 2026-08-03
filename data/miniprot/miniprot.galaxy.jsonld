@@ -1,6 +1,7 @@
 {
   "@context": {
     "bioconda": "https://github.com/bioconda/bioconda-recipes/tree/master/recipes/",
+    "bioschemas": "http://bioschemas.org/",
     "biotools": "https://bio.tools/",
     "brick": "https://brickschema.org/schema/Brick#",
     "csvw": "http://www.w3.org/ns/csvw#",
@@ -39,6 +40,10 @@
     {
       "@id": "galaxytool:miniprot",
       "@type": "schema1:SoftwareApplication",
+      "bioschemas:output": [
+        "gff3",
+        "binary"
+      ],
       "schema1:applicationSubCategory": [
         {
           "@id": "edam:topic_0160"
@@ -50,7 +55,13 @@
           "@id": "edam:topic_0080"
         }
       ],
+      "schema1:codeRepository": "https://github.com/lh3/miniprot",
+      "schema1:dateCreated": "2022-09-19",
       "schema1:description": "Align a protein sequence against a genome with affine gap penalty, splicing and frameshift.",
+      "schema1:encodingFormat": [
+        "gff3",
+        "binary"
+      ],
       "schema1:featureList": [
         {
           "@id": "edam:data_0863"
@@ -87,7 +98,7 @@
       "schema1:keywords": "Sequence Analysis",
       "schema1:name": "miniprot",
       "schema1:softwareVersion": "0.18",
-      "schema1:url": "https://github.com/lh3/miniprot"
+      "schema1:url": "https://github.com/galaxyproject/tools-iuc/tree/main/tools/miniprot"
     },
     {
       "@id": "https://usegalaxy.eu",

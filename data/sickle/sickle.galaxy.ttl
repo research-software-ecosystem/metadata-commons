@@ -1,12 +1,17 @@
 @prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
+@prefix bioschemas: <http://bioschemas.org/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
 @prefix schema1: <http://schema.org/> .
 
 galaxytool:sickle a schema1:SoftwareApplication ;
+    bioschemas:output "txt" ;
     schema1:applicationSubCategory edam:topic_3572 ;
+    schema1:codeRepository "https://github.com/najoshi/sickle" ;
+    schema1:dateCreated "2015-11-03" ;
     schema1:description "A windowed adaptive trimming tool for FASTQ files using quality" ;
+    schema1:encodingFormat "txt" ;
     schema1:featureList edam:operation_3192 ;
     schema1:identifier biotools:sickle,
         bioconda:sickle-trim ;
@@ -22,7 +27,7 @@ galaxytool:sickle a schema1:SoftwareApplication ;
         "Sequence Analysis" ;
     schema1:name "sickle" ;
     schema1:softwareVersion "1.33.3" ;
-    schema1:url "https://github.com/najoshi/sickle" .
+    schema1:url "https://github.com/galaxyproject/tools-iuc/tree/main/tools/sickle" .
 
 <https://usegalaxy.eu> a schema1:WebSite .
 

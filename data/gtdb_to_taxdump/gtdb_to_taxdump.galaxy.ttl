@@ -1,12 +1,17 @@
 @prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
+@prefix bioschemas: <http://bioschemas.org/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
 @prefix schema1: <http://schema.org/> .
 
 galaxytool:gtdb_to_taxdump a schema1:SoftwareApplication ;
+    bioschemas:output "tabular" ;
     schema1:applicationSubCategory edam:topic_3307 ;
+    schema1:codeRepository "https://github.com/nick-youngblut/gtdb_to_taxdump" ;
+    schema1:dateCreated "2024-08-25" ;
     schema1:description "Convert GTDB taxonomy to NCBI taxdump format" ;
+    schema1:encodingFormat "tabular" ;
     schema1:featureList edam:operation_2409,
         edam:operation_2427,
         edam:operation_2429,
@@ -22,7 +27,7 @@ galaxytool:gtdb_to_taxdump a schema1:SoftwareApplication ;
     schema1:keywords "Metagenomics" ;
     schema1:name "gtdb_to_taxdump" ;
     schema1:softwareVersion "0.1.9" ;
-    schema1:url "https://github.com/nick-youngblut/gtdb_to_taxdump" .
+    schema1:url "https://github.com/galaxyproject/tools-iuc/tree/main/tools/gtdb_to_taxdump" .
 
 <https://usegalaxy.eu> a schema1:WebSite .
 

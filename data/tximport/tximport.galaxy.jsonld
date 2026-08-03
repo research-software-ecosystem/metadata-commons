@@ -1,6 +1,7 @@
 {
   "@context": {
     "bioconda": "https://github.com/bioconda/bioconda-recipes/tree/master/recipes/",
+    "bioschemas": "http://bioschemas.org/",
     "biotools": "https://bio.tools/",
     "brick": "https://brickschema.org/schema/Brick#",
     "csvw": "http://www.w3.org/ns/csvw#",
@@ -37,12 +38,9 @@
   },
   "@graph": [
     {
-      "@id": "https://usegalaxy.eu",
-      "@type": "schema1:WebSite"
-    },
-    {
       "@id": "galaxytool:tximport",
       "@type": "schema1:SoftwareApplication",
+      "bioschemas:output": "tabular",
       "schema1:applicationSubCategory": [
         {
           "@id": "edam:topic_3308"
@@ -54,7 +52,10 @@
           "@id": "edam:topic_0769"
         }
       ],
+      "schema1:codeRepository": "http://bioconductor.org/packages/tximport/",
+      "schema1:dateCreated": "2019-10-15",
       "schema1:description": "Wrapper for the Bioconductor package tximport",
+      "schema1:encodingFormat": "tabular",
       "schema1:featureList": [
         {
           "@id": "edam:operation_2497"
@@ -82,7 +83,11 @@
       "schema1:keywords": "Transcriptomics",
       "schema1:name": "tximport",
       "schema1:softwareVersion": "@TOOL_VERSION@",
-      "schema1:url": "http://bioconductor.org/packages/tximport/"
+      "schema1:url": "https://github.com/galaxyproject/tools-iuc/tree/main/tools/tximport"
+    },
+    {
+      "@id": "https://usegalaxy.eu",
+      "@type": "schema1:WebSite"
     }
   ]
 }

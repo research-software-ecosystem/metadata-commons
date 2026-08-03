@@ -1,12 +1,27 @@
 @prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
+@prefix bioschemas: <http://bioschemas.org/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
 @prefix schema1: <http://schema.org/> .
 
 galaxytool:iqtree a schema1:SoftwareApplication ;
+    bioschemas:output "data",
+        "iqtree",
+        "mldist",
+        "nex",
+        "nhx",
+        "txt" ;
     schema1:applicationSubCategory edam:topic_3293 ;
+    schema1:codeRepository "http://www.iqtree.org/" ;
+    schema1:dateCreated "2017-09-26" ;
     schema1:description "Efficient phylogenomic software by maximum likelihood" ;
+    schema1:encodingFormat "data",
+        "iqtree",
+        "mldist",
+        "nex",
+        "nhx",
+        "txt" ;
     schema1:featureList edam:operation_0324,
         edam:operation_2403,
         edam:topic_0080 ;
@@ -57,7 +72,7 @@ galaxytool:iqtree a schema1:SoftwareApplication ;
     schema1:keywords "Phylogenetics" ;
     schema1:name "iqtree" ;
     schema1:softwareVersion "2.4.0" ;
-    schema1:url "http://www.iqtree.org/" .
+    schema1:url "https://github.com/galaxyproject/tools-iuc/tree/main/tools/iqtree" .
 
 <https://usegalaxy.eu> a schema1:WebSite .
 

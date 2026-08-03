@@ -1,6 +1,7 @@
 {
   "@context": {
     "bioconda": "https://github.com/bioconda/bioconda-recipes/tree/master/recipes/",
+    "bioschemas": "http://bioschemas.org/",
     "biotools": "https://bio.tools/",
     "brick": "https://brickschema.org/schema/Brick#",
     "csvw": "http://www.w3.org/ns/csvw#",
@@ -37,12 +38,12 @@
   },
   "@graph": [
     {
-      "@id": "https://usegalaxy.eu",
-      "@type": "schema1:WebSite"
-    },
-    {
       "@id": "galaxytool:taxpasta",
       "@type": "schema1:SoftwareApplication",
+      "bioschemas:output": [
+        "tabular",
+        "biom1"
+      ],
       "schema1:applicationSubCategory": [
         {
           "@id": "edam:data_3028"
@@ -54,7 +55,13 @@
           "@id": "edam:topic_3174"
         }
       ],
+      "schema1:codeRepository": "https://taxpasta.readthedocs.io/en/latest/",
+      "schema1:dateCreated": "2023-08-30",
       "schema1:description": "standardise taxonomic profiles",
+      "schema1:encodingFormat": [
+        "tabular",
+        "biom1"
+      ],
       "schema1:featureList": [
         {
           "@id": "edam:operation_3435"
@@ -91,7 +98,11 @@
       "schema1:keywords": "Sequence Analysis",
       "schema1:name": "taxpasta",
       "schema1:softwareVersion": "@TOOL_VERSION@+galaxy@VERSION_SUFFIX@",
-      "schema1:url": "https://taxpasta.readthedocs.io/en/latest/"
+      "schema1:url": "https://github.com/galaxyproject/tools-iuc/tree/main/tools/taxpasta"
+    },
+    {
+      "@id": "https://usegalaxy.eu",
+      "@type": "schema1:WebSite"
     }
   ]
 }

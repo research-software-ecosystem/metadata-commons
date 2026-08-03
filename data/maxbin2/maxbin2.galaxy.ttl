@@ -1,16 +1,27 @@
 @prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
+@prefix bioschemas: <http://bioschemas.org/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
 @prefix schema1: <http://schema.org/> .
 
 galaxytool:maxbin2 a schema1:SoftwareApplication ;
+    bioschemas:output "fasta",
+        "pdf",
+        "tabular",
+        "txt" ;
     schema1:applicationSubCategory edam:data_0925,
         edam:operation_0310,
         edam:topic_0196,
         edam:topic_3174,
         edam:topic_3301 ;
+    schema1:codeRepository "https://downloads.jbei.org/data/microbial_communities/MaxBin/MaxBin.html" ;
+    schema1:dateCreated "2019-10-24" ;
     schema1:description "clusters metagenomic contigs into bins" ;
+    schema1:encodingFormat "fasta",
+        "pdf",
+        "tabular",
+        "txt" ;
     schema1:featureList edam:data_0925,
         edam:operation_0310,
         edam:topic_0196 ;
@@ -39,7 +50,7 @@ galaxytool:maxbin2 a schema1:SoftwareApplication ;
     schema1:keywords "Metagenomics" ;
     schema1:name "maxbin2" ;
     schema1:softwareVersion "@MAXBIN_VERSION@" ;
-    schema1:url "https://downloads.jbei.org/data/microbial_communities/MaxBin/MaxBin.html" .
+    schema1:url "https://github.com/galaxyproject/tools-iuc/tree/main/tools/maxbin2" .
 
 <https://usegalaxy.eu> a schema1:WebSite .
 

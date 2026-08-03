@@ -1,6 +1,7 @@
 {
   "@context": {
     "bioconda": "https://github.com/bioconda/bioconda-recipes/tree/master/recipes/",
+    "bioschemas": "http://bioschemas.org/",
     "biotools": "https://bio.tools/",
     "brick": "https://brickschema.org/schema/Brick#",
     "csvw": "http://www.w3.org/ns/csvw#",
@@ -39,6 +40,12 @@
     {
       "@id": "galaxytool:nextclade",
       "@type": "schema1:SoftwareApplication",
+      "bioschemas:output": [
+        "fasta",
+        "csv",
+        "tabular",
+        "json"
+      ],
       "schema1:applicationSubCategory": [
         {
           "@id": "edam:topic_0622"
@@ -53,7 +60,15 @@
           "@id": "edam:topic_3944"
         }
       ],
+      "schema1:codeRepository": "https://github.com/nextstrain/nextclade",
+      "schema1:dateCreated": "2021-03-29",
       "schema1:description": "Identify differences between your sequences and a reference sequence used by Nextstrain",
+      "schema1:encodingFormat": [
+        "fasta",
+        "csv",
+        "tabular",
+        "json"
+      ],
       "schema1:featureList": [
         {
           "@id": "edam:operation_3204"
@@ -159,10 +174,10 @@
       "schema1:keywords": "Sequence Analysis",
       "schema1:name": "nextclade",
       "schema1:softwareVersion": "2.7.0",
-      "schema1:url": "https://github.com/nextstrain/nextclade"
+      "schema1:url": "https://github.com/galaxyproject/tools-iuc/tree/main/tools/nextclade"
     },
     {
-      "@id": "https://usegalaxy.org.au",
+      "@id": "https://usegalaxy.org",
       "@type": "schema1:WebSite"
     },
     {
@@ -170,15 +185,15 @@
       "@type": "schema1:WebSite"
     },
     {
-      "@id": "https://usegalaxy.eu",
-      "@type": "schema1:WebSite"
-    },
-    {
-      "@id": "https://usegalaxy.org",
+      "@id": "https://usegalaxy.org.au",
       "@type": "schema1:WebSite"
     },
     {
       "@id": "https://workflowhub.eu",
+      "@type": "schema1:WebSite"
+    },
+    {
+      "@id": "https://usegalaxy.eu",
       "@type": "schema1:WebSite"
     }
   ]

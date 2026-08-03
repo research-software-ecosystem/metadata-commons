@@ -1,11 +1,16 @@
 @prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
+@prefix bioschemas: <http://bioschemas.org/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
 @prefix schema1: <http://schema.org/> .
 
 galaxytool:filtlong a schema1:SoftwareApplication ;
+    bioschemas:output "fastqsanger" ;
+    schema1:codeRepository "https://github.com/rrwick/Filtlong" ;
+    schema1:dateCreated "2018-09-14" ;
     schema1:description "Filtlong - Filtering long reads by quality" ;
+    schema1:encodingFormat "fastqsanger" ;
     schema1:featureList edam:operation_3218 ;
     schema1:identifier biotools:filtlong,
         bioconda:filtlong ;
@@ -59,7 +64,7 @@ galaxytool:filtlong a schema1:SoftwareApplication ;
         "Sequence Analysis" ;
     schema1:name "filtlong" ;
     schema1:softwareVersion "0.3.1" ;
-    schema1:url "https://github.com/rrwick/Filtlong" .
+    schema1:url "https://github.com/galaxyproject/tools-iuc/tree/main/tools/filtlong" .
 
 <https://usegalaxy.eu> a schema1:WebSite .
 

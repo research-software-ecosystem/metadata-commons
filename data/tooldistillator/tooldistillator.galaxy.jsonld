@@ -1,6 +1,7 @@
 {
   "@context": {
     "bioconda": "https://github.com/bioconda/bioconda-recipes/tree/master/recipes/",
+    "bioschemas": "http://bioschemas.org/",
     "biotools": "https://bio.tools/",
     "brick": "https://brickschema.org/schema/Brick#",
     "csvw": "http://www.w3.org/ns/csvw#",
@@ -37,8 +38,28 @@
   },
   "@graph": [
     {
+      "@id": "https://usegalaxy.org",
+      "@type": "schema1:WebSite"
+    },
+    {
+      "@id": "https://usegalaxy.org.au",
+      "@type": "schema1:WebSite"
+    },
+    {
+      "@id": "https://workflowhub.eu",
+      "@type": "schema1:WebSite"
+    },
+    {
+      "@id": "https://usegalaxy.eu",
+      "@type": "schema1:WebSite"
+    },
+    {
       "@id": "galaxytool:tooldistillator",
       "@type": "schema1:SoftwareApplication",
+      "bioschemas:output": [
+        "txt",
+        "json"
+      ],
       "schema1:applicationSubCategory": [
         {
           "@id": "edam:topic_3301"
@@ -53,7 +74,13 @@
           "@id": "edam:topic_0080"
         }
       ],
+      "schema1:codeRepository": "https://gitlab.com/ifb-elixirfr/abromics/tooldistillator",
+      "schema1:dateCreated": "2024-04-30",
       "schema1:description": "ToolDistillator extract and aggregate information from different tool outputs to JSON parsable files",
+      "schema1:encodingFormat": [
+        "txt",
+        "json"
+      ],
       "schema1:featureList": {
         "@id": "edam:operation_1812"
       },
@@ -67,13 +94,25 @@
       ],
       "schema1:isPartOf": [
         {
-          "@id": "workflowhub:1882?version=3"
+          "@id": "workflowhub:2068?version=3"
         },
         {
           "@id": "https://workflowhub.eu"
         },
         {
+          "@id": "workflowhub:2055?version=3"
+        },
+        {
+          "@id": "workflowhub:2024?version=5"
+        },
+        {
+          "@id": "workflowhub:1882?version=3"
+        },
+        {
           "@id": "workflowhub:1881?version=2"
+        },
+        {
+          "@id": "workflowhub:1043?version=13"
         },
         {
           "@id": "workflowhub:1052?version=11"
@@ -85,10 +124,13 @@
           "@id": "workflowhub:1049?version=9"
         },
         {
-          "@id": "https://usegalaxy.eu/published/workflow?id=1306ed083d91a852"
+          "@id": "https://usegalaxy.eu/published/workflow?id=06b51e2a88f83e3d"
         },
         {
           "@id": "https://usegalaxy.eu"
+        },
+        {
+          "@id": "https://usegalaxy.eu/published/workflow?id=1306ed083d91a852"
         },
         {
           "@id": "https://usegalaxy.eu/published/workflow?id=46b6812817c57a01"
@@ -223,10 +265,13 @@
           "@id": "https://usegalaxy.eu/published/workflow?id=c14d2e8b3c191bc4"
         },
         {
-          "@id": "https://usegalaxy.org/published/workflow?id=d4c790a45978bb9e"
+          "@id": "https://usegalaxy.org/published/workflow?id=5bca2e317c60b48f"
         },
         {
           "@id": "https://usegalaxy.org"
+        },
+        {
+          "@id": "https://usegalaxy.org/published/workflow?id=d4c790a45978bb9e"
         },
         {
           "@id": "https://usegalaxy.org/published/workflow?id=67ca17ab34b10772"
@@ -355,23 +400,7 @@
       "schema1:keywords": "Sequence Analysis",
       "schema1:name": "tooldistillator",
       "schema1:softwareVersion": "1.0.6",
-      "schema1:url": "https://gitlab.com/ifb-elixirfr/abromics/tooldistillator"
-    },
-    {
-      "@id": "https://usegalaxy.org.au",
-      "@type": "schema1:WebSite"
-    },
-    {
-      "@id": "https://usegalaxy.eu",
-      "@type": "schema1:WebSite"
-    },
-    {
-      "@id": "https://usegalaxy.org",
-      "@type": "schema1:WebSite"
-    },
-    {
-      "@id": "https://workflowhub.eu",
-      "@type": "schema1:WebSite"
+      "schema1:url": "https://github.com/galaxyproject/tools-iuc/tree/main/tools/tooldistillator"
     }
   ]
 }

@@ -1,13 +1,28 @@
 @prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
+@prefix bioschemas: <http://bioschemas.org/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
 @prefix schema1: <http://schema.org/> .
 
 galaxytool:metaphlan a schema1:SoftwareApplication ;
+    bioschemas:output "biom1",
+        "fasta",
+        "fastqsanger",
+        "json",
+        "sam",
+        "tabular" ;
     schema1:applicationSubCategory edam:topic_0194,
         edam:topic_3174 ;
+    schema1:codeRepository "https://github.com/biobakery/MetaPhlAn" ;
+    schema1:dateCreated "2021-03-11" ;
     schema1:description "MetaPhlAn for Metagenomic Phylogenetic Analysis" ;
+    schema1:encodingFormat "biom1",
+        "fasta",
+        "fastqsanger",
+        "json",
+        "sam",
+        "tabular" ;
     schema1:featureList edam:data_1872,
         edam:operation_3460 ;
     schema1:identifier biotools:metaphlan,
@@ -27,6 +42,7 @@ galaxytool:metaphlan a schema1:SoftwareApplication ;
         <https://usegalaxy.eu/published/workflow?id=7491883694fff308>,
         <https://usegalaxy.eu/published/workflow?id=79b4ae4403772098>,
         <https://usegalaxy.eu/published/workflow?id=87cc0cd143a12c41>,
+        <https://usegalaxy.eu/published/workflow?id=8e13c87e751e88d8>,
         <https://usegalaxy.eu/published/workflow?id=9472be79da012999>,
         <https://usegalaxy.eu/published/workflow?id=a8f829deb69b30ab>,
         <https://usegalaxy.eu/published/workflow?id=b14845359b702444>,
@@ -45,7 +61,7 @@ galaxytool:metaphlan a schema1:SoftwareApplication ;
     schema1:keywords "Metagenomics" ;
     schema1:name "metaphlan" ;
     schema1:softwareVersion "4.2.4" ;
-    schema1:url "https://github.com/biobakery/MetaPhlAn" .
+    schema1:url "https://github.com/galaxyproject/tools-iuc/tree/main/tools/metaphlan" .
 
 <https://usegalaxy.eu> a schema1:WebSite .
 

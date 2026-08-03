@@ -1,6 +1,7 @@
 {
   "@context": {
     "bioconda": "https://github.com/bioconda/bioconda-recipes/tree/master/recipes/",
+    "bioschemas": "http://bioschemas.org/",
     "biotools": "https://bio.tools/",
     "brick": "https://brickschema.org/schema/Brick#",
     "csvw": "http://www.w3.org/ns/csvw#",
@@ -37,16 +38,26 @@
   },
   "@graph": [
     {
-      "@id": "https://workflowhub.eu",
-      "@type": "schema1:WebSite"
-    },
-    {
       "@id": "galaxytool:imagej2",
       "@type": "schema1:SoftwareApplication",
+      "bioschemas:output": [
+        "tabular",
+        "txt",
+        "png",
+        "jpg"
+      ],
       "schema1:applicationSubCategory": {
         "@id": "edam:topic_3382"
       },
+      "schema1:codeRepository": "http://fiji.sc",
+      "schema1:dateCreated": "2015-05-05",
       "schema1:description": "ImageJ2 is a new version of ImageJ for the next generation of multidimensionalimage data, with a focus on scientific imaging.",
+      "schema1:encodingFormat": [
+        "tabular",
+        "txt",
+        "png",
+        "jpg"
+      ],
       "schema1:featureList": [
         {
           "@id": "edam:operation_3443"
@@ -84,10 +95,14 @@
       "schema1:keywords": "Imaging",
       "schema1:name": "imagej2",
       "schema1:softwareVersion": "20240614",
-      "schema1:url": "http://fiji.sc"
+      "schema1:url": "https://github.com/bgruening/galaxytools/tree/master/tools/image_processing/imagej2"
     },
     {
       "@id": "https://usegalaxy.eu",
+      "@type": "schema1:WebSite"
+    },
+    {
+      "@id": "https://workflowhub.eu",
       "@type": "schema1:WebSite"
     }
   ]

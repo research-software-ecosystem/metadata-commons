@@ -1,17 +1,26 @@
 @prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
+@prefix bioschemas: <http://bioschemas.org/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
 @prefix schema1: <http://schema.org/> .
 
 galaxytool:unicycler a schema1:SoftwareApplication ;
+    bioschemas:output "bam",
+        "fasta",
+        "gfa1" ;
     schema1:applicationSubCategory edam:data_0925,
         edam:operation_0310,
         edam:topic_0196,
         edam:topic_0622,
         edam:topic_3168,
         edam:topic_3301 ;
+    schema1:codeRepository "https://github.com/rrwick/Unicycler" ;
+    schema1:dateCreated "2017-05-08" ;
     schema1:description "Unicycler is a hybrid assembly pipeline for bacterial genomes." ;
+    schema1:encodingFormat "bam",
+        "fasta",
+        "gfa1" ;
     schema1:featureList edam:operation_0525,
         edam:operation_3436,
         edam:operation_3440 ;
@@ -85,7 +94,7 @@ galaxytool:unicycler a schema1:SoftwareApplication ;
     schema1:keywords "Assembly" ;
     schema1:name "unicycler" ;
     schema1:softwareVersion "@TOOL_VERSION@+galaxy@VERSION_SUFFIX@" ;
-    schema1:url "https://github.com/rrwick/Unicycler" .
+    schema1:url "https://github.com/galaxyproject/tools-iuc/tree/main/tools/unicycler" .
 
 <https://usegalaxy.eu> a schema1:WebSite .
 

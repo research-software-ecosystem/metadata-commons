@@ -1,6 +1,7 @@
 {
   "@context": {
     "bioconda": "https://github.com/bioconda/bioconda-recipes/tree/master/recipes/",
+    "bioschemas": "http://bioschemas.org/",
     "biotools": "https://bio.tools/",
     "brick": "https://brickschema.org/schema/Brick#",
     "csvw": "http://www.w3.org/ns/csvw#",
@@ -37,12 +38,15 @@
   },
   "@graph": [
     {
-      "@id": "https://workflowhub.eu",
-      "@type": "schema1:WebSite"
-    },
-    {
       "@id": "galaxytool:lotus2",
       "@type": "schema1:SoftwareApplication",
+      "bioschemas:output": [
+        "zip",
+        "tabular",
+        "fasta",
+        "newick",
+        "txt"
+      ],
       "schema1:applicationSubCategory": [
         {
           "@id": "edam:topic_3174"
@@ -57,7 +61,16 @@
           "@id": "edam:topic_3697"
         }
       ],
+      "schema1:codeRepository": "https://lotus2.earlham.ac.uk/",
+      "schema1:dateCreated": "2021-05-13",
       "schema1:description": "LotuS2 OTU processing pipeline",
+      "schema1:encodingFormat": [
+        "zip",
+        "tabular",
+        "fasta",
+        "newick",
+        "txt"
+      ],
       "schema1:featureList": [
         {
           "@id": "edam:operation_0253"
@@ -94,10 +107,14 @@
       "schema1:keywords": "Metagenomics",
       "schema1:name": "lotus2",
       "schema1:softwareVersion": "@VERSION@",
-      "schema1:url": "https://lotus2.earlham.ac.uk/"
+      "schema1:url": "https://github.com/EarlhamInst/earlham-galaxytools/tree/main/tools/lotus2"
     },
     {
       "@id": "https://usegalaxy.eu",
+      "@type": "schema1:WebSite"
+    },
+    {
+      "@id": "https://workflowhub.eu",
       "@type": "schema1:WebSite"
     }
   ]

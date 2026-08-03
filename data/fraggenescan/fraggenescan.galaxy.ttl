@@ -1,14 +1,23 @@
 @prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
+@prefix bioschemas: <http://bioschemas.org/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
 @prefix schema1: <http://schema.org/> .
 
 galaxytool:fraggenescan a schema1:SoftwareApplication ;
+    bioschemas:output "fasta",
+        "gff",
+        "tabular" ;
     schema1:applicationSubCategory edam:operation_2403,
         edam:topic_0080,
         edam:topic_3053 ;
+    schema1:codeRepository "https://sourceforge.net/projects/fraggenescan/" ;
+    schema1:dateCreated "2017-09-04" ;
     schema1:description "Tool for finding (fragmented) genes in short read" ;
+    schema1:encodingFormat "fasta",
+        "gff",
+        "tabular" ;
     schema1:featureList edam:operation_2454 ;
     schema1:identifier biotools:fraggenescan,
         bioconda:fraggenescan ;
@@ -33,7 +42,7 @@ galaxytool:fraggenescan a schema1:SoftwareApplication ;
     schema1:keywords "Sequence Analysis" ;
     schema1:name "fraggenescan" ;
     schema1:softwareVersion "@WRAPPER_VERSION@.0" ;
-    schema1:url "https://sourceforge.net/projects/fraggenescan/" .
+    schema1:url "https://github.com/galaxyproject/tools-iuc/tree/main/tools/fraggenescan" .
 
 <https://usegalaxy.eu> a schema1:WebSite .
 

@@ -1,14 +1,21 @@
 @prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
+@prefix bioschemas: <http://bioschemas.org/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
 @prefix schema1: <http://schema.org/> .
 
 galaxytool:biomformat a schema1:SoftwareApplication ;
+    bioschemas:output "biom1",
+        "txt" ;
     schema1:applicationSubCategory edam:operation_2403,
         edam:topic_0080,
         edam:topic_0607 ;
+    schema1:codeRepository "https://github.com/biocore/biom-format" ;
+    schema1:dateCreated "2016-06-07" ;
     schema1:description "The biom-format package provides a command line interface and Python API for working with BIOM files." ;
+    schema1:encodingFormat "biom1",
+        "txt" ;
     schema1:identifier biotools:biomformat,
         bioconda:biom-format ;
     schema1:isPartOf <https://usegalaxy.eu>,
@@ -39,7 +46,7 @@ galaxytool:biomformat a schema1:SoftwareApplication ;
     schema1:keywords "Metagenomics" ;
     schema1:name "biomformat" ;
     schema1:softwareVersion "2.1.17" ;
-    schema1:url "https://github.com/biocore/biom-format" .
+    schema1:url "https://github.com/galaxyproject/tools-iuc/tree/main/tools/biom_format" .
 
 <https://usegalaxy.eu> a schema1:WebSite .
 

@@ -1,14 +1,25 @@
 @prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
+@prefix bioschemas: <http://bioschemas.org/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
 @prefix schema1: <http://schema.org/> .
 
 galaxytool:freebayes a schema1:SoftwareApplication ;
+    bioschemas:output "bam",
+        "bed",
+        "txt",
+        "vcf" ;
     schema1:applicationSubCategory edam:topic_0199,
         edam:topic_0622,
         edam:topic_3325 ;
+    schema1:codeRepository "https://github.com/ekg/freebayes" ;
+    schema1:dateCreated "2017-01-11" ;
     schema1:description "Galaxy Freebayes Bayesian genetic variant detector tool" ;
+    schema1:encodingFormat "bam",
+        "bed",
+        "txt",
+        "vcf" ;
     schema1:featureList edam:operation_2238,
         edam:operation_3227 ;
     schema1:identifier biotools:freebayes,
@@ -470,7 +481,7 @@ galaxytool:freebayes a schema1:SoftwareApplication ;
     schema1:keywords "Variant Analysis" ;
     schema1:name "freebayes" ;
     schema1:softwareVersion "1.3.10" ;
-    schema1:url "https://github.com/ekg/freebayes" .
+    schema1:url "https://github.com/galaxyproject/tools-iuc/tree/main/tools/freebayes" .
 
 <https://usegalaxy.eu> a schema1:WebSite .
 

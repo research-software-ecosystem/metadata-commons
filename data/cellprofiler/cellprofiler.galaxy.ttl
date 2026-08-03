@@ -1,13 +1,17 @@
+@prefix bioschemas: <http://bioschemas.org/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
 @prefix schema1: <http://schema.org/> .
 
 galaxytool:cellprofiler a schema1:SoftwareApplication ;
+    bioschemas:output "txt" ;
     schema1:applicationSubCategory edam:topic_0625,
         edam:topic_3382,
         edam:topic_3518 ;
+    schema1:dateCreated "2020-03-06" ;
     schema1:description "cellProfiler wrapper" ;
+    schema1:encodingFormat "txt" ;
     schema1:featureList edam:operation_3443,
         edam:operation_3799 ;
     schema1:identifier biotools:CellProfiler ;
@@ -20,7 +24,8 @@ galaxytool:cellprofiler a schema1:SoftwareApplication ;
         <https://workflowhub.eu/workflows/41?version=2> ;
     schema1:keywords "Imaging" ;
     schema1:name "cellprofiler" ;
-    schema1:softwareVersion "3.1.9+galaxy@VERSION_SUFFIX@" .
+    schema1:softwareVersion "3.1.9+galaxy@VERSION_SUFFIX@" ;
+    schema1:url "https://github.com/bgruening/galaxytools/tree/master/tools" .
 
 <https://usegalaxy.eu> a schema1:WebSite .
 

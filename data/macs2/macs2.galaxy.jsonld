@@ -1,6 +1,7 @@
 {
   "@context": {
     "bioconda": "https://github.com/bioconda/bioconda-recipes/tree/master/recipes/",
+    "bioschemas": "http://bioschemas.org/",
     "biotools": "https://bio.tools/",
     "brick": "https://brickschema.org/schema/Brick#",
     "csvw": "http://www.w3.org/ns/csvw#",
@@ -37,12 +38,33 @@
   },
   "@graph": [
     {
+      "@id": "https://usegalaxy.org",
+      "@type": "schema1:WebSite"
+    },
+    {
       "@id": "https://usegalaxy.org.au",
+      "@type": "schema1:WebSite"
+    },
+    {
+      "@id": "https://workflowhub.eu",
+      "@type": "schema1:WebSite"
+    },
+    {
+      "@id": "https://usegalaxy.eu",
       "@type": "schema1:WebSite"
     },
     {
       "@id": "galaxytool:macs2",
       "@type": "schema1:SoftwareApplication",
+      "bioschemas:output": [
+        "interval",
+        "bedgraph",
+        "bed",
+        "tabular",
+        "pdf",
+        "html",
+        "txt"
+      ],
       "schema1:applicationSubCategory": [
         {
           "@id": "edam:topic_3169"
@@ -54,7 +76,18 @@
           "@id": "edam:topic_0749"
         }
       ],
+      "schema1:codeRepository": "https://github.com/taoliu/MACS",
+      "schema1:dateCreated": "2014-11-12",
       "schema1:description": "MACS - Model-based Analysis of ChIP-Seq",
+      "schema1:encodingFormat": [
+        "interval",
+        "bedgraph",
+        "bed",
+        "tabular",
+        "pdf",
+        "html",
+        "txt"
+      ],
       "schema1:featureList": [
         {
           "@id": "edam:operation_3222"
@@ -88,6 +121,12 @@
           "@id": "workflowhub:1506?version=2"
         },
         {
+          "@id": "workflowhub:397?version=19"
+        },
+        {
+          "@id": "workflowhub:398?version=20"
+        },
+        {
           "@id": "workflowhub:1620?version=1"
         },
         {
@@ -103,10 +142,22 @@
           "@id": "workflowhub:395?version=20"
         },
         {
-          "@id": "https://usegalaxy.eu/published/workflow?id=c3d864aa07d08abe"
+          "@id": "workflowhub:399?version=22"
+        },
+        {
+          "@id": "https://usegalaxy.eu/published/workflow?id=eed913b17606476a"
         },
         {
           "@id": "https://usegalaxy.eu"
+        },
+        {
+          "@id": "https://usegalaxy.eu/published/workflow?id=c3d864aa07d08abe"
+        },
+        {
+          "@id": "https://usegalaxy.eu/published/workflow?id=9c4f1598621f8266"
+        },
+        {
+          "@id": "https://usegalaxy.eu/published/workflow?id=2b892adf8f04473d"
         },
         {
           "@id": "https://usegalaxy.eu/published/workflow?id=063f17b236f25aef"
@@ -502,10 +553,19 @@
           "@id": "https://usegalaxy.eu/published/workflow?id=3828466d773e508c"
         },
         {
-          "@id": "https://usegalaxy.org/published/workflow?id=39704e84bc344d3f"
+          "@id": "https://usegalaxy.org/published/workflow?id=625878d4624db739"
         },
         {
           "@id": "https://usegalaxy.org"
+        },
+        {
+          "@id": "https://usegalaxy.org/published/workflow?id=19804053b3f4d01c"
+        },
+        {
+          "@id": "https://usegalaxy.org/published/workflow?id=a7297c6a6210da26"
+        },
+        {
+          "@id": "https://usegalaxy.org/published/workflow?id=39704e84bc344d3f"
         },
         {
           "@id": "https://usegalaxy.org/published/workflow?id=cc4cbc8c0ff4649b"
@@ -1906,10 +1966,16 @@
           "@id": "https://usegalaxy.org/published/workflow?id=07739fbbd53755f6"
         },
         {
-          "@id": "https://usegalaxy.org.au/published/workflow?id=45ba7bdc9b9c5142"
+          "@id": "https://usegalaxy.org.au/published/workflow?id=c098398bf23764fe"
         },
         {
           "@id": "https://usegalaxy.org.au"
+        },
+        {
+          "@id": "https://usegalaxy.org.au/published/workflow?id=54fbf73416a9d14e"
+        },
+        {
+          "@id": "https://usegalaxy.org.au/published/workflow?id=45ba7bdc9b9c5142"
         },
         {
           "@id": "https://usegalaxy.org.au/published/workflow?id=f9864fc20528668f"
@@ -2074,19 +2140,7 @@
       ],
       "schema1:name": "macs2",
       "schema1:softwareVersion": "2.2.9.1",
-      "schema1:url": "https://github.com/taoliu/MACS"
-    },
-    {
-      "@id": "https://usegalaxy.eu",
-      "@type": "schema1:WebSite"
-    },
-    {
-      "@id": "https://usegalaxy.org",
-      "@type": "schema1:WebSite"
-    },
-    {
-      "@id": "https://workflowhub.eu",
-      "@type": "schema1:WebSite"
+      "schema1:url": "https://github.com/galaxyproject/tools-iuc/tree/main/tools/macs2"
     }
   ]
 }

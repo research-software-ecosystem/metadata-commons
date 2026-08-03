@@ -1,13 +1,22 @@
 @prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
+@prefix bioschemas: <http://bioschemas.org/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
 @prefix schema1: <http://schema.org/> .
 
 galaxytool:mafft a schema1:SoftwareApplication ;
+    bioschemas:output "fasta",
+        "tabular",
+        "txt" ;
     schema1:applicationSubCategory edam:operation_2403,
         edam:topic_0080 ;
+    schema1:codeRepository "https://mafft.cbrc.jp/alignment/software/" ;
+    schema1:dateCreated "2015-06-16" ;
     schema1:description "Multiple alignment program for amino acid or nucleotide sequences" ;
+    schema1:encodingFormat "fasta",
+        "tabular",
+        "txt" ;
     schema1:featureList edam:operation_0492 ;
     schema1:identifier biotools:MAFFT,
         bioconda:mafft ;
@@ -85,7 +94,7 @@ galaxytool:mafft a schema1:SoftwareApplication ;
     schema1:keywords "RNA" ;
     schema1:name "mafft" ;
     schema1:softwareVersion "7.526" ;
-    schema1:url "https://mafft.cbrc.jp/alignment/software/" .
+    schema1:url "https://github.com/bgruening/galaxytools/tree/master/tools/mafft" .
 
 <https://usegalaxy.eu> a schema1:WebSite .
 

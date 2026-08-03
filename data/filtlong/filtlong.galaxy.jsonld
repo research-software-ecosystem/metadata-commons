@@ -1,6 +1,7 @@
 {
   "@context": {
     "bioconda": "https://github.com/bioconda/bioconda-recipes/tree/master/recipes/",
+    "bioschemas": "http://bioschemas.org/",
     "biotools": "https://bio.tools/",
     "brick": "https://brickschema.org/schema/Brick#",
     "csvw": "http://www.w3.org/ns/csvw#",
@@ -37,11 +38,15 @@
   },
   "@graph": [
     {
+      "@id": "https://usegalaxy.org",
+      "@type": "schema1:WebSite"
+    },
+    {
       "@id": "https://usegalaxy.org.au",
       "@type": "schema1:WebSite"
     },
     {
-      "@id": "https://usegalaxy.org",
+      "@id": "https://workflowhub.eu",
       "@type": "schema1:WebSite"
     },
     {
@@ -51,7 +56,11 @@
     {
       "@id": "galaxytool:filtlong",
       "@type": "schema1:SoftwareApplication",
+      "bioschemas:output": "fastqsanger",
+      "schema1:codeRepository": "https://github.com/rrwick/Filtlong",
+      "schema1:dateCreated": "2018-09-14",
       "schema1:description": "Filtlong - Filtering long reads by quality",
+      "schema1:encodingFormat": "fastqsanger",
       "schema1:featureList": {
         "@id": "edam:operation_3218"
       },
@@ -209,11 +218,7 @@
       ],
       "schema1:name": "filtlong",
       "schema1:softwareVersion": "0.3.1",
-      "schema1:url": "https://github.com/rrwick/Filtlong"
-    },
-    {
-      "@id": "https://workflowhub.eu",
-      "@type": "schema1:WebSite"
+      "schema1:url": "https://github.com/galaxyproject/tools-iuc/tree/main/tools/filtlong"
     }
   ]
 }

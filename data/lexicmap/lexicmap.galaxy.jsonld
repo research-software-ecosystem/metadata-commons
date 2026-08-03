@@ -1,6 +1,7 @@
 {
   "@context": {
     "bioconda": "https://github.com/bioconda/bioconda-recipes/tree/master/recipes/",
+    "bioschemas": "http://bioschemas.org/",
     "biotools": "https://bio.tools/",
     "brick": "https://brickschema.org/schema/Brick#",
     "csvw": "http://www.w3.org/ns/csvw#",
@@ -37,7 +38,19 @@
   },
   "@id": "galaxytool:lexicmap",
   "@type": "schema1:SoftwareApplication",
+  "bioschemas:output": [
+    "lexicmap_index",
+    "tsv",
+    "tabular"
+  ],
+  "schema1:codeRepository": "https://github.com/shenwei356/LexicMap",
+  "schema1:dateCreated": "2025-06-16",
   "schema1:description": "LexicMap is a nucleotide sequence alignment tool for efficiently querying genomes.",
+  "schema1:encodingFormat": [
+    "lexicmap_index",
+    "tsv",
+    "tabular"
+  ],
   "schema1:identifier": [
     {
       "@id": "biotools:lexicmap"
@@ -49,5 +62,5 @@
   "schema1:keywords": "Next Gen Mappers",
   "schema1:name": "lexicmap",
   "schema1:softwareVersion": "0.9.0",
-  "schema1:url": "https://github.com/shenwei356/LexicMap"
+  "schema1:url": "https://github.com/galaxyproject/tools-iuc/tree/main/tools/lexicmap"
 }

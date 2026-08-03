@@ -1,14 +1,23 @@
 @prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
+@prefix bioschemas: <http://bioschemas.org/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
 @prefix schema1: <http://schema.org/> .
 
 galaxytool:msstatstmt a schema1:SoftwareApplication ;
+    bioschemas:output "pdf",
+        "tabular",
+        "txt" ;
     schema1:applicationSubCategory edam:topic_0108,
         edam:topic_0121,
         edam:topic_3520 ;
+    schema1:codeRepository "https://github.com/MeenaChoi/MSstats" ;
+    schema1:dateCreated "2020-07-25" ;
     schema1:description "MSstats tool for analyzing mass spectrometry proteomic datasets" ;
+    schema1:encodingFormat "pdf",
+        "tabular",
+        "txt" ;
     schema1:featureList edam:operation_3643,
         edam:operation_3741,
         edam:operation_3860 ;
@@ -23,7 +32,7 @@ galaxytool:msstatstmt a schema1:SoftwareApplication ;
     schema1:keywords "Proteomics" ;
     schema1:name "msstatstmt" ;
     schema1:softwareVersion "@TOOL_VERSION@+galaxy@VERSION_SUFFIX@" ;
-    schema1:url "https://github.com/MeenaChoi/MSstats" .
+    schema1:url "https://github.com/galaxyproteomics/tools-galaxyp/tree/master/tools/msstats" .
 
 <https://usegalaxy.org.au> a schema1:WebSite .
 

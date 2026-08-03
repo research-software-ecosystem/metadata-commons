@@ -1,16 +1,25 @@
 @prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
+@prefix bioschemas: <http://bioschemas.org/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
 @prefix schema1: <http://schema.org/> .
 
 galaxytool:smudgeplot a schema1:SoftwareApplication ;
+    bioschemas:output "png",
+        "tabular",
+        "txt" ;
     schema1:applicationSubCategory edam:data_0925,
         edam:operation_0310,
         edam:topic_0196,
         edam:topic_0199,
         edam:topic_3315 ;
+    schema1:codeRepository "https://github.com/KamilSJaron/smudgeplot" ;
+    schema1:dateCreated "2022-07-01" ;
     schema1:description "Inference of ploidy and heterozygosity structure using whole genome sequencing" ;
+    schema1:encodingFormat "png",
+        "tabular",
+        "txt" ;
     schema1:featureList edam:operation_3192,
         edam:operation_3196,
         edam:operation_3472 ;
@@ -27,7 +36,7 @@ galaxytool:smudgeplot a schema1:SoftwareApplication ;
     schema1:keywords "Assembly" ;
     schema1:name "smudgeplot" ;
     schema1:softwareVersion "0.2.5" ;
-    schema1:url "https://github.com/KamilSJaron/smudgeplot" .
+    schema1:url "https://github.com/galaxyproject/tools-iuc/tree/main/tools/smudgeplot" .
 
 <https://usegalaxy.eu> a schema1:WebSite .
 

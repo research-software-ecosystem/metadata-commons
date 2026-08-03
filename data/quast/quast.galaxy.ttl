@@ -1,14 +1,27 @@
 @prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
+@prefix bioschemas: <http://bioschemas.org/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
 @prefix schema1: <http://schema.org/> .
 
 galaxytool:quast a schema1:SoftwareApplication ;
+    bioschemas:output "html",
+        "pdf",
+        "png",
+        "tabular",
+        "txt" ;
     schema1:applicationSubCategory edam:data_0925,
         edam:operation_0310,
         edam:topic_0196 ;
+    schema1:codeRepository "http://quast.bioinf.spbau.ru/" ;
+    schema1:dateCreated "2016-09-07" ;
     schema1:description "Quast (Quality ASsessment Tool) evaluates genome assemblies." ;
+    schema1:encodingFormat "html",
+        "pdf",
+        "png",
+        "tabular",
+        "txt" ;
     schema1:featureList edam:operation_0337,
         edam:operation_3180 ;
     schema1:identifier biotools:quast,
@@ -133,6 +146,7 @@ galaxytool:quast a schema1:SoftwareApplication ;
         <https://usegalaxy.org.au/published/workflow?id=d957bfeb3cd03db0>,
         <https://usegalaxy.org.au/published/workflow?id=df11f09771e73e04>,
         <https://usegalaxy.org.au/published/workflow?id=ee7a1615f187391d>,
+        <https://usegalaxy.org.au/published/workflow?id=f00593ec2de66996>,
         <https://usegalaxy.org.au/published/workflow?id=f01be6a7685ac476>,
         <https://usegalaxy.org.au/published/workflow?id=f25a05070bf97ded>,
         <https://usegalaxy.org.au/published/workflow?id=fb0986a952c35e0a>,
@@ -167,6 +181,8 @@ galaxytool:quast a schema1:SoftwareApplication ;
         <https://usegalaxy.org/published/workflow?id=87045af52d500e91>,
         <https://usegalaxy.org/published/workflow?id=88bc9aa7090875c1>,
         <https://usegalaxy.org/published/workflow?id=8eb22336826a0f75>,
+        <https://usegalaxy.org/published/workflow?id=97b5e2bc469d2d68>,
+        <https://usegalaxy.org/published/workflow?id=9928c3afe47239a3>,
         <https://usegalaxy.org/published/workflow?id=9ac1e4efe310b3b3>,
         <https://usegalaxy.org/published/workflow?id=9c0fbd9f51a9857f>,
         <https://usegalaxy.org/published/workflow?id=9e5c5ddb60a24889>,
@@ -203,6 +219,7 @@ galaxytool:quast a schema1:SoftwareApplication ;
         <https://workflowhub.eu/workflows/1646?version=1>,
         <https://workflowhub.eu/workflows/1882?version=3>,
         <https://workflowhub.eu/workflows/2011?version=1>,
+        <https://workflowhub.eu/workflows/2024?version=5>,
         <https://workflowhub.eu/workflows/225?version=1>,
         <https://workflowhub.eu/workflows/229?version=1>,
         <https://workflowhub.eu/workflows/403?version=11>,
@@ -211,7 +228,7 @@ galaxytool:quast a schema1:SoftwareApplication ;
     schema1:keywords "Assembly" ;
     schema1:name "quast" ;
     schema1:softwareVersion "5.3.0" ;
-    schema1:url "http://quast.bioinf.spbau.ru/" .
+    schema1:url "https://github.com/galaxyproject/tools-iuc/tree/main/tools/quast" .
 
 <https://usegalaxy.eu> a schema1:WebSite .
 

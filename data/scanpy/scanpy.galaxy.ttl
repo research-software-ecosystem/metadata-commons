@@ -1,15 +1,34 @@
 @prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
+@prefix bioschemas: <http://bioschemas.org/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
 @prefix schema1: <http://schema.org/> .
 
 galaxytool:scanpy a schema1:SoftwareApplication ;
+    bioschemas:output "h5ad",
+        "json",
+        "pdf",
+        "png",
+        "svg",
+        "tabular",
+        "txt",
+        "vitessce.json" ;
     schema1:applicationSubCategory edam:topic_0203,
         edam:topic_2229,
         edam:topic_3053,
         edam:topic_4028 ;
+    schema1:codeRepository "https://scanpy.readthedocs.io" ;
+    schema1:dateCreated "2019-03-04" ;
     schema1:description "Scanpy – Single-Cell Analysis in Python" ;
+    schema1:encodingFormat "h5ad",
+        "json",
+        "pdf",
+        "png",
+        "svg",
+        "tabular",
+        "txt",
+        "vitessce.json" ;
     schema1:featureList edam:operation_0313,
         edam:operation_2939,
         edam:operation_3742 ;
@@ -20,6 +39,7 @@ galaxytool:scanpy a schema1:SoftwareApplication ;
         <https://usegalaxy.eu/published/workflow?id=171d6fca2c3339e2>,
         <https://usegalaxy.eu/published/workflow?id=21315ffd2df2f159>,
         <https://usegalaxy.eu/published/workflow?id=2e77db54ec220cc2>,
+        <https://usegalaxy.eu/published/workflow?id=345a6ac6db0951cb>,
         <https://usegalaxy.eu/published/workflow?id=37e51e215684bdcc>,
         <https://usegalaxy.eu/published/workflow?id=4756053b2596b6cf>,
         <https://usegalaxy.eu/published/workflow?id=65ea2dd28241155e>,
@@ -67,6 +87,7 @@ galaxytool:scanpy a schema1:SoftwareApplication ;
         <https://workflowhub.eu/workflows/1556?version=1>,
         <https://workflowhub.eu/workflows/1574?version=1>,
         <https://workflowhub.eu/workflows/2174?version=5>,
+        <https://workflowhub.eu/workflows/2220?version=1>,
         <https://workflowhub.eu/workflows/467?version=4>,
         <https://workflowhub.eu/workflows/468?version=3> ;
     schema1:keywords "Single Cell",
@@ -74,7 +95,7 @@ galaxytool:scanpy a schema1:SoftwareApplication ;
         "Transcriptomics" ;
     schema1:name "scanpy" ;
     schema1:softwareVersion "1.11.5" ;
-    schema1:url "https://scanpy.readthedocs.io" .
+    schema1:url "https://github.com/galaxyproject/tools-iuc/tree/main/tools/scanpy" .
 
 <https://usegalaxy.eu> a schema1:WebSite .
 

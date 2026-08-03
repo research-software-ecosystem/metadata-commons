@@ -1,12 +1,21 @@
 @prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
+@prefix bioschemas: <http://bioschemas.org/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
 @prefix schema1: <http://schema.org/> .
 
 galaxytool:seqtk a schema1:SoftwareApplication ;
+    bioschemas:output "auto",
+        "bed",
+        "tabular" ;
     schema1:applicationSubCategory edam:topic_3071 ;
+    schema1:codeRepository "https://github.com/lh3/seqtk" ;
+    schema1:dateCreated "2015-01-13" ;
     schema1:description "Toolkit for processing sequences in FASTA/Q formats" ;
+    schema1:encodingFormat "auto",
+        "bed",
+        "tabular" ;
     schema1:featureList edam:operation_2121,
         edam:operation_2409,
         edam:operation_2427 ;
@@ -81,7 +90,7 @@ galaxytool:seqtk a schema1:SoftwareApplication ;
     schema1:keywords "Sequence Analysis" ;
     schema1:name "seqtk" ;
     schema1:softwareVersion "1.5" ;
-    schema1:url "https://github.com/lh3/seqtk" .
+    schema1:url "https://github.com/galaxyproject/tools-iuc/tree/main/tools/seqtk" .
 
 <https://usegalaxy.eu> a schema1:WebSite .
 

@@ -1,6 +1,7 @@
 {
   "@context": {
     "bioconda": "https://github.com/bioconda/bioconda-recipes/tree/master/recipes/",
+    "bioschemas": "http://bioschemas.org/",
     "biotools": "https://bio.tools/",
     "brick": "https://brickschema.org/schema/Brick#",
     "csvw": "http://www.w3.org/ns/csvw#",
@@ -37,12 +38,26 @@
   },
   "@graph": [
     {
+      "@id": "https://workflowhub.eu",
+      "@type": "schema1:WebSite"
+    },
+    {
       "@id": "galaxytool:feelnc",
       "@type": "schema1:SoftwareApplication",
+      "bioschemas:output": [
+        "gtf",
+        "txt"
+      ],
       "schema1:applicationSubCategory": {
         "@id": "edam:topic_0659"
       },
+      "schema1:codeRepository": "https://github.com/tderrien/FEELnc",
+      "schema1:dateCreated": "2018-03-27",
       "schema1:description": "Galaxy wrapper for FEELnc",
+      "schema1:encodingFormat": [
+        "gtf",
+        "txt"
+      ],
       "schema1:featureList": [
         {
           "@id": "edam:data_2018"
@@ -79,11 +94,7 @@
       "schema1:keywords": "Sequence Analysis",
       "schema1:name": "feelnc",
       "schema1:softwareVersion": "@TOOL_VERSION@+galaxy@VERSION_SUFFIX@",
-      "schema1:url": "https://github.com/tderrien/FEELnc"
-    },
-    {
-      "@id": "https://workflowhub.eu",
-      "@type": "schema1:WebSite"
+      "schema1:url": "https://github.com/galaxyproject/tools-iuc/tree/main/tools/feelnc"
     }
   ]
 }

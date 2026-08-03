@@ -1,13 +1,18 @@
 @prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
+@prefix bioschemas: <http://bioschemas.org/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
 @prefix schema1: <http://schema.org/> .
 
 galaxytool:minimap2 a schema1:SoftwareApplication ;
+    bioschemas:output "bam" ;
     schema1:applicationSubCategory edam:operation_2429,
         edam:topic_0102 ;
+    schema1:codeRepository "https://github.com/lh3/minimap2" ;
+    schema1:dateCreated "2017-11-03" ;
     schema1:description "A fast pairwise aligner for genomic and spliced nucleotide sequences" ;
+    schema1:encodingFormat "bam" ;
     schema1:featureList edam:operation_0491 ;
     schema1:identifier biotools:minimap2,
         bioconda:minimap2 ;
@@ -256,6 +261,7 @@ galaxytool:minimap2 a schema1:SoftwareApplication ;
         <https://usegalaxy.org/published/workflow?id=49c9e8161a46667f>,
         <https://usegalaxy.org/published/workflow?id=4bf38f5b45faa8a1>,
         <https://usegalaxy.org/published/workflow?id=574e42683dc3961b>,
+        <https://usegalaxy.org/published/workflow?id=5e7730d2f0d782ba>,
         <https://usegalaxy.org/published/workflow?id=5edabfc62f58d8cf>,
         <https://usegalaxy.org/published/workflow?id=63adc811e3ae529d>,
         <https://usegalaxy.org/published/workflow?id=65ccf48b7872e36c>,
@@ -274,6 +280,7 @@ galaxytool:minimap2 a schema1:SoftwareApplication ;
         <https://usegalaxy.org/published/workflow?id=8ccb42012dcb5db2>,
         <https://usegalaxy.org/published/workflow?id=8e9a94fe8e3fef9d>,
         <https://usegalaxy.org/published/workflow?id=8ec186ed3f0470e2>,
+        <https://usegalaxy.org/published/workflow?id=8ec448150ba0d11e>,
         <https://usegalaxy.org/published/workflow?id=950c7245a6c3f6e9>,
         <https://usegalaxy.org/published/workflow?id=953d9cbe05e632a8>,
         <https://usegalaxy.org/published/workflow?id=96bd0007dceec123>,
@@ -327,6 +334,7 @@ galaxytool:minimap2 a schema1:SoftwareApplication ;
         <https://workflowhub.eu/workflows/1616?version=1>,
         <https://workflowhub.eu/workflows/1641?version=1>,
         <https://workflowhub.eu/workflows/1741?version=1>,
+        <https://workflowhub.eu/workflows/2027?version=5>,
         <https://workflowhub.eu/workflows/227?version=1>,
         <https://workflowhub.eu/workflows/228?version=1>,
         <https://workflowhub.eu/workflows/237?version=2>,
@@ -343,7 +351,7 @@ galaxytool:minimap2 a schema1:SoftwareApplication ;
     schema1:keywords "Next Gen Mappers" ;
     schema1:name "minimap2" ;
     schema1:softwareVersion "2.31" ;
-    schema1:url "https://github.com/lh3/minimap2" .
+    schema1:url "https://github.com/galaxyproject/tools-iuc/tree/main/tools/minimap2" .
 
 <https://usegalaxy.eu> a schema1:WebSite .
 

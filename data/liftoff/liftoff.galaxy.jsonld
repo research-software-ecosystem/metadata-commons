@@ -1,6 +1,7 @@
 {
   "@context": {
     "bioconda": "https://github.com/bioconda/bioconda-recipes/tree/master/recipes/",
+    "bioschemas": "http://bioschemas.org/",
     "biotools": "https://bio.tools/",
     "brick": "https://brickschema.org/schema/Brick#",
     "csvw": "http://www.w3.org/ns/csvw#",
@@ -37,12 +38,12 @@
   },
   "@graph": [
     {
-      "@id": "https://usegalaxy.org",
-      "@type": "schema1:WebSite"
-    },
-    {
       "@id": "galaxytool:liftoff",
       "@type": "schema1:SoftwareApplication",
+      "bioschemas:output": [
+        "gff3",
+        "txt"
+      ],
       "schema1:applicationSubCategory": [
         {
           "@id": "edam:topic_3512"
@@ -69,7 +70,13 @@
           "@id": "edam:topic_3794"
         }
       ],
+      "schema1:codeRepository": "https://github.com/agshumate/Liftoff",
+      "schema1:dateCreated": "2026-02-02",
       "schema1:description": "Lift gene annotations between genome assemblies using Liftoff",
+      "schema1:encodingFormat": [
+        "gff3",
+        "txt"
+      ],
       "schema1:featureList": [
         {
           "@id": "edam:operation_0525"
@@ -106,7 +113,11 @@
       "schema1:keywords": "Sequence Analysis",
       "schema1:name": "liftoff",
       "schema1:softwareVersion": "@TOOL_VERSION@+galaxy@VERSION_SUFFIX@",
-      "schema1:url": "https://github.com/agshumate/Liftoff"
+      "schema1:url": "https://github.com/galaxyproject/tools-iuc"
+    },
+    {
+      "@id": "https://usegalaxy.org",
+      "@type": "schema1:WebSite"
     }
   ]
 }

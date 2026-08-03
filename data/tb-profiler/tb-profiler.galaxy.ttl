@@ -1,11 +1,28 @@
 @prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
+@prefix bioschemas: <http://bioschemas.org/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
 @prefix schema1: <http://schema.org/> .
 
 galaxytool:tb-profiler a schema1:SoftwareApplication ;
+    bioschemas:output "bam",
+        "csv",
+        "json",
+        "pdf",
+        "tabular",
+        "txt",
+        "vcf" ;
+    schema1:codeRepository "https://github.com/jodyphelan/TBProfiler" ;
+    schema1:dateCreated "2019-04-02" ;
     schema1:description "Processes M. tuberculosis sequence data to infer strain type and identify known drug resistance markers." ;
+    schema1:encodingFormat "bam",
+        "csv",
+        "json",
+        "pdf",
+        "tabular",
+        "txt",
+        "vcf" ;
     schema1:featureList edam:operation_3482 ;
     schema1:identifier biotools:tb-profiler,
         bioconda:tb-profiler ;
@@ -30,7 +47,7 @@ galaxytool:tb-profiler a schema1:SoftwareApplication ;
     schema1:keywords "Sequence Analysis" ;
     schema1:name "tb-profiler" ;
     schema1:softwareVersion "6.6.5" ;
-    schema1:url "https://github.com/jodyphelan/TBProfiler" .
+    schema1:url "https://github.com/galaxyproject/tools-iuc/tree/main/tools/tb-profiler" .
 
 <https://usegalaxy.eu> a schema1:WebSite .
 

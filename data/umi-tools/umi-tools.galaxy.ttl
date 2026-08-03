@@ -1,13 +1,22 @@
 @prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
+@prefix bioschemas: <http://bioschemas.org/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
 @prefix schema1: <http://schema.org/> .
 
 galaxytool:umi-tools a schema1:SoftwareApplication ;
+    bioschemas:output "bam",
+        "html",
+        "tabular" ;
     schema1:applicationSubCategory edam:topic_0160,
         edam:topic_3393 ;
+    schema1:codeRepository "https://github.com/CGATOxford/UMI-tools" ;
+    schema1:dateCreated "2017-08-09" ;
     schema1:description "UMI-tools extract - Extract UMIs from fastq" ;
+    schema1:encodingFormat "bam",
+        "html",
+        "tabular" ;
     schema1:featureList edam:operation_3218 ;
     schema1:identifier biotools:umi-tools,
         bioconda:umi_tools ;
@@ -49,7 +58,7 @@ galaxytool:umi-tools a schema1:SoftwareApplication ;
         "Transcriptomics" ;
     schema1:name "umi-tools" ;
     schema1:softwareVersion "1.1.6" ;
-    schema1:url "https://github.com/CGATOxford/UMI-tools" .
+    schema1:url "https://github.com/galaxyproject/tools-iuc/tree/main/tools/umi_tools" .
 
 <https://usegalaxy.eu> a schema1:WebSite .
 

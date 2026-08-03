@@ -1,11 +1,28 @@
+@prefix bioschemas: <http://bioschemas.org/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
 @prefix schema1: <http://schema.org/> .
 
 galaxytool:funannotate a schema1:SoftwareApplication ;
+    bioschemas:output "fasta",
+        "genbank",
+        "gff3",
+        "html",
+        "json",
+        "tabular",
+        "txt" ;
     schema1:applicationSubCategory edam:topic_0622 ;
+    schema1:codeRepository "https://funannotate.readthedocs.io" ;
+    schema1:dateCreated "2021-08-26" ;
     schema1:description "Funannotate is a genome prediction, annotation, and comparison software package." ;
+    schema1:encodingFormat "fasta",
+        "genbank",
+        "gff3",
+        "html",
+        "json",
+        "tabular",
+        "txt" ;
     schema1:featureList edam:operation_0362,
         edam:topic_0222 ;
     schema1:identifier biotools:funannotate ;
@@ -30,7 +47,7 @@ galaxytool:funannotate a schema1:SoftwareApplication ;
     schema1:keywords "Genome annotation" ;
     schema1:name "funannotate" ;
     schema1:softwareVersion "1.8.17" ;
-    schema1:url "https://funannotate.readthedocs.io" .
+    schema1:url "https://github.com/galaxyproject/tools-iuc/tree/main/tools/funannotate" .
 
 <https://usegalaxy.cz> a schema1:WebSite .
 

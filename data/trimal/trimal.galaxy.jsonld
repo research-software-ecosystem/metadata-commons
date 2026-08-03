@@ -1,6 +1,7 @@
 {
   "@context": {
     "bioconda": "https://github.com/bioconda/bioconda-recipes/tree/master/recipes/",
+    "bioschemas": "http://bioschemas.org/",
     "biotools": "https://bio.tools/",
     "brick": "https://brickschema.org/schema/Brick#",
     "csvw": "http://www.w3.org/ns/csvw#",
@@ -37,12 +38,12 @@
   },
   "@graph": [
     {
-      "@id": "https://workflowhub.eu",
-      "@type": "schema1:WebSite"
-    },
-    {
       "@id": "galaxytool:trimal",
       "@type": "schema1:SoftwareApplication",
+      "bioschemas:output": [
+        "html",
+        "txt"
+      ],
       "schema1:applicationSubCategory": [
         {
           "@id": "edam:operation_2403"
@@ -57,7 +58,13 @@
           "@id": "edam:topic_0160"
         }
       ],
+      "schema1:codeRepository": "https://trimal.readthedocs.io",
+      "schema1:dateCreated": "2024-10-02",
       "schema1:description": "Tool for automated alignment trimming",
+      "schema1:encodingFormat": [
+        "html",
+        "txt"
+      ],
       "schema1:featureList": {
         "@id": "edam:operation_0492"
       },
@@ -119,10 +126,14 @@
       ],
       "schema1:name": "trimal",
       "schema1:softwareVersion": "@TOOL_VERSION@+galaxy@VERSION_SUFFIX@",
-      "schema1:url": "https://trimal.readthedocs.io"
+      "schema1:url": "https://github.com/galaxyproject/tools-iuc/tree/main/tools/trimal"
     },
     {
       "@id": "https://usegalaxy.eu",
+      "@type": "schema1:WebSite"
+    },
+    {
+      "@id": "https://workflowhub.eu",
       "@type": "schema1:WebSite"
     },
     {

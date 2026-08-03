@@ -1,10 +1,15 @@
 @prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
+@prefix bioschemas: <http://bioschemas.org/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
 @prefix schema1: <http://schema.org/> .
 
 galaxytool:plasmidfinder a schema1:SoftwareApplication ;
+    bioschemas:output "fasta",
+        "json",
+        "tabular",
+        "txt" ;
     schema1:applicationSubCategory edam:data_0925,
         edam:operation_0310,
         edam:operation_2429,
@@ -12,7 +17,13 @@ galaxytool:plasmidfinder a schema1:SoftwareApplication ;
         edam:topic_0196,
         edam:topic_0632,
         edam:topic_3673 ;
+    schema1:codeRepository "https://bitbucket.org/genomicepidemiology/plasmidfinder/src/master/" ;
+    schema1:dateCreated "2022-09-19" ;
     schema1:description "Identify plasmids in total or partial sequenced isolates of bacteria." ;
+    schema1:encodingFormat "fasta",
+        "json",
+        "tabular",
+        "txt" ;
     schema1:featureList edam:operation_0525,
         edam:operation_3216,
         edam:operation_3440,
@@ -58,7 +69,7 @@ galaxytool:plasmidfinder a schema1:SoftwareApplication ;
     schema1:keywords "Sequence Analysis" ;
     schema1:name "plasmidfinder" ;
     schema1:softwareVersion "2.1.6" ;
-    schema1:url "https://bitbucket.org/genomicepidemiology/plasmidfinder/src/master/" .
+    schema1:url "https://github.com/galaxyproject/tools-iuc/tree/main/tools/plasmidfinder" .
 
 <https://usegalaxy.eu> a schema1:WebSite .
 

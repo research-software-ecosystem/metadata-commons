@@ -1,15 +1,24 @@
 @prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
+@prefix bioschemas: <http://bioschemas.org/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
 @prefix schema1: <http://schema.org/> .
 
 galaxytool:hmmer3 a schema1:SoftwareApplication ;
+    bioschemas:output "fasta",
+        "hmm3",
+        "stockholm" ;
     schema1:applicationSubCategory edam:operation_2403,
         edam:topic_0080,
         edam:topic_0160,
         edam:topic_0623 ;
+    schema1:codeRepository "http://hmmer.org/" ;
+    schema1:dateCreated "2015-02-16" ;
     schema1:description "HMMER is used for searching sequence databases for homologs of proteinsequences, and for making protein sequence alignments. It implementsmethods using probabilistic models called profile hidden Markov models(profile HMMs)." ;
+    schema1:encodingFormat "fasta",
+        "hmm3",
+        "stockholm" ;
     schema1:featureList edam:operation_0230,
         edam:operation_0296,
         edam:operation_0336,
@@ -53,7 +62,7 @@ galaxytool:hmmer3 a schema1:SoftwareApplication ;
     schema1:keywords "Sequence Analysis" ;
     schema1:name "hmmer3" ;
     schema1:softwareVersion "3.4" ;
-    schema1:url "http://hmmer.org/" .
+    schema1:url "https://github.com/galaxyproject/tools-iuc/tree/main/tools/hmmer3" .
 
 <https://usegalaxy.eu> a schema1:WebSite .
 

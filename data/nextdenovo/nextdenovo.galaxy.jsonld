@@ -1,6 +1,7 @@
 {
   "@context": {
     "bioconda": "https://github.com/bioconda/bioconda-recipes/tree/master/recipes/",
+    "bioschemas": "http://bioschemas.org/",
     "biotools": "https://bio.tools/",
     "brick": "https://brickschema.org/schema/Brick#",
     "csvw": "http://www.w3.org/ns/csvw#",
@@ -37,8 +38,13 @@
   },
   "@graph": [
     {
+      "@id": "https://workflowhub.eu",
+      "@type": "schema1:WebSite"
+    },
+    {
       "@id": "galaxytool:nextdenovo",
       "@type": "schema1:SoftwareApplication",
+      "bioschemas:output": "txt",
       "schema1:applicationSubCategory": [
         {
           "@id": "edam:topic_3168"
@@ -53,7 +59,10 @@
           "@id": "edam:topic_0196"
         }
       ],
+      "schema1:codeRepository": "https://github.com/Nextomics/NextDenovo",
+      "schema1:dateCreated": "2023-02-09",
       "schema1:description": "String graph-based de novo assembler for long reads",
+      "schema1:encodingFormat": "txt",
       "schema1:featureList": [
         {
           "@id": "edam:operation_0524"
@@ -84,11 +93,7 @@
       "schema1:keywords": "Assembly",
       "schema1:name": "nextdenovo",
       "schema1:softwareVersion": "2.5.0",
-      "schema1:url": "https://github.com/Nextomics/NextDenovo"
-    },
-    {
-      "@id": "https://workflowhub.eu",
-      "@type": "schema1:WebSite"
+      "schema1:url": "https://github.com/bgruening/galaxytools/tree/master/tools/nextdenovo"
     }
   ]
 }

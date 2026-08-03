@@ -1,6 +1,7 @@
 {
   "@context": {
     "bioconda": "https://github.com/bioconda/bioconda-recipes/tree/master/recipes/",
+    "bioschemas": "http://bioschemas.org/",
     "biotools": "https://bio.tools/",
     "brick": "https://brickschema.org/schema/Brick#",
     "csvw": "http://www.w3.org/ns/csvw#",
@@ -37,7 +38,15 @@
   },
   "@graph": [
     {
+      "@id": "https://usegalaxy.org",
+      "@type": "schema1:WebSite"
+    },
+    {
       "@id": "https://usegalaxy.org.au",
+      "@type": "schema1:WebSite"
+    },
+    {
+      "@id": "https://workflowhub.eu",
       "@type": "schema1:WebSite"
     },
     {
@@ -45,16 +54,24 @@
       "@type": "schema1:WebSite"
     },
     {
-      "@id": "https://usegalaxy.org",
-      "@type": "schema1:WebSite"
-    },
-    {
       "@id": "galaxytool:fgsea",
       "@type": "schema1:SoftwareApplication",
+      "bioschemas:output": [
+        "tabular",
+        "pdf",
+        "rdata"
+      ],
       "schema1:applicationSubCategory": {
         "@id": "edam:topic_3053"
       },
+      "schema1:codeRepository": "https://bioconductor.org/packages/release/bioc/html/fgsea.html",
+      "schema1:dateCreated": "2018-10-20",
       "schema1:description": "Perform gene set testing using fgsea",
+      "schema1:encodingFormat": [
+        "tabular",
+        "pdf",
+        "rdata"
+      ],
       "schema1:featureList": {
         "@id": "edam:operation_2436"
       },
@@ -130,11 +147,7 @@
       ],
       "schema1:name": "fgsea",
       "schema1:softwareVersion": "1.8.0",
-      "schema1:url": "https://bioconductor.org/packages/release/bioc/html/fgsea.html"
-    },
-    {
-      "@id": "https://workflowhub.eu",
-      "@type": "schema1:WebSite"
+      "schema1:url": "https://github.com/galaxyproject/tools-iuc/tree/main/tools/fgsea"
     }
   ]
 }

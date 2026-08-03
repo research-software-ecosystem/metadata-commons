@@ -1,6 +1,7 @@
 {
   "@context": {
     "bioconda": "https://github.com/bioconda/bioconda-recipes/tree/master/recipes/",
+    "bioschemas": "http://bioschemas.org/",
     "biotools": "https://bio.tools/",
     "brick": "https://brickschema.org/schema/Brick#",
     "csvw": "http://www.w3.org/ns/csvw#",
@@ -37,8 +38,20 @@
   },
   "@graph": [
     {
+      "@id": "https://usegalaxy.org",
+      "@type": "schema1:WebSite"
+    },
+    {
+      "@id": "https://usegalaxy.fr",
+      "@type": "schema1:WebSite"
+    },
+    {
       "@id": "galaxytool:fastqc",
       "@type": "schema1:SoftwareApplication",
+      "bioschemas:output": [
+        "html",
+        "txt"
+      ],
       "schema1:applicationSubCategory": [
         {
           "@id": "edam:topic_3168"
@@ -53,7 +66,13 @@
           "@id": "edam:topic_0080"
         }
       ],
+      "schema1:codeRepository": "http://www.bioinformatics.babraham.ac.uk/projects/fastqc/",
+      "schema1:dateCreated": "2017-01-11",
       "schema1:description": "Read QC reports using FastQC",
+      "schema1:encodingFormat": [
+        "html",
+        "txt"
+      ],
       "schema1:featureList": [
         {
           "@id": "edam:operation_0236"
@@ -213,6 +232,9 @@
           "@id": "workflowhub:1439?version=1"
         },
         {
+          "@id": "workflowhub:1272?version=3"
+        },
+        {
           "@id": "workflowhub:1271?version=3"
         },
         {
@@ -306,10 +328,13 @@
           "@id": "https://usegalaxy.fr/published/workflow?id=776ef2fa51094ba6"
         },
         {
-          "@id": "https://usegalaxy.eu/published/workflow?id=f9aea278cd2b5ee4"
+          "@id": "https://usegalaxy.eu/published/workflow?id=846fa28b246c0a82"
         },
         {
           "@id": "https://usegalaxy.eu"
+        },
+        {
+          "@id": "https://usegalaxy.eu/published/workflow?id=f9aea278cd2b5ee4"
         },
         {
           "@id": "https://usegalaxy.eu/published/workflow?id=2a093e63ebf6876b"
@@ -1377,10 +1402,16 @@
           "@id": "https://usegalaxy.eu/published/workflow?id=4412f7223a557b48"
         },
         {
-          "@id": "https://usegalaxy.org/published/workflow?id=d422e919845a1f8c"
+          "@id": "https://usegalaxy.org/published/workflow?id=97b5e2bc469d2d68"
         },
         {
           "@id": "https://usegalaxy.org"
+        },
+        {
+          "@id": "https://usegalaxy.org/published/workflow?id=02d3d00ddf34903b"
+        },
+        {
+          "@id": "https://usegalaxy.org/published/workflow?id=d422e919845a1f8c"
         },
         {
           "@id": "https://usegalaxy.org/published/workflow?id=a23457ac23e1e5d7"
@@ -4410,26 +4441,18 @@
       "schema1:keywords": "Fastq Manipulation",
       "schema1:name": "fastqc",
       "schema1:softwareVersion": "0.74",
-      "schema1:url": "http://www.bioinformatics.babraham.ac.uk/projects/fastqc/"
+      "schema1:url": "https://github.com/galaxyproject/tools-iuc/tree/main/tools/fastqc"
     },
     {
       "@id": "https://usegalaxy.org.au",
       "@type": "schema1:WebSite"
     },
     {
-      "@id": "https://usegalaxy.fr",
+      "@id": "https://workflowhub.eu",
       "@type": "schema1:WebSite"
     },
     {
       "@id": "https://usegalaxy.eu",
-      "@type": "schema1:WebSite"
-    },
-    {
-      "@id": "https://usegalaxy.org",
-      "@type": "schema1:WebSite"
-    },
-    {
-      "@id": "https://workflowhub.eu",
       "@type": "schema1:WebSite"
     }
   ]

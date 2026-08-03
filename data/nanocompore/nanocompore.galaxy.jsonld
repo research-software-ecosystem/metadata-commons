@@ -1,6 +1,7 @@
 {
   "@context": {
     "bioconda": "https://github.com/bioconda/bioconda-recipes/tree/master/recipes/",
+    "bioschemas": "http://bioschemas.org/",
     "biotools": "https://bio.tools/",
     "brick": "https://brickschema.org/schema/Brick#",
     "csvw": "http://www.w3.org/ns/csvw#",
@@ -39,6 +40,11 @@
     {
       "@id": "galaxytool:nanocompore",
       "@type": "schema1:SoftwareApplication",
+      "bioschemas:output": [
+        "tabular",
+        "tar",
+        "txt"
+      ],
       "schema1:applicationSubCategory": [
         {
           "@id": "edam:topic_0659"
@@ -56,7 +62,14 @@
           "@id": "edam:topic_0749"
         }
       ],
+      "schema1:codeRepository": "https://nanocompore.rna.rocks/",
+      "schema1:dateCreated": "2020-04-28",
       "schema1:description": "Nanocompore compares 2 ONT nanopore direct RNA sequencing datasets from different experimental conditions expected to have a significant impact on RNA modifications. It is recommended to have at least 2 replicates per condition. For example one can use a control condition with a significantly reduced number of modifications such as a cell line for which a modification writing enzyme was knocked-down or knocked-out. Alternatively, on a smaller scale transcripts of interests could be synthesized in-vitro.",
+      "schema1:encodingFormat": [
+        "tabular",
+        "tar",
+        "txt"
+      ],
       "schema1:featureList": [
         {
           "@id": "edam:operation_0428"
@@ -90,7 +103,7 @@
       "schema1:keywords": "Sequence Analysis",
       "schema1:name": "nanocompore",
       "schema1:softwareVersion": "1.0.0rc3.post2",
-      "schema1:url": "https://nanocompore.rna.rocks/"
+      "schema1:url": "https://github.com/galaxyproject/tools-iuc/tree/main/tools/nanocompore"
     },
     {
       "@id": "https://usegalaxy.eu",

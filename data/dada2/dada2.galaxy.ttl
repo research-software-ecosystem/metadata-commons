@@ -1,15 +1,32 @@
 @prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
+@prefix bioschemas: <http://bioschemas.org/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
 @prefix schema1: <http://schema.org/> .
 
 galaxytool:dada2 a schema1:SoftwareApplication ;
+    bioschemas:output "dada2_dada",
+        "dada2_errorrates",
+        "dada2_mergepairs",
+        "dada2_sequencetable",
+        "dada2_uniques",
+        "pdf",
+        "tabular" ;
     schema1:applicationSubCategory edam:topic_0199,
         edam:topic_3168,
         edam:topic_3174,
         edam:topic_3697 ;
+    schema1:codeRepository "https://benjjneb.github.io/dada2/index.html" ;
+    schema1:dateCreated "2019-07-05" ;
     schema1:description "DADA2 wrappers" ;
+    schema1:encodingFormat "dada2_dada",
+        "dada2_errorrates",
+        "dada2_mergepairs",
+        "dada2_sequencetable",
+        "dada2_uniques",
+        "pdf",
+        "tabular" ;
     schema1:featureList edam:operation_3200,
         edam:operation_3227 ;
     schema1:identifier biotools:dada2,
@@ -46,7 +63,7 @@ galaxytool:dada2 a schema1:SoftwareApplication ;
     schema1:keywords "Metagenomics" ;
     schema1:name "dada2" ;
     schema1:softwareVersion "1.38.0" ;
-    schema1:url "https://benjjneb.github.io/dada2/index.html" .
+    schema1:url "https://github.com/galaxyproject/tools-iuc/tree/main/tools/dada2" .
 
 <https://usegalaxy.eu> a schema1:WebSite .
 

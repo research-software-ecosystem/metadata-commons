@@ -1,14 +1,23 @@
 @prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
+@prefix bioschemas: <http://bioschemas.org/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
 @prefix schema1: <http://schema.org/> .
 
 galaxytool:cutadapt a schema1:SoftwareApplication ;
+    bioschemas:output "fastqsanger",
+        "json",
+        "txt" ;
     schema1:applicationSubCategory edam:topic_0622,
         edam:topic_0632,
         edam:topic_3168 ;
+    schema1:codeRepository "https://cutadapt.readthedocs.org/en/stable/" ;
+    schema1:dateCreated "2018-02-20" ;
     schema1:description "Flexible tool to remove adapter sequences (and quality trim) high throughput sequencing reads (fasta/fastq)." ;
+    schema1:encodingFormat "fastqsanger",
+        "json",
+        "txt" ;
     schema1:featureList edam:operation_3192,
         edam:operation_3219,
         edam:operation_3237 ;
@@ -1142,6 +1151,7 @@ galaxytool:cutadapt a schema1:SoftwareApplication ;
         <https://workflowhub.eu/workflows/2180?version=1>,
         <https://workflowhub.eu/workflows/346?version=1>,
         <https://workflowhub.eu/workflows/395?version=20>,
+        <https://workflowhub.eu/workflows/399?version=22>,
         <https://workflowhub.eu/workflows/602?version=2>,
         <https://workflowhub.eu/workflows/612?version=26>,
         <https://workflowhub.eu/workflows/641?version=33>,
@@ -1154,7 +1164,7 @@ galaxytool:cutadapt a schema1:SoftwareApplication ;
         "Sequence Analysis" ;
     schema1:name "cutadapt" ;
     schema1:softwareVersion "5.2" ;
-    schema1:url "https://cutadapt.readthedocs.org/en/stable/" .
+    schema1:url "https://github.com/galaxyproject/tools-iuc/tree/main/tools/cutadapt" .
 
 <https://usegalaxy.eu> a schema1:WebSite .
 

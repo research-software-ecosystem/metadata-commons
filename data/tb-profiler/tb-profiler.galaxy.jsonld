@@ -1,6 +1,7 @@
 {
   "@context": {
     "bioconda": "https://github.com/bioconda/bioconda-recipes/tree/master/recipes/",
+    "bioschemas": "http://bioschemas.org/",
     "biotools": "https://bio.tools/",
     "brick": "https://brickschema.org/schema/Brick#",
     "csvw": "http://www.w3.org/ns/csvw#",
@@ -37,7 +38,15 @@
   },
   "@graph": [
     {
+      "@id": "https://usegalaxy.org",
+      "@type": "schema1:WebSite"
+    },
+    {
       "@id": "https://usegalaxy.org.au",
+      "@type": "schema1:WebSite"
+    },
+    {
+      "@id": "https://workflowhub.eu",
       "@type": "schema1:WebSite"
     },
     {
@@ -47,7 +56,27 @@
     {
       "@id": "galaxytool:tb-profiler",
       "@type": "schema1:SoftwareApplication",
+      "bioschemas:output": [
+        "tabular",
+        "csv",
+        "txt",
+        "json",
+        "vcf",
+        "bam",
+        "pdf"
+      ],
+      "schema1:codeRepository": "https://github.com/jodyphelan/TBProfiler",
+      "schema1:dateCreated": "2019-04-02",
       "schema1:description": "Processes M. tuberculosis sequence data to infer strain type and identify known drug resistance markers.",
+      "schema1:encodingFormat": [
+        "tabular",
+        "csv",
+        "txt",
+        "json",
+        "vcf",
+        "bam",
+        "pdf"
+      ],
       "schema1:featureList": {
         "@id": "edam:operation_3482"
       },
@@ -118,15 +147,7 @@
       "schema1:keywords": "Sequence Analysis",
       "schema1:name": "tb-profiler",
       "schema1:softwareVersion": "6.6.5",
-      "schema1:url": "https://github.com/jodyphelan/TBProfiler"
-    },
-    {
-      "@id": "https://usegalaxy.org",
-      "@type": "schema1:WebSite"
-    },
-    {
-      "@id": "https://workflowhub.eu",
-      "@type": "schema1:WebSite"
+      "schema1:url": "https://github.com/galaxyproject/tools-iuc/tree/main/tools/tb-profiler"
     }
   ]
 }

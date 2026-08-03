@@ -1,6 +1,7 @@
 {
   "@context": {
     "bioconda": "https://github.com/bioconda/bioconda-recipes/tree/master/recipes/",
+    "bioschemas": "http://bioschemas.org/",
     "biotools": "https://bio.tools/",
     "brick": "https://brickschema.org/schema/Brick#",
     "csvw": "http://www.w3.org/ns/csvw#",
@@ -37,12 +38,34 @@
   },
   "@graph": [
     {
+      "@id": "https://usegalaxy.org",
+      "@type": "schema1:WebSite"
+    },
+    {
+      "@id": "https://usegalaxy.fr",
+      "@type": "schema1:WebSite"
+    },
+    {
+      "@id": "https://usegalaxy.org.au",
+      "@type": "schema1:WebSite"
+    },
+    {
       "@id": "galaxytool:repeatmodeler",
       "@type": "schema1:SoftwareApplication",
+      "bioschemas:output": [
+        "fasta",
+        "stockholm"
+      ],
       "schema1:applicationSubCategory": {
         "@id": "edam:topic_0157"
       },
+      "schema1:codeRepository": "https://www.repeatmasker.org/RepeatModeler/",
+      "schema1:dateCreated": "2021-08-26",
       "schema1:description": "RepeatModeler - Model repetitive DNA",
+      "schema1:encodingFormat": [
+        "fasta",
+        "stockholm"
+      ],
       "schema1:featureList": {
         "@id": "edam:operation_0379"
       },
@@ -75,12 +98,6 @@
           "@id": "https://usegalaxy.eu/published/workflow?id=09c534f738426a6d"
         },
         {
-          "@id": "https://usegalaxy.eu/published/workflow?id=4077e77b6af919c4"
-        },
-        {
-          "@id": "https://usegalaxy.eu/published/workflow?id=327beb1edda305ff"
-        },
-        {
           "@id": "https://usegalaxy.org/published/workflow?id=effc17e170263ae6"
         },
         {
@@ -105,26 +122,14 @@
       "schema1:keywords": "Genome annotation",
       "schema1:name": "repeatmodeler",
       "schema1:softwareVersion": "2.0.5",
-      "schema1:url": "https://www.repeatmasker.org/RepeatModeler/"
+      "schema1:url": "https://github.com/galaxyproject/tools-iuc/tree/main/tools/repeatmodeler"
     },
     {
-      "@id": "https://usegalaxy.org.au",
-      "@type": "schema1:WebSite"
-    },
-    {
-      "@id": "https://usegalaxy.fr",
+      "@id": "https://workflowhub.eu",
       "@type": "schema1:WebSite"
     },
     {
       "@id": "https://usegalaxy.eu",
-      "@type": "schema1:WebSite"
-    },
-    {
-      "@id": "https://usegalaxy.org",
-      "@type": "schema1:WebSite"
-    },
-    {
-      "@id": "https://workflowhub.eu",
       "@type": "schema1:WebSite"
     }
   ]

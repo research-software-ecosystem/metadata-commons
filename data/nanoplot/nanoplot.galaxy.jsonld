@@ -1,6 +1,7 @@
 {
   "@context": {
     "bioconda": "https://github.com/bioconda/bioconda-recipes/tree/master/recipes/",
+    "bioschemas": "http://bioschemas.org/",
     "biotools": "https://bio.tools/",
     "brick": "https://brickschema.org/schema/Brick#",
     "csvw": "http://www.w3.org/ns/csvw#",
@@ -37,11 +38,19 @@
   },
   "@graph": [
     {
-      "@id": "https://usegalaxy.org.au",
+      "@id": "https://usegalaxy.org",
       "@type": "schema1:WebSite"
     },
     {
       "@id": "https://usegalaxy.fr",
+      "@type": "schema1:WebSite"
+    },
+    {
+      "@id": "https://usegalaxy.org.au",
+      "@type": "schema1:WebSite"
+    },
+    {
+      "@id": "https://workflowhub.eu",
       "@type": "schema1:WebSite"
     },
     {
@@ -51,10 +60,20 @@
     {
       "@id": "galaxytool:nanoplot",
       "@type": "schema1:SoftwareApplication",
+      "bioschemas:output": [
+        "html",
+        "tabular"
+      ],
       "schema1:applicationSubCategory": {
         "@id": "edam:topic_0622"
       },
+      "schema1:codeRepository": "https://github.com/wdecoster/NanoPlot",
+      "schema1:dateCreated": "2018-09-24",
       "schema1:description": "Plotting tool for long read sequencing data and alignments",
+      "schema1:encodingFormat": [
+        "html",
+        "tabular"
+      ],
       "schema1:featureList": [
         {
           "@id": "edam:operation_2940"
@@ -118,16 +137,16 @@
           "@id": "https://usegalaxy.fr"
         },
         {
-          "@id": "https://usegalaxy.eu/published/workflow?id=6b79f4974f73593a"
+          "@id": "https://usegalaxy.eu/published/workflow?id=1ae9a523ef719a3d"
         },
         {
           "@id": "https://usegalaxy.eu"
         },
         {
-          "@id": "https://usegalaxy.eu/published/workflow?id=5cd71f9a190cae1b"
+          "@id": "https://usegalaxy.eu/published/workflow?id=6b79f4974f73593a"
         },
         {
-          "@id": "https://usegalaxy.eu/published/workflow?id=1ae9a523ef719a3d"
+          "@id": "https://usegalaxy.eu/published/workflow?id=5cd71f9a190cae1b"
         },
         {
           "@id": "https://usegalaxy.eu/published/workflow?id=4eb9dfe91fc2dc67"
@@ -451,15 +470,7 @@
       "schema1:keywords": "Visualization",
       "schema1:name": "nanoplot",
       "schema1:softwareVersion": "@TOOL_VERSION@+galaxy@VERSION_SUFFIX@",
-      "schema1:url": "https://github.com/wdecoster/NanoPlot"
-    },
-    {
-      "@id": "https://usegalaxy.org",
-      "@type": "schema1:WebSite"
-    },
-    {
-      "@id": "https://workflowhub.eu",
-      "@type": "schema1:WebSite"
+      "schema1:url": "https://github.com/galaxyproject/tools-iuc/tree/main/tools/nanoplot"
     }
   ]
 }

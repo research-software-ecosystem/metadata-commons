@@ -1,6 +1,7 @@
 {
   "@context": {
     "bioconda": "https://github.com/bioconda/bioconda-recipes/tree/master/recipes/",
+    "bioschemas": "http://bioschemas.org/",
     "biotools": "https://bio.tools/",
     "brick": "https://brickschema.org/schema/Brick#",
     "csvw": "http://www.w3.org/ns/csvw#",
@@ -37,7 +38,19 @@
   },
   "@id": "galaxytool:hicap",
   "@type": "schema1:SoftwareApplication",
+  "bioschemas:output": [
+    "tabular",
+    "genbank",
+    "svg"
+  ],
+  "schema1:codeRepository": "https://github.com/scwatts/hicap",
+  "schema1:dateCreated": "2026-03-26",
   "schema1:description": "Identify cap locus serotype and structure in Haemophilus influenzae assemblies",
+  "schema1:encodingFormat": [
+    "tabular",
+    "genbank",
+    "svg"
+  ],
   "schema1:identifier": [
     {
       "@id": "biotools:hicap"
@@ -49,5 +62,5 @@
   "schema1:keywords": "Sequence Analysis",
   "schema1:name": "hicap",
   "schema1:softwareVersion": "1.0.4",
-  "schema1:url": "https://github.com/scwatts/hicap"
+  "schema1:url": "https://github.com/galaxyproject/tools-iuc/tree/main/tools/hicap"
 }

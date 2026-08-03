@@ -1,6 +1,7 @@
 {
   "@context": {
     "bioconda": "https://github.com/bioconda/bioconda-recipes/tree/master/recipes/",
+    "bioschemas": "http://bioschemas.org/",
     "biotools": "https://bio.tools/",
     "brick": "https://brickschema.org/schema/Brick#",
     "csvw": "http://www.w3.org/ns/csvw#",
@@ -37,8 +38,24 @@
   },
   "@graph": [
     {
+      "@id": "https://usegalaxy.org.au",
+      "@type": "schema1:WebSite"
+    },
+    {
+      "@id": "https://workflowhub.eu",
+      "@type": "schema1:WebSite"
+    },
+    {
+      "@id": "https://usegalaxy.eu",
+      "@type": "schema1:WebSite"
+    },
+    {
       "@id": "galaxytool:blobtoolkit",
       "@type": "schema1:SoftwareApplication",
+      "bioschemas:output": [
+        "tar.gz",
+        "svg"
+      ],
       "schema1:applicationSubCategory": [
         {
           "@id": "edam:data_0925"
@@ -65,7 +82,13 @@
           "@id": "edam:topic_3050"
         }
       ],
+      "schema1:codeRepository": "https://blobtoolkit.genomehubs.org/",
+      "schema1:dateCreated": "2022-11-04",
       "schema1:description": "Identification and isolation non-target data in draft and publicly available genome assemblies.",
+      "schema1:encodingFormat": [
+        "tar.gz",
+        "svg"
+      ],
       "schema1:featureList": [
         {
           "@id": "edam:operation_0525"
@@ -135,19 +158,7 @@
       ],
       "schema1:name": "blobtoolkit",
       "schema1:softwareVersion": "4.5.3",
-      "schema1:url": "https://blobtoolkit.genomehubs.org/"
-    },
-    {
-      "@id": "https://workflowhub.eu",
-      "@type": "schema1:WebSite"
-    },
-    {
-      "@id": "https://usegalaxy.org.au",
-      "@type": "schema1:WebSite"
-    },
-    {
-      "@id": "https://usegalaxy.eu",
-      "@type": "schema1:WebSite"
+      "schema1:url": "https://github.com/bgruening/galaxytools/tree/master/tools/blobtoolkit"
     }
   ]
 }

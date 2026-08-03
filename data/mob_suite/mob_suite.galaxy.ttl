@@ -1,10 +1,13 @@
 @prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
+@prefix bioschemas: <http://bioschemas.org/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
 @prefix schema1: <http://schema.org/> .
 
 galaxytool:mob_suite a schema1:SoftwareApplication ;
+    bioschemas:output "fasta",
+        "tabular" ;
     schema1:applicationSubCategory edam:data_0925,
         edam:data_1301,
         edam:operation_0310,
@@ -13,7 +16,11 @@ galaxytool:mob_suite a schema1:SoftwareApplication ;
         edam:topic_0625,
         edam:topic_0798,
         edam:topic_3174 ;
+    schema1:codeRepository "https://github.com/phac-nml/mob-suite" ;
+    schema1:dateCreated "2018-04-30" ;
     schema1:description "MOB-suite is a set of software tools for clustering, reconstruction and typing of plasmids from draft assemblies" ;
+    schema1:encodingFormat "fasta",
+        "tabular" ;
     schema1:featureList edam:operation_2403,
         edam:operation_3432,
         edam:topic_0080 ;
@@ -27,7 +34,7 @@ galaxytool:mob_suite a schema1:SoftwareApplication ;
     schema1:keywords "Sequence Analysis" ;
     schema1:name "mob_suite" ;
     schema1:softwareVersion "3.1.9" ;
-    schema1:url "https://github.com/phac-nml/mob-suite" .
+    schema1:url "https://github.com/phac-nml/galaxy_tools/tree/master/tools/mob-suite" .
 
 <https://usegalaxy.eu> a schema1:WebSite .
 

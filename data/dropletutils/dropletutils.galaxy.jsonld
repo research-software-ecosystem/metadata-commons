@@ -1,6 +1,7 @@
 {
   "@context": {
     "bioconda": "https://github.com/bioconda/bioconda-recipes/tree/master/recipes/",
+    "bioschemas": "http://bioschemas.org/",
     "biotools": "https://bio.tools/",
     "brick": "https://brickschema.org/schema/Brick#",
     "csvw": "http://www.w3.org/ns/csvw#",
@@ -37,24 +38,14 @@
   },
   "@graph": [
     {
-      "@id": "https://usegalaxy.org.au",
-      "@type": "schema1:WebSite"
-    },
-    {
-      "@id": "https://usegalaxy.eu",
-      "@type": "schema1:WebSite"
-    },
-    {
-      "@id": "https://usegalaxy.org",
-      "@type": "schema1:WebSite"
-    },
-    {
-      "@id": "https://workflowhub.eu",
-      "@type": "schema1:WebSite"
-    },
-    {
       "@id": "galaxytool:dropletutils",
       "@type": "schema1:SoftwareApplication",
+      "bioschemas:output": [
+        "tsv",
+        "h5",
+        "mtx",
+        "png"
+      ],
       "schema1:applicationSubCategory": [
         {
           "@id": "edam:topic_0203"
@@ -66,7 +57,15 @@
           "@id": "edam:topic_3308"
         }
       ],
+      "schema1:codeRepository": "https://bioconductor.org/packages/devel/bioc/html/DropletUtils.html",
+      "schema1:dateCreated": "2019-06-04",
       "schema1:description": "DropletUtils - Utilities for handling droplet-based single-cell RNA-seq data",
+      "schema1:encodingFormat": [
+        "tsv",
+        "h5",
+        "mtx",
+        "png"
+      ],
       "schema1:identifier": [
         {
           "@id": "biotools:dropletutils"
@@ -239,7 +238,23 @@
       ],
       "schema1:name": "dropletutils",
       "schema1:softwareVersion": "@TOOL_VERSION@+galaxy@VERSION_SUFFIX@",
-      "schema1:url": "https://bioconductor.org/packages/devel/bioc/html/DropletUtils.html"
+      "schema1:url": "https://github.com/galaxyproject/tools-iuc/tree/main/tools/dropletutils"
+    },
+    {
+      "@id": "https://usegalaxy.org",
+      "@type": "schema1:WebSite"
+    },
+    {
+      "@id": "https://usegalaxy.org.au",
+      "@type": "schema1:WebSite"
+    },
+    {
+      "@id": "https://workflowhub.eu",
+      "@type": "schema1:WebSite"
+    },
+    {
+      "@id": "https://usegalaxy.eu",
+      "@type": "schema1:WebSite"
     }
   ]
 }

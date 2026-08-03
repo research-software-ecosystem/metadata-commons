@@ -1,13 +1,18 @@
 @prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
+@prefix bioschemas: <http://bioschemas.org/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
 @prefix schema1: <http://schema.org/> .
 
 galaxytool:trim_galore a schema1:SoftwareApplication ;
+    bioschemas:output "txt" ;
     schema1:applicationSubCategory edam:operation_2403,
         edam:topic_0080 ;
+    schema1:codeRepository "http://www.bioinformatics.babraham.ac.uk/projects/trim_galore/" ;
+    schema1:dateCreated "2015-02-28" ;
     schema1:description "Trim Galore adaptive quality and adapter trimmer" ;
+    schema1:encodingFormat "txt" ;
     schema1:featureList edam:operation_3192,
         edam:operation_3219,
         edam:operation_3237 ;
@@ -175,7 +180,7 @@ galaxytool:trim_galore a schema1:SoftwareApplication ;
         "Sequence Analysis" ;
     schema1:name "trim_galore" ;
     schema1:softwareVersion "0.6.10" ;
-    schema1:url "http://www.bioinformatics.babraham.ac.uk/projects/trim_galore/" .
+    schema1:url "https://github.com/bgruening/galaxytools/tree/master/tools/trim_galore" .
 
 <https://usegalaxy.eu> a schema1:WebSite .
 

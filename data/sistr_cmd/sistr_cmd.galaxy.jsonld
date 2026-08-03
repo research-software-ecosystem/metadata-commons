@@ -1,6 +1,7 @@
 {
   "@context": {
     "bioconda": "https://github.com/bioconda/bioconda-recipes/tree/master/recipes/",
+    "bioschemas": "http://bioschemas.org/",
     "biotools": "https://bio.tools/",
     "brick": "https://brickschema.org/schema/Brick#",
     "csvw": "http://www.w3.org/ns/csvw#",
@@ -37,8 +38,26 @@
   },
   "@graph": [
     {
+      "@id": "https://usegalaxy.org.au",
+      "@type": "schema1:WebSite"
+    },
+    {
+      "@id": "https://workflowhub.eu",
+      "@type": "schema1:WebSite"
+    },
+    {
+      "@id": "https://usegalaxy.eu",
+      "@type": "schema1:WebSite"
+    },
+    {
       "@id": "galaxytool:sistr_cmd",
       "@type": "schema1:SoftwareApplication",
+      "bioschemas:output": [
+        "csv",
+        "json",
+        "tabular",
+        "fasta"
+      ],
       "schema1:applicationSubCategory": [
         {
           "@id": "edam:topic_3673"
@@ -62,7 +81,15 @@
           "@id": "edam:topic_3305"
         }
       ],
+      "schema1:codeRepository": "https://github.com/phac-nml/sistr_cmd",
+      "schema1:dateCreated": "2017-02-20",
       "schema1:description": "SISTR in silico serotyping tool",
+      "schema1:encodingFormat": [
+        "csv",
+        "json",
+        "tabular",
+        "fasta"
+      ],
       "schema1:featureList": [
         {
           "@id": "edam:operation_0525"
@@ -124,18 +151,6 @@
       "schema1:name": "sistr_cmd",
       "schema1:softwareVersion": "@VERSION@",
       "schema1:url": "https://github.com/phac-nml/sistr_cmd"
-    },
-    {
-      "@id": "https://workflowhub.eu",
-      "@type": "schema1:WebSite"
-    },
-    {
-      "@id": "https://usegalaxy.org.au",
-      "@type": "schema1:WebSite"
-    },
-    {
-      "@id": "https://usegalaxy.eu",
-      "@type": "schema1:WebSite"
     }
   ]
 }

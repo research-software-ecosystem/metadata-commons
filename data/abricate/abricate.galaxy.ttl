@@ -1,13 +1,20 @@
 @prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
+@prefix bioschemas: <http://bioschemas.org/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
 @prefix schema1: <http://schema.org/> .
 
 galaxytool:abricate a schema1:SoftwareApplication ;
+    bioschemas:output "tabular",
+        "txt" ;
     schema1:applicationSubCategory edam:topic_0622,
         edam:topic_3301 ;
+    schema1:codeRepository "https://github.com/tseemann/abricate" ;
+    schema1:dateCreated "2016-07-29" ;
     schema1:description "Mass screening of contigs for antiobiotic resistance genes" ;
+    schema1:encodingFormat "tabular",
+        "txt" ;
     schema1:featureList edam:operation_3482 ;
     schema1:identifier biotools:ABRicate,
         bioconda:abricate ;
@@ -83,6 +90,7 @@ galaxytool:abricate a schema1:SoftwareApplication ;
         <https://usegalaxy.org/published/workflow?id=80565301ada0d3eb>,
         <https://usegalaxy.org/published/workflow?id=80ac6adead9f97d8>,
         <https://usegalaxy.org/published/workflow?id=8111bb9bb26bb665>,
+        <https://usegalaxy.org/published/workflow?id=97b5e2bc469d2d68>,
         <https://usegalaxy.org/published/workflow?id=9ba6da7dae465d3e>,
         <https://usegalaxy.org/published/workflow?id=9c0fbd9f51a9857f>,
         <https://usegalaxy.org/published/workflow?id=aaf8e740b3f8e2c0>,
@@ -90,6 +98,7 @@ galaxytool:abricate a schema1:SoftwareApplication ;
         <https://usegalaxy.org/published/workflow?id=c7f42286e0f15205>,
         <https://usegalaxy.org/published/workflow?id=cce88bc57b180d09>,
         <https://usegalaxy.org/published/workflow?id=d3dc805cd43b2737>,
+        <https://usegalaxy.org/published/workflow?id=deb1ff7227cf1776>,
         <https://usegalaxy.org/published/workflow?id=e12324f5e3b930fd>,
         <https://usegalaxy.org/published/workflow?id=ef187f85b103d858>,
         <https://usegalaxy.org/published/workflow?id=f8fab0cd6fc30d92>,
@@ -100,11 +109,12 @@ galaxytool:abricate a schema1:SoftwareApplication ;
         <https://workflowhub.eu/workflows/1062?version=1>,
         <https://workflowhub.eu/workflows/1189?version=2>,
         <https://workflowhub.eu/workflows/1495?version=1>,
+        <https://workflowhub.eu/workflows/2024?version=5>,
         <https://workflowhub.eu/workflows/470?version=1> ;
     schema1:keywords "Sequence Analysis" ;
     schema1:name "abricate" ;
     schema1:softwareVersion "1.4.0" ;
-    schema1:url "https://github.com/tseemann/abricate" .
+    schema1:url "https://github.com/galaxyproject/tools-iuc/tree/main/tools/abricate" .
 
 <https://usegalaxy.eu> a schema1:WebSite .
 

@@ -1,6 +1,7 @@
 {
   "@context": {
     "bioconda": "https://github.com/bioconda/bioconda-recipes/tree/master/recipes/",
+    "bioschemas": "http://bioschemas.org/",
     "biotools": "https://bio.tools/",
     "brick": "https://brickschema.org/schema/Brick#",
     "csvw": "http://www.w3.org/ns/csvw#",
@@ -37,6 +38,10 @@
   },
   "@id": "galaxytool:graphmap",
   "@type": "schema1:SoftwareApplication",
+  "bioschemas:output": [
+    "bam",
+    "txt"
+  ],
   "schema1:applicationSubCategory": [
     {
       "@id": "edam:topic_3512"
@@ -48,7 +53,13 @@
       "@id": "edam:topic_3320"
     }
   ],
+  "schema1:codeRepository": "https://github.com/isovic/graphmap/",
+  "schema1:dateCreated": "2018-09-27",
   "schema1:description": "Mapper for long, error-prone reads.",
+  "schema1:encodingFormat": [
+    "bam",
+    "txt"
+  ],
   "schema1:featureList": [
     {
       "@id": "edam:operation_3192"
@@ -71,5 +82,5 @@
   "schema1:keywords": "Assembly",
   "schema1:name": "graphmap",
   "schema1:softwareVersion": "0.5.2",
-  "schema1:url": "https://github.com/isovic/graphmap/"
+  "schema1:url": "https://github.com/bgruening/galaxytools/tree/master/tools/graphmap"
 }

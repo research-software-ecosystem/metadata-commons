@@ -1,6 +1,7 @@
 {
   "@context": {
     "bioconda": "https://github.com/bioconda/bioconda-recipes/tree/master/recipes/",
+    "bioschemas": "http://bioschemas.org/",
     "biotools": "https://bio.tools/",
     "brick": "https://brickschema.org/schema/Brick#",
     "csvw": "http://www.w3.org/ns/csvw#",
@@ -43,10 +44,28 @@
     {
       "@id": "galaxytool:cojac",
       "@type": "schema1:SoftwareApplication",
+      "bioschemas:output": [
+        "yaml",
+        "json",
+        "tabular",
+        "tsv",
+        "csv",
+        "html"
+      ],
       "schema1:applicationSubCategory": {
         "@id": "edam:topic_0199"
       },
+      "schema1:codeRepository": "https://github.com/cbg-ethz/cojac",
+      "schema1:dateCreated": "2022-08-11",
       "schema1:description": "co-occurrence of mutations on amplicons",
+      "schema1:encodingFormat": [
+        "yaml",
+        "json",
+        "tabular",
+        "tsv",
+        "csv",
+        "html"
+      ],
       "schema1:identifier": [
         {
           "@id": "biotools:cojac"
@@ -69,7 +88,7 @@
       ],
       "schema1:name": "cojac",
       "schema1:softwareVersion": "0.9.3",
-      "schema1:url": "https://github.com/cbg-ethz/cojac"
+      "schema1:url": "https://github.com/galaxyproject/tools-iuc/tree/main/tools/cojac"
     }
   ]
 }

@@ -1,6 +1,7 @@
 {
   "@context": {
     "bioconda": "https://github.com/bioconda/bioconda-recipes/tree/master/recipes/",
+    "bioschemas": "http://bioschemas.org/",
     "biotools": "https://bio.tools/",
     "brick": "https://brickschema.org/schema/Brick#",
     "csvw": "http://www.w3.org/ns/csvw#",
@@ -37,20 +38,22 @@
   },
   "@graph": [
     {
-      "@id": "https://usegalaxy.org.au",
-      "@type": "schema1:WebSite"
-    },
-    {
-      "@id": "https://usegalaxy.fr",
-      "@type": "schema1:WebSite"
-    },
-    {
       "@id": "galaxytool:deseq2",
       "@type": "schema1:SoftwareApplication",
+      "bioschemas:output": [
+        "tabular",
+        "pdf"
+      ],
       "schema1:applicationSubCategory": {
         "@id": "edam:topic_3170"
       },
+      "schema1:codeRepository": "https://www.bioconductor.org/packages/release/bioc/html/DESeq2.html",
+      "schema1:dateCreated": "2014-12-03",
       "schema1:description": "Differential gene expression analysis based on the negative binomial distribution",
+      "schema1:encodingFormat": [
+        "tabular",
+        "pdf"
+      ],
       "schema1:featureList": [
         {
           "@id": "edam:operation_3742"
@@ -88,6 +91,9 @@
         },
         {
           "@id": "workflowhub:1676?version=1"
+        },
+        {
+          "@id": "workflowhub:1201?version=10"
         },
         {
           "@id": "workflowhub:412?version=1"
@@ -252,10 +258,16 @@
           "@id": "https://usegalaxy.eu/published/workflow?id=f026c4b8341ff94c"
         },
         {
-          "@id": "https://usegalaxy.org/published/workflow?id=366cae0853e1b835"
+          "@id": "https://usegalaxy.org/published/workflow?id=5dd666669b2c895c"
         },
         {
           "@id": "https://usegalaxy.org"
+        },
+        {
+          "@id": "https://usegalaxy.org/published/workflow?id=e40d8018b60dd7a1"
+        },
+        {
+          "@id": "https://usegalaxy.org/published/workflow?id=366cae0853e1b835"
         },
         {
           "@id": "https://usegalaxy.org/published/workflow?id=d422e919845a1f8c"
@@ -441,10 +453,16 @@
           "@id": "https://usegalaxy.org/published/workflow?id=1bd0d7ef0aca1363"
         },
         {
-          "@id": "https://usegalaxy.org.au/published/workflow?id=d1b34303b7be4c46"
+          "@id": "https://usegalaxy.org.au/published/workflow?id=6be4a3b7d13d9d3b"
         },
         {
           "@id": "https://usegalaxy.org.au"
+        },
+        {
+          "@id": "https://usegalaxy.org.au/published/workflow?id=63489ee722dbd4c4"
+        },
+        {
+          "@id": "https://usegalaxy.org.au/published/workflow?id=d1b34303b7be4c46"
         },
         {
           "@id": "https://usegalaxy.org.au/published/workflow?id=cddedfb5ee154d25"
@@ -1193,18 +1211,26 @@
       ],
       "schema1:name": "deseq2",
       "schema1:softwareVersion": "2.11.40.8",
-      "schema1:url": "https://www.bioconductor.org/packages/release/bioc/html/DESeq2.html"
-    },
-    {
-      "@id": "https://usegalaxy.eu",
-      "@type": "schema1:WebSite"
+      "schema1:url": "https://github.com/galaxyproject/tools-iuc/tree/main/tools/deseq2"
     },
     {
       "@id": "https://usegalaxy.org",
       "@type": "schema1:WebSite"
     },
     {
+      "@id": "https://usegalaxy.fr",
+      "@type": "schema1:WebSite"
+    },
+    {
+      "@id": "https://usegalaxy.org.au",
+      "@type": "schema1:WebSite"
+    },
+    {
       "@id": "https://workflowhub.eu",
+      "@type": "schema1:WebSite"
+    },
+    {
+      "@id": "https://usegalaxy.eu",
       "@type": "schema1:WebSite"
     }
   ]

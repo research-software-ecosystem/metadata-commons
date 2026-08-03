@@ -1,6 +1,7 @@
 {
   "@context": {
     "bioconda": "https://github.com/bioconda/bioconda-recipes/tree/master/recipes/",
+    "bioschemas": "http://bioschemas.org/",
     "biotools": "https://bio.tools/",
     "brick": "https://brickschema.org/schema/Brick#",
     "csvw": "http://www.w3.org/ns/csvw#",
@@ -37,7 +38,7 @@
   },
   "@graph": [
     {
-      "@id": "https://usegalaxy.org.au",
+      "@id": "https://usegalaxy.org",
       "@type": "schema1:WebSite"
     },
     {
@@ -45,12 +46,46 @@
       "@type": "schema1:WebSite"
     },
     {
+      "@id": "https://usegalaxy.org.au",
+      "@type": "schema1:WebSite"
+    },
+    {
+      "@id": "https://workflowhub.eu",
+      "@type": "schema1:WebSite"
+    },
+    {
+      "@id": "https://usegalaxy.eu",
+      "@type": "schema1:WebSite"
+    },
+    {
       "@id": "galaxytool:bedtools",
       "@type": "schema1:SoftwareApplication",
+      "bioschemas:output": [
+        "bed",
+        "bam",
+        "txt",
+        "unsorted.bam",
+        "bedgraph",
+        "fasta",
+        "html",
+        "tabular"
+      ],
       "schema1:applicationSubCategory": {
         "@id": "edam:topic_0622"
       },
+      "schema1:codeRepository": "https://github.com/arq5x/bedtools2",
+      "schema1:dateCreated": "2014-09-13",
       "schema1:description": "bedtools is a powerful toolset for genome arithmetic",
+      "schema1:encodingFormat": [
+        "bed",
+        "bam",
+        "txt",
+        "unsorted.bam",
+        "bedgraph",
+        "fasta",
+        "html",
+        "tabular"
+      ],
       "schema1:featureList": [
         {
           "@id": "edam:operation_2429"
@@ -132,6 +167,9 @@
           "@id": "workflowhub:1103?version=3"
         },
         {
+          "@id": "workflowhub:1060?version=2"
+        },
+        {
           "@id": "workflowhub:1054?version=1"
         },
         {
@@ -142,6 +180,9 @@
         },
         {
           "@id": "workflowhub:395?version=20"
+        },
+        {
+          "@id": "workflowhub:399?version=22"
         },
         {
           "@id": "workflowhub:356?version=1"
@@ -175,6 +216,9 @@
         },
         {
           "@id": "https://usegalaxy.eu"
+        },
+        {
+          "@id": "https://usegalaxy.eu/published/workflow?id=2b892adf8f04473d"
         },
         {
           "@id": "https://usegalaxy.eu/published/workflow?id=063f17b236f25aef"
@@ -921,10 +965,13 @@
           "@id": "https://usegalaxy.eu/published/workflow?id=9ac74bd7d1000093"
         },
         {
-          "@id": "https://usegalaxy.org/published/workflow?id=39704e84bc344d3f"
+          "@id": "https://usegalaxy.org/published/workflow?id=19804053b3f4d01c"
         },
         {
           "@id": "https://usegalaxy.org"
+        },
+        {
+          "@id": "https://usegalaxy.org/published/workflow?id=39704e84bc344d3f"
         },
         {
           "@id": "https://usegalaxy.org/published/workflow?id=cc4cbc8c0ff4649b"
@@ -2940,19 +2987,7 @@
       ],
       "schema1:name": "bedtools",
       "schema1:softwareVersion": "2.31.1",
-      "schema1:url": "https://github.com/arq5x/bedtools2"
-    },
-    {
-      "@id": "https://usegalaxy.eu",
-      "@type": "schema1:WebSite"
-    },
-    {
-      "@id": "https://usegalaxy.org",
-      "@type": "schema1:WebSite"
-    },
-    {
-      "@id": "https://workflowhub.eu",
-      "@type": "schema1:WebSite"
+      "schema1:url": "https://github.com/galaxyproject/tools-iuc/tree/main/tools/bedtools"
     }
   ]
 }

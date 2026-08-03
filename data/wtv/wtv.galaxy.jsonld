@@ -1,6 +1,7 @@
 {
   "@context": {
     "bioconda": "https://github.com/bioconda/bioconda-recipes/tree/master/recipes/",
+    "bioschemas": "http://bioschemas.org/",
     "biotools": "https://bio.tools/",
     "brick": "https://brickschema.org/schema/Brick#",
     "csvw": "http://www.w3.org/ns/csvw#",
@@ -37,10 +38,20 @@
   },
   "@id": "galaxytool:wtv",
   "@type": "schema1:SoftwareApplication",
+  "bioschemas:output": [
+    "msp",
+    "csv"
+  ],
   "schema1:applicationSubCategory": {
     "@id": "edam:topic_3172"
   },
+  "schema1:codeRepository": "https://github.com/RECETOX/wtv",
+  "schema1:dateCreated": "2025-06-02",
   "schema1:description": "A cli/python library for ion selection in mass spectrometry.",
+  "schema1:encodingFormat": [
+    "msp",
+    "csv"
+  ],
   "schema1:featureList": {
     "@id": "edam:operation_3936"
   },
@@ -54,6 +65,6 @@
   ],
   "schema1:keywords": "Metabolomics",
   "schema1:name": "wtv",
-  "schema1:softwareVersion": "0.1.0",
-  "schema1:url": "https://github.com/RECETOX/wtv"
+  "schema1:softwareVersion": "0.2.1",
+  "schema1:url": "https://github.com/RECETOX/galaxytools/tree/master/tools/wtv"
 }

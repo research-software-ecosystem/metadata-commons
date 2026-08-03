@@ -1,6 +1,7 @@
 {
   "@context": {
     "bioconda": "https://github.com/bioconda/bioconda-recipes/tree/master/recipes/",
+    "bioschemas": "http://bioschemas.org/",
     "biotools": "https://bio.tools/",
     "brick": "https://brickschema.org/schema/Brick#",
     "csvw": "http://www.w3.org/ns/csvw#",
@@ -37,16 +38,17 @@
   },
   "@graph": [
     {
-      "@id": "https://usegalaxy.org.au",
+      "@id": "https://usegalaxy.org",
       "@type": "schema1:WebSite"
     },
     {
-      "@id": "https://usegalaxy.eu",
+      "@id": "https://usegalaxy.org.au",
       "@type": "schema1:WebSite"
     },
     {
       "@id": "galaxytool:trim_galore",
       "@type": "schema1:SoftwareApplication",
+      "bioschemas:output": "txt",
       "schema1:applicationSubCategory": [
         {
           "@id": "edam:operation_2403"
@@ -55,7 +57,10 @@
           "@id": "edam:topic_0080"
         }
       ],
+      "schema1:codeRepository": "http://www.bioinformatics.babraham.ac.uk/projects/trim_galore/",
+      "schema1:dateCreated": "2015-02-28",
       "schema1:description": "Trim Galore adaptive quality and adapter trimmer",
+      "schema1:encodingFormat": "txt",
       "schema1:featureList": [
         {
           "@id": "edam:operation_3192"
@@ -557,14 +562,14 @@
       ],
       "schema1:name": "trim_galore",
       "schema1:softwareVersion": "0.6.10",
-      "schema1:url": "http://www.bioinformatics.babraham.ac.uk/projects/trim_galore/"
-    },
-    {
-      "@id": "https://usegalaxy.org",
-      "@type": "schema1:WebSite"
+      "schema1:url": "https://github.com/bgruening/galaxytools/tree/master/tools/trim_galore"
     },
     {
       "@id": "https://workflowhub.eu",
+      "@type": "schema1:WebSite"
+    },
+    {
+      "@id": "https://usegalaxy.eu",
       "@type": "schema1:WebSite"
     }
   ]

@@ -1,6 +1,7 @@
 {
   "@context": {
     "bioconda": "https://github.com/bioconda/bioconda-recipes/tree/master/recipes/",
+    "bioschemas": "http://bioschemas.org/",
     "biotools": "https://bio.tools/",
     "brick": "https://brickschema.org/schema/Brick#",
     "csvw": "http://www.w3.org/ns/csvw#",
@@ -37,10 +38,24 @@
   },
   "@id": "galaxytool:metamdbg",
   "@type": "schema1:SoftwareApplication",
+  "bioschemas:output": [
+    "fasta.gz",
+    "tar.gz",
+    "txt",
+    "gfa1"
+  ],
   "schema1:applicationSubCategory": {
     "@id": "edam:topic_3174"
   },
+  "schema1:codeRepository": "https://github.com/GaetanBenoitDev/metaMDBG",
+  "schema1:dateCreated": "2025-02-04",
   "schema1:description": "MetaMDBG is a fast and low-memory assembler for long and accurate metagenomics reads.",
+  "schema1:encodingFormat": [
+    "fasta.gz",
+    "tar.gz",
+    "txt",
+    "gfa1"
+  ],
   "schema1:featureList": [
     {
       "@id": "edam:operation_0525"
@@ -63,5 +78,5 @@
   ],
   "schema1:name": "metamdbg",
   "schema1:softwareVersion": "1.4",
-  "schema1:url": "https://github.com/GaetanBenoitDev/metaMDBG"
+  "schema1:url": "https://github.com/galaxyproject/tools-iuc/tree/main/tools/metamdbg"
 }

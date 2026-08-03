@@ -1,6 +1,7 @@
 {
   "@context": {
     "bioconda": "https://github.com/bioconda/bioconda-recipes/tree/master/recipes/",
+    "bioschemas": "http://bioschemas.org/",
     "biotools": "https://bio.tools/",
     "brick": "https://brickschema.org/schema/Brick#",
     "csvw": "http://www.w3.org/ns/csvw#",
@@ -37,20 +38,32 @@
   },
   "@graph": [
     {
-      "@id": "https://workflowhub.eu",
-      "@type": "schema1:WebSite"
-    },
-    {
       "@id": "https://usegalaxy.org.au",
       "@type": "schema1:WebSite"
     },
     {
       "@id": "galaxytool:artic",
       "@type": "schema1:SoftwareApplication",
+      "bioschemas:output": [
+        "bam",
+        "tabular",
+        "vcf_bgzip",
+        "fasta",
+        "txt"
+      ],
       "schema1:applicationSubCategory": {
         "@id": "edam:topic_0622"
       },
+      "schema1:codeRepository": "https://github.com/artic-network/fieldbioinformatics",
+      "schema1:dateCreated": "2020-04-17",
       "schema1:description": "The artic pipeline is designed to help run the artic bioinformatics protocols;for example the nCoV-2019 novel coronavirus protocol.Features include: read filtering, primer trimming, amplicon coverage normalisation,variant calling and consensus building",
+      "schema1:encodingFormat": [
+        "bam",
+        "tabular",
+        "vcf_bgzip",
+        "fasta",
+        "txt"
+      ],
       "schema1:featureList": [
         {
           "@id": "edam:data_0863"
@@ -90,7 +103,11 @@
       "schema1:keywords": "Sequence Analysis",
       "schema1:name": "artic",
       "schema1:softwareVersion": "1.7.3",
-      "schema1:url": "https://github.com/artic-network/fieldbioinformatics"
+      "schema1:url": "https://github.com/galaxyproject/tools-iuc/tree/main/tools/artic"
+    },
+    {
+      "@id": "https://workflowhub.eu",
+      "@type": "schema1:WebSite"
     }
   ]
 }

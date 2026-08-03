@@ -1,14 +1,21 @@
 @prefix bioconda: <https://github.com/bioconda/bioconda-recipes/tree/master/recipes/> .
+@prefix bioschemas: <http://bioschemas.org/> .
 @prefix biotools: <https://bio.tools/> .
 @prefix edam: <http://edamontology.org/> .
 @prefix galaxytool: <https://github.com/galaxyproject/tools-iuc/tree/master/tools/> .
 @prefix schema1: <http://schema.org/> .
 
 galaxytool:clustalw a schema1:SoftwareApplication ;
+    bioschemas:output "clustal",
+        "nhx" ;
     schema1:applicationSubCategory edam:operation_2403,
         edam:topic_0080,
         edam:topic_0084 ;
+    schema1:codeRepository "http://www.clustal.org/clustal2/" ;
+    schema1:dateCreated "2022-10-02" ;
     schema1:description "ClustalW multiple sequence alignment program for DNA or proteins" ;
+    schema1:encodingFormat "clustal",
+        "nhx" ;
     schema1:featureList edam:operation_0492 ;
     schema1:identifier biotools:clustal2,
         bioconda:clustalw ;
@@ -40,6 +47,7 @@ galaxytool:clustalw a schema1:SoftwareApplication ;
         <https://usegalaxy.org/published/workflow?id=be9bd7286d38c210>,
         <https://usegalaxy.org/published/workflow?id=f7bf58d66cafcf1f>,
         <https://workflowhub.eu>,
+        <https://workflowhub.eu/workflows/1060?version=2>,
         <https://workflowhub.eu/workflows/1487?version=2>,
         <https://workflowhub.eu/workflows/1541?version=1>,
         <https://workflowhub.eu/workflows/1656?version=1>,
@@ -48,7 +56,7 @@ galaxytool:clustalw a schema1:SoftwareApplication ;
         "Sequence Analysis" ;
     schema1:name "clustalw" ;
     schema1:softwareVersion "2.1" ;
-    schema1:url "http://www.clustal.org/clustal2/" .
+    schema1:url "https://github.com/galaxyproject/tools-iuc/tree/main/tools/clustalw" .
 
 <https://usegalaxy.eu> a schema1:WebSite .
 
