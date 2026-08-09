@@ -36,20 +36,32 @@
   },
   "@graph": [
     {
+      "@id": "https://orcid.org/0000-0003-4014-9195",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/gkaa362",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1093/bioinformatics/btl589",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/ariaweb",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "https://orcid.org/0000-0003-4014-9195"
       },
       "bsc:input": {
-        "@id": "_:N534f85fd3d5f4554be9063057a2afabb"
+        "@id": "_:N8ae0a840621b4021ba74d5023eaa9b7b"
       },
       "bsc:output": [
         {
-          "@id": "_:Nda6867b035ad40ce9ecc6db5b04c894a"
+          "@id": "_:Naaddfc4f29784e06a20729386737a426"
         },
         {
-          "@id": "_:Ne10080b1c73b424583b9de457fcc408d"
+          "@id": "_:Nced4de2cc7b34fe58261947375de1185"
         }
       ],
       "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -120,7 +132,7 @@
       "sc:url": "https://ariaweb.pasteur.fr"
     },
     {
-      "@id": "_:N534f85fd3d5f4554be9063057a2afabb",
+      "@id": "_:N8ae0a840621b4021ba74d5023eaa9b7b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3488"
@@ -128,7 +140,7 @@
       "sc:name": "NMR spectrum"
     },
     {
-      "@id": "_:Nda6867b035ad40ce9ecc6db5b04c894a",
+      "@id": "_:Naaddfc4f29784e06a20729386737a426",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1539"
@@ -136,7 +148,7 @@
       "sc:name": "Protein structural quality report"
     },
     {
-      "@id": "_:Ne10080b1c73b424583b9de457fcc408d",
+      "@id": "_:Nced4de2cc7b34fe58261947375de1185",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1743"
@@ -145,18 +157,6 @@
         "@id": "edam:format_1476"
       },
       "sc:name": "Atomic coordinate"
-    },
-    {
-      "@id": "https://doi.org/10.1093/bioinformatics/btl589",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://orcid.org/0000-0003-4014-9195",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gkaa362",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

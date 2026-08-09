@@ -36,20 +36,28 @@
   },
   "@graph": [
     {
+      "@id": "http://orcid.org/0000-0003-2861-5552",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.1093/bioinformatics/btv373",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/rchemcpp",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "http://orcid.org/0000-0003-2861-5552"
       },
       "bsc:input": {
-        "@id": "_:N25c50865159a48a6b0655a74bd4dcb96"
+        "@id": "_:N93f468a3476445b8a072c3ce8810ae9a"
       },
       "bsc:output": [
         {
-          "@id": "_:Nc40a36868f4244e9b38917505d82a443"
+          "@id": "_:Nda984d97fd094c72a9fdb8e8d4b8ee6b"
         },
         {
-          "@id": "_:N3f3d9919f00949a88e1b7d00e04fb933"
+          "@id": "_:N40b84270cb1c4102a8bcc0a06ab68403"
         }
       ],
       "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -89,7 +97,7 @@
       "sc:url": "http://bioconductor.org/packages/release/bioc/html/Rchemcpp.html"
     },
     {
-      "@id": "_:N25c50865159a48a6b0655a74bd4dcb96",
+      "@id": "_:N93f468a3476445b8a072c3ce8810ae9a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1463"
@@ -100,7 +108,7 @@
       "sc:name": "Small molecule structure"
     },
     {
-      "@id": "_:Nc40a36868f4244e9b38917505d82a443",
+      "@id": "_:Nda984d97fd094c72a9fdb8e8d4b8ee6b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1636"
@@ -111,7 +119,7 @@
       "sc:name": "Heat map"
     },
     {
-      "@id": "_:N3f3d9919f00949a88e1b7d00e04fb933",
+      "@id": "_:N40b84270cb1c4102a8bcc0a06ab68403",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2082"
@@ -120,14 +128,6 @@
         "@id": "edam:format_3547"
       },
       "sc:name": "Matrix"
-    },
-    {
-      "@id": "http://orcid.org/0000-0003-2861-5552",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://doi.org/10.1093/bioinformatics/btv373",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

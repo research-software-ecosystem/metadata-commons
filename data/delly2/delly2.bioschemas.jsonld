@@ -36,18 +36,26 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/bts378",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-5773-5620",
+      "@type": "sc:Person"
+    },
+    {
       "@id": "https://bio.tools/delly2",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N52ce70482a914565be3d44ad370392e6"
+          "@id": "_:N5f76d9e4282b4b618fe82ef6dca89b67"
         },
         {
-          "@id": "_:N018d131cedbe4a648005b833fb7fb726"
+          "@id": "_:Nbccbb1680a334b86a6b17fb35a52b713"
         }
       ],
       "bsc:output": {
-        "@id": "_:N56421028f08846ac9eb21343c984be12"
+        "@id": "_:Nb2add31cc06f49488bc56b2b929f97a1"
       },
       "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
@@ -115,7 +123,7 @@
       "sc:url": "https://github.com/dellytools/delly"
     },
     {
-      "@id": "_:N52ce70482a914565be3d44ad370392e6",
+      "@id": "_:N5f76d9e4282b4b618fe82ef6dca89b67",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2977"
@@ -126,7 +134,7 @@
       "sc:name": "Nucleic acid sequence"
     },
     {
-      "@id": "_:N018d131cedbe4a648005b833fb7fb726",
+      "@id": "_:Nbccbb1680a334b86a6b17fb35a52b713",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1383"
@@ -137,7 +145,7 @@
       "sc:name": "Nucleic acid sequence alignment"
     },
     {
-      "@id": "_:N56421028f08846ac9eb21343c984be12",
+      "@id": "_:Nb2add31cc06f49488bc56b2b929f97a1",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3498"
@@ -146,14 +154,6 @@
         "@id": "edam:format_3020"
       },
       "sc:name": "Sequence variations"
-    },
-    {
-      "@id": "https://orcid.org/0000-0001-5773-5620",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://doi.org/10.1093/bioinformatics/bts378",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

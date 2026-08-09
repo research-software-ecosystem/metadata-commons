@@ -36,6 +36,14 @@
   },
   "@graph": [
     {
+      "@id": "http://orcid.org/0000-0002-6294-2517",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.1093/bioinformatics/btv600",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/seql-nrps",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
@@ -45,10 +53,10 @@
         "Dan Søndergaard"
       ],
       "bsc:input": {
-        "@id": "_:N5ed8034125ad4714b00683afea4ec4ff"
+        "@id": "_:N6fb28a7f109446d884b349095fc77108"
       },
       "bsc:output": {
-        "@id": "_:Nc47ec56b4aac49eca54ec7214f975900"
+        "@id": "_:N7fb1f8cf30f644c9885084a404f660d0"
       },
       "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web service",
@@ -87,7 +95,7 @@
       "sc:url": "http://services.birc.au.dk/seql-nrps/"
     },
     {
-      "@id": "_:N5ed8034125ad4714b00683afea4ec4ff",
+      "@id": "_:N6fb28a7f109446d884b349095fc77108",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1233"
@@ -95,20 +103,12 @@
       "sc:name": "Sequence set (protein)"
     },
     {
-      "@id": "_:Nc47ec56b4aac49eca54ec7214f975900",
+      "@id": "_:N7fb1f8cf30f644c9885084a404f660d0",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1255"
       },
       "sc:name": "Sequence features"
-    },
-    {
-      "@id": "https://doi.org/10.1093/bioinformatics/btv600",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "http://orcid.org/0000-0002-6294-2517",
-      "@type": "sc:Person"
     }
   ]
 }

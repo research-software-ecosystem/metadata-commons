@@ -36,16 +36,24 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/btw015",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "http://orcid.org/0000-0002-3140-2809",
+      "@type": "sc:Person"
+    },
+    {
       "@id": "https://bio.tools/genevalidator",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "http://orcid.org/0000-0002-3140-2809"
       },
       "bsc:input": {
-        "@id": "_:N77db39ac8bc84a2895890c55e9409c2e"
+        "@id": "_:Nb81a64a9b90a414fafcf3cad09347199"
       },
       "bsc:output": {
-        "@id": "_:N4b2abe0f46c744d08e4e7d4b3620b745"
+        "@id": "_:Ne25f374dd8a743ef8ff51ee730ae50f1"
       },
       "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
@@ -98,7 +106,7 @@
       "sc:url": "https://wurmlab.github.io/tools/genevalidator/"
     },
     {
-      "@id": "_:N77db39ac8bc84a2895890c55e9409c2e",
+      "@id": "_:Nb81a64a9b90a414fafcf3cad09347199",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
@@ -109,7 +117,7 @@
       "sc:name": "Sequence"
     },
     {
-      "@id": "_:N4b2abe0f46c744d08e4e7d4b3620b745",
+      "@id": "_:Ne25f374dd8a743ef8ff51ee730ae50f1",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2085"
@@ -118,14 +126,6 @@
         "@id": "edam:format_2331"
       },
       "sc:name": "Structure report"
-    },
-    {
-      "@id": "https://doi.org/10.1093/bioinformatics/btw015",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "http://orcid.org/0000-0002-3140-2809",
-      "@type": "sc:Person"
     }
   ]
 }

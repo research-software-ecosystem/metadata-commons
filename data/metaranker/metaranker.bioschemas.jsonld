@@ -36,20 +36,28 @@
   },
   "@graph": [
     {
+      "@id": "http://orcid.org/0000-0003-0207-4831",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/gkt387",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/metaranker",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "http://orcid.org/0000-0003-0207-4831"
       },
       "bsc:input": {
-        "@id": "_:Na416255297e247e494051aaa5d559bc8"
+        "@id": "_:N5a9c009bfc114dd79bfe6dc140f659d9"
       },
       "bsc:output": [
         {
-          "@id": "_:N9821d29e86244eef816b6d8b4e83ef79"
+          "@id": "_:Nfc5cef2f0d17473b8de0e355903c6733"
         },
         {
-          "@id": "_:N7fece02b93154a60b277efc5fc59b086"
+          "@id": "_:N72a10befcb7e48a19418f0c12fcc9089"
         }
       ],
       "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -118,7 +126,7 @@
       "sc:url": "http://cbs.dtu.dk/services/MetaRanker/"
     },
     {
-      "@id": "_:Na416255297e247e494051aaa5d559bc8",
+      "@id": "_:N5a9c009bfc114dd79bfe6dc140f659d9",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2299"
@@ -129,7 +137,7 @@
       "sc:name": "Gene name"
     },
     {
-      "@id": "_:N9821d29e86244eef816b6d8b4e83ef79",
+      "@id": "_:Nfc5cef2f0d17473b8de0e355903c6733",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0916"
@@ -140,7 +148,7 @@
       "sc:name": "Gene report"
     },
     {
-      "@id": "_:N7fece02b93154a60b277efc5fc59b086",
+      "@id": "_:N72a10befcb7e48a19418f0c12fcc9089",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2984"
@@ -149,14 +157,6 @@
         "@id": "edam:format_2333"
       },
       "sc:name": "Pathway or network report"
-    },
-    {
-      "@id": "http://orcid.org/0000-0003-0207-4831",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gkt387",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

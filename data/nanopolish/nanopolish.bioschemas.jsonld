@@ -36,19 +36,23 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1038/nmeth.4184",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/nanopolish",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Jared Simpson",
       "bsc:input": [
         {
-          "@id": "_:N3c9a594b09a9499c85aa3dc00a72a6cd"
+          "@id": "_:N56162a3cda614c4ea498d3ab9c36f8bf"
         },
         {
-          "@id": "_:Nfb073b4944d5402690af591fc078be09"
+          "@id": "_:Ndfa2cda1c623436fadd714286c39b6df"
         }
       ],
       "bsc:output": {
-        "@id": "_:Nc6065e5d4a7f4b82a2051e55afdf2768"
+        "@id": "_:N7fe8bc418dc84527914b61bf6a0748bb"
       },
       "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
@@ -99,7 +103,7 @@
       "sc:url": "https://github.com/jts/nanopolish"
     },
     {
-      "@id": "_:N3c9a594b09a9499c85aa3dc00a72a6cd",
+      "@id": "_:N56162a3cda614c4ea498d3ab9c36f8bf",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2093"
@@ -110,7 +114,7 @@
       "sc:name": "Data reference"
     },
     {
-      "@id": "_:Nfb073b4944d5402690af591fc078be09",
+      "@id": "_:Ndfa2cda1c623436fadd714286c39b6df",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0849"
@@ -121,16 +125,12 @@
       "sc:name": "Sequence record"
     },
     {
-      "@id": "_:Nc6065e5d4a7f4b82a2051e55afdf2768",
+      "@id": "_:N7fe8bc418dc84527914b61bf6a0748bb",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0867"
       },
       "sc:name": "Sequence alignment report"
-    },
-    {
-      "@id": "https://doi.org/10.1038/nmeth.4184",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -36,19 +36,27 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1038/msb.2013.10",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/gkv1075",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/sider",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Michael Kuhn",
       "bsc:input": [
         {
-          "@id": "_:N6d06dc73f1b140629fdbff0bf6421717"
+          "@id": "_:N648d5c6edcf241888329c0952478996e"
         },
         {
-          "@id": "_:Nf39ceb2174a84de59b1866b84049269b"
+          "@id": "_:Nbebc6c6b16ee4a45b2bb34140623d7d6"
         }
       ],
       "bsc:output": {
-        "@id": "_:Nfd2eaf665c454ba18767addecfdcfc50"
+        "@id": "_:N589ac8b224b54770b0c2ad0ea5dd795c"
       },
       "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Database portal",
@@ -91,7 +99,7 @@
       "sc:url": "http://sideeffects.embl.de/"
     },
     {
-      "@id": "_:N6d06dc73f1b140629fdbff0bf6421717",
+      "@id": "_:N648d5c6edcf241888329c0952478996e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3668"
@@ -99,7 +107,7 @@
       "sc:name": "Disease name"
     },
     {
-      "@id": "_:Nf39ceb2174a84de59b1866b84049269b",
+      "@id": "_:Nbebc6c6b16ee4a45b2bb34140623d7d6",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0984"
@@ -107,20 +115,12 @@
       "sc:name": "Molecule name"
     },
     {
-      "@id": "_:Nfd2eaf665c454ba18767addecfdcfc50",
+      "@id": "_:N589ac8b224b54770b0c2ad0ea5dd795c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3275"
       },
       "sc:name": "Phenotype name"
-    },
-    {
-      "@id": "https://doi.org/10.1038/msb.2013.10",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gkv1075",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

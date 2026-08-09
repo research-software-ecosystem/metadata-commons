@@ -36,14 +36,18 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/gkac1074",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/toxric",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N70a5e68cc4114655b2f0bde61432304f"
+          "@id": "_:N03c10fba6f124fdfbfafc763c5126620"
         },
         {
-          "@id": "_:Nbae5ce6d64e64de685a98631940dc993"
+          "@id": "_:Nd1bceaea8c514da48180c30c2343cb3e"
         }
       ],
       "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -94,7 +98,7 @@
       "sc:url": "https://toxric.bioinforai.tech/"
     },
     {
-      "@id": "_:N70a5e68cc4114655b2f0bde61432304f",
+      "@id": "_:N03c10fba6f124fdfbfafc763c5126620",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1001"
@@ -102,16 +106,12 @@
       "sc:name": "Chemical name (synonymous)"
     },
     {
-      "@id": "_:Nbae5ce6d64e64de685a98631940dc993",
+      "@id": "_:Nd1bceaea8c514da48180c30c2343cb3e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2301"
       },
       "sc:name": "SMILES string"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gkac1074",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

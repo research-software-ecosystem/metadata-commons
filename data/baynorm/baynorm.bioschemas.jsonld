@@ -36,13 +36,17 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.18129/B9.bioc.bayNorm",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/baynorm",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N864d138a12a847a59018e4ae6daf9854"
+        "@id": "_:N436f0a4ece114b54b90332e99e501f9d"
       },
       "bsc:output": {
-        "@id": "_:N2029b2c37c3d46be88164e8772b2ee2f"
+        "@id": "_:N928e28a0c80a4a2dab1b9b635162168a"
       },
       "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Library",
@@ -96,7 +100,7 @@
       "sc:url": "https://bioconductor.org/packages/bayNorm"
     },
     {
-      "@id": "_:N864d138a12a847a59018e4ae6daf9854",
+      "@id": "_:N436f0a4ece114b54b90332e99e501f9d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3112"
@@ -107,7 +111,7 @@
       "sc:name": "Gene expression matrix"
     },
     {
-      "@id": "_:N2029b2c37c3d46be88164e8772b2ee2f",
+      "@id": "_:N928e28a0c80a4a2dab1b9b635162168a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3112"
@@ -116,10 +120,6 @@
         "@id": "edam:format_2330"
       },
       "sc:name": "Gene expression matrix"
-    },
-    {
-      "@id": "https://doi.org/10.18129/B9.bioc.bayNorm",
-      "@type": "sc:CreativeWork"
     }
   ]
 }
