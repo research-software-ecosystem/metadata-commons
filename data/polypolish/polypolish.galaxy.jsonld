@@ -38,6 +38,10 @@
   },
   "@graph": [
     {
+      "@id": "https://usegalaxy.eu",
+      "@type": "schema1:WebSite"
+    },
+    {
       "@id": "galaxytool:polypolish",
       "@type": "schema1:SoftwareApplication",
       "bioschemas:output": [
@@ -67,7 +71,7 @@
       ],
       "schema1:codeRepository": "https://github.com/rrwick/Polypolish",
       "schema1:dateCreated": "2022-09-22",
-      "schema1:description": "\"Polypolish is a tool for polishing genome assemblies with short reads.Polypolish uses SAM files where each read has been aligned to all possible locations (not just a single best location).This allows it to repair errors in repeat regions that other alignment-based polishers cannot fix.\"",
+      "schema1:description": "Polish genome assemblies using short-read alignments",
       "schema1:encodingFormat": [
         "fasta",
         "tabular",
@@ -114,12 +118,8 @@
       ],
       "schema1:keywords": "Sequence Analysis",
       "schema1:name": "polypolish",
-      "schema1:softwareVersion": "0.6.1",
+      "schema1:softwareVersion": "0.7.1",
       "schema1:url": "https://github.com/galaxyproject/tools-iuc/tree/main/tools/polypolish"
-    },
-    {
-      "@id": "https://usegalaxy.eu",
-      "@type": "schema1:WebSite"
     },
     {
       "@id": "https://workflowhub.eu",
