@@ -1,0 +1,35 @@
+about:
+  dev_url: https://github.com/hillerlab/bqc
+  home: https://github.com/hillerlab/bqc
+  license: MIT
+  license_family: MIT
+  license_file:
+  - LICENSE
+  - bqc/THIRDPARTY.yml
+  summary: CBQ-native all-in-one quality control tool
+build:
+  number: 0
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+  recipe-maintainers:
+  - alejandrogzi
+package:
+  name: bqc
+  version: 0.0.2
+requirements:
+  build:
+  - null
+  - null
+  - null
+  - cargo-bundle-licenses
+source:
+  sha256: 6455aefc211f247c61c074da14555a424a5820659343d7da9de93e53366f7122
+  url: https://github.com/hillerlab/bqc/archive/refs/tags/v0.0.2.tar.gz
+test:
+  commands:
+  - bqc --help
+  - bqc --version
