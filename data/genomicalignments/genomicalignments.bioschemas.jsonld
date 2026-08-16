@@ -36,22 +36,26 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1371/journal.pcbi.1003118",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/genomicalignments",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N8b65878ddaa34ae6951d770f484a583f"
+          "@id": "_:Ndf472cadbe504f0ca143ffa4151343a0"
         },
         {
-          "@id": "_:N2468f35d58ef4cb5892bcc76c6668196"
+          "@id": "_:Nc5dcae94fb924ce7b8cca86fb140fdd8"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N682e0c8574444321a8c3238cb604842e"
+          "@id": "_:N1a326970b565477f8b61a4b35fdea2e8"
         },
         {
-          "@id": "_:Nf53e2c93a4684a3d9efa2edb0d90841d"
+          "@id": "_:Ncac900f2266348f4a3ec2a5c5d887bde"
         }
       ],
       "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -63,29 +67,19 @@
         "@id": "edam:topic_0080"
       },
       "sc:author": [
-        "D. Sarkar",
-        "H. Pagès",
-        "M. Carlson",
-        "M. Lawrence",
-        "M. Morgan",
-        "P. Aboyoun",
-        "S. Falcon",
-        "V. Obenchain"
+        "Hervé Pagès",
+        "Martin Morgan",
+        "Valerie Obenchain"
       ],
       "sc:citation": {
         "@id": "https://doi.org/10.1371/journal.pcbi.1003118"
       },
       "sc:contributor": [
-        "D. Tenenbaum",
-        "D. Van Twisk",
-        "J. MacDonald",
-        "L. Shepherd",
-        "M. Ramos",
-        "P. Shannon",
-        "S. Arora",
-        "S. Saini"
+        "Fedor Bezrukov",
+        "Halimat C. Atanda",
+        "Robert Castelo"
       ],
-      "sc:description": "Extract the genomic locations of genes, transcripts, exons, introns, and CDS, for the gene models stored in a TxDb object. A TxDb object is a small database that contains the gene models of a given organism/assembly. Bioconductor provides a small collection of TxDb objects in the form of ready-to-install TxDb packages for the most commonly studied organisms. Additionally, the user can easily make a TxDb object (or package) for the organism/assembly of their choice by using the tools from the txdbmaker package.",
+      "sc:description": "Provides efficient containers for storing and manipulating short genomic alignments (typically obtained by aligning short reads to a reference genome). This includes read counting, computing the coverage, junction detection, and working with the nucleotide content of the alignments.",
       "sc:featureList": [
         {
           "@id": "edam:operation_2478"
@@ -105,13 +99,13 @@
         "Windows"
       ],
       "sc:softwareHelp": {
-        "@id": "https://bioconductor.org/packages/GenomicFeatures"
+        "@id": "https://bioconductor.org/packages/GenomicAlignments"
       },
-      "sc:softwareVersion": "1.64.0",
-      "sc:url": "https://bioconductor.org/packages/GenomicFeatures"
+      "sc:softwareVersion": "1.48.0",
+      "sc:url": "https://bioconductor.org/packages/GenomicAlignments"
     },
     {
-      "@id": "_:N8b65878ddaa34ae6951d770f484a583f",
+      "@id": "_:Ndf472cadbe504f0ca143ffa4151343a0",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1270"
@@ -130,7 +124,7 @@
       "sc:name": "Feature table"
     },
     {
-      "@id": "_:N2468f35d58ef4cb5892bcc76c6668196",
+      "@id": "_:Nc5dcae94fb924ce7b8cca86fb140fdd8",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1383"
@@ -149,7 +143,7 @@
       "sc:name": "Sequence alignment (nucleic acid)"
     },
     {
-      "@id": "_:N682e0c8574444321a8c3238cb604842e",
+      "@id": "_:N1a326970b565477f8b61a4b35fdea2e8",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1383"
@@ -165,7 +159,7 @@
       "sc:name": "Sequence alignment (nucleic acid)"
     },
     {
-      "@id": "_:Nf53e2c93a4684a3d9efa2edb0d90841d",
+      "@id": "_:Ncac900f2266348f4a3ec2a5c5d887bde",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0867"
@@ -179,10 +173,6 @@
         }
       ],
       "sc:name": "Sequence alignment report"
-    },
-    {
-      "@id": "https://doi.org/10.1371/journal.pcbi.1003118",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

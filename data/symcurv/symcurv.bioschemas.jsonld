@@ -36,14 +36,26 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1186/1756-8935-3-20",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/gkt707",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1038/nsmb.1658",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/symcurv",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Sonja Althammer",
       "bsc:input": {
-        "@id": "_:Na90e1f8e1f8f42f9b7f8080ec0035b0d"
+        "@id": "_:N10db2627949549b5b2326ff20683fd91"
       },
       "bsc:output": {
-        "@id": "_:N7029e62947404e38a284de94883e26b3"
+        "@id": "_:N22c0550d2f7a428db94113e5c14c31f2"
       },
       "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
@@ -90,7 +102,7 @@
       "sc:url": "http://genome.crg.es/cgi-bin/SymCurv/SymCurv.pl"
     },
     {
-      "@id": "_:Na90e1f8e1f8f42f9b7f8080ec0035b0d",
+      "@id": "_:N10db2627949549b5b2326ff20683fd91",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2977"
@@ -98,7 +110,7 @@
       "sc:name": "Nucleic acid sequence"
     },
     {
-      "@id": "_:N7029e62947404e38a284de94883e26b3",
+      "@id": "_:N22c0550d2f7a428db94113e5c14c31f2",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1255"
@@ -107,18 +119,6 @@
         "@id": "edam:format_2330"
       },
       "sc:name": "Sequence features"
-    },
-    {
-      "@id": "https://doi.org/10.1038/nsmb.1658",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1186/1756-8935-3-20",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gkt707",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

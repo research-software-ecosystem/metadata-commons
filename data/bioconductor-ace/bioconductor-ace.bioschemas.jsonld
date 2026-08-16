@@ -34,24 +34,35 @@
     "wgs": "https://www.w3.org/2003/01/geo/wgs84_pos#",
     "xsd": "http://www.w3.org/2001/XMLSchema#"
   },
-  "@id": "https://bio.tools/bioconductor-ace",
-  "@type": "sc:SoftwareApplication",
-  "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
-  "sc:additionalType": [
-    "Command-line tool",
-    "Library"
-  ],
-  "sc:description": "Uses segmented copy number data to estimate tumor cell percentage and produce copy number plots displaying absolute copy numbers.",
-  "sc:license": "GPL-2.0-only",
-  "sc:name": "ACE",
-  "sc:operatingSystem": [
-    "Linux",
-    "Mac",
-    "Windows"
-  ],
-  "sc:softwareHelp": {
-    "@id": "https://bioconductor.org/packages/ACE"
-  },
-  "sc:softwareVersion": "1.30.0",
-  "sc:url": "https://bioconductor.org/packages/ACE"
+  "@graph": [
+    {
+      "@id": "https://bio.tools/bioconductor-ace",
+      "@type": "sc:SoftwareApplication",
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "sc:additionalType": [
+        "Command-line tool",
+        "Library"
+      ],
+      "sc:citation": {
+        "@id": "https://doi.org/10.1093/bioinformatics/bty1055"
+      },
+      "sc:description": "Uses segmented copy number data to estimate tumor cell percentage and produce copy number plots displaying absolute copy numbers.",
+      "sc:license": "GPL-2.0-only",
+      "sc:name": "ACE",
+      "sc:operatingSystem": [
+        "Linux",
+        "Mac",
+        "Windows"
+      ],
+      "sc:softwareHelp": {
+        "@id": "https://bioconductor.org/packages/ACE"
+      },
+      "sc:softwareVersion": "1.30.0",
+      "sc:url": "https://bioconductor.org/packages/ACE"
+    },
+    {
+      "@id": "https://doi.org/10.1093/bioinformatics/bty1055",
+      "@type": "sc:CreativeWork"
+    }
+  ]
 }

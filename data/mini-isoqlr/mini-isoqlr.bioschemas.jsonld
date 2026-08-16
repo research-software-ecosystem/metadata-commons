@@ -36,16 +36,24 @@
   },
   "@graph": [
     {
+      "@id": "https://orcid.org/0000-0003-4099-9421",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.1101/2022.03.01.482488",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/mini-isoqlr",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "https://orcid.org/0000-0003-4099-9421"
       },
       "bsc:input": {
-        "@id": "_:N7b8a86cf89204b8c81d417f72a7d55d0"
+        "@id": "_:N7a13947f30e2442bba3869afa971d0c9"
       },
       "bsc:output": {
-        "@id": "_:N5d357d9b64c54986bdcc70c9b5c3e1fa"
+        "@id": "_:Nb543b52069b642c2bf574960d32b14d9"
       },
       "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
@@ -74,7 +82,7 @@
       "sc:url": "https://github.com/TBLabFJD/Mini-IsoQLR"
     },
     {
-      "@id": "_:N7b8a86cf89204b8c81d417f72a7d55d0",
+      "@id": "_:N7a13947f30e2442bba3869afa971d0c9",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1193"
@@ -85,7 +93,7 @@
       "sc:name": "Tool name (FASTA)"
     },
     {
-      "@id": "_:N5d357d9b64c54986bdcc70c9b5c3e1fa",
+      "@id": "_:Nb543b52069b642c2bf574960d32b14d9",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1711"
@@ -94,14 +102,6 @@
         "@id": "edam:format_3508"
       },
       "sc:name": "Sequence alignment image"
-    },
-    {
-      "@id": "https://doi.org/10.1101/2022.03.01.482488",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://orcid.org/0000-0003-4099-9421",
-      "@type": "sc:Person"
     }
   ]
 }

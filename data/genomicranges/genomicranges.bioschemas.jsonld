@@ -39,10 +39,10 @@
       "@id": "https://bio.tools/genomicranges",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Ncc0a5470185f4e29b2f8af02d3b8f033"
+        "@id": "_:Nca22827682eb4487b8aff46348b1b73d"
       },
       "bsc:output": {
-        "@id": "_:N33ddeae954084fc1835c2b88338f2c3e"
+        "@id": "_:N1f4ecda37f234be882558e2b597cba65"
       },
       "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
@@ -58,14 +58,29 @@
         }
       ],
       "sc:author": [
-        "Hervé Pagès",
-        "Michael Lawrence",
-        "Patrick Aboyoun"
+        "D. Sarkar",
+        "H. Pagès",
+        "M. Carlson",
+        "M. Lawrence",
+        "M. Morgan",
+        "P. Aboyoun",
+        "S. Falcon",
+        "V. Obenchain"
       ],
       "sc:citation": {
         "@id": "https://doi.org/10.1371/journal.pcbi.1003118"
       },
-      "sc:description": "Provides efficient low-level and highly reusable S4 classes for storing, manipulating and aggregating over annotated ranges of integers. Implements an algebra of range operations, including efficient algorithms for finding overlaps and nearest neighbors. Defines efficient list-like classes for storing, transforming and aggregating large grouped data, i.e., collections of atomic vectors and DataFrames.",
+      "sc:contributor": [
+        "D. Tenenbaum",
+        "D. Van Twisk",
+        "J. MacDonald",
+        "L. Shepherd",
+        "M. Ramos",
+        "P. Shannon",
+        "S. Arora",
+        "S. Saini"
+      ],
+      "sc:description": "Extract the genomic locations of genes, transcripts, exons, introns, and CDS, for the gene models stored in a TxDb object. A TxDb object is a small database that contains the gene models of a given organism/assembly. Bioconductor provides a small collection of TxDb objects in the form of ready-to-install TxDb packages for the most commonly studied organisms. Additionally, the user can easily make a TxDb object (or package) for the organism/assembly of their choice by using the tools from the txdbmaker package.",
       "sc:featureList": [
         {
           "@id": "edam:operation_2409"
@@ -82,13 +97,13 @@
         "Windows"
       ],
       "sc:softwareHelp": {
-        "@id": "https://bioconductor.org/packages/IRanges"
+        "@id": "https://bioconductor.org/packages/GenomicFeatures"
       },
-      "sc:softwareVersion": "2.46.0",
-      "sc:url": "https://bioconductor.org/packages/IRanges"
+      "sc:softwareVersion": "1.64.0",
+      "sc:url": "https://bioconductor.org/packages/GenomicFeatures"
     },
     {
-      "@id": "_:Ncc0a5470185f4e29b2f8af02d3b8f033",
+      "@id": "_:Nca22827682eb4487b8aff46348b1b73d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1276"
@@ -99,7 +114,7 @@
       "sc:name": "Nucleic acid features"
     },
     {
-      "@id": "_:N33ddeae954084fc1835c2b88338f2c3e",
+      "@id": "_:N1f4ecda37f234be882558e2b597cba65",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1017"

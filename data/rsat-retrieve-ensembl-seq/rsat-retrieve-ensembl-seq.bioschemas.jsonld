@@ -36,16 +36,28 @@
   },
   "@graph": [
     {
+      "@id": "https://orcid.org/0000-0003-1465-1640",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.1093/bioinformatics/btp519",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-2608-476X",
+      "@type": "sc:Person"
+    },
+    {
       "@id": "https://bio.tools/rsat-retrieve-ensembl-seq",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "https://orcid.org/0000-0003-1465-1640"
       },
       "bsc:input": {
-        "@id": "_:N984239744c514b72aa66a559afbe9413"
+        "@id": "_:Na85346cde30f4e90888c9bc357dc946c"
       },
       "bsc:output": {
-        "@id": "_:N2c665976d2a64691a079f58dcc40ffae"
+        "@id": "_:N11cbd8087c93496ea3c63a858384bead"
       },
       "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
@@ -109,7 +121,7 @@
       "sc:url": "http://rsat.sb-roscoff.fr/retrieve-ensembl-seq_form.cgi"
     },
     {
-      "@id": "_:N984239744c514b72aa66a559afbe9413",
+      "@id": "_:Na85346cde30f4e90888c9bc357dc946c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0842"
@@ -120,7 +132,7 @@
       "sc:name": "Identifier"
     },
     {
-      "@id": "_:N2c665976d2a64691a079f58dcc40ffae",
+      "@id": "_:N11cbd8087c93496ea3c63a858384bead",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1234"
@@ -129,18 +141,6 @@
         "@id": "edam:format_1929"
       },
       "sc:name": "Sequence set (nucleic acid)"
-    },
-    {
-      "@id": "https://orcid.org/0000-0003-1465-1640",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://orcid.org/0000-0003-2608-476X",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://doi.org/10.1093/bioinformatics/btp519",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

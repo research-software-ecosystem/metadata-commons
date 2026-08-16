@@ -36,16 +36,24 @@
   },
   "@graph": [
     {
+      "@id": "http://orcid.org/0000-0003-4327-3730",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.1093/bioinformatics/btm562",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/matrixclust",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "http://orcid.org/0000-0003-4327-3730"
       },
       "bsc:input": {
-        "@id": "_:Nd9c9797da3444ef984783131c7ac3ce1"
+        "@id": "_:N9d4467dc2694402a98703d5f8d8faeac"
       },
       "bsc:output": {
-        "@id": "_:Nfc5bdf6378864b05b13f3a3c9d5e5283"
+        "@id": "_:N740528dd6d224f8dbc4ec14340b9d584"
       },
       "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
@@ -75,7 +83,7 @@
       "sc:url": "http://bioinformatics.psb.ugent.be/software/details/MatrixClust"
     },
     {
-      "@id": "_:Nd9c9797da3444ef984783131c7ac3ce1",
+      "@id": "_:N9d4467dc2694402a98703d5f8d8faeac",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2855"
@@ -83,20 +91,12 @@
       "sc:name": "Distance matrix"
     },
     {
-      "@id": "_:Nfc5bdf6378864b05b13f3a3c9d5e5283",
+      "@id": "_:N740528dd6d224f8dbc4ec14340b9d584",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1235"
       },
       "sc:name": "Sequence cluster"
-    },
-    {
-      "@id": "http://orcid.org/0000-0003-4327-3730",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://doi.org/10.1093/bioinformatics/btm562",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

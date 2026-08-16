@@ -36,19 +36,23 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1038/nbt1160",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/show_simul",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Pierre Nicolas",
       "bsc:input": [
         {
-          "@id": "_:N9a1cd84fe7074d49b6741529a0c1ee8f"
+          "@id": "_:N399dca85988d420797cd81639dcd25b1"
         },
         {
-          "@id": "_:N88990ed2d5d74d6c8a24a5240e4ab31d"
+          "@id": "_:N1328b1dc22b447759440dfa244c63b00"
         }
       ],
       "bsc:output": {
-        "@id": "_:Nf7b086c1b97e48f6bf021b164d418915"
+        "@id": "_:N9471f550bc224f6b8331ce122c750bba"
       },
       "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
@@ -78,7 +82,7 @@
       "sc:url": "http://genome.jouy.inra.fr/ssb/SHOW/"
     },
     {
-      "@id": "_:N9a1cd84fe7074d49b6741529a0c1ee8f",
+      "@id": "_:N399dca85988d420797cd81639dcd25b1",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1364"
@@ -86,7 +90,7 @@
       "sc:name": "Hidden Markov model"
     },
     {
-      "@id": "_:N88990ed2d5d74d6c8a24a5240e4ab31d",
+      "@id": "_:N1328b1dc22b447759440dfa244c63b00",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1249"
@@ -94,16 +98,12 @@
       "sc:name": "Sequence length"
     },
     {
-      "@id": "_:Nf7b086c1b97e48f6bf021b164d418915",
+      "@id": "_:N9471f550bc224f6b8331ce122c750bba",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2977"
       },
       "sc:name": "Nucleic acid sequence"
-    },
-    {
-      "@id": "https://doi.org/10.1038/nbt1160",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

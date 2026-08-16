@@ -36,16 +36,24 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1186/s12859-018-2138-x",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "http://orcid.org/0000-0002-8886-7797",
+      "@type": "sc:Person"
+    },
+    {
       "@id": "https://bio.tools/CyGenexpi",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "http://orcid.org/0000-0002-8886-7797"
       },
       "bsc:input": {
-        "@id": "_:N0634ad8975f9434c92678bf30dd78511"
+        "@id": "_:N214db125839d4a1b812b97e6e6a47d1a"
       },
       "bsc:output": {
-        "@id": "_:Nddd5e5d92e034a9ab06ca96e9c086575"
+        "@id": "_:N77b6c16785ac4f06b9910323b1133cc4"
       },
       "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Plug-in",
@@ -85,7 +93,7 @@
       "sc:url": "https://github.com/cas-bioinf/genexpi/wiki/CyGenexpi"
     },
     {
-      "@id": "_:N0634ad8975f9434c92678bf30dd78511",
+      "@id": "_:N214db125839d4a1b812b97e6e6a47d1a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3112"
@@ -96,7 +104,7 @@
       "sc:name": "Gene expression matrix"
     },
     {
-      "@id": "_:Nddd5e5d92e034a9ab06ca96e9c086575",
+      "@id": "_:N77b6c16785ac4f06b9910323b1133cc4",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2984"
@@ -105,14 +113,6 @@
         "@id": "edam:format_3751"
       },
       "sc:name": "Pathway or network report"
-    },
-    {
-      "@id": "https://doi.org/10.1186/s12859-018-2138-x",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "http://orcid.org/0000-0002-8886-7797",
-      "@type": "sc:Person"
     }
   ]
 }
