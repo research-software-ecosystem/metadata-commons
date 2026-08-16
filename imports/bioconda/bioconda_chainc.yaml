@@ -1,0 +1,34 @@
+about:
+  dev_url: https://github.com/hillerlab/chainc
+  home: https://github.com/hillerlab/chainc
+  license: GPL-3.0-only
+  license_family: GPL
+  license_file:
+  - LICENSE
+  - THIRDPARTY.yml
+  summary: Remove chain-breaking alignments using chain/net files
+build:
+  number: 0
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+  recipe-maintainers:
+  - alejandrogzi
+package:
+  name: chainc
+  version: 0.0.1
+requirements:
+  build:
+  - null
+  - null
+  - cargo-bundle-licenses
+source:
+  sha256: c99e383dcfb8d793947c5c03943ff84fc56f96907b1313f06e2f8f4217e72e17
+  url: https://github.com/hillerlab/chainc/archive/refs/tags/v0.0.1.tar.gz
+test:
+  commands:
+  - chainc --help
+  - chainc --version

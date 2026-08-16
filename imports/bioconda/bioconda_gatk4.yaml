@@ -6,14 +6,14 @@ about:
   summary: Genome Analysis Toolkit (GATK4)
 build:
   noarch: generic
-  number: 1
+  number: 2
   run_exports:
   - null
 outputs:
-- name: gatk4
+- name: gatk4-main
   requirements:
     run:
-    - openjdk >=17
+    - openjdk =17
     - python
   script: build_main.sh
   test:
@@ -22,12 +22,10 @@ outputs:
     - gatk --list
     - gatk HaplotypeCaller --help
     - gatk DetermineGermlineContigPloidy --help
-- build:
-    noarch: generic
-  name: gatk4-spark
+- name: gatk4-spark
   requirements:
     run:
-    - openjdk >=17
+    - openjdk =17
     - python
     - null
   script: build_spark.sh
@@ -49,7 +47,7 @@ requirements:
   - r-reshape
   - gcnvkernel =0.9
   run:
-  - openjdk >=17
+  - openjdk =17
   - python
   - r-base =4.3.1
   - r-gplots
