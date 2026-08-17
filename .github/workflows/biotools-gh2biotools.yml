@@ -13,7 +13,7 @@ jobs:
     if: github.actor != 'biotools-bot'
     
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           sparse-checkout: '**/*.biotools.json'
           sparse-checkout-cone-mode: false
@@ -75,7 +75,7 @@ jobs:
 
 
       - name: checkout utils repo
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           repository: research-software-ecosystem/utils
           path: content-ecosystem-utils
@@ -85,7 +85,7 @@ jobs:
 
 
       - name: set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v7
         with:
           python-version: '3.x'
 

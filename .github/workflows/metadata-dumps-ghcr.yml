@@ -3,7 +3,7 @@ name: Publish weekly metadata dumps to GHCR
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 2 * * 0'
+    - cron: '0 8 * * 0'
 
 permissions:
   contents: read
@@ -18,17 +18,17 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           path: metadata-commons
 
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           repository: research-software-ecosystem/utils
           path: utils
 
       - name: Setup Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v7
         with:
           python-version: "3.9"
 
@@ -66,7 +66,7 @@ jobs:
             > metadata-commons-datasets.tar.gz.sha256
 
       - name: Set up ORAS
-        uses: oras-project/setup-oras@v1
+        uses: oras-project/setup-oras@v2
 
       - name: Log in to GHCR
         run: |
