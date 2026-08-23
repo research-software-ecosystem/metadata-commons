@@ -36,13 +36,21 @@
   },
   "@graph": [
     {
+      "@id": "https://orcid.org/0000-0001-7470-4324",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/gkx390",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/DEOGEN2",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "https://orcid.org/0000-0001-7470-4324"
       },
       "bsc:input": {
-        "@id": "_:Nb603b909fb7f4dc7b4604f6d11521cc2"
+        "@id": "_:N2b82630d82594756bce3e9f569881105"
       },
       "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web service",
@@ -65,20 +73,12 @@
       "sc:url": "http://deogen2.mutaframe.com/"
     },
     {
-      "@id": "_:Nb603b909fb7f4dc7b4604f6d11521cc2",
+      "@id": "_:N2b82630d82594756bce3e9f569881105",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3021"
       },
       "sc:name": "UniProt accession"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gkx390",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://orcid.org/0000-0001-7470-4324",
-      "@type": "sc:Person"
     }
   ]
 }

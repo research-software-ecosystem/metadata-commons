@@ -36,16 +36,24 @@
   },
   "@graph": [
     {
+      "@id": "https://orcid.org/0000-0002-3906-8446",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.1038/s41588-023-01415-w",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/shapeit5",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "https://orcid.org/0000-0002-3906-8446"
       },
       "bsc:input": {
-        "@id": "_:N63ebfe399f59407ba7d3c82af982ec49"
+        "@id": "_:Nfd44406f480e4eb3aee4c585c54ca516"
       },
       "bsc:output": {
-        "@id": "_:Ne9ee4767b60f446296febfb9a154557f"
+        "@id": "_:N300548501aa545b49631137d47fb7400"
       },
       "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
@@ -74,7 +82,7 @@
       "sc:url": "https://odelaneau.github.io/shapeit5/"
     },
     {
-      "@id": "_:N63ebfe399f59407ba7d3c82af982ec49",
+      "@id": "_:Nfd44406f480e4eb3aee4c585c54ca516",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3498"
@@ -90,7 +98,7 @@
       "sc:name": "Sequence variations"
     },
     {
-      "@id": "_:Ne9ee4767b60f446296febfb9a154557f",
+      "@id": "_:N300548501aa545b49631137d47fb7400",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3498"
@@ -104,14 +112,6 @@
         }
       ],
       "sc:name": "Sequence variations"
-    },
-    {
-      "@id": "https://orcid.org/0000-0002-3906-8446",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://doi.org/10.1038/s41588-023-01415-w",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

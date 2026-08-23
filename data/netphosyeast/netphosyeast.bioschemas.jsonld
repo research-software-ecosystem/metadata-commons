@@ -36,17 +36,25 @@
   },
   "@graph": [
     {
+      "@id": "http://orcid.org/0000-0001-7787-7853",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.1093/bioinformatics/btm020",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/netphosyeast",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nf9bf85f2c0a14d208c279d811705f855"
+        "@id": "_:N00a8e17e28834240b486e78eed874f34"
       },
       "bsc:output": [
         {
-          "@id": "_:Nb0a339f2ec664c429b4e9584d8946431"
+          "@id": "_:N7f24c7cf763a47cea6f72cb7293318c5"
         },
         {
-          "@id": "_:N7d848bd9727e48c8a1ad3b5422715bc8"
+          "@id": "_:N4031fcea1aa94923a5f0cc6e5f8139eb"
         }
       ],
       "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -83,7 +91,7 @@
       "sc:url": "http://www.cbs.dtu.dk/services/NetPhosYeast/"
     },
     {
-      "@id": "_:Nf9bf85f2c0a14d208c279d811705f855",
+      "@id": "_:N00a8e17e28834240b486e78eed874f34",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
@@ -94,7 +102,7 @@
       "sc:name": "Sequence"
     },
     {
-      "@id": "_:Nb0a339f2ec664c429b4e9584d8946431",
+      "@id": "_:N7f24c7cf763a47cea6f72cb7293318c5",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"
@@ -105,7 +113,7 @@
       "sc:name": "Report"
     },
     {
-      "@id": "_:N7d848bd9727e48c8a1ad3b5422715bc8",
+      "@id": "_:N4031fcea1aa94923a5f0cc6e5f8139eb",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2955"
@@ -114,14 +122,6 @@
         "@id": "edam:format_2333"
       },
       "sc:name": "Sequence report"
-    },
-    {
-      "@id": "https://doi.org/10.1093/bioinformatics/btm020",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "http://orcid.org/0000-0001-7787-7853",
-      "@type": "sc:Person"
     }
   ]
 }

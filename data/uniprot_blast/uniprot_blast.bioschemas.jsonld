@@ -36,14 +36,18 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/gku989",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/uniprot_blast",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Xavier Watkins",
       "bsc:input": {
-        "@id": "_:Nd23ff0e2c50340f9b3aef53567ad03f8"
+        "@id": "_:Nb412ffe9179544a4a6c6b15bc64338ac"
       },
       "bsc:output": {
-        "@id": "_:N0cadb8202c634c24abb0f1d66c3b1768"
+        "@id": "_:Nb679ca39848d4b0280f47ce0757f753b"
       },
       "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
@@ -90,7 +94,7 @@
       "sc:url": "http://www.uniprot.org/blast/"
     },
     {
-      "@id": "_:Nd23ff0e2c50340f9b3aef53567ad03f8",
+      "@id": "_:Nb412ffe9179544a4a6c6b15bc64338ac",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2976"
@@ -98,16 +102,12 @@
       "sc:name": "Protein sequence"
     },
     {
-      "@id": "_:N0cadb8202c634c24abb0f1d66c3b1768",
+      "@id": "_:Nb679ca39848d4b0280f47ce0757f753b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0857"
       },
       "sc:name": "Sequence search results"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gku989",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -36,26 +36,18 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/nar/gkac240",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1093/bioinformatics/btu031",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/interproscan_4",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Job Dispatcher",
       "bsc:input": {
-        "@id": "_:N0181af30f00949a7b682624fbe804861"
+        "@id": "_:N995f2e3d2e9943ed889d29e58545985b"
       },
       "bsc:output": [
         {
-          "@id": "_:N291c324032ee45f7a50a127fbbcbcd19"
+          "@id": "_:N1f071eb2a3e94a08ba0a8c2eacf79155"
         },
         {
-          "@id": "_:N9ec41ef75c6e42049c463351ad15fcf9"
+          "@id": "_:Ne2d59056154e455c8d47fee403634030"
         }
       ],
       "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -115,7 +107,7 @@
       "sc:url": "http://www.ebi.ac.uk/Tools/pfa/iprscan/"
     },
     {
-      "@id": "_:N0181af30f00949a7b682624fbe804861",
+      "@id": "_:N995f2e3d2e9943ed889d29e58545985b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2976"
@@ -123,7 +115,7 @@
       "sc:name": "Protein sequence"
     },
     {
-      "@id": "_:N291c324032ee45f7a50a127fbbcbcd19",
+      "@id": "_:N1f071eb2a3e94a08ba0a8c2eacf79155",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1277"
@@ -131,12 +123,20 @@
       "sc:name": "Protein features"
     },
     {
-      "@id": "_:N9ec41ef75c6e42049c463351ad15fcf9",
+      "@id": "_:Ne2d59056154e455c8d47fee403634030",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0858"
       },
       "sc:name": "Sequence signature matches"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/gkac240",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1093/bioinformatics/btu031",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -44,18 +44,18 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Ndf472cadbe504f0ca143ffa4151343a0"
+          "@id": "_:N757740744257492981e8878b69889c3f"
         },
         {
-          "@id": "_:Nc5dcae94fb924ce7b8cca86fb140fdd8"
+          "@id": "_:Nbaa71b961f7a4ed3b5e501374c7ae4a9"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N1a326970b565477f8b61a4b35fdea2e8"
+          "@id": "_:N8c03d6c977ac4031804dfd5b76aa30ce"
         },
         {
-          "@id": "_:Ncac900f2266348f4a3ec2a5c5d887bde"
+          "@id": "_:Nfee2e80b477a4de185207dc473579645"
         }
       ],
       "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -68,18 +68,13 @@
       },
       "sc:author": [
         "Hervé Pagès",
-        "Martin Morgan",
-        "Valerie Obenchain"
+        "Michael Lawrence",
+        "Patrick Aboyoun"
       ],
       "sc:citation": {
         "@id": "https://doi.org/10.1371/journal.pcbi.1003118"
       },
-      "sc:contributor": [
-        "Fedor Bezrukov",
-        "Halimat C. Atanda",
-        "Robert Castelo"
-      ],
-      "sc:description": "Provides efficient containers for storing and manipulating short genomic alignments (typically obtained by aligning short reads to a reference genome). This includes read counting, computing the coverage, junction detection, and working with the nucleotide content of the alignments.",
+      "sc:description": "Provides efficient low-level and highly reusable S4 classes for storing, manipulating and aggregating over annotated ranges of integers. Implements an algebra of range operations, including efficient algorithms for finding overlaps and nearest neighbors. Defines efficient list-like classes for storing, transforming and aggregating large grouped data, i.e., collections of atomic vectors and DataFrames.",
       "sc:featureList": [
         {
           "@id": "edam:operation_2478"
@@ -99,13 +94,13 @@
         "Windows"
       ],
       "sc:softwareHelp": {
-        "@id": "https://bioconductor.org/packages/GenomicAlignments"
+        "@id": "https://bioconductor.org/packages/IRanges"
       },
-      "sc:softwareVersion": "1.48.0",
-      "sc:url": "https://bioconductor.org/packages/GenomicAlignments"
+      "sc:softwareVersion": "2.46.0",
+      "sc:url": "https://bioconductor.org/packages/IRanges"
     },
     {
-      "@id": "_:Ndf472cadbe504f0ca143ffa4151343a0",
+      "@id": "_:N757740744257492981e8878b69889c3f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1270"
@@ -124,7 +119,7 @@
       "sc:name": "Feature table"
     },
     {
-      "@id": "_:Nc5dcae94fb924ce7b8cca86fb140fdd8",
+      "@id": "_:Nbaa71b961f7a4ed3b5e501374c7ae4a9",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1383"
@@ -143,7 +138,7 @@
       "sc:name": "Sequence alignment (nucleic acid)"
     },
     {
-      "@id": "_:N1a326970b565477f8b61a4b35fdea2e8",
+      "@id": "_:N8c03d6c977ac4031804dfd5b76aa30ce",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1383"
@@ -159,7 +154,7 @@
       "sc:name": "Sequence alignment (nucleic acid)"
     },
     {
-      "@id": "_:Ncac900f2266348f4a3ec2a5c5d887bde",
+      "@id": "_:Nfee2e80b477a4de185207dc473579645",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0867"

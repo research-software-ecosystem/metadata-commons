@@ -36,19 +36,23 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1038/s41592-018-0001-7",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/ngmlr",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Philipp Rescheneder",
       "bsc:input": [
         {
-          "@id": "_:N0be455e802d44e84a2f2fd4231f5a0c5"
+          "@id": "_:N21a12bc5721e43f19f617a59993b46ab"
         },
         {
-          "@id": "_:N0bf5e2c836a34ba3b7de1a3b374c1ff8"
+          "@id": "_:Ncb89fa46a897480194d382aa2fff1652"
         }
       ],
       "bsc:output": {
-        "@id": "_:N64df2933bd634b08a9b8970f5f55964b"
+        "@id": "_:Nb5bcbaddd3a84f9bb0d6b0bb07c7ee3f"
       },
       "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
@@ -96,7 +100,7 @@
       "sc:url": "https://github.com/philres/ngmlr"
     },
     {
-      "@id": "_:N0be455e802d44e84a2f2fd4231f5a0c5",
+      "@id": "_:N21a12bc5721e43f19f617a59993b46ab",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3497"
@@ -107,7 +111,7 @@
       "sc:name": "DNA sequence (raw)"
     },
     {
-      "@id": "_:N0bf5e2c836a34ba3b7de1a3b374c1ff8",
+      "@id": "_:Ncb89fa46a897480194d382aa2fff1652",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2093"
@@ -118,7 +122,7 @@
       "sc:name": "Data reference"
     },
     {
-      "@id": "_:N64df2933bd634b08a9b8970f5f55964b",
+      "@id": "_:Nb5bcbaddd3a84f9bb0d6b0bb07c7ee3f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1383"
@@ -127,10 +131,6 @@
         "@id": "edam:format_2573"
       },
       "sc:name": "Sequence alignment (nucleic acid)"
-    },
-    {
-      "@id": "https://doi.org/10.1038/s41592-018-0001-7",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

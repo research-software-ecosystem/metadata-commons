@@ -36,16 +36,24 @@
   },
   "@graph": [
     {
+      "@id": "http://orcid.org/0000-0001-5528-0087",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/gkt940",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/pdbsum",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "http://orcid.org/0000-0001-5528-0087"
       },
       "bsc:input": {
-        "@id": "_:N336158588c8d4671ab6f3891945688ec"
+        "@id": "_:N26a227c8a5964b0898b621d3692c4024"
       },
       "bsc:output": {
-        "@id": "_:N99fb6e81e8ea4414b7e3456d3d11ed46"
+        "@id": "_:N8546d05c3f24462b87116ce0bada6b5d"
       },
       "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Database portal",
@@ -75,7 +83,7 @@
       "sc:url": "https://www.ebi.ac.uk/pdbsum/"
     },
     {
-      "@id": "_:N336158588c8d4671ab6f3891945688ec",
+      "@id": "_:N26a227c8a5964b0898b621d3692c4024",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1127"
@@ -83,7 +91,7 @@
       "sc:name": "PDB ID"
     },
     {
-      "@id": "_:N99fb6e81e8ea4414b7e3456d3d11ed46",
+      "@id": "_:N8546d05c3f24462b87116ce0bada6b5d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2085"
@@ -92,14 +100,6 @@
         "@id": "edam:format_2331"
       },
       "sc:name": "Structure report"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gkt940",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "http://orcid.org/0000-0001-5528-0087",
-      "@type": "sc:Person"
     }
   ]
 }

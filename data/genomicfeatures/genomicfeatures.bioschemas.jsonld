@@ -44,27 +44,27 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N919518a5e19e4c36a8b4761851ab3a05"
+          "@id": "_:N8389da8afcfc487ba91df87801bbc000"
         },
         {
-          "@id": "_:N8b39e91b584245d79b47b4e57f6f9e70"
+          "@id": "_:Nceb280aeceb6466a8036d1ec91128a31"
         },
         {
-          "@id": "_:N22172cd319f64228a169101a890e72f4"
+          "@id": "_:N77a9b4a816274895865fb61ac7ecf495"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N6a6397e1ffaa46bf951ca256c3687fa6"
+          "@id": "_:Nca62bbf5784545199d231cf8ebbb53f8"
         },
         {
-          "@id": "_:Nde29a5dd42ef44e5a82e9e3a9b53cb2d"
+          "@id": "_:N3c1ce672b3f34c23a6a09c14ea83b7b1"
         },
         {
-          "@id": "_:Nf193c4fc0c5241cdaf9c02e80153eeb6"
+          "@id": "_:Nd0e7abddd8f141208508815b2d097f29"
         },
         {
-          "@id": "_:N7b747dc9f5364590b74c8d351be247b6"
+          "@id": "_:Nee4ebd00a139463fa415cf738704f108"
         }
       ],
       "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -91,7 +91,17 @@
       "sc:citation": {
         "@id": "https://doi.org/10.1371/journal.pcbi.1003118"
       },
-      "sc:description": "Provides efficient low-level and highly reusable S4 classes for storing, manipulating and aggregating over annotated ranges of integers. Implements an algebra of range operations, including efficient algorithms for finding overlaps and nearest neighbors. Defines efficient list-like classes for storing, transforming and aggregating large grouped data, i.e., collections of atomic vectors and DataFrames.",
+      "sc:contributor": [
+        "Dan Tenenbaum",
+        "Daniel van Twisk",
+        "Kayla Morrell",
+        "Lori Shepherd",
+        "Marcel Ramos",
+        "Martin Morgan",
+        "Sonali Arora",
+        "Valerie Obenchain"
+      ],
+      "sc:description": "The ability to efficiently represent and manipulate genomic annotations and alignments is playing a central role when it comes to analyzing high-throughput sequencing data (a.k.a. NGS data). The GenomicRanges package defines general purpose containers for storing and manipulating genomic intervals and variables defined along a genome. More specialized containers for representing and manipulating short alignments against a reference genome, or a matrix-like summarization of an experiment, are defined in the GenomicAlignments and SummarizedExperiment packages, respectively. Both packages build on top of the GenomicRanges infrastructure.",
       "sc:featureList": [
         {
           "@id": "edam:operation_2409"
@@ -108,13 +118,13 @@
         "Windows"
       ],
       "sc:softwareHelp": {
-        "@id": "https://bioconductor.org/packages/IRanges"
+        "@id": "https://bioconductor.org/packages/GenomicRanges"
       },
-      "sc:softwareVersion": "2.46.0",
-      "sc:url": "https://bioconductor.org/packages/IRanges"
+      "sc:softwareVersion": "1.64.0",
+      "sc:url": "https://bioconductor.org/packages/GenomicRanges"
     },
     {
-      "@id": "_:N919518a5e19e4c36a8b4761851ab3a05",
+      "@id": "_:N8389da8afcfc487ba91df87801bbc000",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1270"
@@ -136,7 +146,7 @@
       "sc:name": "Feature table"
     },
     {
-      "@id": "_:N8b39e91b584245d79b47b4e57f6f9e70",
+      "@id": "_:Nceb280aeceb6466a8036d1ec91128a31",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1050"
@@ -158,7 +168,7 @@
       "sc:name": "File name"
     },
     {
-      "@id": "_:N22172cd319f64228a169101a890e72f4",
+      "@id": "_:N77a9b4a816274895865fb61ac7ecf495",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3134"
@@ -180,7 +190,7 @@
       "sc:name": "Gene transcript report"
     },
     {
-      "@id": "_:N6a6397e1ffaa46bf951ca256c3687fa6",
+      "@id": "_:Nca62bbf5784545199d231cf8ebbb53f8",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3134"
@@ -196,7 +206,7 @@
       "sc:name": "Gene transcript report"
     },
     {
-      "@id": "_:Nde29a5dd42ef44e5a82e9e3a9b53cb2d",
+      "@id": "_:N3c1ce672b3f34c23a6a09c14ea83b7b1",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"
@@ -212,7 +222,7 @@
       "sc:name": "Report"
     },
     {
-      "@id": "_:Nf193c4fc0c5241cdaf9c02e80153eeb6",
+      "@id": "_:Nd0e7abddd8f141208508815b2d097f29",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1017"
@@ -228,7 +238,7 @@
       "sc:name": "Sequence range"
     },
     {
-      "@id": "_:N7b747dc9f5364590b74c8d351be247b6",
+      "@id": "_:Nee4ebd00a139463fa415cf738704f108",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0849"

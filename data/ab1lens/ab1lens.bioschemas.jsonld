@@ -36,33 +36,29 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.5281/zenodo.21444547",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/ab1lens",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Fishka Bio",
       "bsc:input": [
         {
-          "@id": "_:N4904e8fe774e4131b9715782d05114aa"
+          "@id": "_:N6f386a4cf7d64ebc8d2d729b561e1d59"
         },
         {
-          "@id": "_:N1627a907628c436a93d352ea61949d87"
+          "@id": "_:Nff75041c83e546f384f65b2766ac6e32"
         },
         {
-          "@id": "_:N91e9e447f66e43cebb69524adab9664b"
+          "@id": "_:Nebe4a460f957493fa6414eea0647fb8e"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N6c60b924733a4c8c9013c85284bdc80d"
+          "@id": "_:N7e64371d7db54991836f5a37e6d4ecaf"
         },
         {
-          "@id": "_:N5950081062644da2810fc6793b69422e"
+          "@id": "_:Nad617bd6298b4ff08eb4b2e38a23d869"
         },
         {
-          "@id": "_:N9506e6cca9724587b96b76b17d4e1207"
+          "@id": "_:N05f5ed9db65d488fa4129ac82bb20e64"
         }
       ],
       "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -85,13 +81,28 @@
       "sc:citation": {
         "@id": "https://doi.org/10.5281/zenodo.21444547"
       },
-      "sc:description": "Browser-based viewer for Sanger sequencing chromatograms in AB1/ABIF and SCF format. Opens .ab1/.abi/.fsa files, shows raw and analysed traces, basecalls, quality values and the ABIF directory, and puts two reads side by side for comparison. Aligns a read against a reference sequence to highlight mismatches. Drag on a trace to select a base range, then copy it as FASTA, zoom to it or export just that region. Exports the read as FASTA, FASTQ or ABIF and the chromatogram as a high-resolution image. Open files are kept as local sessions, so a closed tab can be picked up where it was left. Runs entirely in the browser — files are never uploaded.",
+      "sc:description": "Browser-based viewer for Sanger sequencing chromatograms in AB1/ABIF and SCF format, and for the .srd raw files of the Nanofor-05 capillary sequencer, converted to ABIF as they open. Shows raw and analysed traces, base calls (called or edited), per-base quality and the full ABIF directory, and puts two reads side by side with their tag tables aligned. A read aligns against a pasted or loaded reference, which reports identity, mismatches, indels and the ends that did not align, and flips the strand when the read is on the other one. End trimming (modified Mott or sliding window) has draggable handles, motif search is IUPAC-aware and finds primers, and QC metrics copy out as CSV. Drag on a trace to select a base range, then copy it as FASTA, zoom to it or export just that region. Exports the read as FASTA, FASTQ, .qual or ABIF and the chromatogram as a high-resolution PNG. Open files are kept as local sessions. Runs entirely in the browser — files are never uploaded.",
       "sc:featureList": [
         {
           "@id": "edam:operation_0491"
         },
         {
           "@id": "edam:operation_3203"
+        },
+        {
+          "@id": "edam:operation_0363"
+        },
+        {
+          "@id": "edam:operation_0233"
+        },
+        {
+          "@id": "edam:operation_0239"
+        },
+        {
+          "@id": "edam:operation_3192"
+        },
+        {
+          "@id": "edam:operation_3218"
         }
       ],
       "sc:isAccessibleForFree": true,
@@ -108,7 +119,7 @@
       "sc:url": "https://fishka.bio/ab1lens"
     },
     {
-      "@id": "_:N4904e8fe774e4131b9715782d05114aa",
+      "@id": "_:N6f386a4cf7d64ebc8d2d729b561e1d59",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0849"
@@ -119,7 +130,7 @@
       "sc:name": "Sequence record"
     },
     {
-      "@id": "_:N1627a907628c436a93d352ea61949d87",
+      "@id": "_:Nff75041c83e546f384f65b2766ac6e32",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0924"
@@ -130,7 +141,7 @@
       "sc:name": "Sequence trace"
     },
     {
-      "@id": "_:N91e9e447f66e43cebb69524adab9664b",
+      "@id": "_:Nebe4a460f957493fa6414eea0647fb8e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0924"
@@ -146,7 +157,7 @@
       "sc:name": "Sequence trace"
     },
     {
-      "@id": "_:N6c60b924733a4c8c9013c85284bdc80d",
+      "@id": "_:N7e64371d7db54991836f5a37e6d4ecaf",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0863"
@@ -157,23 +168,29 @@
       "sc:name": "Sequence alignment"
     },
     {
-      "@id": "_:N5950081062644da2810fc6793b69422e",
+      "@id": "_:Nad617bd6298b4ff08eb4b2e38a23d869",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0849"
       },
       "sc:encodingFormat": [
         {
+          "@id": "edam:format_3000"
+        },
+        {
           "@id": "edam:format_1929"
         },
         {
           "@id": "edam:format_1930"
+        },
+        {
+          "@id": "edam:format_3607"
         }
       ],
       "sc:name": "Sequence record"
     },
     {
-      "@id": "_:N9506e6cca9724587b96b76b17d4e1207",
+      "@id": "_:N05f5ed9db65d488fa4129ac82bb20e64",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2168"
@@ -182,6 +199,10 @@
         "@id": "edam:format_3603"
       },
       "sc:name": "Sequence trace image"
+    },
+    {
+      "@id": "https://doi.org/10.5281/zenodo.21444547",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

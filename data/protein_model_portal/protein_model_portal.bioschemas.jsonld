@@ -36,16 +36,24 @@
   },
   "@graph": [
     {
+      "@id": "https://orcid.org/0000-0003-2715-335X",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.1093/database/bat031",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/protein_model_portal",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "https://orcid.org/0000-0003-2715-335X"
       },
       "bsc:input": {
-        "@id": "_:N4d138e88776f4de8b1c9ff42899adb62"
+        "@id": "_:N661f05cc30b541d7b48a16405e864ffc"
       },
       "bsc:output": {
-        "@id": "_:N2df7554ce065474db656a0a65e2f92b3"
+        "@id": "_:N94e17c3e55964c08b9287c6105fd2683"
       },
       "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Database portal",
@@ -92,7 +100,7 @@
       "sc:url": "https://www.proteinmodelportal.org"
     },
     {
-      "@id": "_:N4d138e88776f4de8b1c9ff42899adb62",
+      "@id": "_:N661f05cc30b541d7b48a16405e864ffc",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3021"
@@ -100,7 +108,7 @@
       "sc:name": "UniProt accession"
     },
     {
-      "@id": "_:N2df7554ce065474db656a0a65e2f92b3",
+      "@id": "_:N94e17c3e55964c08b9287c6105fd2683",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0896"
@@ -109,14 +117,6 @@
         "@id": "edam:format_2331"
       },
       "sc:name": "Protein report"
-    },
-    {
-      "@id": "https://doi.org/10.1093/database/bat031",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://orcid.org/0000-0003-2715-335X",
-      "@type": "sc:Person"
     }
   ]
 }

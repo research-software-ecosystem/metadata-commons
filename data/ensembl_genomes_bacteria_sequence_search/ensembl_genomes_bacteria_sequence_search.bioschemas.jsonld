@@ -36,18 +36,22 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/gkv1157",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/ensembl_genomes_bacteria_sequence_search",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Ensembl Genomes webteam",
       "bsc:input": {
-        "@id": "_:N8c6c88ec00464a3d9f2535f97e79449d"
+        "@id": "_:N178066efe5bb42cfb9e3fa493fba9976"
       },
       "bsc:output": [
         {
-          "@id": "_:N1682138ed845443c97eb069f1138eeff"
+          "@id": "_:Nb1b18708134c4a85a61e36a2eba97e21"
         },
         {
-          "@id": "_:N14239072065846519208b2c85c325da8"
+          "@id": "_:N86eb930dbfa04d3cbe7e8f0e97822f54"
         }
       ],
       "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -86,7 +90,7 @@
       "sc:url": "http://bacteria.ensembl.org/Multi/enasearch"
     },
     {
-      "@id": "_:N8c6c88ec00464a3d9f2535f97e79449d",
+      "@id": "_:N178066efe5bb42cfb9e3fa493fba9976",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
@@ -97,7 +101,7 @@
       "sc:name": "Sequence"
     },
     {
-      "@id": "_:N1682138ed845443c97eb069f1138eeff",
+      "@id": "_:Nb1b18708134c4a85a61e36a2eba97e21",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0863"
@@ -105,16 +109,12 @@
       "sc:name": "Sequence alignment"
     },
     {
-      "@id": "_:N14239072065846519208b2c85c325da8",
+      "@id": "_:N86eb930dbfa04d3cbe7e8f0e97822f54",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0857"
       },
       "sc:name": "Sequence search results"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gkv1157",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

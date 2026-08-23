@@ -36,16 +36,20 @@
   },
   "@graph": [
     {
+      "@id": "https://orcid.org/0000-0003-1881-5489",
+      "@type": "sc:Person"
+    },
+    {
       "@id": "https://bio.tools/pdb-nma-analysis",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "https://orcid.org/0000-0003-1881-5489"
       },
       "bsc:input": {
-        "@id": "_:Nfd99a3295e8d4ab3874062d8fdb122cb"
+        "@id": "_:N420cb3616b784028835b45825b5728e1"
       },
       "bsc:output": {
-        "@id": "_:N6c5b28a5560b4db3a5af14c8a1c1d35f"
+        "@id": "_:Naa3fda6d67b345379f9691674e454395"
       },
       "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
@@ -85,7 +89,7 @@
       "sc:url": "https://github.com/haschka/pdb-nma-analysis"
     },
     {
-      "@id": "_:Nfd99a3295e8d4ab3874062d8fdb122cb",
+      "@id": "_:N420cb3616b784028835b45825b5728e1",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2877"
@@ -96,7 +100,7 @@
       "sc:name": "Protein complex"
     },
     {
-      "@id": "_:N6c5b28a5560b4db3a5af14c8a1c1d35f",
+      "@id": "_:Naa3fda6d67b345379f9691674e454395",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1470"
@@ -109,10 +113,6 @@
     {
       "@id": "https://doi.org/10.5281/zenodo.6888913",
       "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://orcid.org/0000-0003-1881-5489",
-      "@type": "sc:Person"
     }
   ]
 }

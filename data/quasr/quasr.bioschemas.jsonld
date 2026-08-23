@@ -36,18 +36,25 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/gkq211",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1186/gb-2009-10-3-r25",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/quasr",
       "@type": "sc:SoftwareApplication",
-      "biotools:primaryContact": "Michael Stadler",
       "bsc:input": {
-        "@id": "_:N2798f747987741b882ab8bd2f1c6d179"
+        "@id": "_:N90756ae905ab49ab8dcc6506b44693f5"
       },
       "bsc:output": [
         {
-          "@id": "_:Nc49efc410e0247fbb4ca48486eaf5369"
+          "@id": "_:N06af6589c45d48249ef1bbb888aa0ef0"
         },
         {
-          "@id": "_:N7113d624ec3845539ae14bcc13c1740d"
+          "@id": "_:N5b4e178ef4c941a0ba6d3f444b4aa18d"
         }
       ],
       "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -75,14 +82,20 @@
           "@id": "edam:topic_0769"
         }
       ],
+      "sc:author": [
+        "Anita Lerch",
+        "Florian Hahne",
+        "Michael Stadler"
+      ],
       "sc:citation": [
-        "pubmed:20371516",
-        "pmcid:PMC2919714",
         {
           "@id": "https://doi.org/10.1093/nar/gkq211"
+        },
+        {
+          "@id": "https://doi.org/10.1186/gb-2009-10-3-r25"
         }
       ],
-      "sc:description": "This package provides a framework for the quantification and analysis of Short Reads. It covers a complete workflow starting from raw sequence reads, over creation of alignments and quality control plots, to the quantification of genomic regions of interest.",
+      "sc:description": "This package provides an R wrapper around the popular bowtie short read aligner and around SpliceMap, a de novo splice junction discovery and alignment tool. The package is used by the QuasR bioconductor package. We recommend to use the QuasR package instead of using Rbowtie directly.",
       "sc:featureList": [
         {
           "@id": "edam:operation_3198"
@@ -94,7 +107,7 @@
           "@id": "edam:operation_2238"
         }
       ],
-      "sc:license": "GPL-2.0",
+      "sc:license": "Artistic-2.0",
       "sc:name": "QuasR",
       "sc:operatingSystem": [
         "Linux",
@@ -102,13 +115,13 @@
         "Windows"
       ],
       "sc:softwareHelp": {
-        "@id": "http://bioconductor.org/packages/release/bioc/html/QuasR.html"
+        "@id": "https://bioconductor.org/packages/Rbowtie"
       },
-      "sc:softwareVersion": "1.14.0",
-      "sc:url": "http://bioconductor.org/packages/release/bioc/html/QuasR.html"
+      "sc:softwareVersion": "1.52.0",
+      "sc:url": "https://bioconductor.org/packages/Rbowtie"
     },
     {
-      "@id": "_:N2798f747987741b882ab8bd2f1c6d179",
+      "@id": "_:N90756ae905ab49ab8dcc6506b44693f5",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1383"
@@ -133,7 +146,7 @@
       "sc:name": "Sequence alignment (nucleic acid)"
     },
     {
-      "@id": "_:Nc49efc410e0247fbb4ca48486eaf5369",
+      "@id": "_:N06af6589c45d48249ef1bbb888aa0ef0",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1383"
@@ -144,7 +157,7 @@
       "sc:name": "Sequence alignment (nucleic acid)"
     },
     {
-      "@id": "_:N7113d624ec3845539ae14bcc13c1740d",
+      "@id": "_:N5b4e178ef4c941a0ba6d3f444b4aa18d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2012"
@@ -153,10 +166,6 @@
         "@id": "edam:format_3327"
       },
       "sc:name": "Sequence coordinates"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gkq211",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -36,20 +36,28 @@
   },
   "@graph": [
     {
+      "@id": "http://orcid.org/0000-0003-0207-4831",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/gkt387",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/metaranker",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "http://orcid.org/0000-0003-0207-4831"
       },
       "bsc:input": {
-        "@id": "_:Na6f8c8d551dd4c4dbf6531a1db921d7e"
+        "@id": "_:N4aad721f3929412ab3884cdd27873b03"
       },
       "bsc:output": [
         {
-          "@id": "_:Nded97e0cb06e4b3c8b3362e442960e5b"
+          "@id": "_:N3be6557a23a44767875e5f12239a8edf"
         },
         {
-          "@id": "_:N34a0a9feb6ad40eb80094812637f28b3"
+          "@id": "_:Nbedbd134378646bbba6cf74f4e5c91dc"
         }
       ],
       "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -118,7 +126,7 @@
       "sc:url": "http://cbs.dtu.dk/services/MetaRanker/"
     },
     {
-      "@id": "_:Na6f8c8d551dd4c4dbf6531a1db921d7e",
+      "@id": "_:N4aad721f3929412ab3884cdd27873b03",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2299"
@@ -129,7 +137,7 @@
       "sc:name": "Gene name"
     },
     {
-      "@id": "_:Nded97e0cb06e4b3c8b3362e442960e5b",
+      "@id": "_:N3be6557a23a44767875e5f12239a8edf",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0916"
@@ -140,7 +148,7 @@
       "sc:name": "Gene report"
     },
     {
-      "@id": "_:N34a0a9feb6ad40eb80094812637f28b3",
+      "@id": "_:Nbedbd134378646bbba6cf74f4e5c91dc",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2984"
@@ -149,14 +157,6 @@
         "@id": "edam:format_2333"
       },
       "sc:name": "Pathway or network report"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gkt387",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "http://orcid.org/0000-0003-0207-4831",
-      "@type": "sc:Person"
     }
   ]
 }

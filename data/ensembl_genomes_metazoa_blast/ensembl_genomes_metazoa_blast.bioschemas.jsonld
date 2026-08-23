@@ -36,18 +36,22 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/gkv1157",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/ensembl_genomes_metazoa_blast",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Ensembl Genomes webteam",
       "bsc:input": {
-        "@id": "_:N57f9dde3397640bbb4d4240a2dd85111"
+        "@id": "_:N51f588ab3c864c368600fc6232ea4e45"
       },
       "bsc:output": [
         {
-          "@id": "_:Nf851ad92166c49b58579404d12dbe8e0"
+          "@id": "_:N90b001cff535417aaf2783b05f46bed5"
         },
         {
-          "@id": "_:N883a21413b4047d997bb1bc1b49b6a34"
+          "@id": "_:Nc78978d6e4674099b223b8bddc15bf6e"
         }
       ],
       "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -86,7 +90,7 @@
       "sc:url": "http://metazoa.ensembl.org/Multi/blastview"
     },
     {
-      "@id": "_:N57f9dde3397640bbb4d4240a2dd85111",
+      "@id": "_:N51f588ab3c864c368600fc6232ea4e45",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
@@ -97,7 +101,7 @@
       "sc:name": "Sequence"
     },
     {
-      "@id": "_:Nf851ad92166c49b58579404d12dbe8e0",
+      "@id": "_:N90b001cff535417aaf2783b05f46bed5",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0863"
@@ -105,16 +109,12 @@
       "sc:name": "Sequence alignment"
     },
     {
-      "@id": "_:N883a21413b4047d997bb1bc1b49b6a34",
+      "@id": "_:Nc78978d6e4674099b223b8bddc15bf6e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0857"
       },
       "sc:name": "Sequence search results"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gkv1157",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

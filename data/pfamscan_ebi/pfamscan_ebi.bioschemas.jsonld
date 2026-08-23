@@ -36,23 +36,35 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/gkae241",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/gkac240",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1186/1471-2105-8-298",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/pfamscan_ebi",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Job Dispatcher",
       "bsc:input": [
         {
-          "@id": "_:N7af846c69bf045eb9ca828c8962324a2"
+          "@id": "_:Nec31468d64ae4662b34aa055cc4e4ec8"
         },
         {
-          "@id": "_:N301d660f34e24ee48baaf6aec0e2f7bc"
+          "@id": "_:Nf956161bfc664095b451f14803afaeca"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N3333a2fcfffc404ea9071ef458c37488"
+          "@id": "_:N77bbd1d9437240b0916afcaf7e3850ad"
         },
         {
-          "@id": "_:N82e49629a7a34547b616ffd35ad18d09"
+          "@id": "_:N331c5e7c7e6c47b59b0e65e3221eee87"
         }
       ],
       "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -112,7 +124,7 @@
       "sc:url": "https://www.ebi.ac.uk/jdispatcher/pfa/pfamscan"
     },
     {
-      "@id": "_:N7af846c69bf045eb9ca828c8962324a2",
+      "@id": "_:Nec31468d64ae4662b34aa055cc4e4ec8",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1364"
@@ -120,7 +132,7 @@
       "sc:name": "Hidden Markov model"
     },
     {
-      "@id": "_:N301d660f34e24ee48baaf6aec0e2f7bc",
+      "@id": "_:Nf956161bfc664095b451f14803afaeca",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2976"
@@ -128,7 +140,7 @@
       "sc:name": "Protein sequence"
     },
     {
-      "@id": "_:N3333a2fcfffc404ea9071ef458c37488",
+      "@id": "_:N77bbd1d9437240b0916afcaf7e3850ad",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0857"
@@ -136,24 +148,12 @@
       "sc:name": "Sequence search results"
     },
     {
-      "@id": "_:N82e49629a7a34547b616ffd35ad18d09",
+      "@id": "_:N331c5e7c7e6c47b59b0e65e3221eee87",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0858"
       },
       "sc:name": "Sequence signature matches"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gkac240",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gkae241",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1186/1471-2105-8-298",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

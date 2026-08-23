@@ -36,17 +36,13 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/nar/gkw852",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/derfinderplot",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N0236b0b153bd4136874e892bace6e6c9"
+        "@id": "_:N61a06ea6b7b6401998cc638141195cc5"
       },
       "bsc:output": {
-        "@id": "_:Ne61228112edd487c81e8b0efd7b122f7"
+        "@id": "_:N04f730c7c25d403a8feb861a3150ccdf"
       },
       "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
@@ -66,10 +62,10 @@
           "@id": "https://doi.org/10.1093/nar/gkw852"
         },
         {
-          "@id": "https://doi.org/10.18129/B9.bioc.derfinderHelper"
+          "@id": "https://doi.org/10.18129/B9.bioc.derfinderPlot"
         }
       ],
-      "sc:description": "Helper package for speeding up the derfinder package when using multiple cores. This package is particularly useful when using BiocParallel and it helps reduce the time spent loading the full derfinder package when running the F-statistics calculation in parallel.",
+      "sc:description": "This package provides plotting functions for results from the derfinder package. This helps separate the graphical dependencies required for making these plots from the core functionality of derfinder.",
       "sc:featureList": {
         "@id": "edam:operation_0337"
       },
@@ -81,13 +77,13 @@
         "Windows"
       ],
       "sc:softwareHelp": {
-        "@id": "https://bioconductor.org/packages/derfinderHelper"
+        "@id": "https://bioconductor.org/packages/derfinderPlot"
       },
       "sc:softwareVersion": "1.46.0",
-      "sc:url": "https://bioconductor.org/packages/derfinderHelper"
+      "sc:url": "https://bioconductor.org/packages/derfinderPlot"
     },
     {
-      "@id": "_:N0236b0b153bd4136874e892bace6e6c9",
+      "@id": "_:N61a06ea6b7b6401998cc638141195cc5",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3002"
@@ -98,7 +94,7 @@
       "sc:name": "Annotation track"
     },
     {
-      "@id": "_:Ne61228112edd487c81e8b0efd7b122f7",
+      "@id": "_:N04f730c7c25d403a8feb861a3150ccdf",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
@@ -109,7 +105,11 @@
       "sc:name": "Plot"
     },
     {
-      "@id": "https://doi.org/10.18129/B9.bioc.derfinderHelper",
+      "@id": "https://doi.org/10.18129/B9.bioc.derfinderPlot",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/gkw852",
       "@type": "sc:CreativeWork"
     }
   ]

@@ -36,13 +36,17 @@
   },
   "@graph": [
     {
+      "@id": "http://orcid.org/0000-0002-3196-0173",
+      "@type": "sc:Person"
+    },
+    {
       "@id": "https://bio.tools/toxcodan-genome",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N323f10c07cb44bb3bdf2686e00cb4e82"
+        "@id": "_:Na96b7252cd4a418990c804dacf999a23"
       },
       "bsc:output": {
-        "@id": "_:Nf64343da977149ee8a04ac132e3e13ee"
+        "@id": "_:N349d76e6268842fd9076431d687bf756"
       },
       "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
@@ -69,7 +73,7 @@
       "sc:url": "https://github.com/pedronachtigall/ToxCodAn-Genome"
     },
     {
-      "@id": "_:N323f10c07cb44bb3bdf2686e00cb4e82",
+      "@id": "_:Na96b7252cd4a418990c804dacf999a23",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3494"
@@ -80,7 +84,7 @@
       "sc:name": "DNA sequence"
     },
     {
-      "@id": "_:Nf64343da977149ee8a04ac132e3e13ee",
+      "@id": "_:N349d76e6268842fd9076431d687bf756",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3002"
@@ -89,10 +93,6 @@
         "@id": "edam:format_2306"
       },
       "sc:name": "Annotation track"
-    },
-    {
-      "@id": "http://orcid.org/0000-0002-3196-0173",
-      "@type": "sc:Person"
     }
   ]
 }

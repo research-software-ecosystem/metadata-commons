@@ -36,38 +36,29 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1186/gb-2009-10-3-r25",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1186/1471-2105-14-184",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.7490/f1000research.1114334.1",
+      "@id": "https://doi.org/10.1093/nar/gkq211",
       "@type": "sc:CreativeWork"
     },
     {
       "@id": "https://bio.tools/bowtie",
       "@type": "sc:SoftwareApplication",
-      "biotools:primaryContact": "Ben Langmead",
       "bsc:input": [
         {
-          "@id": "_:N59e553b1b608484fbf7f46284f6d1eb7"
+          "@id": "_:N527080d8e33f4445b2f8f9cf9d6ea3ce"
         },
         {
-          "@id": "_:N371e711171f44dbfb7a6c09659f99e5e"
+          "@id": "_:N6bef8cfca569489591fce2971ec34ec6"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N1edd1b3fa2b74fb38005aa25e8bde6da"
+          "@id": "_:Nca4bd2e543304198bf0d0c69b741f430"
         },
         {
-          "@id": "_:N0f1e5cb0447c45a6ab1cc37b33989214"
+          "@id": "_:Ne62d03fcad244696a4f3da32024cc05f"
         },
         {
-          "@id": "_:N19243482baea4e9cbf8c6f671633d838"
+          "@id": "_:N73470ce16cc04e3aa3eb6e566a2b16e0"
         }
       ],
       "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -86,26 +77,33 @@
           "@id": "edam:topic_3168"
         }
       ],
+      "sc:author": [
+        "Adam Alexander Thil SMITH",
+        "Anita Lerch",
+        "Charlotte Soneson",
+        "Dimos Gaidatzis",
+        "Michael Stadler"
+      ],
       "sc:citation": [
-        "pubmed:23758764",
-        "pmcid:PMC3694458",
         {
-          "@id": "https://doi.org/10.1186/1471-2105-14-184"
+          "@id": "https://doi.org/10.1038/nmeth.3317"
         },
-        "pubmed:19261174",
-        "pmcid:PMC2690996",
+        {
+          "@id": "https://doi.org/10.1093/bioinformatics/btu781"
+        },
+        {
+          "@id": "https://doi.org/10.1093/nar/gkq211"
+        },
         {
           "@id": "https://doi.org/10.1186/gb-2009-10-3-r25"
-        },
-        {
-          "@id": "https://doi.org/10.7490/f1000research.1114334.1"
         }
       ],
-      "sc:description": "Bowtie is an ultrafast, memory-efficient short read aligner.",
+      "sc:description": "This package provides a framework for the quantification and analysis of Short Reads. It covers a complete workflow starting from raw sequence reads, over creation of alignments and quality control plots, to the quantification of genomic regions of interest. Read alignments are either generated through Rbowtie (data from DNA/ChIP/ATAC/Bis-seq experiments) or Rhisat2 (data from RNA-seq experiments that require spliced alignments), or can be provided in the form of bam files.",
       "sc:featureList": {
         "@id": "edam:operation_0292"
       },
       "sc:isAccessibleForFree": true,
+      "sc:license": "GPL-2.0-only",
       "sc:name": "Bowtie",
       "sc:operatingSystem": [
         "Linux",
@@ -113,13 +111,13 @@
         "Windows"
       ],
       "sc:softwareHelp": {
-        "@id": "http://bowtie-bio.sourceforge.net/manual.shtml"
+        "@id": "https://bioconductor.org/packages/QuasR"
       },
-      "sc:softwareVersion": "1.2.2",
-      "sc:url": "http://bowtie-bio.sourceforge.net/index.shtml"
+      "sc:softwareVersion": "1.52.0",
+      "sc:url": "https://bioconductor.org/packages/QuasR"
     },
     {
-      "@id": "_:N59e553b1b608484fbf7f46284f6d1eb7",
+      "@id": "_:N527080d8e33f4445b2f8f9cf9d6ea3ce",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0006"
@@ -135,7 +133,7 @@
       "sc:name": "Data"
     },
     {
-      "@id": "_:N371e711171f44dbfb7a6c09659f99e5e",
+      "@id": "_:N6bef8cfca569489591fce2971ec34ec6",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0006"
@@ -154,7 +152,7 @@
       "sc:name": "Data"
     },
     {
-      "@id": "_:N1edd1b3fa2b74fb38005aa25e8bde6da",
+      "@id": "_:Nca4bd2e543304198bf0d0c69b741f430",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0006"
@@ -165,7 +163,7 @@
       "sc:name": "Data"
     },
     {
-      "@id": "_:N0f1e5cb0447c45a6ab1cc37b33989214",
+      "@id": "_:Ne62d03fcad244696a4f3da32024cc05f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0006"
@@ -176,7 +174,7 @@
       "sc:name": "Data"
     },
     {
-      "@id": "_:N19243482baea4e9cbf8c6f671633d838",
+      "@id": "_:N73470ce16cc04e3aa3eb6e566a2b16e0",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0924"
@@ -185,6 +183,18 @@
         "@id": "edam:format_2573"
       },
       "sc:name": "Sequence trace"
+    },
+    {
+      "@id": "https://doi.org/10.1186/gb-2009-10-3-r25",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1038/nmeth.3317",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1093/bioinformatics/btu781",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

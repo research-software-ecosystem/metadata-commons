@@ -36,20 +36,28 @@
   },
   "@graph": [
     {
+      "@id": "http://orcid.org/0000-0001-6615-1141",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.1002/pmic.200300771",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/netphosk",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "http://orcid.org/0000-0001-6615-1141"
       },
       "bsc:input": {
-        "@id": "_:Nf016793892a840649a133054640e76ff"
+        "@id": "_:Nea1f43d99a8448479a43af538017dfe3"
       },
       "bsc:output": [
         {
-          "@id": "_:N6d7bd78df7094270b15ea03947e98712"
+          "@id": "_:N6ed36f56f2b9451898d6fdaffd29e9d9"
         },
         {
-          "@id": "_:Nef1df389469443009f90017baabb41ce"
+          "@id": "_:N2b256368363c41a9b6d4eb97fd2ca17a"
         }
       ],
       "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -83,7 +91,7 @@
       "sc:url": "http://www.cbs.dtu.dk/services/NetPhosK/"
     },
     {
-      "@id": "_:Nf016793892a840649a133054640e76ff",
+      "@id": "_:Nea1f43d99a8448479a43af538017dfe3",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
@@ -94,7 +102,7 @@
       "sc:name": "Sequence"
     },
     {
-      "@id": "_:N6d7bd78df7094270b15ea03947e98712",
+      "@id": "_:N6ed36f56f2b9451898d6fdaffd29e9d9",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"
@@ -105,7 +113,7 @@
       "sc:name": "Report"
     },
     {
-      "@id": "_:Nef1df389469443009f90017baabb41ce",
+      "@id": "_:N2b256368363c41a9b6d4eb97fd2ca17a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2955"
@@ -114,14 +122,6 @@
         "@id": "edam:format_2333"
       },
       "sc:name": "Sequence report"
-    },
-    {
-      "@id": "https://doi.org/10.1002/pmic.200300771",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "http://orcid.org/0000-0001-6615-1141",
-      "@type": "sc:Person"
     }
   ]
 }
