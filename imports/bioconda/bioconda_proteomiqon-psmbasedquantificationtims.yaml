@@ -8,7 +8,7 @@ about:
   summary: PSM-based quantification for trapped ion mobility spectrometry data
 build:
   noarch: generic
-  number: 0
+  number: 1
   run_exports:
   - dotnet-runtime =8.0
 package:
@@ -19,6 +19,7 @@ requirements:
   - unzip
   run:
   - dotnet-runtime =8.0
+  - zlib
 source:
   sha256: 45bd4e0a585ccb828741fa53ae10bb5a1d19638e77eadc8f16ae8dbc1de49dcc
   url: https://www.nuget.org/api/v2/package/ProteomIQon.PSMBasedQuantificationTIMs/0.0.12
