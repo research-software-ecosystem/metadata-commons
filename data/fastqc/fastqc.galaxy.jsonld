@@ -1,5 +1,6 @@
 {
   "@context": {
+    "biii": "https://biii.eu/",
     "bioconda": "https://github.com/bioconda/bioconda-recipes/tree/master/recipes/",
     "bioschemas": "http://bioschemas.org/",
     "biotools": "https://bio.tools/",
@@ -42,6 +43,34 @@
       "@type": "schema1:WebSite"
     },
     {
+      "@id": "https://usegalaxy.cz",
+      "@type": "schema1:WebSite"
+    },
+    {
+      "@id": "https://galaxy.pasteur.fr",
+      "@type": "schema1:WebSite"
+    },
+    {
+      "@id": "https://usegalaxy.no",
+      "@type": "schema1:WebSite"
+    },
+    {
+      "@id": "https://usegalaxy.org",
+      "@type": "schema1:WebSite"
+    },
+    {
+      "@id": "https://mississippi.sorbonne-universite.fr",
+      "@type": "schema1:WebSite"
+    },
+    {
+      "@id": "https://palfinder.ls.manchester.ac.uk",
+      "@type": "schema1:WebSite"
+    },
+    {
+      "@id": "https://usegalaxy.be",
+      "@type": "schema1:WebSite"
+    },
+    {
       "@id": "https://usegalaxy.fr",
       "@type": "schema1:WebSite"
     },
@@ -66,7 +95,9 @@
           "@id": "edam:topic_0080"
         }
       ],
-      "schema1:codeRepository": "http://www.bioinformatics.babraham.ac.uk/projects/fastqc/",
+      "schema1:codeRepository": {
+        "@id": "http://www.bioinformatics.babraham.ac.uk/projects/fastqc/"
+      },
       "schema1:dateCreated": "2017-01-11",
       "schema1:description": "Read QC reports using FastQC",
       "schema1:encodingFormat": [
@@ -95,9 +126,6 @@
       "schema1:isPartOf": [
         {
           "@id": "workflowhub:602?version=2"
-        },
-        {
-          "@id": "https://workflowhub.eu"
         },
         {
           "@id": "workflowhub:601?version=2"
@@ -286,9 +314,6 @@
           "@id": "https://usegalaxy.fr/published/workflow?id=de1e136b657e28ba"
         },
         {
-          "@id": "https://usegalaxy.fr"
-        },
-        {
           "@id": "https://usegalaxy.fr/published/workflow?id=e6991d64e851b09e"
         },
         {
@@ -329,9 +354,6 @@
         },
         {
           "@id": "https://usegalaxy.eu/published/workflow?id=7a0d81a44063a2dc"
-        },
-        {
-          "@id": "https://usegalaxy.eu"
         },
         {
           "@id": "https://usegalaxy.eu/published/workflow?id=846fa28b246c0a82"
@@ -1406,9 +1428,6 @@
         },
         {
           "@id": "https://usegalaxy.org/published/workflow?id=97b5e2bc469d2d68"
-        },
-        {
-          "@id": "https://usegalaxy.org"
         },
         {
           "@id": "https://usegalaxy.org/published/workflow?id=02d3d00ddf34903b"
@@ -3259,9 +3278,6 @@
           "@id": "https://usegalaxy.org.au/published/workflow?id=8320a7e96998c793"
         },
         {
-          "@id": "https://usegalaxy.org.au"
-        },
-        {
           "@id": "https://usegalaxy.org.au/published/workflow?id=efe09fdd85eeba65"
         },
         {
@@ -4439,23 +4455,68 @@
         },
         {
           "@id": "https://usegalaxy.org.au/published/workflow?id=39bb22274ede7500"
+        },
+        {
+          "@id": "https://galaxy.mesocentre.uca.fr"
+        },
+        {
+          "@id": "https://galaxy.pasteur.fr"
+        },
+        {
+          "@id": "https://galaxytrakr.org"
+        },
+        {
+          "@id": "https://mississippi.sorbonne-universite.fr"
+        },
+        {
+          "@id": "https://palfinder.ls.manchester.ac.uk"
+        },
+        {
+          "@id": "http://pepsimili.e-nios.com:8080"
+        },
+        {
+          "@id": "https://usegalaxy.be"
+        },
+        {
+          "@id": "https://usegalaxy.cz"
+        },
+        {
+          "@id": "https://usegalaxy.eu"
+        },
+        {
+          "@id": "https://usegalaxy.fr"
+        },
+        {
+          "@id": "https://usegalaxy.no"
+        },
+        {
+          "@id": "https://usegalaxy.org.au"
+        },
+        {
+          "@id": "https://usegalaxy.org"
         }
       ],
       "schema1:keywords": "Fastq Manipulation",
       "schema1:name": "fastqc",
       "schema1:softwareVersion": "0.74",
-      "schema1:url": "https://github.com/galaxyproject/tools-iuc/tree/main/tools/fastqc"
-    },
-    {
-      "@id": "https://usegalaxy.org",
-      "@type": "schema1:WebSite"
+      "schema1:url": {
+        "@id": "https://github.com/galaxyproject/tools-iuc/tree/main/tools/fastqc"
+      }
     },
     {
       "@id": "https://usegalaxy.eu",
       "@type": "schema1:WebSite"
     },
     {
-      "@id": "https://workflowhub.eu",
+      "@id": "https://galaxytrakr.org",
+      "@type": "schema1:WebSite"
+    },
+    {
+      "@id": "https://galaxy.mesocentre.uca.fr",
+      "@type": "schema1:WebSite"
+    },
+    {
+      "@id": "http://pepsimili.e-nios.com:8080",
       "@type": "schema1:WebSite"
     }
   ]

@@ -1,5 +1,6 @@
 {
   "@context": {
+    "biii": "https://biii.eu/",
     "bioconda": "https://github.com/bioconda/bioconda-recipes/tree/master/recipes/",
     "bioschemas": "http://bioschemas.org/",
     "biotools": "https://bio.tools/",
@@ -51,7 +52,9 @@
       "schema1:applicationSubCategory": {
         "@id": "edam:topic_3572"
       },
-      "schema1:codeRepository": "http://qualimap.bioinfo.cipf.es/",
+      "schema1:codeRepository": {
+        "@id": "http://qualimap.bioinfo.cipf.es/"
+      },
       "schema1:dateCreated": "2019-10-10",
       "schema1:description": "Qualimap 2 is a platform-independent application written in Java andR that facilitates the quality control of alignment sequencing data and itsderivatives like feature counts.",
       "schema1:encodingFormat": [
@@ -72,9 +75,6 @@
       "schema1:isPartOf": [
         {
           "@id": "workflowhub:1647?version=2"
-        },
-        {
-          "@id": "https://workflowhub.eu"
         },
         {
           "@id": "workflowhub:2027?version=5"
@@ -110,9 +110,6 @@
           "@id": "https://usegalaxy.fr/published/workflow?id=d0d12c0b80c286f9"
         },
         {
-          "@id": "https://usegalaxy.fr"
-        },
-        {
           "@id": "https://usegalaxy.fr/published/workflow?id=727cfdb7c79287d1"
         },
         {
@@ -138,9 +135,6 @@
         },
         {
           "@id": "https://usegalaxy.eu/published/workflow?id=7a0d81a44063a2dc"
-        },
-        {
-          "@id": "https://usegalaxy.eu"
         },
         {
           "@id": "https://usegalaxy.eu/published/workflow?id=5cd71f9a190cae1b"
@@ -329,9 +323,6 @@
           "@id": "https://usegalaxy.org/published/workflow?id=c7f42286e0f15205"
         },
         {
-          "@id": "https://usegalaxy.org"
-        },
-        {
           "@id": "https://usegalaxy.org/published/workflow?id=87045af52d500e91"
         },
         {
@@ -473,9 +464,6 @@
           "@id": "https://usegalaxy.org.au/published/workflow?id=bf3d37088e99a912"
         },
         {
-          "@id": "https://usegalaxy.org.au"
-        },
-        {
           "@id": "https://usegalaxy.org.au/published/workflow?id=70651aca994f322b"
         },
         {
@@ -570,6 +558,36 @@
         },
         {
           "@id": "https://usegalaxy.org.au/published/workflow?id=fca05a51c9c91df4"
+        },
+        {
+          "@id": "https://galaxy.pasteur.fr"
+        },
+        {
+          "@id": "https://galaxytrakr.org"
+        },
+        {
+          "@id": "https://mississippi.sorbonne-universite.fr"
+        },
+        {
+          "@id": "https://usegalaxy.be"
+        },
+        {
+          "@id": "https://usegalaxy.cz"
+        },
+        {
+          "@id": "https://usegalaxy.eu"
+        },
+        {
+          "@id": "https://usegalaxy.fr"
+        },
+        {
+          "@id": "https://usegalaxy.no"
+        },
+        {
+          "@id": "https://usegalaxy.org.au"
+        },
+        {
+          "@id": "https://usegalaxy.org"
         }
       ],
       "schema1:keywords": [
@@ -579,10 +597,20 @@
       ],
       "schema1:name": "qualimap",
       "schema1:softwareVersion": "2.3",
-      "schema1:url": "https://github.com/galaxyproject/tools-iuc/tree/main/tools/qualimap"
+      "schema1:url": {
+        "@id": "https://github.com/galaxyproject/tools-iuc/tree/main/tools/qualimap"
+      }
     },
     {
-      "@id": "https://usegalaxy.fr",
+      "@id": "https://usegalaxy.cz",
+      "@type": "schema1:WebSite"
+    },
+    {
+      "@id": "https://galaxy.pasteur.fr",
+      "@type": "schema1:WebSite"
+    },
+    {
+      "@id": "https://usegalaxy.no",
       "@type": "schema1:WebSite"
     },
     {
@@ -590,11 +618,23 @@
       "@type": "schema1:WebSite"
     },
     {
+      "@id": "https://mississippi.sorbonne-universite.fr",
+      "@type": "schema1:WebSite"
+    },
+    {
+      "@id": "https://usegalaxy.be",
+      "@type": "schema1:WebSite"
+    },
+    {
       "@id": "https://usegalaxy.eu",
       "@type": "schema1:WebSite"
     },
     {
-      "@id": "https://workflowhub.eu",
+      "@id": "https://usegalaxy.fr",
+      "@type": "schema1:WebSite"
+    },
+    {
+      "@id": "https://galaxytrakr.org",
       "@type": "schema1:WebSite"
     }
   ]

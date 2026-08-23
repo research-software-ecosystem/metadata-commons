@@ -1,5 +1,6 @@
 {
   "@context": {
+    "biii": "https://biii.eu/",
     "bioconda": "https://github.com/bioconda/bioconda-recipes/tree/master/recipes/",
     "bioschemas": "http://bioschemas.org/",
     "biotools": "https://bio.tools/",
@@ -38,18 +39,6 @@
   },
   "@graph": [
     {
-      "@id": "https://usegalaxy.org.au",
-      "@type": "schema1:WebSite"
-    },
-    {
-      "@id": "https://usegalaxy.org",
-      "@type": "schema1:WebSite"
-    },
-    {
-      "@id": "https://usegalaxy.eu",
-      "@type": "schema1:WebSite"
-    },
-    {
       "@id": "galaxytool:racon",
       "@type": "schema1:SoftwareApplication",
       "bioschemas:output": "fasta",
@@ -67,7 +56,9 @@
           "@id": "edam:topic_0196"
         }
       ],
-      "schema1:codeRepository": "https://github.com/isovic/racon",
+      "schema1:codeRepository": {
+        "@id": "https://github.com/isovic/racon"
+      },
       "schema1:dateCreated": "2018-06-11",
       "schema1:description": "Consensus module for raw de novo DNA assembly of long uncorrected reads.",
       "schema1:encodingFormat": "fasta",
@@ -95,9 +86,6 @@
           "@id": "workflowhub:1604?version=1"
         },
         {
-          "@id": "https://workflowhub.eu"
-        },
-        {
           "@id": "workflowhub:1599?version=1"
         },
         {
@@ -120,9 +108,6 @@
         },
         {
           "@id": "https://usegalaxy.eu/published/workflow?id=1ae9a523ef719a3d"
-        },
-        {
-          "@id": "https://usegalaxy.eu"
         },
         {
           "@id": "https://usegalaxy.eu/published/workflow?id=e33c1afd40f0a1ad"
@@ -173,16 +158,10 @@
           "@id": "https://usegalaxy.org/published/workflow?id=5e7730d2f0d782ba"
         },
         {
-          "@id": "https://usegalaxy.org"
-        },
-        {
           "@id": "https://usegalaxy.org/published/workflow?id=bcdc5ce2ea8700fc"
         },
         {
           "@id": "https://usegalaxy.org.au/published/workflow?id=0c421197e022f323"
-        },
-        {
-          "@id": "https://usegalaxy.org.au"
         },
         {
           "@id": "https://usegalaxy.org.au/published/workflow?id=d9571b3dfef34e5e"
@@ -192,15 +171,69 @@
         },
         {
           "@id": "https://usegalaxy.org.au/published/workflow?id=45e9910f46a210d8"
+        },
+        {
+          "@id": "https://galaxytrakr.org"
+        },
+        {
+          "@id": "https://usegalaxy.be"
+        },
+        {
+          "@id": "https://usegalaxy.cz"
+        },
+        {
+          "@id": "https://usegalaxy.eu"
+        },
+        {
+          "@id": "https://usegalaxy.fr"
+        },
+        {
+          "@id": "https://usegalaxy.no"
+        },
+        {
+          "@id": "https://usegalaxy.org.au"
+        },
+        {
+          "@id": "https://usegalaxy.org"
         }
       ],
       "schema1:keywords": "Sequence Analysis",
       "schema1:name": "racon",
       "schema1:softwareVersion": "1.5.0",
-      "schema1:url": "https://github.com/bgruening/galaxytools/tree/master/tools/racon"
+      "schema1:url": {
+        "@id": "https://github.com/bgruening/galaxytools/tree/master/tools/racon"
+      }
     },
     {
-      "@id": "https://workflowhub.eu",
+      "@id": "https://usegalaxy.org.au",
+      "@type": "schema1:WebSite"
+    },
+    {
+      "@id": "https://usegalaxy.cz",
+      "@type": "schema1:WebSite"
+    },
+    {
+      "@id": "https://usegalaxy.no",
+      "@type": "schema1:WebSite"
+    },
+    {
+      "@id": "https://usegalaxy.org",
+      "@type": "schema1:WebSite"
+    },
+    {
+      "@id": "https://usegalaxy.be",
+      "@type": "schema1:WebSite"
+    },
+    {
+      "@id": "https://usegalaxy.eu",
+      "@type": "schema1:WebSite"
+    },
+    {
+      "@id": "https://usegalaxy.fr",
+      "@type": "schema1:WebSite"
+    },
+    {
+      "@id": "https://galaxytrakr.org",
       "@type": "schema1:WebSite"
     }
   ]

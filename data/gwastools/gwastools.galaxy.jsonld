@@ -1,5 +1,6 @@
 {
   "@context": {
+    "biii": "https://biii.eu/",
     "bioconda": "https://github.com/bioconda/bioconda-recipes/tree/master/recipes/",
     "bioschemas": "http://bioschemas.org/",
     "biotools": "https://bio.tools/",
@@ -38,7 +39,7 @@
   },
   "@graph": [
     {
-      "@id": "https://usegalaxy.fr",
+      "@id": "https://usegalaxy.no",
       "@type": "schema1:WebSite"
     },
     {
@@ -48,7 +49,9 @@
       "schema1:applicationSubCategory": {
         "@id": "edam:topic_3517"
       },
-      "schema1:codeRepository": "https://bioconductor.org/packages/release/bioc/html/GWASTools.html",
+      "schema1:codeRepository": {
+        "@id": "https://bioconductor.org/packages/release/bioc/html/GWASTools.html"
+      },
       "schema1:dateCreated": "2019-10-07",
       "schema1:encodingFormat": "pdf",
       "schema1:featureList": [
@@ -72,7 +75,13 @@
           "@id": "https://usegalaxy.fr/published/workflow?id=1ad87b99f0cb828c"
         },
         {
+          "@id": "https://usegalaxy.eu"
+        },
+        {
           "@id": "https://usegalaxy.fr"
+        },
+        {
+          "@id": "https://usegalaxy.no"
         }
       ],
       "schema1:keywords": [
@@ -81,6 +90,14 @@
       ],
       "schema1:name": "gwastools",
       "schema1:softwareVersion": "0.1.0"
+    },
+    {
+      "@id": "https://usegalaxy.eu",
+      "@type": "schema1:WebSite"
+    },
+    {
+      "@id": "https://usegalaxy.fr",
+      "@type": "schema1:WebSite"
     }
   ]
 }

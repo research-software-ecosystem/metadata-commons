@@ -1,5 +1,6 @@
 {
   "@context": {
+    "biii": "https://biii.eu/",
     "bioconda": "https://github.com/bioconda/bioconda-recipes/tree/master/recipes/",
     "bioschemas": "http://bioschemas.org/",
     "biotools": "https://bio.tools/",
@@ -63,7 +64,9 @@
           "@id": "edam:topic_0081"
         }
       ],
-      "schema1:codeRepository": "https://jlsteenwyk.com/ClipKIT/",
+      "schema1:codeRepository": {
+        "@id": "https://github.com/jlsteenwyk/clipkit"
+      },
       "schema1:dateCreated": "2026-07-14",
       "schema1:description": "Trim multiple sequence alignments while retaining phylogenetically informative sites",
       "schema1:encodingFormat": [
@@ -92,9 +95,6 @@
           "@id": "workflowhub:1839?version=1"
         },
         {
-          "@id": "https://workflowhub.eu"
-        },
-        {
           "@id": "workflowhub:1656?version=1"
         },
         {
@@ -102,6 +102,15 @@
         },
         {
           "@id": "https://usegalaxy.org.au/published/workflow?id=3242ec69dec6e13f"
+        },
+        {
+          "@id": "https://galaxytrakr.org"
+        },
+        {
+          "@id": "https://usegalaxy.be"
+        },
+        {
+          "@id": "https://usegalaxy.eu"
         },
         {
           "@id": "https://usegalaxy.org.au"
@@ -112,11 +121,21 @@
         "Sequence Analysis"
       ],
       "schema1:name": "clipkit",
-      "schema1:softwareVersion": "2.13.2",
-      "schema1:url": "https://github.com/galaxyproject/tools-iuc/tree/main/tools/clipkit"
+      "schema1:softwareVersion": "2.14.0",
+      "schema1:url": {
+        "@id": "https://github.com/galaxyproject/tools-iuc/tree/main/tools/clipkit"
+      }
     },
     {
-      "@id": "https://workflowhub.eu",
+      "@id": "https://usegalaxy.be",
+      "@type": "schema1:WebSite"
+    },
+    {
+      "@id": "https://usegalaxy.eu",
+      "@type": "schema1:WebSite"
+    },
+    {
+      "@id": "https://galaxytrakr.org",
       "@type": "schema1:WebSite"
     }
   ]

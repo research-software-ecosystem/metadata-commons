@@ -1,5 +1,6 @@
 {
   "@context": {
+    "biii": "https://biii.eu/",
     "bioconda": "https://github.com/bioconda/bioconda-recipes/tree/master/recipes/",
     "bioschemas": "http://bioschemas.org/",
     "biotools": "https://bio.tools/",
@@ -53,7 +54,9 @@
       "schema1:applicationSubCategory": {
         "@id": "edam:topic_3172"
       },
-      "schema1:codeRepository": "https://github.com/sneumann/CAMERA",
+      "schema1:codeRepository": {
+        "@id": "https://github.com/sneumann/CAMERA"
+      },
       "schema1:dateCreated": "2023-05-25",
       "schema1:encodingFormat": [
         "tabular",
@@ -85,16 +88,10 @@
           "@id": "workflowhub:1584?version=1"
         },
         {
-          "@id": "https://workflowhub.eu"
-        },
-        {
           "@id": "workflowhub:677?version=2"
         },
         {
           "@id": "https://usegalaxy.fr/published/workflow?id=bcd348178335a19b"
-        },
-        {
-          "@id": "https://usegalaxy.fr"
         },
         {
           "@id": "https://usegalaxy.fr/published/workflow?id=9c1665eeeaacaa5c"
@@ -172,13 +169,7 @@
           "@id": "https://usegalaxy.cz/published/workflow?id=1082e5b455f8f814"
         },
         {
-          "@id": "https://usegalaxy.cz"
-        },
-        {
           "@id": "https://usegalaxy.eu/published/workflow?id=6704b925935564aa"
-        },
-        {
-          "@id": "https://usegalaxy.eu"
         },
         {
           "@id": "https://usegalaxy.eu/published/workflow?id=a3bbc1284efcd20c"
@@ -187,36 +178,57 @@
           "@id": "https://usegalaxy.org/published/workflow?id=650f3eb7647b4508"
         },
         {
-          "@id": "https://usegalaxy.org"
-        },
-        {
           "@id": "https://usegalaxy.org/published/workflow?id=aeeaf3e06a13bc22"
         },
         {
           "@id": "https://usegalaxy.org.au/published/workflow?id=fa0243ff9b5ca997"
         },
         {
+          "@id": "https://usegalaxy.org.au/published/workflow?id=f9e5caaf08a450ec"
+        },
+        {
+          "@id": "https://usegalaxy.be"
+        },
+        {
+          "@id": "https://usegalaxy.cz"
+        },
+        {
+          "@id": "https://usegalaxy.eu"
+        },
+        {
+          "@id": "https://usegalaxy.fr"
+        },
+        {
+          "@id": "https://usegalaxy.no"
+        },
+        {
           "@id": "https://usegalaxy.org.au"
         },
         {
-          "@id": "https://usegalaxy.org.au/published/workflow?id=f9e5caaf08a450ec"
+          "@id": "https://usegalaxy.org"
         }
       ],
       "schema1:keywords": "Metabolomics",
       "schema1:name": "camera",
       "schema1:softwareVersion": "1.48.0",
-      "schema1:url": "https://github.com/workflow4metabolomics/tools-metabolomics/tree/master/tools/camera"
+      "schema1:url": {
+        "@id": "https://github.com/workflow4metabolomics/tools-metabolomics/tree/master/tools/camera"
+      }
+    },
+    {
+      "@id": "https://usegalaxy.cz",
+      "@type": "schema1:WebSite"
+    },
+    {
+      "@id": "https://usegalaxy.no",
+      "@type": "schema1:WebSite"
     },
     {
       "@id": "https://usegalaxy.org",
       "@type": "schema1:WebSite"
     },
     {
-      "@id": "https://usegalaxy.fr",
-      "@type": "schema1:WebSite"
-    },
-    {
-      "@id": "https://usegalaxy.cz",
+      "@id": "https://usegalaxy.be",
       "@type": "schema1:WebSite"
     },
     {
@@ -224,7 +236,7 @@
       "@type": "schema1:WebSite"
     },
     {
-      "@id": "https://workflowhub.eu",
+      "@id": "https://usegalaxy.fr",
       "@type": "schema1:WebSite"
     }
   ]
