@@ -36,13 +36,21 @@
   },
   "@graph": [
     {
+      "@id": "http://orcid.org/0000-0003-1678-7410",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.1186/s13059-015-0831-x",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/hic-pro",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "http://orcid.org/0000-0003-1678-7410"
       },
       "bsc:input": {
-        "@id": "_:N35c08d8abb0a402491f9bf397438e3be"
+        "@id": "_:N4c1919436da84f0e9987bf0b993b81fb"
       },
       "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
@@ -87,20 +95,12 @@
       "sc:url": "https://github.com/nservant/HiC-Pro"
     },
     {
-      "@id": "_:N35c08d8abb0a402491f9bf397438e3be",
+      "@id": "_:N4c1919436da84f0e9987bf0b993b81fb",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
       },
       "sc:name": "Sequence"
-    },
-    {
-      "@id": "https://doi.org/10.1186/s13059-015-0831-x",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "http://orcid.org/0000-0003-1678-7410",
-      "@type": "sc:Person"
     }
   ]
 }

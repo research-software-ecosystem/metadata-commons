@@ -36,18 +36,30 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1017/CBO9781139151405",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1016/S0168-9525(00)02024-2",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1017/CBO9781139151399",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/tranalign",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Nc09228985707478fab210c47df0fdf00"
+          "@id": "_:N13f23acc3fcf4c4cb2fb73971c86be9f"
         },
         {
-          "@id": "_:Nd435f40c56ce41e7904e7d7c027bb47d"
+          "@id": "_:Naa49157f817346dabb272ca355be9ced"
         }
       ],
       "bsc:output": {
-        "@id": "_:N03dc68453c2b4c5f8711221d71243465"
+        "@id": "_:Nc3fa3770db4540f0ba97164f904751ee"
       },
       "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
@@ -112,7 +124,7 @@
       "sc:url": "http://emboss.open-bio.org/rel/rel6/apps/tranalign.html"
     },
     {
-      "@id": "_:Nc09228985707478fab210c47df0fdf00",
+      "@id": "_:N13f23acc3fcf4c4cb2fb73971c86be9f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1384"
@@ -120,7 +132,7 @@
       "sc:name": "Sequence alignment (protein)"
     },
     {
-      "@id": "_:Nd435f40c56ce41e7904e7d7c027bb47d",
+      "@id": "_:Naa49157f817346dabb272ca355be9ced",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0849"
@@ -128,24 +140,12 @@
       "sc:name": "Sequence record"
     },
     {
-      "@id": "_:N03dc68453c2b4c5f8711221d71243465",
+      "@id": "_:Nc3fa3770db4540f0ba97164f904751ee",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2887"
       },
       "sc:name": "Nucleic acid sequence record"
-    },
-    {
-      "@id": "https://doi.org/10.1016/S0168-9525(00)02024-2",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1017/CBO9781139151399",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1017/CBO9781139151405",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

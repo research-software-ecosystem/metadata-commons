@@ -36,16 +36,24 @@
   },
   "@graph": [
     {
+      "@id": "https://orcid.org/0000-0001-5352-069X",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-1777-9084",
+      "@type": "sc:Person"
+    },
+    {
       "@id": "https://bio.tools/nanortax",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "https://orcid.org/0000-0003-1777-9084"
       },
       "bsc:input": {
-        "@id": "_:N05cfac2be95f410fa5a68d93019491c3"
+        "@id": "_:N1807f100332c4efbb68ff88716ec986d"
       },
       "bsc:output": {
-        "@id": "_:N644289d7225c412dbb554254cd7dc579"
+        "@id": "_:Nf12b4fc3116b48308e1f122e0612aa51"
       },
       "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
@@ -97,7 +105,7 @@
       "sc:url": "https://github.com/genomicsITER/NanoRtax"
     },
     {
-      "@id": "_:N05cfac2be95f410fa5a68d93019491c3",
+      "@id": "_:N1807f100332c4efbb68ff88716ec986d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1234"
@@ -105,7 +113,7 @@
       "sc:name": "Sequence set (nucleic acid)"
     },
     {
-      "@id": "_:N644289d7225c412dbb554254cd7dc579",
+      "@id": "_:Nf12b4fc3116b48308e1f122e0612aa51",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3028"
@@ -114,14 +122,6 @@
         "@id": "edam:format_3752"
       },
       "sc:name": "Taxonomy"
-    },
-    {
-      "@id": "https://orcid.org/0000-0001-5352-069X",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://orcid.org/0000-0003-1777-9084",
-      "@type": "sc:Person"
     }
   ]
 }

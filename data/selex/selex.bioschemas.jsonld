@@ -36,13 +36,17 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.18129/B9.bioc.SELEX",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/selex",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N6bdd6675231a4d0d8c0e72dd1a73afdf"
+        "@id": "_:N334efd0da93747b7987ac2fe6d6b40a2"
       },
       "bsc:output": {
-        "@id": "_:Nb215ba3369d94ec887f62bc221ab2092"
+        "@id": "_:N587fe6f321544fa895f66fed0b860475"
       },
       "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
@@ -78,7 +82,7 @@
       "sc:url": "https://bioconductor.org/packages/SELEX"
     },
     {
-      "@id": "_:N6bdd6675231a4d0d8c0e72dd1a73afdf",
+      "@id": "_:N334efd0da93747b7987ac2fe6d6b40a2",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1383"
@@ -97,7 +101,7 @@
       "sc:name": "Sequence alignment (nucleic acid)"
     },
     {
-      "@id": "_:Nb215ba3369d94ec887f62bc221ab2092",
+      "@id": "_:N587fe6f321544fa895f66fed0b860475",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0951"
@@ -114,10 +118,6 @@
         }
       ],
       "sc:name": "Statistical estimate score"
-    },
-    {
-      "@id": "https://doi.org/10.18129/B9.bioc.SELEX",
-      "@type": "sc:CreativeWork"
     }
   ]
 }
