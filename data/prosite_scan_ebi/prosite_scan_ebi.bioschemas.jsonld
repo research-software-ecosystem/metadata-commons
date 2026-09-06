@@ -36,26 +36,18 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/nar/gkac240",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gkl124",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/prosite_scan_ebi",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Job Dispatcher",
       "bsc:input": {
-        "@id": "_:Nc8f45877fab74b518a7a8efb6117786d"
+        "@id": "_:N4c973b07e7854498a194f7082507e889"
       },
       "bsc:output": [
         {
-          "@id": "_:Nca1e719c1eac4a0ab9d32477c8b8d130"
+          "@id": "_:Ndb0acaae28f549618f10469e56765ca5"
         },
         {
-          "@id": "_:Ncbbd9465c35a4c07b4e8589c3285779f"
+          "@id": "_:Nf81482c84cfa4543a179ec73b7006d8a"
         }
       ],
       "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -112,7 +104,7 @@
       "sc:url": "http://www.ebi.ac.uk/Tools/pfa/ps_scan/"
     },
     {
-      "@id": "_:Nc8f45877fab74b518a7a8efb6117786d",
+      "@id": "_:N4c973b07e7854498a194f7082507e889",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2976"
@@ -120,7 +112,7 @@
       "sc:name": "Protein sequence"
     },
     {
-      "@id": "_:Nca1e719c1eac4a0ab9d32477c8b8d130",
+      "@id": "_:Ndb0acaae28f549618f10469e56765ca5",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1277"
@@ -128,12 +120,20 @@
       "sc:name": "Protein features"
     },
     {
-      "@id": "_:Ncbbd9465c35a4c07b4e8589c3285779f",
+      "@id": "_:Nf81482c84cfa4543a179ec73b7006d8a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0858"
       },
       "sc:name": "Sequence signature matches"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/gkac240",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/gkl124",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

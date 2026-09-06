@@ -36,19 +36,27 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1021/ac050102d",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1021/pr050011x",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/inspect_ms",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Natalie Castellana",
       "bsc:input": [
         {
-          "@id": "_:N30f46dbd3d744e578933d6416eb69e7a"
+          "@id": "_:Nfeec5f1ba33147698704b5119d3f01bb"
         },
         {
-          "@id": "_:N78bdb879c23a45529614db7308bd5fc2"
+          "@id": "_:N81f0093adf934e5ca8b5c03c9013259d"
         }
       ],
       "bsc:output": {
-        "@id": "_:N19553eba5e984f9880509f18f1e5989a"
+        "@id": "_:N2a948d54804345c6abc594208d6e69fd"
       },
       "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
@@ -105,7 +113,7 @@
       "sc:url": "http://proteomics.ucsd.edu/Software/Inspect/"
     },
     {
-      "@id": "_:N30f46dbd3d744e578933d6416eb69e7a",
+      "@id": "_:Nfeec5f1ba33147698704b5119d3f01bb",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0943"
@@ -130,7 +138,7 @@
       "sc:name": "Mass spectrometry spectra"
     },
     {
-      "@id": "_:N78bdb879c23a45529614db7308bd5fc2",
+      "@id": "_:N81f0093adf934e5ca8b5c03c9013259d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1233"
@@ -141,7 +149,7 @@
       "sc:name": "Sequence set (protein)"
     },
     {
-      "@id": "_:N19553eba5e984f9880509f18f1e5989a",
+      "@id": "_:N2a948d54804345c6abc594208d6e69fd",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0945"
@@ -150,14 +158,6 @@
         "@id": "edam:format_2330"
       },
       "sc:name": "Peptide identification"
-    },
-    {
-      "@id": "https://doi.org/10.1021/pr050011x",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1021/ac050102d",
-      "@type": "sc:CreativeWork"
     }
   ]
 }
