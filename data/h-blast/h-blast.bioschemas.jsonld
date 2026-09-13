@@ -36,14 +36,18 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/btw769",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/h-blast",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Yuesheng Xu",
       "bsc:input": {
-        "@id": "_:Nd0f33e899c414fe2ae998d9b89233df7"
+        "@id": "_:Nae89300b956e4fe09142fd5be1ec09d5"
       },
       "bsc:output": {
-        "@id": "_:N3cd674276b0b45dca6c930a42a6a146b"
+        "@id": "_:N1d9df3cb46e54aa58c30cbe2a6da5788"
       },
       "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
@@ -84,7 +88,7 @@
       "sc:url": "https://github.com/Yeyke/H-BLAST"
     },
     {
-      "@id": "_:Nd0f33e899c414fe2ae998d9b89233df7",
+      "@id": "_:Nae89300b956e4fe09142fd5be1ec09d5",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
@@ -92,16 +96,12 @@
       "sc:name": "Sequence"
     },
     {
-      "@id": "_:N3cd674276b0b45dca6c930a42a6a146b",
+      "@id": "_:N1d9df3cb46e54aa58c30cbe2a6da5788",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0857"
       },
       "sc:name": "Sequence search results"
-    },
-    {
-      "@id": "https://doi.org/10.1093/bioinformatics/btw769",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

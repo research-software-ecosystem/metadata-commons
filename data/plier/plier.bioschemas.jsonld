@@ -36,13 +36,17 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.18129/B9.bioc.plier",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/plier",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N8a36a3750abf4c77aac24d58c271d989"
+        "@id": "_:N73121343dfb149049463be69bb4aba78"
       },
       "bsc:output": {
-        "@id": "_:N32228ddd66444828a8db8ec2d3cb2985"
+        "@id": "_:Nb67b0e4e84c44d10bbfba4521faecb21"
       },
       "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
@@ -86,7 +90,7 @@
       "sc:url": "https://bioconductor.org/packages/plier"
     },
     {
-      "@id": "_:N8a36a3750abf4c77aac24d58c271d989",
+      "@id": "_:N73121343dfb149049463be69bb4aba78",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3110"
@@ -105,7 +109,7 @@
       "sc:name": "Raw microarray data"
     },
     {
-      "@id": "_:N32228ddd66444828a8db8ec2d3cb2985",
+      "@id": "_:Nb67b0e4e84c44d10bbfba4521faecb21",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3111"
@@ -114,10 +118,6 @@
         "@id": "edam:format_3475"
       },
       "sc:name": "Processed microarray data"
-    },
-    {
-      "@id": "https://doi.org/10.18129/B9.bioc.plier",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

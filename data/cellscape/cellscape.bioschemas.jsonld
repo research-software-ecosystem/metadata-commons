@@ -36,18 +36,22 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.18129/B9.bioc.cellscape",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/cellscape",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N432bbd7059314506b28fc9a872d4d79c"
+          "@id": "_:N42955bb25fce4c3c8e0cd5f9828fca6d"
         },
         {
-          "@id": "_:Nf1f8ee5258fe4927b5c0abe01aa7eda9"
+          "@id": "_:N99e63e2bebfd48d2b3d6a3971ae5c137"
         }
       ],
       "bsc:output": {
-        "@id": "_:N87cebb0781304ccc8515227d47d5566c"
+        "@id": "_:N75cd7b34dc614932b7c2221b4e0c1b5a"
       },
       "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Plug-in",
@@ -96,7 +100,7 @@
       "sc:url": "https://bioconductor.org/packages/cellscape"
     },
     {
-      "@id": "_:N432bbd7059314506b28fc9a872d4d79c",
+      "@id": "_:N42955bb25fce4c3c8e0cd5f9828fca6d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2523"
@@ -104,7 +108,7 @@
       "sc:name": "Phylogenetic data"
     },
     {
-      "@id": "_:Nf1f8ee5258fe4927b5c0abe01aa7eda9",
+      "@id": "_:N99e63e2bebfd48d2b3d6a3971ae5c137",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2914"
@@ -112,16 +116,12 @@
       "sc:name": "Sequence features metadata"
     },
     {
-      "@id": "_:N87cebb0781304ccc8515227d47d5566c",
+      "@id": "_:N75cd7b34dc614932b7c2221b4e0c1b5a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1636"
       },
       "sc:name": "Heat map"
-    },
-    {
-      "@id": "https://doi.org/10.18129/B9.bioc.cellscape",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

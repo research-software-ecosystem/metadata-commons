@@ -36,14 +36,6 @@
   },
   "@graph": [
     {
-      "@id": "https://orcid.org/0000-0002-7359-0633",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://doi.org/10.1093/bioinformatics/btt089",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/tppred_1.0",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
@@ -54,10 +46,10 @@
         "Rita Casadio"
       ],
       "bsc:input": {
-        "@id": "_:N97fa96dbf2ea45e79a393d73f044faf2"
+        "@id": "_:N671c6695d2db4250896bbef28950b1e9"
       },
       "bsc:output": {
-        "@id": "_:Nb63a9cb9a62844b48c76ff8ab424e430"
+        "@id": "_:N9324a695fcff449688d9d2af2b505f2c"
       },
       "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
@@ -108,7 +100,7 @@
       "sc:url": "http://tppred.biocomp.unibo.it/tppred/default/index"
     },
     {
-      "@id": "_:N97fa96dbf2ea45e79a393d73f044faf2",
+      "@id": "_:N671c6695d2db4250896bbef28950b1e9",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2974"
@@ -119,7 +111,7 @@
       "sc:name": "Protein sequence (raw)"
     },
     {
-      "@id": "_:Nb63a9cb9a62844b48c76ff8ab424e430",
+      "@id": "_:N9324a695fcff449688d9d2af2b505f2c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0896"
@@ -128,6 +120,14 @@
         "@id": "edam:format_2331"
       },
       "sc:name": "Protein report"
+    },
+    {
+      "@id": "https://doi.org/10.1093/bioinformatics/btt089",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-7359-0633",
+      "@type": "sc:Person"
     }
   ]
 }

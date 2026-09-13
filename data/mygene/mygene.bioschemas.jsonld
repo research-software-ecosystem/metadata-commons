@@ -36,17 +36,21 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.18129/B9.bioc.mygene",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/mygene",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nd29e327dc658474a9daec6cf31b58d9f"
+        "@id": "_:Nb4ec49875746444eb17db7295c2d7513"
       },
       "bsc:output": [
         {
-          "@id": "_:Naa5415196a77499f815802fbd9a4a2f0"
+          "@id": "_:Nba0f7804e7254852bf6ffe0481ba54fa"
         },
         {
-          "@id": "_:N60985ec24e294f4e8cbf1d2cb52ccfab"
+          "@id": "_:Nf13a01ddb2934779adba6764b4aca416"
         }
       ],
       "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -83,7 +87,7 @@
       "sc:url": "https://bioconductor.org/packages/mygene"
     },
     {
-      "@id": "_:Nd29e327dc658474a9daec6cf31b58d9f",
+      "@id": "_:Nb4ec49875746444eb17db7295c2d7513",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1026"
@@ -94,7 +98,7 @@
       "sc:name": "Gene symbol"
     },
     {
-      "@id": "_:Naa5415196a77499f815802fbd9a4a2f0",
+      "@id": "_:Nba0f7804e7254852bf6ffe0481ba54fa",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1033"
@@ -105,7 +109,7 @@
       "sc:name": "Ensembl gene ID"
     },
     {
-      "@id": "_:N60985ec24e294f4e8cbf1d2cb52ccfab",
+      "@id": "_:Nf13a01ddb2934779adba6764b4aca416",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1027"
@@ -114,10 +118,6 @@
         "@id": "edam:format_3033"
       },
       "sc:name": "Gene ID (NCBI)"
-    },
-    {
-      "@id": "https://doi.org/10.18129/B9.bioc.mygene",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

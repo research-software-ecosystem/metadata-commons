@@ -36,16 +36,28 @@
   },
   "@graph": [
     {
+      "@id": "https://orcid.org/0000-0002-3093-5873",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-3597-8557",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.1093/database/baaa113",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/pybravo",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "https://orcid.org/0000-0002-3597-8557"
       },
       "bsc:input": {
-        "@id": "_:N9c3fa1aa6d664564b066f0ded3b75aed"
+        "@id": "_:N9d041c99f327469bad4602f4fb01d493"
       },
       "bsc:output": {
-        "@id": "_:N6d471e57fdfc4681bb9f8405b2ec0f96"
+        "@id": "_:N5a70de43f41d475cb072ba89d27dd175"
       },
       "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
@@ -86,7 +98,7 @@
       "sc:url": "https://github.com/pyBRAvo/pyBRAvo"
     },
     {
-      "@id": "_:N9c3fa1aa6d664564b066f0ded3b75aed",
+      "@id": "_:N9d041c99f327469bad4602f4fb01d493",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1026"
@@ -97,7 +109,7 @@
       "sc:name": "Gene symbol"
     },
     {
-      "@id": "_:N6d471e57fdfc4681bb9f8405b2ec0f96",
+      "@id": "_:N5a70de43f41d475cb072ba89d27dd175",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2600"
@@ -106,18 +118,6 @@
         "@id": "edam:format_3619"
       },
       "sc:name": "Pathway or network"
-    },
-    {
-      "@id": "https://doi.org/10.1093/database/baaa113",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://orcid.org/0000-0002-3093-5873",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://orcid.org/0000-0002-3597-8557",
-      "@type": "sc:Person"
     }
   ]
 }

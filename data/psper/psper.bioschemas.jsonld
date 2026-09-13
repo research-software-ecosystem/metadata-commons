@@ -36,16 +36,24 @@
   },
   "@graph": [
     {
+      "@id": "https://orcid.org/0000-0001-7470-4324",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.1093/bioinformatics/btz274",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/PSPer",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "https://orcid.org/0000-0001-7470-4324"
       },
       "bsc:input": {
-        "@id": "_:N0e8c5ae2215e4681bfde6c1c6753d3f0"
+        "@id": "_:Nb40df14646894802aa69daaa72b8d6ac"
       },
       "bsc:output": {
-        "@id": "_:N60da832232494c549652c627a24a4fad"
+        "@id": "_:N390127376a2f4bd881746f33dbb5b764"
       },
       "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:citation": [
@@ -62,7 +70,7 @@
       "sc:url": "http://bio2byte.com/psp/"
     },
     {
-      "@id": "_:N0e8c5ae2215e4681bfde6c1c6753d3f0",
+      "@id": "_:Nb40df14646894802aa69daaa72b8d6ac",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2974"
@@ -73,7 +81,7 @@
       "sc:name": "Protein sequence (raw)"
     },
     {
-      "@id": "_:N60da832232494c549652c627a24a4fad",
+      "@id": "_:N390127376a2f4bd881746f33dbb5b764",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1277"
@@ -82,14 +90,6 @@
         "@id": "edam:format_3464"
       },
       "sc:name": "Protein features"
-    },
-    {
-      "@id": "https://orcid.org/0000-0001-7470-4324",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://doi.org/10.1093/bioinformatics/btz274",
-      "@type": "sc:CreativeWork"
     }
   ]
 }
