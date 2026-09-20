@@ -1,9 +1,11 @@
 @prefix biocontainers: <https://biocontainers.pro/tools/> .
+@prefix biotools: <https://bio.tools/> .
 @prefix schema1: <http://schema.org/> .
 
 biocontainers:pipmir a schema1:SoftwareApplication ;
     schema1:citation "doi:10.1101/gr.123547.111" ;
     schema1:description "We developed the PIPmiR algorithm to identify novel plant miRNA" ;
+    schema1:identifier biotools:pipmir ;
     schema1:keywords "Arabidopsis",
         "Gene Expression Profiling",
         "Gene Expression Regulation, Plant",

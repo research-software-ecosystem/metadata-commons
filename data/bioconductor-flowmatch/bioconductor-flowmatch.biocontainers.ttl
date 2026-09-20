@@ -1,9 +1,11 @@
 @prefix biocontainers: <https://biocontainers.pro/tools/> .
+@prefix biotools: <https://bio.tools/> .
 @prefix schema1: <http://schema.org/> .
 
 biocontainers:bioconductor-flowmatch a schema1:SoftwareApplication ;
     schema1:citation "doi:10.1038/nmeth.3252" ;
     schema1:description "Matching and meta-clustering in flow cytometry" ;
+    schema1:identifier biotools:flowmatch ;
     schema1:keywords "Cell biology",
         "Clustering",
         "Computational Biology",

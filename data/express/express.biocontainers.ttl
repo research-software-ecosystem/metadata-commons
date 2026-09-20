@@ -1,10 +1,12 @@
 @prefix biocontainers: <https://biocontainers.pro/tools/> .
+@prefix biotools: <https://bio.tools/> .
 @prefix schema1: <http://schema.org/> .
 
 biocontainers:express a schema1:SoftwareApplication ;
     schema1:citation "doi:10.1186/gb-2011-12-3-r22",
         "doi:10.7490/f1000research.1114334.1" ;
     schema1:description "Express is a streaming dna/rna sequence quantification tool." ;
+    schema1:identifier biotools:express ;
     schema1:keywords "Bias",
         "ChIP-seq",
         "Gene Expression Profiling",

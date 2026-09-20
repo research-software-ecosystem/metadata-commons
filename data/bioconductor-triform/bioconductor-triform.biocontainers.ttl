@@ -1,9 +1,11 @@
 @prefix biocontainers: <https://biocontainers.pro/tools/> .
+@prefix biotools: <https://bio.tools/> .
 @prefix schema1: <http://schema.org/> .
 
 biocontainers:bioconductor-triform a schema1:SoftwareApplication ;
     schema1:citation "doi:10.1186/1471-2105-13-176" ;
     schema1:description "Triform finds enriched regions (peaks) in transcription factor ChIP-sequencing data" ;
+    schema1:identifier biotools:triform ;
     schema1:keywords "Binding Sites",
         "ChIP-seq",
         "Chromatin Immunoprecipitation",

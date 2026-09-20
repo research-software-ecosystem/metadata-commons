@@ -1,4 +1,5 @@
 @prefix biocontainers: <https://biocontainers.pro/tools/> .
+@prefix biotools: <https://bio.tools/> .
 @prefix schema1: <http://schema.org/> .
 
 biocontainers:stamp a schema1:SoftwareApplication ;
@@ -6,6 +7,7 @@ biocontainers:stamp a schema1:SoftwareApplication ;
         "doi:10.1093/nar/gkm272",
         "doi:10.1371/journal.pcbi.0030061" ;
     schema1:description "A graphical software package for analyzing taxonomic and functional profiles." ;
+    schema1:identifier biotools:stamp ;
     schema1:keywords "Bacteria",
         "Classification",
         "Confidence Intervals",

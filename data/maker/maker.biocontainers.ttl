@@ -1,9 +1,11 @@
 @prefix biocontainers: <https://biocontainers.pro/tools/> .
+@prefix biotools: <https://bio.tools/> .
 @prefix schema1: <http://schema.org/> .
 
 biocontainers:maker a schema1:SoftwareApplication ;
     schema1:citation "doi:10.1101/gr.6743907" ;
     schema1:description "Portable and easily configurable genome annotation pipeline. it’s purpose is to allow smaller eukaryotic and prokaryotic genome projects to independently annotate their genomes and to create genome databases." ;
+    schema1:identifier biotools:maker ;
     schema1:keywords "Animals",
         "DNA",
         "Databases, Nucleic Acid",

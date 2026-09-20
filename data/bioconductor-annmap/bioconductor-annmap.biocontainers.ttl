@@ -1,9 +1,11 @@
 @prefix biocontainers: <https://biocontainers.pro/tools/> .
+@prefix biotools: <https://bio.tools/> .
 @prefix schema1: <http://schema.org/> .
 
 biocontainers:bioconductor-annmap a schema1:SoftwareApplication ;
     schema1:citation "doi:10.1093/nar/gkm779" ;
     schema1:description "Genome annotation and visualisation package pertaining to Affymetrix arrays and NGS analysis." ;
+    schema1:identifier biotools:annmap ;
     schema1:keywords "Alternative Splicing",
         "Animals",
         "Chromosome Mapping",

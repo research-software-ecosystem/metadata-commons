@@ -1,9 +1,11 @@
 @prefix biocontainers: <https://biocontainers.pro/tools/> .
+@prefix biotools: <https://bio.tools/> .
 @prefix schema1: <http://schema.org/> .
 
 biocontainers:beast2 a schema1:SoftwareApplication ;
     schema1:citation "doi:10.1371/JOURNAL.PCBI.1003537" ;
     schema1:description "Beast 2 is a cross-platform program for bayesian phylogenetic analysis of molecular sequences." ;
+    schema1:identifier biotools:beast2 ;
     schema1:keywords "Bayes Theorem",
         "Biological Evolution",
         "Genetics",

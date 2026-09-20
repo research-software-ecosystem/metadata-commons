@@ -1,9 +1,11 @@
 @prefix biocontainers: <https://biocontainers.pro/tools/> .
+@prefix biotools: <https://bio.tools/> .
 @prefix schema1: <http://schema.org/> .
 
 biocontainers:bioconductor-splinetimer a schema1:SoftwareApplication ;
     schema1:citation "doi:10.1371/journal.pone.0160791" ;
     schema1:description "Time-course differential gene expression data analysis using spline regression models followed by gene association network reconstruction" ;
+    schema1:identifier biotools:splinetimer ;
     schema1:keywords "Gene Expression",
         "Gene Expression Profiling",
         "Gene Regulatory Networks",

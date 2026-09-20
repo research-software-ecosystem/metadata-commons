@@ -1,10 +1,12 @@
 @prefix biocontainers: <https://biocontainers.pro/tools/> .
+@prefix biotools: <https://bio.tools/> .
 @prefix schema1: <http://schema.org/> .
 
 biocontainers:galaxy-containers a schema1:SoftwareApplication ;
     schema1:citation "doi:10.1093/nar/gkw343",
         "doi:10.1093/nar/gky379" ;
     schema1:description "Galaxy Container Modeling and Interaction Abstractions" ;
+    schema1:identifier biotools:galaxy ;
     schema1:keywords "Comparative genomics",
         "Datasets as Topic",
         "Functional genomics",

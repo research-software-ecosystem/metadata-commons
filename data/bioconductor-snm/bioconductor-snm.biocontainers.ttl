@@ -1,9 +1,11 @@
 @prefix biocontainers: <https://biocontainers.pro/tools/> .
+@prefix biotools: <https://bio.tools/> .
 @prefix schema1: <http://schema.org/> .
 
 biocontainers:bioconductor-snm a schema1:SoftwareApplication ;
     schema1:citation "doi:10.1093/bioinformatics/btq118" ;
     schema1:description "Supervised Normalization of Microarrays" ;
+    schema1:identifier biotools:snm ;
     schema1:keywords "Computational Biology",
         "Data quality management",
         "Gene Expression Profiling",

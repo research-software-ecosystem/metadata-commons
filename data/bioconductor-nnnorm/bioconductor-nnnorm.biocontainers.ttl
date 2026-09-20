@@ -1,9 +1,11 @@
 @prefix biocontainers: <https://biocontainers.pro/tools/> .
+@prefix biotools: <https://bio.tools/> .
 @prefix schema1: <http://schema.org/> .
 
 biocontainers:bioconductor-nnnorm a schema1:SoftwareApplication ;
     schema1:citation "doi:10.1093/bioinformatics/bti397" ;
     schema1:description "Spatial and intensity based normalization of cDNA microarray data based on robust neural nets" ;
+    schema1:identifier biotools:nnnorm ;
     schema1:keywords "Artifacts",
         "Data quality management",
         "Gene Expression Profiling",

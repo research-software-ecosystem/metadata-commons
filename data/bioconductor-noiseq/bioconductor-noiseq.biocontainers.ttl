@@ -1,9 +1,11 @@
 @prefix biocontainers: <https://biocontainers.pro/tools/> .
+@prefix biotools: <https://bio.tools/> .
 @prefix schema1: <http://schema.org/> .
 
 biocontainers:bioconductor-noiseq a schema1:SoftwareApplication ;
     schema1:citation "doi:10.1093/nar/gkv711" ;
     schema1:description "Analysis of rna-seq expression data or other similar kind of data. exploratory plots to evualuate saturation, count distribution, expression per chromosome, type of detected features, features length, etc. differential expression between two experimental conditions with no parametric assumptions." ;
+    schema1:identifier biotools:noiseq ;
     schema1:keywords "Cell Line",
         "Data Interpretation, Statistical",
         "Gene Expression Profiling",

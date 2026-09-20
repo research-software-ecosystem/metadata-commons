@@ -1,4 +1,5 @@
 @prefix biocontainers: <https://biocontainers.pro/tools/> .
+@prefix biotools: <https://bio.tools/> .
 @prefix schema1: <http://schema.org/> .
 
 biocontainers:bioconductor-psicquic a schema1:SoftwareApplication ;
@@ -6,6 +7,7 @@ biocontainers:bioconductor-psicquic a schema1:SoftwareApplication ;
         "doi:10.1038/nmeth.3252",
         "doi:10.1093/nar/gkt392" ;
     schema1:description "Project within the hupo proteomics standard initiative (hupo-psi) that standardises programmatic access to molecular interaction databases." ;
+    schema1:identifier biotools:psicquic ;
     schema1:keywords "Computational Biology",
         "Data management",
         "Gene Expression Profiling",

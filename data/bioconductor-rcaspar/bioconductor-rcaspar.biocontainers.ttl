@@ -1,9 +1,11 @@
 @prefix biocontainers: <https://biocontainers.pro/tools/> .
+@prefix biotools: <https://bio.tools/> .
 @prefix schema1: <http://schema.org/> .
 
 biocontainers:bioconductor-rcaspar a schema1:SoftwareApplication ;
     schema1:citation "doi:10.1038/nmeth.3252" ;
     schema1:description "A package for survival time prediction based on a piecewise baseline hazard Cox regression model." ;
+    schema1:identifier biotools:rcaspar ;
     schema1:keywords "Computational Biology",
         "Data visualisation",
         "Gene Expression",

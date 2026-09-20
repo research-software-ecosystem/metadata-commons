@@ -1,4 +1,5 @@
 @prefix biocontainers: <https://biocontainers.pro/tools/> .
+@prefix biotools: <https://bio.tools/> .
 @prefix schema1: <http://schema.org/> .
 
 biocontainers:segway a schema1:SoftwareApplication ;
@@ -7,6 +8,7 @@ biocontainers:segway a schema1:SoftwareApplication ;
         "doi:10.1093/nar/gks1284",
         "doi:10.1101/086025" ;
     schema1:description "Novel method for analyzing multiple tracks of functional genomics data which uses a dynamic bayesian network (dbn) model, which enables it to analyze the entire genome at 1-bp resolution even in the face of heterogeneous patterns of missing data. this method is the first application of dbn techniques to genome-scale data and the first genomic segmentation method designed for use with the maximum resolution data available from chip-seq experiments without downsampling." ;
+    schema1:identifier biotools:segway ;
     schema1:keywords "Epigenomics",
         "Eukaryota",
         "Functional genomics",

@@ -1,9 +1,11 @@
 @prefix biocontainers: <https://biocontainers.pro/tools/> .
+@prefix biotools: <https://bio.tools/> .
 @prefix schema1: <http://schema.org/> .
 
 biocontainers:bioconductor-flowmap a schema1:SoftwareApplication ;
     schema1:citation "doi:10.1002/cyto.a.22735" ;
     schema1:description "Mapping cell populations in flow cytometry data for cross-sample comparisons using the Friedman-Rafsky Test" ;
+    schema1:identifier biotools:flowmap ;
     schema1:keywords "Adaptor Proteins, Signal Transducing",
         "Biomarkers",
         "CD4 Antigens",

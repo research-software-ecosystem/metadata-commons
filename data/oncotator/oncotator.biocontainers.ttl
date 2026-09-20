@@ -1,9 +1,11 @@
 @prefix biocontainers: <https://biocontainers.pro/tools/> .
+@prefix biotools: <https://bio.tools/> .
 @prefix schema1: <http://schema.org/> .
 
 biocontainers:oncotator a schema1:SoftwareApplication ;
     schema1:citation "doi:10.1002/humu.22771" ;
     schema1:description "Oncotator is a tool for annotating human genomic point mutations and indels with data relevant to cancer researchers." ;
+    schema1:identifier biotools:oncotator ;
     schema1:keywords "Computational Biology",
         "DNA mutation",
         "Databases, Genetic",

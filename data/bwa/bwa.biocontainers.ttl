@@ -1,4 +1,5 @@
 @prefix biocontainers: <https://biocontainers.pro/tools/> .
+@prefix biotools: <https://bio.tools/> .
 @prefix schema1: <http://schema.org/> .
 
 biocontainers:bwa a schema1:SoftwareApplication ;
@@ -9,6 +10,7 @@ biocontainers:bwa a schema1:SoftwareApplication ;
         "doi:10.1186/1471-2105-14-184",
         "doi:10.1186/1471-2164-15-264" ;
     schema1:description "Fast, accurate, memory-efficient aligner for short and long sequencing reads" ;
+    schema1:identifier biotools:bwa ;
     schema1:keywords "Base Sequence",
         "Genome, Human",
         "Genomics",

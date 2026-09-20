@@ -1,4 +1,5 @@
 @prefix biocontainers: <https://biocontainers.pro/tools/> .
+@prefix biotools: <https://bio.tools/> .
 @prefix schema1: <http://schema.org/> .
 
 biocontainers:rsat-core a schema1:SoftwareApplication ;
@@ -8,6 +9,7 @@ biocontainers:rsat-core a schema1:SoftwareApplication ;
         "doi:10.1093/nar/gkn304",
         "doi:10.1093/nar/gky317" ;
     schema1:description "Detection of regulatory signals in non-coding sequences." ;
+    schema1:identifier biotools:rsat ;
     schema1:keywords "DNA binding sites",
         "Gene expression",
         "Gene transcripts",

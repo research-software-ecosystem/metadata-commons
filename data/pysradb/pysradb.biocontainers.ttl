@@ -1,9 +1,11 @@
 @prefix biocontainers: <https://biocontainers.pro/tools/> .
+@prefix biotools: <https://bio.tools/> .
 @prefix schema1: <http://schema.org/> .
 
 biocontainers:pysradb a schema1:SoftwareApplication ;
     schema1:citation "doi:10.12688/f1000research.18676.1" ;
     schema1:description "Python package to query next-generation sequencing metadata and data from ncbi sequence read archive." ;
+    schema1:identifier biotools:pysradb ;
     schema1:keywords "Bioinformatics",
         "Databases, Factual",
         "Gene transcripts",

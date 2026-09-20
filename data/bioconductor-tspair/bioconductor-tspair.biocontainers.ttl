@@ -1,9 +1,11 @@
 @prefix biocontainers: <https://biocontainers.pro/tools/> .
+@prefix biotools: <https://bio.tools/> .
 @prefix schema1: <http://schema.org/> .
 
 biocontainers:bioconductor-tspair a schema1:SoftwareApplication ;
     schema1:citation "doi:10.1093/bioinformatics/btp126" ;
     schema1:description "Top Scoring Pairs for Microarray Classification" ;
+    schema1:identifier biotools:tspair ;
     schema1:keywords "Computational Biology",
         "Gene Expression Profiling",
         "Genetic variation",

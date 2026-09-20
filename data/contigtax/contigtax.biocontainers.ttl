@@ -1,8 +1,10 @@
 @prefix biocontainers: <https://biocontainers.pro/tools/> .
+@prefix biotools: <https://bio.tools/> .
 @prefix schema1: <http://schema.org/> .
 
 biocontainers:contigtax a schema1:SoftwareApplication ;
     schema1:description "Assign taxonomy to metagenomic contigs (previously know as tango)" ;
+    schema1:identifier biotools:contigtax ;
     schema1:keywords "Genomics",
         "Metagenomics",
         "Transcriptomics" ;

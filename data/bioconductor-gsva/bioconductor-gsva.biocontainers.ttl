@@ -1,9 +1,11 @@
 @prefix biocontainers: <https://biocontainers.pro/tools/> .
+@prefix biotools: <https://bio.tools/> .
 @prefix schema1: <http://schema.org/> .
 
 biocontainers:bioconductor-gsva a schema1:SoftwareApplication ;
     schema1:citation "doi:10.1186/1471-2105-14-7" ;
     schema1:description "Gene Set Variation Analysis for microarray and RNA-seq data" ;
+    schema1:identifier biotools:gsva ;
     schema1:keywords "Analysis of Variance",
         "Clustering",
         "Female",

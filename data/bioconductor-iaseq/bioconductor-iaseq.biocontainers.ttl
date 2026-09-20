@@ -1,9 +1,11 @@
 @prefix biocontainers: <https://biocontainers.pro/tools/> .
+@prefix biotools: <https://bio.tools/> .
 @prefix schema1: <http://schema.org/> .
 
 biocontainers:bioconductor-iaseq a schema1:SoftwareApplication ;
     schema1:citation "doi:10.1186/1471-2164-13-681" ;
     schema1:description "iASeq: integrating multiple sequencing datasets for detecting allele-specific events" ;
+    schema1:identifier biotools:iaseq ;
     schema1:keywords "Alleles",
         "Base Sequence",
         "Bayes Theorem",

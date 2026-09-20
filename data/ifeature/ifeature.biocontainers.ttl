@@ -1,9 +1,11 @@
 @prefix biocontainers: <https://biocontainers.pro/tools/> .
+@prefix biotools: <https://bio.tools/> .
 @prefix schema1: <http://schema.org/> .
 
 biocontainers:ifeature a schema1:SoftwareApplication ;
     schema1:citation "doi:10.1093/bioinformatics/bty140" ;
     schema1:description "A python package for feature extraction and selection from protein and peptide sequences" ;
+    schema1:identifier biotools:ifeature ;
     schema1:keywords "Machine Learning",
         "Molecular Sequence Annotation",
         "Peptides",

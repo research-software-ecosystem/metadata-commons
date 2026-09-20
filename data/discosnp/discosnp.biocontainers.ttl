@@ -1,10 +1,12 @@
 @prefix biocontainers: <https://biocontainers.pro/tools/> .
+@prefix biotools: <https://bio.tools/> .
 @prefix schema1: <http://schema.org/> .
 
 biocontainers:discosnp a schema1:SoftwareApplication ;
     schema1:citation "doi:10.1093/nar/gkn000",
         "doi:10.1093/nar/gku1187" ;
     schema1:description "This software is designed for discovering single nucleotide polymorphism (snp) from raw set(s) of reads obtained with next generation sequencers (ngs)." ;
+    schema1:identifier biotools:discosnp ;
     schema1:keywords "Animals",
         "Chromosomes, Human, Pair 1",
         "DNA polymorphism",

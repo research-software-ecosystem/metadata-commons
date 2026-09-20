@@ -1,10 +1,12 @@
 @prefix biocontainers: <https://biocontainers.pro/tools/> .
+@prefix biotools: <https://bio.tools/> .
 @prefix schema1: <http://schema.org/> .
 
 biocontainers:deeptools a schema1:SoftwareApplication ;
     schema1:citation "doi:10.1093/nar/gku365",
         "doi:10.1093/nar/gkw257" ;
     schema1:description "User-friendly tools for the normalization and visualization of deep-sequencing data." ;
+    schema1:identifier biotools:deeptools ;
     schema1:keywords "Animals",
         "Base Sequence",
         "ChIP-seq",

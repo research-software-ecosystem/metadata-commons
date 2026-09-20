@@ -1,9 +1,11 @@
 @prefix biocontainers: <https://biocontainers.pro/tools/> .
+@prefix biotools: <https://bio.tools/> .
 @prefix schema1: <http://schema.org/> .
 
 biocontainers:bioconductor-dta a schema1:SoftwareApplication ;
     schema1:citation "doi:10.1093/bioinformatics/bts052" ;
     schema1:description "Dynamic transcriptome analysis can monitor the cellular response to perturbations with higher sensitivity and temporal resolution than standard transcriptomics. the package implements the underlying kinetic modeling approach capable of the precise determination of synthesis and decay rates from individual microarray or rnaseq measurements." ;
+    schema1:identifier biotools:dta ;
     schema1:keywords "Cell Cycle",
         "Gene Expression Profiling",
         "Genome-Wide Association Study",

@@ -1,9 +1,11 @@
 @prefix biocontainers: <https://biocontainers.pro/tools/> .
+@prefix biotools: <https://bio.tools/> .
 @prefix schema1: <http://schema.org/> .
 
 biocontainers:bioconductor-segmentseq a schema1:SoftwareApplication ;
     schema1:citation "doi:10.1093/bioinformatics/btr687" ;
     schema1:description "Methods for identifying small RNA loci from high-throughput sequencing data" ;
+    schema1:identifier biotools:segmentseq ;
     schema1:keywords "Arabidopsis",
         "ChIP-seq",
         "Computer Simulation",

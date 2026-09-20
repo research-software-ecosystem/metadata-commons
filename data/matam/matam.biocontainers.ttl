@@ -1,9 +1,11 @@
 @prefix biocontainers: <https://biocontainers.pro/tools/> .
+@prefix biotools: <https://bio.tools/> .
 @prefix schema1: <http://schema.org/> .
 
 biocontainers:matam a schema1:SoftwareApplication ;
     schema1:citation "doi:10.1093/bioinformatics/btx644" ;
     schema1:description "MATAM is a software dedicated to the fast and accurate targeted assembly of short reads." ;
+    schema1:identifier biotools:matam ;
     schema1:keywords "Clustering",
         "Gastrointestinal Microbiome",
         "Genomics",

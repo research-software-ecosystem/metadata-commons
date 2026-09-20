@@ -1,9 +1,11 @@
 @prefix biocontainers: <https://biocontainers.pro/tools/> .
+@prefix biotools: <https://bio.tools/> .
 @prefix schema1: <http://schema.org/> .
 
 biocontainers:bioconductor-genogam a schema1:SoftwareApplication ;
     schema1:citation "doi:10.1093/bioinformatics/btx150" ;
     schema1:description "A GAM based framework for analysis of ChIP-Seq data" ;
+    schema1:identifier biotools:genogam ;
     schema1:keywords "Animals",
         "ChIP-seq",
         "Chromatin Immunoprecipitation",

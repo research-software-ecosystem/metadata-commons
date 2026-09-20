@@ -1,9 +1,11 @@
 @prefix biocontainers: <https://biocontainers.pro/tools/> .
+@prefix biotools: <https://bio.tools/> .
 @prefix schema1: <http://schema.org/> .
 
 biocontainers:peakzilla a schema1:SoftwareApplication ;
     schema1:citation "doi:10.1093/bioinformatics/btt470" ;
     schema1:description "Identify transcription factor binding sites from chip-seq data at high resolution." ;
+    schema1:identifier biotools:peakzilla ;
     schema1:keywords "Animals",
         "Binding Sites",
         "Chromatin Immunoprecipitation",

@@ -1,9 +1,11 @@
 @prefix biocontainers: <https://biocontainers.pro/tools/> .
+@prefix biotools: <https://bio.tools/> .
 @prefix schema1: <http://schema.org/> .
 
 biocontainers:nxtrim a schema1:SoftwareApplication ;
     schema1:citation "doi:10.1093/bioinformatics/btv057" ;
     schema1:description "Software to remove Nextera Mate Pair adapters and categorise reads according to the orientation implied by the adapter location." ;
+    schema1:identifier biotools:nxtrim ;
     schema1:keywords "Bacteria",
         "Computational Biology",
         "Data quality management",

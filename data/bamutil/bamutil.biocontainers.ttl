@@ -1,9 +1,11 @@
 @prefix biocontainers: <https://biocontainers.pro/tools/> .
+@prefix biotools: <https://bio.tools/> .
 @prefix schema1: <http://schema.org/> .
 
 biocontainers:bamutil a schema1:SoftwareApplication ;
     schema1:citation "doi:10.1101/gr.176552.114" ;
     schema1:description "Programs that perform operations on SAM/BAM files, all built into a single executable, bam." ;
+    schema1:identifier biotools:Bamutil ;
     schema1:keywords "Computational Biology",
         "Data management",
         "Databases, Genetic",

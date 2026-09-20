@@ -1,9 +1,11 @@
 @prefix biocontainers: <https://biocontainers.pro/tools/> .
+@prefix biotools: <https://bio.tools/> .
 @prefix schema1: <http://schema.org/> .
 
 biocontainers:bioconductor-drugvsdisease a schema1:SoftwareApplication ;
     schema1:citation "doi:10.1038/nmeth.3252" ;
     schema1:description "Comparison of disease and drug profiles using Gene set Enrichment Analysis" ;
+    schema1:identifier biotools:drugvsdisease ;
     schema1:keywords "Clustering",
         "Computational Biology",
         "Gene Expression",

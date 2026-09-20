@@ -1,9 +1,11 @@
 @prefix biocontainers: <https://biocontainers.pro/tools/> .
+@prefix biotools: <https://bio.tools/> .
 @prefix schema1: <http://schema.org/> .
 
 biocontainers:bioconductor-epivizrdata a schema1:SoftwareApplication ;
     schema1:citation "doi:10.1038/nmeth.3252" ;
     schema1:description "Serve data from bioconductor objects through a websocket connection." ;
+    schema1:identifier biotools:epivizrdata ;
     schema1:keywords "Computational Biology",
         "Data management",
         "Gene Expression Profiling",

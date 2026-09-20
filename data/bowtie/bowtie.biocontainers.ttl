@@ -1,4 +1,5 @@
 @prefix biocontainers: <https://biocontainers.pro/tools/> .
+@prefix biotools: <https://bio.tools/> .
 @prefix schema1: <http://schema.org/> .
 
 biocontainers:bowtie a schema1:SoftwareApplication ;
@@ -6,6 +7,7 @@ biocontainers:bowtie a schema1:SoftwareApplication ;
         "doi:10.1186/gb-2009-10-3-r25",
         "doi:10.7490/f1000research.1114334.1" ;
     schema1:description "An ultrafast memory-efficient short read aligner" ;
+    schema1:identifier biotools:bowtie ;
     schema1:keywords "Benchmarking",
         "Genome",
         "Genomics",

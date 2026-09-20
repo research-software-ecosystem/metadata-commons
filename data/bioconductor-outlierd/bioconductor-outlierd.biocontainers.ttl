@@ -1,9 +1,11 @@
 @prefix biocontainers: <https://biocontainers.pro/tools/> .
+@prefix biotools: <https://bio.tools/> .
 @prefix schema1: <http://schema.org/> .
 
 biocontainers:bioconductor-outlierd a schema1:SoftwareApplication ;
     schema1:citation "doi:10.1093/bioinformatics/btn012" ;
     schema1:description "Outlier detection using quantile regression on the M-A scatterplots of high-throughput data" ;
+    schema1:identifier biotools:outlierd ;
     schema1:keywords "Artifacts",
         "Data Interpretation, Statistical",
         "Mass Spectrometry",

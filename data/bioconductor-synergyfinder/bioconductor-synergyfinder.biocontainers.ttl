@@ -1,10 +1,12 @@
 @prefix biocontainers: <https://biocontainers.pro/tools/> .
+@prefix biotools: <https://bio.tools/> .
 @prefix schema1: <http://schema.org/> .
 
 biocontainers:bioconductor-synergyfinder a schema1:SoftwareApplication ;
     schema1:citation "doi:10.1007/978-1-4939-7493-1_17",
         "doi:10.1093/bioinformatics/btx162" ;
     schema1:description "Calculate and Visualize Synergy Scores for Drug Combinations" ;
+    schema1:identifier biotools:synergyfinder ;
     schema1:keywords "Antineoplastic Agents",
         "Antineoplastic Combined Chemotherapy Protocols",
         "Cell Line, Tumor",
