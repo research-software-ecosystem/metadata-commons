@@ -36,16 +36,24 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1111/j.1365-2567.2006.02431.x",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "http://orcid.org/0000-0001-7885-4311",
+      "@type": "sc:Person"
+    },
+    {
       "@id": "https://bio.tools/vdjsolver",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "http://orcid.org/0000-0001-7885-4311"
       },
       "bsc:input": {
-        "@id": "_:Nf6b0ac35b79a49d89077f03c9156a2f9"
+        "@id": "_:N6d227e3d2b16498c8cb8f7c637d6be3e"
       },
       "bsc:output": {
-        "@id": "_:N75a599eca4d346d5a6691ec0d74e9fae"
+        "@id": "_:Nbf685d3acc1947698753c51e96dc2eed"
       },
       "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
@@ -77,7 +85,7 @@
       "sc:url": "http://cbs.dtu.dk/services/VDJsolver/"
     },
     {
-      "@id": "_:Nf6b0ac35b79a49d89077f03c9156a2f9",
+      "@id": "_:N6d227e3d2b16498c8cb8f7c637d6be3e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
@@ -88,7 +96,7 @@
       "sc:name": "Sequence"
     },
     {
-      "@id": "_:N75a599eca4d346d5a6691ec0d74e9fae",
+      "@id": "_:Nbf685d3acc1947698753c51e96dc2eed",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1277"
@@ -97,14 +105,6 @@
         "@id": "edam:format_2330"
       },
       "sc:name": "Protein features"
-    },
-    {
-      "@id": "http://orcid.org/0000-0001-7885-4311",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://doi.org/10.1111/j.1365-2567.2006.02431.x",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -36,18 +36,22 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/bty224",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/vsclust",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Veit Schwämmle",
       "bsc:input": {
-        "@id": "_:N7b0c9b9e8d1a4ae79a2a03d5075babfa"
+        "@id": "_:N9fdfb98f6a764e8391e67f76f36fec3d"
       },
       "bsc:output": [
         {
-          "@id": "_:N83de91d19af84ce1823219141f76711d"
+          "@id": "_:Na33ce5c1793447a196642af85a34a4a6"
         },
         {
-          "@id": "_:N06c5ae4e209f490095edffd8d3a3ad6d"
+          "@id": "_:Ne03dd13aa3944bcbab1d6be9aa06722e"
         }
       ],
       "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -110,7 +114,7 @@
       "sc:url": "http://computproteomics.bmb.sdu.dk/app_direct/VSClust/"
     },
     {
-      "@id": "_:N7b0c9b9e8d1a4ae79a2a03d5075babfa",
+      "@id": "_:N9fdfb98f6a764e8391e67f76f36fec3d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2603"
@@ -121,7 +125,7 @@
       "sc:name": "Expression data"
     },
     {
-      "@id": "_:N83de91d19af84ce1823219141f76711d",
+      "@id": "_:Na33ce5c1793447a196642af85a34a4a6",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3768"
@@ -132,7 +136,7 @@
       "sc:name": "Clustered expression profiles"
     },
     {
-      "@id": "_:N06c5ae4e209f490095edffd8d3a3ad6d",
+      "@id": "_:Ne03dd13aa3944bcbab1d6be9aa06722e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3932"
@@ -141,10 +145,6 @@
         "@id": "edam:format_3752"
       },
       "sc:name": "Q-value"
-    },
-    {
-      "@id": "https://doi.org/10.1093/bioinformatics/bty224",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -36,16 +36,24 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1186/1471-2164-11-432",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "http://orcid.org/0000-0001-8683-7845",
+      "@type": "sc:Person"
+    },
+    {
       "@id": "https://bio.tools/bcheck_rnpb",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "http://orcid.org/0000-0001-8683-7845"
       },
       "bsc:input": {
-        "@id": "_:N5acdcf35a1ba4b3689c65a024f923700"
+        "@id": "_:Nab9b57d1725c49f89df027375a72f213"
       },
       "bsc:output": {
-        "@id": "_:N7a0336f7e17a40059301a8c8748ac1a8"
+        "@id": "_:N0c2c898a7b254803a9c2f8d93271e092"
       },
       "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
@@ -99,7 +107,7 @@
       "sc:url": "http://rna.tbi.univie.ac.at/bcheck/index.html"
     },
     {
-      "@id": "_:N5acdcf35a1ba4b3689c65a024f923700",
+      "@id": "_:Nab9b57d1725c49f89df027375a72f213",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3497"
@@ -110,7 +118,7 @@
       "sc:name": "DNA sequence (raw)"
     },
     {
-      "@id": "_:N7a0336f7e17a40059301a8c8748ac1a8",
+      "@id": "_:N0c2c898a7b254803a9c2f8d93271e092",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3496"
@@ -119,14 +127,6 @@
         "@id": "edam:format_1929"
       },
       "sc:name": "RNA sequence (raw)"
-    },
-    {
-      "@id": "http://orcid.org/0000-0001-8683-7845",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://doi.org/10.1186/1471-2164-11-432",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

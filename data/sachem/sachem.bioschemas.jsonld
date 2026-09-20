@@ -36,16 +36,24 @@
   },
   "@graph": [
     {
+      "@id": "https://orcid.org/0000-0002-7038-544X",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.1186/s13321-018-0282-y",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/sachem",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "https://orcid.org/0000-0002-7038-544X"
       },
       "bsc:input": {
-        "@id": "_:N8630f3ea0e43446dba24eecaeea934cd"
+        "@id": "_:N30ac53ba8d2d4e0786b634dd86ef20e1"
       },
       "bsc:output": {
-        "@id": "_:N1bd3cdb01dc04abd8884cfade19ef720"
+        "@id": "_:Nd7c65ad825ce441fa3148ee8f22c333e"
       },
       "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
@@ -90,7 +98,7 @@
       "sc:url": "http://bioinfo.uochb.cas.cz/sachem/"
     },
     {
-      "@id": "_:N8630f3ea0e43446dba24eecaeea934cd",
+      "@id": "_:N30ac53ba8d2d4e0786b634dd86ef20e1",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1463"
@@ -106,20 +114,12 @@
       "sc:name": "Small molecule structure"
     },
     {
-      "@id": "_:N1bd3cdb01dc04abd8884cfade19ef720",
+      "@id": "_:Nd7c65ad825ce441fa3148ee8f22c333e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2080"
       },
       "sc:name": "Database search results"
-    },
-    {
-      "@id": "https://orcid.org/0000-0002-7038-544X",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://doi.org/10.1186/s13321-018-0282-y",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

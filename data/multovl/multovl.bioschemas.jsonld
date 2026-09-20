@@ -36,16 +36,24 @@
   },
   "@graph": [
     {
+      "@id": "http://orcid.org/0000-0002-0299-1165",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.1093/bioinformatics/bts607",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/multovl",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "http://orcid.org/0000-0002-0299-1165"
       },
       "bsc:input": {
-        "@id": "_:N3707eba65f824179ac784ec2a9a665db"
+        "@id": "_:Nb234204f05874e778231d1affa0c365e"
       },
       "bsc:output": {
-        "@id": "_:N67cf8a00420a44caa9e4b32a6fe5cc81"
+        "@id": "_:N0df69e95d2d049f2bd93f4b42f6b148b"
       },
       "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
@@ -77,7 +85,7 @@
       "sc:url": "https://www.interquadrat.eu/aa/software.php"
     },
     {
-      "@id": "_:N3707eba65f824179ac784ec2a9a665db",
+      "@id": "_:Nb234204f05874e778231d1affa0c365e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2012"
@@ -96,7 +104,7 @@
       "sc:name": "Sequence coordinates"
     },
     {
-      "@id": "_:N67cf8a00420a44caa9e4b32a6fe5cc81",
+      "@id": "_:N0df69e95d2d049f2bd93f4b42f6b148b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2012"
@@ -105,14 +113,6 @@
         "@id": "edam:format_1975"
       },
       "sc:name": "Sequence coordinates"
-    },
-    {
-      "@id": "https://doi.org/10.1093/bioinformatics/bts607",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "http://orcid.org/0000-0002-0299-1165",
-      "@type": "sc:Person"
     }
   ]
 }

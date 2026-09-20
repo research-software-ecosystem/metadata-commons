@@ -36,16 +36,24 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/gkx313",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-0566-7723",
+      "@type": "sc:Person"
+    },
+    {
       "@id": "https://bio.tools/pymut",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "https://orcid.org/0000-0002-0566-7723"
       },
       "bsc:input": {
-        "@id": "_:N3c66685756ed4244aacc5127f6983f25"
+        "@id": "_:N7f75192fd84a445f8af67b904e82118b"
       },
       "bsc:output": {
-        "@id": "_:N7e341b5776114d54bd0d4aaf5750230c"
+        "@id": "_:N66361a3c10734a5cb4893405e8f6f3db"
       },
       "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
@@ -85,7 +93,7 @@
       "sc:url": "http://mmb.irbbarcelona.org/PMut/pymut"
     },
     {
-      "@id": "_:N3c66685756ed4244aacc5127f6983f25",
+      "@id": "_:N7f75192fd84a445f8af67b904e82118b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2974"
@@ -96,7 +104,7 @@
       "sc:name": "Protein sequence (raw)"
     },
     {
-      "@id": "_:N7e341b5776114d54bd0d4aaf5750230c",
+      "@id": "_:N66361a3c10734a5cb4893405e8f6f3db",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1277"
@@ -105,14 +113,6 @@
         "@id": "edam:format_2330"
       },
       "sc:name": "Protein features"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gkx313",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://orcid.org/0000-0002-0566-7723",
-      "@type": "sc:Person"
     }
   ]
 }

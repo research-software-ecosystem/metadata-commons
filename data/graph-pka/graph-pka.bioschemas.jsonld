@@ -36,14 +36,18 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/BIOINFORMATICS/BTAB714",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/graph-pka",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:Ncc906659b0c64a7a9a1c958d245fe1f5"
+          "@id": "_:N3b1c35aaa10244c598384f7c23fd0ecf"
         },
         {
-          "@id": "_:Nacc648a06d054af9b26c01d1e057b06e"
+          "@id": "_:Nc2a8c298b3bc4f85a7959237324278d0"
         }
       ],
       "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -91,7 +95,7 @@
       "sc:url": "https://pka.simm.ac.cn/"
     },
     {
-      "@id": "_:Ncc906659b0c64a7a9a1c958d245fe1f5",
+      "@id": "_:N3b1c35aaa10244c598384f7c23fd0ecf",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2301"
@@ -99,16 +103,12 @@
       "sc:name": "SMILES string"
     },
     {
-      "@id": "_:Nacc648a06d054af9b26c01d1e057b06e",
+      "@id": "_:Nc2a8c298b3bc4f85a7959237324278d0",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1463"
       },
       "sc:name": "Small molecule structure"
-    },
-    {
-      "@id": "https://doi.org/10.1093/BIOINFORMATICS/BTAB714",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

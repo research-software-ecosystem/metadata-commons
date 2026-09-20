@@ -36,10 +36,6 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btu047",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/g-blastn",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": [
@@ -47,10 +43,10 @@
         "Zhao Kaiyong"
       ],
       "bsc:input": {
-        "@id": "_:Ne8cb62d2c0be49c6bf637b9d22876f00"
+        "@id": "_:N619afef18f7747f99d22c7e3d10b9be3"
       },
       "bsc:output": {
-        "@id": "_:N71954d2bca9d434ea61ed8205ad80e00"
+        "@id": "_:Ne3666883e40d46f3aabda45ab265db01"
       },
       "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
@@ -98,7 +94,7 @@
       "sc:url": "http://www.comp.hkbu.edu.hk/~chxw/software/G-BLASTN.html"
     },
     {
-      "@id": "_:Ne8cb62d2c0be49c6bf637b9d22876f00",
+      "@id": "_:N619afef18f7747f99d22c7e3d10b9be3",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2976"
@@ -106,12 +102,16 @@
       "sc:name": "Protein sequence"
     },
     {
-      "@id": "_:N71954d2bca9d434ea61ed8205ad80e00",
+      "@id": "_:Ne3666883e40d46f3aabda45ab265db01",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0857"
       },
       "sc:name": "Sequence search results"
+    },
+    {
+      "@id": "https://doi.org/10.1093/bioinformatics/btu047",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

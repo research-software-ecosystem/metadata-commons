@@ -36,14 +36,18 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1371/journal.pcbi.1005595",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/unicycler",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Ryan R. Wick",
       "bsc:input": {
-        "@id": "_:N8916d757f9cd437da8b459cbc39d052e"
+        "@id": "_:N83df60999ed545218c83c52b9516a1e8"
       },
       "bsc:output": {
-        "@id": "_:N5f4e6d2ea6f94b42bb1c0006fc7856d8"
+        "@id": "_:N73513a88a9e04abfb6296082e27e7696"
       },
       "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
@@ -90,7 +94,7 @@
       "sc:url": "https://github.com/rrwick/Unicycler"
     },
     {
-      "@id": "_:N8916d757f9cd437da8b459cbc39d052e",
+      "@id": "_:N83df60999ed545218c83c52b9516a1e8",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0848"
@@ -101,7 +105,7 @@
       "sc:name": "Raw sequence"
     },
     {
-      "@id": "_:N5f4e6d2ea6f94b42bb1c0006fc7856d8",
+      "@id": "_:N73513a88a9e04abfb6296082e27e7696",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0925"
@@ -115,10 +119,6 @@
         }
       ],
       "sc:name": "Sequence assembly"
-    },
-    {
-      "@id": "https://doi.org/10.1371/journal.pcbi.1005595",
-      "@type": "sc:CreativeWork"
     }
   ]
 }
