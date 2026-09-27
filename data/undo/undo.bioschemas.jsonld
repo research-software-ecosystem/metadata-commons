@@ -36,13 +36,17 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.18129/B9.bioc.UNDO",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/undo",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Ne3a84811bd6449239f9d715af109ad8a"
+        "@id": "_:N32c42246cbf64be8b3e3351bdff827c6"
       },
       "bsc:output": {
-        "@id": "_:N27c107d49e7744a29924a965d18a5f7e"
+        "@id": "_:Na4d7266d9c894028bd8f934531ea9cb2"
       },
       "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
@@ -86,7 +90,7 @@
       "sc:url": "https://bioconductor.org/packages/UNDO"
     },
     {
-      "@id": "_:Ne3a84811bd6449239f9d715af109ad8a",
+      "@id": "_:N32c42246cbf64be8b3e3351bdff827c6",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0928"
@@ -97,7 +101,7 @@
       "sc:name": "Gene expression profile"
     },
     {
-      "@id": "_:N27c107d49e7744a29924a965d18a5f7e",
+      "@id": "_:Na4d7266d9c894028bd8f934531ea9cb2",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3112"
@@ -106,10 +110,6 @@
         "@id": "edam:format_2056"
       },
       "sc:name": "Gene expression matrix"
-    },
-    {
-      "@id": "https://doi.org/10.18129/B9.bioc.UNDO",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

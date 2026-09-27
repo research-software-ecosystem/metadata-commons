@@ -36,13 +36,17 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/gkv784",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/hs-blastn",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nf5c1e85d799f41ec8913df2e07abfecd"
+        "@id": "_:N07c6050be35843da9c14c9482b691ff7"
       },
       "bsc:output": {
-        "@id": "_:Ne10c2f0916a14bd7bfe7d9609abac456"
+        "@id": "_:Nf74f8106dd4244ce90f718cf2118fc30"
       },
       "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
@@ -81,7 +85,7 @@
       "sc:url": "https://github.com/chenying2016/queries"
     },
     {
-      "@id": "_:Nf5c1e85d799f41ec8913df2e07abfecd",
+      "@id": "_:N07c6050be35843da9c14c9482b691ff7",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
@@ -89,16 +93,12 @@
       "sc:name": "Sequence"
     },
     {
-      "@id": "_:Ne10c2f0916a14bd7bfe7d9609abac456",
+      "@id": "_:Nf74f8106dd4244ce90f718cf2118fc30",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0857"
       },
       "sc:name": "Sequence search results"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gkv784",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

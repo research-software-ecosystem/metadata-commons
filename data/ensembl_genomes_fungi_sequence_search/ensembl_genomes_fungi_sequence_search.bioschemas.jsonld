@@ -36,22 +36,18 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/nar/gkv1157",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/ensembl_genomes_fungi_sequence_search",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Ensembl Genomes webteam",
       "bsc:input": {
-        "@id": "_:N82e73e88e758436cbe1bb2398ca79a6c"
+        "@id": "_:N07c8d66083ba4ca1ab7e6a04afdf6994"
       },
       "bsc:output": [
         {
-          "@id": "_:N2f0f933788d3466cb94803de37f8ffef"
+          "@id": "_:Ndde559e736924fde8e08d1c6b6cbbd53"
         },
         {
-          "@id": "_:Nc69303d5bb2946f6b2c8d7f42359e0bc"
+          "@id": "_:Nd0ce39252a354944b7bd9629b098edee"
         }
       ],
       "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -90,7 +86,7 @@
       "sc:url": "http://fungi.ensembl.org/Multi/enasearch"
     },
     {
-      "@id": "_:N82e73e88e758436cbe1bb2398ca79a6c",
+      "@id": "_:N07c8d66083ba4ca1ab7e6a04afdf6994",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
@@ -101,7 +97,7 @@
       "sc:name": "Sequence"
     },
     {
-      "@id": "_:N2f0f933788d3466cb94803de37f8ffef",
+      "@id": "_:Ndde559e736924fde8e08d1c6b6cbbd53",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0863"
@@ -109,12 +105,16 @@
       "sc:name": "Sequence alignment"
     },
     {
-      "@id": "_:Nc69303d5bb2946f6b2c8d7f42359e0bc",
+      "@id": "_:Nd0ce39252a354944b7bd9629b098edee",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0857"
       },
       "sc:name": "Sequence search results"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/gkv1157",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

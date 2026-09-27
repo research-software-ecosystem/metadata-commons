@@ -36,15 +36,19 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/gkx429",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/rna-molp",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": "Jérôme Waldispühl",
       "bsc:input": [
         {
-          "@id": "_:N6520581a7f0b41e9af928967ec5e4e46"
+          "@id": "_:N216f193ec5cb4209b63b76668bab306c"
         },
         {
-          "@id": "_:N8a2056a412394fe698e7a23e66df5f55"
+          "@id": "_:N670fb831a3304c0890c23eb62048eadc"
         }
       ],
       "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -86,7 +90,7 @@
       "sc:url": "http://rnamoip.cs.mcgill.ca/"
     },
     {
-      "@id": "_:N6520581a7f0b41e9af928967ec5e4e46",
+      "@id": "_:N216f193ec5cb4209b63b76668bab306c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3496"
@@ -97,7 +101,7 @@
       "sc:name": "RNA sequence (raw)"
     },
     {
-      "@id": "_:N8a2056a412394fe698e7a23e66df5f55",
+      "@id": "_:N670fb831a3304c0890c23eb62048eadc",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0850"
@@ -106,10 +110,6 @@
         "@id": "edam:format_1929"
       },
       "sc:name": "Sequence set"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gkx429",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

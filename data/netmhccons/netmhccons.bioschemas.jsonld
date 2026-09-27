@@ -36,16 +36,24 @@
   },
   "@graph": [
     {
+      "@id": "http://orcid.org/0000-0001-7885-4311",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.1007/s00251-011-0579-8",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/netmhccons",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "http://orcid.org/0000-0001-7885-4311"
       },
       "bsc:input": {
-        "@id": "_:N761f9540e5c34f4db8856680f4921c86"
+        "@id": "_:N3e539d27e5d84f2ca6e6708ef2479a0d"
       },
       "bsc:output": {
-        "@id": "_:N13545d8705d24071987dc30e80574622"
+        "@id": "_:Nc7087c0bb0204259bae5df5d42a81706"
       },
       "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Web application",
@@ -83,7 +91,7 @@
       "sc:url": "http://www.cbs.dtu.dk/services/NetMHCcons/"
     },
     {
-      "@id": "_:N761f9540e5c34f4db8856680f4921c86",
+      "@id": "_:N3e539d27e5d84f2ca6e6708ef2479a0d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
@@ -94,7 +102,7 @@
       "sc:name": "Sequence"
     },
     {
-      "@id": "_:N13545d8705d24071987dc30e80574622",
+      "@id": "_:Nc7087c0bb0204259bae5df5d42a81706",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1277"
@@ -103,14 +111,6 @@
         "@id": "edam:format_2331"
       },
       "sc:name": "Protein features"
-    },
-    {
-      "@id": "http://orcid.org/0000-0001-7885-4311",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://doi.org/10.1007/s00251-011-0579-8",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

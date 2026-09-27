@@ -36,13 +36,17 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1021/ac300006b",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/proteomedigestsim",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N1a69da71f32a442399f281d5728ba7be"
+        "@id": "_:Neb225806707145b38b67ca663dd48690"
       },
       "bsc:output": {
-        "@id": "_:N9b65203bc86648d38bcb373ac10afa71"
+        "@id": "_:N40c651f3b5e849e0b0e9972ab57e7012"
       },
       "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
@@ -82,7 +86,7 @@
       "sc:url": "https://github.com/jgmeyerucsd/ProteomeDigestSim"
     },
     {
-      "@id": "_:N1a69da71f32a442399f281d5728ba7be",
+      "@id": "_:Neb225806707145b38b67ca663dd48690",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2974"
@@ -98,7 +102,7 @@
       "sc:name": "Protein sequence (raw)"
     },
     {
-      "@id": "_:N9b65203bc86648d38bcb373ac10afa71",
+      "@id": "_:N40c651f3b5e849e0b0e9972ab57e7012",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1238"
@@ -107,10 +111,6 @@
         "@id": "edam:format_2330"
       },
       "sc:name": "Proteolytic digest"
-    },
-    {
-      "@id": "https://doi.org/10.1021/ac300006b",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

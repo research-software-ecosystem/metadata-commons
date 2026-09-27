@@ -36,16 +36,24 @@
   },
   "@graph": [
     {
+      "@id": "https://orcid.org/0000-0001-9604-9586",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.1093/bioinformatics/btz598",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/CoBAMP",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "https://orcid.org/0000-0001-9604-9586"
       },
       "bsc:input": {
-        "@id": "_:N210b555b34904a1f99e65e82e726e482"
+        "@id": "_:Nbd5201c5f88342c488b032ed72e49640"
       },
       "bsc:output": {
-        "@id": "_:Nc2d9279d6dc543d0bc7e51a06b1c93ce"
+        "@id": "_:N7f6082bbb2f0442ebe85fcf84d1e9fb0"
       },
       "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
@@ -97,7 +105,7 @@
       "sc:url": "https://github.com/BioSystemsUM/cobamp"
     },
     {
-      "@id": "_:N210b555b34904a1f99e65e82e726e482",
+      "@id": "_:Nbd5201c5f88342c488b032ed72e49640",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2600"
@@ -108,20 +116,12 @@
       "sc:name": "Pathway or network"
     },
     {
-      "@id": "_:Nc2d9279d6dc543d0bc7e51a06b1c93ce",
+      "@id": "_:N7f6082bbb2f0442ebe85fcf84d1e9fb0",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2600"
       },
       "sc:name": "Pathway or network"
-    },
-    {
-      "@id": "https://doi.org/10.1093/bioinformatics/btz598",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://orcid.org/0000-0001-9604-9586",
-      "@type": "sc:Person"
     }
   ]
 }

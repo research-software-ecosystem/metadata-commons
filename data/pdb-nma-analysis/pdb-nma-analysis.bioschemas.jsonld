@@ -36,16 +36,24 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.5281/zenodo.6888913",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-1881-5489",
+      "@type": "sc:Person"
+    },
+    {
       "@id": "https://bio.tools/pdb-nma-analysis",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "https://orcid.org/0000-0003-1881-5489"
       },
       "bsc:input": {
-        "@id": "_:N71f7c93f088d41cb8d14548796fd3667"
+        "@id": "_:N1f00e09038d9438d9e9b91aa77022688"
       },
       "bsc:output": {
-        "@id": "_:N53a3428ee0074b65845ded3f0a3a200a"
+        "@id": "_:Na73af4ed2a6143af9c000e54ccb5a90a"
       },
       "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
@@ -85,7 +93,7 @@
       "sc:url": "https://github.com/haschka/pdb-nma-analysis"
     },
     {
-      "@id": "_:N71f7c93f088d41cb8d14548796fd3667",
+      "@id": "_:N1f00e09038d9438d9e9b91aa77022688",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2877"
@@ -96,7 +104,7 @@
       "sc:name": "Protein complex"
     },
     {
-      "@id": "_:N53a3428ee0074b65845ded3f0a3a200a",
+      "@id": "_:Na73af4ed2a6143af9c000e54ccb5a90a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1470"
@@ -105,14 +113,6 @@
         "@id": "edam:format_3877"
       },
       "sc:name": "C-alpha trace"
-    },
-    {
-      "@id": "https://orcid.org/0000-0003-1881-5489",
-      "@type": "sc:Person"
-    },
-    {
-      "@id": "https://doi.org/10.5281/zenodo.6888913",
-      "@type": "sc:CreativeWork"
     }
   ]
 }
