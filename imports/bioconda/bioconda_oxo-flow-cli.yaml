@@ -20,18 +20,20 @@ extra:
   - osx-arm64
   recipe-maintainers:
   - ShixiangWang
+  skip-lints:
+  - should_use_compilers
 package:
   name: oxo-flow-cli
-  version: 0.13.1
+  version: 0.21.1
 requirements:
   build:
   - null
   - null
-  - null
+  - rust >=1.98.0
   - cargo-bundle-licenses
 source:
-  sha256: e853aba9fce9d534f17d21486b20af2d348e12a4ae2a34b47ec9b50788daf56f
-  url: https://github.com/Traitome/oxo-flow/archive/refs/tags/v0.13.1.tar.gz
+  sha256: f833569cae84f18da6c2966365040e9b38326de73488e04b90ade911c9535bd1
+  url: https://github.com/Traitome/oxo-flow/archive/refs/tags/v0.21.1.tar.gz
 test:
   commands:
   - oxo-flow --help

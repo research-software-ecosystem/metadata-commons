@@ -1,9 +1,8 @@
 about:
   home: https://github.com/usegalaxy-eu/MultiOmicsClassification
   license: MIT
-  summary: A FAIR Machine Learning Framework for Benchmarking, Feature Selection,
-    and Hyperparameter Optimization of machine learning Models for Multiomics Data
-    in Galaxy
+  summary: A Machine Learning Framework for Benchmarking, Feature Selection, and Hyperparameter
+    Optimization of machine learning Models for Multiomics Data in Galaxy
 build:
   noarch: python
   number: 0
@@ -16,7 +15,7 @@ extra:
   - renu-pal
 package:
   name: multi-omics-classification
-  version: 0.1.6
+  version: 0.1.9
 requirements:
   host:
   - python
@@ -36,8 +35,8 @@ requirements:
   - pip
   - tabpfn
 source:
-  sha256: 0cc5fa2ccd2414f9e30e1af26a437ecfb33d153521fd5ca9d037d3861c54a9eb
-  url: https://github.com/usegalaxy-eu/MultiOmicsClassification/archive/refs/tags/v0.1.6.tar.gz
+  sha256: 270998202a2bb3e4ad484dedefc10c7d3b828516dace911e820c0ee0e08e5a5d
+  url: https://github.com/usegalaxy-eu/MultiOmicsClassification/archive/refs/tags/v0.1.9.tar.gz
 test:
   commands:
   - multiclasspredict --help

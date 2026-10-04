@@ -13,7 +13,7 @@ build:
   run_exports:
   - null
   script:
-  - export SETUPTOOLS_SCM_PRETEND_VERSION=0.10.13
+  - export SETUPTOOLS_SCM_PRETEND_VERSION=0.10.18
   - -m pip install . --no-deps --no-build-isolation -vvv
 extra:
   notes: 'Optional backends (scvelo, pydeseq2, gseapy, memento-de, gtfparse) are not
@@ -25,7 +25,7 @@ extra:
   - leelieber2025
 package:
   name: scatrans
-  version: 0.10.13
+  version: 0.10.18
 requirements:
   host:
   - python >=3.9
@@ -47,8 +47,8 @@ requirements:
   - seaborn >=0.12
   - adjusttext >=0.7
 source:
-  sha256: a3013934996934b88161e88485aade7bbdb0bacfcfd9a72e109e4eb7c1b0bcbf
-  url: https://files.pythonhosted.org/packages/46/8a/ab10860e39ffd127dd59bbf977bf1330a109660d73f254cbc04505116b16/scatrans-0.10.13.tar.gz
+  sha256: 375c54bfbd7c36bbbc2f614ecfedfdc12fc1591d5c35c5445baa54b4588ce81c
+  url: https://files.pythonhosted.org/packages/49/f3/9830c3526340a69bdbae44e7307badf631988cc3de520e4737e40922cdc2/scatrans-0.10.18.tar.gz
 test:
   commands:
   - generate-gene-features --help
