@@ -2,6 +2,9 @@
     "additionDate": "2021-01-18T12:19:43Z",
     "biotoolsCURIE": "biotools:struct",
     "biotoolsID": "struct",
+    "collectionID": [
+        "BioConductor"
+    ],
     "confidence_flag": "tool",
     "credit": [
         {
@@ -20,7 +23,21 @@
             ]
         }
     ],
-    "description": "Defines and includes a set of class-based templates for developing and implementing data processing and analysis workflows, with a strong emphasis on statistics and machine learning. The templates can be used and where needed extended to 'wrap' tools and methods from other packages into a common standardised structure to allow for effective and fast integration. Model objects can be combined into sequences, and sequences nested in iterators using overloaded operators to simplify and improve readability of the code. Ontology lookup has been integrated and implemented to provide standardised definitions for methods, inputs and outputs wrapped using the class-based templates.",
+    "description": "An extensive set of data (pre-)processing and analysis methods and tools for metabolomics and other omics, with a strong emphasis on statistics and machine learning. This toolbox allows the user to build extensive and standardised workflows for data analysis. The methods and tools have been implemented using class-based templates provided by the struct (Statistics in R Using Class-based Templates) package. The toolbox includes pre-processing methods (e.g. signal drift and batch correction, normalisation, missing value imputation and scaling), univariate (e.g. ttest, various forms of ANOVA, Kruskal–Wallis test and more) and multivariate statistical methods (e.g. PCA and PLS, including cross-validation and permutation testing) as well as machine learning methods (e.g. Support Vector Machines). Ontology terms have been integrated to provide standardised definitions for the different methods, inputs and outputs.",
+    "documentation": [
+        {
+            "type": [
+                "User manual"
+            ],
+            "url": "https://bioconductor.org/packages/struct"
+        }
+    ],
+    "download": [
+        {
+            "type": "Source code",
+            "url": "https://bioconductor.org/packages/release/bioc/src/contrib/struct_1.24.0.tar.gz"
+        }
+    ],
     "editPermission": {
         "type": "private"
     },
@@ -46,8 +63,8 @@
     "language": [
         "R"
     ],
-    "lastUpdate": "2024-11-24T20:41:55.211746Z",
-    "license": "GPL-3.0-only",
+    "lastUpdate": "2026-10-02T16:04:19.184124Z",
+    "license": "GPL-3.0",
     "link": [
         {
             "type": [
@@ -91,24 +108,7 @@
             "uri": "http://edamontology.org/topic_0769"
         }
     ],
-    "documentation": [
-        {
-            "type": [
-                "User manual"
-            ],
-            "url": "https://bioconductor.org/packages/struct"
-        }
-    ],
-    "download": [
-        {
-            "type": "Source code",
-            "url": ""
-        }
-    ],
     "version": [
         "1.24.0"
-    ],
-    "collectionID": [
-        "BioConductor"
     ]
 }

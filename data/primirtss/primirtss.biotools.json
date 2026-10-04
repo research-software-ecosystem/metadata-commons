@@ -2,6 +2,9 @@
     "additionDate": "2021-01-18T08:07:20Z",
     "biotoolsCURIE": "biotools:primirtss",
     "biotoolsID": "primirtss",
+    "collectionID": [
+        "BioConductor"
+    ],
     "confidence_flag": "tool",
     "credit": [
         {
@@ -34,13 +37,19 @@
             ]
         }
     ],
-    "description": "A fast, convenient tool to identify the TSSs of miRNAs by integrating the data of H3K4me3 and Pol II as well as combining the conservation level and sequence feature, provided within both command-line and graphical interfaces, which achieves a better performance than the previous non-cell-specific methods on miRNA TSSs.",
+    "description": "an R package for identifying cell-specific microRNA transcription start sites.\n\nPrediction of pri-miRNA Transcription Start Site.\n\nA fast, convenient tool to identify the TSSs of miRNAs by integrating the data of H3K4me3 and Pol II as well as combining the conservation level and sequence feature, provided within both command-line and graphical interfaces, which achieves a better performance than the previous non-cell-specific methods on miRNA TSSs.\n\nHigh throughput sequencing, like ChIP-seq, has gradually become an essential and versatile approach for us to identify and understand genomes and their transcriptional processes.\n\nIdentifying human miRNA transcriptional start sites (TSSs) plays a significant role in understanding the transcriptional regulation of miRNA.\n\nGeneRegulation, Genetics, ImmunoOncology, Preprocessing, RNASeq, Sequencing, Software, Transcription.",
     "documentation": [
         {
             "type": [
                 "User manual"
             ],
             "url": "https://bioconductor.org/packages/primirTSS"
+        }
+    ],
+    "download": [
+        {
+            "type": "Source code",
+            "url": "https://github.com/ipumin/primirTSS"
         }
     ],
     "editPermission": {
@@ -50,7 +59,7 @@
         {
             "operation": [
                 {
-                    "term": "Deposition",
+                    "term": "Data deposition",
                     "uri": "http://edamontology.org/operation_3431"
                 },
                 {
@@ -68,8 +77,8 @@
     "language": [
         "R"
     ],
-    "lastUpdate": "2021-01-27T16:58:43Z",
-    "license": "GPL-2.0-only",
+    "lastUpdate": "2026-10-02T16:02:07.439745Z",
+    "license": "GPL-2.0",
     "name": "primirTSS",
     "owner": "zsmag19",
     "publication": [
@@ -99,16 +108,7 @@
             "uri": "http://edamontology.org/topic_3170"
         }
     ],
-    "download": [
-        {
-            "type": "Source code",
-            "url": "https://github.com/ipumin/primirTSS"
-        }
-    ],
     "version": [
         "1.30.0"
-    ],
-    "collectionID": [
-        "BioConductor"
     ]
 }

@@ -13,7 +13,7 @@
             "name": "Hao Wu"
         }
     ],
-    "description": "DSS is an R library performing differntial analysis for count-based sequencing data. It detectes differentially expressed genes (DEGs) from RNA-seq, and differentially methylated loci or regions (DML/DMRs) from bisulfite sequencing (BS-seq). The core of DSS is a new dispersion shrinkage method for estimating the dispersion parameter from Gamma-Poisson or Beta-Binomial distributions.",
+    "description": "R library that performs differential analysis for count-based sequencing data. It detects differentially expressed genes (DEGs) from RNA-seq and differentially methylated loci or regions (DML/DMRs) from bisulfite sequencing (BS-seq). Its core is a new dispersion shrinkage method for estimating the dispersion parameter from Gamma-Poisson or Beta-Binomial distributions.",
     "documentation": [
         {
             "type": [
@@ -25,7 +25,7 @@
     "download": [
         {
             "type": "Source code",
-            "url": ""
+            "url": "https://bioconductor.org/packages/release/bioc/src/contrib/DSS_2.60.0.tar.gz"
         }
     ],
     "editPermission": {
@@ -35,12 +35,12 @@
         {
             "operation": [
                 {
-                    "term": "Differential gene expression analysis",
-                    "uri": "http://edamontology.org/operation_3223"
+                    "term": "DMR identification",
+                    "uri": "http://edamontology.org/operation_3809"
                 },
                 {
-                    "term": "Differentially-methylated region identification",
-                    "uri": "http://edamontology.org/operation_3809"
+                    "term": "Differential gene expression profiling",
+                    "uri": "http://edamontology.org/operation_3223"
                 }
             ]
         }
@@ -49,7 +49,7 @@
     "language": [
         "R"
     ],
-    "lastUpdate": "2019-01-13T00:40:04Z",
+    "lastUpdate": "2026-10-02T15:57:33.917686Z",
     "license": "GPL-1.0-or-later",
     "name": "DSS",
     "operatingSystem": [
@@ -60,9 +60,6 @@
     "owner": "bioconductor_import",
     "publication": [
         {
-            "doi": "%2010.1093/nar/gkv715"
-        },
-        {
             "doi": "10.1093/bioinformatics/btw026"
         },
         {
@@ -70,6 +67,9 @@
         },
         {
             "doi": "10.1093/nar/gku154"
+        },
+        {
+            "doi": "10.1093/nar/gkv715"
         }
     ],
     "toolType": [
@@ -78,7 +78,7 @@
     ],
     "topic": [
         {
-            "term": "RNA-seq",
+            "term": "RNA-Seq",
             "uri": "http://edamontology.org/topic_3170"
         },
         {

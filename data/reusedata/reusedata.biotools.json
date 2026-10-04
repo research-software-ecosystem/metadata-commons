@@ -3,6 +3,9 @@
     "additionDate": "2024-05-14T10:42:10.336584Z",
     "biotoolsCURIE": "biotools:reusedata",
     "biotoolsID": "reusedata",
+    "collectionID": [
+        "BioConductor"
+    ],
     "confidence_flag": "tool",
     "cost": "Free of charge",
     "credit": [
@@ -15,7 +18,21 @@
             ]
         }
     ],
-    "description": "ReUseData is an _R/Bioconductor_ software tool to provide a systematic and versatile approach for standardized and reproducible data management. ReUseData facilitates transformation of shell or other ad hoc scripts for data preprocessing into workflow-based data recipes. Evaluation of data recipes generate curated data files in their generic formats (e.g., VCF, bed). Both recipes and data are cached using database infrastructure for easy data management and reuse. Prebuilt data recipes are available through ReUseData portal (\"https://rcwl.org/dataRecipes/\") with full annotation and user instructions. Pregenerated data are available through ReUseData cloud bucket that is directly downloadable through \"getCloudData()\".",
+    "description": "R/Bioconductor tool for reusable and reproducible genomic data management.",
+    "documentation": [
+        {
+            "type": [
+                "User manual"
+            ],
+            "url": "https://bioconductor.org/packages/ReUseData"
+        }
+    ],
+    "download": [
+        {
+            "type": "Source code",
+            "url": "https://github.com/rworkflow/ReUseData"
+        }
+    ],
     "editPermission": {
         "type": "private"
     },
@@ -27,11 +44,11 @@
                     "uri": "http://edamontology.org/operation_3436"
                 },
                 {
-                    "term": "Deposition",
+                    "term": "Data deposition",
                     "uri": "http://edamontology.org/operation_3431"
                 },
                 {
-                    "term": "Formatting",
+                    "term": "Data formatting",
                     "uri": "http://edamontology.org/operation_0335"
                 }
             ]
@@ -42,8 +59,8 @@
         "CWL",
         "R"
     ],
-    "lastUpdate": "2024-05-14T10:43:12.332613Z",
-    "license": "GPL-3.0-only",
+    "lastUpdate": "2026-10-02T16:02:40.278544Z",
+    "license": "GPL-3.0",
     "link": [
         {
             "type": [
@@ -73,7 +90,7 @@
             "uri": "http://edamontology.org/topic_0091"
         },
         {
-            "term": "Data submission, annotation and curation",
+            "term": "Data curation and archival",
             "uri": "http://edamontology.org/topic_0219"
         },
         {
@@ -85,24 +102,7 @@
             "uri": "http://edamontology.org/topic_3372"
         }
     ],
-    "documentation": [
-        {
-            "type": [
-                "User manual"
-            ],
-            "url": "https://bioconductor.org/packages/ReUseData"
-        }
-    ],
-    "download": [
-        {
-            "type": "Source code",
-            "url": "https://github.com/rworkflow/ReUseData"
-        }
-    ],
     "version": [
         "1.12.0"
-    ],
-    "collectionID": [
-        "BioConductor"
     ]
 }

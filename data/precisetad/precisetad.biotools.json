@@ -2,6 +2,9 @@
     "additionDate": "2021-01-18T10:46:53Z",
     "biotoolsCURIE": "biotools:precisetad",
     "biotoolsID": "precisetad",
+    "collectionID": [
+        "BioConductor"
+    ],
     "confidence_flag": "tool",
     "credit": [
         {
@@ -20,7 +23,21 @@
             ]
         }
     ],
-    "description": "preciseTAD provides functions to predict the location of boundaries of topologically associated domains (TADs) and chromatin loops at base-level resolution. As an input, it takes BED-formatted genomic coordinates of domain boundaries detected from low-resolution Hi-C data, and coordinates of high-resolution genomic annotations from ENCODE or other consortia. preciseTAD employs several feature engineering strategies and resampling techniques to address class imbalance, and trains an optimized random forest model for predicting low-resolution domain boundaries. Translated on a base-level, preciseTAD predicts the probability for each base to be a boundary. Density-based clustering and scalable partitioning techniques are used to detect precise boundary regions and summit points. Compared with low-resolution boundaries, preciseTAD boundaries are highly enriched for CTCF, RAD21, SMC3, and ZNF143 signal and more conserved across cell lines. The pre-trained model can accurately predict boundaries in another cell line using CTCF, RAD21, SMC3, and ZNF143 annotation data for this cell line.",
+    "description": "A machine learning framework for precise 3D domain boundary prediction at base-level resolution.\n\npreciseTAD: A machine learning framework for precise TAD boundary prediction.\n\npreciseTAD provides functions to predict the location of boundaries of topologically associated domains (TADs) and chromatin loops at base-level resolution.",
+    "documentation": [
+        {
+            "type": [
+                "User manual"
+            ],
+            "url": "https://bioconductor.org/packages/preciseTAD"
+        }
+    ],
+    "download": [
+        {
+            "type": "Source code",
+            "url": "https://github.com/dozmorovlab/preciseTAD"
+        }
+    ],
     "editPermission": {
         "type": "private"
     },
@@ -46,7 +63,7 @@
     "language": [
         "R"
     ],
-    "lastUpdate": "2021-01-27T16:33:16Z",
+    "lastUpdate": "2026-10-02T16:02:05.127342Z",
     "license": "MIT",
     "link": [
         {
@@ -85,24 +102,7 @@
             "uri": "http://edamontology.org/topic_0749"
         }
     ],
-    "documentation": [
-        {
-            "type": [
-                "User manual"
-            ],
-            "url": "https://bioconductor.org/packages/preciseTAD"
-        }
-    ],
-    "download": [
-        {
-            "type": "Source code",
-            "url": "https://github.com/dozmorovlab/preciseTAD"
-        }
-    ],
     "version": [
         "1.22.0"
-    ],
-    "collectionID": [
-        "BioConductor"
     ]
 }

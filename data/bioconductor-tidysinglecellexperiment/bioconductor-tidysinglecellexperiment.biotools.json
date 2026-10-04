@@ -1,4 +1,5 @@
 {
+    "additionDate": "2026-08-31T21:26:14.181212Z",
     "biotoolsCURIE": "biotools:bioconductor-tidysinglecellexperiment",
     "biotoolsID": "bioconductor-tidysinglecellexperiment",
     "collectionID": [
@@ -6,51 +7,69 @@
     ],
     "credit": [
         {
+            "name": "Michael Love",
+            "typeEntity": "Person",
+            "typeRole": [
+                "Developer"
+            ]
+        },
+        {
             "name": "Stefano Mangiola",
             "typeEntity": "Person",
             "typeRole": [
                 "Developer",
                 "Maintainer"
             ]
+        },
+        {
+            "name": "William Hutchison",
+            "typeEntity": "Person",
+            "typeRole": [
+                "Developer"
+            ]
         }
     ],
-    "description": "'tidySingleCellExperiment' is an adapter that abstracts the 'SingleCellExperiment' container in the form of a 'tibble'. This allows *tidy* data manipulation, nesting, and plotting. For example, a 'tidySingleCellExperiment' is directly compatible with functions from 'tidyverse' packages `dplyr` and `tidyr`, as well as plotting with `ggplot2` and `plotly`. In addition, the package provides various utility functions specific to single-cell omics data analysis (e.g., aggregation of cell-level data to pseudobulks).",
+    "description": "tidySpatialExperiment provides a bridge between the SpatialExperiment package and the tidyverse ecosystem. It creates an invisible layer that allows you to interact with a SpatialExperiment object as if it were a tibble; enabling the use of functions from dplyr, tidyr, ggplot2 and plotly. But, underneath, your data remains a SpatialExperiment object.",
     "documentation": [
         {
             "type": [
                 "User manual"
             ],
-            "url": "https://bioconductor.org/packages/tidySingleCellExperiment"
+            "url": "https://bioconductor.org/packages/tidyomics"
         }
     ],
     "download": [
         {
             "type": "Source code",
-            "url": "https://github.com/stemangiola/tidySingleCellExperiment"
+            "url": "https://github.com/tidyomics/tidyomics"
         }
     ],
-    "homepage": "https://bioconductor.org/packages/tidySingleCellExperiment",
+    "editPermission": {
+        "type": "private"
+    },
+    "homepage": "https://bioconductor.org/packages/tidyomics",
     "language": [
         "R"
     ],
-    "license": "GPL-3.0-only",
+    "lastUpdate": "2026-10-02T15:55:34.741407Z",
+    "license": "MIT",
     "name": "tidySingleCellExperiment",
     "operatingSystem": [
         "Linux",
         "Mac",
         "Windows"
     ],
-    "owner": "bioconductor_import",
+    "owner": "gh2biotools",
+    "publication": [
+        {
+            "doi": "10.1038/s41592-024-02299-2"
+        }
+    ],
     "toolType": [
         "Command-line tool",
         "Library"
     ],
     "version": [
-        "1.22.0"
-    ],
-    "publication": [
-        {
-            "doi": "10.1038/s41592-024-02299-2"
-        }
+        "1.8.0"
     ]
 }

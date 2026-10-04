@@ -7,12 +7,6 @@
     ],
     "credit": [
         {
-            "name": "freq-dep-fitness time)"
-        },
-        {
-            "name": "plot.stacked)"
-        },
-        {
             "name": "Achim Tresch",
             "typeEntity": "Person",
             "typeRole": [
@@ -378,7 +372,7 @@
             ]
         }
     ],
-    "description": "Functions for forward population genetic simulation in asexual populations, with special focus on cancer progression. Fitness can be an arbitrary function of genetic interactions between multiple genes or modules of genes, including epistasis, order restrictions in mutation accumulation, and order effects. Fitness (including just birth, just death, or both birth and death) can also be a function of the relative and absolute frequencies of other genotypes (i.e., frequency-dependent fitness). Mutation rates can differ between genes, and we can include mutator/antimutator genes (to model mutator phenotypes). Simulating multi-species scenarios and therapeutic interventions, including adaptive therapy, is also possible. Simulations use continuous-time models and can include driver and passenger genes and modules. Also included are functions for: simulating random DAGs of the type found in Oncogenetic Trees, Conjunctive Bayesian Networks, and other cancer progression models; plotting and sampling from single or multiple realizations of the simulations, including single-cell sampling; plotting the parent-child relationships of the clones; generating random fitness landscapes (Rough Mount Fuji, House of Cards, additive, NK, Ising, and Eggbox models) and plotting them.",
+    "description": "Functions for forward population genetic simulation in asexual populations, with special focus on cancer progression. Also included are functions for simulating random DAGs of the type found in Oncogenetic Trees, Conjunctive Bayesian Networks, and other tumor progression models, and for plotting and sampling from single or multiple realizations of the simulations, including single-cell sampling, as well as functions for plotting the true phylogenetic relationships of the clones.",
     "documentation": [
         {
             "type": [
@@ -390,7 +384,11 @@
     "download": [
         {
             "type": "Source code",
-            "url": "https://github.com/rdiaz02/OncoSimul, https://popmodels.cancercontrol.cancer.gov/gsr/packages/oncosimulr/"
+            "url": "https://github.com/rdiaz02/OncoSimul"
+        },
+        {
+            "type": "Source code",
+            "url": "https://popmodels.cancercontrol.cancer.gov/gsr/packages/oncosimulr/"
         }
     ],
     "editPermission": {
@@ -450,7 +448,7 @@
     "language": [
         "R"
     ],
-    "lastUpdate": "2019-01-11T00:36:08Z",
+    "lastUpdate": "2026-10-02T16:01:35.846975Z",
     "license": "GPL-3.0-or-later",
     "link": [
         {
@@ -474,9 +472,6 @@
     ],
     "owner": "bioconductor_import",
     "publication": [
-        {
-            "doi": "10.1093/bioinformatics/btx077"
-        },
         {
             "doi": "10.1093/bioinformatics/btx077"
         },

@@ -7,10 +7,15 @@
     ],
     "credit": [
         {
-            "name": "Lihua Julie Zhu Paul Scemama Benjamin R. Holmes Hervé Pagès Kai Hu Hui Mao Michael Lawrence Isana Veksler-Lublinsky Victor Ambros Neil Aronin Michael Brodsky Devin M Burris"
+            "email": "julie.zhu@umassmed.edu",
+            "name": "Lihua Julie Zhu",
+            "typeEntity": "Person",
+            "typeRole": [
+                "Primary contact"
+            ]
         }
     ],
-    "description": "The package encompasses functions to find potential guide RNAs for the CRISPR-based genome-editing systems including the Base Editors and the Prime Editors when supplied with target sequences as input. Users have the flexibility to filter resulting guide RNAs based on parameters such as the absence of restriction enzyme cut sites or the lack of paired guide RNAs. The package also facilitates genome-wide exploration for off-targets, offering features to score and rank off-targets, retrieve flanking sequences, and indicate whether the hits are located within exon regions. All detected guide RNAs are annotated with the cumulative scores of the top5 and topN off-targets together with the detailed information such as mismatch sites and restrictuion enzyme cut sites. The package also outputs INDELs and their frequencies for Cas9 targeted sites.",
+    "description": "The package includes functions to find potential guide RNAs for input target sequences, optionally filter guide RNAs without restriction enzyme cut site, or without paired guide RNAs, genome-wide search for off-targets, score, rank, fetch flank sequence and indicate whether the target and off-targets are located in exon region or not.",
     "documentation": [
         {
             "type": [
@@ -22,7 +27,7 @@
     "download": [
         {
             "type": "Source code",
-            "url": ""
+            "url": "https://bioconductor.org/packages/release/bioc/src/contrib/CRISPRseek_1.52.0.tar.gz"
         }
     ],
     "editPermission": {
@@ -42,8 +47,8 @@
     "language": [
         "R"
     ],
-    "lastUpdate": "2019-01-10T15:33:28Z",
-    "license": null,
+    "lastUpdate": "2026-10-02T15:57:01.729129Z",
+    "license": "GPL-2.0",
     "name": "CRISPRseek",
     "operatingSystem": [
         "Linux",
@@ -51,7 +56,16 @@
         "Windows"
     ],
     "owner": "bioconductor_import",
-    "publication": [],
+    "publication": [
+        {
+            "doi": "10.1371/journal.pone.0108424",
+            "pmcid": "PMC4172692",
+            "pmid": "25247697",
+            "type": [
+                "Primary"
+            ]
+        }
+    ],
     "toolType": [
         "Command-line tool",
         "Library"

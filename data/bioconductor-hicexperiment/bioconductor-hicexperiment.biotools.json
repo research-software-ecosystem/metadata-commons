@@ -1,4 +1,5 @@
 {
+    "additionDate": "2026-08-30T02:43:42.884581Z",
     "biotoolsCURIE": "biotools:bioconductor-hicexperiment",
     "biotoolsID": "bioconductor-hicexperiment",
     "collectionID": [
@@ -14,7 +15,7 @@
             ]
         }
     ],
-    "description": "R generic interface to Hi-C contact matrices in `.(m)cool`, `.hic` or HiC-Pro derived formats, as well as other Hi-C processed file formats. Contact matrices can be partially parsed using a random access method, allowing a memory-efficient representation of Hi-C data in R. The `HiCExperiment` class stores the Hi-C contacts parsed from local contact matrix files. `HiCExperiment` instances can be further investigated in R using the `HiContacts` analysis package.",
+    "description": "HiCool provides an R interface to process and normalize Hi-C paired-end fastq reads into .(m)cool files. .(m)cool is a compact, indexed HDF5 file format specifically tailored for efficiently storing HiC-based data. On top of processing fastq reads, HiCool provides a convenient reporting function to generate shareable reports summarizing Hi-C experiments and including quality controls.",
     "documentation": [
         {
             "type": [
@@ -29,10 +30,14 @@
             "url": "https://github.com/js2264/HiCExperiment"
         }
     ],
+    "editPermission": {
+        "type": "private"
+    },
     "homepage": "https://bioconductor.org/packages/HiCExperiment",
     "language": [
         "R"
     ],
+    "lastUpdate": "2026-10-02T15:54:05.620065Z",
     "license": "MIT",
     "name": "HiCExperiment",
     "operatingSystem": [
@@ -40,17 +45,17 @@
         "Mac",
         "Windows"
     ],
-    "owner": "bioconductor_import",
+    "owner": "gh2biotools",
+    "publication": [
+        {
+            "doi": "10.1038/s41467-024-44761-x"
+        }
+    ],
     "toolType": [
         "Command-line tool",
         "Library"
     ],
     "version": [
         "1.12.0"
-    ],
-    "publication": [
-        {
-            "doi": "10.1038/s41467-024-44761-x"
-        }
     ]
 }
