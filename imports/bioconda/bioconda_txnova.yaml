@@ -1,0 +1,61 @@
+about:
+  dev_url: https://github.com/leelieber2025/TxNova
+  doc_url: https://txnova.readthedocs.io
+  home: https://github.com/leelieber2025/TxNova
+  license: Apache-2.0
+  license_file: LICENSE
+  summary: Experimental-group-specific novel intergenic transcripts from bulk RNA-seq
+    BAMs
+build:
+  number: 0
+  run_exports:
+  - null
+  script:
+  - export LIBCLANG_PATH="${PREFIX}/lib"
+  - ' -m pip install . --no-deps --no-build-isolation -vv'
+  skip: true
+extra:
+  notes: 'Input is a coordinate-sorted, indexed BAM from STAR or HISAT2.
+
+    Windows is not built; use WSL2.'
+  recipe-maintainers:
+  - leelieber2025
+package:
+  name: txnova
+  version: 0.1.12
+requirements:
+  build:
+  - null
+  - null
+  - null
+  host:
+  - python >=3.10
+  - pip
+  - maturin >=1.7,<2
+  - clangdev
+  - libclang
+  - llvmdev
+  - zlib
+  - bzip2
+  - xz
+  run:
+  - python >=3.10
+  - typer >=0.12
+  - pydantic >=2.5,<3
+  - pyyaml >=6.0
+  - pandas >=2.0,<3
+  - rich >=13.0
+  - jinja2 >=3.1
+  - pydeseq2 >=0.4
+  - numpy >=1.23,<3
+  - scipy >=1.9
+source:
+  sha256: af7c6d68d0e5fb248180741adb136607b6f4b789afa21a0e0ab42804b91c1cc9
+  url: https://pypi.io/packages/source/t/txnova/txnova-0.1.12.tar.gz
+test:
+  commands:
+  - txnova --version
+  - txnova --help
+  imports:
+  - txnova
+  - txnova._core

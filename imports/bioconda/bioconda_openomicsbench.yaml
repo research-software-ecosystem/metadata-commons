@@ -1,0 +1,35 @@
+about:
+  dev_url: https://github.com/vxxqv/openomicsbench
+  home: https://github.com/vxxqv/openomicsbench
+  license: Apache-2.0
+  license_file: LICENSE
+  summary: Traceable omics benchmarks and deterministic FASTA and FASTQ tools
+build:
+  noarch: python
+  number: 0
+  run_exports:
+  - null
+  script: -m pip install . --no-deps --no-build-isolation
+extra:
+  recipe-maintainers:
+  - vxxqv
+package:
+  name: openomicsbench
+  version: 2.2.0
+requirements:
+  host:
+  - pip
+  - python >=3.11
+  - setuptools >=68
+  run:
+  - python >=3.11
+  - pydantic >=2.13,<3
+  - numpy >=2.3,<3
+source:
+  sha256: 93c68c16348b704cbe996cbb4953e14fead35773c5cd0c7eda5812cd2a4406ec
+  url: https://pypi.io/packages/source/o/openomicsbench/openomicsbench-2.2.0.tar.gz
+test:
+  commands:
+  - omicsbench --help
+  imports:
+  - omicsbench

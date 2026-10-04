@@ -1,0 +1,71 @@
+about:
+  description: 'RNAInterKin (RIKin) solves, for a pair of input RNAs, their full
+
+    RNA-RNA interaction kinetics process in a detailed
+
+    RNAup/IntaRNA-inspired interaction model. This calculation is based on
+
+    the full Turner nearest- neighbor energy model for RNA secondary
+
+    structures.  The tool handles biologically relevant RNA interaction
+
+    pairs. For example, the interaction process of the 5''UTR of mRNAs with
+
+    regulatory RNAs is solved within minutes on a single notebook CPU.
+
+    '
+  home: https://github.com/s-will/rikin
+  license: AGPL-3.0-or-later
+  license_family: AGPL
+  license_file: COPYING
+  summary: Computation of full RNA-RNA interaction kinetics
+build:
+  number: 0
+  run_exports:
+  - null
+extra:
+  additional-platforms:
+  - linux-aarch64
+  - osx-arm64
+  recipe-maintainers:
+  - s-will
+package:
+  name: rikin
+  version: 0.9.9
+requirements:
+  build:
+  - null
+  - null
+  - null
+  - autoconf
+  - automake
+  - libtool
+  - pkg-config
+  - gengetopt
+  - make
+  host:
+  - viennarna
+  - locarna
+  - zlib
+  - llvm-openmp
+  run:
+  - viennarna
+  - locarna
+  - llvm-openmp
+  - python >=3.9
+  - numpy
+  - pandas
+  - scipy
+  - matplotlib-base
+  - seaborn
+  - octave
+source:
+  sha256: 4064af1a85541073c0cfa0cee1aa175c5d62a0c4e0f9fc6d2339a779066210c5
+  url: https://github.com/s-will/rikin/archive/refs/tags/v0.9.9.tar.gz
+test:
+  commands:
+  - rikin_enum --help
+  - rikin_barriers --help
+  - rikin_prune --help
+  - rikin_pipeline.py --help
+  - rikin_plot.py --help

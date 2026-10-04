@@ -1,20 +1,15 @@
 about:
-  description: 'GWIscan is a pipeline for the genome-wide identification and annotation
-    of gene
-
-    families and superfamilies which combines BLAST, profile hidden Markov models,
-
-    and InterProScan. It runs in family, superfamily, or architecture modes, on a
-
-    single proteome or across multiple species.
-
-    '
+  description: "GWIscan takes a user-defined gene family, searches a proteome by both\
+    \ BLAST-based homology and profile HMM, \nconfirms candidates by family signature,\
+    \ and provides detailed in silico annotation. It operates in three modes\n(family,\
+    \ multi-family, and architecture) and runs on a single proteome or across multiple\
+    \ species.\n"
   dev_url: https://github.com/beavenmanjengwa/gwiscan
   home: https://github.com/beavenmanjengwa/gwiscan
   license: MIT
   license_file: LICENSE
-  summary: Genome-wide identification and annotation pipeline for gene families or
-    superfamilies
+  summary: GWIscan is a pipeline for the genome-wide identification and in silico
+    characterization of gene families.
 build:
   entry_points:
   - gwiscan = gwiscan.cli:main
@@ -28,7 +23,7 @@ extra:
   - beavenmanjengwa
 package:
   name: gwiscan
-  version: 1.0.1
+  version: 1.2.1
 requirements:
   host:
   - python >=3.10
@@ -56,8 +51,8 @@ requirements:
   - r-dplyr
   - r-tidyr
 source:
-  sha256: 8f1a18c922aa49856b9d89494b35bc65ee626c3ff74dbce06135630558df2ecd
-  url: https://github.com/beavenmanjengwa/gwiscan/archive/refs/tags/v1.0.1.tar.gz
+  sha256: 2ca25d46240056844390ccacaa4c72820973cdc3b3e581db3740ccb411f5ece4
+  url: https://github.com/beavenmanjengwa/gwiscan/archive/refs/tags/v1.2.1.tar.gz
 test:
   commands:
   - gwiscan --help
