@@ -39,6 +39,10 @@
   },
   "@graph": [
     {
+      "@id": "https://usegalaxy.ca",
+      "@type": "schema1:WebSite"
+    },
+    {
       "@id": "galaxytool:anndata2ri",
       "@type": "schema1:SoftwareApplication",
       "bioschemas:output": [
@@ -70,9 +74,14 @@
           "@id": "bioconda:anndata2ri"
         }
       ],
-      "schema1:isPartOf": {
-        "@id": "https://usegalaxy.eu"
-      },
+      "schema1:isPartOf": [
+        {
+          "@id": "https://usegalaxy.ca"
+        },
+        {
+          "@id": "https://usegalaxy.eu"
+        }
+      ],
       "schema1:keywords": [
         "Single Cell",
         "Convert Formats"

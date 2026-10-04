@@ -39,6 +39,14 @@
   },
   "@graph": [
     {
+      "@id": "https://usegalaxy.org",
+      "@type": "schema1:WebSite"
+    },
+    {
+      "@id": "https://usegalaxy.ca",
+      "@type": "schema1:WebSite"
+    },
+    {
       "@id": "galaxytool:kmindex",
       "@type": "schema1:SoftwareApplication",
       "bioschemas:output": "kmindex",
@@ -58,6 +66,9 @@
       ],
       "schema1:isPartOf": [
         {
+          "@id": "https://usegalaxy.ca"
+        },
+        {
           "@id": "https://usegalaxy.eu"
         },
         {
@@ -66,14 +77,10 @@
       ],
       "schema1:keywords": "Sequence Analysis",
       "schema1:name": "kmindex",
-      "schema1:softwareVersion": "0.6.1",
+      "schema1:softwareVersion": "0.7.0",
       "schema1:url": {
         "@id": "https://github.com/galaxyproject/tools-iuc/tree/main/tools/kmindex"
       }
-    },
-    {
-      "@id": "https://usegalaxy.org",
-      "@type": "schema1:WebSite"
     },
     {
       "@id": "https://usegalaxy.eu",

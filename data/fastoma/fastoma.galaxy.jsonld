@@ -39,6 +39,10 @@
   },
   "@graph": [
     {
+      "@id": "https://usegalaxy.ca",
+      "@type": "schema1:WebSite"
+    },
+    {
       "@id": "galaxytool:fastoma",
       "@type": "schema1:SoftwareApplication",
       "bioschemas:output": [
@@ -89,9 +93,17 @@
       "schema1:identifier": {
         "@id": "biotools:fastoma"
       },
-      "schema1:isPartOf": {
-        "@id": "https://usegalaxy.eu"
-      },
+      "schema1:isPartOf": [
+        {
+          "@id": "http://galaxy.inf.ethz.ch"
+        },
+        {
+          "@id": "https://usegalaxy.ca"
+        },
+        {
+          "@id": "https://usegalaxy.eu"
+        }
+      ],
       "schema1:keywords": [
         "Phylogenetics",
         "Sequence Analysis"
@@ -101,6 +113,10 @@
       "schema1:url": {
         "@id": "https://github.com/galaxyproject/tools-iuc/tree/main/tools/fastoma"
       }
+    },
+    {
+      "@id": "http://galaxy.inf.ethz.ch",
+      "@type": "schema1:WebSite"
     },
     {
       "@id": "https://usegalaxy.eu",

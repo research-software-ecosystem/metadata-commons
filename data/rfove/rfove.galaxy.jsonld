@@ -39,6 +39,18 @@
   },
   "@graph": [
     {
+      "@id": "https://usegalaxy.org",
+      "@type": "schema1:WebSite"
+    },
+    {
+      "@id": "https://usegalaxy.ca",
+      "@type": "schema1:WebSite"
+    },
+    {
+      "@id": "https://usegalaxy.eu",
+      "@type": "schema1:WebSite"
+    },
+    {
       "@id": "galaxytool:rfove",
       "@type": "schema1:SoftwareApplication",
       "bioschemas:output": "tiff",
@@ -67,6 +79,9 @@
       },
       "schema1:isPartOf": [
         {
+          "@id": "https://usegalaxy.ca"
+        },
+        {
           "@id": "https://usegalaxy.eu"
         },
         {
@@ -79,14 +94,6 @@
       "schema1:url": {
         "@id": "https://github.com/BMCV/galaxy-image-analysis/tree/master/tools/rfove/"
       }
-    },
-    {
-      "@id": "https://usegalaxy.org",
-      "@type": "schema1:WebSite"
-    },
-    {
-      "@id": "https://usegalaxy.eu",
-      "@type": "schema1:WebSite"
     }
   ]
 }

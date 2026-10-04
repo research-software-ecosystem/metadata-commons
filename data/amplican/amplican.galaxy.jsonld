@@ -39,6 +39,10 @@
   },
   "@graph": [
     {
+      "@id": "https://usegalaxy.ca",
+      "@type": "schema1:WebSite"
+    },
+    {
       "@id": "galaxytool:amplican",
       "@type": "schema1:SoftwareApplication",
       "bioschemas:output": [
@@ -94,6 +98,9 @@
       ],
       "schema1:isPartOf": [
         {
+          "@id": "https://usegalaxy.ca"
+        },
+        {
           "@id": "https://usegalaxy.cz"
         },
         {
@@ -102,7 +109,7 @@
       ],
       "schema1:keywords": "Sequence Analysis",
       "schema1:name": "amplican",
-      "schema1:softwareVersion": "1.14.0",
+      "schema1:softwareVersion": "1.32.1",
       "schema1:url": {
         "@id": "https://github.com/galaxyproject/tools-iuc/tree/main/tools/amplican"
       }

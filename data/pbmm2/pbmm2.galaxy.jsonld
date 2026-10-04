@@ -39,6 +39,10 @@
   },
   "@graph": [
     {
+      "@id": "https://usegalaxy.ca",
+      "@type": "schema1:WebSite"
+    },
+    {
       "@id": "galaxytool:pbmm2",
       "@type": "schema1:SoftwareApplication",
       "bioschemas:output": "bam",
@@ -67,9 +71,14 @@
           "@id": "bioconda:pbmm2"
         }
       ],
-      "schema1:isPartOf": {
-        "@id": "https://usegalaxy.eu"
-      },
+      "schema1:isPartOf": [
+        {
+          "@id": "https://usegalaxy.ca"
+        },
+        {
+          "@id": "https://usegalaxy.eu"
+        }
+      ],
       "schema1:keywords": "Next Gen Mappers",
       "schema1:name": "pbmm2",
       "schema1:softwareVersion": "26.2.99",

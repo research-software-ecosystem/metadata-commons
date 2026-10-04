@@ -62,9 +62,14 @@
       "schema1:identifier": {
         "@id": "biotools:psortb"
       },
-      "schema1:isPartOf": {
-        "@id": "https://usegalaxy.eu"
-      },
+      "schema1:isPartOf": [
+        {
+          "@id": "https://usegalaxy.ca"
+        },
+        {
+          "@id": "https://usegalaxy.eu"
+        }
+      ],
       "schema1:keywords": [
         "Proteomics",
         "Sequence Analysis"
@@ -74,6 +79,10 @@
       "schema1:url": {
         "@id": "https://github.com/bgruening/galaxytools/tree/master/tools/psortb"
       }
+    },
+    {
+      "@id": "https://usegalaxy.ca",
+      "@type": "schema1:WebSite"
     },
     {
       "@id": "https://usegalaxy.eu",
