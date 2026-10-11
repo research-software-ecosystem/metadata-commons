@@ -36,13 +36,17 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.18129/B9.bioc.SELEX",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/selex",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N1e81c20007cf4dd8b256e907258d1b99"
+        "@id": "_:N8b711efb0eff443092bde72a0ab31cea"
       },
       "bsc:output": {
-        "@id": "_:N564c83d54e984a269c58395a04d347a0"
+        "@id": "_:Ne41bfd197af0439e8926784bf3853ac5"
       },
       "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
@@ -64,7 +68,7 @@
       "sc:featureList": {
         "@id": "edam:operation_0238"
       },
-      "sc:license": "GPL-2.0-only",
+      "sc:license": "GPL-2.0",
       "sc:name": "SELEX",
       "sc:operatingSystem": [
         "Linux",
@@ -78,7 +82,7 @@
       "sc:url": "https://bioconductor.org/packages/SELEX"
     },
     {
-      "@id": "_:N1e81c20007cf4dd8b256e907258d1b99",
+      "@id": "_:N8b711efb0eff443092bde72a0ab31cea",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1383"
@@ -97,7 +101,7 @@
       "sc:name": "Sequence alignment (nucleic acid)"
     },
     {
-      "@id": "_:N564c83d54e984a269c58395a04d347a0",
+      "@id": "_:Ne41bfd197af0439e8926784bf3853ac5",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0951"
@@ -114,10 +118,6 @@
         }
       ],
       "sc:name": "Statistical estimate score"
-    },
-    {
-      "@id": "https://doi.org/10.18129/B9.bioc.SELEX",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

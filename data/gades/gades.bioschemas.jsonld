@@ -34,10 +34,70 @@
     "wgs": "https://www.w3.org/2003/01/geo/wgs84_pos#",
     "xsd": "http://www.w3.org/2001/XMLSchema#"
   },
-  "@id": "https://bio.tools/gades",
-  "@type": "sc:SoftwareApplication",
-  "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
-  "sc:description": "The program is designed to calculate pairwise distances between objects that can be represented as an \"object-feature\" matrix. The program accepts a dense matrix in CSV (Comma Separated Value) format or a sparse matrix in MEX (Market EXchange) format as input and calculates a distance matrix for one of the metrics selected by the user. The result of the program is a matrix of pairwise distances that can be used for practical tasks of bioinformatics data analysis at the level of individual cells. The program supports the use of graphic processors with CUDA architecture to accelerate calculations over large matrices.",
-  "sc:name": "GADES",
-  "sc:url": "https://github.com/lab-medvedeva/GADES-main"
+  "@graph": [
+    {
+      "@id": "https://bio.tools/gades",
+      "@type": "sc:SoftwareApplication",
+      "bsc:input": {
+        "@id": "_:Ne007988a86de4c9d949ba5690b79859a"
+      },
+      "bsc:output": [
+        {
+          "@id": "_:Ndfc8f9dae59c470e9bb77b16162acabb"
+        },
+        {
+          "@id": "_:N05d69eb272104d7f84058a962942251b"
+        },
+        {
+          "@id": "_:N8f048904f5aa479a8d0771181605bbaa"
+        }
+      ],
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "sc:additionalType": "Library",
+      "sc:applicationSubCategory": {
+        "@id": "edam:topic_3473"
+      },
+      "sc:description": "The program is designed to calculate pairwise distances between objects that can be represented as an \"object-feature\" matrix. The program accepts a dense matrix in CSV (Comma Separated Value) format or a sparse matrix in MEX (Market EXchange) format as input and calculates a distance matrix for one of the metrics selected by the user. The result of the program is a matrix of pairwise distances that can be used for practical tasks of bioinformatics data analysis at the level of individual cells. The program supports the use of graphic processors with CUDA architecture to accelerate calculations over large matrices.",
+      "sc:featureList": {
+        "@id": "edam:operation_0289"
+      },
+      "sc:isAccessibleForFree": false,
+      "sc:license": "GPL-3.0",
+      "sc:name": "GADES",
+      "sc:softwareVersion": "2.0",
+      "sc:url": "https://github.com/lab-medvedeva/GADES-main"
+    },
+    {
+      "@id": "_:Ne007988a86de4c9d949ba5690b79859a",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3917"
+      },
+      "sc:name": "Count matrix"
+    },
+    {
+      "@id": "_:Ndfc8f9dae59c470e9bb77b16162acabb",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1546"
+      },
+      "sc:name": "Protein distance matrix"
+    },
+    {
+      "@id": "_:N05d69eb272104d7f84058a962942251b",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_0870"
+      },
+      "sc:name": "Sequence distance matrix"
+    },
+    {
+      "@id": "_:N8f048904f5aa479a8d0771181605bbaa",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2856"
+      },
+      "sc:name": "Structural distance matrix"
+    }
+  ]
 }

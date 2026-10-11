@@ -36,10 +36,6 @@
   },
   "@graph": [
     {
-      "@id": "https://orcid.org/0000-0002-1887-0157",
-      "@type": "sc:Person"
-    },
-    {
       "@id": "https://bio.tools/hcc_segmentation_tool_for_contrast-enhanced_abdominal_ct",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
@@ -47,18 +43,18 @@
       },
       "bsc:input": [
         {
-          "@id": "_:Nbd69df29c8aa416aaeef0f53c9b34c6e"
+          "@id": "_:Nb3b677ad392e435cbad602dfbf4f8815"
         },
         {
-          "@id": "_:N0025b149c5264690b957a34f92dc31dd"
+          "@id": "_:Na5052346a41a482fa8997d5db3704249"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:Na6b2bdad689a4ffeadb8d05ddb038f4c"
+          "@id": "_:N659eff4184aa4afb91e25e49e3715995"
         },
         {
-          "@id": "_:N91176c02e69e4bfeb15980437a792160"
+          "@id": "_:N3f0053d58e844495996272daa7fc1445"
         }
       ],
       "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -82,12 +78,12 @@
       "sc:name": "HCC segmentation tool for contrast-enhanced abdominal CT",
       "sc:operatingSystem": "Linux",
       "sc:softwareHelp": {
-        "@id": "https://github.com/josegcpa/nnunet_serve"
+        "@id": "https://gist.github.com/josegcpa/47ba1bf2bb425db111393e2c135d97e6"
       },
       "sc:url": "https://github.com/josegcpa/nnunet_serve"
     },
     {
-      "@id": "_:Nbd69df29c8aa416aaeef0f53c9b34c6e",
+      "@id": "_:Nb3b677ad392e435cbad602dfbf4f8815",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3442"
@@ -103,7 +99,7 @@
       "sc:name": "MRI image"
     },
     {
-      "@id": "_:N0025b149c5264690b957a34f92dc31dd",
+      "@id": "_:Na5052346a41a482fa8997d5db3704249",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3442"
@@ -119,7 +115,7 @@
       "sc:name": "MRI image"
     },
     {
-      "@id": "_:Na6b2bdad689a4ffeadb8d05ddb038f4c",
+      "@id": "_:N659eff4184aa4afb91e25e49e3715995",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2968"
@@ -135,7 +131,7 @@
       "sc:name": "Image"
     },
     {
-      "@id": "_:N91176c02e69e4bfeb15980437a792160",
+      "@id": "_:N3f0053d58e844495996272daa7fc1445",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2968"
@@ -149,6 +145,10 @@
         }
       ],
       "sc:name": "Image"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-1887-0157",
+      "@type": "sc:Person"
     }
   ]
 }

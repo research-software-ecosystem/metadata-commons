@@ -46,10 +46,10 @@
         "@id": "https://orcid.org/0000-0001-8424-4157"
       },
       "bsc:input": {
-        "@id": "_:Naf9a689dc2744d61a0df5a24dfcfde78"
+        "@id": "_:N63af892d417d46bd92430ec10cee656c"
       },
       "bsc:output": {
-        "@id": "_:Nd1eb8901d4fc4fca9bf401d251ccc3a3"
+        "@id": "_:N15880232b7094134b7d76fb10181983f"
       },
       "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
@@ -67,14 +67,9 @@
           "@id": "edam:topic_3384"
         }
       ],
-      "sc:author": [
-        {
-          "@id": "https://orcid.org/0000-0001-8424-4157"
-        },
-        {
-          "@id": "https://orcid.org/0000-0002-5245-8238"
-        }
-      ],
+      "sc:author": {
+        "@id": "https://orcid.org/0000-0001-8424-4157"
+      },
       "sc:citation": {
         "@id": "https://doi.org/10.5281/zenodo.19097245"
       },
@@ -85,6 +80,7 @@
       "sc:featureList": {
         "@id": "edam:operation_3283"
       },
+      "sc:isAccessibleForFree": true,
       "sc:license": "EUPL-1.2",
       "sc:name": "Lethe DICOM Anonymizer",
       "sc:operatingSystem": [
@@ -93,18 +89,24 @@
         "Windows"
       ],
       "sc:provider": "Computational BioMedicine Laboratory, Foundation for Research and Technology Hellas (FORTH)",
-      "sc:softwareHelp": {
-        "@id": "https://github.com/cbml-forth/lethe_anon_pipeline/blob/main/README.md"
-      },
+      "sc:softwareHelp": [
+        {
+          "@id": "https://www.youtube.com/watch?v=tebt0Z-m_QA"
+        },
+        {
+          "@id": "https://github.com/cbml-forth/lethe_anon_pipeline/blob/main/README.md"
+        }
+      ],
       "sc:softwareVersion": [
         "0.10.1",
         "0.11.2",
+        "0.11.3",
         "0.9.12"
       ],
       "sc:url": "https://harbor.eucaim.cancerimage.eu/harbor/projects/3/repositories/lethe-dicom-anonymizer/info-tab"
     },
     {
-      "@id": "_:Naf9a689dc2744d61a0df5a24dfcfde78",
+      "@id": "_:N63af892d417d46bd92430ec10cee656c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3424"
@@ -115,7 +117,7 @@
       "sc:name": "Raw image"
     },
     {
-      "@id": "_:Nd1eb8901d4fc4fca9bf401d251ccc3a3",
+      "@id": "_:N15880232b7094134b7d76fb10181983f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3424"
@@ -124,13 +126,13 @@
         "@id": "edam:format_3548"
       },
       "sc:name": "Raw image"
-    },
-    {
-      "@id": "https://orcid.org/0000-0001-8424-4157",
-      "@type": "sc:Person"
     },
     {
       "@id": "https://orcid.org/0000-0002-5245-8238",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://orcid.org/0000-0001-8424-4157",
       "@type": "sc:Person"
     }
   ]

@@ -36,20 +36,28 @@
   },
   "@graph": [
     {
+      "@id": "http://orcid.org/0000-0001-7885-4311",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.1007/s00251-013-0714-9",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/mhccluster",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "http://orcid.org/0000-0001-7885-4311"
       },
       "bsc:input": {
-        "@id": "_:N9962029b79c949c293a13ee4dc14645c"
+        "@id": "_:Nbd7e552c1f504b6ba4c75cb0ef9bb808"
       },
       "bsc:output": [
         {
-          "@id": "_:N4c35dae901cf4f3bb3881b583ad5a2b2"
+          "@id": "_:N5b785a7137524dbe802a20fe4b43543c"
         },
         {
-          "@id": "_:N0e77402fd6e4423dbd9d8cbfc6c12343"
+          "@id": "_:Nac7223d97d5e4582bda7ccb7b1722e84"
         }
       ],
       "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -84,7 +92,7 @@
       "sc:url": "http://cbs.dtu.dk/services/MHCcluster/"
     },
     {
-      "@id": "_:N9962029b79c949c293a13ee4dc14645c",
+      "@id": "_:Nbd7e552c1f504b6ba4c75cb0ef9bb808",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1353"
@@ -95,7 +103,7 @@
       "sc:name": "Sequence motif"
     },
     {
-      "@id": "_:N4c35dae901cf4f3bb3881b583ad5a2b2",
+      "@id": "_:N5b785a7137524dbe802a20fe4b43543c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1636"
@@ -106,7 +114,7 @@
       "sc:name": "Heat map"
     },
     {
-      "@id": "_:N0e77402fd6e4423dbd9d8cbfc6c12343",
+      "@id": "_:Nac7223d97d5e4582bda7ccb7b1722e84",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0872"
@@ -115,14 +123,6 @@
         "@id": "edam:format_2006"
       },
       "sc:name": "Phylogenetic tree"
-    },
-    {
-      "@id": "https://doi.org/10.1007/s00251-013-0714-9",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "http://orcid.org/0000-0001-7885-4311",
-      "@type": "sc:Person"
     }
   ]
 }

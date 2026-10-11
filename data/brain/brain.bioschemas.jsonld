@@ -40,14 +40,14 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N84517110f10f425d85484941cdb566a4"
+          "@id": "_:Nfb1555a773494d96a6bd0994121867d7"
         },
         {
-          "@id": "_:Nb7ab2ac9dc2d4594a23e9656e1693552"
+          "@id": "_:N6e3a57313a9647ae8e44c2caa7e794a1"
         }
       ],
       "bsc:output": {
-        "@id": "_:N5a946a5191d345b094864daba9d6a2a3"
+        "@id": "_:Na554b128ebc84c65b3529521ef99120d"
       },
       "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
@@ -74,7 +74,10 @@
           "@id": "edam:topic_2269"
         }
       ],
-      "sc:description": "Package for calculating aggregated isotopic distribution and exact center-masses for chemical substances (in this version composed of C, H, N, O and S). This is an implementation of the BRAIN algorithm described in the paper by J. Claesen, P. Dittwald, T. Burzykowski and D. Valkenborg.",
+      "sc:citation": {
+        "@id": "https://doi.org/10.1021/ac303439m"
+      },
+      "sc:description": "Package for calculating aggregated isotopic distributions and exact center-masses for chemical substances (in this version composed of C, H, N, O and S). This is an implementation of the BRAIN algorithm.",
       "sc:featureList": [
         {
           "@id": "edam:operation_3632"
@@ -86,7 +89,7 @@
           "@id": "edam:operation_2238"
         }
       ],
-      "sc:license": "GPL-2.0-only",
+      "sc:license": "GPL-2.0",
       "sc:name": "BRAIN",
       "sc:operatingSystem": [
         "Linux",
@@ -100,7 +103,7 @@
       "sc:url": "https://bioconductor.org/packages/BRAIN"
     },
     {
-      "@id": "_:N84517110f10f425d85484941cdb566a4",
+      "@id": "_:Nfb1555a773494d96a6bd0994121867d7",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1857"
@@ -111,7 +114,7 @@
       "sc:name": "Atomic occupancy"
     },
     {
-      "@id": "_:Nb7ab2ac9dc2d4594a23e9656e1693552",
+      "@id": "_:N6e3a57313a9647ae8e44c2caa7e794a1",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2976"
@@ -122,7 +125,7 @@
       "sc:name": "Protein sequence"
     },
     {
-      "@id": "_:N5a946a5191d345b094864daba9d6a2a3",
+      "@id": "_:Na554b128ebc84c65b3529521ef99120d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
@@ -136,6 +139,10 @@
         }
       ],
       "sc:name": "Plot"
+    },
+    {
+      "@id": "https://doi.org/10.1021/ac303439m",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

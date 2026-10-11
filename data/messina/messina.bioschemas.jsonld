@@ -36,25 +36,17 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1371/journal.pone.0005337%7D",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/%7B10.1371/journal.pone.0005337%7D",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/messina",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N62fde079c12047fe9e76c47b68a19ecc"
+        "@id": "_:N4fa7ca061f9845a0aed6ffac9364cbe0"
       },
       "bsc:output": [
         {
-          "@id": "_:N8e494bf77d694479a145d8221fe438db"
+          "@id": "_:Nae0b3be260624cf9b07dfae64a4d473e"
         },
         {
-          "@id": "_:Ndecf63cc864743b185f204a70b6cb6f9"
+          "@id": "_:N67da530d924c46679a1b3e9bcc2f885b"
         }
       ],
       "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -74,15 +66,10 @@
         }
       ],
       "sc:author": "Mark Pinese",
-      "sc:citation": [
-        {
-          "@id": "https://doi.org/%7B10.1371/journal.pone.0005337%7D"
-        },
-        {
-          "@id": "https://doi.org/10.1371/journal.pone.0005337%7D"
-        }
-      ],
-      "sc:description": "Messina is a collection of algorithms for constructing optimally robust single-gene classifiers, and for identifying differential expression in the presence of outliers or unknown sample subgroups.  The methods have application in identifying lead features to develop into clinical tests (both diagnostic and prognostic), and in identifying differential expression when a fraction of samples show unusual patterns of expression.",
+      "sc:citation": {
+        "@id": "https://doi.org/10.1371/journal.pone.0005337"
+      },
+      "sc:description": "Collection of algorithms for constructing optimally robust single-gene classifiers, and for identifying differential expression in the presence of outliers or unknown sample subgroups. The methods have application in identifying lead features to develop into clinical tests (both diagnostic and prognostic), and in identifying differential expression when a fraction of samples show unusual patterns of expression.",
       "sc:featureList": [
         {
           "@id": "edam:operation_2990"
@@ -108,7 +95,7 @@
       "sc:url": "https://bioconductor.org/packages/messina"
     },
     {
-      "@id": "_:N62fde079c12047fe9e76c47b68a19ecc",
+      "@id": "_:N4fa7ca061f9845a0aed6ffac9364cbe0",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0928"
@@ -119,7 +106,7 @@
       "sc:name": "Gene expression profile"
     },
     {
-      "@id": "_:N8e494bf77d694479a145d8221fe438db",
+      "@id": "_:Nae0b3be260624cf9b07dfae64a4d473e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
@@ -135,7 +122,7 @@
       "sc:name": "Plot"
     },
     {
-      "@id": "_:Ndecf63cc864743b185f204a70b6cb6f9",
+      "@id": "_:N67da530d924c46679a1b3e9bcc2f885b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"
@@ -149,6 +136,10 @@
         }
       ],
       "sc:name": "Report"
+    },
+    {
+      "@id": "https://doi.org/10.1371/journal.pone.0005337",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

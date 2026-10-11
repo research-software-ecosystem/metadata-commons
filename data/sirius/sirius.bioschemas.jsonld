@@ -40,17 +40,21 @@
       "@type": "sc:CreativeWork"
     },
     {
+      "@id": "https://doi.org/10.1007/s00453-007-0162-8",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/sirius",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N213d835791eb4a6890b96a2051e6bc77"
+        "@id": "_:Nd12409130f6f48499870802a01d3c7cb"
       },
       "bsc:output": [
         {
-          "@id": "_:Ned9f0601dd424e40bcd5a0f504c776c9"
+          "@id": "_:N4d0b9d27626c49dc958a2acb9978e529"
         },
         {
-          "@id": "_:N938e5339495344749f4b9fe9b5928a48"
+          "@id": "_:N69073901403249c08a0f12765cbec823"
         }
       ],
       "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -69,14 +73,27 @@
           "@id": "edam:topic_3520"
         }
       ],
+      "sc:author": [
+        "Anton Pervukhin",
+        "Steffen Neumann"
+      ],
       "sc:citation": [
-        "pubmed:19015140",
-        "pmcid:PMC2639009",
+        {
+          "@id": "https://doi.org/10.1007/s00453-007-0162-8"
+        },
+        {
+          "@id": "https://doi.org/10.1093/bioinformatics/btm631"
+        },
         {
           "@id": "https://doi.org/10.1093/bioinformatics/btn603"
         }
       ],
-      "sc:description": "Tool for metabolite identification using mass spectrometry.",
+      "sc:contributor": [
+        "Jan Lisec",
+        "Miao Yu",
+        "Roberto Canteri"
+      ],
+      "sc:description": "In high resolution mass spectrometry (HR-MS), the measured masses can be decomposed into potential element combinations (chemical sum formulas). Where additional mass/intensity information of respective isotopic peaks is available, decomposition can take this information into account to better rank the potential candidate sum formulas. To compare measured mass/intensity information with the theoretical distribution of candidate sum formulas, the latter needs to be calculated. This package implements fast algorithms to address both tasks, the calculation of isotopic distributions for arbitrary sum formulas (assuming a HR-MS resolution of roughly 30,000), and the ranked list of sum formulas fitting an observed peak or isotopic peak set.",
       "sc:featureList": [
         {
           "@id": "edam:operation_3632"
@@ -88,6 +105,7 @@
           "@id": "edam:operation_3803"
         }
       ],
+      "sc:license": "GPL-2.0",
       "sc:name": "Sirius",
       "sc:operatingSystem": [
         "Linux",
@@ -95,12 +113,13 @@
         "Windows"
       ],
       "sc:softwareHelp": {
-        "@id": "https://bio.informatik.uni-jena.de/sirius-training/"
+        "@id": "https://bioconductor.org/packages/Rdisop"
       },
-      "sc:url": "http://bio.informatik.uni-jena.de/sirius"
+      "sc:softwareVersion": "1.72.0",
+      "sc:url": "https://bioconductor.org/packages/Rdisop"
     },
     {
-      "@id": "_:N213d835791eb4a6890b96a2051e6bc77",
+      "@id": "_:Nd12409130f6f48499870802a01d3c7cb",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2536"
@@ -119,7 +138,7 @@
       "sc:name": "Mass spectrometry data"
     },
     {
-      "@id": "_:Ned9f0601dd424e40bcd5a0f504c776c9",
+      "@id": "_:N4d0b9d27626c49dc958a2acb9978e529",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0846"
@@ -135,7 +154,7 @@
       "sc:name": "Chemical formula"
     },
     {
-      "@id": "_:N938e5339495344749f4b9fe9b5928a48",
+      "@id": "_:N69073901403249c08a0f12765cbec823",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2042"
@@ -144,6 +163,10 @@
         "@id": "edam:format_3681"
       },
       "sc:name": "Evidence"
+    },
+    {
+      "@id": "https://doi.org/10.1093/bioinformatics/btm631",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

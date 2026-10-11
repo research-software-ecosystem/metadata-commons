@@ -36,21 +36,25 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1186/1471-2105-11-237",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1007/978-1-62703-607-8_8",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/chippeakanno",
       "@type": "sc:SoftwareApplication",
-      "biotools:primaryContact": [
-        "Jianhong Ou",
-        "Lihua Julie Zhu"
-      ],
       "bsc:input": {
-        "@id": "_:Nf293bf58017543b68653a23164c31c98"
+        "@id": "_:Nbaa2c9ad71f74fe9883fbd706772d202"
       },
       "bsc:output": [
         {
-          "@id": "_:Nf3df30ec8a6442c8a0c0141b4fe790cd"
+          "@id": "_:N7b778cc5959e4d2da25ed50ad431a934"
         },
         {
-          "@id": "_:N60672c2e83714bdc954be1e4f814800c"
+          "@id": "_:Nc4b88db0f04b41e2afe121e49a9795a8"
         }
       ],
       "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -67,12 +71,14 @@
         }
       ],
       "sc:citation": [
-        "pubmed:23975789",
         {
           "@id": "https://doi.org/10.1007/978-1-62703-607-8_8"
+        },
+        {
+          "@id": "https://doi.org/10.1186/1471-2105-11-237"
         }
       ],
-      "sc:description": "The package includes functions to retrieve the sequences around the peak, obtain enriched GO terms, find the nearest gene, exon, miRNA or custom features such as most conserved elements and other TF binding sites supplied by users. New functions have been added for finding the peaks with bi-directional promoters with summary statistics, for summarizing the occurrence of motifs in peaks and for adding other IDs to annotated peaks or enrichedGO.",
+      "sc:description": "The package encompasses a range of functions for identifying the closest gene, exon, miRNA, or custom features—such as highly conserved elements and user-supplied transcription factor binding sites. Additionally, users can retrieve sequences around the peaks and obtain enriched Gene Ontology (GO) or Pathway terms. In version 2.0.5 and beyond, new functionalities have been introduced. These include features for identifying peaks associated with bi-directional promoters along with summary statistics (peaksNearBDP), summarizing motif occurrences in peaks (summarizePatternInPeaks), and associating additional identifiers with annotated peaks or enrichedGO (addGeneIDs). The package integrates with various other packages such as biomaRt, IRanges, Biostrings, BSgenome, GO.db, multtest, and stat to enhance its analytical capabilities.",
       "sc:featureList": [
         {
           "@id": "edam:operation_2436"
@@ -81,7 +87,7 @@
           "@id": "edam:operation_0361"
         }
       ],
-      "sc:license": "GPL-2.0",
+      "sc:license": "GPL-2.0-or-later",
       "sc:name": "ChIPpeakAnno",
       "sc:operatingSystem": [
         "Linux",
@@ -89,13 +95,13 @@
         "Windows"
       ],
       "sc:softwareHelp": {
-        "@id": "http://bioconductor.org/packages/release/bioc/html/ChIPpeakAnno.html"
+        "@id": "https://bioconductor.org/packages/ChIPpeakAnno"
       },
-      "sc:softwareVersion": "3.8.7",
-      "sc:url": "http://bioconductor.org/packages/release/bioc/html/ChIPpeakAnno.html"
+      "sc:softwareVersion": "3.46.1",
+      "sc:url": "https://bioconductor.org/packages/ChIPpeakAnno"
     },
     {
-      "@id": "_:Nf293bf58017543b68653a23164c31c98",
+      "@id": "_:Nbaa2c9ad71f74fe9883fbd706772d202",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2012"
@@ -114,7 +120,7 @@
       "sc:name": "Sequence coordinates"
     },
     {
-      "@id": "_:Nf3df30ec8a6442c8a0c0141b4fe790cd",
+      "@id": "_:N7b778cc5959e4d2da25ed50ad431a934",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1276"
@@ -125,7 +131,7 @@
       "sc:name": "Nucleic acid features"
     },
     {
-      "@id": "_:N60672c2e83714bdc954be1e4f814800c",
+      "@id": "_:Nc4b88db0f04b41e2afe121e49a9795a8",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
@@ -134,10 +140,6 @@
         "@id": "edam:format_2330"
       },
       "sc:name": "Plot"
-    },
-    {
-      "@id": "https://doi.org/10.1007/978-1-62703-607-8_8",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

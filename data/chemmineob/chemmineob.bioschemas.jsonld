@@ -36,22 +36,26 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.18129/B9.bioc.ChemmineOB",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/chemmineob",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N85d461409000426d90b9a33985ef71ce"
+          "@id": "_:N656786de26ff45efa126af1ea6115d99"
         },
         {
-          "@id": "_:Nc351b075fc3a444c8594c63d8d97ecde"
+          "@id": "_:N6788edcf6b9c477f8259ce364efac7ad"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N24e03f43a8a64198b91d90f48e09f681"
+          "@id": "_:N2b6a30fc17b446dfaf7d8a4f370c8d15"
         },
         {
-          "@id": "_:Nda7a5120bffa490b8b5b05ffcccde12d"
+          "@id": "_:Na454e582882d432ab26627c7a374fbff"
         }
       ],
       "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -65,13 +69,13 @@
       "sc:citation": {
         "@id": "https://doi.org/10.18129/B9.bioc.ChemmineOB"
       },
-      "sc:description": "ChemmineOB provides an R interface to a subset of cheminformatics functionalities implemented by the OpelBabel C++ project. OpenBabel is an open source cheminformatics toolbox that includes utilities for structure format interconversions, descriptor calculations, compound similarity searching and more. ChemineOB aims to make a subset of these utilities available from within R. For non-developers, ChemineOB is primarily intended to be used from ChemmineR as an add-on package rather than used directly.",
+      "sc:description": "This package provides an R interface to a subset of cheminformatics functionalities implemented by the OpelBabel C++ project. OpenBabel is an open source cheminformatics toolbox that includes utilities for structure format interconversions, descriptor calculations, compound similarity searching and more. This package aims to make a subset of these utilities available from within R.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_2945"
+          "@id": "edam:operation_3438"
         },
         {
-          "@id": "edam:operation_3438"
+          "@id": "edam:operation_2945"
         },
         {
           "@id": "edam:operation_0335"
@@ -97,7 +101,7 @@
       "sc:url": "https://bioconductor.org/packages/ChemmineOB"
     },
     {
-      "@id": "_:N85d461409000426d90b9a33985ef71ce",
+      "@id": "_:N656786de26ff45efa126af1ea6115d99",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2050"
@@ -108,7 +112,7 @@
       "sc:name": "Molecular property (general)"
     },
     {
-      "@id": "_:Nc351b075fc3a444c8594c63d8d97ecde",
+      "@id": "_:N6788edcf6b9c477f8259ce364efac7ad",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1463"
@@ -119,7 +123,7 @@
       "sc:name": "Small molecule structure"
     },
     {
-      "@id": "_:N24e03f43a8a64198b91d90f48e09f681",
+      "@id": "_:N2b6a30fc17b446dfaf7d8a4f370c8d15",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2050"
@@ -130,7 +134,7 @@
       "sc:name": "Molecular property (general)"
     },
     {
-      "@id": "_:Nda7a5120bffa490b8b5b05ffcccde12d",
+      "@id": "_:Na454e582882d432ab26627c7a374fbff",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1463"
@@ -139,10 +143,6 @@
         "@id": "edam:format_2330"
       },
       "sc:name": "Small molecule structure"
-    },
-    {
-      "@id": "https://doi.org/10.18129/B9.bioc.ChemmineOB",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

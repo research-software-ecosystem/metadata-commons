@@ -36,17 +36,25 @@
   },
   "@graph": [
     {
+      "@id": "http://orcid.org/0000-0002-7496-7578",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/gkt970",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/simap",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Na01a93b4446046b195371efeb3be082b"
+        "@id": "_:N37dedbfb762b4d8a9276041740b0d39f"
       },
       "bsc:output": [
         {
-          "@id": "_:N281fe1fe5da54797a8e53e8eda120344"
+          "@id": "_:N118b00ada3f845f099bc515260e395f9"
         },
         {
-          "@id": "_:N551c1f96d51e46f28b264c97e99f3443"
+          "@id": "_:Ne7595113b86e43a98de232d8399bec1f"
         }
       ],
       "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -82,7 +90,7 @@
       "sc:url": "http://cube.univie.ac.at/resources/simap"
     },
     {
-      "@id": "_:Na01a93b4446046b195371efeb3be082b",
+      "@id": "_:N37dedbfb762b4d8a9276041740b0d39f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1096"
@@ -90,7 +98,7 @@
       "sc:name": "Sequence accession (protein)"
     },
     {
-      "@id": "_:N281fe1fe5da54797a8e53e8eda120344",
+      "@id": "_:N118b00ada3f845f099bc515260e395f9",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1381"
@@ -98,20 +106,12 @@
       "sc:name": "Sequence alignment (pair)"
     },
     {
-      "@id": "_:N551c1f96d51e46f28b264c97e99f3443",
+      "@id": "_:Ne7595113b86e43a98de232d8399bec1f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1384"
       },
       "sc:name": "Sequence alignment (protein)"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gkt970",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "http://orcid.org/0000-0002-7496-7578",
-      "@type": "sc:Person"
     }
   ]
 }

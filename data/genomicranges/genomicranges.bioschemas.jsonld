@@ -39,10 +39,10 @@
       "@id": "https://bio.tools/genomicranges",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N168cc85af9244885b5649ae55e458bab"
+        "@id": "_:N1f1e0fd14bd24f0b8668da87b3484c16"
       },
       "bsc:output": {
-        "@id": "_:Na84e76648c7d4e2db44871a55d061a0d"
+        "@id": "_:N899dcadbeb644c0fa1671e9c34ee065c"
       },
       "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
@@ -58,29 +58,24 @@
         }
       ],
       "sc:author": [
-        "D. Sarkar",
-        "H. Pagès",
-        "M. Carlson",
-        "M. Lawrence",
-        "M. Morgan",
-        "P. Aboyoun",
-        "S. Falcon",
-        "V. Obenchain"
+        "Hervé Pagès",
+        "Michael Lawrence",
+        "Patrick Aboyoun"
       ],
       "sc:citation": {
         "@id": "https://doi.org/10.1371/journal.pcbi.1003118"
       },
       "sc:contributor": [
-        "D. Tenenbaum",
-        "D. Van Twisk",
-        "J. MacDonald",
-        "L. Shepherd",
-        "M. Ramos",
-        "P. Shannon",
-        "S. Arora",
-        "S. Saini"
+        "Dan Tenenbaum",
+        "Daniel van Twisk",
+        "Kayla Morrell",
+        "Lori Shepherd",
+        "Marcel Ramos",
+        "Martin Morgan",
+        "Sonali Arora",
+        "Valerie Obenchain"
       ],
-      "sc:description": "Extract the genomic locations of genes, transcripts, exons, introns, and CDS, for the gene models stored in a TxDb object. A TxDb object is a small database that contains the gene models of a given organism/assembly. Bioconductor provides a small collection of TxDb objects in the form of ready-to-install TxDb packages for the most commonly studied organisms. Additionally, the user can easily make a TxDb object (or package) for the organism/assembly of their choice by using the tools from the txdbmaker package.",
+      "sc:description": "The ability to efficiently represent and manipulate genomic annotations and alignments is playing a central role when it comes to analyzing high-throughput sequencing data (a.k.a. NGS data). The GenomicRanges package defines general purpose containers for storing and manipulating genomic intervals and variables defined along a genome. More specialized containers for representing and manipulating short alignments against a reference genome, or a matrix-like summarization of an experiment, are defined in the GenomicAlignments and SummarizedExperiment packages, respectively. Both packages build on top of the GenomicRanges infrastructure.",
       "sc:featureList": [
         {
           "@id": "edam:operation_2409"
@@ -97,13 +92,13 @@
         "Windows"
       ],
       "sc:softwareHelp": {
-        "@id": "https://bioconductor.org/packages/GenomicFeatures"
+        "@id": "https://bioconductor.org/packages/GenomicRanges"
       },
       "sc:softwareVersion": "1.64.0",
-      "sc:url": "https://bioconductor.org/packages/GenomicFeatures"
+      "sc:url": "https://bioconductor.org/packages/GenomicRanges"
     },
     {
-      "@id": "_:N168cc85af9244885b5649ae55e458bab",
+      "@id": "_:N1f1e0fd14bd24f0b8668da87b3484c16",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1276"
@@ -114,7 +109,7 @@
       "sc:name": "Nucleic acid features"
     },
     {
-      "@id": "_:Na84e76648c7d4e2db44871a55d061a0d",
+      "@id": "_:N899dcadbeb644c0fa1671e9c34ee065c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1017"

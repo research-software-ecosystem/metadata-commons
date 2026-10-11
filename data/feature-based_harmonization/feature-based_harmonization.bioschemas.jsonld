@@ -36,30 +36,117 @@
   },
   "@graph": [
     {
+      "@id": "https://orcid.org/0000-0001-5242-6060",
+      "@type": "sc:Person"
+    },
+    {
       "@id": "https://bio.tools/feature-based_harmonization",
       "@type": "sc:SoftwareApplication",
+      "biotools:primaryContact": {
+        "@id": "https://orcid.org/0000-0001-5242-6060"
+      },
+      "bsc:input": [
+        {
+          "@id": "_:N1cf85fb9008f4948adae63c41c401809"
+        },
+        {
+          "@id": "_:Na09d81d919a04a6c9f3494a35cc53227"
+        }
+      ],
+      "bsc:output": [
+        {
+          "@id": "_:N2e04092a3d4143a0aec43b2c6e0de669"
+        },
+        {
+          "@id": "_:Nd319c5bd31c345a5982ecff6444b7931"
+        }
+      ],
       "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
-      "sc:additionalType": "Workflow",
+      "sc:additionalType": "Command-line tool",
+      "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_0219"
+        },
+        {
+          "@id": "edam:topic_3071"
+        },
+        {
+          "@id": "edam:topic_3384"
+        }
+      ],
       "sc:author": {
         "@id": "https://orcid.org/0000-0001-5242-6060"
       },
       "sc:description": "The tool is designed to perform harmonization at the feature-level. Feature-based harmonization method aims to reduce the variability in the radiomics features due to different scanners, acquisition protocols and conditions by using empirical Bayesian methods to estimate differences in radiomics values and then expressing them in a common space (location/scale adjustment). The tool offers two methods: (1) ComBat method, which shifts the radiomics features to the overall mean and pooled variance of all centers, and (2) M-ComBat method, which shifts the radiomics features to the mean and variance of the chosen reference center with the most samples.",
-      "sc:license": "EUPL-1.1",
-      "sc:name": "Feature-based harmonization",
+      "sc:featureList": {
+        "@id": "edam:operation_3435"
+      },
+      "sc:isAccessibleForFree": true,
+      "sc:license": "EUPL-1.2",
+      "sc:name": "Radiomics Feature-based Harmonization",
       "sc:operatingSystem": [
         "Linux",
         "Mac",
         "Windows"
       ],
-      "sc:softwareHelp": {
-        "@id": "https://cbml-gitlab.ics.forth.gr/adovrou/featuresharmonization/-/tree/eucaim?ref_type=heads"
-      },
-      "sc:softwareVersion": "1.4",
-      "sc:url": "https://cbml-gitlab.ics.forth.gr/adovrou/featuresharmonization/-/tree/eucaim?ref_type=heads"
+      "sc:softwareHelp": [
+        {
+          "@id": "https://www.youtube.com/watch?v=ghi3fW3p62w"
+        },
+        {
+          "@id": "https://drive.eucaim.cancerimage.eu/s/7EgLZerXZF3EesE"
+        }
+      ],
+      "sc:softwareVersion": [
+        "1.4",
+        "1.5",
+        "1.5-fem"
+      ],
+      "sc:url": "https://harbor.eucaim.cancerimage.eu/harbor/projects/4/repositories/feat_harmonization/info-tab"
     },
     {
-      "@id": "https://orcid.org/0000-0001-5242-6060",
-      "@type": "sc:Person"
+      "@id": "_:N1cf85fb9008f4948adae63c41c401809",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2526"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3752"
+      },
+      "sc:name": "Text data"
+    },
+    {
+      "@id": "_:Na09d81d919a04a6c9f3494a35cc53227",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2526"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3752"
+      },
+      "sc:name": "Text data"
+    },
+    {
+      "@id": "_:N2e04092a3d4143a0aec43b2c6e0de669",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2526"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3752"
+      },
+      "sc:name": "Text data"
+    },
+    {
+      "@id": "_:Nd319c5bd31c345a5982ecff6444b7931",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2526"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3653"
+      },
+      "sc:name": "Text data"
     }
   ]
 }

@@ -36,13 +36,17 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/btu270",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/blockclust",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nd29e620f224841c9aba536e31719590c"
+        "@id": "_:N3559882d66d74b4fa3d80eb3a26be612"
       },
       "bsc:output": {
-        "@id": "_:Nf946bd9c0eb9438497a49a890fadfce2"
+        "@id": "_:N5bbdda2ca9384f50a6b00bd282b52d03"
       },
       "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Workflow",
@@ -77,7 +81,7 @@
       "sc:url": "https://github.com/bgruening/galaxytools/tree/master/workflows/blockclust"
     },
     {
-      "@id": "_:Nd29e620f224841c9aba536e31719590c",
+      "@id": "_:N3559882d66d74b4fa3d80eb3a26be612",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2603"
@@ -85,16 +89,12 @@
       "sc:name": "Expression data"
     },
     {
-      "@id": "_:Nf946bd9c0eb9438497a49a890fadfce2",
+      "@id": "_:N5bbdda2ca9384f50a6b00bd282b52d03",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1246"
       },
       "sc:name": "Sequence cluster (nucleic acid)"
-    },
-    {
-      "@id": "https://doi.org/10.1093/bioinformatics/btu270",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

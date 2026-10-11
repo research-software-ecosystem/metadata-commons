@@ -36,17 +36,21 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/nar/gkaf018",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/edger",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nb5ff9028e2864f57aa63d58c62720336"
+        "@id": "_:N2281ca7c4eb344568eebedc1593e9202"
       },
       "bsc:output": [
         {
-          "@id": "_:Nb2ff2f46f3f6423f9a70b7656292ccb9"
+          "@id": "_:Nf9a6874822be44c3925029a1029d8559"
         },
         {
-          "@id": "_:Nacd7c62200db4b5abef13c4c45a83970"
+          "@id": "_:Ncbb49952c1534bf6927fcf65c0781326"
         }
       ],
       "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -72,7 +76,7 @@
       "sc:featureList": {
         "@id": "edam:operation_3223"
       },
-      "sc:license": "GPL-2.0-only",
+      "sc:license": "GPL-2.0",
       "sc:name": "edgeR",
       "sc:operatingSystem": [
         "Linux",
@@ -82,11 +86,11 @@
       "sc:softwareHelp": {
         "@id": "https://bioconductor.org/packages/edgeR"
       },
-      "sc:softwareVersion": "4.10.3",
+      "sc:softwareVersion": "4.10.5",
       "sc:url": "https://bioconductor.org/packages/edgeR"
     },
     {
-      "@id": "_:Nb5ff9028e2864f57aa63d58c62720336",
+      "@id": "_:N2281ca7c4eb344568eebedc1593e9202",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2044"
@@ -97,7 +101,7 @@
       "sc:name": "Sequence"
     },
     {
-      "@id": "_:Nb2ff2f46f3f6423f9a70b7656292ccb9",
+      "@id": "_:Nf9a6874822be44c3925029a1029d8559",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1669"
@@ -113,7 +117,7 @@
       "sc:name": "P-value"
     },
     {
-      "@id": "_:Nacd7c62200db4b5abef13c4c45a83970",
+      "@id": "_:Ncbb49952c1534bf6927fcf65c0781326",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
@@ -127,10 +131,6 @@
         }
       ],
       "sc:name": "Plot"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gkaf018",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

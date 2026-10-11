@@ -36,26 +36,22 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.18129/B9.bioc.myvariant",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/myvariant",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N797ddaa8fc8a486180fc4ccf39ca040f"
+          "@id": "_:Nfdbbd0feb7954a5bbcedac5211a9e69f"
         },
         {
-          "@id": "_:Nc6d2976ac22c464ebb047c2c6a7a0663"
+          "@id": "_:Nc07af73d83a24bc1ad054ca8edc70388"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N72cc0dfa4a2c4435ab1e9762c77f3b01"
+          "@id": "_:Nba541b794aa445d9ab828ed9af909004"
         },
         {
-          "@id": "_:Nd971cbf50c52446e894fc982e7956db1"
+          "@id": "_:Ne3359f304134424496d92d8a2c6525f9"
         }
       ],
       "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -74,13 +70,13 @@
       "sc:citation": {
         "@id": "https://doi.org/10.18129/B9.bioc.myvariant"
       },
-      "sc:description": "MyVariant.info is a comprehensive aggregation of variant annotation resources. myvariant is a wrapper for querying MyVariant.info services",
+      "sc:description": "A wrapper for querying MyVariant.info services.",
       "sc:featureList": [
         {
-          "@id": "edam:operation_2422"
+          "@id": "edam:operation_0335"
         },
         {
-          "@id": "edam:operation_0335"
+          "@id": "edam:operation_2422"
         },
         {
           "@id": "edam:operation_3504"
@@ -100,7 +96,7 @@
       "sc:url": "https://bioconductor.org/packages/myvariant"
     },
     {
-      "@id": "_:N797ddaa8fc8a486180fc4ccf39ca040f",
+      "@id": "_:Nfdbbd0feb7954a5bbcedac5211a9e69f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0954"
@@ -111,7 +107,7 @@
       "sc:name": "Database cross-mapping"
     },
     {
-      "@id": "_:Nc6d2976ac22c464ebb047c2c6a7a0663",
+      "@id": "_:Nc07af73d83a24bc1ad054ca8edc70388",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2082"
@@ -122,7 +118,7 @@
       "sc:name": "Matrix"
     },
     {
-      "@id": "_:N72cc0dfa4a2c4435ab1e9762c77f3b01",
+      "@id": "_:Nba541b794aa445d9ab828ed9af909004",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0954"
@@ -133,7 +129,7 @@
       "sc:name": "Database cross-mapping"
     },
     {
-      "@id": "_:Nd971cbf50c52446e894fc982e7956db1",
+      "@id": "_:Ne3359f304134424496d92d8a2c6525f9",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2872"
@@ -142,6 +138,10 @@
         "@id": "edam:format_3033"
       },
       "sc:name": "ID list"
+    },
+    {
+      "@id": "https://doi.org/10.18129/B9.bioc.myvariant",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

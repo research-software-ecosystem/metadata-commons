@@ -1,0 +1,309 @@
+{
+  "@context": {
+    "biotools": "https://bio.tools/ontology/",
+    "brick": "https://brickschema.org/schema/Brick#",
+    "bsc": "http://bioschemas.org/",
+    "bsct": "http://bioschemas.org/types/",
+    "csvw": "http://www.w3.org/ns/csvw#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "dcam": "http://purl.org/dc/dcam/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dcmitype": "http://purl.org/dc/dcmitype/",
+    "dct": "http://purl.org/dc/terms/",
+    "doap": "http://usefulinc.com/ns/doap#",
+    "edam": "http://edamontology.org/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "geo": "http://www.opengis.net/ont/geosparql#",
+    "odrl": "http://www.w3.org/ns/odrl/2/",
+    "org": "http://www.w3.org/ns/org#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "prof": "http://www.w3.org/ns/dx/prof/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "qb": "http://purl.org/linked-data/cube#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "sc": "http://schema.org/",
+    "schema": "https://schema.org/",
+    "sh": "http://www.w3.org/ns/shacl#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "sosa": "http://www.w3.org/ns/sosa/",
+    "ssn": "http://www.w3.org/ns/ssn/",
+    "time": "http://www.w3.org/2006/time#",
+    "vann": "http://purl.org/vocab/vann/",
+    "void": "http://rdfs.org/ns/void#",
+    "wgs": "https://www.w3.org/2003/01/geo/wgs84_pos#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "https://bio.tools/proteiniq",
+      "@type": "sc:SoftwareApplication",
+      "biotools:primaryContact": {
+        "@id": "https://orcid.org/0009-0008-4134-4631"
+      },
+      "bsc:input": [
+        {
+          "@id": "_:N12fe17925b894518bb2912f7384fe9f6"
+        },
+        {
+          "@id": "_:Ndc4652ccd8d849968f10283cd32b2ce4"
+        },
+        {
+          "@id": "_:Nd9491e811197404aa8c34fc9995a0414"
+        },
+        {
+          "@id": "_:N5ea9002caa8e4d60a6a02300927b713c"
+        },
+        {
+          "@id": "_:Ne7e2db19278a4e0aa225a436e0b39a9d"
+        },
+        {
+          "@id": "_:N5e01a455052b4062b7f2458c8b130161"
+        }
+      ],
+      "bsc:output": [
+        {
+          "@id": "_:N28b137c5b34a43e5bc8774ae91fe43ef"
+        },
+        {
+          "@id": "_:Nbe9afc0274274e07a676229815fe31b1"
+        },
+        {
+          "@id": "_:N805b4cc34785432faf8183f777ad923f"
+        },
+        {
+          "@id": "_:Ndee752068e6f400db324870a5844f901"
+        },
+        {
+          "@id": "_:Nabb23c34c210499d962dc1ea6c6e8f99"
+        }
+      ],
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "sc:additionalType": [
+        "Bioinformatics portal",
+        "Web API",
+        "Web application",
+        "Workbench"
+      ],
+      "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_2258"
+        },
+        {
+          "@id": "edam:topic_2275"
+        },
+        {
+          "@id": "edam:topic_0077"
+        },
+        {
+          "@id": "edam:topic_0078"
+        },
+        {
+          "@id": "edam:topic_0080"
+        },
+        {
+          "@id": "edam:topic_0081"
+        }
+      ],
+      "sc:author": {
+        "@id": "https://orcid.org/0009-0008-4134-4631"
+      },
+      "sc:citation": {
+        "@id": "https://doi.org/10.3390/ijms26189189"
+      },
+      "sc:description": "Browser-based bioinformatics platform for running protein structure prediction, molecular docking, protein design, molecular dynamics, sequence analysis, and related life-science workflows without local installation.",
+      "sc:featureList": [
+        {
+          "@id": "edam:operation_0474"
+        },
+        {
+          "@id": "edam:operation_2479"
+        },
+        {
+          "@id": "edam:operation_4008"
+        },
+        {
+          "@id": "edam:operation_0478"
+        }
+      ],
+      "sc:isAccessibleForFree": true,
+      "sc:license": "Proprietary",
+      "sc:name": "ProteinIQ",
+      "sc:provider": [
+        {
+          "@id": "https://orcid.org/0009-0008-4134-4631"
+        },
+        "ProteinIQ"
+      ],
+      "sc:softwareHelp": [
+        {
+          "@id": "https://proteiniq.io/docs/api"
+        },
+        {
+          "@id": "https://proteiniq.io/docs/api/python-sdk"
+        },
+        {
+          "@id": "https://proteiniq.io/docs"
+        },
+        {
+          "@id": "https://proteiniq.io/docs/start-guide"
+        },
+        {
+          "@id": "https://proteiniq.io/legal/terms"
+        }
+      ],
+      "sc:url": "https://proteiniq.io/"
+    },
+    {
+      "@id": "_:N12fe17925b894518bb2912f7384fe9f6",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2976"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "Protein sequence"
+    },
+    {
+      "@id": "_:Ndc4652ccd8d849968f10283cd32b2ce4",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2976"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "Protein sequence"
+    },
+    {
+      "@id": "_:Nd9491e811197404aa8c34fc9995a0414",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2976"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "Protein sequence"
+    },
+    {
+      "@id": "_:N5ea9002caa8e4d60a6a02300927b713c",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1460"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_1476"
+        },
+        {
+          "@id": "edam:format_1477"
+        }
+      ],
+      "sc:name": "Protein structure"
+    },
+    {
+      "@id": "_:Ne7e2db19278a4e0aa225a436e0b39a9d",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1460"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_1476"
+        },
+        {
+          "@id": "edam:format_1477"
+        }
+      ],
+      "sc:name": "Protein structure"
+    },
+    {
+      "@id": "_:N5e01a455052b4062b7f2458c8b130161",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2301"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1196"
+      },
+      "sc:name": "SMILES string"
+    },
+    {
+      "@id": "_:N28b137c5b34a43e5bc8774ae91fe43ef",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1460"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_1476"
+        },
+        {
+          "@id": "edam:format_1477"
+        }
+      ],
+      "sc:name": "Protein structure"
+    },
+    {
+      "@id": "_:Nbe9afc0274274e07a676229815fe31b1",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2048"
+      },
+      "sc:name": "Report"
+    },
+    {
+      "@id": "_:N805b4cc34785432faf8183f777ad923f",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_2976"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_1929"
+      },
+      "sc:name": "Protein sequence"
+    },
+    {
+      "@id": "_:Ndee752068e6f400db324870a5844f901",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1460"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_1476"
+        },
+        {
+          "@id": "edam:format_1477"
+        }
+      ],
+      "sc:name": "Protein structure"
+    },
+    {
+      "@id": "_:Nabb23c34c210499d962dc1ea6c6e8f99",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_1461"
+      },
+      "sc:encodingFormat": [
+        {
+          "@id": "edam:format_1476"
+        },
+        {
+          "@id": "edam:format_1477"
+        }
+      ],
+      "sc:name": "Protein-ligand complex"
+    },
+    {
+      "@id": "https://orcid.org/0009-0008-4134-4631",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.3390/ijms26189189",
+      "@type": "sc:CreativeWork"
+    }
+  ]
+}

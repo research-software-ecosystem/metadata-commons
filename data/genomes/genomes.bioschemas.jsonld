@@ -36,17 +36,21 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.18129/B9.bioc.genomes",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/genomes",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Ne594a53620e849e191a0a7666d28131f"
+        "@id": "_:N6f37abac2c954066b00a5b03179847df"
       },
       "bsc:output": [
         {
-          "@id": "_:N9ffcc480eaf0496e9db68f1945171c32"
+          "@id": "_:Na6c18d8573614c9a91a06c85dfd02eca"
         },
         {
-          "@id": "_:N6dc5347c2ffc4b749e75d9638b8caf16"
+          "@id": "_:N869ee3ed173647eda773eefb3921f27e"
         }
       ],
       "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -64,7 +68,7 @@
       "sc:featureList": {
         "@id": "edam:operation_2422"
       },
-      "sc:license": "GPL-3.0-only",
+      "sc:license": "GPL-3.0",
       "sc:name": "genomes",
       "sc:operatingSystem": [
         "Linux",
@@ -78,7 +82,7 @@
       "sc:url": "https://bioconductor.org/packages/genomes"
     },
     {
-      "@id": "_:Ne594a53620e849e191a0a7666d28131f",
+      "@id": "_:N6f37abac2c954066b00a5b03179847df",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1050"
@@ -89,7 +93,7 @@
       "sc:name": "File name"
     },
     {
-      "@id": "_:N9ffcc480eaf0496e9db68f1945171c32",
+      "@id": "_:Na6c18d8573614c9a91a06c85dfd02eca",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2711"
@@ -100,7 +104,7 @@
       "sc:name": "Genome report"
     },
     {
-      "@id": "_:N6dc5347c2ffc4b749e75d9638b8caf16",
+      "@id": "_:N869ee3ed173647eda773eefb3921f27e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3181"
@@ -109,10 +113,6 @@
         "@id": "edam:format_2330"
       },
       "sc:name": "Sequence assembly report"
-    },
-    {
-      "@id": "https://doi.org/10.18129/B9.bioc.genomes",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

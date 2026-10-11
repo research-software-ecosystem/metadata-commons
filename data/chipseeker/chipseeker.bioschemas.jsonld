@@ -36,21 +36,17 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1002/cpz1.585",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/chipseeker",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N2b5a4638c12d48c1930f93302804f709"
+        "@id": "_:Nb4b5db54096a4237933798c04d1fddf1"
       },
       "bsc:output": [
         {
-          "@id": "_:N73bb7cb4e02b4887a2fd7c17f3c9b4da"
+          "@id": "_:Nb7170b1dcfe04b27aab782d307b59fb5"
         },
         {
-          "@id": "_:N515e354c6a9142d7a035e2bdec7271f0"
+          "@id": "_:Nb49165fb8ba944feaec7f144edd5b4a4"
         }
       ],
       "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -80,7 +76,6 @@
       ],
       "sc:contributor": [
         "Chun-Hui Gao",
-        "Guangchuang Yu",
         "Hervé Pagès",
         "Michael Kluge",
         "Ming Li",
@@ -112,13 +107,13 @@
         "Windows"
       ],
       "sc:softwareHelp": {
-        "@id": "https://bioconductor.org/packages/epiSeeker"
+        "@id": "https://bioconductor.org/packages/ChIPseeker"
       },
-      "sc:softwareVersion": "1.0.0",
-      "sc:url": "https://bioconductor.org/packages/epiSeeker"
+      "sc:softwareVersion": "1.48.0",
+      "sc:url": "https://bioconductor.org/packages/ChIPseeker"
     },
     {
-      "@id": "_:N2b5a4638c12d48c1930f93302804f709",
+      "@id": "_:Nb4b5db54096a4237933798c04d1fddf1",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2012"
@@ -134,7 +129,7 @@
       "sc:name": "Sequence coordinates"
     },
     {
-      "@id": "_:N73bb7cb4e02b4887a2fd7c17f3c9b4da",
+      "@id": "_:Nb7170b1dcfe04b27aab782d307b59fb5",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1276"
@@ -145,7 +140,7 @@
       "sc:name": "Nucleic acid features"
     },
     {
-      "@id": "_:N515e354c6a9142d7a035e2bdec7271f0",
+      "@id": "_:Nb49165fb8ba944feaec7f144edd5b4a4",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
@@ -154,6 +149,10 @@
         "@id": "edam:format_2330"
       },
       "sc:name": "Plot"
+    },
+    {
+      "@id": "https://doi.org/10.1002/cpz1.585",
+      "@type": "sc:CreativeWork"
     },
     {
       "@id": "https://doi.org/10.1093/bioinformatics/btv145",

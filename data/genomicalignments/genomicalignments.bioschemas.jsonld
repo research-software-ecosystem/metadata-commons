@@ -40,18 +40,18 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N349fa6836be64f7a875e72b5841a49b5"
+          "@id": "_:Ndfaf6e110a804494987f60fbc94ba794"
         },
         {
-          "@id": "_:Nbab17c103ba94654b95a98a41ce24f9d"
+          "@id": "_:Nd017b38e90b840319ab3e460e6a0267e"
         }
       ],
       "bsc:output": [
         {
-          "@id": "_:N65914718e57b4e298713285ce771f0c9"
+          "@id": "_:N798511ae4155412d91aa95267c83fd25"
         },
         {
-          "@id": "_:N79980ab4e69646989d389e668b1e9d67"
+          "@id": "_:Na12f347a3b9b4155add9a5ca8089470a"
         }
       ],
       "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -63,14 +63,29 @@
         "@id": "edam:topic_0080"
       },
       "sc:author": [
-        "Hervé Pagès",
-        "Michael Lawrence",
-        "Patrick Aboyoun"
+        "D. Sarkar",
+        "H. Pagès",
+        "M. Carlson",
+        "M. Lawrence",
+        "M. Morgan",
+        "P. Aboyoun",
+        "S. Falcon",
+        "V. Obenchain"
       ],
       "sc:citation": {
         "@id": "https://doi.org/10.1371/journal.pcbi.1003118"
       },
-      "sc:description": "Provides efficient low-level and highly reusable S4 classes for storing, manipulating and aggregating over annotated ranges of integers. Implements an algebra of range operations, including efficient algorithms for finding overlaps and nearest neighbors. Defines efficient list-like classes for storing, transforming and aggregating large grouped data, i.e., collections of atomic vectors and DataFrames.",
+      "sc:contributor": [
+        "D. Tenenbaum",
+        "D. Van Twisk",
+        "J. MacDonald",
+        "L. Shepherd",
+        "M. Ramos",
+        "P. Shannon",
+        "S. Arora",
+        "S. Saini"
+      ],
+      "sc:description": "Provides efficient containers for storing and manipulating short genomic alignments (typically obtained by aligning short reads to a reference genome). This includes read counting, computing the coverage, junction detection, and working with the nucleotide content of the alignments.",
       "sc:featureList": [
         {
           "@id": "edam:operation_2478"
@@ -90,13 +105,13 @@
         "Windows"
       ],
       "sc:softwareHelp": {
-        "@id": "https://bioconductor.org/packages/IRanges"
+        "@id": "https://bioconductor.org/packages/GenomicFeatures"
       },
-      "sc:softwareVersion": "2.46.0",
-      "sc:url": "https://bioconductor.org/packages/IRanges"
+      "sc:softwareVersion": "1.64.0",
+      "sc:url": "https://bioconductor.org/packages/GenomicFeatures"
     },
     {
-      "@id": "_:N349fa6836be64f7a875e72b5841a49b5",
+      "@id": "_:Ndfaf6e110a804494987f60fbc94ba794",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1270"
@@ -115,7 +130,7 @@
       "sc:name": "Feature table"
     },
     {
-      "@id": "_:Nbab17c103ba94654b95a98a41ce24f9d",
+      "@id": "_:Nd017b38e90b840319ab3e460e6a0267e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1383"
@@ -131,10 +146,10 @@
           "@id": "edam:format_2573"
         }
       ],
-      "sc:name": "Sequence alignment (nucleic acid)"
+      "sc:name": "Nucleic acid sequence alignment"
     },
     {
-      "@id": "_:N65914718e57b4e298713285ce771f0c9",
+      "@id": "_:N798511ae4155412d91aa95267c83fd25",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1383"
@@ -147,10 +162,10 @@
           "@id": "edam:format_2330"
         }
       ],
-      "sc:name": "Sequence alignment (nucleic acid)"
+      "sc:name": "Nucleic acid sequence alignment"
     },
     {
-      "@id": "_:N79980ab4e69646989d389e668b1e9d67",
+      "@id": "_:Na12f347a3b9b4155add9a5ca8089470a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0867"

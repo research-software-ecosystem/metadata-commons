@@ -36,13 +36,21 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.12688/f1000research.6379.2",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1093/nar/gkw852",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/derfinder",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N76d75bd9111f43c18bdad53e98633c2f"
+        "@id": "_:N9b0c487c276146048b790fbb86aa4241"
       },
       "bsc:output": {
-        "@id": "_:N2868a5feb184467dae54c7d162c90b47"
+        "@id": "_:Nae47a7ab96054e20af935f10209cabb0"
       },
       "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
@@ -59,16 +67,15 @@
       ],
       "sc:citation": [
         {
-          "@id": "https://doi.org/10.1093/biostatistics/kxt053"
-        },
-        {
           "@id": "https://doi.org/10.1093/nar/gkw852"
         },
         {
-          "@id": "https://doi.org/10.18129/B9.bioc.derfinder"
+          "@id": "https://doi.org/10.12688/f1000research.6379.2"
+        },
+        {
+          "@id": "https://doi.org/10.18129/B9.bioc.regionReport"
         }
       ],
-      "sc:contributor": "Alyssa C. Frazee",
       "sc:description": "This package provides functions for annotation-agnostic differential expression analysis of RNA-seq data. Two implementations of the DER Finder approach are included in this package: (1) single base-level F-statistics and (2) DER identification at the expressed regions-level. The DER Finder approach can also be used to identify differentially bounded ChIP-seq peaks.",
       "sc:featureList": [
         {
@@ -86,13 +93,13 @@
         "Windows"
       ],
       "sc:softwareHelp": {
-        "@id": "https://bioconductor.org/packages/derfinder"
+        "@id": "https://bioconductor.org/packages/regionReport"
       },
       "sc:softwareVersion": "1.46.0",
-      "sc:url": "https://bioconductor.org/packages/derfinder"
+      "sc:url": "https://bioconductor.org/packages/regionReport"
     },
     {
-      "@id": "_:N76d75bd9111f43c18bdad53e98633c2f",
+      "@id": "_:N9b0c487c276146048b790fbb86aa4241",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3496"
@@ -108,7 +115,7 @@
       "sc:name": "RNA sequence (raw)"
     },
     {
-      "@id": "_:N2868a5feb184467dae54c7d162c90b47",
+      "@id": "_:Nae47a7ab96054e20af935f10209cabb0",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2048"
@@ -119,15 +126,7 @@
       "sc:name": "Report"
     },
     {
-      "@id": "https://doi.org/10.18129/B9.bioc.derfinder",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1093/biostatistics/kxt053",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "https://doi.org/10.1093/nar/gkw852",
+      "@id": "https://doi.org/10.18129/B9.bioc.regionReport",
       "@type": "sc:CreativeWork"
     }
   ]

@@ -36,17 +36,13 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1093/bioinformatics/btw623",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/egsea",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N770d921159604d7c9db694252e5ea2e7"
+        "@id": "_:N69682b14daa84356ab36aa6603043ca4"
       },
       "bsc:output": {
-        "@id": "_:Nc543fd4276084908b2ea663913243150"
+        "@id": "_:N2b6c5c1d9797498cb8efd79d9bab41a4"
       },
       "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
@@ -69,7 +65,7 @@
       "sc:featureList": {
         "@id": "edam:operation_3224"
       },
-      "sc:license": "GPL-3.0-only",
+      "sc:license": "GPL-3.0",
       "sc:name": "EGSEA",
       "sc:operatingSystem": [
         "Linux",
@@ -83,7 +79,7 @@
       "sc:url": "https://bioconductor.org/packages/EGSEA"
     },
     {
-      "@id": "_:N770d921159604d7c9db694252e5ea2e7",
+      "@id": "_:N69682b14daa84356ab36aa6603043ca4",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3112"
@@ -94,7 +90,7 @@
       "sc:name": "Gene expression matrix"
     },
     {
-      "@id": "_:Nc543fd4276084908b2ea663913243150",
+      "@id": "_:N2b6c5c1d9797498cb8efd79d9bab41a4",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2093"
@@ -103,6 +99,10 @@
         "@id": "edam:format_2331"
       },
       "sc:name": "Data reference"
+    },
+    {
+      "@id": "https://doi.org/10.1093/bioinformatics/btw623",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

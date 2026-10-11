@@ -1,0 +1,206 @@
+{
+  "@context": {
+    "biotools": "https://bio.tools/ontology/",
+    "brick": "https://brickschema.org/schema/Brick#",
+    "bsc": "http://bioschemas.org/",
+    "bsct": "http://bioschemas.org/types/",
+    "csvw": "http://www.w3.org/ns/csvw#",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "dcam": "http://purl.org/dc/dcam/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dcmitype": "http://purl.org/dc/dcmitype/",
+    "dct": "http://purl.org/dc/terms/",
+    "doap": "http://usefulinc.com/ns/doap#",
+    "edam": "http://edamontology.org/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "geo": "http://www.opengis.net/ont/geosparql#",
+    "odrl": "http://www.w3.org/ns/odrl/2/",
+    "org": "http://www.w3.org/ns/org#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "prof": "http://www.w3.org/ns/dx/prof/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "qb": "http://purl.org/linked-data/cube#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "sc": "http://schema.org/",
+    "schema": "https://schema.org/",
+    "sh": "http://www.w3.org/ns/shacl#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "sosa": "http://www.w3.org/ns/sosa/",
+    "ssn": "http://www.w3.org/ns/ssn/",
+    "time": "http://www.w3.org/2006/time#",
+    "vann": "http://purl.org/vocab/vann/",
+    "void": "http://rdfs.org/ns/void#",
+    "wgs": "https://www.w3.org/2003/01/geo/wgs84_pos#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "https://orcid.org/0009-0001-6617-8296",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://bio.tools/dcmage",
+      "@type": "sc:SoftwareApplication",
+      "bsc:input": [
+        {
+          "@id": "_:Naac584ca85a449e9b3ff0afa799b58b5"
+        },
+        {
+          "@id": "_:N6e0ba011020346cab958654cf67515d9"
+        },
+        {
+          "@id": "_:N29123edd23624a5da58b58ada06a92b3"
+        },
+        {
+          "@id": "_:Naaa21d83f39949b0919ae029b668a550"
+        }
+      ],
+      "bsc:output": [
+        {
+          "@id": "_:Nb425e1cf7cf148838de0f34a16f1c486"
+        },
+        {
+          "@id": "_:N6356b14ac5e64fb193c9b691a7ed4165"
+        },
+        {
+          "@id": "_:Ndfaed6b12ae142a6bc05759271a95175"
+        },
+        {
+          "@id": "_:N818b9f300e724cdab8ceb63625e6da4a"
+        }
+      ],
+      "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
+      "sc:additionalType": [
+        "Desktop application",
+        "Web application",
+        "Workbench"
+      ],
+      "sc:applicationSubCategory": [
+        {
+          "@id": "edam:topic_4044"
+        },
+        {
+          "@id": "edam:topic_3444"
+        },
+        {
+          "@id": "edam:topic_3384"
+        },
+        {
+          "@id": "edam:topic_3452"
+        }
+      ],
+      "sc:author": {
+        "@id": "https://orcid.org/0009-0001-6617-8296"
+      },
+      "sc:description": "DICOM workbench - tag editor, anonymizer, MPR viewer",
+      "sc:featureList": [
+        {
+          "@id": "edam:operation_3096"
+        },
+        {
+          "@id": "edam:operation_0335"
+        },
+        {
+          "@id": "edam:operation_3283"
+        },
+        {
+          "@id": "edam:operation_0337"
+        }
+      ],
+      "sc:isAccessibleForFree": true,
+      "sc:license": "Proprietary",
+      "sc:name": "dcmage",
+      "sc:operatingSystem": "Mac",
+      "sc:softwareHelp": {
+        "@id": "https://docs.dcmage.com/"
+      },
+      "sc:url": "https://dcmage.com"
+    },
+    {
+      "@id": "_:Naac584ca85a449e9b3ff0afa799b58b5",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3546"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3548"
+      },
+      "sc:name": "Image metadata"
+    },
+    {
+      "@id": "_:N6e0ba011020346cab958654cf67515d9",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3424"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3548"
+      },
+      "sc:name": "Raw image"
+    },
+    {
+      "@id": "_:N29123edd23624a5da58b58ada06a92b3",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3424"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3548"
+      },
+      "sc:name": "Raw image"
+    },
+    {
+      "@id": "_:Naaa21d83f39949b0919ae029b668a550",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3424"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3548"
+      },
+      "sc:name": "Raw image"
+    },
+    {
+      "@id": "_:Nb425e1cf7cf148838de0f34a16f1c486",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3546"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3548"
+      },
+      "sc:name": "Image metadata"
+    },
+    {
+      "@id": "_:N6356b14ac5e64fb193c9b691a7ed4165",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3424"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3549"
+      },
+      "sc:name": "Raw image"
+    },
+    {
+      "@id": "_:Ndfaed6b12ae142a6bc05759271a95175",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3424"
+      },
+      "sc:encodingFormat": {
+        "@id": "edam:format_3548"
+      },
+      "sc:name": "Raw image"
+    },
+    {
+      "@id": "_:N818b9f300e724cdab8ceb63625e6da4a",
+      "@type": "bsct:FormalParameter",
+      "sc:additionalType": {
+        "@id": "edam:data_3424"
+      },
+      "sc:name": "Raw image"
+    }
+  ]
+}

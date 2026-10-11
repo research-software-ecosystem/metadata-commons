@@ -36,10 +36,6 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.1101/2025.02.07.637023",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/bioconductor-coralysis",
       "@type": "sc:SoftwareApplication",
       "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -58,7 +54,7 @@
       },
       "sc:contributor": "Johannes Smolander",
       "sc:description": "Coralysis is an R package featuring a multi-level integration algorithm for sensitive integration, reference-mapping, and cell-state identification in single-cell data. The multi-level integration algorithm is inspired by the process of assembling a puzzle - where one begins by grouping pieces based on low-to high-level features, such as color and shading, before looking into shape and patterns. This approach progressively blends the batch effects and separates cell types across multiple rounds of divisive clustering.",
-      "sc:license": "GPL-3.0-only",
+      "sc:license": "GPL-3.0",
       "sc:name": "Coralysis",
       "sc:operatingSystem": [
         "Linux",
@@ -70,6 +66,10 @@
       },
       "sc:softwareVersion": "1.2.0",
       "sc:url": "https://bioconductor.org/packages/Coralysis"
+    },
+    {
+      "@id": "https://doi.org/10.1101/2025.02.07.637023",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

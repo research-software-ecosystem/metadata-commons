@@ -36,21 +36,17 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.18129/B9.bioc.sva",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/sva",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N133a0ac2940b414aa012c0fabd8c0f3b"
+        "@id": "_:N1eefaab065e94eba9e31302ef1ca73f4"
       },
       "bsc:output": [
         {
-          "@id": "_:N0e0cf922f892429ab64f6901108f4acf"
+          "@id": "_:N2f92d92f62ab4e0384f66abbc3e8f743"
         },
         {
-          "@id": "_:Nc5faa346ff8541058accdbf207ca47c1"
+          "@id": "_:N762daa97b64c48cdb106b10852560f71"
         }
       ],
       "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -64,7 +60,7 @@
       "sc:citation": {
         "@id": "https://doi.org/10.18129/B9.bioc.sva"
       },
-      "sc:description": "The sva package contains functions for removing batch effects and other unwanted variation in high-throughput experiment. Specifically, the sva package contains functions for the identifying and building surrogate variables for high-dimensional data sets. Surrogate variables are covariates constructed directly from high-dimensional data (like gene expression/RNA sequencing/methylation/brain imaging data) that can be used in subsequent analyses to adjust for unknown, unmodeled, or latent sources of noise. The sva package can be used to remove artifacts in three ways: (1) identifying and estimating surrogate variables for unknown sources of variation in high-throughput experiments (Leek and Storey 2007 PLoS Genetics,2008 PNAS), (2) directly removing known batch effects using ComBat (Johnson et al. 2007 Biostatistics) and (3) removing batch effects with known control probes (Leek 2014 biorXiv). Removing batch effects and using surrogate variables in differential expression analysis have been shown to reduce dependence, stabilize error rate estimates, and improve reproducibility, see (Leek and Storey 2007 PLoS Genetics, 2008 PNAS or Leek et al. 2011 Nat. Reviews Genetics).",
+      "sc:description": "This package contains functions for removing batch effects and other unwanted variation in high-throughput experiments. It contains functions for identifying and building surrogate variables for high-dimensional data sets, which are covariates constructed directly from high-dimensional data (like gene expression/RNA sequencing/methylation/brain imaging data) that can be used in subsequent analyses to adjust for unknown, unmodeled, or latent sources of noise.",
       "sc:featureList": {
         "@id": "edam:operation_3695"
       },
@@ -82,7 +78,7 @@
       "sc:url": "https://bioconductor.org/packages/sva"
     },
     {
-      "@id": "_:N133a0ac2940b414aa012c0fabd8c0f3b",
+      "@id": "_:N1eefaab065e94eba9e31302ef1ca73f4",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3108"
@@ -93,7 +89,7 @@
       "sc:name": "Experimental measurement"
     },
     {
-      "@id": "_:N0e0cf922f892429ab64f6901108f4acf",
+      "@id": "_:N2f92d92f62ab4e0384f66abbc3e8f743",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1669"
@@ -104,7 +100,7 @@
       "sc:name": "P-value"
     },
     {
-      "@id": "_:Nc5faa346ff8541058accdbf207ca47c1",
+      "@id": "_:N762daa97b64c48cdb106b10852560f71",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
@@ -113,6 +109,10 @@
         "@id": "edam:format_3547"
       },
       "sc:name": "Plot"
+    },
+    {
+      "@id": "https://doi.org/10.18129/B9.bioc.sva",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

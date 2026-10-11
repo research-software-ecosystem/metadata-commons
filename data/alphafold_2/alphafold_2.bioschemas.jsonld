@@ -36,13 +36,17 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1038/s41586-021-03819-2",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/alphafold_2",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N0c6eee3ef3c8402bbb9a2526336eaea0"
+        "@id": "_:N2404713c375d49fba216f28932954fad"
       },
       "bsc:output": {
-        "@id": "_:N85c016cab9044a6e9a5c626738e0228f"
+        "@id": "_:N46abaafb09db4f8f9489ddb542cc2aa7"
       },
       "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
@@ -91,7 +95,7 @@
       "sc:url": "https://github.com/deepmind/alphafold"
     },
     {
-      "@id": "_:N0c6eee3ef3c8402bbb9a2526336eaea0",
+      "@id": "_:N2404713c375d49fba216f28932954fad",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2976"
@@ -107,16 +111,12 @@
       "sc:name": "Protein sequence"
     },
     {
-      "@id": "_:N85c016cab9044a6e9a5c626738e0228f",
+      "@id": "_:N46abaafb09db4f8f9489ddb542cc2aa7",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1460"
       },
       "sc:name": "Protein structure"
-    },
-    {
-      "@id": "https://doi.org/10.1038/s41586-021-03819-2",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

@@ -36,13 +36,17 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1186/s13059-015-0851-6",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/r3cpet",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nb38eb1567fbd4e3fbdbea5bba8d47de1"
+        "@id": "_:Ncbca2e3191b94ac7b9a8efe78bc17a3b"
       },
       "bsc:output": {
-        "@id": "_:N48f781a3428c460d828f098085e266de"
+        "@id": "_:N3ab1efcdce084f538970895a1c42d02e"
       },
       "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
@@ -69,6 +73,13 @@
           "@id": "edam:topic_0128"
         }
       ],
+      "sc:citation": [
+        "pubmed:26694485",
+        "pmcid:PMC4716632",
+        {
+          "@id": "https://doi.org/10.1186/s13059-015-0851-6"
+        }
+      ],
       "sc:description": "The package provides a method to infer the set of proteins that are more probably to work together to maintain chormatin interaction given a ChIA-PET experiment results.",
       "sc:featureList": [
         {
@@ -84,7 +95,7 @@
           "@id": "edam:operation_3658"
         }
       ],
-      "sc:license": "GPL-2.0-only",
+      "sc:license": "GPL-2.0",
       "sc:name": "R3CPET",
       "sc:operatingSystem": [
         "Linux",
@@ -98,7 +109,7 @@
       "sc:url": "https://bioconductor.org/packages/R3CPET"
     },
     {
-      "@id": "_:Nb38eb1567fbd4e3fbdbea5bba8d47de1",
+      "@id": "_:Ncbca2e3191b94ac7b9a8efe78bc17a3b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0849"
@@ -114,7 +125,7 @@
       "sc:name": "Sequence record"
     },
     {
-      "@id": "_:N48f781a3428c460d828f098085e266de",
+      "@id": "_:N3ab1efcdce084f538970895a1c42d02e",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2600"

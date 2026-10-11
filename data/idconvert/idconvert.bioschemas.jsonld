@@ -36,18 +36,25 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1093/bioinformatics/btn323",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1074/mcp.R110.000133",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://doi.org/10.1038/nbt.2377",
       "@type": "sc:CreativeWork"
     },
     {
       "@id": "https://bio.tools/idconvert",
       "@type": "sc:SoftwareApplication",
-      "biotools:primaryContact": "SourceForge team",
       "bsc:input": {
-        "@id": "_:Naaecc9f8194946f4a4b75106a8c44f49"
+        "@id": "_:Nece69d977528403ca3cf6370d3384e17"
       },
       "bsc:output": {
-        "@id": "_:Nf4e066799879435397a430dbc6b4f073"
+        "@id": "_:Nd0cd8744c8114f5d93f5fac3099df17f"
       },
       "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Command-line tool",
@@ -59,9 +66,20 @@
           "@id": "edam:topic_3520"
         }
       ],
-      "sc:citation": {
-        "@id": "https://doi.org/10.1038/nbt.2377"
-      },
+      "sc:citation": [
+        {
+          "@id": "https://doi.org/10.1038/nbt.2377"
+        },
+        {
+          "@id": "https://doi.org/10.1038/nbt1031"
+        },
+        {
+          "@id": "https://doi.org/10.1074/mcp.R110.000133"
+        },
+        {
+          "@id": "https://doi.org/10.1093/bioinformatics/btn323"
+        }
+      ],
       "sc:description": "A converter between pepXML and mzIdentML formats for peptide identifications from tandem mass spectrometry. Developed by the ProteoWizard team.",
       "sc:featureList": [
         {
@@ -75,22 +93,21 @@
         }
       ],
       "sc:isAccessibleForFree": true,
-      "sc:license": "Apache-2.0",
+      "sc:license": "Artistic-2.0",
       "sc:name": "idconvert",
       "sc:operatingSystem": [
         "Linux",
         "Mac",
         "Windows"
       ],
-      "sc:provider": "lumc.nl",
       "sc:softwareHelp": {
-        "@id": "http://proteowizard.sourceforge.net/tools.shtml"
+        "@id": "https://bioconductor.org/packages/mzR"
       },
-      "sc:softwareVersion": "1",
-      "sc:url": "http://proteowizard.sourceforge.net/tools/idconvert.html"
+      "sc:softwareVersion": "2.46.0",
+      "sc:url": "https://bioconductor.org/packages/mzR"
     },
     {
-      "@id": "_:Naaecc9f8194946f4a4b75106a8c44f49",
+      "@id": "_:Nece69d977528403ca3cf6370d3384e17",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0945"
@@ -109,7 +126,7 @@
       "sc:name": "Peptide identification"
     },
     {
-      "@id": "_:Nf4e066799879435397a430dbc6b4f073",
+      "@id": "_:Nd0cd8744c8114f5d93f5fac3099df17f",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0945"
@@ -123,6 +140,10 @@
         }
       ],
       "sc:name": "Peptide identification"
+    },
+    {
+      "@id": "https://doi.org/10.1038/nbt1031",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

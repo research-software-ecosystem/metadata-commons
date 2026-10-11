@@ -36,22 +36,18 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.18129/B9.bioc.cellscape",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/cellscape",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N40abaaa7e9634fe3a6aebdccce6b1ca8"
+          "@id": "_:N40c85d87f7054788b476a460dce0e52c"
         },
         {
-          "@id": "_:N87c12e1ebcd147dd9cbd04565c59bd95"
+          "@id": "_:N7fdf691a98b945dc918dc1d58e16d17d"
         }
       ],
       "bsc:output": {
-        "@id": "_:N3f00432a935d48f8a292ed500c8aa1e9"
+        "@id": "_:Na11ea5a745f7428580d5aa4af98574d3"
       },
       "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": "Plug-in",
@@ -86,7 +82,7 @@
         }
       ],
       "sc:isAccessibleForFree": true,
-      "sc:license": "GPL-3.0-only",
+      "sc:license": "GPL-3.0",
       "sc:name": "CellScape",
       "sc:operatingSystem": [
         "Linux",
@@ -100,7 +96,7 @@
       "sc:url": "https://bioconductor.org/packages/cellscape"
     },
     {
-      "@id": "_:N40abaaa7e9634fe3a6aebdccce6b1ca8",
+      "@id": "_:N40c85d87f7054788b476a460dce0e52c",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2523"
@@ -108,7 +104,7 @@
       "sc:name": "Phylogenetic data"
     },
     {
-      "@id": "_:N87c12e1ebcd147dd9cbd04565c59bd95",
+      "@id": "_:N7fdf691a98b945dc918dc1d58e16d17d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2914"
@@ -116,12 +112,16 @@
       "sc:name": "Sequence features metadata"
     },
     {
-      "@id": "_:N3f00432a935d48f8a292ed500c8aa1e9",
+      "@id": "_:Na11ea5a745f7428580d5aa4af98574d3",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1636"
       },
       "sc:name": "Heat map"
+    },
+    {
+      "@id": "https://doi.org/10.18129/B9.bioc.cellscape",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

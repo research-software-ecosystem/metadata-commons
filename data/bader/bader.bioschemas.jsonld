@@ -36,13 +36,17 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.18129/B9.bioc.BADER",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/bader",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:Nc53dc94647564b528c0108b3aa02b2a8"
+        "@id": "_:N57efa8079f6541d2a4c9517de448b7d9"
       },
       "bsc:output": {
-        "@id": "_:Ncf79ce722cda48deb036f9ea1fdd35d8"
+        "@id": "_:N256f3f023a8444fcb12dd29c6a77d1c4"
       },
       "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
@@ -69,7 +73,7 @@
           "@id": "edam:operation_3563"
         }
       ],
-      "sc:license": "GPL-2.0-only",
+      "sc:license": "GPL-2.0",
       "sc:name": "BADER",
       "sc:operatingSystem": [
         "Linux",
@@ -83,7 +87,7 @@
       "sc:url": "https://bioconductor.org/packages/BADER"
     },
     {
-      "@id": "_:Nc53dc94647564b528c0108b3aa02b2a8",
+      "@id": "_:N57efa8079f6541d2a4c9517de448b7d9",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2084"
@@ -94,7 +98,7 @@
       "sc:name": "Nucleic acid report"
     },
     {
-      "@id": "_:Ncf79ce722cda48deb036f9ea1fdd35d8",
+      "@id": "_:N256f3f023a8444fcb12dd29c6a77d1c4",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1772"
@@ -103,10 +107,6 @@
         "@id": "edam:format_2330"
       },
       "sc:name": "Score"
-    },
-    {
-      "@id": "https://doi.org/10.18129/B9.bioc.BADER",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

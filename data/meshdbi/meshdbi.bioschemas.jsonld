@@ -36,7 +36,15 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.1111/age.12307",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://doi.org/10.1186/s12859-015-0453-z",
+      "@type": "sc:CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.1111/age.13159",
       "@type": "sc:CreativeWork"
     },
     {
@@ -44,14 +52,14 @@
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N20d50acb62eb4611b21b24a436287ee2"
+          "@id": "_:Nffa6b2c94c704d89acd413b36cec355a"
         },
         {
-          "@id": "_:N19bfd2c7525f49609c59f011f78e197c"
+          "@id": "_:Nb78378e5f1d747908f70f8d4b058d71b"
         }
       ],
       "bsc:output": {
-        "@id": "_:N24c857fae1e244aba8cd20363d473114"
+        "@id": "_:N049708fd1a84473595a571a561288ea1"
       },
       "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
@@ -66,9 +74,17 @@
           "@id": "edam:topic_3063"
         }
       ],
-      "sc:citation": {
-        "@id": "https://doi.org/10.1186/s12859-015-0453-z"
-      },
+      "sc:citation": [
+        {
+          "@id": "https://doi.org/10.1111/age.12307"
+        },
+        {
+          "@id": "https://doi.org/10.1111/age.13159"
+        },
+        {
+          "@id": "https://doi.org/10.1186/s12859-015-0453-z"
+        }
+      ],
       "sc:description": "The package is unified implementation of MeSH.db, MeSH.AOR.db, and MeSH.PCR.db and also is interface to construct Gene-MeSH package (MeSH.XXX.eg.db). loadMeSHDbiPkg import sqlite file and generate MeSH.XXX.eg.db.",
       "sc:featureList": {
         "@id": "edam:operation_2409"
@@ -81,13 +97,13 @@
         "Windows"
       ],
       "sc:softwareHelp": {
-        "@id": "https://bioconductor.org/packages/MeSHDbi"
+        "@id": "https://bioconductor.org/packages/meshr"
       },
-      "sc:softwareVersion": "1.48.0",
-      "sc:url": "https://bioconductor.org/packages/MeSHDbi"
+      "sc:softwareVersion": "2.18.0",
+      "sc:url": "https://bioconductor.org/packages/meshr"
     },
     {
-      "@id": "_:N20d50acb62eb4611b21b24a436287ee2",
+      "@id": "_:Nffa6b2c94c704d89acd413b36cec355a",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0967"
@@ -98,7 +114,7 @@
       "sc:name": "Ontology concept data"
     },
     {
-      "@id": "_:N19bfd2c7525f49609c59f011f78e197c",
+      "@id": "_:Nb78378e5f1d747908f70f8d4b058d71b",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3509"
@@ -109,7 +125,7 @@
       "sc:name": "Ontology mapping"
     },
     {
-      "@id": "_:N24c857fae1e244aba8cd20363d473114",
+      "@id": "_:N049708fd1a84473595a571a561288ea1",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0582"

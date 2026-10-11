@@ -36,17 +36,13 @@
   },
   "@graph": [
     {
-      "@id": "https://doi.org/10.18129/B9.bioc.plier",
-      "@type": "sc:CreativeWork"
-    },
-    {
       "@id": "https://bio.tools/plier",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N1e945aa303f2497e811ebbc704cee341"
+        "@id": "_:Nf0e0e6b623344411b887503b2a3d7746"
       },
       "bsc:output": {
-        "@id": "_:N1d17594d12eb4da98d9bea08470b2f2e"
+        "@id": "_:N5b69e93b2c004b3db456ed8e770356b7"
       },
       "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
@@ -67,7 +63,7 @@
       "sc:citation": {
         "@id": "https://doi.org/10.18129/B9.bioc.plier"
       },
-      "sc:description": "The PLIER (Probe Logarithmic Error Intensity Estimate) method produces an improved signal by accounting for experimentally observed patterns in probe behavior and handling error at the appropriately at low and high signal values.",
+      "sc:description": "The Probe Logarithmic Error Intensity Estimate method produces an improved signal by accounting for experimentally observed patterns in probe behavior and handling error at the appropriately at low and high signal values.",
       "sc:featureList": [
         {
           "@id": "edam:operation_3695"
@@ -90,7 +86,7 @@
       "sc:url": "https://bioconductor.org/packages/plier"
     },
     {
-      "@id": "_:N1e945aa303f2497e811ebbc704cee341",
+      "@id": "_:Nf0e0e6b623344411b887503b2a3d7746",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3110"
@@ -109,7 +105,7 @@
       "sc:name": "Raw microarray data"
     },
     {
-      "@id": "_:N1d17594d12eb4da98d9bea08470b2f2e",
+      "@id": "_:N5b69e93b2c004b3db456ed8e770356b7",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_3111"
@@ -118,6 +114,10 @@
         "@id": "edam:format_3475"
       },
       "sc:name": "Processed microarray data"
+    },
+    {
+      "@id": "https://doi.org/10.18129/B9.bioc.plier",
+      "@type": "sc:CreativeWork"
     }
   ]
 }

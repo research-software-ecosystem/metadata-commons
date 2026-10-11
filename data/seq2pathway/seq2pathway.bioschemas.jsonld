@@ -36,17 +36,21 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.18129/B9.bioc.seq2pathway",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/seq2pathway",
       "@type": "sc:SoftwareApplication",
       "bsc:input": {
-        "@id": "_:N62d5864c51bf4953bf085e821dce3cb8"
+        "@id": "_:N3a07e2b74da84c19ad71fe851fcb768d"
       },
       "bsc:output": [
         {
-          "@id": "_:N0414ceb907e6418aaf1736d44a633c7c"
+          "@id": "_:Nf5fa68071eca477f84f01f76f95d16af"
         },
         {
-          "@id": "_:N4ca5cb52919741febdb13c32c18feb0c"
+          "@id": "_:Na242f76a6c9949b78da171b297c7ebc3"
         }
       ],
       "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
@@ -77,7 +81,7 @@
           "@id": "edam:operation_3680"
         }
       ],
-      "sc:license": "GPL-2.0-only",
+      "sc:license": "GPL-2.0",
       "sc:name": "seq2pathway",
       "sc:operatingSystem": [
         "Linux",
@@ -91,7 +95,7 @@
       "sc:url": "https://bioconductor.org/packages/seq2pathway"
     },
     {
-      "@id": "_:N62d5864c51bf4953bf085e821dce3cb8",
+      "@id": "_:N3a07e2b74da84c19ad71fe851fcb768d",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2012"
@@ -102,7 +106,7 @@
       "sc:name": "Sequence coordinates"
     },
     {
-      "@id": "_:N0414ceb907e6418aaf1736d44a633c7c",
+      "@id": "_:Nf5fa68071eca477f84f01f76f95d16af",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2725"
@@ -113,7 +117,7 @@
       "sc:name": "Ensembl transcript ID"
     },
     {
-      "@id": "_:N4ca5cb52919741febdb13c32c18feb0c",
+      "@id": "_:Na242f76a6c9949b78da171b297c7ebc3",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1772"
@@ -122,10 +126,6 @@
         "@id": "edam:format_3033"
       },
       "sc:name": "Score"
-    },
-    {
-      "@id": "https://doi.org/10.18129/B9.bioc.seq2pathway",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

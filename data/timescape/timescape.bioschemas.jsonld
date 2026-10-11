@@ -36,18 +36,22 @@
   },
   "@graph": [
     {
+      "@id": "https://doi.org/10.18129/B9.bioc.timescape",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/timescape",
       "@type": "sc:SoftwareApplication",
       "bsc:input": [
         {
-          "@id": "_:N537e3c83873c40abb8891a8311d7f0c1"
+          "@id": "_:Nbf73a5503bab4360b27fdb774412f7da"
         },
         {
-          "@id": "_:Naf5b4ce0fdf844b2b48acfe6b47d1ed8"
+          "@id": "_:N174fbfddc22743e4b9b3d2c4640fdec5"
         }
       ],
       "bsc:output": {
-        "@id": "_:N74669c01d8564f1c8236c8e88fe6d84e"
+        "@id": "_:Nec380a395da34d02865d8ff33a1255b7"
       },
       "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
@@ -82,7 +86,7 @@
         }
       ],
       "sc:isAccessibleForFree": true,
-      "sc:license": "GPL-3.0-only",
+      "sc:license": "GPL-3.0",
       "sc:name": "TimeScape",
       "sc:operatingSystem": [
         "Linux",
@@ -96,7 +100,7 @@
       "sc:url": "https://bioconductor.org/packages/timescape"
     },
     {
-      "@id": "_:N537e3c83873c40abb8891a8311d7f0c1",
+      "@id": "_:Nbf73a5503bab4360b27fdb774412f7da",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0920"
@@ -104,7 +108,7 @@
       "sc:name": "Genotype/phenotype report"
     },
     {
-      "@id": "_:Naf5b4ce0fdf844b2b48acfe6b47d1ed8",
+      "@id": "_:N174fbfddc22743e4b9b3d2c4640fdec5",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2523"
@@ -112,16 +116,12 @@
       "sc:name": "Phylogenetic data"
     },
     {
-      "@id": "_:N74669c01d8564f1c8236c8e88fe6d84e",
+      "@id": "_:Nec380a395da34d02865d8ff33a1255b7",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_2884"
       },
       "sc:name": "Plot"
-    },
-    {
-      "@id": "https://doi.org/10.18129/B9.bioc.timescape",
-      "@type": "sc:CreativeWork"
     }
   ]
 }

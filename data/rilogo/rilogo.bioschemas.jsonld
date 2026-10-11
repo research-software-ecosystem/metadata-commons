@@ -36,16 +36,24 @@
   },
   "@graph": [
     {
+      "@id": "http://orcid.org/0000-0003-4964-0685",
+      "@type": "sc:Person"
+    },
+    {
+      "@id": "https://doi.org/10.1093/bioinformatics/bts461",
+      "@type": "sc:CreativeWork"
+    },
+    {
       "@id": "https://bio.tools/rilogo",
       "@type": "sc:SoftwareApplication",
       "biotools:primaryContact": {
         "@id": "http://orcid.org/0000-0003-4964-0685"
       },
       "bsc:input": {
-        "@id": "_:Nd57a6af4d2fd45db887795777efabbfb"
+        "@id": "_:N71942ed16fb14e5e94f75c94e43771d5"
       },
       "bsc:output": {
-        "@id": "_:N62c4ef2f4e54417fb29a2a5e55dd1aa5"
+        "@id": "_:N121cbeb82adb45f7a17472cc99cfcf51"
       },
       "dct:conformsTo": "https://bioschemas.org/profiles/ComputationalTool/0.6-DRAFT",
       "sc:additionalType": [
@@ -86,7 +94,7 @@
       "sc:url": "http://rth.dk/resources/rilogo/"
     },
     {
-      "@id": "_:Nd57a6af4d2fd45db887795777efabbfb",
+      "@id": "_:N71942ed16fb14e5e94f75c94e43771d5",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_0881"
@@ -94,20 +102,12 @@
       "sc:name": "Secondary structure alignment (RNA)"
     },
     {
-      "@id": "_:N62c4ef2f4e54417fb29a2a5e55dd1aa5",
+      "@id": "_:N121cbeb82adb45f7a17472cc99cfcf51",
       "@type": "bsct:FormalParameter",
       "sc:additionalType": {
         "@id": "edam:data_1708"
       },
       "sc:name": "RNA secondary structure image"
-    },
-    {
-      "@id": "https://doi.org/10.1093/bioinformatics/bts461",
-      "@type": "sc:CreativeWork"
-    },
-    {
-      "@id": "http://orcid.org/0000-0003-4964-0685",
-      "@type": "sc:Person"
     }
   ]
 }
